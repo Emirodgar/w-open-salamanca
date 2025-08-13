@@ -3,17 +3,17 @@
 			
 			{% for page in site.pages limit:3 %}
 			{% if page.title != null  %}
-				{% if page.folder== "demografia" %}
+				{% if page.folder== "Demografia" %}
 				  <div class="dataset-card fade-in-up">
                 <div class="dataset-header">
-                    <h4 class="dataset-title">{{ page.title }}</h4>
+                    <h4 class="dataset-title"><a href="{{ page.url }}">{{ page.title }}</a></h4>
                     <p class="dataset-description">{{ page.description }}.</p>
                 </div>
                 <div class="dataset-meta">
                     <span class="dataset-category">{{ page.folder }}</span>
                     <span>650 visualizaciones</span>
                 </div>
-            </div></a>
+            </div>
 				{% endif %}
 			{% endif %}
 			{% endfor %}
