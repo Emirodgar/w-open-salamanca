@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+  <metadata>
+    <title>Población por Distritos de Salamanca</title>
+    <description>Distribución demográfica de la población de Salamanca organizada por distritos administrativos. Datos actualizados del padrón municipal con desglose por edad y género.</description>
+    <category>Demografia</category>
+    <source>Ayuntamiento de Salamanca - Padrón Municipal</source>
+    <updated>2024-12-31</updated>
+    <license>CC BY 4.0</license>
+    <tags>población, demografía, distritos, salamanca</tags>
+    <contact>datos@salamanca.es</contact>
+    <frequency>Anual</frequency>
+  </metadata>
+  
+  <visualization>
+    <type>bar</type>
+    <config>
+      <title>Población por Distritos de Salamanca</title>
+      <xAxis>Distrito</xAxis>
+      <yAxis>Número de Habitantes</yAxis>
+      <colors>["#2C5F2D", "#97BC62", "#F4A261", "#264653", "#28A745", "#FFC107"]</colors>
+      <showGrid>true</showGrid>
+      <beginAtZero>true</beginAtZero>
+    </config>
+  </visualization>
+  
+  <data>
+    <json>
+    [
+      {
+        "distrito": "Centro Histórico",
+        "poblacion": 15420,
+        "superficie_km2": 2.1,
+        "densidad": 7343,
+        "hombres": 7234,
+        "mujeres": 8186,
+        "edad_media": 42.3
+      },
+      {
+        "distrito": "San Bernardo",
+        "poblacion": 12350,
+        "superficie_km2": 3.8,
+        "densidad": 3250,
+        "hombres": 6012,
+        "mujeres": 6338,
+        "edad_media": 38.7
+      },
+      {
+        "distrito": "Garrido Norte",
+        "poblacion": 18750,
+        "superficie_km2": 4.2,
+        "densidad": 4464,
+        "hombres": 9123,
+        "mujeres": 9627,
+        "edad_media": 35.2
+      },
+      {
+        "distrito": "Garrido Sur",
+        "poblacion": 14200,
+        "superficie_km2": 3.5,
+        "densidad": 4057,
+        "hombres": 6890,
+        "mujeres": 7310,
+        "edad_media": 40.1
+      },
+      {
+        "distrito": "Universidad",
+        "poblacion": 22100,
+        "superficie_km2": 5.1,
+        "densidad": 4333,
+        "hombres": 10456,
+        "mujeres": 11644,
+        "edad_media": 28.9
+      },
+      {
+        "distrito": "Oeste",
+        "poblacion": 16800,
+        "superficie_km2": 6.3,
+        "densidad": 2667,
+        "hombres": 8234,
+        "mujeres": 8566,
+        "edad_media": 44.6
+      },
+      {
+        "distrito": "Tejares",
+        "poblacion": 11200,
+        "superficie_km2": 2.9,
+        "densidad": 3862,
+        "hombres": 5456,
+        "mujeres": 5744,
+        "edad_media": 41.8
+      },
+      {
+        "distrito": "Prosperidad",
+        "poblacion": 9800,
+        "superficie_km2": 4.7,
+        "densidad": 2085,
+        "hombres": 4789,
+        "mujeres": 5011,
+        "edad_media": 39.4
+      }
+    ]
+    </json>
+  </data>
+</dataset>
+

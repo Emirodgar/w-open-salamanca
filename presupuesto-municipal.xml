@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+  <metadata>
+    <title>Presupuesto Municipal de Salamanca 2024</title>
+    <description>Distribución detallada del presupuesto municipal de Salamanca para el ejercicio 2024, organizado por áreas de gasto y comparativa con el ejercicio anterior.</description>
+    <category>Finanzas</category>
+    <source>Ayuntamiento de Salamanca - Intervención Municipal</source>
+    <updated>2024-01-15</updated>
+    <license>CC BY 4.0</license>
+    <tags>presupuesto, finanzas, gasto público, municipal</tags>
+    <contact>intervencion@salamanca.es</contact>
+    <frequency>Anual</frequency>
+  </metadata>
+  
+  <visualization>
+    <type>pie</type>
+    <config>
+      <title>Distribución del Presupuesto Municipal 2024</title>
+      <colors>["#2C5F2D", "#97BC62", "#F4A261", "#264653", "#28A745", "#FFC107", "#DC3545", "#17A2B8", "#6F42C1"]</colors>
+      <legendPosition>bottom</legendPosition>
+    </config>
+  </visualization>
+  
+  <data>
+    <json>
+    [
+      {
+        "area": "Servicios Sociales",
+        "presupuesto_2024": 25000000,
+        "presupuesto_2023": 23500000,
+        "porcentaje": 29.8,
+        "variacion": 6.4,
+        "descripcion": "Atención social, dependencia, mayores, infancia"
+      },
+      {
+        "area": "Infraestructuras y Obras",
+        "presupuesto_2024": 18000000,
+        "presupuesto_2023": 16800000,
+        "porcentaje": 21.4,
+        "variacion": 7.1,
+        "descripcion": "Construcción, mantenimiento, urbanismo"
+      },
+      {
+        "area": "Educación",
+        "presupuesto_2024": 15000000,
+        "presupuesto_2023": 14200000,
+        "porcentaje": 17.9,
+        "variacion": 5.6,
+        "descripcion": "Centros educativos, programas educativos"
+      },
+      {
+        "area": "Seguridad y Emergencias",
+        "presupuesto_2024": 8500000,
+        "presupuesto_2023": 8100000,
+        "porcentaje": 10.1,
+        "variacion": 4.9,
+        "descripcion": "Policía local, bomberos, protección civil"
+      },
+      {
+        "area": "Cultura y Patrimonio",
+        "presupuesto_2024": 8000000,
+        "presupuesto_2023": 7500000,
+        "porcentaje": 9.5,
+        "variacion": 6.7,
+        "descripcion": "Museos, bibliotecas, eventos culturales"
+      },
+      {
+        "area": "Deportes",
+        "presupuesto_2024": 5000000,
+        "presupuesto_2023": 4800000,
+        "porcentaje": 6.0,
+        "variacion": 4.2,
+        "descripcion": "Instalaciones deportivas, programas deportivos"
+      },
+      {
+        "area": "Medio Ambiente",
+        "presupuesto_2024": 2500000,
+        "presupuesto_2023": 2200000,
+        "porcentaje": 3.0,
+        "variacion": 13.6,
+        "descripcion": "Parques, jardines, sostenibilidad"
+      },
+      {
+        "area": "Turismo y Promoción",
+        "presupuesto_2024": 1500000,
+        "presupuesto_2023": 1300000,
+        "porcentaje": 1.8,
+        "variacion": 15.4,
+        "descripcion": "Promoción turística, eventos"
+      },
+      {
+        "area": "Administración General",
+        "presupuesto_2024": 500000,
+        "presupuesto_2023": 600000,
+        "porcentaje": 0.6,
+        "variacion": -16.7,
+        "descripcion": "Gastos administrativos generales"
+      }
+    ]
+    </json>
+  </data>
+</dataset>
+

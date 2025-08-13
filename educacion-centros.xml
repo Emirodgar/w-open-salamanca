@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+  <metadata>
+    <title>Centros Educativos de Salamanca</title>
+    <description>Inventario completo de centros educativos en Salamanca, clasificados por nivel educativo, titularidad y distrito. Incluye datos de matrícula y profesorado.</description>
+    <category>Educacion</category>
+    <source>Consejería de Educación de Castilla y León</source>
+    <updated>2024-09-01</updated>
+    <license>CC BY 4.0</license>
+    <tags>educación, colegios, institutos, universidad, matrícula</tags>
+    <contact>estadisticas.educacion@jcyl.es</contact>
+    <frequency>Anual</frequency>
+  </metadata>
+  
+  <visualization>
+    <type>doughnut</type>
+    <config>
+      <title>Distribución de Centros Educativos por Nivel</title>
+      <colors>["#2C5F2D", "#97BC62", "#F4A261", "#264653", "#28A745", "#FFC107"]</colors>
+      <legendPosition>right</legendPosition>
+    </config>
+  </visualization>
+  
+  <data>
+    <json>
+    [
+      {
+        "nivel": "Educación Infantil",
+        "centros_publicos": 28,
+        "centros_privados": 17,
+        "total_centros": 45,
+        "alumnos": 3420,
+        "profesores": 245,
+        "ratio_alumno_profesor": 14.0
+      },
+      {
+        "nivel": "Educación Primaria",
+        "centros_publicos": 24,
+        "centros_privados": 14,
+        "total_centros": 38,
+        "alumnos": 8950,
+        "profesores": 567,
+        "ratio_alumno_profesor": 15.8
+      },
+      {
+        "nivel": "Educación Secundaria",
+        "centros_publicos": 15,
+        "centros_privados": 7,
+        "total_centros": 22,
+        "alumnos": 6780,
+        "profesores": 456,
+        "ratio_alumno_profesor": 14.9
+      },
+      {
+        "nivel": "Bachillerato",
+        "centros_publicos": 12,
+        "centros_privados": 3,
+        "total_centros": 15,
+        "alumnos": 2340,
+        "profesores": 189,
+        "ratio_alumno_profesor": 12.4
+      },
+      {
+        "nivel": "Formación Profesional",
+        "centros_publicos": 8,
+        "centros_privados": 4,
+        "total_centros": 12,
+        "alumnos": 1890,
+        "profesores": 134,
+        "ratio_alumno_profesor": 14.1
+      },
+      {
+        "nivel": "Universidad",
+        "centros_publicos": 1,
+        "centros_privados": 2,
+        "total_centros": 3,
+        "alumnos": 28500,
+        "profesores": 2100,
+        "ratio_alumno_profesor": 13.6
+      },
+      {
+        "nivel": "Educación Especial",
+        "centros_publicos": 2,
+        "centros_privados": 1,
+        "total_centros": 3,
+        "alumnos": 156,
+        "profesores": 34,
+        "ratio_alumno_profesor": 4.6
+      },
+      {
+        "nivel": "Educación de Adultos",
+        "centros_publicos": 4,
+        "centros_privados": 1,
+        "total_centros": 5,
+        "alumnos": 890,
+        "profesores": 67,
+        "ratio_alumno_profesor": 13.3
+      }
+    ]
+    </json>
+  </data>
+</dataset>
+

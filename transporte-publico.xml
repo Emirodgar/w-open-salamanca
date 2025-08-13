@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+  <metadata>
+    <title>Uso del Transporte Público en Salamanca</title>
+    <description>Estadísticas de uso del transporte público urbano de Salamanca, incluyendo líneas de autobús, frecuencias, pasajeros y satisfacción del usuario.</description>
+    <category>Transporte</category>
+    <source>Empresa Municipal de Transportes de Salamanca</source>
+    <updated>2024-11-30</updated>
+    <license>CC BY 4.0</license>
+    <tags>transporte, autobús, movilidad, urbano, pasajeros</tags>
+    <contact>estadisticas@salamancabus.com</contact>
+    <frequency>Mensual</frequency>
+  </metadata>
+  
+  <visualization>
+    <type>line</type>
+    <config>
+      <title>Evolución Mensual de Pasajeros del Transporte Público</title>
+      <xAxis>Mes</xAxis>
+      <yAxis>Número de Pasajeros</yAxis>
+      <colors>["#2C5F2D"]</colors>
+      <tension>0.4</tension>
+      <fill>true</fill>
+    </config>
+  </visualization>
+  
+  <data>
+    <json>
+    [
+      {
+        "mes": "Enero 2024",
+        "pasajeros_totales": 245000,
+        "lineas_activas": 12,
+        "km_recorridos": 89500,
+        "satisfaccion_media": 7.2,
+        "incidencias": 23
+      },
+      {
+        "mes": "Febrero 2024",
+        "pasajeros_totales": 238000,
+        "lineas_activas": 12,
+        "km_recorridos": 87200,
+        "satisfaccion_media": 7.1,
+        "incidencias": 19
+      },
+      {
+        "mes": "Marzo 2024",
+        "pasajeros_totales": 267000,
+        "lineas_activas": 12,
+        "km_recorridos": 92300,
+        "satisfaccion_media": 7.4,
+        "incidencias": 15
+      },
+      {
+        "mes": "Abril 2024",
+        "pasajeros_totales": 289000,
+        "lineas_activas": 12,
+        "km_recorridos": 95600,
+        "satisfaccion_media": 7.6,
+        "incidencias": 12
+      },
+      {
+        "mes": "Mayo 2024",
+        "pasajeros_totales": 298000,
+        "lineas_activas": 12,
+        "km_recorridos": 97800,
+        "satisfaccion_media": 7.8,
+        "incidencias": 8
+      },
+      {
+        "mes": "Junio 2024",
+        "pasajeros_totales": 276000,
+        "lineas_activas": 12,
+        "km_recorridos": 94200,
+        "satisfaccion_media": 7.5,
+        "incidencias": 14
+      },
+      {
+        "mes": "Julio 2024",
+        "pasajeros_totales": 198000,
+        "lineas_activas": 10,
+        "km_recorridos": 78900,
+        "satisfaccion_media": 7.3,
+        "incidencias": 18
+      },
+      {
+        "mes": "Agosto 2024",
+        "pasajeros_totales": 156000,
+        "lineas_activas": 8,
+        "km_recorridos": 65400,
+        "satisfaccion_media": 7.0,
+        "incidencias": 22
+      },
+      {
+        "mes": "Septiembre 2024",
+        "pasajeros_totales": 312000,
+        "lineas_activas": 12,
+        "km_recorridos": 102300,
+        "satisfaccion_media": 7.9,
+        "incidencias": 9
+      },
+      {
+        "mes": "Octubre 2024",
+        "pasajeros_totales": 334000,
+        "lineas_activas": 12,
+        "km_recorridos": 108700,
+        "satisfaccion_media": 8.1,
+        "incidencias": 6
+      },
+      {
+        "mes": "Noviembre 2024",
+        "pasajeros_totales": 298000,
+        "lineas_activas": 12,
+        "km_recorridos": 97500,
+        "satisfaccion_media": 7.7,
+        "incidencias": 11
+      },
+      {
+        "mes": "Diciembre 2024",
+        "pasajeros_totales": 267000,
+        "lineas_activas": 12,
+        "km_recorridos": 91800,
+        "satisfaccion_media": 7.4,
+        "incidencias": 16
+      }
+    ]
+    </json>
+  </data>
+</dataset>
+

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://opensalamanca.es/schema/dataset"
+           xmlns:tns="http://opensalamanca.es/schema/dataset"
+           elementFormDefault="qualified">
+
+  <!-- Root element -->
+  <xs:element name="dataset" type="tns:DatasetType"/>
+
+  <!-- Dataset type definition -->
+  <xs:complexType name="DatasetType">
+    <xs:sequence>
+      <xs:element name="metadata" type="tns:MetadataType"/>
+      <xs:element name="visualization" type="tns:VisualizationType" minOccurs="0"/>
+      <xs:element name="data" type="tns:DataType"/>
+    </xs:sequence>
+    <xs:attribute name="version" type="xs:string" default="1.0"/>
+  </xs:complexType>
+
+  <!-- Metadata type definition -->
+  <xs:complexType name="MetadataType">
+    <xs:sequence>
+      <xs:element name="title" type="xs:string"/>
+      <xs:element name="description" type="xs:string"/>
+      <xs:element name="category" type="tns:CategoryType"/>
+      <xs:element name="source" type="xs:string"/>
+      <xs:element name="updated" type="xs:date"/>
+      <xs:element name="license" type="tns:LicenseType"/>
+      <xs:element name="tags" type="xs:string" minOccurs="0"/>
+      <xs:element name="contact" type="xs:string" minOccurs="0"/>
+      <xs:element name="frequency" type="tns:FrequencyType" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- Category enumeration -->
+  <xs:simpleType name="CategoryType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Demografia"/>
+      <xs:enumeration value="Economia"/>
+      <xs:enumeration value="Educacion"/>
+      <xs:enumeration value="Finanzas"/>
+      <xs:enumeration value="Transporte"/>
+      <xs:enumeration value="Medio Ambiente"/>
+      <xs:enumeration value="Cultura"/>
+      <xs:enumeration value="Deportes"/>
+      <xs:enumeration value="Salud"/>
+      <xs:enumeration value="Seguridad"/>
+      <xs:enumeration value="Turismo"/>
+      <xs:enumeration value="Vivienda"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- License enumeration -->
+  <xs:simpleType name="LicenseType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="CC BY 4.0"/>
+      <xs:enumeration value="CC BY-SA 4.0"/>
+      <xs:enumeration value="CC0 1.0"/>
+      <xs:enumeration value="ODbL"/>
+      <xs:enumeration value="Public Domain"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- Frequency enumeration -->
+  <xs:simpleType name="FrequencyType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Diaria"/>
+      <xs:enumeration value="Semanal"/>
+      <xs:enumeration value="Mensual"/>
+      <xs:enumeration value="Trimestral"/>
+      <xs:enumeration value="Anual"/>
+      <xs:enumeration value="Irregular"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- Visualization type definition -->
+  <xs:complexType name="VisualizationType">
+    <xs:sequence>
+      <xs:element name="type" type="tns:ChartType"/>
+      <xs:element name="config" type="tns:ConfigType" minOccurs="0"/>
+      <xs:element name="template" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- Chart type enumeration -->
+  <xs:simpleType name="ChartType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="bar"/>
+      <xs:enumeration value="line"/>
+      <xs:enumeration value="pie"/>
+      <xs:enumeration value="doughnut"/>
+      <xs:enumeration value="scatter"/>
+      <xs:enumeration value="area"/>
+      <xs:enumeration value="radar"/>
+      <xs:enumeration value="polarArea"/>
+      <xs:enumeration value="map"/>
+      <xs:enumeration value="table"/>
+      <xs:enumeration value="heatmap"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- Configuration type definition -->
+  <xs:complexType name="ConfigType">
+    <xs:sequence>
+      <xs:element name="title" type="xs:string" minOccurs="0"/>
+      <xs:element name="xAxis" type="xs:string" minOccurs="0"/>
+      <xs:element name="yAxis" type="xs:string" minOccurs="0"/>
+      <xs:element name="colors" type="xs:string" minOccurs="0"/>
+      <xs:element name="showGrid" type="xs:boolean" minOccurs="0"/>
+      <xs:element name="beginAtZero" type="xs:boolean" minOccurs="0"/>
+      <xs:element name="tension" type="xs:decimal" minOccurs="0"/>
+      <xs:element name="fill" type="xs:boolean" minOccurs="0"/>
+      <xs:element name="legendPosition" type="tns:LegendPositionType" minOccurs="0"/>
+      <xs:element name="labelField" type="xs:string" minOccurs="0"/>
+      <xs:element name="valueField" type="xs:string" minOccurs="0"/>
+      <xs:element name="valueFields" type="xs:string" minOccurs="0"/>
+      <xs:element name="datasetLabels" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- Legend position enumeration -->
+  <xs:simpleType name="LegendPositionType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="top"/>
+      <xs:enumeration value="bottom"/>
+      <xs:enumeration value="left"/>
+      <xs:enumeration value="right"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- Data type definition -->
+  <xs:complexType name="DataType">
+    <xs:choice>
+      <xs:element name="json" type="xs:string"/>
+      <xs:element name="csv" type="xs:string"/>
+      <xs:sequence>
+        <xs:element name="record" type="tns:RecordType" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:sequence>
+        <xs:element name="item" type="tns:ItemType" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:choice>
+  </xs:complexType>
+
+  <!-- Record type definition -->
+  <xs:complexType name="RecordType">
+    <xs:sequence>
+      <xs:any maxOccurs="unbounded" processContents="skip"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- Item type definition -->
+  <xs:complexType name="ItemType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="key" type="xs:string"/>
+        <xs:attribute name="name" type="xs:string"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+</xs:schema>
+

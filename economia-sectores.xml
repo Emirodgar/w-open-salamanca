@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+  <metadata>
+    <title>Distribución Económica por Sectores</title>
+    <description>Análisis de la estructura económica de Salamanca distribuida por sectores productivos, incluyendo empleo, facturación y número de empresas por sector.</description>
+    <category>Economia</category>
+    <source>Cámara de Comercio de Salamanca</source>
+    <updated>2024-12-15</updated>
+    <license>CC BY 4.0</license>
+    <tags>economía, sectores, empleo, empresas, PIB</tags>
+    <contact>estadisticas@camarasalamanca.com</contact>
+    <frequency>Anual</frequency>
+  </metadata>
+  
+  <visualization>
+    <type>pie</type>
+    <config>
+      <title>Distribución del PIB por Sectores Económicos</title>
+      <colors>["#2C5F2D", "#97BC62", "#F4A261", "#264653", "#28A745", "#FFC107", "#DC3545", "#17A2B8"]</colors>
+      <legendPosition>bottom</legendPosition>
+    </config>
+  </visualization>
+  
+  <data>
+    <json>
+    [
+      {
+        "sector": "Servicios",
+        "pib_millones": 1850,
+        "porcentaje_pib": 54.4,
+        "empleos": 45200,
+        "empresas": 3420,
+        "crecimiento_anual": 2.8
+      },
+      {
+        "sector": "Educación y Universidad",
+        "pib_millones": 680,
+        "porcentaje_pib": 20.0,
+        "empleos": 18500,
+        "empresas": 245,
+        "crecimiento_anual": 1.9
+      },
+      {
+        "sector": "Industria",
+        "pib_millones": 425,
+        "porcentaje_pib": 12.5,
+        "empleos": 8900,
+        "empresas": 156,
+        "crecimiento_anual": 3.2
+      },
+      {
+        "sector": "Construcción",
+        "pib_millones": 238,
+        "porcentaje_pib": 7.0,
+        "empleos": 5600,
+        "empresas": 890,
+        "crecimiento_anual": 4.1
+      },
+      {
+        "sector": "Turismo y Hostelería",
+        "pib_millones": 136,
+        "porcentaje_pib": 4.0,
+        "empleos": 4200,
+        "empresas": 567,
+        "crecimiento_anual": 5.7
+      },
+      {
+        "sector": "Agricultura y Ganadería",
+        "pib_millones": 51,
+        "porcentaje_pib": 1.5,
+        "empleos": 1200,
+        "empresas": 234,
+        "crecimiento_anual": -0.8
+      },
+      {
+        "sector": "Tecnología e I+D",
+        "pib_millones": 20,
+        "porcentaje_pib": 0.6,
+        "empleos": 890,
+        "empresas": 67,
+        "crecimiento_anual": 12.3
+      }
+    ]
+    </json>
+  </data>
+</dataset>
+
