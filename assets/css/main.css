@@ -890,3 +890,15 @@ li a:hover {
     text-decoration: underline;
 }
 
+.dataset-title a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 600;
+    transition: var(--transition-fast);
+}
+
+.dataset-title a:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
