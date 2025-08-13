@@ -1,5 +1,25 @@
 <div class="datasets-grid" id="featuredDatasets3">
-            <div class="dataset-card fade-in-up" onclick="openSalamanca.viewDataset('poblacion-distritos')">
+            
+			
+			{% for page in site.pages limit:3 %}
+			{% if page.title != null  %}
+				{% if page.folder== "demografia" %}
+				  <div class="dataset-card fade-in-up">
+                <div class="dataset-header">
+                    <h4 class="dataset-title">{{ page.title }}</h4>
+                    <p class="dataset-description">Tipos y distribución de centros educativos en la ciudad.</p>
+                </div>
+                <div class="dataset-meta">
+                    <span class="dataset-category">{{ page.folder }}</span>
+                    <span>650 visualizaciones</span>
+                </div>
+            </div></a>
+				{% endif %}
+			{% endif %}
+			{% endfor %}
+			
+			
+			<!--<div class="dataset-card fade-in-up" onclick="openSalamanca.viewDataset('poblacion-distritos')">
                 <div class="dataset-header">
                     <h4 class="dataset-title">Población por Distritos</h4>
                     <p class="dataset-description">Datos demográficos de la población distribuida por distritos de Salamanca.</p>
@@ -19,27 +39,12 @@
                     <span class="dataset-category">Economia</span>
                     <span>890 visualizaciones</span>
                 </div>
-            </div>
+            </div> -->
         
 			
 
-			{% for page in site.pages %}
-			{% if page.title != null  %}
-				{% if page.folder== "demografia" %}
-				  <div class="dataset-card fade-in-up">
-                <div class="dataset-header">
-                    <h4 class="dataset-title">{{ page.title }}</h4>
-                    <p class="dataset-description">Tipos y distribución de centros educativos en la ciudad.</p>
-                </div>
-                <div class="dataset-meta">
-                    <span class="dataset-category">{{ page.folder }}</span>
-                    <span>650 visualizaciones</span>
-                </div>
-            </div></a>
-				{% endif %}
-			{% endif %}
-			{% endfor %}
+			
 
-			HOLA
+			
 			
         </div>
