@@ -1,5 +1,5 @@
 ---
-title: Evolución de la población salmantina por edad y género (2015-2025)
+title: Evolución de la población por edad y género (2015-2025)
 description: Salmantinos censados entre 2015 y 2025
 date: 13-08-2025
 folder: Demografia
@@ -19,7 +19,83 @@ permalink: poblacion-genero-edad
 			
 			<div id="section-content">
 						
-  <canvas id="poblacionChart" width="800" height="400"></canvas>
+  <canvas id="sexoChart" width="900" height="500"></canvas>
+
+  <script>
+    const ctx = document.getElementById('sexoChart').getContext('2d');
+    const sexoChart = new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: [
+          '2015','2016','2017','2018','2019',
+          '2020','2021','2022','2023','2024','2025'
+        ],
+        datasets: [
+          {
+            label: 'Población Total',
+            data: [147146,146286,145266,144436,144248,144825,143549,142412,143954,144866,146094],
+            borderColor: 'rgba(75, 192, 192, 1)',
+            backgroundColor: 'rgba(75, 192, 192, 0.2)',
+            borderWidth: 2,
+            tension: 0.2,
+            fill: false,
+            pointRadius: 4
+          },
+          {
+            label: 'Mujeres',
+            data: [80489,80018,79461,79006,78904,79219,78532,77899,78743,79242,79913],
+            borderColor: 'rgba(255, 99, 132, 1)',
+            backgroundColor: 'rgba(255, 99, 132, 0.2)',
+            borderWidth: 2,
+            tension: 0.2,
+            fill: false,
+            pointRadius: 4
+          },
+          {
+            label: 'Hombres',
+            data: [66657,66268,65805,65430,65344,65606,65017,64513,65211,65624,66181],
+            borderColor: 'rgba(54, 162, 235, 1)',
+            backgroundColor: 'rgba(54, 162, 235, 0.2)',
+            borderWidth: 2,
+            tension: 0.2,
+            fill: false,
+            pointRadius: 4
+          }
+        ]
+      },
+      options: {
+        responsive: true,
+        interaction: {
+          mode: 'index',
+          intersect: false
+        },
+        plugins: {
+          tooltip: {
+            callbacks: {
+              label: function(context) {
+                return context.dataset.label + ': ' + context.raw.toLocaleString('es-ES');
+              }
+            }
+          }
+        },
+        scales: {
+          y: {
+            beginAtZero: false,
+            title: {
+              display: true,
+              text: 'Población'
+            }
+          },
+          x: {
+            title: {
+              display: true,
+              text: 'Año'
+            }
+          }
+        }
+      }
+    });
+  </script>
 
  
 			<h2>Análisis por género</h2>
@@ -28,42 +104,53 @@ permalink: poblacion-genero-edad
 La población salmantina presenta un claro predominio femenino que se mantiene estable en el tiempo. En 2021, las mujeres representaban el 54.7% (78.532 habitantes) frente al 45.3% de hombres (65.017 habitantes). Esta proporción se mantiene en 2025, con aproximadamente 79.913 mujeres y 66.181 hombres.
 </p>
 
-<table>
+<div id="section-table">
+<table border="1" cellpadding="5" cellspacing="0">
   <thead>
     <tr>
       <th>Año</th>
-      <th>Total</th>
+      <th>Población Total</th>
       <th>Mujeres</th>
       <th>Hombres</th>
       <th>% Mujeres</th>
       <th>% Hombres</th>
+      <th>Var. Anual Total</th>
+      <th>Var. Anual Mujeres</th>
+      <th>Var. Anual Hombres</th>
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td>2021</td>
-      <td>143.549</td>
-      <td>78.532</td>
-      <td>65.017</td>
-      <td>54.7%</td>
-      <td>45.3%</td>
-    </tr>
-    <tr>
-      <td>2025</td>
-      <td>146.094</td>
-      <td>79.913</td>
-      <td>66.181</td>
-      <td>54.7%</td>
-      <td>45.3%</td>
-    </tr>
+    <tr><td>2015</td><td>147.146</td><td>80.489</td><td>66.657</td><td>54,7%</td><td>45,3%</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td>2016</td><td>146.286</td><td>80.018</td><td>66.268</td><td>54,7%</td><td>45,3%</td><td>-860</td><td>-471</td><td>-389</td></tr>
+    <tr><td>2017</td><td>145.266</td><td>79.461</td><td>65.805</td><td>54,7%</td><td>45,3%</td><td>-1.020</td><td>-557</td><td>-463</td></tr>
+    <tr><td>2018</td><td>144.436</td><td>79.006</td><td>65.430</td><td>54,7%</td><td>45,3%</td><td>-830</td><td>-455</td><td>-375</td></tr>
+    <tr><td>2019</td><td>144.248</td><td>78.904</td><td>65.344</td><td>54,7%</td><td>45,3%</td><td>-188</td><td>-102</td><td>-86</td></tr>
+    <tr><td>2020</td><td>144.825</td><td>79.219</td><td>65.606</td><td>54,7%</td><td>45,3%</td><td>+577</td><td>+315</td><td>+262</td></tr>
+    <tr><td>2021</td><td>143.549</td><td>78.532</td><td>65.017</td><td>54,7%</td><td>45,3%</td><td>-1.276</td><td>-687</td><td>-589</td></tr>
+    <tr><td>2022</td><td>142.412</td><td>77.899</td><td>64.513</td><td>54,7%</td><td>45,3%</td><td>-1.137</td><td>-633</td><td>-504</td></tr>
+    <tr><td>2023</td><td>143.954</td><td>78.743</td><td>65.211</td><td>54,7%</td><td>45,3%</td><td>+1.542</td><td>+844</td><td>+698</td></tr>
+    <tr><td>2024</td><td>144.866</td><td>79.242</td><td>65.624</td><td>54,7%</td><td>45,3%</td><td>+912</td><td>+499</td><td>+413</td></tr>
+    <tr><td>2025</td><td>146.094</td><td>79.913</td><td>66.181</td><td>54,7%</td><td>45,3%</td><td>+1.228</td><td>+671</td><td>+557</td></tr>
   </tbody>
 </table>
+
+</div>
 
 <h2>Análisis por edad</h2>
 
 <p>
 El análisis por franjas de edad revela una estructura poblacional envejecida. Los datos de 2021 muestran que el 27.6% de la población tiene 65 años o más (39.668 habitantes), mientras que solo el 20.7% tiene menos de 25 años (29.706 habitantes). Esta distribución evidencia un índice de envejecimiento de 1.3, lo que significa que hay 1.3 personas mayores por cada joven.
 </p>
+
+<h3>Indicadores demográficos clave</h3>
+
+<ul>
+  <li>Jóvenes (0-24 años): 29.706 habitantes (20.7%)</li>
+  <li>Adultos (25-64 años): 74.175 habitantes (51.7%)</li>
+  <li>Mayores (65+ años): 39.668 habitantes (27.6%)</li>
+  <li>Índice de envejecimiento: 1.3 mayores por cada joven</li>
+  <li>Dependencia demográfica: 93.5%</li>
+</ul>
 
 
 <canvas id="edadChart" width="900" height="500"></canvas>
@@ -124,6 +211,7 @@ El análisis por franjas de edad revela una estructura poblacional envejecida. L
     });
   </script>
 
+<div id="section-table">
 <table border="1" cellpadding="5" cellspacing="0">
   <thead>
     <tr>
@@ -149,7 +237,7 @@ El análisis por franjas de edad revela una estructura poblacional envejecida. L
     <tr><td>65 años o más</td><td>39.668</td><td>23.939</td><td>15.729</td><td>27.6%</td></tr>
   </tbody>
 </table>
-
+</div>
 
 
 <ul>
