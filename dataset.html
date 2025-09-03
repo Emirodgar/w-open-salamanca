@@ -3,13 +3,11 @@ title: Evolución de la población
 description: Salmantinos censados entre 2015 y 2025
 date: 13-08-2025
 folder: Demografia
-permalink: poblacion
+permalink: dataset
 ---
 
 {% include header.html %}
 
-
-    <!-- Featured Datasets Section -->
     <section class="featured dataset" id="datos">
         <div class="container">
             <div class="section-header">
@@ -18,61 +16,20 @@ permalink: poblacion
             </div>
 			
 			<div id="section-content">
-						
-  <canvas id="poblacionChart" width="800" height="400"></canvas>
-
- 
-			<h2>Análisis de las principales conclusiones</h2>
 			
-				<p>
-La evolución demográfica de Salamanca ciudad en los últimos años muestra un <b>patrón de descenso seguido de recuperación reciente</b>. Tras experimentar una reducción poblacional sostenida entre 2015 y 2022, la ciudad ha iniciado una tendencia de crecimiento que se consolida en 2025 con 146.094 habitantes, prácticamente recuperando los niveles de 2015.</p>
-
-<h3>Tendencias demográficas clave</h3>
-<ul>
-<li><b>Período de descenso (2015-2022)</b>: Salamanca perdió aproximadamente 4.734 habitantes, con el punto más bajo en 2022 con 142.412 residentes. Este descenso se intensificó durante la pandemia de COVID-19, que tuvo un impacto significativo en la dinámica poblacional.</li>
-
-<li><b>Recuperación reciente (2023-2025)</b>: La ciudad ha experimentado un crecimiento sostenido por tercer año consecutivo, sumando 3.682 habitantes en este período. El incremento de 1.228 personas en 2025 representa el mejor dato del padrón desde 2015.</li>
-</ul>
-
-
-
-  <h2>Evolución de la población y variación anual (2015-2025)</h2>
-  <canvas id="poblacionChart2" width="800" height="400"></canvas>
-
-
-
-			</div>
+				<!-- div gráfico -->
+				
+				<!-- js gráfico -->
+				
+				<!-- contenidos y explicaciones -->
+						
+  			</div>
 			
 			<div id="section-table">
 			
-			<table border="1" cellpadding="5" cellspacing="0">
-  <thead>
-    <tr>
-      <th>Año</th>
-      <th>Población Total</th>
-      <th>Variación Anual</th>
-      <th>Variación %</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td>2015</td><td>147.146</td><td>-</td><td>-</td></tr>
-    <tr><td>2016</td><td>146.286</td><td>-860</td><td>-0.58%</td></tr>
-    <tr><td>2017</td><td>145.266</td><td>-1.020</td><td>-0.70%</td></tr>
-    <tr><td>2018</td><td>144.436</td><td>-830</td><td>-0.57%</td></tr>
-    <tr><td>2019</td><td>144.248</td><td>-188</td><td>-0.13%</td></tr>
-    <tr><td>2020</td><td>144.825</td><td>+577</td><td>+0.40%</td></tr>
-    <tr><td>2021</td><td>143.549</td><td>-1.276</td><td>-0.88%</td></tr>
-    <tr><td>2022</td><td>142.412</td><td>-1.137</td><td>-0.79%</td></tr>
-    <tr><td>2023</td><td>143.954</td><td>+1.542</td><td>+1.08%</td></tr>
-    <tr><td>2024</td><td>144.866</td><td>+912</td><td>+0.63%</td></tr>
-    <tr><td>2025</td><td>146.094</td><td>+1.228</td><td>+0.85%</td></tr>
-  </tbody>
-</table>
-
+				<!-- tabla / border="1" cellpadding="5" cellspacing="0" -->
 			
 			</div>
-			
-			
 			
 			{% include categories.html %}
             
@@ -82,127 +39,6 @@ La evolución demográfica de Salamanca ciudad en los últimos años muestra un 
 
 {% include footer.html %}
 
-	
-	 <script>
-    const ctx = document.getElementById('poblacionChart').getContext('2d');
-    const poblacionChart = new Chart(ctx, {
-      type: 'line',
-      data: {
-        labels: [
-          '2015', '2016', '2017', '2018', '2019', 
-          '2020', '2021', '2022', '2023', '2024', '2025'
-        ],
-        datasets: [{
-          label: 'Población Total',
-          data: [
-            147146, 146286, 145266, 144436, 144248,
-            144825, 143549, 142412, 143954, 144866, 146094
-          ],
-          borderColor: '#2C5F2D',
-          backgroundColor: 'rgba(196, 209, 196, 0.2)',
-          borderWidth: 2,
-          tension: 0.2,
-          fill: true,
-          pointRadius: 4
-        }]
-      },
-      options: {
-        responsive: true,
-        scales: {
-          y: {
-            beginAtZero: false,
-            title: {
-              display: true,
-              text: 'Población'
-            }
-          },
-          x: {
-            title: {
-              display: true,
-              text: 'Año'
-            }
-          }
-        }
-      }
-    });
-	
-	
-	const ctx2 = document.getElementById('poblacionChart2').getContext('2d');
-    const poblacionChart2 = new Chart(ctx2, {
-      type: 'line',
-      data: {
-        labels: [
-          '2015', '2016', '2017', '2018', '2019', 
-          '2020', '2021', '2022', '2023', '2024', '2025'
-        ],
-        datasets: [
-          {
-            label: 'Población Total',
-            data: [
-              147146, 146286, 145266, 144436, 144248,
-              144825, 143549, 142412, 143954, 144866, 146094
-            ],
-            borderColor: '#2C5F2D',
-          backgroundColor: 'rgba(196, 209, 196, 0.2)',
-            borderWidth: 2,
-            tension: 0.2,
-            fill: true,
-            yAxisID: 'y1',
-            pointRadius: 4
-          },
-          {
-            label: 'Variación % Anual',
-            data: [
-              null, -0.58, -0.70, -0.57, -0.13,
-              0.40, -0.88, -0.79, 1.08, 0.63, 0.85
-            ],
-            borderColor: 'rgba(255, 99, 132, 1)',
-            backgroundColor: 'rgba(255, 99, 132, 0.2)',
-            borderWidth: 2,
-            tension: 0.2,
-            fill: false,
-            yAxisID: 'y2',
-            pointRadius: 4
-          }
-        ]
-      },
-      options: {
-        responsive: true,
-        interaction: {
-          mode: 'index',
-          intersect: false
-        },
-        scales: {
-          y1: {
-            type: 'linear',
-            position: 'left',
-            title: {
-              display: true,
-              text: 'Población'
-            }
-          },
-          y2: {
-            type: 'linear',
-            position: 'right',
-            title: {
-              display: true,
-              text: 'Variación %'
-            },
-            grid: {
-              drawOnChartArea: false
-            }
-          },
-          x: {
-            title: {
-              display: true,
-              text: 'Año'
-            }
-          }
-        }
-      }
-    });
-	
-  </script>
 	
 </body>
 </html>
