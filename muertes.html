@@ -160,6 +160,20 @@ La distribución por género muestra un equilibrio notable: 18.224 hombres falle
 
 <h2>Causas de fallecimientos</h2>
 
+<p>
+
+Las enfermedades del sistema circulatorio constituyen la principal causa de mortalidad en Salamanca, con 1.064 defunciones en 2024, afectando más a las mujeres (564) que a los hombres (500). Dentro de este grupo destacan las enfermedades cerebrovasculares (182 muertes), la insuficiencia cardíaca (175), las enfermedades hipertensivas (162) y el infarto agudo de miocardio (122).</p>
+
+<p>
+
+Los tumores representan la segunda causa principal con 1.034 fallecimientos en 2024, mostrando un patrón inverso al de las enfermedades circulatorias, ya que afectan más a los hombres (596) que a las mujeres (438). El tumor maligno de tráquea, bronquios y pulmón emerge como el más letal con 189 casos (142 hombres y 47 mujeres).</p>
+
+<p>
+
+Las enfermedades del sistema respiratorio ocupan el tercer lugar con 362 defunciones, seguidas por las enfermedades del sistema nervioso (245) y las enfermedades digestivas (207).
+
+</p>
+
 <canvas id="defuncionesChart" width="900" height="500"></canvas>
 
   <script>
@@ -222,7 +236,10 @@ La distribución por género muestra un equilibrio notable: 18.224 hombres falle
     });
   </script>
   
-  <canvas id="defuncionesPie" width="600" height="600"></canvas>
+  
+  <p>Cerca del 50% de las muertes en salmantinos se concentran en enfermedades del aparato circulatorio y tumores.</p>
+  
+  <canvas id="defuncionesPie" width="400" height="400"></canvas>
 
   <script>
     const ctx2 = document.getElementById('defuncionesPie').getContext('2d');
@@ -275,15 +292,7 @@ La distribución por género muestra un equilibrio notable: 18.224 hombres falle
     });
   </script>
 
-<p>
 
-Las enfermedades del sistema circulatorio constituyen la principal causa de mortalidad en Salamanca, con 1.064 defunciones en 2024, afectando más a las mujeres (564) que a los hombres (500). Dentro de este grupo destacan las enfermedades cerebrovasculares (182 muertes), la insuficiencia cardíaca (175), las enfermedades hipertensivas (162) y el infarto agudo de miocardio (122).
-
-Los tumores representan la segunda causa principal con 1.034 fallecimientos en 2024, mostrando un patrón inverso al de las enfermedades circulatorias, ya que afectan más a los hombres (596) que a las mujeres (438). El tumor maligno de tráquea, bronquios y pulmón emerge como el más letal con 189 casos (142 hombres y 47 mujeres).
-
-Las enfermedades del sistema respiratorio ocupan el tercer lugar con 362 defunciones, seguidas por las enfermedades del sistema nervioso (245) y las enfermedades digestivas (207).
-
-</p>
 
 
 <table border="1" cellpadding="5" cellspacing="0">
@@ -309,6 +318,19 @@ Las enfermedades del sistema respiratorio ocupan el tercer lugar con 362 defunci
 
 
 <h2>Análisis de la mortalidad por edad y género</h2>
+
+<p> El análisis etario revela una concentración de la mortalidad en los grupos de mayor edad. Los mayores de 85 años representan el 43% de todas las defunciones en 2024, con 1.681 fallecimientos distribuidos entre el grupo de 85-94 años (1.456) y los mayores de 95 años (225).</p>
+
+<h3>Concentración de la mortalidad:</h3>
+<ul>
+  <li>
+    <strong>Más de 85 años:</strong> Representan el 43% de las defunciones en 2024, con un total de 1.681 fallecimientos.
+    <ul>
+      <li><strong>85-94 años:</strong> 1.456 fallecimientos.</li>
+      <li><strong>Más de 95 años:</strong> 225 fallecimientos.</li>
+    </ul>
+  </li>
+</ul>
 
 <canvas id="piramideChart" width="900" height="600"></canvas>
 
@@ -373,18 +395,15 @@ Las enfermedades del sistema respiratorio ocupan el tercer lugar con 362 defunci
     });
   </script>
 
-<h4>Concentración de la mortalidad:</h4>
-<ul>
-  <li>
-    <strong>Más de 85 años:</strong> Representan el 43% de las defunciones en 2024, con un total de 1.681 fallecimientos.
-    <ul>
-      <li><strong>85-94 años:</strong> 1.456 fallecimientos.</li>
-      <li><strong>Más de 95 años:</strong> 225 fallecimientos.</li>
-    </ul>
-  </li>
-</ul>
+
 
 <h2>Distribución por género:</h2>
+
+<p>La mortalidad se distribuye de manera diferencial por género según la edad. En las franjas más jóvenes (0-44 años), predominan los fallecimientos masculinos, mientras que en los grupos de mayor edad (85+ años) las mujeres presentan mayor mortalidad, con 844 mujeres frente a 612 hombres en el grupo de 85-94 años.</p>
+
+<p>
+La franja de 75-84 años registra 1.089 defunciones, manteniendo un equilibrio casi perfecto entre géneros (547 hombres y 542 mujeres), mientras que el grupo de 65-74 años suma 542 fallecimientos.</p>
+
 <ul>
   <li>
     <strong>Franjas jóvenes (0-44 años):</strong> Predominan los fallecimientos masculinos.
