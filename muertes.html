@@ -267,6 +267,69 @@ Las enfermedades del sistema respiratorio ocupan el tercer lugar con 362 defunci
 
 <h2>Análisis de la mortalidad por edad y género</h2>
 
+<canvas id="piramideChart" width="900" height="600"></canvas>
+
+  <script>
+    const ctx3 = document.getElementById('piramideChart').getContext('2d');
+    const piramideChart = new Chart(ctx3, {
+      type: 'bar',
+      data: {
+        labels: [
+          '0-14 años','15-24 años','25-34 años','35-44 años',
+          '45-54 años','55-64 años','65-74 años','75-84 años',
+          '85-94 años','95+ años'
+        ],
+        datasets: [
+          {
+            label: 'Hombres',
+            data: [-7, -12, -23, -45, -98, -175, -298, -547, -612, -133], // negativo para lado izq
+            backgroundColor: 'rgba(54, 162, 235, 0.7)'
+          },
+          {
+            label: 'Mujeres',
+            data: [5, 6, 12, 33, 67, 123, 244, 542, 844, 92],
+            backgroundColor: 'rgba(255, 99, 132, 0.7)'
+          }
+        ]
+      },
+      options: {
+        indexAxis: 'y',
+        responsive: true,
+        plugins: {
+          tooltip: {
+            callbacks: {
+              label: function(context) {
+                return context.dataset.label + ': ' + Math.abs(context.raw).toLocaleString('es-ES');
+              }
+            }
+          },
+          legend: {
+            position: 'top'
+          }
+        },
+        scales: {
+          x: {
+            title: {
+              display: true,
+              text: 'Número de defunciones'
+            },
+            ticks: {
+              callback: function(value) {
+                return Math.abs(value);
+              }
+            }
+          },
+          y: {
+            title: {
+              display: true,
+              text: 'Grupo de edad'
+            }
+          }
+        }
+      }
+    });
+  </script>
+
 <h4>Concentración de la mortalidad:</h4>
 <ul>
   <li>
@@ -298,6 +361,31 @@ Las enfermedades del sistema respiratorio ocupan el tercer lugar con 362 defunci
     <strong>Grupo de 65-74 años:</strong> Suma 542 fallecimientos.
   </li>
 </ul>
+
+
+<table border="1" cellpadding="5" cellspacing="0">
+  <thead>
+    <tr>
+      <th>Grupo de Edad</th>
+      <th>Total Defunciones</th>
+      <th>Hombres</th>
+      <th>Mujeres</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>0-14 años</td><td>12</td><td>7</td><td>5</td></tr>
+    <tr><td>15-24 años</td><td>18</td><td>12</td><td>6</td></tr>
+    <tr><td>25-34 años</td><td>35</td><td>23</td><td>12</td></tr>
+    <tr><td>35-44 años</td><td>78</td><td>45</td><td>33</td></tr>
+    <tr><td>45-54 años</td><td>165</td><td>98</td><td>67</td></tr>
+    <tr><td>55-64 años</td><td>298</td><td>175</td><td>123</td></tr>
+    <tr><td>65-74 años</td><td>542</td><td>298</td><td>244</td></tr>
+    <tr><td>75-84 años</td><td>1089</td><td>547</td><td>542</td></tr>
+    <tr><td>85-94 años</td><td>1456</td><td>612</td><td>844</td></tr>
+    <tr><td>95+ años</td><td>225</td><td>133</td><td>92</td></tr>
+  </tbody>
+</table>
+
 
 <h2>Conclusiones</h2>
 
