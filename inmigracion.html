@@ -1,0 +1,169 @@
+---
+title: Evolución de la inmigración en Salamanca
+description: Inmigrantes por nacionalidades
+date: 03-09-2025
+folder: Demografia
+permalink: inmigracion
+---
+
+{% include header.html %}
+
+    <section class="featured dataset" id="datos">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">{{ page.title }}</h2>
+                <p class="section-description">{{ page.description }}</p>
+            </div>
+			
+			<div id="section-content">
+			
+				<canvas id="extranjerosChart" width="1000" height="700"></canvas>
+
+  <script>
+    const ctx = document.getElementById('extranjerosChart').getContext('2d');
+    const extranjerosChart = new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: [
+          'Francia','Marruecos','Portugal','Venezuela','Rumanía',
+          'Colombia','Perú','Bolivia','Alemania','R. Dominicana',
+          'China','Argentina','Ecuador','Suiza','Bulgaria',
+          'Cuba','Rusia','Honduras','Italia','Polonia'
+        ],
+        datasets: [
+          {
+            label: 'Personas',
+            data: [1990,1779,1698,1600,1387,1377,992,928,782,676,675,666,660,654,635,510,455,406,400,350],
+            backgroundColor: 'rgba(54, 162, 235, 0.7)'
+          },
+          {
+            label: '% del total extranjeros',
+            data: [8.69,7.77,7.42,6.99,6.06,6.01,4.33,4.05,3.42,2.95,2.95,2.91,2.88,2.86,2.77,2.23,1.99,1.77,1.75,1.53],
+            backgroundColor: 'rgba(255, 99, 132, 0.7)',
+            yAxisID: 'y1'
+          }
+        ]
+      },
+      options: {
+        indexAxis: 'y',
+        responsive: true,
+        interaction: {
+          mode: 'index',
+          intersect: false
+        },
+        plugins: {
+          tooltip: {
+            callbacks: {
+              label: function(context) {
+                return context.dataset.label + ': ' + context.raw.toLocaleString('es-ES');
+              }
+            }
+          },
+          legend: {
+            position: 'top'
+          }
+        },
+        scales: {
+          y: {
+            title: {
+              display: true,
+              text: 'País de origen'
+            }
+          },
+          x: {
+            title: {
+              display: true,
+              text: 'Número de personas'
+            }
+          },
+          y1: {
+            type: 'linear',
+            position: 'top',
+            title: {
+              display: true,
+              text: '% del total de extranjeros'
+            },
+            grid: {
+              drawOnChartArea: false
+            }
+          }
+        }
+      }
+    });
+  </script>
+				
+				<p>La población inmigrante en Salamanca ha experimentado un <strong>crecimiento sostenido y significativo</strong> durante la última década, aumentando desde aproximadamente 16,500 personas en 2015 hasta <strong>22,898 personas en 2025</strong>, lo que representa un incremento del <strong>38.8%</strong>. Este crecimiento ha sido especialmente notable a partir de 2020, consolidándose como una tendencia demográfica clave para la provincia.</p>
+
+<h2>Evolución Demográfica</h2>
+
+<p>La población extranjera en Salamanca ha pasado de representar el <strong>4.9% en 2015</strong> al <strong>6.98% en 2025</strong> sobre el total poblacional. Este crecimiento contrasta con la relativa estabilización de la población total provincial, que se ha mantenido en torno a los 328,000 habitantes.</p>
+
+<p>Durante el período 2020-2025, la inmigración ha sido el <strong>principal motor del crecimiento demográfico</strong> en Salamanca, compensando en gran medida la pérdida de población española, que ha disminuido en 871 personas solo en el primer trimestre de 2025.</p>
+
+<h2>Distribución por Regiones de Origen</h2>
+
+<p><strong>Europa lidera</strong> la inmigración hacia Salamanca, concentrando <strong>8,351 personas (36.5%)</strong> del total de extranjeros. Los países europeos más representados son Francia (1,990 personas), Portugal (1,698) y Rumanía (1,387), beneficiándose de la proximidad geográfica y las facilidades de movilidad dentro de la Unión Europea.</p>
+
+<p><strong>Sudamérica ocupa el segundo lugar</strong> con <strong>6,923 personas (30.2%)</strong>, destacando Venezuela (1,600), Colombia (1,377) y Perú (992) como las principales nacionalidades. Esta región ha mostrado un crecimiento particular en los últimos años, especialmente debido a la crisis económica y política en algunos países de origen.</p>
+
+<p><strong>África representa el 9.8%</strong> con 2,238 personas, siendo Marruecos el país africano más representado con 1,779 residentes, manteniendo una comunidad estable debido a los vínculos históricos y la proximidad geográfica.</p>
+
+<h2>Características del Flujo Migratorio</h2>
+
+<p>La inmigración hacia Salamanca presenta un <strong>perfil diversificado</strong> con <strong>predominancia femenina</strong> (11,852 mujeres frente a 10,699 hombres en 2025). Los grupos de edad más numerosos se concentran entre los <strong>25 y 50 años</strong>, siendo las franjas de 25-29 años (2,658 personas) y 30-34 años (2,585 personas) las más representativas.</p>
+
+<p>El <strong>crecimiento promedio anual</strong> ha sido de aproximadamente <strong>640 personas</strong> por año durante la década analizada, con una <strong>aceleración notable en el período 2023-2025</strong>, donde se registró un aumento de 2,380 nuevos residentes extranjeros.</p>
+						
+  			</div>
+			
+			<div id="section-table">
+			
+				<table border="1" cellpadding="5" cellspacing="0">
+  <thead>
+    <tr>
+      <th>Región</th>
+      <th>País</th>
+      <th>Personas</th>
+      <th>% del total extranjeros</th>
+      <th>% población total</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>Europa</td><td>Francia</td><td>1990</td><td>8.69%</td><td>0.606%</td></tr>
+    <tr><td>África</td><td>Marruecos</td><td>1779</td><td>7.77%</td><td>0.542%</td></tr>
+    <tr><td>Europa</td><td>Portugal</td><td>1698</td><td>7.42%</td><td>0.517%</td></tr>
+    <tr><td>Sudamérica</td><td>Venezuela</td><td>1600</td><td>6.99%</td><td>0.488%</td></tr>
+    <tr><td>Europa</td><td>Rumanía</td><td>1387</td><td>6.06%</td><td>0.423%</td></tr>
+    <tr><td>Sudamérica</td><td>Colombia</td><td>1377</td><td>6.01%</td><td>0.420%</td></tr>
+    <tr><td>Sudamérica</td><td>Perú</td><td>992</td><td>4.33%</td><td>0.302%</td></tr>
+    <tr><td>Sudamérica</td><td>Bolivia</td><td>928</td><td>4.05%</td><td>0.283%</td></tr>
+    <tr><td>Europa</td><td>Alemania</td><td>782</td><td>3.42%</td><td>0.238%</td></tr>
+    <tr><td>Centroamérica y Caribe</td><td>República Dominicana</td><td>676</td><td>2.95%</td><td>0.206%</td></tr>
+    <tr><td>Asia</td><td>China</td><td>675</td><td>2.95%</td><td>0.206%</td></tr>
+    <tr><td>Sudamérica</td><td>Argentina</td><td>666</td><td>2.91%</td><td>0.203%</td></tr>
+    <tr><td>Sudamérica</td><td>Ecuador</td><td>660</td><td>2.88%</td><td>0.201%</td></tr>
+    <tr><td>Europa</td><td>Suiza</td><td>654</td><td>2.86%</td><td>0.199%</td></tr>
+    <tr><td>Europa</td><td>Bulgaria</td><td>635</td><td>2.77%</td><td>0.194%</td></tr>
+    <tr><td>Centroamérica y Caribe</td><td>Cuba</td><td>510</td><td>2.23%</td><td>0.155%</td></tr>
+    <tr><td>Europa</td><td>Rusia</td><td>455</td><td>1.99%</td><td>0.139%</td></tr>
+    <tr><td>Centroamérica y Caribe</td><td>Honduras</td><td>406</td><td>1.77%</td><td>0.124%</td></tr>
+    <tr><td>Europa</td><td>Italia</td><td>400</td><td>1.75%</td><td>0.122%</td></tr>
+    <tr><td>Europa</td><td>Polonia</td><td>350</td><td>1.53%</td><td>0.107%</td></tr>
+  </tbody>
+</table>
+
+			
+			</div>
+			
+			{% include categories.html %}
+            
+        </div>
+    </section>
+
+
+{% include footer.html %}
+
+	
+</body>
+</html>
+
