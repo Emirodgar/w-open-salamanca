@@ -1,5 +1,5 @@
 ---
-title: Fallecimientos (2015-2025)
+title: Fallecimientos 
 description: Evolución y tipos de fallecimientos en Salamanca
 date: 03-09-2025
 folder: Demografia
@@ -21,47 +21,54 @@ permalink: fallecimientos
 			
 			<!-- primer gráfico -->
 						
-  <canvas id="sexoChart" width="900" height="500"></canvas>
+ <canvas id="defuncionesLineChart" width="900" height="500"></canvas>
 
   <script>
-    const ctx2 = document.getElementById('sexoChart').getContext('2d');
-    const sexoChart = new Chart(ctx2, {
+    const ctx = document.getElementById('defuncionesLineChart').getContext('2d');
+    const defuncionesLineChart = new Chart(ctx, {
       type: 'line',
       data: {
         labels: [
-          '2015','2016','2017','2018','2019',
-          '2020','2021','2022','2023','2024','2025'
+          '2015','2016','2017','2018','2019','2020',
+          '2021','2022','2023','2024'
         ],
         datasets: [
           {
-            label: 'Población Total',
-            data: [147146,146286,145266,144436,144248,144825,143549,142412,143954,144866,146094],
-            borderColor: 'rgba(75, 192, 192, 1)',
-            backgroundColor: 'rgba(75, 192, 192, 0.2)',
-            borderWidth: 2,
-            tension: 0.2,
-            fill: false,
-            pointRadius: 4
-          },
-          {
-            label: 'Mujeres',
-            data: [80489,80018,79461,79006,78904,79219,78532,77899,78743,79242,79913],
-            borderColor: 'rgba(255, 99, 132, 1)',
-            backgroundColor: 'rgba(255, 99, 132, 0.2)',
-            borderWidth: 2,
-            tension: 0.2,
-            fill: false,
-            pointRadius: 4
+            label: 'Total Defunciones',
+            data: [3048, 2885, 3045, 2995, 3076, 5231, 3995, 4402, 3770, 3918],
+            borderColor: 'rgba(0, 0, 0, 0.8)',
+            backgroundColor: 'rgba(0, 0, 0, 0.1)',
+            yAxisID: 'y'
           },
           {
             label: 'Hombres',
-            data: [66657,66268,65805,65430,65344,65606,65017,64513,65211,65624,66181],
+            data: [1531, 1436, 1512, 1495, 1536, 2597, 2059, 2182, 1926, 1950],
             borderColor: 'rgba(54, 162, 235, 1)',
             backgroundColor: 'rgba(54, 162, 235, 0.2)',
-            borderWidth: 2,
-            tension: 0.2,
-            fill: false,
-            pointRadius: 4
+            yAxisID: 'y'
+          },
+          {
+            label: 'Mujeres',
+            data: [1517, 1449, 1533, 1500, 1540, 2634, 1936, 2220, 1844, 1968],
+            borderColor: 'rgba(255, 99, 132, 1)',
+            backgroundColor: 'rgba(255, 99, 132, 0.2)',
+            yAxisID: 'y'
+          },
+          {
+            label: 'Variación Anual (%)',
+            data: [null, -5.35, 5.55, -1.64, 2.70, 70.06, -23.63, 10.19, -14.36, 3.93],
+            borderColor: 'rgba(255, 159, 64, 1)',
+            backgroundColor: 'rgba(255, 159, 64, 0.2)',
+            borderDash: [5,5],
+            yAxisID: 'y1'
+          },
+          {
+            label: 'Tasa Masculinidad (%)',
+            data: [50.23, 49.77, 49.66, 49.92, 49.93, 49.65, 51.54, 49.57, 51.09, 49.77],
+            borderColor: 'rgba(75, 192, 192, 1)',
+            backgroundColor: 'rgba(75, 192, 192, 0.2)',
+            borderDash: [3,3],
+            yAxisID: 'y1'
           }
         ]
       },
@@ -78,20 +85,29 @@ permalink: fallecimientos
                 return context.dataset.label + ': ' + context.raw.toLocaleString('es-ES');
               }
             }
+          },
+          legend: {
+            position: 'top'
           }
         },
         scales: {
           y: {
-            beginAtZero: false,
+            type: 'linear',
+            position: 'left',
             title: {
               display: true,
-              text: 'Población'
+              text: 'Número de defunciones'
             }
           },
-          x: {
+          y1: {
+            type: 'linear',
+            position: 'right',
             title: {
               display: true,
-              text: 'Año'
+              text: 'Variación anual (%) / Tasa masculinidad (%)'
+            },
+            grid: {
+              drawOnChartArea: false
             }
           }
         }
@@ -115,13 +131,40 @@ El año 2020 representó el pico histórico más dramático del siglo XXI, regis
 La distribución por género muestra un equilibrio notable: 18.224 hombres fallecidos (50.1%) frente a 18.141 mujeres (49.9%) durante la década analizada. Sin embargo, este balance presenta variaciones anuales significativas, especialmente durante los años de mayor mortalidad como 2020 y 2022, cuando se observó un ligero predominio de fallecimientos femeninos.mia, con ambos grupos recuperando gradualmente los niveles pre-crisis y manteniendo la estructura de género característica de la ciudad.
 </p>
 
+
+<table border="1" cellpadding="5" cellspacing="0">
+  <thead>
+    <tr>
+      <th>Año</th>
+      <th>Total Defunciones</th>
+      <th>Hombres</th>
+      <th>Mujeres</th>
+      <th>Variación Anual (%)</th>
+      <th>Tasa Masculinidad (%)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>2015</td><td>3.048</td><td>1.531</td><td>1.517</td><td>-</td><td>50,23</td></tr>
+    <tr><td>2016</td><td>2.885</td><td>1.436</td><td>1.449</td><td>-5,35</td><td>49,77</td></tr>
+    <tr><td>2017</td><td>3.045</td><td>1.512</td><td>1.533</td><td>5,55</td><td>49,66</td></tr>
+    <tr><td>2018</td><td>2.995</td><td>1.495</td><td>1.500</td><td>-1,64</td><td>49,92</td></tr>
+    <tr><td>2019</td><td>3.076</td><td>1.536</td><td>1.540</td><td>2,70</td><td>49,93</td></tr>
+    <tr><td>2020</td><td>5.231</td><td>2.597</td><td>2.634</td><td>70,06</td><td>49,65</td></tr>
+    <tr><td>2021</td><td>3.995</td><td>2.059</td><td>1.936</td><td>-23,63</td><td>51,54</td></tr>
+    <tr><td>2022</td><td>4.402</td><td>2.182</td><td>2.220</td><td>10,19</td><td>49,57</td></tr>
+    <tr><td>2023</td><td>3.770</td><td>1.926</td><td>1.844</td><td>-14,36</td><td>51,09</td></tr>
+    <tr><td>2024</td><td>3.918</td><td>1.950</td><td>1.968</td><td>3,93</td><td>49,77</td></tr>
+  </tbody>
+</table>
+
+
 <h2>Causas de fallecimientos</h2>
 
 <canvas id="defuncionesChart" width="900" height="500"></canvas>
 
   <script>
-    const ctx = document.getElementById('defuncionesChart').getContext('2d');
-    const defuncionesChart = new Chart(ctx, {
+    const ctx4 = document.getElementById('defuncionesChart').getContext('2d');
+    const defuncionesChart = new Chart(ctx4, {
       type: 'bar',
       data: {
         labels: [
