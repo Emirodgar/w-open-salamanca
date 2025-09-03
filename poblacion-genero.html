@@ -1,0 +1,181 @@
+---
+title: Evolución de la población salmantina por edad y género (2015-2025)
+description: Salmantinos censados entre 2015 y 2025
+date: 13-08-2025
+folder: Demografia
+permalink: poblacion
+---
+
+{% include header.html %}
+
+
+    <!-- Featured Datasets Section -->
+    <section class="featured dataset" id="datos">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">{{ page.title }}</h2>
+                <p class="section-description">{{ page.description }}</p>
+            </div>
+			
+			<div id="section-content">
+						
+  <canvas id="poblacionChart" width="800" height="400"></canvas>
+
+ 
+			<h2>Análisis por género</h2>
+			
+				<p>
+La población salmantina presenta un claro predominio femenino que se mantiene estable en el tiempo. En 2021, las mujeres representaban el 54.7% (78.532 habitantes) frente al 45.3% de hombres (65.017 habitantes). Esta proporción se mantiene en 2025, con aproximadamente 79.913 mujeres y 66.181 hombres.
+</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Año</th>
+      <th>Total</th>
+      <th>Mujeres</th>
+      <th>Hombres</th>
+      <th>% Mujeres</th>
+      <th>% Hombres</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2021</td>
+      <td>143.549</td>
+      <td>78.532</td>
+      <td>65.017</td>
+      <td>54.7%</td>
+      <td>45.3%</td>
+    </tr>
+    <tr>
+      <td>2025</td>
+      <td>146.094</td>
+      <td>79.913</td>
+      <td>66.181</td>
+      <td>54.7%</td>
+      <td>45.3%</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Análisis por edad</h2>
+
+<p>
+El análisis por franjas de edad revela una estructura poblacional envejecida. Los datos de 2021 muestran que el 27.6% de la población tiene 65 años o más (39.668 habitantes), mientras que solo el 20.7% tiene menos de 25 años (29.706 habitantes). Esta distribución evidencia un índice de envejecimiento de 1.3, lo que significa que hay 1.3 personas mayores por cada joven.
+</p>
+
+
+<canvas id="edadChart" width="900" height="500"></canvas>
+
+  <script>
+    const ctx = document.getElementById('edadChart').getContext('2d');
+    const edadChart = new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: [
+          'Menos de 12 años', '12 a 17 años', '18 a 24 años',
+          '25 a 29 años', '30 a 34 años', '35 a 39 años',
+          '40 a 44 años', '45 a 49 años', '50 a 54 años',
+          '55 a 59 años', '60 a 64 años', '65 años o más'
+        ],
+        datasets: [
+          {
+            label: 'Mujeres',
+            data: [6106, 3790, 4725, 3672, 3768, 4327, 5022, 5351, 5841, 5994, 5997, 23939],
+            backgroundColor: 'rgba(255, 99, 132, 0.7)'
+          },
+          {
+            label: 'Hombres',
+            data: [6463, 3881, 4741, 3464, 3550, 3945, 4390, 4507, 4716, 4903, 4728, 15729],
+            backgroundColor: 'rgba(54, 162, 235, 0.7)'
+          }
+        ]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          tooltip: {
+            callbacks: {
+              label: function(context) {
+                return context.dataset.label + ': ' + context.raw.toLocaleString('es-ES');
+              }
+            }
+          }
+        },
+        scales: {
+          x: {
+            stacked: true,
+            title: {
+              display: true,
+              text: 'Franja de edad'
+            }
+          },
+          y: {
+            stacked: true,
+            beginAtZero: true,
+            title: {
+              display: true,
+              text: 'Población'
+            }
+          }
+        }
+      }
+    });
+  </script>
+
+<table border="1" cellpadding="5" cellspacing="0">
+  <thead>
+    <tr>
+      <th>Franja de Edad</th>
+      <th>Total</th>
+      <th>Mujeres</th>
+      <th>Hombres</th>
+      <th>% del Total</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>Menos de 12 años</td><td>12.569</td><td>6.106</td><td>6.463</td><td>8.8%</td></tr>
+    <tr><td>12 a 17 años</td><td>7.671</td><td>3.790</td><td>3.881</td><td>5.3%</td></tr>
+    <tr><td>18 a 24 años</td><td>9.466</td><td>4.725</td><td>4.741</td><td>6.6%</td></tr>
+    <tr><td>25 a 29 años</td><td>7.136</td><td>3.672</td><td>3.464</td><td>5.0%</td></tr>
+    <tr><td>30 a 34 años</td><td>7.318</td><td>3.768</td><td>3.550</td><td>5.1%</td></tr>
+    <tr><td>35 a 39 años</td><td>8.272</td><td>4.327</td><td>3.945</td><td>5.8%</td></tr>
+    <tr><td>40 a 44 años</td><td>9.412</td><td>5.022</td><td>4.390</td><td>6.6%</td></tr>
+    <tr><td>45 a 49 años</td><td>9.858</td><td>5.351</td><td>4.507</td><td>6.9%</td></tr>
+    <tr><td>50 a 54 años</td><td>10.557</td><td>5.841</td><td>4.716</td><td>7.4%</td></tr>
+    <tr><td>55 a 59 años</td><td>10.897</td><td>5.994</td><td>4.903</td><td>7.6%</td></tr>
+    <tr><td>60 a 64 años</td><td>10.725</td><td>5.997</td><td>4.728</td><td>7.5%</td></tr>
+    <tr><td>65 años o más</td><td>39.668</td><td>23.939</td><td>15.729</td><td>27.6%</td></tr>
+  </tbody>
+</table>
+
+
+
+<ul>
+<li><b>Período de descenso (2015-2022)</b>: Salamanca perdió aproximadamente 4.734 habitantes, con el punto más bajo en 2022 con 142.412 residentes. Este descenso se intensificó durante la pandemia de COVID-19, que tuvo un impacto significativo en la dinámica poblacional.</li>
+
+<li><b>Recuperación reciente (2023-2025)</b>: La ciudad ha experimentado un crecimiento sostenido por tercer año consecutivo, sumando 3.682 habitantes en este período. El incremento de 1.228 personas en 2025 representa el mejor dato del padrón desde 2015.</li>
+</ul>
+
+
+			
+			</div>
+			
+			
+			
+			{% include categories.html %}
+            
+        </div>
+    </section>
+
+
+{% include footer.html %}
+
+	
+	 <script>
+  </script>
+	
+</body>
+</html>
+
