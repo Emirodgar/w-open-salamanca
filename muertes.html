@@ -1,9 +1,9 @@
 ---
-title: Evolución de la población por edad y género (2015-2025)
-description: Salmantinos por edad y género
+title: Fallecimientos (2015-2025)
+description: Evolución y tipos de fallecimientos en Salamanca
 date: 03-09-2025
 folder: Demografia
-permalink: poblacion-genero-edad
+permalink: fallecimientos
 ---
 
 {% include header.html %}
@@ -18,6 +18,8 @@ permalink: poblacion-genero-edad
             </div>
 			
 			<div id="section-content">
+			
+			<!-- primer gráfico -->
 						
   <canvas id="sexoChart" width="900" height="500"></canvas>
 
@@ -97,33 +99,214 @@ permalink: poblacion-genero-edad
     });
   </script>
 
+<!-- Explicación -->
  
-			<h2>Análisis por género</h2>
+			<h2>Análisis de fallecimientos</h2>
 			
 				<p>
-La población salmantina presenta un claro predominio femenino que se mantiene estable en el tiempo. En 2021, las mujeres representaban el 54.7% (78.532 habitantes) frente al 45.3% de hombres (65.017 habitantes). Esta proporción se mantiene en 2025, con aproximadamente 79.913 mujeres y 66.181 hombres.
+Durante los últimos diez años, Salamanca ha experimentado 36.365 fallecimientos, con una media anual de 3.636 defunciones. El análisis revela patrones significativos marcados principalmente por el impacto de la pandemia COVID-19.
 </p>
 
-<h3>Cambios netos (2015-2025):</h3>
+<p>
+El año 2020 representó el pico histórico más dramático del siglo XXI, registrando 5.231 muertes, lo que supuso un incremento del 70% respecto al año anterior. Este récord contrasta marcadamente con 2016, que registró el menor número de fallecimientos del período con 2.885 defunciones.
+</p>
+
+<p>
+La distribución por género muestra un equilibrio notable: 18.224 hombres fallecidos (50.1%) frente a 18.141 mujeres (49.9%) durante la década analizada. Sin embargo, este balance presenta variaciones anuales significativas, especialmente durante los años de mayor mortalidad como 2020 y 2022, cuando se observó un ligero predominio de fallecimientos femeninos.mia, con ambos grupos recuperando gradualmente los niveles pre-crisis y manteniendo la estructura de género característica de la ciudad.
+</p>
+
+<h2>Causas de fallecimientos</h2>
+
+<canvas id="defuncionesChart" width="900" height="500"></canvas>
+
+  <script>
+    const ctx = document.getElementById('defuncionesChart').getContext('2d');
+    const defuncionesChart = new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: [
+          'Enfermedades circulatorias',
+          'Tumores',
+          'Enfermedades respiratorias',
+          'Sistema nervioso',
+          'Digestivas',
+          'Otras causas externas',
+          'Otras enfermedades'
+        ],
+        datasets: [
+          {
+            label: 'Hombres',
+            data: [500, 596, 195, 115, 125, 58, 361],
+            backgroundColor: 'rgba(54, 162, 235, 0.7)'
+          },
+          {
+            label: 'Mujeres',
+            data: [564, 438, 167, 130, 82, 35, 552],
+            backgroundColor: 'rgba(255, 99, 132, 0.7)'
+          }
+        ]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          tooltip: {
+            callbacks: {
+              label: function(context) {
+                return context.dataset.label + ': ' + context.raw.toLocaleString('es-ES');
+              }
+            }
+          },
+          legend: {
+            position: 'top'
+          }
+        },
+        scales: {
+          x: {
+            title: {
+              display: true,
+              text: 'Causa de defunción'
+            }
+          },
+          y: {
+            beginAtZero: true,
+            title: {
+              display: true,
+              text: 'Número de defunciones'
+            }
+          }
+        }
+      }
+    });
+  </script>
+  
+  <canvas id="defuncionesPie" width="600" height="600"></canvas>
+
+  <script>
+    const ctx2 = document.getElementById('defuncionesPie').getContext('2d');
+    const defuncionesPie = new Chart(ctx2, {
+      type: 'doughnut',
+      data: {
+        labels: [
+          'Enfermedades circulatorias',
+          'Tumores',
+          'Enfermedades respiratorias',
+          'Sistema nervioso',
+          'Digestivas',
+          'Otras causas externas',
+          'Otras enfermedades'
+        ],
+        datasets: [{
+          label: 'Defunciones totales',
+          data: [1064, 1034, 362, 245, 207, 93, 913],
+          backgroundColor: [
+            'rgba(255, 99, 132, 0.7)',
+            'rgba(54, 162, 235, 0.7)',
+            'rgba(255, 206, 86, 0.7)',
+            'rgba(75, 192, 192, 0.7)',
+            'rgba(153, 102, 255, 0.7)',
+            'rgba(255, 159, 64, 0.7)',
+            'rgba(201, 203, 207, 0.7)'
+          ],
+          borderColor: 'white',
+          borderWidth: 2
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: {
+            position: 'right'
+          },
+          tooltip: {
+            callbacks: {
+              label: function(context) {
+                const value = context.raw.toLocaleString('es-ES');
+                const total = context.chart._metasets[context.datasetIndex].total;
+                const percent = ((context.raw / total) * 100).toFixed(1);
+                return context.label + ': ' + value + ' (' + percent + '%)';
+              }
+            }
+          }
+        }
+      }
+    });
+  </script>
+
+<p>
+
+Las enfermedades del sistema circulatorio constituyen la principal causa de mortalidad en Salamanca, con 1.064 defunciones en 2024, afectando más a las mujeres (564) que a los hombres (500). Dentro de este grupo destacan las enfermedades cerebrovasculares (182 muertes), la insuficiencia cardíaca (175), las enfermedades hipertensivas (162) y el infarto agudo de miocardio (122).
+
+Los tumores representan la segunda causa principal con 1.034 fallecimientos en 2024, mostrando un patrón inverso al de las enfermedades circulatorias, ya que afectan más a los hombres (596) que a las mujeres (438). El tumor maligno de tráquea, bronquios y pulmón emerge como el más letal con 189 casos (142 hombres y 47 mujeres).
+
+Las enfermedades del sistema respiratorio ocupan el tercer lugar con 362 defunciones, seguidas por las enfermedades del sistema nervioso (245) y las enfermedades digestivas (207).
+
+</p>
+
+
+<table border="1" cellpadding="5" cellspacing="0">
+  <thead>
+    <tr>
+      <th>Causa</th>
+      <th>Total Defunciones</th>
+      <th>Hombres</th>
+      <th>Mujeres</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>Enfermedades circulatorias</td><td>1.064</td><td>500</td><td>564</td></tr>
+    <tr><td>Tumores</td><td>1.034</td><td>596</td><td>438</td></tr>
+    <tr><td>Enfermedades respiratorias</td><td>362</td><td>195</td><td>167</td></tr>
+    <tr><td>Enfermedades sistema nervioso</td><td>245</td><td>115</td><td>130</td></tr>
+    <tr><td>Enfermedades digestivas</td><td>207</td><td>125</td><td>82</td></tr>
+    <tr><td>Otras causas externas</td><td>93</td><td>58</td><td>35</td></tr>
+    <tr><td>Otras enfermedades</td><td>913</td><td>361</td><td>552</td></tr>
+  </tbody>
+</table>
+
+
+
+<h2>Análisis de la mortalidad por edad y género</h2>
+
+<h4>Concentración de la mortalidad:</h4>
 <ul>
-  <li>Población total: -1.052 habitantes (-0,7%)</li>
-  <li>Mujeres: -576 habitantes (-0,7%)</li>
-  <li>Hombres: -476 habitantes (-0,7%)</li>
+  <li>
+    <strong>Más de 85 años:</strong> Representan el 43% de las defunciones en 2024, con un total de 1.681 fallecimientos.
+    <ul>
+      <li><strong>85-94 años:</strong> 1.456 fallecimientos.</li>
+      <li><strong>Más de 95 años:</strong> 225 fallecimientos.</li>
+    </ul>
+  </li>
 </ul>
 
-<h3>Períodos críticos:</h3>
+<h2>Distribución por género:</h2>
 <ul>
-  <li>Mayor crecimiento anual: +1.542 habitantes en 2023 (+844 mujeres, +698 hombres)</li>
-  <li>Mayor descenso anual: -1.276 habitantes en 2021 (-687 mujeres, -589 hombres)</li>
+  <li>
+    <strong>Franjas jóvenes (0-44 años):</strong> Predominan los fallecimientos masculinos.
+  </li>
+  <li>
+    <strong>Franjas de mayor edad (85+ años):</strong> Predominan los fallecimientos femeninos.
+    <ul>
+      <li>
+        <strong>85-94 años:</strong> 844 fallecimientos de mujeres frente a 612 de hombres.
+      </li>
+    </ul>
+  </li>
+  <li>
+    <strong>Franja de 75-84 años:</strong> Se registran 1.089 defunciones, con una distribución casi paritaria entre géneros (547 hombres y 542 mujeres).
+  </li>
+  <li>
+    <strong>Grupo de 65-74 años:</strong> Suma 542 fallecimientos.
+  </li>
 </ul>
 
-<h3>Estabilidad estructural:</h3>
-<p>
-  La <strong>proporción por género</strong>se ha mantenido <strong>extraordinariamente estable</strong> durante toda la década, con variaciones menores al 0,1%, lo que evidencia que los factores demográficos (migraciones, natalidad, mortalidad) han afectado por igual a ambos sexos.
-</p>
-<p>
-  La <strong>recuperación demográfica actual</strong> (2023-2025) sugiere una <strong>normalización</strong> de las dinámicas poblacionales tras el impacto excepcional de la pandemia, con ambos grupos recuperando gradualmente los niveles pre-crisis y manteniendo la estructura de género característica de la ciudad.
-</p>
+<h2>Conclusiones</h2>
+
+<p>El análisis detallado de la década muestra que <strong>2022 fue el segundo año más trágico</strong> con 4.402 defunciones, mientras que 2023 experimentó una significativa reducción hasta 3.770 fallecimientos. Los datos de 2024, con 3.918 defunciones, indican <strong>un repunte que supera la media prepandemia</strong> de aproximadamente 3.823 fallecimientos anuales.</p>
+<p>Entre las causas específicas más relevantes, destacan las <strong>enfermedades isquémicas del corazón</strong> como la causa individual más frecuente, seguida de los <strong>accidentes cerebrovasculares</strong> y el <strong>cáncer de bronquios y pulmón</strong>. <strong>Las enfermedades hipertensivas afectan desproporcionadamente a las mujeres</strong> (113 frente a 49 hombres en 2024).</p>
+<p>La provincia de Salamanca ocupa la <strong>cuarta posición en Castilla y León</strong> en número de defunciones totales, precedida por León, Valladolid y Burgos, reflejando tanto su tamaño poblacional como sus características demográficas específicas.</p>
+
+
+<!-- tabla de datos -->
 
 <div id="section-table">
 <table border="1" cellpadding="5" cellspacing="0">
