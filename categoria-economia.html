@@ -1,0 +1,54 @@
+---
+title: Datos sobre demografía
+description: 
+date: 03-09-2025
+folder: 
+permalink: demografia
+---
+
+{% include header.html %}
+
+    <section class="featured dataset" id="datos">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">{{ page.title }}</h2>
+                <p class="section-description">{{ page.description }}</p>
+            </div>
+			
+			<div id="section-content">
+			
+			<div class="datasets-grid" id="featuredDatasets3">
+            
+			{% for page in site.pages %}
+			{% if page.description != null  %}
+				{% if page.folder== "Economia" %}
+				  <div class="dataset-card fade-in-up">
+                <div class="dataset-header">
+                    <h4 class="dataset-title"><a href="{{ page.url }}">{{ page.title }}</a></h4>
+                    <p class="dataset-description">{{ page.description }}.</p>
+                </div>
+                <div class="dataset-meta">
+                    <span class="dataset-category">{{ page.folder }}</span>
+                    <span></span>
+                </div>
+            </div>
+				{% endif %}
+			{% endif %}
+			{% endfor %}
+
+			
+			</div>
+			</div>
+			
+			
+            
+        </div>
+    </section>
+
+
+{% include footer.html %}
+
+	
+</body>
+</html>
+

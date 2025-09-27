@@ -19,9 +19,9 @@ permalink: demografia
 			
 			<div class="datasets-grid" id="featuredDatasets3">
             
-			
-			{% for page in site.pages limit:3 %}
-				{% if page.folder== "Demografia" %}
+			{% for page in site.pages %}
+			{% if page.description != null  %}
+				{% if page.folder== "Finanzas" %}
 				  <div class="dataset-card fade-in-up">
                 <div class="dataset-header">
                     <h4 class="dataset-title"><a href="{{ page.url }}">{{ page.title }}</a></h4>
