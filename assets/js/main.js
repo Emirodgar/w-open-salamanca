@@ -352,6 +352,11 @@ class OpenSalamanca {
         const totalCategories = document.getElementById('totalCategories');
         const totalViews = document.getElementById('totalViews');
         const lastUpdate = document.getElementById('lastUpdate');
+		
+		const totalDatasets = 5
+        const totalCategories = 4
+        const totalViews = 2
+        const lastUpdate = document.getElementById('lastUpdate');
         
         if (totalDatasets) {
             this.animateNumber(totalDatasets, this.datasets.length);
