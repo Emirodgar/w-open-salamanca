@@ -322,7 +322,7 @@ class OpenSalamanca {
                     <span style="font-size: 24px;">${category.icon}</span>
                 </div>
                 <h4 class="category-title">${category.name}</h4>
-                <p class="category-count">${category.count} datasets</p>
+                <p style="display:none;" class="category-count">${category.count} datasets</p>
             </div>
         `).join('');
     }
