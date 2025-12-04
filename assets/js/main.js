@@ -300,7 +300,7 @@ class OpenSalamanca {
         if (!container) return;
         
         container.innerHTML = this.categories.map(category => `
-            <div class="category-card" onclick="window.location.href = '${dataset.url}'">
+            <div class="category-card" onclick="openSalamanca.filterByCategory('${category.name}')">
                 <div class="category-icon">
                     <span style="font-size: 24px;">${category.icon}</span>
                 </div>
@@ -317,7 +317,7 @@ class OpenSalamanca {
         const featured = this.datasets.slice(0, 3);
         
         container.innerHTML = featured.map(dataset => `
-            <div class="dataset-card" onclick="openSalamanca.viewDataset('${dataset.id}')">
+            <div class="dataset-card" onclick="window.location.href = '${dataset.url}'">
                 <div class="dataset-header">
                     <h4 class="dataset-title">${dataset.title}</h4>
                     <p class="dataset-description">${dataset.description}</p>
