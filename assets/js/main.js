@@ -300,7 +300,7 @@ class OpenSalamanca {
         if (!container) return;
         
         container.innerHTML = this.categories.map(category => `
-            <div class="category-card" onclick="openSalamanca.filterByCategory('${category.name}')">
+            <div class="category-card" onclick="window.location.href = '${category.url}'">
                 <div class="category-icon">
                     <span style="font-size: 24px;">${category.icon}</span>
                 </div>
