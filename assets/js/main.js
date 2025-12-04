@@ -271,7 +271,8 @@ class OpenSalamanca {
                 categoryMap.set(category, {
                     name: category,
                     count: 1,
-                    icon: this.getCategoryIcon(category)
+                    icon: this.getCategoryIcon(category),
+					url: this.getCategoryUrl(category)
                 });
             }
         });
@@ -291,6 +292,22 @@ class OpenSalamanca {
             'Deportes': '⚽',
             'Salud': '🏥',
             'Seguridad': '🚔'
+        };
+        return icons[category] || '📋';
+    }
+	
+	    getCategoryUrl(category) {
+        const icons = {
+            'Demografia': 'demografia',
+            'Economia': 'economia',
+            'Educacion': 'educacion',
+            'Finanzas': 'finanzas',
+            'Transporte': 'transporte',
+            'Medio Ambiente': 'medio-ambiente',
+            'Cultura': 'cultura',
+            'Deportes': 'deporte',
+            'Salud': 'salud',
+            'Seguridad': 'seguridad'
         };
         return icons[category] || '📋';
     }
