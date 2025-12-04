@@ -151,6 +151,7 @@ class OpenSalamanca {
                 title: 'Población por Distritos',
                 description: 'Datos demográficos de la población distribuida por distritos de Salamanca.',
                 category: 'Demografia',
+				url: 'demografia',
                 source: 'INE - Instituto Nacional de Estadística',
                 updated: '2025-01-01',
                 license: 'CC BY 4.0',
@@ -179,6 +180,7 @@ class OpenSalamanca {
                 title: 'Evolución Económica Anual',
                 description: 'Indicadores económicos principales de Salamanca en los últimos 5 años.',
                 category: 'Economia',
+				url: 'economia',
                 source: 'Ayuntamiento de Salamanca',
                 updated: '2024-12-31',
                 license: 'CC BY 4.0',
@@ -206,6 +208,7 @@ class OpenSalamanca {
                 title: 'Distribución de Centros Educativos',
                 description: 'Tipos y distribución de centros educativos en la ciudad.',
                 category: 'Educacion',
+				url: 'educacion',
                 source: 'Consejería de Educación',
                 updated: '2024-09-01',
                 license: 'CC BY 4.0',
@@ -232,6 +235,7 @@ class OpenSalamanca {
                 title: 'Presupuesto Municipal 2024',
                 description: 'Distribución del presupuesto municipal por áreas de gasto.',
                 category: 'Finanzas',
+				url: 'finanzas',
                 source: 'Ayuntamiento de Salamanca',
                 updated: '2024-01-15',
                 license: 'CC BY 4.0',
@@ -296,7 +300,7 @@ class OpenSalamanca {
         if (!container) return;
         
         container.innerHTML = this.categories.map(category => `
-            <div class="category-card" onclick="openSalamanca.filterByCategory('${category.name}')">
+            <div class="category-card" onclick="window.location.href = '${dataset.url}'">
                 <div class="category-icon">
                     <span style="font-size: 24px;">${category.icon}</span>
                 </div>
