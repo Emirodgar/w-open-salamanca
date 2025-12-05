@@ -348,15 +348,16 @@ class OpenSalamanca {
     }
     
     updateStats() {
-        var totalDatasets = document.getElementById('totalDatasets');
-        var totalCategories = document.getElementById('totalCategories');
-        var totalViews = document.getElementById('totalViews');
-        var lastUpdate = document.getElementById('lastUpdate');
+        //var totalDatasets = document.getElementById('totalDatasets');
+        //var totalCategories = document.getElementById('totalCategories');
+        //var totalViews = document.getElementById('totalViews');
+        //var lastUpdate = document.getElementById('lastUpdate');
 		
-		totalDatasets = 5
-        totalCategories = 4
-        totalViews = 2
-        lastUpdate = document.getElementById('lastUpdate');
+		const totalDatasets = 5
+        const totalCategories = 4
+        const totalViews = 2
+        const lastUpdate = document.getElementById('lastUpdate');
+
         
         if (totalDatasets) {
             this.animateNumber(totalDatasets, this.datasets.length);
