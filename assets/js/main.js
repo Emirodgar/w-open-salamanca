@@ -353,9 +353,9 @@ class OpenSalamanca {
         //var totalViews = document.getElementById('totalViews');
         //var lastUpdate = document.getElementById('lastUpdate');
 		
-		const totalDatasets = 5
-        const totalCategories = 4
-        const totalViews = 2
+		const totalDatasets = 5;
+        const totalCategories = 4;
+        const totalViews = 2;
         const lastUpdate = document.getElementById('lastUpdate');
 
         
