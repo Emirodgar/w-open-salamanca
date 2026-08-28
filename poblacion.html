@@ -1,13 +1,11 @@
 ---
+layout: default
 title: Evolución de la población
 description: Salmantinos censados entre 2015 y 2025
 date: 13-08-2025
 folder: Demografia
 permalink: poblacion
 ---
-
-{% include header.html %}
-
 
     <!-- Featured Datasets Section -->
     <section class="featured dataset" id="datos">
@@ -79,9 +77,6 @@ La evolución demográfica de Salamanca ciudad en los últimos años muestra un 
     </section>
 
 
-{% include footer.html %}
-
-	
 	 <script>
     const ctx = document.getElementById('poblacionChart').getContext('2d');
     const poblacionChart = new Chart(ctx, {
@@ -200,9 +195,6 @@ La evolución demográfica de Salamanca ciudad en los últimos años muestra un 
         }
       }
     });
-	
+
   </script>
-	
-</body>
-</html>
 

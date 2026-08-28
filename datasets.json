@@ -1,0 +1,15 @@
+---
+permalink: /datasets.json
+---
+[
+{% assign first = true %}{% for p in site.pages %}{% if p.folder and p.folder != "" %}{% unless first %},{% endunless %}{% assign first = false %}
+  {
+    "id": {{ p.permalink | jsonify }},
+    "title": {{ p.title | jsonify }},
+    "description": {{ p.description | jsonify }},
+    "category": {{ p.folder | jsonify }},
+    "url": {{ p.url | jsonify }},
+    "date": {{ p.date | jsonify }}
+  }
+{% endif %}{% endfor %}
+]

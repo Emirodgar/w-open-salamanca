@@ -32,8 +32,13 @@ class OpenSalamanca {
         // Navigation
         document.querySelectorAll('.nav-link').forEach(link => {
             link.addEventListener('click', (e) => {
+                const href = link.getAttribute('href');
+                if (!href || !href.startsWith('#')) {
+                    // External link or full URL (e.g. "Inicio"): let the browser navigate normally
+                    return;
+                }
                 e.preventDefault();
-                const target = link.getAttribute('href').substring(1);
+                const target = href.substring(1);
                 this.scrollToSection(target);
                 this.setActiveNavLink(link);
             });
@@ -134,130 +139,30 @@ class OpenSalamanca {
     
     async loadData() {
         try {
-            // Load sample data (in a real implementation, this would load from XML files)
-            this.datasets = await this.loadSampleDatasets();
+            const response = await fetch('/datasets.json');
+            if (!response.ok) {
+                throw new Error(`HTTP ${response.status}`);
+            }
+            this.datasets = await response.json();
             this.categories = this.extractCategories(this.datasets);
         } catch (error) {
             console.error('Error loading data:', error);
             this.showToast('Error al cargar los datos', 'error');
         }
     }
-    
-    async loadSampleDatasets() {
-        // Sample datasets for demonstration
-        return [
-            {
-                id: 'poblacion-distritos',
-                title: 'Población por Distritos',
-                description: 'Datos demográficos de la población distribuida por distritos de Salamanca.',
-                category: 'Demografia',
-				url: 'demografia',
-                source: 'INE - Instituto Nacional de Estadística',
-                updated: '2025-01-01',
-                license: 'CC BY 4.0',
-                views: 1250,
-                downloads: 89,
-                type: 'chart',
-                visualization: {
-                    type: 'bar',
-                    config: {
-                        title: 'Población por Distritos',
-                        xAxis: 'Distrito',
-                        yAxis: 'Población'
-                    }
-                },
-                data: [
-                    { distrito: 'Centro', poblacion: 15420 },
-                    { distrito: 'San Bernardo', poblacion: 12350 },
-                    { distrito: 'Garrido Norte', poblacion: 18750 },
-                    { distrito: 'Garrido Sur', poblacion: 14200 },
-                    { distrito: 'Universidad', poblacion: 22100 },
-                    { distrito: 'Oeste', poblacion: 16800 }
-                ]
-            },
-            {
-                id: 'economia-anual',
-                title: 'Evolución Económica Anual',
-                description: 'Indicadores económicos principales de Salamanca en los últimos 5 años.',
-                category: 'Economia',
-				url: 'economia',
-                source: 'Ayuntamiento de Salamanca',
-                updated: '2024-12-31',
-                license: 'CC BY 4.0',
-                views: 890,
-                downloads: 67,
-                type: 'chart',
-                visualization: {
-                    type: 'line',
-                    config: {
-                        title: 'Evolución Económica',
-                        xAxis: 'Año',
-                        yAxis: 'PIB (millones €)'
-                    }
-                },
-                data: [
-                    { año: 2020, pib: 2850 },
-                    { año: 2021, pib: 2920 },
-                    { año: 2022, pib: 3100 },
-                    { año: 2023, pib: 3250 },
-                    { año: 2024, pib: 3400 }
-                ]
-            },
-            {
-                id: 'educacion-centros',
-                title: 'Distribución de Centros Educativos',
-                description: 'Tipos y distribución de centros educativos en la ciudad.',
-                category: 'Educacion',
-				url: 'educacion',
-                source: 'Consejería de Educación',
-                updated: '2024-09-01',
-                license: 'CC BY 4.0',
-                views: 650,
-                downloads: 45,
-                type: 'chart',
-                visualization: {
-                    type: 'pie',
-                    config: {
-                        title: 'Centros Educativos por Tipo'
-                    }
-                },
-                data: [
-                    { tipo: 'Infantil', cantidad: 45 },
-                    { tipo: 'Primaria', cantidad: 38 },
-                    { tipo: 'Secundaria', cantidad: 22 },
-                    { tipo: 'Bachillerato', cantidad: 15 },
-                    { tipo: 'FP', cantidad: 12 },
-                    { tipo: 'Universidad', cantidad: 3 }
-                ]
-            },
-            {
-                id: 'finanzas-presupuesto',
-                title: 'Presupuesto Municipal 2024',
-                description: 'Distribución del presupuesto municipal por áreas de gasto.',
-                category: 'Finanzas',
-				url: 'finanzas',
-                source: 'Ayuntamiento de Salamanca',
-                updated: '2024-01-15',
-                license: 'CC BY 4.0',
-                views: 1100,
-                downloads: 78,
-                type: 'chart',
-                visualization: {
-                    type: 'pie',
-                    config: {
-                        title: 'Presupuesto por Áreas'
-                    }
-                },
-                data: [
-                    { area: 'Servicios Sociales', presupuesto: 25000000 },
-                    { area: 'Infraestructuras', presupuesto: 18000000 },
-                    { area: 'Educación', presupuesto: 15000000 },
-                    { area: 'Cultura', presupuesto: 8000000 },
-                    { area: 'Deportes', presupuesto: 5000000 },
-                    { area: 'Otros', presupuesto: 12000000 }
-                ]
-            }
-        ];
+
+    // Parses the "DD-MM-YYYY" front-matter date format used by dataset pages
+    parseDate(dateStr) {
+        if (!dateStr) return null;
+        const parts = dateStr.split('-').map(Number);
+        if (parts.length !== 3 || parts.some(Number.isNaN)) return null;
+        const [day, month, year] = parts;
+        return new Date(year, month - 1, day);
+    }
+
+    formatDate(date) {
+        const months = ['ene', 'feb', 'mar', 'abr', 'may', 'jun', 'jul', 'ago', 'sep', 'oct', 'nov', 'dic'];
+        return `${date.getDate()} ${months[date.getMonth()]} ${date.getFullYear()}`;
     }
     
     extractCategories(datasets) {
@@ -332,8 +237,10 @@ class OpenSalamanca {
         if (!container) return;
         
         const featured = this.datasets.slice(0, 3);
-        
-        container.innerHTML = featured.map(dataset => `
+
+        container.innerHTML = featured.map(dataset => {
+            const parsedDate = this.parseDate(dataset.date);
+            return `
             <div class="dataset-card" onclick="window.location.href = '${dataset.url}'">
                 <div class="dataset-header">
                     <h4 class="dataset-title">${dataset.title}</h4>
@@ -341,10 +248,11 @@ class OpenSalamanca {
                 </div>
                 <div class="dataset-meta">
                     <span class="dataset-category">${dataset.category}</span>
-                    <span>${dataset.views} visualizaciones</span>
+                    <span>${parsedDate ? this.formatDate(parsedDate) : ''}</span>
                 </div>
             </div>
-        `).join('');
+        `;
+        }).join('');
     }
     
     updateStats() {
@@ -352,21 +260,28 @@ class OpenSalamanca {
         const totalCategories = document.getElementById('totalCategories');
         const totalViews = document.getElementById('totalViews');
         const lastUpdate = document.getElementById('lastUpdate');
-		
 
-        
         if (totalDatasets) {
             this.animateNumber(totalDatasets, this.datasets.length);
         }
         if (totalCategories) {
             this.animateNumber(totalCategories, this.categories.length);
         }
+
+        const parsedDates = this.datasets
+            .map(dataset => this.parseDate(dataset.date))
+            .filter(Boolean);
+
         if (totalViews) {
-            const views = this.datasets.reduce((sum, dataset) => sum + dataset.views, 0);
-            this.animateNumber(totalViews, views);
+            const currentYear = new Date().getFullYear();
+            const publishedThisYear = parsedDates.filter(date => date.getFullYear() === currentYear).length;
+            this.animateNumber(totalViews, publishedThisYear);
         }
         if (lastUpdate) {
-            lastUpdate.textContent = 'Hoy';
+            const mostRecent = parsedDates.length
+                ? new Date(Math.max(...parsedDates.map(date => date.getTime())))
+                : null;
+            lastUpdate.textContent = mostRecent ? this.formatDate(mostRecent) : 'Hoy';
         }
     }
     
@@ -573,13 +488,16 @@ class OpenSalamanca {
         if (this.searchResults.length === 0) {
             container.innerHTML = '<div class="search-result-item">No se encontraron resultados</div>';
         } else {
-            container.innerHTML = this.searchResults.map(dataset => `
+            container.innerHTML = this.searchResults.map(dataset => {
+                const parsedDate = this.parseDate(dataset.date);
+                return `
                 <div class="search-result-item" onclick="openSalamanca.viewDataset('${dataset.id}')">
                     <div class="search-result-title">${dataset.title}</div>
                     <div class="search-result-description">${dataset.description}</div>
-                    <div class="search-result-meta">${dataset.category} • ${dataset.views} visualizaciones</div>
+                    <div class="search-result-meta">${dataset.category}${parsedDate ? ' • ' + this.formatDate(parsedDate) : ''}</div>
                 </div>
-            `).join('');
+            `;
+            }).join('');
         }
         
         container.classList.add('show');
@@ -600,9 +518,8 @@ class OpenSalamanca {
     
     viewDataset(datasetId) {
         const dataset = this.datasets.find(d => d.id === datasetId);
-        if (dataset) {
-            this.showToast(`Abriendo dataset: ${dataset.title}`, 'success');
-            // In a real implementation, this would navigate to the dataset detail page
+        if (dataset && dataset.url) {
+            window.location.href = dataset.url;
         }
     }
     
