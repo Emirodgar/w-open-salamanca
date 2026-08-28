@@ -1,0 +1,198 @@
+---
+layout: default
+title: Evolución de la renta per cápita
+description: Renta neta media por persona en Salamanca entre 2015 y 2025
+date: 28-08-2026
+folder: Economia
+permalink: renta-per-capita
+---
+
+    <!-- Featured Datasets Section -->
+    <section class="featured dataset" id="datos">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">{{ page.title }}</h2>
+                <p class="section-description">{{ page.description }}</p>
+            </div>
+			
+			<div id="section-content">
+						
+  <canvas id="rentaChart" width="800" height="400"></canvas>
+
+ 
+			<h2>Análisis de las principales conclusiones</h2>
+			
+				<p>
+La evolución económica de los residentes en Salamanca ciudad en los últimos años muestra un <b>crecimiento sostenido de los ingresos netos tras una breve estancación durante el periodo de pandemia</b>. A pesar del impacto económico global experimentado entre 2020 y 2021, la renta per cápita de los salmantinos ha mantenido una trayectoria de convergencia y aceleración posterior, alcanzando en 2025 un máximo histórico estimado de 16.540 euros netos anuales por persona.</p>
+
+<h3>Tendencias económicas clave</h3>
+<ul>
+<li><b>Impacto de la pandemia y moderación (2019-2021)</b>: Tras años de progresivo ascenso, la renta media por habitante sufrió una leve ralentización en 2020 (+0,31%) y un ajuste moderado en 2021 (-0,73%), motivado por las restricciones de actividad, el peso del sector servicios y el perfil universitario/estudiantil de la capital.</li>
+
+<li><b>Aceleración e impulso post-pandemia (2022-2025)</b>: A partir de 2022 la renta neta por persona experimentó un fuerte dinamismo económico, registrando tasas de variación anual superiores al 5% y 6%. Destaca el ejercicio 2023, donde la renta superó por primera vez los 15.300 euros (+6,12%), consolidando en 2025 un crecimiento del 3,83% interanual.</li>
+</ul>
+
+
+
+  <h2>Evolución de la renta neta media por persona y variación anual (2015-2025)</h2>
+  <canvas id="rentaChart2" width="800" height="400"></canvas>
+
+
+
+			</div>
+			
+			
+			<div id="section-table">
+			<table border="1" cellpadding="5" cellspacing="0">
+			  <thead>
+				<tr>
+				  <th>Año</th>
+				  <th>Renta Neta Media / Hab. (€)</th>
+				  <th>Variación Anual (€)</th>
+				  <th>Variación %</th>
+				</tr>
+			  </thead>
+			  <tbody>
+				<tr><td>2015</td><td>12.180</td><td>-</td><td>-</td></tr>
+				<tr><td>2016</td><td>12.450</td><td>+270</td><td>+2.22%</td></tr>
+				<tr><td>2017</td><td>12.890</td><td>+440</td><td>+3.53%</td></tr>
+				<tr><td>2018</td><td>13.310</td><td>+420</td><td>+3.26%</td></tr>
+				<tr><td>2019</td><td>13.820</td><td>+510</td><td>+3.83%</td></tr>
+				<tr><td>2020</td><td>13.863</td><td>+43</td><td>+0.31%</td></tr>
+				<tr><td>2021</td><td>13.757</td><td>-106</td><td>-0.73%</td></tr>
+				<tr><td>2022</td><td>14.450</td><td>+693</td><td>+5.04%</td></tr>
+				<tr><td>2023</td><td>15.319</td><td>+869</td><td>+6.12%</td></tr>
+				<tr><td>2024</td><td>15.930</td><td>+611</td><td>+3.99%</td></tr>
+				<tr><td>2025</td><td>16.540</td><td>+610</td><td>+3.83%</td></tr>
+			  </tbody>
+			</table>
+
+			</div>
+			
+			
+			
+			{% include categories.html %}
+            
+        </div>
+    </section>
+
+
+	 <script>
+    const ctx = document.getElementById('rentaChart').getContext('2d');
+    const rentaChart = new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: [
+          '2015', '2016', '2017', '2018', '2019', 
+          '2020', '2021', '2022', '2023', '2024', '2025'
+        ],
+        datasets: [{
+          label: 'Renta Neta Media por Persona (€)',
+          data: [
+            12180, 12450, 12890, 13310, 13820,
+            13863, 13757, 14450, 15319, 15930, 16540
+          ],
+          borderColor: '#1E56A0',
+          backgroundColor: 'rgba(30, 86, 160, 0.2)',
+          borderWidth: 2,
+          tension: 0.2,
+          fill: true,
+          pointRadius: 4
+        }]
+      },
+      options: {
+        responsive: true,
+        scales: {
+          y: {
+            beginAtZero: false,
+            title: {
+              display: true,
+              text: 'Euros (€)'
+            }
+          },
+          x: {
+            title: {
+              display: true,
+              text: 'Año'
+            }
+          }
+        }
+      }
+    });
+	
+	
+	const ctx2 = document.getElementById('rentaChart2').getContext('2d');
+    const rentaChart2 = new Chart(ctx2, {
+      type: 'line',
+      data: {
+        labels: [
+          '2015', '2016', '2017', '2018', '2019', 
+          '2020', '2021', '2022', '2023', '2024', '2025'
+        ],
+        datasets: [
+          {
+            label: 'Renta Neta Media por Persona (€)',
+            data: [
+              12180, 12450, 12890, 13310, 13820,
+              13863, 13757, 14450, 15319, 15930, 16540
+            ],
+            borderColor: '#1E56A0',
+            backgroundColor: 'rgba(30, 86, 160, 0.2)',
+            borderWidth: 2,
+            tension: 0.2,
+            fill: true,
+            yAxisID: 'y1',
+            pointRadius: 4
+          },
+          {
+            label: 'Variación % Anual',
+            data: [
+              null, 2.22, 3.53, 3.26, 3.83,
+              0.31, -0.73, 5.04, 6.12, 3.99, 3.83
+            ],
+            borderColor: 'rgba(255, 99, 132, 1)',
+            backgroundColor: 'rgba(255, 99, 132, 0.2)',
+            borderWidth: 2,
+            tension: 0.2,
+            fill: false,
+            yAxisID: 'y2',
+            pointRadius: 4
+          }
+        ]
+      },
+      options: {
+        responsive: true,
+        interaction: {
+          mode: 'index',
+          intersect: false
+        },
+        scales: {
+          y1: {
+            type: 'linear',
+            position: 'left',
+            title: {
+              display: true,
+              text: 'Euros (€)'
+            }
+          },
+          y2: {
+            type: 'linear',
+            position: 'right',
+            title: {
+              display: true,
+              text: 'Variación %'
+            },
+            grid: {
+              drawOnChartArea: false
+            }
+          },
+          x: {
+            title: {
+              display: true,
+              text: 'Año'
+            }
+          }
+        }
+      }
+    });
+  </script>
