@@ -1,0 +1,94 @@
+---
+layout: default
+title: Parkings y aparcamientos
+description: Ubicación y características de los aparcamientos públicos y privados en Salamanca
+date: 28-08-2026
+folder: Movilidad
+permalink: parkings
+---
+
+    <!-- Featured Datasets Section -->
+    <section class="featured dataset" id="datos">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">{{ page.title }}</h2>
+                <p class="section-description">{{ page.description }}</p>
+            </div>
+			
+			<div id="section-content">
+						
+  <!-- Mapa interactivo de Leaflet -->
+  <div id="mapaParkings" style="width: 100%; height: 500px; border-radius: 8px; margin-bottom: 25px;"></div>
+
+ 
+			<h2>Análisis de las principales opciones de estacionamiento</h2>
+			
+				<p>
+La infraestructura de aparcamiento en [Salamanca](http://googleusercontent.com/map_location_reference/0) combina aparcamientos subterráneos de acceso continuo en las inmediaciones del casco histórico con instalaciones de alta capacidad en entornos asistenciales y de servicios.</p>
+
+<h3>Zonas estratégicas de estacionamiento</h3>
+<ul>
+<li><b>Eje Casco Histórico - Centro Commercial</b>: Parkings como [Parking LE MANS - Salamanca Centro](http://googleusercontent.com/map_location_reference/1), [Parking Santa Eulalia Telpark by Empark](http://googleusercontent.com/map_location_reference/2), [Parking Indigo Campillo, Salamanca, Céntrico](http://googleusercontent.com/map_location_reference/3) y [Parking Colón - Plaza Mayor Telpark](http://googleusercontent.com/map_location_reference/4) facilitan el acceso directo a la zona peatonal y monumental de la ciudad.</li>
+
+<li><b>Accesos Sur y Complejo Sanitario</b>: En la zona de entrada desde el río Tormes destaca el [Parking Indigo - Salamanca Reyes de España](http://googleusercontent.com/map_location_reference/5), mientras que la zona sanitaria y universitaria queda cubierta por instalaciones como el [Parking Hospital Universitario](http://googleusercontent.com/map_location_reference/6).</li>
+</ul>
+
+			</div>
+			
+			<div id="section-table">
+			<table border="1" cellpadding="5" cellspacing="0">
+			  <thead>
+				<tr>
+				  <th>Aparcamiento</th>
+				  <th>Ubicación / Dirección</th>
+				  <th>Horario</th>
+				  <th>Valoración Media</th>
+				</tr>
+			  </thead>
+			  <tbody>
+				<tr><td>[Parking LE MANS - Salamanca Centro](http://googleusercontent.com/map_location_reference/7)</td><td>Pl. de los Bandos, 5</td><td>24 horas</td><td>3.7 / 5</td></tr>
+				<tr><td>[Parking Santa Eulalia Telpark by Empark](http://googleusercontent.com/map_location_reference/8)</td><td>Pl. Sta. Eulalia, 1</td><td>24 horas</td><td>3.8 / 5</td></tr>
+				<tr><td>[Parking Indigo Campillo, Salamanca, Céntrico](http://googleusercontent.com/map_location_reference/9)</td><td>Pl. del Campillo</td><td>24 horas</td><td>3.8 / 5</td></tr>
+				<tr><td>[Parking Colón - Plaza Mayor Telpark](http://googleusercontent.com/map_location_reference/10)</td><td>C. Juan de la Fuente, 14</td><td>24 horas</td><td>3.5 / 5</td></tr>
+				<tr><td>[Parking Indigo - Salamanca Reyes de España](http://googleusercontent.com/map_location_reference/11)</td><td>Av. de los Reyes de España</td><td>24 horas</td><td>3.8 / 5</td></tr>
+				<tr><td>[Parking Hospital Universitario](http://googleusercontent.com/map_location_reference/12)</td><td>P.º de la Transición Española</td><td>24 horas</td><td>3.4 / 5</td></tr>
+			  </tbody>
+			</table>
+
+			</div>
+			
+			{% include categories.html %}
+            
+        </div>
+    </section>
+
+	<!-- Hojas de estilo y scripts de Leaflet -->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+	<script>
+    // Inicializar mapa centrado en Salamanca
+    const map = L.map('mapaParkings').setView([40.9635, -5.6640], 14);
+
+    // Capa base CartoDB Positron
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+      attribution: '&copy; OpenStreetMap &copy; CARTO',
+      maxZoom: 19
+    }).addTo(map);
+
+    // Listado de parkings con coordenadas para marcadores
+    const parkings = [
+      { name: 'Parking LE MANS - Salamanca Centro', lat: 40.9664, lng: -5.6642, address: 'Pl. de los Bandos, 5' },
+      { name: 'Parking Santa Eulalia Telpark by Empark', lat: 40.9649, lng: -5.6612, address: 'Pl. Sta. Eulalia, 1' },
+      { name: 'Parking Indigo Campillo, Salamanca, Céntrico', lat: 40.9675, lng: -5.6628, address: 'Pl. del Campillo' },
+      { name: 'Parking Colón - Plaza Mayor Telpark', lat: 40.9635, lng: -5.6625, address: 'C. Juan de la Fuente, 14' },
+      { name: 'Parking Indigo - Salamanca Reyes de España', lat: 40.9576, lng: -5.6645, address: 'Av. de los Reyes de España' },
+      { name: 'Parking Hospital Universitario', lat: 40.9592, lng: -5.6748, address: 'P.º de la Transición Española' }
+    ];
+
+    // Añadir marcadores al mapa
+    parkings.forEach(p => {
+      L.marker([p.lat, p.lng])
+        .bindPopup(`<b>${p.name}</b><br>${p.address}`)
+        .addTo(map);
+    });
+  </script>
