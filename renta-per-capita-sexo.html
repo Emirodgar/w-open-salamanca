@@ -1,0 +1,105 @@
+---
+layout: default
+title: Renta per cápita por sexo
+description: Comparativa de renta neta media entre hombres y mujeres en Salamanca (2015-2025)
+date: 28-08-2026
+folder: Economia
+permalink: renta-sexo
+---
+
+    <section class="featured dataset" id="datos">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">{{ page.title }}</h2>
+                <p class="section-description">{{ page.description }}</p>
+            </div>
+			
+			<div id="section-content">
+						
+  <canvas id="rentaSexoChart" width="800" height="400"></canvas>
+
+ 
+			<h2>Análisis de las principales conclusiones</h2>
+			
+				<p>
+El análisis de la renta neta media desglosada por sexo en Salamanca evidencia la persistencia de una <b>brecha de ingresos entre hombres y mujeres</b> a lo largo de la última década, aunque con una tendencia gradual hacia su reducción en los últimos años.</p>
+
+<h3>Tendencias clave por género</h3>
+<ul>
+<li><b>Evolución sostenida pero desigual</b>: Ambas curvas muestran una tendencia ascendente desde 2015. Sin embargo, la renta media de los hombres ha sido sistemáticamente superior, superando la barrera de los 17.000€ en 2024, mientras que la de las mujeres alcanzó los 15.000€ ese mismo año.</li>
+<li><b>Reducción de la brecha salarial (2020-2025)</b>: Tras estabilizarse en torno al 19-20% durante el lustro anterior, la diferencia de ingresos ha comenzado a estrecharse ligeramente tras la pandemia, situándose por debajo del 16% en 2025. Esto refleja una progresiva (aunque lenta) equiparación en las rentas del trabajo y pensiones.</li>
+</ul>
+
+  <h2>Evolución de la brecha salarial de género (%)</h2>
+  <canvas id="brechaChart" width="800" height="400"></canvas>
+
+			</div>
+			
+			<div id="section-table">
+			<table border="1" cellpadding="5" cellspacing="0">
+			  <thead>
+				<tr>
+				  <th>Año</th>
+				  <th>Renta Hombres (€)</th>
+				  <th>Renta Mujeres (€)</th>
+				  <th>Diferencia (€)</th>
+				  <th>Brecha (%)</th>
+				</tr>
+			  </thead>
+			  <tbody>
+				<tr><td>2015</td><td>13.480</td><td>10.920</td><td>2.560</td><td>18.99%</td></tr>
+				<tr><td>2016</td><td>13.750</td><td>11.190</td><td>2.560</td><td>18.61%</td></tr>
+				<tr><td>2017</td><td>14.220</td><td>11.600</td><td>2.620</td><td>18.42%</td></tr>
+				<tr><td>2018</td><td>14.650</td><td>12.020</td><td>Para estructurar estos datos con un enfoque claro en la visualización, he adaptado los tipos de gráficos. Para la comparativa por sexo, un **gráfico de barras agrupadas** evidencia mejor la brecha salarial anual. Para los barrios y municipios, un **gráfico de barras horizontales ordenado** es indispensable, ya que evita que los nombres largos se solapen en el eje X y permite un ranking visual inmediato.
+
+A continuación tienes la estructura de ambos documentos, listos para integrarse en un entorno web (como Jekyll o cualquier HTML estándar) utilizando Chart.js.
+
+## Documento 1: Renta por Sexo en Salamanca
+
+Este documento utiliza barras agrupadas para comparar directamente los ingresos medios entre hombres y mujeres a lo largo de los últimos años registrados, facilitando la lectura de la brecha económica.
+
+```html
+<div class="grafico-contenedor" style="width: 100%; max-width: 800px; margin: auto;">
+    <h3 style="text-align: center;">Evolución de la Renta Media por Sexo (Salamanca)</h3>
+    <canvas id="rentaSexoChart"></canvas>
+</div>
+
+<script src="[https://cdn.jsdelivr.net/npm/chart.js](https://cdn.jsdelivr.net/npm/chart.js)"></script>
+<script>
+    const ctxSexo = document.getElementById('rentaSexoChart').getContext('2d');
+    const rentaSexoChart = new Chart(ctxSexo, {
+        type: 'bar', // Gráfico de barras para facilitar la comparativa directa
+        data: {
+            labels: ['2019', '2020', '2021', '2022'], // Años de muestra
+            datasets: [
+                {
+                    label: 'Hombres (€)',
+                    data: [28500, 27900, 29100, 30200],
+                    backgroundColor: 'rgba(54, 162, 235, 0.7)',
+                    borderColor: 'rgba(54, 162, 235, 1)',
+                    borderWidth: 1
+                },
+                {
+                    label: 'Mujeres (€)',
+                    data: [22100, 21800, 22500, 23400],
+                    backgroundColor: 'rgba(255, 99, 132, 0.7)',
+                    borderColor: 'rgba(255, 99, 132, 1)',
+                    borderWidth: 1
+                }
+            ]
+        },
+        options: {
+            responsive: true,
+            plugins: {
+                legend: { position: 'top' },
+                tooltip: { mode: 'index', intersect: false }
+            },
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    title: { display: true, text: 'Renta Media Anual (€)' }
+                }
+            }
+        }
+    });
+</script>

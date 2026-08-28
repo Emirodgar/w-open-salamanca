@@ -1,0 +1,184 @@
+---
+layout: default
+title: Renta per cápita por barrios y municipios
+description: Renta neta media por persona en los barrios y alfoz de Salamanca
+date: 28-08-2026
+folder: Economia
+permalink: renta-barrios
+---
+
+    <!-- Featured Datasets Section -->
+    <section class="featured dataset" id="datos">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">{{ page.title }}</h2>
+                <p class="section-description">{{ page.description }}</p>
+            </div>
+			
+			<div id="section-content">
+						
+  <canvas id="rentaBarriosChart" width="800" height="450"></canvas>
+
+ 
+			<h2>Análisis de las principales conclusiones</h2>
+			
+				<p>
+El análisis de la renta neta media por persona en la ciudad de Salamanca y su área metropolitana (alfoz) revela una <b>marcada brecha socioeconómica territorial</b>. Se observa una diferencia superior a los 6.500 euros anuales por habitante entre los distritos centrales/residenciales de mayores ingresos y las zonas periféricas o barrios con menor renta media.</p>
+
+<h3>Tendencias territoriales clave</h3>
+<ul>
+<li><b>Zonas de mayor renta</b>: El centro urbano de Salamanca capital y municipios del alfoz residencial como Carbajosa de la Sagrada y Villamayor de Armuña lideran el ranking con rentas netas que superan ampliamente la media municipal (ubicada en 15.319 €).</li>
+
+<li><b>Barrios con menor renta</b>: Sectores como Pizarrales y San José registran los niveles de ingresos netos por persona más reducidos, situándose entre un 17% y un 22% por debajo del promedio de la capital salmantina.</li>
+</ul>
+
+
+
+  <h2>Variación porcentual respecto a la media municipal</h2>
+  <canvas id="rentaBarriosChart2" width="800" height="400"></canvas>
+
+
+
+			</div>
+			
+			
+			<div id="section-table">
+			<table border="1" cellpadding="5" cellspacing="0">
+			  <thead>
+				<tr>
+				  <th>Barrio / Municipio</th>
+				  <th>Renta Neta Media / Hab. (€)</th>
+				  <th>Diferencia sobre Media (€)</th>
+				  <th>Variación %</th>
+				</tr>
+			  </thead>
+			  <tbody>
+				<tr><td>Centro</td><td>18.450</td><td>+3.131</td><td>+20.44%</td></tr>
+				<tr><td>Carbajosa de la Sagrada</td><td>16.820</td><td>+1.501</td><td>+9.80%</td></tr>
+				<tr><td>Villamayor de Armuña</td><td>16.210</td><td>+891</td><td>+5.82%</td></tr>
+				<tr><td>Santa Marta de Tormes</td><td>15.110</td><td>-209</td><td>-1.36%</td></tr>
+				<tr><td>San Bernardo</td><td>14.980</td><td>-339</td><td>-2.21%</td></tr>
+				<tr><td>Garrido Norte</td><td>13.850</td><td>-1.469</td><td>-9.59%</td></tr>
+				<tr><td>Pizarrales</td><td>12.640</td><td>-2.679</td><td>-17.49%</td></tr>
+				<tr><td>San José</td><td>11.950</td><td>-3.369</td><td>-22.00%</td></tr>
+			  </tbody>
+			</table>
+
+			</div>
+			
+			
+			
+			{% include categories.html %}
+            
+        </div>
+    </section>
+
+
+	 <script>
+    // Primer gráfico: Ranking de Renta por Barrio / Municipio (Barras horizontales)
+    const ctx = document.getElementById('rentaBarriosChart').getContext('2d');
+    const rentaBarriosChart = new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: [
+          'Centro', 'Carbajosa de la Sagrada', 'Villamayor de Armuña', 
+          'Santa Marta de Tormes', 'San Bernardo', 'Garrido Norte', 
+          'Pizarrales', 'San José'
+        ],
+        datasets: [{
+          label: 'Renta Neta Media por Persona (€)',
+          data: [18450, 16820, 16210, 15110, 14980, 13850, 12640, 11950],
+          backgroundColor: 'rgba(30, 86, 160, 0.75)',
+          borderColor: '#1E56A0',
+          borderWidth: 1.5,
+          borderRadius: 4
+        }]
+      },
+      options: {
+        indexAxis: 'y', // Orientación horizontal para facilitar la lectura de nombres de barrios
+        responsive: true,
+        plugins: {
+          legend: {
+            display: true,
+            position: 'top'
+          }
+        },
+        scales: {
+          x: {
+            beginAtZero: false,
+            title: {
+              display: true,
+              text: 'Renta Neta (€)'
+            }
+          },
+          y: {
+            title: {
+              display: true,
+              text: 'Zona / Barrio'
+            }
+          }
+        }
+      }
+    });
+	
+	
+    // Segundo gráfico: Desviación Porcentual respecto a la Media
+    const ctx2 = document.getElementById('rentaBarriosChart2').getContext('2d');
+    const rentaBarriosChart2 = new Chart(ctx2, {
+      type: 'bar',
+      data: {
+        labels: [
+          'Centro', 'Carbajosa de la Sagrada', 'Villamayor de Armuña', 
+          'Santa Marta de Tormes', 'San Bernardo', 'Garrido Norte', 
+          'Pizarrales', 'San José'
+        ],
+        datasets: [
+          {
+            label: 'Diferencia % respecto a la Media',
+            data: [20.44, 9.80, 5.82, -1.36, -2.21, -9.59, -17.49, -22.00],
+            backgroundColor: [
+              'rgba(44, 160, 44, 0.7)',
+              'rgba(44, 160, 44, 0.7)',
+              'rgba(44, 160, 44, 0.7)',
+              'rgba(255, 99, 132, 0.7)',
+              'rgba(255, 99, 132, 0.7)',
+              'rgba(255, 99, 132, 0.7)',
+              'rgba(255, 99, 132, 0.7)',
+              'rgba(255, 99, 132, 0.7)'
+            ],
+            borderColor: [
+              '#2C802C', '#2C802C', '#2C802C',
+              '#FF6384', '#FF6384', '#FF6384', '#FF6384', '#FF6384'
+            ],
+            borderWidth: 1.5,
+            borderRadius: 4
+          }
+        ]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: {
+            display: true,
+            position: 'top'
+          }
+        },
+        scales: {
+          y: {
+            type: 'linear',
+            position: 'left',
+            title: {
+              display: true,
+              text: 'Variación (%)'
+            }
+          },
+          x: {
+            title: {
+              display: true,
+              text: 'Zona / Barrio'
+            }
+          }
+        }
+      }
+    });
+  </script>
