@@ -73,8 +73,9 @@ La infraestructura ciclista de Salamanca supera los 100 kilómetros de vías seg
     // 1. Inicializar mapa Leaflet centrado en Salamanca
     const mapBici = L.map('mapaBici').setView([40.9640, -5.6650], 14);
 
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/light_all/{z}/{x}/{y}{r}.png?key=cb1_2izw_1_55d93b51ded1dcecfa044181', {
       attribution: '&copy; OpenStreetMap &copy; CARTO',
+      subdomains: 'abcd',
       maxZoom: 19
     }).addTo(mapBici);
 

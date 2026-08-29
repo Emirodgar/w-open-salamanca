@@ -72,8 +72,9 @@ La presencia de la Universidad de Salamanca (USAL) y la Universidad Pontificia d
     // 1. Mapa de nodos universitarios
     const mapUniv = L.map('mapaUniv').setView([40.9660, -5.6680], 14);
 
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/light_all/{z}/{x}/{y}{r}.png?key=cb1_2izw_1_55d93b51ded1dcecfa044181', {
       attribution: '&copy; OpenStreetMap &copy; CARTO',
+      subdomains: 'abcd',
       maxZoom: 19
     }).addTo(mapUniv);
 

@@ -97,8 +97,9 @@ Las futuras actuaciones en materia de aparcamiento en la capital salmantina est√
     const map = L.map('mapaParkings').setView([40.9635, -5.6640], 14);
 
     // Capa base CartoDB Positron
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/light_all/{z}/{x}/{y}{r}.png?key=cb1_2izw_1_55d93b51ded1dcecfa044181', {
       attribution: '&copy; OpenStreetMap &copy; CARTO',
+      subdomains: 'abcd',
       maxZoom: 19
     }).addTo(map);
 

@@ -71,8 +71,9 @@ Salamanca cuenta con más de **2,5 millones de metros cuadrados de zonas verdes*
     // 1. Inicializar mapa Leaflet
     const mapVerde = L.map('mapaVerde').setView([40.9630, -5.6630], 14);
 
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/light_all/{z}/{x}/{y}{r}.png?key=cb1_2izw_1_55d93b51ded1dcecfa044181', {
       attribution: '&copy; OpenStreetMap &copy; CARTO',
+      subdomains: 'abcd',
       maxZoom: 19
     }).addTo(mapVerde);
 

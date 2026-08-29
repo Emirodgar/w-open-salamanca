@@ -73,8 +73,9 @@ La distribución de las Viviendas de Uso Turístico (VUT) registradas en Salaman
     // 1. Inicializar mapa Leaflet centrado en el casco histórico de Salamanca
     const mapVut = L.map('mapaVut').setView([40.9645, -5.6640], 14);
 
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/light_all/{z}/{x}/{y}{r}.png?key=cb1_2izw_1_55d93b51ded1dcecfa044181', {
       attribution: '&copy; OpenStreetMap &copy; CARTO',
+      subdomains: 'abcd',
       maxZoom: 19
     }).addTo(mapVut);
 

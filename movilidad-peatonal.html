@@ -11,7 +11,7 @@ permalink: movilidad-ciclable-peatonal
     <section class="featured dataset" id="datos">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">{{ page.title }}</h2>
+                <h1 class="section-title">{{ page.title }}</h1>
                 <p class="section-description">{{ page.description }}</p>
             </div>
 			
@@ -71,8 +71,9 @@ Salamanca cuenta con más de **45 kilómetros de vías ciclables conectadas** qu
     // 1. Inicializar mapa de movilidad activa
     const mapBici = L.map('mapaBici').setView([40.9650, -5.6640], 14);
 
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/light_all/{z}/{x}/{y}{r}.png?key=cb1_2izw_1_55d93b51ded1dcecfa044181', {
       attribution: '&copy; OpenStreetMap &copy; CARTO',
+      subdomains: 'abcd',
       maxZoom: 19
     }).addTo(mapBici);
 
