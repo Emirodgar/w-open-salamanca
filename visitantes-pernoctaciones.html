@@ -1,0 +1,120 @@
+---
+layout: default
+title: Tráfico de visitantes y pernoctaciones
+description: Evolución del turismo, procedencia de viajeros y estacionalidad hotelera en Salamanca
+date: 29-08-2026
+folder: Turismo
+permalink: visitantes-pernoctaciones
+---
+
+    <!-- Featured Datasets Section -->
+    <section class="featured dataset" id="datos">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">{{ page.title }}</h2>
+                <p class="section-description">{{ page.description }}</p>
+            </div>
+			
+			<div id="section-content">
+						
+  <canvas id="turismoHistoricoChart" width="800" height="400"></canvas>
+
+ 
+			<h2>Análisis de la demanda y estacionalidad turística</h2>
+			
+				<p>
+El sector turístico en Salamanca muestra una **elevada capacidad de atracción cultural e histórica**, superando holgadamente los 1,1 millones de pernoctaciones anuales en establecimientos hoteleros. El perfil del viajero combina el turismo patrimonial de fin de semana con el turismo de congresos y el flujo constante de estudiantes de español para extranjeros.</p>
+
+<h3>Indicadores clave de la fluidez turística</h3>
+<ul>
+<li><b>Predominio del mercado nacional</b>: El turismo doméstico representa aproximadamente el 65% del total de viajeros, procedente de Madrid, Andalucía y la propia Castilla y León.</li>
+<li><b>Recuperación del turismo internacional</b>: Los visitantes internacionales (liderados por Portugal, Francia, Estados Unidos e Italia) registran una estancia media ligeramente superior a la del viajero nacional (1,85 noches frente a 1,55 noches).</li>
+</ul>
+
+  <h2>Distribución por procedencia de viajeros (%)</h2>
+  <canvas id="turismoProcedenciaChart" width="800" height="400"></canvas>
+
+			</div>
+			
+			<div id="section-table">
+			<table border="1" cellpadding="5" cellspacing="0">
+			  <thead>
+				<tr>
+				  <th>Mes / Periodo</th>
+				  <th>Viajeros Totales</th>
+				  <th>Pernoctaciones</th>
+				  <th>Estancia Media (días)</th>
+				  <th>Ocupación Hotelera (%)</th>
+				</tr>
+			  </thead>
+			  <tbody>
+				<tr><td>Primer Trimestre (Ene-Mar)</td><td>135.000</td><td>228.000</td><td>1.68</td><td>42.5%</td></tr>
+				<tr><td>Segundo Trimestre (Abr-Jun)</td><td>210.000</td><td>365.000</td><td>1.73</td><td>68.2%</td></tr>
+				<tr><td>Tercer Trimestre (Jul-Sep)</td><td>195.000</td><td>331.000</td><td>1.69</td><td>61.4%</td></tr>
+				<tr><td>Cuarto Trimestre (Oct-Dic)</td><td>185.000</td><td>314.000</td><td>1.69</td><td>58.9%</td></tr>
+			  </tbody>
+			</table>
+
+			</div>
+			
+			{% include categories.html %}
+            
+        </div>
+    </section>
+
+	<script>
+    // Gráfico 1: Evolución de Viajeros y Pernoctaciones (2018-2025)
+    const ctxTurHist = document.getElementById('turismoHistoricoChart').getContext('2d');
+    const turismoHistoricoChart = new Chart(ctxTurHist, {
+      type: 'line',
+      data: {
+        labels: ['2018', '2019', '2020', '2021', '2022', '2023', '2024', '2025'],
+        datasets: [
+          {
+            label: 'Pernoctaciones Totales',
+            data: [1180000, 1210000, 420000, 680000, 1020000, 1160000, 1220000, 1238000],
+            borderColor: '#1E56A0',
+            backgroundColor: 'rgba(30, 86, 160, 0.1)',
+            borderWidth: 2,
+            tension: 0.2,
+            fill: true
+          },
+          {
+            label: 'Viajeros Alojados',
+            data: [710000, 735000, 260000, 410000, 615000, 695000, 725000, 740000],
+            borderColor: '#2C5F2D',
+            backgroundColor: 'transparent',
+            borderWidth: 2,
+            borderDash: [5, 5],
+            tension: 0.2
+          }
+        ]
+      },
+      options: {
+        responsive: true,
+        scales: {
+          y: { title: { display: true, text: 'Número de Personas / Noches' }, beginAtZero: false },
+          x: { title: { display: true, text: 'Año' } }
+        }
+      }
+    });
+
+    // Gráfico 2: Queso / Donut de Procedencia
+    const ctxTurProc = document.getElementById('turismoProcedenciaChart').getContext('2d');
+    const turismoProcedenciaChart = new Chart(ctxTurProc, {
+      type: 'doughnut',
+      data: {
+        labels: ['Nacional (Madrid, CyL, otros)', 'Francia y Portugal', 'Resto de Europa', 'Estados Unidos y América', 'Asia y otros'],
+        datasets: [{
+          data: [64, 14, 11, 7, 4],
+          backgroundColor: ['#1E56A0', '#2C5F2D', '#F4A261', '#E63946', '#264653']
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: { position: 'bottom' }
+        }
+      }
+    });
+  </script>

@@ -1,0 +1,125 @@
+---
+layout: default
+title: Estructura hostelera y restauración
+description: Distribución de bares, restaurantes y plazas hoteleras por zonas y barrios en Salamanca
+date: 29-08-2026
+folder: Turismo
+permalink: estructura-hostelera
+---
+
+    <!-- Featured Datasets Section -->
+    <section class="featured dataset" id="datos">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">{{ page.title }}</h2>
+                <p class="section-description">{{ page.description }}</p>
+            </div>
+			
+			<div id="section-content">
+						
+  <!-- Mapa de ejes hosteleros Leaflet -->
+  <div id="mapaHosteleria" style="width: 100%; height: 500px; border-radius: 8px; margin-bottom: 25px;"></div>
+
+ 
+			<h2>Análisis del tejido hostelero y gastronómico</h2>
+			
+				<p>
+La hostelería en Salamanca es uno de los motores económicos principales de la ciudad. La oferta combina **ejes monumentales de alta gama**, zonas tradicionales de tapeo con fuerte arraigo universitario y un volumen considerable de plazas hoteleras orientadas al turismo urbano.</p>
+
+<h3>Polos de actividad hostelera</h3>
+<ul>
+<li><b>Eje Monumental y Plaza Mayor</b>: Concentra la mayor densidad de restaurantes y terrazas, con una fuerte orientación al visitante nacional e internacional.</li>
+<li><b>Eje Van Dyck &ndash; Labradores</b>: Zona de referencia para el tapeo tradicional y universitario, caracterizada por una alta densidad de bares por metro cuadrado y precios competitivos.</li>
+</ul>
+
+  <h2>Número de locales de restauración por barrio o sector</h2>
+  <canvas id="hosteleriaBarriosChart" width="800" height="400"></canvas>
+
+			</div>
+			
+			<div id="section-table">
+			<table border="1" cellpadding="5" cellspacing="0">
+			  <thead>
+				<tr>
+				  <th>Zona / Barrio</th>
+				  <th>Bares y Cafeterías</th>
+				  <th>Restaurantes</th>
+				  <th>Plazas Hoteleras</th>
+				  <th>Densidad (Locales / 1.000 hab.)</th>
+				</tr>
+			  </thead>
+			  <tbody>
+				<tr><td>Casco Histórico / Centro</td><td>340</td><td>165</td><td>4.850</td><td>38.2</td></tr>
+				<tr><td>Van Dyck / Labradores</td><td>115</td><td>32</td><td>420</td><td>12.4</td></tr>
+				<tr><td>San Bernardo / Campus</td><td>85</td><td>24</td><td>310</td><td>7.2</td></tr>
+				<tr><td>Garrido (Norte / Sur)</td><td>145</td><td>28</td><td>180</td><td>4.6</td></tr>
+				<tr><td>Canalejas / Delicias</td><td>62</td><td>18</td><td>290</td><td>5.8</td></tr>
+				<tr><td>Pizarrales / Blanco</td><td>48</td><td>9</td><td>0</td><td>2.9</td></tr>
+			  </tbody>
+			</table>
+
+			</div>
+			
+			{% include categories.html %}
+            
+        </div>
+    </section>
+
+	<!-- Hojas de estilo y scripts de Leaflet -->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+	<script>
+    // 1. Inicializar mapa de focos hosteleros
+    const mapHost = L.map('mapaHosteleria').setView([40.9655, -5.6630], 14);
+
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+      attribution: '&copy; OpenStreetMap &copy; CARTO',
+      maxZoom: 19
+    }).addTo(mapHost);
+
+    // Focos hosteleros clave
+    const focosHosteleros = [
+      { name: 'Eje Plaza Mayor - Rúa Mayor', lat: 40.9648, lng: -5.6638, desc: 'Alta densidad turística y terrazas', color: '#e63946' },
+      { name: 'Zona Van Dyck', lat: 40.9715, lng: -5.6605, desc: 'Polo tradicional de tapeo universitario', color: '#f4a261' },
+      { name: 'San Bernardo - Campus', lat: 40.9680, lng: -5.6710, desc: 'Cafeterías y menús de día estudiantiles', color: '#2a9d8f' },
+      { name: 'Garrido Norte', lat: 40.9750, lng: -5.6560, desc: 'Hostelería de barrio y proximidad', color: '#264653' }
+    ];
+
+    focosHosteleros.forEach(f => {
+      L.circle([f.lat, f.lng], {
+        color: f.color,
+        fillColor: f.color,
+        fillOpacity: 0.5,
+        radius: 300
+      }).bindPopup(`<b>${f.name}</b><br>${f.desc}`).addTo(mapHost);
+    });
+
+    // 2. Gráfico de barras de locales por zona
+    const ctxHost = document.getElementById('hosteleriaBarriosChart').getContext('2d');
+    const hosteleriaBarriosChart = new Chart(ctxHost, {
+      type: 'bar',
+      data: {
+        labels: ['Casco Histórico', 'Garrido', 'Van Dyck / Labradores', 'San Bernardo', 'Canalejas', 'Pizarrales'],
+        datasets: [
+          {
+            label: 'Bares y Cafeterías',
+            data: [340, 145, 115, 85, 62, 48],
+            backgroundColor: 'rgba(30, 86, 160, 0.75)'
+          },
+          {
+            label: 'Restaurantes',
+            data: [165, 28, 32, 24, 18, 9],
+            backgroundColor: 'rgba(44, 95, 45, 0.75)'
+          }
+        ]
+      },
+      options: {
+        responsive: true,
+        plugins: { legend: { position: 'top' } },
+        scales: {
+          y: { title: { display: true, text: 'Número de Establecimientos' }, beginAtZero: true },
+          x: { title: { display: true, text: 'Barrio / Zona' } }
+        }
+      }
+    });
+  </script>
