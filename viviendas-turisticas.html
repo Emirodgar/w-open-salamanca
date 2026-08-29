@@ -1,0 +1,125 @@
+---
+layout: default
+title: Viviendas de uso turístico (VUT)
+description: Distribución y densidad de pisos turísticos autorizados en Salamanca
+date: 29-08-2026
+folder: Turismo
+permalink: viviendas-turisticas
+---
+
+    <!-- Featured Datasets Section -->
+    <section class="featured dataset" id="datos">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">{{ page.title }}</h2>
+                <p class="section-description">{{ page.description }}</p>
+            </div>
+			
+			<div id="section-content">
+						
+  <!-- Mapa de densidad de capas Leaflet -->
+  <div id="mapaVut" style="width: 100%; height: 500px; border-radius: 8px; margin-bottom: 25px;"></div>
+
+ 
+			<h2>Análisis de la oferta de alojamiento turístico</h2>
+			
+				<p>
+La distribución de las Viviendas de Uso Turístico (VUT) registradas en Salamanca refleja una <b>alta concentración espacial en el casco histórico</b> y sus accesos inmediatos. Esta centralización contrasta significativamente con el resto de distritos residenciales de la ciudad.</p>
+
+<h3>Hallazgos clave sobre el parque turístico</h3>
+<ul>
+<li><b>Concentración en el Casco Antiguo</b>: Más del 70% de las plazas de VUT inscritas en el registro oficial autonómico se localizan dentro del perímetro delimitado por el centro histórico y el entorno de la Plaza Mayor.</li>
+
+<li><b>Impacto en la densidad residencial</b>: En barrios céntricos, la proporción de plazas turísticas alcanza ratios de hasta 42,8 VUT por cada 1.000 habitantes, mientras que en barrios perimetrales como Garrido o Pizarrales no alcanza las 2 VUT por cada 1.000 habitantes.</li>
+</ul>
+
+  <h2>Número de VUT registradas por zonas de la ciudad</h2>
+  <canvas id="vutChart" width="800" height="400"></canvas>
+
+			</div>
+			
+			<div id="section-table">
+			<table border="1" cellpadding="5" cellspacing="0">
+			  <thead>
+				<tr>
+				  <th>Zona / Barrio</th>
+				  <th>VUT Registradas</th>
+				  <th>% sobre Total</th>
+				  <th>Densidad (VUT / 1.000 hab.)</th>
+				</tr>
+			  </thead>
+			  <tbody>
+				<tr><td>Casco Histórico / Centro</td><td>685</td><td>71.4%</td><td>42.8</td></tr>
+				<tr><td>San Bernardo / Campus</td><td>82</td><td>8.5%</td><td>5.8</td></tr>
+				<tr><td>Canalejas / Delicias</td><td>54</td><td>5.6%</td><td>3.9</td></tr>
+				<tr><td>Garrido (Norte / Sur)</td><td>41</td><td>4.3%</td><td>1.1</td></tr>
+				<tr><td>Prosperidad / Universidad Laboral</td><td>35</td><td>3.6%</td><td>2.9</td></tr>
+				<tr><td>Pizarrales / Blanco</td><td>18</td><td>1.9%</td><td>0.9</td></tr>
+				<tr><td>Otros distritos / Alfoz cercano</td><td>44</td><td>4.7%</td><td>1.4</td></tr>
+			  </tbody>
+			</table>
+
+			</div>
+			
+			{% include categories.html %}
+            
+        </div>
+    </section>
+
+	<!-- Hojas de estilo y scripts de Leaflet y Chart.js -->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+	<script>
+    // 1. Inicializar mapa Leaflet centrado en el casco histórico de Salamanca
+    const mapVut = L.map('mapaVut').setView([40.9645, -5.6640], 14);
+
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+      attribution: '&copy; OpenStreetMap &copy; CARTO',
+      maxZoom: 19
+    }).addTo(mapVut);
+
+    // Representación de densidad VUT mediante círculos proporcionales
+    const zonasVut = [
+      { name: 'Casco Histórico - Plaza Mayor', lat: 40.9650, lng: -5.6641, count: 685, radius: 450, color: '#e63946' },
+      { name: 'San Bernardo', lat: 40.9680, lng: -5.6720, count: 82, radius: 250, color: '#f4a261' },
+      { name: 'Canalejas', lat: 40.9620, lng: -5.6570, count: 54, radius: 200, color: '#e9c46a' },
+      { name: 'Garrido Norte', lat: 40.9740, lng: -5.6580, count: 41, radius: 180, color: '#2a9d8f' },
+      { name: 'Pizarrales', lat: 40.9730, lng: -5.6760, count: 18, radius: 120, color: '#264653' }
+    ];
+
+    zonasVut.forEach(z => {
+      L.circle([z.lat, z.lng], {
+        color: z.color,
+        fillColor: z.color,
+        fillOpacity: 0.6,
+        radius: z.radius
+      }).bindPopup(`<b>${z.name}</b><br>Pisos Turísticos: ${z.count}`).addTo(mapVut);
+    });
+
+    // 2. Gráfico de barras de distribución de VUT
+    const ctxVut = document.getElementById('vutChart').getContext('2d');
+    const vutChart = new Chart(ctxVut, {
+      type: 'bar',
+      data: {
+        labels: ['Centro/Casco Histórico', 'San Bernardo', 'Canalejas', 'Garrido', 'Prosperidad', 'Pizarrales', 'Otros'],
+        datasets: [{
+          label: 'Nº de VUTs Registradas',
+          data: [685, 82, 54, 41, 35, 18, 44],
+          backgroundColor: [
+            '#e63946', '#f4a261', '#e9c46a', '#2a9d8f', '#2a9d8f', '#264653', '#264653'
+          ],
+          borderRadius: 4
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: { display: false }
+        },
+        scales: {
+          y: { title: { display: true, text: 'Viviendas Registradas' }, beginAtZero: true },
+          x: { title: { display: true, text: 'Zona / Barrio' } }
+        }
+      }
+    });
+  </script>

@@ -1,0 +1,126 @@
+---
+layout: default
+title: Evolución del precio de la vivienda
+description: Precio medio por metro cuadrado en compraventa y alquiler en Salamanca y su alfoz
+date: 29-08-2026
+folder: Urbanismo
+permalink: precio-vivienda
+---
+
+    <!-- Featured Datasets Section -->
+    <section class="featured dataset" id="datos">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">{{ page.title }}</h2>
+                <p class="section-description">{{ page.description }}</p>
+            </div>
+			
+			<div id="section-content">
+						
+  <canvas id="viviendaBarriosChart" width="800" height="450"></canvas>
+
+ 
+			<h2>Análisis de las principales conclusiones</h2>
+			
+				<p>
+El mercado inmobiliario en la ciudad de Salamanca y sus municipios limítrofes presenta un <b>comportamiento fuertemente polarizado</b>. El dinamismo derivado de la demanda universitaria y turística mantiene tensionados los precios de compraventa y alquiler en el casco histórico y la primera corona del alfoz, mientras que los barrios periféricos muestran crecimientos más moderados.</p>
+
+<h3>Tendencias inmobiliarias clave</h3>
+<ul>
+<li><b>Presión en el Centro y zonas residenciales</b>: El distrito Centro encabeza los precios superando los 2.480 €/m² en compraventa y los 9,80 €/m²/mes en alquiler, seguido de áreas de expansión del alfoz residencial como Carbajosa de la Sagrada y Villamayor de Armuña.</li>
+
+<li><b>Evolución del mercado de alquiler</b>: Impulsado por la población estudiantil universitaria, el mercado de arrendamiento ha experimentado subidas acumuladas superiores al 25% en el último lustro, destacando distritos de alta demanda como San Bernardo y Labradores.</li>
+</ul>
+
+  <h2>Evolución del precio medio de compraventa en Salamanca capital (2015-2025)</h2>
+  <canvas id="viviendaHistoricoChart" width="800" height="400"></canvas>
+
+			</div>
+			
+			<div id="section-table">
+			<table border="1" cellpadding="5" cellspacing="0">
+			  <thead>
+				<tr>
+				  <th>Barrio / Municipio</th>
+				  <th>Precio Venta (€/m²)</th>
+				  <th>Precio Alquiler (€/m²/mes)</th>
+				  <th>Var. Anual Venta (%)</th>
+				</tr>
+			  </thead>
+			  <tbody>
+				<tr><td>Centro</td><td>2.480</td><td>9.80</td><td>+4.2%</td></tr>
+				<tr><td>San Bernardo</td><td>1.890</td><td>8.40</td><td>+4.8%</td></tr>
+				<tr><td>Carbajosa de la Sagrada</td><td>1.750</td><td>6.90</td><td>+3.5%</td></tr>
+				<tr><td>Villamayor de Armuña</td><td>1.680</td><td>6.70</td><td>+3.1%</td></tr>
+				<tr><td>Santa Marta de Tormes</td><td>1.420</td><td>6.20</td><td>+2.8%</td></tr>
+				<tr><td>Garrido Norte</td><td>1.350</td><td>6.80</td><td>+3.2%</td></tr>
+				<tr><td>Pizarrales</td><td>1.180</td><td>5.90</td><td>+1.9%</td></tr>
+				<tr><td>San José</td><td>1.050</td><td>5.40</td><td>+1.5%</td></tr>
+			  </tbody>
+			</table>
+
+			</div>
+			
+			{% include categories.html %}
+            
+        </div>
+    </section>
+
+	<script>
+    // Gráfico 1: Comparativa de precio €/m² por barrios (Barras horizontales)
+    const ctxVivienda = document.getElementById('viviendaBarriosChart').getContext('2d');
+    const viviendaBarriosChart = new Chart(ctxVivienda, {
+      type: 'bar',
+      data: {
+        labels: [
+          'Centro', 'San Bernardo', 'Carbajosa de la Sagrada', 
+          'Villamayor de Armuña', 'Santa Marta de Tormes', 'Garrido Norte', 
+          'Pizarrales', 'San José'
+        ],
+        datasets: [{
+          label: 'Precio Compraventa (€/m²)',
+          data: [2480, 1890, 1750, 1680, 1420, 1350, 1180, 1050],
+          backgroundColor: 'rgba(30, 86, 160, 0.75)',
+          borderColor: '#1E56A0',
+          borderWidth: 1.5,
+          borderRadius: 4
+        }]
+      },
+      options: {
+        indexAxis: 'y',
+        responsive: true,
+        plugins: {
+          legend: { display: true, position: 'top' }
+        },
+        scales: {
+          x: { title: { display: true, text: 'Precio (€/m²)' } },
+          y: { title: { display: true, text: 'Zona / Barrio' } }
+        }
+      }
+    });
+
+    // Gráfico 2: Evolución Histórica (2015-2025)
+    const ctxHist = document.getElementById('viviendaHistoricoChart').getContext('2d');
+    const viviendaHistoricoChart = new Chart(ctxHist, {
+      type: 'line',
+      data: {
+        labels: ['2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024', '2025'],
+        datasets: [{
+          label: 'Precio Medio Capital (€/m²)',
+          data: [1420, 1445, 1490, 1540, 1610, 1590, 1630, 1690, 1755, 1820, 1885],
+          borderColor: '#2C5F2D',
+          backgroundColor: 'rgba(44, 95, 45, 0.1)',
+          borderWidth: 2,
+          tension: 0.2,
+          fill: true
+        }]
+      },
+      options: {
+        responsive: true,
+        scales: {
+          y: { title: { display: true, text: 'Euros por m² (€)' } },
+          x: { title: { display: true, text: 'Año' } }
+        }
+      }
+    });
+  </script>
