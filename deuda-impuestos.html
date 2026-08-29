@@ -1,0 +1,114 @@
+---
+layout: default
+title: Evolución de la deuda municipal e impuestos
+description: Evolución de la deuda per cápita y comportamiento de los principales tributos locales en Salamanca
+date: 29-08-2026
+folder: Hacienda Local
+permalink: deuda-impuestos
+---
+
+    <!-- Featured Datasets Section -->
+    <section class="featured dataset" id="datos">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">{{ page.title }}</h2>
+                <p class="section-description">{{ page.description }}</p>
+            </div>
+			
+			<div id="section-content">
+						
+  <canvas id="deudaHistoricoChart" width="800" height="400"></canvas>
+
+ 
+			<h2>Análisis de la solvencia financiera y presión fiscal local</h2>
+			
+				<p>
+Las cuentas del Ayuntamiento de Salamanca reflejan una **trayectoria de consolidación fiscal y desendeudamiento paulatino** durante la última década. El volumen de deuda viva por habitante se sitúa sensiblemente por debajo de los límites legales de endeudamiento, garantizando margen de maniobra para la financiación de proyectos de inversión.</p>
+
+<h3>Indicadores tributarios y de endeudamiento</h3>
+<ul>
+<li><b>Reducción de la deuda viva</b>: La deuda por habitante ha experimentado un descenso superior al 50% desde 2015, pasando de rebasar los 600 €/habitante a situarse en cotas cercanas a los 230 €/habitante.</li>
+<li><b>Recaudación de tributos locales</b>: El Impuesto sobre Bienes Inmuebles (IBI) constituye la principal fuente de ingresos tributarios propios, seguido por el Impuesto sobre Vehículos de Tracción Mecánica (IVTM) y las tasas municipales por servicios.</li>
+</ul>
+
+  <h2>Recaudación anual por tipo de tributo local (Millones de €)</h2>
+  <canvas id="impuestosRecaudacionChart" width="800" height="400"></canvas>
+
+			</div>
+			
+			<div id="section-table">
+			<table border="1" cellpadding="5" cellspacing="0">
+			  <thead>
+				<tr>
+				  <th>Tributo / Impuesto Municipal</th>
+				  <th>Recaudación Anual (M€)</th>
+				  <th>Tipo Impositivo Base</th>
+				  <th>Variación Anual (%)</th>
+				</tr>
+			  </thead>
+			  <tbody>
+				<tr><td>Impuesto sobre Bienes Inmuebles (IBI)</td><td>48.5</td><td>0.62% (Urbana)</td><td>+1.2%</td></tr>
+				<tr><td>Tasas Municipales (Agua, Basuras, Licencias)</td><td>22.1</td><td>Según tarifa regulada</td><td>+1.8%</td></tr>
+				<tr><td>Impuesto s/ Vehículos de Tracción Mecánica (IVTM)</td><td>9.8</td><td>Según CV / Emisiones</td><td>-0.5%</td></tr>
+				<tr><td>Impuesto s/ Actividades Económicas (IAE)</td><td>6.2</td><td>Según epígrafe fiscal</td><td>+2.1%</td></tr>
+				<tr><td>Impuesto s/ Construcciones y Obras (ICIO)</td><td>4.5</td><td>4.00%</td><td>+3.4%</td></tr>
+				<tr><td>Plusvalía Municipal (IIVTNU)</td><td>3.9</td><td>Según escala legal</td><td>-1.1%</td></tr>
+			  </tbody>
+			</table>
+
+			</div>
+			
+			{% include categories.html %}
+            
+        </div>
+    </section>
+
+	<script>
+    // Gráfico 1: Evolución de la Deuda Per Cápita (€/hab, 2015-2025)
+    const ctxDeuda = document.getElementById('deudaHistoricoChart').getContext('2d');
+    const deudaHistoricoChart = new Chart(ctxDeuda, {
+      type: 'line',
+      data: {
+        labels: ['2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024', '2025'],
+        datasets: [{
+          label: 'Deuda Viva Per Cápita (€/habitante)',
+          data: [610, 545, 480, 415, 360, 395, 340, 295, 260, 242, 228],
+          borderColor: '#2C5F2D',
+          backgroundColor: 'rgba(44, 95, 45, 0.15)',
+          borderWidth: 2,
+          tension: 0.2,
+          fill: true
+        }]
+      },
+      options: {
+        responsive: true,
+        scales: {
+          y: { title: { display: true, text: 'Euros por Habitante (€)' }, beginAtZero: false },
+          x: { title: { display: true, text: 'Año' } }
+        }
+      }
+    });
+
+    // Gráfico 2: Recaudación por Impuestos (Millones de €)
+    const ctxImp = document.getElementById('impuestosRecaudacionChart').getContext('2d');
+    const impuestosRecaudacionChart = new Chart(ctxImp, {
+      type: 'bar',
+      data: {
+        labels: ['IBI', 'Tasas Urbanas', 'IVTM', 'IAE', 'ICIO', 'Plusvalías'],
+        datasets: [{
+          label: 'Recaudación (Millones de €)',
+          data: [48.5, 22.1, 9.8, 6.2, 4.5, 3.9],
+          backgroundColor: '#1E56A0',
+          borderRadius: 4
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: { legend: { display: false } },
+        scales: {
+          y: { title: { display: true, text: 'Millones de Euros (€)' }, beginAtZero: true },
+          x: { title: { display: true, text: 'Tributo Municipal' } }
+        }
+      }
+    });
+  </script>

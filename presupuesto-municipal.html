@@ -1,0 +1,117 @@
+---
+layout: default
+title: Presupuesto municipal e inversión por barrios
+description: Desglose de ingresos, gastos ejecutados e inversiones en infraestructuras por zonas en Salamanca
+date: 29-08-2026
+folder: Hacienda Local
+permalink: presupuesto-municipal
+---
+
+    <!-- Featured Datasets Section -->
+    <section class="featured dataset" id="datos">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">{{ page.title }}</h2>
+                <p class="section-description">{{ page.description }}</p>
+            </div>
+			
+			<div id="section-content">
+						
+  <canvas id="presupuestoGastosChart" width="800" height="400"></canvas>
+
+ 
+			<h2>Análisis del gasto público y la ejecución presupuestaria</h2>
+			
+				<p>
+El presupuesto municipal del Ayuntamiento de Salamanca supera los **180 millones de euros anuales**, manteniendo una orientación prioritaria hacia la prestación de servicios públicos básicos, el mantenimiento urbano y la atención social. El capítulo de inversiones consolida actuaciones enfocadas en la transición ecológica y la regeneración de barrios.</p>
+
+<h3>Prioridades en la asignación de recursos</h3>
+<ul>
+<li><b>Servicios urbanos básicos y bienestar</b>: Más del 45% del gasto corriente se destina a limpieza viaria, recogida de residuos, transporte urbano, mantenimiento de zonas verdes y políticas de protección social.</li>
+<li><b>Cohesión territorial e inversión por barrios</b>: El plan de inversiones prioriza intervenciones en el espacio público de los barrios fuera de la ronda interior, incluyendo reurbanización de calles, accesibilidad y eficiencia energética.</li>
+</ul>
+
+  <h2>Distribución de las inversiones en infraestructuras por distritos (Millones de €)</h2>
+  <canvas id="inversionBarriosChart" width="800" height="400"></canvas>
+
+			</div>
+			
+			<div id="section-table">
+			<table border="1" cellpadding="5" cellspacing="0">
+			  <thead>
+				<tr>
+				  <th>Área de Gasto / Política Pública</th>
+				  <th>Presupuesto Asignado (€)</th>
+				  <th>% sobre el Total</th>
+				  <th>Grado de Ejecución (%)</th>
+				</tr>
+			  </thead>
+			  <tbody>
+				<tr><td>Servicios Públicos Básicos (Servicios urbanos)</td><td>68.400.000</td><td>38.0%</td><td>96.2%</td></tr>
+				<tr><td>Protección y Promoción Social</td><td>28.800.000</td><td>16.0%</td><td>94.5%</td></tr>
+				<tr><td>Inversiones Reales e Infraestructuras</td><td>25.200.000</td><td>14.0%</td><td>88.1%</td></tr>
+				<tr><td>Actuaciones de Carácter General / Administración</td><td>21.600.000</td><td>12.0%</td><td>98.0%</td></tr>
+				<tr><td>Cultura, Juventud y Deportes</td><td>19.800.000</td><td>11.0%</td><td>92.4%</td></tr>
+				<tr><td>Seguridad y Movilidad Ciudadana</td><td>16.200.000</td><td>9.0%</td><td>97.8%</td></tr>
+			  </tbody>
+			</table>
+
+			</div>
+			
+			{% include categories.html %}
+            
+        </div>
+    </section>
+
+	<script>
+    // Gráfico 1: Queso/Dona - Distribución del Presupuesto por Áreas
+    const ctxPres = document.getElementById('presupuestoGastosChart').getContext('2d');
+    const presupuestoGastosChart = new Chart(ctxPres, {
+      type: 'doughnut',
+      data: {
+        labels: [
+          'Servicios Públicos Básicos', 
+          'Protección Social', 
+          'Inversiones e Infraestructuras', 
+          'Administración General', 
+          'Cultura y Deportes', 
+          'Seguridad y Movilidad'
+        ],
+        datasets: [{
+          data: [38, 16, 14, 12, 11, 9],
+          backgroundColor: ['#1E56A0', '#2C5F2D', '#F4A261', '#E63946', '#264653', '#2A9D8F']
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: { position: 'bottom' }
+        }
+      }
+    });
+
+    // Gráfico 2: Barras - Inversión directa por zonas/barrios (M€)
+    const ctxInv = document.getElementById('inversionBarriosChart').getContext('2d');
+    const inversionBarriosChart = new Chart(ctxInv, {
+      type: 'bar',
+      data: {
+        labels: ['Garrido / Chinchibarra', 'Pizarrales / Blanco', 'Tejares / Zurguén', 'Centro / Casco Histórico', 'San Bernardo / Oeste', 'Canalejas / Prosperidad'],
+        datasets: [{
+          label: 'Inversión Prevista (Millones de €)',
+          data: [5.8, 4.9, 4.2, 3.8, 3.2, 3.3],
+          backgroundColor: 'rgba(30, 86, 160, 0.75)',
+          borderColor: '#1E56A0',
+          borderWidth: 1.5,
+          borderRadius: 4
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: { legend: { display: false } },
+        scales: {
+          y: { title: { display: true, text: 'Millones de Euros (€)' }, beginAtZero: true },
+          x: { title: { display: true, text: 'Distrito / Zona' } }
+        }
+      }
+    });
+  </script>

@@ -508,7 +508,7 @@
 /* Breadcrumb */
 .breadcrumb {
     margin-top: 80px;
-    padding: var(--spacing-md) 0;
+    padding: var(--spacing-lg) 0 var(--spacing-md);
     border-bottom: 1px solid var(--border-color);
     font-size: 0.875rem;
 }
