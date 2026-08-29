@@ -1,0 +1,112 @@
+---
+layout: default
+title: Población universitaria y residentes temporales
+description: Impacto del alumnado de la USAL y la UPSA en la población flotante y el padrón de Salamanca
+date: 29-08-2026
+folder: Demografia
+permalink: poblacion-universitaria
+---
+
+    <!-- Featured Datasets Section -->
+    <section class="featured dataset" id="datos">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="section-title">{{ page.title }}</h1>
+                <p class="section-description">{{ page.description }}</p>
+            </div>
+			
+			<div id="section-content">
+						
+  <!-- Mapa de campus y concentración universitaria -->
+  <div id="mapaUniv" style="width: 100%; height: 500px; border-radius: 8px; margin-bottom: 25px;"></div>
+
+ 
+			<h2>Análisis del impacto universitario en la demografía urbana</h2>
+			
+				<p>
+La presencia de la Universidad de Salamanca (USAL) y la Universidad Pontificia de Salamanca (UPSA) introduce más de **30.000 estudiantes cada curso académico**. Esta población flotante transforma la estructura social y económica de la ciudad, rejuveneciendo temporalmente la franja de 18 a 25 años en los distritos cercanos a los campus.</p>
+
+<h3>Efectos clave de la comunidad universitaria</h3>
+<ul>
+<li><b>Población no empadronada</b>: Se calcula que más del 65% de los alumnos universitarios no nacidos en la provincia residen en la ciudad durante el curso lectivo sin registrarse en el padrón municipal.</li>
+<li><b>Impacto en el mercado de alquiler</b>: Barrios como San Bernardo, Foncencalda y el entorno de la Avenida Filiberto Villalobos presentan una tasa de viviendas destinadas a estudiantes superior al 35%.</li>
+</ul>
+
+  <h2>Distribución del alumnado matriculado por origen académico (%)</h2>
+  <canvas id="univOrigenChart" width="800" height="400"></canvas>
+
+			</div>
+			
+			<div id="section-table">
+			<table border="1" cellpadding="5" cellspacing="0">
+			  <thead>
+				<tr>
+				  <th>Campus / Entorno Residentes</th>
+				  <th>Estudiantes Estimados</th>
+				  <th>% sobre Población del Barrio</th>
+				  <th>Tipo de Alojamiento Principal</th>
+				</tr>
+			  </thead>
+			  <tbody>
+				<tr><td>Campus Unamuno / San Bernardo</td><td>12.400</td><td>38.5%</td><td>Pisos compartidos / Residencias</td></tr>
+				<tr><td>Campus Histórico / Centro (Anaya/FONS)</td><td>7.200</td><td>21.0%</td><td>Pisos compartidos / Colegios Mayores</td></tr>
+				<tr><td>Campus Canalejas / Educación</td><td>3.800</td><td>14.2%</td><td>Pisos de alquiler / Residencias</td></tr>
+				<tr><td>Sede Central UPSA (Clerecía / Fonseca)</td><td>4.100</td><td>12.5%</td><td>Residencias Universitarias / Pisos</td></tr>
+				<tr><td>Campus Villamayor (Investigación)</td><td>1.200</td><td>N/A</td><td>Desplazamiento diario / Alfoz</td></tr>
+			  </tbody>
+			</table>
+
+			</div>
+			
+			{% include categories.html %}
+            
+        </div>
+    </section>
+
+	<!-- Hojas de estilo y scripts de Leaflet -->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+	<script>
+    // 1. Mapa de nodos universitarios
+    const mapUniv = L.map('mapaUniv').setView([40.9660, -5.6680], 14);
+
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+      attribution: '&copy; OpenStreetMap &copy; CARTO',
+      maxZoom: 19
+    }).addTo(mapUniv);
+
+    const campusNodes = [
+      { name: 'Campus Miguel de Unamuno (USAL)', lat: 40.9690, lng: -5.6740, desc: 'Mayor concentración de facultades y residencias', color: '#1e56a0' },
+      { name: 'Campus Histórico - Anaya (USAL)', lat: 40.9610, lng: -5.6660, desc: 'Filología, Geografía e Historia', color: '#1e56a0' },
+      { name: 'Sede Central UPSA (La Clerecía)', lat: 40.9628, lng: -5.6655, desc: 'Sede central de la Univ. Pontificia', color: '#2c5f2d' },
+      { name: 'Campus Canalejas (USAL)', lat: 40.9625, lng: -5.6550, desc: 'Facultad de Educación', color: '#1e56a0' }
+    ];
+
+    campusNodes.forEach(c => {
+      L.circle([c.lat, c.lng], {
+        color: c.color,
+        fillColor: c.color,
+        fillOpacity: 0.6,
+        radius: 320
+      }).bindPopup(`<b>${c.name}</b><br>${c.desc}`).addTo(mapUniv);
+    });
+
+    // 2. Gráfico de dona: Procedencia del alumnado
+    const ctxUniv = document.getElementById('univOrigenChart').getContext('2d');
+    const univOrigenChart = new Chart(ctxUniv, {
+      type: 'doughnut',
+      data: {
+        labels: ['Resto de España (no CyL)', 'Castilla y León (excl. Salamanca)', 'Salamanca (Local)', 'Internacionales / Erasmus'],
+        datasets: [{
+          data: [42, 28, 18, 12],
+          backgroundColor: ['#1E56A0', '#F4A261', '#2C5F2D', '#E63946']
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: { position: 'bottom' }
+        }
+      }
+    });
+  </script>

@@ -1,0 +1,12 @@
+---
+permalink: /categories.json
+---
+[
+{% assign first = true %}{% for p in site.pages %}{% if p.category and p.category != "" %}{% unless first %},{% endunless %}{% assign first = false %}
+  {
+    "name": {{ p.category | jsonify }},
+    "title": {{ p.title | jsonify }},
+    "url": {{ p.url | jsonify }}
+  }
+{% endif %}{% endfor %}
+]

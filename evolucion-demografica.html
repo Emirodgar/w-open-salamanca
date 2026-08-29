@@ -1,0 +1,135 @@
+---
+layout: default
+title: Evolución demográfica y pirámide de edad
+description: Envejecimiento poblacional, natalidad y saldo vegetativo por distritos en Salamanca
+date: 29-08-2026
+folder: Demografia
+permalink: evolucion-demografica
+---
+
+    <!-- Featured Datasets Section -->
+    <section class="featured dataset" id="datos">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="section-title">{{ page.title }}</h1>
+                <p class="section-description">{{ page.description }}</p>
+            </div>
+			
+			<div id="section-content">
+						
+  <canvas id="demografiaHistoricoChart" width="800" height="400"></canvas>
+
+ 
+			<h2>Análisis de la estructura y dinámica poblacional</h2>
+			
+				<p>
+El perfil demográfico de Salamanca está marcado por un **progresivo envejecimiento de la población residente** y un saldo vegetativo negativo, compensado parcialmente por el flujo constante de población flotante universitaria y migrante. La edad media en la ciudad supera los 48 años, con diferencias notorias entre barrios consolidados y zonas de expansión.</p>
+
+<h3>Tendencias demográficas clave</h3>
+<ul>
+<li><b>Envejecimiento en barrios consolidados</b>: Distritos como Garrido, Canalejas y San Bernardo registran índices de envejecimiento elevados, donde las personas mayores de 65 años superan ampliamente al grupo de menores de 16 años.</li>
+<li><b>Dinámica en áreas de expansión</b>: Zonas como Huerta Otea, El Zurguén y los municipios del alfoz (Santa Marta, Carbajosa, Villamayor) concentran a las familias más jóvenes y registran las tasas de natalidad relativamente más altas.</li>
+</ul>
+
+  <h2>Pirámide de edad de Salamanca capital (%)</h2>
+  <canvas id="piramideEdadChart" width="800" height="400"></canvas>
+
+			</div>
+			
+			<div id="section-table">
+			<table border="1" cellpadding="5" cellspacing="0">
+			  <thead>
+				<tr>
+				  <th>Distrito / Zona</th>
+				  <th>Población Padrón</th>
+				  <th>Edad Media</th>
+				  <th>% Mayor 65 años</th>
+				  <th>Saldo Vegetativo (anual)</th>
+				</tr>
+			  </thead>
+			  <tbody>
+				<tr><td>Garrido (Norte y Sur)</td><td>33.800</td><td>50.2</td><td>29.4%</td><td>-210</td></tr>
+				<tr><td>Centro / Casco Histórico</td><td>26.200</td><td>49.5</td><td>27.8%</td><td>-145</td></tr>
+				<tr><td>San Bernardo / Oeste</td><td>14.100</td><td>48.8</td><td>25.1%</td><td>-82</td></tr>
+				<tr><td>Canalejas / Delicias</td><td>12.500</td><td>51.1</td><td>31.2%</td><td>-95</td></tr>
+				<tr><td>Pizarrales / Blanco</td><td>11.800</td><td>47.2</td><td>22.5%</td><td>-48</td></tr>
+				<tr><td>El Zurguén / Vistahermosa</td><td>7.400</td><td>41.5</td><td>14.2%</td><td>+12</td></tr>
+				<tr><td>Huerta Otea / Puente Ladrillo</td><td>6.200</td><td>39.8</td><td>11.8%</td><td>+28</td></tr>
+			  </tbody>
+			</table>
+
+			</div>
+			
+			{% include categories.html %}
+            
+        </div>
+    </section>
+
+	<script>
+    // Gráfico 1: Evolución del Padrón (2015-2025)
+    const ctxDemoHist = document.getElementById('demografiaHistoricoChart').getContext('2d');
+    const demografiaHistoricoChart = new Chart(ctxDemoHist, {
+      type: 'line',
+      data: {
+        labels: ['2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024', '2025'],
+        datasets: [{
+          label: 'Población Empadronada Total',
+          data: [146438, 144949, 144436, 143978, 144228, 144825, 143269, 142412, 143956, 144500, 144850],
+          borderColor: '#1E56A0',
+          backgroundColor: 'rgba(30, 86, 160, 0.1)',
+          borderWidth: 2,
+          tension: 0.2,
+          fill: true
+        }]
+      },
+      options: {
+        responsive: true,
+        scales: {
+          y: { title: { display: true, text: 'Habitantes' }, beginAtZero: false },
+          x: { title: { display: true, text: 'Año' } }
+        }
+      }
+    });
+
+    // Gráfico 2: Pirámide de edad (Barras horizontales comparativas)
+    const ctxPiramide = document.getElementById('piramideEdadChart').getContext('2d');
+    const piramideEdadChart = new Chart(ctxPiramide, {
+      type: 'bar',
+      data: {
+        labels: ['0-14 años', '15-29 años', '30-44 años', '45-59 años', '60-74 años', '75+ años'],
+        datasets: [
+          {
+            label: 'Hombres (%)',
+            data: [-5.4, -8.1, -9.2, -10.8, -8.2, -5.1],
+            backgroundColor: 'rgba(30, 86, 160, 0.75)'
+          },
+          {
+            label: 'Mujeres (%)',
+            data: [5.1, 8.4, 9.5, 11.2, 9.6, 8.4],
+            backgroundColor: 'rgba(230, 57, 70, 0.75)'
+          }
+        ]
+      },
+      options: {
+        indexAxis: 'y',
+        responsive: true,
+        plugins: {
+          tooltip: {
+            callbacks: {
+              label: function(ctx) {
+                return ctx.dataset.label + ': ' + Math.abs(ctx.raw) + '%';
+              }
+            }
+          }
+        },
+        scales: {
+          x: {
+            title: { display: true, text: 'Porcentaje sobre la Población Total (%)' },
+            ticks: {
+              callback: function(value) { return Math.abs(value) + '%'; }
+            }
+          }
+        }
+      }
+    });
+  </script>

@@ -507,9 +507,18 @@
 
 /* Breadcrumb */
 .breadcrumb {
+    margin-top: 80px;
     padding: var(--spacing-md) 0;
     border-bottom: 1px solid var(--border-color);
     font-size: 0.875rem;
+}
+
+/* The dataset section normally reserves 80px of top padding to clear the
+   fixed header (see .dataset rule) — when a breadcrumb precedes it, the
+   breadcrumb itself already clears the header, so that extra offset would
+   just add a second gap. */
+body.has-breadcrumb .dataset {
+    padding-top: var(--spacing-3xl);
 }
 
 .breadcrumb a {

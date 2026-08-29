@@ -5,6 +5,7 @@ class OpenSalamanca {
     constructor() {
         this.datasets = [];
         this.categories = [];
+        this.categoryPages = [];
         this.searchResults = [];
         this.currentView = 'home';
         
@@ -127,11 +128,18 @@ class OpenSalamanca {
     
     async loadData() {
         try {
-            const response = await fetch('/datasets.json');
-            if (!response.ok) {
-                throw new Error(`HTTP ${response.status}`);
+            const [datasetsResponse, categoriesResponse] = await Promise.all([
+                fetch('/datasets.json'),
+                fetch('/categories.json')
+            ]);
+            if (!datasetsResponse.ok) {
+                throw new Error(`HTTP ${datasetsResponse.status} (datasets.json)`);
             }
-            this.datasets = await response.json();
+            if (!categoriesResponse.ok) {
+                throw new Error(`HTTP ${categoriesResponse.status} (categories.json)`);
+            }
+            this.datasets = await datasetsResponse.json();
+            this.categoryPages = await categoriesResponse.json();
             this.categories = this.extractCategories(this.datasets);
         } catch (error) {
             console.error('Error loading data:', error);
@@ -153,26 +161,27 @@ class OpenSalamanca {
         return `${date.getDate()} ${months[date.getMonth()]} ${date.getFullYear()}`;
     }
     
+    // Only surfaces categories that have a real categoria-*.html page (site.pages
+    // entries exposing a `category` front-matter field, see categories.json) — a
+    // dataset whose category has no listing page yet is counted but not linked,
+    // so a new dataset can never produce a broken category card on the home page.
     extractCategories(datasets) {
-        const categoryMap = new Map();
-        
+        const counts = new Map();
         datasets.forEach(dataset => {
-            const category = dataset.category;
-            if (categoryMap.has(category)) {
-                categoryMap.get(category).count++;
-            } else {
-                categoryMap.set(category, {
-                    name: category,
-                    count: 1,
-                    icon: this.getCategoryIcon(category),
-					url: this.getCategoryUrl(category)
-                });
-            }
+            counts.set(dataset.category, (counts.get(dataset.category) || 0) + 1);
         });
-        
-        return Array.from(categoryMap.values());
+
+        return this.categoryPages
+            .filter(page => counts.has(page.name))
+            .map(page => ({
+                name: page.name,
+                title: page.title,
+                url: page.url,
+                count: counts.get(page.name),
+                icon: this.getCategoryIcon(page.name)
+            }));
     }
-    
+
     getCategoryIcon(category) {
         const icons = {
             'Demografia': '👥',
@@ -182,7 +191,7 @@ class OpenSalamanca {
             'Movilidad': '🚌',
             'Urbanismo': '🏙️',
             'Turismo': '🗺️',
-            'Transporte': '🚌',
+            'Mercado Laboral': '💼',
             'Medio Ambiente': '🌱',
             'Cultura': '🎭',
             'Deportes': '⚽',
@@ -190,25 +199,6 @@ class OpenSalamanca {
             'Seguridad': '🚔'
         };
         return icons[category] || '📋';
-    }
-
-    getCategoryUrl(category) {
-        const urls = {
-            'Demografia': 'demografia',
-            'Economia': 'economia',
-            'Educacion': 'educacion',
-            'Finanzas': 'finanzas',
-            'Movilidad': 'movilidad',
-            'Urbanismo': 'urbanismo',
-            'Turismo': 'turismo',
-            'Transporte': 'transporte',
-            'Medio Ambiente': 'medio-ambiente',
-            'Cultura': 'cultura',
-            'Deportes': 'deporte',
-            'Salud': 'salud',
-            'Seguridad': 'seguridad'
-        };
-        return urls[category] || '/';
     }
     
     renderCategories() {

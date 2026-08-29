@@ -31,13 +31,13 @@
     <!-- Chart.js for visualizations -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
-<body>
+<body{% if page.folder and page.folder != "" %} class="has-breadcrumb"{% endif %}>
     <!-- Header -->
     <header class="header">
         <div class="container">
             <div class="header-content">
                 <div class="logo">
-                    <h1>Open Salamanca</h1>
+                    {% if page.url == "/" %}<h1>Open Salamanca</h1>{% else %}<h2>Open Salamanca</h2>{% endif %}
                     <span class="tagline">Datos Abiertos</span>
                 </div>
 
@@ -69,8 +69,7 @@
     </header>
 
     {% if page.folder and page.folder != "" %}
-    {% assign category_slug = page.folder | downcase %}
-    {% assign category_page = site.pages | where: "permalink", category_slug | first %}
+    {% assign category_page = site.pages | where: "category", page.folder | first %}
     <nav class="breadcrumb" aria-label="breadcrumb">
         <div class="container">
             <a href="/">Inicio</a>
