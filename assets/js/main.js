@@ -193,6 +193,8 @@ class OpenSalamanca {
             'Turismo': '🗺️',
             'Mercado Laboral': '💼',
             'Medio Ambiente': '🌱',
+            'Cultura y Ocio': '🎭',
+            'Hacienda Local': '🏛️',
             'Cultura': '🎭',
             'Deportes': '⚽',
             'Salud': '🏥',

@@ -1,0 +1,115 @@
+---
+layout: default
+title: Uso del transporte público y líneas de autobús
+description: Evolución de viajeros en autobús urbano, frecuencias y uso por líneas en Salamanca
+date: 29-08-2026
+folder: Movilidad
+permalink: transporte-urbano-bus
+---
+
+    <!-- Featured Datasets Section -->
+    <section class="featured dataset" id="datos">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">{{ page.title }}</h2>
+                <p class="section-description">{{ page.description }}</p>
+            </div>
+			
+			<div id="section-content">
+						
+  <canvas id="busHistoricoChart" width="800" height="400"></canvas>
+
+ 
+			<h2>Análisis de la demanda del autobús urbano</h2>
+			
+				<p>
+El servicio de transporte urbano de Salamanca registra una **recuperación sostenida del volumen de viajeros**, superando la barrera de los 12 millones de usos anuales. Las medidas de bonificación tarifaria y la renovación de la flota con vehículos de cero y bajas emisiones han impulsado el uso del transporte público en los desplazamientos cotidianos.</p>
+
+<h3>Claves de la movilidad colectiva</h3>
+<ul>
+<li><b>Ejes de mayor demanda</b>: Las líneas que conectan los barrios periféricos con el centro histórico, los hospitales y el Campus Unamuno concentran más del 50% de la demanda total.</li>
+<li><b>Electrificación de la flota</b>: La incorporación progresiva de autobuses 100% eléctricos y de gas natural comprimido permite reducir las emisiones del transporte colectivo en más de un 30%.</li>
+</ul>
+
+  <h2>Volumen de viajeros anuales por línea principal (Millones)</h2>
+  <canvas id="lineasBusChart" width="800" height="400"></canvas>
+
+			</div>
+			
+			<div id="section-table">
+			<table border="1" cellpadding="5" cellspacing="0">
+			  <thead>
+				<tr>
+				  <th>Línea / Recorrido</th>
+				  <th>Viajeros Anuales</th>
+				  <th>Frecuencia Laborables</th>
+				  <th>Flota Ecológica (%)</th>
+				  <th>Conexiones Clave</th>
+				</tr>
+			  </thead>
+			  <tbody>
+				<tr><td>L1: Prosperidad &ndash; Buenos Aires</td><td>2.150.000</td><td>10 min</td><td>85%</td><td>Centro, Gran Vía, Estación Bus</td></tr>
+				<tr><td>L2: Pizarrales &ndash; Gran Vía &ndash; San Julián</td><td>1.980.000</td><td>12 min</td><td>70%</td><td>Hospitales, Campus, Centro</td></tr>
+				<tr><td>L3: Garrido &ndash; San José</td><td>1.750.000</td><td>10 min</td><td>90%</td><td>Estación Tren, Av. Portugal</td></tr>
+				<tr><td>L7: Campus Unamuno &ndash; Prosperidad</td><td>1.420.000</td><td>12 min</td><td>100%</td><td>Universidad, Campus, Canalejas</td></tr>
+				<tr><td>L12: Barrio Blanco &ndash; Montalvo</td><td>980.000</td><td>15 min</td><td>65%</td><td>Polígono Industrial, Av. Portugal</td></tr>
+				<tr><td>L Nocturna: N1 / N2 (Servicio Búho)</td><td>165.000</td><td>60 min (Fines de semana)</td><td>50%</td><td>Ocio Nocturno, Barrios Periféricos</td></tr>
+			  </tbody>
+			</table>
+
+			</div>
+			
+			{% include categories.html %}
+            
+        </div>
+    </section>
+
+	<script>
+    // Gráfico 1: Evolución de Viajeros (2018-2025)
+    const ctxBusHist = document.getElementById('busHistoricoChart').getContext('2d');
+    const busHistoricoChart = new Chart(ctxBusHist, {
+      type: 'line',
+      data: {
+        labels: ['2018', '2019', '2020', '2021', '2022', '2023', '2024', '2025'],
+        datasets: [{
+          label: 'Total Viajeros Autobús Urbano (Millones)',
+          data: [12.8, 13.1, 7.2, 8.9, 10.5, 11.8, 12.4, 12.9],
+          borderColor: '#1E56A0',
+          backgroundColor: 'rgba(30, 86, 160, 0.1)',
+          borderWidth: 2,
+          tension: 0.2,
+          fill: true
+        }]
+      },
+      options: {
+        responsive: true,
+        scales: {
+          y: { title: { display: true, text: 'Millones de Pasajeros' }, beginAtZero: false },
+          x: { title: { display: true, text: 'Año' } }
+        }
+      }
+    });
+
+    // Gráfico 2: Pasajeros por línea
+    const ctxLineas = document.getElementById('lineasBusChart').getContext('2d');
+    const lineasBusChart = new Chart(ctxLineas, {
+      type: 'bar',
+      data: {
+        labels: ['Línea 1', 'Línea 2', 'Línea 3', 'Línea 7', 'Línea 12', 'Nocturnos'],
+        datasets: [{
+          label: 'Viajeros (Millones)',
+          data: [2.15, 1.98, 1.75, 1.42, 0.98, 0.165],
+          backgroundColor: '#F4A261',
+          borderRadius: 4
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: { legend: { display: false } },
+        scales: {
+          y: { title: { display: true, text: 'Millones de Pasajeros' }, beginAtZero: true },
+          x: { title: { display: true, text: 'Línea de Autobús' } }
+        }
+      }
+    });
+  </script>

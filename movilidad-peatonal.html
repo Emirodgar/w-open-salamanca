@@ -1,0 +1,122 @@
+---
+layout: default
+title: Red de carriles bici y zonas peatonalizadas
+description: Infraestructura ciclable, extensión de vías peatonales y puntos de alquiler de bicicletas en Salamanca
+date: 29-08-2026
+folder: Movilidad
+permalink: movilidad-ciclable-peatonal
+---
+
+    <!-- Featured Datasets Section -->
+    <section class="featured dataset" id="datos">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">{{ page.title }}</h2>
+                <p class="section-description">{{ page.description }}</p>
+            </div>
+			
+			<div id="section-content">
+						
+  <!-- Mapa de carriles bici y bases SALenBICI -->
+  <div id="mapaBici" style="width: 100%; height: 500px; border-radius: 8px; margin-bottom: 25px;"></div>
+
+ 
+			<h2>Análisis de la movilidad activa e infraestructura sostenible</h2>
+			
+				<p>
+Salamanca cuenta con más de **45 kilómetros de vías ciclables conectadas** que unen los principales distritos residenciales con los campus universitarios, zonas deportivas y municipios del alfoz. El impulso a la peatonalización en el casco histórico y la consolidación del sistema municipal SALenBICI han afianzado la movilidad activa.</p>
+
+<h3>Puntos destacados de la red ciclable</h3>
+<ul>
+<li><b>Corredor ambiental del Tormes</b>: Es el eje ciclista de mayor uso recreativo y de transporte, conectando la zona deportiva de La Aldehuela con Tejares y Huerta Otea.</li>
+<li><b>Integración con el sistema universitario</b>: Las bases de bicicleta pública en el Campus Unamuno, Anaya y FONS registran los picos más altos de rotación diaria durante el periodo lectivo.</li>
+</ul>
+
+  <h2>Evolución de préstamos anuales del servicio SALenBICI</h2>
+  <canvas id="usosBiciChart" width="800" height="400"></canvas>
+
+			</div>
+			
+			<div id="section-table">
+			<table border="1" cellpadding="5" cellspacing="0">
+			  <thead>
+				<tr>
+				  <th>Eje Ciclable / Tramo</th>
+				  <th>Longitud (km)</th>
+				  <th>Tipo de Vía</th>
+				  <th>Bases SALenBICI Próximas</th>
+				  <th>Uso Diario Estimado (Bicis/día)</th>
+				</tr>
+			  </thead>
+			  <tbody>
+				<tr><td>Corredor Fluvial del Tormes</td><td>12.5 km</td><td>Senda Ciclable / Paseo</td><td>5 bases</td><td>2.400</td></tr>
+				<tr><td>Anillo Universitario (Campus Unamuno)</td><td>4.2 km</td><td>Carril Bici Segregado</td><td>4 bases</td><td>1.850</td></tr>
+				<tr><td>Eje Av. Portugal &ndash; Torres Villarroel</td><td>3.8 km</td><td>Acera Bici / Ciclocarril</td><td>3 bases</td><td>1.200</td></tr>
+				<tr><td>Conector Garrido &ndash; La Aldehuela</td><td>3.1 km</td><td>Carril Bici Segregado</td><td>2 bases</td><td>950</td></tr>
+				<tr><td>ZBE Casco Histórico (Calle Toro/Zamora)</td><td>5.4 km</td><td>Zona Peatonal / Coexistencia</td><td>4 bases</td><td>3.100 (Peatones/Bicis)</td></tr>
+			  </tbody>
+			</table>
+
+			</div>
+			
+			{% include categories.html %}
+            
+        </div>
+    </section>
+
+	<!-- Hojas de estilo y scripts de Leaflet -->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+	<script>
+    // 1. Inicializar mapa de movilidad activa
+    const mapBici = L.map('mapaBici').setView([40.9650, -5.6640], 14);
+
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+      attribution: '&copy; OpenStreetMap &copy; CARTO',
+      maxZoom: 19
+    }).addTo(mapBici);
+
+    // Bases SALenBICI y tramos ciclables
+    const estacionesBici = [
+      { name: 'Base Campus Unamuno', lat: 40.9685, lng: -5.6730, desc: 'Alta frecuencia de uso universitario' },
+      { name: 'Base Plaza Mayor / Poeta Iglesias', lat: 40.9648, lng: -5.6632, desc: 'Punto central de red peatonal' },
+      { name: 'Base Estación de Tren (Vialia)', lat: 40.9712, lng: -5.6505, desc: 'Intermodalidad con ferrocarril' },
+      { name: 'Base Puente Romano / Tormes', lat: 40.9580, lng: -5.6670, desc: 'Conexión con corredor fluvial' },
+      { name: 'Base Parque de la Aldehuela', lat: 40.9555, lng: -5.6425, desc: 'Uso deportivo y recreativo' }
+    ];
+
+    estacionesBici.forEach(b => {
+      L.circleMarker([b.lat, b.lng], {
+        radius: 8,
+        fillColor: '#2C5F2D',
+        color: '#ffffff',
+        weight: 2,
+        fillOpacity: 0.9
+      }).bindPopup(`<b>Estación SALenBICI: ${b.name}</b><br>${b.desc}`).addTo(mapBici);
+    });
+
+    // 2. Gráfico de evolución de usos SALenBICI
+    const ctxBici = document.getElementById('usosBiciChart').getContext('2d');
+    const usosBiciChart = new Chart(ctxBici, {
+      type: 'line',
+      data: {
+        labels: ['2018', '2019', '2020', '2021', '2022', '2023', '2024', '2025'],
+        datasets: [{
+          label: 'Préstamos Anuales SALenBICI',
+          data: [145000, 162000, 95000, 128000, 175000, 210000, 235000, 258000],
+          borderColor: '#2C5F2D',
+          backgroundColor: 'rgba(44, 95, 45, 0.15)',
+          borderWidth: 2,
+          tension: 0.2,
+          fill: true
+        }]
+      },
+      options: {
+        responsive: true,
+        scales: {
+          y: { title: { display: true, text: 'Número de Usos' }, beginAtZero: true },
+          x: { title: { display: true, text: 'Año' } }
+        }
+      }
+    });
+  </script>
