@@ -1,0 +1,117 @@
+---
+layout: default
+title: Autobús urbano y líneas más utilizadas
+description: Evolución de viajeros, ranking de líneas e información del transporte público en Salamanca
+date: 29-08-2026
+folder: Movilidad
+permalink: autobus-urbano
+---
+
+    <!-- Featured Datasets Section -->
+    <section class="featured dataset" id="datos">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">{{ page.title }}</h2>
+                <p class="section-description">{{ page.description }}</p>
+            </div>
+			
+			<div id="section-content">
+						
+  <canvas id="busHistoricoChart" width="800" height="400"></canvas>
+
+ 
+			<h2>Análisis de la demanda en la red de autobuses urbanos</h2>
+			
+				<p>
+El uso del autobús urbano en Salamanca muestra una **sólida recuperación de viajeros** tras el desplome registrado en 2020. La implantación de bonificaciones en las tarifas, la mejora de frecuencias y la reordenación de líneas han impulsado la demanda por encima de los 13 millones de usuarios anuales, aproximándose a los máximos históricos de la década.</p>
+
+<h3>Claves del servicio urbano</h3>
+<ul>
+<li><b>Eje vertebrador del campus y hospitales</b>: Las líneas que conectan barrios populosos como Garrido o Tejares con el Complejo Hospitalario Universitario y el Campus Unamuno aglutinan más del 40% del pasaje total.</li>
+<li><b>Recuperación del viajero frecuente</b>: Las tarjetas bonificadas (bonobús ordinario y bonos jóvenes/universitarios) representan más del 85% de los validaciones totales, consolidando el autobús como opción prioritaria frente al vehículo privado.</li>
+</ul>
+
+  <h2>Ranking de viajeros por línea (millones de usuarios/año)</h2>
+  <canvas id="busLineasChart" width="800" height="400"></canvas>
+
+			</div>
+			
+			<div id="section-table">
+			<table border="1" cellpadding="5" cellspacing="0">
+			  <thead>
+				<tr>
+				  <th>Línea</th>
+				  <th>Recorrido Principal</th>
+				  <th>Viajeros Anuales</th>
+				  <th>Frecuencia Laborables</th>
+				  <th>Puntos de Interés</th>
+				</tr>
+			  </thead>
+			  <tbody>
+				<tr><td>Línea 7</td><td>Prosperidad &ndash; Tejares</td><td>2.150.000</td><td>10 min</td><td>Hospitales, Centro, Tejares</td></tr>
+				<tr><td>Línea 1</td><td>Los Cipreses &ndash; Buenos Aires</td><td>1.920.000</td><td>12 min</td><td>Plaza de España, Gran Vía, San José</td></tr>
+				<tr><td>Línea 3</td><td>Garrido &ndash; San José</td><td>1.810.000</td><td>10 min</td><td>Estación de RENFE, Canalejas, Centro</td></tr>
+				<tr><td>Línea 10</td><td>Los Almendros &ndash; Puente Ladrillo</td><td>1.450.000</td><td>15 min</td><td>Campus Unamuno, Avda. Portugal</td></tr>
+				<tr><td>Línea 4</td><td>Filiberto Villalobos &ndash; El Zurguén</td><td>1.280.000</td><td>12 min</td><td>Campus Unamuno, Estación Autobuses</td></tr>
+				<tr><td>Línea 12</td><td>Barrio San José &ndash; Pol. Montalvo</td><td>980.000</td><td>15 min</td><td>Zona Industrial, San José</td></tr>
+			  </tbody>
+			</table>
+
+			</div>
+			
+			{% include categories.html %}
+            
+        </div>
+    </section>
+
+	<script>
+    // Gráfico 1: Evolución histórica de viajeros (2015-2025)
+    const ctxBusHist = document.getElementById('busHistoricoChart').getContext('2d');
+    const busHistoricoChart = new Chart(ctxBusHist, {
+      type: 'line',
+      data: {
+        labels: ['2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024', '2025'],
+        datasets: [{
+          label: 'Total Viajeros Anuales (Millones)',
+          data: [12.4, 12.6, 12.8, 13.1, 13.4, 6.8, 8.5, 10.9, 12.3, 13.0, 13.6],
+          borderColor: '#1E56A0',
+          backgroundColor: 'rgba(30, 86, 160, 0.15)',
+          borderWidth: 2,
+          tension: 0.2,
+          fill: true
+        }]
+      },
+      options: {
+        responsive: true,
+        scales: {
+          y: { title: { display: true, text: 'Millones de Usuarios' }, beginAtZero: false },
+          x: { title: { display: true, text: 'Año' } }
+        }
+      }
+    });
+
+    // Gráfico 2: Pasajeros por Línea
+    const ctxBusLineas = document.getElementById('busLineasChart').getContext('2d');
+    const busLineasChart = new Chart(ctxBusLineas, {
+      type: 'bar',
+      data: {
+        labels: ['Línea 7', 'Línea 1', 'Línea 3', 'Línea 10', 'Línea 4', 'Línea 12'],
+        datasets: [{
+          label: 'Viajeros (Millones/Año)',
+          data: [2.15, 1.92, 1.81, 1.45, 1.28, 0.98],
+          backgroundColor: 'rgba(44, 95, 45, 0.75)',
+          borderColor: '#2C5F2D',
+          borderWidth: 1.5,
+          borderRadius: 4
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: { legend: { display: false } },
+        scales: {
+          y: { title: { display: true, text: 'Millones de Pasajeros' }, beginAtZero: true },
+          x: { title: { display: true, text: 'Línea de Autobús' } }
+        }
+      }
+    });
+  </script>

@@ -1,0 +1,126 @@
+---
+layout: default
+title: Red ciclista y servicio SALenBICI
+description: Mapa interactivo de estaciones de préstamo, vías ciclistas y estadísticas de movilidad sostenible
+date: 29-08-2026
+folder: Movilidad
+permalink: red-ciclista
+---
+
+    <!-- Featured Datasets Section -->
+    <section class="featured dataset" id="datos">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">{{ page.title }}</h2>
+                <p class="section-description">{{ page.description }}</p>
+            </div>
+			
+			<div id="section-content">
+						
+  <!-- Mapa interactivo de estaciones y red ciclista -->
+  <div id="mapaBici" style="width: 100%; height: 500px; border-radius: 8px; margin-bottom: 25px;"></div>
+
+ 
+			<h2>Análisis del transporte ciclista y movilidad sostenible</h2>
+			
+				<p>
+La infraestructura ciclista de Salamanca supera los 100 kilómetros de vías segregadas y ciclocalles, conectando los principales barrios con el centro urbano, el campus universitario y la corona metropolitana. El sistema municipal de préstamo **SALenBICI** actúa como complemento directo al transporte público urbano.</p>
+
+<h3>Indicadores de uso y expansión</h3>
+<ul>
+<li><b>Interconexión del alfoz</b>: Los carriles bici conectan directamente la capital con municipios vecinos como Santa Marta de Tormes, Carbajosa de la Sagrada, Villamayor y Aldeatejada, favoreciendo los desplazamientos cotidianos por motivos de trabajo o estudio.</li>
+<li><b>Crecimiento del sistema de préstamo</b>: SALenBICI cuenta con más de 40 bases operativas y un parque de bicicletas convencionales y eléctricas que supera los 300.000 usos anuales.</li>
+</ul>
+
+  <h2>Evolución de préstamos anuales en SALenBICI (2018-2025)</h2>
+  <canvas id="biciPrestamosChart" width="800" height="400"></canvas>
+
+			</div>
+			
+			<div id="section-table">
+			<table border="1" cellpadding="5" cellspacing="0">
+			  <thead>
+				<tr>
+				  <th>Estación</th>
+				  <th>Ubicación</th>
+				  <th>Anclajes</th>
+				  <th>Tipo de Estación</th>
+				  <th>Conexión Intermodal</th>
+				</tr>
+			  </thead>
+			  <tbody>
+				<tr><td>Plaza Mayor / Poeta Iglesias</td><td>Calle Poeta Iglesias</td><td>18</td><td>Mixta (Eléctrica / Mecánica)</td><td>Casco Histórico</td></tr>
+				<tr><td>Estación de Ferrocarril</td><td>Paseo de la Estación (Vialia)</td><td>24</td><td>Mixta</td><td>RENFE / Cercanías</td></tr>
+				<tr><td>Campus Unamuno</td><td>Avenida de la Merced</td><td>30</td><td>Mixta</td><td>Universidad / Facultades</td></tr>
+				<tr><td>Hospital Universitario</td><td>Paseo Transición Española</td><td>20</td><td>Mixta</td><td>Complejo Hospitalario</td></tr>
+				<tr><td>Plaza de España</td><td>Plaza de España / Gran Vía</td><td>22</td><td>Mixta</td><td>Líneas Bus Urbano</td></tr>
+				<tr><td>Estación de Autobuses</td><td>Avenida de Filiberto Villalobos</td><td>16</td><td>Mecánica</td><td>Autobuses Interurbanos</td></tr>
+				<tr><td>El Zurguén</td><td>Avenida de Saavedra y Fajardo</td><td>14</td><td>Mecánica</td><td>Red Sur / Conexión Alfoz</td></tr>
+			  </tbody>
+			</table>
+
+			</div>
+			
+			{% include categories.html %}
+            
+        </div>
+    </section>
+
+	<!-- Hojas de estilo y scripts de Leaflet -->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+	<script>
+    // 1. Inicializar mapa Leaflet centrado en Salamanca
+    const mapBici = L.map('mapaBici').setView([40.9640, -5.6650], 14);
+
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+      attribution: '&copy; OpenStreetMap &copy; CARTO',
+      maxZoom: 19
+    }).addTo(mapBici);
+
+    // Listado de bases SALenBICI emblemáticas
+    const estacionesBici = [
+      { name: 'Base Plaza Mayor', lat: 40.9647, lng: -5.6632, slots: 18 },
+      { name: 'Base Estación RENFE', lat: 40.9712, lng: -5.6518, slots: 24 },
+      { name: 'Base Campus Unamuno', lat: 40.9688, lng: -5.6735, slots: 30 },
+      { name: 'Base Hospital Universitario', lat: 40.9595, lng: -5.6742, slots: 20 },
+      { name: 'Base Plaza de España', lat: 40.9672, lng: -5.6598, slots: 22 },
+      { name: 'Base Estación de Autobuses', lat: 40.9692, lng: -5.6765, slots: 16 }
+    ];
+
+    estacionesBici.forEach(st => {
+      L.circleMarker([st.lat, st.lng], {
+        radius: 8,
+        fillColor: '#2C5F2D',
+        color: '#ffffff',
+        weight: 2,
+        opacity: 1,
+        fillOpacity: 0.85
+      }).bindPopup(`<b>SALenBICI: ${st.name}</b><br>Anclajes disponibles: ${st.slots}`).addTo(mapBici);
+    });
+
+    // 2. Gráfico de evolución de uso de SALenBICI
+    const ctxBici = document.getElementById('biciPrestamosChart').getContext('2d');
+    const biciPrestamosChart = new Chart(ctxBici, {
+      type: 'bar',
+      data: {
+        labels: ['2018', '2019', '2020', '2021', '2022', '2023', '2024', '2025'],
+        datasets: [{
+          label: 'Préstamos Anuales Totales',
+          data: [185000, 210000, 115000, 160000, 225000, 280000, 315000, 340000],
+          backgroundColor: 'rgba(244, 162, 97, 0.8)',
+          borderColor: '#F4A261',
+          borderWidth: 1.5,
+          borderRadius: 4
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: { legend: { display: false } },
+        scales: {
+          y: { title: { display: true, text: 'Número de Usos' }, beginAtZero: true },
+          x: { title: { display: true, text: 'Año' } }
+        }
+      }
+    });
+  </script>
