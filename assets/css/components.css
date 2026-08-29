@@ -505,6 +505,31 @@
     margin-top: var(--spacing-xs);
 }
 
+/* Breadcrumb */
+.breadcrumb {
+    padding: var(--spacing-md) 0;
+    border-bottom: 1px solid var(--border-color);
+    font-size: 0.875rem;
+}
+
+.breadcrumb a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumb-separator {
+    margin: 0 var(--spacing-sm);
+    color: var(--border-color);
+}
+
+.breadcrumb-current {
+    color: var(--neutral-color);
+}
+
 /* Empty State */
 .empty-state {
     text-align: center;

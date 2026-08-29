@@ -68,6 +68,24 @@
         </div>
     </header>
 
+    {% if page.folder and page.folder != "" %}
+    {% assign category_slug = page.folder | downcase %}
+    {% assign category_page = site.pages | where: "permalink", category_slug | first %}
+    <nav class="breadcrumb" aria-label="breadcrumb">
+        <div class="container">
+            <a href="/">Inicio</a>
+            <span class="breadcrumb-separator">/</span>
+            {% if category_page %}
+            <a href="{{ category_page.url }}">{{ category_page.title }}</a>
+            {% else %}
+            <span>{{ page.folder }}</span>
+            {% endif %}
+            <span class="breadcrumb-separator">/</span>
+            <span class="breadcrumb-current">{{ page.title }}</span>
+        </div>
+    </nav>
+    {% endif %}
+
     {{ content }}
 
     <footer class="footer">

@@ -63,18 +63,6 @@ class OpenSalamanca {
                 this.handleSearchInput(e.target.value);
             });
         }
-        
-        // Hero buttons
-        document.querySelectorAll('.btn').forEach(btn => {
-            btn.addEventListener('click', (e) => {
-                const onclick = btn.getAttribute('onclick');
-                if (onclick && onclick.includes('scrollToSection')) {
-                    e.preventDefault();
-                    const section = onclick.match(/scrollToSection\\('([^']+)'\\)/)[1];
-                    this.scrollToSection(section);
-                }
-            });
-        });
     }
     
     setupMobileMenu() {
@@ -191,6 +179,9 @@ class OpenSalamanca {
             'Economia': '💰',
             'Educacion': '🎓',
             'Finanzas': '📊',
+            'Movilidad': '🚌',
+            'Urbanismo': '🏙️',
+            'Turismo': '🗺️',
             'Transporte': '🚌',
             'Medio Ambiente': '🌱',
             'Cultura': '🎭',
@@ -200,13 +191,16 @@ class OpenSalamanca {
         };
         return icons[category] || '📋';
     }
-	
-	    getCategoryUrl(category) {
-        const icons = {
+
+    getCategoryUrl(category) {
+        const urls = {
             'Demografia': 'demografia',
             'Economia': 'economia',
             'Educacion': 'educacion',
             'Finanzas': 'finanzas',
+            'Movilidad': 'movilidad',
+            'Urbanismo': 'urbanismo',
+            'Turismo': 'turismo',
             'Transporte': 'transporte',
             'Medio Ambiente': 'medio-ambiente',
             'Cultura': 'cultura',
@@ -214,7 +208,7 @@ class OpenSalamanca {
             'Salud': 'salud',
             'Seguridad': 'seguridad'
         };
-        return icons[category] || '📋';
+        return urls[category] || '/';
     }
     
     renderCategories() {
