@@ -1,0 +1,115 @@
+---
+layout: default
+title: Licencias de obra y rehabilitación urbana
+description: Evolución de visados de construcción, licencias urbanísticas y actuaciones de rehabilitación en Salamanca
+date: 29-08-2026
+folder: Urbanismo
+permalink: licencias-obras-urbanismo
+---
+
+    <!-- Featured Datasets Section -->
+    <section class="featured dataset" id="datos">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">{{ page.title }}</h2>
+                <p class="section-description">{{ page.description }}</p>
+            </div>
+			
+			<div id="section-content">
+						
+  <!-- Mapa de focos de renovación y obras Leaflet -->
+  <div id="mapaObras" style="width: 100%; height: 500px; border-radius: 8px; margin-bottom: 25px;"></div>
+
+ 
+			<h2>Análisis de la actividad constructora y rehabilitación del parque edificado</h2>
+			
+				<p>
+El sector del urbanismo en Salamanca registra un **predominio de las actuaciones de rehabilitación y mejora energética** sobre las licencias de nueva planta. Las ayudas europeas y los planes municipales de regeneración urbana han impulsado la reforma de fachadas, la instalación de ascensores y la eficiencia térmica en edificaciones de más de 40 años.</p>
+
+<h3>Ejes de actuación urbanística</h3>
+<ul>
+<li><b>Consolidación del parque existente</b>: Más del 70% de las licencias tramitadas corresponden a intervenciones en edificios consolidados, especialmente en la corona perimetral del casco histórico y el barrio de Garrido.</li>
+<li><b>Nueva edificación en sectores de expansión</b>: Las licencias de obra mayor para vivienda nueva se concentran de manera casi exclusiva en sectores de desarrollo como Huerta Otea, El Zurguén y la Chinchibarra.</li>
+</ul>
+
+  <h2>Distribución de licencias urbanísticas por tipo de actuación</h2>
+  <canvas id="licenciasTipologiaChart" width="800" height="400"></canvas>
+
+			</div>
+			
+			<div id="section-table">
+			<table border="1" cellpadding="5" cellspacing="0">
+			  <thead>
+				<tr>
+				  <th>Distrito / Sector Urbano</th>
+				  <th>Licencias Obra Mayor</th>
+				  <th>Licencias Obra Menor</th>
+				  <th>Proyectos Rehabilitación</th>
+				  <th>Inversión Estimada (M€)</th>
+				</tr>
+			  </thead>
+			  <tbody>
+				<tr><td>Centro / Casco Histórico</td><td>12</td><td>340</td><td>85</td><td>14.2 M€</td></tr>
+				<tr><td>Garrido (Norte y Sur)</td><td>8</td><td>420</td><td>110</td><td>11.8 M€</td></tr>
+				<tr><td>Huerta Otea / Puente Ladrillo</td><td>28</td><td>115</td><td>15</td><td>18.5 M€</td></tr>
+				<tr><td>San Bernardo / Oeste</td><td>6</td><td>210</td><td>45</td><td>6.4 M€</td></tr>
+				<tr><td>Tejares / El Zurguén</td><td>19</td><td>145</td><td>22</td><td>9.1 M€</td></tr>
+				<tr><td>Pizarrales / Barrio Blanco</td><td>5</td><td>180</td><td>38</td><td>4.7 M€</td></tr>
+			  </tbody>
+			</table>
+
+			</div>
+			
+			{% include categories.html %}
+            
+        </div>
+    </section>
+
+	<!-- Hojas de estilo y scripts de Leaflet -->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+	<script>
+    // 1. Mapa de principales focos de desarrollo y rehabilitación
+    const mapObras = L.map('mapaObras').setView([40.9650, -5.6630], 14);
+
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+      attribution: '&copy; OpenStreetMap &copy; CARTO',
+      maxZoom: 19
+    }).addTo(mapObras);
+
+    const focosObras = [
+      { name: 'Sector Huerta Otea', lat: 40.9660, lng: -5.6860, desc: 'Desarrollo de obra nueva residencial', type: 'Obra Nueva' },
+      { name: 'Entorno Chinchibarra', lat: 40.9770, lng: -5.6510, desc: 'Nuevas promociones plurifamiliares', type: 'Obra Nueva' },
+      { name: 'Área de Regeneración Garrido', lat: 40.9730, lng: -5.6580, desc: 'Rehabilitación térmica y accesibilidad', type: 'Rehabilitación' },
+      { name: 'Casco Histórico Monstruario', lat: 40.9620, lng: -5.6650, desc: 'Rehabilitación de inmuebles protegidos', type: 'Rehabilitación' }
+    ];
+
+    focosObras.forEach(o => {
+      L.circleMarker([o.lat, o.lng], {
+        radius: 9,
+        fillColor: o.type === 'Obra Nueva' ? '#1E56A0' : '#2C5F2D',
+        color: '#ffffff',
+        weight: 2,
+        fillOpacity: 0.85
+      }).bindPopup(`<b>${o.name}</b><br>Tipo: ${o.type}<br>${o.desc}`).addTo(mapObras);
+    });
+
+    // 2. Gráfico de dona: Desglose de licencias
+    const ctxLic = document.getElementById('licenciasTipologiaChart').getContext('2d');
+    const licenciasTipologiaChart = new Chart(ctxLic, {
+      type: 'doughnut',
+      data: {
+        labels: ['Obras Menores y Reformas', 'Rehabilitación Integral / Eficiencia', 'Obra Mayor Nueva Edificación', 'Demoliciones y Acondicionamiento'],
+        datasets: [{
+          data: [58, 23, 14, 5],
+          backgroundColor: ['#1E56A0', '#2C5F2D', '#F4A261', '#E63946']
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: { position: 'bottom' }
+        }
+      }
+    });
+  </script>

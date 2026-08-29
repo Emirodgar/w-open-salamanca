@@ -1,0 +1,140 @@
+---
+layout: default
+title: Mercado inmobiliario y precio de la vivienda
+description: Evolución del precio por metro cuadrado en compraventa y alquiler por barrios en Salamanca
+date: 29-08-2026
+folder: Vivienda y Urbanismo
+permalink: precio-vivienda-alquiler
+---
+
+    <!-- Featured Datasets Section -->
+    <section class="featured dataset" id="datos">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">{{ page.title }}</h2>
+                <p class="section-description">{{ page.description }}</p>
+            </div>
+			
+			<div id="section-content">
+						
+  <canvas id="viviendaHistoricoChart" width="800" height="400"></canvas>
+
+ 
+			<h2>Análisis de la dinámica residencial y precios del suelo</h2>
+			
+				<p>
+El mercado residencial en Salamanca muestra una **elevada presión en los precios de arrendamiento**, empujada por la constante demanda de la población flotante universitaria. Mientras que el precio de venta mantiene una senda de crecimiento moderado, el coste del alquiler por metro cuadrado ha alcanzado máximos históricos en los distritos de la zona central y universitaria.</p>
+
+<h3>Factores determinantes del mercado residencial</h3>
+<ul>
+<li><b>Presión en el mercado de alquiler</b>: Zonas como el Casco Histórico, San Bernardo y Campus Unamuno registran rentabilidades brutas por alquiler superiores al 6,5%, motivadas por el arrendamiento temporal a estudiantes.</li>
+<li><b>Brecha entre centro y periferia</b>: Existe una acusada diferencia en los valores de compraventa entre el centro urbano (que supera los 2.400 €/m²) y los barrios de la zona norte y oeste (por debajo de los 1.300 €/m²).</li>
+</ul>
+
+  <h2>Precio medio del alquiler por barrio (€/m²/mes)</h2>
+  <canvas id="alquilerBarriosChart" width="800" height="400"></canvas>
+
+			</div>
+			
+			<div id="section-table">
+			<table border="1" cellpadding="5" cellspacing="0">
+			  <thead>
+				<tr>
+				  <th>Barrio / Sector</th>
+				  <th>Precio Compra (€/m²)</th>
+				  <th>Precio Alquiler (€/m²/mes)</th>
+				  <th>Variación Anual Compra (%)</th>
+				  <th>Rentabilidad Bruta Est. (%)</th>
+				</tr>
+			  </thead>
+			  <tbody>
+				<tr><td>Casco Histórico / Centro</td><td>2.480 €</td><td>10.8 €</td><td>+3.5%</td><td>5.2%</td></tr>
+				<tr><td>San Bernardo / Campus</td><td>2.050 €</td><td>9.9 €</td><td>+4.2%</td><td>5.8%</td></tr>
+				<tr><td>Garrido (Norte y Sur)</td><td>1.380 €</td><td>7.5 €</td><td>+2.1%</td><td>6.5%</td></tr>
+				<tr><td>Canalejas / Prosperidad</td><td>1.720 €</td><td>8.4 €</td><td>+2.8%</td><td>5.8%</td></tr>
+				<tr><td>Pizarrales / Barrio Blanco</td><td>1.210 €</td><td>6.8 €</td><td>+1.5%</td><td>6.7%</td></tr>
+				<tr><td>Huerta Otea / El Zurguén</td><td>1.650 €</td><td>7.9 €</td><td>+3.8%</td><td>5.7%</td></tr>
+			  </tbody>
+			</table>
+
+			</div>
+			
+			{% include categories.html %}
+            
+        </div>
+    </section>
+
+	<script>
+    // Gráfico 1: Evolución Precio Venta y Alquiler (2018-2025)
+    const ctxVivHist = document.getElementById('viviendaHistoricoChart').getContext('2d');
+    const viviendaHistoricoChart = new Chart(ctxVivHist, {
+      type: 'line',
+      data: {
+        labels: ['2018', '2019', '2020', '2021', '2022', '2023', '2024', '2025'],
+        datasets: [
+          {
+            label: 'Precio Compraventa (€/m²)',
+            data: [1580, 1620, 1590, 1640, 1710, 1780, 1840, 1890],
+            borderColor: '#1E56A0',
+            backgroundColor: 'rgba(30, 86, 160, 0.1)',
+            borderWidth: 2,
+            yAxisID: 'y',
+            tension: 0.2,
+            fill: true
+          },
+          {
+            label: 'Precio Alquiler (€/m²/mes)',
+            data: [6.8, 7.2, 7.1, 7.5, 8.1, 8.7, 9.2, 9.6],
+            borderColor: '#E63946',
+            backgroundColor: 'transparent',
+            borderWidth: 2,
+            borderDash: [5, 5],
+            yAxisID: 'y1',
+            tension: 0.2
+          }
+        ]
+      },
+      options: {
+        responsive: true,
+        scales: {
+          y: {
+            type: 'linear',
+            display: true,
+            position: 'left',
+            title: { display: true, text: 'Compraventa (€/m²)' }
+          },
+          y1: {
+            type: 'linear',
+            display: true,
+            position: 'right',
+            grid: { drawOnChartArea: false },
+            title: { display: true, text: 'Alquiler (€/m²/mes)' }
+          },
+          x: { title: { display: true, text: 'Año' } }
+        }
+      }
+    });
+
+    // Gráfico 2: Alquiler por Barrios
+    const ctxAlq = document.getElementById('alquilerBarriosChart').getContext('2d');
+    const alquilerBarriosChart = new Chart(ctxAlq, {
+      type: 'bar',
+      data: {
+        labels: ['Casco Histórico', 'San Bernardo', 'Canalejas', 'Huerta Otea', 'Garrido', 'Pizarrales'],
+        datasets: [{
+          label: 'Precio Alquiler (€/m²/mes)',
+          data: [10.8, 9.9, 8.4, 7.9, 7.5, 6.8],
+          backgroundColor: '#F4A261',
+          borderRadius: 4
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: { legend: { display: false } },
+        scales: {
+          y: { title: { display: true, text: 'Euros por m² al mes (€)' }, beginAtZero: true },
+          x: { title: { display: true, text: 'Barrio / Sector' } }
+        }
+      }
+    });
+  </script>
