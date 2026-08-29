@@ -521,6 +521,14 @@ body.has-breadcrumb .dataset {
     padding-top: var(--spacing-3xl);
 }
 
+/* Caps doughnut/pie charts so they don't stretch to the full content width —
+   Chart.js sizes a responsive canvas to its immediate parent, so the cap has
+   to live on a wrapper div rather than the canvas itself. */
+.chart-wrapper-sm {
+    max-width: 420px;
+    margin: 0 auto;
+}
+
 .breadcrumb a {
     color: var(--primary-color);
     text-decoration: none;

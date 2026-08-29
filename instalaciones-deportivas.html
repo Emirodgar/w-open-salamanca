@@ -1,0 +1,122 @@
+---
+layout: default
+title: Instalaciones deportivas y ocupación
+description: Cobertura de piscinas, pabellones y campos municipales por densidad de población en Salamanca
+date: 29-08-2026
+folder: Cultura y Ocio
+permalink: instalaciones-deportivas
+---
+
+    <!-- Featured Datasets Section -->
+    <section class="featured dataset" id="datos">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">{{ page.title }}</h2>
+                <p class="section-description">{{ page.description }}</p>
+            </div>
+			
+			<div id="section-content">
+						
+  <!-- Mapa de equipamientos deportivos Leaflet -->
+  <div id="mapaDeportes" style="width: 100%; height: 500px; border-radius: 8px; margin-bottom: 25px;"></div>
+
+ 
+			<h2>Análisis de la infraestructura deportiva municipal</h2>
+			
+				<p>
+La red de recintos deportivos municipales garantiza la **cobertura de actividad física en todos los distritos de la ciudad**. Salamanca cuenta con un sistema combinado de piscinas cubiertas, pabellones polideportivos de uso escolar y vecinal, y grandes complejos al aire libre como La Aldehuela.</p>
+
+<h3>Aspectos destacados del equipamiento deportivo</h3>
+<ul>
+<li><b>Capacidad y ocupación en pabellones</b>: La tasa media de ocupación de las pistas cubiertas supera el 82% en horario de tarde, impulsada por los clubes federados de baloncesto, balonmano y fútbol sala.</li>
+<li><b>Campaña de verano y piscinas cubiertas</b>: La red de piscinas municipales acoge a más de 350.000 usuarios anuales entre cursos de natación y la temporada estival en vasos descubiertos.</li>
+</ul>
+
+  <h2>Usuarios anuales por tipo de instalación deportiva</h2>
+  <canvas id="deportesUsoChart" width="800" height="400"></canvas>
+
+			</div>
+			
+			<div id="section-table">
+			<table border="1" cellpadding="5" cellspacing="0">
+			  <thead>
+				<tr>
+				  <th>Instalación / Complejo</th>
+				  <th>Ubicación</th>
+				  <th>Tipo de Recinto</th>
+				  <th>Ocupación Media (%)</th>
+				  <th>Servicios Principales</th>
+				</tr>
+			  </thead>
+			  <tbody>
+				<tr><td>Ciudad Deportiva de La Aldehuela</td><td>La Aldehuela</td><td>Complejo Integral</td><td>75.4%</td><td>Atletismo, campos fútbol, tenis, fitness</td></tr>
+				<tr><td>Pabellón Würzburg</td><td>Garrido Norte</td><td>Pabellón Cubierto</td><td>91.2%</td><td>Pista central polideportiva, gimnasio</td></tr>
+				<tr><td>Piscina y Polideportivo Garrido</td><td>Garrido Sur</td><td>Piscina / Pabellón</td><td>88.5%</td><td>Piscina climatizada, vaso de enseñanza</td></tr>
+				<tr><td>Pabellón Rosa Colorado (La Valhondo)</td><td>Pizarrales</td><td>Pabellón / Pistas</td><td>78.0%</td><td>Pistas polideportivas, frontón</td></tr>
+				<tr><td>Piscina Climatizada San José</td><td>San José</td><td>Piscina Cubierta</td><td>81.4%</td><td>Natación salud, cursos municipales</td></tr>
+				<tr><td>Campos de Fútbol Némesis / El Zurguén</td><td>El Zurguén</td><td>Campos de Césped</td><td>85.0%</td><td>Fútbol 11 y fútbol 7 base</td></tr>
+			  </tbody>
+			</table>
+
+			</div>
+			
+			{% include categories.html %}
+            
+        </div>
+    </section>
+
+	<!-- Hojas de estilo y scripts de Leaflet -->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+	<script>
+    // 1. Inicializar mapa de recintos deportivos
+    const mapDep = L.map('mapaDeportes').setView([40.9650, -5.6600], 14);
+
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+      attribution: '&copy; OpenStreetMap &copy; CARTO',
+      maxZoom: 19
+    }).addTo(mapDep);
+
+    const recintosDeportivos = [
+      { name: 'Ciudad Deportiva La Aldehuela', lat: 40.9550, lng: -5.6410, desc: 'Complejo deportivo exterior e interior', type: 'Complejo' },
+      { name: 'Pabellón Würzburg', lat: 40.9760, lng: -5.6550, desc: 'Cancha de baloncesto federado y balonmano', type: 'Pabellón' },
+      { name: 'Piscina Municipal Garrido', lat: 40.9710, lng: -5.6540, desc: 'Piscina cubierta y vaso de verano', type: 'Piscina' },
+      { name: 'Pabellón Rosa Colorado', lat: 40.9740, lng: -5.6740, desc: 'Pabellón polideportivo de barrio', type: 'Pabellón' },
+      { name: 'Piscina San José', lat: 40.9520, lng: -5.6610, desc: 'Piscina climatizada municipal', type: 'Piscina' }
+    ];
+
+    recintosDeportivos.forEach(r => {
+      L.circleMarker([r.lat, r.lng], {
+        radius: 9,
+        fillColor: r.type === 'Piscina' ? '#1E56A0' : (r.type === 'Pabellón' ? '#E63946' : '#2C5F2D'),
+        color: '#ffffff',
+        weight: 2,
+        fillOpacity: 0.85
+      }).bindPopup(`<b>${r.name}</b><br>Tipo: ${r.type}<br>${r.desc}`).addTo(mapDep);
+    });
+
+    // 2. Gráfico de barras de usuarios anuales
+    const ctxDep = document.getElementById('deportesUsoChart').getContext('2d');
+    const deportesUsoChart = new Chart(ctxDep, {
+      type: 'bar',
+      data: {
+        labels: ['La Aldehuela', 'Piscinas Cubiertas', 'Pabellones Cubiertos', 'Campos de Fútbol Municipal', 'Pistas de Barrio'],
+        datasets: [{
+          label: 'Usuarios Anuales Estimados',
+          data: [420000, 350000, 280000, 195000, 110000],
+          backgroundColor: [
+            '#2c5f2d', '#1e56a0', '#e63946', '#f4a261', '#264653'
+          ],
+          borderRadius: 4
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: { legend: { display: false } },
+        scales: {
+          y: { title: { display: true, text: 'Nº de Usos / Asistencias' }, beginAtZero: true },
+          x: { title: { display: true, text: 'Tipo de Instalación' } }
+        }
+      }
+    });
+  </script>

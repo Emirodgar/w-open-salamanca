@@ -1,0 +1,126 @@
+---
+layout: default
+title: Red de bibliotecas y centros culturales
+description: Indicadores de préstamos, usuarios activos y asistencia a la programación cultural en Salamanca
+date: 29-08-2026
+folder: Cultura y Ocio
+permalink: bibliotecas-cultura
+---
+
+    <!-- Featured Datasets Section -->
+    <section class="featured dataset" id="datos">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">{{ page.title }}</h2>
+                <p class="section-description">{{ page.description }}</p>
+            </div>
+			
+			<div id="section-content">
+						
+  <canvas id="prestamosHistoricoChart" width="800" height="400"></canvas>
+
+ 
+			<h2>Análisis de la actividad cultural y lectora</h2>
+			
+				<p>
+La Red Municipal de Bibliotecas de Salamanca y los centros culturales del municipio registran una **intensa actividad comunitaria y de acceso a la cultura**. La digitalización de catálogos y la extensión del préstamo de libros electrónicos (eBiblio) han dinamizado el uso de estos equipamientos en todos los grupos de edad.</p>
+
+<h3>Puntos clave del uso cultural</h3>
+<ul>
+<li><b>Descentralización del acceso al libro</b>: Centros como la Biblioteca Torrente Ballester actúan como polos culturales de barrio, aglutinando exposiciones, teatro infantil y talleres junto al servicio tradicional de lectura.</li>
+<li><b>Recuperación del libro físico y préstamo digital</b>: El volumen anual de préstamos supera las 450.000 unidades, combinando el formato papel tradicional con un crecimiento sostenido de la lectura digital en dispositivos móviles.</li>
+</ul>
+
+  <h2>Asistencia anual a eventos culturales por tipo de espacio</h2>
+  <canvas id="culturaAsistenciaChart" width="800" height="400"></canvas>
+
+			</div>
+			
+			<div id="section-table">
+			<table border="1" cellpadding="5" cellspacing="0">
+			  <thead>
+				<tr>
+				  <th>Centro / Biblioteca</th>
+				  <th>Ubicación / Barrio</th>
+				  <th>Usuarios Activos</th>
+				  <th>Préstamos Anuales</th>
+				  <th>Especialización / Destacado</th>
+				</tr>
+			  </thead>
+			  <tbody>
+				<tr><td>Biblioteca Torrente Ballester</td><td>Chinchibarra / Garrido Norte</td><td>18.400</td><td>165.000</td><td>Teatro, exposiciones y biblioteca infantil</td></tr>
+				<tr><td>Biblioteca Carmen Martín Gaite (USAL)</td><td>Campus Unamuno</td><td>24.200</td><td>142.000</td><td>Fondo universitario y sala 24h</td></tr>
+				<tr><td>Biblioteca Gabriel y Galán</td><td>Plaza de los Bandos (Centro)</td><td>11.500</td><td>85.000</td><td>Fondo local e historia salmantina</td></tr>
+				<tr><td>Centro Cultural Miraltormes</td><td>Providencia / Delicias</td><td>6.800</td><td>42.000</td><td>Talleres comunitarios y mediateca</td></tr>
+				<tr><td>Biblioteca Miguel de Cervantes</td><td>Pizarrales / Blanco</td><td>5.200</td><td>31.000</td><td>Clubes de lectura de barrio</td></tr>
+				<tr><td>Centro Cultural El Zurguén</td><td>El Zurguén</td><td>4.100</td><td>24.000</td><td>Actividades juveniles e infantiles</td></tr>
+			  </tbody>
+			</table>
+
+			</div>
+			
+			{% include categories.html %}
+            
+        </div>
+    </section>
+
+	<script>
+    // Gráfico 1: Evolución de Préstamos (2018-2025)
+    const ctxBibHist = document.getElementById('prestamosHistoricoChart').getContext('2d');
+    const prestamosHistoricoChart = new Chart(ctxBibHist, {
+      type: 'line',
+      data: {
+        labels: ['2018', '2019', '2020', '2021', '2022', '2023', '2024', '2025'],
+        datasets: [
+          {
+            label: 'Préstamo Físico (Libros/Cine)',
+            data: [410000, 425000, 210000, 310000, 380000, 415000, 432000, 445000],
+            borderColor: '#1E56A0',
+            backgroundColor: 'rgba(30, 86, 160, 0.1)',
+            borderWidth: 2,
+            tension: 0.2,
+            fill: true
+          },
+          {
+            label: 'Préstamo Digital (eBiblio)',
+            data: [22000, 28000, 65000, 72000, 81000, 94000, 108000, 122000],
+            borderColor: '#F4A261',
+            backgroundColor: 'transparent',
+            borderWidth: 2,
+            borderDash: [5, 5],
+            tension: 0.2
+          }
+        ]
+      },
+      options: {
+        responsive: true,
+        scales: {
+          y: { title: { display: true, text: 'Número de Préstamos' }, beginAtZero: true },
+          x: { title: { display: true, text: 'Año' } }
+        }
+      }
+    });
+
+    // Gráfico 2: Asistencia a eventos por recinto
+    const ctxCult = document.getElementById('culturaAsistenciaChart').getContext('2d');
+    const culturaAsistenciaChart = new Chart(ctxCult, {
+      type: 'bar',
+      data: {
+        labels: ['Teatro Liceo', 'CAEM', 'Bib. Torrente Ballester', 'DA2 (Arte Contemporáneo)', 'Centros de Barrio'],
+        datasets: [{
+          label: 'Asistentes Anuales Estimados',
+          data: [85000, 110000, 48000, 32000, 64000],
+          backgroundColor: '#2C5F2D',
+          borderRadius: 4
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: { legend: { display: false } },
+        scales: {
+          y: { title: { display: true, text: 'Nº de Espectadores / Visitantes' }, beginAtZero: true },
+          x: { title: { display: true, text: 'Espacio Cultural' } }
+        }
+      }
+    });
+  </script>
