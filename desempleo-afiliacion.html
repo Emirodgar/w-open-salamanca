@@ -1,0 +1,110 @@
+---
+layout: default
+title: Evolución del desempleo y afiliación
+description: Análisis histórico del paro, filiación a la Seguridad Social y distribución por sectores en Salamanca
+date: 29-08-2026
+folder: Mercado Laboral
+permalink: desempleo-afiliacion
+---
+
+    <!-- Featured Datasets Section -->
+    <section class="featured dataset" id="datos">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">{{ page.title }}</h2>
+                <p class="section-description">{{ page.description }}</p>
+            </div>
+			
+			<div id="section-content">
+						
+  <canvas id="paroHistoricoChart" width="800" height="400"></canvas>
+
+ 
+			<h2>Análisis del mercado de trabajo y estructura ocupacional</h2>
+			
+				<p>
+El mercado laboral salmantino presenta una **fuerte dependencia del sector servicios**, dinamizado principalmente por el ámbito universitario, el turismo y la función pública. La cifra de desempleados ha consolidado una tendencia descendente tras el impacto de 2020, situándose en cifras mínimas del último decenio.</p>
+
+<h3>Claves del comportamiento laboral</h3>
+<ul>
+<li><b>Predominio del sector servicios</b>: Supone más del 76% de las personas demandantes de empleo y de las altas en la Seguridad Social, reflejando el peso de la hostelería, el comercio y el sector educativo.</li>
+<li><b>Brecha de edad y desempleo juvenil</b>: A pesar de la reducción general del paro, la franja de menores de 25 años y la de mayores de 52 años continúan concentrando los mayores retos de inserción y estabilidad laboral.</li>
+</ul>
+
+  <h2>Distribución del desempleo por sectores económicos (%)</h2>
+  <canvas id="paroSectoresChart" width="800" height="400"></canvas>
+
+			</div>
+			
+			<div id="section-table">
+			<table border="1" cellpadding="5" cellspacing="0">
+			  <thead>
+				<tr>
+				  <th>Sector Económico</th>
+				  <th>Parados Registrados</th>
+				  <th>% sobre el Total</th>
+				  <th>Afiliados Seguridad Social</th>
+				  <th>Variación Anual</th>
+				</tr>
+			  </thead>
+			  <tbody>
+				<tr><td>Servicios (Comercio, Hostelería, Educación)</td><td>8.450</td><td>76.2%</td><td>43.200</td><td>+2.4%</td></tr>
+				<tr><td>Sin Empleo Anterior</td><td>1.120</td><td>10.1%</td><td>&mdash;</td><td>-1.5%</td></tr>
+				<tr><td>Construcción</td><td>640</td><td>5.8%</td><td>4.850</td><td>+1.1%</td></tr>
+				<tr><td>Industria</td><td>580</td><td>5.2%</td><td>4.100</td><td>+0.8%</td></tr>
+				<tr><td>Agricultura y Ganadería</td><td>300</td><td>2.7%</td><td>1.950</td><td>-0.5%</td></tr>
+			  </tbody>
+			</table>
+
+			</div>
+			
+			{% include categories.html %}
+            
+        </div>
+    </section>
+
+	<script>
+    // Gráfico 1: Evolución del Paro Registrado (2018-2025)
+    const ctxParoHist = document.getElementById('paroHistoricoChart').getContext('2d');
+    const paroHistoricoChart = new Chart(ctxParoHist, {
+      type: 'line',
+      data: {
+        labels: ['2018', '2019', '2020', '2021', '2022', '2023', '2024', '2025'],
+        datasets: [{
+          label: 'Total Parados Registrados (Capital)',
+          data: [14200, 13400, 16800, 14500, 12800, 11900, 11400, 11090],
+          borderColor: '#E63946',
+          backgroundColor: 'rgba(230, 57, 70, 0.1)',
+          borderWidth: 2,
+          tension: 0.2,
+          fill: true
+        }]
+      },
+      options: {
+        responsive: true,
+        scales: {
+          y: { title: { display: true, text: 'Número de Personas' }, beginAtZero: false },
+          x: { title: { display: true, text: 'Año' } }
+        }
+      }
+    });
+
+    // Gráfico 2: Desglose por Sectores
+    const ctxParoSect = document.getElementById('paroSectoresChart').getContext('2d');
+    const paroSectoresChart = new Chart(ctxParoSect, {
+      type: 'pie',
+      data: {
+        labels: ['Servicios', 'Sin Empleo Anterior', 'Construcción', 'Industria', 'Agricultura'],
+        datasets: [{
+          data: [76.2, 10.1, 5.8, 5.2, 2.7],
+          backgroundColor: ['#1E56A0', '#F4A261', '#264653', '#2C5F2D', '#E63946']
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: { position: 'bottom' }
+        }
+      }
+    });
+  </script>

@@ -1,0 +1,125 @@
+---
+layout: default
+title: Densidad comercial y tejido empresarial
+description: Distribución del pequeño comercio, licencias de apertura y grandes superficies en Salamanca
+date: 29-08-2026
+folder: Mercado Laboral
+permalink: densidad-comercial
+---
+
+    <!-- Featured Datasets Section -->
+    <section class="featured dataset" id="datos">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">{{ page.title }}</h2>
+                <p class="section-description">{{ page.description }}</p>
+            </div>
+			
+			<div id="section-content">
+						
+  <!-- Mapa de ejes comerciales Leaflet -->
+  <div id="mapaComercio" style="width: 100%; height: 500px; border-radius: 8px; margin-bottom: 25px;"></div>
+
+ 
+			<h2>Análisis del mapa comercial y empresarial</h2>
+			
+				<p>
+El comercio de Salamanca destaca por la **polarización entre el eje comercial del centro urbano y las áreas periféricas**. Mientras que las calles peatonalizadas del casco antiguo y el eje Toro-Zamora concentran la moda y el comercio especializado, los barrios perimetrales mantienen el comercio de proximidad alimentario en coexistencia con medianas superficies.</p>
+
+<h3>Ejes y tendencias comerciales</h3>
+<ul>
+<li><b>Eje Prime Toro &ndash; Zamora &ndash; Plaza Mayor</b>: Mantiene las tasas de ocupación de locales más altas de la capital, orientándose al retail internacional, servicios financieros y franquicias.</li>
+<li><b>Comercio de barrio y relevo generacional</b>: Distritos como Garrido y Canalejas registran una paulatina transformación de locales tradicionales hacia empresas de servicios personales, clínicas y paquetería/logística de última milla.</li>
+</ul>
+
+  <h2>Número de establecimientos comerciales activos por barrio</h2>
+  <canvas id="comercioBarriosChart" width="800" height="400"></canvas>
+
+			</div>
+			
+			<div id="section-table">
+			<table border="1" cellpadding="5" cellspacing="0">
+			  <thead>
+				<tr>
+				  <th>Zona / Barrio</th>
+				  <th>Comercio Minorista</th>
+				  <th>Servicios y Empresas</th>
+				  <th>Grandes Superficies / Malls</th>
+				  <th>Locales Vacíos (%)</th>
+				</tr>
+			  </thead>
+			  <tbody>
+				<tr><td>Centro / Eje Toro-Zamora</td><td>520</td><td>310</td><td>1 (Mercado Central)</td><td>6.5%</td></tr>
+				<tr><td>Garrido (Norte y Sur)</td><td>410</td><td>245</td><td>1 (Los Cipreses)</td><td>14.2%</td></tr>
+				<tr><td>Canalejas / Delicias</td><td>215</td><td>160</td><td>0</td><td>12.8%</td></tr>
+				<tr><td>San Bernardo / Oeste</td><td>185</td><td>140</td><td>0</td><td>11.0%</td></tr>
+				<tr><td>Pizarrales / Blanco</td><td>110</td><td>75</td><td>0</td><td>18.5%</td></tr>
+				<tr><td>Polígonos (Montalvo / Capuchinos)</td><td>65</td><td>420</td><td>4 (Parques Comerciales)</td><td>8.1%</td></tr>
+			  </tbody>
+			</table>
+
+			</div>
+			
+			{% include categories.html %}
+            
+        </div>
+    </section>
+
+	<!-- Hojas de estilo y scripts de Leaflet -->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+	<script>
+    // 1. Inicializar mapa de ejes comerciales
+    const mapComercio = L.map('mapaComercio').setView([40.9660, -5.6620], 14);
+
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+      attribution: '&copy; OpenStreetMap &copy; CARTO',
+      maxZoom: 19
+    }).addTo(mapComercio);
+
+    // Ejes comerciales principales
+    const ejesComerciales = [
+      { name: 'Eje Peatonal Toro - Zamora', lat: 40.9665, lng: -5.6630, desc: 'Eje Retail Prime y Franquicias', color: '#1e56a0' },
+      { name: 'Mercado Central / Plaza del Mercado', lat: 40.9642, lng: -5.6620, desc: 'Comercio Tradicional de Alimentación', color: '#2c5f2d' },
+      { name: 'Eje Comercial Garrido (Av. Portugal / Cipreses)', lat: 40.9730, lng: -5.6570, desc: 'Comercio de Proximidad y Barrio', color: '#f4a261' },
+      { name: 'Parque Comercial Montalvo', lat: 40.9450, lng: -5.6580, desc: 'Medianas Superficies y Distribución', color: '#e63946' }
+    ];
+
+    ejesComerciales.forEach(e => {
+      L.circle([e.lat, e.lng], {
+        color: e.color,
+        fillColor: e.color,
+        fillOpacity: 0.55,
+        radius: 280
+      }).bindPopup(`<b>${e.name}</b><br>${e.desc}`).addTo(mapComercio);
+    });
+
+    // 2. Gráfico de locales por distrito
+    const ctxComercio = document.getElementById('comercioBarriosChart').getContext('2d');
+    const comercioBarriosChart = new Chart(ctxComercio, {
+      type: 'bar',
+      data: {
+        labels: ['Centro / Prime', 'Garrido', 'Canalejas', 'San Bernardo', 'Pizarrales'],
+        datasets: [
+          {
+            label: 'Comercio Minorista',
+            data: [520, 410, 215, 185, 110],
+            backgroundColor: 'rgba(30, 86, 160, 0.75)'
+          },
+          {
+            label: 'Servicios a Particulares',
+            data: [310, 245, 160, 140, 75],
+            backgroundColor: 'rgba(244, 162, 97, 0.75)'
+          }
+        ]
+      },
+      options: {
+        responsive: true,
+        plugins: { legend: { position: 'top' } },
+        scales: {
+          y: { title: { display: true, text: 'Nº de Locales Activos' }, beginAtZero: true },
+          x: { title: { display: true, text: 'Barrio / Área' } }
+        }
+      }
+    });
+  </script>

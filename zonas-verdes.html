@@ -1,0 +1,122 @@
+---
+layout: default
+title: Zonas verdes y esparcimiento canino
+description: Metros cuadrados de parque por habitante y mapa de áreas de esparcimiento canino en Salamanca
+date: 29-08-2026
+folder: Medio Ambiente
+permalink: zonas-verdes
+---
+
+    <!-- Featured Datasets Section -->
+    <section class="featured dataset" id="datos">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">{{ page.title }}</h2>
+                <p class="section-description">{{ page.description }}</p>
+            </div>
+			
+			<div id="section-content">
+						
+  <!-- Mapa interactivo de Parques y Zonas Caninas -->
+  <div id="mapaVerde" style="width: 100%; height: 500px; border-radius: 8px; margin-bottom: 25px;"></div>
+
+ 
+			<h2>Análisis de la infraestructura verde urbana</h2>
+			
+				<p>
+Salamanca cuenta con más de **2,5 millones de metros cuadrados de zonas verdes**, destacando el corredor fluvial del río Tormes como el gran pulmón ecológico de la ciudad. La dotación de metros cuadrados por habitante supera los estándares recomendados por la OMS en varios distritos periféricos.</p>
+
+<h3>Puntos clave sobre parques y áreas caninas</h3>
+<ul>
+<li><b>Corredor Fluvial del Tormes</b>: Parques como La Aldehuela, Huerta Otea y las Riberas del Tormes concentran la mayor superficie continua de arbolado y espacios recreativos.</li>
+<li><b>Espacios de Esparcimiento Canino (ZEC)</b>: La red municipal incluye más de 30 zonas acotadas y acondicionadas con mobiliario específico, fuentes adaptadas y cerramientos de seguridad.</li>
+</ul>
+
+  <h2>Superficie de zonas verdes por habitante (m²/hab.)</h2>
+  <canvas id="zonasVerdesChart" width="800" height="400"></canvas>
+
+			</div>
+			
+			<div id="section-table">
+			<table border="1" cellpadding="5" cellspacing="0">
+			  <thead>
+				<tr>
+				  <th>Parque / Zona Verde</th>
+				  <th>Ubicación / Barrio</th>
+				  <th>Superficie Aprox. (m²)</th>
+				  <th>Área Canina (ZEC)</th>
+				  <th>Equipamiento Destacado</th>
+				</tr>
+			  </thead>
+			  <tbody>
+				<tr><td>Parque de La Aldehuela</td><td>La Aldehuela / Vega del Tormes</td><td>240.000</td><td>Sí (Acotada)</td><td>Circuito deportivo, zonas infantiles</td></tr>
+				<tr><td>Parque de los Jesuitas</td><td>Providencia / Delicias</td><td>85.000</td><td>Sí</td><td>Pista de patinaje, cafetería, huertos</td></tr>
+				<tr><td>Parque de Huerta Otea</td><td>Huerta Otea</td><td>65.000</td><td>Sí</td><td>Jardín botánico, vistas al Tormes</td></tr>
+				<tr><td>Parque de la Alamedilla</td><td>Centro / España</td><td>25.000</td><td>No</td><td>Estanque de aves, zona infantil</td></tr>
+				<tr><td>Huerto de Calixto y Melibea</td><td>Casco Histórico</td><td>2.500</td><td>No</td><td>Jardín histórico y muralla</td></tr>
+			  </tbody>
+			</table>
+
+			</div>
+			
+			{% include categories.html %}
+            
+        </div>
+    </section>
+
+	<!-- Hojas de estilo y scripts de Leaflet -->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+	<script>
+    // 1. Inicializar mapa Leaflet
+    const mapVerde = L.map('mapaVerde').setView([40.9630, -5.6630], 14);
+
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+      attribution: '&copy; OpenStreetMap &copy; CARTO',
+      maxZoom: 19
+    }).addTo(mapVerde);
+
+    // Parques y Zonas Caninas
+    const espaciosVerdes = [
+      { name: 'Parque de los Jesuitas', lat: 40.9638, lng: -5.6540, zec: true, type: 'Parque Urbano' },
+      { name: 'Parque de la Alamedilla', lat: 40.9668, lng: -5.6582, zec: false, type: 'Parque Urbano' },
+      { name: 'Parque de Huerta Otea', lat: 40.9655, lng: -5.6840, zec: true, type: 'Parque Fluvial' },
+      { name: 'Parque de La Aldehuela', lat: 40.9560, lng: -5.6420, zec: true, type: 'Complejo Periurbano' },
+      { name: 'Huerto de Calixto y Melibea', lat: 40.9598, lng: -5.6662, zec: false, type: 'Jardín Histórico' }
+    ];
+
+    espaciosVerdes.forEach(p => {
+      L.circleMarker([p.lat, p.lng], {
+        radius: 9,
+        fillColor: p.zec ? '#2C5F2D' : '#1E56A0',
+        color: '#ffffff',
+        weight: 2,
+        fillOpacity: 0.85
+      }).bindPopup(`<b>${p.name}</b><br>Tipo: ${p.type}<br>Zona Canina (ZEC): ${p.zec ? 'Sí' : 'No'}`).addTo(mapVerde);
+    });
+
+    // 2. Gráfico de m² por habitante por distritos
+    const ctxVerde = document.getElementById('zonasVerdesChart').getContext('2d');
+    const zonasVerdesChart = new Chart(ctxVerde, {
+      type: 'bar',
+      data: {
+        labels: ['Huerta Otea / Marin concrete', 'Tejares / Zurguén', 'Garrido', 'San Bernardo', 'Centro / Casco Histórico'],
+        datasets: [{
+          label: 'm² de Zona Verde por Habitante',
+          data: [28.5, 22.1, 11.4, 8.2, 4.5],
+          backgroundColor: 'rgba(44, 95, 45, 0.75)',
+          borderColor: '#2C5F2D',
+          borderWidth: 1.5,
+          borderRadius: 4
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: { legend: { display: false } },
+        scales: {
+          y: { title: { display: true, text: 'm² / habitante' }, beginAtZero: true },
+          x: { title: { display: true, text: 'Distrito / Zona' } }
+        }
+      }
+    });
+  </script>

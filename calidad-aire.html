@@ -1,0 +1,122 @@
+---
+layout: default
+title: Calidad del aire y contaminación
+description: Registro histórico de NO2, PM10 y PM2.5 en las estaciones de medición de Salamanca
+date: 29-08-2026
+folder: Medio Ambiente
+permalink: calidad-aire
+---
+
+    <!-- Featured Datasets Section -->
+    <section class="featured dataset" id="datos">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">{{ page.title }}</h2>
+                <p class="section-description">{{ page.description }}</p>
+            </div>
+			
+			<div id="section-content">
+						
+  <canvas id="aireHistoricoChart" width="800" height="400"></canvas>
+
+ 
+			<h2>Análisis de la calidad del aire urbano</h2>
+			
+				<p>
+La calidad del aire en Salamanca se mantiene dentro de los **umbrales saludables fijados por la normativa europea**, favorecida por la ausencia de grandes núcleos industriales contaminantes y la progresiva implantación de la Zona de Bajas Emisiones (ZBE) en el centro urbano.</p>
+
+<h3>Indicadores y tendencias de contaminantes</h3>
+<ul>
+<li><b>Dióxido de Nitrógeno (NO2)</b>: Estrechamente ligado al tráfico rodado, muestra un descenso sostenido superior al 30% desde 2018 gracias a la peatonalización y a la renovación del parque móvil.</li>
+<li><b>Partículas en suspensión (PM10 y PM2.5)</b>: Presentan picos puntuales asociados a episodios de calima procedentes del norte de África, manteniéndose el resto del año en promedios anuales muy favorables (por debajo de 18 µg/m³).</li>
+</ul>
+
+  <h2>Comparativa anual por tipo de contaminante (µg/m³)</h2>
+  <canvas id="aireContaminantesChart" width="800" height="400"></canvas>
+
+			</div>
+			
+			<div id="section-table">
+			<table border="1" cellpadding="5" cellspacing="0">
+			  <thead>
+				<tr>
+				  <th>Estación de Medición</th>
+				  <th>Tipo de Estación</th>
+				  <th>Promedio NO2 (µg/m³)</th>
+				  <th>Promedio PM10 (µg/m³)</th>
+				  <th>Estado General</th>
+				</tr>
+			  </thead>
+			  <tbody>
+				<tr><td>Parque de la Alamedilla</td><td>Urbana / Fondo</td><td>16.2</td><td>14.8</td><td>Muy Bueno</td></tr>
+				<tr><td>Paseo de Canalejas</td><td>Urbana / Tráfico</td><td>22.5</td><td>18.2</td><td>Bueno</td></tr>
+				<tr><td>Polígono El Montalvo</td><td>Suburbana / Industrial</td><td>19.8</td><td>19.5</td><td>Bueno</td></tr>
+				<tr><td>Campus Unamuno</td><td>Urbana / Fondo</td><td>12.4</td><td>13.1</td><td>Excelente</td></tr>
+			  </tbody>
+			</table>
+
+			</div>
+			
+			{% include categories.html %}
+            
+        </div>
+    </section>
+
+	<script>
+    // Gráfico 1: Evolución del NO2 (2018-2025)
+    const ctxAireHist = document.getElementById('aireHistoricoChart').getContext('2d');
+    const aireHistoricoChart = new Chart(ctxAireHist, {
+      type: 'line',
+      data: {
+        labels: ['2018', '2019', '2020', '2021', '2022', '2023', '2024', '2025'],
+        datasets: [
+          {
+            label: 'Dióxido de Nitrógeno (NO2 - µg/m³)',
+            data: [28.4, 26.8, 18.2, 20.1, 19.5, 18.2, 17.0, 16.2],
+            borderColor: '#E63946',
+            backgroundColor: 'rgba(230, 57, 70, 0.1)',
+            borderWidth: 2,
+            tension: 0.2,
+            fill: true
+          },
+          {
+            label: 'Partículas PM10 (µg/m³)',
+            data: [21.0, 20.5, 16.4, 17.8, 18.2, 16.9, 15.8, 14.8],
+            borderColor: '#1E56A0',
+            backgroundColor: 'transparent',
+            borderWidth: 2,
+            tension: 0.2
+          }
+        ]
+      },
+      options: {
+        responsive: true,
+        scales: {
+          y: { title: { display: true, text: 'Concentración Media (µg/m³)' }, beginAtZero: true },
+          x: { title: { display: true, text: 'Año' } }
+        }
+      }
+    });
+
+    // Gráfico 2: Comparativa de Contaminantes
+    const ctxAireComp = document.getElementById('aireContaminantesChart').getContext('2d');
+    const aireContaminantesChart = new Chart(ctxAireComp, {
+      type: 'bar',
+      data: {
+        labels: ['NO2 (Dióxido Nitrógeno)', 'PM10 (Partículas gruesas)', 'PM2.5 (Partículas finas)', 'O3 (Ozono)'],
+        datasets: [{
+          label: 'Promedio Anual (µg/m³)',
+          data: [16.2, 14.8, 9.2, 42.5],
+          backgroundColor: ['#e63946', '#1e56a0', '#2a9d8f', '#f4a261'],
+          borderRadius: 4
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: { legend: { display: false } },
+        scales: {
+          y: { title: { display: true, text: 'µg/m³' }, beginAtZero: true }
+        }
+      }
+    });
+  </script>
