@@ -1,0 +1,120 @@
+---
+layout: default
+title: Comparativa Institucional: USAL frente a UPSA
+description: Diagnóstico comparativo del modelo público y privado, volumen de estudiantes, oferta académica e impacto económico
+date: 30-08-2026
+folder: Educación
+permalink: comparativa-usal-upsa
+---
+
+    <!-- Featured Datasets Section -->
+    <section class="featured dataset" id="datos">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">{{ page.title }}</h2>
+                <p class="section-description">{{ page.description }}</p>
+            </div>
+			
+			<div id="section-content">
+						
+  <canvas id="comparativaAlumnosGradosChart" width="800" height="400"></canvas>
+
+ 
+			<h2>Diagnóstico de los modelos universitarios en Salamanca</h2>
+			
+				<p>
+El panorama de la educación superior en la capital tormesina se sustenta sobre dos pilares con vocaciones y estructuras muy diferenciadas. Por un lado, la <b>Universidad de Salamanca (USAL)</b> ejerce como una macro-institución pública de alcance global, con una fuerte carga investigadora y una enorme huella urbana. Por otro lado, la <b>Universidad Pontificia de Salamanca (UPSA)</b> representa un modelo privado de tamaño medio, altamente especializado y con una enorme capacidad de tracción de alumnado nacional.</p>
+
+<h3>Claves del diagnóstico comparativo</h3>
+<ul>
+<li><b>Macroestructura vs. Especialización</b>: Mientras la USAL despliega una oferta generalista masiva (81 grados, 83 másteres, 44 doctorados) abarcando casi todas las ramas del conocimiento en 18 centros urbanos, la UPSA concentra su modelo en 27 grados fuertemente enfocados en tres nichos: Educación, Comunicación y Ciencias de la Salud (distribuidos en 11 centros).</li>
+<li><b>Impacto económico y financiación</b>: La USAL actúa como un gigante económico municipal. Con un presupuesto expansivo de 300,12 millones de euros en 2025, depende de las transferencias públicas y los fondos Next Generation para sostener su I+D. La UPSA, con un presupuesto estable estimado en 45 millones de euros, opera mediante financiación privada y tasas académicas, pero genera un altísimo impacto indirecto en el sector inmobiliario y de servicios gracias a que un 40,1% de su alumnado proviene de fuera de Castilla y León.</li>
+<li><b>Huella urbana</b>: La USAL articula el urbanismo de la ciudad con grandes expansiones territoriales (Campus Unamuno, Ciudad Jardín). La UPSA mantiene un perfil más concentrado, pivotando sobre su histórica sede central en la Clerecía y el Campus Champagnat.</li>
+</ul>
+
+  <h2>Comparativa de Presupuesto Anual (Impacto Financiero Directo)</h2>
+  <canvas id="comparativaPresupuestoChart" width="800" height="400"></canvas>
+
+			</div>
+			
+			<div id="section-table">
+			<table border="1" cellpadding="5" cellspacing="0">
+			  <thead>
+				<tr>
+				  <th>Indicador / Dimensión</th>
+				  <th>Universidad de Salamanca (USAL)</th>
+				  <th>Universidad Pontificia (UPSA)</th>
+				</tr>
+			  </thead>
+			  <tbody>
+				<tr><td><b>Titularidad y Modelo</b></td><td>Pública / Generalista e Investigadora</td><td>Privada / Especializada</td></tr>
+				<tr><td><b>Alumnos de Grado (Capital)</b></td><td>18.470 estudiantes</td><td>3.914 estudiantes</td></tr>
+				<tr><td><b>Oferta Académica (Grados)</b></td><td>81 titulaciones</td><td>27 titulaciones</td></tr>
+				<tr><td><b>Presupuesto Anual</b></td><td>300,12 millones de € (2025)</td><td>~45 millones de € (Estimado)</td></tr>
+				<tr><td><b>Centros Universitarios (Capital)</b></td><td>18 centros (Campus Unamuno, Histórico, etc.)</td><td>11 centros (Clerecía, Champagnat)</td></tr>
+				<tr><td><b>Áreas de Especialización</b></td><td>Ciencias Sociales, Derecho, Salud, Ciencias puras</td><td>Educación, Comunicación, Salud, Teología</td></tr>
+			  </tbody>
+			</table>
+
+			</div>
+			
+			{% include categories.html %}
+            
+        </div>
+    </section>
+
+	<script>
+    // Gráfico 1: Comparativa de Escala (Alumnos y Grados)
+    const ctxCompEscala = document.getElementById('comparativaAlumnosGradosChart').getContext('2d');
+    const comparativaAlumnosGradosChart = new Chart(ctxCompEscala, {
+      type: 'bar',
+      data: {
+        labels: ['Alumnos de Grado (x100)', 'Titulaciones de Grado', 'Centros en la Ciudad'],
+        datasets: [
+          {
+            label: 'USAL (Pública)',
+            data: [184.70, 81, 18], // Alumnos escalados para visualización (x100)
+            backgroundColor: '#A8201A',
+            borderRadius: 4
+          },
+          {
+            label: 'UPSA (Privada)',
+            data: [39.14, 27, 11], // Alumnos escalados para visualización (x100)
+            backgroundColor: '#1E56A0',
+            borderRadius: 4
+          }
+        ]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          title: { display: true, text: 'Escala de la Oferta y Demanda Académica (Alumnos representados en cientos)' },
+          legend: { position: 'top' }
+        },
+        scales: {
+          y: { beginAtZero: true },
+          x: { title: { display: true, text: 'Indicadores Estructurales' } }
+        }
+      }
+    });
+
+    // Gráfico 2: Comparativa Presupuestaria
+    const ctxCompPresupuesto = document.getElementById('comparativaPresupuestoChart').getContext('2d');
+    const comparativaPresupuestoChart = new Chart(ctxCompPresupuesto, {
+      type: 'doughnut',
+      data: {
+        labels: ['Presupuesto USAL (300,12 M€)', 'Presupuesto UPSA (45 M€)'],
+        datasets: [{
+          data: [300.12, 45],
+          backgroundColor: ['#A8201A', '#1E56A0']
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: { position: 'bottom' },
+          title: { display: true, text: 'Proporción del Presupuesto Universitario en Salamanca (Millones de €)' }
+        }
+      }
+    });
+  </script>

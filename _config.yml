@@ -2,3 +2,6 @@ url: "https://opensalamanca.es"
 
 plugins:
   - jekyll-sitemap
+
+exclude:
+  - "Open Salamanca - Diseño y Arquitectura del Portal.md"
