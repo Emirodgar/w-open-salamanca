@@ -90,6 +90,12 @@ body {
     gap: var(--spacing-lg);
 }
 
+.logo-link {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+
 .logo h1,
 .logo h2 {
     font-size: 1.5rem;

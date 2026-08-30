@@ -37,8 +37,10 @@
         <div class="container">
             <div class="header-content">
                 <div class="logo">
-                    {% if page.url == "/" %}<h1>Open Salamanca</h1>{% else %}<h2>Open Salamanca</h2>{% endif %}
-                    <span class="tagline">Datos Abiertos</span>
+                    <a href="https://opensalamanca.es" class="logo-link">
+                        {% if page.url == "/" %}<h1>Open Salamanca</h1>{% else %}<h2>Open Salamanca</h2>{% endif %}
+                        <span class="tagline">Datos Abiertos</span>
+                    </a>
                 </div>
 
                 <nav class="nav">
