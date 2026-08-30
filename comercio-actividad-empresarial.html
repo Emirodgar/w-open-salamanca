@@ -1,0 +1,120 @@
+---
+layout: default
+title: Tejido empresarial y comercio local
+description: Densidad comercial, apertura de licencias de actividad y empresas constituidas por distritos en Salamanca
+date: 29-08-2026
+folder: Economia
+permalink: comercio-actividad-empresarial
+---
+
+    <!-- Featured Datasets Section -->
+    <section class="featured dataset" id="datos">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">{{ page.title }}</h2>
+                <p class="section-description">{{ page.description }}</p>
+            </div>
+			
+			<div id="section-content">
+						
+  <!-- Mapa de zonas comerciales e industriales Leaflet -->
+  <div id="mapaComercio" style="width: 100%; height: 500px; border-radius: 8px; margin-bottom: 25px;"></div>
+
+ 
+			<h2>Análisis de la estructura comercial y dinamismo empresarial</h2>
+			
+				<p>
+El mapa económico de Salamanca refleja una **alta concentración del comercio minorista y de servicios en el eje central**, mientras que los polígonos industriales y parques tecnológicos canalizan la actividad logística, biosanitaria e industrial. Las iniciativas de digitalización y dinamización de mercados municipales han reforzado la resiliencia del comercio tradicional.</p>
+
+<h3>Ejes comerciales y polos de innovación</h3>
+<ul>
+<li><b>Eje Comercial Toro-Zamora-Plaza Mayor</b>: Es la zona de mayor densidad de locales comerciales en activo, articulando las principales franquicias y el comercio especializado.</li>
+<li><b>Parque Científico y Polígonos Industriales</b>: Espacios como El Montalvo y Villares (alfoz) albergan la mayor parte del tejido PYME industrial, mientras que el Parque Científico de la USAL agrupa startups tecnológicas y spin-offs biomed.</li>
+</ul>
+
+  <h2>Locales comerciales activos por distrito o sector urbano</h2>
+  <canvas id="comercioZonasChart" width="800" height="400"></canvas>
+
+			</div>
+			
+			<div id="section-table">
+			<table border="1" cellpadding="5" cellspacing="0">
+			  <thead>
+				<tr>
+				  <th>Eje / Zona Económica</th>
+				  <th>Locales Activos</th>
+				  <th>Tasa de Ocupación (%)</th>
+				  <th>Actividad Principal</th>
+				  <th>Nuevas Licencias (2025)</th>
+				</tr>
+			  </thead>
+			  <tbody>
+				<tr><td>Eje Peatonal Toro &ndash; Zamora</td><td>520</td><td>92.4%</td><td>Moda, calzado y equipamiento personal</td><td>34</td></tr>
+				<tr><td>Casco Histórico / Resto Centro</td><td>780</td><td>86.1%</td><td>Hostelería, souvenirs y productos locales</td><td>52</td></tr>
+				<tr><td>Barrio del Oeste / Carmelitas</td><td>410</td><td>79.8%</td><td>Comercio creativo, servicios y gastronomía</td><td>28</td></tr>
+				<tr><td>Eje Canalejas &ndash; Prosperidad</td><td>350</td><td>75.2%</td><td>Comercio de proximidad y alimentación</td><td>19</td></tr>
+				<tr><td>Garrido (Av. Portugal / Filiberto)</td><td>610</td><td>78.5%</td><td>Servicios personales, alimentación y hogar</td><td>31</td></tr>
+				<tr><td>Polígono El Montalvo (I y II)</td><td>480</td><td>84.0%</td><td>Logística, distribución e industria ligera</td><td>22</td></tr>
+			  </tbody>
+			</table>
+
+			</div>
+			
+			{% include categories.html %}
+            
+        </div>
+    </section>
+
+	<!-- Hojas de estilo y scripts de Leaflet -->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+	<script>
+    // 1. Inicializar mapa de ejes comerciales y empresariales
+    const mapComercio = L.map('mapaComercio').setView([40.9660, -5.6620], 14);
+
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+      attribution: '&copy; OpenStreetMap &copy; CARTO',
+      maxZoom: 19
+    }).addTo(mapComercio);
+
+    const polosEconomicos = [
+      { name: 'Eje Comercial Toro / Zamora', lat: 40.9665, lng: -5.6630, desc: 'Milla de oro comercial y servicios', type: 'Comercio' },
+      { name: 'Mercado Central de Abastos', lat: 40.9642, lng: -5.6625, desc: 'Comercio tradicional de alimentación', type: 'Comercio' },
+      { name: 'Polígono Industrial El Montalvo', lat: 40.9420, lng: -5.6510, desc: 'Eje industrial, logístico y empresarial', type: 'Industrial' },
+      { name: 'Parque Científico USAL (Villamayor)', lat: 40.9850, lng: -5.6880, desc: 'Hub de innovación, biotecnología y tecnología', type: 'Innovación' },
+      { name: 'Barrio del Oeste (Comercio Urbano)', lat: 40.9690, lng: -5.6710, desc: 'Zona de comercio creativo y galerías urbanas', type: 'Comercio' }
+    ];
+
+    polosEconomicos.forEach(p => {
+      L.circleMarker([p.lat, p.lng], {
+        radius: 9,
+        fillColor: p.type === 'Comercio' ? '#F4A261' : (p.type === 'Industrial' ? '#264653' : '#1E56A0'),
+        color: '#ffffff',
+        weight: 2,
+        fillOpacity: 0.85
+      }).bindPopup(`<b>${p.name}</b><br>Tipo: ${p.type}<br>${p.desc}`).addTo(mapComercio);
+    });
+
+    // 2. Gráfico de barras de locales comerciales por zonas
+    const ctxCom = document.getElementById('comercioZonasChart').getContext('2d');
+    const comercioZonasChart = new Chart(ctxCom, {
+      type: 'bar',
+      data: {
+        labels: ['Casco Histórico', 'Garrido', 'Eje Toro-Zamora', 'Polígono Montalvo', 'Barrio del Oeste', 'Canalejas'],
+        datasets: [{
+          label: 'Locales Comerciales Activos',
+          data: [780, 610, 520, 480, 410, 350],
+          backgroundColor: '#1E56A0',
+          borderRadius: 4
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: { legend: { display: false } },
+        scales: {
+          y: { title: { display: true, text: 'Número de Locales Activos' }, beginAtZero: true },
+          x: { title: { display: true, text: 'Zona / Sector' } }
+        }
+      }
+    });
+  </script>

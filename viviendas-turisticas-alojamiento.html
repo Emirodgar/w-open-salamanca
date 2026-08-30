@@ -1,0 +1,131 @@
+---
+layout: default
+title: Viviendas de uso turístico y capacidad hotelera
+description: Evolución de las plazas turísticas en VUT, pernoctaciones y ocupación hotelera en Salamanca
+date: 30-08-2026
+folder: Turismo
+permalink: viviendas-turisticas-alojamiento
+---
+
+    <!-- Featured Datasets Section -->
+    <section class="featured dataset" id="datos">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">{{ page.title }}</h2>
+                <p class="section-description">{{ page.description }}</p>
+            </div>
+			
+			<div id="section-content">
+						
+  <!-- Mapa de densidad de VUT y plazas hoteleras Leaflet -->
+  <div id="mapaTurismo" style="width: 100%; height: 500px; border-radius: 8px; margin-bottom: 25px;"></div>
+
+ 
+			<h2>Análisis de la capacidad alojativa y presión turística residencial</h2>
+			
+				<p>
+El sector del alojamiento turístico en Salamanca registra una **transformación estructural acelerada por el crecimiento de las Viviendas de Uso Turístico (VUT)**. La concentración de plazas de alquiler vacacional en el casco histórico ha reconfigurado la oferta tradicional hotelera, generando un debate sobre la convivencia vecinal y el uso del parque residencial.</p>
+
+<h3>Indicadores clave de pernoctaciones y oferta alojativa</h3>
+<ul>
+<li><b>Concentración en el centro patrimonial</b>: Más del 72% de las VUT registradas oficialmente se ubican dentro de la almendra central y el entorno de la Plaza Mayor y la Clerecía.</li>
+<li><b>Recuperación de pernoctaciones y estancia media</b>: Las pernoctaciones anuales superan los 1,2 millones de estancias, manteniendo una estancia media de 1,65 noches por viajero en el sector hotelero urbano.</li>
+</ul>
+
+  <h2>Evolución del número de plazas turísticas (VUT vs Hoteles 2018-2025)</h2>
+  <canvas id="plazasHistoricoChart" width="800" height="400"></canvas>
+
+			</div>
+			
+			<div id="section-table">
+			<table border="1" cellpadding="5" cellspacing="0">
+			  <thead>
+				<tr>
+				  <th>Distrito / Sector Urbano</th>
+				  <th>VUT Registradas</th>
+				  <th>Plazas en VUT</th>
+				  <th>Hoteles / Hostales</th>
+				  <th>Plazas Hoteleras</th>
+				  <th>Grado Ocupación Media (%)</th>
+				</tr>
+			  </thead>
+			  <tbody>
+				<tr><td>Casco Histórico / Catedrales</td><td>680</td><td>2.850</td><td>28</td><td>2.100</td><td>74.2%</td></tr>
+				<tr><td>Plaza Mayor / San Martín</td><td>420</td><td>1.720</td><td>18</td><td>1.450</td><td>76.5%</td></tr>
+				<tr><td>Carmelitas / San Bernardo</td><td>185</td><td>780</td><td>12</td><td>890</td><td>65.1%</td></tr>
+				<tr><td>Canalejas / Prosperidad</td><td>110</td><td>460</td><td>8</td><td>620</td><td>62.8%</td></tr>
+				<tr><td>Estación / Garrido Sur</td><td>85</td><td>350</td><td>10</td><td>780</td><td>59.4%</td></tr>
+				<tr><td>Tejares / Periferia Sur</td><td>35</td><td>140</td><td>5</td><td>420</td><td>52.0%</td></tr>
+			  </tbody>
+			</table>
+
+			</div>
+			
+			{% include categories.html %}
+            
+        </div>
+    </section>
+
+	<!-- Hojas de estilo y scripts de Leaflet -->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+	<script>
+    // 1. Inicializar mapa de densidad turística
+    const mapTur = L.map('mapaTurismo').setView([40.9645, -5.6635], 15);
+
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+      attribution: '&copy; OpenStreetMap &copy; CARTO',
+      maxZoom: 19
+    }).addTo(mapTur);
+
+    const puntosAlojamientos = [
+      { name: 'Núcleo Plaza Mayor', lat: 40.9650, lng: -5.6630, vut: '420 VUT', desc: 'Alta densidad de viviendas turísticas' },
+      { name: 'Entorno Catedrales / Rúa Mayor', lat: 40.9605, lng: -5.6660, vut: '380 VUT', desc: 'Zona de mayor concentración estacional' },
+      { name: 'Eje Universidad / San Bernardo', lat: 40.9680, lng: -5.6710, vut: '185 VUT', desc: 'Mezcla de residencia estudiantil y VUT' },
+      { name: 'Eje Gran Vía / Canalejas', lat: 40.9635, lng: -5.6580, vut: '110 VUT', desc: 'Hoteles tradicionales y VUT dispersas' }
+    ];
+
+    puntosAlojamientos.forEach(p => {
+      L.circle([p.lat, p.lng], {
+        color: '#E63946',
+        fillColor: '#E63946',
+        fillOpacity: 0.5,
+        radius: 180
+      }).bindPopup(`<b>${p.name}</b><br>Concentración: ${p.vut}<br>${p.desc}`).addTo(mapTur);
+    });
+
+    // 2. Gráfico comparativo de plazas históricas (VUT vs Hoteles)
+    const ctxPlaz = document.getElementById('plazasHistoricoChart').getContext('2d');
+    const plazasHistoricoChart = new Chart(ctxPlaz, {
+      type: 'line',
+      data: {
+        labels: ['2018', '2019', '2020', '2021', '2022', '2023', '2024', '2025'],
+        datasets: [
+          {
+            label: 'Plazas en VUT',
+            data: [1800, 2400, 2100, 2800, 3900, 4800, 5600, 6300],
+            borderColor: '#E63946',
+            backgroundColor: 'rgba(230, 57, 70, 0.1)',
+            borderWidth: 2,
+            tension: 0.2,
+            fill: true
+          },
+          {
+            label: 'Plazas Hoteleras Tradicionales',
+            data: [6100, 6200, 5800, 5950, 6150, 6250, 6300, 6350],
+            borderColor: '#1E56A0',
+            backgroundColor: 'transparent',
+            borderWidth: 2,
+            tension: 0.2
+          }
+        ]
+      },
+      options: {
+        responsive: true,
+        scales: {
+          y: { title: { display: true, text: 'Número de Plazas' }, beginAtZero: true },
+          x: { title: { display: true, text: 'Año' } }
+        }
+      }
+    });
+  </script>

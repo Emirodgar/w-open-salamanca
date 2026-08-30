@@ -1,0 +1,115 @@
+---
+layout: default
+title: Contratación pública y licitaciones municipales
+description: Adjudicación de contratos, volumen de licitación, procedimientos y concurrencia de PYMEs en Salamanca
+date: 30-08-2026
+folder: Hacienda Local
+permalink: contratacion-licitaciones-publicas
+---
+
+    <!-- Featured Datasets Section -->
+    <section class="featured dataset" id="datos">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">{{ page.title }}</h2>
+                <p class="section-description">{{ page.description }}</p>
+            </div>
+			
+			<div id="section-content">
+						
+  <canvas id="volumenLicitacionesChart" width="800" height="400"></canvas>
+
+ 
+			<h2>Análisis de la transparencia, concurrencia y contratación responsable</h2>
+			
+				<p>
+El portal de contratación pública del Ayuntamiento de Salamanca proporciona acceso abierto a la **gestión de licitaciones, pliegos técnicos y expedientes de adjudicación**. La estrategia de contratación municipal fomenta la participación de pequeñas y medianas empresas (PYMEs) locales e incorpora cláusulas sociales y medioambientales en los criterios de adjudicación.</p>
+
+<h3>Indicadores de gestión contractual y libre concurrencia</h3>
+<ul>
+<li><b>Predominio del procedimiento abierto</b>: Más del 85% del volumen económico adjudicado se canaliza mediante licitaciones abiertas con publicidad oficial, maximizando la competencia y transparencia.</li>
+<li><b>Participación del tejido empresarial regional</b>: Cerca del 62% de los contratos adjudicados recaen en PYMEs con domicilio social o delegación operativa en Salamanca y Castilla y León.</li>
+</ul>
+
+  <h2>Distribución del número de expedientes por tipología de procedimiento</h2>
+  <canvas id="contratacionProcedimientosChart" width="800" height="400"></canvas>
+
+			</div>
+			
+			<div id="section-table">
+			<table border="1" cellpadding="5" cellspacing="0">
+			  <thead>
+				<tr>
+				  <th>Área Licitadora / Unidad</th>
+				  <th>Contratos Adjudicados</th>
+				  <th>Importe Total (€)</th>
+				  <th>Procedimiento Mayoritario</th>
+				  <th>Adjudicaciones PYME (%)</th>
+				</tr>
+			  </thead>
+			  <tbody>
+				<tr><td>Fomento, Obras y Medio Ambiente</td><td>42</td><td>18.400.000 €</td><td>Abierto Simplificado / Abierto</td><td>58.5%</td></tr>
+				<tr><td>Servicios Sociales y Mayores</td><td>28</td><td>12.100.000 €</td><td>Abierto Sujeto a Regulación Armonizada</td><td>64.2%</td></tr>
+				<tr><td>Nuevas Tecnologías y Smart City</td><td>19</td><td>6.800.000 €</td><td>Abierto / Negociado</td><td>72.0%</td></tr>
+				<tr><td>Cultura y Turismo (Fundación)</td><td>35</td><td>4.200.000 €</td><td>Abierto Simplificado</td><td>68.5%</td></tr>
+				<tr><td>Mantenimiento de Instalaciones y Deportes</td><td>24</td><td>3.600.000 €</td><td>Abierto Simplificado</td><td>75.0%</td></tr>
+				<tr><td>Régimen Interior y Contratación Menor</td><td>145</td><td>1.850.000 €</td><td>Contrato Menor (LCS)</td><td>88.2%</td></tr>
+			  </tbody>
+			</table>
+
+			</div>
+			
+			{% include categories.html %}
+            
+        </div>
+    </section>
+
+	<script>
+    // Gráfico 1: Evolución del Volumen Anual Licitado (2018-2025)
+    const ctxVol = document.getElementById('volumenLicitacionesChart').getContext('2d');
+    const volumenLicitacionesChart = new Chart(ctxVol, {
+      type: 'line',
+      data: {
+        labels: ['2018', '2019', '2020', '2021', '2022', '2023', '2024', '2025'],
+        datasets: [{
+          label: 'Volumen Total Licitado (Millones de €)',
+          data: [28.4, 32.1, 24.5, 36.8, 42.5, 45.1, 48.2, 46.95],
+          borderColor: '#2C5F2D',
+          backgroundColor: 'rgba(44, 95, 45, 0.1)',
+          borderWidth: 2,
+          tension: 0.2,
+          fill: true
+        }]
+      },
+      options: {
+        responsive: true,
+        scales: {
+          y: { title: { display: true, text: 'Millones de Euros (€)' }, beginAtZero: true },
+          x: { title: { display: true, text: 'Año' } }
+        }
+      }
+    });
+
+    // Gráfico 2: Barras de Procedimientos de Contratación
+    const ctxProc = document.getElementById('contratacionProcedimientosChart').getContext('2d');
+    const contratacionProcedimientosChart = new Chart(ctxProc, {
+      type: 'bar',
+      data: {
+        labels: ['Abierto', 'Abierto Simplificado', 'Contrato Menor', 'Negociado sin Publicidad', 'SARA'],
+        datasets: [{
+          label: 'Número de Expedientes',
+          data: [38, 62, 145, 12, 15],
+          backgroundColor: '#1E56A0',
+          borderRadius: 4
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: { legend: { display: false } },
+        scales: {
+          y: { title: { display: true, text: 'Número de Expedientes Adjudicados' }, beginAtZero: true },
+          x: { title: { display: true, text: 'Tipo de Procedimiento' } }
+        }
+      }
+    });
+  </script>

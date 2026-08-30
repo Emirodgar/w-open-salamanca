@@ -1,0 +1,117 @@
+---
+layout: default
+title: Comunidad Estudiantil y Oferta Académica
+description: Análisis del volumen de estudiantes, distribución por facultades y peso demográfico de las universidades en Salamanca
+date: 30-08-2026
+folder: Educacion
+permalink: comunidad-estudiantil-universidades
+---
+
+    <!-- Featured Datasets Section -->
+    <section class="featured dataset" id="datos">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">{{ page.title }}</h2>
+                <p class="section-description">{{ page.description }}</p>
+            </div>
+			
+			<div id="section-content">
+						
+  <!-- Mapa de Campus y Facultades Leaflet -->
+  <div id="mapaCampus" style="width: 100%; height: 500px; border-radius: 8px; margin-bottom: 25px;"></div>
+
+ 
+			<h2>Radiografía del motor demográfico universitario</h2>
+			
+				<p>
+El ecosistema de educación superior de Salamanca está compuesto por la Universidad de Salamanca (USAL) y la Universidad Pontificia de Salamanca (UPSA). Entre ambas instituciones, Salamanca supera ampliamente los 32.000 estudiantes. Esta cifra refuerza su identidad como ciudad universitaria y su gran capacidad para atraer talento nacional e internacional. 
+</p>
+
+<h3>Distribución de alumnos y titulaciones</h3>
+<ul>
+<li><b>La USAL (Pública)</b>: Continúa siendo la institución con mayor peso académico de Castilla y León, contando con 28.360 estudiantes distribuidos en sus distintos campus. A nivel global, oferta 81 grados, 83 másteres y 44 programas de doctorado. Solo en la ciudad de Salamanca, la USAL reúne 18 centros universitarios con 18.470 estudiantes de grado. Su capacidad de atracción se mantiene al alza, matriculando para el curso 2026 a 5.451 estudiantes de nuevo ingreso, lo que supone un incremento del 6,7% respecto a 2025.</li>
+<li><b>La UPSA (Privada)</b>: Muestra una evolución sostenida, superando en la actualidad los 5.477 estudiantes de grado matriculados. En su campus principal de Salamanca, gestiona 11 centros y cuenta con 3.914 estudiantes de grado. Demuestra una altísima capacidad de atracción nacional, ya que el 40,1% de su alumnado de grado reside fuera de Castilla y León.</li>
+</ul>
+
+  <h2>Estudiantes de nuevo ingreso en la USAL (2020-2026)</h2>
+  <canvas id="evolucionEstudiantesChart" width="800" height="400"></canvas>
+
+			</div>
+			
+			<div id="section-table">
+			<table border="1" cellpadding="5" cellspacing="0">
+			  <thead>
+				<tr>
+				  <th>Institución</th>
+				  <th>Centros en la Ciudad</th>
+				  <th>Alumnos de Grado (Capital)</th>
+				  <th>Oferta de Grados (Total)</th>
+				  <th>Ramas de Especialización Destacadas</th>
+				</tr>
+			  </thead>
+			  <tbody>
+				<tr><td>USAL (Universidad de Salamanca)</td><td>18 centros</td><td>18.470 estudiantes</td><td>81 grados</td><td>Ciencias Sociales y Jurídicas, Ciencias de la Salud</td></tr>
+				<tr><td>UPSA (Universidad Pontificia)</td><td>11 centros</td><td>3.914 estudiantes</td><td>27 grados</td><td>Educación, Comunicación, Ciencias de la Salud</td></tr>
+			  </tbody>
+			</table>
+
+			</div>
+			
+			{% include categories.html %}
+            
+        </div>
+    </section>
+
+	<!-- Hojas de estilo y scripts de Leaflet -->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+	<script>
+    // 1. Inicializar mapa de campus universitarios
+    const mapCampus = L.map('mapaCampus').setView([40.9630, -5.6690], 14);
+
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+      attribution: '&copy; OpenStreetMap &copy; CARTO',
+      maxZoom: 19
+    }).addTo(mapCampus);
+
+    const listaCampus = [
+      { name: 'Campus Unamuno (USAL)', lat: 40.9675, lng: -5.6765, tipo: 'Público', desc: 'Facultades de Medicina, Derecho, Economía, FES y Ciencias' },
+      { name: 'Campus Histórico (USAL)', lat: 40.9615, lng: -5.6675, tipo: 'Público', desc: 'Edificio Histórico, Filología y Traducción' },
+      { name: 'Campus Ciudad Jardín (USAL)', lat: 40.9730, lng: -5.6565, tipo: 'Público', desc: 'Psicología y Bellas Artes' },
+      { name: 'Campus UPSA (Sede Central)', lat: 40.9631, lng: -5.6660, tipo: 'Privado', desc: 'Clerecía: Educación, Comunicación y Salud' },
+      { name: 'Campus Champagnat (UPSA)', lat: 40.9660, lng: -5.6790, tipo: 'Privado', desc: 'Informática y Fisioterapia' }
+    ];
+
+    listaCampus.forEach(c => {
+      L.circleMarker([c.lat, c.lng], {
+        radius: 10,
+        fillColor: c.tipo === 'Público' ? '#A8201A' : '#1E56A0', // Rojo USAL, Azul UPSA
+        color: '#ffffff',
+        weight: 2,
+        fillOpacity: 0.85
+      }).bindPopup(`<b>${c.name}</b><br>Titularidad: ${c.tipo}<br>${c.desc}`).addTo(mapCampus);
+    });
+
+    // 2. Gráfico de evolución de nuevo ingreso en USAL
+    const ctxEstudiantes = document.getElementById('evolucionEstudiantesChart').getContext('2d');
+    const evolucionEstudiantesChart = new Chart(ctxEstudiantes, {
+      type: 'bar',
+      data: {
+        labels: ['2020', '2021', '2022', '2023', '2024', '2025', '2026'],
+        datasets: [{
+          label: 'Alumnos de Nuevo Ingreso (USAL)',
+          data: [4750, 4820, 4905, 4980, 5020, 5100, 5451],
+          backgroundColor: '#A8201A', // Color institucional rojo
+          borderRadius: 4
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: { legend: { display: false } },
+        scales: {
+          y: { title: { display: true, text: 'Número de Estudiantes' }, beginAtZero: false },
+          x: { title: { display: true, text: 'Año / Curso Académico' } }
+        }
+      }
+    });
+  </script>

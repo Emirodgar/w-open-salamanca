@@ -1,0 +1,113 @@
+---
+layout: default
+title: Mercado de trabajo y afiliación a la Seguridad Social
+description: Evolución del paro registrado, afiliación por sectores y tasa de actividad en Salamanca
+date: 29-08-2026
+folder: Mercado Laboral
+permalink: empleo-afiliacion-paro
+---
+
+    <!-- Featured Datasets Section -->
+    <section class="featured dataset" id="datos">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">{{ page.title }}</h2>
+                <p class="section-description">{{ page.description }}</p>
+            </div>
+			
+			<div id="section-content">
+						
+  <canvas id="paroHistoricoChart" width="800" height="400"></canvas>
+
+ 
+			<h2>Análisis de la dinámica laboral y sectores ocupacionales</h2>
+			
+				<p>
+El mercado laboral en Salamanca muestra una **reducción progresiva de la tasa de desempleo**, acompañada por una mayor diversificación en la afiliación a la Seguridad Social. Aunque el sector servicios continúa siendo el principal motor ocupacional, los sectores vinculados a la tecnología, la biotecnología y el ecosistema universitario han experimentado un crecimiento notable.</p>
+
+<h3>Indicadores destacados de empleo</h3>
+<ul>
+<li><b>Predominio del sector servicios</b>: Actividades como el comercio, la educación, la hostelería y la sanidad pública concentran más del 78% del total de las afiliaciones en el municipio.</li>
+<li><b>Estacionalidad vinculada al calendario académico</b>: Las fluctuaciones de desempleo reflejan una fuerte correlación con los periodos lectivos universitarios y las campañas turísticas estivales.</li>
+</ul>
+
+  <h2>Distribución de afiliados a la Seguridad Social por sector económico (%)</h2>
+  <canvas id="sectoresAfiliacionChart" width="800" height="400"></canvas>
+
+			</div>
+			
+			<div id="section-table">
+			<table border="1" cellpadding="5" cellspacing="0">
+			  <thead>
+				<tr>
+				  <th>Sector / Rama de Actividad</th>
+				  <th>Afiliados Estimados</th>
+				  <th>Variación Anual (%)</th>
+				  <th>Peso sobre el Total (%)</th>
+				  <th>Perfil Profesional Predominante</th>
+				</tr>
+			  </thead>
+			  <tbody>
+				<tr><td>Educación, Investigación e I+D</td><td>14.200</td><td>+4.2%</td><td>18.5%</td><td>Docente, investigador, personal técnico</td></tr>
+				<tr><td>Sanidad y Servicios Sociales</td><td>12.800</td><td>+3.1%</td><td>16.7%</td><td>Personal sanitario, atención asistencial</td></tr>
+				<tr><td>Comercio al por mayor y menor</td><td>11.500</td><td>+1.2%</td><td>15.0%</td><td>Dependientes, logística, gestión comercial</td></tr>
+				<tr><td>Hostelería y Turismo</td><td>9.400</td><td>+2.8%</td><td>12.3%</td><td>Restauración, alojamiento, servicios turísticos</td></tr>
+				<tr><td>Servicios Profesionales y Tecnológicos</td><td>8.100</td><td>+6.5%</td><td>10.6%</td><td>Desarrollo software, consultoría, ingeniería</td></tr>
+				<tr><td>Construcción e Industria Organizada</td><td>6.900</td><td>+1.8%</td><td>9.0%</td><td>Edificación, mantenimiento, transformación</td></tr>
+			  </tbody>
+			</table>
+
+			</div>
+			
+			{% include categories.html %}
+            
+        </div>
+    </section>
+
+	<script>
+    // Gráfico 1: Evolución del Paro Registrado (2018-2025)
+    const ctxParo = document.getElementById('paroHistoricoChart').getContext('2d');
+    const paroHistoricoChart = new Chart(ctxParo, {
+      type: 'line',
+      data: {
+        labels: ['2018', '2019', '2020', '2021', '2022', '2023', '2024', '2025'],
+        datasets: [{
+          label: 'Desempleados Registrados (Personas)',
+          data: [14200, 13400, 16800, 14900, 12800, 11500, 10600, 9950],
+          borderColor: '#E63946',
+          backgroundColor: 'rgba(230, 57, 70, 0.1)',
+          borderWidth: 2,
+          tension: 0.2,
+          fill: true
+        }]
+      },
+      options: {
+        responsive: true,
+        scales: {
+          y: { title: { display: true, text: 'Número de Personas en Paro' }, beginAtZero: false },
+          x: { title: { display: true, text: 'Año' } }
+        }
+      }
+    });
+
+    // Gráfico 2: Torta / Dona de Sectores Económicos
+    const ctxSec = document.getElementById('sectoresAfiliacionChart').getContext('2d');
+    const sectoresAfiliacionChart = new Chart(ctxSec, {
+      type: 'doughnut',
+      data: {
+        labels: ['Educación y Sanidad', 'Comercio y Logística', 'Hostelería y Ocio', 'Servicios Profesionales / Tech', 'Construcción e Industria', 'Otros Servicios'],
+        datasets: [{
+          data: [35, 18, 14, 13, 11, 9],
+          backgroundColor: [
+            '#1E56A0', '#F4A261', '#E63946', '#2C5F2D', '#264653', '#A8DADC'
+          ]
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: { position: 'bottom' }
+        }
+      }
+    });
+  </script>

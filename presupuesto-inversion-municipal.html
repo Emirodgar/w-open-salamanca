@@ -1,0 +1,113 @@
+---
+layout: default
+title: Presupuesto municipal, ingresos y ejecución de gasto
+description: Desglose de presupuestos consolidados, recaudación fiscal, gastos por áreas y proyectos de inversión en Salamanca
+date: 30-08-2026
+folder: Hacienda Local
+permalink: presupuesto-inversion-municipal
+---
+
+    <!-- Featured Datasets Section -->
+    <section class="featured dataset" id="datos">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">{{ page.title }}</h2>
+                <p class="section-description">{{ page.description }}</p>
+            </div>
+			
+			<div id="section-content">
+						
+  <canvas id="presupuestoHistoricoChart" width="800" height="400"></canvas>
+
+ 
+			<h2>Análisis de la sostenibilidad financiera y el esfuerzo inversor</h2>
+			
+				<p>
+El presupuesto consolidado del Ayuntamiento de Salamanca refleja una **priorización de los servicios públicos esenciales, la cohesión social y la inversión en transformación urbana y digital**. La estructura de ingresos mantiene una alta estabilidad basada en los tributos directos y transferencias del Estado y la Comunidad Autónoma, junto con la captación de fondos europeos Next Generation EU.</p>
+
+<h3>Claves presupuestarias y destino del gasto</h3>
+<ul>
+<li><b>Eficiencia en la gestión y bajo nivel de endeudamiento</b>: El consistorio presenta una ratio de deuda viva inferior al 40% de los ingresos corrientes, otorgando margen de maniobra para cofinanciar proyectos de infraestructuras verdes y digitalización.</li>
+<li><b>Gasto social y protección comunitaria</b>: Las áreas de bienestar social, igualdad, empleo y vivienda pública absorben más del 22% del gasto corriente, garantizando la cobertura asistencial a sectores vulnerables.</li>
+</ul>
+
+  <h2>Distribución del gasto municipal por áreas funcionales (%)</h2>
+  <canvas id="gastosAreasChart" width="800" height="400"></canvas>
+
+			</div>
+			
+			<div id="section-table">
+			<table border="1" cellpadding="5" cellspacing="0">
+			  <thead>
+				<tr>
+				  <th>Área Funcional / Capítulo</th>
+				  <th>Presupuesto (€)</th>
+				  <th>% sobre el Total</th>
+				  <th>Grado de Ejecución (%)</th>
+				  <th>Inversión Principal / Destino</th>
+				</tr>
+			  </thead>
+			  <tbody>
+				<tr><td>Servicios Urbanos y Medio Ambiente</td><td>48.200.000 €</td><td>27.5%</td><td>94.2%</td><td>Limpieza, recogida de residuos, parques y alumbrado</td></tr>
+				<tr><td>Protección y Promoción Social</td><td>38.500.000 €</td><td>22.0%</td><td>91.8%</td><td>Atención domiciliaria, centros de mayores y empleo</td></tr>
+				<tr><td>Seguridad Ciudadana y Movilidad</td><td>28.400.000 €</td><td>16.2%</td><td>96.5%</td><td>Policía local, bomberos y gestión del tráfico / ZBE</td></tr>
+				<tr><td>Cultura, Turismo y Deportes</td><td>22.100.000 €</td><td>12.6%</td><td>89.4%</td><td>Programación cultural, instalaciones y promoción</td></tr>
+				<tr><td>Inversiones Reales (Capítulo VI)</td><td>21.800.000 €</td><td>12.4%</td><td>81.2%</td><td>Rehabilitación urbana, vías públicas y Parques Tech</td></tr>
+				<tr><td>Administración General y Hacienda</td><td>16.200.000 €</td><td>9.3%</td><td>95.0%</td><td>Gestión tributaria, informática y atención ciudadana</td></tr>
+			  </tbody>
+			</table>
+
+			</div>
+			
+			{% include categories.html %}
+            
+        </div>
+    </section>
+
+	<script>
+    // Gráfico 1: Evolución Presupuesto Consolidado (2018-2025)
+    const ctxPres = document.getElementById('presupuestoHistoricoChart').getContext('2d');
+    const presupuestoHistoricoChart = new Chart(ctxPres, {
+      type: 'line',
+      data: {
+        labels: ['2018', '2019', '2020', '2021', '2022', '2023', '2024', '2025'],
+        datasets: [{
+          label: 'Presupuesto Consolidado Municipal (Millones de €)',
+          data: [148.5, 153.2, 158.4, 162.8, 169.1, 172.5, 178.4, 182.2],
+          borderColor: '#1E56A0',
+          backgroundColor: 'rgba(30, 86, 160, 0.1)',
+          borderWidth: 2,
+          tension: 0.2,
+          fill: true
+        }]
+      },
+      options: {
+        responsive: true,
+        scales: {
+          y: { title: { display: true, text: 'Millones de Euros (€)' }, beginAtZero: false },
+          x: { title: { display: true, text: 'Año' } }
+        }
+      }
+    });
+
+    // Gráfico 2: Torta / Dona de Distribución del Gasto
+    const ctxGast = document.getElementById('gastosAreasChart').getContext('2d');
+    const gastosAreasChart = new Chart(ctxGast, {
+      type: 'doughnut',
+      data: {
+        labels: ['Servicios Urbanos', 'Protección Social', 'Seguridad y Movilidad', 'Cultura y Deportes', 'Inversiones Reales', 'Administración General'],
+        datasets: [{
+          data: [27.5, 22.0, 16.2, 12.6, 12.4, 9.3],
+          backgroundColor: [
+            '#2C5F2D', '#F4A261', '#1E56A0', '#E63946', '#264653', '#A8DADC'
+          ]
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: { position: 'bottom' }
+        }
+      }
+    });
+  </script>

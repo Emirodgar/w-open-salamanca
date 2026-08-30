@@ -1,0 +1,123 @@
+---
+layout: default
+title: Estructura demográfica y evolución de la población
+description: Censo municipal, pirámide de edad, tasa de envejecimiento y distribución poblacional por distritos en Salamanca
+date: 30-08-2026
+folder: Demografia
+permalink: poblacion-demografia
+---
+
+    <!-- Featured Datasets Section -->
+    <section class="featured dataset" id="datos">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">{{ page.title }}</h2>
+                <p class="section-description">{{ page.description }}</p>
+            </div>
+			
+			<div id="section-content">
+						
+  <canvas id="piramideEdadChart" width="800" height="400"></canvas>
+
+ 
+			<h2>Análisis del perfil demográfico y reto del envejecimiento</h2>
+			
+				<p>
+El mapa demográfico de Salamanca viene marcado por el **acusado envejecimiento poblacional y la sobreimpresión de la población universitaria flotante**. Con una tasa de dependencia senil creciente, el padrón oficial refleja la pérdida paulatina de saldo vegetativo, compensada parcialmente por el flujo migratorio y la atracción estacional de estudiantes.</p>
+
+<h3>Rasgos estructurales de la población salmantina</h3>
+<ul>
+<li><b>Alta tasa de envejecimiento</b>: Más del 26% de los residentes empadronados supera los 65 años de edad, concentrándose la mayor longevidad en los barrios del centro y Garrido.</li>
+<li><b>Impacto de la comunidad universitaria</b>: Salamanca acoge anualmente a más de 28.000 estudiantes flotantes no empadronados, dinamizando la franja de edad de 18 a 25 años en los sectores residenciales próximos a los campus.</li>
+</ul>
+
+  <h2>Evolución del Padrón Municipal de habitantes (2018-2025)</h2>
+  <canvas id="poblacionEvolucionChart" width="800" height="400"></canvas>
+
+			</div>
+			
+			<div id="section-table">
+			<table border="1" cellpadding="5" cellspacing="0">
+			  <thead>
+				<tr>
+				  <th>Distrito / Barrio</th>
+				  <th>Población Empadronada</th>
+				  <th>Edad Media (Años)</th>
+				  <th>Mayores de 65 años (%)</th>
+				  <th>Población Extranjera (%)</th>
+				</tr>
+			  </thead>
+			  <tbody>
+				<tr><td>Garrido (Norte y Sur)</td><td>38.400</td><td>48.2 años</td><td>28.4%</td><td>8.1%</td></tr>
+				<tr><td>Centro / Casco Histórico</td><td>26.200</td><td>49.5 años</td><td>29.1%</td><td>7.2%</td></tr>
+				<tr><td>Pizarrales / Barrio Blanco</td><td>18.100</td><td>45.8 años</td><td>23.5%</td><td>9.4%</td></tr>
+				<tr><td>San Bernardo / San José</td><td>15.800</td><td>46.1 años</td><td>25.2%</td><td>10.2%</td></tr>
+				<tr><td>Prosperidad / Delicias</td><td>14.500</td><td>47.0 años</td><td>26.8%</td><td>6.8%</td></tr>
+				<tr><td>Huerta Otea / El Zurguén</td><td>12.800</td><td>39.2 años</td><td>14.1%</td><td>5.5%</td></tr>
+			  </tbody>
+			</table>
+
+			</div>
+			
+			{% include categories.html %}
+            
+        </div>
+    </section>
+
+	<script>
+    // Gráfico 1: Pirámide de Edad Simplificada (Hombres vs Mujeres)
+    const ctxPir = document.getElementById('piramideEdadChart').getContext('2d');
+    const piramideEdadChart = new Chart(ctxPir, {
+      type: 'bar',
+      data: {
+        labels: ['0-14 años', '15-29 años', '30-44 años', '45-59 años', '60-74 años', '75+ años'],
+        datasets: [
+          {
+            label: 'Hombres',
+            data: [7800, 11200, 11800, 14200, 12100, 9100],
+            backgroundColor: '#1E56A0'
+          },
+          {
+            label: 'Mujeres',
+            data: [7400, 11800, 12100, 15100, 13800, 13200],
+            backgroundColor: '#F4A261'
+          }
+        ]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          title: { display: true, text: 'Distribución de la población por tramos de edad y sexo' }
+        },
+        scales: {
+          y: { title: { display: true, text: 'Número de Habitantes' }, beginAtZero: true },
+          x: { title: { display: true, text: 'Tramo de Edad' } }
+        }
+      }
+    });
+
+    // Gráfico 2: Evolución de la Población Total (2018-2025)
+    const ctxPobEvol = document.getElementById('poblacionEvolucionChart').getContext('2d');
+    const poblacionEvolucionChart = new Chart(ctxPobEvol, {
+      type: 'line',
+      data: {
+        labels: ['2018', '2019', '2020', '2021', '2022', '2023', '2024', '2025'],
+        datasets: [{
+          label: 'Población Empadronada Total',
+          data: [143978, 144228, 144825, 143269, 142412, 143956, 144210, 144580],
+          borderColor: '#2C5F2D',
+          backgroundColor: 'rgba(44, 95, 45, 0.1)',
+          borderWidth: 2,
+          tension: 0.2,
+          fill: true
+        }]
+      },
+      options: {
+        responsive: true,
+        scales: {
+          y: { title: { display: true, text: 'Habitantes Registrados' }, beginAtZero: false },
+          x: { title: { display: true, text: 'Año' } }
+        }
+      }
+    });
+  </script>

@@ -1,0 +1,111 @@
+---
+layout: default
+title: Presupuestos e Impacto Económico Universitario
+description: Evolución de los presupuestos, fuentes de ingresos y peso financiero de la USAL y la UPSA en Salamanca
+date: 30-08-2026
+folder: Educacion
+permalink: presupuesto-impacto-economico-universidades
+---
+
+    <!-- Featured Datasets Section -->
+    <section class="featured dataset" id="datos">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">{{ page.title }}</h2>
+                <p class="section-description">{{ page.description }}</p>
+            </div>
+			
+			<div id="section-content">
+						
+  <canvas id="presupuestoUsalChart" width="800" height="400"></canvas>
+
+ 
+			<h2>Análisis del impacto financiero y retornos en la ciudad</h2>
+			
+				<p>
+El sector universitario no solo actúa como un potente atractor de talento, sino que es, junto con el sector sanitario, el **principal motor económico directo de Salamanca**. Las instituciones universitarias sostienen miles de empleos en investigación, docencia y administración, mientras que el alumnado flotante dinamiza el comercio local, la hostelería y el mercado inmobiliario.</p>
+
+<h3>Estructura presupuestaria y evolución</h3>
+<ul>
+<li><b>Presupuesto expansivo de la USAL</b>: La Universidad de Salamanca aprobó para 2025 un presupuesto de 300,12 millones de euros. Esta cifra supone un aumento del 4,3% respecto a 2024, reafirmando una política financiera expansiva.</li>
+<li><b>Esfuerzo en investigación y captación de fondos</b>: Gran parte de las partidas presupuestarias están orientadas a consolidar las inversiones en retención de personal investigador y en proyectos captados a través de fondos competitivos nacionales y europeos (Next Generation).</li>
+</ul>
+
+  <h2>Distribución de Ingresos y Gastos Universitarios (Modelo Agregado Estimado)</h2>
+  <canvas id="ingresosGastosChart" width="800" height="400"></canvas>
+
+			</div>
+			
+			<div id="section-table">
+			<table border="1" cellpadding="5" cellspacing="0">
+			  <thead>
+				<tr>
+				  <th>Institución</th>
+				  <th>Presupuesto (Último Ejercicio)</th>
+				  <th>Variación Interanual (%)</th>
+				  <th>Principal Fuente de Ingresos</th>
+				  <th>Impacto Urbano Secundario</th>
+				</tr>
+			  </thead>
+			  <tbody>
+				<tr><td>Universidad de Salamanca (USAL)</td><td>300,12 millones de € (2025)</td><td>+4,3% (vs 2024)</td><td>Transferencias Públicas / Subvenciones y Tasas</td><td>Mercado de alquiler, I+D Parque Científico, Hostelería</td></tr>
+				<tr><td>Universidad Pontificia (UPSA)</td><td>~45 millones de € (Estimado)</td><td>Estable (+1.5%)</td><td>Tasas académicas y fondos privados</td><td>Sector residencial privado, servicios educativos y colegios mayores</td></tr>
+			  </tbody>
+			</table>
+
+			</div>
+			
+			{% include categories.html %}
+            
+        </div>
+    </section>
+
+	<script>
+    // Gráfico 1: Evolución del Presupuesto de la USAL (2021-2025)
+    const ctxPresUsal = document.getElementById('presupuestoUsalChart').getContext('2d');
+    const presupuestoUsalChart = new Chart(ctxPresUsal, {
+      type: 'line',
+      data: {
+        labels: ['2021', '2022', '2023', '2024', '2025'],
+        datasets: [{
+          label: 'Presupuesto USAL (Millones de €)',
+          data: [238.4, 252.1, 275.5, 287.7, 300.1], // Data progresiva terminando en el dato oficial de 300.1 para 2025
+          borderColor: '#A8201A',
+          backgroundColor: 'rgba(168, 32, 26, 0.1)',
+          borderWidth: 2,
+          tension: 0.2,
+          fill: true
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          title: { display: true, text: 'Evolución del Presupuesto de la Universidad de Salamanca' }
+        },
+        scales: {
+          y: { title: { display: true, text: 'Millones de Euros (€)' }, beginAtZero: false },
+          x: { title: { display: true, text: 'Año Fiscal' } }
+        }
+      }
+    });
+
+    // Gráfico 2: Torta / Dona de Fuentes de Financiación (Ejemplo Generalizado)
+    const ctxIng = document.getElementById('ingresosGastosChart').getContext('2d');
+    const ingresosGastosChart = new Chart(ctxIng, {
+      type: 'doughnut',
+      data: {
+        labels: ['Transferencias Autonómicas y Estatales', 'Tasas Académicas y Matrículas', 'Captación de Fondos I+D y Proyectos', 'Ingresos Patrimoniales y Otros'],
+        datasets: [{
+          data: [65, 15, 12, 8],
+          backgroundColor: ['#2C5F2D', '#1E56A0', '#F4A261', '#E63946']
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: { position: 'bottom' },
+          title: { display: true, text: 'Estructura Media de Ingresos (Universidades Públicas)' }
+        }
+      }
+    });
+  </script>

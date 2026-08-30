@@ -1,0 +1,117 @@
+---
+layout: default
+title: Renta por habitante y distribución del ingreso
+description: Análisis de la renta media por persona y hogar, distribución por barrios y brecha salarial en Salamanca
+date: 30-08-2026
+folder: Demografia
+permalink: renta-desigualdad
+---
+
+    <!-- Featured Datasets Section -->
+    <section class="featured dataset" id="datos">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">{{ page.title }}</h2>
+                <p class="section-description">{{ page.description }}</p>
+            </div>
+			
+			<div id="section-content">
+						
+  <canvas id="rentaHistoricaChart" width="800" height="400"></canvas>
+
+ 
+			<h2>Análisis de los niveles de ingreso y polarización urbana</h2>
+			
+				<p>
+Los datos de renta y distribución del ingreso en Salamanca reflejan una **brecha socioeconómica persistente entre el centro consolidado y la periferia**. Aunque la renta media por habitante ha experimentado un crecimiento nominal sostenido, la distribución del ingreso muestra marcadas diferencias según la sección censal y el distrito de residencia.</p>
+
+<h3>Indicadores clave de distribución socioeconómica</h3>
+<ul>
+<li><b>Concentración de rentas altas</b>: El Casco Histórico, la zona centro y el entorno de Canalejas registran niveles de renta per cápita hasta un 65% superiores a la media municipal.</li>
+<li><b>Vulnerabilidad en la corona suroeste y norte</b>: Barrios como Pizarrales, San José y Buenos Aires presentan los niveles de ingresos por hogar más bajos, requiriendo un mayor volumen de prestaciones sociales públicas.</li>
+</ul>
+
+  <h2>Renta media neta por habitante por distrito (€/año)</h2>
+  <canvas id="rentaBarriosChart" width="800" height="400"></canvas>
+
+			</div>
+			
+			<div id="section-table">
+			<table border="1" cellpadding="5" cellspacing="0">
+			  <thead>
+				<tr>
+				  <th>Distrito / Sector Urbano</th>
+				  <th>Renta Media / Hab (€)</th>
+				  <th>Renta Media Hogar (€)</th>
+				  <th>Brecha Salarial Género (%)</th>
+				  <th>Población en Riesgo Pobreza (%)</th>
+				</tr>
+			  </thead>
+			  <tbody>
+				<tr><td>Centro / Casco Histórico</td><td>16.850 €</td><td>38.200 €</td><td>14.2%</td><td>8.5%</td></tr>
+				<tr><td>Universidad / San Bernardo</td><td>14.200 €</td><td>32.100 €</td><td>15.8%</td><td>12.1%</td></tr>
+				<tr><td>Garrido Norte / Chinchibarra</td><td>12.400 €</td><td>28.500 €</td><td>17.1%</td><td>16.4%</td></tr>
+				<tr><td>Prosperidad / Delicias</td><td>13.100 €</td><td>29.800 €</td><td>16.5%</td><td>14.2%</td></tr>
+				<tr><td>Pizarrales / Barrio Blanco</td><td>10.200 €</td><td>23.400 €</td><td>19.8%</td><td>24.8%</td></tr>
+				<tr><td>San José / El Zurguén</td><td>9.800 €</td><td>22.100 €</td><td>20.5%</td><td>27.2%</td></tr>
+			  </tbody>
+			</table>
+
+			</div>
+			
+			{% include categories.html %}
+            
+        </div>
+    </section>
+
+	<script>
+    // Gráfico 1: Evolución Renta Media por Habitante (2018-2025)
+    const ctxRentHist = document.getElementById('rentaHistoricaChart').getContext('2d');
+    const rentaHistoricaChart = new Chart(ctxRentHist, {
+      type: 'line',
+      data: {
+        labels: ['2018', '2019', '2020', '2021', '2022', '2023', '2024', '2025'],
+        datasets: [{
+          label: 'Renta Media Neta por Habitante (€/año)',
+          data: [11400, 11850, 11300, 11900, 12600, 13150, 13700, 14250],
+          borderColor: '#1E56A0',
+          backgroundColor: 'rgba(30, 86, 160, 0.1)',
+          borderWidth: 2,
+          tension: 0.2,
+          fill: true
+        }]
+      },
+      options: {
+        responsive: true,
+        scales: {
+          y: { title: { display: true, text: 'Renta Neta (€)' }, beginAtZero: false },
+          x: { title: { display: true, text: 'Año' } }
+        }
+      }
+    });
+
+    // Gráfico 2: Renta por Barrios
+    const ctxRentBar = document.getElementById('rentaBarriosChart').getContext('2d');
+    const rentaBarriosChart = new Chart(ctxRentBar, {
+      type: 'bar',
+      data: {
+        labels: ['Centro / Casco', 'Universidad', 'Prosperidad', 'Garrido Norte', 'Pizarrales', 'San José'],
+        datasets: [{
+          label: 'Renta Media / Hab (€)',
+          data: [16850, 14200, 13100, 12400, 10200, 9800],
+          backgroundColor: [
+            '#1e56a0', '#2c5f2d', '#f4a261', '#264653', '#e63946', '#d62828'
+          ],
+          borderRadius: 4
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: { legend: { display: false } },
+        scales: {
+          y: { title: { display: true, text: 'Euros Anuales (€)' }, beginAtZero: true },
+          x: { title: { display: true, text: 'Distrito / Sector' } }
+        }
+      }
+    });
+  </script>
