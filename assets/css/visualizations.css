@@ -775,6 +775,45 @@
     }
 }
 
+.tl-back-to-top {
+    position: fixed;
+    right: var(--spacing-lg);
+    bottom: var(--spacing-lg);
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    box-shadow: var(--shadow-lg);
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(8px);
+    transition: opacity var(--transition-fast), transform var(--transition-fast), background var(--transition-fast);
+    z-index: 900;
+}
+
+.tl-back-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.tl-back-to-top:hover {
+    background: var(--secondary-color);
+}
+
+@media (max-width: 640px) {
+    .tl-back-to-top {
+        right: var(--spacing-md);
+        bottom: var(--spacing-md);
+    }
+}
+
 /* Actualidad highlight - banner de la home hacia /actualidad */
 .actualidad-highlight {
     padding: var(--spacing-lg) 0 0;
