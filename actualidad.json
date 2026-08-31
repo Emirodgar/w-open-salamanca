@@ -1,0 +1,139 @@
+{
+  "url_base": "https://www.lagacetadesalamanca.es",
+  "generado_en": "2026-08-31T13:55:10+00:00",
+  "periodo_cubierto": {
+    "desde": "2026-08-22",
+    "hasta": "2026-08-31"
+  },
+  "total_urls_analizadas": 273,
+  "secciones_excluidas": [
+    "nacional",
+    "opinion",
+    "tu-gaceta"
+  ],
+  "nota_cobertura": "El análisis cubre únicamente las URLs presentes en el sitemap en el momento de la consulta (excluyendo, si se indicó, las secciones filtradas). Si el sitemap es incremental o 'rolling', el periodo real puede ser más corto que el solicitado — revisa 'periodo_cubierto' para confirmarlo.",
+  "por_seccion": [
+    ["deportes", 64],
+    ["sucesos", 54],
+    ["salamanca", 31],
+    ["campo", 23],
+    ["virales", 20],
+    ["provincia", 18],
+    ["especiales", 12],
+    ["podcast", 11],
+    ["gente-estilo", 11],
+    ["encuestas", 9],
+    ["toros", 8],
+    ["castilla-y-leon", 7],
+    ["cine-y-series", 3],
+    ["internacional", 1],
+    ["television", 1]
+  ],
+  "por_subseccion": [
+    ["deportes/futbol-local", 48],
+    ["especiales/asi-somos-en-mi-pueblo", 10],
+    ["podcast/salamanca-en-2-minutos", 9],
+    ["deportes/baloncesto-local", 6],
+    ["deportes/deporte-base", 1],
+    ["deportes/carreras-populares", 1],
+    ["podcast/historias-de-salamanca", 1]
+  ],
+  "por_tipo_contenido": [
+    ["noticia", 240],
+    ["galería", 19],
+    ["audio / podcast", 11],
+    ["directo / en vivo", 3]
+  ],
+  "heatmap_calendario": [
+    {"fecha": "2026-08-22", "total": 6, "deportes": 4, "sucesos": 1, "salamanca": 0, "campo": 0, "virales": 0, "provincia": 0, "especiales": 0, "podcast": 0, "gente-estilo": 0, "encuestas": 0, "toros": 1, "castilla-y-leon": 0, "cine-y-series": 0, "internacional": 0, "television": 0},
+    {"fecha": "2026-08-23", "total": 24, "deportes": 4, "sucesos": 8, "salamanca": 0, "campo": 1, "virales": 4, "provincia": 0, "especiales": 1, "podcast": 1, "gente-estilo": 2, "encuestas": 1, "toros": 0, "castilla-y-leon": 2, "cine-y-series": 0, "internacional": 0, "television": 0},
+    {"fecha": "2026-08-24", "total": 29, "deportes": 5, "sucesos": 10, "salamanca": 0, "campo": 3, "virales": 4, "provincia": 0, "especiales": 1, "podcast": 1, "gente-estilo": 3, "encuestas": 1, "toros": 0, "castilla-y-leon": 1, "cine-y-series": 0, "internacional": 0, "television": 0},
+    {"fecha": "2026-08-25", "total": 20, "deportes": 4, "sucesos": 2, "salamanca": 0, "campo": 6, "virales": 2, "provincia": 0, "especiales": 1, "podcast": 1, "gente-estilo": 2, "encuestas": 1, "toros": 0, "castilla-y-leon": 0, "cine-y-series": 1, "internacional": 0, "television": 0},
+    {"fecha": "2026-08-26", "total": 26, "deportes": 7, "sucesos": 7, "salamanca": 2, "campo": 2, "virales": 2, "provincia": 0, "especiales": 1, "podcast": 1, "gente-estilo": 3, "encuestas": 1, "toros": 0, "castilla-y-leon": 0, "cine-y-series": 0, "internacional": 0, "television": 0},
+    {"fecha": "2026-08-27", "total": 32, "deportes": 8, "sucesos": 5, "salamanca": 3, "campo": 5, "virales": 2, "provincia": 0, "especiales": 2, "podcast": 2, "gente-estilo": 0, "encuestas": 1, "toros": 2, "castilla-y-leon": 0, "cine-y-series": 1, "internacional": 0, "television": 1},
+    {"fecha": "2026-08-28", "total": 21, "deportes": 5, "sucesos": 6, "salamanca": 2, "campo": 0, "virales": 2, "provincia": 0, "especiales": 1, "podcast": 1, "gente-estilo": 0, "encuestas": 1, "toros": 1, "castilla-y-leon": 1, "cine-y-series": 1, "internacional": 0, "television": 0},
+    {"fecha": "2026-08-29", "total": 24, "deportes": 9, "sucesos": 4, "salamanca": 2, "campo": 2, "virales": 0, "provincia": 0, "especiales": 2, "podcast": 1, "gente-estilo": 1, "encuestas": 1, "toros": 0, "castilla-y-leon": 2, "cine-y-series": 0, "internacional": 0, "television": 0},
+    {"fecha": "2026-08-30", "total": 57, "deportes": 17, "sucesos": 7, "salamanca": 10, "campo": 2, "virales": 0, "provincia": 14, "especiales": 1, "podcast": 1, "gente-estilo": 0, "encuestas": 2, "toros": 2, "castilla-y-leon": 0, "cine-y-series": 0, "internacional": 1, "television": 0},
+    {"fecha": "2026-08-31", "total": 34, "deportes": 1, "sucesos": 4, "salamanca": 12, "campo": 2, "virales": 4, "provincia": 4, "especiales": 2, "podcast": 2, "gente-estilo": 0, "encuestas": 0, "toros": 2, "castilla-y-leon": 1, "cine-y-series": 0, "internacional": 0, "television": 0}
+  ],
+  "conceptos_destacados": [
+    {
+      "concepto": "El concurso \"Así somos en mi pueblo\"",
+      "piezas": 10,
+      "seccion_principal": "especiales",
+      "desde": "2026-08-23",
+      "hasta": "2026-08-31",
+      "ejemplos_redactados": [
+        "El certamen ha recorrido pueblos de la provincia como Santa María de Sando, Santa Inés y El Sahugo, recogiendo su historia y su identidad."
+      ]
+    },
+    {
+      "concepto": "Santa Marta de Tormes, entre el deporte y los sustos",
+      "piezas": 6,
+      "seccion_principal": "sucesos",
+      "desde": "2026-08-23",
+      "hasta": "2026-08-30",
+      "ejemplos_redactados": [
+        "El equipo de Santa Marta se ha proclamado campeón de la fase regional de la Copa RFEF.",
+        "El municipio también ha vivido un susto por un incendio en un solar, que finalmente quedó controlado."
+      ]
+    },
+    {
+      "concepto": "El Unionistas empieza la temporada con derrota ante el Lugo",
+      "piezas": 6,
+      "seccion_principal": "deportes",
+      "desde": "2026-08-27",
+      "hasta": "2026-08-30",
+      "ejemplos_redactados": [
+        "El Unionistas debutó en la nueva temporada con una derrota frente al Lugo en el estadio Reina Sofía.",
+        "Pese al tropiezo inicial, el club mantiene la ilusión de pelear por el playoff de ascenso."
+      ]
+    },
+    {
+      "concepto": "Un amplio operativo busca a un hombre desaparecido cerca de La Alberca",
+      "piezas": 3,
+      "seccion_principal": "sucesos",
+      "desde": "2026-08-23",
+      "hasta": "2026-08-23",
+      "ejemplos_redactados": [
+        "Se ha desplegado una gran batida para localizar a un vecino desaparecido en la zona de La Alberca.",
+        "La búsqueda se ha paralizado tras una posible localización, aunque persisten las incógnitas sobre lo ocurrido."
+      ]
+    },
+    {
+      "concepto": "Varios detenidos por una agresión con arma blanca en Pizarrales",
+      "piezas": 3,
+      "seccion_principal": "sucesos",
+      "desde": "2026-08-24",
+      "hasta": "2026-08-25",
+      "ejemplos_redactados": [
+        "La Policía ha detenido a varias personas por un apuñalamiento en el barrio de Pizarrales.",
+        "Los detenidos niegan haber agredido a la víctima, según las primeras informaciones."
+      ]
+    },
+    {
+      "concepto": "Un frío inusual para pleno agosto en Castilla y León",
+      "piezas": 4,
+      "seccion_principal": "castilla-y-leon",
+      "desde": "2026-08-24",
+      "hasta": "2026-08-31",
+      "ejemplos_redactados": [
+        "Castilla y León ha comenzado la semana con un notable descenso de las temperaturas.",
+        "Un pueblo de la comunidad ha llegado a helar en pleno mes de agosto, un registro poco habitual para la época."
+      ]
+    },
+    {
+      "concepto": "La Feria de Día y el mercado agrícola SALAMAQ animan la ciudad",
+      "piezas": 4,
+      "seccion_principal": "salamanca",
+      "desde": "2026-08-26",
+      "hasta": "2026-08-31",
+      "ejemplos_redactados": [
+        "La Feria de Día ha instalado sus casetas y ha atraído a numeroso público en sus puestos.",
+        "En paralelo, la feria agrícola y ganadera SALAMAQ ha reunido a cientos de expositores y animales en el recinto ferial."
+      ]
+    }
+  ],
+  "resumen_borrador": "Se han publicado 273 noticias entre el 2026-08-22 y el 2026-08-31. La actividad se ha concentrado sobre todo en deportes (64 piezas), sucesos (54 piezas), salamanca (31 piezas).\n\nLos conceptos con más piezas relacionadas son: Concurso · Pueblo; Santa · Marta; Unionistas · Lugo; Gente. Revisa 'evidencia' de cada concepto para redactar el resumen final.",
+  "resumen": "Estos días la actualidad local ha estado marcada por varios sucesos: se ha desplegado un amplio operativo para buscar a un vecino desaparecido cerca de La Alberca, mientras la Policía detenía a varias personas por una agresión con arma blanca en el barrio de Pizarrales. En el plano meteorológico, Castilla y León ha vivido un descenso de temperaturas inusual para pleno agosto, con heladas en algún pueblo de la comunidad.\n\nEn el terreno deportivo, el Unionistas ha arrancado la temporada con una derrota frente al Lugo en el Reina Sofía, aunque mantiene la ilusión de pelear por el playoff de ascenso, mientras que Santa Marta de Tormes se ha proclamado campeón regional de la Copa RFEF. Culturalmente, el concurso \"Así somos en mi pueblo\" ha seguido recorriendo localidades de la provincia, y tanto la Feria de Día como la feria agrícola SALAMAQ han llenado de actividad la ciudad en los últimos días de agosto."
+}

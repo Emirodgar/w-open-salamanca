@@ -17,7 +17,14 @@
     --success-color: #28A745;
     --warning-color: #FFC107;
     --error-color: #DC3545;
-    
+
+    /* Heatmap scale (Actualidad) */
+    --heat-0: #EEF2ED;
+    --heat-1: #C9DFC0;
+    --heat-2: #97BC62;
+    --heat-3: #5C8A44;
+    --heat-4: #2C5F2D;
+
     /* Typography */
     --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     --font-mono: 'JetBrains Mono', 'Courier New', monospace;

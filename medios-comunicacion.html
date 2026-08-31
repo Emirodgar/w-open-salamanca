@@ -1,0 +1,141 @@
+---
+layout: default
+title: Evolución de los Medios de Comunicación en Salamanca
+description: Análisis comparativo de la prensa escrita en papel y los periódicos digitales, tiradas, audiencias y transformación del ecosistema informativo local
+date: 31-08-2026
+folder: Local
+permalink: medios-comunicacion-prensa-salamanca
+---
+
+    <!-- Featured Datasets Section -->
+    <section class="featured dataset" id="datos">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">{{ page.title }}</h2>
+                <p class="section-description">{{ page.description }}</p>
+            </div>
+			
+			<div id="section-content">
+						
+  <canvas id="evolucionPrensaChart" width="800" height="400"></canvas>
+
+ 
+			<h2>Transformación del mapa mediático salmantino: del papel al entorno digital</h2>
+			
+				<p>
+El ecosistema informativo de Salamanca ha vivido una profunda reestructuración en las últimas dos décadas. La transición desde un modelo dominado por la cabecera histórica impresa hacia un escenario altamente competitivo y fragmentado en soporte digital ha cambiado la forma en que los salmantinos consumen noticias locales.</p>
+
+<h3>1. Prensa escrita en papel: declive y resistencia histórica</h3>
+<ul>
+<li><b>Hegemonía histórica y cierres</b>: Durante el siglo XX y principios del XXI, la prensa impresa estuvo articulada por dos grandes históricas: <i>La Gaceta de Salamanca</i> (fundada en 1920) y <i>El Adelanto de Salamanca</i> (1883). La crisis publicitaria y del papel provocó el cierre definitivo de <i>El Adelanto</i> en 2013 tras 130 años de historia, dejando a <i>La Gaceta</i> como el único diario impreso de tirada diaria en la provincia.</li>
+<li><b>Evolución de la difusión (OJD)</b>: La tirada en papel de <i>La Gaceta de Salamanca</i> ha experimentado la misma tendencia descendente que la prensa regional y nacional: si a mediados de los 2000 superaba los 18.000 ejemplares diarios, en la actualidad la difusión impresa se sitúa por debajo de los 3.500 ejemplares, resistiendo principalmente mediante suscripciones institucionales, hostelería y puntos de venta tradicionales.</li>
+</ul>
+
+<h3>2. Prensa digital: hiperlocalismo y lucha por el liderazgo de audiencia</h3>
+<ul>
+<li><b>Nuevos nativos digitales</b>: La desaparición del monopolio en papel dio paso al auge de diarios exclusivamente digitales. Cabeceras como <i>Salamanca24horas.com</i> (pionero en el formato digital puro), <i>Salamanca RTV Al Día</i> (foco comarcal e hiperlocal) y <i>Tribuna de Salamanca</i> (que migró completamente al formato digital tras cerrar su edición impresa) disputan el tráfico web diario.</li>
+<li><b>Comportamiento de la audiencia web</b>: La prensa digital salmantina acumula más de 4,5 millones de visitas mensuales conjuntas. Más del 85% del tráfico proviene de dispositivos móviles y redes sociales, con una concentración de lectores repartida entre la capital y la diáspora universitaria y emigrante.</li>
+</ul>
+
+  <h2>Cuota estimada de tráfico digital en Salamanca (Audiencia mensual)</h2>
+  <canvas id="audienciaDigitalChart" width="800" height="400"></canvas>
+
+			</div>
+			
+			<div id="section-table">
+			<table border="1" cellpadding="5" cellspacing="0">
+			  <thead>
+				<tr>
+				  <th>Medio / Cabecera</th>
+				  <th>Soporte Principal</th>
+				  <th>Difusión Impresa / Lectores Web</th>
+				  <th>Origen / Fundación</th>
+				  <th>Estado Actual y Orientación</th>
+				</tr>
+			  </thead>
+			  <tbody>
+				<tr><td><b>La Gaceta de Salamanca</b></td><td>Impreso y Digital</td><td>~3.200 ejem./día (Papel) | ~1.2M usuarios/mes</td><td>1920 (Papel)</td><td>Líder histórico en papel (Grupo Promecal). Mantiene edición impresa y portal de pago/abierto.</td></tr>
+				<tr><td><b>Salamanca24horas</b></td><td>Nativo Digital</td><td>~1.6M usuarios/mes</td><td>2007</td><td>Líder en audiencia digital, enfoque en sucesos, información local y última hora.</td></tr>
+				<tr><td><b>Salamanca RTV Al Día</b></td><td>Nativo Digital</td><td>~1.1M usuarios/mes</td><td>2014</td><td>Especializado en información comarcal, provincia, deportes y cultura tradicional.</td></tr>
+				<tr><td><b>Tribuna de Salamanca</b></td><td>Digital (ex-impreso)</td><td>~750.000 usuarios/mes</td><td>2005 (Digital en 2012)</td><td>Antiguo diario impreso reconvertido en grupo digital autonómico (Grupo Tribuna).</td></tr>
+				<tr><td><b>El Norte de Castilla (Ed. Salamanca)</b></td><td>Digital (Regional)</td><td>~400.000 usuarios/mes (Sección local)</td><td>Edición local digital</td><td>Edición de Salamanca del diario decano regional (Grupo Vocento).</td></tr>
+				<tr><td><b>El Adelanto de Salamanca</b></td><td>Impreso (Histórico)</td><td><i>Desaparecido (2013)</i></td><td>1883–2013</td><td>Histórica cabecera centenaria, cerrada por liquidación empresarial.</td></tr>
+			  </tbody>
+			</table>
+
+			</div>
+			
+			{% include categories.html %}
+            
+        </div>
+    </section>
+
+	<script>
+    // Gráfico 1: Evolución comparativa (Caída del papel vs Auge del tráfico digital)
+    const ctxEvol = document.getElementById('evolucionPrensaChart').getContext('2d');
+    const evolucionPrensaChart = new Chart(ctxEvol, {
+      type: 'line',
+      data: {
+        labels: ['2005', '2010', '2015', '2020', '2024', '2026'],
+        datasets: [
+          {
+            label: 'Difusión Impresa Total (Ejemplares diarios / miles)',
+            data: [28.5, 19.2, 8.5, 4.8, 3.8, 3.2],
+            borderColor: '#A8201A',
+            backgroundColor: 'rgba(168, 32, 26, 0.1)',
+            fill: true,
+            yAxisID: 'y'
+          },
+          {
+            label: 'Audiencia Digital Conjunta (Usuarios Únicos Mensuales / Cientos de miles)',
+            data: [2.5, 8.0, 22.0, 38.0, 44.0, 48.0],
+            borderColor: '#1E56A0',
+            backgroundColor: 'rgba(30, 86, 160, 0.1)',
+            fill: true,
+            yAxisID: 'y1'
+          }
+        ]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          title: { display: true, text: 'Divergencia entre la prensa impresa (OJD) y el consumo digital en Salamanca' }
+        },
+        scales: {
+          y: {
+            type: 'linear',
+            display: true,
+            position: 'left',
+            title: { display: true, text: 'Ejemplares en Papel (Miles)' }
+          },
+          y1: {
+            type: 'linear',
+            display: true,
+            position: 'right',
+            grid: { drawOnChartArea: false },
+            title: { display: true, text: 'Usuarios Digitales (Cientos de miles)' }
+          }
+        }
+      }
+    });
+
+    // Gráfico 2: Cuota estimada de mercado en prensa digital (Tráfico relativo)
+    const ctxAud = document.getElementById('audienciaDigitalChart').getContext('2d');
+    const audienciaDigitalChart = new Chart(ctxAud, {
+      type: 'doughnut',
+      data: {
+        labels: ['Salamanca24horas', 'La Gaceta Digital', 'Salamanca RTV Al Día', 'Tribuna de Salamanca', 'Otros / Ediciones Regionales'],
+        datasets: [{
+          data: [32, 25, 22, 14, 7],
+          backgroundColor: ['#1E56A0', '#A8201A', '#2C5F2D', '#F4A261', '#264653']
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: { position: 'bottom' },
+          title: { display: true, text: 'Estimación de cuota de lectores digitales locales' }
+        }
+      }
+    });
+  </script>

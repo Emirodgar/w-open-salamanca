@@ -542,6 +542,208 @@
     }
 }
 
+/* Actualidad - resumen semanal de noticias locales */
+.actualidad-meta {
+    text-align: center;
+    color: var(--neutral-color);
+    font-size: 0.95rem;
+    margin-bottom: var(--spacing-xl);
+}
+
+.actualidad-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--border-color);
+    padding: var(--spacing-xl);
+    margin-bottom: var(--spacing-lg);
+}
+
+.actualidad-card-title {
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--neutral-color);
+    margin-bottom: var(--spacing-lg);
+}
+
+.actualidad-resumen p {
+    line-height: 1.7;
+    color: var(--text-color);
+    margin-bottom: var(--spacing-md);
+}
+
+.actualidad-resumen p:last-child {
+    margin-bottom: 0;
+}
+
+/* Conceptos destacados */
+.actualidad-conceptos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: var(--spacing-md);
+}
+
+.concepto-card {
+    background: rgba(44, 95, 45, 0.03);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: var(--spacing-lg);
+}
+
+.concepto-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-xs);
+}
+
+.concepto-nombre {
+    font-weight: 600;
+    color: var(--text-color);
+    font-size: 1rem;
+}
+
+.concepto-piezas {
+    font-size: 0.75rem;
+    font-weight: 700;
+    font-family: var(--font-mono);
+    color: var(--primary-color);
+    white-space: nowrap;
+}
+
+.concepto-meta {
+    font-size: 0.75rem;
+    color: var(--neutral-color);
+    text-transform: capitalize;
+    margin-bottom: var(--spacing-sm);
+}
+
+.concepto-ejemplos {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+}
+
+.concepto-ejemplos li {
+    font-size: 0.85rem;
+    line-height: 1.5;
+    color: var(--text-color);
+    padding-left: var(--spacing-md);
+    position: relative;
+}
+
+.concepto-ejemplos li::before {
+    content: "—";
+    position: absolute;
+    left: 0;
+    color: var(--secondary-color);
+}
+
+/* Barras por sección */
+.actualidad-bars {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
+.bar-row {
+    display: grid;
+    grid-template-columns: 130px 1fr 34px;
+    align-items: center;
+    gap: var(--spacing-md);
+    font-size: 0.85rem;
+}
+
+.bar-label {
+    color: var(--neutral-color);
+    text-transform: capitalize;
+}
+
+.bar-track {
+    background: var(--border-color);
+    border-radius: 6px;
+    overflow: hidden;
+    height: 14px;
+}
+
+.bar-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--secondary-color), var(--primary-color));
+    border-radius: 6px;
+}
+
+.bar-value {
+    text-align: right;
+    color: var(--neutral-color);
+    font-family: var(--font-mono);
+    font-weight: 600;
+}
+
+/* Heatmap calendario */
+.actualidad-heatmap-scroll {
+    overflow-x: auto;
+}
+
+.actualidad-heatmap {
+    border-collapse: separate;
+    border-spacing: 3px;
+    font-size: 0.72rem;
+    width: 100%;
+}
+
+.actualidad-heatmap th {
+    font-weight: 400;
+    color: var(--neutral-color);
+    text-align: left;
+    padding-right: var(--spacing-sm);
+    white-space: nowrap;
+    text-transform: capitalize;
+}
+
+.actualidad-heatmap td {
+    width: 28px;
+    height: 24px;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 0.68rem;
+    font-family: var(--font-mono);
+}
+
+.actualidad-legend {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    margin-top: var(--spacing-md);
+    font-size: 0.72rem;
+    color: var(--neutral-color);
+}
+
+.actualidad-legend-box {
+    width: 14px;
+    height: 14px;
+    border-radius: 3px;
+    display: inline-block;
+}
+
+.actualidad-footnote {
+    text-align: center;
+    color: var(--neutral-color);
+    font-size: 0.8rem;
+    margin-top: var(--spacing-lg);
+}
+
+@media (max-width: 640px) {
+    .bar-row {
+        grid-template-columns: 90px 1fr 28px;
+    }
+}
+
 /* Print Styles for Charts */
 @media print {
     .chart-container {
