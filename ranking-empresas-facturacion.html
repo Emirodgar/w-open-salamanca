@@ -1,0 +1,121 @@
+---
+layout: default
+title: Tejido Empresarial y Liderazgo de Facturación
+description: Ranking de las 10 empresas con mayor volumen de ingresos, plantilla y evolución económica en Salamanca
+date: 30-08-2026
+folder: Economia
+permalink: ranking-empresas-facturacion
+---
+
+    <!-- Featured Datasets Section -->
+    <section class="featured dataset" id="datos">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">{{ page.title }}</h2>
+                <p class="section-description">{{ page.description }}</p>
+            </div>
+			
+			<div id="section-content">
+						
+  <canvas id="facturacionEmpresasChart" width="800" height="400"></canvas>
+
+ 
+			<h2>Análisis del liderazgo corporativo y motores de empleo</h2>
+			
+				<p>
+El tejido empresarial de mayor facturación en Salamanca se caracteriza por una **fuerte presencia del sector agroalimentario y logístico**, complementado por polos de alta especialización en industria farmacéutica, biotecnología y finanzas. Las diez mayores empresas de la provincia superan en conjunto los 2.600 millones de euros de facturación anual, actuando como elementos tractores para pymes locales.</p>
+
+<h3>Claves del Top 10 empresarial</h3>
+<ul>
+<li><b>Hegemonía del sector primario y agroindustria</b>: Empresas como Bernabé Campal, Grupo Mirat y Cereales Martín Miguel consolidan a Salamanca como un nodo fundamental en la transformación y comercialización agrícola a nivel ibérico.</li>
+<li><b>Diversificación de alto valor añadido</b>: Global Exchange (divisas), MSD Animal Health (farmacología veterinaria) y Grupo ENUSA (combustible nuclear) aportan innovación tecnológica y operan con un marcado perfil exportador e internacional.</li>
+</ul>
+
+  <h2>Distribución sectorial del Top 10 por volumen de negocio</h2>
+  <canvas id="sectoresEmpresasChart" width="800" height="400"></canvas>
+
+			</div>
+			
+			<div id="section-table">
+			<table border="1" cellpadding="5" cellspacing="0">
+			  <thead>
+				<tr>
+				  <th>Ranking</th>
+				  <th>Empresa / Grupo</th>
+				  <th>Facturación (M€)</th>
+				  <th>Evolución Anual (%)</th>
+				  <th>Plantilla Estimada</th>
+				  <th>Sector Principal</th>
+				</tr>
+			  </thead>
+			  <tbody>
+				<tr><td>1</td><td><b>Bernabé Campal</b></td><td>381,2 M€</td><td>+8.5%</td><td>~90</td><td>Agroalimentario (Cereales)</td></tr>
+				<tr><td>2</td><td><b>Grupo Andrés</b></td><td>345,0 M€</td><td>+12.4%</td><td>~250</td><td>Logística y Automoción</td></tr>
+				<tr><td>3</td><td><b>Biocarburantes de CyL</b></td><td>308,1 M€</td><td>+4.1%</td><td>~80</td><td>Energía y Biocombustibles</td></tr>
+				<tr><td>4</td><td><b>MSD Animal Health</b></td><td>295,6 M€</td><td>+6.2%</td><td>~350</td><td>Farmacéutico / Veterinario</td></tr>
+				<tr><td>5</td><td><b>Grupo ENUSA</b></td><td>295,0 M€</td><td>+2.8%</td><td>~750</td><td>Energía e Industria Avanzada</td></tr>
+				<tr><td>6</td><td><b>Grupo Mirat</b></td><td>290,0 M€</td><td>+5.5%</td><td>~160</td><td>Fertilizantes y Agroindustria</td></tr>
+				<tr><td>7</td><td><b>Global Exchange</b></td><td>266,0 M€</td><td>+18.2%</td><td>~2.500 (Global)</td><td>Servicios Financieros y Divisas</td></tr>
+				<tr><td>8</td><td><b>Cereales Martín Miguel</b></td><td>192,0 M€</td><td>+3.0%</td><td>~40</td><td>Agroalimentario</td></tr>
+				<tr><td>9</td><td><b>Viajes Halcón (Globalia)</b></td><td>165,0 M€</td><td>+14.5%</td><td>~1.000</td><td>Turismo y Servicios</td></tr>
+				<tr><td>10</td><td><b>Perfumerías Avenida (Grupo Recio)</b></td><td>151,3 M€</td><td>+7.1%</td><td>~2.200 (Global)</td><td>Distribución y Retail</td></tr>
+			  </tbody>
+			</table>
+
+			</div>
+			
+			{% include categories.html %}
+            
+        </div>
+    </section>
+
+	<script>
+    // Gráfico 1: Facturación de las empresas Top 10
+    const ctxFact = document.getElementById('facturacionEmpresasChart').getContext('2d');
+    const facturacionEmpresasChart = new Chart(ctxFact, {
+      type: 'bar',
+      data: {
+        labels: ['B. Campal', 'G. Andrés', 'Biocarburantes', 'MSD', 'ENUSA', 'G. Mirat', 'Global Exc.', 'Martín Miguel', 'Halcón', 'P. Avenida'],
+        datasets: [{
+          label: 'Facturación Anual (Millones €)',
+          data: [381.2, 345.0, 308.1, 295.6, 295.0, 290.0, 266.0, 192.0, 165.0, 151.3],
+          backgroundColor: [
+            '#1E56A0', '#1E56A0', '#1E56A0', '#2C5F2D', '#2C5F2D', 
+            '#1E56A0', '#F4A261', '#1E56A0', '#F4A261', '#F4A261'
+          ],
+          borderRadius: 4
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: { display: false },
+          title: { display: true, text: 'Volumen de Facturación por Empresa (Millones de Euros)' }
+        },
+        scales: {
+          y: { title: { display: true, text: 'Millones de Euros (€)' }, beginAtZero: true },
+          x: { title: { display: true, text: 'Empresas' } }
+        }
+      }
+    });
+
+    // Gráfico 2: Distribución por sectores del Top 10 (Suma de Facturación)
+    const ctxSectores = document.getElementById('sectoresEmpresasChart').getContext('2d');
+    const sectoresEmpresasChart = new Chart(ctxSectores, {
+      type: 'doughnut',
+      data: {
+        labels: ['Agroalimentario y Fertilizantes', 'Logística, Retail y Servicios', 'Energía y Biocombustibles', 'Farmacéutico e Industria'],
+        datasets: [{
+          // Sumatorias aproximadas del Top 10 por categoría
+          data: [863.2, 927.3, 603.1, 295.6],
+          backgroundColor: ['#2C5F2D', '#1E56A0', '#F4A261', '#A8201A']
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: { position: 'bottom' }
+        }
+      }
+    });
+  </script>

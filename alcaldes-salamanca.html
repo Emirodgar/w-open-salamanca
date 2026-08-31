@@ -1,0 +1,118 @@
+---
+layout: default
+title: Alcaldes y Gobernabilidad Municipal de Salamanca
+description: Análisis histórico y político de los regidores de Salamanca, continuidad institucional, alternancia y homenajes en el nomenclátor
+date: 31-08-2026
+folder: Local
+permalink: alcaldes-salamanca
+---
+
+    <!-- Featured Datasets Section -->
+    <section class="featured dataset" id="datos">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">{{ page.title }}</h2>
+                <p class="section-description">{{ page.description }}</p>
+            </div>
+			
+			<div id="section-content">
+						
+  <canvas id="permanenciaAlcaldesChart" width="800" height="400"></canvas>
+
+ 
+			<h2>Análisis de la trayectoria institucional y la gobernabilidad local</h2>
+			
+				<p>
+El análisis de los regidores de Salamanca abarca los mandatarios de la era democrática (1979–presente) junto a los principales referentes del siglo XX con presencia en el mapa urbano. La estabilidad política y la continuidad institucional han marcado la trayectoria del consistorio salmantino desde el inicio de la transición democrática.</p>
+
+<h3>Patrones y claves del análisis político</h3>
+<ul>
+<li><b>Hegemonía del Partido Popular</b>: Desde 1995, Salamanca ha mantenido un gobierno continuado del PP durante más de tres décadas. La alternancia del bipartidismo estuvo acotada a los años 80 y principios de los 90 entre Jesús Málaga (PSOE) y Fernando Fernández de Trocóniz (AP/PP).</li>
+<li><b>Criterios del Nomenclátor Urbano</b>: Ningún alcalde de la etapa democrática posee una vía a su nombre. El Ayuntamiento mantiene la costumbre institucional de no nombrar calles en honor a figuras vivas o de la política contemporánea reciente.</li>
+<li><b>Memoria y Reconocimiento Histórico</b>: Las vías con denominación explícita de "Alcalde" rinden tributo a mandatarios represaliados durante la Segunda República (Prieto Carrasco y Santa Cecilia), incorporadas para rescatar la memoria institucional previa a la dictadura.</li>
+<li><b>Longevidad en el Cargo</b>: Julián Lanzarote ostenta el récord de permanencia ininterrumpida (16 años), seguido por el cómputo total de Jesús Málaga (12 años en dos etapas) y la gestión de Carlos García Carbayo.</li>
+</ul>
+
+  <h2>Distribución de Años de Gobierno por Formación Política en Democracia (1979-2026)</h2>
+  <canvas id="distribucionPartidosChart" width="800" height="400"></canvas>
+
+			</div>
+			
+			<div id="section-table">
+			<table border="1" cellpadding="5" cellspacing="0">
+			  <thead>
+				<tr>
+				  <th>Nombre y Apellidos</th>
+				  <th>Partido / Filiación</th>
+				  <th>Periodo Activo en la Alcaldía</th>
+				  <th>Años Totales</th>
+				  <th>Calle en Salamanca</th>
+				</tr>
+			  </thead>
+			  <tbody>
+				<tr><td><b>Casto Prieto Carrasco</b></td><td>Izquierda Republicana</td><td>1931–1934 / 1936</td><td>~4 años</td><td><b>Sí</b> (Avda. Alcalde Prieto Carrasco)</td></tr>
+				<tr><td><b>Primitivo Santa Cecilia</b></td><td>Izquierda Republicana</td><td>1936</td><td>< 1 año</td><td><b>Sí</b> (Calle Alcalde Primitivo Santa Cecilia)</td></tr>
+				<tr><td><b>Jesús Málaga Guerrero</b></td><td>PSOE</td><td>1979–1987 / 1991–1995</td><td>12 años</td><td><b>No</b></td></tr>
+				<tr><td><b>Fernando Fernández de Trocóniz</b></td><td>Alianza Popular / PP</td><td>1987–1991</td><td>4 años</td><td><b>No</b></td></tr>
+				<tr><td><b>Julián Lanzarote Serna</b></td><td>Partido Popular (PP)</td><td>1995–2011</td><td>16 años</td><td><b>No</b></td></tr>
+				<tr><td><b>Alfonso Fernández Mañueco</b></td><td>Partido Popular (PP)</td><td>2011–2018</td><td>7 años</td><td><b>No</b></td></tr>
+				<tr><td><b>Carlos García Carbayo</b></td><td>Partido Popular (PP)</td><td>2018–presente</td><td>8 años</td><td><b>No</b></td></tr>
+			  </tbody>
+			</table>
+
+			</div>
+			
+			{% include categories.html %}
+            
+        </div>
+    </section>
+
+	<script>
+    // Gráfico 1: Duración de los Mandatos (Años en el cargo)
+    const ctxPerm = document.getElementById('permanenciaAlcaldesChart').getContext('2d');
+    const permanenciaAlcaldesChart = new Chart(ctxPerm, {
+      type: 'bar',
+      data: {
+        labels: ['J. Lanzarote', 'J. Málaga', 'C. García Carbayo', 'A. Fernández Mañueco', 'F. Fernández de Trocóniz', 'C. Prieto Carrasco'],
+        datasets: [{
+          label: 'Años Totales al Frente de la Alcaldía',
+          data: [16, 12, 8, 7, 4, 4],
+          backgroundColor: [
+            '#1E56A0', '#E63946', '#1E56A0', '#1E56A0', '#1E56A0', '#2C5F2D'
+          ],
+          borderRadius: 4
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: { display: false },
+          title: { display: true, text: 'Permanencia acumulada en la Alcaldía de Salamanca (Años)' }
+        },
+        scales: {
+          y: { title: { display: true, text: 'Años al frente' }, beginAtZero: true },
+          x: { title: { display: true, text: 'Alcalde / Regidor' } }
+        }
+      }
+    });
+
+    // Gráfico 2: Proporción de Años de Gobierno por Partido en la Etapa Democrática (1979-2026 = 47 años)
+    const ctxPart = document.getElementById('distribucionPartidosChart').getContext('2d');
+    const distribucionPartidosChart = new Chart(ctxPart, {
+      type: 'doughnut',
+      data: {
+        labels: ['Partido Popular (PP / AP)', 'Partido Socialista (PSOE)'],
+        datasets: [{
+          data: [35, 12], // 1987-1991 (4) + 1995-2026 (31) = 35 años PP; 1979-1987 (8) + 1991-1995 (4) = 12 años PSOE
+          backgroundColor: ['#1E56A0', '#E63946']
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: { position: 'bottom' },
+          title: { display: true, text: 'Distribución de Años de Gobierno Democrático (1979-2026)' }
+        }
+      }
+    });
+  </script>
