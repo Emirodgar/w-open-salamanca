@@ -1,0 +1,63 @@
+{
+  "mes": "2026-04",
+  "titulo_mes": "Abril 2026",
+  "resumen_mes": "La Semana Santa llenó de visitantes el casco histórico y Unionistas estrenó presidente, mientras un grave accidente de tráfico y la caída del tráfico aéreo en Matacán marcaron el resto de un mes intenso.",
+  "hitos": [
+    {
+      "fecha": "2026-04-02",
+      "titulo": "La Semana Santa de Salamanca 2026 llena el centro histórico de procesiones",
+      "categoria": "Cultura",
+      "descripcion": "Del 29 de marzo al 5 de abril se celebraron las procesiones del Jueves y Viernes Santo, en una Semana Santa declarada de Interés Turístico Internacional que atrajo a numerosos visitantes.",
+      "fuente": "https://www.lagacetadesalamanca.es/salamanca/guia-semana-santa-2026-salamanca-horarios-recorridos-20260320064500-nt.html",
+      "destacado": true
+    },
+    {
+      "fecha": "2026-04-05",
+      "titulo": "Miguel Ampuero debuta como nuevo presidente de Unionistas en Zamora",
+      "categoria": "Deportes",
+      "descripcion": "Proclamado presidente a finales de marzo, Ampuero debutó oficialmente en el cargo en Zamora, convirtiéndose en el cuarto presidente de la historia del club.",
+      "fuente": "https://salamancartvaldia.es/noticia/2026-04-05-miguel-ampuero-debuta-en-zamora-como-cuarto-presidente-en-la-historia-de-unionistas-388497",
+      "destacado": false
+    },
+    {
+      "fecha": "2026-04-15",
+      "titulo": "Salamanca Tech Summit 2026 reúne a innovadores en la Universidad",
+      "categoria": "Educación",
+      "descripcion": "Entre el 15 y el 17 de abril se celebró una nueva edición del encuentro de innovación y emprendimiento organizado con el Servicio de Empleo y Emprendimiento de la USAL.",
+      "fuente": "https://empleo.usal.es/noticias?id=2226",
+      "destacado": false
+    },
+    {
+      "fecha": "2026-04-17",
+      "titulo": "La regularización extraordinaria de inmigrantes satura las oficinas municipales",
+      "categoria": "Sociedad",
+      "descripcion": "El proceso extraordinario de regularización de extranjeros generó largas colas en las oficinas municipales, con más de 500 solicitudes de informes de vulnerabilidad en solo cuatro días.",
+      "fuente": "https://www.lagacetadesalamanca.es/salamanca/colas-servicios-municipales-regularizacion-inmigrantes-satura-oficinas-20260417060000-nt.html",
+      "destacado": false
+    },
+    {
+      "fecha": "2026-04-20",
+      "titulo": "Un choque frontal en Parada de Arriba deja varios heridos graves",
+      "categoria": "Sucesos",
+      "descripcion": "Dos turismos colisionaron en la carretera de Vitigudino dejando cinco heridos; el conductor más grave falleció días después, elevando el balance de víctimas mortales en carretera de la provincia en 2026.",
+      "fuente": "https://www.lagacetadesalamanca.es/sucesos/heridas-tres-personas-atrapada-colision-dos-turismos-20260420154748-nt.html",
+      "destacado": false
+    },
+    {
+      "fecha": "2026-04-20",
+      "titulo": "El Ayuntamiento prueba un asfalto con neumáticos reciclados junto al Hospital",
+      "categoria": "Urbanismo",
+      "descripcion": "El nuevo asfalto, elaborado con neumáticos fuera de uso, busca reducir el ruido ambiental entre 3 y 5 decibelios y mejorar la seguridad vial en un barrio residencial sensible.",
+      "fuente": "https://www.salamancahoy.es/salamanca/ciudad/nuevo-asfalto-especial-calle-salamanca-reduce-ruido-20260420134149-nt.html",
+      "destacado": false
+    },
+    {
+      "fecha": "2026-04-30",
+      "titulo": "El aeropuerto de Matacán pierde un 45% de pasajeros en abril",
+      "categoria": "Economía",
+      "descripcion": "Según datos de AENA, el aeropuerto de Salamanca cerró abril con 1.216 pasajeros, un 45,2% menos que en el mismo mes de 2025, agravando la caída de tráfico aéreo de la infraestructura.",
+      "fuente": "https://www.tribunasalamanca.com/noticias/444541/el-aeropuerto-de-salamanca-pierde-un-45-de-pasajeros-en-abril-y-agrava-su-caida-de-trafico-aereo",
+      "destacado": false
+    }
+  ]
+}

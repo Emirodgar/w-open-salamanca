@@ -1,0 +1,55 @@
+{
+  "mes": "2026-02",
+  "titulo_mes": "Febrero 2026",
+  "resumen_mes": "Una borrasca puso a prueba los ríos de la provincia, mientras Salamanca superó los 330.200 habitantes y arrancaba la campaña electoral a las Cortes de Castilla y León en un mes también marcado por el Carnaval.",
+  "hitos": [
+    {
+      "fecha": "2026-02-07",
+      "titulo": "La borrasca Leonardo desborda ríos en la provincia y activa el Plan Inuncyl",
+      "categoria": "Sucesos",
+      "descripcion": "La Junta de Castilla y León activó el nivel 1 del Plan Inuncyl en Salamanca tras las lluvias, que provocaron alerta roja en el río Huebra y desbordamientos junto al Tormes.",
+      "fuente": "https://www.lagacetadesalamanca.es/salamanca/junta-mantiene-nivel-inuncyl-salamanca-ante-riesgo-20260207175917-nt.html",
+      "destacado": false
+    },
+    {
+      "fecha": "2026-02-12",
+      "titulo": "Salamanca supera los 330.200 habitantes impulsada por la población extranjera",
+      "categoria": "Sociedad",
+      "descripcion": "Según el INE, la provincia ganó 1.754 habitantes respecto al año anterior y volvió a superar los 330.000 vecinos, un crecimiento atribuido al aumento de la población extranjera.",
+      "fuente": "https://salamancartvaldia.es/noticia/2026-02-12-salamanca-supera-los-330-000-habitantes-al-inicio-de-2026-gracias-al-empuje-de-la-poblacion-extranjera-385557",
+      "destacado": true
+    },
+    {
+      "fecha": "2026-02-16",
+      "titulo": "Salamanca celebra el Carnaval 2026 con desfiles en varios barrios",
+      "categoria": "Cultura",
+      "descripcion": "La capital vivió los días festivos de Carnaval con celebraciones como el desfile y sardinada del Barrio del Oeste y el Carnaval Cultural Brasileiro en el Teatro Liceo y la Torre de los Anaya.",
+      "fuente": "https://www.tribunasalamanca.com/noticias/434164/carnaval-del-barrio-del-oeste-2026-desfile-sardinada-y-actividades-infantiles-llenan-de-color-las-calles",
+      "destacado": false
+    },
+    {
+      "fecha": "2026-02-22",
+      "titulo": "El PSOE pregunta al Gobierno por la situación legal de la Escuela de Tauromaquia",
+      "categoria": "Política",
+      "descripcion": "El diputado socialista David Serrada preguntó al Gobierno tras caducar la inscripción de la Escuela de Tauromaquia de Salamanca en el registro oficial del Ministerio de Cultura.",
+      "fuente": "https://www.salamanca24horas.com/provincia/psoe-pregunta-gobierno-situacion-legal_1_2959372.html",
+      "destacado": false
+    },
+    {
+      "fecha": "2026-02-27",
+      "titulo": "Arranca en Salamanca la campaña electoral a las Cortes de Castilla y León",
+      "categoria": "Política",
+      "descripcion": "La campaña para los comicios autonómicos del 15 de marzo comenzó con 16 candidaturas y 204 candidatos y suplentes presentados en la circunscripción de Salamanca.",
+      "fuente": "https://www.salamanca24horas.com/local/arranca-campana-electoral-castilla-leon_1_2930327.html",
+      "destacado": false
+    },
+    {
+      "fecha": "2026-02-28",
+      "titulo": "Más de mil aficionados de Unionistas viajan a Cáceres en un desplazamiento histórico",
+      "categoria": "Deportes",
+      "descripcion": "Unionistas CF, invicto en lo que iba de febrero, empató 3-3 ante el Cacereño en un partido marcado por el histórico desembarco de más de mil seguidores salmantinos.",
+      "fuente": "https://www.lagacetadesalamanca.es/deportes/futbol-local/unionistas/intercambio-golpes-cacereno-unionistas-queda-empate-gracias-20260228182820-nt.html",
+      "destacado": false
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+---
+permalink: /actualidad/index.json
+---
+[
+{% assign meses = site.static_files | where_exp: "f", "f.path contains '/actualidad/'" | where_exp: "f", "f.extname == '.json'" %}
+{% assign rutas = meses | map: "path" | sort %}
+{% assign first = true %}{% for ruta in rutas %}{% unless first %},{% endunless %}{% assign first = false %}{{ ruta | jsonify }}
+{% endfor %}
+]

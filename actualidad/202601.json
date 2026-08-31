@@ -1,0 +1,63 @@
+{
+  "mes": "2026-01",
+  "titulo_mes": "Enero 2026",
+  "resumen_mes": "El mes arrancó con la congelación fiscal y la aprobación del presupuesto municipal más alto de la historia, mientras una nevada inesperada y un nuevo récord de turistas cerraban un enero muy activo para la ciudad.",
+  "hitos": [
+    {
+      "fecha": "2026-01-01",
+      "titulo": "Salamanca congela los impuestos municipales por 12º año consecutivo",
+      "categoria": "Economía",
+      "descripcion": "El Ayuntamiento mantiene congelados el IBI, la plusvalía, el IAE y el impuesto de vehículos, aunque sube la tasa de basuras por exigencia de la normativa estatal de economía circular.",
+      "fuente": "https://www.tribunasalamanca.com/noticias/429106/asi-cambian-los-impuestos-y-tasas-municipales-en-salamanca-en-2026-congelacion-fiscal-y-ajustes-puntuales",
+      "destacado": false
+    },
+    {
+      "fecha": "2026-01-03",
+      "titulo": "Unionistas sufre su mayor derrota histórica en Primera RFEF (0-5)",
+      "categoria": "Deportes",
+      "descripcion": "Unionistas de Salamanca perdió 5-0 ante el Barakaldo en Lasesarre, la peor derrota de su historia en el tercer escalón del fútbol español.",
+      "fuente": "https://www.tribunasalamanca.com/noticias/429482/unionistas-se-presenta-en-2026-con-su-peor-version-y-recibiendo-una-manita-en-barakaldo",
+      "destacado": false
+    },
+    {
+      "fecha": "2026-01-10",
+      "titulo": "Ron Lalá estrena \"La desconquista\" en el Teatro Liceo",
+      "categoria": "Cultura",
+      "descripcion": "La compañía teatral presentó su obra ambientada a finales del siglo XVI, dentro de una programación cultural municipal con más de sesenta citas para el primer trimestre de 2026.",
+      "fuente": "https://salamancartvaldia.es/noticia/2026-01-01-espectaculos-de-salamanca-ciudad-de-cultura-para-el-primer-trimestre-de-2026-382183",
+      "destacado": false
+    },
+    {
+      "fecha": "2026-01-19",
+      "titulo": "El pleno aprueba definitivamente el presupuesto municipal de 2026 (210,3M€)",
+      "categoria": "Política",
+      "descripcion": "Las cuentas municipales crecen un 5,43% hasta los 210,3 millones de euros, con un incremento del 18,68% en inversiones destinadas, entre otros, a vivienda pública y a un nuevo parque con huertos urbanos.",
+      "fuente": "https://www.aytosalamanca.es/documents/20119/3051865/03-anuncio-aprobacion-definitiva-2026.pdf",
+      "destacado": true
+    },
+    {
+      "fecha": "2026-01-28",
+      "titulo": "Una nevada sorpresiva anega calles y corta carreteras en Salamanca",
+      "categoria": "Sucesos",
+      "descripcion": "Una nevada no anticipada cubrió de blanco la capital y la provincia, complicando el tráfico en las carreteras N-620, N-501 y en las autopistas A-62, A-66 y A-50.",
+      "fuente": "https://www.salamanca24horas.com/local/nevada-salamanca-28-enero-2026",
+      "destacado": false
+    },
+    {
+      "fecha": "2026-01-30",
+      "titulo": "La USAL abre al público la Galería de Retratos de sus Rectores",
+      "categoria": "Educación",
+      "descripcion": "La Universidad de Salamanca hizo visitable en las Escuelas Mayores su histórica colección de 24 retratos de antiguos rectores, poniendo en valor su patrimonio histórico.",
+      "fuente": "https://salamancartvaldia.es/noticia/2026-01-30-fotos-abierta-al-publico-la-historica-galeria-de-retratos-de-los-rectores-de-la-universidad-de-salamanca-384751",
+      "destacado": false
+    },
+    {
+      "fecha": "2026-01-31",
+      "titulo": "Enero de 2026 entra en el ranking histórico de turismo en Salamanca",
+      "categoria": "Economía",
+      "descripcion": "Salamanca capital recibió 35.724 viajeros en enero, situando el mes entre los tres eneros de mayor actividad turística registrados y consolidando a la ciudad como líder regional en Castilla y León.",
+      "fuente": "https://www.salamanca24horas.com/local/enero-2026-suma-ranking-historico_1_2929628.html",
+      "destacado": false
+    }
+  ]
+}

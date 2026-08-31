@@ -1,0 +1,163 @@
+---
+layout: default
+title: Línea de tiempo de Salamanca
+description: Los hitos más destacados de Salamanca, mes a mes, a partir de los análisis de actualidad.
+date: 31-08-2026
+folder:
+permalink: timeline
+---
+
+    <!-- Timeline Section -->
+    <section class="featured dataset" id="timeline">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="section-title">{{ page.title }}</h1>
+                <p class="section-description">{{ page.description }}</p>
+            </div>
+
+			<div id="section-content">
+
+				<div class="tl-controls" id="tlControles" style="display:none;">
+					<div class="tl-filtros" id="tlFiltros"></div>
+					<div class="tl-meses-nav" id="tlMesesNav"></div>
+				</div>
+
+				<p class="tl-estado" id="tlEstado">Cargando línea de tiempo…</p>
+
+				<div id="tlContenido"></div>
+
+			</div>
+
+        </div>
+    </section>
+
+	<script>
+	(function () {
+		const CATEGORIAS = {
+			'Sucesos':   'var(--cat-sucesos)',
+			'Política':  'var(--cat-politica)',
+			'Economía':  'var(--cat-economia)',
+			'Cultura':   'var(--cat-cultura)',
+			'Deportes':  'var(--cat-deportes)',
+			'Sociedad':  'var(--cat-sociedad)',
+			'Educación': 'var(--cat-educacion)',
+			'Urbanismo': 'var(--cat-urbanismo)'
+		};
+
+		const estadoEl = document.getElementById('tlEstado');
+		const contenidoEl = document.getElementById('tlContenido');
+		const controlesEl = document.getElementById('tlControles');
+		const filtrosEl = document.getElementById('tlFiltros');
+		const mesesNavEl = document.getElementById('tlMesesNav');
+
+		let categoriaActiva = null; // null = todas
+
+		function formatearMesCorto(mesISO) {
+			const meses = ['ene', 'feb', 'mar', 'abr', 'may', 'jun', 'jul', 'ago', 'sep', 'oct', 'nov', 'dic'];
+			const [anio, mes] = mesISO.split('-');
+			return `${meses[parseInt(mes, 10) - 1]} ${anio.slice(2)}`;
+		}
+
+		function renderFiltros(categoriasPresentes) {
+			const botonTodos = `<button class="tl-filtro-btn tl-filtro-todos activa" data-cat="">Todos</button>`;
+			const botones = categoriasPresentes.map(cat => `
+				<button class="tl-filtro-btn" data-cat="${cat}" style="--dot-color:${CATEGORIAS[cat] || 'var(--primary-color)'}">
+					<span class="tl-filtro-dot"></span>${cat}
+				</button>`).join('');
+			filtrosEl.innerHTML = botonTodos + botones;
+
+			filtrosEl.querySelectorAll('.tl-filtro-btn').forEach(btn => {
+				btn.addEventListener('click', () => {
+					const cat = btn.dataset.cat;
+					filtrosEl.querySelectorAll('.tl-filtro-btn').forEach(b => b.classList.remove('activa'));
+					btn.classList.add('activa');
+					categoriaActiva = cat || null;
+					aplicarFiltro();
+				});
+			});
+		}
+
+		function renderMesesNav(meses) {
+			mesesNavEl.innerHTML = meses.map(m => `
+				<a href="#mes-${m.mes}" class="tl-mes-pill">${formatearMesCorto(m.mes)}</a>`).join('');
+		}
+
+		function aplicarFiltro() {
+			document.querySelectorAll('.tl-hito').forEach(el => {
+				const visible = !categoriaActiva || el.dataset.categoria === categoriaActiva;
+				el.classList.toggle('tl-hito--oculto', !visible);
+			});
+		}
+
+		function escapeHtml(str) {
+			const div = document.createElement('div');
+			div.textContent = str;
+			return div.innerHTML;
+		}
+
+		function renderMes(datosMes) {
+			const hitosOrdenados = (datosMes.hitos || []).slice().sort((a, b) => a.fecha.localeCompare(b.fecha));
+
+			const hitosHtml = hitosOrdenados.map(h => {
+				const color = CATEGORIAS[h.categoria] || 'var(--primary-color)';
+				const destacado = h.destacado ? ' tl-hito--destacado' : '';
+				const fuente = (h.fuente && h.fuente !== 'sin fuente directa')
+					? `<a class="tl-hito-fuente" href="${h.fuente}" target="_blank" rel="noopener">Ver noticia original ↗</a>`
+					: '';
+				return `
+				<div class="tl-hito${destacado}" data-categoria="${h.categoria}" style="--dot-color:${color}">
+					<div class="tl-hito-content">
+						${h.destacado ? '<span class="tl-hito-ribbon">Lo más destacado del mes</span>' : ''}
+						<div class="tl-hito-meta">
+							<span class="tl-hito-cat">${h.categoria}</span>
+							<span class="tl-hito-fecha">${h.fecha}</span>
+						</div>
+						<h4 class="tl-hito-title">${escapeHtml(h.titulo)}</h4>
+						<p class="tl-hito-desc">${escapeHtml(h.descripcion)}</p>
+						${fuente}
+					</div>
+				</div>`;
+			}).join('');
+
+			return `
+			<section class="tl-month" id="mes-${datosMes.mes}">
+				<div class="tl-month-header">
+					<h2 class="tl-month-title">${datosMes.titulo_mes}</h2>
+					<p class="tl-month-summary">${datosMes.resumen_mes || ''}</p>
+				</div>
+				<div class="tl-hitos">${hitosHtml}</div>
+			</section>`;
+		}
+
+		fetch('/actualidad/index.json?v=' + Date.now(), { cache: 'no-store' })
+			.then(r => r.json())
+			.then(rutas => {
+				if (!rutas || !rutas.length) {
+					estadoEl.textContent = 'Todavía no hay meses publicados en la línea de tiempo.';
+					return Promise.reject('sin-datos');
+				}
+				return Promise.all(rutas.map(ruta => {
+					const url = ruta.startsWith('/') ? ruta : '/' + ruta;
+					return fetch(url + '?v=' + Date.now(), { cache: 'no-store' }).then(r => r.json());
+				}));
+			})
+			.then(meses => {
+				meses.sort((a, b) => a.mes.localeCompare(b.mes));
+
+				const categoriasPresentes = Object.keys(CATEGORIAS).filter(cat =>
+					meses.some(m => (m.hitos || []).some(h => h.categoria === cat))
+				);
+
+				estadoEl.style.display = 'none';
+				controlesEl.style.display = '';
+				renderFiltros(categoriasPresentes);
+				renderMesesNav(meses);
+				contenidoEl.innerHTML = meses.map(renderMes).join('');
+			})
+			.catch(err => {
+				if (err === 'sin-datos') return;
+				console.error('No se pudo cargar la línea de tiempo', err);
+				estadoEl.textContent = 'No se ha podido cargar la línea de tiempo.';
+			});
+	})();
+	</script>

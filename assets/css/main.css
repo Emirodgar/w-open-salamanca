@@ -25,6 +25,16 @@
     --heat-3: #5C8A44;
     --heat-4: #2C5F2D;
 
+    /* Category colors (Timeline) */
+    --cat-sucesos: #C1443A;
+    --cat-politica: #2C5F2D;
+    --cat-economia: #F4A261;
+    --cat-cultura: #8E6FA8;
+    --cat-deportes: #264653;
+    --cat-sociedad: #C98A2B;
+    --cat-educacion: #3D7DCA;
+    --cat-urbanismo: #7C6A58;
+
     /* Typography */
     --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     --font-mono: 'JetBrains Mono', 'Courier New', monospace;
