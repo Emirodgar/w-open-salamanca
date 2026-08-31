@@ -1,0 +1,177 @@
+---
+layout: default
+title: Mapa de líneas de autobús urbano
+description: Activa y desactiva cada línea de Salamanca de Transportes para explorar su recorrido y sus paradas sobre el mapa de la ciudad
+date: 31-08-2026
+folder: Movilidad
+permalink: mapa-lineas-autobus
+---
+
+    <!-- Featured Datasets Section -->
+    <section class="featured dataset" id="datos">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="section-title">{{ page.title }}</h1>
+                <p class="section-description">{{ page.description }}</p>
+            </div>
+
+			<div id="section-content">
+
+				<div class="bus-map-controls">
+					<div class="bus-map-actions">
+						<button type="button" class="btn btn-secondary bus-map-btn" id="busMostrarTodas">Mostrar todas</button>
+						<button type="button" class="btn btn-secondary bus-map-btn" id="busOcultarTodas">Ocultar todas</button>
+					</div>
+					<p class="bus-map-estado" id="busEstado">Cargando líneas…</p>
+				</div>
+
+				<div class="bus-lineas-grupo" id="busLineasRegulares" style="display:none;">
+					<h3 class="bus-lineas-grupo-title">Líneas regulares</h3>
+					<div class="bus-lineas-grid" id="busLineasGridRegulares"></div>
+				</div>
+
+				<div class="bus-lineas-grupo" id="busLineasEspeciales" style="display:none;">
+					<h3 class="bus-lineas-grupo-title">Líneas especiales y de refuerzo</h3>
+					<div class="bus-lineas-grid" id="busLineasGridEspeciales"></div>
+				</div>
+
+				<div id="mapaLineasBus" class="bus-map-canvas"></div>
+
+				<p class="bus-map-nota">El trazado conecta las paradas en el orden real de cada línea (dato de <a href="https://salamancadetransportes.com/informacion-de-lineas/lineas/" target="_blank" rel="noopener">Salamanca de Transportes</a>); no representa el recorrido exacto calle a calle. Cuando una línea tiene varios trayectos (por ejemplo, ida y vuelta con paradas distintas), se muestra el más largo de ellos.</p>
+
+			</div>
+
+			{% include categories.html %}
+
+        </div>
+    </section>
+
+	<!-- Hojas de estilo y scripts de Leaflet -->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+	<script>
+	(function () {
+		const estadoEl = document.getElementById('busEstado');
+		const gridRegularesEl = document.getElementById('busLineasGridRegulares');
+		const gridEspecialesEl = document.getElementById('busLineasGridEspeciales');
+		const grupoRegularesEl = document.getElementById('busLineasRegulares');
+		const grupoEspecialesEl = document.getElementById('busLineasEspeciales');
+
+		const mapa = L.map('mapaLineasBus').setView([40.9650, -5.6630], 13);
+		L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/light_all/{z}/{x}/{y}{r}.png?key=cb1_2izw_1_55d93b51ded1dcecfa044181', {
+			attribution: '&copy; OpenStreetMap &copy; CARTO',
+			maxZoom: 19
+		}).addTo(mapa);
+
+		const capasPorLinea = new Map(); // id -> { capa: L.layerGroup, activa: bool }
+
+		function construirCapaLinea(linea) {
+			const grupo = L.layerGroup();
+			const puntos = linea.paradas.map(p => [p.lat, p.lng]);
+
+			if (puntos.length > 1) {
+				L.polyline(puntos, {
+					color: linea.color,
+					weight: 4,
+					opacity: 0.85,
+					lineJoin: 'round'
+				}).addTo(grupo);
+			}
+
+			linea.paradas.forEach((p, i) => {
+				L.circleMarker([p.lat, p.lng], {
+					radius: 5,
+					weight: 2,
+					color: '#ffffff',
+					fillColor: linea.color,
+					fillOpacity: 1
+				})
+				.bindPopup(`<b>Línea ${linea.id}</b> · ${linea.nombre}<br>${i + 1}. ${p.name}<br>Parada ${p.ref}`)
+				.addTo(grupo);
+			});
+
+			return grupo;
+		}
+
+		function crearChip(linea) {
+			const chip = document.createElement('button');
+			chip.type = 'button';
+			chip.className = 'bus-linea-chip';
+			chip.style.setProperty('--linea-color', linea.color);
+			chip.innerHTML = `<span class="bus-linea-chip-dot"></span>Línea ${linea.id}`;
+			chip.title = linea.nombre;
+			chip.dataset.idLinea = linea.id;
+
+			chip.addEventListener('click', () => alternarLinea(linea.id, chip));
+			return chip;
+		}
+
+		function alternarLinea(id, chip) {
+			const entry = capasPorLinea.get(id);
+			if (!entry) return;
+			entry.activa = !entry.activa;
+			chip.classList.toggle('activa', entry.activa);
+			if (entry.activa) {
+				entry.capa.addTo(mapa);
+			} else {
+				mapa.removeLayer(entry.capa);
+			}
+		}
+
+		function activarLinea(id, chip, activar) {
+			const entry = capasPorLinea.get(id);
+			if (!entry || entry.activa === activar) return;
+			entry.activa = activar;
+			chip.classList.toggle('activa', activar);
+			if (activar) {
+				entry.capa.addTo(mapa);
+			} else {
+				mapa.removeLayer(entry.capa);
+			}
+		}
+
+		fetch('/lineas-autobus.json?v=' + Date.now(), { cache: 'no-store' })
+			.then(r => r.json())
+			.then(lineas => {
+				estadoEl.style.display = 'none';
+				grupoRegularesEl.style.display = '';
+				grupoEspecialesEl.style.display = '';
+
+				const regulares = lineas.filter(l => parseInt(l.id, 10) <= 15);
+				const especiales = lineas.filter(l => parseInt(l.id, 10) > 15);
+
+				const chipsPorId = new Map();
+
+				lineas.forEach(linea => {
+					capasPorLinea.set(linea.id, { capa: construirCapaLinea(linea), activa: false });
+				});
+
+				regulares.forEach(linea => {
+					const chip = crearChip(linea);
+					gridRegularesEl.appendChild(chip);
+					chipsPorId.set(linea.id, chip);
+				});
+				especiales.forEach(linea => {
+					const chip = crearChip(linea);
+					gridEspecialesEl.appendChild(chip);
+					chipsPorId.set(linea.id, chip);
+				});
+
+				// Activamos la línea 1 por defecto para que el mapa no arranque vacío
+				if (chipsPorId.has('1')) {
+					activarLinea('1', chipsPorId.get('1'), true);
+				}
+
+				document.getElementById('busMostrarTodas').addEventListener('click', () => {
+					chipsPorId.forEach((chip, id) => activarLinea(id, chip, true));
+				});
+				document.getElementById('busOcultarTodas').addEventListener('click', () => {
+					chipsPorId.forEach((chip, id) => activarLinea(id, chip, false));
+				});
+			})
+			.catch(err => {
+				console.error('No se pudieron cargar las líneas de autobús', err);
+				estadoEl.textContent = 'No se han podido cargar las líneas de autobús.';
+			});
+	})();
+	</script>

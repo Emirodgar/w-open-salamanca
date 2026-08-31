@@ -1,0 +1,3308 @@
+[
+  {
+    "id": "1",
+    "nombre": "CHINCHIBARRA - BUENOS AIRES (Por centro)",
+    "color": "#008f6d",
+    "trayecto": "Chinchibarra (351) > Buenos Aires (16)",
+    "paradas": [
+      {
+        "lat": 40.977536003906,
+        "lng": -5.65439747732932,
+        "name": "Paseo de Los Olivos, 2",
+        "ref": "351"
+      },
+      {
+        "lat": 40.9787973528186,
+        "lng": -5.65555336240151,
+        "name": "C/ Romero, 2",
+        "ref": "352"
+      },
+      {
+        "lat": 40.9794402329344,
+        "lng": -5.65345176907773,
+        "name": "Avda. Vicente del Bosque, 52",
+        "ref": "353"
+      },
+      {
+        "lat": 40.9783128439049,
+        "lng": -5.65038784619785,
+        "name": "Avda. Los Cipreses, s/n",
+        "ref": "268"
+      },
+      {
+        "lat": 40.9763029265846,
+        "lng": -5.64888122157873,
+        "name": "Av. Los Cipreses, 48",
+        "ref": "362"
+      },
+      {
+        "lat": 40.9737113516597,
+        "lng": -5.64681664893799,
+        "name": "Avda. Los Cipreses, 84",
+        "ref": "269"
+      },
+      {
+        "lat": 40.9725600410145,
+        "lng": -5.64870764036421,
+        "name": "Pº. Estación, 119",
+        "ref": "270"
+      },
+      {
+        "lat": 40.9712840531908,
+        "lng": -5.65131846248876,
+        "name": "Pº. Estación, 87",
+        "ref": "271"
+      },
+      {
+        "lat": 40.9705793686127,
+        "lng": -5.6525855131672,
+        "name": "Pº. Estación, 61",
+        "ref": "272"
+      },
+      {
+        "lat": 40.9693923980081,
+        "lng": -5.65601968667967,
+        "name": "Pº. Estación, 31",
+        "ref": "2"
+      },
+      {
+        "lat": 40.9687374688932,
+        "lng": -5.65825116871144,
+        "name": "Pza. España, 7",
+        "ref": "3"
+      },
+      {
+        "lat": 40.967492567844,
+        "lng": -5.65911614431059,
+        "name": "Pza. Del Empresario, s/n",
+        "ref": "4"
+      },
+      {
+        "lat": 40.9647859605621,
+        "lng": -5.66087293353978,
+        "name": "C/ Gran Vía, 38",
+        "ref": "222"
+      },
+      {
+        "lat": 40.9621118119516,
+        "lng": -5.66239325462556,
+        "name": "C/ Gran Vía, 72",
+        "ref": "333"
+      },
+      {
+        "lat": 40.9574909711246,
+        "lng": -5.66552223171308,
+        "name": "Avda. Reyes de España, 32",
+        "ref": "6"
+      },
+      {
+        "lat": 40.9558699679065,
+        "lng": -5.67212201564938,
+        "name": "Ctra. La Fregeneda, 8",
+        "ref": "7"
+      },
+      {
+        "lat": 40.9550663245653,
+        "lng": -5.6768655403433,
+        "name": "Avda. Lasalle, 4",
+        "ref": "8"
+      },
+      {
+        "lat": 40.9550503945493,
+        "lng": -5.68026271140466,
+        "name": "Avda. Lasalle, 58",
+        "ref": "9"
+      },
+      {
+        "lat": 40.9549964354453,
+        "lng": -5.68374150151546,
+        "name": "Avda. Lasalle, fren. 95",
+        "ref": "10"
+      },
+      {
+        "lat": 40.9550013444947,
+        "lng": -5.68700882527198,
+        "name": "Avda. Lasalle, fren. 143",
+        "ref": "11"
+      },
+      {
+        "lat": 40.9549739164505,
+        "lng": -5.6897283341931,
+        "name": "Avda. Lasalle, 152",
+        "ref": "12"
+      },
+      {
+        "lat": 40.954928191775,
+        "lng": -5.69438360610402,
+        "name": "Avda. Juan Pablo II, 12",
+        "ref": "13"
+      },
+      {
+        "lat": 40.9553105989815,
+        "lng": -5.70036317302656,
+        "name": "Avda. Juan Pablo II, frente 46",
+        "ref": "14"
+      },
+      {
+        "lat": 40.9553646751067,
+        "lng": -5.70305037041799,
+        "name": "Avda. Juan Pablo II, s/n",
+        "ref": "15"
+      },
+      {
+        "lat": 40.9548538284632,
+        "lng": -5.70601149870486,
+        "name": "C/ Coria, s/n (Junto Iglesia)",
+        "ref": "16"
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "nombre": "PIZARRALES - SAN JULIÁN",
+    "color": "#ff904d",
+    "trayecto": "Pizarrales (291) > San Julían (266)",
+    "paradas": [
+      {
+        "lat": 40.9800249303138,
+        "lng": -5.67606856919754,
+        "name": "Ctra. Ledesma, 172",
+        "ref": "291"
+      },
+      {
+        "lat": 40.9780419666686,
+        "lng": -5.67613098385714,
+        "name": "Ctra. Ledesma, 101",
+        "ref": "44"
+      },
+      {
+        "lat": 40.9760443422696,
+        "lng": -5.67488553741373,
+        "name": "Ctra. Ledesma, 63",
+        "ref": "45"
+      },
+      {
+        "lat": 40.9745587889454,
+        "lng": -5.67253187932216,
+        "name": "Ctra. Ledesma, fren. 52",
+        "ref": "46"
+      },
+      {
+        "lat": 40.9732595071074,
+        "lng": -5.67107712571121,
+        "name": "C/ Valverdón, s/n",
+        "ref": "47"
+      },
+      {
+        "lat": 40.9714775339928,
+        "lng": -5.67101708898958,
+        "name": "Avda. Villamayor, 73",
+        "ref": "257"
+      },
+      {
+        "lat": 40.9691857237796,
+        "lng": -5.66924909445847,
+        "name": "Avda. Villamayor, 31",
+        "ref": "258"
+      },
+      {
+        "lat": 40.9679670313888,
+        "lng": -5.66820179246603,
+        "name": "Avda. Villamayor, 1",
+        "ref": "48"
+      },
+      {
+        "lat": 40.9697284235328,
+        "lng": -5.66253324707753,
+        "name": "Avda. Mirat, 43",
+        "ref": "41"
+      },
+      {
+        "lat": 40.9691735164853,
+        "lng": -5.66043139389843,
+        "name": "Avda. Mirat, 13",
+        "ref": "42"
+      },
+      {
+        "lat": 40.967492567844,
+        "lng": -5.65911614431059,
+        "name": "Pza. Del Empresario, s/n",
+        "ref": "4"
+      },
+      {
+        "lat": 40.9646367741123,
+        "lng": -5.66109269915308,
+        "name": "Pza. San Julían, 6",
+        "ref": "266"
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "nombre": "GARRIDO - SAN JOSÉ (Por Centro)",
+    "color": "#5270ff",
+    "trayecto": "San José (82) > Garrido (97)",
+    "paradas": [
+      {
+        "lat": 40.9527065771802,
+        "lng": -5.66793139324008,
+        "name": "Avda. Juan de Austria, fren. 8",
+        "ref": "82"
+      },
+      {
+        "lat": 40.9514901897054,
+        "lng": -5.66600537685145,
+        "name": "Avda. Juan de Austria, 50",
+        "ref": "84"
+      },
+      {
+        "lat": 40.9497780802615,
+        "lng": -5.66370310656808,
+        "name": "Avda. Juan de Austria, 108",
+        "ref": "85"
+      },
+      {
+        "lat": 40.948180709114,
+        "lng": -5.66150060151146,
+        "name": "C/ Hilario Goyenechea, 20",
+        "ref": "86"
+      },
+      {
+        "lat": 40.9484388795386,
+        "lng": -5.65968156161332,
+        "name": "C/ Maestro Serrano, s/n",
+        "ref": "87"
+      },
+      {
+        "lat": 40.9499495473042,
+        "lng": -5.65978974152592,
+        "name": "C/ Joaquín Rodrigo, 49",
+        "ref": "88"
+      },
+      {
+        "lat": 40.951643839863,
+        "lng": -5.66130712928991,
+        "name": "C/ Joaquín Rodrigo, fren. 36",
+        "ref": "89"
+      },
+      {
+        "lat": 40.9543165555503,
+        "lng": -5.666083516156,
+        "name": "Ctra. Vía Helmantica, s/n",
+        "ref": "330"
+      },
+      {
+        "lat": 40.9581694940211,
+        "lng": -5.66500301787534,
+        "name": "Avda. Reyes de España, 23",
+        "ref": "26"
+      },
+      {
+        "lat": 40.9623144433336,
+        "lng": -5.66219941276345,
+        "name": "C/ Gran Vía, 75",
+        "ref": "27"
+      },
+      {
+        "lat": 40.9652274868954,
+        "lng": -5.66047479956312,
+        "name": "C/ Gran Vía, 45",
+        "ref": "301"
+      },
+      {
+        "lat": 40.966845448828,
+        "lng": -5.65944662693697,
+        "name": "C/ Gran Vía, 25",
+        "ref": "28"
+      },
+      {
+        "lat": 40.9692729140519,
+        "lng": -5.65924708369969,
+        "name": "C/ María Auxiliadora, 10",
+        "ref": "91"
+      },
+      {
+        "lat": 40.9723309924359,
+        "lng": -5.65748046407188,
+        "name": "C/  María Auxiliadora, 48",
+        "ref": "92"
+      },
+      {
+        "lat": 40.9735461495266,
+        "lng": -5.65673304329488,
+        "name": "C/ María Auxiliadora, 70",
+        "ref": "93"
+      },
+      {
+        "lat": 40.9758207701496,
+        "lng": -5.65495853785023,
+        "name": "Avda. Federico Anaya, 24",
+        "ref": "94"
+      },
+      {
+        "lat": 40.9770692271231,
+        "lng": -5.65354684009083,
+        "name": "Avda. Los Cedros, 2",
+        "ref": "95"
+      },
+      {
+        "lat": 40.9759305985934,
+        "lng": -5.65175419384085,
+        "name": "Avda. Los Cedros, 18",
+        "ref": "96"
+      },
+      {
+        "lat": 40.974764094371,
+        "lng": -5.65078049362517,
+        "name": "Avda. Los Cedros, 40",
+        "ref": "97"
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "nombre": "CEMENTERIO - PUENTE LADRLLO",
+    "color": "#cb6be6",
+    "trayecto": "Puente Ladrillo (309) > Cementerio (342)",
+    "paradas": [
+      {
+        "lat": 40.9733922860432,
+        "lng": -5.63204417941031,
+        "name": "C/ Los Toreses, 17",
+        "ref": "309"
+      },
+      {
+        "lat": 40.9732249778762,
+        "lng": -5.63581657399278,
+        "name": "C/ Jesús Arambarri, 107",
+        "ref": "56"
+      },
+      {
+        "lat": 40.9726031070136,
+        "lng": -5.63740798766659,
+        "name": "C/ Jesús Arambarri, 95",
+        "ref": "115"
+      },
+      {
+        "lat": 40.9718997280022,
+        "lng": -5.63980420305152,
+        "name": "C/ Jesús Arambarri, 73",
+        "ref": "116"
+      },
+      {
+        "lat": 40.9712456199568,
+        "lng": -5.64122789255396,
+        "name": "C/ Jesús Arambarri, 45",
+        "ref": "117"
+      },
+      {
+        "lat": 40.9704857112119,
+        "lng": -5.64333656075971,
+        "name": "C/ Jesús Arambarri, 23",
+        "ref": "118"
+      },
+      {
+        "lat": 40.9697276734891,
+        "lng": -5.64536207311152,
+        "name": "C/ Filipinas, 29",
+        "ref": "119"
+      },
+      {
+        "lat": 40.968264973636,
+        "lng": -5.64787031930871,
+        "name": "Pº. Rollo, 99",
+        "ref": "120"
+      },
+      {
+        "lat": 40.9667918580383,
+        "lng": -5.6504374515425,
+        "name": "Pº. Rollo, s/n Parque Picasso",
+        "ref": "122"
+      },
+      {
+        "lat": 40.9649355285724,
+        "lng": -5.65360699119123,
+        "name": "Pº. Rollo, 5",
+        "ref": "123"
+      },
+      {
+        "lat": 40.9647183288237,
+        "lng": -5.65560638371172,
+        "name": "Pº. San Antonio, 21",
+        "ref": "124"
+      },
+      {
+        "lat": 40.9671962875002,
+        "lng": -5.65790409109905,
+        "name": "Pº. Canalejas, 1",
+        "ref": "224"
+      },
+      {
+        "lat": 40.967492567844,
+        "lng": -5.65911614431059,
+        "name": "Pza. Del Empresario, s/n",
+        "ref": "4"
+      },
+      {
+        "lat": 40.9647859605621,
+        "lng": -5.66087293353978,
+        "name": "C/ Gran Vía, 38",
+        "ref": "222"
+      },
+      {
+        "lat": 40.9621118119516,
+        "lng": -5.66239325462556,
+        "name": "C/ Gran Vía, 72",
+        "ref": "333"
+      },
+      {
+        "lat": 40.9591180584071,
+        "lng": -5.66565902035846,
+        "name": "Pº. Rector Esperabé, s/n",
+        "ref": "125"
+      },
+      {
+        "lat": 40.9606999593532,
+        "lng": -5.67357638084436,
+        "name": "Pº. Desengaño, s/n",
+        "ref": "38"
+      },
+      {
+        "lat": 40.9621056434175,
+        "lng": -5.6747143854566,
+        "name": "Pº de San Vicente, s/n (centro)",
+        "ref": "334"
+      },
+      {
+        "lat": 40.9643244123187,
+        "lng": -5.67264147988386,
+        "name": "Pº. San Vicente, 101",
+        "ref": "39"
+      },
+      {
+        "lat": 40.9664546200269,
+        "lng": -5.67011332942259,
+        "name": "Avda. Filiberto Villalobos, 2",
+        "ref": "126"
+      },
+      {
+        "lat": 40.9685039232595,
+        "lng": -5.67223985614301,
+        "name": "Avda. Filiberto Villalobos, 46",
+        "ref": "127"
+      },
+      {
+        "lat": 40.9703451157179,
+        "lng": -5.67440564139419,
+        "name": "Avda. Filiberto Villalobos, 76",
+        "ref": "128"
+      },
+      {
+        "lat": 40.9724610770023,
+        "lng": -5.67676091629715,
+        "name": "Avda. Filiberto Villalobos, fren.129",
+        "ref": "98"
+      },
+      {
+        "lat": 40.9731385930822,
+        "lng": -5.68093573962616,
+        "name": "Avda. Obispo Sancho Castilla, s/n",
+        "ref": "57"
+      },
+      {
+        "lat": 40.9752558596834,
+        "lng": -5.68129485045383,
+        "name": "C/ Luis Sala Balust, 34",
+        "ref": "295"
+      },
+      {
+        "lat": 40.9760389042432,
+        "lng": -5.68247935081562,
+        "name": "C/ Arquitecto Repullés y Vargas, s/n",
+        "ref": "342"
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "nombre": "CIUDAD JARDÍN - LOS ALCALDES",
+    "color": "#00be62",
+    "trayecto": "Los Alcaldes (206) > Ciudad Jardín (129)",
+    "paradas": [
+      {
+        "lat": 40.9524072969437,
+        "lng": -5.6900992902098,
+        "name": "C/ Alcalde Cruz Hernández, 1",
+        "ref": "298"
+      },
+      {
+        "lat": 40.9514132136448,
+        "lng": -5.69332585708541,
+        "name": "C/ Alcalde Fernández de Troconiz, 26",
+        "ref": "299"
+      },
+      {
+        "lat": 40.9511703216202,
+        "lng": -5.69177161126726,
+        "name": "C/ Alcalde Navarro González, 85",
+        "ref": "206"
+      },
+      {
+        "lat": 40.9512083181543,
+        "lng": -5.68860125816247,
+        "name": "C/ Alcalde Navarro González, 5",
+        "ref": "318"
+      },
+      {
+        "lat": 40.9494742609455,
+        "lng": -5.68725976497478,
+        "name": "C/ Sequeros, frente 6",
+        "ref": "300"
+      },
+      {
+        "lat": 40.950897631993,
+        "lng": -5.68492969384882,
+        "name": "C/ Mayor de Chamberí, 109",
+        "ref": "136"
+      },
+      {
+        "lat": 40.9518080810834,
+        "lng": -5.68335093968042,
+        "name": "C/ Mayor de Chamberí, frente 72",
+        "ref": "137"
+      },
+      {
+        "lat": 40.9529094104764,
+        "lng": -5.68169671139595,
+        "name": "C/ Mayor de Chamberí, s/n",
+        "ref": "223"
+      },
+      {
+        "lat": 40.9556547828509,
+        "lng": -5.67983571215761,
+        "name": "C/ Mariano Ares y Sanz, fren. 9",
+        "ref": "314"
+      },
+      {
+        "lat": 40.9571602574277,
+        "lng": -5.68171440928621,
+        "name": "Calle de Francisco Montejo, 12",
+        "ref": "341"
+      },
+      {
+        "lat": 40.9649368555832,
+        "lng": -5.68000943815186,
+        "name": "Pº Transición Española, s/n",
+        "ref": "339"
+      },
+      {
+        "lat": 40.9619107909603,
+        "lng": -5.67534812565329,
+        "name": "Pº Transición Española, s/n",
+        "ref": "337"
+      },
+      {
+        "lat": 40.9643244123187,
+        "lng": -5.67264147988386,
+        "name": "Pº. San Vicente, 101",
+        "ref": "39"
+      },
+      {
+        "lat": 40.9672334027627,
+        "lng": -5.66876635380886,
+        "name": "Pº. Carmelitas, 85",
+        "ref": "40"
+      },
+      {
+        "lat": 40.9704462709508,
+        "lng": -5.66342960278112,
+        "name": "Pº. Doctor Torres de Villarroel, 2",
+        "ref": "139"
+      },
+      {
+        "lat": 40.9731227357582,
+        "lng": -5.6629787802704,
+        "name": "Pº. Doctor Torres de Villarroel, 42",
+        "ref": "140"
+      },
+      {
+        "lat": 40.9748963271976,
+        "lng": -5.66262232462869,
+        "name": "Pº. Doctor Torres de Villarroel, 72",
+        "ref": "141"
+      },
+      {
+        "lat": 40.9778774535966,
+        "lng": -5.65950967098282,
+        "name": "Avda. San Agustín, 44",
+        "ref": "276"
+      },
+      {
+        "lat": 40.9797457692681,
+        "lng": -5.65817046020993,
+        "name": "Avda. de Salamanca, s/n",
+        "ref": "308"
+      },
+      {
+        "lat": 40.9796596169761,
+        "lng": -5.6603419400953,
+        "name": "Avda. de Salamanca, s/n",
+        "ref": "142"
+      },
+      {
+        "lat": 40.9822500991954,
+        "lng": -5.66049364737689,
+        "name": "Avda. La Merced, s/n",
+        "ref": "129"
+      }
+    ]
+  },
+  {
+    "id": "6",
+    "nombre": "GARRIDO - SAN JOSÉ (Por Hospitales)",
+    "color": "#ff5757",
+    "trayecto": "San José (147) > Garrido (97)",
+    "paradas": [
+      {
+        "lat": 40.9500555687557,
+        "lng": -5.66026918311382,
+        "name": "C/ Joaquín Rodrigo, 48",
+        "ref": "147"
+      },
+      {
+        "lat": 40.9494334232606,
+        "lng": -5.65912752302532,
+        "name": "C/ Joaquín Rodrigo, s/n",
+        "ref": "208"
+      },
+      {
+        "lat": 40.9485277696277,
+        "lng": -5.65973264821266,
+        "name": "C/ Maestro Serrano, s/n",
+        "ref": "78"
+      },
+      {
+        "lat": 40.9481390058739,
+        "lng": -5.66135637478816,
+        "name": "C/ Hilario Goyenechea, 29",
+        "ref": "79"
+      },
+      {
+        "lat": 40.9496561598797,
+        "lng": -5.66391203476661,
+        "name": "Avda. Carlos I, 105",
+        "ref": "83"
+      },
+      {
+        "lat": 40.9496630792666,
+        "lng": -5.66828397681413,
+        "name": "Avda. Carlos I, 29",
+        "ref": "148"
+      },
+      {
+        "lat": 40.9514060189922,
+        "lng": -5.67002925157456,
+        "name": "Avda. Saavedra y Fajardo, 27",
+        "ref": "149"
+      },
+      {
+        "lat": 40.9563727822694,
+        "lng": -5.67218982867006,
+        "name": "Pº. Progreso, s/n",
+        "ref": "150"
+      },
+      {
+        "lat": 40.9606999593532,
+        "lng": -5.67357638084436,
+        "name": "Pº. Desengaño, s/n",
+        "ref": "38"
+      },
+      {
+        "lat": 40.9621056434175,
+        "lng": -5.6747143854566,
+        "name": "Pº de San Vicente, s/n (centro)",
+        "ref": "334"
+      },
+      {
+        "lat": 40.9643244123187,
+        "lng": -5.67264147988386,
+        "name": "Pº. San Vicente, 101",
+        "ref": "39"
+      },
+      {
+        "lat": 40.9672334027627,
+        "lng": -5.66876635380886,
+        "name": "Pº. Carmelitas, 85",
+        "ref": "40"
+      },
+      {
+        "lat": 40.9697284235328,
+        "lng": -5.66253324707753,
+        "name": "Avda. Mirat, 43",
+        "ref": "41"
+      },
+      {
+        "lat": 40.9691735164853,
+        "lng": -5.66043139389843,
+        "name": "Avda. Mirat, 13",
+        "ref": "42"
+      },
+      {
+        "lat": 40.9692729140519,
+        "lng": -5.65924708369969,
+        "name": "C/ María Auxiliadora, 10",
+        "ref": "91"
+      },
+      {
+        "lat": 40.9723309924359,
+        "lng": -5.65748046407188,
+        "name": "C/  María Auxiliadora, 48",
+        "ref": "92"
+      },
+      {
+        "lat": 40.9735461495266,
+        "lng": -5.65673304329488,
+        "name": "C/ María Auxiliadora, 70",
+        "ref": "93"
+      },
+      {
+        "lat": 40.9758207701496,
+        "lng": -5.65495853785023,
+        "name": "Avda. Federico Anaya, 24",
+        "ref": "94"
+      },
+      {
+        "lat": 40.9770692271231,
+        "lng": -5.65354684009083,
+        "name": "Avda. Los Cedros, 2",
+        "ref": "95"
+      },
+      {
+        "lat": 40.9759305985934,
+        "lng": -5.65175419384085,
+        "name": "Avda. Los Cedros, 18",
+        "ref": "96"
+      },
+      {
+        "lat": 40.974764094371,
+        "lng": -5.65078049362517,
+        "name": "Avda. Los Cedros, 40",
+        "ref": "97"
+      }
+    ]
+  },
+  {
+    "id": "7",
+    "nombre": "HOSPITAL UNIVERSITARIO - PROSPERIDAD",
+    "color": "#8b52ff",
+    "trayecto": "Hospital Universitario (336) > Prosperidad (230)",
+    "paradas": [
+      {
+        "lat": 40.9620544906486,
+        "lng": -5.67536581432401,
+        "name": "Pº  Transición Española, s/n Hospital",
+        "ref": "336"
+      },
+      {
+        "lat": 40.9649835045273,
+        "lng": -5.67994003319777,
+        "name": "Pº Transición Española, s/n",
+        "ref": "338"
+      },
+      {
+        "lat": 40.9674130831985,
+        "lng": -5.67810151901059,
+        "name": "Pº Tomas y Valiente, s/n",
+        "ref": "356"
+      },
+      {
+        "lat": 40.9692069809983,
+        "lng": -5.67532217793296,
+        "name": "C/ La Alberca, s/n",
+        "ref": "325"
+      },
+      {
+        "lat": 40.9703451157179,
+        "lng": -5.67440564139419,
+        "name": "Avda. Filiberto Villalobos, 76",
+        "ref": "128"
+      },
+      {
+        "lat": 40.9726007045421,
+        "lng": -5.67229831768423,
+        "name": "C/ Peña de Francia, 1",
+        "ref": "256"
+      },
+      {
+        "lat": 40.9728158051665,
+        "lng": -5.67001345375758,
+        "name": "Avda. Portugal, 187",
+        "ref": "165"
+      },
+      {
+        "lat": 40.9727747217424,
+        "lng": -5.66673190252557,
+        "name": "Avda. Portugal, 151",
+        "ref": "166"
+      },
+      {
+        "lat": 40.9731227357582,
+        "lng": -5.6629787802704,
+        "name": "Pº. Doctor Torres de Villarroel, 42",
+        "ref": "140"
+      },
+      {
+        "lat": 40.9748963271976,
+        "lng": -5.66262232462869,
+        "name": "Pº. Doctor Torres de Villarroel, 72",
+        "ref": "141"
+      },
+      {
+        "lat": 40.975534540985,
+        "lng": -5.65955811762399,
+        "name": "Pza. Madrid, 5",
+        "ref": "167"
+      },
+      {
+        "lat": 40.9743313197308,
+        "lng": -5.65549297983426,
+        "name": "Avda. Alfonso IX de León, 4",
+        "ref": "168"
+      },
+      {
+        "lat": 40.9736748152198,
+        "lng": -5.653886083969,
+        "name": "Avda. Alfonso IX de León, 39",
+        "ref": "169"
+      },
+      {
+        "lat": 40.9723889884096,
+        "lng": -5.65105375297965,
+        "name": "C/ Elcano, fren. 12",
+        "ref": "134"
+      },
+      {
+        "lat": 40.9724984153497,
+        "lng": -5.64864575572543,
+        "name": "Pº. Estación, s/n",
+        "ref": "32"
+      },
+      {
+        "lat": 40.9708843940063,
+        "lng": -5.64401795201991,
+        "name": "C/ Jamaica, s/n",
+        "ref": "215"
+      },
+      {
+        "lat": 40.9697276734891,
+        "lng": -5.64536207311152,
+        "name": "C/ Filipinas, 29",
+        "ref": "119"
+      },
+      {
+        "lat": 40.968264973636,
+        "lng": -5.64787031930871,
+        "name": "Pº. Rollo, 99",
+        "ref": "120"
+      },
+      {
+        "lat": 40.9659803782027,
+        "lng": -5.64929989013258,
+        "name": "C/ Lugo, s/n",
+        "ref": "172"
+      },
+      {
+        "lat": 40.9640298713414,
+        "lng": -5.64834255376553,
+        "name": "C/ Antonio Montesinos, s/n",
+        "ref": "305"
+      },
+      {
+        "lat": 40.9624070871231,
+        "lng": -5.64958463948572,
+        "name": "C/ Alonso del Castillo, fren. 1",
+        "ref": "213"
+      },
+      {
+        "lat": 40.9609009852027,
+        "lng": -5.65123531093968,
+        "name": "C/ Alonso del Castillo, s/n",
+        "ref": "230"
+      }
+    ]
+  },
+  {
+    "id": "8",
+    "nombre": "ALDEHUELA - VISTAHERMOSA",
+    "color": "#0cbfde",
+    "trayecto": "Aldehuela (212) > Vistahermosa (278)",
+    "paradas": [
+      {
+        "lat": 40.9610768819086,
+        "lng": -5.6424024451483,
+        "name": "Avda. Aldehuela de los Guzmanes, s/n",
+        "ref": "212"
+      },
+      {
+        "lat": 40.9593178206292,
+        "lng": -5.64957982619222,
+        "name": "C/ Abraham Zacut, s/n",
+        "ref": "357"
+      },
+      {
+        "lat": 40.9606602666619,
+        "lng": -5.64917016886944,
+        "name": "C/ Arias Pinel, 31",
+        "ref": "228"
+      },
+      {
+        "lat": 40.9618104777273,
+        "lng": -5.64811119210992,
+        "name": "C/ Arias Pinel, fren. 2",
+        "ref": "186"
+      },
+      {
+        "lat": 40.9625791628961,
+        "lng": -5.6491518971551,
+        "name": "C/mno. Las Aguas, 75",
+        "ref": "229"
+      },
+      {
+        "lat": 40.9636256590825,
+        "lng": -5.6514275993609,
+        "name": "C/mno. Las Aguas, s/n",
+        "ref": "265"
+      },
+      {
+        "lat": 40.9643367455748,
+        "lng": -5.65301264459843,
+        "name": "C/mno. Las Aguas, fren. 12",
+        "ref": "183"
+      },
+      {
+        "lat": 40.9647183288237,
+        "lng": -5.65560638371172,
+        "name": "Pº. San Antonio, 21",
+        "ref": "124"
+      },
+      {
+        "lat": 40.9671962875002,
+        "lng": -5.65790409109905,
+        "name": "Pº. Canalejas, 1",
+        "ref": "224"
+      },
+      {
+        "lat": 40.967492567844,
+        "lng": -5.65911614431059,
+        "name": "Pza. Del Empresario, s/n",
+        "ref": "4"
+      },
+      {
+        "lat": 40.9647859605621,
+        "lng": -5.66087293353978,
+        "name": "C/ Gran Vía, 38",
+        "ref": "222"
+      },
+      {
+        "lat": 40.9621118119516,
+        "lng": -5.66239325462556,
+        "name": "C/ Gran Vía, 72",
+        "ref": "333"
+      },
+      {
+        "lat": 40.9591180584071,
+        "lng": -5.66565902035846,
+        "name": "Pº. Rector Esperabé, s/n",
+        "ref": "125"
+      },
+      {
+        "lat": 40.959844908558,
+        "lng": -5.67199727889021,
+        "name": "C/ San Gregorio, s/n",
+        "ref": "184"
+      },
+      {
+        "lat": 40.9575916008271,
+        "lng": -5.6790467893566,
+        "name": "Avda. Padre Ignacio Ellacuría, fren. 45",
+        "ref": "225"
+      },
+      {
+        "lat": 40.9573329584785,
+        "lng": -5.68048579223799,
+        "name": "C/ Francisco Maldonado, 17",
+        "ref": "214"
+      },
+      {
+        "lat": 40.955526596121,
+        "lng": -5.67992556903292,
+        "name": "C/ Mariano Ares y Sanz, 5",
+        "ref": "313"
+      },
+      {
+        "lat": 40.9529429178629,
+        "lng": -5.68180498901876,
+        "name": "C/ Mayor de Chamberí, 46",
+        "ref": "133"
+      },
+      {
+        "lat": 40.9518685821944,
+        "lng": -5.68346031002815,
+        "name": "C/ Mayor de Chamberí, 70",
+        "ref": "135"
+      },
+      {
+        "lat": 40.9509316895684,
+        "lng": -5.68501423257856,
+        "name": "C/ Mayor de Chamberí, 106",
+        "ref": "207"
+      },
+      {
+        "lat": 40.9496171213421,
+        "lng": -5.68654091265055,
+        "name": "C/ Mayor de Chamberí, 148",
+        "ref": "358"
+      },
+      {
+        "lat": 40.9494617586283,
+        "lng": -5.68470517435717,
+        "name": "C/ Cordel de Merinas de Vistahermosa, 181",
+        "ref": "359"
+      },
+      {
+        "lat": 40.9500644813747,
+        "lng": -5.680868745025,
+        "name": "C/ La Beira, 12",
+        "ref": "233"
+      },
+      {
+        "lat": 40.9487387571286,
+        "lng": -5.68249007203238,
+        "name": "C/ La Beira, 50",
+        "ref": "278"
+      }
+    ]
+  },
+  {
+    "id": "9",
+    "nombre": "CAPUCHINOS - ZURGUÉN",
+    "color": "#ffbd58",
+    "trayecto": "Zurguén (196) > Capuchinos (317)",
+    "paradas": [
+      {
+        "lat": 40.9430899725741,
+        "lng": -5.67130951708624,
+        "name": "C/ Comisión Europea, s/n",
+        "ref": "196"
+      },
+      {
+        "lat": 40.9456839395054,
+        "lng": -5.67169920935964,
+        "name": "Pº. Cuatro Calzadas, fren. 78",
+        "ref": "304"
+      },
+      {
+        "lat": 40.9467877290243,
+        "lng": -5.67187439728751,
+        "name": "Pº. Cuatro Calzadas, fren. 60",
+        "ref": "197"
+      },
+      {
+        "lat": 40.9478523875486,
+        "lng": -5.67140653735379,
+        "name": "C/ Castroverde, fren. 14",
+        "ref": "198"
+      },
+      {
+        "lat": 40.9496676916834,
+        "lng": -5.67119464426903,
+        "name": "C/mno. Miranda, 55",
+        "ref": "199"
+      },
+      {
+        "lat": 40.9519858110568,
+        "lng": -5.67105054033261,
+        "name": "C/mno. Miranda, 5",
+        "ref": "200"
+      },
+      {
+        "lat": 40.9581694940211,
+        "lng": -5.66500301787534,
+        "name": "Avda. Reyes de España, 23",
+        "ref": "26"
+      },
+      {
+        "lat": 40.9623144433336,
+        "lng": -5.66219941276345,
+        "name": "C/ Gran Vía, 75",
+        "ref": "27"
+      },
+      {
+        "lat": 40.9652274868954,
+        "lng": -5.66047479956312,
+        "name": "C/ Gran Vía, 45",
+        "ref": "301"
+      },
+      {
+        "lat": 40.966845448828,
+        "lng": -5.65944662693697,
+        "name": "C/ Gran Vía, 25",
+        "ref": "28"
+      },
+      {
+        "lat": 40.9693990287049,
+        "lng": -5.66041669220504,
+        "name": "Avda. Mirat, 22",
+        "ref": "33"
+      },
+      {
+        "lat": 40.9704462709508,
+        "lng": -5.66342960278112,
+        "name": "Pº. Doctor Torres de Villarroel, 2",
+        "ref": "139"
+      },
+      {
+        "lat": 40.9727801243777,
+        "lng": -5.66377308436738,
+        "name": "Avda. Portugal, 126",
+        "ref": "201"
+      },
+      {
+        "lat": 40.9730279174327,
+        "lng": -5.66591024467756,
+        "name": "Avda. Portugal, 152",
+        "ref": "178"
+      },
+      {
+        "lat": 40.9746723065677,
+        "lng": -5.66685590584332,
+        "name": "C/ Emigdio de la Riva, 6",
+        "ref": "202"
+      },
+      {
+        "lat": 40.9762151727515,
+        "lng": -5.66673982104899,
+        "name": "C/ Emigdio de la Riva, fren. 29",
+        "ref": "203"
+      },
+      {
+        "lat": 40.9792626395163,
+        "lng": -5.66699337740141,
+        "name": "C/ Los Valles Mineros, 2",
+        "ref": "204"
+      },
+      {
+        "lat": 40.9808193785476,
+        "lng": -5.6670561295594,
+        "name": "C/ Los Valles Mineros, s/n",
+        "ref": "205"
+      },
+      {
+        "lat": 40.9827090610916,
+        "lng": -5.66713230930176,
+        "name": "C/ Los Valles Mineros, s/n",
+        "ref": "221"
+      },
+      {
+        "lat": 40.9844983849033,
+        "lng": -5.66726387885292,
+        "name": "C/ Los Valles Mineros, s/n",
+        "ref": "317"
+      }
+    ]
+  },
+  {
+    "id": "10",
+    "nombre": "PUENTE LADRILLO - VISTAHERMOSA",
+    "color": "#95918e",
+    "trayecto": "Vistahermosa (233) > Puente Ladrillo (309)",
+    "paradas": [
+      {
+        "lat": 40.9500644813747,
+        "lng": -5.680868745025,
+        "name": "C/ La Beira, 12",
+        "ref": "233"
+      },
+      {
+        "lat": 40.9487387571286,
+        "lng": -5.68249007203238,
+        "name": "C/ La Beira, 50",
+        "ref": "278"
+      },
+      {
+        "lat": 40.9475581711191,
+        "lng": -5.68019710658617,
+        "name": "C/ Ramón de Mesonero Romanos, 43",
+        "ref": "220"
+      },
+      {
+        "lat": 40.9506097421581,
+        "lng": -5.67833668603228,
+        "name": "C/ Emilio Salcedo, 15",
+        "ref": "232"
+      },
+      {
+        "lat": 40.9509299881484,
+        "lng": -5.68083250020232,
+        "name": "C/ Almeida, fren. 15",
+        "ref": "218"
+      },
+      {
+        "lat": 40.9530045490656,
+        "lng": -5.67993042878264,
+        "name": "C/ Guarda, 42",
+        "ref": "234"
+      },
+      {
+        "lat": 40.9568602522254,
+        "lng": -5.67602323836954,
+        "name": "Avda. Puente Sánchez Fabrés, s/n",
+        "ref": "216"
+      },
+      {
+        "lat": 40.9606999593532,
+        "lng": -5.67357638084436,
+        "name": "Pº. Desengaño, s/n",
+        "ref": "38"
+      },
+      {
+        "lat": 40.9621056434175,
+        "lng": -5.6747143854566,
+        "name": "Pº de San Vicente, s/n (centro)",
+        "ref": "334"
+      },
+      {
+        "lat": 40.9643244123187,
+        "lng": -5.67264147988386,
+        "name": "Pº. San Vicente, 101",
+        "ref": "39"
+      },
+      {
+        "lat": 40.9672334027627,
+        "lng": -5.66876635380886,
+        "name": "Pº. Carmelitas, 85",
+        "ref": "40"
+      },
+      {
+        "lat": 40.9697284235328,
+        "lng": -5.66253324707753,
+        "name": "Avda. Mirat, 43",
+        "ref": "41"
+      },
+      {
+        "lat": 40.9691735164853,
+        "lng": -5.66043139389843,
+        "name": "Avda. Mirat, 13",
+        "ref": "42"
+      },
+      {
+        "lat": 40.9684538971284,
+        "lng": -5.65804965367027,
+        "name": "Pza. España, s/n",
+        "ref": "50"
+      },
+      {
+        "lat": 40.968595447003,
+        "lng": -5.65464493491409,
+        "name": "Avda. Comuneros, fren. 35",
+        "ref": "51"
+      },
+      {
+        "lat": 40.9685290908868,
+        "lng": -5.65165965817896,
+        "name": "Avda. Comuneros, 18",
+        "ref": "52"
+      },
+      {
+        "lat": 40.9685480188206,
+        "lng": -5.64809553509232,
+        "name": "Avda. Comuneros, 68",
+        "ref": "53"
+      },
+      {
+        "lat": 40.9687648124011,
+        "lng": -5.64493145241153,
+        "name": "C/ Colombia, 24",
+        "ref": "54"
+      },
+      {
+        "lat": 40.9689406383556,
+        "lng": -5.64237174673486,
+        "name": "C/ Colombia, 42",
+        "ref": "55"
+      },
+      {
+        "lat": 40.9697238457408,
+        "lng": -5.6380656596433,
+        "name": "C/ Ricardo Pérez Fernández, s/n",
+        "ref": "312"
+      },
+      {
+        "lat": 40.9707363236045,
+        "lng": -5.63790399823623,
+        "name": "C/ Santiago Madrigal, s/n",
+        "ref": "170"
+      },
+      {
+        "lat": 40.9709711851199,
+        "lng": -5.63551291387934,
+        "name": "C/ Santiago Madrigal, s/n",
+        "ref": "310"
+      },
+      {
+        "lat": 40.9733922860432,
+        "lng": -5.63204417941031,
+        "name": "C/ Los Toreses, 17",
+        "ref": "309"
+      }
+    ]
+  },
+  {
+    "id": "11",
+    "nombre": "LOS CIPRESES - BUENOS AIRES (Por Hospitales)",
+    "color": "#f1ca2e",
+    "trayecto": "Los Cipreses (268) > Buenos Aires (16)",
+    "paradas": [
+      {
+        "lat": 40.9783128439049,
+        "lng": -5.65038784619785,
+        "name": "Avda. Los Cipreses, s/n",
+        "ref": "268"
+      },
+      {
+        "lat": 40.9763029265846,
+        "lng": -5.64888122157873,
+        "name": "Av. Los Cipreses, 48",
+        "ref": "362"
+      },
+      {
+        "lat": 40.9737113516597,
+        "lng": -5.64681664893799,
+        "name": "Avda. Los Cipreses, 84",
+        "ref": "269"
+      },
+      {
+        "lat": 40.9725600410145,
+        "lng": -5.64870764036421,
+        "name": "Pº. Estación, 119",
+        "ref": "270"
+      },
+      {
+        "lat": 40.9712840531908,
+        "lng": -5.65131846248876,
+        "name": "Pº. Estación, 87",
+        "ref": "271"
+      },
+      {
+        "lat": 40.9705793686127,
+        "lng": -5.6525855131672,
+        "name": "Pº. Estación, 61",
+        "ref": "272"
+      },
+      {
+        "lat": 40.9693923980081,
+        "lng": -5.65601968667967,
+        "name": "Pº. Estación, 31",
+        "ref": "2"
+      },
+      {
+        "lat": 40.9687374688932,
+        "lng": -5.65825116871144,
+        "name": "Pza. España, 7",
+        "ref": "3"
+      },
+      {
+        "lat": 40.9693990287049,
+        "lng": -5.66041669220504,
+        "name": "Avda. Mirat, 22",
+        "ref": "33"
+      },
+      {
+        "lat": 40.9698037588003,
+        "lng": -5.66200153601236,
+        "name": "Pza. Gabriel y Galán, s/n",
+        "ref": "34"
+      },
+      {
+        "lat": 40.9674881106765,
+        "lng": -5.66865779599746,
+        "name": "Pº. Carmelitas, 94",
+        "ref": "35"
+      },
+      {
+        "lat": 40.963246802216,
+        "lng": -5.67366735093725,
+        "name": "Pº. San Vicente, 106",
+        "ref": "36"
+      },
+      {
+        "lat": 40.9620544906486,
+        "lng": -5.67536581432401,
+        "name": "Pº  Transición Española, s/n Hospital",
+        "ref": "336"
+      },
+      {
+        "lat": 40.9649835045273,
+        "lng": -5.67994003319777,
+        "name": "Pº Transición Española, s/n",
+        "ref": "338"
+      },
+      {
+        "lat": 40.9584543112986,
+        "lng": -5.68377472181055,
+        "name": "Avda. Padre Ignacio Ellacuría, s/n",
+        "ref": "235"
+      },
+      {
+        "lat": 40.9572142446803,
+        "lng": -5.68596994137221,
+        "name": "Pº. Lunes de Aguas, s/n",
+        "ref": "277"
+      },
+      {
+        "lat": 40.9550013444947,
+        "lng": -5.68700882527198,
+        "name": "Avda. Lasalle, fren. 143",
+        "ref": "11"
+      },
+      {
+        "lat": 40.9549739164505,
+        "lng": -5.6897283341931,
+        "name": "Avda. Lasalle, 152",
+        "ref": "12"
+      },
+      {
+        "lat": 40.954928191775,
+        "lng": -5.69438360610402,
+        "name": "Avda. Juan Pablo II, 12",
+        "ref": "13"
+      },
+      {
+        "lat": 40.9553105989815,
+        "lng": -5.70036317302656,
+        "name": "Avda. Juan Pablo II, frente 46",
+        "ref": "14"
+      },
+      {
+        "lat": 40.9553646751067,
+        "lng": -5.70305037041799,
+        "name": "Avda. Juan Pablo II, s/n",
+        "ref": "15"
+      },
+      {
+        "lat": 40.9548538284632,
+        "lng": -5.70601149870486,
+        "name": "C/ Coria, s/n (Junto Iglesia)",
+        "ref": "16"
+      }
+    ]
+  },
+  {
+    "id": "12",
+    "nombre": "BARRIO BLANCO - MONTALVO II",
+    "color": "#ff4eb3",
+    "trayecto": "B. Blanco(237) > Montalvo(280)",
+    "paradas": [
+      {
+        "lat": 40.9768469669966,
+        "lng": -5.67328982030569,
+        "name": "C/ Los Marineros, s/n",
+        "ref": "237"
+      },
+      {
+        "lat": 40.9782549457734,
+        "lng": -5.67161154567685,
+        "name": "C/ Don Quijote, 78",
+        "ref": "238"
+      },
+      {
+        "lat": 40.9803898712875,
+        "lng": -5.6712104653665,
+        "name": "C/ Bachiller Sansón Carrasco, s/n",
+        "ref": "239"
+      },
+      {
+        "lat": 40.9809447789968,
+        "lng": -5.66864190876389,
+        "name": "C/ Astorga, s/n",
+        "ref": "240"
+      },
+      {
+        "lat": 40.9806901008425,
+        "lng": -5.66719353937161,
+        "name": "C/ Los Valles Mineros, 33",
+        "ref": "188"
+      },
+      {
+        "lat": 40.9791499844392,
+        "lng": -5.66719087843424,
+        "name": "C/ Los Valles Mineros, s/n",
+        "ref": "189"
+      },
+      {
+        "lat": 40.9785828596118,
+        "lng": -5.6636739090191,
+        "name": "Gta. Ruta de la Plata, s/n",
+        "ref": "242"
+      },
+      {
+        "lat": 40.974869548446,
+        "lng": -5.66300153699327,
+        "name": "Pº. Doctor Torres de Villarroel, 63",
+        "ref": "131"
+      },
+      {
+        "lat": 40.9731006220285,
+        "lng": -5.66315614652003,
+        "name": "Pº. Doctor Torres de Villarroel, 37",
+        "ref": "132"
+      },
+      {
+        "lat": 40.9720525713383,
+        "lng": -5.66212763770998,
+        "name": "Avda. Portugal, 105",
+        "ref": "151"
+      },
+      {
+        "lat": 40.9713120701306,
+        "lng": -5.65909134659726,
+        "name": "Avda. Portugal, 65",
+        "ref": "152"
+      },
+      {
+        "lat": 40.9703354592287,
+        "lng": -5.65457212454379,
+        "name": "Avda. Portugal, 11",
+        "ref": "153"
+      },
+      {
+        "lat": 40.9680407407269,
+        "lng": -5.65096277241575,
+        "name": "C/ Pontevedra, fren. 22",
+        "ref": "243"
+      },
+      {
+        "lat": 40.9667918580383,
+        "lng": -5.6504374515425,
+        "name": "Pº. Rollo, s/n Parque Picasso",
+        "ref": "122"
+      },
+      {
+        "lat": 40.9649355285724,
+        "lng": -5.65360699119123,
+        "name": "Pº. Rollo, 5",
+        "ref": "123"
+      },
+      {
+        "lat": 40.9647183288237,
+        "lng": -5.65560638371172,
+        "name": "Pº. San Antonio, 21",
+        "ref": "124"
+      },
+      {
+        "lat": 40.9641587962138,
+        "lng": -5.65838812292754,
+        "name": "Pº. Canalejas, 90",
+        "ref": "154"
+      },
+      {
+        "lat": 40.9614086669892,
+        "lng": -5.65929951565486,
+        "name": "Pº. Canalejas, 152",
+        "ref": "155"
+      },
+      {
+        "lat": 40.9596249420606,
+        "lng": -5.66009520909866,
+        "name": "Pº. Canalejas, 194",
+        "ref": "244"
+      },
+      {
+        "lat": 40.9574909711246,
+        "lng": -5.66552223171308,
+        "name": "Avda. Reyes de España, 32",
+        "ref": "6"
+      },
+      {
+        "lat": 40.951372972227,
+        "lng": -5.67028927540772,
+        "name": "Avda. Saavedra y Fajardo, 18",
+        "ref": "144"
+      },
+      {
+        "lat": 40.9495840164346,
+        "lng": -5.66819763518722,
+        "name": "Avda. Carlos I, fren. 29",
+        "ref": "145"
+      },
+      {
+        "lat": 40.9496111670702,
+        "lng": -5.66391022517403,
+        "name": "Avda. Carlos I, fren. 105",
+        "ref": "146"
+      },
+      {
+        "lat": 40.9500128552163,
+        "lng": -5.66172865720129,
+        "name": "C/ Maestro Jiménez, s/n",
+        "ref": "331"
+      },
+      {
+        "lat": 40.9500555687557,
+        "lng": -5.66026918311382,
+        "name": "C/ Joaquín Rodrigo, 48",
+        "ref": "147"
+      },
+      {
+        "lat": 40.9494334232606,
+        "lng": -5.65912752302532,
+        "name": "C/ Joaquín Rodrigo, s/n",
+        "ref": "208"
+      },
+      {
+        "lat": 40.9485277696277,
+        "lng": -5.65973264821266,
+        "name": "C/ Maestro Serrano, s/n",
+        "ref": "78"
+      },
+      {
+        "lat": 40.9446060646659,
+        "lng": -5.65911192209214,
+        "name": "Ctra. Carbajosa, s/n",
+        "ref": "285"
+      },
+      {
+        "lat": 40.939035376478,
+        "lng": -5.66359188373261,
+        "name": "C/ Hoyamoros, 55",
+        "ref": "286"
+      },
+      {
+        "lat": 40.9387207784054,
+        "lng": -5.66667927943915,
+        "name": "C/ Hoyamoros, s/n",
+        "ref": "287"
+      },
+      {
+        "lat": 40.937187453109,
+        "lng": -5.66677197638923,
+        "name": "C/ Tierra de Campos, s/n",
+        "ref": "288"
+      },
+      {
+        "lat": 40.9348321501087,
+        "lng": -5.66579830512635,
+        "name": "C/ Laguna de Villafafíla, s/n",
+        "ref": "303"
+      },
+      {
+        "lat": 40.9372711057229,
+        "lng": -5.66354471834494,
+        "name": "C/ Pinar de Valsaín, s/n",
+        "ref": "280"
+      }
+    ]
+  },
+  {
+    "id": "13",
+    "nombre": "HUERTA OTEA - SAN JOSÉ",
+    "color": "#a0dd5c",
+    "trayecto": "Huerta Otea (251) > San José (79)",
+    "paradas": [
+      {
+        "lat": 40.9630165065644,
+        "lng": -5.69013824468996,
+        "name": "C/ Antonio Ponz, s/n",
+        "ref": "251"
+      },
+      {
+        "lat": 40.964580045459,
+        "lng": -5.68720747505522,
+        "name": "C/Antonio Llorente Maldonado, 21",
+        "ref": "252"
+      },
+      {
+        "lat": 40.9665643714445,
+        "lng": -5.68476893269258,
+        "name": "C/ George Borrow, s/n",
+        "ref": "253"
+      },
+      {
+        "lat": 40.9659479895488,
+        "lng": -5.68261697917482,
+        "name": "C/ Manuel Ramos Andrade, frente 101",
+        "ref": "315"
+      },
+      {
+        "lat": 40.9674790541621,
+        "lng": -5.6791379836311,
+        "name": "Avda. Doctor Ramos del Manzano, s/n",
+        "ref": "254"
+      },
+      {
+        "lat": 40.9713505580465,
+        "lng": -5.67416106839571,
+        "name": "C/ Peña de Francia, s/n",
+        "ref": "255"
+      },
+      {
+        "lat": 40.9726007045421,
+        "lng": -5.67229831768423,
+        "name": "C/ Peña de Francia, 1",
+        "ref": "256"
+      },
+      {
+        "lat": 40.9714775339928,
+        "lng": -5.67101708898958,
+        "name": "Avda. Villamayor, 73",
+        "ref": "257"
+      },
+      {
+        "lat": 40.9691857237796,
+        "lng": -5.66924909445847,
+        "name": "Avda. Villamayor, 31",
+        "ref": "258"
+      },
+      {
+        "lat": 40.9679670313888,
+        "lng": -5.66820179246603,
+        "name": "Avda. Villamayor, 1",
+        "ref": "48"
+      },
+      {
+        "lat": 40.9697284235328,
+        "lng": -5.66253324707753,
+        "name": "Avda. Mirat, 43",
+        "ref": "41"
+      },
+      {
+        "lat": 40.9691735164853,
+        "lng": -5.66043139389843,
+        "name": "Avda. Mirat, 13",
+        "ref": "42"
+      },
+      {
+        "lat": 40.9675741875124,
+        "lng": -5.65831139613115,
+        "name": "Pº. Canalejas, 12",
+        "ref": "103"
+      },
+      {
+        "lat": 40.9641587962138,
+        "lng": -5.65838812292754,
+        "name": "Pº. Canalejas, 90",
+        "ref": "154"
+      },
+      {
+        "lat": 40.9614086669892,
+        "lng": -5.65929951565486,
+        "name": "Pº. Canalejas, 152",
+        "ref": "155"
+      },
+      {
+        "lat": 40.9596249420606,
+        "lng": -5.66009520909866,
+        "name": "Pº. Canalejas, 194",
+        "ref": "244"
+      },
+      {
+        "lat": 40.9572674487727,
+        "lng": -5.66116482758702,
+        "name": "Pº Rio Tormes, s/n",
+        "ref": "289"
+      },
+      {
+        "lat": 40.9512119081084,
+        "lng": -5.66128977313088,
+        "name": "C/ Joaquín Rodrigo, 38",
+        "ref": "77"
+      },
+      {
+        "lat": 40.9501612192021,
+        "lng": -5.66154454568037,
+        "name": "C/ Maestro Jiménez, 10",
+        "ref": "332"
+      },
+      {
+        "lat": 40.9481390058739,
+        "lng": -5.66135637478816,
+        "name": "C/ Hilario Goyenechea, 29",
+        "ref": "79"
+      }
+    ]
+  },
+  {
+    "id": "14",
+    "nombre": "ZURGUÉN - HUERTA OTEA",
+    "color": "#ff337d",
+    "trayecto": "Zurguén (196) > Huerta Otea (251)",
+    "paradas": [
+      {
+        "lat": 40.9430899725741,
+        "lng": -5.67130951708624,
+        "name": "C/ Comisión Europea, s/n",
+        "ref": "196"
+      },
+      {
+        "lat": 40.9456839395054,
+        "lng": -5.67169920935964,
+        "name": "Pº. Cuatro Calzadas, fren. 78",
+        "ref": "304"
+      },
+      {
+        "lat": 40.9467877290243,
+        "lng": -5.67187439728751,
+        "name": "Pº. Cuatro Calzadas, fren. 60",
+        "ref": "197"
+      },
+      {
+        "lat": 40.9478523875486,
+        "lng": -5.67140653735379,
+        "name": "C/ Castroverde, fren. 14",
+        "ref": "198"
+      },
+      {
+        "lat": 40.9496676916834,
+        "lng": -5.67119464426903,
+        "name": "C/mno. Miranda, 55",
+        "ref": "199"
+      },
+      {
+        "lat": 40.9519858110568,
+        "lng": -5.67105054033261,
+        "name": "C/mno. Miranda, 5",
+        "ref": "200"
+      },
+      {
+        "lat": 40.9563727822694,
+        "lng": -5.67218982867006,
+        "name": "Pº. Progreso, s/n",
+        "ref": "150"
+      },
+      {
+        "lat": 40.9606999593532,
+        "lng": -5.67357638084436,
+        "name": "Pº. Desengaño, s/n",
+        "ref": "38"
+      },
+      {
+        "lat": 40.9621056434175,
+        "lng": -5.6747143854566,
+        "name": "Pº de San Vicente, s/n (centro)",
+        "ref": "334"
+      },
+      {
+        "lat": 40.9643244123187,
+        "lng": -5.67264147988386,
+        "name": "Pº. San Vicente, 101",
+        "ref": "39"
+      },
+      {
+        "lat": 40.9664546200269,
+        "lng": -5.67011332942259,
+        "name": "Avda. Filiberto Villalobos, 2",
+        "ref": "126"
+      },
+      {
+        "lat": 40.9685039232595,
+        "lng": -5.67223985614301,
+        "name": "Avda. Filiberto Villalobos, 46",
+        "ref": "127"
+      },
+      {
+        "lat": 40.9708108099421,
+        "lng": -5.67568409024028,
+        "name": "C/ Peña de Francia, s/n",
+        "ref": "180"
+      },
+      {
+        "lat": 40.9678741564982,
+        "lng": -5.67918962403301,
+        "name": "Avda. Doctor Ramos del Manzano, s/n",
+        "ref": "262"
+      },
+      {
+        "lat": 40.9660944516565,
+        "lng": -5.68251597262427,
+        "name": "C/ Manuel Ramos Andrade, 101",
+        "ref": "316"
+      },
+      {
+        "lat": 40.9665883234385,
+        "lng": -5.6849006120827,
+        "name": "C/ George Borrow, s/n",
+        "ref": "263"
+      },
+      {
+        "lat": 40.9646939784275,
+        "lng": -5.68734280411366,
+        "name": "C/ Antonio Llorente Maldonado, fren. 21",
+        "ref": "264"
+      },
+      {
+        "lat": 40.9635638703116,
+        "lng": -5.6906120028098,
+        "name": "C/ Antonio Llorente Maldonado, s/n",
+        "ref": "210"
+      },
+      {
+        "lat": 40.9630165065644,
+        "lng": -5.69013824468996,
+        "name": "C/ Antonio Ponz, s/n",
+        "ref": "251"
+      }
+    ]
+  },
+  {
+    "id": "15",
+    "nombre": "CAPUCHINOS - HOSPITAL UNIVERSITARIO",
+    "color": "#7794ef",
+    "trayecto": "Hospital Universitario (335) > Capuchinos (217)",
+    "paradas": [
+      {
+        "lat": 40.9621574294851,
+        "lng": -5.67481153169425,
+        "name": "Pº de San Vicente, s/n (Río)",
+        "ref": "335"
+      },
+      {
+        "lat": 40.9643244123187,
+        "lng": -5.67264147988386,
+        "name": "Pº. San Vicente, 101",
+        "ref": "39"
+      },
+      {
+        "lat": 40.9664546200269,
+        "lng": -5.67011332942259,
+        "name": "Avda. Filiberto Villalobos, 2",
+        "ref": "126"
+      },
+      {
+        "lat": 40.9685039232595,
+        "lng": -5.67223985614301,
+        "name": "Avda. Filiberto Villalobos, 46",
+        "ref": "127"
+      },
+      {
+        "lat": 40.9703451157179,
+        "lng": -5.67440564139419,
+        "name": "Avda. Filiberto Villalobos, 76",
+        "ref": "128"
+      },
+      {
+        "lat": 40.9713505580465,
+        "lng": -5.67416106839571,
+        "name": "C/ Peña de Francia, s/n",
+        "ref": "255"
+      },
+      {
+        "lat": 40.9726007045421,
+        "lng": -5.67229831768423,
+        "name": "C/ Peña de Francia, 1",
+        "ref": "256"
+      },
+      {
+        "lat": 40.9732990794098,
+        "lng": -5.67092423398914,
+        "name": "C/ Valverdón, 8",
+        "ref": "347"
+      },
+      {
+        "lat": 40.974734626566,
+        "lng": -5.67271724094451,
+        "name": "Ctra. Ledesma, 52",
+        "ref": "66"
+      },
+      {
+        "lat": 40.976177389086,
+        "lng": -5.67497410555233,
+        "name": "Ctra. Ledesma, 84",
+        "ref": "67"
+      },
+      {
+        "lat": 40.9780987153476,
+        "lng": -5.67601443285733,
+        "name": "Ctra. Ledesma, 140",
+        "ref": "68"
+      },
+      {
+        "lat": 40.9793034307004,
+        "lng": -5.67494598224909,
+        "name": "C/ Afiladores, s/n (Frente Guarderia)",
+        "ref": "348"
+      },
+      {
+        "lat": 40.9792168656044,
+        "lng": -5.67207823972136,
+        "name": "C/ Licenciado Vidriera, s/n",
+        "ref": "349"
+      },
+      {
+        "lat": 40.9789508095247,
+        "lng": -5.66917949325192,
+        "name": "C/ Licenciado Vidriera, s/n (Frente residencia)",
+        "ref": "350"
+      },
+      {
+        "lat": 40.9792626395163,
+        "lng": -5.66699337740141,
+        "name": "C/ Los Valles Mineros, 2",
+        "ref": "204"
+      },
+      {
+        "lat": 40.9808193785476,
+        "lng": -5.6670561295594,
+        "name": "C/ Los Valles Mineros, s/n",
+        "ref": "205"
+      },
+      {
+        "lat": 40.9827090610916,
+        "lng": -5.66713230930176,
+        "name": "C/ Los Valles Mineros, s/n",
+        "ref": "221"
+      },
+      {
+        "lat": 40.9817387427239,
+        "lng": -5.66624933599777,
+        "name": "C/ Maragatería, frente 14",
+        "ref": "343"
+      }
+    ]
+  },
+  {
+    "id": "26",
+    "nombre": "REFUERZO LINEA 13",
+    "color": "#008f6d",
+    "trayecto": "Huerta Otea (251) >Av. Mirat  (42)",
+    "paradas": [
+      {
+        "lat": 40.9630165065644,
+        "lng": -5.69013824468996,
+        "name": "C/ Antonio Ponz, s/n",
+        "ref": "251"
+      },
+      {
+        "lat": 40.964580045459,
+        "lng": -5.68720747505522,
+        "name": "C/Antonio Llorente Maldonado, 21",
+        "ref": "252"
+      },
+      {
+        "lat": 40.9665643714445,
+        "lng": -5.68476893269258,
+        "name": "C/ George Borrow, s/n",
+        "ref": "253"
+      },
+      {
+        "lat": 40.9659479895488,
+        "lng": -5.68261697917482,
+        "name": "C/ Manuel Ramos Andrade, frente 101",
+        "ref": "315"
+      },
+      {
+        "lat": 40.9674790541621,
+        "lng": -5.6791379836311,
+        "name": "Avda. Doctor Ramos del Manzano, s/n",
+        "ref": "254"
+      },
+      {
+        "lat": 40.9713505580465,
+        "lng": -5.67416106839571,
+        "name": "C/ Peña de Francia, s/n",
+        "ref": "255"
+      },
+      {
+        "lat": 40.9726007045421,
+        "lng": -5.67229831768423,
+        "name": "C/ Peña de Francia, 1",
+        "ref": "256"
+      },
+      {
+        "lat": 40.9714775339928,
+        "lng": -5.67101708898958,
+        "name": "Avda. Villamayor, 73",
+        "ref": "257"
+      },
+      {
+        "lat": 40.9691857237796,
+        "lng": -5.66924909445847,
+        "name": "Avda. Villamayor, 31",
+        "ref": "258"
+      },
+      {
+        "lat": 40.9679670313888,
+        "lng": -5.66820179246603,
+        "name": "Avda. Villamayor, 1",
+        "ref": "48"
+      },
+      {
+        "lat": 40.9697284235328,
+        "lng": -5.66253324707753,
+        "name": "Avda. Mirat, 43",
+        "ref": "41"
+      },
+      {
+        "lat": 40.9691735164853,
+        "lng": -5.66043139389843,
+        "name": "Avda. Mirat, 13",
+        "ref": "42"
+      }
+    ]
+  },
+  {
+    "id": "28",
+    "nombre": "REFUERZO LINEA 10",
+    "color": "#ff904d",
+    "trayecto": "Vistahermosa (233) > Av. Mirat (42)",
+    "paradas": [
+      {
+        "lat": 40.9500644813747,
+        "lng": -5.680868745025,
+        "name": "C/ La Beira, 12",
+        "ref": "233"
+      },
+      {
+        "lat": 40.9487387571286,
+        "lng": -5.68249007203238,
+        "name": "C/ La Beira, 50",
+        "ref": "278"
+      },
+      {
+        "lat": 40.9475581711191,
+        "lng": -5.68019710658617,
+        "name": "C/ Ramón de Mesonero Romanos, 43",
+        "ref": "220"
+      },
+      {
+        "lat": 40.9506097421581,
+        "lng": -5.67833668603228,
+        "name": "C/ Emilio Salcedo, 15",
+        "ref": "232"
+      },
+      {
+        "lat": 40.9509299881484,
+        "lng": -5.68083250020232,
+        "name": "C/ Almeida, fren. 15",
+        "ref": "218"
+      },
+      {
+        "lat": 40.9530045490656,
+        "lng": -5.67993042878264,
+        "name": "C/ Guarda, 42",
+        "ref": "234"
+      },
+      {
+        "lat": 40.9568602522254,
+        "lng": -5.67602323836954,
+        "name": "Avda. Puente Sánchez Fabrés, s/n",
+        "ref": "216"
+      },
+      {
+        "lat": 40.9606999593532,
+        "lng": -5.67357638084436,
+        "name": "Pº. Desengaño, s/n",
+        "ref": "38"
+      },
+      {
+        "lat": 40.9643244123187,
+        "lng": -5.67264147988386,
+        "name": "Pº. San Vicente, 101",
+        "ref": "39"
+      },
+      {
+        "lat": 40.9672334027627,
+        "lng": -5.66876635380886,
+        "name": "Pº. Carmelitas, 85",
+        "ref": "40"
+      },
+      {
+        "lat": 40.9697284235328,
+        "lng": -5.66253324707753,
+        "name": "Avda. Mirat, 43",
+        "ref": "41"
+      },
+      {
+        "lat": 40.9691735164853,
+        "lng": -5.66043139389843,
+        "name": "Avda. Mirat, 13",
+        "ref": "42"
+      }
+    ]
+  },
+  {
+    "id": "91",
+    "nombre": "SERVICIO NOCTURNO (Sentido Norte)",
+    "color": "#5270ff",
+    "trayecto": "Servicio Nocturno 1 Norte (222)",
+    "paradas": [
+      {
+        "lat": 40.9647859605621,
+        "lng": -5.66087293353978,
+        "name": "C/ Gran Vía, 38",
+        "ref": "222"
+      },
+      {
+        "lat": 40.9621118119516,
+        "lng": -5.66239325462556,
+        "name": "C/ Gran Vía, 72",
+        "ref": "333"
+      },
+      {
+        "lat": 40.9606602666619,
+        "lng": -5.64917016886944,
+        "name": "C/ Arias Pinel, 31",
+        "ref": "228"
+      },
+      {
+        "lat": 40.9618104777273,
+        "lng": -5.64811119210992,
+        "name": "C/ Arias Pinel, fren. 2",
+        "ref": "186"
+      },
+      {
+        "lat": 40.9625791628961,
+        "lng": -5.6491518971551,
+        "name": "C/mno. Las Aguas, 75",
+        "ref": "229"
+      },
+      {
+        "lat": 40.9636256590825,
+        "lng": -5.6514275993609,
+        "name": "C/mno. Las Aguas, s/n",
+        "ref": "265"
+      },
+      {
+        "lat": 40.9643367455748,
+        "lng": -5.65301264459843,
+        "name": "C/mno. Las Aguas, fren. 12",
+        "ref": "183"
+      },
+      {
+        "lat": 40.9650023467129,
+        "lng": -5.65344331749919,
+        "name": "Pº. Rollo, 4",
+        "ref": "105"
+      },
+      {
+        "lat": 40.9667386855583,
+        "lng": -5.65039967467487,
+        "name": "Pº. Rollo, s/n Frente Parque Picasso",
+        "ref": "106"
+      },
+      {
+        "lat": 40.968229797589,
+        "lng": -5.64783326349767,
+        "name": "Pº. Rollo, 96",
+        "ref": "108"
+      },
+      {
+        "lat": 40.9696720426404,
+        "lng": -5.64503900473484,
+        "name": "C/ Filipinas, s/n",
+        "ref": "109"
+      },
+      {
+        "lat": 40.9703722694385,
+        "lng": -5.64317754756534,
+        "name": "C/ Jesús Arambarri, fren. 23",
+        "ref": "110"
+      },
+      {
+        "lat": 40.9711490839365,
+        "lng": -5.64111708933071,
+        "name": "C/ Jesús Arambarri, 64",
+        "ref": "111"
+      },
+      {
+        "lat": 40.9723714466629,
+        "lng": -5.63926448742943,
+        "name": "C/ Fuenteguinaldo, 2",
+        "ref": "112"
+      },
+      {
+        "lat": 40.9748571722073,
+        "lng": -5.64751610176161,
+        "name": "Avda. Los Cipreses, 81",
+        "ref": "267"
+      },
+      {
+        "lat": 40.9787513174694,
+        "lng": -5.65051237272798,
+        "name": "Avda. Los Cipreses, s/n",
+        "ref": "292"
+      },
+      {
+        "lat": 40.9778442001702,
+        "lng": -5.65353038008283,
+        "name": "Avda. Federico Anaya, 65",
+        "ref": "293"
+      },
+      {
+        "lat": 40.9758392829649,
+        "lng": -5.65532769211928,
+        "name": "Avda. Federico Anaya, 19",
+        "ref": "72"
+      },
+      {
+        "lat": 40.9749153382653,
+        "lng": -5.65633641646972,
+        "name": "Avda. Alfonso IX de León, fren. 8",
+        "ref": "176"
+      },
+      {
+        "lat": 40.9760234778717,
+        "lng": -5.65944704156114,
+        "name": "Pza. Madrid, 10",
+        "ref": "177"
+      },
+      {
+        "lat": 40.974869548446,
+        "lng": -5.66300153699327,
+        "name": "Pº. Doctor Torres de Villarroel, 63",
+        "ref": "131"
+      },
+      {
+        "lat": 40.9731006220285,
+        "lng": -5.66315614652003,
+        "name": "Pº. Doctor Torres de Villarroel, 37",
+        "ref": "132"
+      },
+      {
+        "lat": 40.9727801243777,
+        "lng": -5.66377308436738,
+        "name": "Avda. Portugal, 126",
+        "ref": "201"
+      },
+      {
+        "lat": 40.9730279174327,
+        "lng": -5.66591024467756,
+        "name": "Avda. Portugal, 152",
+        "ref": "178"
+      },
+      {
+        "lat": 40.9746723065677,
+        "lng": -5.66685590584332,
+        "name": "C/ Emigdio de la Riva, 6",
+        "ref": "202"
+      },
+      {
+        "lat": 40.9762151727515,
+        "lng": -5.66673982104899,
+        "name": "C/ Emigdio de la Riva, fren. 29",
+        "ref": "203"
+      },
+      {
+        "lat": 40.9792626395163,
+        "lng": -5.66699337740141,
+        "name": "C/ Los Valles Mineros, 2",
+        "ref": "204"
+      },
+      {
+        "lat": 40.9808193785476,
+        "lng": -5.6670561295594,
+        "name": "C/ Los Valles Mineros, s/n",
+        "ref": "205"
+      },
+      {
+        "lat": 40.9810260403619,
+        "lng": -5.66863330135336,
+        "name": "C/ Astorga, s/n",
+        "ref": "248"
+      },
+      {
+        "lat": 40.9810981831208,
+        "lng": -5.67173824014209,
+        "name": "C/ González Bustillo, 39",
+        "ref": "321"
+      },
+      {
+        "lat": 40.9813009067606,
+        "lng": -5.67464641563884,
+        "name": "C/ González Bustillo, s/n",
+        "ref": "322"
+      },
+      {
+        "lat": 40.9800761625847,
+        "lng": -5.67618949114513,
+        "name": "Ctra. Ledesma, 137",
+        "ref": "43"
+      },
+      {
+        "lat": 40.9780419666686,
+        "lng": -5.67613098385714,
+        "name": "Ctra. Ledesma, 101",
+        "ref": "44"
+      },
+      {
+        "lat": 40.9760443422696,
+        "lng": -5.67488553741373,
+        "name": "Ctra. Ledesma, 63",
+        "ref": "45"
+      },
+      {
+        "lat": 40.9745587889454,
+        "lng": -5.67253187932216,
+        "name": "Ctra. Ledesma, fren. 52",
+        "ref": "46"
+      },
+      {
+        "lat": 40.9732595071074,
+        "lng": -5.67107712571121,
+        "name": "C/ Valverdón, s/n",
+        "ref": "47"
+      },
+      {
+        "lat": 40.9730943810919,
+        "lng": -5.67625176429165,
+        "name": "Avda. Portugal, 268",
+        "ref": "323"
+      },
+      {
+        "lat": 40.9724424763952,
+        "lng": -5.67988555064795,
+        "name": "Avda. Alfonso XI, s/n",
+        "ref": "324"
+      },
+      {
+        "lat": 40.9681458893897,
+        "lng": -5.68647290913867,
+        "name": "Av. Luis Camoens, s/n",
+        "ref": "328"
+      },
+      {
+        "lat": 40.9645862471648,
+        "lng": -5.68964357221224,
+        "name": "C/ Juan Ruiz Peña, 8",
+        "ref": "329"
+      },
+      {
+        "lat": 40.964580045459,
+        "lng": -5.68720747505522,
+        "name": "C/Antonio Llorente Maldonado, 21",
+        "ref": "252"
+      },
+      {
+        "lat": 40.9665643714445,
+        "lng": -5.68476893269258,
+        "name": "C/ George Borrow, s/n",
+        "ref": "253"
+      },
+      {
+        "lat": 40.9659479895488,
+        "lng": -5.68261697917482,
+        "name": "C/ Manuel Ramos Andrade, frente 101",
+        "ref": "315"
+      },
+      {
+        "lat": 40.9674790541621,
+        "lng": -5.6791379836311,
+        "name": "Avda. Doctor Ramos del Manzano, s/n",
+        "ref": "254"
+      },
+      {
+        "lat": 40.9690087394648,
+        "lng": -5.6753260480154,
+        "name": "Avda. De Los Maristas, s/n",
+        "ref": "99"
+      },
+      {
+        "lat": 40.9658683689284,
+        "lng": -5.67131357199192,
+        "name": "Avda. De Los Maristas, 1",
+        "ref": "100"
+      },
+      {
+        "lat": 40.9672334027627,
+        "lng": -5.66876635380886,
+        "name": "Pº. Carmelitas, 85",
+        "ref": "40"
+      },
+      {
+        "lat": 40.9697284235328,
+        "lng": -5.66253324707753,
+        "name": "Avda. Mirat, 43",
+        "ref": "41"
+      },
+      {
+        "lat": 40.9691735164853,
+        "lng": -5.66043139389843,
+        "name": "Avda. Mirat, 13",
+        "ref": "42"
+      },
+      {
+        "lat": 40.967492567844,
+        "lng": -5.65911614431059,
+        "name": "Pza. Del Empresario, s/n",
+        "ref": "4"
+      },
+      {
+        "lat": 40.9647859605621,
+        "lng": -5.66087293353978,
+        "name": "C/ Gran Vía, 38",
+        "ref": "222"
+      }
+    ]
+  },
+  {
+    "id": "92",
+    "nombre": "SERVICIO NOCTURNO (Sentido Sur)",
+    "color": "#cb6be6",
+    "trayecto": "Servicio Nocturno 2 Sur (301)",
+    "paradas": [
+      {
+        "lat": 40.9652274868954,
+        "lng": -5.66047479956312,
+        "name": "C/ Gran Vía, 45",
+        "ref": "301"
+      },
+      {
+        "lat": 40.966845448828,
+        "lng": -5.65944662693697,
+        "name": "C/ Gran Vía, 25",
+        "ref": "28"
+      },
+      {
+        "lat": 40.9675741875124,
+        "lng": -5.65831139613115,
+        "name": "Pº. Canalejas, 12",
+        "ref": "103"
+      },
+      {
+        "lat": 40.9641587962138,
+        "lng": -5.65838812292754,
+        "name": "Pº. Canalejas, 90",
+        "ref": "154"
+      },
+      {
+        "lat": 40.9614086669892,
+        "lng": -5.65929951565486,
+        "name": "Pº. Canalejas, 152",
+        "ref": "155"
+      },
+      {
+        "lat": 40.9596249420606,
+        "lng": -5.66009520909866,
+        "name": "Pº. Canalejas, 194",
+        "ref": "244"
+      },
+      {
+        "lat": 40.9572674487727,
+        "lng": -5.66116482758702,
+        "name": "Pº Rio Tormes, s/n",
+        "ref": "289"
+      },
+      {
+        "lat": 40.9512119081084,
+        "lng": -5.66128977313088,
+        "name": "C/ Joaquín Rodrigo, 38",
+        "ref": "77"
+      },
+      {
+        "lat": 40.9500555687557,
+        "lng": -5.66026918311382,
+        "name": "C/ Joaquín Rodrigo, 48",
+        "ref": "147"
+      },
+      {
+        "lat": 40.9494334232606,
+        "lng": -5.65912752302532,
+        "name": "C/ Joaquín Rodrigo, s/n",
+        "ref": "208"
+      },
+      {
+        "lat": 40.9485277696277,
+        "lng": -5.65973264821266,
+        "name": "C/ Maestro Serrano, s/n",
+        "ref": "78"
+      },
+      {
+        "lat": 40.9481390058739,
+        "lng": -5.66135637478816,
+        "name": "C/ Hilario Goyenechea, 29",
+        "ref": "79"
+      },
+      {
+        "lat": 40.9496561598797,
+        "lng": -5.66391203476661,
+        "name": "Avda. Carlos I, 105",
+        "ref": "83"
+      },
+      {
+        "lat": 40.9496630792666,
+        "lng": -5.66828397681413,
+        "name": "Avda. Carlos I, 29",
+        "ref": "148"
+      },
+      {
+        "lat": 40.9456839395054,
+        "lng": -5.67169920935964,
+        "name": "Pº. Cuatro Calzadas, fren. 78",
+        "ref": "304"
+      },
+      {
+        "lat": 40.9467877290243,
+        "lng": -5.67187439728751,
+        "name": "Pº. Cuatro Calzadas, fren. 60",
+        "ref": "197"
+      },
+      {
+        "lat": 40.9478523875486,
+        "lng": -5.67140653735379,
+        "name": "C/ Castroverde, fren. 14",
+        "ref": "198"
+      },
+      {
+        "lat": 40.9496676916834,
+        "lng": -5.67119464426903,
+        "name": "C/mno. Miranda, 55",
+        "ref": "199"
+      },
+      {
+        "lat": 40.9519858110568,
+        "lng": -5.67105054033261,
+        "name": "C/mno. Miranda, 5",
+        "ref": "200"
+      },
+      {
+        "lat": 40.9558699679065,
+        "lng": -5.67212201564938,
+        "name": "Ctra. La Fregeneda, 8",
+        "ref": "7"
+      },
+      {
+        "lat": 40.9528336898839,
+        "lng": -5.67953147233859,
+        "name": "C/ Guarda, fren. 42",
+        "ref": "219"
+      },
+      {
+        "lat": 40.9511786303986,
+        "lng": -5.68098512190955,
+        "name": "C/ Río Mondego, fren. 61",
+        "ref": "231"
+      },
+      {
+        "lat": 40.9500644813747,
+        "lng": -5.680868745025,
+        "name": "C/ La Beira, 12",
+        "ref": "233"
+      },
+      {
+        "lat": 40.9487387571286,
+        "lng": -5.68249007203238,
+        "name": "C/ La Beira, 50",
+        "ref": "278"
+      },
+      {
+        "lat": 40.9480456363631,
+        "lng": -5.68324602935666,
+        "name": "C/ La Beira, 68",
+        "ref": "320"
+      },
+      {
+        "lat": 40.9495484624778,
+        "lng": -5.68716773974354,
+        "name": "C/ Sequeros, s/n",
+        "ref": "296"
+      },
+      {
+        "lat": 40.9511024163415,
+        "lng": -5.68812176910945,
+        "name": "C/ Alcalde Cruz Hernández, s/n",
+        "ref": "297"
+      },
+      {
+        "lat": 40.9524072969437,
+        "lng": -5.6900992902098,
+        "name": "C/ Alcalde Cruz Hernández, 1",
+        "ref": "298"
+      },
+      {
+        "lat": 40.954928191775,
+        "lng": -5.69438360610402,
+        "name": "Avda. Juan Pablo II, 12",
+        "ref": "13"
+      },
+      {
+        "lat": 40.9553105989815,
+        "lng": -5.70036317302656,
+        "name": "Avda. Juan Pablo II, frente 46",
+        "ref": "14"
+      },
+      {
+        "lat": 40.9553646751067,
+        "lng": -5.70305037041799,
+        "name": "Avda. Juan Pablo II, s/n",
+        "ref": "15"
+      },
+      {
+        "lat": 40.9548538284632,
+        "lng": -5.70601149870486,
+        "name": "C/ Coria, s/n (Junto Iglesia)",
+        "ref": "16"
+      },
+      {
+        "lat": 40.9552583666873,
+        "lng": -5.70297474810135,
+        "name": "Avda. Juan Pablo II, s/n",
+        "ref": "17"
+      },
+      {
+        "lat": 40.9551800755225,
+        "lng": -5.70016776298846,
+        "name": "Avda. Juan Pablo II, 71",
+        "ref": "18"
+      },
+      {
+        "lat": 40.9547867165633,
+        "lng": -5.69427092615982,
+        "name": "Pza. Tejares, 2",
+        "ref": "19"
+      },
+      {
+        "lat": 40.9547961658417,
+        "lng": -5.68962607112908,
+        "name": "Avda. Lasalle, 179",
+        "ref": "20"
+      },
+      {
+        "lat": 40.9548342504007,
+        "lng": -5.68683571929693,
+        "name": "Avda. Lasalle, 143",
+        "ref": "21"
+      },
+      {
+        "lat": 40.957230713939,
+        "lng": -5.68564982637504,
+        "name": "Pº. Lunes de Aguas, s/n",
+        "ref": "279"
+      },
+      {
+        "lat": 40.9583010619654,
+        "lng": -5.68378039129292,
+        "name": "Avda. Padre Ignacio Ellacuría, s/n",
+        "ref": "236"
+      },
+      {
+        "lat": 40.9574238822195,
+        "lng": -5.67812517432459,
+        "name": "Avda. Padre Ignacio Ellacuría, 45",
+        "ref": "227"
+      },
+      {
+        "lat": 40.959521215088,
+        "lng": -5.67080796861996,
+        "name": "Pº San Gregorio, s/n",
+        "ref": "101"
+      },
+      {
+        "lat": 40.959006295279,
+        "lng": -5.66542877802246,
+        "name": "Pº. Rector Esperabé, 12",
+        "ref": "102"
+      },
+      {
+        "lat": 40.9623144433336,
+        "lng": -5.66219941276345,
+        "name": "C/ Gran Vía, 75",
+        "ref": "27"
+      },
+      {
+        "lat": 40.9652274868954,
+        "lng": -5.66047479956312,
+        "name": "C/ Gran Vía, 45",
+        "ref": "301"
+      }
+    ]
+  },
+  {
+    "id": "93",
+    "nombre": "ESPECIAL ALDEHUELA",
+    "color": "#00be62",
+    "trayecto": "Aldehuela (212) > Plaza de España (103)",
+    "paradas": [
+      {
+        "lat": 40.9610768819086,
+        "lng": -5.6424024451483,
+        "name": "Avda. Aldehuela de los Guzmanes, s/n",
+        "ref": "212"
+      },
+      {
+        "lat": 40.9625791628961,
+        "lng": -5.6491518971551,
+        "name": "C/mno. Las Aguas, 75",
+        "ref": "229"
+      },
+      {
+        "lat": 40.9636256590825,
+        "lng": -5.6514275993609,
+        "name": "C/mno. Las Aguas, s/n",
+        "ref": "265"
+      },
+      {
+        "lat": 40.9643367455748,
+        "lng": -5.65301264459843,
+        "name": "C/mno. Las Aguas, fren. 12",
+        "ref": "183"
+      },
+      {
+        "lat": 40.9647183288237,
+        "lng": -5.65560638371172,
+        "name": "Pº. San Antonio, 21",
+        "ref": "124"
+      },
+      {
+        "lat": 40.9671962875002,
+        "lng": -5.65790409109905,
+        "name": "Pº. Canalejas, 1",
+        "ref": "224"
+      },
+      {
+        "lat": 40.9675741875124,
+        "lng": -5.65831139613115,
+        "name": "Pº. Canalejas, 12",
+        "ref": "103"
+      }
+    ]
+  },
+  {
+    "id": "94",
+    "nombre": "RASTRO PIZARRALES",
+    "color": "#ff5757",
+    "trayecto": "Pizarrales (291) > Av Mirat (33)",
+    "paradas": [
+      {
+        "lat": 40.9800249303138,
+        "lng": -5.67606856919754,
+        "name": "Ctra. Ledesma, 172",
+        "ref": "291"
+      },
+      {
+        "lat": 40.9780419666686,
+        "lng": -5.67613098385714,
+        "name": "Ctra. Ledesma, 101",
+        "ref": "44"
+      },
+      {
+        "lat": 40.9760443422696,
+        "lng": -5.67488553741373,
+        "name": "Ctra. Ledesma, 63",
+        "ref": "45"
+      },
+      {
+        "lat": 40.9745587889454,
+        "lng": -5.67253187932216,
+        "name": "Ctra. Ledesma, fren. 52",
+        "ref": "46"
+      },
+      {
+        "lat": 40.9732595071074,
+        "lng": -5.67107712571121,
+        "name": "C/ Valverdón, s/n",
+        "ref": "47"
+      },
+      {
+        "lat": 40.9714775339928,
+        "lng": -5.67101708898958,
+        "name": "Avda. Villamayor, 73",
+        "ref": "257"
+      },
+      {
+        "lat": 40.9691857237796,
+        "lng": -5.66924909445847,
+        "name": "Avda. Villamayor, 31",
+        "ref": "258"
+      },
+      {
+        "lat": 40.9679670313888,
+        "lng": -5.66820179246603,
+        "name": "Avda. Villamayor, 1",
+        "ref": "48"
+      },
+      {
+        "lat": 40.9697284235328,
+        "lng": -5.66253324707753,
+        "name": "Avda. Mirat, 43",
+        "ref": "41"
+      },
+      {
+        "lat": 40.9691735164853,
+        "lng": -5.66043139389843,
+        "name": "Avda. Mirat, 13",
+        "ref": "42"
+      }
+    ]
+  },
+  {
+    "id": "95",
+    "nombre": "LUNES DE AGUAS",
+    "color": "#8b52ff",
+    "trayecto": "Aldehuela (212) > Plaza de España (103)",
+    "paradas": [
+      {
+        "lat": 40.9610768819086,
+        "lng": -5.6424024451483,
+        "name": "Avda. Aldehuela de los Guzmanes, s/n",
+        "ref": "212"
+      },
+      {
+        "lat": 40.9625791628961,
+        "lng": -5.6491518971551,
+        "name": "C/mno. Las Aguas, 75",
+        "ref": "229"
+      },
+      {
+        "lat": 40.9636256590825,
+        "lng": -5.6514275993609,
+        "name": "C/mno. Las Aguas, s/n",
+        "ref": "265"
+      },
+      {
+        "lat": 40.9643367455748,
+        "lng": -5.65301264459843,
+        "name": "C/mno. Las Aguas, fren. 12",
+        "ref": "183"
+      },
+      {
+        "lat": 40.9647183288237,
+        "lng": -5.65560638371172,
+        "name": "Pº. San Antonio, 21",
+        "ref": "124"
+      },
+      {
+        "lat": 40.9671962875002,
+        "lng": -5.65790409109905,
+        "name": "Pº. Canalejas, 1",
+        "ref": "224"
+      },
+      {
+        "lat": 40.9675741875124,
+        "lng": -5.65831139613115,
+        "name": "Pº. Canalejas, 12",
+        "ref": "103"
+      }
+    ]
+  },
+  {
+    "id": "96",
+    "nombre": "LOS SANTOS",
+    "color": "#0cbfde",
+    "trayecto": "Cementerio (295) > Los Toreses (309)",
+    "paradas": [
+      {
+        "lat": 40.9752558596834,
+        "lng": -5.68129485045383,
+        "name": "C/ Luis Sala Balust, 34",
+        "ref": "295"
+      },
+      {
+        "lat": 40.9727657906104,
+        "lng": -5.68108700844468,
+        "name": "AV. Obispo Sancho de Castilla, s/n",
+        "ref": "294"
+      },
+      {
+        "lat": 40.9702494589453,
+        "lng": -5.67736069501564,
+        "name": "Av. Los Maristas, s/n frente Instituto",
+        "ref": "138"
+      },
+      {
+        "lat": 40.9690087394648,
+        "lng": -5.6753260480154,
+        "name": "Avda. De Los Maristas, s/n",
+        "ref": "99"
+      },
+      {
+        "lat": 40.9658683689284,
+        "lng": -5.67131357199192,
+        "name": "Avda. De Los Maristas, 1",
+        "ref": "100"
+      },
+      {
+        "lat": 40.963246802216,
+        "lng": -5.67366735093725,
+        "name": "Pº. San Vicente, 106",
+        "ref": "36"
+      },
+      {
+        "lat": 40.959521215088,
+        "lng": -5.67080796861996,
+        "name": "Pº San Gregorio, s/n",
+        "ref": "101"
+      },
+      {
+        "lat": 40.959006295279,
+        "lng": -5.66542877802246,
+        "name": "Pº. Rector Esperabé, 12",
+        "ref": "102"
+      },
+      {
+        "lat": 40.9623144433336,
+        "lng": -5.66219941276345,
+        "name": "C/ Gran Vía, 75",
+        "ref": "27"
+      },
+      {
+        "lat": 40.9652274868954,
+        "lng": -5.66047479956312,
+        "name": "C/ Gran Vía, 45",
+        "ref": "301"
+      },
+      {
+        "lat": 40.966845448828,
+        "lng": -5.65944662693697,
+        "name": "C/ Gran Vía, 25",
+        "ref": "28"
+      },
+      {
+        "lat": 40.9675741875124,
+        "lng": -5.65831139613115,
+        "name": "Pº. Canalejas, 12",
+        "ref": "103"
+      },
+      {
+        "lat": 40.9646651581133,
+        "lng": -5.65556860405309,
+        "name": "Pº. San Antonio, 40",
+        "ref": "104"
+      },
+      {
+        "lat": 40.9650023467129,
+        "lng": -5.65344331749919,
+        "name": "Pº. Rollo, 4",
+        "ref": "105"
+      },
+      {
+        "lat": 40.9667386855583,
+        "lng": -5.65039967467487,
+        "name": "Pº. Rollo, s/n Frente Parque Picasso",
+        "ref": "106"
+      },
+      {
+        "lat": 40.968229797589,
+        "lng": -5.64783326349767,
+        "name": "Pº. Rollo, 96",
+        "ref": "108"
+      },
+      {
+        "lat": 40.9696720426404,
+        "lng": -5.64503900473484,
+        "name": "C/ Filipinas, s/n",
+        "ref": "109"
+      },
+      {
+        "lat": 40.9703722694385,
+        "lng": -5.64317754756534,
+        "name": "C/ Jesús Arambarri, fren. 23",
+        "ref": "110"
+      },
+      {
+        "lat": 40.9711490839365,
+        "lng": -5.64111708933071,
+        "name": "C/ Jesús Arambarri, 64",
+        "ref": "111"
+      },
+      {
+        "lat": 40.9723714466629,
+        "lng": -5.63926448742943,
+        "name": "C/ Fuenteguinaldo, 2",
+        "ref": "112"
+      },
+      {
+        "lat": 40.9736392183577,
+        "lng": -5.64014691723926,
+        "name": "C/ Fuenteguinaldo, 28",
+        "ref": "113"
+      },
+      {
+        "lat": 40.9744615197226,
+        "lng": -5.63806436807735,
+        "name": "C/ Juan Manso, 36",
+        "ref": "114"
+      },
+      {
+        "lat": 40.9733922860432,
+        "lng": -5.63204417941031,
+        "name": "C/ Los Toreses, 17",
+        "ref": "309"
+      }
+    ]
+  },
+  {
+    "id": "97",
+    "nombre": "RASTRO ALDEHUELA",
+    "color": "#ffbd58",
+    "trayecto": "Aldehuela (212) > Plaza de España (103)",
+    "paradas": [
+      {
+        "lat": 40.9610768819086,
+        "lng": -5.6424024451483,
+        "name": "Avda. Aldehuela de los Guzmanes, s/n",
+        "ref": "212"
+      },
+      {
+        "lat": 40.9625791628961,
+        "lng": -5.6491518971551,
+        "name": "C/mno. Las Aguas, 75",
+        "ref": "229"
+      },
+      {
+        "lat": 40.9636256590825,
+        "lng": -5.6514275993609,
+        "name": "C/mno. Las Aguas, s/n",
+        "ref": "265"
+      },
+      {
+        "lat": 40.9643367455748,
+        "lng": -5.65301264459843,
+        "name": "C/mno. Las Aguas, fren. 12",
+        "ref": "183"
+      },
+      {
+        "lat": 40.9647183288237,
+        "lng": -5.65560638371172,
+        "name": "Pº. San Antonio, 21",
+        "ref": "124"
+      },
+      {
+        "lat": 40.9671962875002,
+        "lng": -5.65790409109905,
+        "name": "Pº. Canalejas, 1",
+        "ref": "224"
+      },
+      {
+        "lat": 40.9675741875124,
+        "lng": -5.65831139613115,
+        "name": "Pº. Canalejas, 12",
+        "ref": "103"
+      }
+    ]
+  },
+  {
+    "id": "98",
+    "nombre": "FERIAS",
+    "color": "#95918e",
+    "trayecto": "Gabriel y Galán (34) > Aldehuela (212)",
+    "paradas": [
+      {
+        "lat": 40.9698037588003,
+        "lng": -5.66200153601236,
+        "name": "Pza. Gabriel y Galán, s/n",
+        "ref": "34"
+      },
+      {
+        "lat": 40.9697284235328,
+        "lng": -5.66253324707753,
+        "name": "Avda. Mirat, 43",
+        "ref": "41"
+      },
+      {
+        "lat": 40.9691735164853,
+        "lng": -5.66043139389843,
+        "name": "Avda. Mirat, 13",
+        "ref": "42"
+      },
+      {
+        "lat": 40.9675741875124,
+        "lng": -5.65831139613115,
+        "name": "Pº. Canalejas, 12",
+        "ref": "103"
+      },
+      {
+        "lat": 40.9646651581133,
+        "lng": -5.65556860405309,
+        "name": "Pº. San Antonio, 40",
+        "ref": "104"
+      },
+      {
+        "lat": 40.9641734036247,
+        "lng": -5.65306550932527,
+        "name": "C/mno. Las Aguas, 12",
+        "ref": "185"
+      },
+      {
+        "lat": 40.9633516187551,
+        "lng": -5.65120274791186,
+        "name": "C/mno. Las Aguas, 44",
+        "ref": "211"
+      },
+      {
+        "lat": 40.9626424169124,
+        "lng": -5.64953464830768,
+        "name": "C/mno. Las Aguas, s/n Bulevar",
+        "ref": "163"
+      },
+      {
+        "lat": 40.9610768819086,
+        "lng": -5.6424024451483,
+        "name": "Avda. Aldehuela de los Guzmanes, s/n",
+        "ref": "212"
+      }
+    ]
+  },
+  {
+    "id": "99",
+    "nombre": "AGROPECUARIA",
+    "color": "#f1ca2e",
+    "trayecto": "San Julían (266 > Feria Monografica (319)",
+    "paradas": [
+      {
+        "lat": 40.9646367741123,
+        "lng": -5.66109269915308,
+        "name": "Pza. San Julían, 6",
+        "ref": "266"
+      },
+      {
+        "lat": 40.9703150764151,
+        "lng": -5.66365010478222,
+        "name": "Avda. Italia, 4",
+        "ref": "63"
+      },
+      {
+        "lat": 40.9730323190211,
+        "lng": -5.66999842160784,
+        "name": "Avda. Portugal, 182",
+        "ref": "179"
+      },
+      {
+        "lat": 40.9495472804713,
+        "lng": -5.7251819153739,
+        "name": "Feria Monografica",
+        "ref": "327"
+      }
+    ]
+  },
+  {
+    "id": "699",
+    "nombre": "SERVICIO ESPECIAL",
+    "color": "#ff4eb3",
+    "trayecto": "San Julían (266) > Eco Raya (182)",
+    "paradas": [
+      {
+        "lat": 40.9646367741123,
+        "lng": -5.66109269915308,
+        "name": "Pza. San Julían, 6",
+        "ref": "266"
+      },
+      {
+        "lat": 40.9703150764151,
+        "lng": -5.66365010478222,
+        "name": "Avda. Italia, 4",
+        "ref": "63"
+      },
+      {
+        "lat": 40.9730323190211,
+        "lng": -5.66999842160784,
+        "name": "Avda. Portugal, 182",
+        "ref": "179"
+      },
+      {
+        "lat": 40.9508742838049,
+        "lng": -5.7273392169624,
+        "name": "Eco-Raya",
+        "ref": "326"
+      }
+    ]
+  }
+]
