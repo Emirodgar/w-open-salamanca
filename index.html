@@ -65,18 +65,11 @@ description: Portal de datos abiertos y colaborativos de la ciudad de Salamanca.
 		const metaEl = document.getElementById('actualidadHighlightMeta');
 		if (!summaryEl) return;
 
-		function truncar(str, max) {
-			if (!str) return '';
-			if (str.length <= max) return str;
-			const corte = str.slice(0, max);
-			return corte.slice(0, corte.lastIndexOf(' ')) + '…';
-		}
-
 		fetch('/actualidad.json?v=' + Date.now(), { cache: 'no-store' })
 			.then(r => r.json())
 			.then(d => {
 				const primerParrafo = (d.resumen || '').split('\n\n')[0];
-				summaryEl.textContent = truncar(primerParrafo, 220);
+				summaryEl.textContent = primerParrafo;
 				if (d.periodo_cubierto) {
 					metaEl.textContent = `${d.total_urls_analizadas} noticias analizadas · del ${d.periodo_cubierto.desde} al ${d.periodo_cubierto.hasta}`;
 				}
