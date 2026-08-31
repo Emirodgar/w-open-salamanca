@@ -542,6 +542,82 @@
     }
 }
 
+/* Actualidad highlight - banner de la home hacia /actualidad */
+.actualidad-highlight {
+    padding: var(--spacing-lg) 0 0;
+}
+
+.actualidad-highlight-card {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    border-radius: 16px;
+    padding: var(--spacing-xl) var(--spacing-2xl);
+    box-shadow: var(--shadow-lg);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+}
+
+@media (min-width: 768px) {
+    .actualidad-highlight-card {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .actualidad-highlight-text {
+        flex: 1;
+    }
+
+    .actualidad-highlight-actions {
+        flex-shrink: 0;
+    }
+}
+
+.actualidad-highlight-eyebrow {
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    background: rgba(255, 255, 255, 0.18);
+    padding: 0.25rem 0.75rem;
+    border-radius: 999px;
+    margin-bottom: var(--spacing-sm);
+}
+
+.actualidad-highlight-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: var(--spacing-sm);
+}
+
+.actualidad-highlight-summary {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    opacity: 0.95;
+    margin-bottom: var(--spacing-xs);
+    max-width: 640px;
+}
+
+.actualidad-highlight-meta {
+    font-size: 0.78rem;
+    font-family: var(--font-mono);
+    opacity: 0.85;
+}
+
+.actualidad-highlight-card .btn-primary {
+    background: white;
+    color: var(--primary-color);
+    white-space: nowrap;
+}
+
+.actualidad-highlight-card .btn-primary:hover {
+    background: rgba(255, 255, 255, 0.9);
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-md);
+}
+
 /* Actualidad - resumen semanal de noticias locales */
 .actualidad-meta {
     text-align: center;

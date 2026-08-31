@@ -42,6 +42,52 @@ description: Portal de datos abiertos y colaborativos de la ciudad de Salamanca.
         </div>
     </section>
 
+    <!-- Actualidad Highlight Section -->
+    <section class="actualidad-highlight">
+        <div class="container">
+            <div class="actualidad-highlight-card">
+                <div class="actualidad-highlight-text">
+                    <span class="actualidad-highlight-eyebrow">Actualidad</span>
+                    <h3 class="actualidad-highlight-title">Lo más destacado de esta semana</h3>
+                    <p class="actualidad-highlight-summary" id="actualidadHighlightSummary">Cargando resumen…</p>
+                    <p class="actualidad-highlight-meta" id="actualidadHighlightMeta"></p>
+                </div>
+                <div class="actualidad-highlight-actions">
+                    <a href="/actualidad" class="btn btn-primary">Análisis de actualidad</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+	<script>
+	(function () {
+		const summaryEl = document.getElementById('actualidadHighlightSummary');
+		const metaEl = document.getElementById('actualidadHighlightMeta');
+		if (!summaryEl) return;
+
+		function truncar(str, max) {
+			if (!str) return '';
+			if (str.length <= max) return str;
+			const corte = str.slice(0, max);
+			return corte.slice(0, corte.lastIndexOf(' ')) + '…';
+		}
+
+		fetch('/actualidad.json?v=' + Date.now(), { cache: 'no-store' })
+			.then(r => r.json())
+			.then(d => {
+				const primerParrafo = (d.resumen || '').split('\n\n')[0];
+				summaryEl.textContent = truncar(primerParrafo, 220);
+				if (d.periodo_cubierto) {
+					metaEl.textContent = `${d.total_urls_analizadas} noticias analizadas · del ${d.periodo_cubierto.desde} al ${d.periodo_cubierto.hasta}`;
+				}
+			})
+			.catch(err => {
+				console.error('No se pudo cargar actualidad.json', err);
+				summaryEl.textContent = 'No se ha podido cargar el resumen de actualidad.';
+			});
+	})();
+	</script>
+
     <!-- Categories Section -->
     <section class="categories" id="categorias">
         <div class="container">
