@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Lo más destacado de estas semanas</title>
+<style>
+  :root{
+    --bg:#0f1115; --card:#171a21; --ink:#eef0f3; --muted:#9aa3af;
+    --accent:#e11d2e; --accent-soft:#3a1216;
+    --grid-0:#1c2029; --grid-1:#3a1a1e; --grid-2:#6b1e26; --grid-3:#a3232f; --grid-4:#e11d2e;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; padding:32px 20px; background:var(--bg); color:var(--ink);
+    font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  .wrap{max-width:920px; margin:0 auto;}
+  h1{font-size:1.5rem; margin:0 0 4px;}
+  .sub{color:var(--muted); font-size:.9rem; margin-bottom:28px;}
+  .card{background:var(--card); border-radius:14px; padding:22px 24px; margin-bottom:20px; border:1px solid #23272f;}
+  .card h2{font-size:1rem; text-transform:uppercase; letter-spacing:.06em; color:var(--muted); margin:0 0 16px;}
+  .resumen p{line-height:1.6; margin:0 0 12px; font-size:.98rem;}
+  .resumen p:last-child{margin-bottom:0;}
+
+  .bars{display:flex; flex-direction:column; gap:8px;}
+  .bar-row{display:grid; grid-template-columns:130px 1fr 34px; align-items:center; gap:10px; font-size:.85rem;}
+  .bar-track{background:#20242c; border-radius:6px; overflow:hidden; height:16px;}
+  .bar-fill{height:100%; background:linear-gradient(90deg, var(--accent-soft), var(--accent));}
+  .bar-label{color:var(--muted); text-transform:capitalize;}
+  .bar-value{text-align:right; color:var(--muted);}
+
+  table.heatmap{border-collapse:separate; border-spacing:3px; font-size:.72rem; width:100%;}
+  table.heatmap th{font-weight:400; color:var(--muted); text-align:left; padding-right:8px; white-space:nowrap;}
+  table.heatmap td{width:26px; height:22px; border-radius:4px; text-align:center; color:#fff; font-size:.65rem;}
+  .heatmap-scroll{overflow-x:auto;}
+  .legend{display:flex; align-items:center; gap:6px; margin-top:12px; font-size:.72rem; color:var(--muted);}
+  .legend span.box{width:14px; height:14px; border-radius:3px; display:inline-block;}
+
+  /* Conceptos destacados: tarjetas con evidencia, no una nube de tags */
+  .conceptos{display:grid; grid-template-columns:repeat(auto-fill, minmax(260px, 1fr)); gap:14px;}
+  .concepto{background:#1b1f27; border:1px solid #262b34; border-radius:12px; padding:16px 18px;}
+  .concepto-top{display:flex; justify-content:space-between; align-items:baseline; gap:8px; margin-bottom:4px;}
+  .concepto-nombre{font-size:1.02rem; font-weight:600; color:var(--ink);}
+  .concepto-piezas{font-size:.75rem; color:var(--accent); white-space:nowrap; font-weight:600;}
+  .concepto-meta{font-size:.72rem; color:var(--muted); margin-bottom:10px; text-transform:capitalize;}
+  .concepto-ejemplos{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:5px;}
+  .concepto-ejemplos li{font-size:.82rem; color:#c9cdd4; line-height:1.4; padding-left:12px; position:relative;}
+  .concepto-ejemplos li::before{content:"—"; position:absolute; left:0; color:var(--muted);}
+
+  footer{color:var(--muted); font-size:.75rem; margin-top:24px; text-align:center;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Lo más destacado de estas semanas</h1>
+  <div class="sub" id="periodo">cargando…</div>
+
+  <div class="card resumen">
+    <h2>Resumen</h2>
+    <div id="resumen-texto"></div>
+  </div>
+
+  <div class="card">
+    <h2>De qué han hablado los titulares</h2>
+    <div class="conceptos" id="conceptos"></div>
+  </div>
+
+  <div class="card">
+    <h2>Dónde ha estado el foco (secciones)</h2>
+    <div class="bars" id="bars"></div>
+  </div>
+
+  <div class="card">
+    <h2>Actividad diaria por sección</h2>
+    <div class="heatmap-scroll">
+      <table class="heatmap" id="heatmap"></table>
+    </div>
+    <div class="legend">
+      <span>Menos</span>
+      <span class="box" style="background:var(--grid-0)"></span>
+      <span class="box" style="background:var(--grid-1)"></span>
+      <span class="box" style="background:var(--grid-2)"></span>
+      <span class="box" style="background:var(--grid-3)"></span>
+      <span class="box" style="background:var(--grid-4)"></span>
+      <span>Más</span>
+    </div>
+  </div>
+
+  <footer>Generado automáticamente a partir del sitemap. Datos orientativos, no sustituyen la lectura de las noticias.</footer>
+</div>
+
+<script>
+// En producción este bloque se sustituye por: fetch('mapa_calor.json').then(r=>r.json()).then(render)
+const DATA = __DATA_JSON__;
+
+function formatearRango(desde, hasta){
+  if (!desde) return '';
+  if (desde === hasta) return desde;
+  return `${desde} – ${hasta}`;
+}
+
+function render(d){
+  document.getElementById('periodo').textContent =
+    `${d.total_urls_analizadas} noticias analizadas` +
+    (d.periodo_cubierto ? ` · del ${d.periodo_cubierto.desde} al ${d.periodo_cubierto.hasta}` : '');
+
+  document.getElementById('resumen-texto').innerHTML =
+    d.resumen.split('\n\n').map(p => `<p>${p}</p>`).join('');
+
+  // Conceptos destacados (tarjetas con evidencia real, no nube de tags)
+  const contEl = document.getElementById('conceptos');
+  contEl.innerHTML = (d.conceptos_destacados || []).map(c => `
+    <div class="concepto">
+      <div class="concepto-top">
+        <div class="concepto-nombre">${c.concepto}</div>
+        <div class="concepto-piezas">${c.piezas} noticias</div>
+      </div>
+      <div class="concepto-meta">${c.seccion_principal.replace(/-/g,' ')} · ${formatearRango(c.desde, c.hasta)}</div>
+      <ul class="concepto-ejemplos">
+        ${c.ejemplos_redactados.map(e => `<li>${e}</li>`).join('')}
+      </ul>
+    </div>`).join('');
+
+  // Barras por sección (top 8)
+  const barsEl = document.getElementById('bars');
+  const top = d.por_seccion.slice(0, 8);
+  const max = Math.max(...top.map(s => s[1]));
+  barsEl.innerHTML = top.map(([sec, n]) => `
+    <div class="bar-row">
+      <div class="bar-label">${sec.replace(/-/g,' ')}</div>
+      <div class="bar-track"><div class="bar-fill" style="width:${(n/max*100).toFixed(0)}%"></div></div>
+      <div class="bar-value">${n}</div>
+    </div>`).join('');
+
+  // Heatmap calendario (secciones top 6 x días)
+  const secciones = top.slice(0, 6).map(s => s[0]);
+  const dias = d.heatmap_calendario;
+  const maxVal = Math.max(...dias.flatMap(f => secciones.map(s => f[s] || 0)));
+  const colorFor = v => {
+    if (!v) return 'var(--grid-0)';
+    const ratio = v / maxVal;
+    if (ratio < 0.25) return 'var(--grid-1)';
+    if (ratio < 0.5) return 'var(--grid-2)';
+    if (ratio < 0.75) return 'var(--grid-3)';
+    return 'var(--grid-4)';
+  };
+  const table = document.getElementById('heatmap');
+  let thead = '<tr><th></th>' + dias.map(f => `<th>${f.fecha.slice(5)}</th>`).join('') + '</tr>';
+  let rows = secciones.map(sec => {
+    const cells = dias.map(f => {
+      const v = f[sec] || 0;
+      return `<td style="background:${colorFor(v)}" title="${sec}: ${v}">${v || ''}</td>`;
+    }).join('');
+    return `<tr><th>${sec.replace(/-/g,' ')}</th>${cells}</tr>`;
+  }).join('');
+  table.innerHTML = thead + rows;
+}
+
+render(DATA);
+</script>
+</body>
+</html>
