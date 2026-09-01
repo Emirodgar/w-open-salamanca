@@ -1,6 +1,39 @@
 // Main JavaScript file for Open Salamanca portal
 // Handles navigation, search, UI interactions, and initialization
 
+// Shared rendering for eventos.json, used by both /actualidad and the home banner.
+window.EventosUI = {
+    formatearFecha(iso) {
+        const meses = ['ene', 'feb', 'mar', 'abr', 'may', 'jun', 'jul', 'ago', 'sep', 'oct', 'nov', 'dic'];
+        const [, m, d] = iso.split('-').map(Number);
+        return `${d} ${meses[m - 1]}`;
+    },
+    formatearRango(inicio, fin) {
+        if (!inicio) return '';
+        if (!fin || fin === inicio) return this.formatearFecha(inicio);
+        return `${this.formatearFecha(inicio)} – ${this.formatearFecha(fin)}`;
+    },
+    // Renders rows into an existing <table> element (ascending by fecha_inicio).
+    // Returns true if there was at least one event to show.
+    renderTabla(tableEl, eventos, limite) {
+        if (!tableEl) return false;
+        let lista = (eventos || []).slice().sort((a, b) => a.fecha_inicio.localeCompare(b.fecha_inicio));
+        if (limite) lista = lista.slice(0, limite);
+        if (!lista.length) {
+            tableEl.innerHTML = '';
+            return false;
+        }
+        const filas = lista.map(ev => `
+            <tr>
+                <td class="eventos-col-titulo">${ev.fuente ? `<a href="${ev.fuente}" target="_blank" rel="noopener">${ev.titulo}</a>` : ev.titulo}</td>
+                <td class="eventos-col-fechas">${this.formatearRango(ev.fecha_inicio, ev.fecha_fin)}</td>
+                <td class="eventos-col-lugar">${ev.lugar || '—'}</td>
+            </tr>`).join('');
+        tableEl.innerHTML = `<thead><tr><th>Evento</th><th>Fechas</th><th>Lugar</th></tr></thead><tbody>${filas}</tbody>`;
+        return true;
+    }
+};
+
 class OpenSalamanca {
     constructor() {
         this.datasets = [];

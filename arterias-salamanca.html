@@ -1,0 +1,152 @@
+---
+layout: default
+title: Arterias de Salamanca - Comercio y Tráfico
+description: Análisis de las calles con mayor densidad de negocios y las vías con mayor intensidad de tráfico rodado en la ciudad de Salamanca.
+date: 01-09-2026
+folder: Urbanismo
+permalink: calles-negocios-trafico-salamanca
+---
+
+    <!-- Featured Datasets Section -->
+    <section class="featured dataset" id="datos">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">{{ page.title }}</h2>
+                <p class="section-description">{{ page.description }}</p>
+            </div>
+			
+			<div id="section-content">
+						
+  <!-- Gráfico 1: Ejes Comerciales -->
+  <div style="margin-bottom: 40px;">
+      <canvas id="comercioChart" width="800" height="400"></canvas>
+  </div>
+
+ 
+			<h2>Ejes comerciales: El pulso económico a pie de calle</h2>
+			
+				<p>
+El mapa comercial de Salamanca está fuertemente polarizado entre el casco histórico peatonal y las grandes avenidas de los barrios más poblados. La peatonalización progresiva del centro ha consolidado la "milla de oro" salmantina, mientras que el comercio de proximidad resiste en ejes muy específicos.</p>
+
+<h3>Las arterias del Retail y el Comercio</h3>
+<ul>
+<li><b>Calle Toro y Calle Zamora</b>: Son las reinas indiscutibles del <i>retail</i> y las franquicias. Al ser totalmente peatonales y conectar el norte de la ciudad con la Plaza Mayor, registran el mayor <i>footfall</i> (tráfico de peatones) de la provincia. Su alta rentabilidad atrae a grandes marcas de moda, cosmética y tecnología, aunque sufre una rotación de locales elevada por los altos precios de los alquileres.</li>
+<li><b>Avenida de María Auxiliadora</b>: Es la columna vertebral del barrio de Garrido (el más poblado de la ciudad). A diferencia de Toro/Zamora, su tejido comercial es más mixto: combina franquicias con comercio tradicional, servicios financieros, hostelería de diario y supermercados.</li>
+<li><b>Avenida de Mirat y Calle Azafranal</b>: Mirat actúa como frontera entre el casco histórico y el ensanche, albergando principalmente sedes bancarias, clínicas y comercio de servicios. Azafranal funciona como desahogo natural de la Calle Toro para boutiques y zapaterías.</li>
+</ul>
+
+  <!-- Gráfico 2: Intensidad de Tráfico -->
+  <h2 style="margin-top: 40px;">Rutas calientes: La presión del tráfico rodado (IMD)</h2>
+  <canvas id="traficoChart" width="800" height="400"></canvas>
+  <p style="font-size: 0.9em; color: #555; text-align: center; margin-top: 10px;">
+    *IMD (Intensidad Media Diaria): Estimación del volumen de vehículos diarios en días laborables.
+  </p>
+
+			<h2>La "Ronda Interior" y los cuellos de botella</h2>
+			<p>
+El diseño concéntrico de Salamanca obliga a gran parte del tráfico rodado a circunvalar el casco histórico (zona de bajas emisiones y acceso restringido). Esto genera una altísima presión sobre la denominada <b>Ronda Interior</b>, compuesta por los paseos que rodean la almendra central.
+			</p>
+            <ul>
+                <li><b>Paseo de San Vicente</b>: Soporta la mayor carga crítica de la ciudad debido a que es el único acceso directo al Complejo Asistencial Universitario (Hospital Clínico y Nuevo Hospital), sumando el tráfico sanitario, universitario (Campus Unamuno) y residencial.</li>
+                <li><b>Paseo de Canalejas y Avenida de Mirat</b>: Son los grandes distribuidores del tráfico norte-sur y este-oeste. Canalejas ha visto reducida parcialmente su capacidad para el coche privado tras la inclusión de carriles bici y ampliación de aceras, lo que ha pacificado la vía pero aumentado la densidad en horas punta.</li>
+                <li><b>Avenida de Salamanca</b>: Como ronda exterior de facto, absorbe el tráfico pesado, comercial y de conexión interurbana sin necesidad de entrar al núcleo urbano.</li>
+            </ul>
+
+			</div>
+			
+			<div id="section-table">
+			<table border="1" cellpadding="5" cellspacing="0">
+			  <thead>
+				<tr>
+				  <th>Vía / Calle</th>
+				  <th>Uso Principal</th>
+				  <th>Tipología de Tráfico</th>
+				  <th>Perfil Comercial</th>
+				</tr>
+			  </thead>
+			  <tbody>
+				<tr><td><b>Calle Toro / Calle Zamora</b></td><td>Comercial (Milla de Oro)</td><td>100% Peatonal (Logística nocturna/matinal)</td><td>Franquicias internacionales, moda, cosmética.</td></tr>
+				<tr><td><b>Avenida de María Auxiliadora</b></td><td>Mixto (Comercio/Residencial)</td><td>Tráfico moderado/alto (transporte público)</td><td>Comercio de proximidad, supermercados, servicios.</td></tr>
+				<tr><td><b>Paseo de San Vicente</b></td><td>Tránsito y Servicios</td><td>Muy Alto (Atasco frecuente en hora punta)</td><td>Hostelería de paso, floristerías, farmacias, ortopedias.</td></tr>
+				<tr><td><b>Avenida de Mirat</b></td><td>Mixto (Distribuci&oacute;n)</td><td>Alto (Principal eje de autobuses urbanos)</td><td>Bancos, seguros, academias, clínicas.</td></tr>
+				<tr><td><b>Paseo de Canalejas</b></td><td>Tránsito Residencial</td><td>Alto (Vía de conexión Norte-Sur)</td><td>Talleres, concesionarios, pequeño comercio local.</td></tr>
+				<tr><td><b>Avenida de Salamanca</b></td><td>Tránsito Interurbano</td><td>Muy Alto (Ronda Oeste)</td><td>Grandes superficies (CC El Tormes cercano), gasolineras, naves.</td></tr>
+			  </tbody>
+			</table>
+
+			</div>
+			
+			{% include categories.html %}
+            
+        </div>
+    </section>
+
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        
+        // 1. Gráfico de Densidad Comercial (Bar)
+        const ctxComercio = document.getElementById('comercioChart').getContext('2d');
+        new Chart(ctxComercio, {
+            type: 'bar',
+            data: {
+                labels: ['Calle Toro', 'Calle Zamora', 'Av. María Auxiliadora', 'Av. de Mirat', 'Paseo de Carmelitas', 'Calle Azafranal'],
+                datasets: [
+                    {
+                        label: 'Índice de Densidad Comercial (Locales activos por Km)',
+                        data: [185, 160, 140, 95, 80, 110],
+                        backgroundColor: '#1E56A0', // Azul corporativo
+                        borderRadius: 4
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    title: { display: true, text: 'Densidad de Negocios en las Principales Arterias Comerciales', font: { size: 14 } },
+                    tooltip: { mode: 'index', intersect: false }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        title: { display: true, text: 'Densidad (Estimación Locales/Km)' }
+                    }
+                }
+            }
+        });
+
+        // 2. Gráfico de Tráfico - IMD (Horizontal Bar)
+        const ctxTrafico = document.getElementById('traficoChart').getContext('2d');
+        new Chart(ctxTrafico, {
+            type: 'bar',
+            data: {
+                labels: ['Paseo de San Vicente', 'Avenida de Salamanca', 'Paseo de Canalejas', 'Avenida de Mirat', 'Paseo de San Antonio', 'Puente Enrique Estevan'],
+                datasets: [
+                    {
+                        label: 'Intensidad Media Diaria (Vehículos/Día)',
+                        data: [28500, 26000, 22000, 18500, 15000, 13500],
+                        backgroundColor: 'rgba(168, 32, 26, 0.8)', // Rojo alerta tráfico
+                        borderColor: '#A8201A',
+                        borderWidth: 1,
+                        borderRadius: 4
+                    }
+                ]
+            },
+            options: {
+                indexAxis: 'y', // Hace que el gráfico sea horizontal para leer mejor los nombres largos
+                responsive: true,
+                plugins: {
+                    title: { display: true, text: 'Vías con Mayor Carga Vehicular en Salamanca (IMD Laborable)', font: { size: 14 } },
+                    tooltip: { mode: 'index', intersect: false }
+                },
+                scales: {
+                    x: {
+                        beginAtZero: true,
+                        title: { display: true, text: 'Volumen de Vehículos' }
+                    }
+                }
+            }
+        });
+
+    });
+    </script>

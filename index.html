@@ -59,6 +59,19 @@ description: Portal de datos abiertos y colaborativos de la ciudad de Salamanca.
         </div>
     </section>
 
+    <!-- Eventos Highlight Section -->
+    <section class="eventos-highlight" id="eventosHighlightSection" style="display:none;">
+        <div class="container">
+            <div class="eventos-highlight-card">
+                <h3 class="eventos-highlight-title">Próximos eventos</h3>
+                <div class="eventos-table-wrap">
+                    <table class="eventos-table" id="eventosHighlightTable"></table>
+                </div>
+                <p class="eventos-highlight-vermas"><a href="/actualidad">Ver todos los eventos →</a></p>
+            </div>
+        </div>
+    </section>
+
 	<script>
 	(function () {
 		const summaryEl = document.getElementById('actualidadHighlightSummary');
@@ -78,6 +91,14 @@ description: Portal de datos abiertos y colaborativos de la ciudad de Salamanca.
 				console.error('No se pudo cargar actualidad.json', err);
 				summaryEl.textContent = 'No se ha podido cargar el resumen de actualidad.';
 			});
+
+		fetch('/eventos.json?v=' + Date.now(), { cache: 'no-store' })
+			.then(r => r.json())
+			.then(d => {
+				const tieneEventos = window.EventosUI.renderTabla(document.getElementById('eventosHighlightTable'), d.eventos, 4);
+				document.getElementById('eventosHighlightSection').style.display = tieneEventos ? '' : 'none';
+			})
+			.catch(err => console.error('No se pudo cargar eventos.json', err));
 	})();
 	</script>
 

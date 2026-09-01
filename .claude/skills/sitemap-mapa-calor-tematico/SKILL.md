@@ -4,20 +4,23 @@ description: >
   Genera y actualiza el contenido de "actualidad" de opensalamanca.es
   analizando el sitemap de La Gaceta de Salamanca (lagacetadesalamanca.es):
   produce el `actualidad.json` semanal que alimenta la página /actualidad y
-  el banner de la home, y los `actualidad/YYYYMM.json` mensuales que
-  alimentan la línea de tiempo en /timeline. Úsala SIEMPRE que el usuario
-  pida "actualizar la actualidad", "generar el JSON de esta semana/mes",
-  "analizar el sitemap de La Gaceta", "qué ha pasado en Salamanca esta
-  semana/mes", "rellenar el timeline", o cualquier variación sobre producir
-  o refrescar el resumen de noticias locales de este proyecto — aunque no
-  mencionen el nombre de la skill ni el fichero JSON explícitamente.
+  el banner de la home, los `actualidad/YYYYMM.json` mensuales que
+  alimentan la línea de tiempo en /timeline, y `eventos.json` con los
+  próximos eventos con fecha (ferias, fiestas, festivales...) detectados
+  esa semana. Úsala SIEMPRE que el usuario pida "actualizar la
+  actualidad", "generar el JSON de esta semana/mes", "analizar el sitemap
+  de La Gaceta", "qué ha pasado en Salamanca esta semana/mes", "rellenar
+  el timeline", "qué eventos hay próximamente en Salamanca", o cualquier
+  variación sobre producir o refrescar el resumen de noticias locales o
+  el calendario de eventos de este proyecto — aunque no mencionen el
+  nombre de la skill ni el fichero JSON explícitamente.
 ---
 
-# Actualidad y timeline de Salamanca (opensalamanca.es)
+# Actualidad, timeline y eventos de Salamanca (opensalamanca.es)
 
 Esta skill es la versión de proyecto, adaptada a este repositorio, de un
-analizador genérico de sitemaps de medios digitales. Sirve **dos piezas del
-sitio** a la vez:
+analizador genérico de sitemaps de medios digitales. Sirve **tres piezas
+del sitio** a la vez:
 
 1. **`actualidad.json`** (raíz del repo) — resumen semanal/quincenal que
    consumen [`actualidad.html`](../../../actualidad.html) y el banner de
@@ -25,10 +28,15 @@ sitio** a la vez:
 2. **`actualidad/YYYYMM.json`** (uno por mes, p.ej. `actualidad/202608.json`)
    — hitos destacados del mes que consume [`timeline.html`](../../../timeline.html)
    a través del manifiesto autogenerado [`actualidad/index.json`](../../../actualidad/index.json).
+3. **`eventos.json`** (raíz del repo) — próximos eventos con fecha
+   (ferias, fiestas, festivales, citas deportivas con fecha fija...) que
+   aún no han ocurrido. A diferencia de los dos anteriores, no resume lo
+   que ya ha pasado sino que mantiene un calendario vivo de lo que está
+   por venir.
 
 No hace falta tocar ningún otro fichero del sitio para que el contenido
 nuevo aparezca: Jekyll detecta los `.json` nuevos en `actualidad/` solo
-(ver `actualidad/index.json`), y las tres páginas hacen `fetch` con un
+(ver `actualidad/index.json`), y las páginas hacen `fetch` con un
 parámetro anti-caché (`?v=timestamp`, `cache: 'no-store'`) para no depender
 de la caché del navegador.
 
@@ -164,6 +172,82 @@ Pasos:
    Pages reconstruye el sitio al hacer commit — basta con dejar los
    ficheros `.json` en su sitio dentro del repo.
 
+## Paso 4 — Generar/actualizar eventos.json (próximos eventos con fecha)
+
+Además de resumir lo ya ocurrido, identifica los `conceptos_destacados`
+que hablen de un **evento futuro con fecha propia** (ferias, fiestas,
+festivales, exposiciones, citas deportivas con fecha fija...) y mantenlos
+en `eventos.json` (raíz del repo), un calendario vivo de lo que está por
+venir en Salamanca.
+
+**Importante — esto NO se puede hacer solo con el análisis mecánico.** El
+script trabaja a partir del slug de la URL y la fecha de *publicación* de
+la noticia, no la fecha de *celebración* del evento — esa fecha vive en el
+cuerpo del artículo. Confirmado en la práctica: para tres candidatos reales
+("guía práctica de fechas y horarios de Salamaq", "Feria del Caballo de
+Ciudad Rodrigo", "Cabrerizos abre inscripción para su feria") hizo falta
+abrir el artículo real y leer su `<meta name="description">` /
+`articleBody` para encontrar "del 3 al 7 de septiembre", "del 17 al 19 de
+septiembre" y "3 de octubre de 2026" respectivamente — ninguna de esas
+fechas estaba en la URL ni en la evidencia léxica del script.
+
+Pasos:
+
+1. **Identifica candidatos** entre los `conceptos_destacados` ya curados
+   (paso 2): ¿suena a algo con fecha de celebración propia, no solo fecha
+   de publicación? Las palabras clave habituales son "feria", "fiesta",
+   "festival", "concurso", "exposición", "jornadas", "certamen", o un
+   evento deportivo con fecha ya fijada. La mayoría de conceptos de una
+   semana normal (sucesos, política, resultados deportivos ya jugados,
+   clima) **no** son candidatos — es normal que algunas semanas no den
+   ningún evento nuevo.
+2. **Abre el artículo real de cada candidato** (la URL está en
+   `evidencia`/`fuente` del concepto) y busca una fecha explícita — la
+   meta-descripción (`<meta name="description">` u `og:description`) y el
+   `articleBody` del JSON-LD suelen traerla en texto plano ("del X al Y de
+   [mes]", "el X de [mes]"). Usa `curl`/`WebFetch` para traer el HTML si
+   no lo tienes ya.
+3. **Si no hay fecha explícita y verificable en el artículo, NO crees el
+   evento.** No infieras ni aproximes una fecha a partir de "esta semana",
+   "el próximo fin de semana" ni nada parecido — es preferible que
+   `eventos.json` se quede corto a que publique una fecha inventada.
+4. Para cada evento confirmado, añade una entrada con este esquema:
+
+```json
+{
+  "generado_en": "2026-09-01T14:30:00+00:00",
+  "eventos": [
+    {
+      "titulo": "SALAMAQ 2026 - 37ª Exposición Internacional de Ganado Puro",
+      "categoria": "Cultura",
+      "fecha_inicio": "2026-09-03",
+      "fecha_fin": "2026-09-07",
+      "lugar": "Recinto Ferial de Salamanca",
+      "descripcion": "1-2 frases explicando de qué trata el evento",
+      "fuente": "URL real del artículo de donde se sacó la fecha"
+    }
+  ]
+}
+```
+
+   - `categoria`: misma taxonomía de 8 categorías del timeline (paso 3).
+   - `fecha_fin`: `null` si el artículo solo da un día concreto (evento de
+     un solo día) en vez de un rango.
+   - `lugar`: solo si el artículo lo menciona explícitamente; si no, omite
+     el campo antes que inventar una ubicación.
+5. **`eventos.json` se acumula, no se sobrescribe.** Antes de escribir,
+   lee el fichero existente y:
+   - Añade los eventos nuevos que no estuvieran ya (compara por `titulo`
+     aproximado, no exacto).
+   - **Elimina los eventos cuyo `fecha_fin` (o `fecha_inicio` si no hay
+     `fecha_fin`) ya haya pasado** respecto a la fecha de ejecución — es
+     un calendario de lo que queda por venir, no un archivo histórico (eso
+     ya lo cubre `actualidad/YYYYMM.json`).
+   - Si un evento ya existente aparece de nuevo con más detalle (p.ej. se
+     confirma el `lugar` que antes no se conocía), actualiza esa entrada
+     en vez de duplicarla.
+6. Actualiza `generado_en` a la fecha de la ejecución actual.
+
 ## Foco local: qué excluir siempre
 
 Además de `nacional`/`opinion`/`tu-gaceta` (excluidas por defecto), vigila
@@ -193,3 +277,9 @@ ruido evidente, añade el término a `STOPWORDS_ES` en el script o sube
   de la consulta (puede ser rolling/incremental), no de lo que se pida —
   informa siempre del `periodo_cubierto` real, tanto en el resumen semanal
   como al decidir qué hitos mensuales quedan cubiertos.
+- `eventos.json` (paso 4) depende de que el artículo candidato mencione una
+  fecha explícita — muchas semanas no darán ningún evento nuevo, y eso es
+  el comportamiento correcto, no un fallo. Ningún artículo del sitio
+  consume todavía `eventos.json`; si el usuario quiere una página pública
+  de "próximos eventos", pregúntaselo aparte, esta skill solo genera el
+  fichero de datos.

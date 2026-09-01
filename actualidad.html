@@ -26,6 +26,13 @@ permalink: actualidad
 					<div class="actualidad-resumen" id="actualidad-resumen"></div>
 				</div>
 
+				<div class="actualidad-card" id="actualidad-eventos-card" style="display:none;">
+					<h2 class="actualidad-card-title">Próximos eventos</h2>
+					<div class="eventos-table-wrap">
+						<table class="eventos-table" id="actualidad-eventos"></table>
+					</div>
+				</div>
+
 				<div class="actualidad-card">
 					<h2 class="actualidad-card-title">De qué han hablado los titulares</h2>
 					<div class="actualidad-conceptos" id="actualidad-conceptos"></div>
@@ -142,5 +149,13 @@ permalink: actualidad
 				console.error('No se pudo cargar actualidad.json', err);
 				periodoEl.textContent = 'No se ha podido cargar la actualidad.';
 			});
+
+		fetch('/eventos.json?v=' + Date.now(), { cache: 'no-store' })
+			.then(r => r.json())
+			.then(d => {
+				const tieneEventos = window.EventosUI.renderTabla(document.getElementById('actualidad-eventos'), d.eventos);
+				document.getElementById('actualidad-eventos-card').style.display = tieneEventos ? '' : 'none';
+			})
+			.catch(err => console.error('No se pudo cargar eventos.json', err));
 	})();
 	</script>
