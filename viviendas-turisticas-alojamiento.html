@@ -73,7 +73,7 @@ El sector del alojamiento turístico en Salamanca registra una **transformación
     // 1. Inicializar mapa de densidad turística
     const mapTur = L.map('mapaTurismo').setView([40.9645, -5.6635], 15);
 
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/light_all/{z}/{x}/{y}{r}.png?key=cb1_2izw_1_55d93b51ded1dcecfa044181', {
       attribution: '&copy; OpenStreetMap &copy; CARTO',
       maxZoom: 19
     }).addTo(mapTur);

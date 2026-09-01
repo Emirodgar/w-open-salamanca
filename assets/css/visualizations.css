@@ -1000,7 +1000,23 @@
     text-align: center;
     color: var(--neutral-color);
     font-size: 0.95rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.actualidad-ver-timeline {
+    text-align: center;
     margin-bottom: var(--spacing-xl);
+}
+
+.actualidad-ver-timeline a {
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+.actualidad-ver-timeline a:hover {
+    text-decoration: underline;
 }
 
 .actualidad-card {
