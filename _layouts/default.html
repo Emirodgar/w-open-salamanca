@@ -70,6 +70,17 @@
         </div>
     </header>
 
+    <script>
+    (function () {
+        var header = document.querySelector('.header');
+        function setHeaderHeight() {
+            document.documentElement.style.setProperty('--header-height', header.offsetHeight + 'px');
+        }
+        setHeaderHeight();
+        window.addEventListener('resize', setHeaderHeight);
+    })();
+    </script>
+
     {% if page.folder and page.folder != "" %}
     {% assign category_page = site.pages | where: "category", page.folder | first %}
     <nav class="breadcrumb" aria-label="breadcrumb">
