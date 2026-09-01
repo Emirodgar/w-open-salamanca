@@ -5,11 +5,13 @@
     "desde": "2026-08-30",
     "hasta": "2026-09-01"
   },
-  "total_urls_analizadas": 114,
+  "total_urls_analizadas": 109,
   "secciones_excluidas": [
     "nacional",
     "opinion",
-    "tu-gaceta"
+    "tu-gaceta",
+    "gente-estilo",
+    "podcast"
   ],
   "nota_cobertura": "El sitemap consultado esta vez solo contenía URLs de los últimos 3 días (30 de agosto a 1 de septiembre), un periodo más corto que una semana completa: es un sitemap 'rolling' y en este momento cubre menos días de los habituales. El análisis y el resumen siguientes reflejan únicamente ese periodo real, no una semana entera.",
   "por_seccion": [
@@ -19,8 +21,6 @@
     ["campo", 13],
     ["sucesos", 10],
     ["cine-y-series", 3],
-    ["gente-estilo", 3],
-    ["podcast", 2],
     ["especiales", 2],
     ["encuestas", 2],
     ["virales", 2],

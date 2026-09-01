@@ -25,7 +25,7 @@ window.EventosUI = {
         }
         const filas = lista.map(ev => `
             <tr>
-                <td class="eventos-col-titulo">${ev.fuente ? `<a href="${ev.fuente}" target="_blank" rel="noopener">${ev.titulo}</a>` : ev.titulo}</td>
+                <td class="eventos-col-titulo">${ev.titulo}</td>
                 <td class="eventos-col-fechas">${this.formatearRango(ev.fecha_inicio, ev.fecha_fin)}</td>
                 <td class="eventos-col-lugar">${ev.lugar || '—'}</td>
             </tr>`).join('');

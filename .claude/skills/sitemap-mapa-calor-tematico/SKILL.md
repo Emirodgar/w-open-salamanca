@@ -44,10 +44,12 @@ de la caché del navegador.
 
 - **Medio a analizar:** La Gaceta de Salamanca — `--url-base
   "https://www.lagacetadesalamanca.es"`.
-- **Secciones a excluir siempre:** `nacional,opinion,tu-gaceta` (agenda
-  nacional y columnas de opinión personal no son "actualidad de la
-  ciudad"). Si el usuario pide cubrir otro medio o cambiar las
-  exclusiones, pregúntalo explícitamente — no lo asumas en silencio.
+- **Secciones a excluir siempre:** `nacional,opinion,tu-gaceta,gente-estilo,podcast`
+  (agenda nacional y columnas de opinión personal no son "actualidad de
+  la ciudad"; `gente-estilo` y `podcast` se excluyeron a petición expresa
+  del usuario — no aportan al resumen de actualidad). Si el usuario pide
+  cubrir otro medio o cambiar las exclusiones, pregúntalo explícitamente —
+  no lo asumas en silencio.
 - **Categorías editoriales del timeline** (usadas también como colores en
   `assets/css/main.css`: `--cat-sucesos`, `--cat-politica`, etc.) — son
   EXACTAMENTE estas 8, no una taxonomía libre:
@@ -66,7 +68,7 @@ Python):
 python3 .claude/skills/sitemap-mapa-calor-tematico/scripts/analizar_sitemap.py \
   entrada.xml salida.json \
   --url-base "https://www.lagacetadesalamanca.es" \
-  --excluir-secciones "nacional,opinion,tu-gaceta"
+  --excluir-secciones "nacional,opinion,tu-gaceta,gente-estilo,podcast"
 ```
 
 ### Obtener el sitemap
@@ -207,11 +209,27 @@ Pasos:
    `articleBody` del JSON-LD suelen traerla en texto plano ("del X al Y de
    [mes]", "el X de [mes]"). Usa `curl`/`WebFetch` para traer el HTML si
    no lo tienes ya.
-3. **Si no hay fecha explícita y verificable en el artículo, NO crees el
+3. **Revisa también, siempre, la programación oficial de la Fundación
+   Salamanca Ciudad de Cultura y Saberes**
+   (`https://ciudaddecultura.org/es/programacion/`) — es una segunda
+   fuente independiente del sitemap de La Gaceta, con su propio listado de
+   conciertos, teatro y actividades con fecha ya confirmada. Es una página
+   que carga su contenido por JavaScript, así que ábrela con el navegador
+   (no sirve un `curl` plano) y lee el texto ya renderizado. En vez de
+   crear un evento por cada actuación individual (la programación puede
+   traer decenas), agrupa el conjunto en un único evento con el nombre del
+   ciclo/temporada (p.ej. "Ferias de Salamanca 2026") usando como
+   `fecha_inicio`/`fecha_fin` el primer y último día que veas realmente
+   programados, y menciona en la `descripcion` 2-4 cabezas de cartel a
+   modo de ejemplo. Si en esa programación hay un espectáculo suelto muy
+   posterior y desconectado del grueso del programa (p.ej. una única
+   fecha semanas después), puedes añadirlo como evento independiente en
+   vez de forzarlo dentro del rango del ciclo principal.
+4. **Si no hay fecha explícita y verificable en la fuente, NO crees el
    evento.** No infieras ni aproximes una fecha a partir de "esta semana",
    "el próximo fin de semana" ni nada parecido — es preferible que
    `eventos.json` se quede corto a que publique una fecha inventada.
-4. Para cada evento confirmado, añade una entrada con este esquema:
+5. Para cada evento confirmado, añade una entrada con este esquema:
 
 ```json
 {
@@ -235,7 +253,12 @@ Pasos:
      un solo día) en vez de un rango.
    - `lugar`: solo si el artículo lo menciona explícitamente; si no, omite
      el campo antes que inventar una ubicación.
-5. **`eventos.json` se acumula, no se sobrescribe.** Antes de escribir,
+   - `fuente`: guárdala siempre (sirve para verificar la fecha y para
+     detectar duplicados en fusiones futuras), pero **la tabla de eventos
+     de la web NO la muestra como enlace** — el título aparece en texto
+     plano, sin enlazar a la página externa. No es necesario ni se debe
+     intentar "arreglar" esto añadiendo el enlace de vuelta.
+6. **`eventos.json` se acumula, no se sobrescribe.** Antes de escribir,
    lee el fichero existente y:
    - Añade los eventos nuevos que no estuvieran ya (compara por `titulo`
      aproximado, no exacto).
@@ -246,7 +269,7 @@ Pasos:
    - Si un evento ya existente aparece de nuevo con más detalle (p.ej. se
      confirma el `lugar` que antes no se conocía), actualiza esa entrada
      en vez de duplicarla.
-6. Actualiza `generado_en` a la fecha de la ejecución actual.
+7. Actualiza `generado_en` a la fecha de la ejecución actual.
 
 ## Foco local: qué excluir siempre
 
