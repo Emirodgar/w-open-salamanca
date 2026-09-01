@@ -1,0 +1,164 @@
+---
+layout: default
+title: Resultados Informe PISA - Castilla y León en el Contexto Educativo
+description: Análisis comparativo de los resultados del informe PISA de la OCDE, situando a Castilla y León y su entorno educativo frente a España y la media internacional.
+date: 01-09-2026
+folder: Educacion
+permalink: informe-pisa-castilla-y-leon-salamanca
+---
+
+    <!-- Featured Datasets Section -->
+    <section class="featured dataset" id="datos">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">{{ page.title }}</h2>
+                <p class="section-description">{{ page.description }}</p>
+            </div>
+			
+			<div id="section-content">
+						
+  <!-- Gráfico 1: Comparativa por Competencias -->
+  <div style="margin-bottom: 40px;">
+      <canvas id="pisaCompetenciasChart" width="800" height="400"></canvas>
+  </div>
+
+ 
+			<h2>Rendimiento educativo: Castilla y León en la élite nacional e internacional</h2>
+			
+				<p>
+El informe PISA (Programme for International Student Assessment) de la OCDE no desglosa sus datos a nivel de municipios específicos como Salamanca, ya que las muestras representativas se diseñan a escala estatal y se amplían mediante <b>muestras autonómicas</b> que permiten obtener resultados estadísticamente fiables para cada comunidad autónoma.</p>
+
+<h3>Claves del rendimiento en el entorno educativo castellanoleonés</h3>
+<ul>
+<li><b>Consistencia en la excelencia</b>: Castilla y León se mantiene históricamente en la parte alta de la tabla en España[cite: 1], rindiendo a niveles similares a los países punteros de la Unión Europea y superando el promedio de la OCDE en las tres materias analizadas (Lectura, Matemáticas y Ciencias)[cite: 1].</li>
+<li><b>Menor variabilidad socioeconómica</b>: Los análisis detallados de la muestra autonómica muestran que el sistema educativo regional mitiga de forma más eficaz el impacto del entorno socioeconómico de los alumnos en comparación con la media estatal, reduciendo el fracaso escolar[cite: 1].</li>
+<li><b>Cohesión territorial y equidad</b>: La red de centros (con fuerte arraigo en capitales de provincia como Salamanca y entornos rurales) demuestra un suelo de calidad homogéneo entre centros públicos y concertados[cite: 1].</li>
+</ul>
+
+  <!-- Gráfico 2: Posicionamiento Global -->
+  <h2 style="margin-top: 40px;">Comparativa global de puntuaciones (Matemáticas, Lectura y Ciencias)</h2>
+  <canvas id="pisaGlobalChart" width="800" height="400"></canvas>
+  <p style="font-size: 0.9em; color: #555; text-align: center; margin-top: 10px;">
+    *Puntuaciones medias obtenidas en las tres competencias principales evaluadas por el informe PISA de la OCDE.
+  </p>
+
+			<h2>Implicaciones para el modelo educativo local</h2>
+			<p>
+La posición de referencia que ocupa la comunidad autónoma repercute directamente en el atractivo formativo de Salamanca. El alto rendimiento en etapas obligatorias se alinea con la llegada posterior de estudiantes hacia el ecosistema universitario de la USAL y la UPSA, consolidando una cadena de excelencia académica que estructura gran parte de la demografía y la economía de la ciudad.
+			</p>
+
+			</div>
+			
+			<div id="section-table">
+			<table border="1" cellpadding="5" cellspacing="0">
+			  <thead>
+				<tr>
+				  <th>Comunidad Autónoma / Entidad</th>
+				  <th>Competencia Matemática</th>
+				  <th>Competencia Lectora</th>
+				  <th>Competencia en Ciencias</th>
+				  <th>Posición Relativa / Contexto</th>
+				</tr>
+			  </thead>
+			  <tbody>
+				<tr><td><b>Castilla y León</b></td><td>499</td><td>498</td><td>506</td><td><b>Líder nacional / Top 3</b>, por encima de la media OCDE[cite: 1].</td></tr>
+				<tr><td><b>Comunidad de Madrid</b></td><td>494</td><td>498</td><td>501</td><td>Rendimiento alto, en la franja superior junto a CyL[cite: 1].</td></tr>
+				<tr><td><b>Principado de Asturias</b></td><td>495</td><td>497</td><td>506</td><td>Resultados equiparables a Castilla y León en ciencias[cite: 1].</td></tr>
+				<tr><td><b>Media de España</b></td><td>473</td><td>474</td><td>485</td><td>Por debajo de la media de la OCDE[cite: 1].</td></tr>
+				<tr><td><b>Cataluña</b></td><td>469</td><td>462</td><td>477</td><td>Por debajo de la media nacional, con retroceso lector[cite: 1].</td></tr>
+				<tr><td><b>Media de la OCDE</b></td><td>472</td><td>476</td><td>485</td><td>Referencia internacional estándar[cite: 1].</td></tr>
+			  </tbody>
+			</table>
+
+			</div>
+			
+			{% include categories.html %}
+            
+        </div>
+    </section>
+
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        
+        // 1. Gráfico de Barras: Competencias de CyL frente a España y OCDE
+        const ctxPisaComp = document.getElementById('pisaCompetenciasChart').getContext('2d');
+        new Chart(ctxPisaComp, {
+            type: 'bar',
+            data: {
+                labels: ['Matemáticas', 'Lectura', 'Ciencias'],
+                datasets: [
+                    {
+                        label: 'Castilla y León',
+                        data: [499, 498, 506],
+                        backgroundColor: '#1E56A0',
+                        borderRadius: 4
+                    },
+                    {
+                        label: 'Media de España',
+                        data: [473, 474, 485],
+                        backgroundColor: '#A8201A',
+                        borderRadius: 4
+                    },
+                    {
+                        label: 'Media de la OCDE',
+                        data: [472, 476, 485],
+                        backgroundColor: '#64748b',
+                        borderRadius: 4
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    title: { display: true, text: 'Resultados PISA: Castilla y León vs España vs OCDE', font: { size: 14 } },
+                    tooltip: { mode: 'index', intersect: false }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: false,
+                        min: 440,
+                        max: 520,
+                        title: { display: true, text: 'Puntuación Media PISA' }
+                    }
+                }
+            }
+        });
+
+        // 2. Gráfico Global de Comunidades (Barras Horizontales)
+        const ctxPisaGlobal = document.getElementById('pisaGlobalChart').getContext('2d');
+        new Chart(ctxPisaGlobal, {
+            type: 'bar',
+            data: {
+                labels: ['Castilla y León', 'Principado de Asturias', 'Comunidad de Madrid', 'Media de la OCDE', 'Media de España', 'Cataluña'],
+                datasets: [
+                    {
+                        label: 'Puntuación Global Promedio (Matemáticas + Lectura + Ciencias)',
+                        data: [501, 499, 497, 477, 477, 469],
+                        backgroundColor: 'rgba(30, 86, 160, 0.8)',
+                        borderColor: '#1E56A0',
+                        borderWidth: 1,
+                        borderRadius: 4
+                    }
+                ]
+            },
+            options: {
+                indexAxis: 'y',
+                responsive: true,
+                plugins: {
+                    title: { display: true, text: 'Promedio general por territorios en el Informe PISA', font: { size: 14 } },
+                    tooltip: { mode: 'index', intersect: false }
+                },
+                scales: {
+                    x: {
+                        beginAtZero: false,
+                        min: 440,
+                        max: 520,
+                        title: { display: true, text: 'Puntuación Media Global' }
+                    }
+                }
+            }
+        });
+
+    });
+    </script>

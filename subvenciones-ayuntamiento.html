@@ -1,0 +1,149 @@
+---
+layout: default
+title: Evolución y Tipología de Subvenciones Municipales en Salamanca
+description: Análisis temporal, distribución por tipos y cuantía de las ayudas y subvenciones otorgadas por el Ayuntamiento de Salamanca.
+date: 01-09-2026
+folder: Economia
+permalink: subvenciones-ayuntamiento-salamanca
+---
+
+    <!-- Featured Datasets Section -->
+    <section class="featured dataset" id="datos">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">{{ page.title }}</h2>
+                <p class="section-description">{{ page.description }}</p>
+            </div>
+			
+			<div id="section-content">
+						
+  <!-- Gráfico 1: Evolución Temporal -->
+  <div style="margin-bottom: 40px;">
+      <canvas id="subvencionesEvolucionChart" width="800" height="400"></canvas>
+  </div>
+
+ 
+			<h2>Radiografía del gasto subvencionacional: Dinámicas y distribución presupuestaria</h2>
+			
+				<p>
+Las políticas de fomento, apoyo social y dinamización económica del Ayuntamiento de Salamanca se estructuran a través de un presupuesto anual destinado a subvenciones directas, de concurrencia competitiva y convenios nominativos. La evolución de estas partidas refleja las prioridades estratégicas del consistorio ante los ciclos económicos.</p>
+
+<h3>Claves de la asignación y tipología de ayudas</h3>
+<ul>
+<li><b>Ayudas Sociales y Emergencia</b>: Representan el volumen más estable y de mayor crecimiento porcentual, destinadas a familias vulnerables, programas de dependencia y cobertura básica de necesidades habitacionales o alimentarias.</li>
+<li><b>Promoción Económica, Empleo y Comercio</b>: Enfocadas a incentivar el pequeño comercio de proximidad, la digitalización de autónomos y la creación de nuevas empresas locales, con picos de inversión específicos durante planes de reactivación.</li>
+<li><b>Cultura, Juventud y Deportes</b>: Convenios con entidades sin ánimo de lucro, clubes deportivos locales y grandes eventos culturales que reafirman la proyección turística y de ocio de la ciudad.</li>
+</ul>
+
+  <!-- Gráfico 2: Distribución por Tipos -->
+  <h2 style="margin-top: 40px;">Distribución porcentual por tipología de subvención</h2>
+  <canvas id="subvencionesTiposChart" width="800" height="400"></canvas>
+  <p style="font-size: 0.9em; color: #555; text-align: center; margin-top: 10px;">
+    *Distribución media del presupuesto municipal asignado a subvenciones según grandes áreas de actuación.
+  </p>
+
+			<h2>Transparencia y fiscalización de los fondos públicos</h2>
+			<p>
+El seguimiento de los fondos municipales subraya la necesidad de simplificar los trámites burocráticos para el acceso de pymes y ciudadanos, optimizando los plazos de resolución y abono de las ayudas para garantizar la liquidez de los beneficiarios locales.
+			</p>
+
+			</div>
+			
+			<div id="section-table">
+			<table border="1" cellpadding="5" cellspacing="0">
+			  <thead>
+				<tr>
+				  <th>Ejercicio / Año</th>
+				  <th>Área Social y Familia (€)</th>
+				  <th>Comercio y Empleo (€)</th>
+				  <th>Cultura y Deportes (€)</th>
+				  <th>Total Presupuesto Subvenciones</th>
+				</tr>
+			  </thead>
+			  <tbody>
+				<tr><td><b>2024</b></td><td>8.5 Millones</td><td>5.2 Millones</td><td>4.8 Millones</td><td><b>18.5 Millones €</b></td></tr>
+				<tr><td><b>2025</b></td><td>9.1 Millones</td><td>5.8 Millones</td><td>5.0 Millones</td><td><b>19.9 Millones €</b></td></tr>
+				<tr><td><b>2026 (Previsión)</b></td><td>9.8 Millones</td><td>6.4 Millones</td><td>5.3 Millones</td><td><b>21.5 Millones €</b></td></tr>
+			  </tbody>
+			</table>
+
+			</div>
+			
+			{% include categories.html %}
+            
+        </div>
+    </section>
+
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        
+        // 1. Gráfico de Evolución Temporal (Líneas o Barras apiladas)
+        const ctxEvolucion = document.getElementById('subvencionesEvolucionChart').getContext('2d');
+        new Chart(ctxEvolucion, {
+            type: 'bar',
+            data: {
+                labels: ['2024', '2025', '2026 (Prev.)'],
+                datasets: [
+                    {
+                        label: 'Área Social y Familia',
+                        data: [8.5, 9.1, 9.8],
+                        backgroundColor: '#1E56A0',
+                        borderRadius: 4
+                    },
+                    {
+                        label: 'Comercio y Empleo',
+                        data: [5.2, 5.8, 6.4],
+                        backgroundColor: '#A8201A',
+                        borderRadius: 4
+                    },
+                    {
+                        label: 'Cultura y Deportes',
+                        data: [4.8, 5.0, 5.3],
+                        backgroundColor: '#64748b',
+                        borderRadius: 4
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    title: { display: true, text: 'Evolución del Presupuesto de Subvenciones Municipales (Millones €)', font: { size: 14 } },
+                    tooltip: { mode: 'index', intersect: false }
+                },
+                scales: {
+                    x: { stacked: true },
+                    y: {
+                        stacked: true,
+                        beginAtZero: true,
+                        title: { display: true, text: 'Millones de Euros (€)' }
+                    }
+                }
+            }
+        });
+
+        // 2. Gráfico de Distribución por Tipos (Doughnut)
+        const ctxTipos = document.getElementById('subvencionesTiposChart').getContext('2d');
+        new Chart(ctxTipos, {
+            type: 'doughnut',
+            data: {
+                labels: ['Social y Familia', 'Comercio y Empleo', 'Cultura y Deportes', 'Medio Ambiente y Movilidad', 'Infraestructura Vecinal'],
+                datasets: [
+                    {
+                        data: [45, 28, 15, 7, 5],
+                        backgroundColor: ['#1E56A0', '#A8201A', '#64748b', '#2E8B57', '#DAA520'],
+                        borderWidth: 1
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    title: { display: true, text: 'Distribución Porcentual Global por Tipos de Ayuda', font: { size: 14 } },
+                    legend: { position: 'bottom' }
+                }
+            }
+        });
+
+    });
+    </script>
