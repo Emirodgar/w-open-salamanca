@@ -617,5 +617,10 @@ window.downloadSchema = function() {
 // Initialize the application when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
     window.openSalamanca = new OpenSalamanca();
+
+    const footerYearEl = document.getElementById('footerYear');
+    if (footerYearEl) {
+        footerYearEl.textContent = new Date().getFullYear();
+    }
 });
 
