@@ -35,7 +35,7 @@ window.EventosUI = {
 };
 
 // Shared rendering + voting for opina.json, used by the home teaser, /opina
-// and /opina-archivo. A "poll" here is always {id, pregunta, opciones, ...}.
+// and /historico. A "poll" here is always {id, pregunta, opciones, ...}.
 window.OpinaUI = {
     claveVoto(preguntaId) {
         return 'opina_voto_' + preguntaId;
@@ -45,11 +45,17 @@ window.OpinaUI = {
         div.textContent = str;
         return div.innerHTML;
     },
-    // estado: { votoPrevio: string|null, archivada: bool, fechaArchivado: string|null }
+    // El worker_url de opina.json empieza con un valor de ejemplo hasta que
+    // se despliega de verdad (ver cloudflare-worker/opina-votos/README.md).
+    // Si no se ha sustituido, no tiene sentido intentar llamarlo.
+    workerListo(workerUrl) {
+        return !!workerUrl && !workerUrl.includes('TU-SUBDOMINIO');
+    },
+    // estado: { votoPrevio, archivada, fechaArchivado, pendienteDespliegue }
     renderPregunta(pregunta, conteos, estado) {
         estado = estado || {};
         const total = Object.values(conteos || {}).reduce((a, b) => a + b, 0);
-        const cerrada = estado.archivada || !!estado.votoPrevio;
+        const cerrada = estado.archivada || !!estado.votoPrevio || estado.pendienteDespliegue;
 
         const opcionesHtml = pregunta.opciones.map(opcion => {
             const n = (conteos || {})[opcion] || 0;
@@ -63,24 +69,34 @@ window.OpinaUI = {
                 </button>`;
         }).join('');
 
-        let meta = `${total} voto${total === 1 ? '' : 's'}`;
+        // El recuento de votos no se muestra mientras la pregunta está
+        // activa (participación aún baja); sí se muestra ya archivada,
+        // donde sirve como dato histórico.
+        let meta = '';
         if (estado.archivada) {
+            meta = `${total} voto${total === 1 ? '' : 's'}`;
             meta += estado.fechaArchivado ? ` · archivada el ${estado.fechaArchivado}` : ' · pregunta archivada';
+        } else if (estado.pendienteDespliegue) {
+            meta = 'La votación estará activa en breve.';
         } else if (estado.votoPrevio) {
-            meta += ' · ya has votado';
+            meta = 'Ya has votado';
         }
 
         return `
             <div class="opina-card" data-pregunta-id="${pregunta.id}">
                 <h3 class="opina-pregunta">${this.escapeHtml(pregunta.pregunta)}</h3>
                 <div class="opina-opciones">${opcionesHtml}</div>
-                <p class="opina-meta">${meta}</p>
+                ${meta ? `<p class="opina-meta">${meta}</p>` : ''}
             </div>`;
     },
     // Fetches current counts, renders into containerEl, and wires up voting
     // unless the poll was already voted on this browser. Returns nothing;
     // call again after DOM replacement if you need fresh listeners.
     montarPregunta(containerEl, workerUrl, pregunta) {
+        if (!this.workerListo(workerUrl)) {
+            containerEl.innerHTML = this.renderPregunta(pregunta, {}, { pendienteDespliegue: true });
+            return Promise.resolve();
+        }
         const votoPrevio = localStorage.getItem(this.claveVoto(pregunta.id));
         return fetch(`${workerUrl}/votos/${pregunta.id}`, { cache: 'no-store' })
             .then(r => r.json())

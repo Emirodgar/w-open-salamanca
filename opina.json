@@ -24,17 +24,6 @@
       ],
       "basado_en": "actualidad.json",
       "fecha_creacion": "2026-09-01"
-    },
-    {
-      "id": "frio-septiembre-2026",
-      "pregunta": "Castilla y León ha arrancado septiembre con un notable descenso de las temperaturas. ¿Ya has sacado el abrigo?",
-      "opciones": [
-        "Sí",
-        "No, aún hace buen tiempo",
-        "Depende del día"
-      ],
-      "basado_en": "actualidad.json",
-      "fecha_creacion": "2026-09-01"
     }
   ]
 }

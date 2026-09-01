@@ -10,7 +10,7 @@
 // El origen permitido en CORS está fijado al dominio real del sitio para que
 // solo opensalamanca.es pueda escribir votos desde el navegador.
 //
-// Cerrar una pregunta (al archivarla en opina-archivo.json) para que ya no
+// Cerrar una pregunta (al archivarla en historico.json) para que ya no
 // admita más votos, aunque alguien intente llamar a la API directamente:
 //   wrangler kv key put "closed:<preguntaId>" "1" --namespace-id=<tu-id>
 

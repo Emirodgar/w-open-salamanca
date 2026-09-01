@@ -56,7 +56,7 @@ por el camino:
    ```
    Te devuelve el JSON `{"opcion1": 12, "opcion2": 8, ...}`.
 2. **Añade una entrada** al array `preguntas_archivadas` de
-   `opina-archivo.json` (en la raíz del repo del sitio) con ese resultado:
+   `historico.json` (en la raíz del repo del sitio) con ese resultado:
    ```json
    {
      "id": "eventos-septiembre-2026",
@@ -78,9 +78,9 @@ por el camino:
    ```bash
    wrangler kv key put "closed:<id-de-la-pregunta>" "1" --namespace-id=<el-id-de-tu-namespace>
    ```
-5. Haz commit y push de `opina.json` y `opina-archivo.json`. La pregunta
+5. Haz commit y push de `opina.json` y `historico.json`. La pregunta
    desaparecerá de `/opina` y aparecerá con su resultado final en
-   `/opina-archivo`.
+   `/historico`.
 
 ## Notas de diseño
 
