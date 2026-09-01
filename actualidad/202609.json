@@ -1,0 +1,39 @@
+{
+  "mes": "2026-09",
+  "titulo_mes": "Septiembre 2026",
+  "resumen_mes": "El mes arranca con la temporada de ferias en marcha (SALAMAQ y la Feria del Caballo de Ciudad Rodrigo), las últimas fiestas patronales de la provincia, varios accidentes de tráfico con heridos en la capital y un notable descenso de las temperaturas en toda Castilla y León.",
+  "hitos": [
+    {
+      "fecha": "2026-09-01",
+      "titulo": "La Feria del Caballo de Ciudad Rodrigo abre la temporada ferial de septiembre",
+      "categoria": "Cultura",
+      "descripcion": "La Feria del Caballo de Ciudad Rodrigo consolida su atractivo como cita ganadera de referencia en la provincia, mientras Cabrerizos abre inscripciones para su III Feria Agroalimentaria.",
+      "fuente": "sin fuente directa",
+      "destacado": true
+    },
+    {
+      "fecha": "2026-09-01",
+      "titulo": "Varios heridos en accidentes de tráfico en la capital",
+      "categoria": "Sucesos",
+      "descripcion": "Un motorista resultó herido tras colisionar con un turismo en Salamanca capital, en una de varias colisiones de la semana que dejaron más heridos en la ciudad, entre ellas un alcance en la zona de Reina Berenguela.",
+      "fuente": "sin fuente directa",
+      "destacado": false
+    },
+    {
+      "fecha": "2026-09-01",
+      "titulo": "Castilla y León arranca septiembre con temperaturas bajas",
+      "categoria": "Sociedad",
+      "descripcion": "La comunidad ha comenzado la semana con un notable descenso de las temperaturas, liderando los registros más fríos, mientras los embalses se recuperan tras las tormentas de la semana pasada.",
+      "fuente": "sin fuente directa",
+      "destacado": false
+    },
+    {
+      "fecha": "2026-09-01",
+      "titulo": "Los pueblos de la provincia despiden el verano con sus últimas fiestas",
+      "categoria": "Cultura",
+      "descripcion": "Los pueblos de la provincia cierran agosto con música, tradición y actividades en sus fiestas patronales; Velles ha sido uno de los últimos municipios en clausurar las suyas.",
+      "fuente": "sin fuente directa",
+      "destacado": false
+    }
+  ]
+}

@@ -26,12 +26,16 @@ from collections import Counter, defaultdict
 from datetime import datetime, timezone
 
 # ---------------------------------------------------------------------------
-# 1. Extracción de <url><loc>...</loc><lastmod>...</lastmod></url>
+# 1. Extracción de <url>...</loc>/<lastmod>...</url>
 # ---------------------------------------------------------------------------
-URL_BLOCK_RE = re.compile(
-    r"<url>\s*<loc>(?P<loc>.*?)</loc>\s*(?:<lastmod>(?P<lastmod>.*?)</lastmod>)?\s*</url>",
-    re.IGNORECASE | re.DOTALL,
-)
+# Cada bloque <url>...</url> se aísla primero como texto (no greedy, así no
+# se cuela en el siguiente bloque), y luego se buscan <loc>/<lastmod> DENTRO
+# de ese texto. Esto tolera con seguridad las etiquetas de extensión que
+# muchos sitemaps de noticias insertan entre <lastmod> y el cierre </url>
+# (p.ej. <news:news>...</news:news>, <image:image>...</image:image>).
+URL_BLOCK_RE = re.compile(r"<url>(?P<block>.*?)</url>", re.IGNORECASE | re.DOTALL)
+LOC_RE = re.compile(r"<loc>(.*?)</loc>", re.IGNORECASE | re.DOTALL)
+LASTMOD_RE = re.compile(r"<lastmod>(.*?)</lastmod>", re.IGNORECASE | re.DOTALL)
 
 CONTENT_TYPE_SUFFIXES = {
     "nt": "noticia",
@@ -122,8 +126,13 @@ def descargar_o_leer(origen: str) -> str:
 def parsear_urls(xml_text: str):
     entradas = []
     for m in URL_BLOCK_RE.finditer(xml_text):
-        loc = (m.group("loc") or "").strip()
-        lastmod = (m.group("lastmod") or "").strip()
+        block = m.group("block")
+        loc_m = LOC_RE.search(block)
+        if not loc_m:
+            continue
+        loc = loc_m.group(1).strip()
+        lastmod_m = LASTMOD_RE.search(block)
+        lastmod = lastmod_m.group(1).strip() if lastmod_m else ""
         if loc:
             entradas.append({"loc": loc, "lastmod": lastmod})
     return entradas
