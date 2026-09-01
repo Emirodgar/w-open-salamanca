@@ -1,0 +1,148 @@
+---
+layout: default
+title: Radiografía Escolar de Salamanca
+description: Análisis exhaustivo de los centros educativos en la ciudad, distribución de alumnos por zonas y comparativa entre la red pública y concertada.
+date: 01-09-2026
+folder: Educacion
+permalink: colegios-centros-educativos-salamanca
+---
+
+    <!-- Featured Datasets Section -->
+    <section class="featured dataset" id="datos">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">{{ page.title }}</h2>
+                <p class="section-description">{{ page.description }}</p>
+            </div>
+			
+			<div id="section-content">
+						
+  <!-- Gráfico 1: Titularidad -->
+  <div style="margin-bottom: 40px;">
+      <canvas id="titularidadChart" width="800" height="400"></canvas>
+  </div>
+
+ 
+			<h2>Estructura del sistema educativo: Pública vs. Concertada</h2>
+			
+				<p>
+El mapa escolar de Salamanca capital presenta una singularidad histórica respecto a la media nacional y autonómica: <b>la fuerte implantación de la red concertada</b>. Impulsada tradicionalmente por órdenes religiosas e instituciones históricas, la educación concertada en la ciudad absorbe a más de la mitad del alumnado en las etapas obligatorias (Infantil, Primaria y ESO), dejando a la red pública puramente estatal con una cuota ligeramente inferior en el casco urbano (aunque mayoritaria si se suma el alfoz y la provincia).</p>
+
+<h3>Claves del reparto de alumnado</h3>
+<ul>
+<li><b>Hegemonía en el centro</b>: El Distrito Centro y las zonas históricas están dominadas por macrocentros concertados (Maristas, Jesuitas, Calasanz, Amor de Dios), mientras que la red pública tiene una presencia más dispersa o basada en colegios históricos (CEIP Rufino Blanco, CEIP Francisco Vitoria).</li>
+<li><b>La escuela pública en los barrios</b>: La expansión urbana de los años 80 y 90 consolidó grandes centros públicos en los barrios periféricos. Zonas como Garrido, Pizarrales o el Sur (Trastormes, Zurguén) cuentan con una red pública robusta que absorbe la mayor parte del crecimiento demográfico reciente.</li>
+<li><b>La red privada pura</b>: Es prácticamente residual en Salamanca capital para las etapas de Infantil y Primaria, limitándose a centros muy específicos o internacionales de pequeño tamaño, ya que el modelo de concierto cubre casi toda la demanda de educación no estrictamente estatal.</li>
+</ul>
+
+  <!-- Gráfico 2: Distribución por Zonas -->
+  <h2 style="margin-top: 40px;">Distribución geográfica de la oferta de plazas</h2>
+  <canvas id="zonasEscolaresChart" width="800" height="400"></canvas>
+  <p style="font-size: 0.9em; color: #555; text-align: center; margin-top: 10px;">
+    *Estimación de volumen de alumnado (Infantil, Primaria y ESO) por distritos educativos de la ciudad.
+  </p>
+
+			<h2>Movilidad escolar y presión demográfica</h2>
+			<p>
+Uno de los mayores retos urbanos es la <b>movilidad pendular escolar</b>. Al concentrarse los colegios concertados más grandes en el eje central (Carmelitas, Paseo de San Vicente, Avenida de los Maristas), se generan picos de tráfico diarios por familias que residen en el alfoz o en barrios periféricos y desplazan a sus hijos al centro. Por el contrario, los CEIP (Colegios Públicos de Infantil y Primaria) de barrio fomentan una movilidad peatonal de proximidad, reteniendo la vida vecinal en los distritos periféricos.
+			</p>
+
+			</div>
+			
+			<div id="section-table">
+			<table border="1" cellpadding="5" cellspacing="0">
+			  <thead>
+				<tr>
+				  <th>Centro Educativo (Ejemplos destacados)</th>
+				  <th>Titularidad</th>
+				  <th>Ubicación / Barrio</th>
+				  <th>Etapas Impartidas</th>
+				  <th>Volumen Estimado</th>
+				</tr>
+			  </thead>
+			  <tbody>
+				<tr><td><b>Colegio Marista Champagnat</b></td><td>Concertado</td><td>Avenida de los Maristas (Oeste)</td><td>Infantil, Primaria, ESO, Bach.</td><td>> 1.200 alumnos</td></tr>
+				<tr><td><b>CEIP Rufino Blanco</b></td><td>Público</td><td>Centro (La Alamedilla)</td><td>Infantil, Primaria</td><td>~ 400 alumnos</td></tr>
+				<tr><td><b>Colegio San Estanislao de Kostka (Jesuitas)</b></td><td>Concertado</td><td>Paseo de San Antonio</td><td>Infantil, Primaria, ESO, Bach.</td><td>> 1.000 alumnos</td></tr>
+				<tr><td><b>CEIP Francisco Vitoria</b></td><td>Público</td><td>Centro / Sancti-Spíritus</td><td>Infantil, Primaria</td><td>~ 450 alumnos</td></tr>
+				<tr><td><b>Colegio Salesianos (San José / M. Auxiliadora)</b></td><td>Concertado</td><td>Centro / Pizarrales</td><td>Infantil, Primaria, ESO, FP</td><td>> 1.500 alumnos</td></tr>
+				<tr><td><b>CEIP Meléndez Valdés</b></td><td>Público</td><td>Garrido Norte</td><td>Infantil, Primaria</td><td>~ 350 alumnos</td></tr>
+				<tr><td><b>IES Vaguada de la Palma</b></td><td>Público</td><td>Vaguada (Centro-Oeste)</td><td>ESO, Bachillerato</td><td>> 800 alumnos</td></tr>
+			  </tbody>
+			</table>
+
+			</div>
+			
+			{% include categories.html %}
+            
+        </div>
+    </section>
+
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        
+        // 1. Gráfico de Titularidad (Doughnut)
+        const ctxTit = document.getElementById('titularidadChart').getContext('2d');
+        new Chart(ctxTit, {
+            type: 'doughnut',
+            data: {
+                labels: ['Red Concertada', 'Red Pública', 'Red Privada (No concertada)'],
+                datasets: [{
+                    data: [54, 44, 2],
+                    backgroundColor: ['#1E56A0', '#A8201A', '#F4A261'],
+                    borderWidth: 2,
+                    borderColor: '#ffffff'
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: { position: 'bottom' },
+                    title: { display: true, text: 'Distribución del Alumnado por Titularidad de Centro (Salamanca Capital)', font: { size: 14 } }
+                }
+            }
+        });
+
+        // 2. Gráfico de Distribución por Zonas (Bar)
+        const ctxZonas = document.getElementById('zonasEscolaresChart').getContext('2d');
+        new Chart(ctxZonas, {
+            type: 'bar',
+            data: {
+                labels: ['Distrito Centro', 'Zona Norte (Garrido/Macías)', 'Zona Oeste (Carmelitas/San Bernardo)', 'Zona Sur (Trastormes/Zurguén)', 'Barrios del Este (Rollo/Puente Ladrillo)'],
+                datasets: [
+                    {
+                        label: 'Alumnado en Pública',
+                        data: [1800, 3200, 2100, 1900, 1500],
+                        backgroundColor: 'rgba(168, 32, 26, 0.8)',
+                        borderRadius: 3
+                    },
+                    {
+                        label: 'Alumnado en Concertada',
+                        data: [5500, 1800, 3800, 900, 1200],
+                        backgroundColor: 'rgba(30, 86, 160, 0.8)',
+                        borderRadius: 3
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    title: { display: true, text: 'Concentración de alumnado por zonas urbanas' },
+                    tooltip: { mode: 'index', intersect: false }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        stacked: true,
+                        title: { display: true, text: 'Número aprox. de alumnos' }
+                    },
+                    x: {
+                        stacked: true
+                    }
+                }
+            }
+        });
+
+    });
+    </script>

@@ -1,0 +1,164 @@
+---
+layout: default
+title: Impacto de la Gratuidad del Transporte para Menores
+description: Análisis de la adopción del bus metropolitano gratuito y visualización del ahorro económico directo en las familias salmantinas.
+date: 01-09-2026
+folder: Movilidad
+permalink: impacto-gratuidad-transporte-menores
+---
+
+    <!-- Featured Datasets Section -->
+    <section class="featured dataset" id="datos">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">{{ page.title }}</h2>
+                <p class="section-description">{{ page.description }}</p>
+            </div>
+			
+			<div id="section-content">
+						
+  <!-- Gráfico 1: Evolución de viajes -->
+  <div style="margin-bottom: 40px;">
+      <canvas id="buscylImpactChart" width="800" height="400"></canvas>
+  </div>
+
+ 
+			<h2>Análisis de valor: Transformación modal y desahogo familiar</h2>
+			
+				<p>
+La entrada en vigor de la gratuidad del transporte interurbano y metropolitano para menores de 15 años (junto con la medida urbana para menores de 14 años) ha transformado drásticamente la movilidad juvenil. En sus primeros seis meses, la red autonómica superó el millón de viajes gratuitos, forzando la ampliación estructural de la medida.
+</p>
+
+<h3>Perspectiva de Movilidad y Retorno Social</h3>
+<ul>
+<li><b>Fidelización de la Generación Alfa</b>: Al eliminar la barrera del pago en la etapa donde se consolida la independencia de movimiento (12-15 años), se crea un "hábito modal", reduciendo la dependencia futura del coche privado.</li>
+<li><b>Descongestión en los accesos urbanos</b>: El pico de crecimiento en septiembre refleja un trasvase directo de trayectos escolares que antes se realizaban en el coche familiar, aliviando los cuellos de botella en las rotondas de acceso a la capital.</li>
+<li><b>Vertebración del Alfoz</b>: Para los municipios periurbanos, el transporte gratuito iguala las oportunidades de acceso a la educación y el ocio, funcionando como una herramienta contra la despoblación.</li>
+</ul>
+
+  <!-- Gráfico 2: Ahorro Económico (Nuevo) -->
+  <h2 style="margin-top: 30px;">Impacto en el presupuesto familiar (Ahorro acumulado)</h2>
+  <canvas id="ahorroFamiliarChart" width="800" height="400"></canvas>
+  <p style="font-size: 0.9em; color: #555; text-align: center; margin-top: 10px;">
+    *Cálculo basado en un uso promedio de 22 viajes mensuales (ida y vuelta en periodo escolar y actividades).
+  </p>
+
+			</div>
+			
+			<div id="section-table">
+			<table border="1" cellpadding="5" cellspacing="0">
+			  <thead>
+				<tr>
+				  <th>Indicador de Impacto</th>
+				  <th>Antes de la medida (Pago)</th>
+				  <th>Después de la medida (Gratuidad)</th>
+				  <th>Variación / Consecuencia</th>
+				</tr>
+			  </thead>
+			  <tbody>
+				<tr><td><b>Volumen de viajes (Jul-Dic)</b></td><td>~292.000 viajes autonómicos</td><td>> 1.000.000 viajes autonómicos</td><td>Incremento superior al 240%</td></tr>
+				<tr><td><b>Gasto medio anual por menor</b></td><td>120€ - 160€ (bonos joven)</td><td>0€ (Subvencionado)</td><td>Ahorro directo transferido al consumo local</td></tr>
+				<tr><td><b>Perfil de uso metropolitano</b></td><td>Fines de semana y ocio puntual</td><td>Uso diario y recurrente</td><td>Descongestión del tráfico matinal</td></tr>
+				<tr><td><b>Calidad de los datos (Telemetría)</b></td><td>Registros fragmentados</td><td>1 millón de validaciones "Cero"</td><td>Optimización de frecuencias basada en datos reales</td></tr>
+			  </tbody>
+			</table>
+
+			</div>
+			
+			{% include categories.html %}
+            
+        </div>
+    </section>
+
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	<script>
+    // Inicializar gráficos cuando el DOM esté listo
+    document.addEventListener("DOMContentLoaded", function() {
+        
+        // 1. Gráfico de Impacto en Volumen de Viajes (Adopción)
+        const ctxImpact = document.getElementById('buscylImpactChart').getContext('2d');
+        new Chart(ctxImpact, {
+            type: 'bar',
+            data: {
+                labels: ['Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],
+                datasets: [
+                    {
+                        label: 'Viajes <15 años (Periodo Previo - Pago)',
+                        data: [35000, 32000, 55000, 62000, 58000, 50000],
+                        backgroundColor: '#64748b',
+                        borderRadius: 4
+                    },
+                    {
+                        label: 'Viajes <15 años (Nuevo Periodo - Gratuidad)',
+                        data: [95000, 110000, 185000, 215000, 205000, 195000],
+                        backgroundColor: '#1E56A0', // Azul institucional para el portal
+                        borderRadius: 4
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    title: { display: true, text: 'Evolución del Transporte Metropolitano en Menores (Comparativa de adopción)' },
+                    tooltip: { mode: 'index', intersect: false }
+                },
+                scales: {
+                    y: { beginAtZero: true, title: { display: true, text: 'Volumen de Viajes Mensuales' } }
+                }
+            }
+        });
+
+        // 2. Gráfico de Ahorro Acumulado Familiar (Nuevo)
+        const ctxAhorro = document.getElementById('ahorroFamiliarChart').getContext('2d');
+        new Chart(ctxAhorro, {
+            type: 'line',
+            data: {
+                labels: ['Septiembre', 'Octubre', 'Noviembre', 'Diciembre', 'Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo'],
+                datasets: [
+                    {
+                        label: 'Familia con 1 menor (Ahorro €)',
+                        data: [15, 30, 45, 60, 75, 90, 105, 120, 135],
+                        borderColor: '#2C5F2D', // Verde positivo
+                        backgroundColor: 'rgba(44, 95, 45, 0.1)',
+                        borderWidth: 3,
+                        fill: true,
+                        tension: 0.1
+                    },
+                    {
+                        label: 'Familia con 2 menores (Ahorro €)',
+                        data: [30, 60, 90, 120, 150, 180, 210, 240, 270],
+                        borderColor: '#A8201A', // Rojo para diferenciar
+                        backgroundColor: 'rgba(168, 32, 26, 0.1)',
+                        borderWidth: 3,
+                        fill: true,
+                        tension: 0.1
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    title: { display: true, text: 'Proyección del Ahorro Económico Acumulado durante el Curso Escolar' },
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                return context.dataset.label + ': ' + context.parsed.y + ' €';
+                            }
+                        }
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        title: { display: true, text: 'Euros (€) Retenidos en el Hogar' },
+                        ticks: { callback: function(value) { return value + ' €'; } }
+                    },
+                    x: {
+                        title: { display: true, text: 'Mes del Curso Escolar' }
+                    }
+                }
+            }
+        });
+
+    });
+    </script>
