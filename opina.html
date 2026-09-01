@@ -1,0 +1,56 @@
+---
+layout: default
+title: Opina
+description: ¿Qué opina Salamanca? Vota en las preguntas de la semana, generadas a partir de la actualidad y los próximos eventos de la ciudad.
+date: 01-09-2026
+folder:
+permalink: opina
+---
+
+    <!-- Opina Section -->
+    <section class="featured dataset" id="opina">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="section-title">{{ page.title }}</h1>
+                <p class="section-description">{{ page.description }}</p>
+            </div>
+
+			<div id="section-content">
+
+				<p class="opina-estado" id="opinaEstado">Cargando preguntas…</p>
+
+				<div id="opinaPreguntas"></div>
+
+				<p class="opina-footnote">Las preguntas se generan a partir del <a href="/actualidad">análisis semanal de actualidad y próximos eventos</a> de la ciudad. Es un termómetro de opinión, no una votación oficial: cada navegador solo puede votar una vez por pregunta. Las preguntas que se retiran de aquí quedan con su resultado final en el <a href="/opina-archivo">archivo histórico</a>.</p>
+
+			</div>
+
+        </div>
+    </section>
+
+	<script>
+	(function () {
+		const estadoEl = document.getElementById('opinaEstado');
+		const contenedorEl = document.getElementById('opinaPreguntas');
+
+		fetch('/opina.json?v=' + Date.now(), { cache: 'no-store' })
+			.then(r => r.json())
+			.then(data => {
+				const workerUrl = (data.worker_url || '').replace(/\/$/, '');
+				const preguntas = data.preguntas || [];
+				if (!preguntas.length) {
+					estadoEl.textContent = 'Todavía no hay preguntas abiertas.';
+					return;
+				}
+				estadoEl.style.display = 'none';
+				contenedorEl.innerHTML = preguntas.map(p => `<div id="opina-slot-${p.id}"></div>`).join('');
+				preguntas.forEach(p => {
+					window.OpinaUI.montarPregunta(document.getElementById(`opina-slot-${p.id}`), workerUrl, p);
+				});
+			})
+			.catch(err => {
+				console.error('No se pudo cargar opina.json', err);
+				estadoEl.textContent = 'No se han podido cargar las preguntas.';
+			});
+	})();
+	</script>

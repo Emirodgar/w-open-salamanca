@@ -34,6 +34,89 @@ window.EventosUI = {
     }
 };
 
+// Shared rendering + voting for opina.json, used by the home teaser, /opina
+// and /opina-archivo. A "poll" here is always {id, pregunta, opciones, ...}.
+window.OpinaUI = {
+    claveVoto(preguntaId) {
+        return 'opina_voto_' + preguntaId;
+    },
+    escapeHtml(str) {
+        const div = document.createElement('div');
+        div.textContent = str;
+        return div.innerHTML;
+    },
+    // estado: { votoPrevio: string|null, archivada: bool, fechaArchivado: string|null }
+    renderPregunta(pregunta, conteos, estado) {
+        estado = estado || {};
+        const total = Object.values(conteos || {}).reduce((a, b) => a + b, 0);
+        const cerrada = estado.archivada || !!estado.votoPrevio;
+
+        const opcionesHtml = pregunta.opciones.map(opcion => {
+            const n = (conteos || {})[opcion] || 0;
+            const pct = total ? Math.round((n / total) * 100) : 0;
+            const elegida = estado.votoPrevio === opcion;
+            return `
+                <button type="button" class="opina-opcion${cerrada ? ' opina-opcion--resuelta' : ''}${elegida ? ' opina-opcion--elegida' : ''}" data-opcion="${this.escapeHtml(opcion)}" ${cerrada ? 'disabled' : ''}>
+                    <span class="opina-opcion-fill" style="width:${pct}%"></span>
+                    <span class="opina-opcion-label">${this.escapeHtml(opcion)}</span>
+                    <span class="opina-opcion-pct">${pct}%</span>
+                </button>`;
+        }).join('');
+
+        let meta = `${total} voto${total === 1 ? '' : 's'}`;
+        if (estado.archivada) {
+            meta += estado.fechaArchivado ? ` · archivada el ${estado.fechaArchivado}` : ' · pregunta archivada';
+        } else if (estado.votoPrevio) {
+            meta += ' · ya has votado';
+        }
+
+        return `
+            <div class="opina-card" data-pregunta-id="${pregunta.id}">
+                <h3 class="opina-pregunta">${this.escapeHtml(pregunta.pregunta)}</h3>
+                <div class="opina-opciones">${opcionesHtml}</div>
+                <p class="opina-meta">${meta}</p>
+            </div>`;
+    },
+    // Fetches current counts, renders into containerEl, and wires up voting
+    // unless the poll was already voted on this browser. Returns nothing;
+    // call again after DOM replacement if you need fresh listeners.
+    montarPregunta(containerEl, workerUrl, pregunta) {
+        const votoPrevio = localStorage.getItem(this.claveVoto(pregunta.id));
+        return fetch(`${workerUrl}/votos/${pregunta.id}`, { cache: 'no-store' })
+            .then(r => r.json())
+            .catch(() => ({}))
+            .then(conteos => {
+                containerEl.innerHTML = this.renderPregunta(pregunta, conteos, { votoPrevio });
+                if (!votoPrevio) this._activarClicks(containerEl, workerUrl, pregunta);
+            });
+    },
+    _activarClicks(containerEl, workerUrl, pregunta) {
+        const card = containerEl.querySelector(`[data-pregunta-id="${pregunta.id}"]`);
+        if (!card) return;
+        card.querySelectorAll('.opina-opcion').forEach(boton => {
+            boton.addEventListener('click', () => {
+                if (localStorage.getItem(this.claveVoto(pregunta.id))) return;
+                const opcion = boton.dataset.opcion;
+                card.querySelectorAll('.opina-opcion').forEach(b => b.disabled = true);
+                fetch(`${workerUrl}/votos/${pregunta.id}`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ opcion })
+                })
+                    .then(r => r.json())
+                    .then(conteos => {
+                        localStorage.setItem(this.claveVoto(pregunta.id), opcion);
+                        containerEl.innerHTML = this.renderPregunta(pregunta, conteos, { votoPrevio: opcion });
+                    })
+                    .catch(err => {
+                        console.error('No se pudo registrar el voto', err);
+                        card.querySelectorAll('.opina-opcion').forEach(b => b.disabled = false);
+                    });
+            });
+        });
+    }
+};
+
 class OpenSalamanca {
     constructor() {
         this.datasets = [];

@@ -1,0 +1,4 @@
+{
+  "nota": "Repositorio de preguntas de /opina que ya han sido retiradas de la votación activa. Cada entrada guarda el resultado final (recuento por opción) en el momento de archivarla. Una vez aquí, la pregunta ya no admite más votos (el Worker rechaza cualquier voto a un id marcado como cerrado). Sirve como base de conocimiento sobre el interés y la opinión de los usuarios a lo largo del tiempo.",
+  "preguntas_archivadas": []
+}

@@ -1,0 +1,9 @@
+name = "opina-votos"
+main = "src/index.js"
+compatibility_date = "2024-01-01"
+
+# Después de crear el namespace con `wrangler kv namespace create OPINA_VOTOS`,
+# sustituye el valor de "id" por el que te devuelva ese comando.
+[[kv_namespaces]]
+binding = "OPINA_VOTOS"
+id = "REEMPLAZA_CON_TU_ID_DE_KV"

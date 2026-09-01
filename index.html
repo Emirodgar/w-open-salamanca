@@ -72,6 +72,17 @@ description: Portal de datos abiertos y colaborativos de la ciudad de Salamanca.
         </div>
     </section>
 
+    <!-- Opina Highlight Section -->
+    <section class="opina-highlight" id="opinaHighlightSection" style="display:none;">
+        <div class="container">
+            <div class="opina-highlight-card">
+                <span class="opina-highlight-eyebrow">Opina</span>
+                <div id="opinaHighlightSlot"></div>
+                <p class="opina-highlight-vermas"><a href="/opina" class="btn btn-secondary">Ver todas las preguntas</a></p>
+            </div>
+        </div>
+    </section>
+
 	<script>
 	(function () {
 		const summaryEl = document.getElementById('actualidadHighlightSummary');
@@ -99,6 +110,18 @@ description: Portal de datos abiertos y colaborativos de la ciudad de Salamanca.
 				document.getElementById('eventosHighlightSection').style.display = tieneEventos ? '' : 'none';
 			})
 			.catch(err => console.error('No se pudo cargar eventos.json', err));
+
+		fetch('/opina.json?v=' + Date.now(), { cache: 'no-store' })
+			.then(r => r.json())
+			.then(d => {
+				const preguntas = d.preguntas || [];
+				const destacada = preguntas.find(p => p.destacada) || preguntas[0];
+				if (!destacada) return;
+				const workerUrl = (d.worker_url || '').replace(/\/$/, '');
+				document.getElementById('opinaHighlightSection').style.display = '';
+				window.OpinaUI.montarPregunta(document.getElementById('opinaHighlightSlot'), workerUrl, destacada);
+			})
+			.catch(err => console.error('No se pudo cargar opina.json', err));
 	})();
 	</script>
 

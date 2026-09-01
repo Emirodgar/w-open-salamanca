@@ -553,6 +553,143 @@
     text-decoration: underline;
 }
 
+/* Opina highlight - bloque de la home con la pregunta destacada */
+.opina-highlight {
+    padding: var(--spacing-lg) 0 0;
+}
+
+.opina-highlight-card {
+    background: white;
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: var(--spacing-xl) var(--spacing-2xl);
+    box-shadow: var(--shadow-sm);
+}
+
+.opina-highlight-eyebrow {
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    background: rgba(44, 95, 45, 0.1);
+    color: var(--primary-color);
+    padding: 0.25rem 0.75rem;
+    border-radius: 999px;
+    margin-bottom: var(--spacing-md);
+}
+
+.opina-highlight-card .opina-card {
+    box-shadow: none;
+    border: none;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.opina-highlight-vermas {
+    margin-top: var(--spacing-lg);
+}
+
+/* Opina - preguntas con barras de resultado estilo mercado de predicción */
+.opina-estado {
+    text-align: center;
+    color: var(--neutral-color);
+    padding: var(--spacing-xl) 0;
+}
+
+.opina-card {
+    background: white;
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    box-shadow: var(--shadow-sm);
+    padding: var(--spacing-lg) var(--spacing-xl);
+    margin-bottom: var(--spacing-lg);
+}
+
+.opina-pregunta {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: var(--spacing-md);
+}
+
+.opina-opciones {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
+.opina-opcion {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 44px;
+    padding: 0 var(--spacing-md);
+    background: var(--border-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    font-family: var(--font-family);
+    text-align: left;
+    transition: var(--transition-fast);
+}
+
+.opina-opcion:hover:not(:disabled) {
+    border-color: var(--primary-color);
+}
+
+.opina-opcion:disabled {
+    cursor: default;
+}
+
+.opina-opcion-fill {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(151, 188, 98, 0.45);
+    transition: width 0.4s ease;
+    z-index: 0;
+}
+
+.opina-opcion--elegida .opina-opcion-fill {
+    background: rgba(44, 95, 45, 0.55);
+}
+
+.opina-opcion-label {
+    position: relative;
+    z-index: 1;
+    flex: 1;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.opina-opcion-pct {
+    position: relative;
+    z-index: 1;
+    font-family: var(--font-mono);
+    font-weight: 700;
+    font-size: 0.85rem;
+    color: var(--text-color);
+}
+
+.opina-meta {
+    margin-top: var(--spacing-sm);
+    font-size: 0.78rem;
+    color: var(--neutral-color);
+    font-family: var(--font-mono);
+}
+
+.opina-footnote {
+    font-size: 0.82rem;
+    color: var(--neutral-color);
+    line-height: 1.6;
+    margin-top: var(--spacing-md);
+}
+
 /* Mapa de capas de Salamanca (barrios, salud, autobuses) */
 .capas-controles {
     display: flex;

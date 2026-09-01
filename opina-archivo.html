@@ -1,0 +1,55 @@
+---
+layout: default
+title: Archivo de Opina
+description: Preguntas que ya han pasado por /opina, con su resultado final. Un registro histórico de lo que ha opinado la ciudad.
+date: 01-09-2026
+folder:
+permalink: opina-archivo
+---
+
+    <!-- Opina Archivo Section -->
+    <section class="featured dataset" id="opina-archivo">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="section-title">{{ page.title }}</h1>
+                <p class="section-description">{{ page.description }}</p>
+            </div>
+
+			<div id="section-content">
+
+				<p class="opina-estado" id="opinaArchivoEstado">Cargando archivo…</p>
+
+				<div id="opinaArchivoPreguntas"></div>
+
+				<p class="opina-footnote">Estas preguntas ya no admiten voto: se muestra el resultado final del momento en que se retiraron de <a href="/opina">Opina</a>. Puedes votar en las preguntas abiertas actualmente en esa misma página.</p>
+
+			</div>
+
+        </div>
+    </section>
+
+	<script>
+	(function () {
+		const estadoEl = document.getElementById('opinaArchivoEstado');
+		const contenedorEl = document.getElementById('opinaArchivoPreguntas');
+
+		fetch('/opina-archivo.json?v=' + Date.now(), { cache: 'no-store' })
+			.then(r => r.json())
+			.then(data => {
+				const archivadas = (data.preguntas_archivadas || []).slice()
+					.sort((a, b) => (b.fecha_archivado || '').localeCompare(a.fecha_archivado || ''));
+				if (!archivadas.length) {
+					estadoEl.textContent = 'Todavía no hay preguntas archivadas.';
+					return;
+				}
+				estadoEl.style.display = 'none';
+				contenedorEl.innerHTML = archivadas.map(p =>
+					window.OpinaUI.renderPregunta(p, p.resultados, { archivada: true, fechaArchivado: p.fecha_archivado })
+				).join('');
+			})
+			.catch(err => {
+				console.error('No se pudo cargar opina-archivo.json', err);
+				estadoEl.textContent = 'No se ha podido cargar el archivo.';
+			});
+	})();
+	</script>

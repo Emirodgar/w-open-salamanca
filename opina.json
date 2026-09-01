@@ -1,0 +1,40 @@
+{
+  "worker_url": "https://opina-votos.TU-SUBDOMINIO.workers.dev",
+  "preguntas": [
+    {
+      "id": "eventos-septiembre-2026",
+      "pregunta": "¿A cuál de estos eventos de septiembre tienes más ganas de ir?",
+      "opciones": [
+        "SALAMAQ",
+        "Ferias de Salamanca (conciertos)",
+        "Feria del Caballo de Ciudad Rodrigo",
+        "A ninguno, paso este año"
+      ],
+      "basado_en": "eventos.json",
+      "fecha_creacion": "2026-09-01",
+      "destacada": true
+    },
+    {
+      "id": "unionistas-arranque-2026",
+      "pregunta": "El Unionistas ha empezado la Primera RFEF con derrota. ¿Confías en que remonte esta temporada?",
+      "opciones": [
+        "Sí, seguro",
+        "No, mal empiezan",
+        "Aún es pronto para saberlo"
+      ],
+      "basado_en": "actualidad.json",
+      "fecha_creacion": "2026-09-01"
+    },
+    {
+      "id": "frio-septiembre-2026",
+      "pregunta": "Castilla y León ha arrancado septiembre con un notable descenso de las temperaturas. ¿Ya has sacado el abrigo?",
+      "opciones": [
+        "Sí",
+        "No, aún hace buen tiempo",
+        "Depende del día"
+      ],
+      "basado_en": "actualidad.json",
+      "fecha_creacion": "2026-09-01"
+    }
+  ]
+}
