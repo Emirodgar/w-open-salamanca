@@ -1,0 +1,55 @@
+{
+  "nota": "Centros de salud públicos de atención primaria (Sacyl) en la ciudad de Salamanca, según OpenStreetMap.",
+  "centros": [
+    {
+      "nombre": "Centro de Salud Capuchinos",
+      "lat": 40.984223,
+      "lng": -5.66684
+    },
+    {
+      "nombre": "Centro de Salud Casto Prieto",
+      "lat": 40.951371,
+      "lng": -5.663607
+    },
+    {
+      "nombre": "Centro de Salud Elena Ginel Díez",
+      "lat": 40.957941,
+      "lng": -5.683777
+    },
+    {
+      "nombre": "Centro de Salud Filiberto Villalobos",
+      "lat": 40.964953,
+      "lng": -5.658496
+    },
+    {
+      "nombre": "Centro de Salud Garrido Norte Sisinio de Castro",
+      "lat": 40.979065,
+      "lng": -5.655627
+    },
+    {
+      "nombre": "Centro de Salud Miguel Armijo Moreno",
+      "lat": 40.969776,
+      "lng": -5.672767
+    },
+    {
+      "nombre": "Centro de Salud San Juan",
+      "lat": 40.971743,
+      "lng": -5.660793
+    },
+    {
+      "nombre": "Centro de Salud de Pizarrales",
+      "lat": 40.975849,
+      "lng": -5.673494
+    },
+    {
+      "nombre": "Centro de Salud la Alamedilla",
+      "lat": 40.968918,
+      "lng": -5.655144
+    },
+    {
+      "nombre": "Servicio de Urgencias de Atención Primaria",
+      "lat": 40.971472,
+      "lng": -5.661049
+    }
+  ]
+}

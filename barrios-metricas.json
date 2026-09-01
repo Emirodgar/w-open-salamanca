@@ -1,0 +1,45 @@
+{
+  "nota": "Valores agregados a partir de los datasets ya publicados en este proyecto (renta-barrios, precio-vivienda, poblacion-demografia). Cuando la fuente original agrupaba dos barrios en una sola zona (p.ej. \"Garrido Norte y Sur\"), se aplica el mismo valor a ambos barrios de esa zona. Los barrios sin dato no se colorean en el mapa.",
+  "metricas": {
+    "renta": {
+      "etiqueta": "Renta neta media por habitante",
+      "unidad": "€/hab/año",
+      "fuente": "/renta-barrios",
+      "valores": {
+        "Centro": 18450,
+        "San Bernardo": 14980,
+        "Garrido Norte": 13850,
+        "Pizarrales": 12640,
+        "San José": 11950
+      }
+    },
+    "vivienda": {
+      "etiqueta": "Precio de venta de vivienda",
+      "unidad": "€/m²",
+      "fuente": "/precio-vivienda",
+      "valores": {
+        "Centro": 2480,
+        "San Bernardo": 1890,
+        "Garrido Norte": 1350,
+        "Pizarrales": 1180,
+        "San José": 1050
+      }
+    },
+    "poblacion": {
+      "etiqueta": "Población empadronada",
+      "unidad": "habitantes",
+      "fuente": "/poblacion-demografia",
+      "valores": {
+        "Garrido Norte": 38400,
+        "Garrido Sur": 38400,
+        "Centro": 26200,
+        "Pizarrales": 18100,
+        "Blanco": 18100,
+        "San Bernardo": 15800,
+        "San José": 15800,
+        "Prosperidad": 14500,
+        "Delicias": 14500
+      }
+    }
+  }
+}

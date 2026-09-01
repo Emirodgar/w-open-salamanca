@@ -542,6 +542,63 @@
     }
 }
 
+/* Mapa de capas de Salamanca (barrios, salud, autobuses) */
+.capas-controles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-2xl);
+    margin-bottom: var(--spacing-lg);
+    padding-bottom: var(--spacing-lg);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.capas-grupo-title {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--neutral-color);
+    margin-bottom: var(--spacing-sm);
+}
+
+.capas-check {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.9rem;
+    color: var(--text-color);
+    margin-bottom: var(--spacing-xs);
+    cursor: pointer;
+}
+
+.capas-select {
+    font-family: var(--font-family);
+    font-size: 0.9rem;
+    color: var(--text-color);
+    background: white;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 0.4rem 0.6rem;
+}
+
+.capas-leyenda {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    margin-top: var(--spacing-sm);
+    font-size: 0.75rem;
+    font-family: var(--font-mono);
+    color: var(--neutral-color);
+}
+
+.capas-leyenda-barra {
+    display: inline-block;
+    width: 100px;
+    height: 10px;
+    border-radius: 5px;
+    background: linear-gradient(90deg, rgb(201, 223, 192), rgb(44, 95, 45));
+}
+
 /* Mapa de líneas de autobús urbano */
 .bus-map-controls {
     display: flex;
