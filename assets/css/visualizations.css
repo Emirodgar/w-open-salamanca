@@ -542,6 +542,17 @@
     }
 }
 
+/* Enlaces internos dentro del contenido de una publicación (referencias cruzadas) */
+#section-content a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+#section-content a:hover {
+    text-decoration: underline;
+}
+
 /* Mapa de capas de Salamanca (barrios, salud, autobuses) */
 .capas-controles {
     display: flex;
@@ -1126,14 +1137,9 @@
     border-bottom: none;
 }
 
-.eventos-col-titulo a {
+.eventos-col-titulo {
     color: var(--primary-color);
     font-weight: 600;
-    text-decoration: none;
-}
-
-.eventos-col-titulo a:hover {
-    text-decoration: underline;
 }
 
 .eventos-col-fechas {

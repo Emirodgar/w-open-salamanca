@@ -1,0 +1,147 @@
+---
+layout: default
+title: Vivienda y Turismo en Salamanca - Radiografía del Alquiler y VUT
+description: Análisis comparativo entre la evolución del precio del alquiler por distritos y la concentración espacial de las Viviendas de Uso Turístico (VUT) en la ciudad de Salamanca.
+date: 01-09-2026
+folder: Urbanismo
+permalink: vivienda-alquiler-turismo-salamanca
+---
+
+    <!-- Featured Datasets Section -->
+    <section class="featured dataset" id="datos">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">{{ page.title }}</h2>
+                <p class="section-description">{{ page.description }}</p>
+            </div>
+			
+			<div id="section-content">
+						
+  <!-- Gráfico 1: Evolución del Alquiler -->
+  <div style="margin-bottom: 40px;">
+      <canvas id="alquilerBarriosChart" width="800" height="400"></canvas>
+  </div>
+
+ 
+			<h2>Presión inmobiliaria: Alquiler residencial vs. Auge turístico</h2>
+			
+				<p>
+El mercado residencial en Salamanca atraviesa un momento de alta tensión provocado por la confluencia de dos factores estructurales: la presión ejercida por la macrocomunidad universitaria (que demanda miles de pisos de alquiler antes de octubre) y la rápida expansión de las <a href="/viviendas-turisticas-alojamiento">Viviendas de Uso Turístico (VUT)</a> en los distritos de mayor valor patrimonial.</p>
+
+<h3>Claves del mercado inmobiliario salmantino</h3>
+<ul>
+<li><b>Concentración de VUT en el Casco Histórico</b>: Más del 65% de las viviendas turísticas autorizadas se concentran en el Distrito Centro (barrios de la Catedral, San Vicente y Alamedilla). Esto reduce de forma drástica el parque de vivienda disponible para alquiler de larga duración o para familias jóvenes.</li>
+<li><b>El efecto septiembre (Estudiantes)</b>: El inicio del curso académico en la Universidad de Salamanca (USAL) genera un pico estacional artificial que <a href="/precio-vivienda-alquiler">infla los precios del metro cuadrado</a> y fomenta la contratación de alquileres por temporada (10 meses), expulsando a los residentes fijos hacia los barrios periféricos.</li>
+<li><b>Barrios refugio (Garrido y Pizarrales)</b>: Ante la imposibilidad de acceder a rentas asequibles en el centro o en el primer ensanche, la demanda residencial familiar se desplaza hacia sectores norte y oeste, tensionando también los precios en estas áreas tradicionalmente más económicas.</li>
+</ul>
+
+  <!-- Gráfico 2: Densidad de VUT por Distritos -->
+  <h2 style="margin-top: 40px;">Distribución y densidad de Viviendas de Uso Turístico (VUT)</h2>
+  <canvas id="vutDensidadChart" width="800" height="400"></canvas>
+  <p style="font-size: 0.9em; color: #555; text-align: center; margin-top: 10px;">
+    *Estimación de apartamentos turísticos censados por cada 1.000 habitantes según distritos municipales.
+  </p>
+
+			<h2>Retos regulatorios y sostenibilidad urbana</h2>
+			<p>
+La convivencia entre el turismo de fin de semana y el derecho a la vivienda se ha convertido en uno de los debates principales del urbanismo salmantino. La limitación de licencias en edificios residenciales y el control sobre la saturación de los portales en el casco antiguo buscan frenar la pérdida de vecinos empadronados en el corazón de la ciudad.
+			</p>
+
+			</div>
+			
+			<div id="section-table">
+			<table border="1" cellpadding="5" cellspacing="0">
+			  <thead>
+				<tr>
+				  <th>Distrito / Zona</th>
+				  <th>Precio Medio Alquiler (m²/mes)</th>
+				  <th>Concentración VUT (% del total)</th>
+				  <th>Tendencia Interanual</th>
+				  <th>Presión Universitaria</th>
+				</tr>
+			  </thead>
+			  <tbody>
+				<tr><td><b>Distrito Centro (Casco Antiguo)</b></td><td>11.5 € / m²</td><td>64.5%</td><td>Alza moderada (+6.2%)</td><td>Muy Alta (Alquiler temporal)</td></tr>
+				<tr><td><b>Primer Ensanche (Carmelitas / Canalejas)</b></td><td>9.8 € / m²</td><td>18.2%</td><td>Alza sostenida (+5.1%)</td><td>Alta</td></tr>
+				<tr><td><b>Zona Norte (Garrido / Alamedilla)</b></td><td>8.2 € / m²</td><td>9.1%</td><td>Alza moderada (+4.5%)</td><td>Media (Familias y estudiantes)</td></tr>
+				<tr><td><b>Zona Oeste (San Bernardo / Delicias)</b></td><td>7.5 € / m²</td><td>4.8%</td><td>Estable (+2.8%)</td><td>Baja/Media</td></tr>
+				<tr><td><b>Zona Sur y Este (Zurguén / Rollo)</b></td><td>7.0 € / m²</td><td>3.4%</td><td>Estable (+2.1%)</td><td>Baja (Predominio residencial familiar)</td></tr>
+			  </tbody>
+			</table>
+
+			</div>
+			
+			{% include categories.html %}
+            
+        </div>
+    </section>
+
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        
+        // 1. Gráfico de Evolución del Alquiler por Barrios (Bar)
+        const ctxAlquiler = document.getElementById('alquilerBarriosChart').getContext('2d');
+        new Chart(ctxAlquiler, {
+            type: 'bar',
+            data: {
+                labels: ['Distrito Centro', 'Primer Ensanche', 'Garrido / Alamedilla', 'San Bernardo / Delicias', 'Zurguén / El Rollo'],
+                datasets: [
+                    {
+                        label: 'Precio Medio Alquiler (€ / m² al mes)',
+                        data: [11.5, 9.8, 8.2, 7.5, 7.0],
+                        backgroundColor: '#1E56A0',
+                        borderRadius: 4
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    title: { display: true, text: 'Precio Medio del Alquiler Residencial por Zonas en Salamanca', font: { size: 14 } },
+                    tooltip: { mode: 'index', intersect: false }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        title: { display: true, text: 'Euros por metro cuadrado (€/m²)' }
+                    }
+                }
+            }
+        });
+
+        // 2. Gráfico de Densidad de VUT (Barras horizontales)
+        const ctxVut = document.getElementById('vutDensidadChart').getContext('2d');
+        new Chart(ctxVut, {
+            type: 'bar',
+            data: {
+                labels: ['Distrito Centro', 'Primer Ensanche', 'Garrido / Alamedilla', 'San Bernardo / Delicias', 'Zurguén / El Rollo'],
+                datasets: [
+                    {
+                        label: 'Viviendas de Uso Turístico (VUT) por cada 1.000 habitantes',
+                        data: [42.5, 12.1, 4.3, 2.8, 1.5],
+                        backgroundColor: 'rgba(168, 32, 26, 0.8)',
+                        borderColor: '#A8201A',
+                        borderWidth: 1,
+                        borderRadius: 4
+                    }
+                ]
+            },
+            options: {
+                indexAxis: 'y',
+                responsive: true,
+                plugins: {
+                    title: { display: true, text: 'Concentración de Apartamentos Turísticos (VUT) en relación a la población', font: { size: 14 } },
+                    tooltip: { mode: 'index', intersect: false }
+                },
+                scales: {
+                    x: {
+                        beginAtZero: true,
+                        title: { display: true, text: 'VUT por 1.000 habitantes' }
+                    }
+                }
+            }
+        });
+
+    });
+    </script>
