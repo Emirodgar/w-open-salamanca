@@ -3,23 +3,27 @@ name: sitemap-mapa-calor-tematico
 description: >
   Genera y actualiza el contenido de "actualidad" de opensalamanca.es
   analizando el sitemap de La Gaceta de Salamanca (lagacetadesalamanca.es):
-  produce el `actualidad.json` semanal que alimenta la página /actualidad y
-  el banner de la home, los `actualidad/YYYYMM.json` mensuales que
-  alimentan la línea de tiempo en /timeline, y `eventos.json` con los
-  próximos eventos con fecha (ferias, fiestas, festivales...) detectados
-  esa semana. Úsala SIEMPRE que el usuario pida "actualizar la
+  produce el `actualidad.json` semanal que alimenta la página /actualidad,
+  el banner de la home y la fecha de "Última actualización" de la home,
+  los `actualidad/YYYYMM.json` mensuales que alimentan la línea de tiempo
+  en /timeline, `eventos.json` con los próximos eventos con fecha (ferias,
+  fiestas, festivales...) detectados esa semana, y las preguntas de la
+  sección "Opina" (`opina.json`, que alimenta tanto la home como /opina) y
+  su histórico (`historico.json`). Al terminar, hace commit y push
+  automáticamente. Úsala SIEMPRE que el usuario pida "actualizar la
   actualidad", "generar el JSON de esta semana/mes", "analizar el sitemap
   de La Gaceta", "qué ha pasado en Salamanca esta semana/mes", "rellenar
-  el timeline", "qué eventos hay próximamente en Salamanca", o cualquier
-  variación sobre producir o refrescar el resumen de noticias locales o
-  el calendario de eventos de este proyecto — aunque no mencionen el
+  el timeline", "qué eventos hay próximamente en Salamanca", "actualizar
+  las preguntas de Opina", o cualquier variación sobre producir o
+  refrescar el resumen de noticias locales, el calendario de eventos o
+  las preguntas de opinión de este proyecto — aunque no mencionen el
   nombre de la skill ni el fichero JSON explícitamente.
 ---
 
-# Actualidad, timeline y eventos de Salamanca (opensalamanca.es)
+# Actualidad, timeline, eventos y Opina de Salamanca (opensalamanca.es)
 
 Esta skill es la versión de proyecto, adaptada a este repositorio, de un
-analizador genérico de sitemaps de medios digitales. Sirve **tres piezas
+analizador genérico de sitemaps de medios digitales. Sirve **cinco piezas
 del sitio** a la vez:
 
 1. **`actualidad.json`** (raíz del repo) — resumen semanal/quincenal que
@@ -33,6 +37,20 @@ del sitio** a la vez:
    aún no han ocurrido. A diferencia de los dos anteriores, no resume lo
    que ya ha pasado sino que mantiene un calendario vivo de lo que está
    por venir.
+4. **La fecha de "Última actualización" de la home** (tarjeta junto a
+   "Datasets"/"Categorías") — **no requiere ninguna acción tuya**: desde
+   [`assets/js/main.js`](../../../assets/js/main.js) (`loadData()` /
+   `updateStats()`), esa fecha ya toma automáticamente el más reciente
+   entre las fechas de los datasets y `periodo_cubierto.hasta` de
+   `actualidad.json`. Basta con que el paso 1 dé un `periodo_cubierto`
+   correcto (como ya hace) para que esta tarjeta avance sola en cada
+   ejecución de la skill. Solo tendrías que tocar código si algún día
+   cambia el nombre de ese campo o el mecanismo de `#lastUpdate`.
+5. **`opina.json`** (raíz del repo) y **`historico.json`** — las preguntas
+   de la sección "Opina" (mismo fichero alimenta tanto el destacado de la
+   home como la lista completa en `/opina`, así que no hace falta tocar
+   nada aparte para que aparezcan en ambos sitios) y el archivo de
+   preguntas retiradas. Ver el paso 5 más abajo.
 
 No hace falta tocar ningún otro fichero del sitio para que el contenido
 nuevo aparezca: Jekyll detecta los `.json` nuevos en `actualidad/` solo
@@ -271,6 +289,114 @@ Pasos:
      en vez de duplicarla.
 7. Actualiza `generado_en` a la fecha de la ejecución actual.
 
+## Paso 5 — Actualizar las preguntas de Opina (home y /opina)
+
+`opina.json` (raíz del repo) contiene el array `preguntas` que se muestra
+**tanto en el destacado de la home** (la pregunta con `"destacada": true`,
+o la primera si ninguna la tiene) **como en la lista completa de
+`/opina`** — es el mismo fichero para las dos superficies, así que un solo
+paso de escritura ya cubre "home y /opina" sin nada adicional.
+
+```json
+{
+  "worker_url": "https://votos.emirodgar.workers.dev/",
+  "preguntas": [
+    {
+      "id": "slug-corto-del-tema",
+      "pregunta": "¿Pregunta cerrada, en segunda persona?",
+      "opciones": ["Opción A", "Opción B", "Opción C (3-5 opciones en total)"],
+      "basado_en": "actualidad.json | eventos.json",
+      "fecha_creacion": "2026-09-10",
+      "destacada": true
+    }
+  ]
+}
+```
+
+### 5.1 — Añadir preguntas nuevas
+
+1. Revisa `conceptos_destacados` (paso 2) y `eventos.json` (paso 4) ya
+   curados en esta misma ejecución en busca de algo sobre lo que tenga
+   sentido preguntar: un evento próximo con varias opciones reales entre
+   las que elegir, una decisión o resultado local con dos posturas
+   claras, etc.
+2. **Aplica siempre esta barra de calidad, sin excepciones**: solo
+   propón una pregunta si la distribución de respuestas puede aportar
+   una conclusión con algo de interés real sobre la ciudad. Descarta
+   cualquier pregunta de "charla trivial" (tiempo, humor genérico,
+   cosas obvias) — es preferible añadir **cero preguntas nuevas** esa
+   semana a rellenar el hueco con una pregunta floja. Ante la duda, no
+   la añadas y dilo explícitamente en el resumen que le das al usuario.
+3. Si añades una, dale un `id` corto en kebab-case (p.ej.
+   `ferias-salamanca-2026`), 3-5 `opciones` con redacción neutral (evita
+   opciones que induzcan la respuesta), y usa `basado_en` para indicar de
+   qué fichero sale ("actualidad.json" o "eventos.json").
+4. **Solo una pregunta puede tener `"destacada": true`** a la vez (es la
+   que se muestra en la home): si añades una nueva que deba ser la
+   protagonista, quita la marca de la que la tenía antes.
+
+### 5.2 — Retirar preguntas que ya no son de actualidad
+
+Una pregunta debe archivarse cuando el evento al que se refería ya ha
+pasado o el tema ha quedado resuelto/obsoleto. Sigue este orden exacto
+(igual que documenta `cloudflare-worker/opina-votos/README.md`, sección
+"Archivar una pregunta"):
+
+1. **Consulta el resultado final** con una petición GET pública (no hace
+   falta autenticación ni `wrangler` para esto):
+   ```bash
+   curl -s "<worker_url sin barra final>/votos/<id-de-la-pregunta>"
+   ```
+   Devuelve el recuento por opción, p.ej. `{"Opción A": 12, "Opción B": 8}`.
+2. **Añade una entrada** a `preguntas_archivadas` en `historico.json` con
+   ese recuento, `fecha_archivado` (fecha de esta ejecución) y
+   `total_votos` (suma de todas las opciones).
+3. **Quita la pregunta** del array `preguntas` de `opina.json`. Si tenía
+   `"destacada": true`, pon esa marca en otra pregunta que siga activa
+   (o en ninguna si no queda ninguna con sentido de destacar).
+4. **Cierre en el Worker (mejor esfuerzo, no bloqueante)**: el paso
+   definitivo es `wrangler kv key put "closed:<id>" "1"
+   --namespace-id=<id>`, pero requiere la CLI de `wrangler` autenticada
+   contra la cuenta de Cloudflare del usuario, que normalmente **no**
+   está disponible en este entorno de ejecución. Si `wrangler` no está
+   instalado o no hay sesión iniciada, no falles el paso completo por
+   esto: la pregunta ya ha desaparecido de `/opina` y de la home en
+   cuanto se publica el `opina.json` sin ella (nadie puede votarla desde
+   la web), así que el riesgo real es solo alguien llamando a la API
+   directamente. Informa al usuario de que ese cierre en KV queda
+   pendiente como paso manual (los comandos exactos están en el README
+   del Worker) en vez de darlo por hecho.
+5. No archives una pregunta solo porque lleve varias semanas activa si
+   el tema sigue vigente — el criterio es relevancia, no antigüedad.
+
+## Paso 6 — Commit y push automáticos al terminar
+
+A diferencia de una edición manual cualquiera en este repo, **esta skill
+sí debe terminar haciendo commit y push por su cuenta, sin pedir
+confirmación en el chat** — es una instrucción permanente del usuario
+para las ejecuciones de esta skill en concreto (no una autorización
+general para otros cambios en el repo).
+
+1. Antes de tocar nada, comprueba con `git status` que no hay cambios a
+   medias de otra tarea sin relación en este repo; si los hay, no los
+   mezcles en este commit (usa `git add` con las rutas concretas, nunca
+   `git add -A`/`git add .`).
+2. Haz `git add` solo de los ficheros que esta skill haya escrito en esta
+   ejecución, típicamente algún subconjunto de: `actualidad.json`,
+   `actualidad/YYYYMM.json`, `eventos.json`, `opina.json`,
+   `historico.json`.
+3. Crea un commit con un mensaje breve que resuma el periodo cubierto y
+   qué se ha tocado, por ejemplo:
+   `Actualiza actualidad, timeline y Opina (8-10 sep 2026)`.
+4. Haz `git push` a la rama actual contra su remoto (`origin`, salvo que
+   el repo esté configurado de otra forma). No uses `--force` ni
+   `--no-verify`; si el push falla (p.ej. la rama remota avanzó), no lo
+   resuelvas con un `push --force` — informa al usuario y pide cómo
+   proceder.
+5. Termina el resumen al usuario indicando explícitamente que ya se ha
+   hecho commit y push (con el hash/rango si es fácil obtenerlo), para
+   que quede claro que no hace falta un paso manual adicional.
+
 ## Foco local: qué excluir siempre
 
 Además de `nacional`/`opinion`/`tu-gaceta` (excluidas por defecto), vigila
@@ -306,3 +432,16 @@ ruido evidente, añade el término a `STOPWORDS_ES` en el script o sube
   consume todavía `eventos.json`; si el usuario quiere una página pública
   de "próximos eventos", pregúntaselo aparte, esta skill solo genera el
   fichero de datos.
+- Las preguntas de Opina (paso 5) están sujetas a una barra de calidad
+  deliberadamente restrictiva: muchas semanas no darán ninguna pregunta
+  nueva, y eso es correcto, no un fallo — no rellenes el hueco con una
+  pregunta trivial solo por tener algo que mostrar.
+- Archivar una pregunta de Opina (paso 5.2) solo se completa del todo con
+  `wrangler` autenticado contra Cloudflare, que normalmente no está
+  disponible en este entorno — el cierre en KV (`closed:<id>`) puede
+  quedar como paso manual pendiente para el usuario aunque la pregunta ya
+  haya desaparecido de la web.
+- El commit y push automáticos (paso 6) son una instrucción permanente
+  del usuario específica de esta skill — no la generalices como permiso
+  para hacer push automático de otros cambios en el repo fuera de este
+  flujo.

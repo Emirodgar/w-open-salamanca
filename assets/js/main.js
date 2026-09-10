@@ -260,10 +260,17 @@ class OpenSalamanca {
     
     async loadData() {
         try {
-            const [datasetsResponse, categoriesResponse] = await Promise.all([
+            // /actualidad.json only matters where #lastUpdate is rendered (the home
+            // page) — skip the extra request on every other page in the site.
+            const necesitaActualidad = !!document.getElementById('lastUpdate');
+            const peticiones = [
                 fetch('/datasets.json'),
                 fetch('/categories.json')
-            ]);
+            ];
+            if (necesitaActualidad) {
+                peticiones.push(fetch('/actualidad.json?v=' + Date.now(), { cache: 'no-store' }));
+            }
+            const [datasetsResponse, categoriesResponse, actualidadResponse] = await Promise.all(peticiones);
             if (!datasetsResponse.ok) {
                 throw new Error(`HTTP ${datasetsResponse.status} (datasets.json)`);
             }
@@ -273,6 +280,12 @@ class OpenSalamanca {
             this.datasets = await datasetsResponse.json();
             this.categoryPages = await categoriesResponse.json();
             this.categories = this.extractCategories(this.datasets);
+
+            this.actualidadHasta = null;
+            if (actualidadResponse && actualidadResponse.ok) {
+                const actualidad = await actualidadResponse.json();
+                this.actualidadHasta = (actualidad.periodo_cubierto && actualidad.periodo_cubierto.hasta) || null;
+            }
         } catch (error) {
             console.error('Error loading data:', error);
             this.showToast('Error al cargar los datos', 'error');
@@ -285,6 +298,15 @@ class OpenSalamanca {
         const parts = dateStr.split('-').map(Number);
         if (parts.length !== 3 || parts.some(Number.isNaN)) return null;
         const [day, month, year] = parts;
+        return new Date(year, month - 1, day);
+    }
+
+    // Parses the "YYYY-MM-DD" format used by actualidad.json/eventos.json
+    parseISODate(dateStr) {
+        if (!dateStr) return null;
+        const parts = dateStr.split('-').map(Number);
+        if (parts.length !== 3 || parts.some(Number.isNaN)) return null;
+        const [year, month, day] = parts;
         return new Date(year, month - 1, day);
     }
 
@@ -396,8 +418,16 @@ class OpenSalamanca {
             this.animateNumber(totalViews, publishedThisYear);
         }
         if (lastUpdate) {
-            const mostRecent = parsedDates.length
-                ? new Date(Math.max(...parsedDates.map(date => date.getTime())))
+            // "Última actualización" reflects whichever is more recent: a dataset
+            // page's own front-matter date, or the last day covered by the latest
+            // actualidad.json run — so it advances automatically every time the
+            // "actualidad" skill regenerates that file, with no separate step needed.
+            const fechas = parsedDates.slice();
+            const fechaActualidad = this.parseISODate(this.actualidadHasta);
+            if (fechaActualidad) fechas.push(fechaActualidad);
+
+            const mostRecent = fechas.length
+                ? new Date(Math.max(...fechas.map(date => date.getTime())))
                 : null;
             lastUpdate.textContent = mostRecent ? this.formatDate(mostRecent) : 'Hoy';
         }
