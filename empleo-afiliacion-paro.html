@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Mercado de trabajo y afiliación a la Seguridad Social
-description: Evolución del paro registrado, afiliación por sectores y tasa de actividad en Salamanca
+description: Evolución de la afiliación a la Seguridad Social, distribución por sectores y perfil profesional en Salamanca
 date: 29-08-2026
 folder: Mercado Laboral
 permalink: empleo-afiliacion-paro
@@ -11,27 +11,27 @@ permalink: empleo-afiliacion-paro
     <section class="featured dataset" id="datos">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">{{ page.title }}</h2>
+                <h1 class="section-title">{{ page.title }}</h1>
                 <p class="section-description">{{ page.description }}</p>
             </div>
 			
 			<div id="section-content">
 						
-  <canvas id="paroHistoricoChart" width="800" height="400"></canvas>
+  <canvas id="afiliacionHistoricaChart" width="800" height="400"></canvas>
 
- 
+
 			<h2>Análisis de la dinámica laboral y sectores ocupacionales</h2>
-			
+
 				<p>
-El mercado laboral en Salamanca muestra una **reducción progresiva de la tasa de desempleo**, acompañada por una mayor diversificación en la afiliación a la Seguridad Social. Aunque el sector servicios continúa siendo el principal motor ocupacional, los sectores vinculados a la tecnología, la biotecnología y el ecosistema universitario han experimentado un crecimiento notable.</p>
+El mercado laboral en Salamanca muestra una **consolidación progresiva de la afiliación a la Seguridad Social**, con una recuperación sostenida tras la caída de 2020 y una mayor diversificación sectorial. Aunque el sector servicios continúa siendo el principal motor ocupacional, los sectores vinculados a la tecnología, la biotecnología y el ecosistema universitario han experimentado un crecimiento notable.</p>
 
 <h3>Indicadores destacados de empleo</h3>
 <ul>
 <li><b>Predominio del sector servicios</b>: Actividades como <a href="/densidad-comercial">el comercio</a>, la educación, la hostelería y la sanidad pública concentran más del 78% del total de las afiliaciones en el municipio.</li>
-<li><b>Estacionalidad vinculada al calendario académico</b>: Las fluctuaciones de desempleo reflejan una fuerte correlación con los periodos lectivos universitarios y las campañas turísticas estivales.</li>
+<li><b>Estacionalidad vinculada al calendario académico</b>: Las fluctuaciones de afiliación reflejan una fuerte correlación con los periodos lectivos universitarios y las campañas turísticas estivales.</li>
 </ul>
 
-<p>Estos datos de afiliación se pueden cruzar con la <a href="/desempleo-afiliacion">evolución histórica del desempleo</a> en la capital, que ofrece una perspectiva a más largo plazo del comportamiento del paro registrado y su distribución sectorial.</p>
+<p>Este crecimiento de la afiliación es la otra cara de la <a href="/desempleo-afiliacion">evolución histórica del paro registrado</a> en la capital, que detalla el descenso del desempleo y su distribución por grandes sectores.</p>
 
   <h2>Distribución de afiliados a la Seguridad Social por sector económico (%)</h2>
   <canvas id="sectoresAfiliacionChart" width="800" height="400"></canvas>
@@ -67,17 +67,17 @@ El mercado laboral en Salamanca muestra una **reducción progresiva de la tasa d
     </section>
 
 	<script>
-    // Gráfico 1: Evolución del Paro Registrado (2018-2025)
-    const ctxParo = document.getElementById('paroHistoricoChart').getContext('2d');
-    const paroHistoricoChart = new Chart(ctxParo, {
+    // Gráfico 1: Evolución de la Afiliación Total a la Seguridad Social (2018-2025)
+    const ctxAfil = document.getElementById('afiliacionHistoricaChart').getContext('2d');
+    const afiliacionHistoricaChart = new Chart(ctxAfil, {
       type: 'line',
       data: {
         labels: ['2018', '2019', '2020', '2021', '2022', '2023', '2024', '2025'],
         datasets: [{
-          label: 'Desempleados Registrados (Personas)',
-          data: [14200, 13400, 16800, 14900, 12800, 11500, 10600, 9950],
-          borderColor: '#E63946',
-          backgroundColor: 'rgba(230, 57, 70, 0.1)',
+          label: 'Total Afiliados a la Seguridad Social (Capital)',
+          data: [76500, 78200, 74800, 76900, 79400, 81600, 83100, 84500],
+          borderColor: '#2C5F2D',
+          backgroundColor: 'rgba(44, 95, 45, 0.1)',
           borderWidth: 2,
           tension: 0.2,
           fill: true
@@ -86,7 +86,7 @@ El mercado laboral en Salamanca muestra una **reducción progresiva de la tasa d
       options: {
         responsive: true,
         scales: {
-          y: { title: { display: true, text: 'Número de Personas en Paro' }, beginAtZero: false },
+          y: { title: { display: true, text: 'Número de Afiliados' }, beginAtZero: false },
           x: { title: { display: true, text: 'Año' } }
         }
       }

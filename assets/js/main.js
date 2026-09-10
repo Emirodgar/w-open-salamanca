@@ -156,7 +156,8 @@ class OpenSalamanca {
         this.setupMobileMenu();
         this.setupSearch();
         this.setupUpload();
-        
+        this.capDonutCharts();
+
         // Load initial data
         await this.loadData();
         this.renderCategories();
@@ -453,6 +454,24 @@ class OpenSalamanca {
         }, 30);
     }
     
+    // Circular charts (doughnut/pie/polarArea) don't need the full content width the
+    // way bar/line charts do, and Chart.js sizes a responsive canvas to its parent —
+    // so any such chart, on any page (present or future), gets auto-wrapped in a
+    // capped-width container instead of relying on each page remembering to do it.
+    capDonutCharts() {
+        if (typeof Chart === 'undefined') return;
+        document.querySelectorAll('canvas').forEach(canvas => {
+            if (canvas.closest('.chart-wrapper-sm')) return;
+            const chart = Chart.getChart(canvas);
+            if (!chart || !['doughnut', 'pie', 'polarArea'].includes(chart.config.type)) return;
+            const wrapper = document.createElement('div');
+            wrapper.className = 'chart-wrapper-sm';
+            canvas.parentNode.insertBefore(wrapper, canvas);
+            wrapper.appendChild(canvas);
+            chart.resize();
+        });
+    }
+
     initializeCharts() {
         // Initialize sample charts
         setTimeout(() => {
