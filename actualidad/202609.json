@@ -1,7 +1,7 @@
 {
   "mes": "2026-09",
   "titulo_mes": "Septiembre 2026",
-  "resumen_mes": "El mes arranca con la temporada de ferias en marcha (SALAMAQ y la Feria del Caballo de Ciudad Rodrigo), las últimas fiestas patronales de la provincia, varios accidentes de tráfico con heridos en la capital y un notable descenso de las temperaturas en toda Castilla y León.",
+  "resumen_mes": "El mes arranca con la temporada de ferias en marcha (SALAMAQ, que cierra con récord de 90.000 visitantes, y la Feria del Caballo de Ciudad Rodrigo) y llega a su ecuador con las Ferias y Fiestas de Salamanca, que llenan la Plaza Mayor de conciertos multitudinarios. La provincia encadena fiestas patronales, mientras varios accidentes de tráfico —incluida una muerte tras un encierro en Villarino de los Aires—, el buen papel copero de Salamanca UDS y Santa Marta y un notable descenso de las temperaturas completan la fotografía de estos primeros diez días.",
   "hitos": [
     {
       "fecha": "2026-09-01",
@@ -10,6 +10,38 @@
       "descripcion": "La Feria del Caballo de Ciudad Rodrigo consolida su atractivo como cita ganadera de referencia en la provincia, mientras Cabrerizos abre inscripciones para su III Feria Agroalimentaria.",
       "fuente": "sin fuente directa",
       "destacado": true
+    },
+    {
+      "fecha": "2026-09-09",
+      "titulo": "Las Ferias y Fiestas de Salamanca llenan la Plaza Mayor de conciertos",
+      "categoria": "Cultura",
+      "descripcion": "Tras el pregón, la Plaza Mayor ha acogido conciertos multitudinarios de Tony Hadley y Gente de Zona junto a La Gozadera, calificado como el concierto más caro de la historia del cartel ferial.",
+      "fuente": "https://www.lagacetadesalamanca.es/salamanca/plaza-mayor-convierte-gozadera-concierto-caro-historia-20260909223905-nt.html",
+      "destacado": false
+    },
+    {
+      "fecha": "2026-09-09",
+      "titulo": "Salamaq 2026 cierra con récord de 90.000 visitantes",
+      "categoria": "Economía",
+      "descripcion": "La feria agropecuaria se despide haciendo historia, con récord de asistencia gracias a más de 90.000 visitantes y el reconocimiento al ejemplar 'Valiente'.",
+      "fuente": "https://www.lagacetadesalamanca.es/campo/salamaq-2026-historia-record-valiente-90000-visitantes-20260909132558-nt.html",
+      "destacado": false
+    },
+    {
+      "fecha": "2026-09-09",
+      "titulo": "Salamanca UDS y Santa Marta avanzan en la Copa RFEF",
+      "categoria": "Deportes",
+      "descripcion": "El Salamanca UDS remontó (3-2) de la mano de Muniain y el Santa Marta hizo lo propio (2-1) en el San Casto; ambos conocen ya a sus posibles rivales para los octavos de final.",
+      "fuente": "https://www.lagacetadesalamanca.es/deportes/futbol-local/locura-san-casto-santa-marta-remonta-ultimos-20260909205943-nt.html",
+      "destacado": false
+    },
+    {
+      "fecha": "2026-09-09",
+      "titulo": "Fallece la mujer herida en el encierro de Villarino de los Aires",
+      "categoria": "Sucesos",
+      "descripcion": "La mujer de 91 años que resultó herida durante un encierro en Villarino de los Aires ha fallecido, según ha confirmado el Ayuntamiento.",
+      "fuente": "https://www.lagacetadesalamanca.es/provincia/fallece-mujer-herida-encierro-villarino-aires-20260909104105-nt.html",
+      "destacado": false
     },
     {
       "fecha": "2026-09-01",

@@ -1,5 +1,5 @@
 {
-  "generado_en": "2026-09-01T15:10:00+00:00",
+  "generado_en": "2026-09-10T09:00:00+00:00",
   "eventos": [
     {
       "titulo": "Ferias de Salamanca 2026",
@@ -7,17 +7,26 @@
       "fecha_inicio": "2026-09-06",
       "fecha_fin": "2026-09-15",
       "lugar": "Plaza Mayor y distintos puntos de la ciudad",
-      "descripcion": "El Pregón de Ferias del 8 de septiembre abre el programa oficial, con conciertos gratuitos en la Plaza Mayor (Julieta Venegas, Tony Hadley, Gente de Zona, M-Clan, Valeria Castro...), teatro en el Teatro Liceo, circo en el Patio Chico y actividades familiares por toda la ciudad.",
+      "descripcion": "El Pregón de Ferias del 8 de septiembre abrió el programa oficial, con conciertos gratuitos en la Plaza Mayor (Tony Hadley, Gente de Zona, La Gozadera...), teatro en el Teatro Liceo, circo en el Patio Chico y actividades familiares por toda la ciudad.",
       "fuente": "https://ciudaddecultura.org/es/programacion/"
     },
     {
-      "titulo": "SALAMAQ 2026 - 37ª Exposición Internacional de Ganado Puro",
-      "categoria": "Cultura",
-      "fecha_inicio": "2026-09-03",
-      "fecha_fin": "2026-09-07",
-      "lugar": "Recinto Ferial de Salamanca",
-      "descripcion": "La feria agropecuaria abre sus puertas con horario ininterrumpido de 11:00 a 21:00 horas, con exposición de ganado, actividades y transporte gratuito habilitado para los visitantes.",
-      "fuente": "https://www.lagacetadesalamanca.es/campo/guia-practica-salamaq-fechas-horarios-entradas-autobuses-20260901130925-nt.html"
+      "titulo": "Tercera Marcha contra el Cáncer de Cabrerizos",
+      "categoria": "Sociedad",
+      "fecha_inicio": "2026-09-20",
+      "fecha_fin": null,
+      "lugar": "Cabrerizos",
+      "descripcion": "Cabrerizos celebra la tercera edición de su marcha solidaria contra el cáncer.",
+      "fuente": "https://www.lagacetadesalamanca.es/provincia/tercera-marcha-cancer-cabrerizos-fecha-septiembre-20260909122035-nt.html"
+    },
+    {
+      "titulo": "Semana de concienciación sobre el Alzheimer de Guijuelo",
+      "categoria": "Sociedad",
+      "fecha_inicio": "2026-09-18",
+      "fecha_fin": "2026-09-25",
+      "lugar": "Guijuelo",
+      "descripcion": "Guijuelo dedica una semana a la concienciación sobre el alzheimer con distintas actividades.",
+      "fuente": "https://www.lagacetadesalamanca.es/provincia/guijuelo-celebrara-septiembre-semana-concienciacion-sobre-alzheimer-20260909185150-nt.html"
     },
     {
       "titulo": "Feria del Caballo de Ciudad Rodrigo (25º aniversario)",

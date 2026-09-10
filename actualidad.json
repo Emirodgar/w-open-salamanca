@@ -1,11 +1,11 @@
 {
   "url_base": "https://www.lagacetadesalamanca.es",
-  "generado_en": "2026-09-01T14:30:00+00:00",
+  "generado_en": "2026-09-10T09:00:00+00:00",
   "periodo_cubierto": {
-    "desde": "2026-08-30",
-    "hasta": "2026-09-01"
+    "desde": "2026-09-08",
+    "hasta": "2026-09-10"
   },
-  "total_urls_analizadas": 109,
+  "total_urls_analizadas": 115,
   "secciones_excluidas": [
     "nacional",
     "opinion",
@@ -13,118 +13,110 @@
     "gente-estilo",
     "podcast"
   ],
-  "nota_cobertura": "El sitemap consultado esta vez solo contenía URLs de los últimos 3 días (30 de agosto a 1 de septiembre), un periodo más corto que una semana completa: es un sitemap 'rolling' y en este momento cubre menos días de los habituales. El análisis y el resumen siguientes reflejan únicamente ese periodo real, no una semana entera.",
+  "nota_cobertura": "El sitemap consultado esta vez solo contenía URLs de los últimos 3 días (8 a 10 de septiembre), un periodo más corto que una semana completa: es un sitemap 'rolling' y en este momento cubre menos días de los habituales. El análisis y el resumen siguientes reflejan únicamente ese periodo real, no una semana entera.",
   "por_seccion": [
-    ["salamanca", 32],
-    ["provincia", 21],
-    ["deportes", 20],
-    ["campo", 13],
-    ["sucesos", 10],
-    ["cine-y-series", 3],
-    ["especiales", 2],
+    ["salamanca", 40],
+    ["provincia", 23],
+    ["deportes", 22],
+    ["sucesos", 11],
+    ["campo", 10],
+    ["toros", 4],
     ["encuestas", 2],
     ["virales", 2],
-    ["toros", 2],
-    ["castilla-y-leon", 1],
-    ["internacional", 1]
+    ["castilla-y-leon", 1]
   ],
-  "por_subseccion": [],
-  "por_tipo_contenido": [],
+  "por_subseccion": [
+    ["deportes/futbol-local", 14],
+    ["deportes/baloncesto-local", 2],
+    ["deportes/deporte-base", 1]
+  ],
+  "por_tipo_contenido": [
+    ["noticia", 114],
+    ["directo / en vivo", 1]
+  ],
   "heatmap_calendario": [
-    {"fecha": "2026-08-30", "total": 23, "salamanca": 6, "provincia": 5, "deportes": 6, "campo": 2, "sucesos": 2, "castilla-y-leon": 0},
-    {"fecha": "2026-08-31", "total": 51, "salamanca": 15, "provincia": 10, "deportes": 8, "campo": 8, "sucesos": 5, "castilla-y-leon": 1},
-    {"fecha": "2026-09-01", "total": 40, "salamanca": 11, "provincia": 6, "deportes": 6, "campo": 3, "sucesos": 3, "castilla-y-leon": 0}
+    {"fecha": "2026-09-08", "total": 31, "salamanca": 9, "provincia": 6, "deportes": 7, "sucesos": 2, "campo": 4, "toros": 2, "encuestas": 1, "virales": 0, "castilla-y-leon": 0},
+    {"fecha": "2026-09-09", "total": 65, "salamanca": 23, "provincia": 12, "deportes": 14, "sucesos": 7, "campo": 4, "toros": 1, "encuestas": 1, "virales": 2, "castilla-y-leon": 1},
+    {"fecha": "2026-09-10", "total": 19, "salamanca": 8, "provincia": 5, "deportes": 1, "sucesos": 2, "campo": 2, "toros": 1, "encuestas": 0, "virales": 0, "castilla-y-leon": 0}
   ],
   "conceptos_destacados": [
     {
-      "concepto": "Unionistas arrastra un mal arranque de temporada",
-      "piezas": 5,
-      "seccion_principal": "deportes",
-      "desde": "2026-08-30",
-      "hasta": "2026-09-01",
+      "concepto": "Las Ferias y Fiestas llenan la Plaza Mayor",
+      "piezas": 19,
+      "seccion_principal": "salamanca",
+      "desde": "2026-09-08",
+      "hasta": "2026-09-10",
       "ejemplos_redactados": [
-        "El Unionistas encadena un mal inicio de competición tras su debut liguero, con la afición pidiendo una reacción rápida del equipo.",
-        "El club ya conoce los horarios de la tercera y cuarta jornada, mientras la prensa local hace balance de lo visto ante el Lugo."
+        "El pregón de las Ferias y Fiestas ha abierto una semana marcada por la música en la Plaza Mayor: primero con Tony Hadley bajo la lluvia y después con un multitudinario concierto de Gente de Zona y La Gozadera, calificado como el más caro en la historia del cartel ferial.",
+        "La Feria de Día mantiene su ambiente de siempre con casetas como Barvel o La Luisa, mientras la organización destaca que el evento beneficia al conjunto de la ciudad."
       ]
     },
     {
-      "concepto": "Santa Marta de Tormes conoce rivales de Copa mientras vive otro susto por un incendio",
-      "piezas": 4,
-      "seccion_principal": "deportes",
-      "desde": "2026-08-30",
-      "hasta": "2026-08-31",
-      "ejemplos_redactados": [
-        "Recién proclamado campeón de la fase regional de la Copa RFEF, el conjunto de Santa Marta ya conoce a sus primeros rivales en la eliminatoria.",
-        "El municipio ha vivido un nuevo susto por un incendio en un solar, que quedó controlado sin más consecuencias."
-      ]
-    },
-    {
-      "concepto": "Arranca SALAMAQ con la llegada de los primeros animales",
-      "piezas": 4,
+      "concepto": "Salamaq 2026 cierra con récord de visitantes",
+      "piezas": 3,
       "seccion_principal": "campo",
-      "desde": "2026-08-31",
-      "hasta": "2026-09-01",
+      "desde": "2026-09-08",
+      "hasta": "2026-09-09",
       "ejemplos_redactados": [
-        "La feria agropecuaria SALAMAQ ha recibido a sus primeros animales, entre ellos ejemplares de raza Limusín y Duroc.",
-        "Unicaja refuerza su cercanía con el sector agropecuario patrocinando una feria que ya cuenta con guía práctica de horarios y autobuses para los visitantes."
+        "Salamaq 2026 se despide haciendo historia, con récord de asistencia gracias a más de 90.000 visitantes y el reconocimiento al ejemplar 'Valiente'.",
+        "El recinto ferial ya se vacía en un ir y venir de camiones, tras acoger también las primeras carreras de la ternera morucha nacida en la propia feria."
       ]
     },
     {
-      "concepto": "La Feria del Caballo de Ciudad Rodrigo y otras citas ganaderas de la provincia",
-      "piezas": 3,
-      "seccion_principal": "provincia",
-      "desde": "2026-08-30",
-      "hasta": "2026-09-01",
+      "concepto": "Salamanca UDS y Santa Marta avanzan en la Copa RFEF",
+      "piezas": 6,
+      "seccion_principal": "deportes",
+      "desde": "2026-09-09",
+      "hasta": "2026-09-09",
       "ejemplos_redactados": [
-        "La Feria del Caballo de Ciudad Rodrigo consolida su atractivo como cita ganadera de referencia en la provincia.",
-        "Cabrerizos abre el plazo de inscripción para su III Feria Agroalimentaria, en paralelo a otras citas del calendario ferial de finales de verano."
+        "Un fin de semana copero redondo para el fútbol salmantino: el Salamanca UDS remontó (3-2) de la mano de Muniain y el Santa Marta hizo lo propio (2-1) en el San Casto, en la ida de la Copa RFEF.",
+        "Ambos equipos ya conocen a sus posibles rivales para el sorteo de los octavos de final."
       ]
     },
     {
-      "concepto": "Béjar amplía el depósito de Fuentebuena y celebra San Ramón",
-      "piezas": 3,
-      "seccion_principal": "provincia",
-      "desde": "2026-08-31",
-      "hasta": "2026-08-31",
+      "concepto": "PISA: Castilla y León resiste pese al batacazo nacional",
+      "piezas": 2,
+      "seccion_principal": "salamanca",
+      "desde": "2026-09-08",
+      "hasta": "2026-09-09",
       "ejemplos_redactados": [
-        "El Ayuntamiento de Béjar da luz verde a la ampliación del depósito de Fuentebuena para garantizar el suministro de agua.",
-        "La ciudad ha celebrado además el día de San Ramón y ha entregado sus distinciones y honores de cara a finales de septiembre."
+        "Castilla y León resiste en la élite del informe PISA pese al batacazo generalizado a nivel nacional, aunque pierde su liderazgo autonómico en la comparativa.",
+        "El presidente Mañueco ha responsabilizado al Gobierno central de la debacle educativa, asegurando que 'trivializar la educación tiene consecuencias'."
       ]
     },
     {
-      "concepto": "Fiestas de verano en los pueblos de la provincia",
-      "piezas": 3,
-      "seccion_principal": "provincia",
-      "desde": "2026-08-31",
-      "hasta": "2026-09-01",
-      "ejemplos_redactados": [
-        "Los pueblos de la provincia despiden agosto con música, tradición y actividades que llenan sus fiestas patronales.",
-        "Velles ha sido uno de los últimos municipios en cerrar sus fiestas de verano con un ambiente refrescante."
-      ]
-    },
-    {
-      "concepto": "Varios heridos en accidentes de tráfico en la capital",
-      "piezas": 3,
+      "concepto": "Varios heridos en accidentes de tráfico",
+      "piezas": 7,
       "seccion_principal": "sucesos",
-      "desde": "2026-08-31",
-      "hasta": "2026-09-01",
+      "desde": "2026-09-08",
+      "hasta": "2026-09-09",
       "ejemplos_redactados": [
-        "Un motorista ha resultado herido tras colisionar con un turismo en Salamanca capital.",
-        "Otras dos colisiones, una de ellas por alcance en la zona de Reina Berenguela, han dejado más heridos en la ciudad estos días."
+        "La provincia ha vivido varios accidentes de tráfico con heridos, entre ellos un motorista en estado grave en La Alberca y un trabajador trasladado en estado crítico tras quedar atrapado bajo una carretilla en Huerta.",
+        "En la capital, varias colisiones han dejado heridos en las avenidas de Villamayor, Mirat y los Cipreses, mientras en la A-62 la Guardia Civil detenía a un conductor que circulaba a 218 km/h."
       ]
     },
     {
-      "concepto": "Castilla y León arranca septiembre con temperaturas bajas",
-      "piezas": 3,
-      "seccion_principal": "castilla-y-leon",
-      "desde": "2026-08-31",
-      "hasta": "2026-09-01",
+      "concepto": "Fallece la mujer herida en el encierro de Villarino de los Aires",
+      "piezas": 1,
+      "seccion_principal": "provincia",
+      "desde": "2026-09-09",
+      "hasta": "2026-09-09",
       "ejemplos_redactados": [
-        "La comunidad ha comenzado la semana con un notable descenso de las temperaturas, liderando los registros más fríos.",
-        "Los embalses de Castilla y León se recuperan tras las tormentas de la semana pasada."
+        "La mujer de 91 años que resultó herida durante un encierro en Villarino de los Aires ha fallecido, según ha confirmado el Ayuntamiento."
+      ]
+    },
+    {
+      "concepto": "Fiestas patronales en los pueblos de la provincia",
+      "piezas": 5,
+      "seccion_principal": "provincia",
+      "desde": "2026-09-09",
+      "hasta": "2026-09-09",
+      "ejemplos_redactados": [
+        "Los pueblos de la provincia siguen con su calendario de fiestas patronales: Béjar recupera la normalidad tras unas fiestas con balance positivo, mientras Cantagallo y Martiago celebran sus fiestas en honor al Cristo.",
+        "Guijuelo, por su parte, ya conoce a su pregonero para las fiestas del Cristo de Valvanera de Sorihuela."
       ]
     }
   ],
-  "resumen_borrador": "Se han publicado 114 noticias entre el 2026-08-30 y el 2026-09-01. La actividad se ha concentrado sobre todo en salamanca (32 piezas), provincia (21 piezas), deportes (20 piezas).\n\nLos conceptos con más piezas relacionadas son: Unionistas; Santa Marta; Salamaq; Feria. Revisa 'evidencia' de cada concepto para redactar el resumen final.",
-  "resumen": "Estos últimos días de agosto y primeros de septiembre han estado marcados por el arranque de la temporada de ferias: SALAMAQ ha recibido ya a sus primeros animales en la capital, mientras Ciudad Rodrigo celebra su tradicional Feria del Caballo y Cabrerizos abre inscripciones para su feria agroalimentaria. En paralelo, los pueblos de la provincia despiden agosto con sus últimas fiestas patronales, y Béjar ha aprobado la ampliación de su depósito de Fuentebuena además de celebrar el día de San Ramón.\n\nEn deportes, el Unionistas arrastra un mal arranque liguero y ya mira a las próximas jornadas, mientras Santa Marta de Tormes —recién campeón de la fase regional de la Copa RFEF— conoce a sus primeros rivales de Copa y vive un nuevo susto por un incendio en un solar, controlado sin más consecuencias. La capital ha registrado también varios accidentes de tráfico con heridos, y Castilla y León ha arrancado septiembre con un notable descenso de las temperaturas, aunque los embalses se recuperan tras las últimas tormentas.\n\nNota: el sitemap consultado esta vez solo cubría los últimos 3 días (30 de agosto a 1 de septiembre) en lugar de una semana completa, así que este resumen es más breve de lo habitual — la próxima actualización debería recuperar un rango más amplio."
+  "resumen_borrador": "Se han publicado 115 noticias entre el 2026-09-08 y el 2026-09-10. La actividad se ha concentrado sobre todo en salamanca (40 piezas), provincia (23 piezas), deportes (22 piezas).\n\nLos conceptos con más piezas relacionadas son: Plaza; Santa · Marta; Gente · Zona; San. Revisa 'evidencia' de cada concepto para redactar el resumen final.",
+  "resumen": "Las Ferias y Fiestas de Salamanca han copado la actualidad de estos días, con la Plaza Mayor como epicentro: tras el pregón —protagonizado por una particular oda a la rana y no exento de polémica, con la expulsión de varios manifestantes de la Chinchibarra—, la plaza ha acogido conciertos multitudinarios de Tony Hadley (bajo la lluvia) y Gente de Zona, además de La Gozadera, calificado como el concierto más caro de la historia del cartel ferial. En paralelo, la Feria de Día mantiene su ambiente tradicional con puestos como Barvel o La Luisa.\n\nSalamaq ha cerrado su edición de 2026 batiendo récords, con más de 90.000 visitantes y el reconocimiento a 'Valiente' como ejemplar destacado, mientras el recinto ferial se vacía ya camino de la próxima cita. En el plano deportivo, el fin de semana copero ha dejado buenas noticias para la ciudad: el Salamanca UDS remontó (3-2) de la mano de Muniain y el Santa Marta hizo lo propio (2-1) en el San Casto, y ambos conocen ya a sus posibles rivales para los octavos de la Copa RFEF.\n\nLa provincia también ha vivido un fin de semana marcado por la seguridad vial, con varios heridos en colisiones en la capital (avenidas Mirat, Villamayor y Cipreses) y en carreteras de la provincia (La Alberca, Barceo), además del fallecimiento de una mujer de 91 años que resultó herida durante un encierro en Villarino de los Aires. En el ámbito educativo, Castilla y León ha resistido en la élite del informe PISA pese al batacazo nacional, aunque pierde el liderazgo autonómico, una debacle que el presidente Mañueco ha atribuido al Gobierno central."
 }
