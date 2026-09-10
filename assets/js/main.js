@@ -464,11 +464,25 @@ class OpenSalamanca {
             if (canvas.closest('.chart-wrapper-sm')) return;
             const chart = Chart.getChart(canvas);
             if (!chart || !['doughnut', 'pie', 'polarArea'].includes(chart.config.type)) return;
+
             const wrapper = document.createElement('div');
             wrapper.className = 'chart-wrapper-sm';
             canvas.parentNode.insertBefore(wrapper, canvas);
             wrapper.appendChild(canvas);
-            chart.resize();
+
+            // Force the browser to lay out the new wrapper before touching the chart —
+            // without this, Chart.js measures the container before its new (capped)
+            // size has actually been computed, and still sizes to the old full width.
+            void wrapper.offsetWidth;
+
+            // Chart.js also measures and locks in the canvas size against whatever
+            // container it had at construction time — moving it afterwards and calling
+            // resize() (even with an explicit size) does NOT pick up the new container.
+            // Destroying and recreating the chart with the same config, now that the
+            // canvas already sits in the capped (and laid-out) wrapper, does.
+            const config = chart.config;
+            chart.destroy();
+            new Chart(canvas.getContext('2d'), config);
         });
     }
 
