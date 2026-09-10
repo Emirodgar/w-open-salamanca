@@ -1,0 +1,143 @@
+---
+layout: default
+title: Calendario y Análisis de Carreras Populares en Salamanca
+description: Guía completa de las pruebas de running y carreras populares en la ciudad de Salamanca, abarcando desde distancias cortas hasta maratones y medias maratones.
+date: 01-09-2026
+folder: Deporte
+permalink: carreras-populares-salamanca
+---
+
+    <!-- Featured Datasets Section -->
+    <section class="featured dataset" id="datos">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">{{ page.title }}</h2>
+                <p class="section-description">{{ page.description }}</p>
+            </div>
+			
+			<div id="section-content">
+						
+  <!-- Gráfico 1: Participación por Distancias -->
+  <div style="margin-bottom: 40px;">
+      <canvas id="carrerasParticipacionChart" width="800" height="400"></canvas>
+  </div>
+
+ 
+			<h2>El auge del running popular: Tradición y circuitos urbanos</h2>
+			
+				<p>
+Salamanca cuenta con un calendario de pruebas atléticas consolidado que moviliza a miles de corredores populares y atletas federados a lo largo del año. La orografía de la ciudad, combinada con circuitos monumentales que atraviesan el casco histórico, convierte a estas citas en eventos de gran atractivo deportivo y turístico.</p>
+
+<h3>Claves del calendario atlético salmantino</h3>
+<ul>
+<li><b>Media Maratón Ciudad de Salamanca</b>: Es la prueba reina sobre asfalto. Su recorrido homologado discurre por las principales avenidas y zonas monumentales, atrayendo a corredores de toda la región gracias a su excelente organización y ambiente en las calles.</li>
+<li><b>San Silvestre Salmantina</b>: Celebrada cada fin de año, es una de las carreras más masivas y festivas de España. Destaca por su alta participación popular, el uso masivo de disfraces y una atmósfera inigualable que llena el centro histórico de público.</li>
+<li><b>Carreras Solidarias y de Distancias Cortas (5K y 10K)</b>: Pruebas como la Carrera de la Mujer o eventos organizados por campus universitarios fomentan la iniciación al running, combinando la práctica deportiva con causas benéficas y un marcado carácter inclusivo.</li>
+</ul>
+
+  <!-- Gráfico 2: Evolución de Inscritos -->
+  <h2 style="margin-top: 40px;">Evolución de la participación en las principales pruebas</h2>
+  <canvas id="carrerasEvolucionChart" width="800" height="400"></canvas>
+  <p style="font-size: 0.9em; color: #555; text-align: center; margin-top: 10px;">
+    *Número aproximado de participantes llegados a meta en las pruebas de referencia de la ciudad.
+  </p>
+
+			<h2>Impacto deportivo y dinamización local</h2>
+			<p>
+El calendario de carreras populares no solo fomenta hábitos de vida saludables entre la ciudadanía, sino que genera un importante retorno económico en la hostelería y la ocupación hotelera durante los fines de semana de competición.
+			</p>
+
+			</div>
+			
+			<div id="section-table">
+			<table border="1" cellpadding="5" cellspacing="0">
+			  <thead>
+				<tr>
+				  <th>Nombre de la Prueba</th>
+				  <th>Distancia Principal</th>
+				  <th>Época del Año</th>
+				  <th>Participación Estimada</th>
+				  <th>Perfil del Recorrido</th>
+				</tr>
+			  </thead>
+			  <tbody>
+				<tr><td><b>Media Maratón Ciudad de Salamanca</b></td><td>21,097 km</td><td>Primavera (Marzo/Abril)</td><td>2.500 - 3.000</td><td>Urbano, mixto (monumental y avenidas)</td></tr>
+				<tr><td><b>San Silvestre Salmantina</b></td><td>10 km (aprox.)</td><td>31 de Diciembre</td><td>6.000 - 7.000</td><td>Urbano / Festivo (Centro Histórico)</td></tr>
+				<tr><td><b>10K Universitas (USAL)</b></td><td>10 km y 5 km</td><td>Otoño (Octubre)</td><td>1.200 - 1.500</td><td>Rápido, entorno de campus universitarios</td></tr>
+				<tr><td><b>Carrera Popular Bulevar</b></td><td>5 km y 10 km</td><td>Invierno / Verano</td><td>800 - 1.000</td><td>Familiar / Periférico</td></tr>
+			  </tbody>
+			</table>
+
+			</div>
+			
+			{% include categories.html %}
+            
+        </div>
+    </section>
+
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        
+        // 1. Gráfico de Participación por Distancias (Doughnut)
+        const ctxParticipacion = document.getElementById('carrerasParticipacionChart').getContext('2d');
+        new Chart(ctxParticipacion, {
+            type: 'doughnut',
+            data: {
+                labels: ['Pruebas 10K', 'Media Maratón (21K)', 'Carreras Cortas / 5K', 'San Silvestre (Masiva)'],
+                datasets: [
+                    {
+                        label: 'Distribución de Corredores por Tipo de Prueba',
+                        data: [30, 25, 15, 30],
+                        backgroundColor: ['#1E56A0', '#A8201A', '#64748b', '#2E8B57'],
+                        borderWidth: 1
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    title: { display: true, text: 'Distribución porcentual de participantes según el tipo de distancia', font: { size: 14 } },
+                    legend: { position: 'bottom' }
+                }
+            }
+        });
+
+        // 2. Gráfico de Evolución de Inscritos (Líneas / Barras)
+        const ctxEvolucion = document.getElementById('carrerasEvolucionChart').getContext('2d');
+        new Chart(ctxEvolucion, {
+            type: 'bar',
+            data: {
+                labels: ['2023', '2024', '2025', '2026 (Est.)'],
+                datasets: [
+                    {
+                        label: 'Media Maratón',
+                        data: [2200, 2400, 2600, 2800],
+                        backgroundColor: '#1E56A0',
+                        borderRadius: 4
+                    },
+                    {
+                        label: 'San Silvestre Salmantina',
+                        data: [5500, 6000, 6200, 6500],
+                        backgroundColor: '#A8201A',
+                        borderRadius: 4
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    title: { display: true, text: 'Evolución histórica de llegados a meta en grandes pruebas', font: { size: 14 } },
+                    tooltip: { mode: 'index', intersect: false }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        title: { display: true, text: 'Número de Corredores' }
+                    }
+                }
+            }
+        });
+
+    });
+    </script>

@@ -1,0 +1,148 @@
+---
+layout: default
+title: Eventos Tradicionales y Festivales Recurrentes en Salamanca
+description: Análisis del calendario anual de los eventos más arraigados de Salamanca, combinando celebraciones oficiales, tradiciones populares y macroeventos privados.
+date: 10-09-2026
+folder: Cultura
+permalink: eventos-tradicionales-salamanca
+---
+
+    <!-- Featured Datasets Section -->
+    <section class="featured dataset" id="datos">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">{{ page.title }}</h2>
+                <p class="section-description">{{ page.description }}</p>
+            </div>
+			
+			<div id="section-content">
+						
+  <!-- Gráfico 1: Asistencia Estimada -->
+  <div style="margin-bottom: 40px;">
+      <canvas id="eventosAsistenciaChart" width="800" height="400"></canvas>
+  </div>
+
+ 
+			<h2>El ciclo festivo: Motor cultural y económico local</h2>
+			
+				<p>
+El calendario salmantino está vertebrado por una serie de hitos anuales que fusionan su legado histórico con el dinamismo de su población universitaria. Estos eventos recurrentes, ya sean impulsados por la administración pública o por la iniciativa privada, suponen las mayores inyecciones de capital para el sector servicios, la hostelería y el turismo de la ciudad.</p>
+
+<h3>Claves del calendario de eventos salmantino</h3>
+<ul>
+<li><b>Ferias y Fiestas (Virgen de la Vega)</b>: El gran evento oficial de septiembre. Combina la tradicional Feria de Atracciones en La Aldehuela, los conciertos gratuitos en la Plaza Mayor y la multitudinaria "Feria de Día", donde la hostelería local despliega casetas de pinchos por todo el centro histórico.</li>
+<li><b>Fin de Año Universitario (Nochevieja Universitaria)</b>: Un fenómeno impulsado por el sector privado (asociaciones de hostelería) que reúne a mediados de diciembre a decenas de miles de estudiantes en la Plaza Mayor para comer las gominolas al son de las campanadas, marcando el inicio extraoficial de la Navidad.</li>
+<li><b>Lunes de Aguas y Semana Santa</b>: Dos caras de la tradición. La Semana Santa (Interés Turístico Internacional) destaca por su sobriedad y la implicación de la Universidad. El Lunes de Aguas (ocho días después del Domingo de Resurrección) es la fiesta pagana y popular por excelencia, donde los salmantinos acuden a las riberas del Tormes para comer el tradicional hornazo.</li>
+<li><b>Salamaq y Ferias Sectoriales</b>: La feria agropecuaria Salamaq, organizada por la Diputación con fuerte presencia de empresas privadas, es uno de los certámenes profesionales más importantes del sur de Europa en su sector, atrayendo a más de 100.000 visitantes anuales.</li>
+</ul>
+
+  <!-- Gráfico 2: Impacto Económico -->
+  <h2 style="margin-top: 40px;">Impacto económico estimado en el sector servicios (Millones €)</h2>
+  <canvas id="eventosImpactoChart" width="800" height="400"></canvas>
+  <p style="font-size: 0.9em; color: #555; text-align: center; margin-top: 10px;">
+    *Estimación del retorno económico directo en hostelería, alojamiento y comercio durante los días del evento.
+  </p>
+
+			<h2>Sinergia público-privada en la gestión de masas</h2>
+			<p>
+El éxito de estos eventos radica en la coordinación integral. Macroeventos como el Fin de Año Universitario o la Feria de Día exigen despliegues extraordinarios de seguridad, limpieza municipal y transporte público, demostrando la capacidad de la ciudad para absorber picos poblacionales que, en ocasiones, duplican el censo del casco histórico.
+			</p>
+
+			</div>
+			
+			<div id="section-table">
+			<table border="1" cellpadding="5" cellspacing="0">
+			  <thead>
+				<tr>
+				  <th>Evento / Tradición</th>
+				  <th>Mes de Celebración</th>
+				  <th>Organizador Principal</th>
+				  <th>Tipología</th>
+				  <th>Asistencia Estimada</th>
+				</tr>
+			  </thead>
+			  <tbody>
+				<tr><td><b>Semana Santa</b></td><td>Marzo / Abril</td><td>Junta de Cofradías / Ayuntamiento</td><td>Religioso / Turismo Cultural</td><td>Masiva (Visitantes y locales)</td></tr>
+				<tr><td><b>Lunes de Aguas</b></td><td>Abril</td><td>Tradición Popular</td><td>Gastronómico / Ocio</td><td>Toda la ciudad</td></tr>
+				<tr><td><b>Salamaq (Feria Agropecuaria)</b></td><td>Septiembre</td><td>Diputación / Sector Privado</td><td>Feria Profesional / Exposición</td><td>> 100.000 visitantes</td></tr>
+				<tr><td><b>Ferias y Fiestas (Virgen de la Vega)</b></td><td>Septiembre</td><td>Ayuntamiento de Salamanca</td><td>Fiestas Patronales</td><td>> 150.000 (acumulado)</td></tr>
+				<tr><td><b>Fin de Año Universitario</b></td><td>Diciembre</td><td>Hostelería Privada / Marcas</td><td>Ocio Nocturno / Estudiantil</td><td>20.000 (Solo Plaza Mayor)</td></tr>
+			  </tbody>
+			</table>
+
+			</div>
+			
+			{% include categories.html %}
+            
+        </div>
+    </section>
+
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        
+        // 1. Gráfico de Asistencia (Barra Vertical)
+        const ctxAsistencia = document.getElementById('eventosAsistenciaChart').getContext('2d');
+        new Chart(ctxAsistencia, {
+            type: 'bar',
+            data: {
+                labels: ['Ferias y Fiestas (Global)', 'Salamaq', 'Semana Santa (Turistas)', 'Fin de Año Universitario'],
+                datasets: [
+                    {
+                        label: 'Asistencia Estimada (Personas)',
+                        data: [150000, 110000, 65000, 35000],
+                        backgroundColor: '#1E56A0',
+                        borderRadius: 4
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    title: { display: true, text: 'Volumen de Asistencia a los Grandes Eventos Salmantinos', font: { size: 14 } },
+                    tooltip: { mode: 'index', intersect: false }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        title: { display: true, text: 'Número de Asistentes / Visitantes' }
+                    }
+                }
+            }
+        });
+
+        // 2. Gráfico de Impacto Económico (Barra Horizontal)
+        const ctxImpacto = document.getElementById('eventosImpactoChart').getContext('2d');
+        new Chart(ctxImpacto, {
+            type: 'bar',
+            data: {
+                labels: ['Semana Santa', 'Ferias y Fiestas (Sept.)', 'Salamaq', 'Fin de Año Universitario', 'Puente de Diciembre'],
+                datasets: [
+                    {
+                        label: 'Impacto Económico (Millones de Euros)',
+                        data: [25.5, 18.2, 12.0, 4.5, 3.8],
+                        backgroundColor: 'rgba(168, 32, 26, 0.8)',
+                        borderColor: '#A8201A',
+                        borderWidth: 1,
+                        borderRadius: 4
+                    }
+                ]
+            },
+            options: {
+                indexAxis: 'y',
+                responsive: true,
+                plugins: {
+                    title: { display: true, text: 'Estimación del Retorno Económico Directo (Hostelería y Turismo)', font: { size: 14 } },
+                    tooltip: { mode: 'index', intersect: false }
+                },
+                scales: {
+                    x: {
+                        beginAtZero: true,
+                        title: { display: true, text: 'Millones de Euros (€)' }
+                    }
+                }
+            }
+        });
+
+    });
+    </script>
