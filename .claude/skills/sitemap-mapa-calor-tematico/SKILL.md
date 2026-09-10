@@ -291,11 +291,19 @@ Pasos:
 
 ## Paso 5 — Actualizar las preguntas de Opina (home y /opina)
 
-`opina.json` (raíz del repo) contiene el array `preguntas` que se muestra
-**tanto en el destacado de la home** (la pregunta con `"destacada": true`,
-o la primera si ninguna la tiene) **como en la lista completa de
-`/opina`** — es el mismo fichero para las dos superficies, así que un solo
-paso de escritura ya cubre "home y /opina" sin nada adicional.
+`opina.json` (raíz del repo) contiene el array `preguntas` que alimenta
+**tanto el destacado de la home como la lista completa de `/opina`** — es
+el mismo fichero para las dos superficies, así que un solo paso de
+escritura ya cubre "home y /opina" sin nada adicional.
+
+**No hay ninguna marca manual de "destacada".** El orden lo decide
+siempre `fecha_creacion` (más reciente primero), vía el helper
+compartido `window.OpinaUI.ordenarPorRecientes()` en `assets/js/main.js`:
+la home muestra automáticamente la primera de ese orden (la pregunta más
+reciente) y `/opina` lista todas en ese mismo orden. Esto significa que
+**tu única responsabilidad aquí es poner la `fecha_creacion` real** de
+cada pregunta (la fecha de esta ejecución para las nuevas) — el resto es
+automático y no requiere ningún campo ni paso adicional.
 
 ```json
 {
@@ -306,8 +314,7 @@ paso de escritura ya cubre "home y /opina" sin nada adicional.
       "pregunta": "¿Pregunta cerrada, en segunda persona?",
       "opciones": ["Opción A", "Opción B", "Opción C (3-5 opciones en total)"],
       "basado_en": "actualidad.json | eventos.json",
-      "fecha_creacion": "2026-09-10",
-      "destacada": true
+      "fecha_creacion": "2026-09-10"
     }
   ]
 }
@@ -331,16 +338,18 @@ paso de escritura ya cubre "home y /opina" sin nada adicional.
    `ferias-salamanca-2026`), 3-5 `opciones` con redacción neutral (evita
    opciones que induzcan la respuesta), y usa `basado_en` para indicar de
    qué fichero sale ("actualidad.json" o "eventos.json").
-4. **Solo una pregunta puede tener `"destacada": true`** a la vez (es la
-   que se muestra en la home): si añades una nueva que deba ser la
-   protagonista, quita la marca de la que la tenía antes.
 
 ### 5.2 — Retirar preguntas que ya no son de actualidad
 
-Una pregunta debe archivarse cuando el evento al que se refería ya ha
-pasado o el tema ha quedado resuelto/obsoleto. Sigue este orden exacto
-(igual que documenta `cloudflare-worker/opina-votos/README.md`, sección
-"Archivar una pregunta"):
+**Revisa esto en cada ejecución, no solo cuando añadas una pregunta
+nueva**: como en `/opina` no hay ningún límite de cuántas preguntas se
+listan, una pregunta que deja de tener sentido temporal (el evento al que
+se refería ya ha pasado, el tema ha quedado resuelto/obsoleto) se queda
+ahí para siempre si nadie la retira explícitamente — repasa las
+preguntas activas existentes, no solo las que tú mismo acabas de añadir.
+Sigue este orden exacto (igual que documenta
+`cloudflare-worker/opina-votos/README.md`, sección "Archivar una
+pregunta"):
 
 1. **Consulta el resultado final** con una petición GET pública (no hace
    falta autenticación ni `wrangler` para esto):
@@ -351,9 +360,9 @@ pasado o el tema ha quedado resuelto/obsoleto. Sigue este orden exacto
 2. **Añade una entrada** a `preguntas_archivadas` en `historico.json` con
    ese recuento, `fecha_archivado` (fecha de esta ejecución) y
    `total_votos` (suma de todas las opciones).
-3. **Quita la pregunta** del array `preguntas` de `opina.json`. Si tenía
-   `"destacada": true`, pon esa marca en otra pregunta que siga activa
-   (o en ninguna si no queda ninguna con sentido de destacar).
+3. **Quita la pregunta** del array `preguntas` de `opina.json` — no hace
+   falta reasignar ninguna marca de destacada (ver arriba: el destacado
+   de la home ya se recalcula solo por `fecha_creacion`).
 4. **Cierre en el Worker (mejor esfuerzo, no bloqueante)**: el paso
    definitivo es `wrangler kv key put "closed:<id>" "1"
    --namespace-id=<id>`, pero requiere la CLI de `wrangler` autenticada

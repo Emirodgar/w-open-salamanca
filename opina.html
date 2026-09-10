@@ -37,7 +37,10 @@ permalink: opina
 			.then(r => r.json())
 			.then(data => {
 				const workerUrl = (data.worker_url || '').replace(/\/$/, '');
-				const preguntas = data.preguntas || [];
+				// Más reciente primero (misma fecha_creacion que decide el
+				// destacado de la home), para que la última pregunta generada
+				// sea siempre la primera que se ve aquí.
+				const preguntas = window.OpinaUI.ordenarPorRecientes(data.preguntas);
 				if (!preguntas.length) {
 					estadoEl.textContent = 'Todavía no hay preguntas abiertas.';
 					return;

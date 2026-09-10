@@ -114,12 +114,14 @@ description: Portal de datos abiertos y colaborativos de la ciudad de Salamanca.
 		fetch('/opina.json?v=' + Date.now(), { cache: 'no-store' })
 			.then(r => r.json())
 			.then(d => {
-				const preguntas = d.preguntas || [];
-				const destacada = preguntas.find(p => p.destacada) || preguntas[0];
-				if (!destacada) return;
+				// La home siempre muestra la pregunta creada más recientemente,
+				// no una marca manual: así nunca se queda una pregunta antigua
+				// destacada por olvido.
+				const masReciente = window.OpinaUI.ordenarPorRecientes(d.preguntas)[0];
+				if (!masReciente) return;
 				const workerUrl = (d.worker_url || '').replace(/\/$/, '');
 				document.getElementById('opinaHighlightSection').style.display = '';
-				window.OpinaUI.montarPregunta(document.getElementById('opinaHighlightSlot'), workerUrl, destacada);
+				window.OpinaUI.montarPregunta(document.getElementById('opinaHighlightSlot'), workerUrl, masReciente);
 			})
 			.catch(err => console.error('No se pudo cargar opina.json', err));
 	})();

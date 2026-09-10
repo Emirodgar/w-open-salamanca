@@ -45,6 +45,13 @@ window.OpinaUI = {
         div.textContent = str;
         return div.innerHTML;
     },
+    // Orden único para toda la sección Opina: la más reciente primero por
+    // fecha_creacion. No hay marca manual de "destacada" — la home siempre
+    // muestra la primera de este orden, y /opina lista todas en este mismo
+    // orden, así que ambas superficies quedan sincronizadas automáticamente.
+    ordenarPorRecientes(preguntas) {
+        return (preguntas || []).slice().sort((a, b) => (b.fecha_creacion || '').localeCompare(a.fecha_creacion || ''));
+    },
     // El worker_url de opina.json empieza con un valor de ejemplo hasta que
     // se despliega de verdad (ver cloudflare-worker/opina-votos/README.md).
     // Si no se ha sustituido, no tiene sentido intentar llamarlo.

@@ -69,9 +69,9 @@ por el camino:
      "total_votos": 20
    }
    ```
-3. **Quita la pregunta** del array `preguntas` de `opina.json` (y, si era la
-   marcada como `"destacada": true`, pon esa marca en otra pregunta que
-   siga activa, para que la home siga mostrando una).
+3. **Quita la pregunta** del array `preguntas` de `opina.json`. No hay
+   ninguna marca de "destacada" que reasignar: la home siempre muestra la
+   pregunta con la `fecha_creacion` más reciente entre las que queden.
 4. **Cierra la pregunta en el Worker**, para que nadie pueda seguir votándola
    llamando directamente a la API (la web ya no se lo permite, pero esto lo
    bloquea también del lado del servidor):
