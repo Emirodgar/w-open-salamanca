@@ -35,6 +35,18 @@
       ],
       "basado_en": "actualidad.json",
       "fecha_creacion": "2026-09-10"
+    },
+    {
+      "id": "candidatura-psoe-2027",
+      "pregunta": "María Sánchez ya es la candidata del PSOE a la Alcaldía de Salamanca para 2027, tras ganar las primarias a Marcelino Muñoz. ¿Crees que el PSOE tiene opciones reales de ganar la Alcaldía?",
+      "opciones": [
+        "Sí, hay margen para el cambio",
+        "No, el PP seguirá gobernando",
+        "Depende de quién presente el PP",
+        "Aún es muy pronto para saberlo"
+      ],
+      "basado_en": "actualidad.json",
+      "fecha_creacion": "2026-09-11"
     }
   ]
 }

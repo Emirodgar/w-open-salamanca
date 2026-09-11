@@ -1,7 +1,7 @@
 {
   "mes": "2026-09",
   "titulo_mes": "Septiembre 2026",
-  "resumen_mes": "El mes arranca con la temporada de ferias en marcha (SALAMAQ, que cierra con récord de 90.000 visitantes, y la Feria del Caballo de Ciudad Rodrigo) y llega a su ecuador con las Ferias y Fiestas de Salamanca, que llenan la Plaza Mayor de conciertos multitudinarios. La provincia encadena fiestas patronales, mientras varios accidentes de tráfico —incluida una muerte tras un encierro en Villarino de los Aires—, el buen papel copero de Salamanca UDS y Santa Marta y un notable descenso de las temperaturas completan la fotografía de estos primeros diez días.",
+  "resumen_mes": "El mes arranca con la temporada de ferias en marcha (SALAMAQ, que cierra con récord de 90.000 visitantes, y la Feria del Caballo de Ciudad Rodrigo) y llega a su ecuador con las Ferias y Fiestas de Salamanca, que llenan la Plaza Mayor de conciertos multitudinarios y dan paso también a la Feria taurina. En clave política, María Sánchez se convierte en la primera mujer candidata del PSOE a la Alcaldía de cara a 2027. La provincia encadena fiestas patronales, mientras varios accidentes de tráfico —incluida una muerte tras un encierro en Villarino de los Aires—, los médicos anuncian una huelga indefinida para el 28 de octubre y el buen papel copero de Salamanca UDS y Santa Marta completan la fotografía de estos primeros once días.",
   "hitos": [
     {
       "fecha": "2026-09-01",
@@ -31,7 +31,7 @@
       "fecha": "2026-09-09",
       "titulo": "Salamanca UDS y Santa Marta avanzan en la Copa RFEF",
       "categoria": "Deportes",
-      "descripcion": "El Salamanca UDS remontó (3-2) de la mano de Muniain y el Santa Marta hizo lo propio (2-1) en el San Casto; ambos conocen ya a sus posibles rivales para los octavos de final.",
+      "descripcion": "El Salamanca UDS remontó (3-2) de la mano de Muniain y el Santa Marta hizo lo propio (2-1) en el San Casto; el sorteo posterior deparó morbo, con el Salamanca UDS emparejado contra el Derio, el equipo del que salió el propio Muniain.",
       "fuente": "https://www.lagacetadesalamanca.es/deportes/futbol-local/locura-san-casto-santa-marta-remonta-ultimos-20260909205943-nt.html",
       "destacado": false
     },
@@ -52,18 +52,18 @@
       "destacado": false
     },
     {
-      "fecha": "2026-09-01",
-      "titulo": "Castilla y León arranca septiembre con temperaturas bajas",
-      "categoria": "Sociedad",
-      "descripcion": "La comunidad ha comenzado la semana con un notable descenso de las temperaturas, liderando los registros más fríos, mientras los embalses se recuperan tras las tormentas de la semana pasada.",
-      "fuente": "sin fuente directa",
+      "fecha": "2026-09-11",
+      "titulo": "María Sánchez, primera mujer candidata del PSOE a la Alcaldía de Salamanca",
+      "categoria": "Política",
+      "descripcion": "María Sánchez cierra el proceso de primarias del PSOE de Salamanca con el respaldo de Marcelino Muñoz y encabezará la candidatura socialista a la Alcaldía en 2027, la primera vez que una mujer lidera esa lista.",
+      "fuente": "https://www.lagacetadesalamanca.es/salamanca/maria-sanchez-alcaldesa-salamanca-partir-mayo-20260911112239-nt.html",
       "destacado": false
     },
     {
-      "fecha": "2026-09-01",
-      "titulo": "Los pueblos de la provincia despiden el verano con sus últimas fiestas",
-      "categoria": "Cultura",
-      "descripcion": "Los pueblos de la provincia cierran agosto con música, tradición y actividades en sus fiestas patronales; Velles ha sido uno de los últimos municipios en clausurar las suyas.",
+      "fecha": "2026-09-11",
+      "titulo": "Los médicos convocan huelga indefinida para el 28 de octubre",
+      "categoria": "Sociedad",
+      "descripcion": "Los médicos han fijado el 28 de octubre como fecha para iniciar una huelga indefinida contra el nuevo Estatuto Marco.",
       "fuente": "sin fuente directa",
       "destacado": false
     }

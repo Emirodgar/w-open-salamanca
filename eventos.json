@@ -1,5 +1,5 @@
 {
-  "generado_en": "2026-09-10T09:00:00+00:00",
+  "generado_en": "2026-09-11T15:15:00+00:00",
   "eventos": [
     {
       "titulo": "Ferias de Salamanca 2026",
@@ -7,8 +7,25 @@
       "fecha_inicio": "2026-09-06",
       "fecha_fin": "2026-09-15",
       "lugar": "Plaza Mayor y distintos puntos de la ciudad",
-      "descripcion": "El Pregón de Ferias del 8 de septiembre abrió el programa oficial, con conciertos gratuitos en la Plaza Mayor (Tony Hadley, Gente de Zona, La Gozadera...), teatro en el Teatro Liceo, circo en el Patio Chico y actividades familiares por toda la ciudad.",
+      "descripcion": "El Pregón de Ferias del 8 de septiembre abrió el programa oficial, con conciertos gratuitos en la Plaza Mayor (Tony Hadley, Gente de Zona, La Gozadera, La La Love You...), teatro en el Teatro Liceo, circo en el Patio Chico y actividades familiares por toda la ciudad. En paralelo, la Feria taurina de La Glorieta reúne a Manzanares, Daniel Luque y Borja Jiménez.",
       "fuente": "https://ciudaddecultura.org/es/programacion/"
+    },
+    {
+      "titulo": "Semana Europea de la Movilidad de Carbajosa de la Sagrada",
+      "categoria": "Sociedad",
+      "fecha_inicio": "2026-09-14",
+      "fecha_fin": "2026-09-22",
+      "lugar": "Carbajosa de la Sagrada",
+      "descripcion": "Programación bajo el lema 'Movilidad para todos', con actividades de movilidad sostenible y educación vial, entre ellas el pasaporte escolar.",
+      "fuente": "https://www.lagacetadesalamanca.es/provincia/semana-movilidad-carbajosa-sagrada-contara-clases-educacion-20260911113017-nt.html"
+    },
+    {
+      "titulo": "'Draion', circo inclusivo en Salamanca",
+      "categoria": "Cultura",
+      "fecha_inicio": "2026-09-22",
+      "fecha_fin": "2026-09-26",
+      "descripcion": "El Ayuntamiento y Stellan Circus ofrecen dos funciones adaptadas para personas con discapacidad (22 y 26 de septiembre), con entradas de 2€ repartidas a través de asociaciones de la ciudad.",
+      "fuente": "https://www.lagacetadesalamanca.es/salamanca/draion-circo-inclusivo-llega-salamanca-20260911124318-nt.html"
     },
     {
       "titulo": "Tercera Marcha contra el Cáncer de Cabrerizos",

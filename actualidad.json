@@ -1,11 +1,11 @@
 {
   "url_base": "https://www.lagacetadesalamanca.es",
-  "generado_en": "2026-09-10T09:00:00+00:00",
+  "generado_en": "2026-09-11T15:15:00+00:00",
   "periodo_cubierto": {
-    "desde": "2026-09-08",
-    "hasta": "2026-09-10"
+    "desde": "2026-09-09",
+    "hasta": "2026-09-11"
   },
-  "total_urls_analizadas": 115,
+  "total_urls_analizadas": 134,
   "secciones_excluidas": [
     "nacional",
     "opinion",
@@ -13,110 +13,111 @@
     "gente-estilo",
     "podcast"
   ],
-  "nota_cobertura": "El sitemap consultado esta vez solo contenía URLs de los últimos 3 días (8 a 10 de septiembre), un periodo más corto que una semana completa: es un sitemap 'rolling' y en este momento cubre menos días de los habituales. El análisis y el resumen siguientes reflejan únicamente ese periodo real, no una semana entera.",
+  "nota_cobertura": "El sitemap consultado esta vez solo contenía URLs de los últimos 3 días (9 a 11 de septiembre), un periodo más corto que una semana completa: es un sitemap 'rolling' y en este momento cubre menos días de los habituales. El análisis y el resumen siguientes reflejan únicamente ese periodo real, no una semana entera.",
   "por_seccion": [
-    ["salamanca", 40],
-    ["provincia", 23],
-    ["deportes", 22],
-    ["sucesos", 11],
-    ["campo", 10],
-    ["toros", 4],
+    ["salamanca", 42],
+    ["provincia", 33],
+    ["deportes", 24],
+    ["sucesos", 15],
+    ["toros", 5],
+    ["virales", 5],
+    ["campo", 3],
+    ["internacional", 3],
     ["encuestas", 2],
-    ["virales", 2],
+    ["cine-y-series", 1],
     ["castilla-y-leon", 1]
   ],
   "por_subseccion": [
-    ["deportes/futbol-local", 14],
-    ["deportes/baloncesto-local", 2],
+    ["deportes/futbol-local", 19],
+    ["deportes/baloncesto-local", 1],
+    ["deportes/carreras-populares", 1],
     ["deportes/deporte-base", 1]
   ],
   "por_tipo_contenido": [
-    ["noticia", 114],
-    ["directo / en vivo", 1]
+    ["noticia", 132],
+    ["directo / en vivo", 2]
   ],
   "heatmap_calendario": [
-    {"fecha": "2026-09-08", "total": 31, "salamanca": 9, "provincia": 6, "deportes": 7, "sucesos": 2, "campo": 4, "toros": 2, "encuestas": 1, "virales": 0, "castilla-y-leon": 0},
-    {"fecha": "2026-09-09", "total": 65, "salamanca": 23, "provincia": 12, "deportes": 14, "sucesos": 7, "campo": 4, "toros": 1, "encuestas": 1, "virales": 2, "castilla-y-leon": 1},
-    {"fecha": "2026-09-10", "total": 19, "salamanca": 8, "provincia": 5, "deportes": 1, "sucesos": 2, "campo": 2, "toros": 1, "encuestas": 0, "virales": 0, "castilla-y-leon": 0}
+    {"fecha": "2026-09-09", "total": 23, "salamanca": 7, "provincia": 4, "deportes": 6, "sucesos": 4, "toros": 0, "virales": 0, "campo": 0, "internacional": 0, "encuestas": 1, "cine-y-series": 0, "castilla-y-leon": 1},
+    {"fecha": "2026-09-10", "total": 62, "salamanca": 21, "provincia": 17, "deportes": 9, "sucesos": 5, "toros": 1, "virales": 3, "campo": 2, "internacional": 3, "encuestas": 1, "cine-y-series": 0, "castilla-y-leon": 0},
+    {"fecha": "2026-09-11", "total": 49, "salamanca": 14, "provincia": 12, "deportes": 9, "sucesos": 6, "toros": 4, "virales": 2, "campo": 1, "internacional": 0, "encuestas": 0, "cine-y-series": 1, "castilla-y-leon": 0}
   ],
   "conceptos_destacados": [
     {
-      "concepto": "Las Ferias y Fiestas llenan la Plaza Mayor",
-      "piezas": 19,
+      "concepto": "Las Ferias y Fiestas siguen en la Plaza Mayor y arranca la Feria taurina",
+      "piezas": 14,
       "seccion_principal": "salamanca",
-      "desde": "2026-09-08",
-      "hasta": "2026-09-10",
+      "desde": "2026-09-09",
+      "hasta": "2026-09-11",
       "ejemplos_redactados": [
-        "El pregón de las Ferias y Fiestas ha abierto una semana marcada por la música en la Plaza Mayor: primero con Tony Hadley bajo la lluvia y después con un multitudinario concierto de Gente de Zona y La Gozadera, calificado como el más caro en la historia del cartel ferial.",
-        "La Feria de Día mantiene su ambiente de siempre con casetas como Barvel o La Luisa, mientras la organización destaca que el evento beneficia al conjunto de la ciudad."
+        "La Feria de Día y los conciertos gratuitos en la Plaza Mayor —La La Love You o el acento granadino de las últimas citas— han seguido llenando de ambiente el centro de la ciudad, con dos casetas precintadas de madrugada por poner música fuera de horario que ya han podido reabrir.",
+        "La Feria taurina ha levantado el telón del abono con un encierro de lujo de Pérez-Tabernero lidiado por Manzanares, Daniel Luque y Borja Jiménez, mientras las Noches del Patrimonio agotan turnos para redescubrir gratis el casco histórico."
       ]
     },
     {
-      "concepto": "Salamaq 2026 cierra con récord de visitantes",
-      "piezas": 3,
-      "seccion_principal": "campo",
-      "desde": "2026-09-08",
-      "hasta": "2026-09-09",
+      "concepto": "María Sánchez, candidata del PSOE a la Alcaldía de Salamanca en 2027",
+      "piezas": 1,
+      "seccion_principal": "salamanca",
+      "desde": "2026-09-11",
+      "hasta": "2026-09-11",
       "ejemplos_redactados": [
-        "Salamaq 2026 se despide haciendo historia, con récord de asistencia gracias a más de 90.000 visitantes y el reconocimiento al ejemplar 'Valiente'.",
-        "El recinto ferial ya se vacía en un ir y venir de camiones, tras acoger también las primeras carreras de la ternera morucha nacida en la propia feria."
+        "María Sánchez ha cerrado el proceso de primarias del PSOE de Salamanca con el respaldo de Marcelino Muñoz y encabezará la candidatura socialista a la Alcaldía en 2027, la primera vez que una mujer lidera esa lista.",
+        "'Salamanca lleva ya demasiados años resignada y es un momento de cambio', ha asegurado la candidata, convencida de que 'va a ser la alcaldesa de Salamanca a partir de mayo de 2027'."
       ]
     },
     {
-      "concepto": "Salamanca UDS y Santa Marta avanzan en la Copa RFEF",
+      "concepto": "Copa RFEF: Salamanca UDS y Santa Marta ya conocen rival en octavos",
       "piezas": 6,
       "seccion_principal": "deportes",
-      "desde": "2026-09-09",
-      "hasta": "2026-09-09",
+      "desde": "2026-09-10",
+      "hasta": "2026-09-11",
       "ejemplos_redactados": [
-        "Un fin de semana copero redondo para el fútbol salmantino: el Salamanca UDS remontó (3-2) de la mano de Muniain y el Santa Marta hizo lo propio (2-1) en el San Casto, en la ida de la Copa RFEF.",
-        "Ambos equipos ya conocen a sus posibles rivales para el sorteo de los octavos de final."
+        "El sorteo de octavos de la Copa RFEF ha deparado morbo para los dos equipos salmantinos: el Salamanca UDS se medirá al Derio, el equipo del que salió Iker Muniain, mientras el Santa Marta sueña con seguir haciendo historia camino de la Copa del Rey.",
+        "Unionistas, que ha confirmado la grave lesión de Dani González, afronta este fin de semana su visita al Real Avilés con la necesidad de reaccionar tras su mal arranque."
       ]
     },
     {
-      "concepto": "PISA: Castilla y León resiste pese al batacazo nacional",
+      "concepto": "La Fiscalía pide cárcel en dos casos de gran repercusión",
       "piezas": 2,
-      "seccion_principal": "salamanca",
-      "desde": "2026-09-08",
-      "hasta": "2026-09-09",
-      "ejemplos_redactados": [
-        "Castilla y León resiste en la élite del informe PISA pese al batacazo generalizado a nivel nacional, aunque pierde su liderazgo autonómico en la comparativa.",
-        "El presidente Mañueco ha responsabilizado al Gobierno central de la debacle educativa, asegurando que 'trivializar la educación tiene consecuencias'."
-      ]
-    },
-    {
-      "concepto": "Varios heridos en accidentes de tráfico",
-      "piezas": 7,
       "seccion_principal": "sucesos",
-      "desde": "2026-09-08",
-      "hasta": "2026-09-09",
+      "desde": "2026-09-10",
+      "hasta": "2026-09-11",
       "ejemplos_redactados": [
-        "La provincia ha vivido varios accidentes de tráfico con heridos, entre ellos un motorista en estado grave en La Alberca y un trabajador trasladado en estado crítico tras quedar atrapado bajo una carretilla en Huerta.",
-        "En la capital, varias colisiones han dejado heridos en las avenidas de Villamayor, Mirat y los Cipreses, mientras en la A-62 la Guardia Civil detenía a un conductor que circulaba a 218 km/h."
+        "La Fiscalía de Salamanca pide cárcel para un conductor de autobús acusado de tocamientos a una profesora durante un viaje escolar a Francia.",
+        "El fiscal también lleva al banquillo a un acusado de llamar 'puto negro' a un niño en un partido de fútbol base, para el que pide cárcel y dos años y medio sin poder pisar un campo."
       ]
     },
     {
-      "concepto": "Fallece la mujer herida en el encierro de Villarino de los Aires",
-      "piezas": 1,
-      "seccion_principal": "provincia",
-      "desde": "2026-09-09",
-      "hasta": "2026-09-09",
-      "ejemplos_redactados": [
-        "La mujer de 91 años que resultó herida durante un encierro en Villarino de los Aires ha fallecido, según ha confirmado el Ayuntamiento."
-      ]
-    },
-    {
-      "concepto": "Fiestas patronales en los pueblos de la provincia",
+      "concepto": "Nueva tanda de accidentes e incendios en la provincia",
       "piezas": 5,
-      "seccion_principal": "provincia",
-      "desde": "2026-09-09",
-      "hasta": "2026-09-09",
+      "seccion_principal": "sucesos",
+      "desde": "2026-09-10",
+      "hasta": "2026-09-11",
       "ejemplos_redactados": [
-        "Los pueblos de la provincia siguen con su calendario de fiestas patronales: Béjar recupera la normalidad tras unas fiestas con balance positivo, mientras Cantagallo y Martiago celebran sus fiestas en honor al Cristo.",
-        "Guijuelo, por su parte, ya conoce a su pregonero para las fiestas del Cristo de Valvanera de Sorihuela."
+        "La provincia ha vivido una nueva tanda de accidentes de tráfico —un frenazo de autobús con una herida, un coche contra un garaje en la Cuesta de San Blas y un positivo en alcoholemia en pleno centro— además de dos incendios de vegetación, uno de ellos en Colmenar de Montemayor con quince medios movilizados."
+      ]
+    },
+    {
+      "concepto": "Los médicos convocan huelga indefinida para el 28 de octubre",
+      "piezas": 1,
+      "seccion_principal": "salamanca",
+      "desde": "2026-09-11",
+      "hasta": "2026-09-11",
+      "ejemplos_redactados": [
+        "Los médicos han fijado el 28 de octubre como fecha para iniciar una huelga indefinida contra el nuevo Estatuto Marco."
+      ]
+    },
+    {
+      "concepto": "Las universidades arrancan el curso con fuerte presencia internacional",
+      "piezas": 3,
+      "seccion_principal": "salamanca",
+      "desde": "2026-09-10",
+      "hasta": "2026-09-11",
+      "ejemplos_redactados": [
+        "La Universidad de Salamanca ha recibido a 1.218 estudiantes internacionales de 50 países para este curso, mientras la UPSA refuerza su apuesta investigadora y la UNED abre matrícula en Ciudad Rodrigo."
       ]
     }
   ],
-  "resumen_borrador": "Se han publicado 115 noticias entre el 2026-09-08 y el 2026-09-10. La actividad se ha concentrado sobre todo en salamanca (40 piezas), provincia (23 piezas), deportes (22 piezas).\n\nLos conceptos con más piezas relacionadas son: Plaza; Santa · Marta; Gente · Zona; San. Revisa 'evidencia' de cada concepto para redactar el resumen final.",
-  "resumen": "Las Ferias y Fiestas de Salamanca han copado la actualidad de estos días, con la Plaza Mayor como epicentro: tras el pregón —protagonizado por una particular oda a la rana y no exento de polémica, con la expulsión de varios manifestantes de la Chinchibarra—, la plaza ha acogido conciertos multitudinarios de Tony Hadley (bajo la lluvia) y Gente de Zona, además de La Gozadera, calificado como el concierto más caro de la historia del cartel ferial. En paralelo, la Feria de Día mantiene su ambiente tradicional con puestos como Barvel o La Luisa.\n\nSalamaq ha cerrado su edición de 2026 batiendo récords, con más de 90.000 visitantes y el reconocimiento a 'Valiente' como ejemplar destacado, mientras el recinto ferial se vacía ya camino de la próxima cita. En el plano deportivo, el fin de semana copero ha dejado buenas noticias para la ciudad: el Salamanca UDS remontó (3-2) de la mano de Muniain y el Santa Marta hizo lo propio (2-1) en el San Casto, y ambos conocen ya a sus posibles rivales para los octavos de la Copa RFEF.\n\nLa provincia también ha vivido un fin de semana marcado por la seguridad vial, con varios heridos en colisiones en la capital (avenidas Mirat, Villamayor y Cipreses) y en carreteras de la provincia (La Alberca, Barceo), además del fallecimiento de una mujer de 91 años que resultó herida durante un encierro en Villarino de los Aires. En el ámbito educativo, Castilla y León ha resistido en la élite del informe PISA pese al batacazo nacional, aunque pierde el liderazgo autonómico, una debacle que el presidente Mañueco ha atribuido al Gobierno central."
+  "resumen_borrador": "Se han publicado 134 noticias entre el 2026-09-09 y el 2026-09-11. La actividad se ha concentrado sobre todo en salamanca (42 piezas), provincia (33 piezas), deportes (24 piezas).\n\nLos conceptos con más piezas relacionadas son: Plaza; Santa · Marta; Abre; Semana. Revisa 'evidencia' de cada concepto para redactar el resumen final.",
+  "resumen": "Las Ferias y Fiestas de Salamanca han seguido llenando la Plaza Mayor de conciertos y ambiente —La La Love You, el acento granadino de las últimas citas y una Feria de Día que no para— mientras arrancaba también la Feria taurina de La Glorieta, con un encierro de lujo de Pérez-Tabernero lidiado por Manzanares, Daniel Luque y Borja Jiménez. Las Noches del Patrimonio agotan turnos para redescubrir gratis el casco histórico, aunque no todo ha sido fiesta sin incidentes: dos casetas fueron precintadas de madrugada por poner música fuera de horario, aunque ya han podido reabrir.\n\nEn clave política, María Sánchez ya es oficialmente la candidata del PSOE a la Alcaldía de Salamanca de cara a 2027, tras cerrar el proceso de primarias con el respaldo de Marcelino Muñoz; será la primera mujer en encabezar esa candidatura y se ha mostrado convencida de que gobernará la ciudad a partir de mayo de ese año. En el deporte, el sorteo de la Copa RFEF ha deparado morbo para los dos representantes salmantinos: el Salamanca UDS se medirá al Derio, el equipo del que salió Iker Muniain, y el Santa Marta sueña con seguir avanzando camino de la Copa del Rey, mientras Unionistas, que afronta su visita al Real Avilés, ha confirmado la grave lesión de Dani González.\n\nLa Fiscalía ha pedido cárcel en dos casos de gran repercusión: para un conductor de autobús acusado de tocamientos a una profesora en un viaje escolar a Francia, y para un hombre acusado de un insulto racista a un niño en un partido de fútbol base. La provincia ha vivido además una nueva tanda de accidentes de tráfico y dos incendios de vegetación, uno de ellos en Colmenar de Montemayor con quince medios movilizados. En el ámbito sanitario, los médicos han fijado el 28 de octubre para iniciar una huelga indefinida contra el Estatuto Marco, y las universidades de la ciudad arrancan el curso con fuerte presencia internacional: la Universidad de Salamanca ha recibido a 1.218 estudiantes de 50 países."
 }
