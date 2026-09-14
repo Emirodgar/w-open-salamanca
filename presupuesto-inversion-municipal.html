@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Presupuesto municipal, ingresos y ejecución de gasto
-description: Desglose de presupuestos consolidados, recaudación fiscal, gastos por áreas y proyectos de inversión en Salamanca
+description: Evolución real del presupuesto municipal, la deuda viva y el grado de ejecución del Ayuntamiento de Salamanca (2023-2026)
 date: 30-08-2026
 folder: Hacienda Local
 permalink: presupuesto-inversion-municipal
@@ -23,15 +23,15 @@ permalink: presupuesto-inversion-municipal
 			<h2>Análisis de la sostenibilidad financiera y el esfuerzo inversor</h2>
 			
 				<p>
-El presupuesto consolidado del Ayuntamiento de Salamanca refleja una **priorización de los servicios públicos esenciales, la cohesión social y la inversión en transformación urbana y digital**. La estructura de ingresos mantiene una alta estabilidad basada en los tributos directos y transferencias del Estado y la Comunidad Autónoma, junto con la captación de fondos europeos Next Generation EU.</p>
+El presupuesto del Ayuntamiento de Salamanca ha crecido tres años seguidos por encima del 2%: 185,16 M€ en 2024 (+2,03%), 199,50 M€ en 2025 (+7,75%) y 210,35 M€ en 2026 (+5,43%), con los cinco impuestos municipales congelados por duodécimo año consecutivo. En paralelo, la deuda viva se ha reducido de los 72,98 M€ de finales de 2023 a los 60,46 M€ de finales de 2025, aunque el Ayuntamiento prevé que repunte hasta 64,86 M€ a finales de 2026 por el mayor esfuerzo inversor.</p>
 
 <h3>Claves presupuestarias y destino del gasto</h3>
 <ul>
-<li><b>Eficiencia en la gestión y bajo nivel de endeudamiento</b>: El consistorio presenta una <a href="/deuda-impuestos">ratio de deuda viva</a> inferior al 40% de los ingresos corrientes, otorgando margen de maniobra para cofinanciar proyectos de infraestructuras verdes y digitalización.</li>
-<li><b>Gasto social y protección comunitaria</b>: Las áreas de bienestar social, igualdad, empleo y vivienda pública absorben más del 22% del gasto corriente, garantizando la cobertura asistencial a sectores vulnerables.</li>
+<li><b>Deuda a la baja, pero con un repunte previsto</b>: la <a href="/deuda-impuestos">deuda viva</a> bajó de 72,98 M€ (2023) a 69,3 M€ (2024) y 60,46 M€ (2025), pero la proyección municipal para 2026 la sitúa en 64,86 M€, con una ratio sobre ingresos corrientes del 35,11% &ndash;por debajo del límite legal del 110%, y del 75% que activaría medidas correctoras&ndash;.</li>
+<li><b>Gasto social, más de la mitad del presupuesto</b>: el gasto con incidencia social (bienestar, igualdad, empleo y vivienda pública, en la definición amplia que usa el propio Ayuntamiento) representa el 57,37% del presupuesto de 2026.</li>
 </ul>
 
-  <h2>Distribución del gasto municipal por áreas funcionales (%)</h2>
+  <h2>Evolución de la deuda viva municipal (2023-2026)</h2>
   <canvas id="gastosAreasChart" width="800" height="400"></canvas>
 
 			<p>Este análisis presupuestario global se complementa con el desglose de la <a href="/presupuesto-municipal">inversión municipal por barrios y distritos</a>, así como con el detalle de la <a href="/contratacion-licitaciones-publicas">contratación pública y licitaciones</a> a través de las cuales se ejecuta buena parte del capítulo de inversiones.</p>
@@ -42,22 +42,21 @@ El presupuesto consolidado del Ayuntamiento de Salamanca refleja una **priorizac
 			<table border="1" cellpadding="5" cellspacing="0">
 			  <thead>
 				<tr>
-				  <th>Área Funcional / Capítulo</th>
-				  <th>Presupuesto (€)</th>
-				  <th>% sobre el Total</th>
-				  <th>Grado de Ejecución (%)</th>
-				  <th>Inversión Principal / Destino</th>
+				  <th>Año</th>
+				  <th>Presupuesto Aprobado (€)</th>
+				  <th>Variación Interanual</th>
+				  <th>Deuda Viva a 31/12 (€)</th>
+				  <th>Ratio Deuda / Ingresos Corrientes</th>
 				</tr>
 			  </thead>
 			  <tbody>
-				<tr><td>Servicios Urbanos y Medio Ambiente</td><td>48.200.000 €</td><td>27.5%</td><td>94.2%</td><td>Limpieza, recogida de residuos, parques y alumbrado</td></tr>
-				<tr><td>Protección y Promoción Social</td><td>38.500.000 €</td><td>22.0%</td><td>91.8%</td><td>Atención domiciliaria, centros de mayores y empleo</td></tr>
-				<tr><td>Seguridad Ciudadana y Movilidad</td><td>28.400.000 €</td><td>16.2%</td><td>96.5%</td><td>Policía local, bomberos y gestión del tráfico / ZBE</td></tr>
-				<tr><td>Cultura, Turismo y Deportes</td><td>22.100.000 €</td><td>12.6%</td><td>89.4%</td><td>Programación cultural, instalaciones y promoción</td></tr>
-				<tr><td>Inversiones Reales (Capítulo VI)</td><td>21.800.000 €</td><td>12.4%</td><td>81.2%</td><td>Rehabilitación urbana, vías públicas y Parques Tech</td></tr>
-				<tr><td>Administración General y Hacienda</td><td>16.200.000 €</td><td>9.3%</td><td>95.0%</td><td>Gestión tributaria, informática y atención ciudadana</td></tr>
+				<tr><td>2023</td><td>n.d.</td><td>n.d.</td><td>72.983.061 €</td><td>n.d.</td></tr>
+				<tr><td>2024</td><td>185.157.627 €</td><td>+2,03%</td><td>69.300.000 €</td><td>n.d.</td></tr>
+				<tr><td>2025</td><td>199.503.045 €</td><td>+7,75%</td><td>60.463.000 €</td><td>n.d.</td></tr>
+				<tr><td>2026 (proyección)</td><td>210.346.984 €</td><td>+5,43%</td><td>64.855.341 €</td><td>35,11%</td></tr>
 			  </tbody>
 			</table>
+			<p style="font-size: 0.9em; color: #555;">*n.d.: dato no publicado por el Ayuntamiento a la fecha de esta edición. La deuda de 2026 es una proyección municipal, no un cierre real.</p>
 
 			</div>
 			
@@ -67,15 +66,15 @@ El presupuesto consolidado del Ayuntamiento de Salamanca refleja una **priorizac
     </section>
 
 	<script>
-    // Gráfico 1: Evolución Presupuesto Consolidado (2018-2025)
+    // Gráfico 1: Evolución real del Presupuesto Municipal (2024-2026)
     const ctxPres = document.getElementById('presupuestoHistoricoChart').getContext('2d');
     const presupuestoHistoricoChart = new Chart(ctxPres, {
       type: 'line',
       data: {
-        labels: ['2018', '2019', '2020', '2021', '2022', '2023', '2024', '2025'],
+        labels: ['2024', '2025', '2026'],
         datasets: [{
-          label: 'Presupuesto Consolidado Municipal (Millones de €)',
-          data: [148.5, 153.2, 158.4, 162.8, 169.1, 172.5, 178.4, 182.2],
+          label: 'Presupuesto Municipal Aprobado (Millones de €)',
+          data: [185.16, 199.50, 210.35],
           borderColor: '#1E56A0',
           backgroundColor: 'rgba(30, 86, 160, 0.1)',
           borderWidth: 2,
@@ -85,6 +84,9 @@ El presupuesto consolidado del Ayuntamiento de Salamanca refleja una **priorizac
       },
       options: {
         responsive: true,
+        plugins: {
+          title: { display: true, text: 'Tres años seguidos de crecimiento por encima del 2%, con impuestos congelados', font: { size: 13 } }
+        },
         scales: {
           y: { title: { display: true, text: 'Millones de Euros (€)' }, beginAtZero: false },
           x: { title: { display: true, text: 'Año' } }
@@ -92,23 +94,27 @@ El presupuesto consolidado del Ayuntamiento de Salamanca refleja una **priorizac
       }
     });
 
-    // Gráfico 2: Torta / Dona de Distribución del Gasto
+    // Gráfico 2: Evolución de la deuda viva a 31 de diciembre (2023-2026)
     const ctxGast = document.getElementById('gastosAreasChart').getContext('2d');
     const gastosAreasChart = new Chart(ctxGast, {
-      type: 'doughnut',
+      type: 'bar',
       data: {
-        labels: ['Servicios Urbanos', 'Protección Social', 'Seguridad y Movilidad', 'Cultura y Deportes', 'Inversiones Reales', 'Administración General'],
+        labels: ['2023', '2024', '2025', '2026 (proyección)'],
         datasets: [{
-          data: [27.5, 22.0, 16.2, 12.6, 12.4, 9.3],
-          backgroundColor: [
-            '#2C5F2D', '#F4A261', '#1E56A0', '#E63946', '#264653', '#A8DADC'
-          ]
+          label: 'Deuda Viva a 31/12 (Millones de €)',
+          data: [72.98, 69.30, 60.46, 64.86],
+          backgroundColor: ['#1E56A0', '#1E56A0', '#2C5F2D', '#F4A261'],
+          borderRadius: 4
         }]
       },
       options: {
         responsive: true,
         plugins: {
-          legend: { position: 'bottom' }
+          legend: { display: false },
+          title: { display: true, text: 'La deuda baja hasta 2025 y repunta en la previsión de 2026 por el mayor esfuerzo inversor', font: { size: 13 } }
+        },
+        scales: {
+          y: { title: { display: true, text: 'Millones de Euros (€)' }, beginAtZero: true }
         }
       }
     });
