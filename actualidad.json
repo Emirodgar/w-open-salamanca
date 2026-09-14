@@ -1,11 +1,11 @@
 {
   "url_base": "https://www.lagacetadesalamanca.es",
-  "generado_en": "2026-09-11T15:15:00+00:00",
+  "generado_en": "2026-09-14T09:15:00+00:00",
   "periodo_cubierto": {
-    "desde": "2026-09-09",
-    "hasta": "2026-09-11"
+    "desde": "2026-09-12",
+    "hasta": "2026-09-14"
   },
-  "total_urls_analizadas": 134,
+  "total_urls_analizadas": 99,
   "secciones_excluidas": [
     "nacional",
     "opinion",
@@ -13,111 +13,118 @@
     "gente-estilo",
     "podcast"
   ],
-  "nota_cobertura": "El sitemap consultado esta vez solo contenía URLs de los últimos 3 días (9 a 11 de septiembre), un periodo más corto que una semana completa: es un sitemap 'rolling' y en este momento cubre menos días de los habituales. El análisis y el resumen siguientes reflejan únicamente ese periodo real, no una semana entera.",
+  "nota_cobertura": "El sitemap consultado esta vez solo contenía URLs de los últimos 3 días (12 a 14 de septiembre), un periodo más corto que una semana completa: es un sitemap 'rolling' y en este momento cubre menos días de los habituales. El análisis y el resumen siguientes reflejan únicamente ese periodo real, no una semana entera.",
   "por_seccion": [
-    ["salamanca", 42],
-    ["provincia", 33],
-    ["deportes", 24],
-    ["sucesos", 15],
-    ["toros", 5],
-    ["virales", 5],
-    ["campo", 3],
-    ["internacional", 3],
+    ["salamanca", 37],
+    ["deportes", 19],
+    ["toros", 16],
+    ["provincia", 11],
+    ["sucesos", 8],
+    ["internacional", 2],
+    ["especiales", 2],
     ["encuestas", 2],
-    ["cine-y-series", 1],
-    ["castilla-y-leon", 1]
+    ["castilla-y-leon", 1],
+    ["noticias", 1]
   ],
   "por_subseccion": [
-    ["deportes/futbol-local", 19],
-    ["deportes/baloncesto-local", 1],
-    ["deportes/carreras-populares", 1],
-    ["deportes/deporte-base", 1]
+    ["deportes/futbol-local", 15],
+    ["especiales/asi-somos-en-mi-pueblo", 2],
+    ["deportes/baloncesto-local", 1]
   ],
   "por_tipo_contenido": [
-    ["noticia", 132],
-    ["directo / en vivo", 2]
+    ["noticia", 95],
+    ["directo / en vivo", 4]
   ],
   "heatmap_calendario": [
-    {"fecha": "2026-09-09", "total": 23, "salamanca": 7, "provincia": 4, "deportes": 6, "sucesos": 4, "toros": 0, "virales": 0, "campo": 0, "internacional": 0, "encuestas": 1, "cine-y-series": 0, "castilla-y-leon": 1},
-    {"fecha": "2026-09-10", "total": 62, "salamanca": 21, "provincia": 17, "deportes": 9, "sucesos": 5, "toros": 1, "virales": 3, "campo": 2, "internacional": 3, "encuestas": 1, "cine-y-series": 0, "castilla-y-leon": 0},
-    {"fecha": "2026-09-11", "total": 49, "salamanca": 14, "provincia": 12, "deportes": 9, "sucesos": 6, "toros": 4, "virales": 2, "campo": 1, "internacional": 0, "encuestas": 0, "cine-y-series": 1, "castilla-y-leon": 0}
+    {"fecha": "2026-09-12", "total": 28, "salamanca": 7, "deportes": 9, "toros": 4, "provincia": 3, "sucesos": 1, "internacional": 1, "especiales": 0, "encuestas": 1, "castilla-y-leon": 1, "noticias": 1},
+    {"fecha": "2026-09-13", "total": 55, "salamanca": 19, "deportes": 10, "toros": 11, "provincia": 6, "sucesos": 7, "internacional": 0, "especiales": 1, "encuestas": 1, "castilla-y-leon": 0, "noticias": 0},
+    {"fecha": "2026-09-14", "total": 16, "salamanca": 11, "deportes": 0, "toros": 1, "provincia": 2, "sucesos": 0, "internacional": 1, "especiales": 1, "encuestas": 0, "castilla-y-leon": 0, "noticias": 0}
   ],
   "conceptos_destacados": [
     {
-      "concepto": "Las Ferias y Fiestas siguen en la Plaza Mayor y arranca la Feria taurina",
-      "piezas": 14,
+      "concepto": "Las Ferias y Fiestas cierran su semana grande en la Plaza Mayor",
+      "piezas": 8,
       "seccion_principal": "salamanca",
-      "desde": "2026-09-09",
-      "hasta": "2026-09-11",
+      "desde": "2026-09-12",
+      "hasta": "2026-09-14",
       "ejemplos_redactados": [
-        "La Feria de Día y los conciertos gratuitos en la Plaza Mayor —La La Love You o el acento granadino de las últimas citas— han seguido llenando de ambiente el centro de la ciudad, con dos casetas precintadas de madrugada por poner música fuera de horario que ya han podido reabrir.",
-        "La Feria taurina ha levantado el telón del abono con un encierro de lujo de Pérez-Tabernero lidiado por Manzanares, Daniel Luque y Borja Jiménez, mientras las Noches del Patrimonio agotan turnos para redescubrir gratis el casco histórico."
+        "Las Ferias y Fiestas han cerrado su semana grande con nuevos llenos en la Plaza Mayor: M-Clan, Valeria Castro e Íñigo Quintero se han rendido a un escenario que también vivió una gran traca de pólvora valenciana y el folclórico Día del Tamborilero.",
+        "La organización ya pregunta a los salmantinos si han acudido a alguno de los conciertos de la Plaza Mayor, en una encuesta que retrata el pulso real de una programación muy comentada este año."
       ]
     },
     {
-      "concepto": "María Sánchez, candidata del PSOE a la Alcaldía de Salamanca en 2027",
-      "piezas": 1,
-      "seccion_principal": "salamanca",
-      "desde": "2026-09-11",
-      "hasta": "2026-09-11",
+      "concepto": "La Feria taurina de La Glorieta agota entradas",
+      "piezas": 6,
+      "seccion_principal": "toros",
+      "desde": "2026-09-12",
+      "hasta": "2026-09-13",
       "ejemplos_redactados": [
-        "María Sánchez ha cerrado el proceso de primarias del PSOE de Salamanca con el respaldo de Marcelino Muñoz y encabezará la candidatura socialista a la Alcaldía en 2027, la primera vez que una mujer lidera esa lista.",
-        "'Salamanca lleva ya demasiados años resignada y es un momento de cambio', ha asegurado la candidata, convencida de que 'va a ser la alcaldesa de Salamanca a partir de mayo de 2027'."
+        "La Feria taurina de La Glorieta sigue colgando el cartel de 'no hay billetes': David de Miranda ha triunfado en su presentación con 'Gracioso' y Roca Rey vuelve a arrastrar público tarde tras tarde, mientras Morante pasaba de sobresaliente a titular en una de las corridas."
       ]
     },
     {
-      "concepto": "Copa RFEF: Salamanca UDS y Santa Marta ya conocen rival en octavos",
+      "concepto": "Fútbol: victorias para Salamanca UDS y Santa Marta, tropiezo de Unionistas",
       "piezas": 6,
       "seccion_principal": "deportes",
-      "desde": "2026-09-10",
-      "hasta": "2026-09-11",
+      "desde": "2026-09-12",
+      "hasta": "2026-09-13",
       "ejemplos_redactados": [
-        "El sorteo de octavos de la Copa RFEF ha deparado morbo para los dos equipos salmantinos: el Salamanca UDS se medirá al Derio, el equipo del que salió Iker Muniain, mientras el Santa Marta sueña con seguir haciendo historia camino de la Copa del Rey.",
-        "Unionistas, que ha confirmado la grave lesión de Dani González, afronta este fin de semana su visita al Real Avilés con la necesidad de reaccionar tras su mal arranque."
+        "Buen fin de semana para los dos representantes salmantinos en las categorías nacionales: el Salamanca UDS venció al Getafe B (1-0) con gol de Asier y el Santa Marta se impuso en Villaralbo (1-2) con un golazo en el descuento.",
+        "Unionistas, en cambio, se hundió en Avilés (3-1) tras remontarle el Real Avilés, en una jornada empañada además por el ataque sufrido por un grupo de sus aficionados antes del partido."
       ]
     },
     {
-      "concepto": "La Fiscalía pide cárcel en dos casos de gran repercusión",
-      "piezas": 2,
-      "seccion_principal": "sucesos",
-      "desde": "2026-09-10",
-      "hasta": "2026-09-11",
-      "ejemplos_redactados": [
-        "La Fiscalía de Salamanca pide cárcel para un conductor de autobús acusado de tocamientos a una profesora durante un viaje escolar a Francia.",
-        "El fiscal también lleva al banquillo a un acusado de llamar 'puto negro' a un niño en un partido de fútbol base, para el que pide cárcel y dos años y medio sin poder pisar un campo."
-      ]
-    },
-    {
-      "concepto": "Nueva tanda de accidentes e incendios en la provincia",
-      "piezas": 5,
-      "seccion_principal": "sucesos",
-      "desde": "2026-09-10",
-      "hasta": "2026-09-11",
-      "ejemplos_redactados": [
-        "La provincia ha vivido una nueva tanda de accidentes de tráfico —un frenazo de autobús con una herida, un coche contra un garaje en la Cuesta de San Blas y un positivo en alcoholemia en pleno centro— además de dos incendios de vegetación, uno de ellos en Colmenar de Montemayor con quince medios movilizados."
-      ]
-    },
-    {
-      "concepto": "Los médicos convocan huelga indefinida para el 28 de octubre",
+      "concepto": "El Supremo suspende el voto a 3.000 nuevos salmantinos de la Ley de Nietos",
       "piezas": 1,
       "seccion_principal": "salamanca",
-      "desde": "2026-09-11",
-      "hasta": "2026-09-11",
+      "desde": "2026-09-13",
+      "hasta": "2026-09-13",
       "ejemplos_redactados": [
-        "Los médicos han fijado el 28 de octubre como fecha para iniciar una huelga indefinida contra el nuevo Estatuto Marco."
+        "El Tribunal Supremo ha suspendido el derecho al voto de más de 3.000 nuevos salmantinos que obtuvieron la nacionalidad española gracias a la 'Ley de Nietos' —descendientes de quienes emigraron durante la Guerra Civil o la dictadura—, a la espera de resolver el recurso antes de las próximas elecciones."
       ]
     },
     {
-      "concepto": "Las universidades arrancan el curso con fuerte presencia internacional",
-      "piezas": 3,
+      "concepto": "Salamanca, referente nacional en trasplante pulmonar",
+      "piezas": 2,
       "seccion_principal": "salamanca",
-      "desde": "2026-09-10",
-      "hasta": "2026-09-11",
+      "desde": "2026-09-12",
+      "hasta": "2026-09-13",
       "ejemplos_redactados": [
-        "La Universidad de Salamanca ha recibido a 1.218 estudiantes internacionales de 50 países para este curso, mientras la UPSA refuerza su apuesta investigadora y la UNED abre matrícula en Ciudad Rodrigo."
+        "España mantiene su liderazgo mundial en donación y trasplantes, y Salamanca se ha reivindicado como referente nacional en trasplante pulmonar, según ha explicado la salmantina Beatriz Domínguez-Gil, directora de la Organización Nacional de Trasplantes."
+      ]
+    },
+    {
+      "concepto": "Nueva tanda de sucesos en la provincia",
+      "piezas": 7,
+      "seccion_principal": "sucesos",
+      "desde": "2026-09-12",
+      "hasta": "2026-09-13",
+      "ejemplos_redactados": [
+        "La provincia ha vivido una nueva tanda de sucesos: un menor herido por arma blanca en una pelea en La Aldehuela, un coche calcinado de madrugada en la A-66, un positivo en cocaína con la ITV caducada en Comuneros y varias colisiones con heridos, entre ellas en Carbajosa de la Sagrada y la carretera de Ledesma.",
+        "Tres agresiones registradas en menos de cuatro horas de madrugada dejaron además a una persona evacuada al hospital."
+      ]
+    },
+    {
+      "concepto": "Fallece el empresario salmantino José Antonio Campal en un accidente de moto",
+      "piezas": 1,
+      "seccion_principal": "sucesos",
+      "desde": "2026-09-12",
+      "hasta": "2026-09-12",
+      "ejemplos_redactados": [
+        "El empresario salmantino José Antonio Campal ha fallecido este fin de semana en un accidente de moto."
+      ]
+    },
+    {
+      "concepto": "La agonía del Mercado de San Bernardo",
+      "piezas": 1,
+      "seccion_principal": "salamanca",
+      "desde": "2026-09-12",
+      "hasta": "2026-09-12",
+      "ejemplos_redactados": [
+        "El histórico Mercado de San Bernardo agoniza junto a la estación de autobuses: apenas siete negocios siguen abiertos, los comerciantes lamentan la decadencia y el Ayuntamiento estudia sacar a subasta los puestos vacíos."
       ]
     }
   ],
-  "resumen_borrador": "Se han publicado 134 noticias entre el 2026-09-09 y el 2026-09-11. La actividad se ha concentrado sobre todo en salamanca (42 piezas), provincia (33 piezas), deportes (24 piezas).\n\nLos conceptos con más piezas relacionadas son: Plaza; Santa · Marta; Abre; Semana. Revisa 'evidencia' de cada concepto para redactar el resumen final.",
-  "resumen": "Las Ferias y Fiestas de Salamanca han seguido llenando la Plaza Mayor de conciertos y ambiente —La La Love You, el acento granadino de las últimas citas y una Feria de Día que no para— mientras arrancaba también la Feria taurina de La Glorieta, con un encierro de lujo de Pérez-Tabernero lidiado por Manzanares, Daniel Luque y Borja Jiménez. Las Noches del Patrimonio agotan turnos para redescubrir gratis el casco histórico, aunque no todo ha sido fiesta sin incidentes: dos casetas fueron precintadas de madrugada por poner música fuera de horario, aunque ya han podido reabrir.\n\nEn clave política, María Sánchez ya es oficialmente la candidata del PSOE a la Alcaldía de Salamanca de cara a 2027, tras cerrar el proceso de primarias con el respaldo de Marcelino Muñoz; será la primera mujer en encabezar esa candidatura y se ha mostrado convencida de que gobernará la ciudad a partir de mayo de ese año. En el deporte, el sorteo de la Copa RFEF ha deparado morbo para los dos representantes salmantinos: el Salamanca UDS se medirá al Derio, el equipo del que salió Iker Muniain, y el Santa Marta sueña con seguir avanzando camino de la Copa del Rey, mientras Unionistas, que afronta su visita al Real Avilés, ha confirmado la grave lesión de Dani González.\n\nLa Fiscalía ha pedido cárcel en dos casos de gran repercusión: para un conductor de autobús acusado de tocamientos a una profesora en un viaje escolar a Francia, y para un hombre acusado de un insulto racista a un niño en un partido de fútbol base. La provincia ha vivido además una nueva tanda de accidentes de tráfico y dos incendios de vegetación, uno de ellos en Colmenar de Montemayor con quince medios movilizados. En el ámbito sanitario, los médicos han fijado el 28 de octubre para iniciar una huelga indefinida contra el Estatuto Marco, y las universidades de la ciudad arrancan el curso con fuerte presencia internacional: la Universidad de Salamanca ha recibido a 1.218 estudiantes de 50 países."
+  "resumen_borrador": "Se han publicado 99 noticias entre el 2026-09-12 y el 2026-09-14. La actividad se ha concentrado sobre todo en salamanca (37 piezas), deportes (19 piezas), toros (16 piezas).\n\nLos conceptos con más piezas relacionadas son: Plaza, Santa Marta, Feria taurina. Revisa 'evidencia' de cada concepto para redactar el resumen final.",
+  "resumen": "Las Ferias y Fiestas de Salamanca han cerrado su semana grande con nuevos llenos en la Plaza Mayor: M-Clan, Valeria Castro e Íñigo Quintero se han rendido a un escenario que también vivió una gran traca de pólvora valenciana y el folclórico Día del Tamborilero. En paralelo, la Feria taurina de La Glorieta sigue colgando el cartel de 'no hay billetes', con la consagración de David de Miranda y un Roca Rey que vuelve a arrastrar público tarde tras tarde.\n\nEn el fútbol, buen fin de semana para los dos representantes salmantinos en las categorías nacionales: el Salamanca UDS venció al Getafe B (1-0) con gol de Asier y el Santa Marta se impuso en Villaralbo (1-2) con un golazo en el descuento, mientras Unionistas se hundió en Avilés (3-1) tras remontarle el rival, en una jornada empañada por el ataque sufrido por un grupo de sus aficionados antes del partido.\n\nEl Tribunal Supremo ha suspendido el derecho al voto de más de 3.000 nuevos salmantinos que obtuvieron la nacionalidad española gracias a la 'Ley de Nietos', descendientes de quienes emigraron durante la Guerra Civil o la dictadura, a la espera de resolver el recurso antes de las próximas elecciones. En clave más amable, Salamanca se ha reivindicado como referente nacional en trasplante pulmonar, según ha explicado la salmantina Beatriz Domínguez-Gil, directora de la Organización Nacional de Trasplantes.\n\nLa provincia ha vivido además una nueva tanda de sucesos —un menor herido por arma blanca en La Aldehuela, un coche calcinado en la A-66, varias colisiones con heridos y tres agresiones en menos de cuatro horas de madrugada— y ha lamentado el fallecimiento del empresario salmantino José Antonio Campal en un accidente de moto. En el terreno económico, el histórico Mercado de San Bernardo agoniza junto a la estación de autobuses, con apenas siete negocios abiertos y el Ayuntamiento estudiando sacar a subasta los puestos vacíos."
 }

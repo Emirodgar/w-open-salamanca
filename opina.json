@@ -47,6 +47,18 @@
       ],
       "basado_en": "actualidad.json",
       "fecha_creacion": "2026-09-11"
+    },
+    {
+      "id": "mercado-san-bernardo-2026",
+      "pregunta": "Apenas siete negocios siguen abiertos en el histórico Mercado de San Bernardo y el Ayuntamiento estudia sacar a subasta los puestos vacíos. ¿Qué debería hacerse con el mercado?",
+      "opciones": [
+        "Invertir para revitalizarlo tal como está",
+        "Reconvertirlo a otro uso si no hay comerciantes",
+        "Sacar los puestos a subasta y que el mercado decida",
+        "Es indiferente, ya ha cumplido su función"
+      ],
+      "basado_en": "actualidad.json",
+      "fecha_creacion": "2026-09-14"
     }
   ]
 }

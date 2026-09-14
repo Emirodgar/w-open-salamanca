@@ -1,7 +1,7 @@
 {
   "mes": "2026-09",
   "titulo_mes": "Septiembre 2026",
-  "resumen_mes": "El mes arranca con la temporada de ferias en marcha (SALAMAQ, que cierra con récord de 90.000 visitantes, y la Feria del Caballo de Ciudad Rodrigo) y llega a su ecuador con las Ferias y Fiestas de Salamanca, que llenan la Plaza Mayor de conciertos multitudinarios y dan paso también a la Feria taurina. En clave política, María Sánchez se convierte en la primera mujer candidata del PSOE a la Alcaldía de cara a 2027. La provincia encadena fiestas patronales, mientras varios accidentes de tráfico —incluida una muerte tras un encierro en Villarino de los Aires—, los médicos anuncian una huelga indefinida para el 28 de octubre y el buen papel copero de Salamanca UDS y Santa Marta completan la fotografía de estos primeros once días.",
+  "resumen_mes": "El mes arranca con la temporada de ferias en marcha (SALAMAQ, que cierra con récord de 90.000 visitantes, y la Feria del Caballo de Ciudad Rodrigo) y llega a su ecuador con las Ferias y Fiestas de Salamanca, que llenan la Plaza Mayor de conciertos multitudinarios (Tony Hadley, Gente de Zona, M-Clan, Valeria Castro) y dan paso también a una Feria taurina que agota entradas en La Glorieta. En clave política, María Sánchez se convierte en la primera mujer candidata del PSOE a la Alcaldía de cara a 2027, mientras el Tribunal Supremo suspende el voto a más de 3.000 nuevos salmantinos acogidos a la Ley de Nietos. La provincia encadena fiestas patronales, mientras varios accidentes de tráfico —incluida una muerte tras un encierro en Villarino de los Aires—, los médicos anuncian una huelga indefinida para el 28 de octubre y el buen papel copero de Salamanca UDS y Santa Marta completan la fotografía de estos primeros catorce días.",
   "hitos": [
     {
       "fecha": "2026-09-01",
@@ -15,7 +15,7 @@
       "fecha": "2026-09-09",
       "titulo": "Las Ferias y Fiestas de Salamanca llenan la Plaza Mayor de conciertos",
       "categoria": "Cultura",
-      "descripcion": "Tras el pregón, la Plaza Mayor ha acogido conciertos multitudinarios de Tony Hadley y Gente de Zona junto a La Gozadera, calificado como el concierto más caro de la historia del cartel ferial.",
+      "descripcion": "Tras el pregón, la Plaza Mayor ha acogido conciertos multitudinarios de Tony Hadley y Gente de Zona junto a La Gozadera, calificado como el concierto más caro de la historia del cartel ferial; la semana grande se ha cerrado con M-Clan, Valeria Castro e Íñigo Quintero, mientras la Feria taurina de La Glorieta agotaba entradas con Roca Rey y la consagración de David de Miranda.",
       "fuente": "https://www.lagacetadesalamanca.es/salamanca/plaza-mayor-convierte-gozadera-concierto-caro-historia-20260909223905-nt.html",
       "destacado": false
     },
@@ -44,11 +44,11 @@
       "destacado": false
     },
     {
-      "fecha": "2026-09-01",
-      "titulo": "Varios heridos en accidentes de tráfico en la capital",
-      "categoria": "Sucesos",
-      "descripcion": "Un motorista resultó herido tras colisionar con un turismo en Salamanca capital, en una de varias colisiones de la semana que dejaron más heridos en la ciudad, entre ellas un alcance en la zona de Reina Berenguela.",
-      "fuente": "sin fuente directa",
+      "fecha": "2026-09-13",
+      "titulo": "El Supremo suspende el voto a 3.000 nuevos salmantinos de la Ley de Nietos",
+      "categoria": "Política",
+      "descripcion": "El Tribunal Supremo ha suspendido el derecho al voto de más de 3.000 nuevos salmantinos que obtuvieron la nacionalidad española gracias a la 'Ley de Nietos', a la espera de resolver el recurso antes de las próximas elecciones.",
+      "fuente": "https://www.lagacetadesalamanca.es/salamanca/derecho-voto-3000-nuevos-salmantinos-suspenso-orden-20260912214846-nt.html",
       "destacado": false
     },
     {
