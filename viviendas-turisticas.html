@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Viviendas de uso turístico (VUT)
-description: Distribución y densidad de pisos turísticos autorizados en Salamanca
+description: Cuántas viviendas de uso turístico hay realmente en Salamanca según cada registro oficial, y dónde se concentran
 date: 29-08-2026
 folder: Turismo
 permalink: viviendas-turisticas
@@ -24,16 +24,18 @@ permalink: viviendas-turisticas
 			<h2>Análisis de la oferta de alojamiento turístico</h2>
 			
 				<p>
-La distribución de las <a href="/viviendas-turisticas-alojamiento">Viviendas de Uso Turístico (VUT)</a> registradas en Salamanca refleja una <b>alta concentración espacial en el casco histórico</b> y sus accesos inmediatos. Esta centralización contrasta significativamente con el resto de distritos residenciales de la ciudad.</p>
+¿Cuántas <a href="/viviendas-turisticas-alojamiento">Viviendas de Uso Turístico (VUT)</a> hay realmente en Salamanca? Depende de a quién se pregunte: el registro autonómico, el ayuntamiento, el INE por encuesta directa y el INE por rastreo de plataformas como Airbnb dan cifras que van de 244 a más de 600 para la misma ciudad y fecha aproximada. Esa discrepancia es, en sí misma, uno de los datos más reveladores del fenómeno.</p>
 
 <h3>Hallazgos clave sobre el parque turístico</h3>
 <ul>
-<li><b>Concentración en el Casco Antiguo</b>: Más del 70% de las plazas de VUT inscritas en el registro oficial autonómico se localizan dentro del perímetro delimitado por el centro histórico y el entorno de la Plaza Mayor.</li>
+<li><b>Un mismo mercado, cinco cifras distintas</b>: el Registro de Turismo de la Junta de Castilla y León cuenta 318-331 VUT con licencia autonómica en la capital; el registro municipal del Ayuntamiento, tras endurecer la normativa, bajó a 244 en julio de 2026; los expedientes de regularización en trámite suman 450 viviendas; y el INE, rastreando anuncios en Airbnb, Booking y Vrbo, detecta unas 607 propiedades activas.</li>
 
-<li><b>Impacto en la <a href="/vivienda-alquiler-turismo-salamanca">densidad residencial</a></b>: En barrios céntricos, la proporción de plazas turísticas alcanza ratios de hasta 42,8 VUT por cada 1.000 habitantes, mientras que en barrios perimetrales como Garrido o Pizarrales no alcanza las 2 VUT por cada 1.000 habitantes.</li>
+<li><b>El pico y la caída de 2025</b>: la capital llegó a superar las 400 viviendas turísticas y 1.600 plazas en agosto de 2025, un máximo histórico. La nueva normativa municipal restrictiva provocó después una caída del 23,8% en solo un año (de 797 en noviembre de 2024 a en torno a 607 en noviembre de 2025).</li>
+
+<li><b>Concentración en el Casco Antiguo, con fuga hacia la periferia</b>: en las calles más próximas a la Plaza Mayor, hasta el 7,5% de las viviendas son de uso turístico &ndash;un nivel comparable al de las zonas más saturadas de Cádiz&ndash;, y solo el corredor entre la Plaza de San Boal y el paseo del Rector Esperabé concentra unos 300 establecimientos. El crecimiento más reciente se traslada ya a barrios como Tejares, Alamedilla-Jesuitas y el entorno de Gran Capitán.</li>
 </ul>
 
-  <h2>Número de VUT registradas por zonas de la ciudad</h2>
+  <h2>Cuántas VUT hay en Salamanca, según cada fuente</h2>
   <canvas id="vutChart" width="800" height="400"></canvas>
 
 			</div>
@@ -42,20 +44,22 @@ La distribución de las <a href="/viviendas-turisticas-alojamiento">Viviendas de
 			<table border="1" cellpadding="5" cellspacing="0">
 			  <thead>
 				<tr>
-				  <th>Zona / Barrio</th>
-				  <th>VUT Registradas</th>
-				  <th>% sobre Total</th>
-				  <th>Densidad (VUT / 1.000 hab.)</th>
+				  <th>Fuente / Registro</th>
+				  <th>VUT Contabilizadas</th>
+				  <th>Ámbito</th>
+				  <th>Fecha del Dato</th>
+				  <th>Metodología</th>
 				</tr>
 			  </thead>
 			  <tbody>
-				<tr><td>Casco Histórico / Centro</td><td>685</td><td>71.4%</td><td>42.8</td></tr>
-				<tr><td>San Bernardo / Campus</td><td>82</td><td>8.5%</td><td>5.8</td></tr>
-				<tr><td>Canalejas / Delicias</td><td>54</td><td>5.6%</td><td>3.9</td></tr>
-				<tr><td>Garrido (Norte / Sur)</td><td>41</td><td>4.3%</td><td>1.1</td></tr>
-				<tr><td>Prosperidad / Universidad Laboral</td><td>35</td><td>3.6%</td><td>2.9</td></tr>
-				<tr><td>Pizarrales / Blanco</td><td>18</td><td>1.9%</td><td>0.9</td></tr>
-				<tr><td>Otros distritos / Alfoz cercano</td><td>44</td><td>4.7%</td><td>1.4</td></tr>
+				<tr><td>Pico histórico (Ayuntamiento)</td><td>400+ (1.600+ plazas)</td><td>Capital</td><td>Agosto 2025</td><td>Máximo previo a la nueva normativa restrictiva</td></tr>
+				<tr><td>Registro municipal, previo a la reforma</td><td>797</td><td>Capital</td><td>Noviembre 2024</td><td>Registro de actividad del Ayuntamiento</td></tr>
+				<tr><td>INE &ndash; detección en plataformas</td><td>~607</td><td>Capital</td><td>Noviembre 2025</td><td>Rastreo de anuncios en Airbnb, Booking y Vrbo (-23,8% interanual)</td></tr>
+				<tr><td>Expedientes de regularización municipal</td><td>450 (245 expedientes)</td><td>Capital</td><td>2026</td><td>Viviendas en proceso de legalización tras la nueva normativa</td></tr>
+				<tr><td>Registro de Turismo de la Junta de CyL</td><td>318-331</td><td>Capital</td><td>2026</td><td>Licencia autonómica oficial de VUT</td></tr>
+				<tr><td>Registro municipal, tras la reforma</td><td>244</td><td>Capital</td><td>Julio 2026</td><td>Registro de actividad del Ayuntamiento tras endurecer la normativa</td></tr>
+				<tr><td>INE &ndash; Estadística Experimental VUT</td><td>1.207 (6.203 plazas)</td><td>Provincia</td><td>2025</td><td>Detección de anuncios en plataformas a nivel provincial</td></tr>
+				<tr><td>INE &ndash; Encuesta de Ocupación VUT</td><td>644 (~2.400 plazas)</td><td>Provincia</td><td>2025</td><td>Encuesta directa a establecimientos operativos</td></tr>
 			  </tbody>
 			</table>
 
@@ -79,47 +83,50 @@ La distribución de las <a href="/viviendas-turisticas-alojamiento">Viviendas de
       maxZoom: 19
     }).addTo(mapVut);
 
-    // Representación de densidad VUT mediante círculos proporcionales
+    // Zonas con datos reales verificados (prensa local / INE) y zonas de expansión
+    // reciente citadas en prensa pero sin recuento oficial propio todavía.
     const zonasVut = [
-      { name: 'Casco Histórico - Plaza Mayor', lat: 40.9650, lng: -5.6641, count: 685, radius: 450, color: '#e63946' },
-      { name: 'San Bernardo', lat: 40.9680, lng: -5.6720, count: 82, radius: 250, color: '#f4a261' },
-      { name: 'Canalejas', lat: 40.9620, lng: -5.6570, count: 54, radius: 200, color: '#e9c46a' },
-      { name: 'Garrido Norte', lat: 40.9740, lng: -5.6580, count: 41, radius: 180, color: '#2a9d8f' },
-      { name: 'Pizarrales', lat: 40.9730, lng: -5.6760, count: 18, radius: 120, color: '#264653' }
+      { name: 'San Boal &ndash; Rector Esperabé', lat: 40.9628, lng: -5.6650, desc: '~300 establecimientos: el corredor con mayor concentración de la ciudad', radius: 260, color: '#E63946' },
+      { name: 'Plaza Mayor / Casco Histórico', lat: 40.9650, lng: -5.6630, desc: 'Hasta el 7,5% de las viviendas son VUT, nivel comparable a Cádiz', radius: 200, color: '#F4A261' },
+      { name: 'Tejares', lat: 40.9552, lng: -5.6992, desc: 'Zona de expansión reciente de VUT (sin recuento oficial propio)', radius: 90, color: '#2A9D8F' },
+      { name: 'Alamedilla &ndash; Jesuitas', lat: 40.9691, lng: -5.6531, desc: 'Zona de expansión reciente de VUT (sin recuento oficial propio)', radius: 90, color: '#2A9D8F' },
+      { name: 'Gran Capitán', lat: 40.9600, lng: -5.6720, desc: 'Zona de expansión reciente de VUT (sin recuento oficial propio)', radius: 90, color: '#2A9D8F' }
     ];
 
     zonasVut.forEach(z => {
       L.circle([z.lat, z.lng], {
         color: z.color,
         fillColor: z.color,
-        fillOpacity: 0.6,
+        fillOpacity: 0.55,
         radius: z.radius
-      }).bindPopup(`<b>${z.name}</b><br>Pisos Turísticos: ${z.count}`).addTo(mapVut);
+      }).bindPopup(`<b>${z.name}</b><br>${z.desc}`).addTo(mapVut);
     });
 
-    // 2. Gráfico de barras de distribución de VUT
+    // 2. Gráfico de barras: cuántas VUT hay según cada fuente/registro
     const ctxVut = document.getElementById('vutChart').getContext('2d');
     const vutChart = new Chart(ctxVut, {
       type: 'bar',
       data: {
-        labels: ['Centro/Casco Histórico', 'San Bernardo', 'Canalejas', 'Garrido', 'Prosperidad', 'Pizarrales', 'Otros'],
+        labels: [
+          'Pico histórico ago-2025 (Ayto.)', 'Registro municipal nov-2024', 'INE plataformas nov-2025', 'Expedientes regularización',
+          'Registro Junta de CyL', 'Registro municipal jul-2026'
+        ],
         datasets: [{
-          label: 'Nº de VUTs Registradas',
-          data: [685, 82, 54, 41, 35, 18, 44],
-          backgroundColor: [
-            '#e63946', '#f4a261', '#e9c46a', '#2a9d8f', '#2a9d8f', '#264653', '#264653'
-          ],
+          label: 'VUT contabilizadas (capital)',
+          data: [400, 797, 607, 450, 325, 244],
+          backgroundColor: ['#E63946', '#F4A261', '#F4A261', '#2A9D8F', '#1E56A0', '#1E56A0'],
           borderRadius: 4
         }]
       },
       options: {
+        indexAxis: 'y',
         responsive: true,
         plugins: {
           legend: { display: false }
         },
         scales: {
-          y: { title: { display: true, text: 'Viviendas Registradas' }, beginAtZero: true },
-          x: { title: { display: true, text: 'Zona / Barrio' } }
+          x: { title: { display: true, text: 'Nº de VUT' }, beginAtZero: true },
+          y: { title: { display: true, text: 'Fuente / Momento' } }
         }
       }
     });
