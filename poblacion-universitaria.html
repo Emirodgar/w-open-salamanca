@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Población universitaria y residentes temporales
-description: Impacto del alumnado de la USAL y la UPSA en la población flotante y el padrón de Salamanca
+description: Impacto del alumnado de la USAL y la UPSA en la población flotante y el padrón de los barrios de Salamanca
 date: 29-08-2026
 folder: Demografia
 permalink: poblacion-universitaria
@@ -28,8 +28,9 @@ La presencia de la <a href="/comparativa-usal-upsa">Universidad de Salamanca (US
 
 <h3>Efectos clave de la comunidad universitaria</h3>
 <ul>
-<li><b>Población no empadronada</b>: Se calcula que más del 65% de los alumnos universitarios no nacidos en la provincia residen en la ciudad durante el curso lectivo sin registrarse en el padrón municipal.</li>
-<li><b>Impacto en el mercado de alquiler</b>: Barrios como San Bernardo, Foncencalda y el entorno de la Avenida Filiberto Villalobos presentan una tasa de viviendas destinadas a estudiantes superior al 35%.</li>
+<li><b>Población no empadronada</b>: se calcula que más del 65% de los alumnos universitarios no nacidos en la provincia residen en la ciudad durante el curso lectivo sin registrarse en el padrón municipal.</li>
+<li><b>El "efecto fantasma" en el padrón de los barrios históricos</b>: al cruzar estos datos con el <a href="/poblacion-demografia">padrón por barrios</a>, se observa que Vidal, San Vicente, Labradores y Carmen —cuatro de las collaciones históricas con menor población empadronada de toda la ciudad, entre 555 y 1.168 residentes registrados— son en realidad las de mayor concentración estudiantil relativa: entre el 66% y el 76% de quienes viven allí durante el curso son estudiantes que no figuran en el censo oficial.</li>
+<li><b>Impacto en el mercado de alquiler</b>: Barrios como San Bernardo, Vidal y el entorno de la Avenida Filiberto Villalobos, próximos al Campus Miguel de Unamuno, presentan una tasa de viviendas destinadas a estudiantes superior al 35%, lo que también explica por qué sus <a href="/precio-vivienda">precios de alquiler</a> se sitúan por encima de lo que su renta media haría esperar.</li>
 </ul>
 
   <h2>Distribución del alumnado matriculado por origen académico (%)</h2>
@@ -45,18 +46,22 @@ La presencia de la <a href="/comparativa-usal-upsa">Universidad de Salamanca (US
 			<table border="1" cellpadding="5" cellspacing="0">
 			  <thead>
 				<tr>
-				  <th>Campus / Entorno Residentes</th>
+				  <th>Barrio / Entorno</th>
 				  <th>Estudiantes Estimados</th>
-				  <th>% sobre Población del Barrio</th>
+				  <th>% sobre Población Residente</th>
 				  <th>Tipo de Alojamiento Principal</th>
 				</tr>
 			  </thead>
 			  <tbody>
-				<tr><td>Campus Unamuno / San Bernardo</td><td>12.400</td><td>38.5%</td><td>Pisos compartidos / Residencias</td></tr>
-				<tr><td>Campus Histórico / Centro (Anaya/FONS)</td><td>7.200</td><td>21.0%</td><td>Pisos compartidos / Colegios Mayores</td></tr>
-				<tr><td>Campus Canalejas / Educación</td><td>3.800</td><td>14.2%</td><td>Pisos de alquiler / Residencias</td></tr>
-				<tr><td>Sede Central UPSA (Clerecía / Fonseca)</td><td>4.100</td><td>12.5%</td><td>Residencias Universitarias / Pisos</td></tr>
-				<tr><td>Campus Villamayor (Investigación)</td><td>1.200</td><td>N/A</td><td>Desplazamiento diario / Alfoz</td></tr>
+				<tr><td>Centro (Campus Anaya USAL + Sede UPSA Clerecía/Fonseca)</td><td>8.300</td><td>24.1%</td><td>Pisos compartidos / Colegios Mayores / Residencias UPSA</td></tr>
+				<tr><td>San Bernardo (Campus Miguel de Unamuno)</td><td>6.200</td><td>42.8%</td><td>Pisos compartidos / Residencias universitarias</td></tr>
+				<tr><td>Vidal (Campus Miguel de Unamuno)</td><td>3.800</td><td>76.5%</td><td>Pisos compartidos (alta rotación)</td></tr>
+				<tr><td>Labradores (Campus Canalejas - Educación)</td><td>2.600</td><td>72.5%</td><td>Pisos de alquiler / Residencias</td></tr>
+				<tr><td>Garrido Sur (Campus Miguel de Unamuno)</td><td>2.400</td><td>11.1%</td><td>Pisos de alquiler / vivienda familiar mixta</td></tr>
+				<tr><td>San Vicente (Campus Histórico)</td><td>1.600</td><td>74.2%</td><td>Pisos compartidos (casco histórico)</td></tr>
+				<tr><td>Carmen (Campus Histórico)</td><td>1.400</td><td>66.7%</td><td>Pisos compartidos (casco histórico)</td></tr>
+				<tr><td>Glorieta (Campus Canalejas - Educación)</td><td>1.200</td><td>66.3%</td><td>Pisos de alquiler / Residencias</td></tr>
+				<tr><td>Villamayor de Armuña (Campus de Investigación)</td><td>1.200</td><td>N/A</td><td>Desplazamiento diario / Alfoz</td></tr>
 			  </tbody>
 			</table>
 
@@ -80,20 +85,29 @@ La presencia de la <a href="/comparativa-usal-upsa">Universidad de Salamanca (US
       maxZoom: 19
     }).addTo(mapUniv);
 
-    const campusNodes = [
-      { name: 'Campus Miguel de Unamuno (USAL)', lat: 40.9690, lng: -5.6740, desc: 'Mayor concentración de facultades y residencias', color: '#1e56a0' },
-      { name: 'Campus Histórico - Anaya (USAL)', lat: 40.9610, lng: -5.6660, desc: 'Filología, Geografía e Historia', color: '#1e56a0' },
-      { name: 'Sede Central UPSA (La Clerecía)', lat: 40.9628, lng: -5.6655, desc: 'Sede central de la Univ. Pontificia', color: '#2c5f2d' },
-      { name: 'Campus Canalejas (USAL)', lat: 40.9625, lng: -5.6550, desc: 'Facultad de Educación', color: '#1e56a0' }
+    // Nodos por barrio: centroide real de cada polígono en barrios-salamanca.json.
+    // El radio del círculo es proporcional a los estudiantes estimados; el color
+    // refleja qué parte de la población residente es estudiantil (dato cruzado
+    // con /poblacion-demografia): azul = baja, naranja = media, rojo = muy alta.
+    const barrioNodes = [
+      { name: 'Centro', desc: 'Campus Anaya (USAL) + Sede UPSA Clerecía/Fonseca · 8.300 estudiantes · 24,1% de la población residente', lat: 40.9649, lng: -5.6639, students: 8300, color: '#1E56A0' },
+      { name: 'San Bernardo', desc: 'Campus Miguel de Unamuno · 6.200 estudiantes · 42,8% de la población residente', lat: 40.9684, lng: -5.6738, students: 6200, color: '#F4A261' },
+      { name: 'Vidal', desc: 'Campus Miguel de Unamuno · 3.800 estudiantes · 76,5% de la población residente', lat: 40.9739, lng: -5.6671, students: 3800, color: '#E63946' },
+      { name: 'Labradores', desc: 'Campus Canalejas (Educación) · 2.600 estudiantes · 72,5% de la población residente', lat: 40.9706, lng: -5.6606, students: 2600, color: '#E63946' },
+      { name: 'Garrido Sur', desc: 'Campus Miguel de Unamuno · 2.400 estudiantes · 11,1% de la población residente', lat: 40.9712, lng: -5.6546, students: 2400, color: '#1E56A0' },
+      { name: 'San Vicente', desc: 'Campus Histórico · 1.600 estudiantes · 74,2% de la población residente', lat: 40.9632, lng: -5.6727, students: 1600, color: '#E63946' },
+      { name: 'Carmen', desc: 'Campus Histórico · 1.400 estudiantes · 66,7% de la población residente', lat: 40.9747, lng: -5.6744, students: 1400, color: '#E63946' },
+      { name: 'Glorieta', desc: 'Campus Canalejas (Educación) · 1.200 estudiantes · 66,3% de la población residente', lat: 40.9777, lng: -5.6611, students: 1200, color: '#E63946' },
+      { name: 'Villamayor de Armuña', desc: 'Campus de Investigación · 1.200 estudiantes (desplazamiento diario)', lat: 40.9958, lng: -5.6103, students: 1200, color: '#6c757d' }
     ];
 
-    campusNodes.forEach(c => {
-      L.circle([c.lat, c.lng], {
-        color: c.color,
-        fillColor: c.color,
-        fillOpacity: 0.6,
-        radius: 320
-      }).bindPopup(`<b>${c.name}</b><br>${c.desc}`).addTo(mapUniv);
+    barrioNodes.forEach(b => {
+      L.circle([b.lat, b.lng], {
+        color: b.color,
+        fillColor: b.color,
+        fillOpacity: 0.55,
+        radius: 6 * Math.sqrt(b.students)
+      }).bindPopup(`<b>${b.name}</b><br>${b.desc}`).addTo(mapUniv);
     });
 
     // 2. Gráfico de dona: Procedencia del alumnado
