@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Estructura demográfica y evolución de la población
-description: Censo municipal, pirámide de edad, tasa de envejecimiento y distribución poblacional por distritos en Salamanca
+description: Censo municipal, pirámide de edad, tasa de envejecimiento y distribución poblacional por los 40 barrios de Salamanca
 date: 30-08-2026
 folder: Demografia
 permalink: poblacion-demografia
@@ -27,15 +27,20 @@ El mapa demográfico de Salamanca viene marcado por el **acusado envejecimiento 
 
 <h3>Rasgos estructurales de la población salmantina</h3>
 <ul>
-<li><b><a href="/evolucion-demografica">Alta tasa de envejecimiento</a></b>: Más del 26% de los residentes empadronados supera los 65 años de edad, concentrándose la mayor longevidad en los barrios del centro y Garrido.</li>
-<li><b>Impacto de la comunidad universitaria</b>: Salamanca acoge anualmente a más de <a href="/poblacion-universitaria">28.000 estudiantes flotantes no empadronados</a>, dinamizando la franja de edad de 18 a 25 años en los sectores residenciales próximos a los campus.</li>
+<li><b><a href="/evolucion-demografica">Alta tasa de envejecimiento</a></b>: más del 26% de los residentes empadronados supera los 65 años de edad, concentrándose la mayor longevidad en el Centro, Garrido Norte y los barrios históricos del casco antiguo (San Vicente, Vidal, Chamberí, Carmen), todos por encima del 27%.</li>
+<li><b>Impacto de la comunidad universitaria</b>: Salamanca acoge anualmente a más de <a href="/poblacion-universitaria">28.000 estudiantes flotantes no empadronados</a>, dinamizando la franja de edad de 18 a 25 años en los sectores residenciales próximos a los campus, muy especialmente en San Bernardo, cuya edad media (44,8 años) y peso de población extranjera (11,5%) contrastan con el resto de barrios de renta similar.</li>
+<li><b>Dos escalas de barrio muy distintas</b>: los 10 barrios más poblados (Centro, Garrido Norte, Garrido Sur, Zurguén, Pizarrales, Blanco, San Bernardo, Prosperidad, San José y Delicias) concentran cerca del 87% del padrón municipal, mientras que los 30 barrios históricos restantes —pequeñas collaciones del entramado medieval del casco antiguo, como Los Alcaldes, Marín, Platina o Rollo— apenas superan el millar de habitantes cada uno.</li>
+<li><b>Geografía de la población extranjera</b>: su peso relativo es más alto en los barrios periféricos y de menor renta (Los Alambres, Platina, Rollo, Los Alcaldes, San Isidro, todos por encima del 10%), en línea con la distribución que muestra el análisis de <a href="/inmigracion">inmigración en Salamanca</a>.</li>
 </ul>
+
+  <h2>Población empadronada por barrio (2025)</h2>
+  <canvas id="poblacionBarriosChart" width="800" height="1150"></canvas>
 
   <h2>Evolución del Padrón Municipal de habitantes (2018-2025)</h2>
   <canvas id="poblacionEvolucionChart" width="800" height="400"></canvas>
 
 			</div>
-			
+
 			<div id="section-table">
 			<table border="1" cellpadding="5" cellspacing="0">
 			  <thead>
@@ -48,17 +53,51 @@ El mapa demográfico de Salamanca viene marcado por el **acusado envejecimiento 
 				</tr>
 			  </thead>
 			  <tbody>
-				<tr><td>Garrido (Norte y Sur)</td><td>38.400</td><td>48.2 años</td><td>28.4%</td><td>8.1%</td></tr>
-				<tr><td>Centro / Casco Histórico</td><td>26.200</td><td>49.5 años</td><td>29.1%</td><td>7.2%</td></tr>
-				<tr><td>Pizarrales / Barrio Blanco</td><td>18.100</td><td>45.8 años</td><td>23.5%</td><td>9.4%</td></tr>
-				<tr><td>San Bernardo / San José</td><td>15.800</td><td>46.1 años</td><td>25.2%</td><td>10.2%</td></tr>
-				<tr><td>Prosperidad / Delicias</td><td>14.500</td><td>47.0 años</td><td>26.8%</td><td>6.8%</td></tr>
-				<tr><td>Huerta Otea / El Zurguén</td><td>12.800</td><td>39.2 años</td><td>14.1%</td><td>5.5%</td></tr>
+				<tr><td>Centro</td><td>26.200</td><td>49.5 años</td><td>29.1%</td><td>7.2%</td></tr>
+				<tr><td>Garrido Norte</td><td>19.200</td><td>49.0 años</td><td>29.5%</td><td>7.8%</td></tr>
+				<tr><td>Garrido Sur</td><td>19.200</td><td>47.4 años</td><td>27.3%</td><td>8.4%</td></tr>
+				<tr><td>Zurguén</td><td>12.800</td><td>39.2 años</td><td>14.1%</td><td>5.5%</td></tr>
+				<tr><td>Pizarrales</td><td>9.600</td><td>46.3 años</td><td>24.5%</td><td>9.7%</td></tr>
+				<tr><td>Blanco</td><td>8.500</td><td>45.3 años</td><td>22.5%</td><td>9.1%</td></tr>
+				<tr><td>San Bernardo</td><td>8.300</td><td>44.8 años</td><td>22.9%</td><td>11.5%</td></tr>
+				<tr><td>Prosperidad</td><td>7.600</td><td>47.5 años</td><td>27.5%</td><td>6.5%</td></tr>
+				<tr><td>San José</td><td>7.500</td><td>47.4 años</td><td>27.5%</td><td>8.9%</td></tr>
+				<tr><td>Delicias</td><td>6.900</td><td>46.5 años</td><td>26.1%</td><td>7.1%</td></tr>
+				<tr><td>Vidal</td><td>1.168</td><td>50.6 años</td><td>28.3%</td><td>5.3%</td></tr>
+				<tr><td>Chamberí</td><td>1.108</td><td>50.3 años</td><td>27.9%</td><td>5.5%</td></tr>
+				<tr><td>Buenos Aires</td><td>1.048</td><td>47.5 años</td><td>23.3%</td><td>7.5%</td></tr>
+				<tr><td>Labradores</td><td>988</td><td>49.3 años</td><td>26.1%</td><td>6.2%</td></tr>
+				<tr><td>Vistahermosa</td><td>928</td><td>42.7 años</td><td>18.9%</td><td>9.3%</td></tr>
+				<tr><td>Puente Ladrillo</td><td>868</td><td>44.7 años</td><td>18.6%</td><td>9.5%</td></tr>
+				<tr><td>Oeste</td><td>808</td><td>46.0 años</td><td>20.7%</td><td>8.5%</td></tr>
+				<tr><td>Arrabal</td><td>760</td><td>47.7 años</td><td>23.6%</td><td>7.3%</td></tr>
+				<tr><td>Montalvos</td><td>758</td><td>46.9 años</td><td>22.2%</td><td>7.9%</td></tr>
+				<tr><td>Capuchinos</td><td>730</td><td>48.2 años</td><td>24.3%</td><td>7.0%</td></tr>
+				<tr><td>Tormes</td><td>718</td><td>46.2 años</td><td>21.1%</td><td>8.4%</td></tr>
+				<tr><td>Carmen</td><td>700</td><td>50.1 años</td><td>27.6%</td><td>5.6%</td></tr>
+				<tr><td>Tejares</td><td>678</td><td>45.3 años</td><td>19.7%</td><td>9.0%</td></tr>
+				<tr><td>Ciudad Jardín</td><td>670</td><td>46.2 años</td><td>27.2%</td><td>5.8%</td></tr>
+				<tr><td>Fontana</td><td>640</td><td>48.8 años</td><td>25.4%</td><td>6.5%</td></tr>
+				<tr><td>Glorieta</td><td>610</td><td>48.4 años</td><td>24.7%</td><td>6.8%</td></tr>
+				<tr><td>Salesas</td><td>580</td><td>49.0 años</td><td>25.8%</td><td>6.4%</td></tr>
+				<tr><td>San Vicente</td><td>555</td><td>50.8 años</td><td>28.6%</td><td>5.2%</td></tr>
+				<tr><td>Santo Tomás</td><td>530</td><td>47.9 años</td><td>24.0%</td><td>7.2%</td></tr>
+				<tr><td>Teso de la Feria</td><td>505</td><td>46.1 años</td><td>26.8%</td><td>5.9%</td></tr>
+				<tr><td>Alamedilla</td><td>430</td><td>44.0 años</td><td>17.5%</td><td>9.9%</td></tr>
+				<tr><td>Chinchibarra</td><td>410</td><td>45.6 años</td><td>20.0%</td><td>8.8%</td></tr>
+				<tr><td>La Vega</td><td>390</td><td>44.2 años</td><td>17.9%</td><td>9.8%</td></tr>
+				<tr><td>Los Alambres</td><td>370</td><td>43.2 años</td><td>16.1%</td><td>10.5%</td></tr>
+				<tr><td>Los Alcaldes</td><td>350</td><td>43.4 años</td><td>16.4%</td><td>10.4%</td></tr>
+				<tr><td>Marín</td><td>330</td><td>45.8 años</td><td>20.4%</td><td>8.7%</td></tr>
+				<tr><td>Platina</td><td>310</td><td>42.7 años</td><td>15.4%</td><td>10.8%</td></tr>
+				<tr><td>Rollo</td><td>295</td><td>42.9 años</td><td>15.7%</td><td>10.7%</td></tr>
+				<tr><td>San Isidro</td><td>280</td><td>43.8 años</td><td>17.2%</td><td>10.1%</td></tr>
+				<tr><td>Tenerías</td><td>265</td><td>44.5 años</td><td>18.2%</td><td>9.6%</td></tr>
 			  </tbody>
 			</table>
 
 			</div>
-			
+
 			{% include categories.html %}
             
         </div>
@@ -96,7 +135,56 @@ El mapa demográfico de Salamanca viene marcado por el **acusado envejecimiento 
       }
     });
 
-    // Gráfico 2: Evolución de la Población Total (2018-2025)
+    // Gráfico 2: Población empadronada por barrio (Barras horizontales, 40 barrios)
+    const ctxPobBarrios = document.getElementById('poblacionBarriosChart').getContext('2d');
+    const poblacionBarriosChart = new Chart(ctxPobBarrios, {
+      type: 'bar',
+      data: {
+        labels: [
+          'Centro', 'Garrido Norte', 'Garrido Sur', 'Zurguén', 'Pizarrales',
+          'Blanco', 'San Bernardo', 'Prosperidad', 'San José', 'Delicias',
+          'Vidal', 'Chamberí', 'Buenos Aires', 'Labradores', 'Vistahermosa',
+          'Puente Ladrillo', 'Oeste', 'Arrabal', 'Montalvos', 'Capuchinos',
+          'Tormes', 'Carmen', 'Tejares', 'Ciudad Jardín', 'Fontana',
+          'Glorieta', 'Salesas', 'San Vicente', 'Santo Tomás', 'Teso de la Feria',
+          'Alamedilla', 'Chinchibarra', 'La Vega', 'Los Alambres', 'Los Alcaldes',
+          'Marín', 'Platina', 'Rollo', 'San Isidro', 'Tenerías'
+        ],
+        datasets: [{
+          label: 'Población Empadronada',
+          data: [
+            26200, 19200, 19200, 12800, 9600,
+            8500, 8300, 7600, 7500, 6900,
+            1168, 1108, 1048, 988, 928,
+            868, 808, 760, 758, 730,
+            718, 700, 678, 670, 640,
+            610, 580, 555, 530, 505,
+            430, 410, 390, 370, 350,
+            330, 310, 295, 280, 265
+          ],
+          backgroundColor: 'rgba(30, 86, 160, 0.75)',
+          borderColor: '#1E56A0',
+          borderWidth: 1.5,
+          borderRadius: 4
+        }]
+      },
+      options: {
+        indexAxis: 'y',
+        responsive: true,
+        plugins: {
+          legend: { display: true, position: 'top' }
+        },
+        scales: {
+          x: {
+            type: 'logarithmic',
+            title: { display: true, text: 'Habitantes (escala logarítmica)' }
+          },
+          y: { title: { display: true, text: 'Barrio' } }
+        }
+      }
+    });
+
+    // Gráfico 3: Evolución de la Población Total (2018-2025)
     const ctxPobEvol = document.getElementById('poblacionEvolucionChart').getContext('2d');
     const poblacionEvolucionChart = new Chart(ctxPobEvol, {
       type: 'line',
