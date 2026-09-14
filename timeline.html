@@ -108,9 +108,6 @@ permalink: timeline
 			const hitosHtml = hitosOrdenados.map(h => {
 				const color = CATEGORIAS[h.categoria] || 'var(--primary-color)';
 				const destacado = h.destacado ? ' tl-hito--destacado' : '';
-				const fuente = (h.fuente && h.fuente !== 'sin fuente directa')
-					? `<a class="tl-hito-fuente" href="${h.fuente}" target="_blank" rel="noopener">Ver noticia original ↗</a>`
-					: '';
 				return `
 				<div class="tl-hito${destacado}" data-categoria="${h.categoria}" style="--dot-color:${color}">
 					<div class="tl-hito-content">
@@ -121,7 +118,6 @@ permalink: timeline
 						</div>
 						<h4 class="tl-hito-title">${escapeHtml(h.titulo)}</h4>
 						<p class="tl-hito-desc">${escapeHtml(h.descripcion)}</p>
-						${fuente}
 					</div>
 				</div>`;
 			}).join('');
