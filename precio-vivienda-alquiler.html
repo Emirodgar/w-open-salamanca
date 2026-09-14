@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Mercado inmobiliario y precio de la vivienda
-description: Evolución del precio por metro cuadrado en compraventa y alquiler por barrios en Salamanca
+description: Evolución del precio por metro cuadrado en compraventa y alquiler en los 40 barrios de Salamanca y su alfoz
 date: 29-08-2026
 folder: Urbanismo
 permalink: precio-vivienda-alquiler
@@ -27,12 +27,13 @@ El mercado residencial en Salamanca muestra una **elevada presión en los precio
 
 <h3>Factores determinantes del mercado residencial</h3>
 <ul>
-<li><b>Presión en el mercado de alquiler</b>: Zonas como el Casco Histórico, San Bernardo y Campus Unamuno registran rentabilidades brutas por alquiler superiores al 6,5%, motivadas por el arrendamiento temporal a estudiantes.</li>
-<li><b>Brecha entre centro y periferia</b>: Existe una acusada diferencia en los valores de compraventa entre el centro urbano (que supera los 2.400 €/m²) y los barrios de la zona norte y oeste (por debajo de los 1.300 €/m²).</li>
+<li><b>La rentabilidad bruta se mueve al contrario que el precio</b>: los barrios más caros (Centro, San Vicente, Vidal) ofrecen la rentabilidad bruta más baja de la ciudad (en torno al 4,7-4,8%), mientras que los de menor precio de compra (San José, Platina, Rollo, Los Alambres) superan el 6,2% — el patrón habitual en cualquier mercado inmobiliario maduro, donde el precio de compra sube más rápido que el alquiler en las zonas más demandadas.</li>
+<li><b>La excepción de San Bernardo</b>: con un 5,3% de rentabilidad bruta y una variación anual de compra del +4,8% —la más alta de toda la ciudad—, San Bernardo rompe ese patrón general por la <a href="/poblacion-universitaria">intensa demanda de alquiler universitario</a> del entorno del Campus Miguel de Unamuno, tal y como ya se detalla en el <a href="/precio-vivienda">análisis de precios de compraventa por barrio</a>.</li>
+<li><b>Brecha entre centro y periferia</b>: existe una acusada diferencia en los valores de compraventa entre el centro urbano (que supera los 2.400 €/m²) y los barrios de la periferia histórica y el alfoz más alejado (por debajo de los 1.100 €/m²).</li>
 </ul>
 
   <h2>Precio medio del alquiler por barrio (€/m²/mes)</h2>
-  <canvas id="alquilerBarriosChart" width="800" height="400"></canvas>
+  <canvas id="alquilerBarriosChart" width="800" height="1300"></canvas>
 
 			<p>Esta tensión en el alquiler residencial no se explica solo por la demanda universitaria: la creciente competencia de las viviendas de uso turístico por el mismo parque de pisos en el casco histórico agrava la escasez de oferta a largo plazo, como recoge el análisis específico sobre la <a href="/vivienda-alquiler-turismo-salamanca">relación entre alquiler y turismo en Salamanca</a>.</p>
 
@@ -42,7 +43,7 @@ El mercado residencial en Salamanca muestra una **elevada presión en los precio
 			<table border="1" cellpadding="5" cellspacing="0">
 			  <thead>
 				<tr>
-				  <th>Barrio / Sector</th>
+				  <th>Barrio / Municipio</th>
 				  <th>Precio Compra (€/m²)</th>
 				  <th>Precio Alquiler (€/m²/mes)</th>
 				  <th>Variación Anual Compra (%)</th>
@@ -50,12 +51,51 @@ El mercado residencial en Salamanca muestra una **elevada presión en los precio
 				</tr>
 			  </thead>
 			  <tbody>
-				<tr><td>Casco Histórico / Centro</td><td>2.480 €</td><td>10.8 €</td><td>+3.5%</td><td>5.2%</td></tr>
-				<tr><td>San Bernardo / Campus</td><td>2.050 €</td><td>9.9 €</td><td>+4.2%</td><td>5.8%</td></tr>
-				<tr><td>Garrido (Norte y Sur)</td><td>1.380 €</td><td>7.5 €</td><td>+2.1%</td><td>6.5%</td></tr>
-				<tr><td>Canalejas / Prosperidad</td><td>1.720 €</td><td>8.4 €</td><td>+2.8%</td><td>5.8%</td></tr>
-				<tr><td>Pizarrales / Barrio Blanco</td><td>1.210 €</td><td>6.8 €</td><td>+1.5%</td><td>6.7%</td></tr>
-				<tr><td>Huerta Otea / El Zurguén</td><td>1.650 €</td><td>7.9 €</td><td>+3.8%</td><td>5.7%</td></tr>
+				<tr><td>Centro</td><td>2.480 €</td><td>9.80 €</td><td>+4.2%</td><td>4.7%</td></tr>
+				<tr><td>San Vicente</td><td>2.300 €</td><td>9.10 €</td><td>+4.5%</td><td>4.7%</td></tr>
+				<tr><td>Vidal</td><td>2.240 €</td><td>8.90 €</td><td>+4.4%</td><td>4.8%</td></tr>
+				<tr><td>Chamberí</td><td>2.160 €</td><td>8.70 €</td><td>+4.4%</td><td>4.8%</td></tr>
+				<tr><td>Carmen</td><td>2.110 €</td><td>8.50 €</td><td>+4.3%</td><td>4.8%</td></tr>
+				<tr><td>Labradores</td><td>2.050 €</td><td>8.30 €</td><td>+4.2%</td><td>4.9%</td></tr>
+				<tr><td>Ciudad Jardín</td><td>2.040 €</td><td>8.40 €</td><td>+4.1%</td><td>4.9%</td></tr>
+				<tr><td>Teso de la Feria</td><td>2.000 €</td><td>8.20 €</td><td>+4.1%</td><td>4.9%</td></tr>
+				<tr><td>Garrido Sur</td><td>1.960 €</td><td>8.10 €</td><td>+4.0%</td><td>5.0%</td></tr>
+				<tr><td>San Bernardo</td><td>1.890 €</td><td>8.40 €</td><td>+4.8%</td><td>5.3%</td></tr>
+				<tr><td>Salesas</td><td>1.880 €</td><td>7.90 €</td><td>+3.8%</td><td>5.0%</td></tr>
+				<tr><td>Fontana</td><td>1.850 €</td><td>7.80 €</td><td>+3.8%</td><td>5.1%</td></tr>
+				<tr><td>Glorieta</td><td>1.760 €</td><td>7.50 €</td><td>+3.7%</td><td>5.1%</td></tr>
+				<tr><td>Carbajosa de la Sagrada</td><td>1.750 €</td><td>6.90 €</td><td>+3.5%</td><td>4.7%</td></tr>
+				<tr><td>Capuchinos</td><td>1.720 €</td><td>7.40 €</td><td>+3.5%</td><td>5.2%</td></tr>
+				<tr><td>Aldeatejada</td><td>1.700 €</td><td>7.40 €</td><td>+3.4%</td><td>5.2%</td></tr>
+				<tr><td>Villamayor de Armuña</td><td>1.680 €</td><td>6.70 €</td><td>+3.1%</td><td>4.8%</td></tr>
+				<tr><td>Santo Tomás</td><td>1.670 €</td><td>7.40 €</td><td>+3.3%</td><td>5.3%</td></tr>
+				<tr><td>Arrabal</td><td>1.640 €</td><td>7.30 €</td><td>+3.2%</td><td>5.3%</td></tr>
+				<tr><td>Cabrerizos</td><td>1.610 €</td><td>7.20 €</td><td>+3.1%</td><td>5.4%</td></tr>
+				<tr><td>Buenos Aires</td><td>1.590 €</td><td>7.20 €</td><td>+3.1%</td><td>5.4%</td></tr>
+				<tr><td>Delicias</td><td>1.560 €</td><td>7.10 €</td><td>+3.0%</td><td>5.5%</td></tr>
+				<tr><td>Montalvos</td><td>1.490 €</td><td>6.80 €</td><td>+2.9%</td><td>5.5%</td></tr>
+				<tr><td>Prosperidad</td><td>1.460 €</td><td>6.70 €</td><td>+2.8%</td><td>5.5%</td></tr>
+				<tr><td>Blanco</td><td>1.430 €</td><td>6.60 €</td><td>+2.7%</td><td>5.5%</td></tr>
+				<tr><td>Santa Marta de Tormes</td><td>1.420 €</td><td>6.20 €</td><td>+2.8%</td><td>5.2%</td></tr>
+				<tr><td>Tormes</td><td>1.410 €</td><td>6.60 €</td><td>+2.6%</td><td>5.6%</td></tr>
+				<tr><td>Oeste</td><td>1.380 €</td><td>6.50 €</td><td>+2.5%</td><td>5.7%</td></tr>
+				<tr><td>Garrido Norte</td><td>1.350 €</td><td>6.80 €</td><td>+3.2%</td><td>6.0%</td></tr>
+				<tr><td>Marín</td><td>1.340 €</td><td>6.40 €</td><td>+2.4%</td><td>5.7%</td></tr>
+				<tr><td>Chinchibarra</td><td>1.320 €</td><td>6.30 €</td><td>+2.3%</td><td>5.7%</td></tr>
+				<tr><td>Tejares</td><td>1.300 €</td><td>6.30 €</td><td>+2.2%</td><td>5.8%</td></tr>
+				<tr><td>Vistahermosa</td><td>1.250 €</td><td>6.10 €</td><td>+2.1%</td><td>5.9%</td></tr>
+				<tr><td>Puente Ladrillo</td><td>1.220 €</td><td>6.00 €</td><td>+2.0%</td><td>5.9%</td></tr>
+				<tr><td>Tenerías</td><td>1.200 €</td><td>5.90 €</td><td>+2.0%</td><td>5.9%</td></tr>
+				<tr><td>Pizarrales</td><td>1.180 €</td><td>5.90 €</td><td>+1.9%</td><td>6.0%</td></tr>
+				<tr><td>La Vega</td><td>1.170 €</td><td>5.90 €</td><td>+1.8%</td><td>6.1%</td></tr>
+				<tr><td>Alamedilla</td><td>1.160 €</td><td>5.80 €</td><td>+1.7%</td><td>6.0%</td></tr>
+				<tr><td>San Isidro</td><td>1.140 €</td><td>5.70 €</td><td>+1.7%</td><td>6.0%</td></tr>
+				<tr><td>Zurguén</td><td>1.120 €</td><td>5.70 €</td><td>+1.6%</td><td>6.1%</td></tr>
+				<tr><td>Los Alcaldes</td><td>1.110 €</td><td>5.60 €</td><td>+1.5%</td><td>6.1%</td></tr>
+				<tr><td>Los Alambres</td><td>1.090 €</td><td>5.60 €</td><td>+1.4%</td><td>6.2%</td></tr>
+				<tr><td>Rollo</td><td>1.080 €</td><td>5.60 €</td><td>+1.4%</td><td>6.2%</td></tr>
+				<tr><td>Platina</td><td>1.060 €</td><td>5.50 €</td><td>+1.3%</td><td>6.2%</td></tr>
+				<tr><td>San José</td><td>1.050 €</td><td>5.40 €</td><td>+1.5%</td><td>6.2%</td></tr>
 			  </tbody>
 			</table>
 
@@ -117,25 +157,42 @@ El mercado residencial en Salamanca muestra una **elevada presión en los precio
       }
     });
 
-    // Gráfico 2: Alquiler por Barrios
+    // Gráfico 2: Alquiler por barrio (Barras horizontales, 45 zonas)
     const ctxAlq = document.getElementById('alquilerBarriosChart').getContext('2d');
     const alquilerBarriosChart = new Chart(ctxAlq, {
       type: 'bar',
       data: {
-        labels: ['Casco Histórico', 'San Bernardo', 'Canalejas', 'Huerta Otea', 'Garrido', 'Pizarrales'],
+        labels: [
+          'Centro', 'San Vicente', 'Vidal', 'Chamberí', 'Carmen',
+          'Labradores', 'Ciudad Jardín', 'Teso de la Feria', 'Garrido Sur', 'San Bernardo',
+          'Salesas', 'Fontana', 'Glorieta', 'Carbajosa de la Sagrada', 'Capuchinos',
+          'Aldeatejada', 'Villamayor de Armuña', 'Santo Tomás', 'Arrabal', 'Cabrerizos',
+          'Buenos Aires', 'Delicias', 'Montalvos', 'Prosperidad', 'Blanco',
+          'Santa Marta de Tormes', 'Tormes', 'Oeste', 'Garrido Norte', 'Marín',
+          'Chinchibarra', 'Tejares', 'Vistahermosa', 'Puente Ladrillo', 'Tenerías',
+          'Pizarrales', 'La Vega', 'Alamedilla', 'San Isidro', 'Zurguén',
+          'Los Alcaldes', 'Los Alambres', 'Rollo', 'Platina', 'San José'
+        ],
         datasets: [{
           label: 'Precio Alquiler (€/m²/mes)',
-          data: [10.8, 9.9, 8.4, 7.9, 7.5, 6.8],
+          data: [
+            9.80, 9.10, 8.90, 8.70, 8.50, 8.30, 8.40, 8.20, 8.10, 8.40,
+            7.90, 7.80, 7.50, 6.90, 7.40, 7.40, 6.70, 7.40, 7.30, 7.20,
+            7.20, 7.10, 6.80, 6.70, 6.60, 6.20, 6.60, 6.50, 6.80, 6.40,
+            6.30, 6.30, 6.10, 6.00, 5.90, 5.90, 5.90, 5.80, 5.70, 5.70,
+            5.60, 5.60, 5.60, 5.50, 5.40
+          ],
           backgroundColor: '#F4A261',
           borderRadius: 4
         }]
       },
       options: {
+        indexAxis: 'y',
         responsive: true,
         plugins: { legend: { display: false } },
         scales: {
-          y: { title: { display: true, text: 'Euros por m² al mes (€)' }, beginAtZero: true },
-          x: { title: { display: true, text: 'Barrio / Sector' } }
+          x: { title: { display: true, text: 'Euros por m² al mes (€)' } },
+          y: { title: { display: true, text: 'Barrio / Municipio' } }
         }
       }
     });

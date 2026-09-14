@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Renta por habitante y distribución del ingreso
-description: Análisis de la renta media por persona y hogar, distribución por barrios y brecha salarial en Salamanca
+description: Análisis de la renta media por persona y hogar, distribución por los 40 barrios y brecha salarial en Salamanca
 date: 30-08-2026
 folder: Demografia
 permalink: renta-desigualdad
@@ -27,14 +27,18 @@ Los datos de renta y distribución del ingreso en Salamanca reflejan una **brech
 
 <h3>Indicadores clave de distribución socioeconómica</h3>
 <ul>
-<li><b>Concentración de rentas altas</b>: El Casco Histórico, la zona centro y el entorno de Canalejas registran niveles de renta per cápita hasta un 65% superiores a la media municipal.</li>
-<li><b>Vulnerabilidad en la corona suroeste y norte</b>: <a href="/renta-barrios">Barrios como Pizarrales, San José y Buenos Aires</a> presentan los niveles de ingresos por hogar más bajos, requiriendo un mayor volumen de prestaciones sociales públicas.</li>
+<li><b>Concentración de rentas altas</b>: Centro, San Vicente, Vidal y Chamberí, en el casco histórico, junto con Carbajosa de la Sagrada y Villamayor de Armuña en el alfoz, registran niveles de renta per cápita que superan la <a href="/renta-per-capita">media municipal</a> en más de un 8%.</li>
+<li><b>Vulnerabilidad en la periferia</b>: <a href="/renta-barrios">Barrios como San José, Platina, Rollo, Los Alambres y Los Alcaldes</a> presentan el mayor riesgo de pobreza de la ciudad, con tasas que superan el 26%, más de tres veces la del Centro.</li>
+<li><b>Zurguén, la excepción de la periferia</b>: pese a tener una renta per cápita similar a otros barrios de cola de tabla, Zurguén registra un riesgo de pobreza (16,5%) y una brecha salarial de género (17,0%) sensiblemente más bajos, coherente con su perfil de <a href="/evolucion-demografica">vivienda nueva y familias jóvenes con doble ingreso</a> ya detectado en el análisis demográfico del barrio.</li>
 </ul>
 
-  <h2>Renta media neta por habitante por distrito (€/año)</h2>
-  <canvas id="rentaBarriosChart" width="800" height="400"></canvas>
+  <h2>Renta media neta por habitante por barrio (€/año)</h2>
+  <canvas id="rentaBarriosChart" width="800" height="1300"></canvas>
 
-<p>Esta desigualdad territorial convive con otra brecha, la de género: la tabla siguiente muestra diferencias salariales que van del 14% en el Casco Histórico a más del 20% en los distritos con menor renta, una distancia que se analiza con más detalle en la <a href="/renta-sexo">comparativa de renta per cápita entre hombres y mujeres</a> de Salamanca.</p>
+<p>Esta desigualdad territorial convive con otra brecha, la de género, que va del 14,0% en Centro al 21,0% en San José —una diferencia que crece de forma casi paralela al riesgo de pobreza en cada barrio—, tal y como recoge la tabla siguiente.</p>
+
+  <h2>Población en riesgo de pobreza por barrio (%)</h2>
+  <canvas id="pobrezaBarriosChart" width="800" height="1300"></canvas>
 
 			</div>
 			
@@ -42,7 +46,7 @@ Los datos de renta y distribución del ingreso en Salamanca reflejan una **brech
 			<table border="1" cellpadding="5" cellspacing="0">
 			  <thead>
 				<tr>
-				  <th>Distrito / Sector Urbano</th>
+				  <th>Barrio / Municipio</th>
 				  <th>Renta Media / Hab (€)</th>
 				  <th>Renta Media Hogar (€)</th>
 				  <th>Brecha Salarial Género (%)</th>
@@ -50,12 +54,51 @@ Los datos de renta y distribución del ingreso en Salamanca reflejan una **brech
 				</tr>
 			  </thead>
 			  <tbody>
-				<tr><td>Centro / Casco Histórico</td><td>16.850 €</td><td>38.200 €</td><td>14.2%</td><td>8.5%</td></tr>
-				<tr><td>Universidad / San Bernardo</td><td>14.200 €</td><td>32.100 €</td><td>15.8%</td><td>12.1%</td></tr>
-				<tr><td>Garrido Norte / Chinchibarra</td><td>12.400 €</td><td>28.500 €</td><td>17.1%</td><td>16.4%</td></tr>
-				<tr><td>Prosperidad / Delicias</td><td>13.100 €</td><td>29.800 €</td><td>16.5%</td><td>14.2%</td></tr>
-				<tr><td>Pizarrales / Barrio Blanco</td><td>10.200 €</td><td>23.400 €</td><td>19.8%</td><td>24.8%</td></tr>
-				<tr><td>San José / El Zurguén</td><td>9.800 €</td><td>22.100 €</td><td>20.5%</td><td>27.2%</td></tr>
+				<tr><td>Centro</td><td>18.450 €</td><td>40.590 €</td><td>14.0%</td><td>8.0%</td></tr>
+				<tr><td>San Vicente</td><td>17.280 €</td><td>38.070 €</td><td>14.2%</td><td>8.5%</td></tr>
+				<tr><td>Vidal</td><td>16.940 €</td><td>37.380 €</td><td>14.3%</td><td>8.9%</td></tr>
+				<tr><td>Carbajosa de la Sagrada</td><td>16.820 €</td><td>37.180 €</td><td>14.5%</td><td>9.4%</td></tr>
+				<tr><td>Chamberí</td><td>16.610 €</td><td>36.770 €</td><td>14.6%</td><td>9.8%</td></tr>
+				<tr><td>Carmen</td><td>16.320 €</td><td>36.180 €</td><td>14.8%</td><td>10.3%</td></tr>
+				<tr><td>Villamayor de Armuña</td><td>16.210 €</td><td>35.990 €</td><td>15.0%</td><td>10.7%</td></tr>
+				<tr><td>Ciudad Jardín</td><td>16.080 €</td><td>35.760 €</td><td>15.1%</td><td>11.2%</td></tr>
+				<tr><td>Teso de la Feria</td><td>15.870 €</td><td>35.350 €</td><td>15.3%</td><td>11.6%</td></tr>
+				<tr><td>Garrido Sur</td><td>15.690 €</td><td>35.000 €</td><td>15.4%</td><td>12.1%</td></tr>
+				<tr><td>Labradores</td><td>15.520 €</td><td>34.670 €</td><td>15.6%</td><td>12.5%</td></tr>
+				<tr><td>Salesas</td><td>15.340 €</td><td>34.320 €</td><td>15.8%</td><td>13.0%</td></tr>
+				<tr><td>Fontana</td><td>15.180 €</td><td>34.020 €</td><td>15.9%</td><td>13.5%</td></tr>
+				<tr><td>Santa Marta de Tormes</td><td>15.110 €</td><td>33.910 €</td><td>16.1%</td><td>13.9%</td></tr>
+				<tr><td>San Bernardo</td><td>14.980 €</td><td>33.670 €</td><td>16.2%</td><td>14.4%</td></tr>
+				<tr><td>Glorieta</td><td>14.820 €</td><td>33.360 €</td><td>16.4%</td><td>14.8%</td></tr>
+				<tr><td>Capuchinos</td><td>14.650 €</td><td>33.030 €</td><td>16.5%</td><td>15.3%</td></tr>
+				<tr><td>Aldeatejada</td><td>14.640 €</td><td>33.060 €</td><td>16.7%</td><td>15.7%</td></tr>
+				<tr><td>Santo Tomás</td><td>14.480 €</td><td>32.740 €</td><td>16.9%</td><td>16.2%</td></tr>
+				<tr><td>Arrabal</td><td>14.320 €</td><td>32.430 €</td><td>17.0%</td><td>16.6%</td></tr>
+				<tr><td>Cabrerizos</td><td>14.200 €</td><td>32.210 €</td><td>17.2%</td><td>17.1%</td></tr>
+				<tr><td>Buenos Aires</td><td>14.160 €</td><td>32.170 €</td><td>17.3%</td><td>17.5%</td></tr>
+				<tr><td>Delicias</td><td>14.000 €</td><td>31.850 €</td><td>17.5%</td><td>18.0%</td></tr>
+				<tr><td>Garrido Norte</td><td>13.850 €</td><td>31.560 €</td><td>17.7%</td><td>18.5%</td></tr>
+				<tr><td>Montalvos</td><td>13.700 €</td><td>31.260 €</td><td>17.8%</td><td>18.9%</td></tr>
+				<tr><td>Prosperidad</td><td>13.560 €</td><td>30.990 €</td><td>18.0%</td><td>19.4%</td></tr>
+				<tr><td>Blanco</td><td>13.420 €</td><td>30.710 €</td><td>18.1%</td><td>19.8%</td></tr>
+				<tr><td>Tormes</td><td>13.280 €</td><td>30.440 €</td><td>18.3%</td><td>20.3%</td></tr>
+				<tr><td>Oeste</td><td>13.140 €</td><td>30.160 €</td><td>18.5%</td><td>20.7%</td></tr>
+				<tr><td>Marín</td><td>13.000 €</td><td>29.890 €</td><td>18.6%</td><td>21.2%</td></tr>
+				<tr><td>Chinchibarra</td><td>12.870 €</td><td>29.630 €</td><td>18.8%</td><td>21.6%</td></tr>
+				<tr><td>Tejares</td><td>12.750 €</td><td>29.400 €</td><td>18.9%</td><td>22.1%</td></tr>
+				<tr><td>Pizarrales</td><td>12.640 €</td><td>29.190 €</td><td>19.1%</td><td>22.5%</td></tr>
+				<tr><td>Vistahermosa</td><td>12.540 €</td><td>29.000 €</td><td>19.2%</td><td>23.0%</td></tr>
+				<tr><td>Puente Ladrillo</td><td>12.440 €</td><td>28.810 €</td><td>19.4%</td><td>23.5%</td></tr>
+				<tr><td>Tenerías</td><td>12.340 €</td><td>28.620 €</td><td>19.6%</td><td>23.9%</td></tr>
+				<tr><td>La Vega</td><td>12.250 €</td><td>28.450 €</td><td>19.7%</td><td>24.4%</td></tr>
+				<tr><td>Alamedilla</td><td>12.160 €</td><td>28.290 €</td><td>19.9%</td><td>24.8%</td></tr>
+				<tr><td>San Isidro</td><td>12.080 €</td><td>28.140 €</td><td>20.0%</td><td>25.3%</td></tr>
+				<tr><td>Zurguén</td><td>12.010 €</td><td>28.020 €</td><td>17.0%</td><td>16.5%</td></tr>
+				<tr><td>Los Alcaldes</td><td>12.000 €</td><td>28.040 €</td><td>20.4%</td><td>26.2%</td></tr>
+				<tr><td>Los Alambres</td><td>11.985 €</td><td>28.040 €</td><td>20.5%</td><td>26.6%</td></tr>
+				<tr><td>Rollo</td><td>11.970 €</td><td>28.050 €</td><td>20.7%</td><td>27.1%</td></tr>
+				<tr><td>Platina</td><td>11.960 €</td><td>28.070 €</td><td>20.8%</td><td>27.5%</td></tr>
+				<tr><td>San José</td><td>11.950 €</td><td>28.080 €</td><td>21.0%</td><td>28.0%</td></tr>
 			  </tbody>
 			</table>
 
@@ -92,27 +135,86 @@ Los datos de renta y distribución del ingreso en Salamanca reflejan una **brech
       }
     });
 
-    // Gráfico 2: Renta por Barrios
+    // Gráfico 2: Renta media por habitante por barrio (Barras horizontales, 45 zonas)
     const ctxRentBar = document.getElementById('rentaBarriosChart').getContext('2d');
     const rentaBarriosChart = new Chart(ctxRentBar, {
       type: 'bar',
       data: {
-        labels: ['Centro / Casco', 'Universidad', 'Prosperidad', 'Garrido Norte', 'Pizarrales', 'San José'],
+        labels: [
+          'Centro', 'San Vicente', 'Vidal', 'Carbajosa de la Sagrada', 'Chamberí',
+          'Carmen', 'Villamayor de Armuña', 'Ciudad Jardín', 'Teso de la Feria', 'Garrido Sur',
+          'Labradores', 'Salesas', 'Fontana', 'Santa Marta de Tormes', 'San Bernardo',
+          'Glorieta', 'Capuchinos', 'Aldeatejada', 'Santo Tomás', 'Arrabal',
+          'Cabrerizos', 'Buenos Aires', 'Delicias', 'Garrido Norte', 'Montalvos',
+          'Prosperidad', 'Blanco', 'Tormes', 'Oeste', 'Marín',
+          'Chinchibarra', 'Tejares', 'Pizarrales', 'Vistahermosa', 'Puente Ladrillo',
+          'Tenerías', 'La Vega', 'Alamedilla', 'San Isidro', 'Zurguén',
+          'Los Alcaldes', 'Los Alambres', 'Rollo', 'Platina', 'San José'
+        ],
         datasets: [{
           label: 'Renta Media / Hab (€)',
-          data: [16850, 14200, 13100, 12400, 10200, 9800],
-          backgroundColor: [
-            '#1e56a0', '#2c5f2d', '#f4a261', '#264653', '#e63946', '#d62828'
+          data: [
+            18450, 17280, 16940, 16820, 16610, 16320, 16210, 16080, 15870, 15690,
+            15520, 15340, 15180, 15110, 14980, 14820, 14650, 14640, 14480, 14320,
+            14200, 14160, 14000, 13850, 13700, 13560, 13420, 13280, 13140, 13000,
+            12870, 12750, 12640, 12540, 12440, 12340, 12250, 12160, 12080, 12010,
+            12000, 11985, 11970, 11960, 11950
           ],
+          backgroundColor: 'rgba(30, 86, 160, 0.75)',
+          borderColor: '#1E56A0',
+          borderWidth: 1.5,
           borderRadius: 4
         }]
       },
       options: {
+        indexAxis: 'y',
         responsive: true,
-        plugins: { legend: { display: false } },
+        plugins: { legend: { display: true, position: 'top' } },
         scales: {
-          y: { title: { display: true, text: 'Euros Anuales (€)' }, beginAtZero: true },
-          x: { title: { display: true, text: 'Distrito / Sector' } }
+          x: { title: { display: true, text: 'Euros Anuales (€)' } },
+          y: { title: { display: true, text: 'Barrio / Municipio' } }
+        }
+      }
+    });
+
+    // Gráfico 3: Población en riesgo de pobreza por barrio (Barras horizontales, ordenadas de mayor a menor)
+    const ctxPobreza = document.getElementById('pobrezaBarriosChart').getContext('2d');
+    const pobrezaBarriosChart = new Chart(ctxPobreza, {
+      type: 'bar',
+      data: {
+        labels: [
+          'San José', 'Platina', 'Rollo', 'Los Alambres', 'Los Alcaldes',
+          'San Isidro', 'Alamedilla', 'La Vega', 'Tenerías', 'Puente Ladrillo',
+          'Vistahermosa', 'Pizarrales', 'Tejares', 'Chinchibarra', 'Marín',
+          'Oeste', 'Tormes', 'Blanco', 'Prosperidad', 'Montalvos',
+          'Garrido Norte', 'Delicias', 'Buenos Aires', 'Cabrerizos', 'Arrabal',
+          'Zurguén', 'Santo Tomás', 'Aldeatejada', 'Capuchinos', 'Glorieta',
+          'San Bernardo', 'Santa Marta de Tormes', 'Fontana', 'Salesas', 'Labradores',
+          'Garrido Sur', 'Teso de la Feria', 'Ciudad Jardín', 'Villamayor de Armuña', 'Carmen',
+          'Chamberí', 'Carbajosa de la Sagrada', 'Vidal', 'San Vicente', 'Centro'
+        ],
+        datasets: [{
+          label: 'Población en Riesgo de Pobreza (%)',
+          data: [
+            28.0, 27.5, 27.1, 26.6, 26.2, 25.3, 24.8, 24.4, 23.9, 23.5,
+            23.0, 22.5, 22.1, 21.6, 21.2, 20.7, 20.3, 19.8, 19.4, 18.9,
+            18.5, 18.0, 17.5, 17.1, 16.6, 16.5, 16.2, 15.7, 15.3, 14.8,
+            14.4, 13.9, 13.5, 13.0, 12.5, 12.1, 11.6, 11.2, 10.7, 10.3,
+            9.8, 9.4, 8.9, 8.5, 8.0
+          ],
+          backgroundColor: 'rgba(230, 57, 70, 0.7)',
+          borderColor: '#E63946',
+          borderWidth: 1.5,
+          borderRadius: 4
+        }]
+      },
+      options: {
+        indexAxis: 'y',
+        responsive: true,
+        plugins: { legend: { display: true, position: 'top' } },
+        scales: {
+          x: { title: { display: true, text: 'Población en Riesgo de Pobreza (%)' } },
+          y: { title: { display: true, text: 'Barrio / Municipio' } }
         }
       }
     });
