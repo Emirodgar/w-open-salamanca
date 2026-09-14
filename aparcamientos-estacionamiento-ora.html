@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Estacionamiento regulado ORA y parkings públicos
-description: Ocupación de aparcamientos subterráneos, plazas ORA por colores y parkings disuasorios en Salamanca
+description: Capacidad real de los parkings subterráneos, la zona ORA y los 10 aparcamientos disuasorios conectados de Salamanca
 date: 30-08-2026
 folder: Movilidad
 permalink: aparcamientos-estacionamiento-ora
@@ -24,16 +24,21 @@ permalink: aparcamientos-estacionamiento-ora
 			<h2>Análisis de la oferta de aparcamiento y rotación de vehículos</h2>
 			
 				<p>
-La gestión del estacionamiento en Salamanca articula una **estrategia de disuasión del tráfico en el centro histórico**, priorizando la <a href="/movilidad-ciclable-peatonal">zona peatonalizada</a> y la ZBE. La red se compone de plazas reguladas ORA (zona azul y verde), <a href="/parkings">parkings subterráneos de rotación</a> y una red perimetral de aparcamientos disuasorios gratuitos.</p>
+La gestión del estacionamiento en Salamanca articula una **estrategia de disuasión del tráfico en el centro histórico**, priorizando la <a href="/movilidad-ciclable-peatonal">zona peatonalizada</a> y la ZBE. La red se compone de 3.220 plazas reguladas ORA (zona azul y verde) tras la ampliación de julio de 2026, 14 <a href="/parkings">parkings subterráneos de rotación</a> y una red oficial de 10 aparcamientos disuasorios gratuitos conectados por autobús que suman 1.612 plazas, a los que se añade el gran aparcamiento gratuito de La Aldehuela (1.180 plazas) fuera de esa red.</p>
 
 <h3>Claves de la movilidad en superficie y rotación</h3>
 <ul>
-<li><b>Zonificación ORA y rotación comercial</b>: La zona azul abarca más de 2.200 plazas orientadas a la rotación corta comercial, mientras que la zona verde prioriza el estacionamiento de residentes en barrios de alta densidad.</li>
-<li><b>Red de aparcamientos disuasorios</b>: Parkings estratégicos como los de La Aldehuela, Campus Unamuno y San José absorben diariamente a miles de conductores del alfoz salmantino.</li>
+<li><b>Zonificación ORA por tiempo de rotación</b>: la zona azul limita el estacionamiento a 2 horas y se concentra en la primera ronda del centro, mientras que la zona verde, con un límite de 5 horas, prioriza a los residentes en el segundo anillo. Ambas funcionan de lunes a viernes de 9:00 a 14:00 y de 16:00 a 20:00, y los sábados de 9:00 a 14:00; son gratuitas domingos y festivos.</li>
+<li><b>Red oficial de disuasorios conectados</b>: los 10 aparcamientos gratuitos de la red municipal &ndash;encabezados por Calle La Radio (302 plazas) y La Chinchibarra (226)&ndash; están todos a menos de 20 minutos a pie de la Plaza Mayor y conectados con las líneas de autobús urbano y el sistema de bicicletas SalEnBici.</li>
+<li><b>La Aldehuela, el gigante infrautilizado</b>: con 1.180 plazas gratuitas, es uno de los aparcamientos más grandes de la ciudad, pero varios medios locales han señalado que suele registrar una ocupación muy baja pese a su conexión en autobús con el centro.</li>
+<li><b>Ampliación en Garrido y Chinchibarra</b>: dos nuevos aparcamientos disuasorios en construcción sobre los antiguos terrenos de Mercasalamanca sumarán 1.112 plazas adicionales (226 solo en Chinchibarra), elevando el total de plazas gratuitas en superficie de la ciudad de 4.670 a 5.782.</li>
 </ul>
 
-  <h2>Distribución de plazas de aparcamiento en superficie por tipo de regulación</h2>
+  <h2>Distribución de plazas de aparcamiento por tipo de regulación</h2>
   <canvas id="oraPlazasChart" width="800" height="400"></canvas>
+
+  <h2>Plazas por aparcamiento: subterráneos y disuasorios</h2>
+  <canvas id="parkingsBarrasChart" width="800" height="500"></canvas>
 
 			</div>
 			
@@ -41,20 +46,30 @@ La gestión del estacionamiento en Salamanca articula una **estrategia de disuas
 			<table border="1" cellpadding="5" cellspacing="0">
 			  <thead>
 				<tr>
-				  <th>Aparcamiento / Zona Regulada</th>
-				  <th>Tipo de Instalación</th>
+				  <th>Aparcamiento</th>
+				  <th>Tipo</th>
+				  <th>Operador / Conexión</th>
 				  <th>Capacidad (Plazas)</th>
-				  <th>Ocupación Media Horas Punta (%)</th>
-				  <th>Ubicación / Conexión</th>
+				  <th>Plazas Movilidad Reducida</th>
 				</tr>
 			  </thead>
 			  <tbody>
-				<tr><td>Parking Plaza de la Concordia</td><td>Subterráneo Rotación</td><td>1.080</td><td>88.5%</td><td>Garrido / El Corte Inglés</td></tr>
-				<tr><td>Parking Reyes de España</td><td>Subterráneo Rotación</td><td>420</td><td>94.2%</td><td>Sur / Acceso Catedrales</td></tr>
-				<tr><td>Parking Santa Eulalia</td><td>Subterráneo Rotación</td><td>210</td><td>91.0%</td><td>Centro / Zona Comercial</td></tr>
-				<tr><td>Parking San José (Disuasorio)</td><td>Superficie Gratuito</td><td>450</td><td>72.0%</td><td>Periferia Sur / Bus L3</td></tr>
-				<tr><td>Parking Campus Unamuno (Disuasorio)</td><td>Superficie Gratuito</td><td>620</td><td>89.4%</td><td>Oeste / Universidad - L7</td></tr>
-				<tr><td>Parking La Aldehuela (Disuasorio)</td><td>Superficie Gratuito</td><td>800</td><td>48.2%</td><td>Este / Complejo Deportivo</td></tr>
+				<tr><td>Avenida de Portugal</td><td>Subterráneo Rotación</td><td>&ndash;</td><td>391</td><td>4</td></tr>
+				<tr><td>Santísima Trinidad</td><td>Subterráneo Rotación</td><td>Mutuapark</td><td>360</td><td>16</td></tr>
+				<tr><td>Reyes de España</td><td>Subterráneo Rotación</td><td>Metapark</td><td>334</td><td>18</td></tr>
+				<tr><td>El Campillo</td><td>Subterráneo Rotación</td><td>Metapark</td><td>258</td><td>9</td></tr>
+				<tr><td>Santa Eulalia</td><td>Subterráneo Rotación</td><td>Empark</td><td>239</td><td>4</td></tr>
+				<tr><td>La Aldehuela</td><td>Disuasorio Superficie Gratuito</td><td>Fuera de la red conectada; ocupación habitualmente baja</td><td>1.180</td><td>n.d.</td></tr>
+				<tr><td>Calle La Radio</td><td>Disuasorio Superficie Gratuito</td><td>Líneas 1 / 10 / 11 / 12</td><td>302</td><td>n.d.</td></tr>
+				<tr><td>La Chinchibarra</td><td>Disuasorio Superficie Gratuito</td><td>Línea 1</td><td>226</td><td>n.d.</td></tr>
+				<tr><td>Mercasalamanca</td><td>Disuasorio Superficie Gratuito</td><td>Líneas 1 / 11</td><td>200</td><td>n.d.</td></tr>
+				<tr><td>Glorieta de la Charrería</td><td>Disuasorio Superficie Gratuito</td><td>Líneas 5 / 8 / 10 / 11</td><td>195</td><td>n.d.</td></tr>
+				<tr><td>Avenida de San Agustín</td><td>Disuasorio Superficie Gratuito</td><td>Líneas 5 / 9 / 12</td><td>176</td><td>n.d.</td></tr>
+				<tr><td>José Lamano Beneite</td><td>Disuasorio Superficie Gratuito</td><td>Líneas 13 / 14</td><td>139</td><td>n.d.</td></tr>
+				<tr><td>Las Pajas</td><td>Disuasorio Superficie Gratuito</td><td>Líneas 1 / 10 / 11 / 12</td><td>101</td><td>n.d.</td></tr>
+				<tr><td>Maestro Luna</td><td>Disuasorio Superficie Gratuito</td><td>Línea 3</td><td>100</td><td>n.d.</td></tr>
+				<tr><td>Joaquín Rodrigo</td><td>Disuasorio Superficie Gratuito</td><td>Líneas 3 / 6 / 12 / 13</td><td>87</td><td>n.d.</td></tr>
+				<tr><td>Las Bernardas</td><td>Disuasorio Superficie Gratuito</td><td>Líneas 7 / 8</td><td>86</td><td>n.d.</td></tr>
 			  </tbody>
 			</table>
 
@@ -77,39 +92,83 @@ La gestión del estacionamiento en Salamanca articula una **estrategia de disuas
       maxZoom: 19
     }).addTo(mapPark);
 
+    // Parkings subterráneos (datos del Ayuntamiento de Salamanca) y red oficial de
+    // disuasorios conectados (10 aparcamientos, 1.612 plazas, verificados por prensa local).
     const listaParkings = [
-      { name: 'Parking Reyes de España', lat: 40.9585, lng: -5.6655, tipo: 'Subterráneo', plazas: 420 },
-      { name: 'Parking Plaza Concordia', lat: 40.9735, lng: -5.6530, tipo: 'Subterráneo', plazas: 1080 },
-      { name: 'Parking Santa Eulalia', lat: 40.9655, lng: -5.6605, tipo: 'Subterráneo', plazas: 210 },
-      { name: 'Disuasorio Campus Unamuno', lat: 40.9695, lng: -5.6740, tipo: 'Disuasorio', plazas: 620 },
-      { name: 'Disuasorio San José', lat: 40.9515, lng: -5.6600, tipo: 'Disuasorio', plazas: 450 }
+      { name: 'Avenida de Portugal', lat: 40.9600, lng: -5.6690, tipo: 'Subterráneo', plazas: 391 },
+      { name: 'Santísima Trinidad', lat: 40.9705, lng: -5.6690, tipo: 'Subterráneo', plazas: 360 },
+      { name: 'Reyes de España', lat: 40.9585, lng: -5.6655, tipo: 'Subterráneo', plazas: 334 },
+      { name: 'El Campillo', lat: 40.9660, lng: -5.6660, tipo: 'Subterráneo', plazas: 258 },
+      { name: 'Santa Eulalia', lat: 40.9655, lng: -5.6605, tipo: 'Subterráneo', plazas: 239 },
+      { name: 'La Aldehuela', lat: 40.9560, lng: -5.6480, tipo: 'Disuasorio (fuera de red)', plazas: 1180 },
+      { name: 'Calle La Radio', lat: 40.9550, lng: -5.6560, tipo: 'Disuasorio', plazas: 302 },
+      { name: 'La Chinchibarra', lat: 40.9798, lng: -5.6550, tipo: 'Disuasorio', plazas: 226 },
+      { name: 'Mercasalamanca', lat: 40.9440, lng: -5.6870, tipo: 'Disuasorio', plazas: 200 },
+      { name: 'Glorieta de la Charrería', lat: 40.9520, lng: -5.6690, tipo: 'Disuasorio', plazas: 195 },
+      { name: 'Avenida de San Agustín', lat: 40.9770, lng: -5.6600, tipo: 'Disuasorio', plazas: 176 },
+      { name: 'José Lamano Beneite', lat: 40.9700, lng: -5.6420, tipo: 'Disuasorio', plazas: 139 },
+      { name: 'Las Pajas', lat: 40.9600, lng: -5.6800, tipo: 'Disuasorio', plazas: 101 },
+      { name: 'Maestro Luna', lat: 40.9600, lng: -5.6850, tipo: 'Disuasorio', plazas: 100 },
+      { name: 'Joaquín Rodrigo', lat: 40.9670, lng: -5.6390, tipo: 'Disuasorio', plazas: 87 },
+      { name: 'Las Bernardas', lat: 40.9540, lng: -5.6440, tipo: 'Disuasorio', plazas: 86 }
     ];
 
     listaParkings.forEach(pk => {
       L.circleMarker([pk.lat, pk.lng], {
-        radius: 9,
-        fillColor: pk.tipo === 'Subterráneo' ? '#1E56A0' : '#2C5F2D',
+        radius: 6 + Math.sqrt(pk.plazas) / 6,
+        fillColor: pk.tipo === 'Subterráneo' ? '#1E56A0' : (pk.tipo.startsWith('Disuasorio (') ? '#E63946' : '#2C5F2D'),
         color: '#ffffff',
         weight: 2,
         fillOpacity: 0.85
       }).bindPopup(`<b>${pk.name}</b><br>Tipo: ${pk.tipo}<br>Capacidad: ${pk.plazas} plazas`).addTo(mapPark);
     });
 
-    // 2. Gráfico de Torta / Dona de Plazas de Estacionamiento ORA
+    // 2. Gráfico de Torta / Dona de Plazas de Estacionamiento
     const ctxOra = document.getElementById('oraPlazasChart').getContext('2d');
     const oraPlazasChart = new Chart(ctxOra, {
       type: 'doughnut',
       data: {
-        labels: ['Zona Azul (Rotación)', 'Zona Verde (Residentes)', 'Parkings Subterráneos Rotación', 'Parkings Disuasorios Gratuitos'],
+        labels: ['Zona ORA (Azul + Verde)', 'Red de Disuasorios Conectados (10)', 'Parkings Subterráneos (5 verificados de 14)', 'La Aldehuela (fuera de la red)'],
         datasets: [{
-          data: [2250, 1850, 2410, 2680],
-          backgroundColor: ['#1E56A0', '#2C5F2D', '#F4A261', '#264653']
+          data: [3220, 1612, 1582, 1180],
+          backgroundColor: ['#1E56A0', '#2C5F2D', '#F4A261', '#E63946']
         }]
       },
       options: {
         responsive: true,
         plugins: {
           legend: { position: 'bottom' }
+        }
+      }
+    });
+
+    // 3. Gráfico de barras: plazas por aparcamiento
+    const ctxParkBar = document.getElementById('parkingsBarrasChart').getContext('2d');
+    const parkingsBarrasChart = new Chart(ctxParkBar, {
+      type: 'bar',
+      data: {
+        labels: [
+          'La Aldehuela', 'Avenida de Portugal', 'Santísima Trinidad', 'Reyes de España', 'El Campillo',
+          'Santa Eulalia', 'Calle La Radio', 'La Chinchibarra', 'Mercasalamanca', 'Glorieta de la Charrería',
+          'Avenida de San Agustín', 'José Lamano Beneite', 'Las Pajas', 'Maestro Luna', 'Joaquín Rodrigo', 'Las Bernardas'
+        ],
+        datasets: [{
+          label: 'Plazas',
+          data: [1180, 391, 360, 334, 258, 239, 302, 226, 200, 195, 176, 139, 101, 100, 87, 86],
+          backgroundColor: [
+            '#E63946', '#1E56A0', '#1E56A0', '#1E56A0', '#1E56A0', '#1E56A0',
+            '#2C5F2D', '#2C5F2D', '#2C5F2D', '#2C5F2D', '#2C5F2D', '#2C5F2D', '#2C5F2D', '#2C5F2D', '#2C5F2D', '#2C5F2D'
+          ],
+          borderRadius: 4
+        }]
+      },
+      options: {
+        indexAxis: 'y',
+        responsive: true,
+        plugins: { legend: { display: false } },
+        scales: {
+          x: { title: { display: true, text: 'Número de Plazas' }, beginAtZero: true },
+          y: { title: { display: true, text: 'Aparcamiento' } }
         }
       }
     });
