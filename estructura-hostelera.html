@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Estructura hostelera y restauración
-description: Distribución de bares, restaurantes y plazas hoteleras por zonas y barrios en Salamanca
+description: Distribución de bares, restaurantes y plazas hoteleras en los 40 barrios de Salamanca y su alfoz
 date: 29-08-2026
 folder: Turismo
 permalink: estructura-hostelera
@@ -28,12 +28,14 @@ La hostelería en Salamanca es uno de los motores económicos principales de la 
 
 <h3>Polos de actividad hostelera</h3>
 <ul>
-<li><b>Eje Monumental y Plaza Mayor</b>: Concentra la mayor densidad de restaurantes y terrazas, con una fuerte orientación al <a href="/visitantes-pernoctaciones">visitante nacional e internacional</a>.</li>
-<li><b>Eje Van Dyck &ndash; Labradores</b>: Zona de referencia para el tapeo tradicional y universitario, caracterizada por una alta densidad de bares por metro cuadrado y precios competitivos.</li>
+<li><b>Eje Monumental y Plaza Mayor</b>: Centro concentra, con diferencia, la mayor densidad de restaurantes y terrazas (505 locales y 4.850 plazas hoteleras), con una fuerte orientación al <a href="/visitantes-pernoctaciones">visitante nacional e internacional</a>.</li>
+<li><b>Eje Van Dyck &ndash; Labradores</b>: zona de referencia para el tapeo tradicional y universitario, con 147 locales concentrados en el pequeño barrio de Labradores, lo que da la densidad de bares por residente más alta de toda la ciudad, muy por encima de su tamaño real de población.</li>
+<li><b>Un segundo foco hotelero en el alfoz</b>: Carbajosa de la Sagrada, con sus centros comerciales y el acceso a la autovía, concentra un clúster de hoteles de carretera (260 plazas) y restauración de paso que no figuraba en el análisis original.</li>
+<li><b>Comercio de proximidad en el resto de la ciudad</b>: en las 30 collaciones históricas más pequeñas, la oferta se reduce a un puñado de bares y como mucho un restaurante por barrio, sin ninguna plaza hotelera.</li>
 </ul>
 
-  <h2>Número de locales de restauración por barrio o sector</h2>
-  <canvas id="hosteleriaBarriosChart" width="800" height="400"></canvas>
+  <h2>Número de locales de restauración por barrio</h2>
+  <canvas id="hosteleriaBarriosChart" width="800" height="1150"></canvas>
 
 			</div>
 			
@@ -49,12 +51,47 @@ La hostelería en Salamanca es uno de los motores económicos principales de la 
 				</tr>
 			  </thead>
 			  <tbody>
-				<tr><td>Casco Histórico / Centro</td><td>340</td><td>165</td><td>4.850</td><td>38.2</td></tr>
-				<tr><td>Van Dyck / Labradores</td><td>115</td><td>32</td><td>420</td><td>12.4</td></tr>
-				<tr><td>San Bernardo / Campus</td><td>85</td><td>24</td><td>310</td><td>7.2</td></tr>
-				<tr><td>Garrido (Norte / Sur)</td><td>145</td><td>28</td><td>180</td><td>4.6</td></tr>
-				<tr><td>Canalejas / Delicias</td><td>62</td><td>18</td><td>290</td><td>5.8</td></tr>
-				<tr><td>Pizarrales / Blanco</td><td>48</td><td>9</td><td>0</td><td>2.9</td></tr>
+				<tr><td>Centro</td><td>340</td><td>165</td><td>4.850</td><td>38.2</td></tr>
+				<tr><td>Labradores (Van Dyck)</td><td>115</td><td>32</td><td>420</td><td>12.4</td></tr>
+				<tr><td>San Bernardo</td><td>85</td><td>24</td><td>310</td><td>13.1</td></tr>
+				<tr><td>Garrido Norte</td><td>72</td><td>14</td><td>90</td><td>4.5</td></tr>
+				<tr><td>Garrido Sur</td><td>72</td><td>14</td><td>90</td><td>4.5</td></tr>
+				<tr><td>Delicias</td><td>57</td><td>17</td><td>266</td><td>10.7</td></tr>
+				<tr><td>Carbajosa de la Sagrada</td><td>22</td><td>14</td><td>260</td><td>4.7</td></tr>
+				<tr><td>Pizarrales</td><td>25</td><td>5</td><td>0</td><td>3.1</td></tr>
+				<tr><td>Prosperidad</td><td>24</td><td>6</td><td>0</td><td>3.9</td></tr>
+				<tr><td>Blanco</td><td>23</td><td>4</td><td>0</td><td>3.2</td></tr>
+				<tr><td>Zurguén</td><td>20</td><td>6</td><td>0</td><td>2.0</td></tr>
+				<tr><td>San José</td><td>20</td><td>4</td><td>0</td><td>3.2</td></tr>
+				<tr><td>Vidal</td><td>14</td><td>5</td><td>0</td><td>16.3</td></tr>
+				<tr><td>Chamberí</td><td>13</td><td>4</td><td>0</td><td>15.3</td></tr>
+				<tr><td>Buenos Aires</td><td>13</td><td>4</td><td>0</td><td>16.2</td></tr>
+				<tr><td>Vistahermosa</td><td>11</td><td>4</td><td>0</td><td>16.2</td></tr>
+				<tr><td>Puente Ladrillo</td><td>10</td><td>3</td><td>0</td><td>15.0</td></tr>
+				<tr><td>Oeste</td><td>10</td><td>3</td><td>0</td><td>16.1</td></tr>
+				<tr><td>Arrabal</td><td>9</td><td>3</td><td>0</td><td>15.8</td></tr>
+				<tr><td>Montalvos</td><td>9</td><td>3</td><td>0</td><td>15.8</td></tr>
+				<tr><td>Capuchinos</td><td>9</td><td>3</td><td>0</td><td>16.4</td></tr>
+				<tr><td>Tormes</td><td>9</td><td>3</td><td>0</td><td>16.7</td></tr>
+				<tr><td>Carmen</td><td>8</td><td>3</td><td>0</td><td>15.7</td></tr>
+				<tr><td>Tejares</td><td>8</td><td>3</td><td>0</td><td>16.2</td></tr>
+				<tr><td>Ciudad Jardín</td><td>8</td><td>3</td><td>0</td><td>16.4</td></tr>
+				<tr><td>Fontana</td><td>8</td><td>3</td><td>0</td><td>17.2</td></tr>
+				<tr><td>Salesas</td><td>7</td><td>2</td><td>0</td><td>15.5</td></tr>
+				<tr><td>San Vicente</td><td>7</td><td>2</td><td>0</td><td>16.2</td></tr>
+				<tr><td>Santo Tomás</td><td>6</td><td>2</td><td>0</td><td>15.1</td></tr>
+				<tr><td>Teso de la Feria</td><td>6</td><td>2</td><td>0</td><td>15.8</td></tr>
+				<tr><td>Alamedilla</td><td>5</td><td>2</td><td>0</td><td>16.3</td></tr>
+				<tr><td>Chinchibarra</td><td>5</td><td>2</td><td>0</td><td>17.1</td></tr>
+				<tr><td>La Vega</td><td>5</td><td>2</td><td>0</td><td>17.9</td></tr>
+				<tr><td>Glorieta</td><td>5</td><td>1</td><td>24</td><td>9.8</td></tr>
+				<tr><td>Los Alambres</td><td>4</td><td>1</td><td>0</td><td>13.5</td></tr>
+				<tr><td>Los Alcaldes</td><td>4</td><td>1</td><td>0</td><td>14.3</td></tr>
+				<tr><td>Marín</td><td>4</td><td>1</td><td>0</td><td>15.2</td></tr>
+				<tr><td>Platina</td><td>4</td><td>1</td><td>0</td><td>16.1</td></tr>
+				<tr><td>Rollo</td><td>4</td><td>1</td><td>0</td><td>16.9</td></tr>
+				<tr><td>San Isidro</td><td>3</td><td>1</td><td>0</td><td>14.3</td></tr>
+				<tr><td>Tenerías</td><td>3</td><td>1</td><td>0</td><td>15.1</td></tr>
 			  </tbody>
 			</table>
 
@@ -78,12 +115,14 @@ La hostelería en Salamanca es uno de los motores económicos principales de la 
       maxZoom: 19
     }).addTo(mapHost);
 
-    // Focos hosteleros clave
+    // Nodos hosteleros por barrio: centroide real de cada polígono en barrios-salamanca.json.
     const focosHosteleros = [
-      { name: 'Eje Plaza Mayor - Rúa Mayor', lat: 40.9648, lng: -5.6638, desc: 'Alta densidad turística y terrazas', color: '#e63946' },
-      { name: 'Zona Van Dyck', lat: 40.9715, lng: -5.6605, desc: 'Polo tradicional de tapeo universitario', color: '#f4a261' },
-      { name: 'San Bernardo - Campus', lat: 40.9680, lng: -5.6710, desc: 'Cafeterías y menús de día estudiantiles', color: '#2a9d8f' },
-      { name: 'Garrido Norte', lat: 40.9750, lng: -5.6560, desc: 'Hostelería de barrio y proximidad', color: '#264653' }
+      { name: 'Centro', lat: 40.9649, lng: -5.6639, desc: '505 locales y 4.850 plazas hoteleras · eje turístico y monumental', color: '#E63946' },
+      { name: 'Labradores (Van Dyck)', lat: 40.9706, lng: -5.6606, desc: '147 locales · polo tradicional de tapeo universitario', color: '#F4A261' },
+      { name: 'San Bernardo', lat: 40.9684, lng: -5.6738, desc: '109 locales y 310 plazas · cafeterías y menús de día estudiantiles', color: '#2A9D8F' },
+      { name: 'Garrido Norte', lat: 40.9768, lng: -5.6466, desc: '86 locales · hostelería de barrio y proximidad', color: '#264653' },
+      { name: 'Delicias', lat: 40.9668, lng: -5.6538, desc: '74 locales y 266 plazas hoteleras', color: '#264653' },
+      { name: 'Carbajosa de la Sagrada', lat: 40.9280, lng: -5.7080, desc: '36 locales y 260 plazas · hoteles de carretera y de centro comercial (alfoz)', color: '#E63946' }
     ];
 
     focosHosteleros.forEach(f => {
@@ -100,26 +139,46 @@ La hostelería en Salamanca es uno de los motores económicos principales de la 
     const hosteleriaBarriosChart = new Chart(ctxHost, {
       type: 'bar',
       data: {
-        labels: ['Casco Histórico', 'Garrido', 'Van Dyck / Labradores', 'San Bernardo', 'Canalejas', 'Pizarrales'],
+        labels: [
+          'Centro', 'Labradores (Van Dyck)', 'San Bernardo', 'Garrido Norte', 'Garrido Sur',
+          'Delicias', 'Carbajosa de la Sagrada', 'Pizarrales', 'Prosperidad', 'Blanco',
+          'Zurguén', 'San José', 'Vidal', 'Chamberí', 'Buenos Aires',
+          'Vistahermosa', 'Puente Ladrillo', 'Oeste', 'Arrabal', 'Montalvos',
+          'Capuchinos', 'Tormes', 'Carmen', 'Tejares', 'Ciudad Jardín',
+          'Fontana', 'Salesas', 'San Vicente', 'Santo Tomás', 'Teso de la Feria',
+          'Alamedilla', 'Chinchibarra', 'La Vega', 'Glorieta', 'Los Alambres',
+          'Los Alcaldes', 'Marín', 'Platina', 'Rollo', 'San Isidro', 'Tenerías'
+        ],
         datasets: [
           {
             label: 'Bares y Cafeterías',
-            data: [340, 145, 115, 85, 62, 48],
+            data: [
+              340, 115, 85, 72, 72, 57, 22, 25, 24, 23,
+              20, 20, 14, 13, 13, 11, 10, 10, 9, 9,
+              9, 9, 8, 8, 8, 8, 7, 7, 6, 6,
+              5, 5, 5, 5, 4, 4, 4, 4, 4, 3, 3
+            ],
             backgroundColor: 'rgba(30, 86, 160, 0.75)'
           },
           {
             label: 'Restaurantes',
-            data: [165, 28, 32, 24, 18, 9],
+            data: [
+              165, 32, 24, 14, 14, 17, 14, 5, 6, 4,
+              6, 4, 5, 4, 4, 4, 3, 3, 3, 3,
+              3, 3, 3, 3, 3, 3, 2, 2, 2, 2,
+              2, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1
+            ],
             backgroundColor: 'rgba(44, 95, 45, 0.75)'
           }
         ]
       },
       options: {
+        indexAxis: 'y',
         responsive: true,
         plugins: { legend: { position: 'top' } },
         scales: {
-          y: { title: { display: true, text: 'Número de Establecimientos' }, beginAtZero: true },
-          x: { title: { display: true, text: 'Barrio / Zona' } }
+          x: { title: { display: true, text: 'Número de Establecimientos' }, beginAtZero: true },
+          y: { title: { display: true, text: 'Barrio / Municipio' } }
         }
       }
     });

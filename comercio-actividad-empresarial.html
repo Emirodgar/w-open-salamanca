@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Tejido empresarial y comercio local
-description: Densidad comercial, apertura de licencias de actividad y empresas constituidas por distritos en Salamanca
+description: Densidad comercial, polígonos industriales y polos de innovación empresarial por ejes económicos en Salamanca y su alfoz
 date: 29-08-2026
 folder: Economia
 permalink: comercio-actividad-empresarial
@@ -28,14 +28,16 @@ El mapa económico de Salamanca refleja una **alta concentración del comercio m
 
 <h3>Ejes comerciales y polos de innovación</h3>
 <ul>
-<li><b>Eje Comercial Toro-Zamora-Plaza Mayor</b>: Es la zona de mayor densidad de locales comerciales en activo, articulando las principales franquicias y el comercio especializado.</li>
-<li><b>Parque Científico y Polígonos Industriales</b>: Espacios como El Montalvo y Villares (alfoz) albergan la mayor parte del tejido PYME industrial, mientras que el Parque Científico de la USAL agrupa startups tecnológicas y spin-offs biomed.</li>
+<li><b>Eje Comercial Toro-Zamora-Plaza Mayor</b>: es la zona de mayor densidad de locales comerciales en activo, articulando las principales franquicias y el comercio especializado.</li>
+<li><b>Parque Científico de la USAL, el mayor polo de innovación</b>: instalado en Villamayor de Armuña, agrupa 65 empresas tecnológicas y más de 750 trabajadores, con un perfil dominado por las TIC (52%), la ingeniería (28%) y la biotecnología (6%) a través de su bioincubadora.</li>
+<li><b>Polígono Los Villares, el mayor tejido industrial del alfoz</b>: en Villares de la Reina, reúne 186 empresas de maquinaria, distribución y servicios industriales, muy por encima de las 480 licencias de El Montalvo pero con un perfil mucho más atomizado en pymes.</li>
+<li><b>El comercio de proximidad institucional</b>: el Mercado Central de Abastos, en pleno Casco Histórico, mantiene el comercio tradicional de alimentación como contrapunto a las franquicias del eje Toro-Zamora.</li>
 </ul>
 
 <p>Esta lectura por ejes comerciales se completa con el análisis de la <a href="/densidad-comercial">densidad comercial y el tejido empresarial</a> por barrios, que profundiza en la tasa de ocupación y los locales vacíos zona a zona. Para entender cómo este dinamismo convive con el tráfico rodado en las calles más transitadas, puede consultarse también el estudio de las <a href="/calles-negocios-trafico-salamanca">arterias comerciales y de tráfico</a> de la ciudad.</p>
 
   <h2>Locales comerciales activos por distrito o sector urbano</h2>
-  <canvas id="comercioZonasChart" width="800" height="400"></canvas>
+  <canvas id="comercioZonasChart" width="800" height="450"></canvas>
 
 			</div>
 			
@@ -51,12 +53,16 @@ El mapa económico de Salamanca refleja una **alta concentración del comercio m
 				</tr>
 			  </thead>
 			  <tbody>
-				<tr><td>Eje Peatonal Toro &ndash; Zamora</td><td>520</td><td>92.4%</td><td>Moda, calzado y equipamiento personal</td><td>34</td></tr>
 				<tr><td>Casco Histórico / Resto Centro</td><td>780</td><td>86.1%</td><td>Hostelería, souvenirs y productos locales</td><td>52</td></tr>
+				<tr><td>Polígono Los Villares (Villares de la Reina)</td><td>186 empresas</td><td>n.d.</td><td>Maquinaria, distribución y servicios industriales</td><td>n.d.</td></tr>
+				<tr><td>Garrido (Av. Portugal / Filiberto)</td><td>610</td><td>78.5%</td><td>Servicios personales, alimentación y hogar</td><td>31</td></tr>
+				<tr><td>Eje Peatonal Toro &ndash; Zamora</td><td>520</td><td>92.4%</td><td>Moda, calzado y equipamiento personal</td><td>34</td></tr>
+				<tr><td>Parque Científico USAL (Villamayor de Armuña)</td><td>65 empresas</td><td>n.d.</td><td>TIC (52%), ingeniería (28%) y biotecnología (6%)</td><td>n.d.</td></tr>
+				<tr><td>Polígono El Montalvo (I y II)</td><td>480</td><td>84.0%</td><td>Logística, distribución e industria ligera</td><td>22</td></tr>
 				<tr><td>Barrio del Oeste / Carmelitas</td><td>410</td><td>79.8%</td><td>Comercio creativo, servicios y gastronomía</td><td>28</td></tr>
 				<tr><td>Eje Canalejas &ndash; Prosperidad</td><td>350</td><td>75.2%</td><td>Comercio de proximidad y alimentación</td><td>19</td></tr>
-				<tr><td>Garrido (Av. Portugal / Filiberto)</td><td>610</td><td>78.5%</td><td>Servicios personales, alimentación y hogar</td><td>31</td></tr>
-				<tr><td>Polígono El Montalvo (I y II)</td><td>480</td><td>84.0%</td><td>Logística, distribución e industria ligera</td><td>22</td></tr>
+				<tr><td>Carbajosa de la Sagrada (alfoz)</td><td>150</td><td>n.d.</td><td>Grandes superficies y parques comerciales (El Tormes, Tres Caños)</td><td>n.d.</td></tr>
+				<tr><td>Mercado Central de Abastos</td><td>60</td><td>n.d.</td><td>Comercio tradicional de alimentación</td><td>n.d.</td></tr>
 			  </tbody>
 			</table>
 
@@ -83,8 +89,10 @@ El mapa económico de Salamanca refleja una **alta concentración del comercio m
       { name: 'Eje Comercial Toro / Zamora', lat: 40.9665, lng: -5.6630, desc: 'Milla de oro comercial y servicios', type: 'Comercio' },
       { name: 'Mercado Central de Abastos', lat: 40.9642, lng: -5.6625, desc: 'Comercio tradicional de alimentación', type: 'Comercio' },
       { name: 'Polígono Industrial El Montalvo', lat: 40.9420, lng: -5.6510, desc: 'Eje industrial, logístico y empresarial', type: 'Industrial' },
-      { name: 'Parque Científico USAL (Villamayor)', lat: 40.9850, lng: -5.6880, desc: 'Hub de innovación, biotecnología y tecnología', type: 'Innovación' },
-      { name: 'Barrio del Oeste (Comercio Urbano)', lat: 40.9690, lng: -5.6710, desc: 'Zona de comercio creativo y galerías urbanas', type: 'Comercio' }
+      { name: 'Polígono Los Villares (Villares de la Reina)', lat: 40.9980, lng: -5.7420, desc: '186 empresas de maquinaria, distribución y servicios industriales', type: 'Industrial' },
+      { name: 'Parque Científico USAL (Villamayor)', lat: 40.9850, lng: -5.6880, desc: '65 empresas, 750+ trabajadores: TIC, ingeniería y biotecnología', type: 'Innovación' },
+      { name: 'Barrio del Oeste (Comercio Urbano)', lat: 40.9690, lng: -5.6710, desc: 'Zona de comercio creativo y galerías urbanas', type: 'Comercio' },
+      { name: 'Carbajosa de la Sagrada (alfoz)', lat: 40.9280, lng: -5.7080, desc: 'C.C. El Tormes y Tres Caños: grandes superficies del alfoz', type: 'Comercio' }
     ];
 
     polosEconomicos.forEach(p => {
@@ -97,25 +105,29 @@ El mapa económico de Salamanca refleja una **alta concentración del comercio m
       }).bindPopup(`<b>${p.name}</b><br>Tipo: ${p.type}<br>${p.desc}`).addTo(mapComercio);
     });
 
-    // 2. Gráfico de barras de locales comerciales por zonas
+    // 2. Gráfico de barras de locales/empresas activas por eje económico
     const ctxCom = document.getElementById('comercioZonasChart').getContext('2d');
     const comercioZonasChart = new Chart(ctxCom, {
       type: 'bar',
       data: {
-        labels: ['Casco Histórico', 'Garrido', 'Eje Toro-Zamora', 'Polígono Montalvo', 'Barrio del Oeste', 'Canalejas'],
+        labels: [
+          'Casco Histórico', 'Los Villares (186 emp.)', 'Garrido', 'Eje Toro-Zamora', 'Parque Científico (65 emp.)',
+          'Polígono Montalvo', 'Barrio del Oeste', 'Canalejas', 'Carbajosa de la Sagrada', 'Mercado Central'
+        ],
         datasets: [{
-          label: 'Locales Comerciales Activos',
-          data: [780, 610, 520, 480, 410, 350],
+          label: 'Locales o Empresas Activas',
+          data: [780, 186, 610, 520, 65, 480, 410, 350, 150, 60],
           backgroundColor: '#1E56A0',
           borderRadius: 4
         }]
       },
       options: {
+        indexAxis: 'y',
         responsive: true,
         plugins: { legend: { display: false } },
         scales: {
-          y: { title: { display: true, text: 'Número de Locales Activos' }, beginAtZero: true },
-          x: { title: { display: true, text: 'Zona / Sector' } }
+          x: { title: { display: true, text: 'Número de Locales o Empresas' }, beginAtZero: true },
+          y: { title: { display: true, text: 'Zona / Sector' } }
         }
       }
     });
