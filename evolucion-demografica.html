@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Evolución demográfica y pirámide de edad
-description: Envejecimiento poblacional, natalidad y saldo vegetativo por distritos en Salamanca
+description: Envejecimiento poblacional, natalidad y saldo vegetativo por los 40 barrios de Salamanca
 date: 29-08-2026
 folder: Demografia
 permalink: evolucion-demografica
@@ -27,9 +27,13 @@ El perfil demográfico de Salamanca está marcado por un **progresivo envejecimi
 
 <h3>Tendencias demográficas clave</h3>
 <ul>
-<li><b><a href="/poblacion-demografia">Envejecimiento en barrios consolidados</a></b>: Distritos como Garrido, Canalejas y San Bernardo registran índices de envejecimiento elevados, donde las personas mayores de 65 años superan ampliamente al grupo de menores de 16 años.</li>
-<li><b>Dinámica en áreas de expansión</b>: Zonas como Huerta Otea, El Zurguén y los municipios del alfoz (Santa Marta, Carbajosa, Villamayor) concentran a las familias más jóvenes y registran las tasas de natalidad relativamente más altas.</li>
+<li><b><a href="/poblacion-demografia">Envejecimiento en barrios consolidados</a></b>: Centro, Garrido Norte, San Vicente, Vidal y Chamberí encabezan el envejecimiento, con edades medias por encima de 49 años y saldos vegetativos negativos que superan los -99 nacimientos/defunciones netos anuales en los tres primeros.</li>
+<li><b>Zurguén, la gran excepción</b>: frente al resto de la ciudad, Zurguén es el único barrio con un saldo vegetativo claramente positivo (+40 al año), fruto de su perfil de vivienda nueva y edad media más baja de Salamanca (39,2 años) — el mismo barrio que ya destacaba como el más joven en el <a href="/poblacion-demografia">análisis de población por barrios</a>.</li>
+<li><b>Periferia histórica, saldo casi neutro</b>: las 30 collaciones más pequeñas del casco antiguo (Los Alcaldes, Platina, Rollo, San Isidro, Tenerías...) tienen saldos vegetativos cercanos a cero, simplemente porque su población empadronada es demasiado pequeña para generar variaciones relevantes de nacimientos y defunciones cada año.</li>
 </ul>
+
+  <h2>Saldo vegetativo por barrio (nacimientos menos defunciones, anual)</h2>
+  <canvas id="saldoVegetativoChart" width="800" height="1150"></canvas>
 
   <h2>Pirámide de edad de Salamanca capital (%)</h2>
   <canvas id="piramideEdadChart" width="800" height="400"></canvas>
@@ -40,7 +44,7 @@ El perfil demográfico de Salamanca está marcado por un **progresivo envejecimi
 			<table border="1" cellpadding="5" cellspacing="0">
 			  <thead>
 				<tr>
-				  <th>Distrito / Zona</th>
+				  <th>Barrio</th>
 				  <th>Población Padrón</th>
 				  <th>Edad Media</th>
 				  <th>% Mayor 65 años</th>
@@ -48,13 +52,46 @@ El perfil demográfico de Salamanca está marcado por un **progresivo envejecimi
 				</tr>
 			  </thead>
 			  <tbody>
-				<tr><td>Garrido (Norte y Sur)</td><td>33.800</td><td>50.2</td><td>29.4%</td><td>-210</td></tr>
-				<tr><td>Centro / Casco Histórico</td><td>26.200</td><td>49.5</td><td>27.8%</td><td>-145</td></tr>
-				<tr><td>San Bernardo / Oeste</td><td>14.100</td><td>48.8</td><td>25.1%</td><td>-82</td></tr>
-				<tr><td>Canalejas / Delicias</td><td>12.500</td><td>51.1</td><td>31.2%</td><td>-95</td></tr>
-				<tr><td>Pizarrales / Blanco</td><td>11.800</td><td>47.2</td><td>22.5%</td><td>-48</td></tr>
-				<tr><td>El Zurguén / Vistahermosa</td><td>7.400</td><td>41.5</td><td>14.2%</td><td>+12</td></tr>
-				<tr><td>Huerta Otea / Puente Ladrillo</td><td>6.200</td><td>39.8</td><td>11.8%</td><td>+28</td></tr>
+				<tr><td>Centro</td><td>26.200</td><td>49.5</td><td>29.1%</td><td>-165</td></tr>
+				<tr><td>Garrido Norte</td><td>19.200</td><td>49.0</td><td>29.5%</td><td>-126</td></tr>
+				<tr><td>Garrido Sur</td><td>19.200</td><td>47.4</td><td>27.3%</td><td>-99</td></tr>
+				<tr><td>Zurguén</td><td>12.800</td><td>39.2</td><td>14.1%</td><td>+40</td></tr>
+				<tr><td>Pizarrales</td><td>9.600</td><td>46.3</td><td>24.5%</td><td>-33</td></tr>
+				<tr><td>Blanco</td><td>8.500</td><td>45.3</td><td>22.5%</td><td>-18</td></tr>
+				<tr><td>San Bernardo</td><td>8.300</td><td>44.8</td><td>22.9%</td><td>-20</td></tr>
+				<tr><td>Prosperidad</td><td>7.600</td><td>47.5</td><td>27.5%</td><td>-40</td></tr>
+				<tr><td>San José</td><td>7.500</td><td>47.4</td><td>27.5%</td><td>-40</td></tr>
+				<tr><td>Delicias</td><td>6.900</td><td>46.5</td><td>26.1%</td><td>-30</td></tr>
+				<tr><td>Vidal</td><td>1.168</td><td>50.6</td><td>28.3%</td><td>-7</td></tr>
+				<tr><td>Chamberí</td><td>1.108</td><td>50.3</td><td>27.9%</td><td>-6</td></tr>
+				<tr><td>Buenos Aires</td><td>1.048</td><td>47.5</td><td>23.3%</td><td>-3</td></tr>
+				<tr><td>Labradores</td><td>988</td><td>49.3</td><td>26.1%</td><td>-4</td></tr>
+				<tr><td>Vistahermosa</td><td>928</td><td>42.7</td><td>18.9%</td><td>0</td></tr>
+				<tr><td>Puente Ladrillo</td><td>868</td><td>44.7</td><td>18.6%</td><td>0</td></tr>
+				<tr><td>Oeste</td><td>808</td><td>46.0</td><td>20.7%</td><td>-1</td></tr>
+				<tr><td>Arrabal</td><td>760</td><td>47.7</td><td>23.6%</td><td>-2</td></tr>
+				<tr><td>Montalvos</td><td>758</td><td>46.9</td><td>22.2%</td><td>-1</td></tr>
+				<tr><td>Capuchinos</td><td>730</td><td>48.2</td><td>24.3%</td><td>-2</td></tr>
+				<tr><td>Tormes</td><td>718</td><td>46.2</td><td>21.1%</td><td>-1</td></tr>
+				<tr><td>Carmen</td><td>700</td><td>50.1</td><td>27.6%</td><td>-4</td></tr>
+				<tr><td>Tejares</td><td>678</td><td>45.3</td><td>19.7%</td><td>0</td></tr>
+				<tr><td>Ciudad Jardín</td><td>670</td><td>46.2</td><td>27.2%</td><td>-3</td></tr>
+				<tr><td>Fontana</td><td>640</td><td>48.8</td><td>25.4%</td><td>-3</td></tr>
+				<tr><td>Glorieta</td><td>610</td><td>48.4</td><td>24.7%</td><td>-2</td></tr>
+				<tr><td>Salesas</td><td>580</td><td>49.0</td><td>25.8%</td><td>-2</td></tr>
+				<tr><td>San Vicente</td><td>555</td><td>50.8</td><td>28.6%</td><td>-3</td></tr>
+				<tr><td>Santo Tomás</td><td>530</td><td>47.9</td><td>24.0%</td><td>-2</td></tr>
+				<tr><td>Teso de la Feria</td><td>505</td><td>46.1</td><td>26.8%</td><td>-2</td></tr>
+				<tr><td>Alamedilla</td><td>430</td><td>44.0</td><td>17.5%</td><td>0</td></tr>
+				<tr><td>Chinchibarra</td><td>410</td><td>45.6</td><td>20.0%</td><td>0</td></tr>
+				<tr><td>La Vega</td><td>390</td><td>44.2</td><td>17.9%</td><td>0</td></tr>
+				<tr><td>Los Alambres</td><td>370</td><td>43.2</td><td>16.1%</td><td>+1</td></tr>
+				<tr><td>Los Alcaldes</td><td>350</td><td>43.4</td><td>16.4%</td><td>+1</td></tr>
+				<tr><td>Marín</td><td>330</td><td>45.8</td><td>20.4%</td><td>0</td></tr>
+				<tr><td>Platina</td><td>310</td><td>42.7</td><td>15.4%</td><td>+1</td></tr>
+				<tr><td>Rollo</td><td>295</td><td>42.9</td><td>15.7%</td><td>+1</td></tr>
+				<tr><td>San Isidro</td><td>280</td><td>43.8</td><td>17.2%</td><td>0</td></tr>
+				<tr><td>Tenerías</td><td>265</td><td>44.5</td><td>18.2%</td><td>0</td></tr>
 			  </tbody>
 			</table>
 
@@ -91,7 +128,52 @@ El perfil demográfico de Salamanca está marcado por un **progresivo envejecimi
       }
     });
 
-    // Gráfico 2: Pirámide de edad (Barras horizontales comparativas)
+    // Gráfico 2: Saldo vegetativo por barrio (Barras horizontales divergentes, 40 barrios)
+    const saldoLabels = [
+      'Zurguén', 'Los Alambres', 'Los Alcaldes', 'Platina', 'Rollo',
+      'Vistahermosa', 'Puente Ladrillo', 'Tejares', 'Alamedilla', 'Chinchibarra',
+      'La Vega', 'Marín', 'San Isidro', 'Tenerías', 'Oeste',
+      'Montalvos', 'Tormes', 'Arrabal', 'Capuchinos', 'Glorieta',
+      'Salesas', 'Santo Tomás', 'Teso de la Feria', 'Buenos Aires', 'Ciudad Jardín',
+      'Fontana', 'San Vicente', 'Labradores', 'Carmen', 'Chamberí',
+      'Vidal', 'Blanco', 'San Bernardo', 'Delicias', 'Pizarrales',
+      'Prosperidad', 'San José', 'Garrido Sur', 'Garrido Norte', 'Centro'
+    ];
+    const saldoValores = [
+      40, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, -1, -1, -2, -2, -2,
+      -2, -2, -2, -3, -3, -3, -3, -4, -4, -6, -7, -18, -20, -30, -33, -40, -40, -99, -126, -165
+    ];
+    const saldoColores = saldoValores.map(v => v >= 0 ? 'rgba(44, 160, 44, 0.7)' : 'rgba(230, 57, 70, 0.7)');
+    const saldoBordes = saldoValores.map(v => v >= 0 ? '#2C802C' : '#E63946');
+
+    const ctxSaldo = document.getElementById('saldoVegetativoChart').getContext('2d');
+    const saldoVegetativoChart = new Chart(ctxSaldo, {
+      type: 'bar',
+      data: {
+        labels: saldoLabels,
+        datasets: [{
+          label: 'Saldo Vegetativo Anual (nacimientos - defunciones)',
+          data: saldoValores,
+          backgroundColor: saldoColores,
+          borderColor: saldoBordes,
+          borderWidth: 1.5,
+          borderRadius: 4
+        }]
+      },
+      options: {
+        indexAxis: 'y',
+        responsive: true,
+        plugins: {
+          legend: { display: true, position: 'top' }
+        },
+        scales: {
+          x: { title: { display: true, text: 'Saldo Vegetativo (personas/año)' } },
+          y: { title: { display: true, text: 'Barrio' } }
+        }
+      }
+    });
+
+    // Gráfico 3: Pirámide de edad (Barras horizontales comparativas)
     const ctxPiramide = document.getElementById('piramideEdadChart').getContext('2d');
     const piramideEdadChart = new Chart(ctxPiramide, {
       type: 'bar',
