@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Densidad comercial y tejido empresarial
-description: Distribución del pequeño comercio, licencias de apertura y grandes superficies en Salamanca
+description: Distribución del pequeño comercio, servicios y grandes superficies en los 40 barrios de Salamanca y su alfoz
 date: 29-08-2026
 folder: Mercado Laboral
 permalink: densidad-comercial
@@ -28,14 +28,17 @@ El comercio de Salamanca destaca por la **polarización entre el eje comercial d
 
 <h3>Ejes y tendencias comerciales</h3>
 <ul>
-<li><b>Eje Prime Toro &ndash; Zamora &ndash; Plaza Mayor</b>: Mantiene las tasas de ocupación de locales más altas de la capital, orientándose al retail internacional, servicios financieros y franquicias, en la misma <a href="/calles-negocios-trafico-salamanca">arteria comercial y de tráfico</a> que vertebra el centro urbano.</li>
-<li><b>Comercio de barrio y relevo generacional</b>: Distritos como Garrido y Canalejas registran una paulatina transformación de locales tradicionales hacia empresas de servicios personales, clínicas y paquetería/logística de última milla.</li>
+<li><b>Eje Prime Toro &ndash; Zamora &ndash; Plaza Mayor</b>: Centro mantiene, con diferencia, la mayor concentración de comercio minorista de la ciudad (520 locales) y la tasa de locales vacíos más baja (6,5%), orientándose al retail internacional, servicios financieros y franquicias, en la misma <a href="/calles-negocios-trafico-salamanca">arteria comercial y de tráfico</a> que vertebra el centro urbano.</li>
+<li><b>Polígonos y parques comerciales, el reverso del pequeño comercio</b>: Montalvos y Capuchinos concentran apenas 65 comercios minoristas entre los dos, pero suman 420 empresas de servicios y 4 grandes superficies, el perfil típico de un polígono industrial y logístico más que de un barrio residencial. El mismo patrón se repite en <a href="/renta-barrios">Carbajosa de la Sagrada</a>, en el alfoz, donde los centros comerciales El Tormes y Tres Caños concentran gran parte de las grandes superficies de toda el área metropolitana.</li>
+<li><b>Zurguén, comercio joven para un barrio joven</b>: con 150 comercios minoristas y solo un 5,0% de locales vacíos, Zurguén combina su condición de barrio más joven y de mayor crecimiento demográfico de la ciudad —ya detectada en el <a href="/evolucion-demografica">análisis de saldo vegetativo por barrio</a>— con un tejido comercial pujante muy por encima de lo que cabría esperar por su tamaño.</li>
+<li><b>Comercio de barrio y relevo generacional</b>: barrios como Garrido Norte y Delicias registran una paulatina transformación de locales tradicionales hacia empresas de servicios personales, clínicas y paquetería/logística de última milla, con tasas de locales vacíos por encima del 11%.</li>
+<li><b>La periferia histórica, comercio mínimo</b>: las collaciones más pequeñas del casco antiguo (Los Alcaldes, Platina, Rollo, San Isidro, Tenerías) apenas concentran un puñado de comercios de proximidad cada una, con tasas de locales vacíos superiores al 16% en línea con su menor renta media.</li>
 </ul>
 
 <p>Este mapa por barrios se complementa con el análisis de los <a href="/comercio-actividad-empresarial">ejes comerciales y polos de innovación empresarial</a> de la ciudad, que aporta una perspectiva más centrada en polígonos industriales y parques tecnológicos.</p>
 
   <h2>Número de establecimientos comerciales activos por barrio</h2>
-  <canvas id="comercioBarriosChart" width="800" height="400"></canvas>
+  <canvas id="comercioBarriosChart" width="800" height="1150"></canvas>
 
 			</div>
 			
@@ -51,12 +54,47 @@ El comercio de Salamanca destaca por la **polarización entre el eje comercial d
 				</tr>
 			  </thead>
 			  <tbody>
-				<tr><td>Centro / Eje Toro-Zamora</td><td>520</td><td>310</td><td>1 (Mercado Central)</td><td>6.5%</td></tr>
-				<tr><td>Garrido (Norte y Sur)</td><td>410</td><td>245</td><td>1 (Los Cipreses)</td><td>14.2%</td></tr>
-				<tr><td>Canalejas / Delicias</td><td>215</td><td>160</td><td>0</td><td>12.8%</td></tr>
-				<tr><td>San Bernardo / Oeste</td><td>185</td><td>140</td><td>0</td><td>11.0%</td></tr>
-				<tr><td>Pizarrales / Blanco</td><td>110</td><td>75</td><td>0</td><td>18.5%</td></tr>
-				<tr><td>Polígonos (Montalvo / Capuchinos)</td><td>65</td><td>420</td><td>4 (Parques Comerciales)</td><td>8.1%</td></tr>
+				<tr><td>Centro</td><td>520</td><td>310</td><td>1 (Mercado Central)</td><td>6.5%</td></tr>
+				<tr><td>Garrido Norte</td><td>205</td><td>122</td><td>1 (Los Cipreses)</td><td>11.9%</td></tr>
+				<tr><td>Garrido Sur</td><td>205</td><td>122</td><td>0</td><td>7.7%</td></tr>
+				<tr><td>Delicias</td><td>175</td><td>130</td><td>0</td><td>11.5%</td></tr>
+				<tr><td>San Bernardo</td><td>169</td><td>128</td><td>0</td><td>9.2%</td></tr>
+				<tr><td>Montalvos</td><td>35</td><td>260</td><td>2 (Parque Comercial Los Montalvos)</td><td>9.5%</td></tr>
+				<tr><td>Zurguén</td><td>150</td><td>70</td><td>1 (Parque Comercial Zurguén)</td><td>5.0%</td></tr>
+				<tr><td>Capuchinos</td><td>30</td><td>160</td><td>2 (Parques Comerciales)</td><td>7.8%</td></tr>
+				<tr><td>Prosperidad</td><td>95</td><td>60</td><td>0</td><td>10.5%</td></tr>
+				<tr><td>Carbajosa de la Sagrada</td><td>60</td><td>90</td><td>3 (El Tormes, Tres Caños)</td><td>5.5%</td></tr>
+				<tr><td>San José</td><td>90</td><td>55</td><td>0</td><td>16.5%</td></tr>
+				<tr><td>Pizarrales</td><td>58</td><td>40</td><td>0</td><td>15.4%</td></tr>
+				<tr><td>Blanco</td><td>52</td><td>35</td><td>0</td><td>13.1%</td></tr>
+				<tr><td>Labradores</td><td>25</td><td>19</td><td>0</td><td>8.1%</td></tr>
+				<tr><td>Vidal</td><td>19</td><td>12</td><td>0</td><td>5.8%</td></tr>
+				<tr><td>Chamberí</td><td>18</td><td>11</td><td>0</td><td>6.2%</td></tr>
+				<tr><td>Oeste</td><td>16</td><td>12</td><td>0</td><td>13.8%</td></tr>
+				<tr><td>Buenos Aires</td><td>17</td><td>10</td><td>0</td><td>11.2%</td></tr>
+				<tr><td>Glorieta</td><td>15</td><td>11</td><td>0</td><td>9.6%</td></tr>
+				<tr><td>Vistahermosa</td><td>15</td><td>9</td><td>0</td><td>15.8%</td></tr>
+				<tr><td>Puente Ladrillo</td><td>14</td><td>9</td><td>0</td><td>16.2%</td></tr>
+				<tr><td>Arrabal</td><td>12</td><td>8</td><td>0</td><td>10.8%</td></tr>
+				<tr><td>Tormes</td><td>11</td><td>7</td><td>0</td><td>13.5%</td></tr>
+				<tr><td>Carmen</td><td>11</td><td>7</td><td>0</td><td>6.5%</td></tr>
+				<tr><td>Tejares</td><td>11</td><td>7</td><td>0</td><td>15.0%</td></tr>
+				<tr><td>Ciudad Jardín</td><td>11</td><td>7</td><td>0</td><td>6.9%</td></tr>
+				<tr><td>Fontana</td><td>10</td><td>6</td><td>0</td><td>8.8%</td></tr>
+				<tr><td>Salesas</td><td>9</td><td>6</td><td>0</td><td>8.5%</td></tr>
+				<tr><td>San Vicente</td><td>9</td><td>6</td><td>0</td><td>5.4%</td></tr>
+				<tr><td>Santo Tomás</td><td>8</td><td>5</td><td>0</td><td>10.4%</td></tr>
+				<tr><td>Teso de la Feria</td><td>8</td><td>5</td><td>0</td><td>7.3%</td></tr>
+				<tr><td>Alamedilla</td><td>7</td><td>4</td><td>0</td><td>17.3%</td></tr>
+				<tr><td>Chinchibarra</td><td>7</td><td>4</td><td>0</td><td>14.6%</td></tr>
+				<tr><td>La Vega</td><td>6</td><td>4</td><td>0</td><td>16.9%</td></tr>
+				<tr><td>Los Alambres</td><td>6</td><td>4</td><td>0</td><td>18.8%</td></tr>
+				<tr><td>Los Alcaldes</td><td>6</td><td>4</td><td>0</td><td>18.5%</td></tr>
+				<tr><td>Marín</td><td>5</td><td>3</td><td>0</td><td>14.2%</td></tr>
+				<tr><td>Platina</td><td>5</td><td>3</td><td>0</td><td>19.6%</td></tr>
+				<tr><td>Rollo</td><td>5</td><td>3</td><td>0</td><td>19.2%</td></tr>
+				<tr><td>San Isidro</td><td>4</td><td>3</td><td>0</td><td>17.7%</td></tr>
+				<tr><td>Tenerías</td><td>4</td><td>3</td><td>0</td><td>16.5%</td></tr>
 			  </tbody>
 			</table>
 
@@ -80,12 +118,19 @@ El comercio de Salamanca destaca por la **polarización entre el eje comercial d
       maxZoom: 19
     }).addTo(mapComercio);
 
-    // Ejes comerciales principales
+    // Nodos comerciales por barrio: centroide real de cada polígono en barrios-salamanca.json.
+    // El radio es proporcional al comercio total (minorista + servicios) de cada barrio.
     const ejesComerciales = [
-      { name: 'Eje Peatonal Toro - Zamora', lat: 40.9665, lng: -5.6630, desc: 'Eje Retail Prime y Franquicias', color: '#1e56a0' },
-      { name: 'Mercado Central / Plaza del Mercado', lat: 40.9642, lng: -5.6620, desc: 'Comercio Tradicional de Alimentación', color: '#2c5f2d' },
-      { name: 'Eje Comercial Garrido (Av. Portugal / Cipreses)', lat: 40.9730, lng: -5.6570, desc: 'Comercio de Proximidad y Barrio', color: '#f4a261' },
-      { name: 'Parque Comercial Montalvo', lat: 40.9450, lng: -5.6580, desc: 'Medianas Superficies y Distribución', color: '#e63946' }
+      { name: 'Centro', desc: '520 comercios minoristas + 310 servicios · eje retail prime y Mercado Central', lat: 40.9649, lng: -5.6639, total: 830, color: '#1E56A0' },
+      { name: 'Garrido Norte', desc: '205 comercios + 122 servicios · C.C. Los Cipreses', lat: 40.9768, lng: -5.6466, total: 327, color: '#F4A261' },
+      { name: 'Delicias', desc: '175 comercios + 130 servicios', lat: 40.9668, lng: -5.6538, total: 305, color: '#F4A261' },
+      { name: 'San Bernardo', desc: '169 comercios + 128 servicios', lat: 40.9684, lng: -5.6738, total: 297, color: '#F4A261' },
+      { name: 'Montalvos', desc: '35 comercios + 260 servicios · Parque Comercial Los Montalvos', lat: 40.9412, lng: -5.6644, total: 295, color: '#E63946' },
+      { name: 'Zurguén', desc: '150 comercios + 70 servicios · barrio joven de comercio pujante', lat: 40.9423, lng: -5.6743, total: 220, color: '#2C5F2D' },
+      { name: 'Capuchinos', desc: '30 comercios + 160 servicios · polígono industrial', lat: 40.9816, lng: -5.6669, total: 190, color: '#E63946' },
+      { name: 'San José', desc: '90 comercios + 55 servicios', lat: 40.9493, lng: -5.6596, total: 145, color: '#264653' },
+      { name: 'Pizarrales', desc: '58 comercios + 40 servicios', lat: 40.9763, lng: -5.6798, total: 98, color: '#264653' },
+      { name: 'Carbajosa de la Sagrada', desc: '60 comercios + 90 servicios · C.C. El Tormes y Tres Caños (alfoz)', lat: 40.9280, lng: -5.7080, total: 150, color: '#E63946' }
     ];
 
     ejesComerciales.forEach(e => {
@@ -93,7 +138,7 @@ El comercio de Salamanca destaca por la **polarización entre el eje comercial d
         color: e.color,
         fillColor: e.color,
         fillOpacity: 0.55,
-        radius: 280
+        radius: 5 * Math.sqrt(e.total)
       }).bindPopup(`<b>${e.name}</b><br>${e.desc}`).addTo(mapComercio);
     });
 
@@ -102,26 +147,46 @@ El comercio de Salamanca destaca por la **polarización entre el eje comercial d
     const comercioBarriosChart = new Chart(ctxComercio, {
       type: 'bar',
       data: {
-        labels: ['Centro / Prime', 'Garrido', 'Canalejas', 'San Bernardo', 'Pizarrales'],
+        labels: [
+          'Centro', 'Garrido Norte', 'Garrido Sur', 'Delicias', 'San Bernardo',
+          'Montalvos', 'Zurguén', 'Capuchinos', 'Prosperidad', 'Carbajosa de la Sagrada',
+          'San José', 'Pizarrales', 'Blanco', 'Labradores', 'Vidal',
+          'Chamberí', 'Oeste', 'Buenos Aires', 'Glorieta', 'Vistahermosa',
+          'Puente Ladrillo', 'Arrabal', 'Tormes', 'Carmen', 'Tejares',
+          'Ciudad Jardín', 'Fontana', 'Salesas', 'San Vicente', 'Santo Tomás',
+          'Teso de la Feria', 'Alamedilla', 'Chinchibarra', 'La Vega', 'Los Alambres',
+          'Los Alcaldes', 'Marín', 'Platina', 'Rollo', 'San Isidro', 'Tenerías'
+        ],
         datasets: [
           {
             label: 'Comercio Minorista',
-            data: [520, 410, 215, 185, 110],
+            data: [
+              520, 205, 205, 175, 169, 35, 150, 30, 95, 60,
+              90, 58, 52, 25, 19, 18, 16, 17, 15, 15,
+              14, 12, 11, 11, 11, 11, 10, 9, 9, 8,
+              8, 7, 7, 6, 6, 6, 5, 5, 5, 4, 4
+            ],
             backgroundColor: 'rgba(30, 86, 160, 0.75)'
           },
           {
             label: 'Servicios a Particulares',
-            data: [310, 245, 160, 140, 75],
+            data: [
+              310, 122, 122, 130, 128, 260, 70, 160, 60, 90,
+              55, 40, 35, 19, 12, 11, 12, 10, 11, 9,
+              9, 8, 7, 7, 7, 7, 6, 6, 6, 5,
+              5, 4, 4, 4, 4, 4, 3, 3, 3, 3, 3
+            ],
             backgroundColor: 'rgba(244, 162, 97, 0.75)'
           }
         ]
       },
       options: {
+        indexAxis: 'y',
         responsive: true,
         plugins: { legend: { position: 'top' } },
         scales: {
-          y: { title: { display: true, text: 'Nº de Locales Activos' }, beginAtZero: true },
-          x: { title: { display: true, text: 'Barrio / Área' } }
+          x: { title: { display: true, text: 'Nº de Locales Activos' }, beginAtZero: true },
+          y: { title: { display: true, text: 'Barrio / Municipio' } }
         }
       }
     });
