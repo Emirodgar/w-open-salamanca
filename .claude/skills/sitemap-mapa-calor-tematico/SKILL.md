@@ -173,9 +173,10 @@ Pasos:
    sobre volumen.
 6. **`fuente`**: usa la URL real de la noticia si la evidencia/el sitemap
    la traen; si no hay una URL fiable para ese concepto, escribe
-   `"sin fuente directa"` en vez de inventar un enlace (así lo interpreta
-   `timeline.html`: oculta el enlace "Ver noticia original" cuando ve ese
-   valor exacto).
+   `"sin fuente directa"` en vez de inventar un enlace. Este campo ya no se
+   muestra como enlace en `timeline.html` (se quitó a petición del usuario),
+   pero se sigue guardando en el JSON como referencia interna de dónde
+   salió cada hito.
 7. **No sobrescribas meses ya cerrados con datos incompletos**: como esta
    skill se ejecuta normalmente cada semana y el sitemap solo cubre los
    últimos días, un mes se completa a lo largo de varias ejecuciones. Antes
