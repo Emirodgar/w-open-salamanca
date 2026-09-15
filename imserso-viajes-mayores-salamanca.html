@@ -1,0 +1,159 @@
+---
+layout: default
+title: El programa de turismo del Imserso en Salamanca
+description: Cuántos salmantinos viajan con el Imserso, qué destinos prefieren y cuántas plazas se reservan para quienes visitan la provincia
+date: 15-09-2026
+folder: Turismo
+permalink: imserso-viajes-mayores-salamanca
+---
+
+    <!-- Featured Datasets Section -->
+    <section class="featured dataset" id="datos">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="section-title">{{ page.title }}</h1>
+                <p class="section-description">{{ page.description }}</p>
+            </div>
+
+			<div id="section-content">
+
+  <!-- Mapa de destinos recíprocos dentro de la provincia -->
+  <div id="mapaImserso" style="width: 100%; height: 500px; border-radius: 8px; margin-bottom: 25px;"></div>
+
+
+			<h2>Análisis del turismo social entre los mayores salmantinos</h2>
+
+				<p>
+El Programa de Turismo del Imserso mueve cada temporada a miles de jubilados salmantinos y, en sentido inverso, atrae a la provincia a mayores de toda España. La provincia de Salamanca tiene asignadas <b>8.817 plazas</b> para que sus mayores viajen, mientras que se reservan otras <b>4.650 plazas</b> para que jubilados de otras provincias vengan a conocer Salamanca capital, Alba de Tormes, La Alberca, la Sierra de Francia y los Arribes del Duero.</p>
+
+<h3>Hallazgos clave sobre los viajes de nuestros mayores</h3>
+<ul>
+<li><b>Cataluña, un destino en caída libre</b>: de las 400 plazas con transporte incluido ofertadas a Cataluña, prácticamente no hubo reservas para los hoteles de Lloret de Mar &ndash;un agente de viajes salmantino solo colocó 3 de sus cerca de 50 plazas para ese destino&ndash;. El sector lo atribuye al procés independentista y a la pérdida de los vuelos directos Salamanca-Barcelona que antes hacían atractivo el viaje.</li>
+<li><b>Menorca y Benidorm, los favoritos de siempre</b>: siguen siendo los destinos más demandados por los jubilados salmantinos, especialmente para viajar en marzo, cuando mejora el tiempo.</li>
+<li><b>Demanda intensa en las agencias</b>: el día de apertura de ventas se forman largas colas, con decenas de personas esperando desde primera hora. La provincia cuenta con unas 70 agencias de viajes, con una media de 7 plazas del programa por establecimiento.</li>
+<li><b>Un programa municipal complementario</b>: el Ayuntamiento de Salamanca solicita 65 plazas propias adicionales para viajes de 8, 10 o 15 días entre enero y junio, subvencionando el 40%, 50% u 80% del coste según la renta familiar (80% en la modalidad de respiro familiar para cuidadores). El límite de ingresos para acceder es de 9.080,20 €/año para una persona o 14.910,28 €/año para dos.</li>
+</ul>
+
+<p>Este turismo de mayores es solo una parte de la <a href="/visitantes-pernoctaciones">radiografía general de visitantes y pernoctaciones</a> de la ciudad, aunque con un perfil de viajero, estacionalidad y motivación muy distintos al del turismo convencional o al de las <a href="/viviendas-turisticas">viviendas de uso turístico</a>.</p>
+
+  <h2>Reparto de las 8.817 plazas salmantinas por lote</h2>
+  <canvas id="lotesChart" width="800" height="400"></canvas>
+
+  <h2>Cataluña: plazas ofertadas frente a reservas reales</h2>
+  <canvas id="cataluñaChart" width="800" height="350"></canvas>
+
+			</div>
+
+
+			<div id="section-table">
+			<table border="1" cellpadding="5" cellspacing="0">
+			  <thead>
+				<tr>
+				  <th>Concepto</th>
+				  <th>Plazas / Valor</th>
+				  <th>Detalle</th>
+				</tr>
+			  </thead>
+			  <tbody>
+				<tr><td>Plazas asignadas a la provincia de Salamanca (mayores que viajan)</td><td>8.817</td><td>Temporada 2026-2027</td></tr>
+				<tr><td>&nbsp;&nbsp;&ndash; Lote 1 (costas peninsulares)</td><td>5.025</td><td>Viajes de 8, 10 o 15 días a Andalucía, Cataluña, Murcia y C. Valenciana</td></tr>
+				<tr><td>&nbsp;&nbsp;&ndash; Resto de lotes</td><td>3.792</td><td>Interior, circuitos culturales y costa insular</td></tr>
+				<tr><td>Plazas para visitar la provincia de Salamanca</td><td>4.650</td><td>Reciprocidad: mayores de otras provincias</td></tr>
+				<tr><td>&nbsp;&nbsp;&ndash; Salamanca capital, Alba de Tormes, La Alberca y Sierra de Francia</td><td>2.650</td><td>&nbsp;</td></tr>
+				<tr><td>&nbsp;&nbsp;&ndash; Visitas culturales en Salamanca (museos, exposiciones, espectáculos)</td><td>1.000</td><td>&nbsp;</td></tr>
+				<tr><td>&nbsp;&nbsp;&ndash; Arribes del Duero</td><td>1.000</td><td>&nbsp;</td></tr>
+				<tr><td>Plazas ofertadas a Cataluña (con transporte)</td><td>400</td><td>Demanda casi nula; hoteles de Lloret de Mar sin reservas</td></tr>
+				<tr><td>Agencias de viaje en la provincia</td><td>~70</td><td>Media de 7 plazas del programa por agencia</td></tr>
+				<tr><td>Plazas propias del Ayuntamiento de Salamanca</td><td>65</td><td>Subvención del 40%, 50% u 80% según renta</td></tr>
+				<tr><td>Ayudas municipales al envejecimiento activo (2026)</td><td>102.000 €</td><td>23 asociaciones beneficiarias; incluye viajes, talleres y salidas culturales</td></tr>
+				<tr><td>Plazas convocadas a nivel nacional</td><td>879.213</td><td>Temporada 2026-2027 (+7,7% sobre las 816.029 de una temporada reciente)</td></tr>
+				<tr><td>Plazas a tarifa social (50 €)</td><td>7.447</td><td>Para pensiones no contributivas o rentas equivalentes</td></tr>
+				<tr><td>Personas inscritas en el programa (España)</td><td>4.329.606</td><td>Cifra más alta de la historia del programa</td></tr>
+				<tr><td>Pensionistas potenciales en Castilla y León</td><td>638.603</td><td>417.768 jubilación, 146.837 viudedad, 51.417 incapacidad permanente</td></tr>
+			  </tbody>
+			</table>
+
+			</div>
+
+
+
+			{% include categories.html %}
+
+        </div>
+    </section>
+
+	<!-- Hojas de estilo y scripts de Leaflet -->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+	<script>
+    // 1. Mapa de los destinos recíprocos dentro de la provincia (plazas para visitar Salamanca)
+    const mapImserso = L.map('mapaImserso').setView([40.85, -5.9], 9);
+
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/light_all/{z}/{x}/{y}{r}.png?key=cb1_2izw_1_55d93b51ded1dcecfa044181', {
+      attribution: '&copy; OpenStreetMap &copy; CARTO',
+      subdomains: 'abcd',
+      maxZoom: 19
+    }).addTo(mapImserso);
+
+    const destinosProvincia = [
+      { name: 'Salamanca capital', lat: 40.9650, lng: -5.6630, desc: 'Parte de las 2.650 plazas conjuntas con Alba de Tormes, La Alberca y Sierra de Francia', plazas: 2650 },
+      { name: 'Alba de Tormes', lat: 40.8267, lng: -5.5203, desc: 'Parte de las 2.650 plazas conjuntas con Salamanca capital, La Alberca y Sierra de Francia', plazas: 2650 },
+      { name: 'La Alberca / Sierra de Francia', lat: 40.4147, lng: -6.1114, desc: 'Parte de las 2.650 plazas conjuntas con Salamanca capital y Alba de Tormes', plazas: 2650 },
+      { name: 'Arribes del Duero', lat: 41.2140, lng: -6.6800, desc: '1.000 plazas propias para visitar el parque natural', plazas: 1000 }
+    ];
+
+    destinosProvincia.forEach(d => {
+      L.circle([d.lat, d.lng], {
+        color: '#1E56A0',
+        fillColor: '#1E56A0',
+        fillOpacity: 0.55,
+        radius: 5 * Math.sqrt(d.plazas) * 30
+      }).bindPopup(`<b>${d.name}</b><br>${d.desc}`).addTo(mapImserso);
+    });
+
+    // 2. Gráfico de dona: reparto de las 8.817 plazas salmantinas por lote
+    const ctxLotes = document.getElementById('lotesChart').getContext('2d');
+    const lotesChart = new Chart(ctxLotes, {
+      type: 'doughnut',
+      data: {
+        labels: ['Lote 1: Costas peninsulares (Andalucía, Cataluña, Murcia, C. Valenciana)', 'Resto de lotes (interior, circuitos culturales, costa insular)'],
+        datasets: [{
+          data: [5025, 3792],
+          backgroundColor: ['#1E56A0', '#F4A261']
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: { position: 'bottom' },
+          title: { display: true, text: 'Total: 8.817 plazas asignadas a la provincia de Salamanca', font: { size: 13 } }
+        }
+      }
+    });
+
+    // 3. Gráfico de barras: Cataluña, ofertadas vs. reservas reales (muestra de un agente de viajes)
+    const ctxCat = document.getElementById('cataluñaChart').getContext('2d');
+    const cataluñaChart = new Chart(ctxCat, {
+      type: 'bar',
+      data: {
+        labels: ['Plazas ofertadas a Cataluña (con transporte)', 'Reservas de un agente de viajes (sobre 50 plazas propias)'],
+        datasets: [{
+          label: 'Plazas',
+          data: [400, 3],
+          backgroundColor: ['#1E56A0', '#E63946'],
+          borderRadius: 4
+        }]
+      },
+      options: {
+        indexAxis: 'y',
+        responsive: true,
+        plugins: {
+          legend: { display: false },
+          title: { display: true, text: 'La demanda de Cataluña se ha desplomado tras el procés y la pérdida de vuelos directos', font: { size: 13 } }
+        },
+        scales: {
+          x: { title: { display: true, text: 'Plazas' }, beginAtZero: true }
+        }
+      }
+    });
+  </script>
