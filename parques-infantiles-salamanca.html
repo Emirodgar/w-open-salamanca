@@ -1,0 +1,151 @@
+---
+layout: default
+title: Parques y zonas de juegos infantiles
+description: Las zonas de juego infantil accesibles de Salamanca, sus renovaciones recientes y la inversion municipal en accesibilidad
+date: 15-09-2026
+folder: Medio Ambiente
+permalink: parques-infantiles-salamanca
+---
+
+    <!-- Featured Datasets Section -->
+    <section class="featured dataset" id="datos">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="section-title">{{ page.title }}</h1>
+                <p class="section-description">{{ page.description }}</p>
+            </div>
+
+			<div id="section-content">
+
+  <!-- Mapa de zonas de juegos infantiles -->
+  <div id="mapaInfantiles" style="width: 100%; height: 500px; border-radius: 8px; margin-bottom: 25px;"></div>
+
+
+			<h2>Análisis de la red de zonas de juegos infantiles</h2>
+
+				<p>
+Salamanca cuenta ya con <b>51 zonas de juegos infantiles con elementos adaptados y accesibles</b>, que suman 102 unidades de juego repartidas por parques y plazas de toda la ciudad. El Ayuntamiento ha destinado cerca de 3 millones de euros durante el actual mandato a reformar parques y zonas de juego, incorporando en todas ellas elementos conformes a la normativa vigente de accesibilidad y seguridad infantil.</p>
+
+<h3>Hallazgos clave sobre los parques infantiles</h3>
+<ul>
+<li><b>De 35 a 51 zonas accesibles</b>: el programa de adaptación arrancó con la renovación de espacios como el Parque Fluvial, la Plaza de Diego Hurtado de Mendoza o la calle Cruz de Caravaca, y ha seguido creciendo hasta las 51 zonas actuales, entre ellas las plazas de Würzburg, Jesuitas, Carmelitas, Barcelona, Burgos, Baleares, Picasso, Ciudad Rodrigo, Colón o Enrique de Sena, además de La Alamedilla, Villar y Macías, el Bulevar de La Milagrosa o la propia Ciudad Deportiva de La Aldehuela.</li>
+<li><b>La accesibilidad, el eje de la inversión</b>: la reciente reforma de la Plaza de la Concordia añadió una estructura de sombra sobre los juegos infantiles, mientras que en la Avenida de Salamanca se renovaron a la vez la zona de juegos, las pistas deportivas y los aparatos biosaludables del mismo espacio.</li>
+<li><b>Barrios periféricos, los últimos en llegar</b>: el Ayuntamiento ya ha renovado y ampliado las zonas verdes y el parque infantil de Los Alcaldes, y tiene anteproyectos redactados para ampliar aún más la zona de juegos infantiles en el barrio del Zurguén, dos de las collaciones más jóvenes y con menor renta de la ciudad.</li>
+<li><b>Renovaciones más recientes</b>: la Plaza de Extremadura, en el barrio de Buenos Aires, y el entorno del Centro de Convivencia Victoria Adrados figuran entre las últimas actuaciones anunciadas por el Ayuntamiento.</li>
+</ul>
+
+<p>Esta red de juego se apoya en la misma infraestructura verde que analiza la página de <a href="/zonas-verdes">zonas verdes y esparcimiento canino</a> de la ciudad, con la que comparte buena parte de los grandes parques, y se complementa con las <a href="/parques-caninos-salamanca">zonas de esparcimiento canino</a> repartidas por los mismos espacios.</p>
+
+  <h2>Zonas de juego accesibles: de 35 a 51 en pocos años</h2>
+  <canvas id="infantilesChart" width="800" height="350"></canvas>
+
+			</div>
+
+
+			<div id="section-table">
+			<table border="1" cellpadding="5" cellspacing="0">
+			  <thead>
+				<tr>
+				  <th>Zona de Juego Infantil</th>
+				  <th>Barrio / Zona Aproximada</th>
+				  <th>Actuación</th>
+				</tr>
+			  </thead>
+			  <tbody>
+				<tr><td>Parque Fluvial</td><td>Ribera del Tormes</td><td>Renovada (elementos accesibles)</td></tr>
+				<tr><td>Plaza de Diego Hurtado de Mendoza</td><td>n.d.</td><td>Renovada (elementos accesibles)</td></tr>
+				<tr><td>Calle Cruz de Caravaca</td><td>Casco Histórico</td><td>Renovada (elementos accesibles)</td></tr>
+				<tr><td>Plaza de la Concordia</td><td>n.d.</td><td>Renovada, con estructura de sombra añadida</td></tr>
+				<tr><td>Avenida de Salamanca</td><td>n.d.</td><td>Renovada junto a pistas deportivas y biosaludables</td></tr>
+				<tr><td>Los Alcaldes</td><td>Los Alcaldes</td><td>Renovada y con zonas verdes ampliadas</td></tr>
+				<tr><td>Plaza Würzburg</td><td>Garrido Norte</td><td>Zona accesible habilitada</td></tr>
+				<tr><td>Plaza de los Jesuitas</td><td>Providencia / Delicias</td><td>Zona accesible habilitada</td></tr>
+				<tr><td>La Alamedilla</td><td>Alamedilla</td><td>Zona accesible habilitada</td></tr>
+				<tr><td>Plaza Carmelitas</td><td>Oeste</td><td>Zona accesible habilitada</td></tr>
+				<tr><td>Plaza Barcelona</td><td>n.d.</td><td>Zona accesible habilitada</td></tr>
+				<tr><td>Plaza Burgos</td><td>n.d.</td><td>Zona accesible habilitada</td></tr>
+				<tr><td>Río Coa</td><td>n.d.</td><td>Zona accesible habilitada</td></tr>
+				<tr><td>Plaza Baleares</td><td>Pizarrales</td><td>Zona accesible habilitada</td></tr>
+				<tr><td>Villar y Macías</td><td>Casco Histórico</td><td>Zona accesible habilitada</td></tr>
+				<tr><td>Ciudad Deportiva de La Aldehuela</td><td>La Aldehuela</td><td>Zona accesible habilitada</td></tr>
+				<tr><td>Plaza Picasso</td><td>n.d.</td><td>Zona accesible habilitada</td></tr>
+				<tr><td>Plaza Ciudad Rodrigo</td><td>n.d.</td><td>Zona accesible habilitada</td></tr>
+				<tr><td>Plaza Colón</td><td>n.d.</td><td>Zona accesible habilitada</td></tr>
+				<tr><td>Calle Julián Sánchez "El Charro"</td><td>n.d.</td><td>Zona accesible habilitada</td></tr>
+				<tr><td>Plaza Enrique de Sena</td><td>n.d.</td><td>Zona accesible habilitada</td></tr>
+				<tr><td>La Enseñanza</td><td>Casco Histórico</td><td>Zona accesible habilitada</td></tr>
+				<tr><td>Bulevar de La Milagrosa</td><td>n.d.</td><td>Zona accesible habilitada</td></tr>
+				<tr><td>Plaza de Extremadura</td><td>Buenos Aires</td><td>Renovación reciente</td></tr>
+				<tr><td>Centro de Convivencia Victoria Adrados</td><td>n.d.</td><td>Renovación reciente</td></tr>
+				<tr><td>El Zurguén</td><td>Zurguén</td><td>Anteproyecto pendiente de ejecución</td></tr>
+			  </tbody>
+			</table>
+			<p style="font-size: 0.9em; color: #555;">*n.d.: barrio no especificado en las fuentes consultadas. Esta tabla recoge las zonas citadas por su nombre en la prensa y el Ayuntamiento; el total de la red asciende a 51 zonas, no todas ellas nombradas individualmente en las fuentes disponibles.</p>
+
+			</div>
+
+
+
+			{% include categories.html %}
+
+        </div>
+    </section>
+
+	<!-- Hojas de estilo y scripts de Leaflet -->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+	<script>
+    // 1. Inicializar mapa de zonas de juegos infantiles (subconjunto con ubicación conocida)
+    const mapInfantiles = L.map('mapaInfantiles').setView([40.9650, -5.6630], 13);
+
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/light_all/{z}/{x}/{y}{r}.png?key=cb1_2izw_1_55d93b51ded1dcecfa044181', {
+      attribution: '&copy; OpenStreetMap &copy; CARTO',
+      subdomains: 'abcd',
+      maxZoom: 19
+    }).addTo(mapInfantiles);
+
+    const zonasInfantiles = [
+      { name: 'Plaza Würzburg', lat: 40.9770, lng: -5.6550, desc: 'Zona de juegos accesible, Garrido Norte' },
+      { name: 'Plaza de los Jesuitas', lat: 40.9638, lng: -5.6540, desc: 'Zona de juegos accesible, Providencia/Delicias' },
+      { name: 'La Alamedilla', lat: 40.9677, lng: -5.6561, desc: 'Zona de juegos accesible' },
+      { name: 'Plaza Baleares', lat: 40.9763, lng: -5.6798, desc: 'Zona de juegos accesible, Pizarrales' },
+      { name: 'Ciudad Deportiva de La Aldehuela', lat: 40.9550, lng: -5.6410, desc: 'Zona de juegos accesible dentro del complejo deportivo' },
+      { name: 'Los Alcaldes', lat: 40.9770, lng: -5.6600, desc: 'Parque infantil renovado y zonas verdes ampliadas' },
+      { name: 'El Zurguén', lat: 40.9423, lng: -5.6743, desc: 'Anteproyecto pendiente de ejecución' }
+    ];
+
+    zonasInfantiles.forEach(z => {
+      L.circleMarker([z.lat, z.lng], {
+        radius: 9,
+        fillColor: '#F4A261',
+        color: '#ffffff',
+        weight: 2,
+        fillOpacity: 0.85
+      }).bindPopup(`<b>${z.name}</b><br>${z.desc}`).addTo(mapInfantiles);
+    });
+
+    // 2. Gráfico: crecimiento de la red de zonas de juego accesibles
+    const ctxInfantiles = document.getElementById('infantilesChart').getContext('2d');
+    const infantilesChart = new Chart(ctxInfantiles, {
+      type: 'bar',
+      data: {
+        labels: ['Fase inicial (35 zonas)', 'Red actual (51 zonas)'],
+        datasets: [{
+          label: 'Zonas de juego infantil accesibles',
+          data: [35, 51],
+          backgroundColor: ['#1E56A0', '#F4A261'],
+          borderRadius: 4
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: { display: false },
+          title: { display: true, text: '102 unidades de juego repartidas en las 51 zonas actuales; inversión cercana a 3 M€ en el mandato', font: { size: 12 } }
+        },
+        scales: {
+          y: { title: { display: true, text: 'Nº de zonas de juego accesibles' }, beginAtZero: true }
+        }
+      }
+    });
+  </script>

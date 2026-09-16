@@ -1,0 +1,140 @@
+---
+layout: default
+title: Zonas de esparcimiento canino (ZEC)
+description: Los parques caninos de Salamanca, casi 151.000 m2 repartidos por la ciudad para los perros censados en la capital
+date: 15-09-2026
+folder: Medio Ambiente
+permalink: parques-caninos-salamanca
+---
+
+    <!-- Featured Datasets Section -->
+    <section class="featured dataset" id="datos">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="section-title">{{ page.title }}</h1>
+                <p class="section-description">{{ page.description }}</p>
+            </div>
+
+			<div id="section-content">
+
+  <!-- Mapa de zonas de esparcimiento canino -->
+  <div id="mapaCaninos" style="width: 100%; height: 500px; border-radius: 8px; margin-bottom: 25px;"></div>
+
+
+			<h2>Análisis de la red de zonas de esparcimiento canino</h2>
+
+				<p>
+Salamanca cuenta con una red de <b>32 parques caninos que suman 150.974 m²</b> de espacio acotado para el esparcimiento de perros, según el recuento más reciente de la prensa local. El Ayuntamiento, por su parte, cifra la red ampliada en 33 zonas y más de 151.000 m² tras sumar las últimas incorporaciones, una pequeña diferencia habitual entre el recuento periodístico y el balance municipal más actualizado.</p>
+
+<h3>Hallazgos clave sobre los parques caninos</h3>
+<ul>
+<li><b>Un tamaño muy desigual</b>: el <a href="/zonas-verdes">Parque del Baldío</a> reserva, con diferencia, el mayor espacio para perros de la ciudad (115.280 m²), muy por encima del Parque de Valhondo (22.250 m²). En el extremo opuesto, el parque canino de las Islas Baleares, en Pizarrales, apenas ocupa 255 m².</li>
+<li><b>Siete zonas nuevas repartidas por los barrios</b>: el Ayuntamiento amplió la red con siete parques caninos nuevos en el Parque El Sol (Chamberí), la Plaza de Santa Cecilia (San José), el entorno del CAEM (Prosperidad), el Parque de los Gozos y las Sombras (Garrido), la Avenida de Santiago Madrigal, el Parque de Tomás Bretón y la calle Juan Manso (Puente Ladrillo).</li>
+<li><b>Casi 15.000 perros censados</b>: el Sistema de Identificación de Mascotas registraba 14.959 perros en Salamanca capital. La cifra ya se acerca a las cerca de 20.000 mascotas totales (perros y gatos) que el propio Ayuntamiento contabilizaba en 2018, año en el que --por primera vez de forma constatada-- las <a href="/poblacion-demografia">mascotas superaron en número a los menores de 0 a 15 años</a> empadronados en la capital (17.372 frente a cerca de 20.000).</li>
+<li><b>Cinco parques caninos en pleno Casco Histórico</b>: pese a la limitación de espacio del centro urbano, la red incluye cinco zonas de esparcimiento canino dentro del casco antiguo, entre ellas una de las dos primeras que se instalaron en la ciudad, en el Parque de los Jesuitas.</li>
+</ul>
+
+<p>Esta red convive con el resto de <a href="/zonas-verdes">zonas verdes y parques urbanos</a> de la ciudad y con las <a href="/parques-infantiles-salamanca">zonas de juegos infantiles</a>, con las que en ocasiones comparte espacio dentro de un mismo parque.</p>
+
+  <h2>Superficie de los principales parques caninos (m²)</h2>
+  <canvas id="caninosChart" width="800" height="400"></canvas>
+
+			</div>
+
+
+			<div id="section-table">
+			<table border="1" cellpadding="5" cellspacing="0">
+			  <thead>
+				<tr>
+				  <th>Parque Canino</th>
+				  <th>Barrio / Zona</th>
+				  <th>Superficie</th>
+				  <th>Estado</th>
+				</tr>
+			  </thead>
+			  <tbody>
+				<tr><td>Parque del Baldío</td><td>n.d.</td><td>115.280 m²</td><td>Existente (el mayor de la ciudad)</td></tr>
+				<tr><td>Parque de Valhondo</td><td>Pizarrales</td><td>22.250 m²</td><td>Existente</td></tr>
+				<tr><td>Parque de los Jesuitas</td><td>Providencia / Delicias</td><td>n.d.</td><td>Existente (uno de los dos primeros)</td></tr>
+				<tr><td>Parque del Túnel de la Radio</td><td>n.d.</td><td>n.d.</td><td>Existente</td></tr>
+				<tr><td>Parque Islas Baleares</td><td>Pizarrales</td><td>255 m² (el menor de la red)</td><td>Existente</td></tr>
+				<tr><td>Parque El Sol</td><td>Chamberí</td><td>n.d.</td><td>Nuevo (ampliación de 7 zonas)</td></tr>
+				<tr><td>Plaza de Santa Cecilia</td><td>San José</td><td>n.d.</td><td>Nuevo (ampliación de 7 zonas)</td></tr>
+				<tr><td>Entorno del CAEM</td><td>Prosperidad</td><td>n.d.</td><td>Nuevo (ampliación de 7 zonas)</td></tr>
+				<tr><td>Parque de los Gozos y las Sombras</td><td>Garrido</td><td>n.d.</td><td>Nuevo (ampliación de 7 zonas)</td></tr>
+				<tr><td>Avenida de Santiago Madrigal</td><td>n.d.</td><td>n.d.</td><td>Nuevo (ampliación de 7 zonas)</td></tr>
+				<tr><td>Parque de Tomás Bretón</td><td>n.d.</td><td>n.d.</td><td>Nuevo (ampliación de 7 zonas)</td></tr>
+				<tr><td>Calle Juan Manso</td><td>Puente Ladrillo</td><td>n.d.</td><td>Nuevo (ampliación de 7 zonas)</td></tr>
+			  </tbody>
+			</table>
+			<p style="font-size: 0.9em; color: #555;">*n.d.: dato no publicado en las fuentes consultadas. Superficies según prensa local; el resto de zonas de la red (hasta completar las 32-33 totales) no tiene desglose individual publicado.</p>
+
+			</div>
+
+
+
+			{% include categories.html %}
+
+        </div>
+    </section>
+
+	<!-- Hojas de estilo y scripts de Leaflet -->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+	<script>
+    // 1. Inicializar mapa de parques caninos
+    const mapCaninos = L.map('mapaCaninos').setView([40.9650, -5.6630], 13);
+
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/light_all/{z}/{x}/{y}{r}.png?key=cb1_2izw_1_55d93b51ded1dcecfa044181', {
+      attribution: '&copy; OpenStreetMap &copy; CARTO',
+      subdomains: 'abcd',
+      maxZoom: 19
+    }).addTo(mapCaninos);
+
+    // Centroide real de cada barrio en barrios-salamanca.json para las zonas con ubicación conocida
+    const parquesCaninos = [
+      { name: 'Parque de Valhondo', lat: 40.9763, lng: -5.6798, desc: '22.250 m², en Pizarrales', color: '#2C5F2D' },
+      { name: 'Parque Islas Baleares', lat: 40.9763, lng: -5.6798, desc: '255 m², el más pequeño de la red, en Pizarrales', color: '#2C5F2D' },
+      { name: 'Parque El Sol', lat: 40.9558, lng: -5.6812, desc: 'Nueva zona canina en Chamberí', color: '#E63946' },
+      { name: 'Plaza de Santa Cecilia', lat: 40.9493, lng: -5.6596, desc: 'Nueva zona canina en San José', color: '#E63946' },
+      { name: 'Entorno del CAEM', lat: 40.9601, lng: -5.6519, desc: 'Nueva zona canina en Prosperidad', color: '#E63946' },
+      { name: 'Parque de los Gozos y las Sombras', lat: 40.9740, lng: -5.6500, desc: 'Nueva zona canina en Garrido', color: '#E63946' },
+      { name: 'Calle Juan Manso', lat: 40.9716, lng: -5.6382, desc: 'Nueva zona canina en Puente Ladrillo', color: '#E63946' }
+    ];
+
+    parquesCaninos.forEach(p => {
+      L.circleMarker([p.lat, p.lng], {
+        radius: 9,
+        fillColor: p.color,
+        color: '#ffffff',
+        weight: 2,
+        fillOpacity: 0.85
+      }).bindPopup(`<b>${p.name}</b><br>${p.desc}`).addTo(mapCaninos);
+    });
+
+    // 2. Gráfico de barras: superficie de los parques caninos con dato publicado
+    const ctxCaninos = document.getElementById('caninosChart').getContext('2d');
+    const caninosChart = new Chart(ctxCaninos, {
+      type: 'bar',
+      data: {
+        labels: ['Parque del Baldío', 'Parque de Valhondo', 'Parque Islas Baleares (Pizarrales)'],
+        datasets: [{
+          label: 'Superficie (m²)',
+          data: [115280, 22250, 255],
+          backgroundColor: ['#2C5F2D', '#1E56A0', '#F4A261'],
+          borderRadius: 4
+        }]
+      },
+      options: {
+        indexAxis: 'y',
+        responsive: true,
+        plugins: {
+          legend: { display: false },
+          title: { display: true, text: 'El Baldío concentra más de 5 veces la superficie de Valhondo, el segundo mayor', font: { size: 13 } }
+        },
+        scales: {
+          x: { type: 'logarithmic', title: { display: true, text: 'Superficie en m² (escala logarítmica)' } }
+        }
+      }
+    });
+  </script>
