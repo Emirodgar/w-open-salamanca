@@ -18,12 +18,19 @@
     --warning-color: #FFC107;
     --error-color: #DC3545;
 
-    /* Heatmap scale (Actualidad) */
+    /* Heatmap scale (Actualidad) - semana actual */
     --heat-0: #EEF2ED;
     --heat-1: #C9DFC0;
     --heat-2: #97BC62;
     --heat-3: #5C8A44;
     --heat-4: #2C5F2D;
+
+    /* Heatmap scale (Actualidad) - análisis anteriores */
+    --heat-gray-0: #F2F2F2;
+    --heat-gray-1: #DADADA;
+    --heat-gray-2: #B5B5B5;
+    --heat-gray-3: #8A8A8A;
+    --heat-gray-4: #5A5A5A;
 
     /* Category colors (Timeline) */
     --cat-sucesos: #C1443A;

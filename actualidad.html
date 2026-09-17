@@ -49,13 +49,23 @@ permalink: actualidad
 						<table class="actualidad-heatmap" id="actualidad-heatmap"></table>
 					</div>
 					<div class="actualidad-legend">
-						<span>Menos</span>
-						<span class="actualidad-legend-box" style="background:var(--heat-0)"></span>
-						<span class="actualidad-legend-box" style="background:var(--heat-1)"></span>
-						<span class="actualidad-legend-box" style="background:var(--heat-2)"></span>
-						<span class="actualidad-legend-box" style="background:var(--heat-3)"></span>
-						<span class="actualidad-legend-box" style="background:var(--heat-4)"></span>
-						<span>Más</span>
+						<span class="actualidad-legend-grupo">
+							<span class="actualidad-legend-etiqueta">Semana actual</span>
+							<span class="actualidad-legend-box" style="background:var(--heat-0)"></span>
+							<span class="actualidad-legend-box" style="background:var(--heat-1)"></span>
+							<span class="actualidad-legend-box" style="background:var(--heat-2)"></span>
+							<span class="actualidad-legend-box" style="background:var(--heat-3)"></span>
+							<span class="actualidad-legend-box" style="background:var(--heat-4)"></span>
+						</span>
+						<span class="actualidad-legend-grupo">
+							<span class="actualidad-legend-etiqueta">Análisis anteriores</span>
+							<span class="actualidad-legend-box" style="background:var(--heat-gray-0)"></span>
+							<span class="actualidad-legend-box" style="background:var(--heat-gray-1)"></span>
+							<span class="actualidad-legend-box" style="background:var(--heat-gray-2)"></span>
+							<span class="actualidad-legend-box" style="background:var(--heat-gray-3)"></span>
+							<span class="actualidad-legend-box" style="background:var(--heat-gray-4)"></span>
+						</span>
+						<span class="actualidad-legend-escala"><span>Menos</span> → <span>Más</span></span>
 					</div>
 				</div>
 
@@ -81,14 +91,22 @@ permalink: actualidad
 			{ bg: 'var(--heat-3)', color: '#fff' },
 			{ bg: 'var(--heat-4)', color: '#fff' }
 		];
+		const HEAT_LEVELS_GRIS = [
+			{ bg: 'var(--heat-gray-0)', color: 'var(--text-color)' },
+			{ bg: 'var(--heat-gray-1)', color: 'var(--text-color)' },
+			{ bg: 'var(--heat-gray-2)', color: 'var(--text-color)' },
+			{ bg: 'var(--heat-gray-3)', color: '#fff' },
+			{ bg: 'var(--heat-gray-4)', color: '#fff' }
+		];
 
-		function heatLevel(v, maxVal) {
-			if (!v) return HEAT_LEVELS[0];
+		function heatLevel(v, maxVal, gris) {
+			const escala = gris ? HEAT_LEVELS_GRIS : HEAT_LEVELS;
+			if (!v) return escala[0];
 			const ratio = v / maxVal;
-			if (ratio < 0.25) return HEAT_LEVELS[1];
-			if (ratio < 0.5) return HEAT_LEVELS[2];
-			if (ratio < 0.75) return HEAT_LEVELS[3];
-			return HEAT_LEVELS[4];
+			if (ratio < 0.25) return escala[1];
+			if (ratio < 0.5) return escala[2];
+			if (ratio < 0.75) return escala[3];
+			return escala[4];
 		}
 
 		function formatearRango(desde, hasta) {
@@ -127,22 +145,40 @@ permalink: actualidad
 				</div>`).join('');
 
 			const secciones = top.slice(0, 6).map(s => s[0]);
-			const dias = d.heatmap_calendario || [];
+
+			// Semana actual (actualidad.json) + histórico acumulado
+			// (actualidad-heatmap.json): la semana actual manda si un mismo
+			// día aparece en los dos (no debería, pero por si acaso).
+			const diasActuales = d.heatmap_calendario || [];
+			const fechasActuales = new Set(diasActuales.map(f => f.fecha));
+			const diasHistoricos = (heatmapHistorico.dias || []).filter(f => !fechasActuales.has(f.fecha));
+			const DIAS_MAX_MOSTRADOS = 30;
+			const dias = diasHistoricos.concat(diasActuales)
+				.sort((a, b) => a.fecha.localeCompare(b.fecha))
+				.slice(-DIAS_MAX_MOSTRADOS);
+
 			const maxVal = Math.max(...dias.flatMap(f => secciones.map(s => f[s] || 0)), 1);
 
 			const thead = '<tr><th></th>' + dias.map(f => `<th>${f.fecha.slice(5).replace('-', '/')}</th>`).join('') + '</tr>';
 			const rows = secciones.map(sec => {
 				const cells = dias.map(f => {
 					const v = f[sec] || 0;
-					const lvl = heatLevel(v, maxVal);
-					return `<td style="background:${lvl.bg};color:${lvl.color}" title="${sec}: ${v}">${v || ''}</td>`;
+					const esActual = fechasActuales.has(f.fecha);
+					const lvl = heatLevel(v, maxVal, !esActual);
+					return `<td style="background:${lvl.bg};color:${lvl.color}" title="${sec}: ${v} (${f.fecha})">${v || ''}</td>`;
 				}).join('');
 				return `<tr><th>${sec.replace(/-/g, ' ')}</th>${cells}</tr>`;
 			}).join('');
 			heatmapEl.innerHTML = thead + rows;
 		}
 
-		fetch('/actualidad.json?v=' + Date.now(), { cache: 'no-store' })
+		let heatmapHistorico = { dias: [] };
+
+		fetch('/actualidad-heatmap.json?v=' + Date.now(), { cache: 'no-store' })
+			.then(r => r.json())
+			.then(d => { heatmapHistorico = d; })
+			.catch(err => console.error('No se pudo cargar actualidad-heatmap.json', err))
+			.then(() => fetch('/actualidad.json?v=' + Date.now(), { cache: 'no-store' }))
 			.then(r => r.json())
 			.then(render)
 			.catch(err => {

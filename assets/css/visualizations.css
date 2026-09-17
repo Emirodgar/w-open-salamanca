@@ -1545,10 +1545,25 @@
 .actualidad-legend {
     display: flex;
     align-items: center;
-    gap: var(--spacing-xs);
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
     margin-top: var(--spacing-md);
     font-size: 0.72rem;
     color: var(--neutral-color);
+}
+
+.actualidad-legend-grupo {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+}
+
+.actualidad-legend-etiqueta {
+    font-weight: 600;
+}
+
+.actualidad-legend-escala {
+    opacity: 0.75;
 }
 
 .actualidad-legend-box {

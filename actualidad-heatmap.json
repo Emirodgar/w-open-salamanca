@@ -1,0 +1,8 @@
+{
+  "nota": "Historial acumulado de la actividad diaria por sección que alimenta la tabla de /actualidad. Cada ejecución de la skill de actualidad añade aquí los días de heatmap_calendario de actualidad.json (sin machacar los ya guardados), para que la tabla pueda mostrar en gris los días de análisis anteriores junto a los de la semana actual en verde.",
+  "dias": [
+    {"fecha": "2026-09-15", "total": 45, "provincia": 12, "salamanca": 11, "deportes": 8, "sucesos": 6, "campo": 3, "toros": 3, "encuestas": 1, "virales": 0, "especiales": 1, "cine-y-series": 0},
+    {"fecha": "2026-09-16", "total": 67, "provincia": 20, "salamanca": 17, "deportes": 13, "sucesos": 8, "campo": 3, "toros": 1, "encuestas": 1, "virales": 2, "especiales": 1, "cine-y-series": 1},
+    {"fecha": "2026-09-17", "total": 9, "provincia": 2, "salamanca": 5, "deportes": 2, "sucesos": 0, "campo": 0, "toros": 0, "encuestas": 0, "virales": 0, "especiales": 0, "cine-y-series": 0}
+  ]
+}

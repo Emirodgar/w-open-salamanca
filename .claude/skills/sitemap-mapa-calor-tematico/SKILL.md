@@ -4,8 +4,10 @@ description: >
   Genera y actualiza el contenido de "actualidad" de opensalamanca.es
   analizando el sitemap de La Gaceta de Salamanca (lagacetadesalamanca.es):
   produce el `actualidad.json` semanal que alimenta la página /actualidad,
-  el banner de la home y la fecha de "Última actualización" de la home,
-  los `actualidad/YYYYMM.json` mensuales que alimentan la línea de tiempo
+  el banner de la home y la fecha de "Última actualización" de la home, el
+  histórico acumulado `actualidad-heatmap.json` que pinta en gris los días
+  de análisis anteriores en la tabla "Actividad diaria por sección" de
+  /actualidad, los `actualidad/YYYYMM.json` mensuales que alimentan la línea de tiempo
   en /timeline, `eventos.json` con los próximos eventos con fecha (ferias,
   fiestas, festivales...) detectados esa semana, y las preguntas de la
   sección "Opina" (`opina.json`, que alimenta tanto la home como /opina) y
@@ -23,12 +25,15 @@ description: >
 # Actualidad, timeline, eventos y Opina de Salamanca (opensalamanca.es)
 
 Esta skill es la versión de proyecto, adaptada a este repositorio, de un
-analizador genérico de sitemaps de medios digitales. Sirve **cinco piezas
+analizador genérico de sitemaps de medios digitales. Sirve **seis piezas
 del sitio** a la vez:
 
 1. **`actualidad.json`** (raíz del repo) — resumen semanal/quincenal que
    consumen [`actualidad.html`](../../../actualidad.html) y el banner de
-   [`index.html`](../../../index.html).
+   [`index.html`](../../../index.html). Junto a él se mantiene
+   **`actualidad-heatmap.json`**, el histórico acumulado (nunca se
+   sobrescribe, solo se fusiona) que alimenta la tabla "Actividad diaria
+   por sección" de `actualidad.html` — ver el punto 6 del Paso 2, más abajo.
 2. **`actualidad/YYYYMM.json`** (uno por mes, p.ej. `actualidad/202608.json`)
    — hitos destacados del mes que consume [`timeline.html`](../../../timeline.html)
    a través del manifiesto autogenerado [`actualidad/index.json`](../../../actualidad/index.json).
@@ -127,6 +132,14 @@ solo detecta patrones léxicos. Antes de escribir/actualizar `actualidad.json`:
    nunca el resultado final).
 5. Sobrescribe `actualidad.json` en la raíz del repo con el resultado final
    (con `resumen` y `ejemplos_redactados` ya rellenos, nunca `null`).
+6. **Fusiona `heatmap_calendario` en `actualidad-heatmap.json`** (raíz del
+   repo): añade cada día nuevo de `heatmap_calendario` al array `dias` de
+   ese fichero (si un `fecha` ya existe, sobrescribe esa entrada con los
+   datos nuevos en vez de duplicarla), sin borrar los días de ejecuciones
+   anteriores. Este fichero es el histórico acumulado que
+   [`actualidad.html`](../../../actualidad.html) usa para pintar en gris,
+   junto a los días de la semana actual en verde, la tabla "Actividad
+   diaria por sección" — por eso nunca debe perder días ya guardados.
 
 ## Paso 3 — Generar/actualizar el JSON mensual del timeline
 
@@ -393,8 +406,8 @@ general para otros cambios en el repo).
    `git add -A`/`git add .`).
 2. Haz `git add` solo de los ficheros que esta skill haya escrito en esta
    ejecución, típicamente algún subconjunto de: `actualidad.json`,
-   `actualidad/YYYYMM.json`, `eventos.json`, `opina.json`,
-   `historico.json`.
+   `actualidad-heatmap.json`, `actualidad/YYYYMM.json`, `eventos.json`,
+   `opina.json`, `historico.json`.
 3. Crea un commit con un mensaje breve que resuma el periodo cubierto y
    qué se ha tocado, por ejemplo:
    `Actualiza actualidad, timeline y Opina (8-10 sep 2026)`.
