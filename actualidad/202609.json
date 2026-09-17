@@ -1,7 +1,7 @@
 {
   "mes": "2026-09",
   "titulo_mes": "Septiembre 2026",
-  "resumen_mes": "El mes arranca con la temporada de ferias en marcha (SALAMAQ, que cierra con récord de 90.000 visitantes, y la Feria del Caballo de Ciudad Rodrigo) y llega a su ecuador con las Ferias y Fiestas de Salamanca, que llenan la Plaza Mayor de conciertos multitudinarios (Tony Hadley, Gente de Zona, M-Clan, Valeria Castro) y dan paso también a una Feria taurina que agota entradas en La Glorieta. En clave política, María Sánchez se convierte en la primera mujer candidata del PSOE a la Alcaldía de cara a 2027, mientras el Tribunal Supremo suspende el voto a más de 3.000 nuevos salmantinos acogidos a la Ley de Nietos. La provincia encadena fiestas patronales, mientras varios accidentes de tráfico —incluida una muerte tras un encierro en Villarino de los Aires—, los médicos anuncian una huelga indefinida para el 28 de octubre y el buen papel copero de Salamanca UDS y Santa Marta completan la fotografía de estos primeros catorce días.",
+  "resumen_mes": "El mes arranca con la temporada de ferias en marcha (SALAMAQ, que cierra con récord de 90.000 visitantes, y la Feria del Caballo de Ciudad Rodrigo) y llega a su ecuador con las Ferias y Fiestas de Salamanca, que llenan la Plaza Mayor de conciertos multitudinarios (Tony Hadley, Gente de Zona, M-Clan, Valeria Castro) y se despiden con récord de asistencia y una Plaza Mayor llena hasta el final. En clave política, María Sánchez se convierte en la primera mujer candidata del PSOE a la Alcaldía de cara a 2027, mientras el Tribunal Supremo suspende el voto a más de 3.000 nuevos salmantinos acogidos a la Ley de Nietos. En lo educativo, la Junta lanza un plan de rescate en Lectura y Matemáticas tras el descenso en PISA. La provincia encadena fiestas patronales, mientras varios accidentes de tráfico —incluida una muerte tras un encierro en Villarino de los Aires—, los médicos anuncian una huelga indefinida para el 28 de octubre y Salamanca UDS y Santa Marta siguen soñando con la Copa del Rey completan la fotografía de estos primeros diecisiete días.",
   "hitos": [
     {
       "fecha": "2026-09-01",
@@ -9,15 +9,15 @@
       "categoria": "Cultura",
       "descripcion": "La Feria del Caballo de Ciudad Rodrigo consolida su atractivo como cita ganadera de referencia en la provincia, mientras Cabrerizos abre inscripciones para su III Feria Agroalimentaria.",
       "fuente": "sin fuente directa",
-      "destacado": true
+      "destacado": false
     },
     {
-      "fecha": "2026-09-09",
-      "titulo": "Las Ferias y Fiestas de Salamanca llenan la Plaza Mayor de conciertos",
+      "fecha": "2026-09-16",
+      "titulo": "Las Ferias y Fiestas de Salamanca se despiden con récord de asistencia",
       "categoria": "Cultura",
-      "descripcion": "Tras el pregón, la Plaza Mayor ha acogido conciertos multitudinarios de Tony Hadley y Gente de Zona junto a La Gozadera, calificado como el concierto más caro de la historia del cartel ferial; la semana grande se ha cerrado con M-Clan, Valeria Castro e Íñigo Quintero, mientras la Feria taurina de La Glorieta agotaba entradas con Roca Rey y la consagración de David de Miranda.",
-      "fuente": "https://www.lagacetadesalamanca.es/salamanca/plaza-mayor-convierte-gozadera-concierto-caro-historia-20260909223905-nt.html",
-      "destacado": false
+      "descripcion": "Tras el pregón, la Plaza Mayor acogió conciertos multitudinarios de Tony Hadley, Gente de Zona, La Gozadera, M-Clan y Valeria Castro, además de una Feria taurina que agotó entradas con Roca Rey; Antoñito Molina cerró nueve días de fiestas con una Plaza Mayor llena, en lo que el Ayuntamiento calificó de 'respuesta extraordinaria y masiva' con cifras récord.",
+      "fuente": "https://www.lagacetadesalamanca.es/salamanca/salamanca-despide-ferias-fiestas-record-asistencia-20260916124614-nt.html",
+      "destacado": true
     },
     {
       "fecha": "2026-09-09",
@@ -28,11 +28,11 @@
       "destacado": false
     },
     {
-      "fecha": "2026-09-09",
-      "titulo": "Salamanca UDS y Santa Marta avanzan en la Copa RFEF",
+      "fecha": "2026-09-16",
+      "titulo": "Salamanca UDS y Santa Marta siguen soñando con la Copa del Rey",
       "categoria": "Deportes",
-      "descripcion": "El Salamanca UDS remontó (3-2) de la mano de Muniain y el Santa Marta hizo lo propio (2-1) en el San Casto; el sorteo posterior deparó morbo, con el Salamanca UDS emparejado contra el Derio, el equipo del que salió el propio Muniain.",
-      "fuente": "https://www.lagacetadesalamanca.es/deportes/futbol-local/locura-san-casto-santa-marta-remonta-ultimos-20260909205943-nt.html",
+      "descripcion": "El Salamanca UDS remontó (3-2) de la mano de Muniain y el Santa Marta hizo lo propio (2-1) en el San Casto en la ida de la Copa RFEF; el sorteo emparejó al Salamanca UDS con el Derio, el equipo del que salió el propio Muniain, y allí protagonizó una remontada de locura (3-5) mientras el Santa Marta también avanzaba (1-0), con ambos ya soñando con colarse en la Copa del Rey.",
+      "fuente": "https://www.lagacetadesalamanca.es/deportes/futbol-local/salamancauds/salamanca-reina-locura-derio-20260916223016-nt.html",
       "destacado": false
     },
     {
@@ -60,11 +60,11 @@
       "destacado": false
     },
     {
-      "fecha": "2026-09-11",
-      "titulo": "Los médicos convocan huelga indefinida para el 28 de octubre",
-      "categoria": "Sociedad",
-      "descripcion": "Los médicos han fijado el 28 de octubre como fecha para iniciar una huelga indefinida contra el nuevo Estatuto Marco.",
-      "fuente": "sin fuente directa",
+      "fecha": "2026-09-16",
+      "titulo": "Plan de rescate en Lectura y Matemáticas tras el descenso en PISA",
+      "categoria": "Educación",
+      "descripcion": "La Junta de Castilla y León pone en marcha un plan de rescate en Lectura y Matemáticas tras el descenso registrado por la comunidad en el último informe PISA.",
+      "fuente": "https://www.lagacetadesalamanca.es/salamanca/plan-rescate-lectura-matematicas-tras-descenso-pisa-20260916192332-nt.html",
       "destacado": false
     }
   ]

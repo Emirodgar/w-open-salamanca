@@ -1,4 +1,23 @@
 {
   "nota": "Repositorio de preguntas de /opina que ya han sido retiradas de la votación activa. Cada entrada guarda el resultado final (recuento por opción) en el momento de archivarla. Una vez aquí, la pregunta ya no admite más votos (el Worker rechaza cualquier voto a un id marcado como cerrado). Sirve como base de conocimiento sobre el interés y la opinión de los usuarios a lo largo del tiempo.",
-  "preguntas_archivadas": []
+  "preguntas_archivadas": [
+    {
+      "id": "eventos-septiembre-2026",
+      "pregunta": "¿A cuál de estos eventos de septiembre tienes más ganas de ir?",
+      "opciones": [
+        "SALAMAQ",
+        "Ferias de Salamanca (conciertos)",
+        "Feria del Caballo de Ciudad Rodrigo",
+        "A ninguno, paso este año"
+      ],
+      "basado_en": "eventos.json",
+      "fecha_creacion": "2026-09-01",
+      "fecha_archivado": "2026-09-17",
+      "resultados": {
+        "Ferias de Salamanca (conciertos)": 4,
+        "Feria del Caballo de Ciudad Rodrigo": 1
+      },
+      "total_votos": 5
+    }
+  ]
 }

@@ -1,11 +1,11 @@
 {
   "url_base": "https://www.lagacetadesalamanca.es",
-  "generado_en": "2026-09-14T09:15:00+00:00",
+  "generado_en": "2026-09-17T09:30:00+00:00",
   "periodo_cubierto": {
-    "desde": "2026-09-12",
-    "hasta": "2026-09-14"
+    "desde": "2026-09-15",
+    "hasta": "2026-09-17"
   },
-  "total_urls_analizadas": 99,
+  "total_urls_analizadas": 121,
   "secciones_excluidas": [
     "nacional",
     "opinion",
@@ -13,118 +13,118 @@
     "gente-estilo",
     "podcast"
   ],
-  "nota_cobertura": "El sitemap consultado esta vez solo contenía URLs de los últimos 3 días (12 a 14 de septiembre), un periodo más corto que una semana completa: es un sitemap 'rolling' y en este momento cubre menos días de los habituales. El análisis y el resumen siguientes reflejan únicamente ese periodo real, no una semana entera.",
+  "nota_cobertura": "El sitemap consultado esta vez solo contenía URLs de los últimos 3 días (15 a 17 de septiembre), un periodo más corto que una semana completa: es un sitemap 'rolling' y en este momento cubre menos días de los habituales. El análisis y el resumen siguientes reflejan únicamente ese periodo real, no una semana entera.",
   "por_seccion": [
-    ["salamanca", 37],
-    ["deportes", 19],
-    ["toros", 16],
-    ["provincia", 11],
-    ["sucesos", 8],
-    ["internacional", 2],
-    ["especiales", 2],
+    ["provincia", 34],
+    ["salamanca", 33],
+    ["deportes", 23],
+    ["sucesos", 14],
+    ["campo", 6],
+    ["toros", 4],
     ["encuestas", 2],
-    ["castilla-y-leon", 1],
-    ["noticias", 1]
+    ["virales", 2],
+    ["especiales", 2],
+    ["cine-y-series", 1]
   ],
   "por_subseccion": [
-    ["deportes/futbol-local", 15],
-    ["especiales/asi-somos-en-mi-pueblo", 2],
-    ["deportes/baloncesto-local", 1]
+    ["deportes/futbol-local", 16],
+    ["deportes/baloncesto-local", 5],
+    ["especiales/asi-somos-en-mi-pueblo", 2]
   ],
   "por_tipo_contenido": [
-    ["noticia", 95],
-    ["directo / en vivo", 4]
+    ["noticia", 120],
+    ["directo / en vivo", 1]
   ],
   "heatmap_calendario": [
-    {"fecha": "2026-09-12", "total": 28, "salamanca": 7, "deportes": 9, "toros": 4, "provincia": 3, "sucesos": 1, "internacional": 1, "especiales": 0, "encuestas": 1, "castilla-y-leon": 1, "noticias": 1},
-    {"fecha": "2026-09-13", "total": 55, "salamanca": 19, "deportes": 10, "toros": 11, "provincia": 6, "sucesos": 7, "internacional": 0, "especiales": 1, "encuestas": 1, "castilla-y-leon": 0, "noticias": 0},
-    {"fecha": "2026-09-14", "total": 16, "salamanca": 11, "deportes": 0, "toros": 1, "provincia": 2, "sucesos": 0, "internacional": 1, "especiales": 1, "encuestas": 0, "castilla-y-leon": 0, "noticias": 0}
+    {"fecha": "2026-09-15", "total": 45, "provincia": 12, "salamanca": 11, "deportes": 8, "sucesos": 6, "campo": 3, "toros": 3, "encuestas": 1, "virales": 0, "especiales": 1, "cine-y-series": 0},
+    {"fecha": "2026-09-16", "total": 67, "provincia": 20, "salamanca": 17, "deportes": 13, "sucesos": 8, "campo": 3, "toros": 1, "encuestas": 1, "virales": 2, "especiales": 1, "cine-y-series": 1},
+    {"fecha": "2026-09-17", "total": 9, "provincia": 2, "salamanca": 5, "deportes": 2, "sucesos": 0, "campo": 0, "toros": 0, "encuestas": 0, "virales": 0, "especiales": 0, "cine-y-series": 0}
   ],
   "conceptos_destacados": [
     {
-      "concepto": "Las Ferias y Fiestas cierran su semana grande en la Plaza Mayor",
-      "piezas": 8,
+      "concepto": "Las Ferias y Fiestas se despiden con récord de asistencia",
+      "piezas": 5,
       "seccion_principal": "salamanca",
-      "desde": "2026-09-12",
-      "hasta": "2026-09-14",
+      "desde": "2026-09-15",
+      "hasta": "2026-09-16",
       "ejemplos_redactados": [
-        "Las Ferias y Fiestas han cerrado su semana grande con nuevos llenos en la Plaza Mayor: M-Clan, Valeria Castro e Íñigo Quintero se han rendido a un escenario que también vivió una gran traca de pólvora valenciana y el folclórico Día del Tamborilero.",
-        "La organización ya pregunta a los salmantinos si han acudido a alguno de los conciertos de la Plaza Mayor, en una encuesta que retrata el pulso real de una programación muy comentada este año."
+        "Antoñito Molina ha cerrado nueve días de fiestas con una Plaza Mayor llena, en un cierre que el Ayuntamiento ha calificado de 'respuesta extraordinaria y masiva' con cifras récord de asistencia.",
+        "Cruz Roja atendió a 33 personas durante las Ferias, ocho de ellas trasladadas al hospital, mientras el propio periódico pregunta a sus lectores si les han gustado las Ferias y Fiestas de este año."
       ]
     },
     {
-      "concepto": "La Feria taurina de La Glorieta agota entradas",
-      "piezas": 6,
-      "seccion_principal": "toros",
-      "desde": "2026-09-12",
-      "hasta": "2026-09-13",
-      "ejemplos_redactados": [
-        "La Feria taurina de La Glorieta sigue colgando el cartel de 'no hay billetes': David de Miranda ha triunfado en su presentación con 'Gracioso' y Roca Rey vuelve a arrastrar público tarde tras tarde, mientras Morante pasaba de sobresaliente a titular en una de las corridas."
-      ]
-    },
-    {
-      "concepto": "Fútbol: victorias para Salamanca UDS y Santa Marta, tropiezo de Unionistas",
-      "piezas": 6,
+      "concepto": "Copa RFEF: Salamanca UDS y Santa Marta siguen soñando con la Copa del Rey",
+      "piezas": 7,
       "seccion_principal": "deportes",
-      "desde": "2026-09-12",
-      "hasta": "2026-09-13",
+      "desde": "2026-09-16",
+      "hasta": "2026-09-16",
       "ejemplos_redactados": [
-        "Buen fin de semana para los dos representantes salmantinos en las categorías nacionales: el Salamanca UDS venció al Getafe B (1-0) con gol de Asier y el Santa Marta se impuso en Villaralbo (1-2) con un golazo en el descuento.",
-        "Unionistas, en cambio, se hundió en Avilés (3-1) tras remontarle el Real Avilés, en una jornada empañada además por el ataque sufrido por un grupo de sus aficionados antes del partido."
+        "El Salamanca UDS ha protagonizado un partido de locura en Derio, remontando para ganar 3-5 y seguir con vida en la Copa RFEF, en un campo que fue la casa de Muniain como entrenador.",
+        "El Santa Marta también ha superado su eliminatoria (1-0) en el San Casto, y ambos equipos salmantinos sueñan ya con hacer historia y colarse en el sorteo de la Copa del Rey."
       ]
     },
     {
-      "concepto": "El Supremo suspende el voto a 3.000 nuevos salmantinos de la Ley de Nietos",
+      "concepto": "Unionistas firma el peor arranque de su historia en Primera Federación",
+      "piezas": 2,
+      "seccion_principal": "deportes",
+      "desde": "2026-09-15",
+      "hasta": "2026-09-15",
+      "ejemplos_redactados": [
+        "Unionistas firma el peor arranque de su historia en Primera Federación, una crisis de resultados que obliga al equipo a reaccionar cuanto antes."
+      ]
+    },
+    {
+      "concepto": "Salamanca se queda sin Feria del Libro Antiguo 2026",
       "piezas": 1,
       "seccion_principal": "salamanca",
-      "desde": "2026-09-13",
-      "hasta": "2026-09-13",
+      "desde": "2026-09-16",
+      "hasta": "2026-09-16",
       "ejemplos_redactados": [
-        "El Tribunal Supremo ha suspendido el derecho al voto de más de 3.000 nuevos salmantinos que obtuvieron la nacionalidad española gracias a la 'Ley de Nietos' —descendientes de quienes emigraron durante la Guerra Civil o la dictadura—, a la espera de resolver el recurso antes de las próximas elecciones."
+        "El Ayuntamiento ha confirmado la suspensión de la XXXII edición de la Feria del Libro Antiguo tras no alcanzar un acuerdo con los libreros."
       ]
     },
     {
-      "concepto": "Salamanca, referente nacional en trasplante pulmonar",
-      "piezas": 2,
+      "concepto": "Plan de rescate en Lectura y Matemáticas tras el descenso en PISA",
+      "piezas": 1,
       "seccion_principal": "salamanca",
-      "desde": "2026-09-12",
-      "hasta": "2026-09-13",
+      "desde": "2026-09-16",
+      "hasta": "2026-09-16",
       "ejemplos_redactados": [
-        "España mantiene su liderazgo mundial en donación y trasplantes, y Salamanca se ha reivindicado como referente nacional en trasplante pulmonar, según ha explicado la salmantina Beatriz Domínguez-Gil, directora de la Organización Nacional de Trasplantes."
+        "La Junta pone en marcha un plan de rescate en Lectura y Matemáticas tras el descenso registrado en el último informe PISA."
       ]
     },
     {
-      "concepto": "Nueva tanda de sucesos en la provincia",
+      "concepto": "Luz verde a una inversión de 12,7 millones de euros en el aeropuerto de Matacán",
+      "piezas": 1,
+      "seccion_principal": "salamanca",
+      "desde": "2026-09-15",
+      "hasta": "2026-09-15",
+      "ejemplos_redactados": [
+        "El proyecto incluye mejoras en la sala de embarque, el equipamiento de seguridad y los sistemas de información y comunicaciones del aeropuerto de Matacán."
+      ]
+    },
+    {
+      "concepto": "Nueva tanda de incendios y sucesos en la provincia",
       "piezas": 7,
       "seccion_principal": "sucesos",
-      "desde": "2026-09-12",
-      "hasta": "2026-09-13",
+      "desde": "2026-09-15",
+      "hasta": "2026-09-16",
       "ejemplos_redactados": [
-        "La provincia ha vivido una nueva tanda de sucesos: un menor herido por arma blanca en una pelea en La Aldehuela, un coche calcinado de madrugada en la A-66, un positivo en cocaína con la ITV caducada en Comuneros y varias colisiones con heridos, entre ellas en Carbajosa de la Sagrada y la carretera de Ledesma.",
-        "Tres agresiones registradas en menos de cuatro horas de madrugada dejaron además a una persona evacuada al hospital."
+        "La provincia ha vivido un nuevo episodio de incendios —uno en Santa Marta de Tormes con despliegue aéreo y terrestre, otro en Galisancho que calcinó 300 metros cuadrados— y un detenido por amenazar con incendiar un edificio y agredir a un agente durante su huida.",
+        "Un fuerte olor a gas movilizó además a los servicios de emergencia en la capital, en una semana con varios heridos más en accidentes de tráfico."
       ]
     },
     {
-      "concepto": "Fallece el empresario salmantino José Antonio Campal en un accidente de moto",
-      "piezas": 1,
-      "seccion_principal": "sucesos",
-      "desde": "2026-09-12",
-      "hasta": "2026-09-12",
-      "ejemplos_redactados": [
-        "El empresario salmantino José Antonio Campal ha fallecido este fin de semana en un accidente de moto."
-      ]
-    },
-    {
-      "concepto": "La agonía del Mercado de San Bernardo",
-      "piezas": 1,
+      "concepto": "Prosperidad estrena su nuevo centro de salud entre dudas",
+      "piezas": 2,
       "seccion_principal": "salamanca",
-      "desde": "2026-09-12",
-      "hasta": "2026-09-12",
+      "desde": "2026-09-15",
+      "hasta": "2026-09-16",
       "ejemplos_redactados": [
-        "El histórico Mercado de San Bernardo agoniza junto a la estación de autobuses: apenas siete negocios siguen abiertos, los comerciantes lamentan la decadencia y el Ayuntamiento estudia sacar a subasta los puestos vacíos."
+        "El nuevo centro de salud de Prosperidad ha abierto sus puertas entre la adaptación de pacientes y profesionales, mientras el PSOE denuncia carencias en sus instalaciones y reclama soluciones para la sanidad salmantina."
       ]
     }
   ],
-  "resumen_borrador": "Se han publicado 99 noticias entre el 2026-09-12 y el 2026-09-14. La actividad se ha concentrado sobre todo en salamanca (37 piezas), deportes (19 piezas), toros (16 piezas).\n\nLos conceptos con más piezas relacionadas son: Plaza, Santa Marta, Feria taurina. Revisa 'evidencia' de cada concepto para redactar el resumen final.",
-  "resumen": "Las Ferias y Fiestas de Salamanca han cerrado su semana grande con nuevos llenos en la Plaza Mayor: M-Clan, Valeria Castro e Íñigo Quintero se han rendido a un escenario que también vivió una gran traca de pólvora valenciana y el folclórico Día del Tamborilero. En paralelo, la Feria taurina de La Glorieta sigue colgando el cartel de 'no hay billetes', con la consagración de David de Miranda y un Roca Rey que vuelve a arrastrar público tarde tras tarde.\n\nEn el fútbol, buen fin de semana para los dos representantes salmantinos en las categorías nacionales: el Salamanca UDS venció al Getafe B (1-0) con gol de Asier y el Santa Marta se impuso en Villaralbo (1-2) con un golazo en el descuento, mientras Unionistas se hundió en Avilés (3-1) tras remontarle el rival, en una jornada empañada por el ataque sufrido por un grupo de sus aficionados antes del partido.\n\nEl Tribunal Supremo ha suspendido el derecho al voto de más de 3.000 nuevos salmantinos que obtuvieron la nacionalidad española gracias a la 'Ley de Nietos', descendientes de quienes emigraron durante la Guerra Civil o la dictadura, a la espera de resolver el recurso antes de las próximas elecciones. En clave más amable, Salamanca se ha reivindicado como referente nacional en trasplante pulmonar, según ha explicado la salmantina Beatriz Domínguez-Gil, directora de la Organización Nacional de Trasplantes.\n\nLa provincia ha vivido además una nueva tanda de sucesos —un menor herido por arma blanca en La Aldehuela, un coche calcinado en la A-66, varias colisiones con heridos y tres agresiones en menos de cuatro horas de madrugada— y ha lamentado el fallecimiento del empresario salmantino José Antonio Campal en un accidente de moto. En el terreno económico, el histórico Mercado de San Bernardo agoniza junto a la estación de autobuses, con apenas siete negocios abiertos y el Ayuntamiento estudiando sacar a subasta los puestos vacíos."
+  "resumen_borrador": "Se han publicado 121 noticias entre el 2026-09-15 y el 2026-09-17. La actividad se ha concentrado sobre todo en provincia (34 piezas), salamanca (33 piezas), deportes (23 piezas).\n\nLos conceptos con más piezas relacionadas son: Copa RFEF, Ferias, Derio, Salamaq. Revisa 'evidencia' de cada concepto para redactar el resumen final.",
+  "resumen": "Las Ferias y Fiestas de Salamanca se han despedido con récord de asistencia: Antoñito Molina cerró nueve días de fiestas con una Plaza Mayor llena, en lo que el Ayuntamiento ha calificado de 'respuesta extraordinaria y masiva', mientras Cruz Roja atendió a 33 personas durante todo el programa. En paralelo, la ciudad ha encajado la pérdida de la Feria del Libro Antiguo: el Ayuntamiento ha confirmado la suspensión de su XXXII edición tras no alcanzar un acuerdo con los libreros.\n\nEl fútbol salmantino ha vivido una noche de infarto en la Copa RFEF: el Salamanca UDS remontó para ganar 3-5 en Derio —el campo que fue la casa de Muniain como entrenador— y el Santa Marta superó también su eliminatoria (1-0), de forma que ambos siguen soñando con colarse en el sorteo de la Copa del Rey. La cara opuesta la protagoniza Unionistas, que firma el peor arranque de su historia en Primera Federación.\n\nEn el terreno educativo, la Junta ha anunciado un plan de rescate en Lectura y Matemáticas tras el descenso registrado en el informe PISA, y se ha dado luz verde a una inversión de 12,7 millones de euros en el aeropuerto de Matacán. La provincia ha vivido además una nueva tanda de incendios —en Santa Marta de Tormes y en Galisancho, con 300 metros cuadrados calcinados— y varios sucesos más, mientras en la capital el nuevo centro de salud de Prosperidad abría sus puertas entre la ilusión de los vecinos y las críticas del PSOE por las carencias detectadas."
 }

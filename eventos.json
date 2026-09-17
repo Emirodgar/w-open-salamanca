@@ -1,14 +1,23 @@
 {
-  "generado_en": "2026-09-14T09:15:00+00:00",
+  "generado_en": "2026-09-17T09:30:00+00:00",
   "eventos": [
     {
-      "titulo": "Ferias de Salamanca 2026",
+      "titulo": "54ª Vuelta Ciclista a Salamanca (sub 23 y élite)",
+      "categoria": "Deportes",
+      "fecha_inicio": "2026-09-18",
+      "fecha_fin": "2026-09-20",
+      "lugar": "Alba de Tormes, Babilafuente, La Alberca, Candelario y Salamanca capital",
+      "descripcion": "Tres etapas con 19 equipos de nivel nacional: Alba de Tormes-Babilafuente el viernes, la etapa reina hasta Candelario el sábado, y la llegada a la capital (calle San Pablo) el domingo.",
+      "fuente": "https://www.lagacetadesalamanca.es/deportes/54a-vuelta-ciclista-salamanca-sub-elite-presenta-20260916211245-nt.html"
+    },
+    {
+      "titulo": "Ciclo de Órgano 'Los Sonidos Centenarios' en Alba de Tormes",
       "categoria": "Cultura",
-      "fecha_inicio": "2026-09-06",
-      "fecha_fin": "2026-09-15",
-      "lugar": "Plaza Mayor y distintos puntos de la ciudad",
-      "descripcion": "El Pregón de Ferias del 8 de septiembre abrió el programa oficial, con conciertos gratuitos en la Plaza Mayor (Tony Hadley, Gente de Zona, La Gozadera, La La Love You...), teatro en el Teatro Liceo, circo en el Patio Chico y actividades familiares por toda la ciudad. En paralelo, la Feria taurina de La Glorieta reúne a Manzanares, Daniel Luque y Borja Jiménez.",
-      "fuente": "https://ciudaddecultura.org/es/programacion/"
+      "fecha_inicio": "2026-09-18",
+      "fecha_fin": null,
+      "lugar": "Basílica de la Anunciación, Alba de Tormes",
+      "descripcion": "Concierto de órgano dentro del VI Ciclo Internacional de Órgano de la Provincia de Salamanca, en el templo que alberga el sepulcro de Santa Teresa de Jesús.",
+      "fuente": "https://www.lagacetadesalamanca.es/provincia/basilica-anunciacion-acoge-fin-semana-concierto-organo-20260916132654-nt.html"
     },
     {
       "titulo": "Semana Europea de la Movilidad de Carbajosa de la Sagrada",

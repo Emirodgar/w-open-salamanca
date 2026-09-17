@@ -2,18 +2,6 @@
   "worker_url": "https://votos.emirodgar.workers.dev/",
   "preguntas": [
     {
-      "id": "eventos-septiembre-2026",
-      "pregunta": "¿A cuál de estos eventos de septiembre tienes más ganas de ir?",
-      "opciones": [
-        "SALAMAQ",
-        "Ferias de Salamanca (conciertos)",
-        "Feria del Caballo de Ciudad Rodrigo",
-        "A ninguno, paso este año"
-      ],
-      "basado_en": "eventos.json",
-      "fecha_creacion": "2026-09-01"
-    },
-    {
       "id": "unionistas-arranque-2026",
       "pregunta": "El Unionistas ha empezado la Primera RFEF con derrota. ¿Confías en que remonte esta temporada?",
       "opciones": [
@@ -59,6 +47,18 @@
       ],
       "basado_en": "actualidad.json",
       "fecha_creacion": "2026-09-14"
+    },
+    {
+      "id": "feria-libro-antiguo-2026",
+      "pregunta": "El Ayuntamiento ha suspendido la Feria del Libro Antiguo de este año tras no llegar a un acuerdo con los libreros. ¿A quién crees que corresponde más responsabilidad en la ruptura?",
+      "opciones": [
+        "Al Ayuntamiento",
+        "A los libreros",
+        "A ambos por igual",
+        "No tengo suficiente información"
+      ],
+      "basado_en": "actualidad.json",
+      "fecha_creacion": "2026-09-17"
     }
   ]
 }
