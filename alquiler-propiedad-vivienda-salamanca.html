@@ -1,0 +1,117 @@
+---
+layout: default
+title: Alquiler vs. propiedad de la vivienda en Salamanca
+description: Evolución del peso del alquiler frente a la propiedad en la vivienda principal de la capital, según el Censo 2021 del INE y la Agencia Tributaria
+date: 17-09-2026
+folder: Urbanismo
+permalink: alquiler-propiedad-vivienda-salamanca
+---
+
+    <!-- Featured Datasets Section -->
+    <section class="featured dataset" id="datos">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="section-title">{{ page.title }}</h1>
+                <p class="section-description">{{ page.description }}</p>
+            </div>
+
+			<div id="section-content">
+
+  <h2>Cuántos hogares viven de alquiler en Salamanca</h2>
+  <canvas id="tenenciaEvolucionChart" width="800" height="400"></canvas>
+
+				<h2>Un peso del alquiler que crece con fuerza</h2>
+
+					<p>
+Según el Censo de Población y Viviendas 2021 del INE, de las 63.990 viviendas principales de la capital, el 15,8% estaba en régimen de alquiler (el 84,2% restante, en propiedad), con un 7,0% del parque total vacío y un 38,4% de hogares unipersonales. Ese reparto situaba entonces a Salamanca por debajo de otras capitales de Castilla y León como León (20,9%) o Segovia (21,4%), y muy por encima de Palencia (9,6%).</p>
+
+<h3>Lo que dice el dato más reciente</h3>
+<ul>
+<li><b>El alquiler ha ganado terreno desde 2021</b>: según los datos de la campaña de la Renta 2024 publicados por la Agencia Tributaria, ya el 21,79% de las 78.214 viviendas declaradas en la capital están arrendadas (17.049), de las que 13.947 se alquilan como residencia habitual y 3.102 como alquiler de corta duración. Censo y Agencia Tributaria miden universos distintos (hogares con vivienda principal frente a inmuebles declarados en el IRPF), pero ambas fuentes apuntan en la misma dirección: el peso del alquiler crece.</li>
+<li><b>Salamanca, segunda de Castilla y León</b>: con esas 17.049 viviendas arrendadas, la capital solo queda por detrás de Valladolid (23.074) en el conjunto de la comunidad, según la misma fuente.</li>
+<li><b>Por debajo de la media nacional en propiedad</b>: en el Censo 2021, España registraba un 75,5% de hogares en propiedad y un 16,1% en alquiler (frente al 78,9% en propiedad de 2011). Salamanca capital partía con una propiedad más extendida que la media (84,2%), lo que hace aún más notable el salto hasta el 21,79% de alquiler de 2024.</li>
+<li><b>La presión universitaria, motor del cambio</b>: el crecimiento del alquiler coincide con el aumento sostenido de la <a href="/poblacion-universitaria">población universitaria y residentes temporales</a> de la ciudad, que también explica por qué el <a href="/precio-vivienda-alquiler">precio del alquiler por barrio</a> y la presión de las <a href="/vivienda-alquiler-turismo-salamanca">viviendas de uso turístico y el alquiler de temporada</a> se concentran en las mismas zonas.</li>
+</ul>
+
+  <h2>Salamanca frente a otras capitales de Castilla y León (Censo 2021)</h2>
+  <canvas id="tenenciaCyLChart" width="800" height="400"></canvas>
+
+				</div>
+
+				<div id="section-table">
+				<table border="1" cellpadding="5" cellspacing="0">
+				  <thead>
+					<tr>
+					  <th>Indicador</th>
+					  <th>Valor</th>
+					  <th>Fuente</th>
+					</tr>
+				  </thead>
+				  <tbody>
+					<tr><td>Viviendas principales en alquiler (Censo 2021)</td><td>15,8%</td><td>INE, Censo de Población y Viviendas 2021</td></tr>
+					<tr><td>Viviendas principales en propiedad (Censo 2021)</td><td>84,2%</td><td>INE, Censo de Población y Viviendas 2021</td></tr>
+					<tr><td>Viviendas vacías (Censo 2021)</td><td>7,0%</td><td>INE, Censo de Población y Viviendas 2021</td></tr>
+					<tr><td>Hogares unipersonales (Censo 2021)</td><td>38,4%</td><td>INE, Censo de Población y Viviendas 2021</td></tr>
+					<tr><td>Viviendas declaradas en la capital (Renta 2024)</td><td>78.214</td><td>Agencia Tributaria, Campaña de la Renta 2024</td></tr>
+					<tr><td>Viviendas arrendadas en la capital (Renta 2024)</td><td>17.049 (21,79%)</td><td>Agencia Tributaria, Campaña de la Renta 2024</td></tr>
+					<tr><td>&nbsp;&nbsp;— como residencia habitual</td><td>13.947</td><td>Agencia Tributaria, Campaña de la Renta 2024</td></tr>
+					<tr><td>&nbsp;&nbsp;— como alquiler de corta duración</td><td>3.102</td><td>Agencia Tributaria, Campaña de la Renta 2024</td></tr>
+					<tr><td>Viviendas arrendadas en Valladolid capital (Renta 2024)</td><td>23.074</td><td>Agencia Tributaria, Campaña de la Renta 2024</td></tr>
+					<tr><td>España, hogares en propiedad (Censo 2021)</td><td>75,5%</td><td>INE, Censo de Población y Viviendas 2021</td></tr>
+					<tr><td>España, hogares en alquiler (Censo 2021)</td><td>16,1%</td><td>INE, Censo de Población y Viviendas 2021</td></tr>
+				  </tbody>
+				</table>
+
+				</div>
+
+				{% include categories.html %}
+
+        </div>
+    </section>
+
+	<script>
+    // Gráfico 1: comparación entre las dos fuentes disponibles (universos distintos, ver nota en el texto)
+    const ctxTenenciaEvo = document.getElementById('tenenciaEvolucionChart').getContext('2d');
+    new Chart(ctxTenenciaEvo, {
+      type: 'bar',
+      data: {
+        labels: ['Censo 2021 (vivienda principal)', 'Agencia Tributaria 2024 (viviendas declaradas)'],
+        datasets: [{
+          label: '% de vivienda en alquiler',
+          data: [15.8, 21.79],
+          backgroundColor: ['#1E56A0', '#F4A261'],
+          borderRadius: 4
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: { legend: { display: false } },
+        scales: {
+          y: { title: { display: true, text: '% de vivienda en alquiler' }, beginAtZero: true }
+        }
+      }
+    });
+
+    // Gráfico 2: capitales de Castilla y León con dato comparable del Censo 2021
+    const ctxTenenciaCyL = document.getElementById('tenenciaCyLChart').getContext('2d');
+    new Chart(ctxTenenciaCyL, {
+      type: 'bar',
+      data: {
+        labels: ['Palencia', 'Salamanca', 'León', 'Segovia'],
+        datasets: [{
+          label: '% de vivienda principal en alquiler (Censo 2021)',
+          data: [9.6, 15.8, 20.9, 21.4],
+          backgroundColor: '#2C5F2D',
+          borderRadius: 4
+        }]
+      },
+      options: {
+        indexAxis: 'y',
+        responsive: true,
+        plugins: { legend: { display: false } },
+        scales: {
+          x: { title: { display: true, text: '% en alquiler' }, beginAtZero: true }
+        }
+      }
+    });
+  </script>

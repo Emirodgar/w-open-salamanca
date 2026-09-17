@@ -1,0 +1,101 @@
+---
+layout: default
+title: Estudiantes que recibe Salamanca y sus residencias universitarias
+description: Cuántos estudiantes llegan cada curso a la ciudad y cómo ha evolucionado el parque de residencias y colegios mayores que los aloja
+date: 17-09-2026
+folder: Educacion
+permalink: estudiantes-residencias-universitarias-salamanca
+---
+
+    <!-- Featured Datasets Section -->
+    <section class="featured dataset" id="datos">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="section-title">{{ page.title }}</h1>
+                <p class="section-description">{{ page.description }}</p>
+            </div>
+
+			<div id="section-content">
+
+				<h2>Cuántos estudiantes llegan a Salamanca cada curso</h2>
+
+					<p>
+Entre la USAL y la UPSA, Salamanca supera los <a href="/comunidad-estudiantil-universidades">32.000 estudiantes</a> matriculados cada curso académico. Pero no todos necesitan alojamiento en la ciudad: el dato que de verdad tensiona el mercado residencial es cuántos de ellos vienen de fuera y necesitan una cama. Según el informe PBSA 2026/27 de Atlas Real Estate Analytics, Salamanca recibe cada año 18.729 universitarios desplazados que demandan alojamiento, lo que sitúa a la ciudad como el <b>5º parque residencial universitario de España</b>, solo por detrás de Madrid (19.913 plazas), Barcelona (10.732), Sevilla (8.854) y Granada (5.885).</p>
+
+<h3>Una cobertura mejor que la media española</h3>
+<ul>
+<li><b>3,25 estudiantes por cada cama disponible</b> en Salamanca (30,7% de cobertura), frente a los 5,50 estudiantes por cama de la media nacional (18,2% de cobertura): pese a la falta de plazas que denuncian cada año los propios colegios mayores, la ciudad cubre casi el doble de demanda que el conjunto de España.</li>
+<li><b>18.729 universitarios desplazados</b> buscan alojamiento cada curso, muy por debajo de Madrid (71.938) o Barcelona (48.467), pero en línea con el peso relativo de una ciudad mediana especializada en atraer estudiantado de fuera de la provincia.</li>
+<li>Esta población flotante es la misma que, cruzada con el padrón por barrios, explica el <a href="/poblacion-universitaria">"efecto fantasma" en los barrios históricos</a> y buena parte de la tensión del <a href="/precio-vivienda-alquiler">mercado de alquiler</a>.</li>
+</ul>
+
+  <h2>Evolución de las plazas en residencias universitarias (2023-2026)</h2>
+  <canvas id="residenciasEvolucionChart" width="800" height="400"></canvas>
+
+				<h2>El boom de las residencias privadas</h2>
+				<p>
+El parque de camas ha crecido con fuerza en muy poco tiempo: de las 3.922 camas contabilizadas en diciembre de 2023 (informe JLL) se ha pasado a 5.754 plazas en 2026, repartidas entre 43 residencias (el 87% gestionadas por empresas privadas y el 13% por órdenes religiosas). Buena parte del salto se explica por grandes aperturas recientes: <b>Yugo Salamanca</b> (980 plazas, la residencia más grande de Castilla y León, 2024), <b>Campus Bravo</b> (su edificio "Casa Roja" abrió en septiembre de 2024 y "Casa Blanca" en febrero de 2025, en torno a 600 plazas conjuntas) y una nueva residencia en Ciudad Jardín, frente a los campus de Psicología y Bellas Artes, que se ha ido incorporando por fases entre 2024 y 2025.</p>
+
+<p>Junto a esta oferta privada convive la red pública de la propia <a href="/comunidad-estudiantil-universidades">Universidad de Salamanca</a>: tres colegios mayores históricos —San Bartolomé (1401), Colegio Mayor de Oviedo (1517) y Fray Luis de León (1954)— y dos residencias universitarias —Hernán Cortés, reabierta en 2008, y el Colegio de Cuenca, operativo desde 2001—, que entre los cinco ofertan cada curso más de 300 plazas para estudiantes de nuevo ingreso.</p>
+
+				</div>
+
+				<div id="section-table">
+				<table border="1" cellpadding="5" cellspacing="0">
+				  <thead>
+					<tr>
+					  <th>Residencia / Colegio Mayor</th>
+					  <th>Plazas</th>
+					  <th>Tipo</th>
+					  <th>Nota</th>
+					</tr>
+				  </thead>
+				  <tbody>
+					<tr><td>Yugo Salamanca</td><td>980</td><td>Privada</td><td>La más grande de Castilla y León (2024)</td></tr>
+					<tr><td>Campus Bravo (Casa Roja + Casa Blanca)</td><td>~600</td><td>Privada</td><td>Casa Roja (sept. 2024) y Casa Blanca (feb. 2025)</td></tr>
+					<tr><td>Livensa Living Salamanca</td><td>399</td><td>Privada</td><td>Abierta en 2021</td></tr>
+					<tr><td>Colegio Mayor de Oviedo (USAL)</td><td>345</td><td>Pública</td><td>Fundado en 1517</td></tr>
+					<tr><td>Mi Campus Universitario</td><td>306</td><td>Privada</td><td>&nbsp;</td></tr>
+					<tr><td>Colegio de Cuenca (USAL)</td><td>296</td><td>Pública</td><td>Residencia operativa desde 2001</td></tr>
+					<tr><td>La Platina</td><td>260</td><td>Privada</td><td>&nbsp;</td></tr>
+					<tr><td>Colegio Mayor Hernán Cortés (USAL)</td><td>185</td><td>Pública</td><td>Reabierto en 2008</td></tr>
+					<tr><td>AMRO</td><td>170</td><td>Privada</td><td>&nbsp;</td></tr>
+					<tr><td>Mi Casa Inn</td><td>140</td><td>Privada</td><td>&nbsp;</td></tr>
+					<tr><td>Colegio Mayor San Bartolomé (USAL)</td><td>n/d</td><td>Pública</td><td>Fundado en 1401, el más antiguo de España</td></tr>
+					<tr><td>Colegio Mayor Fray Luis de León (USAL)</td><td>n/d</td><td>Pública</td><td>Fundado en 1954</td></tr>
+				  </tbody>
+				</table>
+
+				</div>
+
+				{% include categories.html %}
+
+        </div>
+    </section>
+
+	<script>
+    // Evolución del parque de camas en residencias universitarias de Salamanca
+    const ctxResidenciasEvo = document.getElementById('residenciasEvolucionChart').getContext('2d');
+    new Chart(ctxResidenciasEvo, {
+      type: 'line',
+      data: {
+        labels: ['Dic. 2023', '2024 (tras aperturas)', '2026'],
+        datasets: [{
+          label: 'Plazas en residencias universitarias',
+          data: [3922, 5570, 5754],
+          borderColor: '#2C5F2D',
+          backgroundColor: 'rgba(44, 95, 45, 0.1)',
+          borderWidth: 2,
+          tension: 0.2,
+          fill: true
+        }]
+      },
+      options: {
+        responsive: true,
+        scales: {
+          y: { title: { display: true, text: 'Plazas disponibles' } },
+          x: { title: { display: true, text: 'Momento' } }
+        }
+      }
+    });
+  </script>

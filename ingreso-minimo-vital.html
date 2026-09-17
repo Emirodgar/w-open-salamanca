@@ -1,0 +1,166 @@
+---
+layout: default
+title: Ingreso Mínimo Vital en Salamanca - Análisis de Beneficiarios
+description: Evolución, perfil demográfico e impacto social de la prestación del Ingreso Mínimo Vital (IMV) en los hogares salmantinos.
+date: 13-09-2026
+folder: Economia
+permalink: ingreso-minimo-vital-salamanca
+---
+
+    <!-- Featured Datasets Section -->
+    <section class="featured dataset" id="datos">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">{{ page.title }}</h2>
+                <p class="section-description">{{ page.description }}</p>
+            </div>
+			
+			<div id="section-content">
+						
+  <!-- Gráfico 1: Evolución de Beneficiarios -->
+  <canvas id="imvEvolucionChart" width="800" height="400"></canvas>
+
+ 
+			<h2>El escudo social: Alcance y penetración de la prestación</h2>
+			
+				<p>
+El Ingreso Mínimo Vital (IMV) se ha consolidado como la principal herramienta estatal para mitigar la pobreza severa. En Salamanca, el número de hogares perceptores ha crecido con fuerza desde su puesta en marcha en 2020: de los 3.838 hogares de febrero de 2023 se ha pasado a 4.268 en julio de 2024 y a 5.644 en junio de 2026, con 16.605 personas amparadas por la prestación en esa última fecha, según los datos mensuales que publica la Seguridad Social.</p>
+
+<h3>Claves demográficas y estructurales del IMV en Salamanca (junio 2026)</h3>
+<ul>
+<li><b>Feminización de la titularidad</b>: el 70,98% de los titulares de la prestación en la provincia son mujeres (4.006 de 5.644), frente al 29,02% de hombres — una brecha superior a la media nacional, donde las mujeres son el 68% de los titulares.</li>
+<li><b>Protección a la infancia</b>: 6.987 de las 16.605 personas beneficiarias son menores de edad (el 42,1% del total), y 3.827 de los 5.644 hogares perceptores (el 67,8%) tienen algún menor a cargo, de los cuales 1.087 son familias monoparentales.</li>
+<li><b>Perfil por nacionalidad y edad</b>: el 89,95% de los titulares son de nacionalidad española, con una edad media de 44,8 años; el tramo de 36 a 45 años concentra el mayor número de titulares (2.076).</li>
+</ul>
+
+  <!-- Gráfico 2: Perfil Demográfico -->
+  <h2 style="margin-top: 40px;">Perfil de los titulares y los menores beneficiarios (junio 2026)</h2>
+  <div style="display: flex; flex-wrap: wrap; gap: 20px;">
+    <div style="flex: 1; min-width: 280px;"><canvas id="imvSexoChart" width="400" height="400"></canvas></div>
+    <div style="flex: 1; min-width: 280px;"><canvas id="imvMenoresChart" width="400" height="400"></canvas></div>
+  </div>
+  <p style="font-size: 0.9em; color: #555; text-align: center; margin-top: 10px;">
+    *Izquierda: sexo de las 5.644 personas titulares de la prestación. Derecha: menores de edad frente a personas adultas entre el total de 16.605 beneficiarios. Datos de la Seguridad Social, junio de 2026.
+  </p>
+
+			<h2>Impacto económico en el comercio local</h2>
+			<p>
+Más allá del rescate social, los fondos inyectados mensualmente a través del IMV se destinan de manera casi íntegra y automática al consumo de primera necesidad (alimentación, suministros, ropa). Esto supone una inyección económica indirecta fundamental para los supermercados y el comercio de proximidad en los barrios de rentas más bajas.
+			</p>
+
+			</div>
+			
+			<div id="section-table">
+			<table border="1" cellpadding="5" cellspacing="0">
+			  <thead>
+				<tr>
+				  <th>Fecha</th>
+				  <th>Hogares Beneficiarios</th>
+				  <th>Total Personas Beneficiarias</th>
+				  <th>Cuantía Media / Hogar</th>
+				  <th>Titulares Mujeres</th>
+				</tr>
+			  </thead>
+			  <tbody>
+				<tr><td><b>Febrero 2023</b></td><td>3.838</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+				<tr><td><b>Julio 2024</b></td><td>4.268</td><td>12.463</td><td>484,2 &euro;</td><td>71,3% (3.045 de 4.268)</td></tr>
+				<tr><td><b>Junio 2026</b></td><td>5.644</td><td>16.605</td><td>531,44 &euro;</td><td>70,98% (4.006 de 5.644)</td></tr>
+			  </tbody>
+			</table>
+			<p style="font-size: 0.85em; color: #555;">Fuente: estadística mensual del Ingreso Mínimo Vital, Seguridad Social. No hay dato de personas beneficiarias ni de cuantía media publicado para febrero de 2023 en las fuentes consultadas.</p>
+
+			</div>
+			
+			{% include categories.html %}
+            
+        </div>
+    </section>
+
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        
+        // 1. Gráfico de Evolución Temporal (Barras Agrupadas)
+        const ctxEvolucion = document.getElementById('imvEvolucionChart').getContext('2d');
+        new Chart(ctxEvolucion, {
+            type: 'bar',
+            data: {
+                labels: ['Febrero 2023', 'Julio 2024', 'Junio 2026'],
+                datasets: [
+                    {
+                        label: 'Hogares Beneficiarios',
+                        data: [3838, 4268, 5644],
+                        backgroundColor: '#1E56A0',
+                        borderRadius: 4
+                    },
+                    {
+                        label: 'Total Personas Beneficiarias',
+                        data: [null, 12463, 16605],
+                        backgroundColor: '#A8201A',
+                        borderRadius: 4
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    title: { display: true, text: 'Evolución del Ingreso Mínimo Vital en Salamanca (2023 - 2026)', font: { size: 14 } },
+                    tooltip: { mode: 'index', intersect: false }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        title: { display: true, text: 'Número de Beneficiarios' }
+                    }
+                }
+            }
+        });
+
+        // 2a. Sexo de las personas titulares (junio 2026)
+        const ctxSexo = document.getElementById('imvSexoChart').getContext('2d');
+        new Chart(ctxSexo, {
+            type: 'doughnut',
+            data: {
+                labels: ['Mujeres titulares', 'Hombres titulares'],
+                datasets: [
+                    {
+                        data: [70.98, 29.02],
+                        backgroundColor: ['#1E56A0', '#64748b'],
+                        borderWidth: 1
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    title: { display: true, text: 'Sexo de las personas titulares (%)', font: { size: 14 } },
+                    legend: { position: 'bottom' }
+                }
+            }
+        });
+
+        // 2b. Menores vs adultos entre el total de beneficiarios (junio 2026)
+        const ctxMenores = document.getElementById('imvMenoresChart').getContext('2d');
+        new Chart(ctxMenores, {
+            type: 'doughnut',
+            data: {
+                labels: ['Menores de edad', 'Personas adultas'],
+                datasets: [
+                    {
+                        data: [42.07, 57.93],
+                        backgroundColor: ['#A8201A', '#F4A261'],
+                        borderWidth: 1
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    title: { display: true, text: 'Menores vs. adultos entre beneficiarios (%)', font: { size: 14 } },
+                    legend: { position: 'bottom' }
+                }
+            }
+        });
+
+    });
+    </script>
