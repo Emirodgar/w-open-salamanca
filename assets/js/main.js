@@ -13,6 +13,107 @@ window.EventosUI = {
         if (!fin || fin === inicio) return this.formatearFecha(inicio);
         return `${this.formatearFecha(inicio)} – ${this.formatearFecha(fin)}`;
     },
+    escapeHtml(str) {
+        const div = document.createElement('div');
+        div.textContent = str || '';
+        return div.innerHTML;
+    },
+    // YYYY-MM-DD -> YYYYMMDD del día siguiente. DTEND de un evento de todo el
+    // día es exclusivo en el estándar iCalendar (lo siguen Google, Outlook y
+    // el .ics), así que un evento de un solo día también necesita +1 día.
+    _finExclusivo(iso) {
+        const d = new Date(iso + 'T00:00:00Z');
+        d.setUTCDate(d.getUTCDate() + 1);
+        return d.toISOString().slice(0, 10).replace(/-/g, '');
+    },
+    _soloDigitos(iso) {
+        return iso.replace(/-/g, '');
+    },
+    _slug(str) {
+        return (str || 'evento')
+            .toLowerCase()
+            .normalize('NFD').replace(/[̀-ͯ]/g, '')
+            .replace(/[^a-z0-9]+/g, '-')
+            .replace(/^-+|-+$/g, '')
+            .slice(0, 60) || 'evento';
+    },
+    urlGoogleCalendar(ev) {
+        const inicio = this._soloDigitos(ev.fecha_inicio);
+        const fin = this._finExclusivo(ev.fecha_fin || ev.fecha_inicio);
+        const params = new URLSearchParams({
+            action: 'TEMPLATE',
+            text: ev.titulo || '',
+            dates: `${inicio}/${fin}`,
+            details: ev.descripcion || '',
+            location: ev.lugar || ''
+        });
+        return `https://calendar.google.com/calendar/render?${params.toString()}`;
+    },
+    urlOutlookCalendar(ev) {
+        const params = new URLSearchParams({
+            path: '/calendar/action/compose',
+            rru: 'addevent',
+            allday: 'true',
+            subject: ev.titulo || '',
+            startdt: ev.fecha_inicio,
+            enddt: ev.fecha_fin || ev.fecha_inicio,
+            body: ev.descripcion || '',
+            location: ev.lugar || ''
+        });
+        return `https://outlook.live.com/calendar/0/deeplink/compose?${params.toString()}`;
+    },
+    urlIcs(ev) {
+        const inicio = this._soloDigitos(ev.fecha_inicio);
+        const fin = this._finExclusivo(ev.fecha_fin || ev.fecha_inicio);
+        const escapar = (s) => (s || '').replace(/([,;])/g, '\\$1').replace(/\n/g, '\\n');
+        const uid = `${inicio}-${this._slug(ev.titulo)}@opensalamanca.es`;
+        const lineas = [
+            'BEGIN:VCALENDAR',
+            'VERSION:2.0',
+            'PRODID:-//Open Salamanca//Eventos//ES',
+            'BEGIN:VEVENT',
+            `UID:${uid}`,
+            `DTSTART;VALUE=DATE:${inicio}`,
+            `DTEND;VALUE=DATE:${fin}`,
+            `SUMMARY:${escapar(ev.titulo)}`,
+            `DESCRIPTION:${escapar(ev.descripcion)}`,
+            `LOCATION:${escapar(ev.lugar)}`,
+            'END:VEVENT',
+            'END:VCALENDAR'
+        ];
+        return 'data:text/calendar;charset=utf8,' + encodeURIComponent(lineas.join('\r\n'));
+    },
+    renderMenuCalendario(ev) {
+        return `
+            <div class="dropdown eventos-cal-dropdown">
+                <button type="button" class="eventos-cal-toggle">📅 Añadir al calendario</button>
+                <div class="dropdown-menu">
+                    <a href="${this.urlGoogleCalendar(ev)}" target="_blank" rel="noopener" class="dropdown-item">Google Calendar</a>
+                    <a href="${this.urlOutlookCalendar(ev)}" target="_blank" rel="noopener" class="dropdown-item">Outlook</a>
+                    <a href="${this.urlIcs(ev)}" download="${this._slug(ev.titulo)}.ics" class="dropdown-item">Descargar .ics (Apple / otros)</a>
+                </div>
+            </div>`;
+    },
+    // Cierra cualquier menú de calendario abierto y engancha los clics para
+    // abrir/cerrar el suyo propio, incluido el cierre al pulsar fuera.
+    activarMenusCalendario(tableEl) {
+        if (!tableEl) return;
+        tableEl.querySelectorAll('.eventos-cal-toggle').forEach(boton => {
+            boton.addEventListener('click', (e) => {
+                e.stopPropagation();
+                const dropdown = boton.closest('.dropdown');
+                const yaAbierto = dropdown.classList.contains('active');
+                tableEl.querySelectorAll('.dropdown.active').forEach(d => d.classList.remove('active'));
+                if (!yaAbierto) dropdown.classList.add('active');
+            });
+        });
+        if (!tableEl.dataset.calCerrarFueraListo) {
+            document.addEventListener('click', () => {
+                tableEl.querySelectorAll('.dropdown.active').forEach(d => d.classList.remove('active'));
+            });
+            tableEl.dataset.calCerrarFueraListo = '1';
+        }
+    },
     // Renders rows into an existing <table> element (ascending by fecha_inicio).
     // Returns true if there was at least one event to show.
     renderTabla(tableEl, eventos, limite) {
@@ -25,11 +126,13 @@ window.EventosUI = {
         }
         const filas = lista.map(ev => `
             <tr>
-                <td class="eventos-col-titulo">${ev.titulo}</td>
+                <td class="eventos-col-titulo">${this.escapeHtml(ev.titulo)}</td>
                 <td class="eventos-col-fechas">${this.formatearRango(ev.fecha_inicio, ev.fecha_fin)}</td>
-                <td class="eventos-col-lugar">${ev.lugar || '—'}</td>
+                <td class="eventos-col-lugar">${this.escapeHtml(ev.lugar) || '—'}</td>
+                <td class="eventos-col-calendario">${this.renderMenuCalendario(ev)}</td>
             </tr>`).join('');
-        tableEl.innerHTML = `<thead><tr><th>Evento</th><th>Fechas</th><th>Lugar</th></tr></thead><tbody>${filas}</tbody>`;
+        tableEl.innerHTML = `<thead><tr><th>Evento</th><th>Fechas</th><th>Lugar</th><th></th></tr></thead><tbody>${filas}</tbody>`;
+        this.activarMenusCalendario(tableEl);
         return true;
     }
 };

@@ -1289,6 +1289,35 @@
     color: var(--neutral-color);
 }
 
+.eventos-col-calendario {
+    text-align: right;
+    white-space: nowrap;
+}
+
+.eventos-cal-dropdown .eventos-cal-toggle {
+    background: white;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 0.35rem 0.7rem;
+    font-size: 0.78rem;
+    font-family: var(--font-family);
+    color: var(--primary-color);
+    cursor: pointer;
+    white-space: nowrap;
+    transition: var(--transition-fast);
+}
+
+.eventos-cal-dropdown .eventos-cal-toggle:hover {
+    border-color: var(--primary-color);
+    background: rgba(44, 95, 45, 0.05);
+}
+
+.eventos-cal-dropdown .dropdown-menu {
+    right: 0;
+    left: auto;
+    min-width: 190px;
+}
+
 /* Eventos highlight - bloque de la home bajo el banner de actualidad */
 .eventos-highlight {
     padding: var(--spacing-lg) 0 0;
