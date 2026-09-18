@@ -59,6 +59,18 @@
       ],
       "basado_en": "actualidad.json",
       "fecha_creacion": "2026-09-17"
+    },
+    {
+      "id": "colegios-rurales-2026",
+      "pregunta": "Cinco colegios rurales de la provincia están en riesgo de cierre por tener solo tres o cuatro alumnos. ¿Crees que deberían mantenerse abiertos aunque tengan tan pocos estudiantes?",
+      "opciones": [
+        "Sí, es clave para fijar población en el pueblo",
+        "No, es más eficiente concentrar recursos",
+        "Depende del caso, no de una norma general",
+        "No tengo suficiente información"
+      ],
+      "basado_en": "actualidad.json",
+      "fecha_creacion": "2026-09-18"
     }
   ]
 }

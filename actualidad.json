@@ -1,11 +1,11 @@
 {
   "url_base": "https://www.lagacetadesalamanca.es",
-  "generado_en": "2026-09-17T09:30:00+00:00",
+  "generado_en": "2026-09-18T14:30:00+00:00",
   "periodo_cubierto": {
-    "desde": "2026-09-15",
-    "hasta": "2026-09-17"
+    "desde": "2026-09-16",
+    "hasta": "2026-09-18"
   },
-  "total_urls_analizadas": 121,
+  "total_urls_analizadas": 131,
   "secciones_excluidas": [
     "nacional",
     "opinion",
@@ -13,118 +13,109 @@
     "gente-estilo",
     "podcast"
   ],
-  "nota_cobertura": "El sitemap consultado esta vez solo contenía URLs de los últimos 3 días (15 a 17 de septiembre), un periodo más corto que una semana completa: es un sitemap 'rolling' y en este momento cubre menos días de los habituales. El análisis y el resumen siguientes reflejan únicamente ese periodo real, no una semana entera.",
+  "nota_cobertura": "El sitemap consultado esta vez solo contenía URLs de los últimos 3 días (16 a 18 de septiembre), un periodo más corto que una semana completa: es un sitemap 'rolling' y en este momento cubre menos días de los habituales. El análisis y el resumen siguientes reflejan únicamente ese periodo real, no una semana entera.",
   "por_seccion": [
-    ["provincia", 34],
-    ["salamanca", 33],
-    ["deportes", 23],
-    ["sucesos", 14],
-    ["campo", 6],
-    ["toros", 4],
+    ["salamanca", 40],
+    ["provincia", 33],
+    ["deportes", 25],
+    ["sucesos", 16],
+    ["toros", 6],
+    ["virales", 5],
     ["encuestas", 2],
-    ["virales", 2],
-    ["especiales", 2],
+    ["campo", 2],
+    ["castilla-y-leon", 1],
     ["cine-y-series", 1]
   ],
   "por_subseccion": [
     ["deportes/futbol-local", 16],
-    ["deportes/baloncesto-local", 5],
-    ["especiales/asi-somos-en-mi-pueblo", 2]
+    ["deportes/baloncesto-local", 2],
+    ["deportes/deporte-base", 1],
+    ["deportes/carreras-populares", 1]
   ],
   "por_tipo_contenido": [
-    ["noticia", 120],
+    ["noticia", 130],
     ["directo / en vivo", 1]
   ],
   "heatmap_calendario": [
-    {"fecha": "2026-09-15", "total": 45, "provincia": 12, "salamanca": 11, "deportes": 8, "sucesos": 6, "campo": 3, "toros": 3, "encuestas": 1, "virales": 0, "especiales": 1, "cine-y-series": 0},
-    {"fecha": "2026-09-16", "total": 67, "provincia": 20, "salamanca": 17, "deportes": 13, "sucesos": 8, "campo": 3, "toros": 1, "encuestas": 1, "virales": 2, "especiales": 1, "cine-y-series": 1},
-    {"fecha": "2026-09-17", "total": 9, "provincia": 2, "salamanca": 5, "deportes": 2, "sucesos": 0, "campo": 0, "toros": 0, "encuestas": 0, "virales": 0, "especiales": 0, "cine-y-series": 0}
+    {"fecha": "2026-09-16", "total": 24, "salamanca": 5, "provincia": 7, "deportes": 8, "sucesos": 2, "toros": 0, "virales": 0, "encuestas": 1, "campo": 1, "castilla-y-leon": 0, "cine-y-series": 0},
+    {"fecha": "2026-09-17", "total": 59, "salamanca": 15, "provincia": 18, "deportes": 11, "sucesos": 7, "toros": 3, "virales": 3, "encuestas": 1, "campo": 1, "castilla-y-leon": 0, "cine-y-series": 0},
+    {"fecha": "2026-09-18", "total": 48, "salamanca": 20, "provincia": 8, "deportes": 6, "sucesos": 7, "toros": 3, "virales": 2, "encuestas": 0, "campo": 0, "castilla-y-leon": 1, "cine-y-series": 1}
   ],
   "conceptos_destacados": [
     {
-      "concepto": "Las Ferias y Fiestas se despiden con récord de asistencia",
-      "piezas": 5,
-      "seccion_principal": "salamanca",
-      "desde": "2026-09-15",
-      "hasta": "2026-09-16",
-      "ejemplos_redactados": [
-        "Antoñito Molina ha cerrado nueve días de fiestas con una Plaza Mayor llena, en un cierre que el Ayuntamiento ha calificado de 'respuesta extraordinaria y masiva' con cifras récord de asistencia.",
-        "Cruz Roja atendió a 33 personas durante las Ferias, ocho de ellas trasladadas al hospital, mientras el propio periódico pregunta a sus lectores si les han gustado las Ferias y Fiestas de este año."
-      ]
-    },
-    {
-      "concepto": "Copa RFEF: Salamanca UDS y Santa Marta siguen soñando con la Copa del Rey",
-      "piezas": 7,
-      "seccion_principal": "deportes",
-      "desde": "2026-09-16",
-      "hasta": "2026-09-16",
-      "ejemplos_redactados": [
-        "El Salamanca UDS ha protagonizado un partido de locura en Derio, remontando para ganar 3-5 y seguir con vida en la Copa RFEF, en un campo que fue la casa de Muniain como entrenador.",
-        "El Santa Marta también ha superado su eliminatoria (1-0) en el San Casto, y ambos equipos salmantinos sueñan ya con hacer historia y colarse en el sorteo de la Copa del Rey."
-      ]
-    },
-    {
-      "concepto": "Unionistas firma el peor arranque de su historia en Primera Federación",
+      "concepto": "Tragedia en Villares de la Reina: dos fallecidos por una posible fuga de monóxido",
       "piezas": 2,
-      "seccion_principal": "deportes",
-      "desde": "2026-09-15",
-      "hasta": "2026-09-15",
-      "ejemplos_redactados": [
-        "Unionistas firma el peor arranque de su historia en Primera Federación, una crisis de resultados que obliga al equipo a reaccionar cuanto antes."
-      ]
-    },
-    {
-      "concepto": "Salamanca se queda sin Feria del Libro Antiguo 2026",
-      "piezas": 1,
-      "seccion_principal": "salamanca",
-      "desde": "2026-09-16",
-      "hasta": "2026-09-16",
-      "ejemplos_redactados": [
-        "El Ayuntamiento ha confirmado la suspensión de la XXXII edición de la Feria del Libro Antiguo tras no alcanzar un acuerdo con los libreros."
-      ]
-    },
-    {
-      "concepto": "Plan de rescate en Lectura y Matemáticas tras el descenso en PISA",
-      "piezas": 1,
-      "seccion_principal": "salamanca",
-      "desde": "2026-09-16",
-      "hasta": "2026-09-16",
-      "ejemplos_redactados": [
-        "La Junta pone en marcha un plan de rescate en Lectura y Matemáticas tras el descenso registrado en el último informe PISA."
-      ]
-    },
-    {
-      "concepto": "Luz verde a una inversión de 12,7 millones de euros en el aeropuerto de Matacán",
-      "piezas": 1,
-      "seccion_principal": "salamanca",
-      "desde": "2026-09-15",
-      "hasta": "2026-09-15",
-      "ejemplos_redactados": [
-        "El proyecto incluye mejoras en la sala de embarque, el equipamiento de seguridad y los sistemas de información y comunicaciones del aeropuerto de Matacán."
-      ]
-    },
-    {
-      "concepto": "Nueva tanda de incendios y sucesos en la provincia",
-      "piezas": 7,
       "seccion_principal": "sucesos",
-      "desde": "2026-09-15",
-      "hasta": "2026-09-16",
+      "desde": "2026-09-18",
+      "hasta": "2026-09-18",
       "ejemplos_redactados": [
-        "La provincia ha vivido un nuevo episodio de incendios —uno en Santa Marta de Tormes con despliegue aéreo y terrestre, otro en Galisancho que calcinó 300 metros cuadrados— y un detenido por amenazar con incendiar un edificio y agredir a un agente durante su huida.",
-        "Un fuerte olor a gas movilizó además a los servicios de emergencia en la capital, en una semana con varios heridos más en accidentes de tráfico."
+        "Un matrimonio ha aparecido muerto y su cuidadora inconsciente en una vivienda de Villares de la Reina, después de que la familia diera la voz de alarma al no tener noticias de la pareja, vista por última vez el día anterior haciendo la compra.",
+        "En las mediciones se detectó monóxido de carbono y el coche tenía el contacto encendido, aunque las autopsias deberán confirmar la causa exacta de las muertes."
       ]
     },
     {
-      "concepto": "Prosperidad estrena su nuevo centro de salud entre dudas",
-      "piezas": 2,
-      "seccion_principal": "salamanca",
-      "desde": "2026-09-15",
-      "hasta": "2026-09-16",
+      "concepto": "Fútbol: Salamanca UDS y Santa Marta sueñan con la Copa del Rey, Unionistas busca su primera victoria",
+      "piezas": 6,
+      "seccion_principal": "deportes",
+      "desde": "2026-09-16",
+      "hasta": "2026-09-18",
       "ejemplos_redactados": [
-        "El nuevo centro de salud de Prosperidad ha abierto sus puertas entre la adaptación de pacientes y profesionales, mientras el PSOE denuncia carencias en sus instalaciones y reclama soluciones para la sanidad salmantina."
+        "El Salamanca UDS y el Santa Marta ya conocen los detalles del sorteo que puede llevarles a la Copa del Rey, tras su clasificación en la Copa RFEF.",
+        "Unionistas, con el peor arranque de su historia, afronta este fin de semana un partido clave ante la UD Ourense con la televisión en directo, convencido de que 'va a ser el día' para lograr su primera victoria."
+      ]
+    },
+    {
+      "concepto": "Cinco colegios rurales de la provincia, en riesgo de cierre",
+      "piezas": 1,
+      "seccion_principal": "salamanca",
+      "desde": "2026-09-17",
+      "hasta": "2026-09-17",
+      "ejemplos_redactados": [
+        "Cinco colegios rurales de la provincia están en riesgo de cierre al contar con solo tres o cuatro alumnos, entre ellos los de El Payo y el CEIP Nicolás Rodríguez Aniceto, en un curso que arranca con 743 matriculados menos que el anterior."
+      ]
+    },
+    {
+      "concepto": "La Feria Taurina arranca su segunda mitad de abono",
+      "piezas": 3,
+      "seccion_principal": "toros",
+      "desde": "2026-09-17",
+      "hasta": "2026-09-18",
+      "ejemplos_redactados": [
+        "'Carablanca' ha abierto fuego a la segunda mitad de la Feria Taurina de La Glorieta, que continúa con jornadas destacadas para los novilleros y una oportunidad inesperada para algún torero suplente."
+      ]
+    },
+    {
+      "concepto": "El empleo irregular 'en B' aflora un 26% más con menos inspección",
+      "piezas": 1,
+      "seccion_principal": "salamanca",
+      "desde": "2026-09-17",
+      "hasta": "2026-09-17",
+      "ejemplos_redactados": [
+        "Trabajo detectó en 2025 a 730 personas que estaban trabajando sin estar dadas de alta, un 26% más que el año anterior pese a que las inspecciones han disminuido."
+      ]
+    },
+    {
+      "concepto": "Nueva tanda de sucesos: robos, accidentes y un senderista localizado en Mogarraz",
+      "piezas": 6,
+      "seccion_principal": "sucesos",
+      "desde": "2026-09-17",
+      "hasta": "2026-09-18",
+      "ejemplos_redactados": [
+        "Un hombre ha ingresado en prisión tras cometer seis robos en viviendas de Salamanca entrando por las ventanas, mientras un senderista de 45 años desaparecido en el Camino del Agua de Mogarraz ha sido localizado horas después.",
+        "La provincia ha registrado además varios accidentes de tráfico con heridos, entre ellos en la A-66 a su paso por Aldeatejada y en Villares de la Reina."
+      ]
+    },
+    {
+      "concepto": "La Diputación transformará el antiguo cuartel de la Guardia Civil de Santa Marta",
+      "piezas": 1,
+      "seccion_principal": "provincia",
+      "desde": "2026-09-18",
+      "hasta": "2026-09-18",
+      "ejemplos_redactados": [
+        "La Diputación de Salamanca transformará el antiguo cuartel de la Guardia Civil de Santa Marta de Tormes en la nueva sede del Centro de Acción Social."
       ]
     }
   ],
-  "resumen_borrador": "Se han publicado 121 noticias entre el 2026-09-15 y el 2026-09-17. La actividad se ha concentrado sobre todo en provincia (34 piezas), salamanca (33 piezas), deportes (23 piezas).\n\nLos conceptos con más piezas relacionadas son: Copa RFEF, Ferias, Derio, Salamaq. Revisa 'evidencia' de cada concepto para redactar el resumen final.",
-  "resumen": "Las Ferias y Fiestas de Salamanca se han despedido con récord de asistencia: Antoñito Molina cerró nueve días de fiestas con una Plaza Mayor llena, en lo que el Ayuntamiento ha calificado de 'respuesta extraordinaria y masiva', mientras Cruz Roja atendió a 33 personas durante todo el programa. En paralelo, la ciudad ha encajado la pérdida de la Feria del Libro Antiguo: el Ayuntamiento ha confirmado la suspensión de su XXXII edición tras no alcanzar un acuerdo con los libreros.\n\nEl fútbol salmantino ha vivido una noche de infarto en la Copa RFEF: el Salamanca UDS remontó para ganar 3-5 en Derio —el campo que fue la casa de Muniain como entrenador— y el Santa Marta superó también su eliminatoria (1-0), de forma que ambos siguen soñando con colarse en el sorteo de la Copa del Rey. La cara opuesta la protagoniza Unionistas, que firma el peor arranque de su historia en Primera Federación.\n\nEn el terreno educativo, la Junta ha anunciado un plan de rescate en Lectura y Matemáticas tras el descenso registrado en el informe PISA, y se ha dado luz verde a una inversión de 12,7 millones de euros en el aeropuerto de Matacán. La provincia ha vivido además una nueva tanda de incendios —en Santa Marta de Tormes y en Galisancho, con 300 metros cuadrados calcinados— y varios sucesos más, mientras en la capital el nuevo centro de salud de Prosperidad abría sus puertas entre la ilusión de los vecinos y las críticas del PSOE por las carencias detectadas."
+  "resumen_borrador": "Se han publicado 131 noticias entre el 2026-09-16 y el 2026-09-18. La actividad se ha concentrado sobre todo en salamanca (40 piezas), provincia (33 piezas), deportes (25 piezas).\n\nLos conceptos con más piezas relacionadas son: Feria Taurina, Copa del Rey, Villares, colegios rurales. Revisa 'evidencia' de cada concepto para redactar el resumen final.",
+  "resumen": "La noticia más dura de estos días ha sido la tragedia de Villares de la Reina: un matrimonio ha aparecido muerto y su cuidadora inconsciente en su vivienda, con monóxido de carbono detectado en las mediciones y el coche con el contacto encendido, aunque las autopsias deberán confirmar la causa exacta de las muertes.\n\nEn el fútbol, el Salamanca UDS y el Santa Marta siguen soñando con la Copa del Rey tras su paso por la Copa RFEF, mientras Unionistas, con el peor arranque de su historia, afronta un partido clave ante la UD Ourense con la televisión en directo. En La Glorieta, la Feria Taurina ha arrancado su segunda mitad de abono con 'Carablanca' abriendo fuego.\n\nEn el plano educativo, cinco colegios rurales de la provincia están en riesgo de cierre al contar con solo tres o cuatro alumnos, en un curso que arranca con casi 750 matriculados menos que el anterior. En el ámbito laboral, el empleo irregular 'en B' aflora un 26% más pese a que las inspecciones han disminuido.\n\nLa provincia ha vivido además una nueva tanda de sucesos —seis robos en viviendas que han llevado a un hombre a prisión, un senderista localizado tras perderse en Mogarraz y varios accidentes de tráfico con heridos— y la Diputación ha anunciado que transformará el antiguo cuartel de la Guardia Civil de Santa Marta en la nueva sede del Centro de Acción Social."
 }
