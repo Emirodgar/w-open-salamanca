@@ -1586,6 +1586,161 @@
     }
 }
 
+/* Hemeroteca - listado diario de titulares de la prensa local */
+.hemeroteca-toolbar {
+    margin-bottom: var(--spacing-lg);
+}
+
+.hemeroteca-buscador-wrap {
+    position: relative;
+    margin-bottom: var(--spacing-sm);
+}
+
+.hemeroteca-buscador-wrap svg {
+    position: absolute;
+    left: var(--spacing-md);
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--neutral-color);
+    pointer-events: none;
+}
+
+.hemeroteca-buscador {
+    width: 100%;
+    padding: var(--spacing-sm) var(--spacing-md) var(--spacing-sm) calc(var(--spacing-md) * 2 + 12px);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-family: var(--font-family);
+    font-size: 1rem;
+    background: white;
+    color: var(--text-color);
+    transition: var(--transition-fast);
+}
+
+.hemeroteca-buscador:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(44, 95, 45, 0.12);
+}
+
+.hemeroteca-meta {
+    color: var(--neutral-color);
+    font-size: 0.85rem;
+}
+
+.hemeroteca-dia {
+    margin-bottom: var(--spacing-xl);
+}
+
+.hemeroteca-dia.hemeroteca-oculto {
+    display: none;
+}
+
+.hemeroteca-dia-titulo {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    padding-bottom: var(--spacing-xs);
+    margin-bottom: var(--spacing-sm);
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+.hemeroteca-lista {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.hemeroteca-item {
+    display: flex;
+    align-items: baseline;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-sm) 0;
+    border-bottom: 1px solid var(--border-color);
+    flex-wrap: wrap;
+}
+
+.hemeroteca-item:last-child {
+    border-bottom: none;
+}
+
+.hemeroteca-item.hemeroteca-oculto {
+    display: none;
+}
+
+.hemeroteca-hora {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--neutral-color);
+    min-width: 42px;
+}
+
+.hemeroteca-titulo {
+    flex: 1 1 320px;
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.hemeroteca-titulo:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+.hemeroteca-medio {
+    font-size: 0.7rem;
+    font-weight: 600;
+    padding: 2px var(--spacing-sm);
+    border-radius: 999px;
+    white-space: nowrap;
+    background: rgba(44, 95, 45, 0.08);
+    color: var(--primary-color);
+}
+
+.hemeroteca-medio--tribuna-salamanca {
+    background: rgba(151, 188, 98, 0.22);
+    color: #4b6b2f;
+}
+
+.hemeroteca-medio--salamanca24horas {
+    background: rgba(244, 162, 97, 0.2);
+    color: #a15a1d;
+}
+
+.hemeroteca-medio--la-gaceta-de-salamanca {
+    background: rgba(38, 70, 83, 0.12);
+    color: var(--neutral-color);
+}
+
+.hemeroteca-medio--salamancahoy {
+    background: rgba(44, 95, 45, 0.12);
+    color: var(--primary-color);
+}
+
+.hemeroteca-sin-resultados,
+.hemeroteca-vacio {
+    text-align: center;
+    color: var(--neutral-color);
+    padding: var(--spacing-xl) 0;
+}
+
+.hemeroteca-footnote {
+    text-align: center;
+    color: var(--neutral-color);
+    font-size: 0.8rem;
+    margin-top: var(--spacing-lg);
+}
+
+@media (max-width: 640px) {
+    .hemeroteca-item {
+        gap: var(--spacing-xs);
+    }
+
+    .hemeroteca-hora {
+        min-width: auto;
+    }
+}
+
 /* Print Styles for Charts */
 @media print {
     .chart-container {

@@ -1,0 +1,134 @@
+---
+layout: default
+title: Hemeroteca de Salamanca
+description: Listado diario de lo publicado por la prensa local de Salamanca (Tribuna Salamanca, Salamanca24Horas, La Gaceta de Salamanca y Salamancahoy) durante los últimos 20 días. Busca por tema al teclear.
+date: 21-09-2026
+folder:
+permalink: hemeroteca
+---
+
+    <!-- Hemeroteca Section -->
+    <section class="featured dataset" id="hemeroteca">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="section-title">{{ page.title }}</h1>
+                <p class="section-description">{{ page.description }}</p>
+            </div>
+
+            <div id="section-content">
+
+                <div class="hemeroteca-toolbar">
+                    <div class="hemeroteca-buscador-wrap">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.35-4.35"></path>
+                        </svg>
+                        <input type="text" id="hemerotecaBuscador" class="hemeroteca-buscador" placeholder="Escribe un tema para filtrar (por ejemplo: feria, tráfico, Ayuntamiento…)" autocomplete="off">
+                    </div>
+                    <p class="hemeroteca-meta" id="hemerotecaMeta">Cargando publicaciones…</p>
+                </div>
+
+                <div id="hemerotecaListado"></div>
+
+                <p class="hemeroteca-sin-resultados" id="hemerotecaSinResultados" style="display:none;">
+                    No hay publicaciones que coincidan con “<span id="hemerotecaTerminoBuscado"></span>”.
+                </p>
+
+                <p class="hemeroteca-footnote">Listado automático de titulares de Tribuna Salamanca, Salamanca24Horas, La Gaceta de Salamanca y Salamancahoy, generado a partir de sus sitemaps públicos. Se actualiza varias veces al día y muestra solo los últimos 20 días; no se resume ni se analiza el contenido de las noticias, solo se enlaza (con <code>nofollow</code>) a la fuente original.</p>
+
+            </div>
+
+        </div>
+    </section>
+
+    <script>
+    (function () {
+        const buscadorEl = document.getElementById('hemerotecaBuscador');
+        const listadoEl = document.getElementById('hemerotecaListado');
+        const metaEl = document.getElementById('hemerotecaMeta');
+        const sinResultadosEl = document.getElementById('hemerotecaSinResultados');
+        const terminoEl = document.getElementById('hemerotecaTerminoBuscado');
+
+        const DIAS_SEMANA = ['domingo', 'lunes', 'martes', 'miércoles', 'jueves', 'viernes', 'sábado'];
+        const MESES = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'];
+
+        let noticias = [];
+
+        function escapeHtml(s) {
+            return String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+        }
+
+        function medioSlug(medio) {
+            return medio.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9]+/g, '-');
+        }
+
+        function formatearDia(fechaISO) {
+            const [y, m, d] = fechaISO.split('-').map(Number);
+            const fecha = new Date(Date.UTC(y, m - 1, d));
+            const diaSemana = DIAS_SEMANA[fecha.getUTCDay()];
+            return `${diaSemana.charAt(0).toUpperCase()}${diaSemana.slice(1)}, ${d} de ${MESES[m - 1]} de ${y}`;
+        }
+
+        function formatearHora(fechaHoraISO) {
+            const d = new Date(fechaHoraISO);
+            if (isNaN(d.getTime())) return '';
+            return d.toLocaleTimeString('es-ES', { hour: '2-digit', minute: '2-digit' });
+        }
+
+        function render() {
+            let html = '';
+            let diaActual = null;
+            for (const n of noticias) {
+                if (n.fecha !== diaActual) {
+                    if (diaActual !== null) html += '</ul></div>';
+                    diaActual = n.fecha;
+                    html += `<div class="hemeroteca-dia" data-dia="${n.fecha}"><h2 class="hemeroteca-dia-titulo">${formatearDia(n.fecha)}</h2><ul class="hemeroteca-lista">`;
+                }
+                const texto = `${n.titulo} ${n.medio}`.toLowerCase();
+                html += `<li class="hemeroteca-item" data-texto="${escapeHtml(texto)}">` +
+                    `<span class="hemeroteca-hora">${formatearHora(n.fecha_hora)}</span>` +
+                    `<a class="hemeroteca-titulo" href="${escapeHtml(n.url)}" target="_blank" rel="nofollow noopener noreferrer">${escapeHtml(n.titulo)}</a>` +
+                    `<span class="hemeroteca-medio hemeroteca-medio--${medioSlug(n.medio)}">${escapeHtml(n.medio)}</span>` +
+                    `</li>`;
+            }
+            if (diaActual !== null) html += '</ul></div>';
+            listadoEl.innerHTML = html || '<p class="hemeroteca-vacio">No hay publicaciones disponibles todavía.</p>';
+        }
+
+        function aplicarFiltro() {
+            const termino = buscadorEl.value.trim().toLowerCase();
+            let totalVisibles = 0;
+            listadoEl.querySelectorAll('.hemeroteca-dia').forEach((dia) => {
+                let visiblesEnDia = 0;
+                dia.querySelectorAll('.hemeroteca-item').forEach((li) => {
+                    const coincide = !termino || li.dataset.texto.includes(termino);
+                    li.classList.toggle('hemeroteca-oculto', !coincide);
+                    if (coincide) { visiblesEnDia++; totalVisibles++; }
+                });
+                dia.classList.toggle('hemeroteca-oculto', visiblesEnDia === 0);
+            });
+            terminoEl.textContent = buscadorEl.value.trim();
+            sinResultadosEl.style.display = (termino && totalVisibles === 0) ? '' : 'none';
+        }
+
+        let debounceTimer;
+        buscadorEl.addEventListener('input', () => {
+            clearTimeout(debounceTimer);
+            debounceTimer = setTimeout(aplicarFiltro, 100);
+        });
+
+        fetch('/hemeroteca.json?v=' + Date.now(), { cache: 'no-store' })
+            .then((r) => r.json())
+            .then((data) => {
+                noticias = data.noticias || [];
+                const generado = data.generado_en ? new Date(data.generado_en) : null;
+                const generadoTxt = generado ? ` · actualizado ${generado.toLocaleString('es-ES', { day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit' })}` : '';
+                metaEl.textContent = `${data.total} publicaciones de los últimos ${data.dias_ventana} días · ${(data.medios || []).join(', ')}${generadoTxt}`;
+                render();
+            })
+            .catch((err) => {
+                console.error('No se pudo cargar hemeroteca.json', err);
+                metaEl.textContent = 'No se ha podido cargar la hemeroteca.';
+            });
+    })();
+    </script>

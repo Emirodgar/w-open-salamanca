@@ -1,0 +1,40 @@
+name: Actualizar hemeroteca
+
+on:
+  schedule:
+    - cron: '15 */3 * * *'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: hemeroteca
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Configurar Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Generar hemeroteca.json
+        run: node scripts/hemeroteca/build.mjs
+
+      - name: Commit y push si hay cambios
+        run: |
+          if git diff --quiet -- hemeroteca.json; then
+            echo "Sin cambios."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add hemeroteca.json
+          git commit -m "Actualiza hemeroteca.json [skip ci]"
+          git push
