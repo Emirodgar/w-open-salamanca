@@ -43,7 +43,7 @@
                     </a>
                 </div>
 
-                <nav class="nav">
+                <nav class="nav" id="siteNav">
                     {% unless page.url == "/" %}<a href="https://opensalamanca.es" class="nav-link active">Inicio</a>{% endunless %}<!--
                     <a href="#datos" class="nav-link">Datos</a>
                     <a href="#categorias" class="nav-link">Categorías</a>
@@ -61,7 +61,7 @@
                     </button>
                 </div>
 
-                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-expanded="false" aria-controls="siteNav" aria-label="Abrir menú">
                     <span></span>
                     <span></span>
                     <span></span>

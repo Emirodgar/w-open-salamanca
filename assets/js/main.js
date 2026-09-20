@@ -312,11 +312,28 @@ class OpenSalamanca {
     setupMobileMenu() {
         const mobileMenuBtn = document.getElementById('mobileMenuBtn');
         const nav = document.querySelector('.nav');
-        
+
         if (mobileMenuBtn && nav) {
+            const closeMenu = () => {
+                nav.classList.remove('active');
+                mobileMenuBtn.classList.remove('active');
+                mobileMenuBtn.setAttribute('aria-expanded', 'false');
+            };
+
             mobileMenuBtn.addEventListener('click', () => {
-                nav.classList.toggle('active');
-                mobileMenuBtn.classList.toggle('active');
+                const isOpen = nav.classList.toggle('active');
+                mobileMenuBtn.classList.toggle('active', isOpen);
+                mobileMenuBtn.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            nav.addEventListener('click', (e) => {
+                if (e.target.closest('.nav-link')) closeMenu();
+            });
+
+            document.addEventListener('click', (e) => {
+                if (nav.classList.contains('active') && !nav.contains(e.target) && e.target !== mobileMenuBtn && !mobileMenuBtn.contains(e.target)) {
+                    closeMenu();
+                }
             });
         }
     }
