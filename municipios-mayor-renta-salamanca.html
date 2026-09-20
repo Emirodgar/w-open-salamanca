@@ -1,0 +1,158 @@
+---
+layout: default
+title: Los municipios con mayor renta de la provincia de Salamanca
+description: Ranking de renta bruta media por declaración de IRPF (Agencia Tributaria, ejercicio 2023) de los municipios salmantinos, liderado por el alfoz de la capital
+date: 21-09-2026
+folder: Economia
+permalink: municipios-mayor-renta-salamanca
+---
+
+    <!-- Featured Datasets Section -->
+    <section class="featured dataset" id="datos">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="section-title">{{ page.title }}</h1>
+                <p class="section-description">{{ page.description }}</p>
+            </div>
+
+			<div id="section-content">
+
+  <canvas id="rankingRentaChart" width="800" height="500"></canvas>
+
+			<h2>El alfoz residencial, por delante de la propia capital</h2>
+
+			<p>La Agencia Tributaria publica cada año la <b>Estadística de los declarantes del IRPF por municipios</b>, que ofrece la renta bruta media (todos los ingresos declarados antes de impuestos) y la renta disponible (una vez descontados el IRPF y las cotizaciones sociales) de cada declaración. Los últimos datos publicados corresponden al ejercicio 2023 y confirman una tendencia que se repite año tras año: <b>el municipio más rico de la provincia no es la capital, sino su alfoz residencial</b>.</p>
+
+			<p><b>Cabrerizos</b> encabeza la clasificación salmantina con una renta bruta media de <b>34.931 €</b> (28.215 € de renta disponible), lo que le sitúa en el puesto 6 de Castilla y León y en el 227 de España. Le siguen <b>Aldeatejada</b> (33.347 €), <b>Carrascal de Barregas</b> (33.226 €), <b>Carbajosa de la Sagrada</b> (33.200 €) y <b>Villamayor</b> (32.797 €): los cinco superan la media nacional (31.333 €, excluyendo País Vasco y Navarra) y comparten un mismo perfil, urbanizaciones de baja densidad y perfil profesional cualificado a pocos minutos de Salamanca capital.</p>
+
+			<h3>Hallazgos clave del ranking</h3>
+			<ul>
+				<li><b>La capital, solo octava de su propia provincia</b>: Salamanca capital declara una renta bruta media de 29.743 €, por debajo incluso de la media nacional y superada por seis municipios de su propio alfoz además de Santa Marta de Tormes y Monterrubio de Armuña. Ocupa el puesto 688 de España y el 40 de Castilla y León, muy lejos del top de su comunidad autónoma.</li>
+				<li><b>Solo seis municipios superan la media nacional</b>: de los más de treinta municipios salmantinos de más de 1.000 habitantes, únicamente Cabrerizos, Aldeatejada, Carrascal de Barregas, Carbajosa de la Sagrada, Villamayor y Santa Marta de Tormes están por encima de los 31.333 € de media española.</li>
+				<li><b>El salto de Fuentes de Oñoro</b>: este municipio fronterizo con Portugal fue la sorpresa del informe. Pasó de una renta bruta de 22.928 € en 2022 (puesto 1.607 de España) a 28.131 € en 2023 (puesto 890), un ascenso de 717 puestos en un solo año que lo convierte en el primer municipio de la lista salmantina ajeno a la influencia directa del alfoz de la capital.</li>
+				<li><b>La distancia con el resto de España</b>: el municipio más rico de España, Pozuelo de Alarcón (Madrid), supera los 88.000 € de renta bruta media, casi 2,5 veces la cifra de Cabrerizos.</li>
+				<li><b>El otro extremo</b>: entre los municipios salmantinos de más de 1.000 habitantes, el de menor renta es Macotera, con 18.514 €, seguido de Lumbrales, Ledesma, Villoria y La Fuente de San Esteban. Los pueblos de menos de 1.000 habitantes de la provincia —agrupados por la Agencia Tributaria como una única categoría estadística— promedian 20.909 € al año.</li>
+			</ul>
+
+			<p>Este ranking usa la <b>renta bruta media por declaración de IRPF</b> de la Agencia Tributaria, un indicador distinto de la <a href="/renta-barrios">renta neta media por persona</a> que utiliza el INE y que ya se analizó en esta misma web a nivel de barrios de la capital: mientras aquel mide ingresos netos por habitante, este mide ingresos brutos por declaración fiscal (que puede ser individual o conjunta), de ahí que las cifras no sean directamente comparables entre ambas páginas. Para el contexto agregado de la ciudad, puede consultarse también la <a href="/renta-per-capita">evolución de la renta per cápita</a> y la <a href="/renta-desigualdad">distribución del ingreso</a>.</p>
+
+  <h2>Cabrerizos frente a la capital: una década de distancia creciente</h2>
+  <canvas id="evolucionChart" width="800" height="400"></canvas>
+
+			<p>La comparación histórica 2013-2023 muestra que la diferencia entre el municipio más rico y la capital no es nueva ni casual: Cabrerizos ya aventajaba a Salamanca capital en renta bruta media hace una década (28.026 € frente a 24.563 € en 2013) y esa distancia se ha mantenido, e incluso ampliado ligeramente, en los diez años siguientes.</p>
+
+			</div>
+
+			<div id="section-table">
+			<h3>Ranking de renta bruta media por municipio (IRPF 2023)</h3>
+			<table border="1" cellpadding="5" cellspacing="0">
+			  <thead>
+				<tr>
+				  <th>Puesto Salamanca</th>
+				  <th>Municipio</th>
+				  <th>Renta Bruta</th>
+				  <th>Renta Disponible</th>
+				  <th>Puesto España</th>
+				  <th>Puesto Castilla y León</th>
+				  <th>Población</th>
+				</tr>
+			  </thead>
+			  <tbody>
+				<tr><td>1</td><td><b>Cabrerizos</b></td><td>34.931 €</td><td>28.215 €</td><td>227</td><td>6</td><td>4.226</td></tr>
+				<tr><td>2</td><td>Aldeatejada</td><td>33.347 €</td><td>28.077 €</td><td>315</td><td>9</td><td>2.587</td></tr>
+				<tr><td>3</td><td>Carrascal de Barregas</td><td>33.226 €</td><td>27.966 €</td><td>320</td><td>10</td><td>1.439</td></tr>
+				<tr><td>4</td><td>Carbajosa de la Sagrada</td><td>33.200 €</td><td>25.207 €</td><td>322</td><td>11</td><td>7.636</td></tr>
+				<tr><td>5</td><td>Villamayor</td><td>32.797 €</td><td>25.132 €</td><td>351</td><td>13</td><td>7.669</td></tr>
+				<tr><td>6</td><td>Santa Marta de Tormes</td><td>31.816 €</td><td>24.175 €</td><td>431</td><td>20</td><td>14.726</td></tr>
+				<tr><td>7</td><td>Monterrubio de Armuña</td><td>29.966 €</td><td>24.988 €</td><td>658</td><td>39</td><td>1.331</td></tr>
+				<tr><td>8</td><td><b>Salamanca (capital)</b></td><td>29.743 €</td><td>24.094 €</td><td>688</td><td>40</td><td>144.866</td></tr>
+				<tr><td>9</td><td>Villares de la Reina</td><td>28.908 €</td><td>23.368 €</td><td>799</td><td>51</td><td>6.723</td></tr>
+				<tr><td>10</td><td>Doñinos de Salamanca</td><td>28.441 €</td><td>23.380 €</td><td>856</td><td>53</td><td>2.209</td></tr>
+				<tr><td>11</td><td>Fuentes de Oñoro</td><td>28.131 €</td><td>21.048 €</td><td>890</td><td>55</td><td>1.009</td></tr>
+				<tr><td>&hellip;</td><td colspan="6" style="text-align:center;color:#777;">municipios de renta intermedia</td></tr>
+				<tr><td>&ndash;</td><td>La Fuente de San Esteban</td><td>21.751 €</td><td>18.542 €</td><td>2.102</td><td>214</td><td>1.279</td></tr>
+				<tr><td>&ndash;</td><td>Villoria</td><td>21.727 €</td><td>17.885 €</td><td>2.107</td><td>216</td><td>1.258</td></tr>
+				<tr><td>&ndash;</td><td>Ledesma</td><td>21.491 €</td><td>18.575 €</td><td>2.161</td><td>223</td><td>1.517</td></tr>
+				<tr><td>&ndash;</td><td>Lumbrales</td><td>20.563 €</td><td>17.122 €</td><td>2.328</td><td>232</td><td>1.510</td></tr>
+				<tr><td>Último</td><td>Macotera</td><td>18.514 €</td><td>16.465 €</td><td>2.660</td><td>240</td><td>1.001</td></tr>
+			  </tbody>
+			</table>
+			<p style="font-size:0.85em;color:#777;margin-top:10px;">Fuente: Agencia Tributaria, Estadística de los declarantes del IRPF por municipios (ejercicio 2023, publicada en 2025). Solo incluye municipios de más de 1.000 habitantes. Media nacional de referencia (España sin País Vasco ni Navarra): 31.333 €.</p>
+			</div>
+
+			{% include categories.html %}
+
+        </div>
+    </section>
+
+	<script>
+    const ctxRanking = document.getElementById('rankingRentaChart').getContext('2d');
+    new Chart(ctxRanking, {
+      data: {
+        labels: ['Cabrerizos', 'Aldeatejada', 'Carrascal de Barregas', 'Carbajosa de la Sagrada', 'Villamayor', 'Santa Marta de Tormes', 'Monterrubio de Armuña', 'Salamanca (capital)', 'Villares de la Reina', 'Doñinos de Salamanca', 'Fuentes de Oñoro'],
+        datasets: [
+          {
+            type: 'bar',
+            label: 'Renta bruta media 2023 (€)',
+            data: [34931, 33347, 33226, 33200, 32797, 31816, 29966, 29743, 28908, 28441, 28131],
+            backgroundColor: (ctx) => ctx.dataIndex === 7 ? '#A8201A' : '#1E56A0',
+            borderRadius: 4
+          },
+          {
+            type: 'line',
+            label: 'Media nacional (31.333 €)',
+            data: Array(11).fill(31333),
+            borderColor: '#F4A261',
+            borderDash: [6, 4],
+            pointRadius: 0,
+            borderWidth: 2
+          }
+        ]
+      },
+      options: {
+        indexAxis: 'y',
+        responsive: true,
+        plugins: {
+          legend: { position: 'top' },
+          title: { display: true, text: 'Municipios de Salamanca con mayor renta bruta media por declaración de IRPF (2023)', font: { size: 13 } }
+        },
+        scales: {
+          x: { beginAtZero: false, title: { display: true, text: 'Renta bruta media (€)' } }
+        }
+      }
+    });
+
+    const ctxEvolucion = document.getElementById('evolucionChart').getContext('2d');
+    new Chart(ctxEvolucion, {
+      type: 'line',
+      data: {
+        labels: ['2013','2014','2015','2016','2017','2018','2019','2020','2021','2022','2023'],
+        datasets: [
+          {
+            label: 'Cabrerizos',
+            data: [28026, 28576, 28845, 30100, 30170, 30624, 31479, 31076, 32341, 33319, 34931],
+            borderColor: '#1E56A0',
+            backgroundColor: 'rgba(30, 86, 160, 0.1)',
+            tension: 0.2
+          },
+          {
+            label: 'Salamanca (capital)',
+            data: [24563, 24382, 24632, 25149, 25546, 26095, 26839, 26479, 27561, 29913, 29743],
+            borderColor: '#A8201A',
+            backgroundColor: 'rgba(168, 32, 26, 0.1)',
+            tension: 0.2
+          }
+        ]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: { position: 'top' },
+          title: { display: true, text: 'Renta bruta media 2013-2023: Cabrerizos frente a Salamanca capital', font: { size: 13 } }
+        },
+        scales: {
+          y: { title: { display: true, text: 'Renta bruta media (€)' } }
+        }
+      }
+    });
+  </script>
