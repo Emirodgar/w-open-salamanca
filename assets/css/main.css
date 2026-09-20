@@ -179,6 +179,7 @@ body {
     border: none;
     outline: none;
     flex: 1;
+    min-width: 0;
     padding: var(--spacing-sm);
     font-size: 0.875rem;
 }
@@ -716,9 +717,15 @@ section {
         justify-content: center;
     }
     
+    .header-content {
+        flex-wrap: wrap;
+        row-gap: var(--spacing-sm);
+    }
+
     .search-container {
-        min-width: auto;
-        flex: 1;
+        order: 3;
+        flex: 1 1 100%;
+        min-width: 0;
     }
 }
 
