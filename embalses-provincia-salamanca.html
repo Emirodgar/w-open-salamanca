@@ -1,0 +1,201 @@
+---
+layout: default
+title: Los embalses de la provincia de Salamanca
+description: Cuáles son, dónde están y cómo ha evolucionado su nivel de llenado en los últimos años, según los datos del Ministerio y la Confederación Hidrográfica del Duero
+date: 21-09-2026
+folder: Medio Ambiente
+permalink: embalses-provincia-salamanca
+---
+
+    <!-- Featured Datasets Section -->
+    <section class="featured dataset" id="datos">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="section-title">{{ page.title }}</h1>
+                <p class="section-description">{{ page.description }}</p>
+            </div>
+
+			<div id="section-content">
+
+  <!-- Mapa de embalses de la provincia -->
+  <div id="mapaEmbalses" style="width: 100%; height: 500px; border-radius: 8px; margin-bottom: 25px;"></div>
+
+			<h2>Ocho embalses, casi todos en la cuenca del Duero</h2>
+
+			<p>La provincia de Salamanca tiene catalogados <b>8 embalses con seguimiento periódico</b> (más otros cuatro menores &ndash;Riolobos, San Fernando, Linares de Ríofrío y Manufacturas Béjar&ndash; sin datos semanales publicados), con una capacidad conjunta de <b>3.585 hectómetros cúbicos (hm³)</b>. A fecha de mediados de septiembre de 2026 almacenaban <b>2.323 hm³, el 64,8% de su capacidad</b>, según los datos del Ministerio para la Transición Ecológica y la Confederación Hidrográfica del Duero (CHD), que gestiona la práctica totalidad del sistema. La única excepción es el embalse de Navamuño, en la Sierra de Béjar, que pertenece a la cuenca del Tajo.</p>
+
+			<h3>Los tres colosos: Almendra, Aldeadávila y Saucelle</h3>
+			<ul>
+				<li><b>Almendra</b> (río Tormes, en el límite entre Salamanca y Zamora): con 2.649 hm³ es, con diferencia, el más grande de la provincia y el <b>tercer embalse de España por capacidad</b>. Su presa, de 202 metros de altura, es además la más alta del país. Propiedad de Iberdrola, funciona como central reversible: por la noche bombea agua desde el embalse de Aldeadávila, aguas abajo, de vuelta hacia Almendra, aprovechando los excedentes eléctricos.</li>
+				<li><b>Aldeadávila</b> (río Duero, frontera con Portugal): con 114 hm³ de capacidad es mucho más pequeño en volumen, pero alberga la <b>central hidroeléctrica más potente de España</b> (1.139 MW entre sus dos centrales, 2.400 GWh anuales).</li>
+				<li><b>Saucelle</b> (río Duero, también en la frontera): 181,5 hm³ de capacidad y otra gran central de Iberdrola (525 MW, 900 GWh anuales), cierra la cadena de "Saltos del Duero" salmantina en los Arribes.</li>
+			</ul>
+
+			<p>Estos tres, junto con el resto del sistema "Saltos del Duero" (Castro, Ricobayo y Villalcampo, ya en Zamora), forman una de las mayores concentraciones de potencia hidroeléctrica de España, aprovechando el desnivel de los Arribes del Duero y del Tormes en su tramo final.</p>
+
+			<h3>Santa Teresa, el embalse de la gente</h3>
+
+			<p>Frente a los gigantes hidroeléctricos de los Arribes, el <b>embalse de Santa Teresa</b>, sobre el curso alto del río Tormes cerca de Guijuelo, es el que de verdad importa en el día a día de la provincia: abastece de agua a la capital, riega la vega del Tormes y del Armuña, regula avenidas y es el principal punto de recreo y baño de la comarca (la <a href="/zonas-de-bano-provincia-salamanca">Playa de Santa Teresa</a>). Con 496 hm³ de capacidad es el segundo mayor de la provincia, muy por detrás de Almendra pero muy por delante del resto.</p>
+
+			<p>El resto del sistema lo completan embalses de tamaño medio-pequeño en la comarca de Ciudad Rodrigo y El Rebollar: <b>Irueña</b> y <b>Águeda</b>, ambos sobre el río Águeda, y <b>Villagonzalo</b>, un pequeño azud sobre el propio Tormes cerca de Alba de Tormes usado para riego, abastecimiento y una pequeña central eléctrica.</p>
+
+  <h2>Capacidad de cada embalse (escala logarítmica)</h2>
+  <canvas id="capacidadChart" width="800" height="450"></canvas>
+
+			<p>La diferencia de tamaño entre embalses es tan grande &ndash;de los 6 hm³ de Villagonzalo a los 2.649 de Almendra&ndash; que solo se aprecia bien en una escala logarítmica: Almendra por sí solo representa <b>el 74% de toda el agua que puede almacenar la provincia</b>.</p>
+
+  <h2>Nivel de llenado actual de cada embalse</h2>
+  <canvas id="nivelActualChart" width="800" height="400"></canvas>
+
+			<h2>Evolución reciente: un año más seco que el anterior</h2>
+
+			<p>La comparación interanual muestra un descenso claro respecto a la primavera-verano de 2025. En la misma semana de septiembre, la provincia pasó de un <b>75,76% de llenado en 2025</b> a un <b>64,80% en 2026</b>, aunque el dato actual sigue por encima de la <b>media de la última década (59,07%)</b>. El embalse de Santa Teresa ilustra bien ese vaivén: llegó a estar al <b>94,4% en mayo de 2024</b> tras una primavera muy lluviosa, bajó al <b>71,0% en marzo de 2025</b>, se mantuvo en un <b>71,3% en agosto de 2025</b> pese a nueve días seguidos de ola de calor, y ha cerrado el verano de 2026 en torno al <b>51,8%</b>.</p>
+
+  <h2>Comparativa interanual del conjunto de embalses salmantinos</h2>
+  <canvas id="interanualChart" width="800" height="380"></canvas>
+
+			<p>En conjunto, el patrón de los últimos años confirma que la provincia de Salamanca no sufre una sequía estructural: los niveles se mueven por encima de la media de la última década incluso en años considerados "secos", gracias sobre todo a la enorme capacidad de reserva de Almendra y Santa Teresa. El reto real está en los embalses medianos del oeste de la provincia (Irueña, Águeda), más sensibles a las lluvias de cada campaña por su menor volumen de regulación.</p>
+
+			</div>
+
+			<div id="section-table">
+			<h3>Los 8 embalses de la provincia de Salamanca</h3>
+			<table border="1" cellpadding="5" cellspacing="0">
+			  <thead>
+				<tr>
+				  <th>Embalse</th>
+				  <th>Río</th>
+				  <th>Ubicación</th>
+				  <th>Uso principal</th>
+				  <th>Capacidad</th>
+				  <th>Embalsado (sep. 2026)</th>
+				  <th>% de llenado</th>
+				</tr>
+			  </thead>
+			  <tbody>
+				<tr><td><b>Almendra</b></td><td>Tormes</td><td>Límite Salamanca / Zamora</td><td>Hidroeléctrico (reversible)</td><td>2.649 hm³</td><td>1.695 hm³</td><td>64,0%</td></tr>
+				<tr><td><b>Santa Teresa</b></td><td>Tormes</td><td>Comarca de Guijuelo</td><td>Abastecimiento, riego y recreo</td><td>496 hm³</td><td>257 hm³</td><td>51,8%</td></tr>
+				<tr><td>Saucelle</td><td>Duero</td><td>Arribes del Duero (frontera con Portugal)</td><td>Hidroeléctrico</td><td>181,5 hm³</td><td>175 hm³</td><td>96,7%</td></tr>
+				<tr><td>Aldeadávila</td><td>Duero</td><td>Arribes del Duero (frontera con Portugal)</td><td>Hidroeléctrico</td><td>114 hm³</td><td>110 hm³</td><td>96,5%</td></tr>
+				<tr><td>Irueña</td><td>Águeda</td><td>Comarca de Ciudad Rodrigo / El Rebollar</td><td>Riego y abastecimiento</td><td>110 hm³</td><td>61 hm³</td><td>55,5%</td></tr>
+				<tr><td>Águeda</td><td>Águeda</td><td>Zamarra y Pastores (El Rebollar)</td><td>Riego y abastecimiento</td><td>15 hm³</td><td>12 hm³</td><td>80,0%</td></tr>
+				<tr><td>Navamuño</td><td>Angostura / Cuerpo de Hombre</td><td>Candelario (Sierra de Béjar) &ndash; cuenca del Tajo</td><td>Abastecimiento</td><td>14 hm³</td><td>7 hm³</td><td>50,0%</td></tr>
+				<tr><td>Villagonzalo</td><td>Tormes</td><td>Garcihernández (cerca de Alba de Tormes)</td><td>Riego, abastecimiento y pequeña central</td><td>6 hm³</td><td>6 hm³</td><td>100%</td></tr>
+			  </tbody>
+			</table>
+			<p style="font-size:0.85em;color:#777;margin-top:10px;">Fuente: Ministerio para la Transición Ecológica / SAIH Confederación Hidrográfica del Duero (datos semanales, actualización del 14-09-2026). Además existen 4 embalses menores en la provincia sin datos semanales publicados: Riolobos (14 hm³ de capacidad), San Fernando (1 hm³), Linares de Ríofrío y Manufacturas Béjar.</p>
+			</div>
+
+			{% include categories.html %}
+
+        </div>
+    </section>
+
+	<!-- Hojas de estilo y scripts de Leaflet -->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+	<script>
+    const mapEmbalses = L.map('mapaEmbalses').setView([40.9, -6.15], 8);
+
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/light_all/{z}/{x}/{y}{r}.png?key=cb1_2izw_1_55d93b51ded1dcecfa044181', {
+      attribution: '&copy; OpenStreetMap &copy; CARTO',
+      subdomains: 'abcd',
+      maxZoom: 19
+    }).addTo(mapEmbalses);
+
+    L.marker([40.9701, -5.6635]).addTo(mapEmbalses).bindPopup('<b>Salamanca (capital)</b>');
+
+    const embalses = [
+      { name: 'Almendra', lat: 41.2714, lng: -6.3203, cap: 2649, desc: '2.649 hm³ · Río Tormes · Hidroeléctrico · 64,0% lleno' },
+      { name: 'Santa Teresa', lat: 40.5300, lng: -5.6550, cap: 496, desc: '496 hm³ · Río Tormes · Abastecimiento y riego · 51,8% lleno' },
+      { name: 'Saucelle', lat: 41.0472, lng: -6.8042, cap: 181.5, desc: '181,5 hm³ · Río Duero · Hidroeléctrico · 96,7% lleno' },
+      { name: 'Aldeadávila', lat: 41.2136, lng: -6.6892, cap: 114, desc: '114 hm³ · Río Duero · Hidroeléctrico (nº1 de España en producción) · 96,5% lleno' },
+      { name: 'Irueña', lat: 40.8500, lng: -6.7500, cap: 110, desc: '110 hm³ · Río Águeda · Riego y abastecimiento · 55,5% lleno' },
+      { name: 'Águeda', lat: 40.4700, lng: -6.5200, cap: 15, desc: '15 hm³ · Río Águeda (Zamarra y Pastores) · 80,0% lleno' },
+      { name: 'Navamuño', lat: 40.3550, lng: -5.7550, cap: 14, desc: '14 hm³ · Candelario, Sierra de Béjar · Cuenca del Tajo · 50,0% lleno' },
+      { name: 'Villagonzalo', lat: 40.9000, lng: -5.3500, cap: 6, desc: '6 hm³ · Río Tormes (Garcihernández) · 100% lleno' }
+    ];
+
+    embalses.forEach(e => {
+      L.circleMarker([e.lat, e.lng], {
+        radius: Math.max(6, Math.sqrt(e.cap) * 1.1),
+        color: '#1E56A0',
+        fillColor: '#1E56A0',
+        fillOpacity: 0.6
+      }).bindPopup(`<b>${e.name}</b><br>${e.desc}`).addTo(mapEmbalses);
+    });
+
+    const ctxCapacidad = document.getElementById('capacidadChart').getContext('2d');
+    new Chart(ctxCapacidad, {
+      type: 'bar',
+      data: {
+        labels: ['Villagonzalo', 'Navamuño', 'Águeda', 'Irueña', 'Aldeadávila', 'Saucelle', 'Santa Teresa', 'Almendra'],
+        datasets: [{
+          label: 'Capacidad (hm³)',
+          data: [6, 14, 15, 110, 114, 181.5, 496, 2649],
+          backgroundColor: '#1E56A0',
+          borderRadius: 4
+        }]
+      },
+      options: {
+        indexAxis: 'y',
+        responsive: true,
+        plugins: {
+          legend: { display: false },
+          title: { display: true, text: 'Capacidad total de cada embalse (hm³, escala logarítmica)', font: { size: 13 } }
+        },
+        scales: {
+          x: { type: 'logarithmic', title: { display: true, text: 'Capacidad (hm³, escala log.)' } }
+        }
+      }
+    });
+
+    const ctxNivel = document.getElementById('nivelActualChart').getContext('2d');
+    new Chart(ctxNivel, {
+      type: 'bar',
+      data: {
+        labels: ['Navamuño', 'Santa Teresa', 'Irueña', 'Almendra', 'Águeda', 'Aldeadávila', 'Saucelle', 'Villagonzalo'],
+        datasets: [{
+          label: '% de llenado (septiembre 2026)',
+          data: [50.0, 51.8, 55.5, 64.0, 80.0, 96.5, 96.7, 100],
+          backgroundColor: (ctx) => ctx.raw < 60 ? '#E63946' : (ctx.raw < 90 ? '#F4A261' : '#2C5F2D'),
+          borderRadius: 4
+        }]
+      },
+      options: {
+        indexAxis: 'y',
+        responsive: true,
+        plugins: {
+          legend: { display: false },
+          title: { display: true, text: 'Porcentaje de llenado de cada embalse a mediados de septiembre de 2026', font: { size: 13 } }
+        },
+        scales: {
+          x: { min: 0, max: 100, title: { display: true, text: '% de llenado' } }
+        }
+      }
+    });
+
+    const ctxInteranual = document.getElementById('interanualChart').getContext('2d');
+    new Chart(ctxInteranual, {
+      type: 'bar',
+      data: {
+        labels: ['Media última década', 'Misma semana 2025', 'Actual (sep. 2026)'],
+        datasets: [{
+          label: '% de llenado del conjunto de embalses de Salamanca',
+          data: [59.07, 75.76, 64.80],
+          backgroundColor: ['#9a9a9a', '#2C5F2D', '#1E56A0'],
+          borderRadius: 4
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: { display: false },
+          title: { display: true, text: 'Comparativa interanual del nivel conjunto de los embalses salmantinos', font: { size: 13 } }
+        },
+        scales: {
+          y: { min: 0, max: 100, title: { display: true, text: '% de llenado' } }
+        }
+      }
+    });
+  </script>
