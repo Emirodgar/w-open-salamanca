@@ -2,17 +2,6 @@
   "worker_url": "https://votos.emirodgar.workers.dev/",
   "preguntas": [
     {
-      "id": "unionistas-arranque-2026",
-      "pregunta": "El Unionistas ha empezado la Primera RFEF con derrota. ¿Confías en que remonte esta temporada?",
-      "opciones": [
-        "Sí, seguro",
-        "No, mal empiezan",
-        "Aún es pronto para saberlo"
-      ],
-      "basado_en": "actualidad.json",
-      "fecha_creacion": "2026-09-01"
-    },
-    {
       "id": "responsabilidad-pisa-2026",
       "pregunta": "Castilla y León resiste en PISA pese al batacazo educativo a nivel nacional, pero Mañueco culpa al Gobierno central de la debacle. ¿Quién crees que tiene más responsabilidad en estos resultados?",
       "opciones": [
@@ -71,6 +60,17 @@
       ],
       "basado_en": "actualidad.json",
       "fecha_creacion": "2026-09-18"
+    },
+    {
+      "id": "unionistas-primera-victoria-2026",
+      "pregunta": "Unionistas ha logrado su primera victoria de la temporada (3-1 ante la UD Ourense) tras el peor arranque de su historia. ¿Crees que este triunfo supondrá un cambio de tendencia?",
+      "opciones": [
+        "Sí, ya han dado el giro",
+        "No, ha sido algo puntual",
+        "Aún es pronto para saberlo"
+      ],
+      "basado_en": "actualidad.json",
+      "fecha_creacion": "2026-09-20"
     }
   ]
 }

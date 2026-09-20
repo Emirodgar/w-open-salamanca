@@ -1,11 +1,11 @@
 {
   "url_base": "https://www.lagacetadesalamanca.es",
-  "generado_en": "2026-09-18T14:30:00+00:00",
+  "generado_en": "2026-09-20T21:15:00+00:00",
   "periodo_cubierto": {
-    "desde": "2026-09-16",
-    "hasta": "2026-09-18"
+    "desde": "2026-09-18",
+    "hasta": "2026-09-20"
   },
-  "total_urls_analizadas": 131,
+  "total_urls_analizadas": 103,
   "secciones_excluidas": [
     "nacional",
     "opinion",
@@ -13,109 +13,117 @@
     "gente-estilo",
     "podcast"
   ],
-  "nota_cobertura": "El sitemap consultado esta vez solo contenía URLs de los últimos 3 días (16 a 18 de septiembre), un periodo más corto que una semana completa: es un sitemap 'rolling' y en este momento cubre menos días de los habituales. El análisis y el resumen siguientes reflejan únicamente ese periodo real, no una semana entera.",
+  "nota_cobertura": "El sitemap consultado esta vez solo contenía URLs de los últimos 3 días (18 a 20 de septiembre), un periodo más corto que una semana completa: es un sitemap 'rolling' y en este momento cubre menos días de los habituales. El análisis y el resumen siguientes reflejan únicamente ese periodo real, no una semana entera.",
   "por_seccion": [
-    ["salamanca", 40],
-    ["provincia", 33],
-    ["deportes", 25],
-    ["sucesos", 16],
-    ["toros", 6],
-    ["virales", 5],
+    ["salamanca", 33],
+    ["deportes", 24],
+    ["toros", 18],
+    ["sucesos", 15],
+    ["provincia", 9],
     ["encuestas", 2],
-    ["campo", 2],
-    ["castilla-y-leon", 1],
-    ["cine-y-series", 1]
+    ["campo", 1],
+    ["especiales", 1]
   ],
   "por_subseccion": [
-    ["deportes/futbol-local", 16],
-    ["deportes/baloncesto-local", 2],
-    ["deportes/deporte-base", 1],
-    ["deportes/carreras-populares", 1]
+    ["deportes/futbol-local", 17],
+    ["deportes/carreras-populares", 2],
+    ["deportes/baloncesto-local", 1],
+    ["especiales/asi-somos-en-mi-pueblo", 1]
   ],
   "por_tipo_contenido": [
-    ["noticia", 130],
-    ["directo / en vivo", 1]
+    ["noticia", 99],
+    ["directo / en vivo", 4]
   ],
   "heatmap_calendario": [
-    {"fecha": "2026-09-16", "total": 24, "salamanca": 5, "provincia": 7, "deportes": 8, "sucesos": 2, "toros": 0, "virales": 0, "encuestas": 1, "campo": 1, "castilla-y-leon": 0, "cine-y-series": 0},
-    {"fecha": "2026-09-17", "total": 59, "salamanca": 15, "provincia": 18, "deportes": 11, "sucesos": 7, "toros": 3, "virales": 3, "encuestas": 1, "campo": 1, "castilla-y-leon": 0, "cine-y-series": 0},
-    {"fecha": "2026-09-18", "total": 48, "salamanca": 20, "provincia": 8, "deportes": 6, "sucesos": 7, "toros": 3, "virales": 2, "encuestas": 0, "campo": 0, "castilla-y-leon": 1, "cine-y-series": 1}
+    {"fecha": "2026-09-18", "total": 4, "salamanca": 2, "deportes": 0, "toros": 2, "sucesos": 0, "provincia": 0, "encuestas": 0, "campo": 0, "especiales": 0},
+    {"fecha": "2026-09-19", "total": 46, "salamanca": 16, "deportes": 11, "toros": 7, "sucesos": 7, "provincia": 4, "encuestas": 1, "campo": 0, "especiales": 0},
+    {"fecha": "2026-09-20", "total": 53, "salamanca": 15, "deportes": 13, "toros": 9, "sucesos": 8, "provincia": 5, "encuestas": 1, "campo": 1, "especiales": 1}
   ],
   "conceptos_destacados": [
     {
-      "concepto": "Tragedia en Villares de la Reina: dos fallecidos por una posible fuga de monóxido",
-      "piezas": 2,
-      "seccion_principal": "sucesos",
-      "desde": "2026-09-18",
-      "hasta": "2026-09-18",
-      "ejemplos_redactados": [
-        "Un matrimonio ha aparecido muerto y su cuidadora inconsciente en una vivienda de Villares de la Reina, después de que la familia diera la voz de alarma al no tener noticias de la pareja, vista por última vez el día anterior haciendo la compra.",
-        "En las mediciones se detectó monóxido de carbono y el coche tenía el contacto encendido, aunque las autopsias deberán confirmar la causa exacta de las muertes."
-      ]
-    },
-    {
-      "concepto": "Fútbol: Salamanca UDS y Santa Marta sueñan con la Copa del Rey, Unionistas busca su primera victoria",
-      "piezas": 6,
+      "concepto": "Unionistas logra su primera victoria de la temporada",
+      "piezas": 5,
       "seccion_principal": "deportes",
-      "desde": "2026-09-16",
-      "hasta": "2026-09-18",
+      "desde": "2026-09-19",
+      "hasta": "2026-09-19",
       "ejemplos_redactados": [
-        "El Salamanca UDS y el Santa Marta ya conocen los detalles del sorteo que puede llevarles a la Copa del Rey, tras su clasificación en la Copa RFEF.",
-        "Unionistas, con el peor arranque de su historia, afronta este fin de semana un partido clave ante la UD Ourense con la televisión en directo, convencido de que 'va a ser el día' para lograr su primera victoria."
+        "Unionistas ha expulsado sus fantasmas y se ha llevado su primera alegría de la temporada, venciendo (3-1) a la UD Ourense tras el peor arranque de su historia.",
+        "El propio periódico pregunta a sus lectores si creen que este triunfo supondrá un cambio de tendencia para el equipo."
       ]
     },
     {
-      "concepto": "Cinco colegios rurales de la provincia, en riesgo de cierre",
-      "piezas": 1,
-      "seccion_principal": "salamanca",
-      "desde": "2026-09-17",
-      "hasta": "2026-09-17",
+      "concepto": "El Salamanca UDS pierde su racha en Cuenca tras una roja polémica",
+      "piezas": 4,
+      "seccion_principal": "deportes",
+      "desde": "2026-09-20",
+      "hasta": "2026-09-20",
       "ejemplos_redactados": [
-        "Cinco colegios rurales de la provincia están en riesgo de cierre al contar con solo tres o cuatro alumnos, entre ellos los de El Payo y el CEIP Nicolás Rodríguez Aniceto, en un curso que arranca con 743 matriculados menos que el anterior."
+        "El Conquense y el árbitro han cortado en seco la buena racha del Salamanca UDS (1-0), con una expulsión muy discutida que ha hecho estallar a Muniain: 'No es roja ni aquí ni en Pekín'."
       ]
     },
     {
-      "concepto": "La Feria Taurina arranca su segunda mitad de abono",
-      "piezas": 3,
+      "concepto": "La Feria Taurina de La Glorieta cierra su edición con triunfo de Morante",
+      "piezas": 4,
       "seccion_principal": "toros",
-      "desde": "2026-09-17",
-      "hasta": "2026-09-18",
+      "desde": "2026-09-19",
+      "hasta": "2026-09-20",
       "ejemplos_redactados": [
-        "'Carablanca' ha abierto fuego a la segunda mitad de la Feria Taurina de La Glorieta, que continúa con jornadas destacadas para los novilleros y una oportunidad inesperada para algún torero suplente."
+        "La Feria Taurina de La Glorieta ha bajado el telón con la pureza de Morante de la Puebla y la entrega total de Ismael Martín y Julio Norte, tras una semana que también dejó a Guillermo Hermoso salir a hombros en el festejo de rejones."
       ]
     },
     {
-      "concepto": "El empleo irregular 'en B' aflora un 26% más con menos inspección",
-      "piezas": 1,
-      "seccion_principal": "salamanca",
-      "desde": "2026-09-17",
-      "hasta": "2026-09-17",
-      "ejemplos_redactados": [
-        "Trabajo detectó en 2025 a 730 personas que estaban trabajando sin estar dadas de alta, un 26% más que el año anterior pese a que las inspecciones han disminuido."
-      ]
-    },
-    {
-      "concepto": "Nueva tanda de sucesos: robos, accidentes y un senderista localizado en Mogarraz",
-      "piezas": 6,
+      "concepto": "Alerta por peleas masivas: los delitos por reyertas se disparan",
+      "piezas": 3,
       "seccion_principal": "sucesos",
-      "desde": "2026-09-17",
-      "hasta": "2026-09-18",
+      "desde": "2026-09-19",
+      "hasta": "2026-09-20",
       "ejemplos_redactados": [
-        "Un hombre ha ingresado en prisión tras cometer seis robos en viviendas de Salamanca entrando por las ventanas, mientras un senderista de 45 años desaparecido en el Camino del Agua de Mogarraz ha sido localizado horas después.",
-        "La provincia ha registrado además varios accidentes de tráfico con heridos, entre ellos en la A-66 a su paso por Aldeatejada y en Villares de la Reina."
+        "Salamanca ha registrado 82 delitos de lesiones y riñas tumultuarias en la primera mitad del año, frente a los 37 del mismo periodo de 2025, en un fin de semana que ha vuelto a dejar varias peleas multitudinarias con heridos en la ciudad."
       ]
     },
     {
-      "concepto": "La Diputación transformará el antiguo cuartel de la Guardia Civil de Santa Marta",
+      "concepto": "Ingresan en prisión permanente la madre y el padrastro que mataron a golpes a una niña de 2 años",
+      "piezas": 1,
+      "seccion_principal": "sucesos",
+      "desde": "2026-09-19",
+      "hasta": "2026-09-19",
+      "ejemplos_redactados": [
+        "La madre y el padrastro condenados a prisión permanente por matar a golpes a la pequeña Laia, de 2 años, que presentaba más de un centenar de lesiones, han ingresado en la prisión de Topas."
+      ]
+    },
+    {
+      "concepto": "Tristeza en Ciudad Rodrigo por la muerte de un vecino al volver de la Feria del Caballo",
       "piezas": 1,
       "seccion_principal": "provincia",
-      "desde": "2026-09-18",
-      "hasta": "2026-09-18",
+      "desde": "2026-09-19",
+      "hasta": "2026-09-19",
       "ejemplos_redactados": [
-        "La Diputación de Salamanca transformará el antiguo cuartel de la Guardia Civil de Santa Marta de Tormes en la nueva sede del Centro de Acción Social."
+        "Un mirobrigense ha fallecido tras sufrir un episodio cardiaco cuando volvía a su domicilio conduciendo la calesa con la que había participado en las actividades de la Feria del Caballo."
+      ]
+    },
+    {
+      "concepto": "Los robos de catenaria bloquean trenes y agravan el retraso de la electrificación",
+      "piezas": 2,
+      "seccion_principal": "salamanca",
+      "desde": "2026-09-19",
+      "hasta": "2026-09-19",
+      "ejemplos_redactados": [
+        "Un tren cargado de coches quedó bloqueado durante horas en Salamanca por la sustracción de cobre, que ha afectado a al menos cuatro convoyes entre jueves y viernes, mientras el Gobierno reconoce que no existe fecha oficial para acabar la electrificación de la línea a la frontera tras seis años de retraso.",
+        "El robo de catenaria, dice el Ejecutivo, es una de las causas de las nuevas demoras en las obras."
+      ]
+    },
+    {
+      "concepto": "Nueva tanda de sucesos: un hombre hallado muerto en un 'fumadero' y amenazas de muerte en El Cerro",
+      "piezas": 3,
+      "seccion_principal": "sucesos",
+      "desde": "2026-09-19",
+      "hasta": "2026-09-20",
+      "ejemplos_redactados": [
+        "Un hombre que vivía en Francia ha sido hallado muerto en un 'fumadero' de Salamanca, justo cuando su familia iba a denunciar su desaparición, mientras un hombre se enfrenta a 5 años de cárcel por un grave accidente en Montejo circulando en dirección contraria y con casi seis veces la tasa de alcohol permitida.",
+        "En El Cerro, un hombre ha sido acusado de amenazar a su pareja con quemarle el coche y matarla."
       ]
     }
   ],
-  "resumen_borrador": "Se han publicado 131 noticias entre el 2026-09-16 y el 2026-09-18. La actividad se ha concentrado sobre todo en salamanca (40 piezas), provincia (33 piezas), deportes (25 piezas).\n\nLos conceptos con más piezas relacionadas son: Feria Taurina, Copa del Rey, Villares, colegios rurales. Revisa 'evidencia' de cada concepto para redactar el resumen final.",
-  "resumen": "La noticia más dura de estos días ha sido la tragedia de Villares de la Reina: un matrimonio ha aparecido muerto y su cuidadora inconsciente en su vivienda, con monóxido de carbono detectado en las mediciones y el coche con el contacto encendido, aunque las autopsias deberán confirmar la causa exacta de las muertes.\n\nEn el fútbol, el Salamanca UDS y el Santa Marta siguen soñando con la Copa del Rey tras su paso por la Copa RFEF, mientras Unionistas, con el peor arranque de su historia, afronta un partido clave ante la UD Ourense con la televisión en directo. En La Glorieta, la Feria Taurina ha arrancado su segunda mitad de abono con 'Carablanca' abriendo fuego.\n\nEn el plano educativo, cinco colegios rurales de la provincia están en riesgo de cierre al contar con solo tres o cuatro alumnos, en un curso que arranca con casi 750 matriculados menos que el anterior. En el ámbito laboral, el empleo irregular 'en B' aflora un 26% más pese a que las inspecciones han disminuido.\n\nLa provincia ha vivido además una nueva tanda de sucesos —seis robos en viviendas que han llevado a un hombre a prisión, un senderista localizado tras perderse en Mogarraz y varios accidentes de tráfico con heridos— y la Diputación ha anunciado que transformará el antiguo cuartel de la Guardia Civil de Santa Marta en la nueva sede del Centro de Acción Social."
+  "resumen_borrador": "Se han publicado 103 noticias entre el 2026-09-18 y el 2026-09-20. La actividad se ha concentrado sobre todo en salamanca (33 piezas), deportes (24 piezas), toros (18 piezas).\n\nLos conceptos con más piezas relacionadas son: Feria Taurina, Unionistas, Conquense, peleas. Revisa 'evidencia' de cada concepto para redactar el resumen final.",
+  "resumen": "El fútbol salmantino ha vivido un fin de semana de contrastes: Unionistas ha logrado su primera victoria de la temporada (3-1 ante la UD Ourense) tras el peor arranque de su historia, mientras el Salamanca UDS veía cortada su buena racha en Cuenca (1-0) por una roja muy discutida que hizo estallar a Muniain contra el árbitro. En La Glorieta, la Feria Taurina ha bajado el telón con la pureza de Morante de la Puebla.\n\nLa ciudad ha encendido las alarmas por una escalada de la violencia en la calle: los delitos por peleas y riñas tumultuarias se han más que duplicado en el primer semestre del año (82 frente a 37), con varias agresiones multitudinarias más este fin de semana. En el terreno judicial, la madre y el padrastro condenados a prisión permanente por matar a golpes a una niña de 2 años han ingresado ya en la prisión de Topas, y Ciudad Rodrigo ha llorado la muerte de un vecino que sufrió un episodio cardiaco al volver de la Feria del Caballo.\n\nLos robos de cobre han vuelto a golpear el ferrocarril salmantino, bloqueando un tren cargado de coches durante horas, mientras el Gobierno reconoce que no hay fecha oficial para terminar la electrificación de la línea a la frontera tras seis años de retraso. La provincia ha vivido además otros sucesos graves, entre ellos un hombre hallado muerto en un 'fumadero' y una denuncia por amenazas de muerte en El Cerro."
 }
