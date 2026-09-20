@@ -33,9 +33,11 @@ const FUENTES = [
 	{
 		id: 'gaceta',
 		medio: 'La Gaceta de Salamanca',
-		sitemap: 'https://www.lagacetadesalamanca.es/sitemap.incremental.xml',
-		formato: 'plano', // solo loc + lastmod, hay que sacar el título de la página
-		sufijosTitulo: [' - La Gaceta de Salamanca', ' | La Gaceta de Salamanca'],
+		// El sitemap.incremental.xml del sitio mete de todo (varias semanas,
+		// todas las secciones). Usamos su RSS de Portada en su lugar: son solo
+		// las noticias que el propio medio destaca en portada, y ya trae título.
+		sitemap: 'https://www.lagacetadesalamanca.es/rss/2.0/?section=',
+		formato: 'rss',
 	},
 	{
 		id: 'salamancahoy',
@@ -76,7 +78,27 @@ async function fetchConTimeout(url, opts = {}) {
 	}
 }
 
+function quitarCdata(str) {
+	if (!str) return str;
+	const m = str.match(/^<!\[CDATA\[([\s\S]*)\]\]>$/);
+	return m ? m[1] : str;
+}
+
 function parseSitemap(xml, fuente) {
+	if (fuente.formato === 'rss') {
+		const bloques = xml.match(/<item>[\s\S]*?<\/item>/g) || [];
+		const items = [];
+		for (const bloque of bloques) {
+			const loc = (bloque.match(/<link>([\s\S]*?)<\/link>/) || [])[1];
+			const pubDate = (bloque.match(/<pubDate>([\s\S]*?)<\/pubDate>/) || [])[1];
+			if (!loc || !pubDate) continue;
+			const url = decodeEntities(quitarCdata(loc).trim());
+			const tituloBruto = (bloque.match(/<title>([\s\S]*?)<\/title>/) || [])[1] || null;
+			items.push({ url, fechaHora: pubDate.trim(), titulo: decodeEntities(quitarCdata(tituloBruto)) });
+		}
+		return items;
+	}
+
 	const bloques = xml.match(/<url>[\s\S]*?<\/url>/g) || [];
 	const items = [];
 	for (const bloque of bloques) {
