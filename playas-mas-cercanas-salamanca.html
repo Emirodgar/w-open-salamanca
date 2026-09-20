@@ -1,0 +1,185 @@
+---
+layout: default
+title: Las playas más cercanas a Salamanca
+description: Las auténticas playas fluviales más próximas a la ciudad y, como referencia, la distancia hasta el mar en Aveiro (Portugal) y el norte de España
+date: 20-09-2026
+folder: Turismo
+permalink: playas-mas-cercanas-salamanca
+---
+
+    <!-- Featured Datasets Section -->
+    <section class="featured dataset" id="datos">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="section-title">{{ page.title }}</h1>
+                <p class="section-description">{{ page.description }}</p>
+            </div>
+
+			<div id="section-content">
+
+  <!-- Mapa de playas fluviales cercanas y referencias de costa -->
+  <div id="mapaPlayas" style="width: 100%; height: 500px; border-radius: 8px; margin-bottom: 25px;"></div>
+
+			<h2>Salamanca, la capital de provincia más alejada del mar</h2>
+
+			<p>Salamanca es una de las pocas capitales de provincia españolas sin ninguna salida al mar a menos de 250 km. No hay "playas" en el sentido estricto: lo que existe alrededor de la ciudad son <b>playas fluviales</b>, zonas acondicionadas junto a embalses y ríos de las provincias vecinas. Según el buscador especializado BeachSearcher, dentro de un radio de <b>116 km</b> desde el centro de Salamanca hay únicamente <b>7 playas</b> catalogadas, todas ellas fluviales o de embalse, repartidas entre las provincias de Zamora y Ávila.</p>
+
+			<h3>Las 7 playas fluviales dentro de los 116 km</h3>
+			<ul>
+				<li><b>Playa Fluvial de Ricobayo</b> (Muelas del Pan, Zamora) — 69 km, la más cercana con diferencia. Puntuación 8,4/10 (461 opiniones), con amenidades y grado de ocupación alto.</li>
+				<li><b>Playa Fluvial Burganes</b> (Zamora) — 107 km, 9/10 (134 opiniones), con amenidades.</li>
+				<li><b>Camping Pantano del Burguillo</b> (Ávila) — 107 km, 6,9/10, con amenidades.</li>
+				<li><b>Playa Fluvial Pradera</b> (Zamora) — 110 km, 9,2/10 (53 opiniones), ocupación alta.</li>
+				<li><b>Embalse de Burgillos</b> (Ávila) — 109 km, 9/10 (145 opiniones), sin amenidades.</li>
+				<li><b>Embalse el Burguillo</b> (Ávila) — 109 km, 9/10, sin amenidades.</li>
+				<li><b>Playa Fluvial de El Tamaral</b> (Zamora) — 116 km, 9/10 (50 opiniones), sin amenidades.</li>
+			</ul>
+
+			<p>Es decir: el litoral más próximo real —el mar abierto— queda muy por encima de esa distancia. Para bañarse en el mar desde Salamanca hay dos alternativas naturales: cruzar la frontera hacia la <b>Costa da Prata</b> portuguesa (Aveiro) o subir hasta la <b>cornisa cantábrica</b> (Asturias o Cantabria). Ambas rutas se muestran aquí como referencia de distancia real al mar.</p>
+
+  <h2>Distancia real: playas fluviales cercanas frente al mar abierto</h2>
+  <canvas id="distanciasChart" width="800" height="420"></canvas>
+
+			<h2>Referencia 1: la Costa da Prata portuguesa (Aveiro)</h2>
+
+			<p>La opción más rápida para tocar el mar de verdad es Portugal. Salamanca y Aveiro están conectadas directamente por la A62 (española) y la A25 (portuguesa), con una distancia aproximada de <b>308 km y unas 3 horas</b> de coche, sin necesidad de rodear ninguna gran ciudad. Aveiro, conocida como "la Venecia portuguesa" por sus canales y barcos moliceiros, da acceso a varias playas atlánticas muy conocidas:</p>
+
+			<ul>
+				<li><b>Praia da Costa Nova</b>: la más fotografiada, famosa por sus casas de rayas de colores (los "palheiros").</li>
+				<li><b>Praia da Barra</b>: junto al faro más alto de Portugal, con fuerte oleaje atlántico.</li>
+				<li><b>Praia de São Jacinto</b>: integrada en una reserva natural de dunas, mucho más tranquila.</li>
+				<li><b>Praia da Vagueira</b> y <b>Praia de Mira</b>: núcleos costeros más pequeños al sur de la ría de Aveiro.</li>
+			</ul>
+
+			<h2>Referencia 2: el norte de España (Asturias y Cantabria)</h2>
+
+			<p>La alternativa dentro de España es subir hacia el Cantábrico por la A-66 y la A-63/A-67. La distancia hasta <b>Gijón</b> (Asturias) es de unos <b>336-360 km (algo más de 3 horas)</b>, y hasta <b>Santander</b> (Cantabria) de unos <b>360-400 km (en torno a 4 horas)</b>. Algunas de las playas más reconocidas de esa costa son:</p>
+
+			<ul>
+				<li><b>San Lorenzo</b> (Gijón): la gran playa urbana asturiana, de más de 1,5 km.</li>
+				<li><b>Playa de Salinas</b> (Castrillón, Asturias): referencia histórica del surf en España.</li>
+				<li><b>Playa de Rodiles</b> (Villaviciosa, Asturias): desembocadura del río Villaviciosa, muy valorada paisajísticamente.</li>
+				<li><b>Playa de Gulpiyuri</b> (Llanes, Asturias): una cala interior sin conexión visible con el mar, monumento natural.</li>
+				<li><b>El Sardinero</b> (Santander, Cantabria): la playa urbana más emblemática del norte.</li>
+				<li><b>Playa de las Catedrales</b> (Ribadeo, Lugo, ya en Galicia): sus arcos de roca la han hecho famosa a nivel internacional, algo más lejos pero accesible desde la misma ruta.</li>
+			</ul>
+
+			<p>En la práctica, para un salmantino "ir a la playa" significa casi siempre coger la autovía hacia Portugal o hacia el norte: las playas fluviales de Zamora y Ávila cubren el chapuzón de proximidad, pero el mar sigue estando a tres o cuatro horas de viaje. Quien busque opciones de baño dentro de la propia provincia de Salamanca puede consultar <a href="/zonas-de-bano-provincia-salamanca">las zonas de baño más conocidas de la provincia</a>.</p>
+
+			</div>
+
+			<div id="section-table">
+			<h3>Comparativa de distancias desde Salamanca</h3>
+			<table border="1" cellpadding="5" cellspacing="0">
+			  <thead>
+				<tr>
+				  <th>Destino</th>
+				  <th>Tipo</th>
+				  <th>Distancia aprox.</th>
+				  <th>Valoración</th>
+				</tr>
+			  </thead>
+			  <tbody>
+				<tr><td>Playa Fluvial de Ricobayo (Zamora)</td><td>Playa fluvial / embalse</td><td>69 km</td><td>8,4/10 (461 opiniones)</td></tr>
+				<tr><td>Playa Fluvial Burganes (Zamora)</td><td>Playa fluvial</td><td>107 km</td><td>9/10 (134 opiniones)</td></tr>
+				<tr><td>Camping Pantano del Burguillo (Ávila)</td><td>Playa de embalse</td><td>107 km</td><td>6,9/10</td></tr>
+				<tr><td>Embalse el Burguillo / Embalse de Burgillos (Ávila)</td><td>Playa de embalse</td><td>109 km</td><td>9/10 (hasta 145 opiniones)</td></tr>
+				<tr><td>Playa Fluvial Pradera (Zamora)</td><td>Playa fluvial</td><td>110 km</td><td>9,2/10 (53 opiniones)</td></tr>
+				<tr><td>Playa Fluvial de El Tamaral (Zamora)</td><td>Playa fluvial</td><td>116 km</td><td>9/10 (50 opiniones)</td></tr>
+				<tr><td><b>Aveiro / Costa Nova (Portugal)</b></td><td><b>Mar (océano Atlántico)</b></td><td><b>~308 km / ~3 h</b></td><td>Referencia</td></tr>
+				<tr><td><b>Gijón - San Lorenzo (Asturias)</b></td><td><b>Mar (Cantábrico)</b></td><td><b>~336-360 km / ~3 h 15</b></td><td>Referencia</td></tr>
+				<tr><td><b>Santander - El Sardinero (Cantabria)</b></td><td><b>Mar (Cantábrico)</b></td><td><b>~360-400 km / ~4 h</b></td><td>Referencia</td></tr>
+			  </tbody>
+			</table>
+			</div>
+
+			{% include categories.html %}
+
+        </div>
+    </section>
+
+	<!-- Hojas de estilo y scripts de Leaflet -->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+	<script>
+    const mapPlayas = L.map('mapaPlayas').setView([41.6, -6.3], 6);
+
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/light_all/{z}/{x}/{y}{r}.png?key=cb1_2izw_1_55d93b51ded1dcecfa044181', {
+      attribution: '&copy; OpenStreetMap &copy; CARTO',
+      subdomains: 'abcd',
+      maxZoom: 19
+    }).addTo(mapPlayas);
+
+    L.marker([40.9701, -5.6635]).addTo(mapPlayas).bindPopup('<b>Salamanca</b>');
+
+    const playasCercanas = [
+      { name: 'Playa Fluvial de Ricobayo', lat: 41.5389, lng: -5.7867, desc: '69 km · 8,4/10 · 461 opiniones' },
+      { name: 'Playa Fluvial Burganes', lat: 41.9500, lng: -5.9000, desc: '107 km · 9/10 · 134 opiniones' },
+      { name: 'Playa Fluvial Pradera', lat: 41.9700, lng: -5.9300, desc: '110 km · 9,2/10 · 53 opiniones' },
+      { name: 'Playa Fluvial de El Tamaral', lat: 41.9800, lng: -5.8800, desc: '116 km · 9/10 · 50 opiniones' },
+      { name: 'Embalse de Burgillos / El Burguillo', lat: 40.4200, lng: -4.9300, desc: '109 km · 9/10' },
+      { name: 'Camping Pantano del Burguillo', lat: 40.4150, lng: -4.9350, desc: '107 km · 6,9/10' }
+    ];
+
+    playasCercanas.forEach(p => {
+      L.circleMarker([p.lat, p.lng], {
+        radius: 8,
+        color: '#1E56A0',
+        fillColor: '#1E56A0',
+        fillOpacity: 0.7
+      }).bindPopup(`<b>${p.name}</b><br>${p.desc}`).addTo(mapPlayas);
+    });
+
+    const playasReferencia = [
+      { name: 'Praia da Costa Nova (Aveiro, Portugal)', lat: 40.5928, lng: -8.7484, desc: '~308 km desde Salamanca' },
+      { name: 'Praia da Barra (Aveiro, Portugal)', lat: 40.6355, lng: -8.7513, desc: '~308 km desde Salamanca' },
+      { name: 'San Lorenzo (Gijón, Asturias)', lat: 43.5410, lng: -5.6467, desc: '~336-360 km desde Salamanca' },
+      { name: 'El Sardinero (Santander, Cantabria)', lat: 43.4739, lng: -3.7869, desc: '~360-400 km desde Salamanca' },
+      { name: 'Playa de Gulpiyuri (Llanes, Asturias)', lat: 43.4631, lng: -4.9298, desc: 'Referencia de la costa asturiana' },
+      { name: 'Playa de las Catedrales (Ribadeo, Lugo)', lat: 43.5610, lng: -7.1660, desc: 'Referencia de la costa gallega' }
+    ];
+
+    playasReferencia.forEach(p => {
+      L.circleMarker([p.lat, p.lng], {
+        radius: 8,
+        color: '#E63946',
+        fillColor: '#E63946',
+        fillOpacity: 0.7
+      }).bindPopup(`<b>${p.name}</b><br>${p.desc}`).addTo(mapPlayas);
+    });
+
+    const ctxDistancias = document.getElementById('distanciasChart').getContext('2d');
+    new Chart(ctxDistancias, {
+      type: 'bar',
+      data: {
+        labels: [
+          'Fluvial de Ricobayo (Zamora)',
+          'Fluvial Burganes (Zamora)',
+          'Pantano del Burguillo (Ávila)',
+          'Fluvial Pradera (Zamora)',
+          'Embalse de Burgillos (Ávila)',
+          'Fluvial de El Tamaral (Zamora)',
+          'Aveiro / Costa Nova (Portugal)',
+          'Gijón - San Lorenzo (Asturias)',
+          'Santander - El Sardinero (Cantabria)'
+        ],
+        datasets: [{
+          label: 'Distancia desde Salamanca (km)',
+          data: [69, 107, 107, 110, 109, 116, 308, 350, 380],
+          backgroundColor: ['#1E56A0','#1E56A0','#1E56A0','#1E56A0','#1E56A0','#1E56A0','#E63946','#E63946','#E63946'],
+          borderRadius: 4
+        }]
+      },
+      options: {
+        indexAxis: 'y',
+        responsive: true,
+        plugins: {
+          legend: { display: false },
+          title: { display: true, text: 'Azul: playas fluviales cercanas · Rojo: referencia real de mar abierto', font: { size: 13 } }
+        },
+        scales: {
+          x: { beginAtZero: true, title: { display: true, text: 'Kilómetros desde Salamanca' } }
+        }
+      }
+    });
+  </script>
