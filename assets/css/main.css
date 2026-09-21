@@ -871,6 +871,35 @@ tfoot td {
         display: block;
         overflow-x: auto;
         white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+        /* Mobile browsers hide the native scrollbar on touch-scrollable elements
+           until actively dragged, so a wide table looks like a dead end unless we
+           also spell it out — hence the "Desliza..." hint below. This custom bar
+           is a bonus for the browsers that do respect it (desktop, some Android). */
+        scrollbar-width: thin;
+        scrollbar-color: var(--primary-color) transparent;
+    }
+
+    table::-webkit-scrollbar {
+        height: 6px;
+    }
+
+    table::-webkit-scrollbar-thumb {
+        background-color: var(--primary-color);
+        border-radius: 3px;
+    }
+
+    /* Text hint since the scrollbar itself may be invisible until touched.
+       #section-table wraps every content table (sometimes more than one per
+       page), so this covers all of them without touching individual pages. */
+    #section-table::after {
+        content: "↔ Desliza la tabla para ver el resto de columnas";
+        display: block;
+        margin-top: var(--spacing-sm);
+        text-align: center;
+        font-size: 0.8rem;
+        font-style: italic;
+        color: var(--neutral-color);
     }
 }
 
