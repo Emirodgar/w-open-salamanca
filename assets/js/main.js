@@ -477,6 +477,7 @@ class OpenSalamanca {
             'Medio Ambiente': '🌱',
             'Cultura y Ocio': '🎭',
             'Hacienda Local': '🏛️',
+            'Politica': '🗳️',
             'Cultura': '🎭',
             'Deportes': '⚽',
             'Salud': '🏥',
