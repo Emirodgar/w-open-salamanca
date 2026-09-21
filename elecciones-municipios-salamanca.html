@@ -3,7 +3,7 @@ layout: default
 title: Resultados electorales por municipio en la provincia de Salamanca
 description: Mapa interactivo del partido más votado en cada uno de los 362 municipios salmantinos, con datos oficiales del Ministerio del Interior y comparativa entre convocatorias
 date: 21-09-2026
-folder: Cultura y Ocio
+folder: Politica
 permalink: elecciones-municipios-salamanca
 ---
 
@@ -40,7 +40,7 @@ permalink: elecciones-municipios-salamanca
   <canvas id="totalesChart" width="800" height="400"></canvas>
 
 				<h2>Cómo leer este mapa</h2>
-				<p>Cada círculo representa un municipio de la provincia de Salamanca; su tamaño es proporcional a la población y su color corresponde al partido más votado en ese municipio en la convocatoria seleccionada. Al pulsar sobre un municipio se despliega el detalle completo de votos por candidatura, el censo y la participación. Los datos proceden directamente de los ficheros oficiales de resultados por municipio que publica el <b>Ministerio del Interior</b> en <a href="https://infoelectoral.interior.gob.es" target="_blank" rel="noopener">infoelectoral.interior.gob.es</a>, agregados aquí únicamente para los 362 municipios de la provincia de Salamanca.</p>
+				<p>Cada círculo representa un municipio de la provincia de Salamanca; su tamaño es proporcional a la población (o al censo electoral cuando la fuente no publica población de derecho, como en las autonómicas) y su color corresponde al partido más votado en ese municipio en la convocatoria seleccionada. Los municipios en gris son aquellos sin ningún voto válido a candidaturas (todo su escrutinio fue en blanco o nulo). Al pulsar sobre un municipio se despliega el detalle completo de votos por candidatura, el censo y la participación. Los datos de elecciones generales, municipales, al Senado y europeas proceden de los ficheros oficiales de resultados por municipio que publica el <b>Ministerio del Interior</b> en <a href="https://infoelectoral.interior.gob.es" target="_blank" rel="noopener">infoelectoral.interior.gob.es</a>; los de las elecciones autonómicas a las Cortes de Castilla y León proceden del portal de datos abiertos de la <b>Junta de Castilla y León</b>, agregados aquí desde el detalle por mesa electoral hasta los 362 municipios de la provincia.</p>
 
 				<p>El selector "Comparar con" permite elegir una segunda convocatoria: en ese modo, el color de cada municipio pasa a indicar qué partido más ha subido en porcentaje de voto entre ambas elecciones, y el tamaño del círculo refleja la magnitud de ese cambio. Este visor está pensado para crecer: cada nueva convocatoria (generales, autonómicas, municipales o europeas) se incorpora como un fichero adicional, de modo que con el tiempo será posible comparar la evolución del voto municipio a municipio a través de varias elecciones.</p>
 
@@ -133,11 +133,24 @@ permalink: elecciones-municipios-salamanca
 
 			Object.entries(eleccion.municipios).forEach(([codigo, m]) => {
 				const c = coords[codigo];
-				if (!c || !m.resultados.length) return;
+				if (!c) return;
+				const participacion = pct(m.votantes, m.censo);
+
+				if (!m.resultados.length) {
+					// Municipio con votantes pero sin ningún voto válido a candidaturas (p. ej. todos en blanco).
+					L.circleMarker([c.lat, c.lng], {
+						radius: radioPorPoblacion(m.poblacion),
+						weight: 1,
+						color: '#fff',
+						fillColor: COLOR_DEFECTO,
+						fillOpacity: 0.6
+					}).bindPopup(`<b>${m.nombre}</b><br>Censo: ${m.censo.toLocaleString('es-ES')} · Participación: ${participacion}%<br><span style="color:#777;">Sin votos válidos a candidaturas (blancos/nulos)</span>`).addTo(capaMunicipios);
+					return;
+				}
+
 				const ganador = m.resultados[0];
 				conteoGanados[ganador.siglas] = (conteoGanados[ganador.siglas] || 0) + 1;
 				const totalValidos = m.resultados.reduce((s, r) => s + r.votos, 0);
-				const participacion = pct(m.votantes, m.censo);
 
 				let popup = `<b>${m.nombre}</b><br>Censo: ${m.censo.toLocaleString('es-ES')} · Participación: ${participacion}%<br><table style="margin-top:6px;font-size:12px;">`;
 				m.resultados.slice(0, 6).forEach(r => {
