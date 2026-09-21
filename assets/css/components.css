@@ -513,8 +513,8 @@
     font-size: 0.875rem;
 }
 
-/* The dataset section normally reserves 80px of top padding to clear the
-   fixed header (see .dataset rule) — when a breadcrumb precedes it, the
+/* The dataset section normally reserves --header-height of top padding to clear
+   the fixed header (see .dataset rule) — when a breadcrumb precedes it, the
    breadcrumb itself already clears the header, so that extra offset would
    just add a second gap. */
 body.has-breadcrumb .dataset {
