@@ -14,6 +14,13 @@
     "archivo": "elecciones/generales-2023-07.json"
   },
   {
+    "id": "senado-2023-07",
+    "tipo": "Senado",
+    "fecha": "2023-07-23",
+    "etiqueta": "Senado, 23 de julio de 2023",
+    "archivo": "elecciones/senado-2023-07.json"
+  },
+  {
     "id": "municipales-2023-05",
     "tipo": "Municipales",
     "fecha": "2023-05-28",
