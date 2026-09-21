@@ -296,7 +296,11 @@ permalink: elecciones-municipios-salamanca
 			const eleccionA = await cargarEleccion(idPrincipal);
 			if (idComparar) {
 				const eleccionB = await cargarEleccion(idComparar);
-				pintarModoComparar(eleccionA, eleccionB);
+				// "Sube/baja" siempre se calcula en orden cronológico (de la convocatoria más antigua a la
+				// más reciente), sea cual sea cuál de las dos se eligió como principal o como comparación.
+				const [antigua, reciente] = new Date(eleccionA.fecha) <= new Date(eleccionB.fecha)
+					? [eleccionA, eleccionB] : [eleccionB, eleccionA];
+				pintarModoComparar(antigua, reciente);
 			} else {
 				pintarModoGanador(eleccionA);
 			}

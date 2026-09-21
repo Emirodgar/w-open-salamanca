@@ -40,5 +40,12 @@
     "fecha": "2019-11-10",
     "etiqueta": "Generales, 10 de noviembre de 2019",
     "archivo": "elecciones/generales-2019-11.json"
+  },
+  {
+    "id": "municipales-2019-05",
+    "tipo": "Municipales",
+    "fecha": "2019-05-26",
+    "etiqueta": "Municipales, 26 de mayo de 2019",
+    "archivo": "elecciones/municipales-2019-05.json"
   }
 ]
