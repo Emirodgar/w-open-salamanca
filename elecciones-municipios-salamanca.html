@@ -1,0 +1,319 @@
+---
+layout: default
+title: Resultados electorales por municipio en la provincia de Salamanca
+description: Mapa interactivo del partido más votado en cada uno de los 362 municipios salmantinos, con datos oficiales del Ministerio del Interior y comparativa entre convocatorias
+date: 21-09-2026
+folder: Cultura y Ocio
+permalink: elecciones-municipios-salamanca
+---
+
+    <!-- Featured Datasets Section -->
+    <section class="featured dataset" id="datos">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="section-title">{{ page.title }}</h1>
+                <p class="section-description">{{ page.description }}</p>
+            </div>
+
+			<div id="section-content">
+
+				<div class="capas-controles">
+					<div class="capas-grupo">
+						<h3 class="capas-grupo-title">Convocatoria</h3>
+						<select id="selectorEleccion" class="capas-select"></select>
+					</div>
+					<div class="capas-grupo">
+						<h3 class="capas-grupo-title">Comparar con</h3>
+						<select id="selectorComparar" class="capas-select">
+							<option value="">Ninguna (ver partido ganador)</option>
+						</select>
+					</div>
+				</div>
+
+				<div id="mapaElecciones" class="bus-map-canvas"></div>
+
+				<div id="leyendaElecciones" class="capas-leyenda" style="display:flex; flex-wrap:wrap; gap:10px; margin:14px 0;"></div>
+
+				<p class="bus-map-nota" id="notaElecciones">Cargando datos electorales&hellip;</p>
+
+  <h2 id="tituloGrafico">Resultado agregado en la provincia</h2>
+  <canvas id="totalesChart" width="800" height="400"></canvas>
+
+				<h2>Cómo leer este mapa</h2>
+				<p>Cada círculo representa un municipio de la provincia de Salamanca; su tamaño es proporcional a la población y su color corresponde al partido más votado en ese municipio en la convocatoria seleccionada. Al pulsar sobre un municipio se despliega el detalle completo de votos por candidatura, el censo y la participación. Los datos proceden directamente de los ficheros oficiales de resultados por municipio que publica el <b>Ministerio del Interior</b> en <a href="https://infoelectoral.interior.gob.es" target="_blank" rel="noopener">infoelectoral.interior.gob.es</a>, agregados aquí únicamente para los 362 municipios de la provincia de Salamanca.</p>
+
+				<p>El selector "Comparar con" permite elegir una segunda convocatoria: en ese modo, el color de cada municipio pasa a indicar qué partido más ha subido en porcentaje de voto entre ambas elecciones, y el tamaño del círculo refleja la magnitud de ese cambio. Este visor está pensado para crecer: cada nueva convocatoria (generales, autonómicas, municipales o europeas) se incorpora como un fichero adicional, de modo que con el tiempo será posible comparar la evolución del voto municipio a municipio a través de varias elecciones.</p>
+
+			</div>
+
+			<div id="section-table">
+			<h3 id="tituloTabla">Resultado por partido en toda la provincia</h3>
+			<table border="1" cellpadding="5" cellspacing="0" id="tablaTotales">
+			  <thead>
+				<tr>
+				  <th>Partido</th>
+				  <th>Votos</th>
+				  <th>% sobre votos válidos</th>
+				  <th>Municipios ganados</th>
+				</tr>
+			  </thead>
+			  <tbody id="tablaTotalesBody">
+			  </tbody>
+			</table>
+			<p style="font-size:0.85em;color:#777;margin-top:10px;">Fuente: Ministerio del Interior, ficheros oficiales de resultados por municipio (ámbito "Municipio", ronda única). Coordenadas de los municipios: Wikidata.</p>
+			</div>
+
+			{% include categories.html %}
+
+        </div>
+    </section>
+
+	<!-- Hojas de estilo y scripts de Leaflet -->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+	<script>
+	(function () {
+		const mapa = L.map('mapaElecciones').setView([40.85, -6.15], 9);
+		L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/light_all/{z}/{x}/{y}{r}.png?key=cb1_2izw_1_55d93b51ded1dcecfa044181', {
+			attribution: '&copy; OpenStreetMap &copy; CARTO',
+			maxZoom: 19
+		}).addTo(mapa);
+
+		// Paleta fija para los partidos más habituales; el resto usa un color genérico estable por sigla.
+		const COLORES_PARTIDO = {
+			'PP': '#1E56A0',
+			'PSOE': '#A8201A',
+			'VOX': '#2C5F2D',
+			'SUMAR': '#7B2D8B',
+			'UP': '#7B2D8B',
+			'PODEMOS': '#7B2D8B',
+			'CS': '#F4A261',
+			'FO': '#264653',
+			'ESPAÑA VACIADA': '#8D6E63',
+			'PACMA': '#5B8C5A'
+		};
+		const COLOR_DEFECTO = '#9a9a9a';
+		function colorPartido(siglas) {
+			if (COLORES_PARTIDO[siglas]) return COLORES_PARTIDO[siglas];
+			// Color estable a partir de la sigla, para partidos minoritarios no listados arriba.
+			let hash = 0;
+			for (let i = 0; i < siglas.length; i++) hash = siglas.charCodeAt(i) + ((hash << 5) - hash);
+			const hue = Math.abs(hash) % 360;
+			return `hsl(${hue}, 45%, 45%)`;
+		}
+
+		let coords = {};
+		let indiceElecciones = [];
+		let cacheElecciones = {};
+		let capaMunicipios = L.layerGroup().addTo(mapa);
+		let totalesChart = null;
+
+		function pct(v, total) { return total > 0 ? (100 * v / total).toFixed(1) : '0.0'; }
+
+		function radioPorPoblacion(pob) {
+			return Math.max(4, Math.min(22, Math.sqrt(pob) * 0.45));
+		}
+
+		async function cargarEleccion(id) {
+			if (cacheElecciones[id]) return cacheElecciones[id];
+			const meta = indiceElecciones.find(e => e.id === id);
+			const data = await fetch('/' + meta.archivo + '?v=' + Date.now(), { cache: 'no-store' }).then(r => r.json());
+			cacheElecciones[id] = data;
+			return data;
+		}
+
+		function pintarModoGanador(eleccion) {
+			document.getElementById('tituloGrafico').textContent = 'Resultado agregado en la provincia — ' + eleccion.etiqueta;
+			document.getElementById('tituloTabla').textContent = 'Resultado por partido en toda la provincia — ' + eleccion.etiqueta;
+
+			capaMunicipios.clearLayers();
+			const conteoGanados = {};
+
+			Object.entries(eleccion.municipios).forEach(([codigo, m]) => {
+				const c = coords[codigo];
+				if (!c || !m.resultados.length) return;
+				const ganador = m.resultados[0];
+				conteoGanados[ganador.siglas] = (conteoGanados[ganador.siglas] || 0) + 1;
+				const totalValidos = m.resultados.reduce((s, r) => s + r.votos, 0);
+				const participacion = pct(m.votantes, m.censo);
+
+				let popup = `<b>${m.nombre}</b><br>Censo: ${m.censo.toLocaleString('es-ES')} · Participación: ${participacion}%<br><table style="margin-top:6px;font-size:12px;">`;
+				m.resultados.slice(0, 6).forEach(r => {
+					popup += `<tr><td style="padding-right:8px;"><span style="display:inline-block;width:9px;height:9px;border-radius:50%;background:${colorPartido(r.siglas)};margin-right:4px;"></span>${r.siglas}</td><td style="text-align:right;">${r.votos.toLocaleString('es-ES')}</td><td style="text-align:right;color:#777;">(${pct(r.votos, totalValidos)}%)</td></tr>`;
+				});
+				popup += '</table>';
+
+				L.circleMarker([c.lat, c.lng], {
+					radius: radioPorPoblacion(m.poblacion),
+					weight: 1,
+					color: '#fff',
+					fillColor: colorPartido(ganador.siglas),
+					fillOpacity: 0.85
+				}).bindPopup(popup).addTo(capaMunicipios);
+			});
+
+			// Leyenda
+			const leyenda = document.getElementById('leyendaElecciones');
+			leyenda.innerHTML = '';
+			Object.entries(conteoGanados).sort((a, b) => b[1] - a[1]).forEach(([siglas, n]) => {
+				const item = document.createElement('span');
+				item.style.cssText = 'display:inline-flex;align-items:center;gap:6px;font-size:13px;';
+				item.innerHTML = `<span style="width:13px;height:13px;border-radius:50%;background:${colorPartido(siglas)};display:inline-block;"></span>${siglas} — ${n} municipio${n === 1 ? '' : 's'}`;
+				leyenda.appendChild(item);
+			});
+
+			document.getElementById('notaElecciones').innerHTML = `Municipio más votado por partido en <b>${eleccion.etiqueta}</b>. El tamaño de cada círculo es proporcional a la población del municipio. Fuente: Ministerio del Interior.`;
+
+			// Gráfico y tabla de totales provinciales
+			const totales = eleccion.totales_provincia;
+			const totalGeneral = Object.values(totales).reduce((a, b) => a + b, 0);
+			const entradas = Object.entries(totales).sort((a, b) => b[1] - a[1]).slice(0, 10);
+
+			pintarGraficoTotales(entradas.map(e => e[0]), entradas.map(e => e[1]), entradas.map(e => colorPartido(e[0])));
+
+			const tbody = document.getElementById('tablaTotalesBody');
+			tbody.innerHTML = '';
+			entradas.forEach(([siglas, votos]) => {
+				const tr = document.createElement('tr');
+				tr.innerHTML = `<td><span style="display:inline-block;width:11px;height:11px;border-radius:50%;background:${colorPartido(siglas)};margin-right:6px;"></span>${siglas}</td><td>${votos.toLocaleString('es-ES')}</td><td>${pct(votos, totalGeneral)}%</td><td>${conteoGanados[siglas] || 0}</td>`;
+				tbody.appendChild(tr);
+			});
+		}
+
+		function pintarModoComparar(eleccionA, eleccionB) {
+			document.getElementById('tituloGrafico').textContent = `Variación de voto por partido — ${eleccionA.etiqueta} → ${eleccionB.etiqueta}`;
+			document.getElementById('tituloTabla').textContent = `Cambio de votos por partido en toda la provincia — ${eleccionA.etiqueta} → ${eleccionB.etiqueta}`;
+
+			capaMunicipios.clearLayers();
+			const conteoSube = {};
+			const cambiosProvincia = {};
+
+			Object.entries(eleccionB.municipios).forEach(([codigo, mB]) => {
+				const mA = eleccionA.municipios[codigo];
+				const c = coords[codigo];
+				if (!c || !mA || !mB.resultados.length || !mA.resultados.length) return;
+
+				const totalA = mA.resultados.reduce((s, r) => s + r.votos, 0);
+				const totalB = mB.resultados.reduce((s, r) => s + r.votos, 0);
+				const shareA = {};
+				mA.resultados.forEach(r => { shareA[r.siglas] = 100 * r.votos / (totalA || 1); });
+
+				let mejorPartido = null, mejorDelta = -Infinity;
+				const deltas = [];
+				mB.resultados.forEach(r => {
+					const sB = 100 * r.votos / (totalB || 1);
+					const sA = shareA[r.siglas] || 0;
+					const delta = sB - sA;
+					deltas.push({ siglas: r.siglas, delta, sA, sB });
+					if (delta > mejorDelta) { mejorDelta = delta; mejorPartido = r.siglas; }
+					cambiosProvincia[r.siglas] = (cambiosProvincia[r.siglas] || 0) + (r.votos - (mA.resultados.find(x => x.siglas === r.siglas)?.votos || 0));
+				});
+				if (!mejorPartido) return;
+				conteoSube[mejorPartido] = (conteoSube[mejorPartido] || 0) + 1;
+				deltas.sort((a, b) => b.delta - a.delta);
+
+				let popup = `<b>${mB.nombre}</b><br><span style="font-size:11px;color:#777;">Variación de cuota de voto (puntos porcentuales)</span><table style="margin-top:6px;font-size:12px;">`;
+				deltas.slice(0, 6).forEach(d => {
+					const signo = d.delta >= 0 ? '+' : '';
+					popup += `<tr><td style="padding-right:8px;"><span style="display:inline-block;width:9px;height:9px;border-radius:50%;background:${colorPartido(d.siglas)};margin-right:4px;"></span>${d.siglas}</td><td style="text-align:right;">${d.sA.toFixed(1)}% → ${d.sB.toFixed(1)}%</td><td style="text-align:right;font-weight:600;color:${d.delta >= 0 ? '#2C5F2D' : '#A8201A'};">${signo}${d.delta.toFixed(1)}</td></tr>`;
+				});
+				popup += '</table>';
+
+				L.circleMarker([c.lat, c.lng], {
+					radius: Math.max(4, Math.min(22, Math.abs(mejorDelta) * 1.1 + 4)),
+					weight: 1,
+					color: '#fff',
+					fillColor: colorPartido(mejorPartido),
+					fillOpacity: 0.85
+				}).bindPopup(popup).addTo(capaMunicipios);
+			});
+
+			const leyenda = document.getElementById('leyendaElecciones');
+			leyenda.innerHTML = '';
+			Object.entries(conteoSube).sort((a, b) => b[1] - a[1]).forEach(([siglas, n]) => {
+				const item = document.createElement('span');
+				item.style.cssText = 'display:inline-flex;align-items:center;gap:6px;font-size:13px;';
+				item.innerHTML = `<span style="width:13px;height:13px;border-radius:50%;background:${colorPartido(siglas)};display:inline-block;"></span>${siglas} sube en ${n} municipio${n === 1 ? '' : 's'}`;
+				leyenda.appendChild(item);
+			});
+
+			document.getElementById('notaElecciones').innerHTML = `Color: partido que más sube en cuota de voto en cada municipio entre <b>${eleccionA.etiqueta}</b> y <b>${eleccionB.etiqueta}</b>. Tamaño del círculo: magnitud del cambio.`;
+
+			const entradas = Object.entries(cambiosProvincia).sort((a, b) => Math.abs(b[1]) - Math.abs(a[1])).slice(0, 10);
+			pintarGraficoTotales(entradas.map(e => e[0]), entradas.map(e => e[1]), entradas.map(e => colorPartido(e[0])), true);
+
+			const tbody = document.getElementById('tablaTotalesBody');
+			tbody.innerHTML = '';
+			entradas.forEach(([siglas, delta]) => {
+				const signo = delta >= 0 ? '+' : '';
+				tbody.innerHTML += `<tr><td><span style="display:inline-block;width:11px;height:11px;border-radius:50%;background:${colorPartido(siglas)};margin-right:6px;"></span>${siglas}</td><td colspan="2">${signo}${delta.toLocaleString('es-ES')} votos en toda la provincia</td><td>${conteoSube[siglas] || 0} municipios donde más sube</td></tr>`;
+			});
+		}
+
+		function pintarGraficoTotales(labels, valores, colores, esVariacion) {
+			if (totalesChart) totalesChart.destroy();
+			const ctx = document.getElementById('totalesChart').getContext('2d');
+			totalesChart = new Chart(ctx, {
+				type: 'bar',
+				data: {
+					labels,
+					datasets: [{
+						label: esVariacion ? 'Variación de votos' : 'Votos',
+						data: valores,
+						backgroundColor: colores,
+						borderRadius: 4
+					}]
+				},
+				options: {
+					indexAxis: 'y',
+					responsive: true,
+					plugins: { legend: { display: false } },
+					scales: { x: { beginAtZero: !esVariacion, title: { display: true, text: esVariacion ? 'Variación de votos' : 'Votos' } } }
+				}
+			});
+		}
+
+		async function actualizarVista() {
+			const idPrincipal = document.getElementById('selectorEleccion').value;
+			const idComparar = document.getElementById('selectorComparar').value;
+			const eleccionA = await cargarEleccion(idPrincipal);
+			if (idComparar) {
+				const eleccionB = await cargarEleccion(idComparar);
+				pintarModoComparar(eleccionA, eleccionB);
+			} else {
+				pintarModoGanador(eleccionA);
+			}
+		}
+
+		Promise.all([
+			fetch('/municipios-salamanca-coords.json?v=' + Date.now(), { cache: 'no-store' }).then(r => r.json()),
+			fetch('/elecciones/index.json?v=' + Date.now(), { cache: 'no-store' }).then(r => r.json())
+		]).then(([coordsData, indexData]) => {
+			coords = coordsData;
+			indiceElecciones = indexData;
+
+			const selEleccion = document.getElementById('selectorEleccion');
+			const selComparar = document.getElementById('selectorComparar');
+			indiceElecciones.forEach(e => {
+				const opt1 = document.createElement('option');
+				opt1.value = e.id; opt1.textContent = e.etiqueta;
+				selEleccion.appendChild(opt1);
+				const opt2 = document.createElement('option');
+				opt2.value = e.id; opt2.textContent = e.etiqueta;
+				selComparar.appendChild(opt2);
+			});
+			if (indiceElecciones.length < 2) {
+				selComparar.disabled = true;
+				selComparar.title = 'Se podrá comparar en cuanto haya más de una convocatoria cargada';
+			}
+
+			selEleccion.addEventListener('change', actualizarVista);
+			selComparar.addEventListener('change', actualizarVista);
+
+			actualizarVista();
+		}).catch(err => {
+			console.error('No se pudieron cargar los datos electorales', err);
+			document.getElementById('notaElecciones').textContent = 'No se han podido cargar los datos electorales.';
+		});
+	})();
+	</script>
