@@ -1,0 +1,238 @@
+{
+  "metadata": {
+    "titulo": "Impuestos municipales del Ayuntamiento de Salamanca (ejercicio fiscal 2026)",
+    "descripcion": "Ficha de los 5 impuestos municipales que la Ley Reguladora de las Haciendas Locales (TRLRHL, Real Decreto Legislativo 2/2004) permite o exige cobrar a los ayuntamientos, aplicados específicamente por el Ayuntamiento de Salamanca (capital), con sus tipos impositivos vigentes, bonificaciones y plazos de pago. No incluye tasas ni precios públicos (agua, basuras, licencias, aparcamiento, transporte, etc.), que son una figura tributaria distinta.",
+    "fecha_elaboracion": "2026-09-21",
+    "metodologia": "Los tipos impositivos, exenciones y bonificaciones de cada impuesto se han extraído directamente del texto íntegro de las Ordenanzas Fiscales números 1 a 5 del Ayuntamiento de Salamanca, publicadas y descargadas en PDF desde la sede del OAGER (Organismo Autónomo de Gestión Económica y Recaudación del Excmo. Ayuntamiento de Salamanca), que es el propio ente municipal encargado de la gestión y recaudación tributaria y por tanto fuente primaria oficial. Se han contrastado además con noticias de prensa local (Salamanca24horas, Tribuna de Salamanca) que recogen la aprobación del proyecto de ordenanzas para 2026 y con la propia nota de prensa del Ayuntamiento de Salamanca (aytosalamanca.es). Cuando un dato concreto (p. ej. fechas exactas del calendario de cobro 2026) no ha podido verificarse en una fuente primaria con fecha exacta, se indica explícitamente como 'no confirmado'.",
+    "hallazgo_relevante": "Según la propia nota de prensa del Ayuntamiento de Salamanca y la prensa local, el Ayuntamiento congela por DUODÉCIMO AÑO CONSECUTIVO (desde aproximadamente 2015) los 5 impuestos municipales para el ejercicio 2026: no sube ni el IBI, ni el IAE, ni el IVTM, ni el ICIO, ni la Plusvalía/IIVTNU. Esto explica por qué el texto vigente de varias ordenanzas fiscales (tal y como se publica en el ejercicio 2026 en la sede del OAGER) tiene 'disposición final' con fecha de entrada en vigor de 2024 o 2025: al no haber cambios de tipo impositivo, el ayuntamiento no ha tenido necesidad de republicar con una nueva fecha el texto de la ordenanza para 2026, y el texto de años anteriores sigue vigente.",
+    "discrepancia_detectada_y_resuelta": "Una búsqueda inicial devolvió un resumen (de un motor de búsqueda, no de una fuente primaria) que afirmaba que el tipo del IBI urbana para 2026 habría bajado a 0,681% (-4,35% respecto a 0,7125%). Este dato NO se ha podido confirmar: ni el texto oficial de la Ordenanza Fiscal núm. 1 del OAGER (vigente para 2026) ni la web guiafiscal.es lo corroboran; ambas fuentes, de forma consistente entre sí y con la política de 'congelación de impuestos' anunciada por el propio Ayuntamiento para 2026, indican que el tipo del IBI urbana permanece en 0,7125%. Se descarta por tanto la cifra de 0,681% por no estar verificada en fuente oficial y se reporta 0,7125% como el dato confirmado.",
+    "fuentes_primarias_ordenanzas_oager": [
+      "https://www.oager.com/oficinavirtual/informacioncontribuyente/ordenanzasfiscales.aspx (índice de ordenanzas fiscales del Ayuntamiento de Salamanca, ejercicio 2026)",
+      "https://www.oager.com/verDoc.aspx?doc=1026&tipo=6 (Ordenanza Fiscal núm. 1, IBI)",
+      "https://www.oager.com/verDoc.aspx?doc=1027&tipo=6 (Ordenanza Fiscal núm. 2, IVTM)",
+      "https://www.oager.com/verDoc.aspx?doc=1028&tipo=6 (Ordenanza Fiscal núm. 3, IIVTNU/Plusvalía)",
+      "https://www.oager.com/verDoc.aspx?doc=1029&tipo=6 (Ordenanza Fiscal núm. 4, IAE)",
+      "https://www.oager.com/verDoc.aspx?doc=1030&tipo=6 (Ordenanza Fiscal núm. 5, ICIO)"
+    ],
+    "fuentes_secundarias_contraste": [
+      "https://www.aytosalamanca.es/en/w/el-ayuntamiento-de-salamanca-congelar%C3%A1-por-duod%C3%A9cimo-a%C3%B1o-consecutivo-los-cinco-impuestos-municipales-y-la-pr%C3%A1ctica-totalidad-de-tasas-y-precios-p%C3%BAblicos (nota de prensa oficial del Ayuntamiento de Salamanca)",
+      "https://www.salamanca24horas.com/local/ayuntamiento-salamanca-aprueba-proyecto-ordenanzas_1_2880380.html",
+      "https://www.tribunasalamanca.com/noticias/429106/asi-cambian-los-impuestos-y-tasas-municipales-en-salamanca-en-2026-congelacion-fiscal-y-ajustes-puntuales",
+      "https://guiafiscal.es/patrimonio/ibi/salamanca/",
+      "https://www.oager.com/ciudadano/calendario-tributo.aspx (calendario del contribuyente OAGER, consulta interactiva por tributo)"
+    ],
+    "datos_no_confirmados": [
+      "Fechas exactas del periodo de cobro en voluntaria del IBI para 2026 (la ordenanza remite a que 'se determinará cada año y se anunciará públicamente'; el calendario interactivo de OAGER no pudo consultarse por tributo de forma automatizada). Una fuente secundaria apunta a un periodo aproximado de mayo a julio de 2026, pero no se ha verificado con fecha exacta en fuente primaria.",
+      "Fecha exacta de puesta al cobro del IVTM 2026 (la ordenanza solo fija 'dentro del primer mes de cada ejercicio'; una fuente secundaria apunta al 2 de marzo de 2026, dato no verificado en fuente primaria con fecha exacta).",
+      "Fecha concreta de aprobación definitiva y número/fecha exacta del Boletín Oficial de la Provincia de Salamanca (BOP) en que se publican las ordenanzas fiscales para el ejercicio 2026 (a fecha de esta investigación el proyecto de ordenanzas 2026 había sido aprobado inicialmente por el Pleno, según prensa local, pero no se ha localizado la referencia exacta de BOP de publicación definitiva)."
+    ]
+  },
+  "impuestos": [
+    {
+      "nombre": "Impuesto sobre Bienes Inmuebles",
+      "siglas": "IBI",
+      "caracter": "obligatorio",
+      "ordenanza_fiscal": "Ordenanza Fiscal núm. 1 del Ayuntamiento de Salamanca",
+      "año_disposicion_final_texto_vigente": 2024,
+      "nota_vigencia": "Texto vigente para el ejercicio 2026 según la sede electrónica del OAGER; sin cambios de tipo desde 2024 por la política municipal de congelación de impuestos.",
+      "tipo_impositivo_vigente": {
+        "bienes_urbanos": "0,7125%",
+        "bienes_rusticos": "0,4845%",
+        "bienes_inmuebles_caracteristicas_especiales_BICE": "0,6175%"
+      },
+      "base_imponible": "Valor catastral del inmueble",
+      "exenciones_generales": [
+        "Inmuebles de titularidad estatal/autonómica/local afectos a defensa nacional, seguridad ciudadana, educación o instituciones penitenciarias",
+        "Bienes comunales y montes vecinales en mano común",
+        "Inmuebles de la Iglesia Católica y de confesiones con acuerdo de cooperación",
+        "Cruz Roja Española",
+        "Montes con aprovechamiento principal de madera o corcho, líneas de ferrocarril",
+        "Centros docentes en régimen de concierto educativo (superficie concertada)",
+        "Monumentos o jardines históricos declarados de interés cultural (con matices si hay explotación económica)",
+        "Inmuebles urbanos con cuota líquida inferior a 6 euros; inmuebles rústicos de un mismo sujeto pasivo cuya cuota líquida total sea inferior a 6 euros"
+      ],
+      "bonificaciones_principales": [
+        "90% para inmuebles objeto de la actividad de empresas de urbanización, construcción y promoción inmobiliaria (máx. 3 periodos impositivos, solicitud antes del inicio de obras)",
+        "50% para Viviendas de Protección Oficial (VPO) durante 8 años desde la calificación definitiva, y 25% durante los 2 años siguientes",
+        "95% para bienes rústicos de Cooperativas Agrarias y de Explotación Comunitaria de la Tierra",
+        "90% para familia numerosa sobre la cuota de la vivienda habitual, sujeto a límites de renta familiar en múltiplos del IPREM según el número de miembros (solicitud antes del 31 de enero)",
+        "50% para viviendas con sistema de aprovechamiento térmico o eléctrico de energía solar para ACS y/o calefacción (duración 5 años, bonificación rogada)",
+        "Hasta 95% para inmuebles residenciales destinados a alquiler de vivienda con renta limitada por norma jurídica",
+        "50% durante 5 años para inmuebles con actividad económica empresarial/industrial de especial interés municipal, con inversión mínima de 6.000.000 euros y creación de empleo en Salamanca"
+      ],
+      "plazo_pago": "Periodo de cobro en voluntaria determinado y anunciado públicamente cada año por el Ayuntamiento/OAGER (art. 12 de la Ordenanza). Fecha exacta para 2026 no confirmada en fuente primaria (ver 'datos_no_confirmados' en metadata); una fuente secundaria sitúa el periodo orientativamente entre mayo y julio de 2026.",
+      "cambios_recientes": "Tipo congelado desde al menos 2024, dentro de la política de congelación de los 5 impuestos municipales anunciada por el Ayuntamiento para 2026 (duodécimo año consecutivo sin subidas).",
+      "fuente": [
+        {"titulo": "Ordenanza Fiscal núm. 1, IBI (OAGER, Ayuntamiento de Salamanca)", "url": "https://www.oager.com/verDoc.aspx?doc=1026&tipo=6"},
+        {"titulo": "IBI Salamanca 2026: cuánto pagas y cuándo (tipo 0,7125%)", "url": "https://guiafiscal.es/patrimonio/ibi/salamanca/"},
+        {"titulo": "Nota de prensa: congelación de los 5 impuestos municipales por 12º año consecutivo", "url": "https://www.aytosalamanca.es/en/w/el-ayuntamiento-de-salamanca-congelar%C3%A1-por-duod%C3%A9cimo-a%C3%B1o-consecutivo-los-cinco-impuestos-municipales-y-la-pr%C3%A1ctica-totalidad-de-tasas-y-precios-p%C3%BAblicos"}
+      ]
+    },
+    {
+      "nombre": "Impuesto sobre Actividades Económicas",
+      "siglas": "IAE",
+      "caracter": "obligatorio (aunque la inmensa mayoría de autónomos y pymes está exenta por ley)",
+      "ordenanza_fiscal": "Ordenanza Fiscal núm. 4 del Ayuntamiento de Salamanca",
+      "año_disposicion_final_texto_vigente": 2025,
+      "tipo_impositivo_vigente": {
+        "descripcion": "No existe un 'tipo' único: la cuota resulta de las tarifas estatales del impuesto (RDL 1175/1990) moduladas por dos coeficientes municipales.",
+        "exencion_principal_confirmada": "Personas físicas y sujetos pasivos de Impuesto sobre Sociedades/entidades del art. 35.4 LGT con importe neto de la cifra de negocios inferior a 1.000.000 de euros; también exentos los 2 primeros periodos impositivos de inicio de actividad.",
+        "coeficiente_de_ponderación_segun_cifra_negocio": {
+          "de_1M_a_5M_euros": 1.29,
+          "de_5M_a_10M_euros": 1.30,
+          "de_10M_a_50M_euros": 1.32,
+          "de_50M_a_100M_euros": 1.33,
+          "mas_de_100M_euros": 1.35,
+          "sin_cifra_neta_de_negocio": 1.31
+        },
+        "coeficiente_de_situacion_segun_categoria_de_via_publica": {
+          "categoria_1": 1.1,
+          "categoria_2": 1.0,
+          "categoria_3": 0.9,
+          "categoria_4": 0.8,
+          "categoria_5": 0.7,
+          "categoria_6": 0.6,
+          "categoria_7": 0.5,
+          "nota": "Salamanca clasifica sus vías públicas en 7 categorías fiscales, listadas en el Anexo I de la Ordenanza Fiscal General de Gestión, Recaudación e Inspección (no incluido en el documento consultado)."
+        }
+      },
+      "bonificaciones_principales": [
+        "95% para cooperativas, sus uniones/federaciones/confederaciones y sociedades agrarias de transformación",
+        "50% durante los 5 primeros años en actividades profesionales de la sección segunda de tarifas",
+        "50% (rogada) durante 5 años para quienes inicien actividad empresarial y tributen por cuota municipal",
+        "50% para sujetos pasivos que usen/produzcan energía a partir de renovables o cogeneración",
+        "50% para empresas con plan de transporte colectivo para trabajadores (con requisitos de convenio y participación mínima)",
+        "25% por incremento de plantilla con contrato indefinido igual o superior al 10%",
+        "Reducciones de cuota (hasta 6% por mes) para negocios de la División 6ª afectados por obras en la vía pública de más de 3 meses"
+      ],
+      "plazo_pago": "Recaudación mediante recibo en periodo anual comprendido entre el 1 de octubre y el 30 de noviembre de cada año (art. 16 de la Ordenanza); las altas y bajas se liquidan mediante notificación individual.",
+      "cambios_recientes": "Tipo/coeficientes congelados dentro de la política de congelación de los 5 impuestos municipales para 2026.",
+      "fuente": [
+        {"titulo": "Ordenanza Fiscal núm. 4, IAE (OAGER, Ayuntamiento de Salamanca)", "url": "https://www.oager.com/verDoc.aspx?doc=1029&tipo=6"}
+      ]
+    },
+    {
+      "nombre": "Impuesto sobre Vehículos de Tracción Mecánica",
+      "siglas": "IVTM",
+      "caracter": "obligatorio",
+      "ordenanza_fiscal": "Ordenanza Fiscal núm. 2 del Ayuntamiento de Salamanca",
+      "año_disposicion_final_texto_vigente": 2025,
+      "tipo_impositivo_vigente": {
+        "descripcion": "Cuotas resultantes de aplicar a las tarifas estatales (art. 95 TRLRHL) coeficientes de incremento municipales cercanos al máximo legal (~1,97-2,00 según clase/potencia). Cuotas anuales 2025/2026 vigentes por categoría:",
+        "turismos_euros_por_CV_fiscal": {
+          "menos_de_8_CV": 25.12,
+          "de_8_a_11_99_CV": 67.76,
+          "de_12_a_15_99_CV": 143.88,
+          "de_16_a_19_99_CV": 179.22,
+          "de_20_CV_en_adelante": 224.00
+        },
+        "motocicletas_euros": {
+          "ciclomotores_y_hasta_125cc": 8.73,
+          "de_125_a_250cc": 15.06,
+          "de_250_a_500cc": 30.06,
+          "de_500_a_1000cc": 60.19,
+          "mas_de_1000cc": 120.38
+        },
+        "otras_categorias": "Autobuses (165,46 a 294,54 €), camiones (84,03 a 294,54 €), tractores (35,12 a 165,46 €) y remolques (35,12 a 165,46 €) según plazas/carga útil; ver ordenanza completa para el detalle."
+      },
+      "exenciones": [
+        "Vehículos oficiales adscritos a defensa/seguridad, representaciones diplomáticas, ambulancias",
+        "Vehículos para personas de movilidad reducida (tara ≤350 kg) y vehículos matriculados a nombre de personas con discapacidad ≥33% (limitado a un vehículo por titular)",
+        "Autobuses de transporte público urbano de más de 9 plazas",
+        "Tractores, remolques y maquinaria agrícola con Cartilla de Inspección Agrícola"
+      ],
+      "bonificaciones_principales": [
+        "100% para vehículos históricos (≥50 años) de la Fundación Gómez Planché, o expuestos/cedidos al Museo de la Historia de la Automoción de Salamanca; 50% para históricos de 30 a 49 años en las mismas condiciones",
+        "75% indefinida desde primera matriculación para vehículos de 'Cero emisiones' (eléctricos BEV, REEV, PHEV con autonomía ≥40 km, pila de combustible)",
+        "75% durante 6 años para vehículos clasificados como 'ECO' (híbridos enchufables <40 km, híbridos no enchufables HEV, gas natural GNC/GNL, GLP)",
+        "Bonificaciones aplicables a vehículos matriculados/dados de alta desde el 22 de abril de 2016, de carácter rogado"
+      ],
+      "plazo_pago": "Pago mediante recibo dentro del primer mes de cada ejercicio (art. 8 de la Ordenanza), salvo altas por primera matriculación (prorrateo trimestral). Fecha exacta de puesta al cobro para 2026 no confirmada en fuente primaria; una fuente secundaria indica el 2 de marzo de 2026, sin verificación directa en OAGER.",
+      "cambios_recientes": "Cuotas congeladas dentro de la política municipal de congelación de los 5 impuestos para 2026.",
+      "fuente": [
+        {"titulo": "Ordenanza Fiscal núm. 2, IVTM (OAGER, Ayuntamiento de Salamanca)", "url": "https://www.oager.com/verDoc.aspx?doc=1027&tipo=6"}
+      ]
+    },
+    {
+      "nombre": "Impuesto sobre Construcciones, Instalaciones y Obras",
+      "siglas": "ICIO",
+      "caracter": "potestativo (el Ayuntamiento de Salamanca sí lo aplica)",
+      "ordenanza_fiscal": "Ordenanza Fiscal núm. 5 del Ayuntamiento de Salamanca",
+      "año_disposicion_final_texto_vigente": 2025,
+      "tipo_impositivo_vigente": {
+        "tipo_ordinario": "3,75%",
+        "tipos_reducidos": {
+          "rehabilitacion_y_urbanizacion_en_areas_de_regeneracion_urbana": "0,375%",
+          "rehabilitacion_eficiencia_energetica_y_accesibilidad_edificios_anteriores_a_1996": "1,25%",
+          "obras_obligatorias_por_inspeccion_tecnica_de_edificios_ITE": "1,875%"
+        },
+        "nota": "La base imponible es el coste real y efectivo de la construcción/instalación/obra, excluyendo IVA, honorarios de proyecto/dirección de obra, beneficio industrial y seguridad e higiene."
+      },
+      "exenciones": [
+        "Construcciones, instalaciones u obras del Estado, comunidades autónomas o entidades locales destinadas a carreteras, ferrocarriles, puertos, aeropuertos, obras hidráulicas y saneamiento"
+      ],
+      "bonificaciones_principales": [
+        "90% para obras que favorezcan la habitabilidad de viviendas donde residan personas con discapacidad (excluidas las obras legalmente obligatorias)",
+        "50% para obras en Viviendas de Protección Oficial",
+        "95% para instalaciones de aprovechamiento térmico o eléctrico de energía solar para autoconsumo",
+        "95% para construcciones/instalaciones/obras de especial interés municipal con presupuesto de ejecución material ≥6.000.000 euros que generen empleo en Salamanca",
+        "El límite máximo de bonificación de la cuota íntegra es del 95% en todos los casos, y las distintas bonificaciones no son acumulables entre sí"
+      ],
+      "plazo_pago": "No hay calendario fijo: se autoliquida al conceder la licencia de obras o al presentar la declaración responsable/comunicación previa, con liquidación provisional a cuenta y declaración de coste final a la terminación de la obra (art. 6 de la Ordenanza).",
+      "cambios_recientes": "Tipo ordinario (3,75%) congelado dentro de la política municipal de congelación de impuestos para 2026. Nota: una página informativa de terceros (no oficial) usada en otra sección de este portal citaba erróneamente un tipo del 4,00% para el ICIO; el dato verificado en la ordenanza oficial es 3,75%.",
+      "fuente": [
+        {"titulo": "Ordenanza Fiscal núm. 5, ICIO (OAGER, Ayuntamiento de Salamanca)", "url": "https://www.oager.com/verDoc.aspx?doc=1030&tipo=6"}
+      ]
+    },
+    {
+      "nombre": "Impuesto sobre el Incremento de Valor de los Terrenos de Naturaleza Urbana (Plusvalía Municipal)",
+      "siglas": "IIVTNU",
+      "caracter": "potestativo (el Ayuntamiento de Salamanca sí lo aplica)",
+      "ordenanza_fiscal": "Ordenanza Fiscal núm. 3 del Ayuntamiento de Salamanca",
+      "año_disposicion_final_texto_vigente": 2024,
+      "tipo_impositivo_vigente": {
+        "tipo_de_gravamen_sobre_la_base_imponible": "30% (cuota íntegra = base imponible x 30%)",
+        "calculo_base_imponible": "Base imponible = valor catastral del terreno en el devengo x coeficiente según los años completos transcurridos desde la adquisición anterior (máximo 20 años). Coeficientes actualizados por el art. 24 del Real Decreto-ley 8/2023, de 27 de diciembre, y publicados por Resolución de Alcaldía de 12 de enero de 2024 (BOP de Salamanca nº 55, de 18 de marzo de 2024).",
+        "coeficientes_por_periodo_de_generacion": {
+          "inferior_a_1_año": 0.15,
+          "1_año": 0.15,
+          "2_años": 0.14,
+          "3_años": 0.14,
+          "4_años": 0.16,
+          "5_años": 0.18,
+          "6_años": 0.19,
+          "7_años": 0.20,
+          "8_años": 0.19,
+          "9_años": 0.15,
+          "10_años": 0.12,
+          "11_años": 0.10,
+          "12_años": 0.09,
+          "13_años": 0.09,
+          "14_años": 0.09,
+          "15_años": 0.09,
+          "16_años": 0.10,
+          "17_años": 0.13,
+          "18_años": 0.17,
+          "19_años": 0.23,
+          "igual_o_superior_a_20_años": 0.40
+        },
+        "nota": "Al alternativa 'sistema de estimación directa' (plusvalía real: diferencia entre valor de transmisión y de adquisición) sigue disponible a instancia del sujeto pasivo cuando resulte más favorable, conforme a la reforma de 2021 del TRLRHL tras la STC 182/2021."
+      },
+      "no_sujeto_y_exenciones": [
+        "No sujetas las transmisiones de terrenos rústicos, las aportaciones entre cónyuges a la sociedad conyugal, ni las transmisiones por nulidad/separación/divorcio",
+        "Exenta la transmisión de vivienda habitual por dación en pago o ejecución hipotecaria del deudor/garante, cumpliendo requisitos",
+        "Exentas las transmisiones a favor del Estado, comunidad autónoma, entidades locales, Cruz Roja y entidades gestoras de la Seguridad Social",
+        "No sujeción si se acredita la inexistencia de incremento de valor real (comparando valores de adquisición y transmisión)"
+      ],
+      "bonificaciones_principales": [
+        "95% en transmisiones mortis causa de la vivienda habitual a favor de descendientes/adoptados con discapacidad ≥33% que la mantengan 4 años",
+        "50% en transmisiones mortis causa de terrenos vinculados a actividad económica a favor de descendientes, cónyuge o ascendientes con exención en el Impuesto sobre el Patrimonio, manteniendo el inmueble 3 años"
+      ],
+      "plazo_pago": "Autoliquidación obligatoria: 30 días hábiles desde la transmisión en actos inter vivos; 6 meses (prorrogables a 1 año a solicitud del sujeto pasivo) desde el fallecimiento en transmisiones mortis causa (art. 9 de la Ordenanza).",
+      "cambios_recientes": "Los coeficientes por periodo de generación se actualizaron a los máximos legales fijados por el Real Decreto-ley 8/2023 (BOP Salamanca nº55, 18-03-2024); el tipo de gravamen del 30% permanece congelado dentro de la política municipal de no subida de impuestos.",
+      "fuente": [
+        {"titulo": "Ordenanza Fiscal núm. 3, IIVTNU/Plusvalía Municipal (OAGER, Ayuntamiento de Salamanca)", "url": "https://www.oager.com/verDoc.aspx?doc=1028&tipo=6"}
+      ]
+    }
+  ]
+}
