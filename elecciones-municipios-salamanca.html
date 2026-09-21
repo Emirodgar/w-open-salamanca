@@ -300,18 +300,29 @@ permalink: elecciones-municipios-salamanca
 				const opt1 = document.createElement('option');
 				opt1.value = e.id; opt1.textContent = e.etiqueta;
 				selEleccion.appendChild(opt1);
-				const opt2 = document.createElement('option');
-				opt2.value = e.id; opt2.textContent = e.etiqueta;
-				selComparar.appendChild(opt2);
 			});
-			if (indiceElecciones.length < 2) {
-				selComparar.disabled = true;
-				selComparar.title = 'Se podrá comparar en cuanto haya más de una convocatoria cargada';
+
+			// Solo tiene sentido comparar convocatorias del mismo tipo (Generales con Generales,
+			// Municipales con Municipales...), porque las candidaturas no son las mismas de un tipo a otro.
+			function refrescarOpcionesComparar() {
+				const actual = indiceElecciones.find(e => e.id === selEleccion.value);
+				selComparar.innerHTML = '<option value="">Ninguna (ver partido ganador)</option>';
+				const mismasConvocatorias = indiceElecciones.filter(e => e.tipo === actual.tipo && e.id !== actual.id);
+				mismasConvocatorias.forEach(e => {
+					const opt = document.createElement('option');
+					opt.value = e.id; opt.textContent = e.etiqueta;
+					selComparar.appendChild(opt);
+				});
+				selComparar.disabled = mismasConvocatorias.length === 0;
+				selComparar.title = mismasConvocatorias.length === 0
+					? 'Se podrá comparar en cuanto haya más de una convocatoria del mismo tipo (' + actual.tipo + ') cargada'
+					: '';
 			}
 
-			selEleccion.addEventListener('change', actualizarVista);
+			selEleccion.addEventListener('change', () => { refrescarOpcionesComparar(); actualizarVista(); });
 			selComparar.addEventListener('change', actualizarVista);
 
+			refrescarOpcionesComparar();
 			actualizarVista();
 		}).catch(err => {
 			console.error('No se pudieron cargar los datos electorales', err);
