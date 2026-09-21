@@ -1,0 +1,195 @@
+---
+layout: default
+title: "Concejales del Ayuntamiento de Salamanca: cargos y partidos (2015-2026)"
+description: Todos los concejales de los tres últimos mandatos municipales, con su partido, su cargo y los años exactos en el puesto
+date: 22-09-2026
+folder: Politica
+permalink: concejales-ayuntamiento-salamanca
+---
+
+    <!-- Featured Datasets Section -->
+    <section class="featured dataset" id="datos">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="section-title">{{ page.title }}</h1>
+                <p class="section-description">{{ page.description }}</p>
+            </div>
+
+			<div id="section-content">
+
+				<p>
+El Pleno del Ayuntamiento de Salamanca tiene <b>27 concejales</b>. Esta página recoge a quienes lo han formado en los tres últimos mandatos municipales —<b>2015-2019, 2019-2023 y el actual 2023-2027</b>—, con su partido, su cargo (alcalde, teniente de alcalde, concejal con delegación de gobierno, portavoz de grupo o concejal de la oposición) y el periodo exacto en el que lo ejercieron. El mandato 2015-2019 arrancó unos meses antes de la ventana de "los últimos 10 años", pero se incluye completo por continuidad, ya que partirlo a mitad de legislatura no tendría sentido. Para la trayectoria histórica de los propios alcaldes, consulta <a href="/alcaldes-salamanca">Alcaldes y Gobernabilidad Municipal de Salamanca</a>; para los resultados electorales que dieron lugar a cada uno de estos plenos, consulta el <a href="/elecciones-municipios-salamanca">mapa de resultados electorales por municipio</a>.</p>
+
+			<h2>Evolución del reparto de escaños</h2>
+			<canvas id="escanosChart" width="800" height="380"></canvas>
+
+			<h2>2015-2019: Mañueco cede el testigo a Carbayo a mitad de mandato</h2>
+			<p>Las elecciones de mayo de 2015 dejaron un Pleno muy fragmentado: el PP de <b>Alfonso Fernández Mañueco</b> perdió la mayoría absoluta por primera vez en veinte años y gobernó en minoría con 12 de los 27 escaños, frente a un PSOE con 7, Ciudadanos con 4 y una recién llegada Ganemos Salamanca (confluencia de Podemos, IU y Equo) también con 4. El mandato dio un vuelco inesperado el <b>12 de diciembre de 2018</b>, cuando Mañueco dimitió como alcalde para centrarse en su candidatura a la presidencia de la Junta de Castilla y León; ocho días después, el <b>20 de diciembre</b>, el Pleno investía como nuevo alcalde a quien había sido su primer teniente de alcalde, <b>Carlos García Carbayo</b>, que completaría el resto del mandato hasta las siguientes elecciones. Meses antes, en enero de 2019, dos concejales socialistas —Enrique Cabero Morán y Rosa Colorado Luengo— habían renunciado a su acta, sustituidos por Almudena Timón y Arturo Santos.</p>
+
+			<h2>2019-2023: Carbayo se reinviste con el apoyo de Ciudadanos</h2>
+			<p>En las elecciones de mayo de 2019, el PP quedó primera fuerza pero sin mayoría (11 escaños) frente a un PSOE que se acercaba (10), un Ciudadanos que mantenía sus 4 concejales y una Ganemos Salamanca reducida a 2. <b>Carlos García Carbayo</b> fue reinvestido alcalde con los 15 votos conjuntos de PP y Ciudadanos, formalizando un pacto de gobierno entre ambos partidos que se mantendría, no sin sobresaltos, hasta el final del mandato. El primer mes ya trajo dos cambios: Ganemos Salamanca se rompió como coalición unificada tras una disputa por la portavocía (sus dos concejalas, Virginia Carrera y Carmen Díez Sierra, pasaron a integrar el Grupo Mixto), y el concejal popular Julio López Revuelta dimitió para irse a la Junta de Castilla y León. Más adelante, en mayo de 2021, <b>Daniel Llanos</b> (PP) dimitió tras dar positivo en un control de alcoholemia, y en enero de 2021 el concejal de Ciudadanos Ricardo Ortiz abandonó su grupo para convertirse en no adscrito. El pacto de gobierno PP-Cs sufrió su mayor crisis en febrero de 2023, cuando el alcalde destituyó a <b>Fernando Castaño</b> (Cs) de sus delegaciones de Turismo tras el escándalo conocido como el "congreso de los jeques"; Castaño conservó el acta de concejal, y Ciudadanos optó por no romper el gobierno en los últimos meses de legislatura.</p>
+
+			<h2>2023-2027: mayoría absoluta del PP, la crisis de Vox y el relevo en el PSOE</h2>
+			<p>Las elecciones de mayo de 2023 devolvieron la mayoría absoluta al PP de <b>Carlos García Carbayo</b> (14 de 27 escaños). Ciudadanos y Ganemos Salamanca desaparecieron del Pleno, sustituidos por la irrupción de <b>Vox</b>, que entró con 3 concejales. Ese grupo no sobrevivió entero al mandato: en febrero de 2025 una crisis interna llevó a Vox a nivel nacional a expulsar a dos de sus tres concejales salmantinos, que pasaron a la condición de no adscritos, y el 24 de febrero de 2025 el partido perdió formalmente la condición de grupo municipal en Salamanca. En el otro gran partido de la oposición, el PSOE relevó en mayo de 2026 a su portavoz histórico, <b>José Luis Mateos</b>, por <b>María Sánchez</b>, que encarará como cabeza de lista las municipales de 2027. El equipo de gobierno del PP también ha tenido cambios: en julio de 2026, Pedro Martínez Córdoba dejó su concejalía de Promoción Económica para asumir un cargo político en Murcia, sustituido por César Gómez-Barthe Celada.</p>
+
+			</div>
+
+			<div id="section-table">
+			<div style="display:flex; flex-wrap:wrap; gap:10px; align-items:center; margin-bottom:14px;">
+				<span style="font-size:0.9em; color:#555;">Mandato:</span>
+				<button type="button" class="filtro-mandato" data-mandato="" style="border:2px solid #2C5F2D; background:#2C5F2D; color:#fff; border-radius:20px; padding:5px 14px; font-size:0.85em; cursor:pointer;">Todos</button>
+				<button type="button" class="filtro-mandato" data-mandato="2015-2019" style="border:2px solid #2C5F2D; background:#fff; color:#2C5F2D; border-radius:20px; padding:5px 14px; font-size:0.85em; cursor:pointer;">2015-2019</button>
+				<button type="button" class="filtro-mandato" data-mandato="2019-2023" style="border:2px solid #2C5F2D; background:#fff; color:#2C5F2D; border-radius:20px; padding:5px 14px; font-size:0.85em; cursor:pointer;">2019-2023</button>
+				<button type="button" class="filtro-mandato" data-mandato="2023-2027" style="border:2px solid #2C5F2D; background:#fff; color:#2C5F2D; border-radius:20px; padding:5px 14px; font-size:0.85em; cursor:pointer;">2023-2027</button>
+			</div>
+			<div style="margin-bottom:12px;">
+				<input type="text" id="buscadorConcejales" placeholder="Buscar por nombre, partido o cargo..." style="width:100%; max-width:420px; padding:8px 12px; border:1px solid #ccc; border-radius:6px; font-size:0.95em;">
+			</div>
+			<table border="1" cellpadding="5" cellspacing="0">
+			  <thead>
+				<tr>
+				  <th>Nombre</th>
+				  <th>Partido</th>
+				  <th>Cargo(s)</th>
+				  <th>Periodo</th>
+				  <th>Mandato</th>
+				</tr>
+			  </thead>
+			  <tbody id="tablaConcejalesBody">
+				<tr><td colspan="5">Cargando listado de concejales…</td></tr>
+			  </tbody>
+			</table>
+			<p style="font-size: 0.9em; color: #555;">Datos obtenidos mediante investigación cruzada de fuentes oficiales (actas de constitución de la Corporación, aytosalamanca.es) y hemerotecas de prensa local (La Gaceta de Salamanca, Salamanca24Horas, Salamancahoy, Tribuna de Salamanca, SALAMANCArtv AL DÍA, eldiario.es, El Español, entre otras). No todos los cargos internos de los grupos de la oposición ni todas las concejalías del mandato 2015-2019 pudieron confirmarse con precisión: cuando una fuente fiable no lo aclaraba, se ha indicado explícitamente como "sin confirmar" en el detalle de cada concejal en vez de darlo por supuesto. <a href="/concejales-salamanca.json" target="_blank" rel="noopener">Descargar los datos completos en JSON</a>, con las fuentes citadas por mandato y el detalle de lo que quedó sin confirmar.</p>
+			</div>
+
+			{% include categories.html %}
+
+        </div>
+    </section>
+
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	<script>
+	(function () {
+		const COLORES_PARTIDO = {
+			'PP': '#1E56A0',
+			'PSOE': '#A8201A',
+			'Vox': '#2C5F2D',
+			'Ciudadanos': '#F4A261',
+			'Ganemos Salamanca': '#7B2D8B'
+		};
+		const COLOR_DEFECTO = '#9a9a9a';
+
+		function partidoBase(partido) {
+			partido = partido || '';
+			for (const clave of Object.keys(COLORES_PARTIDO)) {
+				if (partido.includes(clave)) return clave;
+			}
+			return null;
+		}
+
+		function colorPartido(partido) {
+			const base = partidoBase(partido);
+			return base ? COLORES_PARTIDO[base] : COLOR_DEFECTO;
+		}
+
+		function escapeHtml(str) {
+			return String(str).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+		}
+
+		let mandatoActivo = '';
+		let terminoBusqueda = '';
+
+		function aplicarFiltros() {
+			const q = terminoBusqueda.trim().toLowerCase();
+			document.querySelectorAll('#tablaConcejalesBody tr').forEach(tr => {
+				const coincideMandato = !mandatoActivo || tr.dataset.mandato === mandatoActivo;
+				const coincideTexto = !q || tr.textContent.toLowerCase().includes(q);
+				tr.style.display = (coincideMandato && coincideTexto) ? '' : 'none';
+			});
+		}
+
+		fetch('/concejales-salamanca.json?v=1')
+			.then(r => r.json())
+			.then(data => {
+				const mandatos = data.mandatos || [];
+
+				// Gráfico: evolución de escaños por partido y mandato
+				const partidosOrden = ['PP', 'PSOE', 'Ciudadanos', 'Ganemos Salamanca', 'Vox'];
+				const datasets = mandatos.map(m => {
+					const reparto = m.resultado_electoral.reparto || {};
+					const data = partidosOrden.map(p => {
+						const clave = Object.keys(reparto).find(k => k.includes(p));
+						return clave ? reparto[clave] : 0;
+					});
+					return {
+						label: m.id,
+						data,
+						backgroundColor: COLORES_PARTIDO[partidosOrden[mandatos.indexOf(m)]] || undefined
+					};
+				});
+				// Colorear cada mandato con una tonalidad fija en vez de por partido, para distinguir barras agrupadas
+				const coloresMandato = ['#9a9a9a', '#1E56A0', '#2C5F2D'];
+				datasets.forEach((d, i) => { d.backgroundColor = coloresMandato[i % coloresMandato.length]; });
+
+				new Chart(document.getElementById('escanosChart').getContext('2d'), {
+					type: 'bar',
+					data: { labels: partidosOrden, datasets },
+					options: {
+						responsive: true,
+						plugins: {
+							title: { display: true, text: 'Escaños por partido en cada uno de los tres últimos mandatos (27 concejales por Pleno)', font: { size: 13 } }
+						},
+						scales: {
+							y: { beginAtZero: true, title: { display: true, text: 'Nº de concejales' } }
+						}
+					}
+				});
+
+				// Tabla unificada de concejales
+				const filas = [];
+				mandatos.forEach(m => {
+					(m.concejales || []).forEach(c => {
+						filas.push({
+							nombre: c.nombre,
+							partido: c.partido,
+							cargos: (c.cargos || []).join('; '),
+							periodo: c.periodo,
+							mandato: m.id
+						});
+					});
+				});
+
+				const tbody = document.getElementById('tablaConcejalesBody');
+				tbody.innerHTML = filas.map(f => `
+					<tr data-mandato="${escapeHtml(f.mandato)}">
+						<td><b>${escapeHtml(f.nombre)}</b></td>
+						<td><span style="display:inline-flex; align-items:center; gap:6px;"><span style="width:10px;height:10px;border-radius:50%;background:${colorPartido(f.partido)};display:inline-block;"></span>${escapeHtml(f.partido)}</span></td>
+						<td>${escapeHtml(f.cargos)}</td>
+						<td>${escapeHtml(f.periodo)}</td>
+						<td>${escapeHtml(f.mandato)}</td>
+					</tr>`).join('') || '<tr><td colspan="5">No se ha podido cargar el listado.</td></tr>';
+
+				document.querySelectorAll('.filtro-mandato').forEach(btn => {
+					btn.addEventListener('click', () => {
+						mandatoActivo = btn.dataset.mandato;
+						document.querySelectorAll('.filtro-mandato').forEach(b => {
+							const activo = b === btn;
+							b.style.background = activo ? '#2C5F2D' : '#fff';
+							b.style.color = activo ? '#fff' : '#2C5F2D';
+						});
+						aplicarFiltros();
+					});
+				});
+
+				const buscador = document.getElementById('buscadorConcejales');
+				buscador.addEventListener('input', () => {
+					terminoBusqueda = buscador.value;
+					aplicarFiltros();
+				});
+			})
+			.catch(err => {
+				console.error('No se pudo cargar concejales-salamanca.json', err);
+				document.getElementById('tablaConcejalesBody').innerHTML = '<tr><td colspan="5">No se ha podido cargar el listado de concejales.</td></tr>';
+			});
+	})();
+	</script>

@@ -1,0 +1,275 @@
+{
+  "meta": {
+    "titulo": "Concejales del Ayuntamiento de Salamanca por mandato (2015-2027, ventana de interés 2016-2026)",
+    "generado": "2026-09-21",
+    "nota_general": "El pleno del Ayuntamiento de Salamanca tiene 27 concejales (no 25). Los datos se obtuvieron mediante investigación web (Wikipedia, aytosalamanca.es, hemerotecas de prensa local: La Gaceta de Salamanca, Salamanca24Horas, Salamancahoy, Tribuna de Salamanca, SALAMANCArtv AL DÍA, eldiario.es, El Español, entre otras). No se han podido verificar todos los datos con fuentes primarias oficiales (actas plenarias, BOP, infoelectoral.interior.gob.es); los campos 'sin_confirmar' de cada mandato detallan las lagunas. Los periodos de alcaldía y concejalías se dan con fechas exactas cuando se encontraron; en caso contrario se indica 'todo el mandato' o se marca como incierto.",
+    "ventana_temporal_solicitada": "2016-01-01 a 2026-12-31"
+  },
+  "mandatos": [
+    {
+      "id": "2015-2019",
+      "fecha_constitucion": "2015-06-13",
+      "fecha_fin": "2019-06-15",
+      "nota": "Mandato iniciado antes de la ventana 2016-2026; se incluye completo por continuidad. Resultado electoral mayo 2015: PP 12, PSOE 7, Ciudadanos 4, Ganemos Salamanca 4 (27 concejales; IU no obtuvo representación propia en el municipio en 2015).",
+      "alcaldes": [
+        {
+          "nombre": "Alfonso Fernández Mañueco",
+          "partido": "PP",
+          "periodo": "2015-06-13 a 2018-12-12",
+          "observaciones": "Investido sin mayoría absoluta (12/27 votos del PP). Dimitió el 12-dic-2018 para centrarse en su candidatura a la presidencia de la Junta de Castilla y León."
+        },
+        {
+          "nombre": "Carlos García Carbayo",
+          "partido": "PP",
+          "periodo": "2018-12-20 a 2019-06-15",
+          "observaciones": "Alcalde en funciones 12-20 dic 2018; investido alcalde el 20-dic-2018 (sin mayoría absoluta). Antes era 1er teniente de alcalde y concejal de Fomento y Patrimonio."
+        }
+      ],
+      "resultado_electoral": {
+        "fecha_eleccion": "2015-05-24",
+        "escanos_totales": 27,
+        "reparto": {"PP": 12, "PSOE": 7, "Ciudadanos": 4, "Ganemos Salamanca": 4}
+      },
+      "concejales": [
+        {"nombre": "Alfonso Fernández Mañueco", "partido": "PP", "cargos": ["Alcalde (2015-06-13 a 2018-12-12)"], "periodo": "2015-06-13 a 2018-12-12"},
+        {"nombre": "Carlos García Carbayo", "partido": "PP", "cargos": ["1er Teniente de Alcalde (2015)", "Concejal de Fomento y Patrimonio (2015-2018)", "Alcalde (desde 2018-12-20)"], "periodo": "2015-06-13 a 2019-06-15"},
+        {"nombre": "María del Carmen Sánchez Bellota", "partido": "PP", "cargos": ["Concejala (área sin confirmar)"], "periodo": "2015-06-13 a 2019-06-15"},
+        {"nombre": "María José Fresnadillo Martínez", "partido": "PP", "cargos": ["Concejala (área sin confirmar)"], "periodo": "2015-06-13 a 2019-06-15"},
+        {"nombre": "Enrique Sánchez-Guijo Acevedo", "partido": "PP", "cargos": ["Concejal (área sin confirmar)"], "periodo": "2015-06-13 a 2019-06-15"},
+        {"nombre": "María de la Almudena Parres Cabrera", "partido": "PP", "cargos": ["Concejala (área sin confirmar)"], "periodo": "2015-06-13 a 2019-06-15"},
+        {"nombre": "Daniel Llanos García", "partido": "PP", "cargos": ["Concejal de Obras Menores (2015)", "Concejal de Fomento y Patrimonio (desde dic-2018)"], "periodo": "2015-06-13 a 2019-06-15"},
+        {"nombre": "Fernando Javier Rodríguez Alonso", "partido": "PP", "cargos": ["Concejal de Hacienda (no confirmado el decreto exacto de 2015)"], "periodo": "2015-06-13 a 2019-06-15"},
+        {"nombre": "María Cristina Klimowitz Waldmann", "partido": "PP", "cargos": ["Concejala (área sin confirmar)"], "periodo": "2015-06-13 a 2019-06-15"},
+        {"nombre": "María Isabel Macías Tello", "partido": "PP", "cargos": ["Concejala (área sin confirmar)"], "periodo": "2015-06-13 a 2019-06-15"},
+        {"nombre": "Julio López Revuelta", "partido": "PP", "cargos": ["Concejal (área sin confirmar)"], "periodo": "2015-06-13 a 2019-06-15"},
+        {"nombre": "Francisco Javier García Rubio", "partido": "PP", "cargos": ["Concejal (área sin confirmar)"], "periodo": "2015-06-13 a 2019-06-15"},
+        {"nombre": "Enrique Cabero Morán", "partido": "PSOE", "cargos": ["Candidato a la alcaldía 2015", "Concejal / portavoz (rol exacto de portavocía sin confirmar)"], "periodo": "2015-06-13 a 2019-01-11 (dimisión)"},
+        {"nombre": "Rosa Colorado Luengo", "partido": "PSOE", "cargos": ["Concejala (nº2 de la lista)"], "periodo": "2015-06-13 a 2019-01-11 (dimisión)"},
+        {"nombre": "José Luis Mateos Crespo", "partido": "PSOE", "cargos": ["Concejal (posible portavoz parlamentario en el pleno desde 2015, dato no confirmado con certeza)"], "periodo": "2015-06-13 a 2019-06-15"},
+        {"nombre": "Josefa Mena Martín", "partido": "PSOE", "cargos": ["Concejala (área sin confirmar)"], "periodo": "2015-06-13 a 2019-06-15"},
+        {"nombre": "Arturo Ferreras de la Fuente", "partido": "PSOE", "cargos": ["Concejal (área sin confirmar)"], "periodo": "2015-06-13 a 2019-06-15"},
+        {"nombre": "Isabel Campo Blanco", "partido": "PSOE", "cargos": ["Concejala (área sin confirmar)"], "periodo": "2015-06-13 a 2019-06-15"},
+        {"nombre": "Fernando Vegas Sánchez", "partido": "PSOE", "cargos": ["Concejal (área sin confirmar)"], "periodo": "2015-06-13 a 2019-06-15"},
+        {"nombre": "Almudena Timón", "partido": "PSOE", "cargos": ["Concejala (sustituta de Enrique Cabero Morán)"], "periodo": "desde 2019-01-11 a 2019-06-15"},
+        {"nombre": "Arturo Santos", "partido": "PSOE", "cargos": ["Concejal (sustituto de Rosa Colorado Luengo)"], "periodo": "desde 2019-01-11 a 2019-06-15"},
+        {"nombre": "Alejandro González Bueno", "partido": "Ciudadanos", "cargos": ["Concejal (área sin confirmar)"], "periodo": "2015-06-13 a 2019-06-15"},
+        {"nombre": "Ana Suárez Otero", "partido": "Ciudadanos", "cargos": ["Concejala (área sin confirmar)"], "periodo": "2015-06-13 a 2019-06-15"},
+        {"nombre": "Fernando Castaño Sequeros", "partido": "Ciudadanos", "cargos": ["Concejal; coordinador provincial de Cs Salamanca; posible responsable de Turismo y Relaciones con las Universidades (periodo exacto sin confirmar)"], "periodo": "2015-06-13 a 2019-06-15"},
+        {"nombre": "Agustina Lucía Martín Santos", "partido": "Ciudadanos", "cargos": ["Concejala (área sin confirmar)"], "periodo": "2015-06-13 a 2019-06-15"},
+        {"nombre": "Virginia Carrera Garrosa", "partido": "Ganemos Salamanca", "cargos": ["Portavoz del grupo municipal Ganemos"], "periodo": "2015-06-13 a 2019-06-15"},
+        {"nombre": "Gabriel Risco Ávila", "partido": "Ganemos Salamanca", "cargos": ["Concejal (área sin confirmar)"], "periodo": "2015-06-13 a 2019-06-15"},
+        {"nombre": "María del Pilar Moreno González", "partido": "Ganemos Salamanca", "cargos": ["Concejala (área sin confirmar)"], "periodo": "2015-06-13 a 2019-06-15"},
+        {"nombre": "Gabriel de la Mora González", "partido": "Ganemos Salamanca", "cargos": ["Concejal (área sin confirmar)"], "periodo": "2015-06-13 a 2019-06-15"}
+      ],
+      "cambios_cronologicos": [
+        {"fecha": "2018-12-12", "cambio": "Dimisión de Alfonso Fernández Mañueco (PP) como alcalde."},
+        {"fecha": "2018-12-20", "cambio": "Investidura de Carlos García Carbayo (PP) como nuevo alcalde."},
+        {"fecha": "2019-01-11", "cambio": "Renuncian a sus actas Enrique Cabero Morán y Rosa Colorado Luengo (PSOE); son sustituidos por Almudena Timón y Arturo Santos."}
+      ],
+      "sin_confirmar": [
+        "Reparto completo de concejalías/áreas de gobierno del PP en 2015 más allá de García Carbayo, Daniel Llanos y (con menor certeza) Fernando Rodríguez Alonso.",
+        "Portavoces formales de PSOE, Ciudadanos y del propio PP durante 2015-2019 (dato contradictorio sobre si Mateos o Cabero ejercía la portavocía en el pleno).",
+        "Lista completa de tenientes de alcalde de 2015 más allá de García Carbayo como 1º.",
+        "Cargo/delegación exacta de Fernando Castaño Sequeros (Cs) y su periodo exacto.",
+        "Contenido concreto del pacto de investidura PP-Ciudadanos de 2015 (fuente con error 410)."
+      ],
+      "fuentes": [
+        "https://es.wikipedia.org/wiki/Elecciones_municipales_de_2015_en_Salamanca",
+        "https://es.wikipedia.org/wiki/Ayuntamiento_de_Salamanca",
+        "https://es.wikipedia.org/wiki/Carlos_Garc%C3%ADa_Carbayo",
+        "https://en.wikipedia.org/wiki/Alfonso_Fern%C3%A1ndez_Ma%C3%B1ueco",
+        "https://ganemosalamanca.es/ayuntamiento/grupo-politico-municipal-ganemos-salamanca/",
+        "https://www.lagacetadesalamanca.es/hemeroteca/enrique-cabero-dice-adios-ayuntamiento-psoe-ARGS146565",
+        "https://www.lagacetadesalamanca.es/hemeroteca/completada-corporacion-nuevos-concejales-psoe-NRGS148995",
+        "https://www.eldiario.es/castilla-y-leon/politica/manueco-ficha-exconcejal-salamanca-dimitio-triplicar-tasa-alcoholemia_1_8926748.html",
+        "https://www.aytosalamanca.es/en/w/d.-fernando-javier-rodriguez-alonso",
+        "https://www.lagacetadesalamanca.es/salamanca/el-pp-gana-en-salamanca-con-un-concejal-mas-que-el-psoe-y-dependera-de-ciudadanos-para-gobernar-AE1060471",
+        "http://elecciones.mir.es/resultadoslocales2015/99MU/DMU0837927499_L1.htm"
+      ]
+    },
+    {
+      "id": "2019-2023",
+      "fecha_constitucion": "2019-06-15",
+      "fecha_fin": "2023-06-17",
+      "nota": "Resultado electoral mayo 2019: PP 11, PSOE 10, Ciudadanos 4, Ganemos Salamanca (Unidas Podemos-IU-Equo) 2 (27 concejales; Vox no obtuvo representación en 2019 en el municipio).",
+      "alcaldes": [
+        {
+          "nombre": "Carlos García Carbayo",
+          "partido": "PP",
+          "periodo": "2019-06-15 a 2023-06-17",
+          "observaciones": "Reinvestido con 15 votos (11 PP + 4 Cs). Sin interrupción hasta el fin del mandato. No hubo moción de censura."
+        }
+      ],
+      "resultado_electoral": {
+        "fecha_eleccion": "2019-05-26",
+        "escanos_totales": 27,
+        "reparto": {"PP": 11, "PSOE": 10, "Ciudadanos": 4, "Ganemos Salamanca (UP-IU-Equo)": 2, "Vox": 0}
+      },
+      "concejales": [
+        {"nombre": "Carlos García Carbayo", "partido": "PP", "cargos": ["Alcalde"], "periodo": "2019-06-15 a 2023-06-17"},
+        {"nombre": "María Victoria Bermejo Arribas", "partido": "PP", "cargos": ["2ª Teniente de Alcalde", "Concejala de Educación", "desde jul-2019 también Cultura y Festejos"], "periodo": "todo el mandato"},
+        {"nombre": "Miryam Rodríguez López", "partido": "PP", "cargos": ["4ª Teniente de Alcalde (desde jul-2019)", "Concejala de Medio Ambiente, Parques y Jardines"], "periodo": "todo el mandato"},
+        {"nombre": "Daniel Llanos", "partido": "PP", "cargos": ["Concejal de Fomento y Juventud, Mantenimiento y Alumbrado Público", "desde jul-2019 también Patrimonio", "portavoz adjunto del grupo"], "periodo": "2019-06-15 a 2021-05-18 (dimisión)"},
+        {"nombre": "Javier Iglesias García", "partido": "PP", "cargos": ["Concejal de Coordinación Territorial"], "periodo": "todo el mandato"},
+        {"nombre": "María José Fresnadillo", "partido": "PP", "cargos": ["Concejala de Salud Pública y Consumo"], "periodo": "todo el mandato"},
+        {"nombre": "Julio López Revuelta", "partido": "PP", "cargos": ["Concejal de Cultura, Patrimonio, Deportes y Festejos"], "periodo": "2019-06-15 a 2019-07 (dimisión, nombrado director de Comunicación de la Junta de CyL)"},
+        {"nombre": "Almudena Parres (Cabrera)", "partido": "PP", "cargos": ["Concejala de Participación Social y Voluntariado"], "periodo": "todo el mandato"},
+        {"nombre": "Fernando Rodríguez", "partido": "PP", "cargos": ["3er Teniente de Alcalde (desde jul-2019)", "Concejal de Hacienda, Régimen Interior y Contratación"], "periodo": "todo el mandato"},
+        {"nombre": "José Fernando Carabias Acosta", "partido": "PP", "cargos": ["Concejal de Protección Ciudadana, Tráfico y Transportes", "desde jun-2021 también Fomento y Patrimonio"], "periodo": "todo el mandato"},
+        {"nombre": "María Isabel Macías Tello", "partido": "PP", "cargos": ["Concejala de Mayores"], "periodo": "todo el mandato"},
+        {"nombre": "Javier García Rubio", "partido": "PP", "cargos": ["Concejal de Deportes (sustituto de López Revuelta)"], "periodo": "desde ~2019-07-26 hasta fin de mandato"},
+        {"nombre": "Ángel Fernández Silva", "partido": "PP", "cargos": ["Concejal de Juventud (sustituto de Daniel Llanos)"], "periodo": "desde 2021-06-04 hasta fin de mandato"},
+        {"nombre": "José Luis Mateos", "partido": "PSOE", "cargos": ["Portavoz del Grupo Municipal Socialista", "candidato a la alcaldía"], "periodo": "todo el mandato"},
+        {"nombre": "María de los Ángeles Recio Ariza", "partido": "PSOE", "cargos": ["Concejala"], "periodo": "todo el mandato"},
+        {"nombre": "José María Collados Grande", "partido": "PSOE", "cargos": ["Concejal"], "periodo": "todo el mandato"},
+        {"nombre": "María García Gómez", "partido": "PSOE", "cargos": ["Concejala"], "periodo": "todo el mandato"},
+        {"nombre": "Juan José García Meilán", "partido": "PSOE", "cargos": ["Concejal"], "periodo": "todo el mandato"},
+        {"nombre": "María Sánchez Gómez", "partido": "PSOE", "cargos": ["Concejala"], "periodo": "todo el mandato"},
+        {"nombre": "Álvaro Antolín Montero", "partido": "PSOE", "cargos": ["Concejal"], "periodo": "todo el mandato"},
+        {"nombre": "Erica Polo Hernández", "partido": "PSOE", "cargos": ["Concejala"], "periodo": "todo el mandato"},
+        {"nombre": "Marcelino García Antúnez", "partido": "PSOE", "cargos": ["Concejal"], "periodo": "todo el mandato"},
+        {"nombre": "María Jesús Santamaría Trigo", "partido": "PSOE", "cargos": ["Concejala"], "periodo": "todo el mandato"},
+        {"nombre": "Ana Suárez Otero", "partido": "Ciudadanos", "cargos": ["1ª Teniente de Alcalde", "Portavoz del Grupo Municipal Cs", "Concejala de Familia e Igualdad de Oportunidades y de la Oficina de Bienestar Animal", "desde marzo-2023 también Turismo"], "periodo": "todo el mandato"},
+        {"nombre": "Juan José Sánchez Alonso", "partido": "Ciudadanos", "cargos": ["Concejal de Promoción Económica y Oportunidades de Inversión", "desde abril-2020 también Comercio"], "periodo": "todo el mandato"},
+        {"nombre": "Fernando Castaño Sequeros", "partido": "Ciudadanos", "cargos": ["Concejal de Turismo y Relaciones con las Universidades", "cesado de sus delegaciones el 2023-03-13 (escándalo del 'congreso de los jeques'), mantuvo el acta sin cartera"], "periodo": "todo el mandato"},
+        {"nombre": "María Mayoral Reboredo", "partido": "Ciudadanos", "cargos": ["Electa (nº2 de la lista), nunca tomó posesión"], "periodo": "no efectivo"},
+        {"nombre": "Ricardo Ortiz", "partido": "Ciudadanos (hasta ene-2021) / no adscrito (desde ene-2021)", "cargos": ["Concejal de Innovación, Comercio y Mercados (deja Comercio en abril-2020)", "pasa a concejal no adscrito en enero-2021", "funda 'Salamanca Valiente' en agosto-2022 (sin representación en 2023)"], "periodo": "desde 2019-06-15 (sustituto de Mayoral) hasta fin de mandato"},
+        {"nombre": "Gabriel Risco Ávila", "partido": "Ganemos Salamanca", "cargos": ["Cabeza de lista, nunca tomó posesión (renunció por los malos resultados electorales)"], "periodo": "no efectivo"},
+        {"nombre": "Virginia Carrera", "partido": "Ganemos Salamanca", "cargos": ["Concejala, portavoz de Ganemos Salamanca (sustituta de Risco)"], "periodo": "desde 2019-06-11 hasta fin de mandato"},
+        {"nombre": "Carmen Díez Sierra", "partido": "Ganemos Salamanca", "cargos": ["Concejala"], "periodo": "todo el mandato"}
+      ],
+      "cambios_cronologicos": [
+        {"fecha": "2019-06-15", "cambio": "Constitución de la corporación; investidura de García Carbayo. Gabriel Risco (Ganemos) y María Mayoral (Cs) no toman posesión; les sustituyen Virginia Carrera y Ricardo Ortiz."},
+        {"fecha": "2019-07", "cambio": "Julio López Revuelta (PP) dimite; le sustituye Javier García Rubio, nuevo concejal de Deportes. Reparto de tenencias de alcaldía."},
+        {"fecha": "2020-04", "cambio": "Ricardo Ortiz (Cs) deja Comercio; lo asume Juan José Sánchez (Cs)."},
+        {"fecha": "2021-01", "cambio": "Ricardo Ortiz abandona el grupo Cs y pasa a concejal no adscrito."},
+        {"fecha": "2021-05-18", "cambio": "Daniel Llanos (PP) dimite tras dar positivo en un control de alcoholemia."},
+        {"fecha": "2021-06-04", "cambio": "Ángel Fernández Silva (PP) toma posesión, asume Juventud; Fernando Carabias asume Fomento y Patrimonio."},
+        {"fecha": "2023-03-13", "cambio": "El alcalde cesa a Fernando Castaño (Cs) de sus delegaciones de Turismo y Relaciones con las Universidades; conserva el acta."}
+      ],
+      "sin_confirmar": [
+        "Segundo apellido exacto de 'Fernando Rodríguez' (Hacienda) y posible discrepancia de nombre de 'Javier/Fernando García Rubio'.",
+        "Posibles cambios de concejalías o personas en el grupo del PSOE (no se encontraron, pero no se puede garantizar al 100%).",
+        "Datos numéricos exactos de votos verificados directamente en infoelectoral.interior.gob.es (se usaron fuentes secundarias).",
+        "Posibles relevos adicionales en Ganemos Salamanca o PSOE en 2022-2023 no reportados en prensa."
+      ],
+      "fuentes": [
+        "https://es.wikipedia.org/wiki/Ayuntamiento_de_Salamanca",
+        "https://en.wikipedia.org/wiki/Results_breakdown_of_the_2019_Spanish_local_elections_(Castile_and_Le%C3%B3n)",
+        "https://en.wikipedia.org/wiki/Carlos_Garc%C3%ADa_Carbayo",
+        "https://www.aytosalamanca.es/documents/20119/1383143/Acta+N%C2%BA+11.+Sesi%C3%B3n+extraordinaria+de+15-06-2019.pdf",
+        "https://www.lagacetadesalamanca.es/salamanca/quien-es-quien-en-el-ayuntamiento-de-salamanca-NC1062258",
+        "https://www.lagacetadesalamanca.es/salamanca/estas-son-las-nuevas-funciones-de-los-concejales-de-salamanca-DD1140306",
+        "https://www.lagacetadesalamanca.es/salamanca/carlos-garcia-carbayo-ya-es-alcalde-de-salamanca-con-el-apoyo-de-ciudadanos-YF1135247",
+        "https://www.lagacetadesalamanca.es/salamanca/julio-lopez-revuelta-nuevo-director-de-comunicacion-de-la-junta-MG1338608",
+        "https://www.lagacetadesalamanca.es/salamanca/dani-llanos-dimite-como-concejal-de-fomento-y-juventud-DD7702225",
+        "https://www.eldiario.es/castilla-y-leon/dimite-concejal-pp-ayuntamiento-salamanca-dio-positivo-control-alcoholemia_1_7946613.html",
+        "https://www.salamanca24horas.com/local/reestructuracion-equipo-gobierno-ayuntamiento-salamanca_1_2235832.html",
+        "https://www.salamanca24horas.com/texto-diario/mostrar/1489589/javier-garcia-rubio-sera-nuevo-concejal-deportes-salamanca",
+        "https://www.salamancahoy.es/salamanca/ciudad/lista-cs-salamanca-historia-implosion-capitulos-20230416101214-nt.html",
+        "https://www.salamanca24horas.com/texto-diario/mostrar/2188819/ricardo-ortiz-dejara-grupo-municipal-ciudadanos-pasar-concejal-no-abscrito",
+        "https://www.lagacetadesalamanca.es/salamanca/ciudadanos-borra-a-ricardo-ortiz-de-todos-los-organos-del-ayuntamiento-de-salamanca-y-su-concejalia-desaparece-XA5828671",
+        "https://www.salamanca24horas.com/salamanca/gabriel-risco-baraja-renunciar-al-acta-de-concejal-del-ayuntamiento-de-salamanca-IN1087497",
+        "https://www.salamanca24horas.com/texto-diario/mostrar/1450041/virginia-carrera-acepta-acta-concejal-ganemos-no-visto-reconocido-urnas-trabajo-estos-cuatro-anos-tenemos-generar-nueva-ilusion",
+        "https://www.salamanca24horas.com/texto-diario/mostrar/1448742/gabriel-risco-dimite-malos-resultados-electorales",
+        "https://www.salamancahoy.es/salamanca/ciudad/gran-relevo-concejales-salamanca-mitad-nuevos-20230617142447-nt.html",
+        "https://www.salamancahoy.es/salamanca/ciudad/carbayo-exige-dimision-20230213152016-nt.html",
+        "https://salamancadiario.com/20230214/castano-renuncia-a-sus-delegaciones-pero-mantiene-el-acta-de-concejal-y-cs-no-rompera-el-pacto-de-gobierno-para-seguir-dando-estabilidad-a-la-ciudad/"
+      ]
+    },
+    {
+      "id": "2023-2027",
+      "fecha_constitucion": "2023-06-17",
+      "fecha_fin": "en curso (mandato termina en 2027; datos recogidos hasta 2026-09)",
+      "nota": "Resultado electoral mayo 2023: PP 14, PSOE 10, Vox 3 (27 concejales). Mandato en curso a fecha del informe (septiembre 2026).",
+      "alcaldes": [
+        {
+          "nombre": "Carlos García Carbayo",
+          "partido": "PP",
+          "periodo": "2023-06-17 a hoy (sept-2026)",
+          "observaciones": "Investido con mayoría absoluta (14 de 27 votos). Sin cambios."
+        }
+      ],
+      "resultado_electoral": {
+        "fecha_eleccion": "2023-05-28",
+        "escanos_totales": 27,
+        "reparto": {"PP": 14, "PSOE": 10, "Vox": 3}
+      },
+      "concejales": [
+        {"nombre": "Carlos García Carbayo", "partido": "PP", "cargos": ["Alcalde"], "periodo": "2023-06-17 a hoy"},
+        {"nombre": "Almudena Parres Cabrera", "partido": "PP", "cargos": ["1ª Teniente de Alcalde", "Concejala de Deportes"], "periodo": "2023-06-19 a hoy"},
+        {"nombre": "Miryam Rodríguez López", "partido": "PP", "cargos": ["2ª Teniente de Alcalde", "Concejala de Familia e Igualdad de Oportunidades"], "periodo": "2023-06-19 a hoy"},
+        {"nombre": "Fernando Carabias Acosta", "partido": "PP", "cargos": ["3er Teniente de Alcalde", "Concejal de Fomento, Urbanismo, Policía Administrativa, Mantenimiento, Alumbrado y Coordinación Territorial"], "periodo": "2023-06-19 a hoy"},
+        {"nombre": "Ángel Molina Martínez", "partido": "PP", "cargos": ["Concejal de Protección Ciudadana, Tráfico y Transportes"], "periodo": "2023-06-19 a hoy"},
+        {"nombre": "María José Coca Sánchez", "partido": "PP", "cargos": ["Concejala de Medio Ambiente y Bienestar Animal"], "periodo": "2023-06-19 a hoy"},
+        {"nombre": "María de la Vega Villar Gutiérrez de Ceballos", "partido": "PP", "cargos": ["Concejala de Salud Pública y Consumo"], "periodo": "2023-06-19 a hoy"},
+        {"nombre": "Fernando Rodríguez Alonso", "partido": "PP", "cargos": ["4º Teniente de Alcalde", "Concejal de Hacienda, Régimen Interior y Contratación"], "periodo": "2023-06-19 a hoy"},
+        {"nombre": "Ángel Fernández Silva", "partido": "PP", "cargos": ["Concejal de Cultura y Turismo"], "periodo": "2023-06-19 a hoy"},
+        {"nombre": "Roberto Martín Parra", "partido": "PP", "cargos": ["Concejal de Participación Social y Voluntariado"], "periodo": "2023-06-19 a hoy"},
+        {"nombre": "Isabel Macías", "partido": "PP", "cargos": ["Concejala de Mayores"], "periodo": "2023-06-19 a hoy"},
+        {"nombre": "Luis Sánchez Arévalo", "partido": "PP", "cargos": ["Concejal de Educación"], "periodo": "2023-06-19 a hoy"},
+        {"nombre": "Pedro Martínez Córdoba", "partido": "PP", "cargos": ["Concejal de Promoción Económica, Comercio, Mercados y Juventud"], "periodo": "2023-06-19 a 2026-07-06 (dimisión, responsabilidad política en Murcia)"},
+        {"nombre": "César Gómez-Barthe Celada", "partido": "PP", "cargos": ["Concejal de Promoción Económica y Juventud (sustituto de Martínez Córdoba; sin confirmar si conserva Comercio y Mercados)"], "periodo": "2026-07-30 a hoy"},
+        {"nombre": "María del Carmen Seguín Kattán", "partido": "PP", "cargos": ["5ª Teniente de Alcalde", "Concejala de Relaciones Institucionales, Festejos y Tradiciones"], "periodo": "2023-06-19 a hoy"},
+        {"nombre": "José Luis Mateos Crespo", "partido": "PSOE", "cargos": ["Concejal", "Portavoz del grupo hasta 2026-05-07"], "periodo": "2023-06-19 a hoy (sigue como concejal tras perder la portavocía)"},
+        {"nombre": "María Sánchez Gómez", "partido": "PSOE", "cargos": ["Viceportavoz desde 2023", "Portavoz del grupo desde 2026-05-07"], "periodo": "2023-06-19 a hoy"},
+        {"nombre": "Juan José García Meilán", "partido": "PSOE", "cargos": ["Concejal"], "periodo": "2023-06-19 a hoy"},
+        {"nombre": "María García Gómez", "partido": "PSOE", "cargos": ["Concejala"], "periodo": "2023-06-19 a hoy"},
+        {"nombre": "José María Collados Grande", "partido": "PSOE", "cargos": ["Concejal"], "periodo": "2023-06-19 a hoy"},
+        {"nombre": "Elvira Sánchez Sánchez", "partido": "PSOE", "cargos": ["Concejala"], "periodo": "2023-06-19 a hoy"},
+        {"nombre": "Fidel J. Francés Sánchez", "partido": "PSOE", "cargos": ["Concejal"], "periodo": "2023-06-19 a hoy"},
+        {"nombre": "María del Mar Fuentes Chaves", "partido": "PSOE", "cargos": ["Concejala"], "periodo": "2023-06-19 a hoy"},
+        {"nombre": "Álvaro Antolín Montero", "partido": "PSOE", "cargos": ["Concejal"], "periodo": "2023-06-19 a hoy"},
+        {"nombre": "María Jesús Santa María Trigo", "partido": "PSOE", "cargos": ["Concejala"], "periodo": "2023-06-19 a hoy"},
+        {"nombre": "Ignacio Rivas Serrano", "partido": "Vox (hasta feb-2025) / grupo mixto o no adscrito (desde feb-2025)", "cargos": ["Portavoz de Vox hasta 2025-02-10 (destituido/expulsado)"], "periodo": "2023-06-19 a hoy"},
+        {"nombre": "Laura Magdalena Miguel", "partido": "Vox", "cargos": ["Concejala"], "periodo": "2023-06-19 a 2024-06-27 (renuncia por incompatibilidad laboral)"},
+        {"nombre": "Alejandro Miguel Pérez de la Sota", "partido": "Vox (hasta feb-2025) / grupo mixto o no adscrito (desde feb-2025)", "cargos": ["Concejal", "Portavoz de Vox desde 2025-02-10"], "periodo": "2023-06-19 a hoy"},
+        {"nombre": "María de los Ángeles Carpio-Pérez", "partido": "Vox (hasta feb-2025) / grupo mixto o no adscrito (desde feb-2025)", "cargos": ["Concejala (sustituta de Laura Magdalena Miguel)"], "periodo": "2024-07-26 a hoy"}
+      ],
+      "cambios_cronologicos": [
+        {"fecha": "2023-06-17", "cambio": "Constitución del pleno; investidura de García Carbayo como alcalde."},
+        {"fecha": "2023-06-19", "cambio": "Reparto de concejalías del equipo de gobierno del PP."},
+        {"fecha": "2024-06-27", "cambio": "Renuncia de Laura Magdalena Miguel (Vox)."},
+        {"fecha": "2024-07-26", "cambio": "Toma de posesión de María de los Ángeles Carpio-Pérez (Vox)."},
+        {"fecha": "2025-02-10", "cambio": "Destitución/expulsión de Ignacio Rivas como portavoz de Vox; Pérez de la Sota nuevo portavoz."},
+        {"fecha": "2025-02-24", "cambio": "Disolución formal del grupo municipal Vox por resolución del alcalde."},
+        {"fecha": "2026-05-07", "cambio": "María Sánchez sustituye a José Luis Mateos como portavoz del PSOE."},
+        {"fecha": "2026-07-06", "cambio": "Renuncia de Pedro Martínez Córdoba (PP)."},
+        {"fecha": "2026-07-30", "cambio": "Toma de posesión de César Gómez-Barthe Celada (PP)."}
+      ],
+      "sin_confirmar": [
+        "Posibles cambios adicionales de concejalías dentro del PP más allá del caso Martínez Córdoba/Gómez-Barthe.",
+        "Delegaciones/concejalías específicas para los concejales del PSOE (grupo de oposición sin cartera de gobierno).",
+        "Grafía exacta del segundo apellido de Ignacio Rivas (varía entre fuentes).",
+        "Estatus formal final de los tres concejales de Vox tras la disolución del grupo (no adscritos vs. grupo mixto; fuentes contradictorias).",
+        "Cambios de orden de tenientes de alcalde tras la salida de Martínez Córdoba.",
+        "Verificación directa en fuente oficial (BOP/actas plenarias) de cada cese y nombramiento; no se pudo acceder al listado íntegro de 'Corporación municipal' en aytosalamanca.es (bloqueo 403).",
+        "Datos electorales de infoelectoral.interior.gob.es no verificados directamente (se usaron fuentes de prensa)."
+      ],
+      "fuentes": [
+        "https://www.tribunasalamanca.com/noticias/334936/garcia-carbayo-ya-es-alcalde-con-mayoria-absoluta-los-salmantinos-son-nuestra-inspiracion",
+        "https://www.diariodecastillayleon.es/castilla-y-leon/230617/6670/carlos-garcia-carbayo-reelegido-alcalde-salamanca.html",
+        "https://es.wikipedia.org/wiki/Ayuntamiento_de_Salamanca",
+        "https://www.publico.es/resultados-elecciones/municipales/2023/castilla-y-leon/salamanca/salamanca",
+        "https://www.tribunasalamanca.com/noticias/332749/estos-son-los-27-concejales-que-dirigiran-salamanca",
+        "https://www.elespanol.com/castilla-y-leon/region/salamanca/20230619/competencias-concejales-equipo-gobierno-salamanca/772673033_0.html",
+        "https://www.lagacetadesalamanca.es/salamanca/carbayo-reparte-concejalias-ayuntamiento-salamanca-20230619163234-nt.html",
+        "https://salamancartvaldia.es/noticia/2023-06-19-asi-quedan-las-concejalias-en-el-ayuntamiento-de-salamanca-324554",
+        "https://salamancartvaldia.es/noticia/2023-03-11-candidatura-del-psoe-de-salamanca-317585",
+        "https://www.eldiario.es/castilla-y-leon/provincias/salamanca/cambios-psoe-ayuntamiento-salamanca-maria-sanchez-releva-jose-luis-mateos-portavocia_1_13202004.html",
+        "https://www.lagacetadesalamanca.es/salamanca/psoe-relega-jose-luis-mateos-portavoz-municipal-20260506181944-nt.html",
+        "https://www.salamancahoy.es/salamanca/ciudad/psoe-salamanca-nueva-portavoz-maria-sanchez-relevara-20260507094220-nt_amp.html",
+        "https://www.eldiario.es/castilla-y-leon/provincias/salamanca/vox-rompe-salamanca-concejales-criticos-destituyen-portavoz-municipal_1_12042242.html",
+        "https://www.infobae.com/espana/agencias/2025/02/24/vox-se-queda-sin-grupo-municipal-en-el-ayuntamiento-de-salamanca-por-su-crisis-interna/",
+        "https://www.lagacetadesalamanca.es/salamanca/laura-magdalena-vox-renuncia-acta-concejal-ayuntamiento-20240627150608-nt.html",
+        "https://www.cope.es/actualidad/espana/noticias/maria-los-angeles-carpio-perez-nueva-concejala-vox-ayuntamiento-salamanca-20240726_3418351",
+        "https://www.salamancahoy.es/salamanca/ciudad/verano-cambios-ayuntamiento-salamanca-caida-fichas-detras-20260723174630-nt.html",
+        "https://salamancartvaldia.es/noticia/2026-07-06-cesar-gomez-barthe-sustituira-a-pedro-martinez-como-concejal-en-el-ayuntamiento-de-salamanca-393723",
+        "https://salamancartvaldia.es/noticia/2026-07-30-cesar-gomez-barthe-toma-posesion-como-concejal-de-promocion-economica-y-juventud-394984",
+        "https://www.leonoticias.com/castillayleon/leones-cesar-gomezbarthe-celada-toma-posesion-nuevo-20260730180354-nt.html",
+        "https://www.elespanol.com/castilla-y-leon/region/salamanca/20260730/cesar-gomez-barthe-incorpora-concejal-ayuntamiento-salamanca-asume-comercio-juventud/1003744339657_0.html",
+        "https://www.aytosalamanca.es/w/c%C3%A9sar-g%C3%B3mez-barthe-celada-toma-posesi%C3%B3n-como-nuevo-concejal-del-ayuntamiento-de-salamanca"
+      ]
+    }
+  ]
+}
