@@ -208,7 +208,20 @@ permalink: elecciones-municipios-salamanca
 			Object.entries(eleccionB.municipios).forEach(([codigo, mB]) => {
 				const mA = eleccionA.municipios[codigo];
 				const c = coords[codigo];
-				if (!c || !mA || !mB.resultados.length || !mA.resultados.length) return;
+				if (!c || !mA) return;
+
+				if (!mB.resultados.length || !mA.resultados.length) {
+					// Alguna de las dos convocatorias no tuvo ningún voto válido a candidaturas en este municipio
+					// (todo en blanco/nulo), así que no hay una cuota de voto que comparar.
+					L.circleMarker([c.lat, c.lng], {
+						radius: radioPorPoblacion(mB.poblacion),
+						weight: 1,
+						color: '#fff',
+						fillColor: COLOR_DEFECTO,
+						fillOpacity: 0.6
+					}).bindPopup(`<b>${mB.nombre}</b><br><span style="color:#777;">Sin comparativa posible: alguna de las dos convocatorias no tuvo votos válidos a candidaturas en este municipio.</span>`).addTo(capaMunicipios);
+					return;
+				}
 
 				const totalA = mA.resultados.reduce((s, r) => s + r.votos, 0);
 				const totalB = mB.resultados.reduce((s, r) => s + r.votos, 0);

@@ -47,5 +47,12 @@
     "fecha": "2019-05-26",
     "etiqueta": "Municipales, 26 de mayo de 2019",
     "archivo": "elecciones/municipales-2019-05.json"
+  },
+  {
+    "id": "autonomicas-2019-05",
+    "tipo": "Autonómicas (Cortes de Castilla y León)",
+    "fecha": "2019-05-26",
+    "etiqueta": "Autonómicas, 26 de mayo de 2019",
+    "archivo": "elecciones/autonomicas-2019-05.json"
   }
 ]
