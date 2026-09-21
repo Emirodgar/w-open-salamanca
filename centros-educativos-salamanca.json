@@ -1,0 +1,1289 @@
+{
+  "metadata": {
+    "titulo": "Centros educativos no universitarios de Salamanca capital",
+    "generado": "2026-09-21",
+    "total_centros": 77,
+    "desglose_titularidad": {
+      "Público": 43,
+      "Concertado": 25,
+      "Privado": 9
+    },
+    "fuentes_principales": [
+      "https://analisis.datosabiertos.jcyl.es/explore/dataset/directorio-de-centros-docentes/table/?refine.municipio=SALAMANCA",
+      "https://analisis.datosabiertos.jcyl.es/explore/dataset/directorio-de-centros-docentes/export/",
+      "https://datosabiertos.jcyl.es/web/jcyl/set/es/educacion/centrosdocentes/1284200521439",
+      "https://directorio.educa.jcyl.es/es/mapa",
+      "https://www.calasanzsalamanca.es/etapas-educativas/",
+      "https://www.trinitarias.com/nuestro-colegio/oferta-educativa/",
+      "https://colegiosanagustin.com/ciclos-de-formacion-profesional-2/",
+      "https://mprovidenciasa.es/bachillerato/",
+      "https://salesianospizarrales.com/nuestro-centro-2/",
+      "https://www.colegioantoniomachado.es/bachillerato"
+    ],
+    "notas": "Listado construido a partir del dataset abierto 'Directorio de Centros Docentes' de la Junta de Castilla y León (curso 2026/2027, registros en situación ALTA), filtrado por el campo municipio=SALAMANCA, lo que excluye automáticamente Santa Marta de Tormes, Villamayor, Carbajosa de la Sagrada, Cabrerizos, Aldeatejada y el resto del alfoz/provincia. La titularidad (Público/Concertado/Privado) se ha derivado de los campos oficiales 'naturaleza' y 'concierto' del propio dataset (naturaleza=PRIVADO + concierto=S -> Concertado; naturaleza=PRIVADO + concierto=N -> Privado; naturaleza=PÚBLICO -> Público), nunca por estimación. Las etapas (Infantil/Primaria/ESO/Bachillerato/FP/Educación Especial) se han obtenido cruzando la categoría genérica del dataset (que solo distingue Infantil / Infantil+Primaria / Infantil+Primaria+Secundaria) con la web oficial de cada centro concertado o privado, para precisar si imparte además Bachillerato y/o Formación Profesional; una muestra de 7 centros concertados con FP declarada fue verificada individualmente contra su web oficial. Coordenadas (lat/lon) proceden directamente del dataset oficial (campo localizacion), por lo que no ha hecho falta geocodificar. Se han EXCLUIDO deliberadamente, por quedar fuera del alcance pedido: los 2 Centros Públicos Integrados de FP (CPIFP Río Tormes y CPIFP Rodríguez Fabrés) y los 4 centros privados de FP específica autónomos (Casa Escuela Santiago Uno, ESYDE, Instituto de Enseñanzas Aplicadas, Sanitio Formación), por no compartir centro con etapas anteriores; la Escuela de Arte y Superior de Conservación y Restauración de Bienes Culturales; el Conservatorio Profesional y el Conservatorio Superior de Música, la Escuela de Música y los centros privados autorizados de música (elemental/profesional); la Escuela Oficial de Idiomas; el Centro Público de Educación de Personas Adultas (CEPA Francisco Giner de los Ríos); y los 3 centros privados autorizados de enseñanzas deportivas (fútbol x2, hípica x1). También han quedado fuera, por no ser centros de régimen general no universitario, la USAL y la UPSA. Limitaciones: no se ha confirmado individualmente el detalle fino de todas las combinaciones de Bachillerato/FP en los centros concertados que solo ofrecen Infantil+Primaria+ESO (se asume que no tienen Bachillerato/FP salvo que la fuente lo mencione expresamente); si el usuario detecta un error en una etapa concreta, conviene verificarlo contra la web oficial del centro (columna 'web' del JSON) o contra su ficha en https://directorio.educa.jcyl.es."
+  },
+  "centros": [
+    {
+      "codigo_centro": "37005216",
+      "nombre": "CEIP ALFONSO X EL SABIO",
+      "direccion": "AVENIDA DE JUAN DE AUSTRIA, 1, 37008 Salamanca",
+      "titularidad": "Público",
+      "etapas": [
+        "Infantil",
+        "Primaria"
+      ],
+      "lat": 40.95272,
+      "lon": -5.66955,
+      "telefono": "923261845",
+      "email": "37005216@educa.jcyl.es",
+      "web": "http://ceipalfonsoxelsabio.centros.educa.jcyl.es",
+      "fuente": "https://analisis.datosabiertos.jcyl.es/explore/dataset/directorio-de-centros-docentes/table/?refine.municipio=SALAMANCA"
+    },
+    {
+      "codigo_centro": "37005231",
+      "nombre": "CEIP BEATRIZ GALINDO",
+      "direccion": "CALLE TRANSPORTISTAS, 4-18, 37006 Salamanca",
+      "titularidad": "Público",
+      "etapas": [
+        "Infantil",
+        "Primaria"
+      ],
+      "lat": 40.97435,
+      "lon": -5.66745,
+      "telefono": "923227154",
+      "email": "37005231@educa.jcyl.es",
+      "web": "http://ceipbeatrizgalindo.centros.educa.jcyl.es",
+      "fuente": "https://analisis.datosabiertos.jcyl.es/explore/dataset/directorio-de-centros-docentes/table/?refine.municipio=SALAMANCA"
+    },
+    {
+      "codigo_centro": "37008783",
+      "nombre": "CEIP BUENOS AIRES / GABRIEL MARTÍN",
+      "direccion": "CALLE NAVALMORAL DE LA MATA, S/N, 37008 Salamanca",
+      "titularidad": "Público",
+      "etapas": [
+        "Infantil",
+        "Primaria"
+      ],
+      "lat": 40.95473,
+      "lon": -5.70456,
+      "telefono": "923192261",
+      "email": "37008783@educa.jcyl.es",
+      "web": "http://ceipbuenosairessalamanca.centros.educa.jcyl.es/sitio/",
+      "fuente": "https://analisis.datosabiertos.jcyl.es/explore/dataset/directorio-de-centros-docentes/table/?refine.municipio=SALAMANCA"
+    },
+    {
+      "codigo_centro": "37008461",
+      "nombre": "CEIP CAJA DE AHORROS",
+      "direccion": "CALLE BENAVENTE, S/N, 37003 Salamanca",
+      "titularidad": "Público",
+      "etapas": [
+        "Infantil",
+        "Primaria"
+      ],
+      "lat": 40.96461,
+      "lon": -5.65018,
+      "telefono": "923182017",
+      "email": "37008461@educa.jcyl.es",
+      "web": "http://ceipcajadeahorros.centros.educa.jcyl.es",
+      "fuente": "https://analisis.datosabiertos.jcyl.es/explore/dataset/directorio-de-centros-docentes/table/?refine.municipio=SALAMANCA"
+    },
+    {
+      "codigo_centro": "37008621",
+      "nombre": "CEIP CAMPO CHARRO",
+      "direccion": "CALLE DEL DONANTE DE SANGRE, S/N, 37007 Salamanca",
+      "titularidad": "Público",
+      "etapas": [
+        "Infantil",
+        "Primaria"
+      ],
+      "lat": 40.96503,
+      "lon": -5.67564,
+      "telefono": "923250948",
+      "email": "37008621@educa.jcyl.es",
+      "web": "http://ceipcampocharro.centros.educa.jcyl.es",
+      "fuente": "https://analisis.datosabiertos.jcyl.es/explore/dataset/directorio-de-centros-docentes/table/?refine.municipio=SALAMANCA"
+    },
+    {
+      "codigo_centro": "37005241",
+      "nombre": "CEIP FILIBERTO VILLALOBOS",
+      "direccion": "CALLE BEGONIAS, 1-9, 37004 Salamanca",
+      "titularidad": "Público",
+      "etapas": [
+        "Infantil",
+        "Primaria"
+      ],
+      "lat": 40.97641,
+      "lon": -5.6519,
+      "telefono": "923230202",
+      "email": "37005241@educa.jcyl.es",
+      "web": "http://cpfilibertovillalobos.centros.educa.jcyl.es",
+      "fuente": "https://analisis.datosabiertos.jcyl.es/explore/dataset/directorio-de-centros-docentes/table/?refine.municipio=SALAMANCA"
+    },
+    {
+      "codigo_centro": "37005253",
+      "nombre": "CEIP FRANCISCO DE VITORIA",
+      "direccion": "CALLE PADILLEROS, 2, 37002 Salamanca",
+      "titularidad": "Público",
+      "etapas": [
+        "Infantil",
+        "Primaria"
+      ],
+      "lat": 40.96888,
+      "lon": -5.66198,
+      "telefono": "923218493",
+      "email": "37005253@educa.jcyl.es",
+      "web": "http://cpfranciscodevitoria.centros.educa.jcyl.es",
+      "fuente": "https://analisis.datosabiertos.jcyl.es/explore/dataset/directorio-de-centros-docentes/table/?refine.municipio=SALAMANCA"
+    },
+    {
+      "codigo_centro": "37006038",
+      "nombre": "CEIP FÉLIX RODRÍGUEZ DE LA FUENTE",
+      "direccion": "CALLE DE LA DOCENCIA, S/N, 37005 Salamanca",
+      "titularidad": "Público",
+      "etapas": [
+        "Infantil",
+        "Primaria"
+      ],
+      "lat": 40.98071,
+      "lon": -5.65401,
+      "telefono": "923220138",
+      "email": "37006038@educa.jcyl.es",
+      "web": "http://ceipfelixrodriguezdelafuente.centros.educa.jcyl.es/sitio/",
+      "fuente": "https://analisis.datosabiertos.jcyl.es/explore/dataset/directorio-de-centros-docentes/table/?refine.municipio=SALAMANCA"
+    },
+    {
+      "codigo_centro": "37006026",
+      "nombre": "CEIP GRAN CAPITÁN",
+      "direccion": "CALLE RÍO TAJO, S/N, 37006 Salamanca",
+      "titularidad": "Público",
+      "etapas": [
+        "Infantil",
+        "Primaria"
+      ],
+      "lat": 40.97769,
+      "lon": -5.66739,
+      "telefono": "923220383",
+      "email": "37006026@educa.jcyl.es",
+      "web": "http://ceipgrancapitan.centros.educa.jcyl.es/",
+      "fuente": "https://analisis.datosabiertos.jcyl.es/explore/dataset/directorio-de-centros-docentes/table/?refine.municipio=SALAMANCA"
+    },
+    {
+      "codigo_centro": "37006041",
+      "nombre": "CEIP JOSÉ HERRERO",
+      "direccion": "CALLE DE LA DOCENCIA, 21-25, 37005 Salamanca",
+      "titularidad": "Público",
+      "etapas": [
+        "Infantil",
+        "Primaria"
+      ],
+      "lat": 40.98022,
+      "lon": -5.65179,
+      "telefono": "923282338",
+      "email": "37006041@educa.jcyl.es",
+      "web": "http://ceipjoseherrero.centros.educa.jcyl.es",
+      "fuente": "https://analisis.datosabiertos.jcyl.es/explore/dataset/directorio-de-centros-docentes/table/?refine.municipio=SALAMANCA"
+    },
+    {
+      "codigo_centro": "37005228",
+      "nombre": "CEIP JUAN DEL ENZINA",
+      "direccion": "CALLE HILARIO GOYENECHEA, 13, 37008 Salamanca",
+      "titularidad": "Público",
+      "etapas": [
+        "Infantil",
+        "Primaria"
+      ],
+      "lat": 40.94924,
+      "lon": -5.66286,
+      "telefono": "923215872",
+      "email": "37005228@educa.jcyl.es",
+      "web": "http://ceipjuandelenzina.centros.educa.jcyl.es",
+      "fuente": "https://analisis.datosabiertos.jcyl.es/explore/dataset/directorio-de-centros-docentes/table/?refine.municipio=SALAMANCA"
+    },
+    {
+      "codigo_centro": "37005277",
+      "nombre": "CEIP JUAN JAÉN",
+      "direccion": "CALLE PROFESOR SÁEZ, 7-9, 37007 Salamanca",
+      "titularidad": "Público",
+      "etapas": [
+        "Infantil",
+        "Primaria"
+      ],
+      "lat": 40.96958,
+      "lon": -5.66637,
+      "telefono": "923230103",
+      "email": "37005277@educa.jcyl.es",
+      "web": "http://ceipjuanjaen.centros.educa.jcyl.es",
+      "fuente": "https://analisis.datosabiertos.jcyl.es/explore/dataset/directorio-de-centros-docentes/table/?refine.municipio=SALAMANCA"
+    },
+    {
+      "codigo_centro": "37005290",
+      "nombre": "CEIP LAZARILLO DE TORMES",
+      "direccion": "CALLE EL LAGAR, 1-17, 37008 Salamanca",
+      "titularidad": "Público",
+      "etapas": [
+        "Infantil",
+        "Primaria"
+      ],
+      "lat": 40.95498,
+      "lon": -5.68333,
+      "telefono": "923192813",
+      "email": "37005290@educa.jcyl.es",
+      "web": "http://ceiplazarillodetormes.centros.educa.jcyl.es/",
+      "fuente": "https://analisis.datosabiertos.jcyl.es/explore/dataset/directorio-de-centros-docentes/table/?refine.municipio=SALAMANCA"
+    },
+    {
+      "codigo_centro": "37008497",
+      "nombre": "CEIP LEÓN FELIPE",
+      "direccion": "CALLE MAESTRO BARBIERI, 3, 37008 Salamanca",
+      "titularidad": "Público",
+      "etapas": [
+        "Infantil",
+        "Primaria"
+      ],
+      "lat": 40.94929,
+      "lon": -5.66054,
+      "telefono": "923271084",
+      "email": "37008497@educa.jcyl.es",
+      "web": "http://ceipleonfelipe.centros.educa.jcyl.es",
+      "fuente": "https://analisis.datosabiertos.jcyl.es/explore/dataset/directorio-de-centros-docentes/table/?refine.municipio=SALAMANCA"
+    },
+    {
+      "codigo_centro": "37013471",
+      "nombre": "CEIP MELÉNDEZ VALDÉS",
+      "direccion": "AVENIDA VILLAR DEL PROFETA, S/N, 37008 Salamanca",
+      "titularidad": "Público",
+      "etapas": [
+        "Infantil",
+        "Primaria"
+      ],
+      "lat": 40.94869,
+      "lon": -5.67175,
+      "telefono": "923602203",
+      "email": "37013471@educa.jcyl.es",
+      "web": "http://ceipelzurguen.centros.educa.jcyl.es",
+      "fuente": "https://analisis.datosabiertos.jcyl.es/explore/dataset/directorio-de-centros-docentes/table/?refine.municipio=SALAMANCA"
+    },
+    {
+      "codigo_centro": "37005320",
+      "nombre": "CEIP NICOLÁS RODRÍGUEZ ANICETO",
+      "direccion": "CALLE LA MORAL, 11, 37006 Salamanca",
+      "titularidad": "Público",
+      "etapas": [
+        "Infantil",
+        "Primaria"
+      ],
+      "lat": 40.97616,
+      "lon": -5.67653,
+      "telefono": "923221090",
+      "email": "37005320@educa.jcyl.es",
+      "web": "http://ceipnicolasrodriguezaniceto.centros.educa.jcyl.es/",
+      "fuente": "https://analisis.datosabiertos.jcyl.es/explore/dataset/directorio-de-centros-docentes/table/?refine.municipio=SALAMANCA"
+    },
+    {
+      "codigo_centro": "37005174",
+      "nombre": "CEIP NUESTRA SEÑORA DE ASUNCIÓN",
+      "direccion": "CALLE NUEVA GUINEA, S/N, 37003 Salamanca",
+      "titularidad": "Público",
+      "etapas": [
+        "Infantil",
+        "Primaria"
+      ],
+      "lat": 40.97214,
+      "lon": -5.64311,
+      "telefono": "923182758",
+      "email": "37005174@educa.jcyl.es",
+      "web": "http://ceipnuestrasenoradelaasuncion.centros.educa.jcyl.es",
+      "fuente": "https://analisis.datosabiertos.jcyl.es/explore/dataset/directorio-de-centros-docentes/table/?refine.municipio=SALAMANCA"
+    },
+    {
+      "codigo_centro": "37005332",
+      "nombre": "CEIP PADRE MANJÓN",
+      "direccion": "PASEO CANALEJAS, 97, 37001 Salamanca",
+      "titularidad": "Público",
+      "etapas": [
+        "Infantil",
+        "Primaria"
+      ],
+      "lat": 40.96255,
+      "lon": -5.65803,
+      "telefono": "923268717",
+      "email": "37005332@educa.jcyl.es",
+      "web": "http://cppadremanjon.centros.educa.jcyl.es",
+      "fuente": "https://analisis.datosabiertos.jcyl.es/explore/dataset/directorio-de-centros-docentes/table/?refine.municipio=SALAMANCA"
+    },
+    {
+      "codigo_centro": "37005371",
+      "nombre": "CEIP RUFINO BLANCO",
+      "direccion": "CALLE ALAMEDILLA, S/N, 37003 Salamanca",
+      "titularidad": "Público",
+      "etapas": [
+        "Infantil",
+        "Primaria"
+      ],
+      "lat": 40.96714,
+      "lon": -5.65692,
+      "telefono": "923266625",
+      "email": "37005371@educa.jcyl.es",
+      "web": "http://centros.educa.jcyl.es/cprufinoblanco",
+      "fuente": "https://analisis.datosabiertos.jcyl.es/explore/dataset/directorio-de-centros-docentes/table/?refine.municipio=SALAMANCA"
+    },
+    {
+      "codigo_centro": "37005381",
+      "nombre": "CEIP SAN MATEO",
+      "direccion": "AVENIDA DE LOS CIPRESES, S/N, 37004 Salamanca",
+      "titularidad": "Público",
+      "etapas": [
+        "Infantil",
+        "Primaria"
+      ],
+      "lat": 40.97708,
+      "lon": -5.64934,
+      "telefono": "923228908",
+      "email": "37005381@educa.jcyl.es",
+      "web": "http://ceipsanmateo.centros.educa.jcyl.es/",
+      "fuente": "https://analisis.datosabiertos.jcyl.es/explore/dataset/directorio-de-centros-docentes/table/?refine.municipio=SALAMANCA"
+    },
+    {
+      "codigo_centro": "37005769",
+      "nombre": "CEIP SANTA CATALINA",
+      "direccion": "CALLE CAÑIZAL, 1, 37002 Salamanca",
+      "titularidad": "Público",
+      "etapas": [
+        "Infantil",
+        "Primaria"
+      ],
+      "lat": 40.96403,
+      "lon": -5.66645,
+      "telefono": "923213156",
+      "email": "37005769@educa.jcyl.es",
+      "web": "http://ceipsantacatalina.centros.educa.jcyl.es",
+      "fuente": "https://analisis.datosabiertos.jcyl.es/explore/dataset/directorio-de-centros-docentes/table/?refine.municipio=SALAMANCA"
+    },
+    {
+      "codigo_centro": "37005393",
+      "nombre": "CEIP SANTA TERESA",
+      "direccion": "CALLE PABLO PICASSO, S/N, 37005 Salamanca",
+      "titularidad": "Público",
+      "etapas": [
+        "Infantil",
+        "Primaria"
+      ],
+      "lat": 40.97599,
+      "lon": -5.65723,
+      "telefono": "923224934",
+      "email": "37005393@educa.jcyl.es",
+      "web": "http://cpsantateresa.centros.educa.jcyl.es",
+      "fuente": "https://analisis.datosabiertos.jcyl.es/explore/dataset/directorio-de-centros-docentes/table/?refine.municipio=SALAMANCA"
+    },
+    {
+      "codigo_centro": "37005368",
+      "nombre": "CEIP VILLAR Y MACÍAS",
+      "direccion": "AVENIDA FILIBERTO VILLALOBOS, 119, 37007 Salamanca",
+      "titularidad": "Público",
+      "etapas": [
+        "Infantil",
+        "Primaria"
+      ],
+      "lat": 40.97214,
+      "lon": -5.67647,
+      "telefono": "923230617",
+      "email": "37005368@educa.jcyl.es",
+      "web": "http://ceipvillarymacias.centros.educa.jcyl.es/",
+      "fuente": "https://analisis.datosabiertos.jcyl.es/explore/dataset/directorio-de-centros-docentes/table/?refine.municipio=SALAMANCA"
+    },
+    {
+      "codigo_centro": "37005423",
+      "nombre": "CEIP VIRGEN DE LA VEGA",
+      "direccion": "CALLE TESO DE LA FERIA, 50, 37008 Salamanca",
+      "titularidad": "Público",
+      "etapas": [
+        "Infantil",
+        "Primaria"
+      ],
+      "lat": 40.95237,
+      "lon": -5.67348,
+      "telefono": "923192045",
+      "email": "37005423@educa.jcyl.es",
+      "web": "http://ceipvirgendelavega.centros.educa.jcyl.es",
+      "fuente": "https://analisis.datosabiertos.jcyl.es/explore/dataset/directorio-de-centros-docentes/table/?refine.municipio=SALAMANCA"
+    },
+    {
+      "codigo_centro": "37005988",
+      "nombre": "Colegio E. Especial (público) REINA SOFÍA",
+      "direccion": "AVENIDA CARLOS I, 64, 37008 Salamanca",
+      "titularidad": "Público",
+      "etapas": [
+        "Educación Especial"
+      ],
+      "lat": 40.94962,
+      "lon": -5.66592,
+      "telefono": "923270890",
+      "email": "37005988@educa.jcyl.es",
+      "web": "http://ceereinasofia.centros.educa.jcyl.es",
+      "fuente": "https://analisis.datosabiertos.jcyl.es/explore/dataset/directorio-de-centros-docentes/table/?refine.municipio=SALAMANCA"
+    },
+    {
+      "codigo_centro": "37013572",
+      "nombre": "Escuela Infantil (pública) EL ROLLO",
+      "direccion": "CALLE PONFERRADA, S/N, 37003 Salamanca",
+      "titularidad": "Público",
+      "etapas": [
+        "Infantil"
+      ],
+      "lat": 40.96663,
+      "lon": -5.64837,
+      "telefono": "923182106",
+      "email": "37013572@educa.jcyl.es",
+      "web": null,
+      "fuente": "https://analisis.datosabiertos.jcyl.es/explore/dataset/directorio-de-centros-docentes/table/?refine.municipio=SALAMANCA"
+    },
+    {
+      "codigo_centro": "37013687",
+      "nombre": "Escuela Infantil (pública) EL ZURGUÉN",
+      "direccion": "AVENIDA VIRGEN DEL CUETO, 37008 Salamanca",
+      "titularidad": "Público",
+      "etapas": [
+        "Infantil"
+      ],
+      "lat": 40.94391,
+      "lon": -5.67308,
+      "telefono": "923057082",
+      "email": "37013687@educa.jcyl.es",
+      "web": null,
+      "fuente": "https://analisis.datosabiertos.jcyl.es/explore/dataset/directorio-de-centros-docentes/table/?refine.municipio=SALAMANCA"
+    },
+    {
+      "codigo_centro": "37009830",
+      "nombre": "Escuela Infantil (pública) GARRIDO",
+      "direccion": "CALLE GLORIA FUERTES, S/N, 37004 Salamanca",
+      "titularidad": "Público",
+      "etapas": [
+        "Infantil"
+      ],
+      "lat": 40.97708,
+      "lon": -5.64736,
+      "telefono": "923237481",
+      "email": "37009830@educa.jcyl.es",
+      "web": null,
+      "fuente": "https://analisis.datosabiertos.jcyl.es/explore/dataset/directorio-de-centros-docentes/table/?refine.municipio=SALAMANCA"
+    },
+    {
+      "codigo_centro": "37013250",
+      "nombre": "Escuela Infantil (pública) LAZARILLO DE TORMES",
+      "direccion": "CALLE MAESTRO SERRANO, 7, 37008 Salamanca",
+      "titularidad": "Público",
+      "etapas": [
+        "Infantil"
+      ],
+      "lat": 40.94904,
+      "lon": -5.65911,
+      "telefono": "923219922",
+      "email": "37013250@educa.jcyl.es",
+      "web": null,
+      "fuente": "https://analisis.datosabiertos.jcyl.es/explore/dataset/directorio-de-centros-docentes/table/?refine.municipio=SALAMANCA"
+    },
+    {
+      "codigo_centro": "37013298",
+      "nombre": "Escuela Infantil (pública) LOS PIZARRALES",
+      "direccion": "CALLE OBISPO ALCOLEA, S/N, 37006 Salamanca",
+      "titularidad": "Público",
+      "etapas": [
+        "Infantil"
+      ],
+      "lat": 40.97985,
+      "lon": -5.67487,
+      "telefono": "923255366",
+      "email": "37013298@educa.jcyl.es",
+      "web": null,
+      "fuente": "https://analisis.datosabiertos.jcyl.es/explore/dataset/directorio-de-centros-docentes/table/?refine.municipio=SALAMANCA"
+    },
+    {
+      "codigo_centro": "37010133",
+      "nombre": "Escuela Infantil (pública) SAN BERNARDO",
+      "direccion": "CALLE ARAPILES, 16, 37007 Salamanca",
+      "titularidad": "Público",
+      "etapas": [
+        "Infantil"
+      ],
+      "lat": 40.97048,
+      "lon": -5.67193,
+      "telefono": "923222419",
+      "email": "37010133@educa.jcyl.es",
+      "web": "http://eeisanbernardo.centros.educa.jcyl.es/sitio/",
+      "fuente": "https://analisis.datosabiertos.jcyl.es/explore/dataset/directorio-de-centros-docentes/table/?refine.municipio=SALAMANCA"
+    },
+    {
+      "codigo_centro": "37013262",
+      "nombre": "Escuela Infantil (pública) VIRGEN DE LA VEGA",
+      "direccion": "AVENIDA DE LOS COMUNEROS, 2, 37003 Salamanca",
+      "titularidad": "Público",
+      "etapas": [
+        "Infantil"
+      ],
+      "lat": 40.96865,
+      "lon": -5.65418,
+      "telefono": "923347492",
+      "email": "37013262@educa.jcyl.es",
+      "web": null,
+      "fuente": "https://analisis.datosabiertos.jcyl.es/explore/dataset/directorio-de-centros-docentes/table/?refine.municipio=SALAMANCA"
+    },
+    {
+      "codigo_centro": "37008515",
+      "nombre": "IES DIPUTACIÓN PROVINCIAL",
+      "direccion": "CARRETERA DE CARBAJOSA, 37008 Salamanca",
+      "titularidad": "Público",
+      "etapas": [
+        "ESO",
+        "FP"
+      ],
+      "lat": 40.94642,
+      "lon": -5.66262,
+      "telefono": "923260303",
+      "email": "37008515@educa.jcyl.es",
+      "web": "http://iesdiputacionprovincial.centros.educa.jcyl.es/sitio/",
+      "fuente": "https://analisis.datosabiertos.jcyl.es/explore/dataset/directorio-de-centros-docentes/table/?refine.municipio=SALAMANCA"
+    },
+    {
+      "codigo_centro": "37005939",
+      "nombre": "IES FEDERICO GARCÍA BERNALT",
+      "direccion": "AVENIDA DE ASTORGA, S/N, 37006 Salamanca",
+      "titularidad": "Público",
+      "etapas": [
+        "ESO",
+        "Bachillerato"
+      ],
+      "lat": 40.98114,
+      "lon": -5.66847,
+      "telefono": "923182370",
+      "email": "37005939@educa.jcyl.es",
+      "web": "http://iesgarciabernalt.centros.educa.jcyl.es",
+      "fuente": "https://analisis.datosabiertos.jcyl.es/explore/dataset/directorio-de-centros-docentes/table/?refine.municipio=SALAMANCA"
+    },
+    {
+      "codigo_centro": "37008084",
+      "nombre": "IES FERNANDO DE ROJAS",
+      "direccion": "CALLE CALLLE COLOMBIA, 42-98, 37003 Salamanca",
+      "titularidad": "Público",
+      "etapas": [
+        "ESO",
+        "Bachillerato",
+        "FP"
+      ],
+      "lat": 40.96907,
+      "lon": -5.64142,
+      "telefono": "923182372",
+      "email": "37008084@educa.jcyl.es",
+      "web": "http://iesfernandoderojas.centros.educa.jcyl.es",
+      "fuente": "https://analisis.datosabiertos.jcyl.es/explore/dataset/directorio-de-centros-docentes/table/?refine.municipio=SALAMANCA"
+    },
+    {
+      "codigo_centro": "37009271",
+      "nombre": "IES FRANCISCO SALINAS",
+      "direccion": "CALLE JULITA RAMOS, S/N, 37004 Salamanca",
+      "titularidad": "Público",
+      "etapas": [
+        "ESO",
+        "Bachillerato",
+        "FP"
+      ],
+      "lat": 40.97737,
+      "lon": -5.64668,
+      "telefono": "923253664",
+      "email": "37009271@educa.jcyl.es",
+      "web": "http://iesfranciscosalinas.centros.educa.jcyl.es",
+      "fuente": "https://analisis.datosabiertos.jcyl.es/explore/dataset/directorio-de-centros-docentes/table/?refine.municipio=SALAMANCA"
+    },
+    {
+      "codigo_centro": "37005851",
+      "nombre": "IES FRAY LUIS DE LEÓN",
+      "direccion": "AVENIDA DE LOS MARISTAS, S/N, 37007 Salamanca",
+      "titularidad": "Público",
+      "etapas": [
+        "ESO",
+        "Bachillerato",
+        "FP"
+      ],
+      "lat": 40.97073,
+      "lon": -5.67714,
+      "telefono": "923231194",
+      "email": "37005851@educa.jcyl.es",
+      "web": "http://iesfrayluisdeleon.centros.educa.jcyl.es",
+      "fuente": "https://analisis.datosabiertos.jcyl.es/explore/dataset/directorio-de-centros-docentes/table/?refine.municipio=SALAMANCA"
+    },
+    {
+      "codigo_centro": "37005861",
+      "nombre": "IES LUCÍA DE MEDRANO",
+      "direccion": "AVENIDA FILIBERTO VILLALOBOS, 97-117, 37007 Salamanca",
+      "titularidad": "Público",
+      "etapas": [
+        "ESO",
+        "Bachillerato",
+        "FP"
+      ],
+      "lat": 40.971,
+      "lon": -5.67519,
+      "telefono": "923230625",
+      "email": "37005861@educa.jcyl.es",
+      "web": "http://iesluciademedrano.centros.educa.jcyl.es",
+      "fuente": "https://analisis.datosabiertos.jcyl.es/explore/dataset/directorio-de-centros-docentes/table/?refine.municipio=SALAMANCA"
+    },
+    {
+      "codigo_centro": "37008102",
+      "nombre": "IES MARTÍNEZ URIBARRI",
+      "direccion": "CALLE PARQUE ALAMEDILLA, 13, 37003 Salamanca",
+      "titularidad": "Público",
+      "etapas": [
+        "ESO",
+        "Bachillerato",
+        "FP"
+      ],
+      "lat": 40.96692,
+      "lon": -5.65669,
+      "telefono": "923280839",
+      "email": "37008102@educa.jcyl.es",
+      "web": "http://iesmartinezuribarri.centros.educa.jcyl.es",
+      "fuente": "https://analisis.datosabiertos.jcyl.es/explore/dataset/directorio-de-centros-docentes/table/?refine.municipio=SALAMANCA"
+    },
+    {
+      "codigo_centro": "37006014",
+      "nombre": "IES MATEO HERNÁNDEZ",
+      "direccion": "CALLE DE LA DOCENCIA, S/N, 37005 Salamanca",
+      "titularidad": "Público",
+      "etapas": [
+        "ESO",
+        "Bachillerato",
+        "FP"
+      ],
+      "lat": 40.98087,
+      "lon": -5.65352,
+      "telefono": "923222762",
+      "email": "37006014@educa.jcyl.es",
+      "web": "http://iesmateohernandez.centros.educa.jcyl.es/",
+      "fuente": "https://analisis.datosabiertos.jcyl.es/explore/dataset/directorio-de-centros-docentes/table/?refine.municipio=SALAMANCA"
+    },
+    {
+      "codigo_centro": "37005873",
+      "nombre": "IES TORRES VILLARROEL",
+      "direccion": "AVENIDA HILARIO GOYENECHEA, 42, 37008 Salamanca",
+      "titularidad": "Público",
+      "etapas": [
+        "ESO",
+        "Bachillerato",
+        "FP"
+      ],
+      "lat": 40.94859,
+      "lon": -5.66195,
+      "telefono": "923215309",
+      "email": "37005873@educa.jcyl.es",
+      "web": "http://iestorresvillarroel.centros.educa.jcyl.es",
+      "fuente": "https://analisis.datosabiertos.jcyl.es/explore/dataset/directorio-de-centros-docentes/table/?refine.municipio=SALAMANCA"
+    },
+    {
+      "codigo_centro": "37008904",
+      "nombre": "IES VAGUADA DE LA PALMA",
+      "direccion": "PLAZA DE LA PALMA, S/N, 37007 Salamanca",
+      "titularidad": "Público",
+      "etapas": [
+        "ESO",
+        "Bachillerato"
+      ],
+      "lat": 40.96238,
+      "lon": -5.67221,
+      "telefono": "923212294",
+      "email": "37008904@educa.jcyl.es",
+      "web": "http://iesvaguadadelapalma.centros.educa.jcyl.es",
+      "fuente": "https://analisis.datosabiertos.jcyl.es/explore/dataset/directorio-de-centros-docentes/table/?refine.municipio=SALAMANCA"
+    },
+    {
+      "codigo_centro": "37009131",
+      "nombre": "IES VENANCIO BLANCO",
+      "direccion": "CALLE FILIPINAS, 33, 37003 Salamanca",
+      "titularidad": "Público",
+      "etapas": [
+        "ESO",
+        "Bachillerato",
+        "FP"
+      ],
+      "lat": 40.96996,
+      "lon": -5.64522,
+      "telefono": "923183441",
+      "email": "37009131@educa.jcyl.es",
+      "web": "http://www.iesvenancioblanco.es",
+      "fuente": "https://analisis.datosabiertos.jcyl.es/explore/dataset/directorio-de-centros-docentes/table/?refine.municipio=SALAMANCA"
+    },
+    {
+      "codigo_centro": "37009982",
+      "nombre": "Centro E. Especial (privado) LA CAÑADA",
+      "direccion": "CALLE LA MORAL, 11, 37006 Salamanca",
+      "titularidad": "Concertado",
+      "etapas": [
+        "Educación Especial"
+      ],
+      "lat": 40.97616,
+      "lon": -5.67653,
+      "telefono": "923123600",
+      "email": "37009982@educa.jcyl.es",
+      "web": null,
+      "fuente": "https://analisis.datosabiertos.jcyl.es/explore/dataset/directorio-de-centros-docentes/table/?refine.municipio=SALAMANCA"
+    },
+    {
+      "codigo_centro": "37013316",
+      "nombre": "Centro E. Especial (privado) LOS TILOS",
+      "direccion": "CALLE LOS TILOS, 26, 37004 Salamanca",
+      "titularidad": "Concertado",
+      "etapas": [
+        "Educación Especial"
+      ],
+      "lat": 40.97463,
+      "lon": -5.6513,
+      "telefono": "923190394",
+      "email": "37013316@educa.jcyl.es",
+      "web": null,
+      "fuente": "https://analisis.datosabiertos.jcyl.es/explore/dataset/directorio-de-centros-docentes/table/?refine.municipio=SALAMANCA"
+    },
+    {
+      "codigo_centro": "37005484",
+      "nombre": "Colegio AMOR DE DIOS",
+      "direccion": "CALLE VÁZQUEZ CORONADO, 25, 37002 Salamanca",
+      "titularidad": "Concertado",
+      "etapas": [
+        "Infantil",
+        "Primaria",
+        "ESO",
+        "Bachillerato",
+        "FP"
+      ],
+      "lat": 40.96769,
+      "lon": -5.66213,
+      "telefono": "923280890",
+      "email": "37005484@educa.jcyl.es",
+      "web": null,
+      "fuente": "https://analisis.datosabiertos.jcyl.es/explore/dataset/directorio-de-centros-docentes/table/?refine.municipio=SALAMANCA"
+    },
+    {
+      "codigo_centro": "37009763",
+      "nombre": "Colegio ANTONIO MACHADO",
+      "direccion": "CALLE PINTOR DÍAZ CANEJA, 28, 37003 Salamanca",
+      "titularidad": "Concertado",
+      "etapas": [
+        "Infantil",
+        "Primaria",
+        "ESO",
+        "Bachillerato",
+        "FP"
+      ],
+      "lat": 40.96603,
+      "lon": -5.64634,
+      "telefono": "923180460",
+      "email": "37009763@educa.jcyl.es",
+      "web": null,
+      "fuente": "https://analisis.datosabiertos.jcyl.es/explore/dataset/directorio-de-centros-docentes/table/?refine.municipio=SALAMANCA"
+    },
+    {
+      "codigo_centro": "37005526",
+      "nombre": "Colegio CALASANZ",
+      "direccion": "PASEO CANALEJAS, 139-159, 37001 Salamanca",
+      "titularidad": "Concertado",
+      "etapas": [
+        "Infantil",
+        "Primaria",
+        "ESO",
+        "Bachillerato",
+        "FP"
+      ],
+      "lat": 40.9608,
+      "lon": -5.65937,
+      "telefono": "923267961",
+      "email": "37005526@educa.jcyl.es",
+      "web": "http://www.calasanzsalamanca.es",
+      "fuente": "https://analisis.datosabiertos.jcyl.es/explore/dataset/directorio-de-centros-docentes/table/?refine.municipio=SALAMANCA"
+    },
+    {
+      "codigo_centro": "37005541",
+      "nombre": "Colegio DIVINO MAESTRO",
+      "direccion": "AVENIDA SAN AGUSTÍN, 26, 37005 Salamanca",
+      "titularidad": "Concertado",
+      "etapas": [
+        "Infantil",
+        "Primaria",
+        "ESO"
+      ],
+      "lat": 40.97769,
+      "lon": -5.65983,
+      "telefono": "923220392",
+      "email": "37005541@educa.jcyl.es",
+      "web": "http://www.divinomaestrofesalamanca.com",
+      "fuente": "https://analisis.datosabiertos.jcyl.es/explore/dataset/directorio-de-centros-docentes/table/?refine.municipio=SALAMANCA"
+    },
+    {
+      "codigo_centro": "37005551",
+      "nombre": "Colegio ESCLAVAS SAGRADO CORAZÓN DE JESÚS",
+      "direccion": "PASEO DEL ROLLO, 39, 37003 Salamanca",
+      "titularidad": "Concertado",
+      "etapas": [
+        "Infantil",
+        "Primaria",
+        "ESO"
+      ],
+      "lat": 40.96624,
+      "lon": -5.65155,
+      "telefono": "923225200",
+      "email": "37005551@educa.jcyl.es",
+      "web": "http://colegioesclavassalamanca.com",
+      "fuente": "https://analisis.datosabiertos.jcyl.es/explore/dataset/directorio-de-centros-docentes/table/?refine.municipio=SALAMANCA"
+    },
+    {
+      "codigo_centro": "37005587",
+      "nombre": "Colegio LA MILAGROSA",
+      "direccion": "CALLE VERGARA, 45, 37003 Salamanca",
+      "titularidad": "Concertado",
+      "etapas": [
+        "Infantil",
+        "Primaria",
+        "ESO"
+      ],
+      "lat": 40.96216,
+      "lon": -5.65367,
+      "telefono": "923184216",
+      "email": "37005587@educa.jcyl.es",
+      "web": "http://www.colegiomilagrosa.com",
+      "fuente": "https://analisis.datosabiertos.jcyl.es/explore/dataset/directorio-de-centros-docentes/table/?refine.municipio=SALAMANCA"
+    },
+    {
+      "codigo_centro": "37005599",
+      "nombre": "Colegio MAESTRO ÁVILA",
+      "direccion": "CALLE FONSECA, 29, 37007 Salamanca",
+      "titularidad": "Concertado",
+      "etapas": [
+        "Infantil",
+        "Primaria",
+        "ESO",
+        "Bachillerato",
+        "FP"
+      ],
+      "lat": 40.96501,
+      "lon": -5.6702,
+      "telefono": "923214200",
+      "email": "37005599@educa.jcyl.es",
+      "web": "http://www.colegiomaestroavila.com",
+      "fuente": "https://analisis.datosabiertos.jcyl.es/explore/dataset/directorio-de-centros-docentes/table/?refine.municipio=SALAMANCA"
+    },
+    {
+      "codigo_centro": "37005617",
+      "nombre": "Colegio MARISTA CHAMPAGNAT",
+      "direccion": "AVENIDA DE LOS MARISTAS, 19-55, 37007 Salamanca",
+      "titularidad": "Concertado",
+      "etapas": [
+        "Infantil",
+        "Primaria",
+        "ESO",
+        "Bachillerato"
+      ],
+      "lat": 40.96684,
+      "lon": -5.67245,
+      "telefono": "923269400",
+      "email": "37005617@educa.jcyl.es",
+      "web": null,
+      "fuente": "https://analisis.datosabiertos.jcyl.es/explore/dataset/directorio-de-centros-docentes/table/?refine.municipio=SALAMANCA"
+    },
+    {
+      "codigo_centro": "37005605",
+      "nombre": "Colegio MARÍA AUXILIADORA",
+      "direccion": "CALLE PADRE CÁMARA, 1, 37004 Salamanca",
+      "titularidad": "Concertado",
+      "etapas": [
+        "Infantil",
+        "Primaria",
+        "ESO",
+        "Bachillerato"
+      ],
+      "lat": 40.97049,
+      "lon": -5.65851,
+      "telefono": "923282431",
+      "email": "37005605@educa.jcyl.es",
+      "web": "https://salesianosmaux.es/colegio",
+      "fuente": "https://analisis.datosabiertos.jcyl.es/explore/dataset/directorio-de-centros-docentes/table/?refine.municipio=SALAMANCA"
+    },
+    {
+      "codigo_centro": "37005630",
+      "nombre": "Colegio MISIONERAS DE LA PROVIDENCIA",
+      "direccion": "AVENIDA DE LOS MARISTAS, 1, 37007 Salamanca",
+      "titularidad": "Concertado",
+      "etapas": [
+        "Infantil",
+        "Primaria",
+        "ESO",
+        "Bachillerato",
+        "FP"
+      ],
+      "lat": 40.96596,
+      "lon": -5.67135,
+      "telefono": "923263522",
+      "email": "37005630@educa.jcyl.es",
+      "web": null,
+      "fuente": "https://analisis.datosabiertos.jcyl.es/explore/dataset/directorio-de-centros-docentes/table/?refine.municipio=SALAMANCA"
+    },
+    {
+      "codigo_centro": "37005976",
+      "nombre": "Colegio MONTESSORI",
+      "direccion": "CALLE RAFAEL LAPESA, 1, 37004 Salamanca",
+      "titularidad": "Concertado",
+      "etapas": [
+        "Infantil",
+        "Primaria",
+        "ESO",
+        "Bachillerato"
+      ],
+      "lat": 40.9789,
+      "lon": -5.64777,
+      "telefono": "923240567",
+      "email": "37005976@educa.jcyl.es",
+      "web": "http://www.montessorisalamanca.net",
+      "fuente": "https://analisis.datosabiertos.jcyl.es/explore/dataset/directorio-de-centros-docentes/table/?refine.municipio=SALAMANCA"
+    },
+    {
+      "codigo_centro": "37005678",
+      "nombre": "Colegio PADRES TRINITARIOS",
+      "direccion": "AVENIDA DE FILIBERTO VILLALOBOS, 82, 37007 Salamanca",
+      "titularidad": "Concertado",
+      "etapas": [
+        "Infantil",
+        "Primaria",
+        "ESO"
+      ],
+      "lat": 40.97094,
+      "lon": -5.67508,
+      "telefono": "923282487",
+      "email": "37005678@educa.jcyl.es",
+      "web": null,
+      "fuente": "https://analisis.datosabiertos.jcyl.es/explore/dataset/directorio-de-centros-docentes/table/?refine.municipio=SALAMANCA"
+    },
+    {
+      "codigo_centro": "37005681",
+      "nombre": "Colegio PIZARRALES",
+      "direccion": "CALLE VALLEJERA, 1, 37006 Salamanca",
+      "titularidad": "Concertado",
+      "etapas": [
+        "Infantil",
+        "Primaria",
+        "ESO"
+      ],
+      "lat": 40.97414,
+      "lon": -5.67345,
+      "telefono": "923229853",
+      "email": "37005681@educa.jcyl.es",
+      "web": "https://concertadopizarrales.com/",
+      "fuente": "https://analisis.datosabiertos.jcyl.es/explore/dataset/directorio-de-centros-docentes/table/?refine.municipio=SALAMANCA"
+    },
+    {
+      "codigo_centro": "37005794",
+      "nombre": "Colegio SAGRADA FAMILIA - SIERVAS DE SAN JOSÉ",
+      "direccion": "CALLE MARQUESA DE ALMARZA, 1, 37001 Salamanca",
+      "titularidad": "Concertado",
+      "etapas": [
+        "Infantil",
+        "Primaria",
+        "ESO"
+      ],
+      "lat": 40.96217,
+      "lon": -5.66234,
+      "telefono": "923270011",
+      "email": "37005794@educa.jcyl.es",
+      "web": null,
+      "fuente": "https://analisis.datosabiertos.jcyl.es/explore/dataset/directorio-de-centros-docentes/table/?refine.municipio=SALAMANCA"
+    },
+    {
+      "codigo_centro": "37008965",
+      "nombre": "Colegio SAGRADO CORAZÓN",
+      "direccion": "AVENIDA DE LOS REYES DE ESPAÑA, 3, 37008 Salamanca",
+      "titularidad": "Concertado",
+      "etapas": [
+        "Infantil",
+        "Primaria",
+        "ESO"
+      ],
+      "lat": 40.95842,
+      "lon": -5.66491,
+      "telefono": "923217542",
+      "email": "37008965@educa.jcyl.es",
+      "web": "https://jesuitinas-salamanca.es/",
+      "fuente": "https://analisis.datosabiertos.jcyl.es/explore/dataset/directorio-de-centros-docentes/table/?refine.municipio=SALAMANCA"
+    },
+    {
+      "codigo_centro": "37005733",
+      "nombre": "Colegio SALESIANO SAN JOSÉ",
+      "direccion": "CARRETERA DE LEDESMA, 32-52, 37006 Salamanca",
+      "titularidad": "Concertado",
+      "etapas": [
+        "Infantil",
+        "Primaria",
+        "ESO",
+        "FP"
+      ],
+      "lat": 40.97474,
+      "lon": -5.67278,
+      "telefono": "923225983",
+      "email": "37005733@educa.jcyl.es",
+      "web": "http://www.salesianospizarrales.com",
+      "fuente": "https://analisis.datosabiertos.jcyl.es/explore/dataset/directorio-de-centros-docentes/table/?refine.municipio=SALAMANCA"
+    },
+    {
+      "codigo_centro": "37005812",
+      "nombre": "Colegio SAN AGUSTÍN",
+      "direccion": "AVENIDA SAN AGUSTÍN, 113, 37005 Salamanca",
+      "titularidad": "Concertado",
+      "etapas": [
+        "Infantil",
+        "Primaria",
+        "ESO",
+        "Bachillerato",
+        "FP"
+      ],
+      "lat": 40.97938,
+      "lon": -5.65767,
+      "telefono": "923220700",
+      "email": "37005812@educa.jcyl.es",
+      "web": null,
+      "fuente": "https://analisis.datosabiertos.jcyl.es/explore/dataset/directorio-de-centros-docentes/table/?refine.municipio=SALAMANCA"
+    },
+    {
+      "codigo_centro": "37005711",
+      "nombre": "Colegio SAN ESTANISLAO DE KOSTKA",
+      "direccion": "CALLE PRÍNCIPE DE VERGARA, 4-8, 37003 Salamanca",
+      "titularidad": "Concertado",
+      "etapas": [
+        "Infantil",
+        "Primaria",
+        "ESO"
+      ],
+      "lat": 40.96427,
+      "lon": -5.65433,
+      "telefono": "923125203",
+      "email": "37005711@educa.jcyl.es",
+      "web": "http://www.sanestanislao.net/",
+      "fuente": "https://analisis.datosabiertos.jcyl.es/explore/dataset/directorio-de-centros-docentes/table/?refine.municipio=SALAMANCA"
+    },
+    {
+      "codigo_centro": "37005745",
+      "nombre": "Colegio SAN JOSÉ",
+      "direccion": "AVENIDA DE LA MERCED, 52, 37005 Salamanca",
+      "titularidad": "Concertado",
+      "etapas": [
+        "Infantil",
+        "Primaria",
+        "ESO"
+      ],
+      "lat": 40.97899,
+      "lon": -5.66148,
+      "telefono": "923226004",
+      "email": "37005745@educa.jcyl.es",
+      "web": "http://www.colegiosanjosesalamanca.es",
+      "fuente": "https://analisis.datosabiertos.jcyl.es/explore/dataset/directorio-de-centros-docentes/table/?refine.municipio=SALAMANCA"
+    },
+    {
+      "codigo_centro": "37005757",
+      "nombre": "Colegio SAN JUAN BOSCO",
+      "direccion": "PASEO CANALEJAS, 38, 37001 Salamanca",
+      "titularidad": "Concertado",
+      "etapas": [
+        "Infantil",
+        "Primaria",
+        "ESO",
+        "Bachillerato"
+      ],
+      "lat": 40.96591,
+      "lon": -5.65788,
+      "telefono": "923262161",
+      "email": "37005757@educa.jcyl.es",
+      "web": null,
+      "fuente": "https://analisis.datosabiertos.jcyl.es/explore/dataset/directorio-de-centros-docentes/table/?refine.municipio=SALAMANCA"
+    },
+    {
+      "codigo_centro": "37005770",
+      "nombre": "Colegio SANTA TERESA DE JESÚS",
+      "direccion": "AVENIDA RAIMUNDO DE BORGOÑA, 41, 37005 Salamanca",
+      "titularidad": "Concertado",
+      "etapas": [
+        "Infantil",
+        "Primaria",
+        "ESO",
+        "Bachillerato"
+      ],
+      "lat": 40.9778,
+      "lon": -5.66308,
+      "telefono": "923222900",
+      "email": "37005770@educa.jcyl.es",
+      "web": null,
+      "fuente": "https://analisis.datosabiertos.jcyl.es/explore/dataset/directorio-de-centros-docentes/table/?refine.municipio=SALAMANCA"
+    },
+    {
+      "codigo_centro": "37005782",
+      "nombre": "Colegio SANTÍSIMA TRINIDAD",
+      "direccion": "PASEO DE CARMELITAS, 46, 37007 Salamanca",
+      "titularidad": "Concertado",
+      "etapas": [
+        "Infantil",
+        "Primaria",
+        "ESO",
+        "Bachillerato",
+        "FP"
+      ],
+      "lat": 40.96857,
+      "lon": -5.66689,
+      "telefono": "923225477",
+      "email": "37005782@educa.jcyl.es",
+      "web": "https://www.trinitarias.com",
+      "fuente": "https://analisis.datosabiertos.jcyl.es/explore/dataset/directorio-de-centros-docentes/table/?refine.municipio=SALAMANCA"
+    },
+    {
+      "codigo_centro": "37010170",
+      "nombre": "Escuela Infantil (privada) EL GLOBO ROJO",
+      "direccion": "CALLE LOS HIDALGOS - PARQUE LAS SALESAS, 14, 37005 Salamanca",
+      "titularidad": "Concertado",
+      "etapas": [
+        "Infantil"
+      ],
+      "lat": 40.97563,
+      "lon": -5.66115,
+      "telefono": "923243820",
+      "email": "37010170@educa.jcyl.es",
+      "web": null,
+      "fuente": "https://analisis.datosabiertos.jcyl.es/explore/dataset/directorio-de-centros-docentes/table/?refine.municipio=SALAMANCA"
+    },
+    {
+      "codigo_centro": "37014102",
+      "nombre": "Escuela Infantil (privada) AULA PIMENTÓN MAESTRO ÁVILA",
+      "direccion": "CALLE FONSECA, 29, 37007 Salamanca",
+      "titularidad": "Privado",
+      "etapas": [
+        "Infantil"
+      ],
+      "lat": 40.96456,
+      "lon": -5.67084,
+      "telefono": null,
+      "email": "37014102@educa.jcyl.es",
+      "web": null,
+      "fuente": "https://analisis.datosabiertos.jcyl.es/explore/dataset/directorio-de-centros-docentes/table/?refine.municipio=SALAMANCA"
+    },
+    {
+      "codigo_centro": "37014072",
+      "nombre": "Escuela Infantil (privada) CHISPITINAS",
+      "direccion": "AVENIDA FILIBERTO VILLALOBOS, 82, 37006 Salamanca",
+      "titularidad": "Privado",
+      "etapas": [
+        "Infantil"
+      ],
+      "lat": 40.97133,
+      "lon": -5.67793,
+      "telefono": "923134236",
+      "email": "37014072@educa.jcyl.es",
+      "web": null,
+      "fuente": "https://analisis.datosabiertos.jcyl.es/explore/dataset/directorio-de-centros-docentes/table/?refine.municipio=SALAMANCA"
+    },
+    {
+      "codigo_centro": "37014060",
+      "nombre": "Escuela Infantil (privada) EDUCA BABYS",
+      "direccion": "CALLE SALESAS, 10, 37005 Salamanca",
+      "titularidad": "Privado",
+      "etapas": [
+        "Infantil"
+      ],
+      "lat": 40.9739,
+      "lon": -5.66391,
+      "telefono": "661736619",
+      "email": "37014060@educa.jcyl.es",
+      "web": null,
+      "fuente": "https://analisis.datosabiertos.jcyl.es/explore/dataset/directorio-de-centros-docentes/table/?refine.municipio=SALAMANCA"
+    },
+    {
+      "codigo_centro": "37014126",
+      "nombre": "Escuela Infantil (privada) EL GLOBO ROJO II",
+      "direccion": "CALLE LOS HIDALGOS, 18, 37005 Salamanca",
+      "titularidad": "Privado",
+      "etapas": [
+        "Infantil"
+      ],
+      "lat": 40.97539,
+      "lon": -5.66328,
+      "telefono": "923243820",
+      "email": "37014126@educa.jcyl.es",
+      "web": null,
+      "fuente": "https://analisis.datosabiertos.jcyl.es/explore/dataset/directorio-de-centros-docentes/table/?refine.municipio=SALAMANCA"
+    },
+    {
+      "codigo_centro": "37014217",
+      "nombre": "Escuela Infantil (privada) El Tren",
+      "direccion": "PLAZA Extremadura, 5, 37008 Salamanca",
+      "titularidad": "Privado",
+      "etapas": [
+        "Infantil"
+      ],
+      "lat": 40.9539,
+      "lon": -5.70986,
+      "telefono": "671080625",
+      "email": "37014217@educa.jcyl.es",
+      "web": null,
+      "fuente": "https://analisis.datosabiertos.jcyl.es/explore/dataset/directorio-de-centros-docentes/table/?refine.municipio=SALAMANCA"
+    },
+    {
+      "codigo_centro": "37014205",
+      "nombre": "Escuela Infantil (privada) MI MAMÁ ME MIMA",
+      "direccion": "CALLE MARÍA LA BRAVA, 42, 37003 Salamanca",
+      "titularidad": "Privado",
+      "etapas": [
+        "Infantil"
+      ],
+      "lat": 40.97068,
+      "lon": -5.65038,
+      "telefono": "923186100",
+      "email": "37014205@educa.jcyl.es",
+      "web": null,
+      "fuente": "https://analisis.datosabiertos.jcyl.es/explore/dataset/directorio-de-centros-docentes/table/?refine.municipio=SALAMANCA"
+    },
+    {
+      "codigo_centro": "37014011",
+      "nombre": "Escuela Infantil (privada) MUMAKIDS",
+      "direccion": "AVENIDA RAIMUNDO DE BORGOÑA, 41-57, 37005 Salamanca",
+      "titularidad": "Privado",
+      "etapas": [
+        "Infantil"
+      ],
+      "lat": 40.978,
+      "lon": -5.66632,
+      "telefono": null,
+      "email": "37014011@educa.jcyl.es",
+      "web": null,
+      "fuente": "https://analisis.datosabiertos.jcyl.es/explore/dataset/directorio-de-centros-docentes/table/?refine.municipio=SALAMANCA"
+    },
+    {
+      "codigo_centro": "37013596",
+      "nombre": "Escuela Infantil (privada) PSN BICOS",
+      "direccion": "CALLE JUAN MALUQUER, 21, 37007 Salamanca",
+      "titularidad": "Privado",
+      "etapas": [
+        "Infantil"
+      ],
+      "lat": 40.97056,
+      "lon": -5.67892,
+      "telefono": "923216810",
+      "email": "37013596@educa.jcyl.es",
+      "web": "https://www.psnbicos.es/",
+      "fuente": "https://analisis.datosabiertos.jcyl.es/explore/dataset/directorio-de-centros-docentes/table/?refine.municipio=SALAMANCA"
+    },
+    {
+      "codigo_centro": "37013389",
+      "nombre": "Escuela Infantil (privada) TEBEO",
+      "direccion": "CALLE ENRIQUE SENA, 22, 37007 Salamanca",
+      "titularidad": "Privado",
+      "etapas": [
+        "Infantil"
+      ],
+      "lat": 40.94946,
+      "lon": -5.63062,
+      "telefono": "923207800",
+      "email": "37013389@educa.jcyl.es",
+      "web": null,
+      "fuente": "https://analisis.datosabiertos.jcyl.es/explore/dataset/directorio-de-centros-docentes/table/?refine.municipio=SALAMANCA"
+    }
+  ]
+}

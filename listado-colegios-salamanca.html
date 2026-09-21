@@ -1,0 +1,185 @@
+---
+layout: default
+title: Listado de Colegios y Centros Educativos de Salamanca
+description: Directorio completo de los centros educativos no universitarios de la ciudad de Salamanca, con dirección, ubicación en el mapa y si son públicos, concertados o privados
+date: 21-09-2026
+folder: Educacion
+permalink: listado-colegios-salamanca
+---
+
+    <!-- Featured Datasets Section -->
+    <section class="featured dataset" id="datos">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="section-title">{{ page.title }}</h1>
+                <p class="section-description">{{ page.description }}</p>
+            </div>
+
+			<div id="section-content">
+
+				<p>
+Este directorio recoge los <b id="totalCentrosTexto">77 centros educativos</b> de Educación Infantil, Primaria, ESO, Bachillerato, Formación Profesional (cuando comparte centro con etapas anteriores) y Educación Especial que están dados de alta dentro del término municipal de <b>Salamanca capital</b>. No incluye localidades del alfoz (Santa Marta de Tormes, Villamayor, Carbajosa de la Sagrada, Cabrerizos, Aldeatejada...), ni universidades, academias, autoescuelas, escuelas de idiomas, conservatorios o centros de FP específica sin otras etapas.</p>
+
+<div id="statsColegios" style="display:flex; flex-wrap:wrap; gap:12px; margin: 20px 0;">
+	<div style="flex:1; min-width:140px; background:#fdf1ec; border-left:4px solid #A8201A; border-radius:6px; padding:12px 16px;">
+		<div style="font-size:1.6em; font-weight:700; color:#A8201A;" id="statPublico">–</div>
+		<div style="font-size:0.85em; color:#555;">Centros públicos</div>
+	</div>
+	<div style="flex:1; min-width:140px; background:#eaf1f9; border-left:4px solid #1E56A0; border-radius:6px; padding:12px 16px;">
+		<div style="font-size:1.6em; font-weight:700; color:#1E56A0;" id="statConcertado">–</div>
+		<div style="font-size:0.85em; color:#555;">Centros concertados</div>
+	</div>
+	<div style="flex:1; min-width:140px; background:#fef3e7; border-left:4px solid #F4A261; border-radius:6px; padding:12px 16px;">
+		<div style="font-size:1.6em; font-weight:700; color:#F4A261;" id="statPrivado">–</div>
+		<div style="font-size:0.85em; color:#555;">Centros privados</div>
+	</div>
+	<div style="flex:1; min-width:140px; background:#eef6ee; border-left:4px solid #2C5F2D; border-radius:6px; padding:12px 16px;">
+		<div style="font-size:1.6em; font-weight:700; color:#2C5F2D;" id="statTotal">–</div>
+		<div style="font-size:0.85em; color:#555;">Total de centros</div>
+	</div>
+</div>
+
+  <!-- Mapa de colegios -->
+  <div style="display:flex; flex-wrap:wrap; gap:10px; align-items:center; margin-bottom:10px;">
+	<span style="font-size:0.9em; color:#555;">Mostrar en el mapa:</span>
+	<button type="button" class="filtro-titularidad" data-tit="Público" style="border:2px solid #A8201A; background:#A8201A; color:#fff; border-radius:20px; padding:5px 14px; font-size:0.85em; cursor:pointer;">● Público</button>
+	<button type="button" class="filtro-titularidad" data-tit="Concertado" style="border:2px solid #1E56A0; background:#1E56A0; color:#fff; border-radius:20px; padding:5px 14px; font-size:0.85em; cursor:pointer;">● Concertado</button>
+	<button type="button" class="filtro-titularidad" data-tit="Privado" style="border:2px solid #F4A261; background:#F4A261; color:#fff; border-radius:20px; padding:5px 14px; font-size:0.85em; cursor:pointer;">● Privado</button>
+  </div>
+  <div id="mapaColegios" style="width: 100%; height: 550px; border-radius: 8px; margin-bottom: 10px;"></div>
+  <p style="font-size: 0.85em; color: #555; margin-top: 0;">Haz clic en cada punto para ver el nombre, la dirección y las etapas educativas del centro. Usa los botones de arriba para mostrar u ocultar cada tipo de titularidad.</p>
+
+			<h2>Pública, concertada y privada: cómo se reparte el mapa escolar</h2>
+			<p>
+Salamanca capital mantiene una red educativa con fuerte peso de la <b>enseñanza concertada</b>, heredera de la larga implantación de órdenes religiosas e instituciones históricas en la ciudad, junto a una red pública que cubre de forma más homogénea los barrios periféricos y una presencia minoritaria de centros privados sin concierto. El detalle completo, centro a centro, está en la tabla de más abajo; el análisis de esta distribución por zonas y su impacto en la movilidad escolar se desarrolla en <a href="/colegios-centros-educativos-salamanca">Radiografía Escolar de Salamanca</a>.</p>
+
+			</div>
+
+			<div id="section-table">
+			<div style="margin-bottom:12px;">
+				<input type="text" id="buscadorColegios" placeholder="Buscar por nombre, dirección o barrio..." style="width:100%; max-width:420px; padding:8px 12px; border:1px solid #ccc; border-radius:6px; font-size:0.95em;">
+			</div>
+			<table border="1" cellpadding="5" cellspacing="0">
+			  <thead>
+				<tr>
+				  <th>Centro Educativo</th>
+				  <th>Titularidad</th>
+				  <th>Dirección</th>
+				  <th>Etapas</th>
+				</tr>
+			  </thead>
+			  <tbody id="tablaColegiosBody">
+				<tr><td colspan="4">Cargando listado de centros…</td></tr>
+			  </tbody>
+			</table>
+			<p style="font-size: 0.9em; color: #555;">Fuente: Directorio de Centros Docentes, dato abierto de la Junta de Castilla y León (curso 2026/2027), filtrado por municipio de Salamanca. La titularidad procede directamente de los campos oficiales del dataset. <a href="/centros-educativos-salamanca.json" target="_blank" rel="noopener">Descargar listado completo en JSON</a>.</p>
+
+			</div>
+
+			{% include categories.html %}
+
+        </div>
+    </section>
+
+	<!-- Hojas de estilo y scripts de Leaflet -->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+	<script>
+	(function () {
+		const COLORES = { 'Público': '#A8201A', 'Concertado': '#1E56A0', 'Privado': '#F4A261' };
+
+		const mapColegios = L.map('mapaColegios').setView([40.9650, -5.6630], 13);
+
+		L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/light_all/{z}/{x}/{y}{r}.png?key=cb1_2izw_1_55d93b51ded1dcecfa044181', {
+			attribution: '&copy; OpenStreetMap &copy; CARTO',
+			subdomains: 'abcd',
+			maxZoom: 19
+		}).addTo(mapColegios);
+
+		const capas = {
+			'Público': L.layerGroup().addTo(mapColegios),
+			'Concertado': L.layerGroup().addTo(mapColegios),
+			'Privado': L.layerGroup().addTo(mapColegios)
+		};
+
+		document.querySelectorAll('.filtro-titularidad').forEach(btn => {
+			btn.addEventListener('click', () => {
+				const tit = btn.dataset.tit;
+				const capa = capas[tit];
+				if (mapColegios.hasLayer(capa)) {
+					mapColegios.removeLayer(capa);
+					btn.style.opacity = '0.4';
+				} else {
+					mapColegios.addLayer(capa);
+					btn.style.opacity = '1';
+				}
+			});
+		});
+
+		function escapeHtml(str) {
+			return String(str).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+		}
+
+		fetch('/centros-educativos-salamanca.json?v=1')
+			.then(r => r.json())
+			.then(data => {
+				const centros = data.centros || [];
+				const desglose = (data.metadata && data.metadata.desglose_titularidad) || {};
+
+				document.getElementById('statPublico').textContent = desglose['Público'] ?? '–';
+				document.getElementById('statConcertado').textContent = desglose['Concertado'] ?? '–';
+				document.getElementById('statPrivado').textContent = desglose['Privado'] ?? '–';
+				document.getElementById('statTotal').textContent = data.metadata ? data.metadata.total_centros : centros.length;
+				if (data.metadata && data.metadata.total_centros) {
+					document.getElementById('totalCentrosTexto').textContent = data.metadata.total_centros + ' centros educativos';
+				}
+
+				centros.forEach(c => {
+					if (typeof c.lat !== 'number' || typeof c.lon !== 'number') return;
+					const color = COLORES[c.titularidad] || '#264653';
+					const capa = capas[c.titularidad] || capas['Público'];
+					L.circleMarker([c.lat, c.lon], {
+						radius: 7,
+						fillColor: color,
+						color: '#ffffff',
+						weight: 2,
+						fillOpacity: 0.9
+					})
+					.bindPopup(`<b>${escapeHtml(c.nombre)}</b><br>${escapeHtml(c.titularidad)}<br>${escapeHtml(c.direccion)}<br><span style="font-size:0.85em;">${(c.etapas || []).map(escapeHtml).join(', ')}</span>`)
+					.addTo(capa);
+				});
+
+				const tbody = document.getElementById('tablaColegiosBody');
+				if (!centros.length) {
+					tbody.innerHTML = '<tr><td colspan="4">No se ha podido cargar el listado.</td></tr>';
+					return;
+				}
+
+				const filas = centros
+					.slice()
+					.sort((a, b) => a.nombre.localeCompare(b.nombre, 'es'))
+					.map(c => {
+						const web = c.web ? ` <a href="${escapeHtml(c.web)}" target="_blank" rel="noopener" style="font-size:0.85em;">(web)</a>` : '';
+						return `<tr>
+							<td><b>${escapeHtml(c.nombre)}</b>${web}</td>
+							<td>${escapeHtml(c.titularidad)}</td>
+							<td>${escapeHtml(c.direccion)}</td>
+							<td>${(c.etapas || []).map(escapeHtml).join(', ')}</td>
+						</tr>`;
+					});
+				tbody.innerHTML = filas.join('');
+
+				const buscador = document.getElementById('buscadorColegios');
+				buscador.addEventListener('input', () => {
+					const q = buscador.value.trim().toLowerCase();
+					document.querySelectorAll('#tablaColegiosBody tr').forEach(tr => {
+						tr.style.display = tr.textContent.toLowerCase().includes(q) ? '' : 'none';
+					});
+				});
+			})
+			.catch(err => {
+				console.error('No se pudo cargar centros-educativos-salamanca.json', err);
+				document.getElementById('tablaColegiosBody').innerHTML = '<tr><td colspan="4">No se ha podido cargar el listado de centros.</td></tr>';
+			});
+	})();
+	</script>
