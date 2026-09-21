@@ -1,0 +1,434 @@
+{
+  "metadatos": {
+    "titulo": "Rutas de senderismo reales y documentadas de la provincia de Salamanca",
+    "descripcion": "Selección de rutas de senderismo señalizadas, conocidas o muy transitadas en la provincia de Salamanca (España), verificadas en fuentes turísticas, institucionales o de la Federación de Deportes de Montaña. No incluye rutas inventadas; los datos no confirmados con precisión se marcan como 'aproximado' o 'no confirmado'.",
+    "fecha_elaboracion": "2026-09-21",
+    "numero_rutas": 19,
+    "cobertura_geografica": [
+      "Parque Natural de las Batuecas-Sierra de Francia (La Alberca, Miranda del Castañar, Mogarraz, San Martín del Castañar, Sequeros, Villanueva del Conde)",
+      "Parque Natural Arribes del Duero (Pereña de la Ribera, Masueco, Aldeadávila de la Ribera, Mieza)",
+      "Sierra de Béjar / Candelario",
+      "Camino de Santiago - Vía de la Plata a su paso por la provincia",
+      "El Rebollar / comarca de Ciudad Rodrigo (límite con Sierra de Gata, Cáceres)",
+      "Sotoserrano (valle del Alagón, límite sur del Parque Natural de las Batuecas-Sierra de Francia)"
+    ],
+    "notas_metodologicas": [
+      "Las coordenadas de inicio son, salvo indicación contraria, las del núcleo urbano de referencia (centroide del municipio), no el punto exacto del sendero, salvo cuando se cita expresamente un mirador, monasterio o parking concreto con coordenadas propias.",
+      "Cuando varias fuentes discrepan en distancia o desnivel (frecuente en Wikiloc, donde cada usuario sube su propia variante), se indica el rango encontrado y se marca como 'aproximado'.",
+      "Las rutas de Gran Recorrido (GR) y la Vía de la Plata son itinerarios de varios días; se incluyen íntegras por su relevancia pero se advierte que no son senderos de una sola jornada.",
+      "No se han incluido rutas de comarcas de la provincia sin documentación de senderismo señalizado y contrastable en fuentes fiables (p. ej. Tierra de Ledesma, Campo de Peñaranda, Alba de Tormes), en línea con el criterio de no inventar ni forzar cobertura donde no hay datos reales."
+    ],
+    "fuentes_principales": [
+      {"nombre": "Diputación de Salamanca / Patronato Provincial de Turismo - Caminos de Arte en la Naturaleza", "url": "http://dipsanet.es/noticias/homologacion_rutas_sierra_de_francia.html"},
+      {"nombre": "Junta de Castilla y León - Turismo Castilla y León (Patrimonio Natural)", "url": "https://www.turismocastillayleon.com"},
+      {"nombre": "Federación de Deportes de Montaña, Escalada y Senderismo de Castilla y León (FDMESCYL / fclm.com) - Buscador de senderos homologados", "url": "https://www.fclm.com/buscador-senderos-homologados/"},
+      {"nombre": "Wikiloc (verificación de existencia, trazado, distancia y desnivel aproximados)", "url": "https://www.wikiloc.com"},
+      {"nombre": "Turismo Sierra de Francia", "url": "https://turismosierradefrancia.es"},
+      {"nombre": "Ayuntamiento de Candelario", "url": "https://www.candelario.es/rutas-por-candelario/"},
+      {"nombre": "Ayuntamiento de Pereña de la Ribera", "url": "http://perenadelaribera.es/cultura-y-deportes/rutas-de-senderismo/"},
+      {"nombre": "Terranostrum.es (guía de senderismo por comarcas de Salamanca)", "url": "https://www.terranostrum.es/senderismo/salamanca"},
+      {"nombre": "Apatita.com (crónicas y fichas técnicas de rutas)", "url": "http://www.apatita.com"},
+      {"nombre": "AllTrails", "url": "https://www.alltrails.com/spain/salamanca"},
+      {"nombre": "Comarca de Ciudad Rodrigo / enciudadrodrigo.com (rutas de El Rebollar)", "url": "http://www.enciudadrodrigo.com"},
+      {"nombre": "La Gaceta de Salamanca / Salamancahoy (prensa local, homologación de rutas)", "url": "https://www.lagacetadesalamanca.es"},
+      {"nombre": "Wikipedia (apoyo general)", "url": "https://es.wikipedia.org"}
+    ]
+  },
+  "rutas": [
+    {
+      "id": "pena-de-francia-la-alberca",
+      "nombre": "Ascensión a la Peña de Francia desde La Alberca",
+      "comarca": "Sierra de Francia",
+      "municipio_inicio": "La Alberca",
+      "municipio_fin": "La Alberca (cumbre de la Peña de Francia, dentro del término)",
+      "tipo_recorrido": "ida y vuelta (lineal por el mismo trazado)",
+      "distancia_km_aprox": "16-20 km ida y vuelta (las fuentes varían entre 8,3 y 11,25 km solo ida; dato aproximado)",
+      "desnivel_m_aprox": "700-900 m de desnivel positivo (varía según fuente, aproximado)",
+      "dificultad": "moderada",
+      "duracion_aprox": "3h30 - 4h30",
+      "senalizacion": "GR-10",
+      "punto_interes_principal": "Santuario/Convento dominico de la Virgen de la Peña de Francia (1723 m), considerado el santuario mariano más alto de España, con mirador panorámico sobre la Sierra de Francia y Las Hurdes",
+      "espacio_natural_protegido": "Parque Natural de las Batuecas-Sierra de Francia",
+      "coordenadas_inicio": {"lat": 40.48917, "lon": -6.11111, "fuente_coordenadas": "centro del municipio de La Alberca (el sendero arranca junto al IES Las Batuecas)"},
+      "fuentes": [
+        "https://www.fclm.com/ruta-recomendada/a-la-pena-de-francia-desde-la-alberca/",
+        "https://es.wikiloc.com/rutas-senderismo/ascension-a-la-pena-de-francia-desde-la-alberca-sierra-de-francia-salamanca-20834825",
+        "http://senderismocastillayleon.com/cronica/a-la-pena-de-francia-desde-la-alberca-salamanca/",
+        "http://www.apatita.com/rutas.php?id=penya_francia_alberca"
+      ]
+    },
+    {
+      "id": "camino-de-las-raices-la-alberca",
+      "nombre": "Camino de las Raíces (Caminos de Arte en la Naturaleza)",
+      "comarca": "Sierra de Francia",
+      "municipio_inicio": "La Alberca",
+      "municipio_fin": "La Alberca (circular)",
+      "tipo_recorrido": "circular",
+      "distancia_km_aprox": "8-10 km (aproximado, varía según fuente)",
+      "desnivel_m_aprox": "162 m de desnivel de ascenso (aproximado)",
+      "dificultad": "fácil",
+      "duracion_aprox": "2h45",
+      "senalizacion": "sendero local promovido por la Diputación de Salamanca (SA-1)",
+      "punto_interes_principal": "Seis instalaciones de Land Art integradas en el paisaje, ermita de Majadas Viejas, restos de la ermita de San Marcos y Laguna de San Marcos",
+      "espacio_natural_protegido": "Parque Natural de las Batuecas-Sierra de Francia",
+      "coordenadas_inicio": {"lat": 40.48917, "lon": -6.11111, "fuente_coordenadas": "centro del municipio de La Alberca"},
+      "fuentes": [
+        "https://www.turismocastillayleon.com/en/nature/sa1-path-roots-paths-art-nature",
+        "https://www.terranostrum.es/senderismo/camino-de-las-raices",
+        "https://www.wikiloc.com/walking-trails/circular-camino-de-las-raices-la-alberca-sierra-de-francia-8377344",
+        "https://www.casasierrasalamanca.com/el-camino-de-las-raices-la-alberca"
+      ]
+    },
+    {
+      "id": "laguna-de-san-marcos-la-alberca",
+      "nombre": "Laguna de San Marcos",
+      "comarca": "Sierra de Francia",
+      "municipio_inicio": "La Alberca",
+      "municipio_fin": "La Alberca",
+      "tipo_recorrido": "ida y vuelta o circular corto (variantes)",
+      "distancia_km_aprox": "3-5 km ida y vuelta en la variante corta, u 8 km en la variante circular (dato no homogéneo entre fuentes, aproximado)",
+      "desnivel_m_aprox": "no confirmado con precisión, desnivel suave",
+      "dificultad": "fácil",
+      "duracion_aprox": "hasta 2h30 en la variante circular",
+      "senalizacion": "coincide en parte con el Camino de las Raíces",
+      "punto_interes_principal": "Laguna de San Marcos, entorno de robledal y restos de la ermita homónima",
+      "espacio_natural_protegido": "Parque Natural de las Batuecas-Sierra de Francia",
+      "coordenadas_inicio": {"lat": 40.48917, "lon": -6.11111, "fuente_coordenadas": "centro del municipio de La Alberca; el cruce de acceso está unos 2 km al sur"},
+      "fuentes": [
+        "https://www.i-bejar.com/rutas/comarca/laguna-marcos-alberca.htm",
+        "https://lospueblosmasbonitosdeespana.org/recursos/laguna-de-san-marcos-la-alberca",
+        "https://viajeconpablo.com/camino-las-raices/"
+      ]
+    },
+    {
+      "id": "chorro-de-las-batuecas",
+      "nombre": "Senda del Chorro de las Batuecas (Monasterio - Cascada del Chorro)",
+      "comarca": "Sierra de Francia",
+      "municipio_inicio": "La Alberca (Monasterio de San José de las Batuecas)",
+      "municipio_fin": "La Alberca",
+      "tipo_recorrido": "ida y vuelta",
+      "distancia_km_aprox": "aproximado, no confirmado con precisión: primer tramo de 1 km en pasarelas de madera, más senda PRSA-10 hasta las pinturas rupestres de las Cabras Pintás (2,4 km adicionales)",
+      "desnivel_m_aprox": "no confirmado",
+      "dificultad": "fácil a moderada según el tramo recorrido",
+      "duracion_aprox": "variable, varias horas si se visitan abrigos rupestres y pozas",
+      "senalizacion": "PRSA-10 (Senda Alberca - Valle de las Batuecas)",
+      "punto_interes_principal": "Cascada de El Chorro, Monasterio de las Batuecas (1599, actualmente Carmelitas Descalzos) y pinturas rupestres esquemáticas (Cabras Pintadas, Zarzalón, Umbría de Cristo)",
+      "espacio_natural_protegido": "Parque Natural de las Batuecas-Sierra de Francia",
+      "coordenadas_inicio": {"lat": 40.48917, "lon": -6.11111, "fuente_coordenadas": "el inicio real es el Monasterio de las Batuecas, unos 4 km al sur de La Alberca; se da la coordenada del municipio como referencia"},
+      "fuentes": [
+        "https://viajeconpablo.com/cascada-del-chorro/",
+        "https://meteosierra.com/montana/resto-de-espana/el-chorro-de-las-batuecas/",
+        "https://www.casasierrasalamanca.com/las-batuecas-monasterio-cascada-del-chorro"
+      ]
+    },
+    {
+      "id": "bosque-de-los-espejos",
+      "nombre": "Bosque de los Espejos (Caminos de Arte en la Naturaleza)",
+      "comarca": "Sierra de Francia",
+      "municipio_inicio": "San Martín del Castañar (también accesible desde Sequeros o Las Casas del Conde)",
+      "municipio_fin": "circular, mismo punto de inicio",
+      "tipo_recorrido": "circular",
+      "distancia_km_aprox": "9,25 km",
+      "desnivel_m_aprox": "no confirmado con precisión, desnivel suave",
+      "dificultad": "fácil",
+      "duracion_aprox": "aprox. 3 h",
+      "senalizacion": "sendero local promovido por la Diputación de Salamanca",
+      "punto_interes_principal": "Instalaciones de Land Art integradas en robledales y castañares; existe variante corta que solo visita dos de los tres pueblos",
+      "espacio_natural_protegido": "Parque Natural de las Batuecas-Sierra de Francia",
+      "coordenadas_inicio": {"lat": 40.52306, "lon": -6.06472, "fuente_coordenadas": "centro del municipio de San Martín del Castañar"},
+      "fuentes": [
+        "https://www.terranostrum.es/turismo/bosque-de-los-espejos-parque-natural-de-las-batuecas-sierra-francia",
+        "https://viajeconpablo.com/bosque-de-los-espejos/",
+        "https://www.laguiago.com/salamanca/bosque-espejos-arte-naturaleza/"
+      ]
+    },
+    {
+      "id": "camino-de-los-prodigios",
+      "nombre": "Camino de los Prodigios",
+      "comarca": "Sierra de Francia",
+      "municipio_inicio": "Miranda del Castañar",
+      "municipio_fin": "Villanueva del Conde (ruta circular, puede iniciarse en cualquiera de los dos pueblos)",
+      "tipo_recorrido": "circular",
+      "distancia_km_aprox": "10 km",
+      "desnivel_m_aprox": "no confirmado con precisión",
+      "dificultad": "moderada",
+      "duracion_aprox": "aprox. 4 h",
+      "senalizacion": "sendero local promovido por la Diputación de Salamanca",
+      "punto_interes_principal": "Instalaciones de Land Art, patrimonio de Miranda del Castañar (Conjunto Histórico-Artístico, castillo y plaza toros) y de Villanueva del Conde",
+      "espacio_natural_protegido": "Parque Natural de las Batuecas-Sierra de Francia",
+      "coordenadas_inicio": {"lat": 40.48417, "lon": -5.99722, "fuente_coordenadas": "centro del municipio de Miranda del Castañar"},
+      "fuentes": [
+        "https://www.lagacetadesalamanca.es/provincia/el-camino-de-los-prodigios-una-de-las-rutas-mas-espectaculares-de-la-sierra-de-francia-XM7538550",
+        "https://www.turismocastillayleon.com/en/nature/nature-routes/path-wonders",
+        "https://www.casasierrasalamanca.com/el-camino-de-los-prodigios-miranda-del-castanar-villanueva-del-conde"
+      ]
+    },
+    {
+      "id": "mogarraz-miranda-del-castanar",
+      "nombre": "Sendero Mogarraz - Miranda del Castañar (tramo del GR-10)",
+      "comarca": "Sierra de Francia",
+      "municipio_inicio": "Mogarraz",
+      "municipio_fin": "Miranda del Castañar",
+      "tipo_recorrido": "lineal",
+      "distancia_km_aprox": "7 km (solo ida)",
+      "desnivel_m_aprox": "no confirmado con precisión; tramo de descenso",
+      "dificultad": "moderada",
+      "duracion_aprox": "no confirmado",
+      "senalizacion": "GR-10 (marcas blancas y rojas)",
+      "punto_interes_principal": "Conecta dos de los cinco pueblos de la Sierra de Francia declarados Conjunto Histórico-Artístico (junto con La Alberca, Sequeros y San Martín del Castañar), arquitectura serrana tradicional",
+      "espacio_natural_protegido": "Parque Natural de las Batuecas-Sierra de Francia",
+      "coordenadas_inicio": {"lat": 40.49194, "lon": -6.05278, "fuente_coordenadas": "centro del municipio de Mogarraz"},
+      "coordenadas_fin": {"lat": 40.48417, "lon": -5.99722, "fuente_coordenadas": "centro del municipio de Miranda del Castañar"},
+      "fuentes": [
+        "https://masrutasymenosrutinas.com/miranda-mogarraz-monforte/",
+        "https://www.lagacetadesalamanca.es/hemeroteca/cuatro-rutas-senderistas-encanto-sierra-francia-KWGS209164"
+      ]
+    },
+    {
+      "id": "pozo-de-los-humos",
+      "nombre": "Pozo de los Humos",
+      "comarca": "Arribes del Duero (Ribera)",
+      "municipio_inicio": "Pereña de la Ribera (también accesible desde Masueco)",
+      "municipio_fin": "Pereña de la Ribera / Masueco (ida y vuelta al mirador de la cascada)",
+      "tipo_recorrido": "ida y vuelta",
+      "distancia_km_aprox": "entre 2 y 9 km ida y vuelta según el punto exacto de partida (dato variable entre fuentes: 3,8 km desde un acceso, 8,6 km desde otro, 2 km desde el parking más cercano a pie; aproximado)",
+      "desnivel_m_aprox": "moderado, con descenso final hasta el mirador a unos 600 m de altitud",
+      "dificultad": "fácil a moderada según el tramo",
+      "duracion_aprox": "no confirmado con precisión",
+      "senalizacion": "senda señalizada local (Ayuntamiento de Pereña de la Ribera)",
+      "punto_interes_principal": "Cascada del Pozo de los Humos, salto de unos 50 metros sobre el cañón del río Uces, considerada una de las cascadas más espectaculares de España y posiblemente la más famosa de la provincia de Salamanca",
+      "espacio_natural_protegido": "Parque Natural Arribes del Duero; Reserva de la Biosfera Meseta Ibérica (UNESCO)",
+      "coordenadas_inicio": {"lat": 41.24, "lon": -6.52417, "fuente_coordenadas": "centro del municipio de Pereña de la Ribera"},
+      "fuentes": [
+        "https://www.turismocastillayleon.com/en/nature/nature-routes/smoke-well",
+        "https://www.alltrails.com/trail/spain/salamanca/pozo-de-los-humos",
+        "https://www.senditur.com/en/route/well-of-the-fumes/",
+        "http://perenadelaribera.es/cultura-y-deportes/rutas-de-senderismo/",
+        "https://www.wikiloc.com/hiking-trails/mirador-cascada-pozo-de-los-humos-perena-prov-salamanca-309782"
+      ]
+    },
+    {
+      "id": "picon-de-felipe-mirador-del-fraile",
+      "nombre": "Ruta de los Miradores: Picón de Felipe y Mirador del Fraile",
+      "comarca": "Arribes del Duero",
+      "municipio_inicio": "Aldeadávila de la Ribera",
+      "municipio_fin": "Aldeadávila de la Ribera (circular)",
+      "tipo_recorrido": "circular",
+      "distancia_km_aprox": "entre 11 y 12 km en la variante estándar a pie (existen variantes más largas de hasta 20,8 km y más cortas de 11 km; aproximado, varía según fuente y variante elegida)",
+      "desnivel_m_aprox": "entre 270 y 750 m según la variante (aproximado)",
+      "dificultad": "moderada",
+      "duracion_aprox": "aprox. 3 h en la variante de los dos miradores principales",
+      "senalizacion": "senda señalizada local (Ayuntamiento de Aldeadávila de la Ribera / Diputación de Salamanca)",
+      "punto_interes_principal": "Cañón del Duero, presa de Aldeadávila, y los miradores del Fraile (pasarela voladiza de 12 m a 300 m sobre el río) y Picón de Felipe",
+      "espacio_natural_protegido": "Parque Natural Arribes del Duero; Reserva de la Biosfera Meseta Ibérica (UNESCO)",
+      "coordenadas_inicio": {"lat": 41.21845, "lon": -6.61991, "fuente_coordenadas": "centro del municipio de Aldeadávila de la Ribera"},
+      "coordenadas_mirador_fraile": {"lat": 41.2122, "lon": -6.6800, "fuente_coordenadas": "aproximado a partir de N 41°12'44.1\" O 6°40'48.1\" (parking del mirador)"},
+      "fuentes": [
+        "https://www.lagacetadesalamanca.es/viajes/ruta-miradores-aldeadavila-20230707160519-nt.html",
+        "https://www.turismocastillayleon.com/es/naturaleza/ruta-btt-camino-picon-felipe",
+        "https://alojamientolarueca.com/el-mirador-del-fraile/",
+        "https://ruteandorutas.com/mirador-del-fraile/"
+      ]
+    },
+    {
+      "id": "mirador-de-la-code-mieza",
+      "nombre": "Mirador de la Code",
+      "comarca": "Arribes del Duero",
+      "municipio_inicio": "Mieza",
+      "municipio_fin": "Mieza",
+      "tipo_recorrido": "ida y vuelta",
+      "distancia_km_aprox": "corto, no confirmado con precisión (pocos kilómetros desde la plaza de la iglesia)",
+      "desnivel_m_aprox": "no confirmado",
+      "dificultad": "fácil",
+      "duracion_aprox": "no confirmado",
+      "senalizacion": "senda perfectamente señalizada que sale de la plaza de la iglesia de Mieza",
+      "punto_interes_principal": "Mirador sobre el cañón de los Arribes del Duero",
+      "espacio_natural_protegido": "Parque Natural Arribes del Duero; Reserva de la Biosfera Meseta Ibérica (UNESCO)",
+      "coordenadas_inicio": {"lat": 41.16307, "lon": -6.69024, "fuente_coordenadas": "centro del municipio de Mieza"},
+      "fuentes": [
+        "https://www.organizotuviaje.com/mieza-y-mejores-miradores-de-las-arribes-del-duero/",
+        "https://www.turium.es/destinos/arribes-de-duero-ruta-senderismo-espectacular-salamanca/"
+      ]
+    },
+    {
+      "id": "gr-14-sendero-del-duero-arribes",
+      "nombre": "GR-14 Sendero del Duero (tramo salmantino del Parque Natural Arribes del Duero)",
+      "comarca": "Arribes del Duero",
+      "municipio_inicio": "zona de Vitigudino / Aldeadávila de la Ribera (varios accesos)",
+      "municipio_fin": "recorre el parque de norte a sur, no es una ruta de una sola jornada",
+      "tipo_recorrido": "lineal, gran recorrido",
+      "distancia_km_aprox": "el GR-14 y su variante GR-14.1 (Sendero del Águeda) suman casi 200 km recorriendo el parque natural completo (Salamanca y Zamora); el tramo exclusivamente salmantino no está confirmado con precisión",
+      "desnivel_m_aprox": "no confirmado (recorrido de varias etapas)",
+      "dificultad": "variable según etapa",
+      "duracion_aprox": "varios días",
+      "senalizacion": "GR-14 (Gran Recorrido, marcas blancas y rojas)",
+      "punto_interes_principal": "Recorre longitudinalmente el cañón del Duero y sus miradores (Picón de Felipe, Picón del Fraile, Pozo Airón, Salto de Camaces, Las Barrancas, entre otros)",
+      "espacio_natural_protegido": "Parque Natural Arribes del Duero; Reserva de la Biosfera Meseta Ibérica (UNESCO)",
+      "coordenadas_inicio": {"lat": 41.01, "lon": -6.43333, "fuente_coordenadas": "referencia aproximada en Vitigudino, cabecera de comarca; el GR tiene múltiples accesos"},
+      "fuentes": [
+        "https://alojamientolarueca.com/rutas-de-senderismo-arribes-del-duero/",
+        "https://www.losarribesdelduero.com/rutas/"
+      ]
+    },
+    {
+      "id": "garganta-del-oso-candelario",
+      "nombre": "Garganta del Oso",
+      "comarca": "Sierra de Béjar",
+      "municipio_inicio": "Candelario",
+      "municipio_fin": "Candelario",
+      "tipo_recorrido": "ida y vuelta",
+      "distancia_km_aprox": "aprox. 10 km en total",
+      "desnivel_m_aprox": "no confirmado con precisión",
+      "dificultad": "fácil-moderada (tramo final por senda estrecha de unos 100 m dentro de la garganta)",
+      "duracion_aprox": "no confirmado",
+      "senalizacion": "senda local señalizada, apta para toda la familia",
+      "punto_interes_principal": "Garganta con cascadas y pozas de agua, bosque de robles y castaños",
+      "espacio_natural_protegido": "Sierra de Béjar (no confirmado que tenga figura de Parque Natural; posible Red Natura 2000, no verificado)",
+      "coordenadas_inicio": {"lat": 40.36806, "lon": -5.74444, "fuente_coordenadas": "centro del municipio de Candelario"},
+      "fuentes": [
+        "https://viajeconpablo.com/garganta-del-oso/",
+        "https://www.candelario.es/rutas-por-candelario/"
+      ]
+    },
+    {
+      "id": "hoya-moros-candelario",
+      "nombre": "Hoya Moros",
+      "comarca": "Sierra de Béjar",
+      "municipio_inicio": "Candelario",
+      "municipio_fin": "circo glaciar de Hoya Moros (mismo término municipal)",
+      "tipo_recorrido": "ida y vuelta",
+      "distancia_km_aprox": "12 km solo ida (24 km ida y vuelta aproximadamente)",
+      "desnivel_m_aprox": "370 m",
+      "dificultad": "difícil (terreno irregular, señalización parcial con hitos de piedra, requiere orientación en montaña)",
+      "duracion_aprox": "jornada completa",
+      "senalizacion": "parcialmente señalizado (cairns/hitos)",
+      "punto_interes_principal": "Circo glaciar de Hoya Moros a los pies de las cumbres rocosas de la Sierra de Béjar",
+      "espacio_natural_protegido": "Sierra de Béjar (no confirmado que tenga figura de Parque Natural)",
+      "coordenadas_inicio": {"lat": 40.36806, "lon": -5.74444, "fuente_coordenadas": "centro del municipio de Candelario"},
+      "fuentes": [
+        "https://www.desnivel.com/excursionismo/cinco-rutas-interesantes-para-recorrer-la-sierra-de-bejar-y-candelario/"
+      ]
+    },
+    {
+      "id": "covatilla-tres-picos",
+      "nombre": "La Covatilla - Peña Negra - Canchal Negro - Risco Gordo (travesía de las tres cumbres de más de 2.000 m)",
+      "comarca": "Sierra de Béjar",
+      "municipio_inicio": "Candelario (estación de esquí Sierra de Béjar - La Covatilla)",
+      "municipio_fin": "circular o travesía, mismo entorno de la estación",
+      "tipo_recorrido": "circular / travesía de montaña",
+      "distancia_km_aprox": "no confirmado con precisión",
+      "desnivel_m_aprox": "no confirmado con precisión",
+      "dificultad": "difícil (alta montaña)",
+      "duracion_aprox": "no confirmado",
+      "senalizacion": "senda de montaña, señalización parcial",
+      "punto_interes_principal": "Tres cumbres de más de 2.000 m (Peña Negra, Canchal Negro y Risco Gordo) con vistas al Calvitero, la cima más alta de la Sierra de Béjar",
+      "espacio_natural_protegido": "Sierra de Béjar (no confirmado que tenga figura de Parque Natural)",
+      "coordenadas_inicio": {"lat": 40.36806, "lon": -5.74444, "fuente_coordenadas": "centro del municipio de Candelario; el parking de la estación de La Covatilla está varios km al sur"},
+      "fuentes": [
+        "http://villadecandelario.com/portfolio/ruta-de-senderismo-desde-la-estacion-de-esqui-la-covatilla/",
+        "https://www.wikiloc.com/hiking-trails/la-covatilla-canchal-negro-sierra-de-bejar-25242661"
+      ]
+    },
+    {
+      "id": "llano-alto-navamuno-candelario",
+      "nombre": "Llano Alto - Navamuño - Candelario",
+      "comarca": "Sierra de Béjar",
+      "municipio_inicio": "Candelario (prado de Llano Alto)",
+      "municipio_fin": "Candelario (circular)",
+      "tipo_recorrido": "circular",
+      "distancia_km_aprox": "aprox. 12 km",
+      "desnivel_m_aprox": "bajo (ruta de baja dificultad)",
+      "dificultad": "fácil",
+      "duracion_aprox": "no confirmado",
+      "senalizacion": "senda local señalizada",
+      "punto_interes_principal": "Bosque de robles y castaños, presa/embalse de Navamuño",
+      "espacio_natural_protegido": "Sierra de Béjar (no confirmado que tenga figura de Parque Natural)",
+      "coordenadas_inicio": {"lat": 40.36806, "lon": -5.74444, "fuente_coordenadas": "centro del municipio de Candelario"},
+      "fuentes": [
+        "https://mifamiliaviajera.com/rutas-senderismo-sierra-de-bejar-y-sierra-de-candelario/"
+      ]
+    },
+    {
+      "id": "via-de-la-plata-salamanca",
+      "nombre": "Camino de Santiago - Vía de la Plata a su paso por la provincia de Salamanca",
+      "comarca": "provincia de Salamanca (varias comarcas, de sur a norte)",
+      "municipio_inicio": "La Calzada de Béjar (entrada en la provincia desde Extremadura)",
+      "municipio_fin": "límite con la provincia de Zamora (Granja de Moreruela, ya en Zamora)",
+      "tipo_recorrido": "lineal, gran recorrido de varias etapas",
+      "distancia_km_aprox": "no confirmado con precisión el tramo exacto dentro de la provincia; a título de referencia, entre Salamanca capital y Santiago de Compostela hay unos 461 km repartidos en 19 etapas",
+      "desnivel_m_aprox": "no confirmado (varía por etapa)",
+      "dificultad": "variable por etapa; itinerario de peregrinación de largo recorrido, no una ruta de senderismo de un día",
+      "duracion_aprox": "varios días (varias etapas dentro de la provincia)",
+      "senalizacion": "Camino de Santiago - Vía de la Plata (flechas amarillas y mojones oficiales)",
+      "punto_interes_principal": "Patrimonio histórico de Salamanca capital (Patrimonio de la Humanidad), pueblos como La Calzada de Béjar, Fuenterroble de Salvatierra, San Pedro de Rozados y El Cubo de Don Sancho",
+      "espacio_natural_protegido": "no aplica como figura única; atraviesa distintos espacios de interés natural",
+      "coordenadas_inicio": {"lat": 40.41167, "lon": -5.81722, "fuente_coordenadas": "centro del municipio de La Calzada de Béjar"},
+      "fuentes": [
+        "https://www.pilgrim.es/en/the-silver-route/",
+        "https://santiagoways.com/en/the-camino-de-santiago-from-salamanca/",
+        "https://www.alberguescaminosantiago.com/via-de-la-plata/etapas/"
+      ]
+    },
+    {
+      "id": "ruta-del-rebollar-robleda",
+      "nombre": "Ruta del Rebollar (PRC-SA 26)",
+      "comarca": "El Rebollar / comarca de Ciudad Rodrigo",
+      "municipio_inicio": "Robleda",
+      "municipio_fin": "Robleda (circular)",
+      "tipo_recorrido": "circular",
+      "distancia_km_aprox": "18,7 km",
+      "desnivel_m_aprox": "no confirmado con precisión",
+      "dificultad": "moderada",
+      "duracion_aprox": "no confirmado",
+      "senalizacion": "PRC-SA 26 (sendero de corto recorrido homologado)",
+      "punto_interes_principal": "Dehesas y arquitectura tradicional serrana de la comarca de El Rebollar, en el suroeste de la provincia, lindando con la Sierra de Gata cacereña",
+      "espacio_natural_protegido": "Espacio Natural de El Rebollar (figura de ordenación comarcal impulsada por la Mancomunidad Alto Águeda, no Parque Natural)",
+      "coordenadas_inicio": {"lat": 40.385, "lon": -6.60833, "fuente_coordenadas": "centro del municipio de Robleda"},
+      "fuentes": [
+        "https://www.terranostrum.es/senderismo/ruta-de-el-rebollar",
+        "https://navasfrias.net/espacio-el-rebollar-nuevas-rutas-senderismo",
+        "http://www.enciudadrodrigo.com/texto-diario/mostrar/161671/espacio-natural-rebollar-ofrece-200-nuevos-kilometros-senderismo"
+      ]
+    },
+    {
+      "id": "gr-sierra-de-gata-rebollar",
+      "nombre": "GR de Sierra de Gata / El Rebollar (Ciudad Rodrigo - Villasrubias)",
+      "comarca": "El Rebollar / comarca de Ciudad Rodrigo",
+      "municipio_inicio": "Ciudad Rodrigo",
+      "municipio_fin": "Villasrubias (límite con Cáceres)",
+      "tipo_recorrido": "lineal, gran recorrido",
+      "distancia_km_aprox": "68 km (existe además otro GR de 58 km por la Cañada Real de Extremadura, entre Ciudad Rodrigo y el Puerto de Perales, límite con Cáceres)",
+      "desnivel_m_aprox": "no confirmado",
+      "dificultad": "variable por etapa; ruta de varios días",
+      "duracion_aprox": "varios días",
+      "senalizacion": "GR (Gran Recorrido), parte de los 200 km señalizados del Espacio Natural de El Rebollar",
+      "punto_interes_principal": "Pueblos serranos de Serradilla del Llano, Vegas de Domingo Rey, Agallas, Martiago, Robleda, El Sahúgo y Villasrubias, en la ladera norte de la Sierra de Gata",
+      "espacio_natural_protegido": "Espacio Natural de El Rebollar",
+      "coordenadas_inicio": {"lat": 40.59917, "lon": -6.52889, "fuente_coordenadas": "centro del municipio de Ciudad Rodrigo"},
+      "fuentes": [
+        "http://www.enciudadrodrigo.com/texto-diario/mostrar/161671/espacio-natural-rebollar-ofrece-200-nuevos-kilometros-senderismo",
+        "http://www.enciudadrodrigo.com/texto-diario/mostrar/172080/marcha-5-nuevas-rutas-senderismo-impulsadas-mancomunidad-alto-agueda"
+      ]
+    },
+    {
+      "id": "ruta-tres-rios-sotoserrano",
+      "nombre": "Ruta de los Tres Ríos",
+      "comarca": "Sierra de Francia (valle del Alagón)",
+      "municipio_inicio": "Sotoserrano",
+      "municipio_fin": "Sotoserrano (circular)",
+      "tipo_recorrido": "circular",
+      "distancia_km_aprox": "8,2 km",
+      "desnivel_m_aprox": "no confirmado con precisión",
+      "dificultad": "baja-media",
+      "duracion_aprox": "aprox. 2h30",
+      "senalizacion": "senda local señalizada",
+      "punto_interes_principal": "Confluencia de cursos de agua del entorno de Sotoserrano, en el límite sur del Parque Natural (nombre exacto de los tres ríos no confirmado con precisión en las fuentes consultadas)",
+      "espacio_natural_protegido": "área de influencia del Parque Natural de las Batuecas-Sierra de Francia (no confirmado si el trazado entra dentro del límite estricto del parque)",
+      "coordenadas_inicio": {"lat": 40.43528, "lon": -6.0325, "fuente_coordenadas": "centro del municipio de Sotoserrano"},
+      "fuentes": [
+        "https://www.terranostrum.es/senderismo/salamanca/sierra-de-francia/herguijuela-de-la-sierra/1",
+        "https://www.alltrails.com/spain/salamanca/river"
+      ]
+    }
+  ]
+}
