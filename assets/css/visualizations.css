@@ -1660,6 +1660,15 @@
     flex-wrap: wrap;
 }
 
+/* Los <li> del sitio llevan una viñeta genérica (ul li::before en main.css); aquí no la queremos */
+.hemeroteca-item {
+    padding-left: 0;
+}
+
+.hemeroteca-item::before {
+    content: none;
+}
+
 .hemeroteca-item:last-child {
     border-bottom: none;
 }
@@ -1669,8 +1678,10 @@
 }
 
 .hemeroteca-hora {
-    font-family: var(--font-mono);
+    font-family: var(--font-family);
+    font-variant-numeric: tabular-nums;
     font-size: 0.75rem;
+    font-weight: 600;
     color: var(--neutral-color);
     min-width: 42px;
 }
