@@ -2,7 +2,12 @@ name: Actualizar hemeroteca
 
 on:
   schedule:
-    - cron: '15 */3 * * *'
+    # Horas en UTC (GitHub Actions no admite huso horario ni ajusta el
+    # horario de verano). Con CEST (UTC+2, en vigor ahora mismo) esto
+    # equivale a cada 2h de 07:00 a 21:00 y cada ~3-6h de madrugada
+    # (22:00 y 04:00) hora de Madrid. En invierno (CET, UTC+1) el
+    # tramo se desplaza una hora antes (06:00-20:00).
+    - cron: '15 2,5,7,9,11,13,15,17,19,20 * * *'
   workflow_dispatch: {}
 
 permissions:
