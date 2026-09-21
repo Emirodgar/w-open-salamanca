@@ -1,0 +1,444 @@
+{
+  "metadata": {
+    "titulo": "Museos de la ciudad y provincia de Salamanca",
+    "descripcion": "Listado de museos, casas-museo y colecciones museográficas reales y actualmente abiertos al público, divididos en capital (término municipal de Salamanca) y resto de la provincia. Elaborado mediante búsqueda y verificación cruzada de fuentes oficiales; no incluye salas de exposiciones temporales sin colección permanente, bibliotecas, archivos ni centros de interpretación genéricos (salvo excepción señalada explícitamente en el campo 'notas').",
+    "fecha_elaboracion": "2026-09-21",
+    "metodologia": "Cada registro se ha contrastado con al menos una fuente oficial o semi-oficial (ayuntamiento, diócesis, Universidad de Salamanca, Junta de Castilla y León, o la web propia del museo). Cuando una dirección o dato no ha podido confirmarse con una fuente fiable, el campo correspondiente indica explícitamente 'no confirmado'.",
+    "fuentes_principales": [
+      "https://salamanca.es/es/fondo-armario/cultura-y-patrimonio/museos-y-colecciones",
+      "https://museo.usal.es/",
+      "https://cemupe.usal.es/",
+      "https://unamuno.usal.es/",
+      "https://museoscastillayleon.jcyl.es/",
+      "https://cultura.jcyl.es/",
+      "https://lasalinacultura.es/museos-de-la-provincia-de-salamanca/",
+      "https://directoriomuseos.mcu.es/",
+      "https://www.turismocastillayleon.com/",
+      "https://turismosierradefrancia.es/",
+      "https://www.turismosantamartadetormes.com/museos",
+      "https://www.aytobejar.com/horario-de-museos-y-monumentos/",
+      "https://es.wikipedia.org/",
+      "Webs oficiales de cada museo individual (citadas en el campo web de cada registro)"
+    ],
+    "exclusiones_relevantes": [
+      "Casa de las Conchas (Salamanca capital): descartada, es biblioteca pública municipal, no un museo.",
+      "Monumenta Salmanticae (Salamanca capital): descartado, es un centro de interpretación del patrimonio urbano, no un museo con colección propia.",
+      "CEMUPE - Centro Museo Pedagógico: aunque es un centro propio de la Universidad de Salamanca, su sede física está en Zamora capital (antiguos Laboratorios Municipales), no en Salamanca capital ni en su provincia, por lo que se excluye de este listado pese a que el usuario lo mencionó como posible museo universitario.",
+      "Museo del Bandolero: no existe en Ciudad Rodrigo ni en la provincia de Salamanca; el único museo con ese nombre en España está en El Borge (Málaga), antes en Ronda. Se descarta explícitamente para evitar el error.",
+      "Museo del Toro (Ciudad Rodrigo): no se ha podido confirmar su existencia como museo abierto; el único 'Museo del Toro' verificado está en Valladolid (sin relación con Ciudad Rodrigo). Los toriles de la Plaza Mayor de Ciudad Rodrigo estaban, a fecha de esta investigación, en proceso de licitación para su 'musealización' (proyecto de finales de 2025), por lo que todavía no constituían un museo abierto al público.",
+      "Palacio de los Águila (Ciudad Rodrigo): sede del Centro de Estudios del Patrimonio Hispano-Portugués con salas de exposiciones temporales; no se ha confirmado que funcione como museo con colección permanente, se descarta por precaución.",
+      "Museo(s) de Vitigudino (aceite / estelas romanas): mencionados en fuentes secundarias de baja fiabilidad y con datos contradictorios (posible confusión con el Museo del Aceite de Mora, Toledo); no se ha podido confirmar con una fuente oficial fiable, por lo que se excluyen de este listado en lugar de incluir datos dudosos."
+    ]
+  },
+  "capital": [
+    {
+      "nombre_oficial": "Museo de Salamanca",
+      "direccion": "Plaza de Patio de Escuelas, 2, 37008 Salamanca",
+      "tematica": "Museo generalista de arqueología, bellas artes y etnología de la provincia de Salamanca",
+      "coordenadas": {
+        "lat": 40.9615887,
+        "lon": -5.6675931,
+        "nota": "Geocodificado con Nominatim/OSM (consulta simplificada por plaza/calle)"
+      },
+      "web_oficial": "https://museodesalamanca.org/",
+      "titularidad": "publica (Junta de Castilla y León)",
+      "notas": null
+    },
+    {
+      "nombre_oficial": "Museo de la Universidad de Salamanca",
+      "direccion": "Escuelas Menores, Patio de Escuelas s/n (acceso también por C. Libreros, 21), 37008 Salamanca",
+      "tematica": "Museo universitario de arte e historia (destaca el 'Cielo de Salamanca' de Fernando Gallego)",
+      "coordenadas": {
+        "lat": 40.9614478,
+        "lon": -5.6680528,
+        "nota": "Geocodificado con Nominatim/OSM (consulta simplificada por plaza/calle)"
+      },
+      "web_oficial": "http://museo.usal.es/",
+      "titularidad": "publica (Universidad de Salamanca)",
+      "notas": null
+    },
+    {
+      "nombre_oficial": "Casa Museo Unamuno",
+      "direccion": "Calle Libreros, 25, 37008 Salamanca",
+      "tematica": "Casa-museo dedicada a la vida y obra de Miguel de Unamuno",
+      "coordenadas": {
+        "lat": 40.9611871,
+        "lon": -5.6673895,
+        "nota": "Geocodificado con Nominatim/OSM a partir de la dirección"
+      },
+      "web_oficial": "https://unamuno.usal.es/",
+      "titularidad": "publica (Universidad de Salamanca)",
+      "notas": null
+    },
+    {
+      "nombre_oficial": "Museo Art Nouveau y Art Déco Casa Lis",
+      "direccion": "Calle Gibraltar, 14, 37008 Salamanca",
+      "tematica": "Artes decorativas de finales del siglo XIX y principios del XX (art nouveau y art déco)",
+      "coordenadas": {
+        "lat": 40.9594962,
+        "lon": -5.6668557,
+        "nota": "Geocodificado con Nominatim/OSM a partir de la dirección"
+      },
+      "web_oficial": "https://museocasalis.org/",
+      "titularidad": "publica (Ayuntamiento de Salamanca)",
+      "notas": null
+    },
+    {
+      "nombre_oficial": "DA2 - Domus Artium 2002",
+      "direccion": "Avenida de la Aldehuela, s/n, 37003 Salamanca",
+      "tematica": "Arte contemporáneo, en la antigua cárcel provincial",
+      "coordenadas": {
+        "lat": 40.9603674,
+        "lon": -5.6410974,
+        "nota": "Geocodificado con Nominatim/OSM a partir de la dirección"
+      },
+      "web_oficial": "https://domusartium2002.com/",
+      "titularidad": "publica (Fundación Salamanca Ciudad de Cultura y Saberes)",
+      "notas": null
+    },
+    {
+      "nombre_oficial": "Museo Taurino de Salamanca",
+      "direccion": "Calle Doctor Piñuela, 5-7, bajo, 37002 Salamanca",
+      "tematica": "Historia, arte y tradición de la Fiesta de los Toros en Salamanca",
+      "coordenadas": {
+        "lat": 40.9657057,
+        "lon": -5.6634773,
+        "nota": "Geocodificado con Nominatim/OSM (consulta simplificada por plaza/calle)"
+      },
+      "web_oficial": "https://www.museotaurinosalamanca.es/",
+      "titularidad": "publica (gestión municipal; origen en la Federación de Peñas Taurinas de Salamanca)",
+      "notas": null
+    },
+    {
+      "nombre_oficial": "Museo del Comercio y la Industria de Salamanca",
+      "direccion": "Avenida de Campoamor, s/n, 37003 Salamanca",
+      "tematica": "Historia de la actividad comercial e industrial de Salamanca y su provincia",
+      "coordenadas": {
+        "lat": 40.9648658,
+        "lon": -5.6544131,
+        "nota": "Geocodificado con Nominatim/OSM a partir de la dirección"
+      },
+      "web_oficial": "https://museodelcomercio.es/",
+      "titularidad": "publica (Ayuntamiento de Salamanca), gestión privada (Turismo, Comercio y Promoción Económica S.A.U., impulsado también por la Cámara de Comercio)",
+      "notas": null
+    },
+    {
+      "nombre_oficial": "Museo de Historia de la Automoción de Salamanca (MHAS)",
+      "direccion": "Plaza del Mercado Viejo, s/n, 37008 Salamanca",
+      "tematica": "Historia del automóvil, más de 140 vehículos, en la antigua 'Fábrica de la Luz'",
+      "coordenadas": {
+        "lat": 40.9585031,
+        "lon": -5.6670276,
+        "nota": "Geocodificado con Nominatim/OSM a partir de la dirección"
+      },
+      "web_oficial": "https://museoautomocion.com/",
+      "titularidad": "privada (Fundación Gómez Planche)",
+      "notas": null
+    },
+    {
+      "nombre_oficial": "Ieronimus - Las Torres de la Catedral de Salamanca",
+      "direccion": "Plaza Juan XXIII, s/n (acceso por la Torre Mocha), 37002 Salamanca",
+      "tematica": "Recorrido histórico-museístico por las torres de la Catedral, con miradores",
+      "coordenadas": {
+        "lat": 40.9605886,
+        "lon": -5.6671194,
+        "nota": "Geocodificado con Nominatim/OSM (consulta simplificada por plaza/calle)"
+      },
+      "web_oficial": "https://ieronimus.es/",
+      "titularidad": "eclesiastica (Cabildo Catedral de Salamanca)",
+      "notas": "Formato mixto museo/mirador histórico; se incluye por petición expresa del usuario y por su contenido museográfico permanente"
+    },
+    {
+      "nombre_oficial": "Scala Coeli - Torres de la Clerecía",
+      "direccion": "Calle de la Compañía, 5, 37002 Salamanca",
+      "tematica": "Recorrido histórico-museístico por las torres de La Clerecía, con miradores",
+      "coordenadas": {
+        "lat": 40.9634831,
+        "lon": -5.6663904,
+        "nota": "Geocodificado con Nominatim/OSM (consulta simplificada por plaza/calle)"
+      },
+      "web_oficial": "https://torresdelaclerecia.com/",
+      "titularidad": "eclesiastica (Compañía de Jesús / Universidad Pontificia de Salamanca)",
+      "notas": "Formato mixto museo/mirador histórico; se incluye por petición expresa del usuario y por su contenido museográfico permanente"
+    },
+    {
+      "nombre_oficial": "Museo Diocesano de Arte Sacro de Salamanca",
+      "direccion": "Plaza de Juan XXIII, 15 (Palacio Episcopal), 37008 Salamanca",
+      "tematica": "Arte sacro procedente de parroquias, colecciones privadas y la Diócesis",
+      "coordenadas": {
+        "lat": 40.9605886,
+        "lon": -5.6671194,
+        "nota": "Geocodificado con Nominatim/OSM (consulta simplificada por plaza/calle)"
+      },
+      "web_oficial": "no confirmada",
+      "titularidad": "eclesiastica (Diócesis de Salamanca)",
+      "notas": "Reabierto tras reforma en 2023 en el Palacio Episcopal"
+    },
+    {
+      "nombre_oficial": "Museo del Convento de San Esteban (Museo Oriental)",
+      "direccion": "Plaza del Concilio de Trento, s/n, 37001 Salamanca",
+      "tematica": "Arte religioso y colecciones orientales (Filipinas/China) de la orden dominica",
+      "coordenadas": {
+        "lat": 40.9610683,
+        "lon": -5.6627719,
+        "nota": "Geocodificado con Nominatim/OSM a partir de la dirección"
+      },
+      "web_oficial": "no confirmada",
+      "titularidad": "eclesiastica (Orden de Predicadores - Dominicos)",
+      "notas": null
+    },
+    {
+      "nombre_oficial": "Museo de las Úrsulas (Convento de la Anunciación)",
+      "direccion": "Calle Úrsulas, 2, 37002 Salamanca",
+      "tematica": "Arte sacro y funerario; incluye la capilla y sepulcro de Alonso de Fonseca",
+      "coordenadas": {
+        "lat": 40.9658303,
+        "lon": -5.6671367,
+        "nota": "Geocodificado con Nominatim/OSM a partir de la dirección"
+      },
+      "web_oficial": "no confirmada",
+      "titularidad": "eclesiastica (Comunidad de religiosas Úrsulas)",
+      "notas": null
+    }
+  ],
+  "provincia": [
+    {
+      "nombre_oficial": "Museo Catedralicio de Ciudad Rodrigo (Colección Museográfica de la Catedral)",
+      "municipio": "Ciudad Rodrigo",
+      "direccion": "Plaza del Salvador, s/n, 37500 Ciudad Rodrigo",
+      "tematica": "Arte sacro y objetos litúrgicos de la Catedral de Ciudad Rodrigo",
+      "coordenadas": {
+        "lat": 40.5993646,
+        "lon": -6.5353623,
+        "nota": "Geocodificado con Nominatim/OSM (consulta por la Catedral de Ciudad Rodrigo, sede del museo)"
+      },
+      "web_oficial": "no confirmada de forma fiable (referencias a catedralciudadrodrigo.com)",
+      "titularidad": "eclesiastica (Cabildo Catedral de Ciudad Rodrigo)",
+      "notas": null
+    },
+    {
+      "nombre_oficial": "Museo del Orinal",
+      "municipio": "Ciudad Rodrigo",
+      "direccion": "Plaza de Herrasti, s/n, 37500 Ciudad Rodrigo",
+      "tematica": "Colección privada de orinales y objetos sanitarios históricos de distintas épocas y países",
+      "coordenadas": {
+        "lat": 40.5993778,
+        "lon": -6.5358361,
+        "nota": "Geocodificado con Nominatim/OSM a partir de la dirección"
+      },
+      "web_oficial": "no confirmada",
+      "titularidad": "privada (colección de José María del Arco Ortiz)",
+      "notas": null
+    },
+    {
+      "nombre_oficial": "Museo Textil de Béjar",
+      "municipio": "Béjar",
+      "direccion": "Calle Bajada de San Albín, 3, 37700 Béjar",
+      "tematica": "Patrimonio industrial textil bejarano (maquinaria, fotografías, uniformes militares)",
+      "coordenadas": {
+        "lat": 40.3891433,
+        "lon": -5.7732138,
+        "nota": "Geocodificado con Nominatim/OSM (consulta simplificada por plaza/calle)"
+      },
+      "web_oficial": "no confirmada",
+      "titularidad": "publica (Ayuntamiento de Béjar)",
+      "notas": null
+    },
+    {
+      "nombre_oficial": "Museo Judío \"David Melul\"",
+      "municipio": "Béjar",
+      "direccion": "Calle Los Curas, 28, 37700 Béjar",
+      "tematica": "Historia, religión y cultura judía en Béjar",
+      "coordenadas": {
+        "lat": 40.3885217,
+        "lon": -5.775726,
+        "nota": "Geocodificado con Nominatim/OSM a partir de la dirección"
+      },
+      "web_oficial": "https://www.museojudiobejar.com/",
+      "titularidad": "privada",
+      "notas": null
+    },
+    {
+      "nombre_oficial": "Museo Municipal de Escultura Mateo Hernández",
+      "municipio": "Béjar",
+      "direccion": "Plaza Martín Mateos, s/n, 37700 Béjar",
+      "tematica": "Escultura del artista bejarano Mateo Hernández (1884-1949)",
+      "coordenadas": {
+        "lat": 40.3873466,
+        "lon": -5.770531,
+        "nota": "Geocodificado con Nominatim/OSM (consulta simplificada por plaza/calle)"
+      },
+      "web_oficial": "no confirmada",
+      "titularidad": "publica (Ayuntamiento de Béjar)",
+      "notas": null
+    },
+    {
+      "nombre_oficial": "Museo Legado Valeriano Salas",
+      "municipio": "Béjar",
+      "direccion": "Calle Ronda de Navarra, 7 (Centro Cultural San Francisco), 37700 Béjar",
+      "tematica": "Legado artístico donado por el pintor Valeriano Salas",
+      "coordenadas": {
+        "lat": 40.3877696,
+        "lon": -5.7671419,
+        "nota": "Geocodificado con Nominatim/OSM (consulta simplificada por plaza/calle)"
+      },
+      "web_oficial": "no confirmada",
+      "titularidad": "publica (Ayuntamiento de Béjar)",
+      "notas": null
+    },
+    {
+      "nombre_oficial": "Museo de la Industria Chacinera",
+      "municipio": "Guijuelo",
+      "direccion": "Calle Nueva, 1, 37770 Guijuelo",
+      "tematica": "Industria chacinera y del jamón ibérico de Guijuelo",
+      "coordenadas": {
+        "lat": 40.5682694,
+        "lon": -5.6765804,
+        "nota": "Geocodificado con Nominatim/OSM a partir de la dirección"
+      },
+      "web_oficial": "https://museo.guijuelo.es/",
+      "titularidad": "publica (Ayuntamiento de Guijuelo)",
+      "notas": null
+    },
+    {
+      "nombre_oficial": "Casa Museo \"Sátur Juanela\"",
+      "municipio": "La Alberca",
+      "direccion": "Calle Mesón, 7, 37624 La Alberca",
+      "tematica": "Vivienda tradicional albercana convertida en museo etnográfico",
+      "coordenadas": {
+        "lat": 40.4890143,
+        "lon": -6.1096686,
+        "nota": "Geocodificado con Nominatim/OSM a partir de la dirección"
+      },
+      "web_oficial": "http://www.casamuseosaturjuanela.com/",
+      "titularidad": "privada",
+      "notas": null
+    },
+    {
+      "nombre_oficial": "Museo del Traje Típico Albercano",
+      "municipio": "La Alberca",
+      "direccion": "Calle Llanito, 8, 37624 La Alberca",
+      "tematica": "Indumentaria y joyería tradicional de La Alberca",
+      "coordenadas": {
+        "lat": 40.4886642,
+        "lon": -6.1112096,
+        "nota": "Geocodificado con Nominatim/OSM a partir de la dirección"
+      },
+      "web_oficial": "no confirmada",
+      "titularidad": "privada (vinculado a una joyería-artesanía local)",
+      "notas": "Visita solo con cita previa; carácter de pequeña colección privada"
+    },
+    {
+      "nombre_oficial": "Museo Casa Chacinera de Candelario",
+      "municipio": "Candelario",
+      "direccion": "Calle Perales, 3, 37710 Candelario",
+      "tematica": "Etnografía de la matanza tradicional y vida cotidiana candelariega de finales del XIX y principios del XX",
+      "coordenadas": {
+        "lat": 40.3669545,
+        "lon": -5.74257,
+        "nota": "Geocodificado con Nominatim/OSM a partir de la dirección"
+      },
+      "web_oficial": "no confirmada",
+      "titularidad": "publica (Ayuntamiento de Candelario)",
+      "notas": "Catalogado oficialmente por la Junta de Castilla y León como 'Centro de Interpretación'; se incluye por su denominación local habitual de 'museo' y su colección etnográfica permanente, pero se señala aquí para que el usuario decida si debe quedarse en la lista"
+    },
+    {
+      "nombre_oficial": "Museo Etnográfico de Mogarraz (Casa de las Artesanías)",
+      "municipio": "Mogarraz",
+      "direccion": "Plaza Mayor, s/n, 37610 Mogarraz",
+      "tematica": "Oficios artesanos tradicionales de Mogarraz (orfebrería, zapatería, bordado)",
+      "coordenadas": {
+        "lat": 40.4917347,
+        "lon": -6.0527174,
+        "nota": "Geocodificado con Nominatim/OSM a partir de la dirección"
+      },
+      "web_oficial": "no confirmada",
+      "titularidad": "publica (ámbito local/comarcal)",
+      "notas": null
+    },
+    {
+      "nombre_oficial": "Bodega-Museo La Muralla",
+      "municipio": "Miranda del Castañar",
+      "direccion": "Plaza de la Iglesia, 14, 37660 Miranda del Castañar",
+      "tematica": "Antigua bodega vinícola del siglo XVIII adosada a la muralla, reconvertida en pequeño museo etnográfico",
+      "coordenadas": {
+        "lat": 40.4847291,
+        "lon": -6.0012848,
+        "nota": "Geocodificado con Nominatim/OSM a partir de la dirección"
+      },
+      "web_oficial": "no confirmada",
+      "titularidad": "privada",
+      "notas": "Formato de tienda-museo; se incluye por su carácter museístico etnográfico, pero es un caso límite que el usuario puede querer descartar"
+    },
+    {
+      "nombre_oficial": "CARMUS - Museo Carmelitano Teresa de Jesús",
+      "municipio": "Alba de Tormes",
+      "direccion": "Calle Sor Mariana de San José, 3, 37800 Alba de Tormes",
+      "tematica": "Vida y legado de Santa Teresa de Jesús; alberga su sepulcro y reliquias",
+      "coordenadas": {
+        "lat": 40.8269585,
+        "lon": -5.5147575,
+        "nota": "Geocodificado con Nominatim/OSM a partir de la dirección"
+      },
+      "web_oficial": "https://carmelitasalba.org/museo_carmelitano_1/",
+      "titularidad": "eclesiastica (Carmelitas Descalzas)",
+      "notas": null
+    },
+    {
+      "nombre_oficial": "Museo de las Carmelitas (Convento de la Purísima Concepción)",
+      "municipio": "Peñaranda de Bracamonte",
+      "direccion": "Calle Nuestra Señora, s/n, 37300 Peñaranda de Bracamonte",
+      "tematica": "Arte sacro conventual, con obras de pintores como Lucas Jordán o Guido Reni",
+      "coordenadas": {
+        "lat": 40.8986926,
+        "lon": -5.2008726,
+        "nota": "Geocodificado con Nominatim/OSM a partir de la dirección"
+      },
+      "web_oficial": "no confirmada",
+      "titularidad": "eclesiastica (Carmelitas Descalzas)",
+      "notas": null
+    },
+    {
+      "nombre_oficial": "Museo de la Moto Histórica",
+      "municipio": "Santa Marta de Tormes",
+      "direccion": "Calle Padilla, 4, 37900 Santa Marta de Tormes",
+      "tematica": "Colección cronológica de motocicletas históricas donadas al Ayuntamiento",
+      "coordenadas": {
+        "lat": 40.949046,
+        "lon": -5.6272842,
+        "nota": "Geocodificado con Nominatim/OSM a partir de la dirección"
+      },
+      "web_oficial": "https://www.turismosantamartadetormes.com/museo/museo-de-la-moto-historica",
+      "titularidad": "publica (Ayuntamiento de Santa Marta de Tormes)",
+      "notas": null
+    },
+    {
+      "nombre_oficial": "Museo de Arte Contemporáneo \"José Fuentes\"",
+      "municipio": "Santa Marta de Tormes",
+      "direccion": "Plaza de España, s/n (Casa Consistorial), 37900 Santa Marta de Tormes",
+      "tematica": "Arte contemporáneo, colección donada por el Instituto de Investigación en Arte y Tecnología de Animación (USAL)",
+      "coordenadas": {
+        "lat": 40.9492068,
+        "lon": -5.630396,
+        "nota": "Geocodificado con Nominatim/OSM (consulta simplificada por plaza/calle)"
+      },
+      "web_oficial": "https://www.turismosantamartadetormes.com/museo/museo-de-arte-contemporaneo",
+      "titularidad": "publica (Ayuntamiento de Santa Marta de Tormes)",
+      "notas": null
+    },
+    {
+      "nombre_oficial": "Museo del Grabado y Obra Múltiple",
+      "municipio": "Santa Marta de Tormes",
+      "direccion": "Calle La Luz, 1 (Edificio Enrique de Sena), 37900 Santa Marta de Tormes",
+      "tematica": "Arte gráfico y obra múltiple (grabado); primero de su tipo en Castilla y León",
+      "coordenadas": {
+        "lat": 40.9506009,
+        "lon": -5.631194,
+        "nota": "Geocodificado con Nominatim/OSM (consulta simplificada por plaza/calle)"
+      },
+      "web_oficial": "https://www.turismosantamartadetormes.com/museo/museo-de-grabado",
+      "titularidad": "publica (Ayuntamiento de Santa Marta de Tormes)",
+      "notas": null
+    }
+  ]
+}

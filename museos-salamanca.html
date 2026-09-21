@@ -1,0 +1,191 @@
+---
+layout: default
+title: Museos de Salamanca
+description: Todos los museos y casas-museo de la ciudad de Salamanca, con un apartado dedicado a los museos del resto de la provincia
+date: 21-09-2026
+folder: Cultura y Ocio
+permalink: museos-salamanca
+---
+
+    <!-- Featured Datasets Section -->
+    <section class="featured dataset" id="datos">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="section-title">{{ page.title }}</h1>
+                <p class="section-description">{{ page.description }}</p>
+            </div>
+
+			<div id="section-content">
+
+				<p>
+Salamanca capital reúne una <b>oferta museística muy concentrada en el casco histórico</b>: museos universitarios en torno al Patio de Escuelas, varias colecciones de arte sacro en conventos e iglesias, y museos temáticos como el de Art Nouveau y Art Déco (Casa Lis), el de Historia de la Automoción o el Taurino. Fuera de la capital, los museos de la provincia se reparten por comarcas y suelen contar la historia de un oficio o una tradición muy local: el textil en Béjar, la chacinería en Guijuelo, la etnografía serrana en La Alberca, Mogarraz o Candelario, o el legado religioso de Alba de Tormes y Peñaranda de Bracamonte.</p>
+
+<div id="leyendaMuseos" style="display:flex; flex-wrap:wrap; gap:10px; align-items:center; margin: 18px 0;">
+	<span style="font-size:0.9em; color:#555;">Titularidad:</span>
+	<span style="display:inline-flex; align-items:center; gap:6px; font-size:0.85em;"><span style="width:12px;height:12px;border-radius:50%;background:#1E56A0;display:inline-block;"></span>Pública / universitaria</span>
+	<span style="display:inline-flex; align-items:center; gap:6px; font-size:0.85em;"><span style="width:12px;height:12px;border-radius:50%;background:#7B2D8B;display:inline-block;"></span>Eclesiástica</span>
+	<span style="display:inline-flex; align-items:center; gap:6px; font-size:0.85em;"><span style="width:12px;height:12px;border-radius:50%;background:#F4A261;display:inline-block;"></span>Privada</span>
+</div>
+
+			<h2>Museos de Salamanca capital</h2>
+			<div id="mapaMuseosCapital" style="width: 100%; height: 500px; border-radius: 8px; margin-bottom: 10px;"></div>
+			<p style="font-size: 0.85em; color: #555; margin-top: 0;">Haz clic en cada punto para ver el nombre, la temática y la dirección del museo.</p>
+
+			<div id="section-table">
+			<table border="1" cellpadding="5" cellspacing="0">
+			  <thead>
+				<tr>
+				  <th>Museo</th>
+				  <th>Dirección</th>
+				  <th>Temática</th>
+				  <th>Titularidad</th>
+				</tr>
+			  </thead>
+			  <tbody id="tablaMuseosCapitalBody">
+				<tr><td colspan="4">Cargando listado de museos…</td></tr>
+			  </tbody>
+			</table>
+			</div>
+
+			<h2 style="margin-top: 40px;">Museos de la provincia de Salamanca</h2>
+			<p>Fuera de la capital, la provincia de Salamanca tiene museos y casas-museo en una decena de municipios, casi siempre vinculados a un oficio, una figura local o el patrimonio religioso del lugar. La mayor concentración está en Béjar (patrimonio textil e industrial) y en la Sierra de Francia (etnografía de La Alberca, Mogarraz, Candelario y Miranda del Castañar), seguidas de Santa Marta de Tormes, que ha desarrollado en los últimos años tres pequeños museos municipales propios.</p>
+			<div id="mapaMuseosProvincia" style="width: 100%; height: 500px; border-radius: 8px; margin-bottom: 10px;"></div>
+			<p style="font-size: 0.85em; color: #555; margin-top: 0;">El punto verde marca la ciudad de Salamanca como referencia.</p>
+
+			<div id="section-table">
+			<table border="1" cellpadding="5" cellspacing="0">
+			  <thead>
+				<tr>
+				  <th>Museo</th>
+				  <th>Municipio</th>
+				  <th>Temática</th>
+				  <th>Titularidad</th>
+				</tr>
+			  </thead>
+			  <tbody id="tablaMuseosProvinciaBody">
+				<tr><td colspan="4">Cargando listado de museos…</td></tr>
+			  </tbody>
+			</table>
+			<p style="font-size: 0.9em; color: #555;">Listado elaborado con fuentes oficiales y semioficiales (ayuntamientos, Diócesis de Salamanca, Universidad de Salamanca, Junta de Castilla y León y webs propias de cada museo); no incluye salas de exposiciones temporales sin colección permanente ni centros de interpretación genéricos. Coordenadas geocodificadas a partir de la dirección de cada museo (OpenStreetMap/Nominatim). <a href="/museos-salamanca.json" target="_blank" rel="noopener">Descargar listado completo en JSON</a>.</p>
+			</div>
+
+			</div>
+
+			{% include categories.html %}
+
+        </div>
+    </section>
+
+	<!-- Hojas de estilo y scripts de Leaflet -->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+	<script>
+	(function () {
+		// Solo la primera palabra decide la titularidad (p. ej. "publica (Ayuntamiento...),
+		// gestión privada..." es ante todo pública, aunque mencione gestión privada después).
+		function tipoTitularidad(tit) {
+			const primera = (tit || '').trim().toLowerCase().split(/[\s(]/)[0];
+			if (primera.startsWith('eclesi')) return 'eclesiastica';
+			if (primera.startsWith('privada')) return 'privada';
+			return 'publica';
+		}
+		function colorTitularidad(tit) {
+			const tipo = tipoTitularidad(tit);
+			if (tipo === 'eclesiastica') return '#7B2D8B';
+			if (tipo === 'privada') return '#F4A261';
+			return '#1E56A0';
+		}
+		function etiquetaTitularidad(tit) {
+			const tipo = tipoTitularidad(tit);
+			if (tipo === 'eclesiastica') return 'Eclesiástica';
+			if (tipo === 'privada') return 'Privada';
+			if ((tit || '').toLowerCase().includes('universidad')) return 'Pública (universitaria)';
+			return 'Pública';
+		}
+		function escapeHtml(str) {
+			return String(str).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+		}
+
+		const mapCapital = L.map('mapaMuseosCapital').setView([40.9630, -5.6620], 15);
+		L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/light_all/{z}/{x}/{y}{r}.png?key=cb1_2izw_1_55d93b51ded1dcecfa044181', {
+			attribution: '&copy; OpenStreetMap &copy; CARTO',
+			subdomains: 'abcd',
+			maxZoom: 19
+		}).addTo(mapCapital);
+
+		const mapProvincia = L.map('mapaMuseosProvincia').setView([40.82, -6.05], 9);
+		L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/light_all/{z}/{x}/{y}{r}.png?key=cb1_2izw_1_55d93b51ded1dcecfa044181', {
+			attribution: '&copy; OpenStreetMap &copy; CARTO',
+			subdomains: 'abcd',
+			maxZoom: 19
+		}).addTo(mapProvincia);
+		L.circleMarker([40.9650, -5.6630], { radius: 7, color: '#fff', weight: 2, fillColor: '#2C5F2D', fillOpacity: 0.9 })
+			.bindPopup('<b>Salamanca (capital)</b>').addTo(mapProvincia);
+
+		fetch('/museos-salamanca.json?v=1')
+			.then(r => r.json())
+			.then(data => {
+				const capital = data.capital || [];
+				const provincia = data.provincia || [];
+
+				capital.forEach(m => {
+					const lat = m.coordenadas && m.coordenadas.lat;
+					const lon = m.coordenadas && m.coordenadas.lon;
+					if (typeof lat !== 'number' || typeof lon !== 'number') return;
+					L.circleMarker([lat, lon], {
+						radius: 7,
+						fillColor: colorTitularidad(m.titularidad),
+						color: '#ffffff',
+						weight: 2,
+						fillOpacity: 0.9
+					}).bindPopup(`<b>${escapeHtml(m.nombre_oficial)}</b><br>${escapeHtml(m.tematica)}<br><span style="font-size:0.85em;">${escapeHtml(m.direccion)}</span>`).addTo(mapCapital);
+				});
+
+				provincia.forEach(m => {
+					const lat = m.coordenadas && m.coordenadas.lat;
+					const lon = m.coordenadas && m.coordenadas.lon;
+					if (typeof lat !== 'number' || typeof lon !== 'number') return;
+					L.circleMarker([lat, lon], {
+						radius: 7,
+						fillColor: colorTitularidad(m.titularidad),
+						color: '#ffffff',
+						weight: 2,
+						fillOpacity: 0.9
+					}).bindPopup(`<b>${escapeHtml(m.nombre_oficial)}</b><br>${escapeHtml(m.municipio)}<br>${escapeHtml(m.tematica)}`).addTo(mapProvincia);
+				});
+
+				const tbodyCapital = document.getElementById('tablaMuseosCapitalBody');
+				tbodyCapital.innerHTML = capital
+					.slice()
+					.sort((a, b) => a.nombre_oficial.localeCompare(b.nombre_oficial, 'es'))
+					.map(m => {
+						const web = (m.web_oficial && m.web_oficial.startsWith('http')) ? ` <a href="${escapeHtml(m.web_oficial)}" target="_blank" rel="noopener" style="font-size:0.85em;">(web)</a>` : '';
+						return `<tr>
+							<td><b>${escapeHtml(m.nombre_oficial)}</b>${web}</td>
+							<td>${escapeHtml(m.direccion)}</td>
+							<td>${escapeHtml(m.tematica)}</td>
+							<td>${escapeHtml(etiquetaTitularidad(m.titularidad))}</td>
+						</tr>`;
+					}).join('') || '<tr><td colspan="4">No se ha podido cargar el listado.</td></tr>';
+
+				const tbodyProvincia = document.getElementById('tablaMuseosProvinciaBody');
+				tbodyProvincia.innerHTML = provincia
+					.slice()
+					.sort((a, b) => a.municipio.localeCompare(b.municipio, 'es') || a.nombre_oficial.localeCompare(b.nombre_oficial, 'es'))
+					.map(m => {
+						const web = (m.web_oficial && m.web_oficial.startsWith('http')) ? ` <a href="${escapeHtml(m.web_oficial)}" target="_blank" rel="noopener" style="font-size:0.85em;">(web)</a>` : '';
+						return `<tr>
+							<td><b>${escapeHtml(m.nombre_oficial)}</b>${web}</td>
+							<td>${escapeHtml(m.municipio)}</td>
+							<td>${escapeHtml(m.tematica)}</td>
+							<td>${escapeHtml(etiquetaTitularidad(m.titularidad))}</td>
+						</tr>`;
+					}).join('') || '<tr><td colspan="4">No se ha podido cargar el listado.</td></tr>';
+			})
+			.catch(err => {
+				console.error('No se pudo cargar museos-salamanca.json', err);
+				document.getElementById('tablaMuseosCapitalBody').innerHTML = '<tr><td colspan="4">No se ha podido cargar el listado de museos.</td></tr>';
+				document.getElementById('tablaMuseosProvinciaBody').innerHTML = '<tr><td colspan="4">No se ha podido cargar el listado de museos.</td></tr>';
+			});
+	})();
+	</script>
