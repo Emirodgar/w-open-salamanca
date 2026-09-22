@@ -913,6 +913,15 @@ tfoot td {
     border: 1px solid var(--border-color);
 }
 
+/* Nota al pie de las tablas (fuentes, aclaraciones, enlaces de descarga).
+   Selector genérico por posición, no por clase, para cubrir todas las
+   páginas que ya siguen el patrón tabla + <p> dentro de #section-table
+   sin tener que tocarlas una a una. */
+#section-table table + p {
+    margin-top: var(--spacing-lg);
+    line-height: 1.7;
+}
+
 /* Mejorar lectura de párrafos y encabezados */
 #section-content p {
     margin-bottom: var(--spacing-lg);
