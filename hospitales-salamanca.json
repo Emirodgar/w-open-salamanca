@@ -1,0 +1,244 @@
+{
+  "metadata": {
+    "titulo": "Hospitales de la ciudad de Salamanca (término municipal de la capital)",
+    "descripcion": "Listado de centros hospitalarios reales, con función asistencial y/o de hospitalización, situados en el término municipal de Salamanca capital (no en la provincia). Incluye titularidad, especialidades, datos de plantilla con fuente y año, y médicos vinculados a estos centros que cuentan con reconocimiento público verificable.",
+    "fecha_elaboracion": "2026-09-22",
+    "metodologia": "Cada dato se ha contrastado con al menos una fuente institucional (Sacyl / Junta de Castilla y León), de prensa local salmantina (La Gaceta de Salamanca, Salamanca24horas, Salamancahoy, SalamancaRTV al Día, La Crónica de Salamanca), o corporativa del propio centro (HM Hospitales), y con geocodificación de las direcciones mediante Nominatim/OpenStreetMap. Ningún dato ha sido estimado: cuando una fuente fiable no lo confirmaba, el campo se ha marcado explícitamente como 'no confirmado'. Se ha aplicado un criterio restrictivo en el bloque de médicos conocidos: solo se incluyen personas con al menos una fuente pública verificable de reconocimiento (premio, nombramiento institucional, cobertura de prensa por una trayectoria concreta), nunca nombres genéricos.",
+    "fuentes_principales": [
+      "https://www.saludcastillayleon.es/CASalamanca/es (web oficial del Complejo Asistencial Universitario de Salamanca / Sacyl)",
+      "https://www.saludcastillayleon.es/CASalamanca/es/resena-historica",
+      "https://www.saludcastillayleon.es/CASalamanca/es/hospital-universitario-salamanca-nuevo-edificio/acceso-servicios",
+      "https://es.wikipedia.org/wiki/Complejo_Hospitalario_de_Salamanca",
+      "https://www.salamancahoy.es/salamanca/ciudad/cinco-hospitales-salamanca-20230317081558-nt.html",
+      "https://salamancartvaldia.es/noticia/2024-11-18-la-gerencia-del-complejo-asistencial-universitario-de-salamanca-responde-a-la-junta-de-personal-y-niega-que-exista-una-nefasta-gestion-cronificada-358390",
+      "https://www.elespanol.com/castilla-y-leon/region/salamanca/20241118/reclaman-necesidad-urgente-incrementar-plantilla-personal-hospital-salamanca/902160170_0.html",
+      "https://www.lagacetadesalamanca.es/salamanca/gasto-personal-hospital-salamanca-supera-medio-millon-20240413060000-nt.html",
+      "https://www.salamanca24horas.com/local/hospital-salamanca-aumenta-plantilla-llegando-3734-profesionales_1035787_102.html",
+      "https://hospitales-privados.es/salamanca/",
+      "https://es.wikipedia.org/wiki/Hospital_General_de_la_Sant%C3%ADsima_Trinidad",
+      "https://www.hmhospitales.com/hm-santisima-trinidad/",
+      "https://www.salamancahoy.es/salamanca/ciudad/conocido-hospital-privado-salamanca-incorpora-ultima-generacion-20251111123333-nt.html",
+      "https://www.lagacetadesalamanca.es/salamanca/ignacio-davila-reconocido-alergologos-europa-20230614205640-nt.html",
+      "https://alergologia.usal.es/ignacio-davila-catedratico-de-la-medicina-de-la-usal/",
+      "https://comsalamanca.es/noticias/2592-el-bocyl-publica-el-nombramiento-del-doctor-juan-francisco-blanco-blanco-como-jefe-de-traumatologia-del-causa",
+      "https://ramsa.org/2026/02/03/blanco-blanco-juan-francisco/",
+      "https://salamancartvaldia.es/noticia/2025-03-14-miguel-marcos-el-medico-que-se-hizo-viral-la-experiencia-de-la-pandemia-ha-dejado-lecciones-valiosas-365074",
+      "https://salamancartvaldia.es/noticia/2024-10-18-5-medicos-premiados-en-el-hospital-de-salamanca-356545",
+      "https://www.lagacetadesalamanca.es/salamanca/medico-marco-epoca-salamanca-20260510073000-nt.html",
+      "Nominatim / OpenStreetMap (geocodificación de direcciones)"
+    ],
+    "exclusiones_relevantes": [
+      "Hospital de Los Montalvos (Centro Hospitalario Los Montalvos, integrado en el CAUSA desde 2003): se excluye de este listado porque, según fuentes de prensa y la propia reseña histórica del CAUSA, está ubicado en el municipio de Carrascal de Barregas (a unos 9 km de la capital), no en el término municipal de Salamanca. El propio callejero de Carrascal de Barregas incluye la localidad 'Sanatorio Martínez Anido', que es la denominación histórica de este hospital, confirmando que administrativamente pertenece a ese municipio y no a Salamanca capital. Forma parte del CAUSA pero no de este listado por criterio geográfico explícito del encargo.",
+      "Hospital Virgen del Castañar (Béjar) y Centro de Especialidades de Ciudad Rodrigo: forman parte del CAUSA pero están fuera de la capital y de su provincia inmediata; se excluyen por el mismo criterio geográfico.",
+      "Clínica Médica Campoamor / Centro Médico Recoletas Salud Campoamor (Avenida de San Agustín, 12, Salamanca): no se ha encontrado ninguna fuente que confirme que dispone de camas de hospitalización propias; se describe en fuentes consultadas como centro médico/clínica de consultas y cirugía ambulatoria (traumatología, rehabilitación, oftalmología, etc.), por lo que no se incluye como 'hospital con hospitalización propia'.",
+      "No se ha encontrado, aparte de HM Santísima Trinidad, ningún otro hospital o clínica privada con hospitalización propia (camas de ingreso) en el término municipal de Salamanca capital. El anuncio de un nuevo hospital privado del grupo Recoletas en la provincia se ubica en Carbajosa de la Sagrada (fuera de la capital) y, a fecha de esta investigación, no está operativo."
+    ],
+    "datos_no_confirmados": [
+      "Coordenadas exactas del edificio del nuevo Hospital Universitario de Salamanca: no se ha encontrado un punto oficial del propio edificio en fuentes cartográficas; se usa una geocodificación aproximada de su dirección/acceso (parada de autobús 'Hospital' en Paseo de la Transición Española), señalada explícitamente como aproximada.",
+      "Desglose fino de la plantilla del CAUSA (médicos vs. enfermería vs. personal no sanitario) para el año más reciente (2024): la fuente más reciente y citable (declaraciones de la gerencia, noviembre de 2024) solo da la cifra total (4.483) y el número de residentes (>400), sin desglose completo por categoría; el desglose fino disponible (médicos, enfermería, TCAE) corresponde a datos de 2015-2018, ya desactualizados.",
+      "Número exacto de camas de hospitalización del Hospital HM Santísima Trinidad: las fuentes consultadas dan cifras distintas según el criterio de conteo (86 camas de hospitalización convencional según la propia web corporativa del centro, frente a 106 camas 'instaladas' según el Catálogo Nacional de Hospitales recogido por directorios sanitarios); se recogen ambas cifras con su fuente.",
+      "Plantilla desglosada por categoría profesional del Hospital HM Santísima Trinidad: solo se ha encontrado la cifra global de prensa ('más de 300 profesionales' y 'más de 150 especialistas' en el cuadro médico), sin desglose oficial disponible."
+    ]
+  },
+
+  "hospitales": [
+    {
+      "nombre_oficial": "Hospital Universitario de Salamanca (nuevo edificio)",
+      "forma_parte_de": "Complejo Asistencial Universitario de Salamanca (CAUSA) - Sacyl",
+      "titularidad": "publica (Junta de Castilla y León / Sacyl)",
+      "direccion": "Paseo de la Transición Española, s/n, 37007 Salamanca",
+      "coordenadas": {
+        "lat": 40.9621719,
+        "lon": -5.6758474,
+        "nota": "Geocodificación aproximada mediante Nominatim/OSM sobre el acceso/parada de autobús 'Hospital' del propio edificio; no es el centroide exacto de la parcela."
+      },
+      "funcion_actual": "Hospital de agudos: hospitalización, urgencias, UCI, cirugía y consultas de alta complejidad. Concentra la práctica totalidad de la actividad de hospitalización del CAUSA en la capital desde su apertura por fases (diciembre de 2020 para rehabilitación y oncología; verano de 2021 para el resto de servicios).",
+      "año_apertura": 2021,
+      "especialidades_servicios": [
+        "Urgencias", "UCI / Reanimación", "Cardiología", "Cirugía cardiovascular",
+        "Cirugía general y del aparato digestivo", "Cirugía maxilofacial",
+        "Angiología y cirugía vascular", "Aparato digestivo (con hospitalización)",
+        "Anestesiología y reanimación", "Anatomía patológica", "Análisis clínicos",
+        "Oncología médica y radioterápica", "Neurocirugía", "Traumatología y cirugía ortopédica",
+        "Obstetricia y ginecología / maternidad", "Pediatría", "Hematología y hemoterapia",
+        "Y en torno a otras 30 especialidades y unidades adicionales según el cuadro oficial de servicios del centro (listado completo en la web de Sacyl/CASalamanca, no reproducido íntegro aquí)"
+      ],
+      "notas": "Edificio de más de 200.000 m², con 507 habitaciones, 25 quirófanos y unos 170 espacios de consulta según prensa local (inversión aproximada de 210 M€ de construcción + 80 M€ de equipamiento). El complejo en su conjunto (todos sus centros, dentro y fuera de la capital) ofrece en torno a 50 especialidades médicas según fuentes institucionales.",
+      "fuentes": [
+        "https://www.saludcastillayleon.es/CASalamanca/es/hospital-universitario-salamanca-nuevo-edificio",
+        "https://www.saludcastillayleon.es/CASalamanca/es/hospital-universitario-salamanca-nuevo-edificio/acceso-servicios",
+        "https://www.saludcastillayleon.es/CASalamanca/es/resena-historica",
+        "https://www.lagacetadesalamanca.es/salamanca/servicios-nuevo-edificio-hospital-dispararan-capacidad-asistencial-20230525060000-nt.html",
+        "https://www.salamancahoy.es/salamanca/ciudad/cinco-hospitales-salamanca-20230317081558-nt.html"
+      ]
+    },
+    {
+      "nombre_oficial": "Edificios de Consultas Externas del CAUSA (antiguos Hospital Clínico Universitario y Hospital Virgen de la Vega)",
+      "forma_parte_de": "Complejo Asistencial Universitario de Salamanca (CAUSA) - Sacyl",
+      "titularidad": "publica (Junta de Castilla y León / Sacyl)",
+      "direccion": "Paseo de San Vicente, 58-182, 37007 Salamanca",
+      "coordenadas": {
+        "lat": 40.9638244,
+        "lon": -5.6754335,
+        "nota": "Geocodificación mediante Nominatim/OSM sobre el solar/recinto del antiguo Hospital Clínico."
+      },
+      "funcion_actual": "Desde el traslado de la hospitalización al nuevo edificio (2020-2021), este campus histórico (formado por tres edificios de consultas: el antiguo edificio Materno-Infantil, el edificio azul 'Virgen de la Vega' y el antiguo centro de especialidades) funciona exclusivamente como consultas externas y algunos servicios centrales (p. ej. el Centro de Hemoterapia y Hemodonación de Castilla y León), sin camas de hospitalización de agudos.",
+      "año_apertura_original": {
+        "hospital_virgen_de_la_vega": 1965,
+        "hospital_clinico_universitario": 1975
+      },
+      "especialidades_servicios": [
+        "Consultas externas de múltiples especialidades (distribuidas en tres edificios)",
+        "Centro de Hemoterapia y Hemodonación de Castilla y León (donación de sangre)",
+        "Alergología (consulta)"
+      ],
+      "notas": "Hasta 2020-2021 estos edificios funcionaron como hospitales de agudos con hospitalización propia (Hospital Clínico Universitario, hospital docente de la Universidad de Salamanca desde 1993; y Hospital Virgen de la Vega). Se listan como entrada propia por tener ubicación y función actual claramente diferenciadas del nuevo hospital, aunque hoy no tengan hospitalización.",
+      "fuentes": [
+        "https://www.saludcastillayleon.es/CASalamanca/es/edificios-consultas",
+        "https://www.saludcastillayleon.es/CASalamanca/es/edificios-consultas/direcciones-telefonos",
+        "https://www.saludcastillayleon.es/CASalamanca/es/resena-historica",
+        "https://es.wikipedia.org/wiki/Complejo_Hospitalario_de_Salamanca"
+      ]
+    },
+    {
+      "nombre_oficial": "Hospital HM Santísima Trinidad (Hospital General de la Santísima Trinidad)",
+      "forma_parte_de": "Grupo HM Hospitales (independiente del CAUSA/Sacyl)",
+      "titularidad": "privada",
+      "direccion": "Paseo de Carmelitas, 74-94, 37007 Salamanca",
+      "coordenadas": {
+        "lat": 40.9680825,
+        "lon": -5.6696669,
+        "nota": "Geocodificación mediante Nominatim/OSM."
+      },
+      "funcion_actual": "Único hospital privado de la capital con hospitalización propia confirmada (no es un simple centro médico o clínica de consultas).",
+      "camas": {
+        "camas_hospitalizacion_convencional": "86 (58 agudos + 28 crónicos) según la web corporativa del hospital",
+        "camas_instaladas_total": "106 según el Catálogo Nacional de Hospitales recogido por directorios sanitarios",
+        "hospital_de_dia": "10 sillones + 15 camas (hospital de día médico-quirúrgico)",
+        "nota": "Cifras discrepantes según fuente/criterio de conteo; se recogen ambas en vez de elegir una arbitrariamente."
+      },
+      "historia": "El origen del centro se remonta a 1581, por fusión de dieciocho pequeños hospitales medievales de Salamanca; el edificio actual data de 1904 (arquitecto Pedro Vidal y Rodríguez-Barba). Hoy es un hospital privado gestionado por el grupo HM Hospitales.",
+      "especialidades_servicios": [
+        "Cardiología", "Pediatría", "Reumatología", "Neumología", "Oncología", "Neurocirugía",
+        "Traumatología y cirugía ortopédica", "Cirugía general y del aparato digestivo",
+        "Unidad de Accidentes de Tráfico", "Reanimación / UCI", "Unidad de la Mujer (ginecología, obstetricia, maternidad)",
+        "Unidad del Dolor", "Endoscopia", "Radiodiagnóstico (incluye mamografía de última generación, 2025)",
+        "Laboratorio de análisis clínicos"
+      ],
+      "fuentes": [
+        "https://es.wikipedia.org/wiki/Hospital_General_de_la_Sant%C3%ADsima_Trinidad",
+        "https://www.hmhospitales.com/hm-santisima-trinidad/",
+        "https://www.salamancahoy.es/salamanca/ciudad/conocido-hospital-privado-salamanca-incorpora-ultima-generacion-20251111123333-nt.html",
+        "https://hospitales-privados.es/salamanca/"
+      ]
+    }
+  ],
+
+  "plantilla": {
+    "causa_complejo_asistencial_universitario_de_salamanca": {
+      "cifra_mas_reciente": {
+        "total_trabajadores": 4483,
+        "año": 2024,
+        "mes": "noviembre",
+        "incluye": "todas las categorías profesionales, incluidos los residentes",
+        "fuente": "Declaraciones de la gerencia del CAUSA en respuesta a la Junta de Personal, recogidas por SalamancaRTV al Día y El Español, 18 de noviembre de 2024",
+        "url": [
+          "https://salamancartvaldia.es/noticia/2024-11-18-la-gerencia-del-complejo-asistencial-universitario-de-salamanca-responde-a-la-junta-de-personal-y-niega-que-exista-una-nefasta-gestion-cronificada-358390",
+          "https://www.elespanol.com/castilla-y-leon/region/salamanca/20241118/reclaman-necesidad-urgente-incrementar-plantilla-personal-hospital-salamanca/902160170_0.html"
+        ]
+      },
+      "desglose_parcial_2024": {
+        "residentes_mir": "más de 400",
+        "contratos_de_fidelizacion_a_facultativos": 93,
+        "facultativos_incorporados_en_2024_via_fidelizacion": 66,
+        "fuente": "Misma nota de gerencia del CAUSA, noviembre de 2024"
+      },
+      "serie_historica_no_comparable_directamente": [
+        {
+          "año": 2018,
+          "mes": "marzo",
+          "total_profesionales": 3734,
+          "medicos_y_facultativos": 688,
+          "personal_de_enfermeria": 1093,
+          "fuente": "Salamanca24horas, 21 de marzo de 2018",
+          "url": "https://www.salamanca24horas.com/local/hospital-salamanca-aumenta-plantilla-llegando-3734-profesionales_1035787_102.html"
+        },
+        {
+          "año": 2023,
+          "total_profesionales": "más de 4.000 (cifra aproximada de prensa, sin desglose)",
+          "gasto_en_personal_2023": "204 millones de euros",
+          "fuente": "La Gaceta de Salamanca, 13 de abril de 2024 (datos referidos a 2023)",
+          "url": "https://www.lagacetadesalamanca.es/salamanca/gasto-personal-hospital-salamanca-supera-medio-millon-20240413060000-nt.html"
+        }
+      ],
+      "otros_datos": {
+        "porcentaje_mujeres_en_plantilla": "78,66%",
+        "año": 2024,
+        "fecha": "8 de marzo de 2024 (Día Internacional de la Mujer)",
+        "fuente": "El Español Castilla y León",
+        "url": "https://www.elespanol.com/castilla-y-leon/region/salamanca/20240308/ciento-plantilla-hospital-salamanca-mujeres/838416423_0.html"
+      },
+      "nota_metodologica": "No se ha encontrado un desglose oficial y actualizado (memoria anual del CAUSA o de Sacyl) que cruce, para un mismo año reciente, el total de la plantilla con las categorías médicos/enfermería/personal no sanitario/residentes. Se ofrece la cifra total más reciente (2024) y, por separado, el último desglose fino localizado (2018), advirtiendo que no son directamente comparables por el paso del tiempo y la ampliación de plantilla con el nuevo hospital."
+    },
+    "hospital_hm_santisima_trinidad": {
+      "total_profesionales": "más de 300",
+      "cuadro_medico_especialistas": "más de 150",
+      "año": 2025,
+      "fecha": "11 de noviembre de 2025",
+      "fuente": "Salamancahoy",
+      "url": "https://www.salamancahoy.es/salamanca/ciudad/conocido-hospital-privado-salamanca-incorpora-ultima-generacion-20251111123333-nt.html",
+      "nota_metodologica": "No se ha encontrado un desglose oficial por categoría profesional (médicos, enfermería, no sanitario) para este centro privado; solo cifras globales de prensa."
+    }
+  },
+
+  "medicos_conocidos": [
+    {
+      "nombre": "Ignacio Dávila González",
+      "vinculacion_hospitalaria": "Jefe del Servicio de Alergología del Hospital Universitario de Salamanca (CAUSA)",
+      "otros_cargos": "Catedrático de Medicina (Alergología) de la Universidad de Salamanca; expresidente de la Sociedad Española de Alergología e Inmunología Clínica (SEAIC)",
+      "motivo_reconocimiento": "Premio 'Charles Blackley Award 2023 - Promotion of the Speciality', concedido por la Academia Europea de Alergia e Inmunología Clínica (EAACI) en reconocimiento a su labor de impulso de la especialidad",
+      "fuente": [
+        "https://www.lagacetadesalamanca.es/salamanca/ignacio-davila-reconocido-alergologos-europa-20230614205640-nt.html",
+        "https://alergologia.usal.es/ignacio-davila-catedratico-de-la-medicina-de-la-usal/"
+      ]
+    },
+    {
+      "nombre": "Juan Francisco Blanco Blanco",
+      "vinculacion_hospitalaria": "Jefe del Servicio de Traumatología y Cirugía Ortopédica del CAUSA desde el 1 de abril de 2013 (nombramiento publicado en el BOCYL)",
+      "otros_cargos": "Catedrático de Traumatología y Ortopedia de la Facultad de Medicina de la Universidad de Salamanca (desde 2025); responsable de un grupo de investigación del Instituto de Investigación Biomédica de Salamanca (IBSAL); académico numerario de la Real Academia de Medicina de Salamanca (RAMSA) desde septiembre de 2025",
+      "motivo_reconocimiento": "Nombrado 'Médico del Año en Castilla y León' (2016); premio 'Best in Class' al mejor servicio asistencial en Traumatología (2014); Premio Extraordinario de la Fundación SECOT al mejor artículo de la Revista Española de Cirugía Ortopédica y Traumatología (2023); ingreso como académico de número en la RAMSA (2025)",
+      "fuente": [
+        "https://comsalamanca.es/noticias/2592-el-bocyl-publica-el-nombramiento-del-doctor-juan-francisco-blanco-blanco-como-jefe-de-traumatologia-del-causa",
+        "https://ramsa.org/2026/02/03/blanco-blanco-juan-francisco/",
+        "https://www.salamancahoy.es/salamanca/universidad/catedratico-universidad-salamanca-nuevo-academico-real-academia-20250912142247-nt.html"
+      ]
+    },
+    {
+      "nombre": "Miguel Marcos",
+      "vinculacion_hospitalaria": "Médico internista del Hospital Universitario de Salamanca (CAUSA)",
+      "otros_cargos": "Investigador del Instituto de Investigación Biomédica de Salamanca (IBSAL); profesor de la Universidad de Salamanca",
+      "motivo_reconocimiento": "Alcanzó notoriedad mediática nacional durante la pandemia de COVID-19 por sus hilos de divulgación en redes sociales con información rigurosa desde primera línea hospitalaria, cubierto por prensa local varios años después como referencia de esa etapa",
+      "fuente": "https://salamancartvaldia.es/noticia/2025-03-14-miguel-marcos-el-medico-que-se-hizo-viral-la-experiencia-de-la-pandemia-ha-dejado-lecciones-valiosas-365074"
+    },
+    {
+      "nombre": "Pedro Sánchez Llevot (1823-1894)",
+      "vinculacion_hospitalaria": "Figura histórica: impulsor y organizador de la restauración de los estudios de Medicina en Salamanca tras la Revolución de 1868 (Facultad Libre de Medicina), decano y catedrático de Anatomía",
+      "motivo_reconocimiento": "Considerado una de las figuras más influyentes de la medicina salmantina del siglo XIX; el Ayuntamiento de Salamanca dio su nombre a una calle de la ciudad en 1906 en reconocimiento a su labor",
+      "fuente": "https://www.lagacetadesalamanca.es/salamanca/medico-marco-epoca-salamanca-20260510073000-nt.html"
+    }
+  ],
+
+  "reconocimientos_internos_causa_no_clasificados_como_fama_nacional": {
+    "nota": "Se incluyen aparte, con menor entidad, por tratarse de un reconocimiento interno del propio hospital (no un premio externo ni proyección mediática nacional), para no mezclarlos con el bloque anterior de médicos con reconocimiento público más amplio.",
+    "premio": "II Reconocimiento Profesional del CAUSA",
+    "fecha": "18 de octubre de 2024",
+    "premiados": [
+      { "nombre": "María del Carmen Esteban Velasco", "servicio": "Cirugía General y del Aparato Digestivo" },
+      { "nombre": "Domingo Bustos García", "servicio": "Anestesiología y Reanimación" },
+      { "nombre": "Luis Velasco Pelayo", "servicio": "Radiología Intervencionista" },
+      { "nombre": "Pedro Soria Carreras", "servicio": "Oncología Radioterápica" },
+      { "nombre": "María Teresa Santos Jiménez", "servicio": "Admisión y Documentación Clínica" }
+    ],
+    "fuente": "https://salamancartvaldia.es/noticia/2024-10-18-5-medicos-premiados-en-el-hospital-de-salamanca-356545"
+  }
+}

@@ -1,0 +1,174 @@
+---
+layout: default
+title: "Hospitales de Salamanca: ubicación, especialidades y plantilla"
+description: Un análisis de los hospitales de la ciudad de Salamanca, con su ubicación, especialidades médicas, personal empleado y los médicos más conocidos vinculados a ellos
+date: 22-09-2026
+folder: Salud
+permalink: hospitales-salamanca
+---
+
+    <!-- Featured Datasets Section -->
+    <section class="featured dataset" id="datos">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="section-title">{{ page.title }}</h1>
+                <p class="section-description">{{ page.description }}</p>
+            </div>
+
+			<div id="section-content">
+
+				<p>
+La ciudad de Salamanca tiene, en la práctica, un gran hospital público y un hospital privado. El <b>Complejo Asistencial Universitario de Salamanca (CAUSA)</b>, dependiente de Sacyl, concentra casi toda su hospitalización de agudos en el nuevo edificio abierto en 2021, mientras que el histórico campus del Paseo de San Vicente —los antiguos Hospital Clínico y Hospital Virgen de la Vega— sigue en pie como centro de consultas externas. A ellos se suma el <b>Hospital HM Santísima Trinidad</b>, el único centro privado de la capital con camas de hospitalización propias, con un origen que se remonta a 1581. Quedan fuera de este listado, por estar fuera del término municipal, otros centros que también forman parte del CAUSA, como el Hospital Los Montalvos (en Carrascal de Barregas) o el Hospital Virgen del Castañar (Béjar).</p>
+
+<div id="leyendaHospitales" style="display:flex; flex-wrap:wrap; gap:10px; align-items:center; margin: 18px 0;">
+	<span style="font-size:0.9em; color:#555;">Titularidad:</span>
+	<span style="display:inline-flex; align-items:center; gap:6px; font-size:0.85em;"><span style="width:12px;height:12px;border-radius:50%;background:#1E56A0;display:inline-block;"></span>Pública (Sacyl)</span>
+	<span style="display:inline-flex; align-items:center; gap:6px; font-size:0.85em;"><span style="width:12px;height:12px;border-radius:50%;background:#F4A261;display:inline-block;"></span>Privada</span>
+</div>
+
+			<!-- Mapa de hospitales -->
+			<div id="mapaHospitales" style="width: 100%; height: 480px; border-radius: 8px; margin-bottom: 10px;"></div>
+			<p style="font-size: 0.85em; color: #555; margin-top: 0;">Haz clic en cada punto para ver el nombre, la dirección y la función del centro.</p>
+
+			<h2>Personal empleado</h2>
+			<div id="statsHospitales" style="display:flex; flex-wrap:wrap; gap:12px; margin: 20px 0;">
+				<div style="flex:1; min-width:160px; background:#eaf1f9; border-left:4px solid #1E56A0; border-radius:6px; padding:12px 16px;">
+					<div style="font-size:1.5em; font-weight:700; color:#1E56A0;">4.483</div>
+					<div style="font-size:0.85em; color:#555;">Trabajadores del CAUSA (nov. 2024), incl. residentes</div>
+				</div>
+				<div style="flex:1; min-width:160px; background:#eef6ee; border-left:4px solid #2C5F2D; border-radius:6px; padding:12px 16px;">
+					<div style="font-size:1.5em; font-weight:700; color:#2C5F2D;">&gt;400</div>
+					<div style="font-size:0.85em; color:#555;">Médicos residentes (MIR) en el CAUSA</div>
+				</div>
+				<div style="flex:1; min-width:160px; background:#fef3e7; border-left:4px solid #F4A261; border-radius:6px; padding:12px 16px;">
+					<div style="font-size:1.5em; font-weight:700; color:#F4A261;">78,7%</div>
+					<div style="font-size:0.85em; color:#555;">Plantilla del CAUSA que son mujeres (mar. 2024)</div>
+				</div>
+				<div style="flex:1; min-width:160px; background:#fdf1ec; border-left:4px solid #A8201A; border-radius:6px; padding:12px 16px;">
+					<div style="font-size:1.5em; font-weight:700; color:#A8201A;">&gt;300</div>
+					<div style="font-size:0.85em; color:#555;">Profesionales del HM Santísima Trinidad (2025)</div>
+				</div>
+			</div>
+
+			<canvas id="plantillaChart" width="800" height="350"></canvas>
+			<p style="font-size: 0.85em; color: #555;">El único desglose por categoría (médicos, enfermería) disponible es de 2018, ya desactualizado; las cifras más recientes solo publican el total de la plantilla. El dato de 2023 es una cifra aproximada de prensa ("más de 4.000"), sin desglose oficial.</p>
+
+			<h2>Especialidades y función de cada centro</h2>
+			<p><b>Hospital Universitario de Salamanca</b> (edificio nuevo, 2021) concentra la hospitalización de agudos: urgencias, UCI, cardiología y cirugía cardiovascular, oncología médica y radioterápica, neurocirugía, traumatología, maternidad, pediatría y hematología, entre en torno a 45 especialidades y unidades según el cuadro oficial de Sacyl. Es un edificio de más de 200.000 m², con 507 habitaciones y 25 quirófanos.</p>
+			<p>Los <b>edificios históricos del Paseo de San Vicente</b> —el antiguo Hospital Clínico Universitario (hospital docente de la USAL desde 1993) y el Hospital Virgen de la Vega— dejaron de hospitalizar pacientes tras el traslado de 2020-2021 y hoy funcionan como consultas externas de múltiples especialidades, además de albergar el Centro de Hemoterapia y Hemodonación de Castilla y León.</p>
+			<p>El <b>Hospital HM Santísima Trinidad</b> combina especialidades médicas y quirúrgicas —cardiología, oncología, neurocirugía, traumatología, una Unidad de la Mujer y una Unidad de Accidentes de Tráfico propia— con entre 86 y 106 camas de hospitalización según la fuente y el criterio de recuento, más 25 puestos de hospital de día.</p>
+
+			<h2>Los médicos más conocidos vinculados a los hospitales de Salamanca</h2>
+			<p>Con un criterio restrictivo —solo médicos con un reconocimiento público verificable, no una lista genérica de jefes de servicio—, estos son los nombres que más proyección han tenido dentro o fuera de Salamanca:</p>
+
+			<ul>
+				<li><b>Ignacio Dávila González</b>, jefe del Servicio de Alergología del CAUSA y catedrático de la USAL, recibió en 2023 el <i>Charles Blackley Award</i> de la Academia Europea de Alergia e Inmunología Clínica (EAACI) por su labor de impulso de la especialidad.</li>
+				<li><b>Juan Francisco Blanco Blanco</b>, jefe de Traumatología y Cirugía Ortopédica del CAUSA desde 2013 y catedrático de la USAL, fue nombrado "Médico del Año en Castilla y León" en 2016, ha recibido el premio "Best in Class" a mejor servicio asistencial y el Premio Extraordinario de la Fundación SECOT (2023), e ingresó en 2025 como académico de número de la Real Academia de Medicina de Salamanca.</li>
+				<li><b>Miguel Marcos</b>, internista del CAUSA e investigador del IBSAL, alcanzó notoriedad mediática nacional durante la pandemia de COVID-19 por sus hilos de divulgación desde primera línea hospitalaria.</li>
+				<li><b>Pedro Sánchez Llevot</b> (1823-1894), figura histórica de la medicina salmantina: impulsó la restauración de los estudios de Medicina en Salamanca tras la Revolución de 1868, y el Ayuntamiento dio su nombre a una calle de la ciudad en 1906.</li>
+			</ul>
+
+			<p style="font-size: 0.9em; color: #555;">Aparte de este reconocimiento con proyección nacional, el propio CAUSA concede desde 2023 un reconocimiento profesional interno anual; en su edición de 2024 distinguió a María del Carmen Esteban Velasco (Cirugía General), Domingo Bustos García (Anestesiología y Reanimación), Luis Velasco Pelayo (Radiología Intervencionista), Pedro Soria Carreras (Oncología Radioterápica) y María Teresa Santos Jiménez (Admisión y Documentación Clínica).</p>
+
+			</div>
+
+			<div id="section-table">
+			<h3>Los hospitales de la ciudad de Salamanca</h3>
+			<table border="1" cellpadding="5" cellspacing="0">
+			  <thead>
+				<tr>
+				  <th>Hospital</th>
+				  <th>Titularidad</th>
+				  <th>Dirección</th>
+				  <th>Función</th>
+				</tr>
+			  </thead>
+			  <tbody id="tablaHospitalesBody">
+				<tr><td colspan="4">Cargando listado de hospitales…</td></tr>
+			  </tbody>
+			</table>
+			<p style="font-size: 0.9em; color: #555;">Datos contrastados con fuentes institucionales (Sacyl/CASalamanca), la web corporativa de HM Hospitales y prensa local (La Gaceta de Salamanca, Salamanca24horas, Salamancahoy, SalamancaRTV al Día); no se ha incluido ningún dato sin al menos una fuente verificable, y los que no se pudieron confirmar (coordenadas exactas del hospital nuevo, desglose fino de plantilla 2024, número exacto de camas del HM Santísima Trinidad) se señalan como tales. <a href="/hospitales-salamanca.json" target="_blank" rel="noopener">Descargar los datos completos en JSON</a>, con todas las fuentes citadas.</p>
+			</div>
+
+			{% include categories.html %}
+
+        </div>
+    </section>
+
+	<!-- Hojas de estilo y scripts de Leaflet y Chart.js -->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	<script>
+	(function () {
+		function colorTitularidad(tit) {
+			return (tit || '').toLowerCase().startsWith('privada') ? '#F4A261' : '#1E56A0';
+		}
+		function escapeHtml(str) {
+			return String(str).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+		}
+
+		const mapaHospitales = L.map('mapaHospitales').setView([40.9640, -5.6710], 14);
+		L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/light_all/{z}/{x}/{y}{r}.png?key=cb1_2izw_1_55d93b51ded1dcecfa044181', {
+			attribution: '&copy; OpenStreetMap &copy; CARTO',
+			subdomains: 'abcd',
+			maxZoom: 19
+		}).addTo(mapaHospitales);
+
+		fetch('/hospitales-salamanca.json?v=1')
+			.then(r => r.json())
+			.then(data => {
+				const hospitales = data.hospitales || [];
+
+				hospitales.forEach(h => {
+					const c = h.coordenadas;
+					if (!c || typeof c.lat !== 'number' || typeof c.lon !== 'number') return;
+					L.circleMarker([c.lat, c.lon], {
+						radius: 9,
+						fillColor: colorTitularidad(h.titularidad),
+						color: '#ffffff',
+						weight: 2,
+						fillOpacity: 0.9
+					}).bindPopup(`<b>${escapeHtml(h.nombre_oficial)}</b><br>${escapeHtml(h.direccion)}<br><span style="font-size:0.85em;">${escapeHtml(h.funcion_actual || '')}</span>`).addTo(mapaHospitales);
+				});
+
+				const tbody = document.getElementById('tablaHospitalesBody');
+				tbody.innerHTML = hospitales.map(h => {
+					const tit = (h.titularidad || '').toLowerCase().startsWith('privada') ? 'Privada' : 'Pública (Sacyl)';
+					return `<tr>
+						<td><b>${escapeHtml(h.nombre_oficial)}</b></td>
+						<td>${tit}</td>
+						<td>${escapeHtml(h.direccion)}</td>
+						<td>${escapeHtml(h.funcion_actual || '')}</td>
+					</tr>`;
+				}).join('') || '<tr><td colspan="4">No se ha podido cargar el listado.</td></tr>';
+			})
+			.catch(err => {
+				console.error('No se pudo cargar hospitales-salamanca.json', err);
+				document.getElementById('tablaHospitalesBody').innerHTML = '<tr><td colspan="4">No se ha podido cargar el listado de hospitales.</td></tr>';
+			});
+
+		new Chart(document.getElementById('plantillaChart').getContext('2d'), {
+			type: 'bar',
+			data: {
+				labels: ['2018', '2023 (aprox.)', '2024'],
+				datasets: [{
+					label: 'Plantilla total del CAUSA',
+					data: [3734, 4000, 4483],
+					backgroundColor: ['#9a9a9a', '#F4A261', '#1E56A0'],
+					borderRadius: 4
+				}]
+			},
+			options: {
+				responsive: true,
+				plugins: {
+					legend: { display: false },
+					title: { display: true, text: 'Evolución de la plantilla del Complejo Asistencial Universitario de Salamanca', font: { size: 13 } }
+				},
+				scales: {
+					y: { beginAtZero: true, title: { display: true, text: 'Nº de trabajadores' } }
+				}
+			}
+		});
+	})();
+	</script>
