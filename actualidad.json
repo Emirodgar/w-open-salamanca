@@ -1,11 +1,11 @@
 {
   "url_base": "https://www.lagacetadesalamanca.es",
-  "generado_en": "2026-09-20T21:15:00+00:00",
+  "generado_en": "2026-09-22T09:30:00+00:00",
   "periodo_cubierto": {
-    "desde": "2026-09-18",
-    "hasta": "2026-09-20"
+    "desde": "2026-09-20",
+    "hasta": "2026-09-22"
   },
-  "total_urls_analizadas": 103,
+  "total_urls_analizadas": 126,
   "secciones_excluidas": [
     "nacional",
     "opinion",
@@ -13,117 +13,115 @@
     "gente-estilo",
     "podcast"
   ],
-  "nota_cobertura": "El sitemap consultado esta vez solo contenía URLs de los últimos 3 días (18 a 20 de septiembre), un periodo más corto que una semana completa: es un sitemap 'rolling' y en este momento cubre menos días de los habituales. El análisis y el resumen siguientes reflejan únicamente ese periodo real, no una semana entera.",
+  "nota_cobertura": "El sitemap consultado esta vez solo contenía URLs de los últimos 3 días (20 a 22 de septiembre), un periodo más corto que una semana completa: es un sitemap 'rolling' y en este momento cubre menos días de los habituales. El análisis y el resumen siguientes reflejan únicamente ese periodo real, no una semana entera.",
   "por_seccion": [
-    ["salamanca", 33],
-    ["deportes", 24],
-    ["toros", 18],
+    ["salamanca", 40],
+    ["deportes", 26],
+    ["provincia", 23],
     ["sucesos", 15],
-    ["provincia", 9],
-    ["encuestas", 2],
-    ["campo", 1],
-    ["especiales", 1]
+    ["toros", 15],
+    ["campo", 5],
+    ["encuestas", 2]
   ],
   "por_subseccion": [
-    ["deportes/futbol-local", 17],
+    ["deportes/futbol-local", 13],
+    ["deportes/baloncesto-local", 3],
     ["deportes/carreras-populares", 2],
-    ["deportes/baloncesto-local", 1],
-    ["especiales/asi-somos-en-mi-pueblo", 1]
+    ["deportes/deporte-base", 2]
   ],
   "por_tipo_contenido": [
-    ["noticia", 99],
-    ["directo / en vivo", 4]
+    ["noticia", 124],
+    ["directo / en vivo", 2]
   ],
   "heatmap_calendario": [
-    {"fecha": "2026-09-18", "total": 4, "salamanca": 2, "deportes": 0, "toros": 2, "sucesos": 0, "provincia": 0, "encuestas": 0, "campo": 0, "especiales": 0},
-    {"fecha": "2026-09-19", "total": 46, "salamanca": 16, "deportes": 11, "toros": 7, "sucesos": 7, "provincia": 4, "encuestas": 1, "campo": 0, "especiales": 0},
-    {"fecha": "2026-09-20", "total": 53, "salamanca": 15, "deportes": 13, "toros": 9, "sucesos": 8, "provincia": 5, "encuestas": 1, "campo": 1, "especiales": 1}
+    {"fecha": "2026-09-20", "total": 40, "salamanca": 8, "deportes": 12, "provincia": 2, "sucesos": 7, "toros": 9, "campo": 1, "encuestas": 1},
+    {"fecha": "2026-09-21", "total": 61, "salamanca": 23, "deportes": 12, "provincia": 16, "sucesos": 5, "toros": 2, "campo": 2, "encuestas": 1},
+    {"fecha": "2026-09-22", "total": 25, "salamanca": 9, "deportes": 2, "provincia": 5, "sucesos": 3, "toros": 4, "campo": 2, "encuestas": 0}
   ],
   "conceptos_destacados": [
     {
-      "concepto": "Unionistas logra su primera victoria de la temporada",
-      "piezas": 5,
+      "concepto": "El derbi salmantino en Copa RFEF: Salamanca UDS y Santa Marta se juegan el pase a la Copa del Rey",
+      "piezas": 4,
       "seccion_principal": "deportes",
-      "desde": "2026-09-19",
-      "hasta": "2026-09-19",
+      "desde": "2026-09-21",
+      "hasta": "2026-09-22",
       "ejemplos_redactados": [
-        "Unionistas ha expulsado sus fantasmas y se ha llevado su primera alegría de la temporada, venciendo (3-1) a la UD Ourense tras el peor arranque de su historia.",
-        "El propio periódico pregunta a sus lectores si creen que este triunfo supondrá un cambio de tendencia para el equipo."
+        "El Salamanca UDS y la UD Santa Marta se enfrentarán en el San Casto para decidir quién se cuela en la Copa del Rey, en un derbi salmantino que ya tiene horario y del que ambos conocen su camino hasta la final.",
+        "El Santa Marta no instalará gradas supletorias, aunque sí ampliará el aforo todo lo posible para dar cabida a la expectación del encuentro."
       ]
     },
     {
-      "concepto": "El Salamanca UDS pierde su racha en Cuenca tras una roja polémica",
-      "piezas": 4,
+      "concepto": "'Ley de Nietos': 28 pueblos salmantinos ya tienen más electores en el extranjero que en España",
+      "piezas": 1,
+      "seccion_principal": "salamanca",
+      "desde": "2026-09-22",
+      "hasta": "2026-09-22",
+      "ejemplos_redactados": [
+        "La provincia ha ganado 4.910 residentes ausentes en cuatro años gracias a la 'Ley de Nietos', hasta el punto de que el censo de electores residentes en el extranjero (CERA) acapara ya el 12% de los salmantinos con derecho al voto, un porcentaje que solo superan ocho provincias españolas."
+      ]
+    },
+    {
+      "concepto": "Las Ferias y Fiestas cierran su programa deportivo con más de 35.000 espectadores",
+      "piezas": 1,
       "seccion_principal": "deportes",
+      "desde": "2026-09-21",
+      "hasta": "2026-09-21",
+      "ejemplos_redactados": [
+        "Más de 35.000 espectadores han disfrutado de las actividades del programa deportivo de las Ferias y Fiestas de este año."
+      ]
+    },
+    {
+      "concepto": "La Fiscalía alerta del aumento de cibercrimen: casi 3 millones de euros estafados en 2025",
+      "piezas": 1,
+      "seccion_principal": "salamanca",
       "desde": "2026-09-20",
       "hasta": "2026-09-20",
       "ejemplos_redactados": [
-        "El Conquense y el árbitro han cortado en seco la buena racha del Salamanca UDS (1-0), con una expulsión muy discutida que ha hecho estallar a Muniain: 'No es roja ni aquí ni en Pekín'."
+        "Los timos y fraudes denunciados ante la Guardia Civil costaron a los salmantinos casi 3 millones de euros en 2025, de los que se recuperó menos del 5%, por lo que la Fiscalía reclama más barreras a los bancos."
       ]
     },
     {
-      "concepto": "La Feria Taurina de La Glorieta cierra su edición con triunfo de Morante",
-      "piezas": 4,
-      "seccion_principal": "toros",
-      "desde": "2026-09-19",
-      "hasta": "2026-09-20",
-      "ejemplos_redactados": [
-        "La Feria Taurina de La Glorieta ha bajado el telón con la pureza de Morante de la Puebla y la entrega total de Ismael Martín y Julio Norte, tras una semana que también dejó a Guillermo Hermoso salir a hombros en el festejo de rejones."
-      ]
-    },
-    {
-      "concepto": "Alerta por peleas masivas: los delitos por reyertas se disparan",
-      "piezas": 3,
-      "seccion_principal": "sucesos",
-      "desde": "2026-09-19",
-      "hasta": "2026-09-20",
-      "ejemplos_redactados": [
-        "Salamanca ha registrado 82 delitos de lesiones y riñas tumultuarias en la primera mitad del año, frente a los 37 del mismo periodo de 2025, en un fin de semana que ha vuelto a dejar varias peleas multitudinarias con heridos en la ciudad."
-      ]
-    },
-    {
-      "concepto": "Ingresan en prisión permanente la madre y el padrastro que mataron a golpes a una niña de 2 años",
+      "concepto": "Los casos graves de absentismo escolar se triplican en un año",
       "piezas": 1,
-      "seccion_principal": "sucesos",
-      "desde": "2026-09-19",
-      "hasta": "2026-09-19",
-      "ejemplos_redactados": [
-        "La madre y el padrastro condenados a prisión permanente por matar a golpes a la pequeña Laia, de 2 años, que presentaba más de un centenar de lesiones, han ingresado en la prisión de Topas."
-      ]
-    },
-    {
-      "concepto": "Tristeza en Ciudad Rodrigo por la muerte de un vecino al volver de la Feria del Caballo",
-      "piezas": 1,
-      "seccion_principal": "provincia",
-      "desde": "2026-09-19",
-      "hasta": "2026-09-19",
-      "ejemplos_redactados": [
-        "Un mirobrigense ha fallecido tras sufrir un episodio cardiaco cuando volvía a su domicilio conduciendo la calesa con la que había participado en las actividades de la Feria del Caballo."
-      ]
-    },
-    {
-      "concepto": "Los robos de catenaria bloquean trenes y agravan el retraso de la electrificación",
-      "piezas": 2,
       "seccion_principal": "salamanca",
-      "desde": "2026-09-19",
-      "hasta": "2026-09-19",
+      "desde": "2026-09-20",
+      "hasta": "2026-09-20",
       "ejemplos_redactados": [
-        "Un tren cargado de coches quedó bloqueado durante horas en Salamanca por la sustracción de cobre, que ha afectado a al menos cuatro convoyes entre jueves y viernes, mientras el Gobierno reconoce que no existe fecha oficial para acabar la electrificación de la línea a la frontera tras seis años de retraso.",
-        "El robo de catenaria, dice el Ejecutivo, es una de las causas de las nuevas demoras en las obras."
+        "La Fiscalía incoó 29 expedientes por absentismo escolar grave en 2025 y presentó 22 denuncias en los juzgados, el triple que el año anterior."
       ]
     },
     {
-      "concepto": "Nueva tanda de sucesos: un hombre hallado muerto en un 'fumadero' y amenazas de muerte en El Cerro",
-      "piezas": 3,
-      "seccion_principal": "sucesos",
-      "desde": "2026-09-19",
-      "hasta": "2026-09-20",
+      "concepto": "Bus urbano gratis en el Día sin Coches tras rozar los 16 millones de pasajeros",
+      "piezas": 1,
+      "seccion_principal": "salamanca",
+      "desde": "2026-09-22",
+      "hasta": "2026-09-22",
       "ejemplos_redactados": [
-        "Un hombre que vivía en Francia ha sido hallado muerto en un 'fumadero' de Salamanca, justo cuando su familia iba a denunciar su desaparición, mientras un hombre se enfrenta a 5 años de cárcel por un grave accidente en Montejo circulando en dirección contraria y con casi seis veces la tasa de alcohol permitida.",
-        "En El Cerro, un hombre ha sido acusado de amenazar a su pareja con quemarle el coche y matarla."
+        "Salamanca ha celebrado el 'Día sin coches' con el autobús urbano gratuito, después de rozar en 2025 los 16 millones de pasajeros."
+      ]
+    },
+    {
+      "concepto": "Fallece Jesús García Maldonado, restaurador de la Plaza Mayor",
+      "piezas": 1,
+      "seccion_principal": "salamanca",
+      "desde": "2026-09-21",
+      "hasta": "2026-09-21",
+      "ejemplos_redactados": [
+        "Ha fallecido Jesús García Maldonado, aparejador, licenciado en Historia del Arte y arqueólogo que dejó su firma en numerosas obras de restauración de Salamanca, entre ellas la Plaza Mayor."
+      ]
+    },
+    {
+      "concepto": "Nueva tanda de sucesos: catorce años de maltrato y una estafa a una mujer mayor",
+      "piezas": 5,
+      "seccion_principal": "sucesos",
+      "desde": "2026-09-20",
+      "hasta": "2026-09-22",
+      "ejemplos_redactados": [
+        "La provincia ha conocido un nuevo caso de violencia machista con catorce años de maltrato hasta un último episodio en el que el acusado llegó a amenazar con matar a toda la familia, además de la detención de dos personas por robar y estafar 7.230 euros a una mujer mayor.",
+        "También se han registrado varios accidentes de tráfico —una furgoneta semivolcada en la N-620 y un turismo que atropelló a un hombre en silla de ruedas en Ciudad Rodrigo— y un escape de gas nocturno que dio la alarma en el barrio de Garrido."
       ]
     }
   ],
-  "resumen_borrador": "Se han publicado 103 noticias entre el 2026-09-18 y el 2026-09-20. La actividad se ha concentrado sobre todo en salamanca (33 piezas), deportes (24 piezas), toros (18 piezas).\n\nLos conceptos con más piezas relacionadas son: Feria Taurina, Unionistas, Conquense, peleas. Revisa 'evidencia' de cada concepto para redactar el resumen final.",
-  "resumen": "El fútbol salmantino ha vivido un fin de semana de contrastes: Unionistas ha logrado su primera victoria de la temporada (3-1 ante la UD Ourense) tras el peor arranque de su historia, mientras el Salamanca UDS veía cortada su buena racha en Cuenca (1-0) por una roja muy discutida que hizo estallar a Muniain contra el árbitro. En La Glorieta, la Feria Taurina ha bajado el telón con la pureza de Morante de la Puebla.\n\nLa ciudad ha encendido las alarmas por una escalada de la violencia en la calle: los delitos por peleas y riñas tumultuarias se han más que duplicado en el primer semestre del año (82 frente a 37), con varias agresiones multitudinarias más este fin de semana. En el terreno judicial, la madre y el padrastro condenados a prisión permanente por matar a golpes a una niña de 2 años han ingresado ya en la prisión de Topas, y Ciudad Rodrigo ha llorado la muerte de un vecino que sufrió un episodio cardiaco al volver de la Feria del Caballo.\n\nLos robos de cobre han vuelto a golpear el ferrocarril salmantino, bloqueando un tren cargado de coches durante horas, mientras el Gobierno reconoce que no hay fecha oficial para terminar la electrificación de la línea a la frontera tras seis años de retraso. La provincia ha vivido además otros sucesos graves, entre ellos un hombre hallado muerto en un 'fumadero' y una denuncia por amenazas de muerte en El Cerro."
+  "resumen_borrador": "Se han publicado 126 noticias entre el 2026-09-20 y el 2026-09-22. La actividad se ha concentrado sobre todo en salamanca (40 piezas), deportes (26 piezas), provincia (23 piezas).\n\nLos conceptos con más piezas relacionadas son: derbi, Copa del Rey, Ley de Nietos, Feria taurina. Revisa 'evidencia' de cada concepto para redactar el resumen final.",
+  "resumen": "El fútbol salmantino vive su cita más esperada: el Salamanca UDS y la UD Santa Marta se jugarán en el San Casto el pase a la Copa del Rey en un derbi que ya tiene horario y aforo ampliado. En clave política, la 'Ley de Nietos' vuelve a la actualidad: 28 pueblos salmantinos ya tienen más electores en el extranjero que en España, y la provincia ha ganado 4.910 residentes ausentes en cuatro años, hasta acaparar el 12% del censo electoral.\n\nLas Ferias y Fiestas han cerrado también su programa deportivo con más de 35.000 espectadores, mientras Salamanca ha celebrado el Día sin coches con el bus urbano gratuito tras rozar en 2025 los 16 millones de pasajeros. La ciudad llora además la muerte de Jesús García Maldonado, restaurador de la Plaza Mayor y una de las firmas más reconocidas en la conservación del patrimonio salmantino.\n\nLa Fiscalía ha alertado de dos tendencias preocupantes: el cibercrimen, que costó casi 3 millones de euros a los salmantinos en 2025 con menos del 5% recuperado, y el absentismo escolar grave, cuyos casos se han triplicado en un año. La provincia ha registrado además una nueva tanda de sucesos, entre ellos un caso de violencia machista con catorce años de maltrato, una estafa a una mujer mayor y varios accidentes de tráfico."
 }

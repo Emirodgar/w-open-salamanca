@@ -71,6 +71,17 @@
       ],
       "basado_en": "actualidad.json",
       "fecha_creacion": "2026-09-20"
+    },
+    {
+      "id": "derbi-copa-rey-2026",
+      "pregunta": "El Salamanca UDS y el Santa Marta se juegan en un derbi en el San Casto el pase a la Copa del Rey. ¿Qué equipo crees que se clasificará?",
+      "opciones": [
+        "El Salamanca UDS",
+        "El Santa Marta",
+        "No lo sé, será muy igualado"
+      ],
+      "basado_en": "actualidad.json",
+      "fecha_creacion": "2026-09-22"
     }
   ]
 }

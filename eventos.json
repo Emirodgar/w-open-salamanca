@@ -1,6 +1,24 @@
 {
-  "generado_en": "2026-09-20T21:15:00+00:00",
+  "generado_en": "2026-09-22T09:30:00+00:00",
   "eventos": [
+    {
+      "titulo": "Final de la Copa de Castilla y León de baloncesto en Béjar",
+      "categoria": "Deportes",
+      "fecha_inicio": "2026-09-26",
+      "fecha_fin": null,
+      "lugar": "Pabellón Antonio Sánchez, Béjar",
+      "descripcion": "El Meins Avenida se enfrenta al Recoletas Zamora a partir de las 19:00 horas.",
+      "fuente": "https://www.lagacetadesalamanca.es/deportes/bejar-acoge-sabado-final-copa-castilla-leon-20260921222503-nt.html"
+    },
+    {
+      "titulo": "Acto institucional de entrega de honores y distinciones de Béjar",
+      "categoria": "Sociedad",
+      "fecha_inicio": "2026-09-28",
+      "fecha_fin": "2026-09-29",
+      "lugar": "Béjar",
+      "descripcion": "El día 28 se celebra la ofrenda floral en la tumba de los mártires de la Revolución de 1868; el 29, San Miguel, patrón de la ciudad.",
+      "fuente": "https://www.lagacetadesalamanca.es/provincia/bejar-celebrara-septiembre-acto-institucional-entrega-honores-20260921185941-nt.html"
+    },
     {
       "titulo": "Carrera contra la Violencia de Género de Salamanca",
       "categoria": "Sociedad",
@@ -11,13 +29,22 @@
       "fuente": "https://www.lagacetadesalamanca.es/deportes/carreras-populares/salamanca-volvera-correr-violencia-genero-noviembre-20260917122748-nt.html"
     },
     {
-      "titulo": "54ª Vuelta Ciclista a Salamanca (sub 23 y élite)",
+      "titulo": "'Bracamonte en Negro', festival de novela negra en Peñaranda",
+      "categoria": "Cultura",
+      "fecha_inicio": "2026-11-12",
+      "fecha_fin": "2026-11-14",
+      "lugar": "Peñaranda de Bracamonte",
+      "descripcion": "Segunda edición de este encuentro para los amantes y creadores de la narrativa policíaca.",
+      "fuente": "https://www.lagacetadesalamanca.es/provincia/penaranda-bracamonte-fechas-festival-novela-bracamonte-negro-20260921232941-nt.html"
+    },
+    {
+      "titulo": "14ª Carrera del Roscón de Paradinas",
       "categoria": "Deportes",
-      "fecha_inicio": "2026-09-18",
-      "fecha_fin": "2026-09-20",
-      "lugar": "Alba de Tormes, Babilafuente, La Alberca, Candelario y Salamanca capital",
-      "descripcion": "Tres etapas con 19 equipos de nivel nacional: Alba de Tormes-Babilafuente el viernes, la etapa reina hasta Candelario el sábado, y la llegada a la capital (calle San Pablo) el domingo.",
-      "fuente": "https://www.lagacetadesalamanca.es/deportes/54a-vuelta-ciclista-salamanca-sub-elite-presenta-20260916211245-nt.html"
+      "fecha_inicio": "2027-01-03",
+      "fecha_fin": null,
+      "lugar": "Paradinas de San Juan",
+      "descripcion": "Prueba popular que ya tiene fecha confirmada para su 14ª edición.",
+      "fuente": "https://www.lagacetadesalamanca.es/deportes/carreras-populares/paradinas-fecha-carrera-roscon-20260922084240-nt.html"
     },
     {
       "titulo": "Semana Europea de la Movilidad de Carbajosa de la Sagrada",
@@ -35,15 +62,6 @@
       "fecha_fin": "2026-09-26",
       "descripcion": "El Ayuntamiento y Stellan Circus ofrecen dos funciones adaptadas para personas con discapacidad (22 y 26 de septiembre), con entradas de 2€ repartidas a través de asociaciones de la ciudad.",
       "fuente": "https://www.lagacetadesalamanca.es/salamanca/draion-circo-inclusivo-llega-salamanca-20260911124318-nt.html"
-    },
-    {
-      "titulo": "Tercera Marcha contra el Cáncer de Cabrerizos",
-      "categoria": "Sociedad",
-      "fecha_inicio": "2026-09-20",
-      "fecha_fin": null,
-      "lugar": "Cabrerizos",
-      "descripcion": "Cabrerizos celebra la tercera edición de su marcha solidaria contra el cáncer.",
-      "fuente": "https://www.lagacetadesalamanca.es/provincia/tercera-marcha-cancer-cabrerizos-fecha-septiembre-20260909122035-nt.html"
     },
     {
       "titulo": "Semana de concienciación sobre el Alzheimer de Guijuelo",
