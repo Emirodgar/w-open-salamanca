@@ -1,55 +1,113 @@
 {
-  "nota": "Centros de salud públicos de atención primaria (Sacyl) en la ciudad de Salamanca, según OpenStreetMap.",
+  "metadata": {
+    "titulo": "Centros de salud públicos de atención primaria (Sacyl) en la ciudad de Salamanca",
+    "descripcion": "Listado de los centros de salud de titularidad pública (Sacyl) situados en el término municipal de Salamanca capital, con la zona básica de salud a la que corresponden, dirección, teléfono y coordenadas.",
+    "fecha_elaboracion": "2026-09-22",
+    "metodologia": "Los centros y zonas básicas se han contrastado con el listado oficial de citas previas de Sacyl (saludcastillayleon.es) y el directorio de la Junta de Castilla y León; las direcciones proceden de esas mismas fuentes y de prensa local, y se han verificado por geocodificación con Nominatim/OpenStreetMap, cuyas coordenadas coincidían en la práctica totalidad de los casos con los puntos ya cartografiados en OpenStreetMap. El Centro de Salud La Alamedilla y el Centro de Salud Garrido Sur comparten un mismo edificio (Av. de los Comuneros, 27-31) pero corresponden a dos zonas básicas de salud distintas con numeración de teléfono propia; se representan aquí como un único punto en el mapa.",
+    "fuentes_principales": [
+      "https://www.saludcastillayleon.es/en/citaprevia/centros-adscritos-sistema-cita-previa/salamanca (listado oficial de zonas básicas, centros y teléfonos)",
+      "https://www.jcyl.es/web/jcyl/Portada/es/Plantilla100Directorio/1248366924958/0/1142233539752/DirectorioPadre (Centros de Salud Urbanos de Salamanca)",
+      "https://www.lagacetadesalamanca.es/salamanca/sacyl-publica-reorganizacion-definitiva-ocho-centros-salud-20260813094913-nt.html",
+      "https://www.lagacetadesalamanca.es/salamanca/manueco-inaugura-centro-salud-prosperidad-proyecto-ejemplo-20260914112741-nt.html",
+      "https://www.elespanol.com/castilla-y-leon/region/salamanca/20260914/manueco-inaugura-nuevo-centro-salud-salamanca-inversion-millones-euros/1003744382509_0.html",
+      "https://www.tribunasalamanca.com/noticias/451674/salamanca-cambia-su-mapa-sanitario-con-la-apertura-del-nuevo-centro-de-salud-prosperidad/isquadPrensa",
+      "https://www.lagacetadesalamanca.es/salamanca/urgencias-primaria-calle-valencia-vacias-150-pacientes-20260215055500-nt.html",
+      "Nominatim / OpenStreetMap (geocodificación y verificación de coordenadas)"
+    ],
+    "notas": [
+      "El 14 de agosto de 2026 Sacyl aprobó la reorganización de ocho zonas básicas de salud urbanas de Salamanca (La Alamedilla, Garrido Sur, Prosperidad, San Juan, Universidad-Centro, San Bernardo-Oeste, Pizarrales y Capuchinos), afectando a unos 13.000 salmantinos, sustituyendo los límites por calle por una delimitación por números pares/impares y tramos concretos.",
+      "La antigua zona básica 'Sancti Spíritu-Canalejas', antes atendida en el Centro de Salud Filiberto Villalobos, pasó a llamarse zona básica Prosperidad y desde el 15 de septiembre de 2026 se atiende en el nuevo Centro de Salud Prosperidad (12.679 tarjetas sanitarias asignadas)."
+    ]
+  },
   "centros": [
     {
-      "nombre": "Centro de Salud Capuchinos",
-      "lat": 40.984223,
-      "lng": -5.66684
+      "nombre": "Centro de Salud La Alamedilla (Garrido Sur)",
+      "zona_basica": "La Alamedilla y Garrido Sur (edificio compartido, dos zonas básicas)",
+      "direccion": "Av. de los Comuneros, 27-31, 37003 Salamanca",
+      "telefono": "923 126 591 (La Alamedilla) / 923 126 593 (Garrido Sur)",
+      "lat": 40.968912,
+      "lng": -5.655219
+    },
+    {
+      "nombre": "Centro de Salud Garrido Norte Sisinio de Castro",
+      "zona_basica": "Garrido Norte",
+      "direccion": "Calle del Romero, s/n, 37005 Salamanca",
+      "telefono": "923 240 051",
+      "lat": 40.979187,
+      "lng": -5.655626
+    },
+    {
+      "nombre": "Centro de Salud Miguel Armijo Moreno",
+      "zona_basica": "San Bernardo Oeste",
+      "direccion": "Calle Arapiles, 25, 37007 Salamanca",
+      "telefono": "923 290 970",
+      "lat": 40.969750,
+      "lng": -5.672773
+    },
+    {
+      "nombre": "Centro de Salud de Pizarrales",
+      "zona_basica": "Pizarrales-Vidal",
+      "direccion": "Calle de los Alfareros, 8, 37006 Salamanca",
+      "telefono": "923 232 630",
+      "lat": 40.975859,
+      "lng": -5.673496
     },
     {
       "nombre": "Centro de Salud Casto Prieto",
-      "lat": 40.951371,
-      "lng": -5.663607
-    },
-    {
-      "nombre": "Centro de Salud Elena Ginel Díez",
-      "lat": 40.957941,
-      "lng": -5.683777
+      "zona_basica": "San José",
+      "direccion": "Calle del Maestro Tárrega, 2-4, 37008 Salamanca",
+      "telefono": "923 260 330",
+      "lat": 40.951368,
+      "lng": -5.663565
     },
     {
       "nombre": "Centro de Salud Filiberto Villalobos",
+      "zona_basica": "Universidad-Centro",
+      "direccion": "Cuesta de Sancti-Spíritus, 27, 37001 Salamanca",
+      "telefono": "923 219 911",
       "lat": 40.964953,
       "lng": -5.658496
     },
     {
-      "nombre": "Centro de Salud Garrido Norte Sisinio de Castro",
-      "lat": 40.979065,
-      "lng": -5.655627
-    },
-    {
-      "nombre": "Centro de Salud Miguel Armijo Moreno",
-      "lat": 40.969776,
-      "lng": -5.672767
-    },
-    {
       "nombre": "Centro de Salud San Juan",
+      "zona_basica": "San Juan",
+      "direccion": "Avenida de Portugal, 83-89, 37005 Salamanca",
+      "telefono": "923 232 778",
       "lat": 40.971743,
-      "lng": -5.660793
+      "lng": -5.660794
     },
     {
-      "nombre": "Centro de Salud de Pizarrales",
-      "lat": 40.975849,
-      "lng": -5.673494
+      "nombre": "Centro de Salud Elena Ginel Díez",
+      "zona_basica": "Tejares",
+      "direccion": "Calle Tomás Rodríguez Pinilla, s/n, 37008 Salamanca",
+      "telefono": "923 192 417",
+      "lat": 40.957942,
+      "lng": -5.683777
     },
     {
-      "nombre": "Centro de Salud la Alamedilla",
-      "lat": 40.968918,
-      "lng": -5.655144
+      "nombre": "Centro de Salud Capuchinos",
+      "zona_basica": "Capuchinos",
+      "direccion": "Calle de los Valles Mineros, 36-44, 37006 Salamanca",
+      "telefono": "923 205 100",
+      "lat": 40.984156,
+      "lng": -5.666837
     },
     {
-      "nombre": "Servicio de Urgencias de Atención Primaria",
-      "lat": 40.971472,
-      "lng": -5.661049
+      "nombre": "Centro de Salud Prosperidad",
+      "zona_basica": "Prosperidad (antigua Sancti Spíritu-Canalejas)",
+      "direccion": "Calle Lucio Marineo, 19, 37003 Salamanca",
+      "telefono": "923 211 246",
+      "nota": "Inaugurado el 15 de septiembre de 2026; inversión de 9,5 millones de euros; atiende a 12.679 tarjetas sanitarias.",
+      "lat": 40.960652,
+      "lng": -5.647919
+    },
+    {
+      "nombre": "Servicio de Urgencias de Atención Primaria (SUAP)",
+      "zona_basica": "Toda la capital (fuera del horario de los centros de salud)",
+      "direccion": "Avenida de Portugal, 83-89 (mismo edificio que el Centro de Salud San Juan, acceso por la calle Valencia), 37005 Salamanca",
+      "nota": "Atiende de 15:00 a 8:00 en días laborables y las 24 horas en fines de semana y festivos; en torno a 150 pacientes al día (unos 49.000 al año).",
+      "lat": 40.971538,
+      "lng": -5.660900
     }
   ]
 }

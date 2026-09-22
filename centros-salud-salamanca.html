@@ -1,0 +1,127 @@
+---
+layout: default
+title: "Centros de salud de Salamanca: mapa, zonas básicas y direcciones"
+description: Los centros de salud públicos de atención primaria de la ciudad de Salamanca, con su zona básica, dirección y teléfono, incluido el nuevo centro de Prosperidad inaugurado en septiembre de 2026
+date: 22-09-2026
+folder: Salud
+permalink: centros-salud-salamanca
+---
+
+    <!-- Featured Datasets Section -->
+    <section class="featured dataset" id="datos">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="section-title">{{ page.title }}</h1>
+                <p class="section-description">{{ page.description }}</p>
+            </div>
+
+			<div id="section-content">
+
+				<p>
+La atención primaria pública en la ciudad de Salamanca se organiza en <b>zonas básicas de salud</b>, cada una con su propio centro de salud dependiente de Sacyl. El mapa sanitario de la capital cambió el 14 de agosto de 2026, cuando la Junta de Castilla y León aprobó la reorganización definitiva de ocho zonas urbanas —La Alamedilla, Garrido Sur, Prosperidad, San Juan, Universidad-Centro, San Bernardo-Oeste, Pizarrales y Capuchinos—, afectando a unos 13.000 salmantinos y sustituyendo los antiguos límites por calle por una delimitación más precisa por números pares e impares y tramos concretos. Un mes después, el 15 de septiembre de 2026, entró en funcionamiento el <b>Centro de Salud Prosperidad</b>, un edificio nuevo que absorbió la antigua zona de Sancti Spíritu-Canalejas, hasta entonces atendida en el Centro de Salud Filiberto Villalobos.</p>
+
+			<!-- Mapa de centros de salud -->
+			<div id="mapaSalud" style="width: 100%; height: 480px; border-radius: 8px; margin-bottom: 10px;"></div>
+			<p style="font-size: 0.85em; color: #555; margin-top: 0;">Haz clic en cada punto para ver el nombre del centro, su zona básica de salud, dirección y teléfono.</p>
+
+			<h2>La reorganización y el nuevo centro de Prosperidad</h2>
+			<div id="statsSalud" style="display:flex; flex-wrap:wrap; gap:12px; margin: 20px 0;">
+				<div style="flex:1; min-width:160px; background:#eaf1f9; border-left:4px solid #1E56A0; border-radius:6px; padding:12px 16px;">
+					<div style="font-size:1.5em; font-weight:700; color:#1E56A0;">11</div>
+					<div style="font-size:0.85em; color:#555;">Zonas básicas de salud urbanas en la capital</div>
+				</div>
+				<div style="flex:1; min-width:160px; background:#fdf1ec; border-left:4px solid #A8201A; border-radius:6px; padding:12px 16px;">
+					<div style="font-size:1.5em; font-weight:700; color:#A8201A;">9,5 M€</div>
+					<div style="font-size:0.85em; color:#555;">Inversión del nuevo Centro de Salud Prosperidad (Sacyl)</div>
+				</div>
+				<div style="flex:1; min-width:160px; background:#eef6ee; border-left:4px solid #2C5F2D; border-radius:6px; padding:12px 16px;">
+					<div style="font-size:1.5em; font-weight:700; color:#2C5F2D;">12.679</div>
+					<div style="font-size:0.85em; color:#555;">Tarjetas sanitarias asignadas a la zona Prosperidad</div>
+				</div>
+				<div style="flex:1; min-width:160px; background:#fef3e7; border-left:4px solid #F4A261; border-radius:6px; padding:12px 16px;">
+					<div style="font-size:1.5em; font-weight:700; color:#F4A261;">~150/día</div>
+					<div style="font-size:0.85em; color:#555;">Pacientes del Servicio de Urgencias de Atención Primaria (calle Valencia)</div>
+				</div>
+			</div>
+
+			<p>El Centro de Salud Prosperidad, situado entre la calle Lucio Marineo y la avenida de la Aldehuela, fue inaugurado por el presidente de la Junta, Alfonso Fernández Mañueco, y cuenta con más de 3.000 m² distribuidos en tres pabellones con vistas al río Tormes: diez consultas de Medicina de Familia, diez de Enfermería, dos de Pediatría y dos de Enfermería Pediátrica. El resto de la reorganización de agosto no creó centros nuevos, sino que redibujó las fronteras entre las otras siete zonas urbanas para repartir mejor la carga asistencial, en un contexto de envejecimiento de la población y aumento de la cronicidad.</p>
+
+			<h2>Un edificio, dos zonas básicas: el caso de La Alamedilla y Garrido Sur</h2>
+			<p>El Centro de Salud La Alamedilla, en la avenida de los Comuneros, comparte edificio con el Centro de Salud Garrido Sur: son dos zonas básicas de salud distintas, cada una con su propio número de cita previa, pero atendidas en la misma dirección. Es el único caso de este tipo entre los centros urbanos de la capital; el resto de zonas básicas tiene un centro propio y exclusivo.</p>
+
+			<h2>Las urgencias fuera del horario de los centros de salud</h2>
+			<p>Cuando un centro de salud está cerrado, la atención urgente no hospitalaria de toda la capital se concentra en el <b>Servicio de Urgencias de Atención Primaria (SUAP)</b>, con entrada propia por la calle Valencia dentro del edificio del Centro de Salud San Juan. Funciona de 15:00 a 8:00 los días laborables y las 24 horas los fines de semana y festivos, y atiende en torno a 150 pacientes al día (cerca de 49.000 al año), según datos de prensa de febrero de 2026.</p>
+
+			</div>
+
+			<div id="section-table">
+			<h3>Centros de salud de la ciudad de Salamanca</h3>
+			<table border="1" cellpadding="5" cellspacing="0">
+			  <thead>
+				<tr>
+				  <th>Centro</th>
+				  <th>Zona básica de salud</th>
+				  <th>Dirección</th>
+				  <th>Teléfono</th>
+				</tr>
+			  </thead>
+			  <tbody id="tablaSaludBody">
+				<tr><td colspan="4">Cargando listado de centros de salud…</td></tr>
+			  </tbody>
+			</table>
+			<p style="font-size: 0.9em; color: #555;">Datos contrastados con el listado oficial de citas previas de Sacyl, el directorio de la Junta de Castilla y León y prensa local (La Gaceta de Salamanca, El Español, Tribuna de Salamanca), con coordenadas verificadas mediante geocodificación en OpenStreetMap. <a href="/centros-salud.json" target="_blank" rel="noopener">Descargar los datos completos en JSON</a>, con todas las fuentes citadas. Consulta también el <a href="/mapa-capas">mapa de capas de Salamanca</a> para ver estos centros junto con los barrios y las líneas de autobús.</p>
+			</div>
+
+			{% include categories.html %}
+
+        </div>
+    </section>
+
+	<!-- Hojas de estilo y scripts de Leaflet -->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+	<script>
+	(function () {
+		function escapeHtml(str) {
+			return String(str).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+		}
+
+		const mapaSalud = L.map('mapaSalud').setView([40.9660, -5.6630], 13);
+		L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/light_all/{z}/{x}/{y}{r}.png?key=cb1_2izw_1_55d93b51ded1dcecfa044181', {
+			attribution: '&copy; OpenStreetMap &copy; CARTO',
+			subdomains: 'abcd',
+			maxZoom: 19
+		}).addTo(mapaSalud);
+
+		fetch('/centros-salud.json?v=2')
+			.then(r => r.json())
+			.then(data => {
+				const centros = data.centros || [];
+
+				centros.forEach(c => {
+					if (typeof c.lat !== 'number' || typeof c.lng !== 'number') return;
+					const esUrgencias = /urgencias/i.test(c.nombre);
+					L.circleMarker([c.lat, c.lng], {
+						radius: 8,
+						fillColor: esUrgencias ? '#A8201A' : '#C1443A',
+						color: '#ffffff',
+						weight: 2,
+						fillOpacity: 0.9
+					}).bindPopup(`<b>${escapeHtml(c.nombre)}</b><br>${escapeHtml(c.zona_basica || '')}<br><span style="font-size:0.85em;">${escapeHtml(c.direccion || '')}</span>${c.telefono ? `<br><span style="font-size:0.85em;">☎ ${escapeHtml(c.telefono)}</span>` : ''}`).addTo(mapaSalud);
+				});
+
+				const tbody = document.getElementById('tablaSaludBody');
+				tbody.innerHTML = centros.map(c => `
+					<tr>
+						<td><b>${escapeHtml(c.nombre)}</b></td>
+						<td>${escapeHtml(c.zona_basica || '')}</td>
+						<td>${escapeHtml(c.direccion || '')}</td>
+						<td>${escapeHtml(c.telefono || '')}</td>
+					</tr>`).join('') || '<tr><td colspan="4">No se ha podido cargar el listado.</td></tr>';
+			})
+			.catch(err => {
+				console.error('No se pudo cargar centros-salud.json', err);
+				document.getElementById('tablaSaludBody').innerHTML = '<tr><td colspan="4">No se ha podido cargar el listado de centros de salud.</td></tr>';
+			});
+	})();
+	</script>
