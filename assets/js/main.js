@@ -102,9 +102,22 @@ window.EventosUI = {
             boton.addEventListener('click', (e) => {
                 e.stopPropagation();
                 const dropdown = boton.closest('.dropdown');
+                const menu = dropdown.querySelector('.dropdown-menu');
                 const yaAbierto = dropdown.classList.contains('active');
-                tableEl.querySelectorAll('.dropdown.active').forEach(d => d.classList.remove('active'));
-                if (!yaAbierto) dropdown.classList.add('active');
+                tableEl.querySelectorAll('.dropdown.active').forEach(d => {
+                    d.classList.remove('active');
+                    d.querySelector('.dropdown-menu')?.classList.remove('dropdown-menu-arriba');
+                });
+                if (!yaAbierto) {
+                    // Filas cercanas al final de la tabla no tienen sitio debajo, ni
+                    // en la tarjeta ni en la ventana: el menú se abre hacia arriba
+                    // en vez de salirse de la tarjeta o quedar cortado.
+                    const wrap = tableEl.closest('.eventos-table-wrap') || tableEl;
+                    const limiteAbajo = Math.min(window.innerHeight, wrap.getBoundingClientRect().bottom);
+                    const espacioAbajo = limiteAbajo - boton.getBoundingClientRect().bottom;
+                    menu.classList.toggle('dropdown-menu-arriba', espacioAbajo < menu.offsetHeight);
+                    dropdown.classList.add('active');
+                }
             });
         });
         if (!tableEl.dataset.calCerrarFueraListo) {
