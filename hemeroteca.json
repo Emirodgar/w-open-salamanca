@@ -1,7 +1,7 @@
 {
-  "generado_en": "2026-09-23T20:23:47.781Z",
+  "generado_en": "2026-09-24T00:31:05.548Z",
   "dias_ventana": 20,
-  "total": 1064,
+  "total": 1066,
   "medios": [
     "Tribuna Salamanca",
     "Salamanca24Horas",
@@ -9,6 +9,13 @@
     "Salamancahoy"
   ],
   "noticias": [
+    {
+      "url": "https://www.lagacetadesalamanca.es/salamanca/cristo-amor-paz-plaza-arrabal-20260923222828-nt.html",
+      "titulo": "El Cristo del Amor y la Paz ya tiene su plaza en El Arrabal",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-09-23",
+      "fecha_hora": "2026-09-23T20:28:54.000Z"
+    },
     {
       "url": "https://www.salamancahoy.es/salamanca/ciudad/plaza-salamanca-cambia-nombre-homenaje-hermandades-representativas-20260923213641-nt.html",
       "titulo": "La plaza de Salamanca que cambia de nombre como homenaje a una de las hermandades «más representativas y queridas»",
@@ -449,6 +456,13 @@
       "medio": "Tribuna Salamanca",
       "fecha": "2026-09-23",
       "fecha_hora": "2026-09-23T13:16:31.000Z"
+    },
+    {
+      "url": "https://www.tribunasalamanca.com/noticias/459823/elecciones-en-marruecos",
+      "titulo": "¿Elecciones en Marruecos?",
+      "medio": "Tribuna Salamanca",
+      "fecha": "2026-09-23",
+      "fecha_hora": "2026-09-23T13:11:56.000Z"
     },
     {
       "url": "https://www.salamanca24horas.com/local/revista-christus-publica-numero-extraordinario-encuentro-nacional-cofradias",
