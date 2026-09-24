@@ -2,15 +2,21 @@ name: Actualizar hemeroteca
 
 on:
   schedule:
-    # GitHub Actions no admite huso horario ni ajusta el horario de
-    # verano, así que disparamos a las dos horas UTC que pueden
-    # corresponder a las 7:00 en Madrid (5:00 UTC en CEST, verano;
-    # 6:00 UTC en CET, invierno). El paso "Comprobar hora de Madrid" de
-    # abajo calcula la hora local real con TZ=Europe/Madrid y descarta la
-    # ejecución que no sea exactamente las 7:00, así que solo una de las
-    # dos dispara el resto del job cada día, todo el año, sin que haga
-    # falta tocar este cron a mano en los cambios de hora.
-    - cron: '0 5,6 * * *'
+    # Horas en UTC (GitHub Actions no admite huso horario ni ajusta el
+    # horario de verano). Ejecuciones deseadas, hora de Madrid: 7:00,
+    # 8:00, 9:00, y luego cada 2h (11, 13, 15, 17, 19, 21), más una
+    # única ejecución nocturna a las 0:00 (tras la cual no vuelve a
+    # correr hasta las 7:00 del día siguiente).
+    # Con CEST (UTC+2, en vigor ahora mismo) eso equivale a las horas
+    # UTC de abajo: 5,6,7,9,11,13,15,17,19,22.
+    # Si se deja este cron sin tocar, cuando en invierno pase a CET
+    # (UTC+1, desde el último domingo de octubre) esas mismas horas UTC
+    # pasarán a corresponder a las 6:00, 7:00, 8:00, 10:00, 12:00,
+    # 14:00, 16:00, 18:00, 20:00 y 23:00 en Madrid — una hora antes de
+    # lo previsto. Para mantener los horarios locales originales
+    # (7,8,9,11,13,15,17,19,21,0) habría que sumar 1 a cada hora UTC de
+    # la lista: '15 6,7,8,10,12,14,16,18,20,23 * * *'.
+    - cron: '15 5,6,7,9,11,13,15,17,19,22 * * *'
   workflow_dispatch: {}
 
 permissions:
@@ -24,42 +30,25 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Comprobar hora de Madrid
-        id: hora
-        run: |
-          hora_madrid=$(TZ=Europe/Madrid date +%H)
-          if [ "$hora_madrid" = "07" ]; then
-            echo "Son las 07:00 en Madrid: se ejecuta la actualización."
-            echo "ejecutar=true" >> "$GITHUB_OUTPUT"
-          else
-            echo "Son las ${hora_madrid}:00 en Madrid (no las 07:00): esta ejecución programada no hace nada."
-            echo "ejecutar=false" >> "$GITHUB_OUTPUT"
-          fi
-
       - name: Checkout
-        if: steps.hora.outputs.ejecutar == 'true' || github.event_name == 'workflow_dispatch'
         uses: actions/checkout@v4
 
       - name: Configurar Node
-        if: steps.hora.outputs.ejecutar == 'true' || github.event_name == 'workflow_dispatch'
         uses: actions/setup-node@v4
         with:
           node-version: '20'
 
-      - name: Instalar Claude Code
-        if: steps.hora.outputs.ejecutar == 'true' || github.event_name == 'workflow_dispatch'
-        run: npm install -g @anthropic-ai/claude-code
+      - name: Generar hemeroteca.json
+        run: node scripts/hemeroteca/build.mjs
 
-      - name: Configurar identidad de git para el commit automático
-        if: steps.hora.outputs.ejecutar == 'true' || github.event_name == 'workflow_dispatch'
+      - name: Commit y push si hay cambios
         run: |
+          if git diff --quiet -- hemeroteca.json; then
+            echo "Sin cambios."
+            exit 0
+          fi
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-
-      - name: Ejecutar skill de hemeroteca vía Claude Code
-        if: steps.hora.outputs.ejecutar == 'true' || github.event_name == 'workflow_dispatch'
-        env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-        run: |
-          claude -p "Ejecuta la skill 'hemeroteca' (ver .claude/skills/hemeroteca/SKILL.md): corre node scripts/hemeroteca/build.mjs para regenerar hemeroteca.json y, si el fichero ha cambiado respecto al commit actual, haz git add, commit y push de ese cambio tú mismo sin pedir confirmación. Si no hay cambios, no hagas commit y dilo." \
-            --dangerously-skip-permissions
+          git add hemeroteca.json
+          git commit -m "Actualiza hemeroteca.json [skip ci]"
+          git push

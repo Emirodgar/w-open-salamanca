@@ -1,0 +1,68 @@
+name: Actualizar actualidad (skill vía Claude Code)
+
+on:
+  schedule:
+    # GitHub Actions no admite huso horario ni ajusta el horario de
+    # verano, así que disparamos a las dos horas UTC que pueden
+    # corresponder a las 7:00 en Madrid (5:00 UTC en CEST, verano;
+    # 6:00 UTC en CET, invierno). El paso "Comprobar hora y periodicidad"
+    # de abajo calcula la hora local real con TZ=Europe/Madrid y además
+    # exige que el día (contado en días completos desde el 1/1/1970,
+    # para que la alternancia no se desajuste nunca por meses o años)
+    # sea par, de forma que solo se ejecuta el resto del job una vez
+    # cada 2 días, a las 7:00 de Madrid, todo el año, sin que haga falta
+    # tocar este cron a mano.
+    - cron: '0 5,6 * * *'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: actualidad
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Comprobar hora de Madrid y periodicidad (cada 2 días)
+        id: cuando
+        run: |
+          hora_madrid=$(TZ=Europe/Madrid date +%H)
+          dia_epoch=$(( $(date -u +%s) / 86400 ))
+          if [ "$hora_madrid" = "07" ] && [ $(( dia_epoch % 2 )) -eq 0 ]; then
+            echo "Son las 07:00 en Madrid y toca ejecutar (día par): se lanza la actualización."
+            echo "ejecutar=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "No toca ejecutar ahora (hora=${hora_madrid}, dia_epoch=${dia_epoch})."
+            echo "ejecutar=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Checkout
+        if: steps.cuando.outputs.ejecutar == 'true' || github.event_name == 'workflow_dispatch'
+        uses: actions/checkout@v4
+
+      - name: Configurar Node
+        if: steps.cuando.outputs.ejecutar == 'true' || github.event_name == 'workflow_dispatch'
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Instalar Claude Code
+        if: steps.cuando.outputs.ejecutar == 'true' || github.event_name == 'workflow_dispatch'
+        run: npm install -g @anthropic-ai/claude-code
+
+      - name: Configurar identidad de git para el commit automático
+        if: steps.cuando.outputs.ejecutar == 'true' || github.event_name == 'workflow_dispatch'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Ejecutar skill de actualidad vía Claude Code
+        if: steps.cuando.outputs.ejecutar == 'true' || github.event_name == 'workflow_dispatch'
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          claude -p "Ejecuta la skill 'sitemap-mapa-calor-tematico' (ver .claude/skills/sitemap-mapa-calor-tematico/SKILL.md) con sus valores por defecto de este proyecto (La Gaceta de Salamanca, secciones excluidas nacional,opinion,tu-gaceta,gente-estilo,podcast): sigue los pasos 1 a 5 completos (análisis del sitemap, redacción del resumen, JSON mensual del timeline, eventos.json y preguntas de Opina), y termina con el paso 6, haciendo git add solo de los ficheros que hayas tocado, commit y push tú mismo sin pedir confirmación en el chat. Si en este entorno no tienes acceso a un navegador con JavaScript para revisar la programación de ciudaddecultura.org (paso 4.3), sáltate solo esa fuente concreta y dilo explícitamente en tu resumen final, sin fallar el resto del proceso por ello." \
+            --dangerously-skip-permissions
