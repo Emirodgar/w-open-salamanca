@@ -1,0 +1,190 @@
+---
+layout: default
+title: Centros comerciales de Salamanca: cuáles hay en la ciudad y cuáles están justo al lado
+description: Vialia, Los Cipreses y El Corte Inglés dentro del término municipal, y por qué los grandes centros como El Tormes están, en realidad, en Santa Marta de Tormes y Carbajosa de la Sagrada
+date: 25-09-2026
+folder: Economia
+permalink: centros-comerciales-salamanca
+---
+
+    <!-- Featured Datasets Section -->
+    <section class="featured dataset" id="datos">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="section-title">{{ page.title }}</h1>
+                <p class="section-description">{{ page.description }}</p>
+            </div>
+
+			<div id="section-content">
+
+			<h2>Dentro del término municipal, la oferta es modesta</h2>
+
+			<p>
+Si nos ceñimos estrictamente al término municipal de Salamanca capital, el gran comercio en formato "centro comercial" se reduce a tres nombres: <b>Vialia</b>, integrado en la propia estación de tren; <b>Los Cipreses</b>, un centro comercial de barrio en Garrido Norte; y <b>El Corte Inglés</b>, que es en realidad un gran almacén de un solo operador y no un centro comercial multi-marca. El grueso del <a href="/densidad-comercial">comercio de la ciudad</a> sigue concentrado en las calles peatonales del casco histórico (eje Toro-Zamora-Plaza Mayor), no en superficies cerradas.</p>
+
+			<p>
+Los grandes centros y parques comerciales que los salmantinos usan a diario para las compras de gran volumen —El Tormes, Parque Comercial Capuchinos y Atalaya del Tormes— están, en realidad, <b>fuera de la ciudad</b>: en el término de Santa Marta de Tormes y, el más reciente, en Carbajosa de la Sagrada, justo al otro lado del límite municipal, en la rotonda de acceso desde la carretera de Madrid.</p>
+
+  <!-- Mapa de centros comerciales de Salamanca y su área metropolitana -->
+  <div id="mapaCentrosComerciales" style="width: 100%; height: 500px; border-radius: 8px; margin-bottom: 25px;"></div>
+
+			<h2>Los tres formatos comerciales dentro de la ciudad</h2>
+
+			<h3>Vialia Salamanca: comercio dentro de la estación de tren</h3>
+			<p>
+Ocupa la propia estación de ferrocarril, reconstruida en 2001 dentro del modelo Vialia impulsado por NECSA (participada por ADIF y Riofisa) para combinar estación y centro comercial en un mismo edificio. Reúne más de 20 establecimientos, entre ellos un supermercado Carrefour Market, restauración rápida, una tienda de telefonía, gimnasio, bolera y los cines Cinebox Megarama, con 8 salas.</p>
+
+			<h3>Los Cipreses: el centro comercial de Garrido</h3>
+			<p>
+Situado en la Avenida de los Cipreses, en pleno <a href="/densidad-comercial">Garrido Norte</a>, es un centro de proximidad pensado para el barrio más que un destino de compras para toda la ciudad. Pasó por una reforma integral en 2015 que renovó su interior y añadió un aparcamiento en superficie. Combina un supermercado (Gadis), restauración rápida, gimnasio y comercios de barrio como peluquería, carnicería y pescadería.</p>
+
+			<h3>El Corte Inglés: el gran almacén de la ciudad</h3>
+			<p>
+En la calle María Auxiliadora, en el barrio de Salesas, es la gran superficie comercial de referencia dentro de la ciudad, aunque como gran almacén de un único operador no encaja en sentido estricto en la categoría de "centro comercial" con locales de terceros.</p>
+
+			<h2>Los grandes centros están justo al otro lado del límite municipal</h2>
+
+			<h3>El Tormes: el más grande de la provincia (en Santa Marta de Tormes)</h3>
+			<p>
+Inaugurado en el año 2000 y sometido a un plan de renovación en 2004, es el centro comercial más grande e importante de toda la provincia: más de 200.000 m² construidos, de los que 80.000 m² son superficie comercial, con más de 100 locales (Zara, H&M, Pull&Bear, Bershka, Mercadona, McDonald's, Foster Hollywood, GameStop), cines Cinebox y bolera. Ofrece 1.600 plazas de aparcamiento gratuito. Está en el término de Santa Marta de Tormes, en la rotonda de acceso a Salamanca desde la carretera de Madrid, a apenas unos minutos del centro.</p>
+
+			<h3>Parque Comercial Capuchinos (Santa Marta de Tormes)</h3>
+			<p>
+Muy cerca de El Tormes, en la misma zona comercial junto a la carretera Salamanca-Santa Marta, reúne grandes superficies especializadas como Decathlon y Media Markt.</p>
+
+			<h3>Atalaya del Tormes: el más reciente (2022, en Carbajosa de la Sagrada)</h3>
+			<p>
+Es la incorporación más nueva a la zona comercial del entorno de Santa Marta, abierto el 11 de octubre de 2022 frente al hipermercado E.Leclerc, en el término de Carbajosa de la Sagrada. Con 5.761 m² de superficie comercial edificada sobre una parcela de 16.342 m² compartida entre los ayuntamientos de Carbajosa y Santa Marta, sumó seis nuevos operadores a la zona: Popeyes, Tiendanimal, Jysk, MGI, Sprinter y Kiabi, generando un centenar de empleos. Dispone de 183 plazas propias de aparcamiento (36 cubiertas) más otras 1.300 compartidas con el hipermercado Leclerc.</p>
+
+			<h2>Dónde se concentra cada tipo de centro</h2>
+			<canvas id="ubicacionChart" width="800" height="350"></canvas>
+
+			<h2>Cuándo abrió cada uno</h2>
+			<canvas id="aperturaChart" width="800" height="350"></canvas>
+
+			<p style="font-size: 0.9em; color: #555;">
+*Datos de superficie, tiendas y aparcamiento de Atalaya del Tormes según su apertura recogida por <a href="https://www.tribunasalamanca.com/noticias/304423/revelada-la-lista-de-marcas-y-la-fecha-de-apertura-de-atalaya-del-tormes-el-nuevo-parque-comercial-de-salamanca" target="_blank" rel="noopener">Tribuna Salamanca</a>.</p>
+
+			</div>
+
+			<div id="section-table">
+			<h3>Los seis centros de referencia en Salamanca y su área metropolitana</h3>
+			<table border="1" cellpadding="5" cellspacing="0">
+			  <thead>
+				<tr>
+				  <th>Centro</th>
+				  <th>Municipio</th>
+				  <th>¿Dentro de la ciudad?</th>
+				  <th>Apertura / última reforma</th>
+				  <th>Qué ofrece</th>
+				</tr>
+			  </thead>
+			  <tbody>
+				<tr><td>Vialia Salamanca</td><td>Salamanca</td><td>Sí</td><td>2001</td><td>+20 establecimientos, supermercado, cines, bolera, gimnasio (en la estación de tren)</td></tr>
+				<tr><td>Los Cipreses</td><td>Salamanca (Garrido Norte)</td><td>Sí</td><td>Reforma en 2015</td><td>Supermercado Gadis, restauración, gimnasio, comercio de barrio</td></tr>
+				<tr><td>El Corte Inglés</td><td>Salamanca (Salesas)</td><td>Sí (gran almacén, no centro comercial)</td><td>&ndash;</td><td>Moda, hogar, electrónica</td></tr>
+				<tr><td>El Tormes</td><td>Santa Marta de Tormes</td><td>No</td><td>2000 (reforma 2004)</td><td>+100 locales, Zara, H&amp;M, Mercadona, cines, bolera, 1.600 plazas gratis</td></tr>
+				<tr><td>Parque Comercial Capuchinos</td><td>Santa Marta de Tormes</td><td>No</td><td>&ndash;</td><td>Decathlon, Media Markt</td></tr>
+				<tr><td>Atalaya del Tormes</td><td>Carbajosa de la Sagrada</td><td>No</td><td>2022</td><td>Popeyes, Tiendanimal, Jysk, MGI, Sprinter, Kiabi; junto al hipermercado E.Leclerc</td></tr>
+			  </tbody>
+			</table>
+			</div>
+
+			{% include categories.html %}
+
+        </div>
+    </section>
+
+	<!-- Hojas de estilo y scripts de Leaflet -->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+	<script>
+    const mapCentros = L.map('mapaCentrosComerciales').setView([40.962, -5.652], 13);
+
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/light_all/{z}/{x}/{y}{r}.png?key=cb1_2izw_1_55d93b51ded1dcecfa044181', {
+      attribution: '&copy; OpenStreetMap &copy; CARTO',
+      subdomains: 'abcd',
+      maxZoom: 19
+    }).addTo(mapCentros);
+
+    const colores = { 'Dentro de la ciudad': '#1E56A0', 'Área metropolitana': '#C1440E' };
+
+    const centros = [
+      { name: 'Vialia Salamanca', cat: 'Dentro de la ciudad', desc: 'Estación de tren · +20 establecimientos, cines, bolera', lat: 40.9729, lng: -5.6478 },
+      { name: 'Los Cipreses', cat: 'Dentro de la ciudad', desc: 'Garrido Norte · centro de barrio, reforma 2015', lat: 40.97777, lng: -5.64881 },
+      { name: 'El Corte Inglés', cat: 'Dentro de la ciudad', desc: 'Salesas · gran almacén', lat: 40.97372, lng: -5.65739 },
+      { name: 'El Tormes', cat: 'Área metropolitana', desc: 'Santa Marta de Tormes · el más grande de la provincia, 2000', lat: 40.9501, lng: -5.6495 },
+      { name: 'Parque Comercial Capuchinos', cat: 'Área metropolitana', desc: 'Santa Marta de Tormes · Decathlon, Media Markt', lat: 40.9491, lng: -5.6514 },
+      { name: 'Atalaya del Tormes', cat: 'Área metropolitana', desc: 'Carbajosa de la Sagrada · el más nuevo, 2022', lat: 40.9458, lng: -5.6413 }
+    ];
+
+    centros.forEach(c => {
+      L.circleMarker([c.lat, c.lng], {
+        radius: 9,
+        color: colores[c.cat],
+        fillColor: colores[c.cat],
+        weight: 2,
+        fillOpacity: 0.8
+      }).bindPopup(`<b>${c.name}</b><br>${c.desc}`).addTo(mapCentros);
+    });
+
+    L.marker([40.9650, -5.6635]).addTo(mapCentros).bindPopup('<b>Centro histórico de Salamanca</b><br>Referencia: eje comercial Toro-Zamora-Plaza Mayor');
+
+    const legend = L.control({ position: 'bottomright' });
+    legend.onAdd = function () {
+      const div = L.DomUtil.create('div', 'info legend');
+      div.style.background = '#fff';
+      div.style.padding = '8px 10px';
+      div.style.borderRadius = '6px';
+      div.style.boxShadow = '0 1px 4px rgba(0,0,0,0.3)';
+      div.style.fontSize = '0.8em';
+      div.innerHTML = Object.keys(colores).map(k =>
+        `<div style="margin-bottom:3px;"><span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:${colores[k]};margin-right:6px;"></span>${k}</div>`
+      ).join('');
+      return div;
+    };
+    legend.addTo(mapCentros);
+
+    // Gráfico de dona: ubicación de los 6 centros de referencia
+    const ctxUbicacion = document.getElementById('ubicacionChart').getContext('2d');
+    new Chart(ctxUbicacion, {
+      type: 'doughnut',
+      data: {
+        labels: ['Dentro del término municipal de Salamanca', 'Fuera de la ciudad (Santa Marta de Tormes / Carbajosa)'],
+        datasets: [{
+          data: [3, 3],
+          backgroundColor: ['#1E56A0', '#C1440E']
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: { position: 'bottom' },
+          title: { display: true, text: 'De los 6 centros de referencia del área de Salamanca, la mitad está fuera del término municipal', font: { size: 12 } }
+        }
+      }
+    });
+
+    // Gráfico de barras: año de apertura o última gran reforma
+    const ctxApertura = document.getElementById('aperturaChart').getContext('2d');
+    new Chart(ctxApertura, {
+      type: 'bar',
+      data: {
+        labels: ['El Tormes (2000)', 'Vialia Salamanca (2001)', 'Los Cipreses (reforma 2015)', 'Atalaya del Tormes (2022)'],
+        datasets: [{
+          label: 'Año',
+          data: [2000, 2001, 2015, 2022],
+          backgroundColor: ['#C1440E', '#1E56A0', '#1E56A0', '#C1440E'],
+          borderRadius: 4
+        }]
+      },
+      options: {
+        indexAxis: 'y',
+        responsive: true,
+        plugins: { legend: { display: false } },
+        scales: {
+          x: { min: 1995, max: 2026, title: { display: true, text: 'Año de apertura o última gran reforma' } }
+        }
+      }
+    });
+  </script>
