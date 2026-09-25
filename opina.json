@@ -82,6 +82,18 @@
       ],
       "basado_en": "actualidad.json",
       "fecha_creacion": "2026-09-22"
+    },
+    {
+      "id": "pisos-turisticos-2026",
+      "pregunta": "El TSJCyL ha avalado las restricciones del Ayuntamiento a los pisos turísticos en Salamanca. ¿Está de acuerdo con limitar este tipo de alojamiento?",
+      "opciones": [
+        "Sí, protege la vivienda para los vecinos",
+        "No, limita la oferta turística y la economía local",
+        "Depende de la zona",
+        "No tengo suficiente información"
+      ],
+      "basado_en": "actualidad.json",
+      "fecha_creacion": "2026-09-25"
     }
   ]
 }

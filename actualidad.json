@@ -1,11 +1,11 @@
 {
   "url_base": "https://www.lagacetadesalamanca.es",
-  "generado_en": "2026-09-22T09:30:00+00:00",
+  "generado_en": "2026-09-25T09:30:00+00:00",
   "periodo_cubierto": {
-    "desde": "2026-09-20",
-    "hasta": "2026-09-22"
+    "desde": "2026-09-23",
+    "hasta": "2026-09-25"
   },
-  "total_urls_analizadas": 126,
+  "total_urls_analizadas": 135,
   "secciones_excluidas": [
     "nacional",
     "opinion",
@@ -13,115 +13,117 @@
     "gente-estilo",
     "podcast"
   ],
-  "nota_cobertura": "El sitemap consultado esta vez solo contenía URLs de los últimos 3 días (20 a 22 de septiembre), un periodo más corto que una semana completa: es un sitemap 'rolling' y en este momento cubre menos días de los habituales. El análisis y el resumen siguientes reflejan únicamente ese periodo real, no una semana entera.",
+  "nota_cobertura": "El sitemap consultado esta vez solo contenía URLs de los últimos 3 días (23 a 25 de septiembre), un periodo más corto que una semana completa: es un sitemap 'rolling' y en este momento cubre menos días de los habituales. El análisis y el resumen siguientes reflejan únicamente ese periodo real, no una semana entera.",
   "por_seccion": [
-    ["salamanca", 40],
-    ["deportes", 26],
-    ["provincia", 23],
+    ["provincia", 42],
+    ["salamanca", 41],
+    ["deportes", 20],
     ["sucesos", 15],
-    ["toros", 15],
-    ["campo", 5],
-    ["encuestas", 2]
+    ["campo", 7],
+    ["toros", 3],
+    ["virales", 3],
+    ["encuestas", 2],
+    ["castilla-y-leon", 1],
+    ["television", 1]
   ],
   "por_subseccion": [
-    ["deportes/futbol-local", 13],
+    ["deportes/futbol-local", 12],
     ["deportes/baloncesto-local", 3],
-    ["deportes/carreras-populares", 2],
-    ["deportes/deporte-base", 2]
+    ["deportes/carreras-populares", 1]
   ],
   "por_tipo_contenido": [
-    ["noticia", 124],
-    ["directo / en vivo", 2]
+    ["noticia", 135]
   ],
   "heatmap_calendario": [
-    {"fecha": "2026-09-20", "total": 40, "salamanca": 8, "deportes": 12, "provincia": 2, "sucesos": 7, "toros": 9, "campo": 1, "encuestas": 1},
-    {"fecha": "2026-09-21", "total": 61, "salamanca": 23, "deportes": 12, "provincia": 16, "sucesos": 5, "toros": 2, "campo": 2, "encuestas": 1},
-    {"fecha": "2026-09-22", "total": 25, "salamanca": 9, "deportes": 2, "provincia": 5, "sucesos": 3, "toros": 4, "campo": 2, "encuestas": 0}
+    {"fecha": "2026-09-23", "total": 47, "provincia": 14, "salamanca": 11, "deportes": 10, "sucesos": 5, "campo": 4, "toros": 0, "virales": 1, "encuestas": 1, "castilla-y-leon": 0, "television": 1},
+    {"fecha": "2026-09-24", "total": 70, "provincia": 25, "salamanca": 18, "deportes": 9, "sucesos": 9, "campo": 3, "toros": 2, "virales": 2, "encuestas": 1, "castilla-y-leon": 1, "television": 0},
+    {"fecha": "2026-09-25", "total": 18, "provincia": 3, "salamanca": 12, "deportes": 1, "sucesos": 1, "campo": 0, "toros": 1, "virales": 0, "encuestas": 0, "castilla-y-leon": 0, "television": 0}
   ],
   "conceptos_destacados": [
     {
-      "concepto": "El derbi salmantino en Copa RFEF: Salamanca UDS y Santa Marta se juegan el pase a la Copa del Rey",
-      "piezas": 4,
-      "seccion_principal": "deportes",
-      "desde": "2026-09-21",
-      "hasta": "2026-09-22",
-      "ejemplos_redactados": [
-        "El Salamanca UDS y la UD Santa Marta se enfrentarán en el San Casto para decidir quién se cuela en la Copa del Rey, en un derbi salmantino que ya tiene horario y del que ambos conocen su camino hasta la final.",
-        "El Santa Marta no instalará gradas supletorias, aunque sí ampliará el aforo todo lo posible para dar cabida a la expectación del encuentro."
-      ]
-    },
-    {
-      "concepto": "'Ley de Nietos': 28 pueblos salmantinos ya tienen más electores en el extranjero que en España",
-      "piezas": 1,
+      "concepto": "Hallazgo arqueológico bajo la Catedral: sarcófagos, piezas romanas y una vieja sacristía",
+      "piezas": 2,
       "seccion_principal": "salamanca",
-      "desde": "2026-09-22",
-      "hasta": "2026-09-22",
+      "desde": "2026-09-25",
+      "hasta": "2026-09-25",
       "ejemplos_redactados": [
-        "La provincia ha ganado 4.910 residentes ausentes en cuatro años gracias a la 'Ley de Nietos', hasta el punto de que el censo de electores residentes en el extranjero (CERA) acapara ya el 12% de los salmantinos con derecho al voto, un porcentaje que solo superan ocho provincias españolas."
+        "Las excavaciones bajo la Catedral han sacado a la luz piezas romanas de bronce, una necrópolis de la Alta Edad Media, construcciones de la primera repoblación, cerámicas romanas y bajomedievales, y los cimientos de la desaparecida sacristía de la capilla de Talavera.",
+        "Los últimos hallazgos permiten además descartar que la Catedral se levantara sobre una mezquita preexistente, según los arqueólogos."
       ]
     },
     {
-      "concepto": "Las Ferias y Fiestas cierran su programa deportivo con más de 35.000 espectadores",
-      "piezas": 1,
-      "seccion_principal": "deportes",
-      "desde": "2026-09-21",
-      "hasta": "2026-09-21",
-      "ejemplos_redactados": [
-        "Más de 35.000 espectadores han disfrutado de las actividades del programa deportivo de las Ferias y Fiestas de este año."
-      ]
-    },
-    {
-      "concepto": "La Fiscalía alerta del aumento de cibercrimen: casi 3 millones de euros estafados en 2025",
-      "piezas": 1,
+      "concepto": "El TSJCyL avala las restricciones del Ayuntamiento a los pisos turísticos",
+      "piezas": 2,
       "seccion_principal": "salamanca",
-      "desde": "2026-09-20",
-      "hasta": "2026-09-20",
+      "desde": "2026-09-23",
+      "hasta": "2026-09-24",
       "ejemplos_redactados": [
-        "Los timos y fraudes denunciados ante la Guardia Civil costaron a los salmantinos casi 3 millones de euros en 2025, de los que se recuperó menos del 5%, por lo que la Fiscalía reclama más barreras a los bancos."
+        "El Pleno del Alto Tribunal ha estimado el recurso del Ayuntamiento de Salamanca y respalda la denegación de la conformidad ambiental a dos inmuebles destinados a alojamiento turístico, confirmando que estos usos son de tipo terciario.",
+        "La Asociación de Alojamientos Turísticos y Apartamentos ha anunciado que recurrirá la sentencia ante el Supremo."
       ]
     },
     {
-      "concepto": "Los casos graves de absentismo escolar se triplican en un año",
-      "piezas": 1,
-      "seccion_principal": "salamanca",
-      "desde": "2026-09-20",
-      "hasta": "2026-09-20",
-      "ejemplos_redactados": [
-        "La Fiscalía incoó 29 expedientes por absentismo escolar grave en 2025 y presentó 22 denuncias en los juzgados, el triple que el año anterior."
-      ]
-    },
-    {
-      "concepto": "Bus urbano gratis en el Día sin Coches tras rozar los 16 millones de pasajeros",
-      "piezas": 1,
-      "seccion_principal": "salamanca",
-      "desde": "2026-09-22",
-      "hasta": "2026-09-22",
-      "ejemplos_redactados": [
-        "Salamanca ha celebrado el 'Día sin coches' con el autobús urbano gratuito, después de rozar en 2025 los 16 millones de pasajeros."
-      ]
-    },
-    {
-      "concepto": "Fallece Jesús García Maldonado, restaurador de la Plaza Mayor",
-      "piezas": 1,
-      "seccion_principal": "salamanca",
-      "desde": "2026-09-21",
-      "hasta": "2026-09-21",
-      "ejemplos_redactados": [
-        "Ha fallecido Jesús García Maldonado, aparejador, licenciado en Historia del Arte y arqueólogo que dejó su firma en numerosas obras de restauración de Salamanca, entre ellas la Plaza Mayor."
-      ]
-    },
-    {
-      "concepto": "Nueva tanda de sucesos: catorce años de maltrato y una estafa a una mujer mayor",
-      "piezas": 5,
+      "concepto": "La agencia de viajes que dejó sin vacaciones a decenas de mayores suma ya más de 120 afectados",
+      "piezas": 2,
       "seccion_principal": "sucesos",
-      "desde": "2026-09-20",
-      "hasta": "2026-09-22",
+      "desde": "2026-09-23",
+      "hasta": "2026-09-25",
       "ejemplos_redactados": [
-        "La provincia ha conocido un nuevo caso de violencia machista con catorce años de maltrato hasta un último episodio en el que el acusado llegó a amenazar con matar a toda la familia, además de la detención de dos personas por robar y estafar 7.230 euros a una mujer mayor.",
-        "También se han registrado varios accidentes de tráfico —una furgoneta semivolcada en la N-620 y un turismo que atropelló a un hombre en silla de ruedas en Ciudad Rodrigo— y un escape de gas nocturno que dio la alarma en el barrio de Garrido."
+        "Los 74 socios de una asociación de mayores se quedaron con las maletas hechas tras la cancelación de su viaje a Benidorm, y la agencia suma ya otros 48 afectados más, entre ellos un grupo de la asociación San Isidro al que se le notificó la cancelación de unas vacaciones ya abonadas."
+      ]
+    },
+    {
+      "concepto": "Mañana aciaga en las carreteras: cinco accidentes en menos de tres horas",
+      "piezas": 2,
+      "seccion_principal": "sucesos",
+      "desde": "2026-09-24",
+      "hasta": "2026-09-24",
+      "ejemplos_redactados": [
+        "Una joven motorista salió despedida por los aires en la Plaza de España tras ser arrollada por una conductora que dio positivo en drogas, mientras un operario de mantenimiento de carreteras fue atropellado y evacuado en helicóptero en la A-62 por un conductor que se dio a la fuga.",
+        "La misma mañana dejó además otros golpes con heridos en la avenida de Lasalle, Carbajosa de la Sagrada y Guijuelo."
+      ]
+    },
+    {
+      "concepto": "El derbi de Copa RFEF apunta a lleno absoluto en el Alfonso San Casto",
+      "piezas": 1,
+      "seccion_principal": "deportes",
+      "desde": "2026-09-24",
+      "hasta": "2026-09-24",
+      "ejemplos_redactados": [
+        "El derbi salmantino entre el Salamanca UDS y la UD Santa Marta, con un puesto en la Copa del Rey en juego, apunta a un lleno absoluto en el Alfonso San Casto."
+      ]
+    },
+    {
+      "concepto": "Dimisión en el Embalse de Béjar: el alcalde de Cristóbal asume la presidencia de forma temporal",
+      "piezas": 1,
+      "seccion_principal": "provincia",
+      "desde": "2026-09-24",
+      "hasta": "2026-09-24",
+      "ejemplos_redactados": [
+        "El alcalde de Cristóbal ha asumido de forma temporal la presidencia del Embalse de Béjar tras la dimisión de Carlos Parra."
+      ]
+    },
+    {
+      "concepto": "La Universidad de Salamanca investirá a António Guterres como doctor honoris causa",
+      "piezas": 1,
+      "seccion_principal": "salamanca",
+      "desde": "2026-09-23",
+      "hasta": "2026-09-23",
+      "ejemplos_redactados": [
+        "La Universidad de Salamanca investirá al secretario general de la ONU, António Guterres, como doctor honoris causa el próximo 6 de noviembre."
+      ]
+    },
+    {
+      "concepto": "Un nuevo virus del vacuno preocupa en Salamanca",
+      "piezas": 1,
+      "seccion_principal": "campo",
+      "desde": "2026-09-23",
+      "hasta": "2026-09-23",
+      "ejemplos_redactados": [
+        "El Ministerio de Agricultura ha confirmado la presencia del virus Shamonda tipo 1 en siete explotaciones de bovino de Córdoba y Toledo, y analiza sospechas clínicas en otras zonas, entre ellas Salamanca."
       ]
     }
   ],
-  "resumen_borrador": "Se han publicado 126 noticias entre el 2026-09-20 y el 2026-09-22. La actividad se ha concentrado sobre todo en salamanca (40 piezas), deportes (26 piezas), provincia (23 piezas).\n\nLos conceptos con más piezas relacionadas son: derbi, Copa del Rey, Ley de Nietos, Feria taurina. Revisa 'evidencia' de cada concepto para redactar el resumen final.",
-  "resumen": "El fútbol salmantino vive su cita más esperada: el Salamanca UDS y la UD Santa Marta se jugarán en el San Casto el pase a la Copa del Rey en un derbi que ya tiene horario y aforo ampliado. En clave política, la 'Ley de Nietos' vuelve a la actualidad: 28 pueblos salmantinos ya tienen más electores en el extranjero que en España, y la provincia ha ganado 4.910 residentes ausentes en cuatro años, hasta acaparar el 12% del censo electoral.\n\nLas Ferias y Fiestas han cerrado también su programa deportivo con más de 35.000 espectadores, mientras Salamanca ha celebrado el Día sin coches con el bus urbano gratuito tras rozar en 2025 los 16 millones de pasajeros. La ciudad llora además la muerte de Jesús García Maldonado, restaurador de la Plaza Mayor y una de las firmas más reconocidas en la conservación del patrimonio salmantino.\n\nLa Fiscalía ha alertado de dos tendencias preocupantes: el cibercrimen, que costó casi 3 millones de euros a los salmantinos en 2025 con menos del 5% recuperado, y el absentismo escolar grave, cuyos casos se han triplicado en un año. La provincia ha registrado además una nueva tanda de sucesos, entre ellos un caso de violencia machista con catorce años de maltrato, una estafa a una mujer mayor y varios accidentes de tráfico."
+  "resumen_borrador": "Se han publicado 135 noticias entre el 2026-09-23 y el 2026-09-25. La actividad se ha concentrado sobre todo en provincia (42 piezas), salamanca (41 piezas), deportes (20 piezas).\n\nLos conceptos con más piezas relacionadas son: Catedral, pisos turísticos, Golondrina, accidentes. Revisa 'evidencia' de cada concepto para redactar el resumen final.",
+  "resumen": "Un hallazgo arqueológico bajo la Catedral ha sacado a la luz piezas romanas de bronce, una necrópolis de la Alta Edad Media y los cimientos de la desaparecida sacristía de la capilla de Talavera, permitiendo además descartar que el templo se levantara sobre una mezquita preexistente. En el terreno legal, el TSJCyL ha avalado las restricciones del Ayuntamiento a los pisos turísticos, aunque la Asociación de Alojamientos Turísticos ya ha anunciado que recurrirá ante el Supremo.\n\nEl fútbol salmantino vive su gran cita: el derbi de Copa RFEF entre el Salamanca UDS y la UD Santa Marta, con un puesto en la Copa del Rey en juego, apunta a un lleno absoluto en el Alfonso San Casto. En el ámbito institucional, el alcalde de Cristóbal ha asumido de forma temporal la presidencia del Embalse de Béjar tras la dimisión de Carlos Parra, y la Universidad de Salamanca investirá al secretario general de la ONU, António Guterres, como doctor honoris causa el 6 de noviembre.\n\nLa provincia ha vivido además una mañana aciaga en las carreteras, con cinco accidentes en menos de tres horas —entre ellos un atropello con fuga y evacuación en helicóptero en la A-62—, mientras crece el escándalo de la agencia de viajes que ha dejado sin vacaciones a más de 120 mayores. El campo salmantino, por su parte, sigue con preocupación la aparición de un nuevo virus del vacuno detectado ya en otras provincias."
 }
