@@ -35,6 +35,25 @@
         "No, mal empiezan": 1
       },
       "total_votos": 9
+    },
+    {
+      "id": "responsabilidad-pisa-2026",
+      "pregunta": "Castilla y León resiste en PISA pese al batacazo educativo a nivel nacional, pero Mañueco culpa al Gobierno central de la debacle. ¿Quién crees que tiene más responsabilidad en estos resultados?",
+      "opciones": [
+        "El Gobierno central",
+        "Las comunidades autónomas",
+        "Ambos por igual",
+        "Ninguno, es solo un informe más"
+      ],
+      "basado_en": "actualidad.json",
+      "fecha_creacion": "2026-09-10",
+      "fecha_archivado": "2026-09-25",
+      "resultados": {
+        "Las comunidades autónomas": 8,
+        "Ambos por igual": 2,
+        "El Gobierno central": 1
+      },
+      "total_votos": 11
     }
   ]
 }
