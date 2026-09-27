@@ -1,7 +1,7 @@
 {
-  "generado_en": "2026-09-27T18:59:04.381Z",
+  "generado_en": "2026-09-27T22:11:45.623Z",
   "dias_ventana": 20,
-  "total": 1660,
+  "total": 1672,
   "medios": [
     "Tribuna Salamanca",
     "Salamanca24Horas",
@@ -9,6 +9,83 @@
     "Salamancahoy"
   ],
   "noticias": [
+    {
+      "url": "https://www.salamancahoy.es/salamanca/ciudad/salamanca-alerta-amarilla-tormentas-lluvia-granizo-fuertes-20260927234810-nt.html",
+      "titulo": "Toda Salamanca en alerta amarilla por tormentas con lluvia, granizo y fuertes rachas de viento",
+      "medio": "Salamancahoy",
+      "fecha": "2026-09-27",
+      "fecha_hora": "2026-09-27T21:48:10.000Z"
+    },
+    {
+      "url": "https://www.salamanca24horas.com/local/barrio-huerta-otea-celebra-fiestas",
+      "titulo": "El barrio de Huerta Otea celebra sus fiestas",
+      "medio": "Salamanca24Horas",
+      "fecha": "2026-09-27",
+      "fecha_hora": "2026-09-27T21:05:36.000Z"
+    },
+    {
+      "url": "https://www.tribunasalamanca.com/noticias/460381/europa-recupera-la-copa-laver-sin-necesidad-de-que-alcaraz-salte-a-pista",
+      "titulo": "Europa recupera la Copa Laver sin necesidad de que Alcaraz salte a pista",
+      "medio": "Tribuna Salamanca",
+      "fecha": "2026-09-27",
+      "fecha_hora": "2026-09-27T21:04:40.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/deportes/futbol-local/salamancauds/muniain-sobre-insultos-aficion-alcala-enterado-dirigiendo-20260927204159-nt.html",
+      "titulo": "Muniain sobre los insultos de la afición del Alcalá: «Ni me he enterado que se estaban dirigiendo a mí»",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-09-27",
+      "fecha_hora": "2026-09-27T20:35:50.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/deportes/zarapicos-celebra-grande-36o-aniversario-20260927222723-nt.html",
+      "titulo": "Zarapicos celebra a lo grande su 36º Aniversario",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-09-27",
+      "fecha_hora": "2026-09-27T20:27:58.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/deportes/futbol-local/salamancauds/claves-victoria-salamanca-alcala-20260927221949-nt.html",
+      "titulo": "Las claves de la victoria del Salamanca UDS contra el Alcalá",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-09-27",
+      "fecha_hora": "2026-09-27T20:19:49.000Z"
+    },
+    {
+      "url": "https://www.tribunasalamanca.com/noticias/460375/la-moda-de-castilla-y-leon-debuta-en-la-pasarela-larios-de-malaga-con-cuatro-firmas",
+      "titulo": "La moda de Castilla y León debuta en la Pasarela Larios de Málaga con cuatro firmas",
+      "medio": "Tribuna Salamanca",
+      "fecha": "2026-09-27",
+      "fecha_hora": "2026-09-27T20:02:07.000Z"
+    },
+    {
+      "url": "https://www.salamanca24horas.com/local/plaza-barcelona-vuelca-fiestas-vecinales-mano-garrido-contigo",
+      "titulo": "La Plaza de Barcelona se vuelca con las fiestas vecinales de la mano de ´Garrido Contigo'",
+      "medio": "Salamanca24Horas",
+      "fecha": "2026-09-27",
+      "fecha_hora": "2026-09-27T19:48:05.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/salamanca/noticias-importantes-salamanca-hoy-sabado-septiembre-20260927212605-nt.html",
+      "titulo": "Las noticias más importantes en Salamanca hoy domingo 27 de septiembre",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-09-27",
+      "fecha_hora": "2026-09-27T19:32:31.000Z"
+    },
+    {
+      "url": "https://www.salamanca24horas.com/deportes/aficionado-salamanca-cf-uds-sufre-sindrome-presincopal-helmantico",
+      "titulo": "Un aficionado del Salamanca CF UDS sufre un síndrome presincopal en el Helmántico",
+      "medio": "Salamanca24Horas",
+      "fecha": "2026-09-27",
+      "fecha_hora": "2026-09-27T19:12:14.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/provincia/bercimuelle-disfruta-obra-juan-espiritu-amor-20260927205317-nt.html",
+      "titulo": "Bercimuelle también disfruta con la obra «Juan, el espíritu del amor»",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-09-27",
+      "fecha_hora": "2026-09-27T18:53:17.000Z"
+    },
     {
       "url": "https://www.lagacetadesalamanca.es/deportes/futbol-local/salamancauds/muniain-ganas-victoria-holgada-anteriores-20260927203359-nt.html",
       "titulo": "Muniain: «Teníamos ganas de una victoria holgada, no como las anteriores»",
@@ -31,6 +108,13 @@
       "fecha_hora": "2026-09-27T18:28:15.000Z"
     },
     {
+      "url": "https://www.tribunasalamanca.com/noticias/460371/exito-rotundo-del-encuentro-nacional-de-cofradias-en-salamanca-ha-cumplido-sobradamente-las-expectativas",
+      "titulo": "Éxito rotundo del Encuentro Nacional de Cofradías en Salamanca: \"ha cumplido sobradamente las expectativas\"",
+      "medio": "Tribuna Salamanca",
+      "fecha": "2026-09-27",
+      "fecha_hora": "2026-09-27T18:25:59.000Z"
+    },
+    {
       "url": "https://www.salamanca24horas.com/deportes/unionistas-cf/unionistas-encalla-zona-roja-primera-rfef",
       "titulo": "Unionistas encalla en la zona roja de Primera RFEF",
       "medio": "Salamanca24Horas",
@@ -50,6 +134,13 @@
       "medio": "Tribuna Salamanca",
       "fecha": "2026-09-27",
       "fecha_hora": "2026-09-27T18:17:58.000Z"
+    },
+    {
+      "url": "https://www.salamancahoy.es/salamanca/noticias-imprescindibles-salamanca-domingo-septiembre-20260927201531-nt.html",
+      "titulo": "Las noticias imprescindibles de Salamanca este domingo 27 de septiembre",
+      "medio": "Salamancahoy",
+      "fecha": "2026-09-27",
+      "fecha_hora": "2026-09-27T18:15:31.000Z"
     },
     {
       "url": "https://www.salamanca24horas.com/deportes/salamanca-cf-uds/salamanca-cf-uds-da-salto-tabla-coloca-tercero",
@@ -2327,6 +2418,13 @@
       "fecha_hora": "2026-09-25T11:36:01.000Z"
     },
     {
+      "url": "https://www.tribunasalamanca.com/noticias/460114/profesion-de-riesgo",
+      "titulo": "Profesión de riesgo",
+      "medio": "Tribuna Salamanca",
+      "fecha": "2026-09-25",
+      "fecha_hora": "2026-09-25T11:35:50.000Z"
+    },
+    {
       "url": "https://www.tribunasalamanca.com/noticias/460113/esas-puertas",
       "titulo": "¡Esas puertas...!",
       "medio": "Tribuna Salamanca",
@@ -3473,6 +3571,13 @@
       "medio": "La Gaceta de Salamanca",
       "fecha": "2026-09-24",
       "fecha_hora": "2026-09-24T15:40:17.000Z"
+    },
+    {
+      "url": "https://www.tribunasalamanca.com/noticias/460014/la-fuga-silenciosa-que-nos-empobrece",
+      "titulo": "La fuga silenciosa que nos empobrece",
+      "medio": "Tribuna Salamanca",
+      "fecha": "2026-09-24",
+      "fecha_hora": "2026-09-24T15:37:25.000Z"
     },
     {
       "url": "https://www.tribunasalamanca.com/noticias/460011/ilusion-y-armonia-la-exposicion-de-la-asociacion-hisho-abre-la-temporada-cultural-en-villamayor",
@@ -11607,27 +11712,6 @@
       "medio": "Salamancahoy",
       "fecha": "2026-09-07",
       "fecha_hora": "2026-09-07T22:13:18Z"
-    },
-    {
-      "url": "https://www.salamancahoy.es/salamanca/ciudad/salamanca-rinde-ritmos-julieta-venegas-plaza-mayor-20260907000207-ga.html",
-      "titulo": "Salamanca se rinde a los ritmos de Julieta Venegas en una Plaza Mayor que roza el lleno",
-      "medio": "Salamancahoy",
-      "fecha": "2026-09-07",
-      "fecha_hora": "2026-09-07T22:02:09Z"
-    },
-    {
-      "url": "https://www.salamancahoy.es/salamanca/ciudad/fuegos-artificiales-inundan-color-cielo-salamanca-primera-20260907224348-ga.html",
-      "titulo": "Los fuegos artificiales inundan de color el cielo de Salamanca en la primera noche de fiestas",
-      "medio": "Salamancahoy",
-      "fecha": "2026-09-07",
-      "fecha_hora": "2026-09-07T20:44:20Z"
-    },
-    {
-      "url": "https://www.salamancahoy.es/salamanca/ciudad/tradicional-ofrenda-virgen-vega-imagenes-20260907201835-ga.html",
-      "titulo": "La tradicional ofrenda a la Virgen de la Vega, en imágenes",
-      "medio": "Salamancahoy",
-      "fecha": "2026-09-07",
-      "fecha_hora": "2026-09-07T19:01:08Z"
     }
   ]
 }
