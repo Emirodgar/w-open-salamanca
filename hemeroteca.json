@@ -1,7 +1,7 @@
 {
-  "generado_en": "2026-09-27T22:11:45.623Z",
+  "generado_en": "2026-09-27T23:04:08.777Z",
   "dias_ventana": 20,
-  "total": 1672,
+  "total": 1674,
   "medios": [
     "Tribuna Salamanca",
     "Salamanca24Horas",
@@ -9,6 +9,20 @@
     "Salamancahoy"
   ],
   "noticias": [
+    {
+      "url": "https://www.tribunasalamanca.com/noticias/460389/santa-marta-corre-mas-rapido-que-nunca-antonio-fraile-y-sandra-santamaria-ganan-el-10km",
+      "titulo": "Santa Marta corre más rápido que nunca: Antonio Fraile y Sandra Santamaría ganan el 10Km",
+      "medio": "Tribuna Salamanca",
+      "fecha": "2026-09-27",
+      "fecha_hora": "2026-09-27T22:36:10.000Z"
+    },
+    {
+      "url": "https://www.tribunasalamanca.com/noticias/460388/recoletas-salud-salamanca-pone-el-broche-de-oro-y-conquista-la-copa-federacion",
+      "titulo": "Recoletas Salud Salamanca pone el broche de oro y conquista la Copa Federación",
+      "medio": "Tribuna Salamanca",
+      "fecha": "2026-09-27",
+      "fecha_hora": "2026-09-27T22:29:10.000Z"
+    },
     {
       "url": "https://www.salamancahoy.es/salamanca/ciudad/salamanca-alerta-amarilla-tormentas-lluvia-granizo-fuertes-20260927234810-nt.html",
       "titulo": "Toda Salamanca en alerta amarilla por tormentas con lluvia, granizo y fuertes rachas de viento",
@@ -8326,6 +8340,13 @@
       "fecha_hora": "2026-09-21T10:11:26Z"
     },
     {
+      "url": "https://www.tribunasalamanca.com/noticias/459492/sendero-del-aceite",
+      "titulo": "Sendero del aceite",
+      "medio": "Tribuna Salamanca",
+      "fecha": "2026-09-21",
+      "fecha_hora": "2026-09-21T09:58:07.000Z"
+    },
+    {
       "url": "https://www.tribunasalamanca.com/noticias/459491/un-fondo-de-un-millon-de-euros-financiara-el-autoempleo-y-el-emprendimiento-en-salamanca-hasta-2027",
       "titulo": "Un fondo de un millón de euros financiará el autoempleo y el emprendimiento en Salamanca hasta 2027",
       "medio": "Tribuna Salamanca",
@@ -11705,13 +11726,6 @@
       "medio": "Salamancahoy",
       "fecha": "2026-09-08",
       "fecha_hora": "2026-09-08T08:04:03Z"
-    },
-    {
-      "url": "https://www.salamancahoy.es/salamanca/ciudad/salamanca-inicia-ferias-veraniegas-viaje-folk-circulra-20260907235519-nt.html",
-      "titulo": "Salamanca inicia sus Ferias más 'veraniegas' en un viaje folk circular entre la ofrenda floral y Julieta Venegas",
-      "medio": "Salamancahoy",
-      "fecha": "2026-09-07",
-      "fecha_hora": "2026-09-07T22:13:18Z"
     }
   ]
 }
