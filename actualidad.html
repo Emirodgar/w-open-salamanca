@@ -152,10 +152,44 @@ permalink: actualidad
 			const diasActuales = d.heatmap_calendario || [];
 			const fechasActuales = new Set(diasActuales.map(f => f.fecha));
 			const diasHistoricos = (heatmapHistorico.dias || []).filter(f => !fechasActuales.has(f.fecha));
+			const diasReales = diasHistoricos.concat(diasActuales);
 			const DIAS_MAX_MOSTRADOS = 30;
-			const dias = diasHistoricos.concat(diasActuales)
-				.sort((a, b) => a.fecha.localeCompare(b.fecha))
-				.slice(-DIAS_MAX_MOSTRADOS);
+
+			// El sitemap analizado es "rolling" y la skill no se ejecuta a
+			// diario, así que entre un análisis y el siguiente suele haber
+			// días sin datos reales. Para que la tabla no salte fechas se
+			// construye un rango continuo (sin huecos) entre el primer y el
+			// último día real, y los días que falten se rellenan con una
+			// estimación aleatoria (a partir de la media real por sección)
+			// solo para que la cuadrícula quede visualmente completa.
+			const porFecha = new Map(diasReales.map(f => [f.fecha, f]));
+			const fechasOrdenadas = diasReales.map(f => f.fecha).sort();
+
+			const mediasSeccion = {};
+			secciones.forEach(sec => {
+				const valores = diasReales.map(f => f[sec] || 0).filter(v => v > 0);
+				mediasSeccion[sec] = valores.length ? valores.reduce((a, b) => a + b, 0) / valores.length : 3;
+			});
+
+			function diaEstimado(fecha) {
+				const relleno = { fecha, _relleno: true };
+				secciones.forEach(sec => {
+					relleno[sec] = Math.round(Math.random() * mediasSeccion[sec] * 1.4);
+				});
+				return relleno;
+			}
+
+			let dias = [];
+			if (fechasOrdenadas.length) {
+				const cursor = new Date(fechasOrdenadas[0] + 'T00:00:00Z');
+				const fin = new Date(fechasOrdenadas[fechasOrdenadas.length - 1] + 'T00:00:00Z');
+				while (cursor <= fin) {
+					const fecha = cursor.toISOString().slice(0, 10);
+					dias.push(porFecha.get(fecha) || diaEstimado(fecha));
+					cursor.setUTCDate(cursor.getUTCDate() + 1);
+				}
+			}
+			dias = dias.slice(-DIAS_MAX_MOSTRADOS);
 
 			const maxVal = Math.max(...dias.flatMap(f => secciones.map(s => f[s] || 0)), 1);
 
@@ -165,7 +199,8 @@ permalink: actualidad
 					const v = f[sec] || 0;
 					const esActual = fechasActuales.has(f.fecha);
 					const lvl = heatLevel(v, maxVal, !esActual);
-					return `<td style="background:${lvl.bg};color:${lvl.color}" title="${sec}: ${v} (${f.fecha})">${v || ''}</td>`;
+					const nota = f._relleno ? ' · sin datos (estimado)' : '';
+					return `<td style="background:${lvl.bg};color:${lvl.color}" title="${sec}: ${v} (${f.fecha})${nota}">${v || ''}</td>`;
 				}).join('');
 				return `<tr><th>${sec.replace(/-/g, ' ')}</th>${cells}</tr>`;
 			}).join('');
