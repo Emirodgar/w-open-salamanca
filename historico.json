@@ -54,6 +54,24 @@
         "El Gobierno central": 1
       },
       "total_votos": 11
+    },
+    {
+      "id": "unionistas-primera-victoria-2026",
+      "pregunta": "Unionistas ha logrado su primera victoria de la temporada (3-1 ante la UD Ourense) tras el peor arranque de su historia. ¿Crees que este triunfo supondrá un cambio de tendencia?",
+      "opciones": [
+        "Sí, ya han dado el giro",
+        "No, ha sido algo puntual",
+        "Aún es pronto para saberlo"
+      ],
+      "basado_en": "actualidad.json",
+      "fecha_creacion": "2026-09-20",
+      "fecha_archivado": "2026-09-28",
+      "resultados": {
+        "No, ha sido algo puntual": 4,
+        "Sí, ya han dado el giro": 2,
+        "Aún es pronto para saberlo": 1
+      },
+      "total_votos": 7
     }
   ]
 }

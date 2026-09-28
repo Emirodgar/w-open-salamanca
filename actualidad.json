@@ -1,11 +1,11 @@
 {
   "url_base": "https://www.lagacetadesalamanca.es",
-  "generado_en": "2026-09-25T09:30:00+00:00",
+  "generado_en": "2026-09-28T09:15:00+00:00",
   "periodo_cubierto": {
-    "desde": "2026-09-23",
-    "hasta": "2026-09-25"
+    "desde": "2026-09-26",
+    "hasta": "2026-09-28"
   },
-  "total_urls_analizadas": 135,
+  "total_urls_analizadas": 83,
   "secciones_excluidas": [
     "nacional",
     "opinion",
@@ -13,117 +13,104 @@
     "gente-estilo",
     "podcast"
   ],
-  "nota_cobertura": "El sitemap consultado esta vez solo contenía URLs de los últimos 3 días (23 a 25 de septiembre), un periodo más corto que una semana completa: es un sitemap 'rolling' y en este momento cubre menos días de los habituales. El análisis y el resumen siguientes reflejan únicamente ese periodo real, no una semana entera.",
+  "nota_cobertura": "El sitemap consultado esta vez solo contenía URLs de los últimos 3 días (26 a 28 de septiembre), un periodo más corto que una semana completa: es un sitemap 'rolling' y en este momento cubre menos días de los habituales. El análisis y el resumen siguientes reflejan únicamente ese periodo real, no una semana entera.",
   "por_seccion": [
-    ["provincia", 42],
-    ["salamanca", 41],
-    ["deportes", 20],
-    ["sucesos", 15],
-    ["campo", 7],
-    ["toros", 3],
-    ["virales", 3],
+    ["salamanca", 33],
+    ["deportes", 22],
+    ["provincia", 16],
+    ["sucesos", 7],
     ["encuestas", 2],
-    ["castilla-y-leon", 1],
-    ["television", 1]
+    ["campo", 1],
+    ["toros", 1],
+    ["cine-y-series", 1]
   ],
   "por_subseccion": [
-    ["deportes/futbol-local", 12],
-    ["deportes/baloncesto-local", 3],
-    ["deportes/carreras-populares", 1]
+    ["deportes/futbol-local", 14],
+    ["deportes/baloncesto-local", 2],
+    ["deportes/deporte-base", 1]
   ],
   "por_tipo_contenido": [
-    ["noticia", 135]
+    ["noticia", 80],
+    ["directo / en vivo", 3]
   ],
   "heatmap_calendario": [
-    {"fecha": "2026-09-23", "total": 47, "provincia": 14, "salamanca": 11, "deportes": 10, "sucesos": 5, "campo": 4, "toros": 0, "virales": 1, "encuestas": 1, "castilla-y-leon": 0, "television": 1},
-    {"fecha": "2026-09-24", "total": 70, "provincia": 25, "salamanca": 18, "deportes": 9, "sucesos": 9, "campo": 3, "toros": 2, "virales": 2, "encuestas": 1, "castilla-y-leon": 1, "television": 0},
-    {"fecha": "2026-09-25", "total": 18, "provincia": 3, "salamanca": 12, "deportes": 1, "sucesos": 1, "campo": 0, "toros": 1, "virales": 0, "encuestas": 0, "castilla-y-leon": 0, "television": 0}
+    {"fecha": "2026-09-26", "total": 24, "salamanca": 7, "deportes": 9, "provincia": 2, "sucesos": 3, "encuestas": 1, "campo": 0, "toros": 1, "cine-y-series": 1},
+    {"fecha": "2026-09-27", "total": 42, "salamanca": 16, "deportes": 13, "provincia": 9, "sucesos": 2, "encuestas": 1, "campo": 1, "toros": 0, "cine-y-series": 0},
+    {"fecha": "2026-09-28", "total": 17, "salamanca": 10, "deportes": 0, "provincia": 5, "sucesos": 2, "encuestas": 0, "campo": 0, "toros": 0, "cine-y-series": 0}
   ],
   "conceptos_destacados": [
     {
-      "concepto": "Hallazgo arqueológico bajo la Catedral: sarcófagos, piezas romanas y una vieja sacristía",
-      "piezas": 2,
+      "concepto": "Salamanca vive una procesión cofrade histórica: la 'Vía Áurea'",
+      "piezas": 5,
       "seccion_principal": "salamanca",
-      "desde": "2026-09-25",
-      "hasta": "2026-09-25",
+      "desde": "2026-09-26",
+      "hasta": "2026-09-27",
       "ejemplos_redactados": [
-        "Las excavaciones bajo la Catedral han sacado a la luz piezas romanas de bronce, una necrópolis de la Alta Edad Media, construcciones de la primera repoblación, cerámicas romanas y bajomedievales, y los cimientos de la desaparecida sacristía de la capilla de Talavera.",
-        "Los últimos hallazgos permiten además descartar que la Catedral se levantara sobre una mezquita preexistente, según los arqueólogos."
+        "Miles de personas han llenado las calles del centro en una procesión inédita, la 'Vía Áurea', que reunió 17 imágenes y un millar de participantes en un día para el recuerdo, sin incidentes.",
+        "El propio pregonero de la Semana Santa de Sevilla se ha desplazado a verla, calificándola de inolvidable, y la hostelería local ya vislumbra un septiembre de récord gracias al tirón turístico del evento."
       ]
     },
     {
-      "concepto": "El TSJCyL avala las restricciones del Ayuntamiento a los pisos turísticos",
-      "piezas": 2,
-      "seccion_principal": "salamanca",
-      "desde": "2026-09-23",
-      "hasta": "2026-09-24",
-      "ejemplos_redactados": [
-        "El Pleno del Alto Tribunal ha estimado el recurso del Ayuntamiento de Salamanca y respalda la denegación de la conformidad ambiental a dos inmuebles destinados a alojamiento turístico, confirmando que estos usos son de tipo terciario.",
-        "La Asociación de Alojamientos Turísticos y Apartamentos ha anunciado que recurrirá la sentencia ante el Supremo."
-      ]
-    },
-    {
-      "concepto": "La agencia de viajes que dejó sin vacaciones a decenas de mayores suma ya más de 120 afectados",
-      "piezas": 2,
+      "concepto": "Fallece Marta, la motorista herida grave en la carretera de Vecinos",
+      "piezas": 3,
       "seccion_principal": "sucesos",
-      "desde": "2026-09-23",
-      "hasta": "2026-09-25",
+      "desde": "2026-09-26",
+      "hasta": "2026-09-26",
       "ejemplos_redactados": [
-        "Los 74 socios de una asociación de mayores se quedaron con las maletas hechas tras la cancelación de su viaje a Benidorm, y la agencia suma ya otros 48 afectados más, entre ellos un grupo de la asociación San Isidro al que se le notificó la cancelación de unas vacaciones ya abonadas."
+        "La motorista que resultó herida grave en un accidente en la carretera de Vecinos ha fallecido; Aldehuela de la Bóveda, su localidad, llora su muerte."
       ]
     },
     {
-      "concepto": "Mañana aciaga en las carreteras: cinco accidentes en menos de tres horas",
-      "piezas": 2,
-      "seccion_principal": "sucesos",
-      "desde": "2026-09-24",
-      "hasta": "2026-09-24",
-      "ejemplos_redactados": [
-        "Una joven motorista salió despedida por los aires en la Plaza de España tras ser arrollada por una conductora que dio positivo en drogas, mientras un operario de mantenimiento de carreteras fue atropellado y evacuado en helicóptero en la A-62 por un conductor que se dio a la fuga.",
-        "La misma mañana dejó además otros golpes con heridos en la avenida de Lasalle, Carbajosa de la Sagrada y Guijuelo."
-      ]
-    },
-    {
-      "concepto": "El derbi de Copa RFEF apunta a lleno absoluto en el Alfonso San Casto",
-      "piezas": 1,
+      "concepto": "El Salamanca UDS vuela: golea al Alcalá (3-0) y ya suena el ascenso",
+      "piezas": 4,
       "seccion_principal": "deportes",
-      "desde": "2026-09-24",
-      "hasta": "2026-09-24",
+      "desde": "2026-09-27",
+      "hasta": "2026-09-27",
       "ejemplos_redactados": [
-        "El derbi salmantino entre el Salamanca UDS y la UD Santa Marta, con un puesto en la Copa del Rey en juego, apunta a un lleno absoluto en el Alfonso San Casto."
+        "El Salamanca UDS ha goleado al Alcalá (3-0) en el Helmántico y defiende ya su fortaleza como candidato al ascenso, mientras Muniain resta importancia a los insultos recibidos de la afición rival: 'Ni me he enterado de que se estaban dirigiendo a mí'."
       ]
     },
     {
-      "concepto": "Dimisión en el Embalse de Béjar: el alcalde de Cristóbal asume la presidencia de forma temporal",
+      "concepto": "Unionistas sigue sin premio: derrota en Anduva ante el Mirandés",
+      "piezas": 2,
+      "seccion_principal": "deportes",
+      "desde": "2026-09-27",
+      "hasta": "2026-09-27",
+      "ejemplos_redactados": [
+        "Unionistas, negado de cara a portería, ha caído (1-0) en Anduva ante el Mirandés, en una nueva jornada sin premio que su entrenador Javi Medina considera injusta para el equipo y su afición."
+      ]
+    },
+    {
+      "concepto": "Atraco a mano armada en un bar de Salamanca, tres detenidos",
       "piezas": 1,
-      "seccion_principal": "provincia",
-      "desde": "2026-09-24",
-      "hasta": "2026-09-24",
+      "seccion_principal": "sucesos",
+      "desde": "2026-09-26",
+      "hasta": "2026-09-26",
       "ejemplos_redactados": [
-        "El alcalde de Cristóbal ha asumido de forma temporal la presidencia del Embalse de Béjar tras la dimisión de Carlos Parra."
+        "El presunto autor de un atraco con pistola y cuchillo en un bar de Salamanca amenazó al responsable del local y sustrajo unos 300 euros, además de décimos de lotería y dinero a un cliente; hay tres detenidos, dos de ellos en prisión."
       ]
     },
     {
-      "concepto": "La Universidad de Salamanca investirá a António Guterres como doctor honoris causa",
+      "concepto": "Cumbre dominica internacional en San Esteban por el V Centenario de la Escuela de Salamanca",
       "piezas": 1,
       "seccion_principal": "salamanca",
-      "desde": "2026-09-23",
-      "hasta": "2026-09-23",
+      "desde": "2026-09-28",
+      "hasta": "2026-09-28",
       "ejemplos_redactados": [
-        "La Universidad de Salamanca investirá al secretario general de la ONU, António Guterres, como doctor honoris causa el próximo 6 de noviembre."
+        "Expertos dominicos de todo el mundo se reúnen en San Esteban para analizar el papel del movimiento revolucionario surgido en el monasterio que dio lugar a la Escuela de Salamanca."
       ]
     },
     {
-      "concepto": "Un nuevo virus del vacuno preocupa en Salamanca",
+      "concepto": "¿Apertura comercial en domingos y festivos de 2027?",
       "piezas": 1,
-      "seccion_principal": "campo",
-      "desde": "2026-09-23",
-      "hasta": "2026-09-23",
+      "seccion_principal": "encuestas",
+      "desde": "2026-09-26",
+      "hasta": "2026-09-26",
       "ejemplos_redactados": [
-        "El Ministerio de Agricultura ha confirmado la presencia del virus Shamonda tipo 1 en siete explotaciones de bovino de Córdoba y Toledo, y analiza sospechas clínicas en otras zonas, entre ellas Salamanca."
+        "El comercio ha propuesto diez fechas para abrir el año que viene, entre ellas el Jueves Santo y el Día de la Constitución."
       ]
     }
   ],
-  "resumen_borrador": "Se han publicado 135 noticias entre el 2026-09-23 y el 2026-09-25. La actividad se ha concentrado sobre todo en provincia (42 piezas), salamanca (41 piezas), deportes (20 piezas).\n\nLos conceptos con más piezas relacionadas son: Catedral, pisos turísticos, Golondrina, accidentes. Revisa 'evidencia' de cada concepto para redactar el resumen final.",
-  "resumen": "Un hallazgo arqueológico bajo la Catedral ha sacado a la luz piezas romanas de bronce, una necrópolis de la Alta Edad Media y los cimientos de la desaparecida sacristía de la capilla de Talavera, permitiendo además descartar que el templo se levantara sobre una mezquita preexistente. En el terreno legal, el TSJCyL ha avalado las restricciones del Ayuntamiento a los pisos turísticos, aunque la Asociación de Alojamientos Turísticos ya ha anunciado que recurrirá ante el Supremo.\n\nEl fútbol salmantino vive su gran cita: el derbi de Copa RFEF entre el Salamanca UDS y la UD Santa Marta, con un puesto en la Copa del Rey en juego, apunta a un lleno absoluto en el Alfonso San Casto. En el ámbito institucional, el alcalde de Cristóbal ha asumido de forma temporal la presidencia del Embalse de Béjar tras la dimisión de Carlos Parra, y la Universidad de Salamanca investirá al secretario general de la ONU, António Guterres, como doctor honoris causa el 6 de noviembre.\n\nLa provincia ha vivido además una mañana aciaga en las carreteras, con cinco accidentes en menos de tres horas —entre ellos un atropello con fuga y evacuación en helicóptero en la A-62—, mientras crece el escándalo de la agencia de viajes que ha dejado sin vacaciones a más de 120 mayores. El campo salmantino, por su parte, sigue con preocupación la aparición de un nuevo virus del vacuno detectado ya en otras provincias."
+  "resumen_borrador": "Se han publicado 83 noticias entre el 2026-09-26 y el 2026-09-28. La actividad se ha concentrado sobre todo en salamanca (33 piezas), deportes (22 piezas), provincia (16 piezas).\n\nLos conceptos con más piezas relacionadas son: procesión, Vía Áurea, Salamanca UDS, Unionistas. Revisa 'evidencia' de cada concepto para redactar el resumen final.",
+  "resumen": "Salamanca ha vivido una cita cofrade para la historia: la 'Vía Áurea', una procesión inédita con 17 imágenes y un millar de participantes, ha llenado de gente las calles del centro sin incidentes, con elogios del propio pregonero de la Semana Santa de Sevilla y un empujón turístico que la hostelería local ya celebra como el anuncio de un septiembre de récord.\n\nEn el fútbol, contrastes de nuevo: el Salamanca UDS vuela tras golear al Alcalá (3-0) en el Helmántico y ya se habla de él como candidato al ascenso, mientras Unionistas sigue sin premio tras caer (1-0) en Anduva ante el Mirandés, en una actuación que su entrenador considera injusta para el resultado mostrado.\n\nLa provincia lamenta la muerte de Marta, la motorista que resultó herida grave en un accidente en la carretera de Vecinos, y ha registrado un atraco a mano armada en un bar de la capital que se ha saldado con tres detenidos. En clave académica, expertos dominicos de todo el mundo se han dado cita en San Esteban por el V Centenario de la Escuela de Salamanca, mientras el comercio local propone diez fechas para abrir en domingos y festivos de 2027."
 }

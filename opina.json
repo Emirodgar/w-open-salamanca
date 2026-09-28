@@ -50,17 +50,6 @@
       "fecha_creacion": "2026-09-18"
     },
     {
-      "id": "unionistas-primera-victoria-2026",
-      "pregunta": "Unionistas ha logrado su primera victoria de la temporada (3-1 ante la UD Ourense) tras el peor arranque de su historia. ¿Crees que este triunfo supondrá un cambio de tendencia?",
-      "opciones": [
-        "Sí, ya han dado el giro",
-        "No, ha sido algo puntual",
-        "Aún es pronto para saberlo"
-      ],
-      "basado_en": "actualidad.json",
-      "fecha_creacion": "2026-09-20"
-    },
-    {
       "id": "derbi-copa-rey-2026",
       "pregunta": "El Salamanca UDS y el Santa Marta se juegan en un derbi en el San Casto el pase a la Copa del Rey. ¿Qué equipo crees que se clasificará?",
       "opciones": [
@@ -82,6 +71,18 @@
       ],
       "basado_en": "actualidad.json",
       "fecha_creacion": "2026-09-25"
+    },
+    {
+      "id": "aperturas-comerciales-2027",
+      "pregunta": "El comercio salmantino ha propuesto diez fechas para abrir en domingos y festivos de 2027, entre ellas el Jueves Santo. ¿Apoya la apertura comercial en domingos y festivos?",
+      "opciones": [
+        "Sí, da comodidad a los consumidores",
+        "No, perjudica a los pequeños comercios y a sus trabajadores",
+        "Solo en fechas señaladas como estas",
+        "Es indiferente"
+      ],
+      "basado_en": "actualidad.json",
+      "fecha_creacion": "2026-09-28"
     }
   ]
 }

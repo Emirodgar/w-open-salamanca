@@ -1,6 +1,24 @@
 {
-  "generado_en": "2026-09-25T09:30:00+00:00",
+  "generado_en": "2026-09-28T09:15:00+00:00",
   "eventos": [
+    {
+      "titulo": "Tire Pro Fest",
+      "categoria": "Cultura",
+      "fecha_inicio": "2026-10-02",
+      "fecha_fin": "2026-10-04",
+      "lugar": "Recinto Ferial de la Diputación de Salamanca",
+      "descripcion": "Evento de motor, competición, tecnología y espectáculo promovido por Grupo Andrés.",
+      "fuente": "https://www.lagacetadesalamanca.es/salamanca/tire-pro-fest-regresa-salamanca-motor-competicion-20260923100016-nt.html"
+    },
+    {
+      "titulo": "Marcha solidaria contra el cáncer de Pizarral",
+      "categoria": "Sociedad",
+      "fecha_inicio": "2026-10-02",
+      "fecha_fin": null,
+      "lugar": "Pizarral",
+      "descripcion": "Primera edición de esta marcha, que coincide con el inicio de las fiestas de la Virgen del Rosario.",
+      "fuente": "https://www.lagacetadesalamanca.es/provincia/pizarral-mostrara-lado-solidario-marcha-cancer-20260926160609-nt.html"
+    },
     {
       "titulo": "Investidura de António Guterres como doctor honoris causa por la USAL",
       "categoria": "Educación",
@@ -9,15 +27,6 @@
       "lugar": "Universidad de Salamanca",
       "descripcion": "La Universidad de Salamanca investirá al secretario general de la ONU, António Guterres, como doctor honoris causa.",
       "fuente": "https://www.lagacetadesalamanca.es/salamanca/universidad-salamanca-investira-antonio-guterres-doctor-honoris-20260923140244-nt.html"
-    },
-    {
-      "titulo": "Final de la Copa de Castilla y León de baloncesto en Béjar",
-      "categoria": "Deportes",
-      "fecha_inicio": "2026-09-26",
-      "fecha_fin": null,
-      "lugar": "Pabellón Antonio Sánchez, Béjar",
-      "descripcion": "El Meins Avenida se enfrenta al Recoletas Zamora a partir de las 19:00 horas.",
-      "fuente": "https://www.lagacetadesalamanca.es/deportes/bejar-acoge-sabado-final-copa-castilla-leon-20260921222503-nt.html"
     },
     {
       "titulo": "Acto institucional de entrega de honores y distinciones de Béjar",
@@ -54,23 +63,6 @@
       "lugar": "Paradinas de San Juan",
       "descripcion": "Prueba popular que ya tiene fecha confirmada para su 14ª edición.",
       "fuente": "https://www.lagacetadesalamanca.es/deportes/carreras-populares/paradinas-fecha-carrera-roscon-20260922084240-nt.html"
-    },
-    {
-      "titulo": "'Draion', circo inclusivo en Salamanca",
-      "categoria": "Cultura",
-      "fecha_inicio": "2026-09-22",
-      "fecha_fin": "2026-09-26",
-      "descripcion": "El Ayuntamiento y Stellan Circus ofrecen dos funciones adaptadas para personas con discapacidad (22 y 26 de septiembre), con entradas de 2€ repartidas a través de asociaciones de la ciudad.",
-      "fuente": "https://www.lagacetadesalamanca.es/salamanca/draion-circo-inclusivo-llega-salamanca-20260911124318-nt.html"
-    },
-    {
-      "titulo": "Semana de concienciación sobre el Alzheimer de Guijuelo",
-      "categoria": "Sociedad",
-      "fecha_inicio": "2026-09-18",
-      "fecha_fin": "2026-09-25",
-      "lugar": "Guijuelo",
-      "descripcion": "Guijuelo dedica una semana a la concienciación sobre el alzheimer con distintas actividades.",
-      "fuente": "https://www.lagacetadesalamanca.es/provincia/guijuelo-celebrara-septiembre-semana-concienciacion-sobre-alzheimer-20260909185150-nt.html"
     },
     {
       "titulo": "III Feria Agroalimentaria de Cabrerizos",
