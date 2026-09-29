@@ -1,4 +1,4 @@
-name: Actualizar actualidad (skill vía Claude Code)
+name: Actualizar actualidad (Gemini, cada 48 h)
 
 on:
   schedule:
@@ -39,7 +39,9 @@ jobs:
           ahora=$(date -u +%s)
           if [ -z "$ultimo" ]; then ultimo=0; fi
           horas=$(( (ahora - ultimo) / 3600 ))
-          umbral=44
+          # Cada 48 h: el chequeo corre cada 3 h, así que con umbral 46 la
+          # ejecución cae entre las 46 y las 49 h del último commit.
+          umbral=46
           if [ "$ultimo" = "0" ] || [ "$horas" -ge "$umbral" ]; then
             echo "Han pasado ${horas}h desde el último commit de actualidad.json (umbral ${umbral}h): toca ejecutar."
             echo "ejecutar=true" >> "$GITHUB_OUTPUT"
@@ -48,26 +50,31 @@ jobs:
             echo "ejecutar=false" >> "$GITHUB_OUTPUT"
           fi
 
-      - name: Configurar Node
+      - name: Configurar Python
         if: steps.cuando.outputs.ejecutar == 'true' || github.event_name == 'workflow_dispatch'
-        uses: actions/setup-node@v4
+        uses: actions/setup-python@v5
         with:
-          node-version: '20'
+          python-version: '3.12'
 
-      - name: Instalar Claude Code
-        if: steps.cuando.outputs.ejecutar == 'true' || github.event_name == 'workflow_dispatch'
-        run: npm install -g @anthropic-ai/claude-code
-
-      - name: Configurar identidad de git para el commit automático
-        if: steps.cuando.outputs.ejecutar == 'true' || github.event_name == 'workflow_dispatch'
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-
-      - name: Ejecutar skill de actualidad vía Claude Code
+      - name: Generar actualidad, timeline, eventos y Opina con Gemini
+        id: build
         if: steps.cuando.outputs.ejecutar == 'true' || github.event_name == 'workflow_dispatch'
         env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          # Es un secret del repo; si se guardó como "variable" de Actions,
+          # se recoge igualmente con vars.
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY || vars.GEMINI_API_KEY }}
+        run: python3 scripts/actualidad/build.py
+
+      - name: Commit y push de lo que haya cambiado
+        if: steps.build.outcome == 'success'
         run: |
-          claude -p "Ejecuta la skill 'sitemap-mapa-calor-tematico' (ver .claude/skills/sitemap-mapa-calor-tematico/SKILL.md) con sus valores por defecto de este proyecto (La Gaceta de Salamanca, secciones excluidas nacional,opinion,tu-gaceta,gente-estilo,podcast): sigue los pasos 1 a 5 completos (análisis del sitemap, redacción del resumen, JSON mensual del timeline, eventos.json y preguntas de Opina), y termina con el paso 6, haciendo git add solo de los ficheros que hayas tocado, commit y push tú mismo sin pedir confirmación en el chat. Si en este entorno no tienes acceso a un navegador con JavaScript para revisar la programación de ciudaddecultura.org (paso 4.3), sáltate solo esa fuente concreta y dilo explícitamente en tu resumen final, sin fallar el resto del proceso por ello." \
-            --dangerously-skip-permissions
+          # Solo los ficheros que el script declara haber tocado (nunca add -A).
+          git add ${{ steps.build.outputs.ficheros }}
+          if git diff --cached --quiet; then
+            echo "Sin cambios."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git commit -m "Actualiza actualidad, timeline y Opina (${{ steps.build.outputs.periodo }})"
+          git push

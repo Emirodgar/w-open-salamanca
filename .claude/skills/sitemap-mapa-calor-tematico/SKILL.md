@@ -63,6 +63,29 @@ nuevo aparezca: Jekyll detecta los `.json` nuevos en `actualidad/` solo
 parámetro anti-caché (`?v=timestamp`, `cache: 'no-store'`) para no depender
 de la caché del navegador.
 
+## Ejecución automática en GitHub Actions (Gemini)
+
+Desde septiembre de 2026 la ejecución periódica **ya no la hace Claude Code**:
+el workflow [`.github/workflows/actualidad.yml`](../../../.github/workflows/actualidad.yml)
+lanza cada 48 h `scripts/actualidad/build.py`, que aplica estas mismas reglas
+(pasos 1 a 6) llamando a la API de Gemini con el secret `GEMINI_API_KEY`.
+Reparto de trabajo:
+
+- **Gemini** redacta: conceptos curados, resumen, hitos del mes, eventos con
+  fecha (leyendo el artículo real) y preguntas de Opina.
+- **El script (determinista)** valida y fusiona: heatmap acumulado, un solo
+  hito destacado por mes, categorías válidas, URLs de `fuente` solo si
+  vienen del sitemap, eventos pasados fuera, y archivado de Opina solo si el
+  Worker devuelve el recuento (si no, la pregunta se mantiene activa).
+- **Diferencias con la ejecución manual**: el script no consulta
+  `ciudaddecultura.org/es/programacion/` (necesita navegador con JavaScript) y
+  no cierra `closed:<id>` en Cloudflare KV (el log del job lo deja como paso
+  manual pendiente). Si cambias criterios editoriales aquí, replícalos en los
+  prompts de `build.py`; si quieres una ejecución manual con estas fuentes
+  extra, sigue usando esta skill desde Claude Code.
+- Modelo: `gemini-2.5-flash` por defecto; se cambia con la variable de entorno
+  `GEMINI_MODEL` en el workflow.
+
 ## Valores por defecto de este proyecto
 
 - **Medio a analizar:** La Gaceta de Salamanca — `--url-base
