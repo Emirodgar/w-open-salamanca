@@ -1,116 +1,229 @@
 {
   "url_base": "https://www.lagacetadesalamanca.es",
-  "generado_en": "2026-09-28T09:15:00+00:00",
+  "generado_en": "2026-09-29T17:09:20+00:00",
   "periodo_cubierto": {
     "desde": "2026-09-26",
-    "hasta": "2026-09-28"
+    "hasta": "2026-09-29"
   },
-  "total_urls_analizadas": 83,
+  "total_urls_analizadas": 192,
   "secciones_excluidas": [
+    "gente-estilo",
     "nacional",
     "opinion",
-    "tu-gaceta",
-    "gente-estilo",
-    "podcast"
+    "podcast",
+    "tu-gaceta"
   ],
-  "nota_cobertura": "El sitemap consultado esta vez solo contenía URLs de los últimos 3 días (26 a 28 de septiembre), un periodo más corto que una semana completa: es un sitemap 'rolling' y en este momento cubre menos días de los habituales. El análisis y el resumen siguientes reflejan únicamente ese periodo real, no una semana entera.",
+  "nota_cobertura": "El análisis cubre únicamente las URLs presentes en el sitemap en el momento de la consulta (excluyendo, si se indicó, las secciones filtradas). Si el sitemap es incremental o 'rolling', el periodo real puede ser más corto que el solicitado — revisa 'periodo_cubierto' para confirmarlo.",
   "por_seccion": [
-    ["salamanca", 33],
-    ["deportes", 22],
-    ["provincia", 16],
-    ["sucesos", 7],
-    ["encuestas", 2],
-    ["campo", 1],
-    ["toros", 1],
-    ["cine-y-series", 1]
+    [
+      "provincia",
+      58
+    ],
+    [
+      "salamanca",
+      56
+    ],
+    [
+      "deportes",
+      45
+    ],
+    [
+      "sucesos",
+      18
+    ],
+    [
+      "campo",
+      8
+    ],
+    [
+      "encuestas",
+      3
+    ],
+    [
+      "cine-y-series",
+      2
+    ],
+    [
+      "fundacion-gaceta",
+      1
+    ],
+    [
+      "toros",
+      1
+    ]
   ],
   "por_subseccion": [
-    ["deportes/futbol-local", 14],
-    ["deportes/baloncesto-local", 2],
-    ["deportes/deporte-base", 1]
+    [
+      "deportes/futbol-local",
+      25
+    ],
+    [
+      "deportes/baloncesto-local",
+      6
+    ],
+    [
+      "deportes/deporte-base",
+      5
+    ]
   ],
   "por_tipo_contenido": [
-    ["noticia", 80],
-    ["directo / en vivo", 3]
+    [
+      "noticia",
+      146
+    ],
+    [
+      "galería",
+      43
+    ],
+    [
+      "directo / en vivo",
+      3
+    ]
   ],
   "heatmap_calendario": [
-    {"fecha": "2026-09-26", "total": 24, "salamanca": 7, "deportes": 9, "provincia": 2, "sucesos": 3, "encuestas": 1, "campo": 0, "toros": 1, "cine-y-series": 1},
-    {"fecha": "2026-09-27", "total": 42, "salamanca": 16, "deportes": 13, "provincia": 9, "sucesos": 2, "encuestas": 1, "campo": 1, "toros": 0, "cine-y-series": 0},
-    {"fecha": "2026-09-28", "total": 17, "salamanca": 10, "deportes": 0, "provincia": 5, "sucesos": 2, "encuestas": 0, "campo": 0, "toros": 0, "cine-y-series": 0}
+    {
+      "fecha": "2026-09-26",
+      "total": 32,
+      "provincia": 10,
+      "salamanca": 6,
+      "deportes": 9,
+      "sucesos": 4,
+      "campo": 0,
+      "encuestas": 1,
+      "cine-y-series": 1,
+      "fundacion-gaceta": 0,
+      "toros": 1
+    },
+    {
+      "fecha": "2026-09-27",
+      "total": 52,
+      "provincia": 19,
+      "salamanca": 13,
+      "deportes": 17,
+      "sucesos": 1,
+      "campo": 1,
+      "encuestas": 1,
+      "cine-y-series": 0,
+      "fundacion-gaceta": 0,
+      "toros": 0
+    },
+    {
+      "fecha": "2026-09-28",
+      "total": 70,
+      "provincia": 23,
+      "salamanca": 22,
+      "deportes": 13,
+      "sucesos": 7,
+      "campo": 2,
+      "encuestas": 1,
+      "cine-y-series": 1,
+      "fundacion-gaceta": 1,
+      "toros": 0
+    },
+    {
+      "fecha": "2026-09-29",
+      "total": 38,
+      "provincia": 6,
+      "salamanca": 15,
+      "deportes": 6,
+      "sucesos": 6,
+      "campo": 5,
+      "encuestas": 0,
+      "cine-y-series": 0,
+      "fundacion-gaceta": 0,
+      "toros": 0
+    }
   ],
   "conceptos_destacados": [
     {
-      "concepto": "Salamanca vive una procesión cofrade histórica: la 'Vía Áurea'",
-      "piezas": 5,
+      "concepto": "San Miguel",
+      "piezas": 10,
+      "seccion_principal": "provincia",
+      "desde": "2026-09-26",
+      "hasta": "2026-09-29",
+      "ejemplos_redactados": [
+        "Las festividades en honor a San Miguel se celebraron en diversos municipios de la provincia, como Fuenterroble de Salvatierra y Valero.",
+        "Ledrada estrenó una nueva imagen del Arcángel San Miguel, mientras Tarazona iniciaba sus fiestas patronales."
+      ]
+    },
+    {
+      "concepto": "Béjar",
+      "piezas": 7,
+      "seccion_principal": "provincia",
+      "desde": "2026-09-26",
+      "hasta": "2026-09-28",
+      "ejemplos_redactados": [
+        "Béjar acogió jornadas sobre la fiebre hemorrágica Crimea-Congo y aprobó la retirada de una medalla de oro.",
+        "La localidad también recordó a los bejaranos fallecidos en la Revolución Gloriosa."
+      ]
+    },
+    {
+      "concepto": "Unionistas",
+      "piezas": 7,
+      "seccion_principal": "deportes",
+      "desde": "2026-09-26",
+      "hasta": "2026-09-28",
+      "ejemplos_redactados": [
+        "Unionistas de Salamanca fue protagonista en la sección de deportes, con noticias sobre su desempeño en el campo y el análisis de sus partidos.",
+        "El equipo se enfrentó al Mirandés y se mostró negado de cara a portería."
+      ]
+    },
+    {
+      "concepto": "Procesión",
+      "piezas": 6,
       "seccion_principal": "salamanca",
       "desde": "2026-09-26",
       "hasta": "2026-09-27",
       "ejemplos_redactados": [
-        "Miles de personas han llenado las calles del centro en una procesión inédita, la 'Vía Áurea', que reunió 17 imágenes y un millar de participantes en un día para el recuerdo, sin incidentes.",
-        "El propio pregonero de la Semana Santa de Sevilla se ha desplazado a verla, calificándola de inolvidable, y la hostelería local ya vislumbra un septiembre de récord gracias al tirón turístico del evento."
+        "La procesión de la Virgen de la Merced cerró el fin de semana cofrade, con imágenes destacadas de la Vía Áurea.",
+        "Un pregonero de la Semana Santa de Sevilla se mostró impresionado por la gran procesión salmantina."
       ]
     },
     {
-      "concepto": "Fallece Marta, la motorista herida grave en la carretera de Vecinos",
-      "piezas": 3,
-      "seccion_principal": "sucesos",
-      "desde": "2026-09-26",
-      "hasta": "2026-09-26",
-      "ejemplos_redactados": [
-        "La motorista que resultó herida grave en un accidente en la carretera de Vecinos ha fallecido; Aldehuela de la Bóveda, su localidad, llora su muerte."
-      ]
-    },
-    {
-      "concepto": "El Salamanca UDS vuela: golea al Alcalá (3-0) y ya suena el ascenso",
+      "concepto": "Helmántico",
       "piezas": 4,
       "seccion_principal": "deportes",
       "desde": "2026-09-27",
-      "hasta": "2026-09-27",
+      "hasta": "2026-09-28",
       "ejemplos_redactados": [
-        "El Salamanca UDS ha goleado al Alcalá (3-0) en el Helmántico y defiende ya su fortaleza como candidato al ascenso, mientras Muniain resta importancia a los insultos recibidos de la afición rival: 'Ni me he enterado de que se estaban dirigiendo a mí'."
+        "El estadio Helmántico fue escenario de la victoria del Salamanca UDS sobre el Alcalá, con el equipo volando en el campo.",
+        "Se han anunciado los horarios de los próximos partidos del Salamanca UDS en el Helmántico."
       ]
     },
     {
-      "concepto": "Unionistas sigue sin premio: derrota en Anduva ante el Mirandés",
-      "piezas": 2,
-      "seccion_principal": "deportes",
-      "desde": "2026-09-27",
-      "hasta": "2026-09-27",
-      "ejemplos_redactados": [
-        "Unionistas, negado de cara a portería, ha caído (1-0) en Anduva ante el Mirandés, en una nueva jornada sin premio que su entrenador Javi Medina considera injusta para el equipo y su afición."
-      ]
-    },
-    {
-      "concepto": "Atraco a mano armada en un bar de Salamanca, tres detenidos",
-      "piezas": 1,
-      "seccion_principal": "sucesos",
-      "desde": "2026-09-26",
-      "hasta": "2026-09-26",
-      "ejemplos_redactados": [
-        "El presunto autor de un atraco con pistola y cuchillo en un bar de Salamanca amenazó al responsable del local y sustrajo unos 300 euros, además de décimos de lotería y dinero a un cliente; hay tres detenidos, dos de ellos en prisión."
-      ]
-    },
-    {
-      "concepto": "Cumbre dominica internacional en San Esteban por el V Centenario de la Escuela de Salamanca",
-      "piezas": 1,
+      "concepto": "Universidad",
+      "piezas": 4,
       "seccion_principal": "salamanca",
       "desde": "2026-09-28",
       "hasta": "2026-09-28",
       "ejemplos_redactados": [
-        "Expertos dominicos de todo el mundo se reúnen en San Esteban para analizar el papel del movimiento revolucionario surgido en el monasterio que dio lugar a la Escuela de Salamanca."
+        "La Universidad Pontificia inició su cuarta temporada con una victoria, y la Facultad de Informática obtuvo una certificación.",
+        "Se ha producido un nuevo hallazgo de una carta de Miguel de Unamuno."
       ]
     },
     {
-      "concepto": "¿Apertura comercial en domingos y festivos de 2027?",
-      "piezas": 1,
-      "seccion_principal": "encuestas",
+      "concepto": "Ciudad Rodrigo",
+      "piezas": 3,
+      "seccion_principal": "provincia",
       "desde": "2026-09-26",
-      "hasta": "2026-09-26",
+      "hasta": "2026-09-28",
       "ejemplos_redactados": [
-        "El comercio ha propuesto diez fechas para abrir el año que viene, entre ellas el Jueves Santo y el Día de la Constitución."
+        "Ciudad Rodrigo solicitó mejoras en infraestructuras y atención sanitaria, y selló una integración con CEOE-Cepyme y Afecir.",
+        "La ciudad se unió a Portugal en una ruta senderista."
+      ]
+    },
+    {
+      "concepto": "Alba de Tormes",
+      "piezas": 3,
+      "seccion_principal": "provincia",
+      "desde": "2026-09-27",
+      "hasta": "2026-09-28",
+      "ejemplos_redactados": [
+        "Fernando Fitz-James Stuart pregonará las fiestas de Alba de Tormes.",
+        "La localidad expuso iniciativas en Naturcyl y una víctima recibió apoyo especializado."
       ]
     }
   ],
-  "resumen_borrador": "Se han publicado 83 noticias entre el 2026-09-26 y el 2026-09-28. La actividad se ha concentrado sobre todo en salamanca (33 piezas), deportes (22 piezas), provincia (16 piezas).\n\nLos conceptos con más piezas relacionadas son: procesión, Vía Áurea, Salamanca UDS, Unionistas. Revisa 'evidencia' de cada concepto para redactar el resumen final.",
-  "resumen": "Salamanca ha vivido una cita cofrade para la historia: la 'Vía Áurea', una procesión inédita con 17 imágenes y un millar de participantes, ha llenado de gente las calles del centro sin incidentes, con elogios del propio pregonero de la Semana Santa de Sevilla y un empujón turístico que la hostelería local ya celebra como el anuncio de un septiembre de récord.\n\nEn el fútbol, contrastes de nuevo: el Salamanca UDS vuela tras golear al Alcalá (3-0) en el Helmántico y ya se habla de él como candidato al ascenso, mientras Unionistas sigue sin premio tras caer (1-0) en Anduva ante el Mirandés, en una actuación que su entrenador considera injusta para el resultado mostrado.\n\nLa provincia lamenta la muerte de Marta, la motorista que resultó herida grave en un accidente en la carretera de Vecinos, y ha registrado un atraco a mano armada en un bar de la capital que se ha saldado con tres detenidos. En clave académica, expertos dominicos de todo el mundo se han dado cita en San Esteban por el V Centenario de la Escuela de Salamanca, mientras el comercio local propone diez fechas para abrir en domingos y festivos de 2027."
+  "resumen_borrador": "Se han publicado 192 noticias entre el 2026-09-26 y el 2026-09-29. La actividad se ha concentrado sobre todo en provincia (58 piezas), salamanca (56 piezas), deportes (45 piezas).\n\nLos conceptos con más piezas relacionadas son: San · Miguel; Bejar; Unionistas; Seis. Revisa 'evidencia' de cada concepto para redactar el resumen final.",
+  "resumen": "El final del mes de septiembre en Salamanca ha estado marcado por la continuidad de las festividades patronales en la provincia, con especial atención a las celebraciones de San Miguel en municipios como Fuenterroble de Salvatierra, Valero y Tarazona, donde se estrenaron las fiestas con actos tradicionales. En Béjar, se desarrollaron jornadas sobre la fiebre hemorrágica Crimea-Congo y se recordó la Revolución Gloriosa. Ciudad Rodrigo, por su parte, solicitó mejoras sanitarias y promovió una ruta senderista con Portugal, mientras que Alba de Tormes anunció a su pregonero para las fiestas.\n\nEn el ámbito deportivo, Unionistas de Salamanca y Salamanca UDS fueron protagonistas. Unionistas disputó encuentros donde se analizó su rendimiento, mientras que el Salamanca UDS logró una victoria en el Helmántico. La Universidad Pontificia de Salamanca inició su temporada con éxito y la Facultad de Informática obtuvo una certificación. La ciudad también vivió el impacto de la 'Vía Áurea', una procesión cofrade que desbordó el centro, y se conoció el hallazgo de una carta de Miguel de Unamuno.\n\nLa crónica de sucesos incluyó un alunizaje en un bar de Salamanca para robar una máquina, condenas por coacciones sexuales y apuñalamientos, así como varios accidentes de tráfico, entre ellos el fallecimiento de una motorista. También se registró un atraco con pistola y cuchillo en un bar de la capital. Estos eventos configuran un balance diverso para los últimos días de septiembre en la provincia salmantina."
 }

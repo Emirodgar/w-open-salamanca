@@ -50,17 +50,6 @@
       "fecha_creacion": "2026-09-18"
     },
     {
-      "id": "derbi-copa-rey-2026",
-      "pregunta": "El Salamanca UDS y el Santa Marta se juegan en un derbi en el San Casto el pase a la Copa del Rey. ¿Qué equipo crees que se clasificará?",
-      "opciones": [
-        "El Salamanca UDS",
-        "El Santa Marta",
-        "No lo sé, será muy igualado"
-      ],
-      "basado_en": "actualidad.json",
-      "fecha_creacion": "2026-09-22"
-    },
-    {
       "id": "pisos-turisticos-2026",
       "pregunta": "El TSJCyL ha avalado las restricciones del Ayuntamiento a los pisos turísticos en Salamanca. ¿Está de acuerdo con limitar este tipo de alojamiento?",
       "opciones": [
@@ -83,6 +72,30 @@
       ],
       "basado_en": "actualidad.json",
       "fecha_creacion": "2026-09-28"
+    },
+    {
+      "id": "congreso-vitoria-2026",
+      "pregunta": "El Congreso Internacional Francisco de Vitoria y la Escuela de Salamanca se celebra en octubre. ¿Cree que este tipo de eventos contribuye significativamente a la proyección cultural de Salamanca?",
+      "opciones": [
+        "Sí, refuerza su imagen académica",
+        "No, su impacto es limitado",
+        "Depende de la difusión que se le dé",
+        "No tengo suficiente información"
+      ],
+      "basado_en": "eventos.json",
+      "fecha_creacion": "2026-09-29"
+    },
+    {
+      "id": "tire-pro-fest-2026",
+      "pregunta": "Salamanca acogerá el 'Tire Pro Fest', un festival que combina motor, tecnología y ocio. ¿Considera que este evento es una buena iniciativa para atraer visitantes y dinamizar la ciudad?",
+      "opciones": [
+        "Sí, diversifica la oferta de ocio",
+        "No, no encaja con la imagen de la ciudad",
+        "Es una buena iniciativa, pero su impacto es limitado",
+        "No tengo suficiente información"
+      ],
+      "basado_en": "eventos.json",
+      "fecha_creacion": "2026-09-29"
     }
   ]
 }
