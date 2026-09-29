@@ -1,0 +1,57 @@
+<!-- Mapa compartido de parkings subterráneos y disuasorios (usado en /parkings y /aparcamientos-estacionamiento-ora) -->
+<div id="mapaParkings" style="width: 100%; height: 500px; border-radius: 8px; margin-bottom: 10px;"></div>
+<p style="font-size: 0.9em; margin-bottom: 25px;">
+  <span style="color:#1E56A0;">&#9679;</span> Subterráneo de rotación &nbsp;
+  <span style="color:#2C5F2D;">&#9679;</span> Disuasorio gratuito conectado &nbsp;
+  <span style="color:#E63946;">&#9679;</span> Disuasorio gratuito fuera de la red (La Aldehuela). El tamaño del círculo es proporcional a las plazas.
+</p>
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+  (function () {
+    const mapPark = L.map('mapaParkings').setView([40.9650, -5.6630], 14);
+
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/light_all/{z}/{x}/{y}{r}.png?key=cb1_2izw_1_55d93b51ded1dcecfa044181', {
+      attribution: '&copy; OpenStreetMap &copy; CARTO',
+      subdomains: 'abcd',
+      maxZoom: 19
+    }).addTo(mapPark);
+
+    // Subterráneos (Ayuntamiento de Salamanca) y red oficial de 10 disuasorios conectados
+    // (1.612 plazas, verificados por prensa local). Sin "plazas" = capacidad no verificada.
+    const listaParkings = [
+      { name: 'Avenida de Portugal', lat: 40.9600, lng: -5.6690, tipo: 'Subterráneo', plazas: 391 },
+      { name: 'Santísima Trinidad', lat: 40.9705, lng: -5.6690, tipo: 'Subterráneo', plazas: 360 },
+      { name: 'Reyes de España', lat: 40.9585, lng: -5.6655, tipo: 'Subterráneo', plazas: 334 },
+      { name: 'El Campillo', lat: 40.9660, lng: -5.6660, tipo: 'Subterráneo', plazas: 258 },
+      { name: 'Santa Eulalia', lat: 40.9655, lng: -5.6605, tipo: 'Subterráneo', plazas: 239 },
+      { name: 'Le Mans', lat: 40.9664, lng: -5.6642, tipo: 'Subterráneo', address: 'Plaza de los Bandos, 5' },
+      { name: 'Colón - Plaza Mayor', lat: 40.9635, lng: -5.6625, tipo: 'Subterráneo', address: 'Calle Juan de la Fuente, 14' },
+      { name: 'Hospital Universitario', lat: 40.9592, lng: -5.6748, tipo: 'Subterráneo', address: 'Paseo de la Transición Española' },
+      { name: 'La Aldehuela', lat: 40.9560, lng: -5.6480, tipo: 'Disuasorio (fuera de red)', plazas: 1180 },
+      { name: 'Calle La Radio', lat: 40.9550, lng: -5.6560, tipo: 'Disuasorio', plazas: 302 },
+      { name: 'La Chinchibarra', lat: 40.9798, lng: -5.6550, tipo: 'Disuasorio', plazas: 226 },
+      { name: 'Mercasalamanca', lat: 40.9440, lng: -5.6870, tipo: 'Disuasorio', plazas: 200 },
+      { name: 'Glorieta de la Charrería', lat: 40.9520, lng: -5.6690, tipo: 'Disuasorio', plazas: 195 },
+      { name: 'Avenida de San Agustín', lat: 40.9770, lng: -5.6600, tipo: 'Disuasorio', plazas: 176 },
+      { name: 'José Lamano Beneite', lat: 40.9700, lng: -5.6420, tipo: 'Disuasorio', plazas: 139 },
+      { name: 'Las Pajas', lat: 40.9600, lng: -5.6800, tipo: 'Disuasorio', plazas: 101 },
+      { name: 'Maestro Luna', lat: 40.9600, lng: -5.6850, tipo: 'Disuasorio', plazas: 100 },
+      { name: 'Joaquín Rodrigo', lat: 40.9670, lng: -5.6390, tipo: 'Disuasorio', plazas: 87 },
+      { name: 'Las Bernardas', lat: 40.9540, lng: -5.6440, tipo: 'Disuasorio', plazas: 86 }
+    ];
+
+    listaParkings.forEach(pk => {
+      const color = pk.tipo === 'Subterráneo' ? '#1E56A0' : (pk.tipo.startsWith('Disuasorio (') ? '#E63946' : '#2C5F2D');
+      const detalle = (pk.plazas ? `<br>Capacidad: ${pk.plazas} plazas` : '') + (pk.address ? `<br>${pk.address}` : '');
+      L.circleMarker([pk.lat, pk.lng], {
+        radius: 6 + Math.sqrt(pk.plazas || 250) / 6,
+        fillColor: color,
+        color: '#ffffff',
+        weight: 2,
+        fillOpacity: 0.85
+      }).bindPopup(`<b>${pk.name}</b><br>Tipo: ${pk.tipo}${detalle}`).addTo(mapPark);
+    });
+  })();
+</script>

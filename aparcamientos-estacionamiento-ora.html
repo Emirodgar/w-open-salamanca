@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Estacionamiento regulado ORA y parkings públicos
-description: Capacidad real de los parkings subterráneos, la zona ORA y los 10 aparcamientos disuasorios conectados de Salamanca
-date: 30-08-2026
+description: Calles de la zona azul y verde de la ORA, qué significa la nueva doble línea (Zona 0) y capacidad de los parkings subterráneos y disuasorios de Salamanca
+date: 29-09-2026
 folder: Movilidad
 permalink: aparcamientos-estacionamiento-ora
 ---
@@ -17,10 +17,8 @@ permalink: aparcamientos-estacionamiento-ora
 			
 			<div id="section-content">
 						
-  <!-- Mapa de parkings subterráneos y disuasorios Leaflet -->
-  <div id="mapaParkings" style="width: 100%; height: 500px; border-radius: 8px; margin-bottom: 25px;"></div>
+  {% include mapa-parkings.html %}
 
- 
 			<h2>Análisis de la oferta de aparcamiento y rotación de vehículos</h2>
 			
 				<p>
@@ -33,6 +31,54 @@ La gestión del estacionamiento en Salamanca articula una <b>estrategia de disua
 <li><b>La Aldehuela, el gigante infrautilizado</b>: con 1.180 plazas gratuitas, es uno de los aparcamientos más grandes de la ciudad, pero varios medios locales han señalado que suele registrar una ocupación muy baja pese a su conexión en autobús con el centro.</li>
 <li><b>Ampliación en Garrido y Chinchibarra</b>: dos nuevos aparcamientos disuasorios en construcción sobre los antiguos terrenos de Mercasalamanca sumarán 1.112 plazas adicionales (226 solo en Chinchibarra), elevando el total de plazas gratuitas en superficie de la ciudad de 4.670 a 5.782.</li>
 </ul>
+
+  <h2>Qué calles son zona azul, zona verde y Zona 0</h2>
+  <p>Desde el <b>15 de julio de 2026</b> funciona la nueva zona ORA, con un contrato nuevo de ocho años: unas <b>627 plazas nuevas en unas 35 calles</b> (de calle blanca gratuita a azul o verde), hasta las 3.220 plazas reguladas, y por primera vez todo el casco histórico es de pago. Por tipo de zona:</p>
+
+  <h3>Zona azul (rotación alta, máximo 2 horas)</h3>
+  <p>Comprende las calles interiores al primer anillo delimitado por la avenida de Mirat y los paseos de Canalejas, Rector Esperabé, San Gregorio, Desengaño, San Vicente y Carmelitas. Está pensada para gestiones cortas y comercio. Entre las incorporaciones más recientes figuran el lateral derecho (sentido subida) del paseo de San Vicente, las plazas del Botánico y de la Cruz Verdadera, la Vaguada de la Palma, la Ronda del Corpus y las calles Abajo y Arriba.</p>
+
+  <h3>Zona verde (rotación baja, máximo 5 horas)</h3>
+  <p>Es el segundo anillo, donde los residentes con tarjeta pueden aparcar sin límite. La ampliación de 2026 la ha extendido a Fontana, Santo Tomás, La Alamedilla y Tenerías con estas calles:</p>
+  <ul>
+    <li><b>Fontana y Santo Tomás</b>: La Marina, Álava, Escuelas, Ceriñola, Ayacucho, Calatañazor, plaza de la Fontana.</li>
+    <li><b>Alamedilla y entorno de Canalejas</b>: paseo de Canalejas, Imperial, San Quintín, parque de La Alamedilla, San Francisco Javier, Domingo de Soto, Espronceda, Padilla.</li>
+    <li><b>Río y Tenerías</b>: San Gregorio, Santa Brígida, paseo del Rector Esperabé (números pares), avenida de los Reyes de España, Cordel de Merinas, Huertas de la Trinidad, De las Huertas, Jardines, Bailén y Ballesta.</li>
+  </ul>
+
+  <h3>Zona libre (línea blanca)</h3>
+  <p>No hay un listado oficial completo de las calles sin regular. Los aparcamientos gratuitos de referencia son <a href="/parkings">los disuasorios de la red municipal</a> y La Aldehuela. La prensa local ha señalado que, tras la ampliación, los conductores se han desplazado a calles libres cercanas como Gómez Ulla o el Paseo del Rollo.</p>
+
+  <h2>La nueva doble línea de la ORA (Zona 0)</h2>
+  <p>La gran novedad visible es la <b>doble línea</b>, azul o verde según la zona, que marca las llamadas <b>Zonas 0</b>: plazas exclusivas de rotación donde <b>la tarjeta de residente no vale</b>. Un residente puede aparcar, pero tiene que sacar tique y pagar la tarifa normal como cualquier otro conductor.</p>
+  <ul>
+    <li><b>Línea simple (azul o verde)</b>: el residente de esa zona aparca con su tarjeta; el resto paga la tarifa (en torno a 2 € por 2 horas en la azul y 4,50 € por 5 horas en la verde).</li>
+    <li><b>Línea doble (Zona 0)</b>: todos pagan, residentes incluidos. El objetivo es garantizar rotación en las calles más comerciales y separar con claridad lo que es prioritario para residentes.</li>
+    <li><b>Qué ha cambiado realmente</b>: según el concejal de Tráfico, Ángel Molina, la norma en sí no cambia respecto a lo que había; la doble línea solo hace visible sobre el asfalto lo que antes había que consultar en listados.</li>
+  </ul>
+
+  <h3>Calles con doble línea</h3>
+  <table border="1" cellpadding="5" cellspacing="0">
+    <thead><tr><th>Zona</th><th>Calles</th></tr></thead>
+    <tbody>
+      <tr><td>Azul</td><td>Cuesta de Sancti Spíritus, Gran Vía, Íscar Peyra, Las Isabeles, Los Bandos, Rosario, Santa Teresa</td></tr>
+      <tr><td>Verde</td><td>Doctor Torres Villarroel, plaza de Gabriel y Galán, García de Quiñones, María Auxiliadora, Padre Cámara, Primero de Mayo, Valencia, avenida de Italia, Villamayor, Van Dyck, Víctimas del Terrorismo</td></tr>
+    </tbody>
+  </table>
+  <p>Listado publicado por la prensa local en el estreno del sistema; el Ayuntamiento puede ampliarlo.</p>
+
+  <h3>Otras novedades de la nueva ORA</h3>
+  <ul>
+    <li><b>Parquímetros nuevos</b>: pago con tarjeta sin contacto o efectivo y con introducción de la matrícula, lo que impide pasar el tique de un coche a otro. También hay aplicación móvil sin recargo para el usuario.</li>
+    <li><b>Carga y descarga</b>: las plazas, en azul o verde según su ubicación, son gratuitas de 7:00 a 11:00 y de 16:00 a 18:00; fuera de ese horario hay que sacar tique.</li>
+    <li><b>Coches eléctricos</b>: puntos de recarga regulados, como Paseo de San Vicente y Rector Esperabé, con tarifa bonificada y límite de rotación.</li>
+    <li><b>Tarjeta de residente</b>: 19,20 € por 75 días o 75 € al año; las tarjetas vigentes siguen valiendo salvo en las Zonas 0.</li>
+  </ul>
+
+  <h3>Primer balance (septiembre de 2026)</h3>
+  <p>La prensa local recoge menos coches en doble fila en la avenida de los Comuneros y en los colegios de Canalejas, y comerciantes que ya pueden aparcar cerca. Como contrapartida, se han emitido unas 260 tarjetas nuevas de residente para unas 600 plazas nuevas, los parquímetros requieren muchos pasos y parte de los coches se ha desplazado a calles libres colindantes.</p>
+
+  <p style="font-size:0.9em;">Fuentes: Ayuntamiento de Salamanca, <a href="https://www.lagacetadesalamanca.es/salamanca/ciudad-estrena-doble-linea-zona-rotacion-acceso-20260613065600-nt.html" rel="nofollow noopener">La Gaceta de Salamanca</a>, <a href="https://www.salamancahoy.es/salamanca/ciudad/dudas-nueva-ora-salamanca-doble-linea-carga-20260713192225-nt.html" rel="nofollow noopener">Salamancahoy (dudas de la nueva ORA)</a>, <a href="https://www.salamancahoy.es/salamanca/ciudad/cara-cruz-nueva-zona-verde-salamanca-resuelto-20260918100012-nt.html" rel="nofollow noopener">Salamancahoy (balance de la zona verde)</a>, <a href="https://www.tribunasalamanca.com/noticias/449385/la-nueva-ora-de-salamanca-ya-tiene-fecha-y-estas-son-las-calles-donde-cambiara-el-aparcamiento" rel="nofollow noopener">Tribuna de Salamanca</a> y <a href="https://www.cope.es/emisoras/castilla-y-leon/salamanca-provincia/salamanca/noticias/salamanca-adapta-nueva-zona-ora-todas-claves-aparcar-multas-20260721_3408073.html" rel="nofollow noopener">COPE</a>.</p>
 
   <h2>Distribución de plazas de aparcamiento por tipo de regulación</h2>
   <canvas id="oraPlazasChart" width="800" height="400"></canvas>
@@ -80,50 +126,8 @@ La gestión del estacionamiento en Salamanca articula una <b>estrategia de disua
         </div>
     </section>
 
-	<!-- Hojas de estilo y scripts de Leaflet -->
-	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 	<script>
-    // 1. Inicializar mapa de parkings y zonas ORA
-    const mapPark = L.map('mapaParkings').setView([40.9650, -5.6630], 14);
-
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/light_all/{z}/{x}/{y}{r}.png?key=cb1_2izw_1_55d93b51ded1dcecfa044181', {
-      attribution: '&copy; OpenStreetMap &copy; CARTO',
-      maxZoom: 19
-    }).addTo(mapPark);
-
-    // Parkings subterráneos (datos del Ayuntamiento de Salamanca) y red oficial de
-    // disuasorios conectados (10 aparcamientos, 1.612 plazas, verificados por prensa local).
-    const listaParkings = [
-      { name: 'Avenida de Portugal', lat: 40.9600, lng: -5.6690, tipo: 'Subterráneo', plazas: 391 },
-      { name: 'Santísima Trinidad', lat: 40.9705, lng: -5.6690, tipo: 'Subterráneo', plazas: 360 },
-      { name: 'Reyes de España', lat: 40.9585, lng: -5.6655, tipo: 'Subterráneo', plazas: 334 },
-      { name: 'El Campillo', lat: 40.9660, lng: -5.6660, tipo: 'Subterráneo', plazas: 258 },
-      { name: 'Santa Eulalia', lat: 40.9655, lng: -5.6605, tipo: 'Subterráneo', plazas: 239 },
-      { name: 'La Aldehuela', lat: 40.9560, lng: -5.6480, tipo: 'Disuasorio (fuera de red)', plazas: 1180 },
-      { name: 'Calle La Radio', lat: 40.9550, lng: -5.6560, tipo: 'Disuasorio', plazas: 302 },
-      { name: 'La Chinchibarra', lat: 40.9798, lng: -5.6550, tipo: 'Disuasorio', plazas: 226 },
-      { name: 'Mercasalamanca', lat: 40.9440, lng: -5.6870, tipo: 'Disuasorio', plazas: 200 },
-      { name: 'Glorieta de la Charrería', lat: 40.9520, lng: -5.6690, tipo: 'Disuasorio', plazas: 195 },
-      { name: 'Avenida de San Agustín', lat: 40.9770, lng: -5.6600, tipo: 'Disuasorio', plazas: 176 },
-      { name: 'José Lamano Beneite', lat: 40.9700, lng: -5.6420, tipo: 'Disuasorio', plazas: 139 },
-      { name: 'Las Pajas', lat: 40.9600, lng: -5.6800, tipo: 'Disuasorio', plazas: 101 },
-      { name: 'Maestro Luna', lat: 40.9600, lng: -5.6850, tipo: 'Disuasorio', plazas: 100 },
-      { name: 'Joaquín Rodrigo', lat: 40.9670, lng: -5.6390, tipo: 'Disuasorio', plazas: 87 },
-      { name: 'Las Bernardas', lat: 40.9540, lng: -5.6440, tipo: 'Disuasorio', plazas: 86 }
-    ];
-
-    listaParkings.forEach(pk => {
-      L.circleMarker([pk.lat, pk.lng], {
-        radius: 6 + Math.sqrt(pk.plazas) / 6,
-        fillColor: pk.tipo === 'Subterráneo' ? '#1E56A0' : (pk.tipo.startsWith('Disuasorio (') ? '#E63946' : '#2C5F2D'),
-        color: '#ffffff',
-        weight: 2,
-        fillOpacity: 0.85
-      }).bindPopup(`<b>${pk.name}</b><br>Tipo: ${pk.tipo}<br>Capacidad: ${pk.plazas} plazas`).addTo(mapPark);
-    });
-
-    // 2. Gráfico de Torta / Dona de Plazas de Estacionamiento
+    // Gráfico de Torta / Dona de Plazas de Estacionamiento
     const ctxOra = document.getElementById('oraPlazasChart').getContext('2d');
     const oraPlazasChart = new Chart(ctxOra, {
       type: 'doughnut',
@@ -142,7 +146,7 @@ La gestión del estacionamiento en Salamanca articula una <b>estrategia de disua
       }
     });
 
-    // 3. Gráfico de barras: plazas por aparcamiento
+    // Gráfico de barras: plazas por aparcamiento
     const ctxParkBar = document.getElementById('parkingsBarrasChart').getContext('2d');
     const parkingsBarrasChart = new Chart(ctxParkBar, {
       type: 'bar',

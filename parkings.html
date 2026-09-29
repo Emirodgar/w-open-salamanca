@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Parkings y aparcamientos
-description: Ubicación, evolución histórica y nuevos proyectos de aparcamientos en Salamanca
-date: 29-08-2026
+description: Mapa, capacidad y ubicación de los parkings subterráneos y disuasorios gratuitos de Salamanca, con la evolución histórica y los nuevos proyectos
+date: 29-09-2026
 folder: Movilidad
 permalink: parkings
 ---
@@ -17,43 +17,61 @@ permalink: parkings
 			
 			<div id="section-content">
 						
-  <!-- Mapa interactivo de Leaflet -->
-  <div id="mapaParkings" style="width: 100%; height: 500px; border-radius: 8px; margin-bottom: 25px;"></div>
+  {% include mapa-parkings.html %}
 
- 
-			<h2>Análisis de las principales opciones de estacionamiento</h2>
+ 			<h2>Análisis de las principales opciones de estacionamiento</h2>
 			
 				<p>
 La infraestructura de aparcamiento en Salamanca combina aparcamientos subterráneos de acceso continuo en las inmediaciones del casco histórico con instalaciones de alta capacidad en entornos asistenciales y de servicios.</p>
 
+<p>Salamanca cuenta con <b>14 parkings subterráneos de rotación</b> (cinco con capacidad verificada que suman 1.582 plazas), una <b>red oficial de 10 aparcamientos disuasorios gratuitos conectados por autobús (1.612 plazas)</b> y el gran aparcamiento gratuito de <b>La Aldehuela (1.180 plazas)</b>, fuera de esa red. A ellos se suman las 3.220 plazas de <a href="/aparcamientos-estacionamiento-ora">estacionamiento regulado ORA</a> en superficie tras la ampliación del 15 de julio de 2026.</p>
+
 <h3>Zonas estratégicas de estacionamiento</h3>
 <ul>
-<li><b>Eje Casco Histórico - Centro Comercial</b>: Parkings como Le Mans, Santa Eulalia, El Campillo y Colón facilitan el acceso directo a la zona peatonal y monumental de la ciudad.</li>
+<li><b>Eje Casco Histórico - Centro Comercial</b>: Parkings como Le Mans, Santa Eulalia, El Campillo, Santísima Trinidad y Colón facilitan el acceso directo a la zona peatonal y monumental de la ciudad.</li>
 
-<li><b>Accesos Sur y Complejo Sanitario</b>: En la zona de entrada desde el río Tormes destaca el parking de Reyes de España, mientras que el sector sanitario queda cubierto por la instalación del Complejo Hospitalario Universitario.</li>
+<li><b>Accesos Sur y Complejo Sanitario</b>: En la entrada desde el río Tormes destacan los parkings de Reyes de España y Avenida de Portugal, mientras que el sector sanitario queda cubierto por la instalación del Complejo Hospitalario Universitario.</li>
+
+<li><b>Perímetro con autobús</b>: Los disuasorios gratuitos de Calle La Radio (302 plazas), La Chinchibarra (226), Mercasalamanca (200) o la Glorieta de la Charrería (195) permiten dejar el coche fuera y llegar al centro en <a href="/autobus-urbano">autobús urbano</a>; todos están a menos de 20 minutos a pie de la Plaza Mayor.</li>
+
+<li><b>Cuándo compensa cada opción</b>: el subterráneo es la opción para estancias largas sin límite horario y con garantía de plaza; la ORA (zona azul, 2 horas; zona verde, 5 horas) sirve para gestiones cortas; el disuasorio gratuito sale a cuenta si se va a pasar el día en el centro.</li>
 </ul>
 
-			</div>
+</div>
 			
 			<div id="section-table">
 			<table border="1" cellpadding="5" cellspacing="0">
 			  <thead>
 				<tr>
 				  <th>Aparcamiento</th>
-				  <th>Ubicación / Dirección</th>
-				  <th>Horario</th>
-				  <th>Valoración Media</th>
+				  <th>Tipo</th>
+				  <th>Ubicación / Conexión en autobús</th>
+				  <th>Plazas</th>
 				</tr>
 			  </thead>
 			  <tbody>
-				<tr><td>Parking Le Mans</td><td>Plaza de los Bandos, 5</td><td>24 horas</td><td>3.7 / 5</td></tr>
-				<tr><td>Parking Santa Eulalia</td><td>Plaza Santa Eulalia, 1</td><td>24 horas</td><td>3.8 / 5</td></tr>
-				<tr><td>Parking El Campillo</td><td>Plaza del Campillo</td><td>24 horas</td><td>3.8 / 5</td></tr>
-				<tr><td>Parking Colón - Plaza Mayor</td><td>Calle Juan de la Fuente, 14</td><td>24 horas</td><td>3.5 / 5</td></tr>
-				<tr><td>Parking Reyes de España</td><td>Avenida de los Reyes de España</td><td>24 horas</td><td>3.8 / 5</td></tr>
-				<tr><td>Parking Hospital Universitario</td><td>Paseo de la Transición Española</td><td>24 horas</td><td>3.4 / 5</td></tr>
+				<tr><td>Parking Avenida de Portugal</td><td>Subterráneo rotación</td><td>Avenida de Portugal</td><td>391</td></tr>
+				<tr><td>Parking Santísima Trinidad</td><td>Subterráneo rotación (Mutuapark)</td><td>Santísima Trinidad</td><td>360</td></tr>
+				<tr><td>Parking Reyes de España</td><td>Subterráneo rotación (Metapark)</td><td>Avenida de los Reyes de España</td><td>334</td></tr>
+				<tr><td>Parking El Campillo</td><td>Subterráneo rotación (Metapark)</td><td>Plaza del Campillo</td><td>258</td></tr>
+				<tr><td>Parking Santa Eulalia</td><td>Subterráneo rotación (Empark)</td><td>Plaza Santa Eulalia, 1</td><td>239</td></tr>
+				<tr><td>Parking Le Mans</td><td>Subterráneo rotación</td><td>Plaza de los Bandos, 5</td><td>n.d.</td></tr>
+				<tr><td>Parking Colón - Plaza Mayor</td><td>Subterráneo rotación</td><td>Calle Juan de la Fuente, 14</td><td>n.d.</td></tr>
+				<tr><td>Parking Hospital Universitario</td><td>Subterráneo</td><td>Paseo de la Transición Española</td><td>n.d.</td></tr>
+				<tr><td>La Aldehuela</td><td>Disuasorio gratuito (fuera de la red)</td><td>Calle Manuel Ramos Andrade</td><td>1.180</td></tr>
+				<tr><td>Calle La Radio</td><td>Disuasorio gratuito</td><td>Líneas 1 / 10 / 11 / 12</td><td>302</td></tr>
+				<tr><td>La Chinchibarra</td><td>Disuasorio gratuito</td><td>Línea 1</td><td>226</td></tr>
+				<tr><td>Mercasalamanca</td><td>Disuasorio gratuito</td><td>Líneas 1 / 11</td><td>200</td></tr>
+				<tr><td>Glorieta de la Charrería</td><td>Disuasorio gratuito</td><td>Líneas 5 / 8 / 10 / 11</td><td>195</td></tr>
+				<tr><td>Avenida de San Agustín</td><td>Disuasorio gratuito</td><td>Líneas 5 / 9 / 12</td><td>176</td></tr>
+				<tr><td>José Lamano Beneite</td><td>Disuasorio gratuito</td><td>Líneas 13 / 14</td><td>139</td></tr>
+				<tr><td>Las Pajas</td><td>Disuasorio gratuito</td><td>Líneas 1 / 10 / 11 / 12</td><td>101</td></tr>
+				<tr><td>Maestro Luna</td><td>Disuasorio gratuito</td><td>Línea 3</td><td>100</td></tr>
+				<tr><td>Joaquín Rodrigo</td><td>Disuasorio gratuito</td><td>Líneas 3 / 6 / 12 / 13</td><td>87</td></tr>
+				<tr><td>Las Bernardas</td><td>Disuasorio gratuito</td><td>Líneas 7 / 8</td><td>86</td></tr>
 			  </tbody>
 			</table>
+			<p style="font-size:0.9em;">n.d.: capacidad no disponible o no verificada. Los subterráneos son de rotación y de pago; los disuasorios, gratuitos. Datos del Ayuntamiento de Salamanca y prensa local.</p>
 
 			</div>
 			
@@ -68,7 +86,7 @@ El modelo de estacionamiento en Salamanca ha sufrido una transformación profund
 				<ul>
 					<li><b>Peatonalización y trasvase al subterráneo (2005-2015)</b>: La progresiva restricción del tráfico en calles emblemáticas del casco antiguo obligó a consolidar un anillo de parkings subterráneos perimetrales (como Colón, Le Mans y Santísima Trinidad) para absorber el vehículo privado de visitantes y residentes.</li>
 					<li><b>Implantación y expansión de <a href="/aparcamientos-estacionamiento-ora">zonas ORA</a> (2010-2020)</b>: La ordenación de la superficie mediante zonas azul y verde se extendió progresivamente desde el centro hacia barrios adyacentes como Garrido, San Bernardo y Labradores, buscando rotación comercial y protección del aparcamiento residencial.</li>
-					<li><b>Red de aparcamientos disuasorios gratuitos (2018-presente)</b>: Para frenar la entrada masiva de vehículos de la provincia y del alfoz, se adecuaron grandes bolsas de aparcamiento gratuito en superficie en zonas perimetrales conectadas con el transporte público (como La Aldehuela, Salas Bajas y Huerta Otea).</li>
+					<li><b>Red de aparcamientos disuasorios gratuitos (2018-presente)</b>: Para frenar la entrada masiva de vehículos de la provincia y del alfoz, se adecuaron grandes bolsas de aparcamiento gratuito en superficie en zonas perimetrales conectadas con el transporte público (como La Aldehuela, la mayor de la ciudad con 1.180 plazas, y la red de 10 disuasorios conectados por autobús).</li>
 				</ul>
 
 				<h2>Proyectos y ubicación de nuevos aparcamientos</h2>
@@ -78,9 +96,9 @@ Las futuras actuaciones en materia de aparcamiento en la capital salmantina est�
 				
 				<h3>Proyectos prioritarios y ubicaciones previstas</h3>
 				<ul>
-					<li><b>Aparcamientos disuasorios inteligentes en los accesos</b>: Creación y sensorización de nuevas plazas disuasorias en las entradas principales a la ciudad (Avenida de Portugal, Avenida de Agustinos Recoletos y entorno de San José) equipadas con paneles de ocupación en tiempo real.</li>
-					<li><b>Parkings para residentes en barrios de alta densidad</b>: Estudio de viabilidad para aparcamientos subterráneos en barrios con déficit de plazas de garaje privadas, focalizándose en ejes como el entorno del Paseo de Canalejas, Chinchibarra y Garrido Norte.</li>
-					<li><b>Infraestructura para movilidad eléctrica y micro-movilidad</b>: Adecuación progresiva de las instalaciones existentes y futuras con puntos de recarga rápida para vehículos eléctricos y reservas de espacio seguro para <a href="/red-ciclista">bicicletas y patinetes</a> en nodos intermodales.</li>
+					<li><b>Nuevos disuasorios en Garrido y Chinchibarra</b>: dos aparcamientos gratuitos en construcción sobre los antiguos terrenos de Mercasalamanca sumarán 1.112 plazas adicionales (226 solo en Chinchibarra), elevando las plazas gratuitas en superficie de 4.670 a 5.782.</li>
+					<li><b>Ampliación de la ORA</b>: desde el 15 de julio de 2026 la zona regulada llega a Fontana, Santo Tomás, La Alamedilla y Tenerías con unas 627 plazas nuevas en unas 35 calles. Todos los detalles, calles y la nueva <b>doble línea</b> en <a href="/aparcamientos-estacionamiento-ora">la guía de la ORA</a>.</li>
+					<li><b>Infraestructura para movilidad eléctrica y micro-movilidad</b>: puntos de recarga regulados por la ORA (como Paseo de San Vicente o Rector Esperabé, con tarifa bonificada) y reservas de espacio seguro para <a href="/red-ciclista">bicicletas y patinetes</a> en nodos intermodales.</li>
 				</ul>
 			</div>
 			
@@ -88,35 +106,3 @@ Las futuras actuaciones en materia de aparcamiento en la capital salmantina est�
             
         </div>
     </section>
-
-	<!-- Hojas de estilo y scripts de Leaflet -->
-	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-	<script>
-    // Inicializar mapa centrado en Salamanca
-    const map = L.map('mapaParkings').setView([40.9635, -5.6640], 14);
-
-    // Capa base CartoDB Positron
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/light_all/{z}/{x}/{y}{r}.png?key=cb1_2izw_1_55d93b51ded1dcecfa044181', {
-      attribution: '&copy; OpenStreetMap &copy; CARTO',
-      subdomains: 'abcd',
-      maxZoom: 19
-    }).addTo(map);
-
-    // Listado de parkings con coordenadas para marcadores
-    const parkings = [
-      { name: 'Parking Le Mans', lat: 40.9664, lng: -5.6642, address: 'Plaza de los Bandos, 5' },
-      { name: 'Parking Santa Eulalia', lat: 40.9649, lng: -5.6612, address: 'Plaza Santa Eulalia, 1' },
-      { name: 'Parking El Campillo', lat: 40.9675, lng: -5.6628, address: 'Plaza del Campillo' },
-      { name: 'Parking Colón - Plaza Mayor', lat: 40.9635, lng: -5.6625, address: 'Calle Juan de la Fuente, 14' },
-      { name: 'Parking Reyes de España', lat: 40.9576, lng: -5.6645, address: 'Avenida de los Reyes de España' },
-      { name: 'Parking Hospital Universitario', lat: 40.9592, lng: -5.6748, address: 'Paseo de la Transición Española' }
-    ];
-
-    // Añadir marcadores al mapa
-    parkings.forEach(p => {
-      L.marker([p.lat, p.lng])
-        .bindPopup(`<b>${p.name}</b><br>${p.address}`)
-        .addTo(map);
-    });
-  </script>
