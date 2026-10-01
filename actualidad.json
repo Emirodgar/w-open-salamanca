@@ -1,11 +1,11 @@
 {
   "url_base": "https://www.lagacetadesalamanca.es",
-  "generado_en": "2026-09-29T17:09:20+00:00",
+  "generado_en": "2026-10-01T15:44:16+00:00",
   "periodo_cubierto": {
-    "desde": "2026-09-26",
-    "hasta": "2026-09-29"
+    "desde": "2026-09-30",
+    "hasta": "2026-10-01"
   },
-  "total_urls_analizadas": 192,
+  "total_urls_analizadas": 72,
   "secciones_excluidas": [
     "gente-estilo",
     "nacional",
@@ -16,214 +16,162 @@
   "nota_cobertura": "El análisis cubre únicamente las URLs presentes en el sitemap en el momento de la consulta (excluyendo, si se indicó, las secciones filtradas). Si el sitemap es incremental o 'rolling', el periodo real puede ser más corto que el solicitado — revisa 'periodo_cubierto' para confirmarlo.",
   "por_seccion": [
     [
-      "provincia",
-      58
+      "salamanca",
+      25
     ],
     [
-      "salamanca",
-      56
+      "provincia",
+      24
     ],
     [
       "deportes",
-      45
+      12
     ],
     [
       "sucesos",
-      18
+      9
     ],
     [
       "campo",
-      8
-    ],
-    [
-      "encuestas",
-      3
-    ],
-    [
-      "cine-y-series",
-      2
-    ],
-    [
-      "fundacion-gaceta",
       1
     ],
     [
-      "toros",
+      "encuestas",
       1
     ]
   ],
   "por_subseccion": [
     [
       "deportes/futbol-local",
-      25
+      8
     ],
     [
       "deportes/baloncesto-local",
-      6
-    ],
-    [
-      "deportes/deporte-base",
-      5
+      3
     ]
   ],
   "por_tipo_contenido": [
     [
       "noticia",
-      146
+      67
     ],
     [
       "galería",
-      43
-    ],
-    [
-      "directo / en vivo",
-      3
+      5
     ]
   ],
   "heatmap_calendario": [
     {
-      "fecha": "2026-09-26",
-      "total": 32,
-      "provincia": 10,
-      "salamanca": 6,
-      "deportes": 9,
-      "sucesos": 4,
-      "campo": 0,
-      "encuestas": 1,
-      "cine-y-series": 1,
-      "fundacion-gaceta": 0,
-      "toros": 1
-    },
-    {
-      "fecha": "2026-09-27",
-      "total": 52,
-      "provincia": 19,
-      "salamanca": 13,
-      "deportes": 17,
-      "sucesos": 1,
-      "campo": 1,
-      "encuestas": 1,
-      "cine-y-series": 0,
-      "fundacion-gaceta": 0,
-      "toros": 0
-    },
-    {
-      "fecha": "2026-09-28",
-      "total": 70,
-      "provincia": 23,
-      "salamanca": 22,
-      "deportes": 13,
-      "sucesos": 7,
-      "campo": 2,
-      "encuestas": 1,
-      "cine-y-series": 1,
-      "fundacion-gaceta": 1,
-      "toros": 0
-    },
-    {
-      "fecha": "2026-09-29",
+      "fecha": "2026-09-30",
       "total": 38,
-      "provincia": 6,
-      "salamanca": 15,
-      "deportes": 6,
+      "salamanca": 13,
+      "provincia": 8,
+      "deportes": 10,
       "sucesos": 6,
-      "campo": 5,
-      "encuestas": 0,
-      "cine-y-series": 0,
-      "fundacion-gaceta": 0,
-      "toros": 0
+      "campo": 0,
+      "encuestas": 1
+    },
+    {
+      "fecha": "2026-10-01",
+      "total": 34,
+      "salamanca": 12,
+      "provincia": 16,
+      "deportes": 2,
+      "sucesos": 3,
+      "campo": 1,
+      "encuestas": 0
     }
   ],
   "conceptos_destacados": [
     {
-      "concepto": "San Miguel",
-      "piezas": 10,
-      "seccion_principal": "provincia",
-      "desde": "2026-09-26",
-      "hasta": "2026-09-29",
+      "concepto": "Crimea-Congo",
+      "piezas": 4,
+      "seccion_principal": "salamanca",
+      "desde": "2026-09-30",
+      "hasta": "2026-10-01",
       "ejemplos_redactados": [
-        "Las festividades en honor a San Miguel se celebraron en diversos municipios de la provincia, como Fuenterroble de Salvatierra y Valero.",
-        "Ledrada estrenó una nueva imagen del Arcángel San Miguel, mientras Tarazona iniciaba sus fiestas patronales."
+        "El XIV Congreso de la Sociedad Española de Medicina Tropical y Salud Internacional arrancó en Fonseca con la expansión de enfermedades como la fiebre hemorrágica de Crimea-Congo en el punto de mira.",
+        "Un especialista en enfermedades infecciosas advierte de que la enfermedad puede estar más extendida de lo que reflejan los casos diagnosticados, y en Béjar un centro de FP acogió una jornada sobre ella."
       ]
     },
     {
-      "concepto": "Béjar",
-      "piezas": 7,
-      "seccion_principal": "provincia",
-      "desde": "2026-09-26",
-      "hasta": "2026-09-28",
-      "ejemplos_redactados": [
-        "Béjar acogió jornadas sobre la fiebre hemorrágica Crimea-Congo y aprobó la retirada de una medalla de oro.",
-        "La localidad también recordó a los bejaranos fallecidos en la Revolución Gloriosa."
-      ]
-    },
-    {
-      "concepto": "Unionistas",
-      "piezas": 7,
+      "concepto": "Derbi de Copa Santa Marta - Salamanca UDS",
+      "piezas": 5,
       "seccion_principal": "deportes",
-      "desde": "2026-09-26",
-      "hasta": "2026-09-28",
+      "desde": "2026-09-30",
+      "hasta": "2026-10-01",
       "ejemplos_redactados": [
-        "Unionistas de Salamanca fue protagonista en la sección de deportes, con noticias sobre su desempeño en el campo y el análisis de sus partidos.",
-        "El equipo se enfrentó al Mirandés y se mostró negado de cara a portería."
+        "Santa Marta y Salamanca UDS se juegan en el Alfonso San Casto el pase a semifinales de la Copa Federación, que lleva aparejado disputar la Copa del Rey.",
+        "El ganador ingresaría además un premio extra de la Copa RFEF y los 35.000 euros por jugar la primera ronda de la Copa del Rey como local."
       ]
     },
     {
-      "concepto": "Procesión",
+      "concepto": "Catedral: andamios en la fachada norte",
+      "piezas": 1,
+      "seccion_principal": "salamanca",
+      "desde": "2026-09-30",
+      "hasta": "2026-09-30",
+      "ejemplos_redactados": [
+        "Ha arrancado el montaje de los andamios para restaurar la fachada norte de la Catedral, la mayor intervención en esa cara del templo en más de tres décadas y media.",
+        "La primera fase se centra en el tramo entre la torrecilla de la calle Benedicto XVI y la puerta de acceso del turismo, y podría prolongarse cerca de un año."
+      ]
+    },
+    {
+      "concepto": "Movilidad y transporte urbano",
+      "piezas": 3,
+      "seccion_principal": "salamanca",
+      "desde": "2026-09-30",
+      "hasta": "2026-09-30",
+      "ejemplos_redactados": [
+        "El Ayuntamiento prepara para el año que viene una nueva línea de autobús con frecuencia de 20 minutos que conectará dos barrios, tras comprar cuatro autobuses eléctricos.",
+        "Una nueva fase del veto de cruzar con el semáforo en ámbar en cruces difíciles genera dudas sobre su efecto en la fluidez del tráfico y del bus."
+      ]
+    },
+    {
+      "concepto": "Búsqueda de un hombre en Ledrada",
+      "piezas": 3,
+      "seccion_principal": "sucesos",
+      "desde": "2026-09-30",
+      "hasta": "2026-10-01",
+      "ejemplos_redactados": [
+        "La Guardia Civil mantuvo toda la noche un dispositivo de búsqueda de un hombre de 89 años, usuario de la residencia de Ledrada, visto por última vez a las 20:15 horas del miércoles.",
+        "Con las primeras luces se incorporaron un helicóptero procedente de León y perros especializados."
+      ]
+    },
+    {
+      "concepto": "Universidad y formación",
+      "piezas": 3,
+      "seccion_principal": "salamanca",
+      "desde": "2026-09-30",
+      "hasta": "2026-10-01",
+      "ejemplos_redactados": [
+        "La Universidad de Salamanca aprueba una oferta inicial de 136 plazas permanentes de profesor ayudante doctor, ampliable hasta 235, y 20 promociones a catedrático.",
+        "Diez centros salmantinos de formación imparten clases en modo virtual mientras amortiguan el golpe de una normativa que ya exigía presencialidad."
+      ]
+    },
+    {
+      "concepto": "Fiestas patronales y recreaciones",
       "piezas": 6,
-      "seccion_principal": "salamanca",
-      "desde": "2026-09-26",
-      "hasta": "2026-09-27",
-      "ejemplos_redactados": [
-        "La procesión de la Virgen de la Merced cerró el fin de semana cofrade, con imágenes destacadas de la Vía Áurea.",
-        "Un pregonero de la Semana Santa de Sevilla se mostró impresionado por la gran procesión salmantina."
-      ]
-    },
-    {
-      "concepto": "Helmántico",
-      "piezas": 4,
-      "seccion_principal": "deportes",
-      "desde": "2026-09-27",
-      "hasta": "2026-09-28",
-      "ejemplos_redactados": [
-        "El estadio Helmántico fue escenario de la victoria del Salamanca UDS sobre el Alcalá, con el equipo volando en el campo.",
-        "Se han anunciado los horarios de los próximos partidos del Salamanca UDS en el Helmántico."
-      ]
-    },
-    {
-      "concepto": "Universidad",
-      "piezas": 4,
-      "seccion_principal": "salamanca",
-      "desde": "2026-09-28",
-      "hasta": "2026-09-28",
-      "ejemplos_redactados": [
-        "La Universidad Pontificia inició su cuarta temporada con una victoria, y la Facultad de Informática obtuvo una certificación.",
-        "Se ha producido un nuevo hallazgo de una carta de Miguel de Unamuno."
-      ]
-    },
-    {
-      "concepto": "Ciudad Rodrigo",
-      "piezas": 3,
       "seccion_principal": "provincia",
-      "desde": "2026-09-26",
-      "hasta": "2026-09-28",
+      "desde": "2026-09-30",
+      "hasta": "2026-10-01",
       "ejemplos_redactados": [
-        "Ciudad Rodrigo solicitó mejoras en infraestructuras y atención sanitaria, y selló una integración con CEOE-Cepyme y Afecir.",
-        "La ciudad se unió a Portugal en una ruta senderista."
+        "Aldeatejada prepara las XIII Vísperas Nupciales, del 2 al 4 de octubre, con recreación histórica y desfile del Cortejo Real el domingo.",
+        "Pizarral estrena una marcha solidaria contra el cáncer al arrancar sus fiestas de la Virgen del Rosario, y Maíllo, Veguillas y Valparaíso celebran las suyas."
       ]
     },
     {
-      "concepto": "Alba de Tormes",
+      "concepto": "Empleo y comercio",
       "piezas": 3,
-      "seccion_principal": "provincia",
-      "desde": "2026-09-27",
-      "hasta": "2026-09-28",
+      "seccion_principal": "salamanca",
+      "desde": "2026-09-30",
+      "hasta": "2026-10-01",
       "ejemplos_redactados": [
-        "Fernando Fitz-James Stuart pregonará las fiestas de Alba de Tormes.",
-        "La localidad expuso iniciativas en Naturcyl y una víctima recibió apoyo especializado."
+        "La V Feria de Empleo, Emprendimiento e Innovación reunirá este viernes en la Cámara de Comercio 380 puestos de trabajo de 44 empresas.",
+        "El Ayuntamiento celebra del 5 al 10 de octubre la Semana del Comercio con una carpa itinerante que recorrerá distintos barrios."
       ]
     }
   ],
-  "resumen_borrador": "Se han publicado 192 noticias entre el 2026-09-26 y el 2026-09-29. La actividad se ha concentrado sobre todo en provincia (58 piezas), salamanca (56 piezas), deportes (45 piezas).\n\nLos conceptos con más piezas relacionadas son: San · Miguel; Bejar; Unionistas; Seis. Revisa 'evidencia' de cada concepto para redactar el resumen final.",
-  "resumen": "El final del mes de septiembre en Salamanca ha estado marcado por la continuidad de las festividades patronales en la provincia, con especial atención a las celebraciones de San Miguel en municipios como Fuenterroble de Salvatierra, Valero y Tarazona, donde se estrenaron las fiestas con actos tradicionales. En Béjar, se desarrollaron jornadas sobre la fiebre hemorrágica Crimea-Congo y se recordó la Revolución Gloriosa. Ciudad Rodrigo, por su parte, solicitó mejoras sanitarias y promovió una ruta senderista con Portugal, mientras que Alba de Tormes anunció a su pregonero para las fiestas.\n\nEn el ámbito deportivo, Unionistas de Salamanca y Salamanca UDS fueron protagonistas. Unionistas disputó encuentros donde se analizó su rendimiento, mientras que el Salamanca UDS logró una victoria en el Helmántico. La Universidad Pontificia de Salamanca inició su temporada con éxito y la Facultad de Informática obtuvo una certificación. La ciudad también vivió el impacto de la 'Vía Áurea', una procesión cofrade que desbordó el centro, y se conoció el hallazgo de una carta de Miguel de Unamuno.\n\nLa crónica de sucesos incluyó un alunizaje en un bar de Salamanca para robar una máquina, condenas por coacciones sexuales y apuñalamientos, así como varios accidentes de tráfico, entre ellos el fallecimiento de una motorista. También se registró un atraco con pistola y cuchillo en un bar de la capital. Estos eventos configuran un balance diverso para los últimos días de septiembre en la provincia salmantina."
+  "resumen_borrador": "Salamanca cierra septiembre y abre octubre con la salud pública y el patrimonio entre sus asuntos principales. El XIV Congreso de Medicina Tropical arrancó en Fonseca con la fiebre hemorrágica de Crimea-Congo como tema recurrente: un especialista advierte de que puede estar más extendida de lo que reflejan los casos diagnosticados, y Béjar, especialmente golpeada, acogió una jornada sobre la enfermedad. Mientras, Castilla y León ha empezado la vacunación de la gripe en niños y residencias, y el resto de grupos podrá vacunarse desde el 13 de octubre. En la Catedral, el montaje de andamios en la fachada norte inicia la mayor intervención en esa cara del templo en más de treinta años, y la Universidad aprueba una oferta de 136 plazas permanentes de profesor ayudante doctor.",
+  "resumen": "Salamanca cierra septiembre y abre octubre con la salud pública y el patrimonio entre sus asuntos principales. El XIV Congreso de Medicina Tropical arrancó en Fonseca con la fiebre hemorrágica de Crimea-Congo como tema recurrente: un especialista advierte de que puede estar más extendida de lo que reflejan los casos diagnosticados, y Béjar, especialmente golpeada, acogió una jornada sobre la enfermedad. Mientras, Castilla y León ha empezado la vacunación de la gripe en niños y residencias, y el resto de grupos podrá vacunarse desde el 13 de octubre. En la Catedral, el montaje de andamios en la fachada norte inicia la mayor intervención en esa cara del templo en más de treinta años, y la Universidad aprueba una oferta de 136 plazas permanentes de profesor ayudante doctor.\n\nEn la ciudad, el Ayuntamiento anuncia para 2027 una línea de autobús cada 20 minutos que unirá dos barrios con cuatro autobuses eléctricos, el veto de cruzar con semáforo en ámbar entra en una nueva fase y la Semana del Comercio llevará una carpa itinerante por los barrios del 5 al 10 de octubre. La Cámara de Comercio acoge este viernes una feria de empleo con 380 puestos, y en Matacán se prepara la llegada de dos nuevos aviones T-21B para la formación de pilotos. En la provincia, Aldeatejada ultima sus Vísperas Nupciales, Pizarral estrena marcha solidaria al comenzar sus fiestas del Rosario, y el pleno de Vitigudino tumbó las cuentas generales con los votos en contra de Ciudadanos y PP.\n\nEn deportes, todas las miradas se dirigen al derbi de Copa entre Santa Marta y Salamanca UDS, que se juega en el Alfonso San Casto y da el pase a semifinales y, con él, la opción de disputar la Copa del Rey. En sucesos, la Guardia Civil buscó toda la noche con drones, perros y un helicóptero a un hombre de 89 años desaparecido en Ledrada, y se registraron varios accidentes e incidentes menores."
 }

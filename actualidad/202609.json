@@ -1,7 +1,7 @@
 {
   "mes": "2026-09",
   "titulo_mes": "Septiembre 2026",
-  "resumen_mes": "El mes arranca con la temporada de ferias en marcha (SALAMAQ, que cierra con récord de 90.000 visitantes, y la Feria del Caballo de Ciudad Rodrigo) y llega a su ecuador con las Ferias y Fiestas de Salamanca, que llenan la Plaza Mayor de conciertos multitudinarios (Tony Hadley, Gente de Zona, M-Clan, Valeria Castro) y se despiden con récord de asistencia. Ya cerca de su final, un hallazgo arqueológico bajo la Catedral saca a la luz piezas romanas y una necrópolis medieval, y la 'Vía Áurea' convierte a Salamanca en el escenario de una procesión cofrade histórica que desborda el centro de la ciudad. En clave política, el Tribunal Supremo suspende el voto a más de 3.000 nuevos salmantinos acogidos a la Ley de Nietos mientras la provincia ve cómo 28 de sus pueblos ya tienen más electores en el extranjero que en España. En lo educativo, la Junta lanza un plan de rescate en Lectura y Matemáticas tras el descenso en PISA. El urbanismo también da que hablar: el TSJCyL avala las restricciones municipales a los pisos turísticos y los robos de catenaria golpean de nuevo el ferrocarril salmantino, agravando un retraso de seis años en la electrificación de la línea a la frontera. La provincia encadena fiestas patronales, destacando las celebraciones de San Miguel en varios municipios. En el ámbito deportivo, Unionistas y Salamanca UDS continúan su actividad liguera. Varios accidentes de tráfico, una tragedia con dos fallecidos por una posible fuga de monóxido en Villares de la Reina, un alunizaje y otros sucesos, junto al anuncio de huelga indefinida de médicos para el 28 de octubre, completan la fotografía de este mes.",
+  "resumen_mes": "El mes arranca con la temporada de ferias en marcha (SALAMAQ, que cierra con récord de 90.000 visitantes, y la Feria del Caballo de Ciudad Rodrigo) y llega a su ecuador con las Ferias y Fiestas de Salamanca, que llenan la Plaza Mayor de conciertos multitudinarios (Tony Hadley, Gente de Zona, M-Clan, Valeria Castro) y se despiden con récord de asistencia. Ya cerca de su final, un hallazgo arqueológico bajo la Catedral saca a la luz piezas romanas y una necrópolis medieval, y la 'Vía Áurea' convierte a Salamanca en el escenario de una procesión cofrade histórica que desborda el centro de la ciudad. En clave política, el Tribunal Supremo suspende el voto a más de 3.000 nuevos salmantinos acogidos a la Ley de Nietos mientras la provincia ve cómo 28 de sus pueblos ya tienen más electores en el extranjero que en España. En lo educativo, la Junta lanza un plan de rescate en Lectura y Matemáticas tras el descenso en PISA. El urbanismo también da que hablar: el TSJCyL avala las restricciones municipales a los pisos turísticos y los robos de catenaria golpean de nuevo el ferrocarril salmantino, agravando un retraso de seis años en la electrificación de la línea a la frontera. La provincia encadena fiestas patronales, destacando las celebraciones de San Miguel en varios municipios. En el ámbito deportivo, Unionistas y Salamanca UDS continúan su actividad liguera. Varios accidentes de tráfico, una tragedia con dos fallecidos por una posible fuga de monóxido en Villares de la Reina, un alunizaje y otros sucesos, junto al anuncio de huelga indefinida de médicos para el 28 de octubre, completan la fotografía de este mes. El mes se despide con el arranque de los andamios para restaurar la fachada norte de la Catedral, la mayor intervención en esa cara del templo en más de tres décadas, y con la salud pública en primer plano por el congreso de Medicina Tropical en Fonseca y la preocupación por la fiebre hemorrágica de Crimea-Congo.",
   "hitos": [
     {
       "fecha": "2026-09-16",
@@ -9,14 +9,6 @@
       "categoria": "Cultura",
       "descripcion": "Tras el pregón, la Plaza Mayor acogió conciertos multitudinarios de Tony Hadley, Gente de Zona, La Gozadera, M-Clan y Valeria Castro, además de una Feria taurina que agotó entradas con Roca Rey; Antoñito Molina cerró nueve días de fiestas con una Plaza Mayor llena, en lo que el Ayuntamiento calificó de 'respuesta extraordinaria y masiva' con cifras récord.",
       "fuente": "https://www.lagacetadesalamanca.es/salamanca/salamanca-despide-ferias-fiestas-record-asistencia-20260916124614-nt.html",
-      "destacado": false
-    },
-    {
-      "fecha": "2026-09-16",
-      "titulo": "Plan de rescate en Lectura y Matemáticas tras el descenso en PISA",
-      "categoria": "Educación",
-      "descripcion": "La Junta de Castilla y León pone en marcha un plan de rescate en Lectura y Matemáticas tras el descenso registrado por la comunidad en el último informe PISA.",
-      "fuente": "https://www.lagacetadesalamanca.es/salamanca/plan-rescate-lectura-matematicas-tras-descenso-pisa-20260916192332-nt.html",
       "destacado": false
     },
     {
@@ -66,6 +58,14 @@
       "descripcion": "Miles de personas han llenado las calles del centro en una procesión inédita, con 17 imágenes y un millar de participantes, en un día para el recuerdo sin incidentes; el propio pregonero de la Semana Santa de Sevilla se desplazó a verla, y la hostelería local ya vislumbra un septiembre de récord gracias a su tirón turístico.",
       "fuente": "https://www.lagacetadesalamanca.es/salamanca/salamanca-desborda-cita-cofrade-historia-20260927000752-nt.html",
       "destacado": true
+    },
+    {
+      "fecha": "2026-09-30",
+      "titulo": "Arranca el montaje de andamios en la fachada norte de la Catedral",
+      "categoria": "Urbanismo",
+      "descripcion": "Comienza la restauración de la fachada que da a la plaza de Anaya, la mayor intervención en esa cara de la basílica en más de tres décadas y media; la primera fase se centra en el tramo entre la torrecilla de la calle Benedicto XVI y la puerta de acceso del turismo y podría durar cerca de un año.",
+      "fuente": "https://www.lagacetadesalamanca.es/salamanca/arranca-montaje-andamios-fachada-norte-catedral-20260930112036-nt.html",
+      "destacado": false
     }
   ]
 }

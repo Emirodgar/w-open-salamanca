@@ -1,5 +1,5 @@
 {
-  "generado_en": "2026-10-01T09:00:00+00:00",
+  "generado_en": "2026-10-01T15:44:16+00:00",
   "eventos": [
     {
       "titulo": "Congreso Internacional Francisco de Vitoria y la Escuela de Salamanca",
@@ -9,6 +9,15 @@
       "lugar": "San Esteban",
       "descripcion": "Expertos dominicos analizarán el papel del movimiento revolucionario surgido en el monasterio en el marco del V Centenario de la Escuela de Salamanca.",
       "fuente": "https://www.lagacetadesalamanca.es/salamanca/cumbre-dominica-internacional-san-esteban-centenario-escuela-20260927073000-nt.html"
+    },
+    {
+      "titulo": "Derbi de Copa Federación: Santa Marta - Salamanca UDS",
+      "categoria": "Deportes",
+      "fecha_inicio": "2026-10-01",
+      "fecha_fin": null,
+      "lugar": "Estadio Alfonso San Casto, Santa Marta de Tormes",
+      "descripcion": "Cuartos de final a partido único de la Copa Federación; el ganador pasa a semifinales y jugará la Copa del Rey.",
+      "fuente": "https://www.lagacetadesalamanca.es/deportes/futbol-local/salamancauds/derbi-vale-copa-20260930060000-nt.html"
     },
     {
       "titulo": "Conferencia sobre fiebre hemorrágica Crimea Congo en Guijuelo",
@@ -38,6 +47,24 @@
       "fuente": "https://www.lagacetadesalamanca.es/salamanca/salamanca-convertira-octubre-capital-motor-gracias-tire-20260928134116-nt.html"
     },
     {
+      "titulo": "V Feria de Empleo, Emprendimiento e Innovación de Salamanca",
+      "categoria": "Economía",
+      "fecha_inicio": "2026-10-02",
+      "fecha_fin": null,
+      "lugar": "Cámara de Comercio, plaza de Sexmeros",
+      "descripcion": "De 9:30 a 14:30 horas, con 380 puestos de trabajo de 44 empresas y 20 entidades más.",
+      "fuente": "https://www.lagacetadesalamanca.es/salamanca/feria-empleo-reunira-380-puestos-trabajo-empresas-20260930190724-nt.html"
+    },
+    {
+      "titulo": "XIII Vísperas Nupciales de Aldeatejada",
+      "categoria": "Cultura",
+      "fecha_inicio": "2026-10-02",
+      "fecha_fin": "2026-10-04",
+      "lugar": "Aldeatejada",
+      "descripcion": "Recreación renacentista ligada a la infanta María Manuela de Portugal, con talleres, teatro y, el domingo, la recreación histórica y el desfile del Cortejo Real.",
+      "fuente": "https://www.lagacetadesalamanca.es/provincia/aldeatejada-prepara-boda-real-20260930050000-nt.html"
+    },
+    {
       "titulo": "III Feria Agroalimentaria de Cabrerizos",
       "categoria": "Economía",
       "fecha_inicio": "2026-10-03",
@@ -53,6 +80,14 @@
       "fecha_fin": null,
       "lugar": "Auditorio de San Blas",
       "descripcion": "A las 17:30 h, con Salay Pasión Bolivia (filial Salamanca), Anqaras y Tinku Carcaje (filial Valladolid). Entrada libre hasta completar aforo. Inicia el Mes de la Hispanidad del Círculo Hispanoamericano, que se extiende hasta el 31 de octubre."
+    },
+    {
+      "titulo": "Semana del Comercio 2026",
+      "categoria": "Economía",
+      "fecha_inicio": "2026-10-05",
+      "fecha_fin": "2026-10-10",
+      "descripcion": "Carpa itinerante por distintos barrios y puntos de Salamanca que obsequia con una bolsa de tela a quien presente el ticket de una compra en comercio local.",
+      "fuente": "https://www.lagacetadesalamanca.es/salamanca/comercio-sale-calle-busca-ventas-20260930182652-nt.html"
     },
     {
       "titulo": "Trío Zendero Hidalguense: son huasteco",

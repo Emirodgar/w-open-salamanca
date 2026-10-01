@@ -1,0 +1,31 @@
+{
+  "mes": "2026-10",
+  "titulo_mes": "Octubre 2026",
+  "resumen_mes": "El mes arranca con el inicio de la campaña de vacunación de la gripe en Castilla y León, un derbi de Copa entre Santa Marta y Salamanca UDS con billete para la Copa del Rey en juego y la búsqueda de un hombre desaparecido en Ledrada.",
+  "hitos": [
+    {
+      "fecha": "2026-10-01",
+      "titulo": "Arranca la vacunación de la gripe en Castilla y León",
+      "categoria": "Sociedad",
+      "descripcion": "La campaña comienza con niños y residencias, y el resto de grupos podrá vacunarse a partir del 13 de octubre.",
+      "fuente": "https://www.lagacetadesalamanca.es/salamanca/arranca-vacunacion-gripe-castilla-leon-ninos-residencias-20261001124606-nt.html",
+      "destacado": true
+    },
+    {
+      "fecha": "2026-10-01",
+      "titulo": "Búsqueda nocturna de un hombre de 89 años desaparecido en Ledrada",
+      "categoria": "Sucesos",
+      "descripcion": "La Guardia Civil mantuvo toda la noche un dispositivo con drones y perros, al que se sumó un helicóptero procedente de León con las primeras luces; el hombre, usuario de la residencia de la localidad, fue visto por última vez a las 20:15 horas del miércoles.",
+      "fuente": "https://www.lagacetadesalamanca.es/sucesos/noche-entera-buscando-agustin-drones-perros-helicoptero-20261001111446-nt.html",
+      "destacado": false
+    },
+    {
+      "fecha": "2026-10-01",
+      "titulo": "Santa Marta y Salamanca UDS se miden en un derbi por la Copa del Rey",
+      "categoria": "Deportes",
+      "descripcion": "Los dos equipos se juegan a partido único en el Alfonso San Casto el pase a semifinales de la Copa Federación, que lleva aparejado disputar la Copa del Rey ante un equipo de Primera.",
+      "fuente": "https://www.lagacetadesalamanca.es/deportes/futbol-local/salamancauds/derbi-vale-copa-20260930060000-nt.html",
+      "destacado": false
+    }
+  ]
+}
