@@ -1,7 +1,7 @@
 {
-  "generado_en": "2026-09-30T23:51:14.454Z",
+  "generado_en": "2026-10-01T05:56:18.712Z",
   "dias_ventana": 20,
-  "total": 2169,
+  "total": 2199,
   "medios": [
     "Tribuna Salamanca",
     "Salamanca24Horas",
@@ -9,6 +9,209 @@
     "Salamancahoy"
   ],
   "noticias": [
+    {
+      "url": "https://www.salamanca24horas.com/campo/itacyl-publica-guia-recomendaciones-enfrentar-topillo-campesino-campana-sementera",
+      "titulo": "El ITACYL publica una guía con recomendaciones para enfrentar al topillo campesino en la campaña de sementera",
+      "medio": "Salamanca24Horas",
+      "fecha": "2026-10-01",
+      "fecha_hora": "2026-10-01T05:50:00.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/provincia/valoracion-tecnica-marcara-compra-antigua-plaza-toros-20260930074551-nt.html",
+      "titulo": "Una valoración técnica marcará la compra de la antigua plaza de toros de Ciudad Rodrigo",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-01",
+      "fecha_hora": "2026-10-01T05:45:52.000Z"
+    },
+    {
+      "url": "https://www.salamanca24horas.com/local/cambios-reglamento-general-circulacion-modificaran-inmediato-examen-teorico",
+      "titulo": "Los cambios en el Reglamento General de Circulación no modificarán de inmediato el examen teórico",
+      "medio": "Salamanca24Horas",
+      "fecha": "2026-10-01",
+      "fecha_hora": "2026-10-01T05:40:00.000Z"
+    },
+    {
+      "url": "https://www.salamanca24horas.com/cultura/abierto-plazo-participar-vii-concurso-municipal-bandas-solistas",
+      "titulo": "Abierto el plazo para participar en el VII Concurso Municipal de Bandas y Solistas",
+      "medio": "Salamanca24Horas",
+      "fecha": "2026-10-01",
+      "fecha_hora": "2026-10-01T05:30:00.000Z"
+    },
+    {
+      "url": "https://www.salamanca24horas.com/provincia/ledesma-campo-charro/alumnos-miguel-unamuno-ledesma-viven-experiencia-pueblo-gente",
+      "titulo": "Los alumnos del Miguel de Unamuno de Ledesma viven la experiencia en un pueblo sin gente",
+      "medio": "Salamanca24Horas",
+      "fecha": "2026-10-01",
+      "fecha_hora": "2026-10-01T05:20:00.000Z"
+    },
+    {
+      "url": "https://www.salamanca24horas.com/local/salamanca-busca-convertirse-rey-talento-biosanitario-sur-europa",
+      "titulo": "Salamanca busca convertirse en el ‘rey’ del talento biosanitario del sur de Europa",
+      "medio": "Salamanca24Horas",
+      "fecha": "2026-10-01",
+      "fecha_hora": "2026-10-01T05:10:00.000Z"
+    },
+    {
+      "url": "https://www.salamanca24horas.com/local/crisis-vivienda-bajo-lupa-salmantina-alquileres-temporales-fraude-pisos-troceados",
+      "titulo": "La crisis de la vivienda bajo la lupa salmantina: \"Alquileres temporales en fraude y pisos troceados”",
+      "medio": "Salamanca24Horas",
+      "fecha": "2026-10-01",
+      "fecha_hora": "2026-10-01T05:05:00.000Z"
+    },
+    {
+      "url": "https://www.salamanca24horas.com/local/mucho-veteranos-hermandad-combate-soledad-acompanando-mayores",
+      "titulo": "Mucho más que veteranos: la Hermandad que combate la soledad acompañando a sus mayores",
+      "medio": "Salamanca24Horas",
+      "fecha": "2026-10-01",
+      "fecha_hora": "2026-10-01T05:00:00.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/toros/madrid-pasaporte-entrar-elite-20260929064500-nt.html",
+      "titulo": "Madrid o el pasaporte para entrar en la élite",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-01",
+      "fecha_hora": "2026-10-01T04:45:04.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/salamanca/vecinos-valoran-nueva-conexion-autobus-clave-llegar-20260930064500-nt.html",
+      "titulo": "Los vecinos valoran la nueva conexión de autobús: «Para nosotros es clave llegar al centro de salud»",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-01",
+      "fecha_hora": "2026-10-01T04:45:00.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/salamanca/crimeacongo-puede-estar-extendido-reflejan-casos-diagnosticados-20260930061500-nt.html",
+      "titulo": "«El Crimea-Congo puede estar mucho más extendido de lo que reflejan los casos diagnosticados»",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-01",
+      "fecha_hora": "2026-10-01T04:15:03.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/salamanca/matacan-prepara-recibir-aviones-t21b-dos-nuevos-20260930061500-nt.html",
+      "titulo": "Matacán se prepara para recibir los aviones T.21B y dos nuevos drones",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-01",
+      "fecha_hora": "2026-10-01T04:15:02.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/deportes/futbol-local/salamancauds/derbi-vale-copa-20260930060000-nt.html",
+      "titulo": "Un derbi que vale una Copa",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-01",
+      "fecha_hora": "2026-10-01T04:00:15.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/opinion/firmas/juan-carlos-garcia-regalado-goebbels-boe-20260930055000-nt.html",
+      "titulo": "Goebbels en el BOE",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-01",
+      "fecha_hora": "2026-10-01T03:50:01.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/opinion/firmas/elena-salamanca-cacao-maravillao-20260930055000-nt.html",
+      "titulo": "Cacao maravillao",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-01",
+      "fecha_hora": "2026-10-01T03:50:00.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/salamanca/paso-dia-hoy-octubre-salamanca-20260930050000-nt.html",
+      "titulo": "¿Qué pasó tal día como hoy, 1 de octubre, en Salamanca?",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-01",
+      "fecha_hora": "2026-10-01T03:00:55.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/provincia/pizarral-celebra-fiestas-solidarias-20260930050000-nt.html",
+      "titulo": "Pizarral celebra unas fiestas muy solidarias",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-01",
+      "fecha_hora": "2026-10-01T03:00:53.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/opinion/humor/vineta-moran-20260930050000-nt.html",
+      "titulo": "La viñeta de Morán",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-01",
+      "fecha_hora": "2026-10-01T03:00:50.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/provincia/aldeatejada-prepara-boda-real-20260930050000-nt.html",
+      "titulo": "Aldeatejada se prepara para la Boda Real",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-01",
+      "fecha_hora": "2026-10-01T03:00:48.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/provincia/lucha-constante-dar-vida-pueblo-20260928050000-nt.html",
+      "titulo": "En lucha constante por dar vida al pueblo",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-01",
+      "fecha_hora": "2026-10-01T03:00:46.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/salamanca/tuberias-parecen-tablones-anuncios-20260930050000-nt.html",
+      "titulo": "Tuberías que parecen tablones de anuncios",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-01",
+      "fecha_hora": "2026-10-01T03:00:44.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/provincia/maillo-ensalza-virgen-rosario-20260930050000-nt.html",
+      "titulo": "El Maíllo ensalza a la Virgen del Rosario",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-01",
+      "fecha_hora": "2026-10-01T03:00:41.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/provincia/lugar-iniciar-nueva-vida-20260928050000-nt.html",
+      "titulo": "Un lugar donde iniciar una nueva vida",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-01",
+      "fecha_hora": "2026-10-01T03:00:38.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/provincia/arreglo-calles-futura-pista-padel-20260928050000-nt.html",
+      "titulo": "Arreglo de calles y una futura pista de padel",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-01",
+      "fecha_hora": "2026-10-01T03:00:24.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/provincia/agua-sol-centran-inversion-20260928050000-nt.html",
+      "titulo": "El agua y el sol centran la inversión",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-01",
+      "fecha_hora": "2026-10-01T03:00:20.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/provincia/servicios-garantizar-futuro-20260928050000-nt.html",
+      "titulo": "Más servicios para garantizar el futuro",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-01",
+      "fecha_hora": "2026-10-01T03:00:18.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/provincia/tradicion-fiesta-veguillas-20260930050000-nt.html",
+      "titulo": "Tradición y fiesta en Las Veguillas",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-01",
+      "fecha_hora": "2026-10-01T03:00:15.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/provincia/aldehuela-boveda-lista-disfrutar-20260930050000-nt.html",
+      "titulo": "Aldehuela de la Bóveda, lista para disfrutar",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-01",
+      "fecha_hora": "2026-10-01T03:00:04.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/provincia/dias-virgen-valparaiso-20260930050000-nt.html",
+      "titulo": "En los días de la Virgen de Valparaíso",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-01",
+      "fecha_hora": "2026-10-01T03:00:00.000Z"
+    },
     {
       "url": "https://www.tribunasalamanca.com/noticias/460868/proyecto-arraigo-recibe-el-premio-iberdrola-convive-por-su-apuesta-contra-la-despoblacion-rural",
       "titulo": "Proyecto Arraigo recibe el Premio Iberdrola Convive por su apuesta contra la despoblación rural",
@@ -603,6 +806,13 @@
       "medio": "La Gaceta de Salamanca",
       "fecha": "2026-09-30",
       "fecha_hora": "2026-09-30T11:26:42.000Z"
+    },
+    {
+      "url": "https://www.tribunasalamanca.com/noticias/460777/murua-el-club-esta-cambiando-muchas-cosas-para-bien-y-la-gente-lo-esta-notando",
+      "titulo": "Murua: \"El club está cambiando muchas cosas para bien y la gente lo está notando\"",
+      "medio": "Tribuna Salamanca",
+      "fecha": "2026-09-30",
+      "fecha_hora": "2026-09-30T11:23:08.000Z"
     },
     {
       "url": "https://www.salamanca24horas.com/provincia/comarca-de-salamanca/treinta-expositores-mejor-mesa-salmantina-daran-cita-cabrerizos",
