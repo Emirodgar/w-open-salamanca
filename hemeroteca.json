@@ -1,7 +1,7 @@
 {
-  "generado_en": "2026-10-02T16:38:17.710Z",
+  "generado_en": "2026-10-02T21:19:49.744Z",
   "dias_ventana": 20,
-  "total": 2699,
+  "total": 2717,
   "medios": [
     "Tribuna Salamanca",
     "Salamanca24Horas",
@@ -10,11 +10,186 @@
   ],
   "noticias": [
     {
+      "url": "https://www.lagacetadesalamanca.es/provincia/mayores-estrenan-fiesta-ragama-20261002222428-nt.html",
+      "titulo": "Los mayores estrenan la fiesta en Rágama",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-02",
+      "fecha_hora": "2026-10-02T20:40:33.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/provincia/chupinazo-artes-escenicas-marcan-inicio-festivo-poveda-20261002223631-nt.html",
+      "titulo": "Chupinazo y artes escénicas marcan el inicio festivo en Poveda de las Cintas",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-02",
+      "fecha_hora": "2026-10-02T20:36:31.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/provincia/huerta-despliega-completa-agenda-actividades-dinamizar-mes-20261002221117-nt.html",
+      "titulo": "Huerta despliega una completa agenda de actividades para dinamizar el mes de octubre",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-02",
+      "fecha_hora": "2026-10-02T20:11:17.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/salamanca/noticias-importantes-salamanca-hoy-viernes-octubre-20261002213727-nt.html",
+      "titulo": "Las noticias más importantes en Salamanca hoy viernes 2 de octubre",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-02",
+      "fecha_hora": "2026-10-02T19:37:47.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/salamanca/tire-pro-fest-pisa-acelerador-freestyle-gran-20261002201146-nt.html",
+      "titulo": "Tire Pro Fest pisa el acelerador con el II Freestyle como gran reclamo",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-02",
+      "fecha_hora": "2026-10-02T19:31:04.000Z"
+    },
+    {
+      "url": "https://www.salamanca24horas.com/fotodenuncias/parque-elio-antonio-de-nebrija/vecina-alerta-desperfectos-zona-infantil-parque-elio-antonio-nebrija",
+      "titulo": "Una vecina alerta de los desperfectos en la zona infantil del Parque Elio Antonio de Nebrija",
+      "medio": "Salamanca24Horas",
+      "fecha": "2026-10-02",
+      "fecha_hora": "2026-10-02T19:09:23.000Z"
+    },
+    {
+      "url": "https://www.salamancahoy.es/salamanca/noticias-imprescindibles-salamanca-viernes-octubre-20261002210237-nt.html",
+      "titulo": "Las noticias imprescindibles de Salamanca este viernes 2 de octubre",
+      "medio": "Salamancahoy",
+      "fecha": "2026-10-02",
+      "fecha_hora": "2026-10-02T19:02:38.000Z"
+    },
+    {
+      "url": "https://www.tribunasalamanca.com/noticias/461185/la-justicia-francesa-archiva-la-denuncia-de-mbappe-contra-el-psg-por-acoso-moral",
+      "titulo": "La justicia francesa archiva la denuncia de Mbappé contra el PSG por acoso moral",
+      "medio": "Tribuna Salamanca",
+      "fecha": "2026-10-02",
+      "fecha_hora": "2026-10-02T19:00:20.000Z"
+    },
+    {
+      "url": "https://www.tribunasalamanca.com/noticias/461184/djokovic-sobrevive-a-bu-y-alcanza-los-cuartos-en-pekin-con-una-racha-historica",
+      "titulo": "Djokovic sobrevive a Bu y alcanza los cuartos en Pekín con una racha histórica",
+      "medio": "Tribuna Salamanca",
+      "fecha": "2026-10-02",
+      "fecha_hora": "2026-10-02T18:56:51.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/deportes/salamanca-sede-reuniones-federacion-atletismo-castilla-leon-20261002203743-nt.html",
+      "titulo": "Salamanca, sede de las reuniones de la Federación de Atletismo de Castilla y León",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-02",
+      "fecha_hora": "2026-10-02T18:37:43.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/encuestas/capaz-salamanca-eliminar-primera-20261002192854-nt.html",
+      "titulo": "¿Ve capaz al Salamanca UDS de eliminar a un Primera?",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-02",
+      "fecha_hora": "2026-10-02T17:29:13.000Z"
+    },
+    {
+      "url": "https://www.salamancahoy.es/salamanca/provincia/antiguo-pueblo-colonizacion-agraria-salamanca-levantara-doce-20261002191240-nt.html",
+      "titulo": "El antiguo pueblo de colonización agraria en Salamanca que levantará sus doce primeras viviendas públicas",
+      "medio": "Salamancahoy",
+      "fecha": "2026-10-02",
+      "fecha_hora": "2026-10-02T17:12:41.000Z"
+    },
+    {
+      "url": "https://www.tribunasalamanca.com/noticias/461179/guijuelo-recupera-en-octubre-su-agenda-cultural-con-teatro-el-regreso-del-cine-y-la-visita-de-greta-alonso",
+      "titulo": "Guijuelo recupera en octubre su agenda cultural con teatro, el regreso del cine y la visita de Greta Alonso",
+      "medio": "Tribuna Salamanca",
+      "fecha": "2026-10-02",
+      "fecha_hora": "2026-10-02T17:10:00.000Z"
+    },
+    {
+      "url": "https://www.tribunasalamanca.com/noticias/461178/rodrigo-cuevas-anuncia-una-nueva-fecha-en-el-caem-de-salamanca",
+      "titulo": "Rodrigo Cuevas anuncia una nueva fecha en el CAEM de Salamanca",
+      "medio": "Tribuna Salamanca",
+      "fecha": "2026-10-02",
+      "fecha_hora": "2026-10-02T17:06:07.000Z"
+    },
+    {
+      "url": "https://www.tribunasalamanca.com/noticias/461177/guijuelo-se-viste-de-rosa-en-octubre-por-el-dia-mundial-del-cancer-de-mama",
+      "titulo": "Guijuelo se viste de rosa en octubre por el Día Mundial del Cáncer de Mama",
+      "medio": "Tribuna Salamanca",
+      "fecha": "2026-10-02",
+      "fecha_hora": "2026-10-02T17:00:57.000Z"
+    },
+    {
+      "url": "https://www.salamancahoy.es/salamanca/universidad/fermin-sanchezguijo-nuevo-academico-numero-real-academia-20261002185812-nt.html",
+      "titulo": "Fermín Sánchez-Guijo, nuevo académico de número de la Real Academia de Medicina de Salamanca",
+      "medio": "Salamancahoy",
+      "fecha": "2026-10-02",
+      "fecha_hora": "2026-10-02T16:58:12.000Z"
+    },
+    {
+      "url": "https://www.salamancahoy.es/salamanca/universidad/usal-consejeria-agricultura-unen-ciencia-territorio-construir-20261002185747-nt.html",
+      "titulo": "La USAL y la Consejería de Agricultura unen ciencia y territorio para construir el futuro agroalimentario y rural",
+      "medio": "Salamancahoy",
+      "fecha": "2026-10-02",
+      "fecha_hora": "2026-10-02T16:57:47.000Z"
+    },
+    {
+      "url": "https://www.tribunasalamanca.com/noticias/461175/la-usal-lanza-el-concurso-iniciativa-campus-emprendedor-con-premios-de-hasta-10-000-euros",
+      "titulo": "La USAL lanza el concurso 'Iniciativa Campus Emprendedor' con premios de hasta 10.000 euros",
+      "medio": "Tribuna Salamanca",
+      "fecha": "2026-10-02",
+      "fecha_hora": "2026-10-02T16:51:56.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/provincia/funciones-llenar-teatro-pueblos-salamanca-otono-20261002185040-nt.html",
+      "titulo": "33 funciones para llenar de teatro los pueblos de Salamanca este otoño",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-02",
+      "fecha_hora": "2026-10-02T16:50:41.000Z"
+    },
+    {
+      "url": "https://www.tribunasalamanca.com/noticias/461173/carlos-espi-sustituye-a-ferran-torres-que-abandona-la-concentracion-por-molestias-en-el-tobillo",
+      "titulo": "Carlos Espí sustituye a Ferran Torres, que abandona la concentración por molestias en el tobillo",
+      "medio": "Tribuna Salamanca",
+      "fecha": "2026-10-02",
+      "fecha_hora": "2026-10-02T16:45:49.000Z"
+    },
+    {
+      "url": "https://www.salamanca24horas.com/deportes/tercer-puesto-crono-castellanos-moriscos-campeon-europa-sub-23",
+      "titulo": "De un tercer puesto en una ‘crono’ en Castellanos de Moriscos a Campeón de Europa sub-23",
+      "medio": "Salamanca24Horas",
+      "fecha": "2026-10-02",
+      "fecha_hora": "2026-10-02T16:42:50.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/virales/influencer-graba-salamanca-alucina-parquimetro-flipando-madrid-20261002184148-nt.html",
+      "titulo": "Un 'influencer' graba en Salamanca y alucina con el parquímetro: «Estoy flipando, en Madrid te obligan a cambiarte de barrio»",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-02",
+      "fecha_hora": "2026-10-02T16:41:54.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/salamanca/130-anos-historia-piedras-reliquias-20261002183759-nt.html",
+      "titulo": "130 años de historia entre piedras y reliquias",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-02",
+      "fecha_hora": "2026-10-02T16:38:00.000Z"
+    },
+    {
       "url": "https://www.tribunasalamanca.com/noticias/461171/alumnos-de-la-usal-y-la-upsa-compiten-en-la-fase-local-de-lideres-digitales-universitarios",
       "titulo": "Alumnos de la USAL y la UPSA compiten en la fase local de Líderes Digitales Universitarios",
       "medio": "Tribuna Salamanca",
       "fecha": "2026-10-02",
       "fecha_hora": "2026-10-02T16:36:15.000Z"
+    },
+    {
+      "url": "https://www.salamancahoy.es/deportes/baloncesto/meins-avenida/estreno-oficial-nuevo-meins-avenida-liga-femenina-20261002183203-nt.html",
+      "titulo": "Estreno oficial del nuevo Meins Avenida en la Liga Femenina Endesa: nueve jugadoras y un rival muy defensivo",
+      "medio": "Salamancahoy",
+      "fecha": "2026-10-02",
+      "fecha_hora": "2026-10-02T16:32:04.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/salamanca/colas-busca-oportunidad-laboral-20261002183021-nt.html",
+      "titulo": "Colas en busca de una oportunidad laboral",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-02",
+      "fecha_hora": "2026-10-02T16:30:21.000Z"
     },
     {
       "url": "https://www.tribunasalamanca.com/noticias/461168/las-claves-de-raquel-romo-y-pablo-garcia-ante-el-debut-de-meins-avenida",
@@ -18796,55 +18971,6 @@
       "medio": "Salamancahoy",
       "fecha": "2026-09-12",
       "fecha_hora": "2026-09-12T21:20:23Z"
-    },
-    {
-      "url": "https://www.salamancahoy.es/salamanca/ciudad/fuegos-artificiales-encienden-cielo-salamanca-poner-broche-20260912224248-ga.html",
-      "titulo": "Los fuegos artificiales encienden el cielo de Salamanca para poner el broche de oro a sus fiestas",
-      "medio": "Salamancahoy",
-      "fecha": "2026-09-12",
-      "fecha_hora": "2026-09-12T21:12:17Z"
-    },
-    {
-      "url": "https://www.salamancahoy.es/salamanca/noticias-imprescindibles-salamanca-sabado-septiembre-20260912221032-nt.html",
-      "titulo": "Las noticias imprescindibles de Salamanca este sábado 12 de septiembre",
-      "medio": "Salamancahoy",
-      "fecha": "2026-09-12",
-      "fecha_hora": "2026-09-12T20:10:33Z"
-    },
-    {
-      "url": "https://www.salamancahoy.es/salamanca/ciudad/joven-herida-arma-blanca-multitudinaria-pelea-parque-20260912201854-nt.html",
-      "titulo": "Un joven herido con arma blanca en una multitudinaria pelea en un parque de Salamanca",
-      "medio": "Salamancahoy",
-      "fecha": "2026-09-12",
-      "fecha_hora": "2026-09-12T19:34:54Z"
-    },
-    {
-      "url": "https://www.salamancahoy.es/salamanca/ciudad/puerta-grande-david-miranda-glorieta-salamanca-segunda-20260912213022-ga.html",
-      "titulo": "Puerta Grande para David de Miranda en La Glorieta de Salamanca en la segunda de abono de la Feria",
-      "medio": "Salamancahoy",
-      "fecha": "2026-09-12",
-      "fecha_hora": "2026-09-12T19:31:29Z"
-    },
-    {
-      "url": "https://www.salamancahoy.es/deportes/unionistas-cf/aura-abandona-unionistas-salamanca-suerte-primera-final-20260912205406-nt.html",
-      "titulo": "El aura abandona a Unionistas de Salamanca a su suerte y la primera final de la temporada acecha",
-      "medio": "Salamancahoy",
-      "fecha": "2026-09-12",
-      "fecha_hora": "2026-09-12T19:17:10Z"
-    },
-    {
-      "url": "https://www.salamancahoy.es/deportes/motor/motociclismo/santolino-lidera-baja-espana-busca-domingo-segunda-20260912205706-nt.html",
-      "titulo": "Santolino lidera en la Baja España y busca este domingo su segunda victoria",
-      "medio": "Salamancahoy",
-      "fecha": "2026-09-12",
-      "fecha_hora": "2026-09-12T18:57:06Z"
-    },
-    {
-      "url": "https://www.salamancahoy.es/salamanca/provincia/desigual-reparto-inmigrantes-marruecos-grandes-municipios-pueblos-20260911191907-nt.html",
-      "titulo": "El desigual reparto de los inmigrantes de Marruecos en los grandes municipios y pueblos de Salamanca",
-      "medio": "Salamancahoy",
-      "fecha": "2026-09-12",
-      "fecha_hora": "2026-09-12T17:19:07Z"
     },
     {
       "url": "https://www.salamancahoy.es/salamanca/ciudad/perfumerias-avenida-rearma-salamanca-estrategia-bajos-precios-20260911084225-nt.html",
