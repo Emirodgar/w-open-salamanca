@@ -1,11 +1,11 @@
 {
   "url_base": "https://www.lagacetadesalamanca.es",
-  "generado_en": "2026-10-01T15:44:16+00:00",
+  "generado_en": "2026-10-03T16:05:03+00:00",
   "periodo_cubierto": {
     "desde": "2026-09-30",
-    "hasta": "2026-10-01"
+    "hasta": "2026-10-03"
   },
-  "total_urls_analizadas": 72,
+  "total_urls_analizadas": 212,
   "secciones_excluidas": [
     "gente-estilo",
     "nacional",
@@ -17,47 +17,71 @@
   "por_seccion": [
     [
       "salamanca",
-      25
+      74
     ],
     [
       "provincia",
-      24
+      63
     ],
     [
       "deportes",
-      12
+      36
     ],
     [
       "sucesos",
-      9
+      22
     ],
     [
       "campo",
-      1
+      7
+    ],
+    [
+      "toros",
+      3
     ],
     [
       "encuestas",
+      3
+    ],
+    [
+      "cine-y-series",
+      2
+    ],
+    [
+      "castilla-y-leon",
+      1
+    ],
+    [
+      "virales",
       1
     ]
   ],
   "por_subseccion": [
     [
       "deportes/futbol-local",
-      8
+      23
     ],
     [
       "deportes/baloncesto-local",
-      3
+      7
+    ],
+    [
+      "deportes/deporte-base",
+      1
     ]
   ],
   "por_tipo_contenido": [
     [
       "noticia",
-      67
+      185
     ],
     [
       "galería",
-      5
+      24
+    ],
+    [
+      "directo / en vivo",
+      3
     ]
   ],
   "heatmap_calendario": [
@@ -69,109 +93,145 @@
       "deportes": 10,
       "sucesos": 6,
       "campo": 0,
-      "encuestas": 1
+      "toros": 0,
+      "encuestas": 1,
+      "cine-y-series": 0,
+      "castilla-y-leon": 0,
+      "virales": 0
     },
     {
       "fecha": "2026-10-01",
-      "total": 34,
-      "salamanca": 12,
-      "provincia": 16,
-      "deportes": 2,
-      "sucesos": 3,
+      "total": 67,
+      "salamanca": 18,
+      "provincia": 25,
+      "deportes": 14,
+      "sucesos": 5,
+      "campo": 4,
+      "toros": 0,
+      "encuestas": 1,
+      "cine-y-series": 0,
+      "castilla-y-leon": 0,
+      "virales": 0
+    },
+    {
+      "fecha": "2026-10-02",
+      "total": 74,
+      "salamanca": 32,
+      "provincia": 24,
+      "deportes": 6,
+      "sucesos": 7,
       "campo": 1,
-      "encuestas": 0
+      "toros": 0,
+      "encuestas": 1,
+      "cine-y-series": 2,
+      "castilla-y-leon": 0,
+      "virales": 1
+    },
+    {
+      "fecha": "2026-10-03",
+      "total": 33,
+      "salamanca": 11,
+      "provincia": 6,
+      "deportes": 6,
+      "sucesos": 4,
+      "campo": 2,
+      "toros": 3,
+      "encuestas": 0,
+      "cine-y-series": 0,
+      "castilla-y-leon": 1,
+      "virales": 0
     }
   ],
   "conceptos_destacados": [
     {
-      "concepto": "Crimea-Congo",
+      "concepto": "Santa Marta",
+      "piezas": 6,
+      "seccion_principal": "provincia",
+      "desde": "2026-10-01",
+      "hasta": "2026-10-02",
+      "ejemplos_redactados": [
+        "El municipio de Santa Marta ha logrado una campaña estival de limpieza con 145 acciones.",
+        "El equipo de fútbol de Santa Marta se enfrentó al Salamanca en un partido con señal en directo."
+      ]
+    },
+    {
+      "concepto": "Ciudad Rodrigo",
+      "piezas": 5,
+      "seccion_principal": "provincia",
+      "desde": "2026-09-30",
+      "hasta": "2026-10-03",
+      "ejemplos_redactados": [
+        "Ciudad Rodrigo se ha vestido de medievo con la feria de la Conjura.",
+        "Un hombre falleció mientras conducía en Ciudad Rodrigo."
+      ]
+    },
+    {
+      "concepto": "Meins Avenida",
+      "piezas": 4,
+      "seccion_principal": "deportes",
+      "desde": "2026-09-30",
+      "hasta": "2026-10-03",
+      "ejemplos_redactados": [
+        "El equipo Meins Avenida jugó contra el Cadí La Seu, con seguimiento en directo.",
+        "El Chartres francés será el tercer rival de Meins Avenida en la fase de grupos."
+      ]
+    },
+    {
+      "concepto": "Castilla y León",
+      "piezas": 4,
+      "seccion_principal": "deportes",
+      "desde": "2026-10-01",
+      "hasta": "2026-10-03",
+      "ejemplos_redactados": [
+        "La Copa del Mundo de atletismo llega a Castilla y León.",
+        "Salamanca lidera la investigación sanitaria en Castilla y León con varios proyectos."
+      ]
+    },
+    {
+      "concepto": "Guijuelo",
+      "piezas": 4,
+      "seccion_principal": "provincia",
+      "desde": "2026-10-01",
+      "hasta": "2026-10-03",
+      "ejemplos_redactados": [
+        "Las lluvias obligaron a suspender el encuentro entre el Atlético Mansillés y el Guijuelo.",
+        "Guijuelo se vuelca en la lucha contra el cáncer de mama."
+      ]
+    },
+    {
+      "concepto": "Fiestas locales",
+      "piezas": 4,
+      "seccion_principal": "provincia",
+      "desde": "2026-10-01",
+      "hasta": "2026-10-02",
+      "ejemplos_redactados": [
+        "Santibáñez de Béjar celebra sus esperadas fiestas.",
+        "San Miguel del Valero vibra con sus festejos patronales."
+      ]
+    },
+    {
+      "concepto": "Escuela de Salamanca",
       "piezas": 4,
       "seccion_principal": "salamanca",
       "desde": "2026-09-30",
-      "hasta": "2026-10-01",
+      "hasta": "2026-10-02",
       "ejemplos_redactados": [
-        "El XIV Congreso de la Sociedad Española de Medicina Tropical y Salud Internacional arrancó en Fonseca con la expansión de enfermedades como la fiebre hemorrágica de Crimea-Congo en el punto de mira.",
-        "Un especialista en enfermedades infecciosas advierte de que la enfermedad puede estar más extendida de lo que reflejan los casos diagnosticados, y en Béjar un centro de FP acogió una jornada sobre ella."
+        "El Pleno de Peñaranda aprobó por unanimidad la ampliación de la escuela de música.",
+        "San Esteban reivindica la vigencia de la Escuela de Salamanca en un congreso."
       ]
     },
     {
-      "concepto": "Derbi de Copa Santa Marta - Salamanca UDS",
+      "concepto": "Búsqueda desaparecido Ledrada",
       "piezas": 5,
-      "seccion_principal": "deportes",
-      "desde": "2026-09-30",
-      "hasta": "2026-10-01",
-      "ejemplos_redactados": [
-        "Santa Marta y Salamanca UDS se juegan en el Alfonso San Casto el pase a semifinales de la Copa Federación, que lleva aparejado disputar la Copa del Rey.",
-        "El ganador ingresaría además un premio extra de la Copa RFEF y los 35.000 euros por jugar la primera ronda de la Copa del Rey como local."
-      ]
-    },
-    {
-      "concepto": "Catedral: andamios en la fachada norte",
-      "piezas": 1,
-      "seccion_principal": "salamanca",
-      "desde": "2026-09-30",
-      "hasta": "2026-09-30",
-      "ejemplos_redactados": [
-        "Ha arrancado el montaje de los andamios para restaurar la fachada norte de la Catedral, la mayor intervención en esa cara del templo en más de tres décadas y media.",
-        "La primera fase se centra en el tramo entre la torrecilla de la calle Benedicto XVI y la puerta de acceso del turismo, y podría prolongarse cerca de un año."
-      ]
-    },
-    {
-      "concepto": "Movilidad y transporte urbano",
-      "piezas": 3,
-      "seccion_principal": "salamanca",
-      "desde": "2026-09-30",
-      "hasta": "2026-09-30",
-      "ejemplos_redactados": [
-        "El Ayuntamiento prepara para el año que viene una nueva línea de autobús con frecuencia de 20 minutos que conectará dos barrios, tras comprar cuatro autobuses eléctricos.",
-        "Una nueva fase del veto de cruzar con el semáforo en ámbar en cruces difíciles genera dudas sobre su efecto en la fluidez del tráfico y del bus."
-      ]
-    },
-    {
-      "concepto": "Búsqueda de un hombre en Ledrada",
-      "piezas": 3,
       "seccion_principal": "sucesos",
       "desde": "2026-09-30",
-      "hasta": "2026-10-01",
+      "hasta": "2026-10-03",
       "ejemplos_redactados": [
-        "La Guardia Civil mantuvo toda la noche un dispositivo de búsqueda de un hombre de 89 años, usuario de la residencia de Ledrada, visto por última vez a las 20:15 horas del miércoles.",
-        "Con las primeras luces se incorporaron un helicóptero procedente de León y perros especializados."
-      ]
-    },
-    {
-      "concepto": "Universidad y formación",
-      "piezas": 3,
-      "seccion_principal": "salamanca",
-      "desde": "2026-09-30",
-      "hasta": "2026-10-01",
-      "ejemplos_redactados": [
-        "La Universidad de Salamanca aprueba una oferta inicial de 136 plazas permanentes de profesor ayudante doctor, ampliable hasta 235, y 20 promociones a catedrático.",
-        "Diez centros salmantinos de formación imparten clases en modo virtual mientras amortiguan el golpe de una normativa que ya exigía presencialidad."
-      ]
-    },
-    {
-      "concepto": "Fiestas patronales y recreaciones",
-      "piezas": 6,
-      "seccion_principal": "provincia",
-      "desde": "2026-09-30",
-      "hasta": "2026-10-01",
-      "ejemplos_redactados": [
-        "Aldeatejada prepara las XIII Vísperas Nupciales, del 2 al 4 de octubre, con recreación histórica y desfile del Cortejo Real el domingo.",
-        "Pizarral estrena una marcha solidaria contra el cáncer al arrancar sus fiestas de la Virgen del Rosario, y Maíllo, Veguillas y Valparaíso celebran las suyas."
-      ]
-    },
-    {
-      "concepto": "Empleo y comercio",
-      "piezas": 3,
-      "seccion_principal": "salamanca",
-      "desde": "2026-09-30",
-      "hasta": "2026-10-01",
-      "ejemplos_redactados": [
-        "La V Feria de Empleo, Emprendimiento e Innovación reunirá este viernes en la Cámara de Comercio 380 puestos de trabajo de 44 empresas.",
-        "El Ayuntamiento celebra del 5 al 10 de octubre la Semana del Comercio con una carpa itinerante que recorrerá distintos barrios."
+        "Se ha desplegado un gran dispositivo de búsqueda para Agustín, un varón desaparecido en Ledrada.",
+        "La búsqueda de Agustín en Ledrada continúa por tercera jornada consecutiva."
       ]
     }
   ],
-  "resumen_borrador": "Salamanca cierra septiembre y abre octubre con la salud pública y el patrimonio entre sus asuntos principales. El XIV Congreso de Medicina Tropical arrancó en Fonseca con la fiebre hemorrágica de Crimea-Congo como tema recurrente: un especialista advierte de que puede estar más extendida de lo que reflejan los casos diagnosticados, y Béjar, especialmente golpeada, acogió una jornada sobre la enfermedad. Mientras, Castilla y León ha empezado la vacunación de la gripe en niños y residencias, y el resto de grupos podrá vacunarse desde el 13 de octubre. En la Catedral, el montaje de andamios en la fachada norte inicia la mayor intervención en esa cara del templo en más de treinta años, y la Universidad aprueba una oferta de 136 plazas permanentes de profesor ayudante doctor.",
-  "resumen": "Salamanca cierra septiembre y abre octubre con la salud pública y el patrimonio entre sus asuntos principales. El XIV Congreso de Medicina Tropical arrancó en Fonseca con la fiebre hemorrágica de Crimea-Congo como tema recurrente: un especialista advierte de que puede estar más extendida de lo que reflejan los casos diagnosticados, y Béjar, especialmente golpeada, acogió una jornada sobre la enfermedad. Mientras, Castilla y León ha empezado la vacunación de la gripe en niños y residencias, y el resto de grupos podrá vacunarse desde el 13 de octubre. En la Catedral, el montaje de andamios en la fachada norte inicia la mayor intervención en esa cara del templo en más de treinta años, y la Universidad aprueba una oferta de 136 plazas permanentes de profesor ayudante doctor.\n\nEn la ciudad, el Ayuntamiento anuncia para 2027 una línea de autobús cada 20 minutos que unirá dos barrios con cuatro autobuses eléctricos, el veto de cruzar con semáforo en ámbar entra en una nueva fase y la Semana del Comercio llevará una carpa itinerante por los barrios del 5 al 10 de octubre. La Cámara de Comercio acoge este viernes una feria de empleo con 380 puestos, y en Matacán se prepara la llegada de dos nuevos aviones T-21B para la formación de pilotos. En la provincia, Aldeatejada ultima sus Vísperas Nupciales, Pizarral estrena marcha solidaria al comenzar sus fiestas del Rosario, y el pleno de Vitigudino tumbó las cuentas generales con los votos en contra de Ciudadanos y PP.\n\nEn deportes, todas las miradas se dirigen al derbi de Copa entre Santa Marta y Salamanca UDS, que se juega en el Alfonso San Casto y da el pase a semifinales y, con él, la opción de disputar la Copa del Rey. En sucesos, la Guardia Civil buscó toda la noche con drones, perros y un helicóptero a un hombre de 89 años desaparecido en Ledrada, y se registraron varios accidentes e incidentes menores."
+  "resumen_borrador": "Se han publicado 212 noticias entre el 2026-09-30 y el 2026-10-03. La actividad se ha concentrado sobre todo en salamanca (74 piezas), provincia (63 piezas), deportes (36 piezas).\n\nLos conceptos con más piezas relacionadas son: Santa · Marta; Ciudad · Rodrigo; Busca; Paso. Revisa 'evidencia' de cada concepto para redactar el resumen final.",
+  "resumen": "La actualidad salmantina de los últimos días ha estado marcada por la intensa búsqueda de Agustín, un varón desaparecido en Ledrada, que ha movilizado un amplio dispositivo de emergencia. En el ámbito deportivo, el derbi entre Santa Marta y Salamanca UDS por un puesto en la Copa del Rey ha acaparado la atención, mientras el Meins Avenida ha iniciado su andadura en competición europea. La Copa del Mundo de atletismo llega a Castilla y León, y el Guijuelo ha visto suspendido un encuentro por las lluvias.\n\nLa provincia ha vivido diversas celebraciones, destacando la feria medieval de la Conjura en Ciudad Rodrigo y las fiestas patronales en municipios como Santibáñez de Béjar y San Miguel del Valero. También se ha puesto de manifiesto la preocupación por una escalada de robos violentos en la capital, con especial alerta por los dirigidos a personas mayores en el centro.\n\nEn el plano sanitario, ha comenzado la campaña de vacunación de la gripe en Castilla y León, priorizando a niños y residentes. Otros temas de interés incluyen la inversión en Lumbrales para un edificio multiusos, la inauguración del curso en la Universidad Pontificia y la subida del paro en septiembre a niveles prepandemia."
 }

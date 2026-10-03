@@ -1,7 +1,7 @@
 {
   "mes": "2026-10",
   "titulo_mes": "Octubre 2026",
-  "resumen_mes": "El mes arranca con el inicio de la campaña de vacunación de la gripe en Castilla y León, un derbi de Copa entre Santa Marta y Salamanca UDS con billete para la Copa del Rey en juego y la búsqueda de un hombre desaparecido en Ledrada.",
+  "resumen_mes": "El mes arranca con el inicio de la campaña de vacunación de la gripe en Castilla y León, la clasificación del Salamanca UDS para la Copa del Rey y la continuación de la búsqueda de un hombre desaparecido en Ledrada. La provincia celebra la feria medieval de la Conjura en Ciudad Rodrigo, mientras la capital se enfrenta a una escalada de robos violentos. También se ha registrado una subida del paro en septiembre y se ha inaugurado el curso en la Universidad Pontificia.",
   "hitos": [
     {
       "fecha": "2026-10-01",
@@ -13,18 +13,50 @@
     },
     {
       "fecha": "2026-10-01",
-      "titulo": "Búsqueda nocturna de un hombre de 89 años desaparecido en Ledrada",
-      "categoria": "Sucesos",
-      "descripcion": "La Guardia Civil mantuvo toda la noche un dispositivo con drones y perros, al que se sumó un helicóptero procedente de León con las primeras luces; el hombre, usuario de la residencia de la localidad, fue visto por última vez a las 20:15 horas del miércoles.",
-      "fuente": "https://www.lagacetadesalamanca.es/sucesos/noche-entera-buscando-agustin-drones-perros-helicoptero-20261001111446-nt.html",
+      "titulo": "Salamanca UDS logra el billete para la Copa del Rey",
+      "categoria": "Deportes",
+      "descripcion": "El Salamanca UDS asaltó el campo del Santa Marta y logró el billete para la Copa del Rey tras un emocionante derbi.",
+      "fuente": "https://www.lagacetadesalamanca.es/deportes/futbol-local/salamancauds/salamanca-logra-billete-copa-rey-tras-asaltar-20261001212443-nt.html",
       "destacado": false
     },
     {
       "fecha": "2026-10-01",
-      "titulo": "Santa Marta y Salamanca UDS se miden en un derbi por la Copa del Rey",
-      "categoria": "Deportes",
-      "descripcion": "Los dos equipos se juegan a partido único en el Alfonso San Casto el pase a semifinales de la Copa Federación, que lleva aparejado disputar la Copa del Rey ante un equipo de Primera.",
-      "fuente": "https://www.lagacetadesalamanca.es/deportes/futbol-local/salamancauds/derbi-vale-copa-20260930060000-nt.html",
+      "titulo": "Inversión sanitaria en Salamanca",
+      "categoria": "Economía",
+      "descripcion": "La Sanidad ha destinado 800.000 euros al hospital para tratamientos vasculares.",
+      "fuente": "https://www.lagacetadesalamanca.es/salamanca/sanidad-destina-800000-euros-hospital-tratamientos-vasculares-20261001135024-nt.html",
+      "destacado": false
+    },
+    {
+      "fecha": "2026-10-02",
+      "titulo": "Subida del paro en septiembre",
+      "categoria": "Economía",
+      "descripcion": "El paro en septiembre ha registrado una subida, alcanzando niveles prepandemia.",
+      "fuente": "https://www.lagacetadesalamanca.es/salamanca/septiembre-subida-paro-prepandemia-20261002060000-nt.html",
+      "destacado": false
+    },
+    {
+      "fecha": "2026-10-02",
+      "titulo": "Inauguración del curso en la Universidad Pontificia",
+      "categoria": "Educación",
+      "descripcion": "Se ha celebrado la inauguración del curso académico en el Aula Magna de la Universidad Pontificia.",
+      "fuente": "https://www.lagacetadesalamanca.es/salamanca/inauguracion-curso-aula-magna-universidad-pontificia-imagenes-20261002135631-ga.html",
+      "destacado": false
+    },
+    {
+      "fecha": "2026-10-03",
+      "titulo": "Continúa la búsqueda de un hombre desaparecido en Ledrada",
+      "categoria": "Sucesos",
+      "descripcion": "La búsqueda de Agustín, un varón de 89 años desaparecido en Ledrada, se ha mantenido durante la noche con un amplio dispositivo y ha continuado por tercera jornada consecutiva.",
+      "fuente": "https://www.lagacetadesalamanca.es/sucesos/tercera-jornada-busqueda-rastro-agustin-ledrada-lluvia-20261003101817-nt.html",
+      "destacado": false
+    },
+    {
+      "fecha": "2026-10-03",
+      "titulo": "La feria medieval de la Conjura viste de medievo Ciudad Rodrigo",
+      "categoria": "Cultura",
+      "descripcion": "Ciudad Rodrigo ha iniciado su feria de la Conjura con un gran ambiente medieval y ha continuado vistiéndose de medievo.",
+      "fuente": "https://www.lagacetadesalamanca.es/provincia/ciudad-rodrigo-viste-medievo-feria-conjura-20261003161011-ga.html",
       "destacado": false
     }
   ]

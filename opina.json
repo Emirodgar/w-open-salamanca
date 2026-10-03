@@ -96,6 +96,32 @@
       ],
       "basado_en": "eventos.json",
       "fecha_creacion": "2026-09-29"
+    },
+    {
+      "id": "robos-mayores-salamanca-2026",
+      "pregunta": "Ante la preocupación por una escalada de robos violentos a personas mayores en el centro de Salamanca, ¿qué medidas considera más efectivas para abordar esta situación?",
+      "opciones": [
+        "Más presencia policial y vigilancia",
+        "Campañas de concienciación y autoprotección para mayores",
+        "Mejora de la iluminación y seguridad en zonas clave",
+        "Otras medidas",
+        "No tengo suficiente información"
+      ],
+      "basado_en": "actualidad.json",
+      "fecha_creacion": "2026-10-03"
+    },
+    {
+      "id": "semana-comercio-salamanca-2026",
+      "pregunta": "La Semana del Comercio 2026 busca incentivar la compra en el comercio local con una carpa itinerante. ¿Cree que estas campañas son efectivas para fomentar el consumo en los establecimientos de Salamanca?",
+      "opciones": [
+        "Sí, ayudan a visibilizar y apoyar el comercio local",
+        "No, el impacto es mínimo frente a otros factores",
+        "Son un buen complemento, pero no la solución principal",
+        "Es indiferente",
+        "No tengo suficiente información"
+      ],
+      "basado_en": "eventos.json",
+      "fecha_creacion": "2026-10-03"
     }
   ]
 }
