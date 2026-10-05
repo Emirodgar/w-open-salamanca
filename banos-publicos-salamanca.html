@@ -1,0 +1,168 @@
+---
+layout: default
+title: Baños públicos de Salamanca
+description: Mapa y análisis de los 41 baños públicos de Salamanca según la IDE municipal - dónde están, en qué tipo de edificio y en qué horarios se pueden usar
+date: 05-10-2026
+folder: Urbanismo
+permalink: banos-publicos-salamanca
+---
+
+    <section class="featured dataset" id="datos">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="section-title">{{ page.title }}</h1>
+                <p class="section-description">{{ page.description }}</p>
+            </div>
+
+			<div id="section-content">
+
+  <div id="mapaBanos" style="width: 100%; height: 500px; border-radius: 8px; margin-bottom: 25px;"></div>
+
+			<h2>La red de baños públicos está, sobre todo, dentro de edificios</h2>
+
+			<p>
+La capa "baños públicos" de la IDE municipal (Infraestructura de Datos Espaciales del Ayuntamiento) recoge <b>41 baños</b>. Solo <b>7 están en parques, paseos o calles</b>; los otros 34 (el 83 %) se encuentran dentro de edificios o establecimientos, con lo que su uso depende de que estén abiertos: centros de acción social, bibliotecas, mercados, centros de mayores, museos, pabellones o bares.</p>
+
+<h3>Hallazgos clave</h3>
+<ul>
+<li><b>Una red de equipamientos municipales.</b> 26 de los 41 baños están en equipamientos municipales: 5 CEAS, 4 bibliotecas, 3 centros municipales integrados, 3 centros cívicos o espacios de participación, 3 mercados, 3 centros de mayores, 2 pabellones, 2 huertos urbanos y el propio Ayuntamiento. Completan la lista 5 establecimientos hosteleros, 3 museos o monumentos (DA2, Museo del Comercio y la Catedral Nueva) y los 7 de espacio abierto.</li>
+<li><b>Los horarios son de oficina.</b> Muchos solo abren de lunes a viernes por la mañana. Solo <b>5 de los 41</b> indican apertura en domingo (Catedral Nueva, Museo del Comercio, DA2, el centro de mayores Trastormes y el de Tierra Charra). Los que llegan hasta las 22:00 o más son 7: tres CMI, dos CEAS y los dos pabellones municipales (hasta las 23:00). Ninguno indica horario más allá de esa hora.</li>
+<li><b>Los de la calle, casi sin datos.</b> De los 7 baños en parques, paseos o calles, ninguno tiene horario y <b>5 no tienen coordenadas</b> (La Bañeza, Parque San Francisco, Gran Vía, Parque de la Alamedilla y Paseo Fluvial 1), de modo que no se pueden situar en el mapa. Los dos que sí están localizados son el Paseo del Rollo y el Paseo Fluvial 2.</li>
+<li><b>10 baños sin horario publicado.</b> Los 7 de espacio abierto y 3 establecimientos hosteleros (Baobar Sur, Baobar Norte y Heladería La Alamedilla), cuyo horario figura solo como "consultar establecimiento".</li>
+<li><b>El Centro concentra más baños que ningún otro barrio.</b> De los 35 baños con coordenadas, 5 caen en el barrio Centro; después vienen Chinchibarra (3) y varios barrios con 2 (Rollo, Prosperidad, San Bernardo, Tejares, Labradores y Pizarrales). El resto de barrios tiene 1 o ninguno. El barrio de cada punto es aproximado.</li>
+</ul>
+
+<p>Muchos de estos baños están en espacios que también aparecen en otras páginas del portal: <a href="/bibliotecas-cultura">bibliotecas</a>, <a href="/museos-salamanca">museos</a>, <a href="/instalaciones-deportivas">instalaciones deportivas</a> y <a href="/zonas-verdes">zonas verdes</a>.</p>
+
+  <h2>Baños públicos por tipo de lugar</h2>
+  <canvas id="banosTipoChart" width="800" height="480"></canvas>
+
+  <h2>Cómo leer estos datos</h2>
+  <ul>
+    <li>La capa incluye 41 registros, pero <b>6 no tienen geometría</b> (Baño 20, el del centro cívico de la plaza de Extremadura, y los baños 1, 3, 4, 5 y 30) y por eso el mapa muestra 35 puntos.</li>
+    <li>El baño del Pabellón Municipal Würzburg está denominado "Baño 20", igual que el del centro cívico de la plaza de Extremadura. Es un error de denominación, porque su identificador es el 41. En la tabla se ha respetado el nombre de la capa.</li>
+    <li>La capa no indica si los baños son accesibles ni si tienen cambiador, por lo que no se puede evaluar. Los horarios son los que figuran en la capa y pueden variar por festivos o por temporada.</li>
+    <li>El barrio de cada punto se ha calculado con los <a href="/mapa-capas-salamanca">límites aproximados de los barrios</a>, que no son oficiales. Dos puntos quedan fuera de esos límites.</li>
+  </ul>
+
+			</div>
+
+			<div id="section-table">
+				<table border="1" cellpadding="5" cellspacing="0">
+				  <thead>
+					<tr>
+					  <th>Denominación</th>
+					  <th>Lugar</th>
+					  <th>Tipo</th>
+					  <th>Horario</th>
+					  <th>Barrio</th>
+					  <th>En el mapa</th>
+					</tr>
+				  </thead>
+				  <tbody>
+					<tr><td>Baño 1</td><td>La Bañeza</td><td>Parque, paseo o calle</td><td>Sin horario indicado</td><td>—</td><td>No</td></tr>
+					<tr><td>Baño 2</td><td>Paseo del Rollo</td><td>Parque, paseo o calle</td><td>Sin horario indicado</td><td>Rollo (aprox.)</td><td>Sí</td></tr>
+					<tr><td>Baño 3</td><td>Parque San Francisco</td><td>Parque, paseo o calle</td><td>Sin horario indicado</td><td>—</td><td>No</td></tr>
+					<tr><td>Baño 4</td><td>Gran Vía</td><td>Parque, paseo o calle</td><td>Sin horario indicado</td><td>—</td><td>No</td></tr>
+					<tr><td>Baño 5</td><td>Parque de la Alamedilla</td><td>Parque, paseo o calle</td><td>Sin horario indicado</td><td>—</td><td>No</td></tr>
+					<tr><td>Baño 6</td><td>Café Bar Heladería Los Jesuitas</td><td>Establecimiento hostelero</td><td>Lunes a sábado: · Mañanas de 09:00 a 14:00h. · Tarde de 16:00 a 19:00 h.</td><td>Prosperidad (aprox.)</td><td>Sí</td></tr>
+					<tr><td>Baño 7</td><td>Bar Baobar Sur</td><td>Establecimiento hostelero</td><td>Consultar establecimiento.</td><td>Arrabal (aprox.)</td><td>Sí</td></tr>
+					<tr><td>Baño 8</td><td>Bar Baobar Norte</td><td>Establecimiento hostelero</td><td>Consultar establecimiento.</td><td>Chinchibarra (aprox.)</td><td>Sí</td></tr>
+					<tr><td>Baño 9</td><td>Heladería La Alamedilla</td><td>Establecimiento hostelero</td><td>Consultar establecimiento.</td><td>Alamedilla (aprox.)</td><td>Sí</td></tr>
+					<tr><td>Baño 10</td><td>CEAS BARRIO SAN JOSE</td><td>CEAS (acción social)</td><td>Lunes a viernes de 9:00 a 14:00 h.</td><td>San José (aprox.)</td><td>Sí</td></tr>
+					<tr><td>Baño 11</td><td>CEAS MIRALTORMES</td><td>CEAS (acción social)</td><td>Lunes a viernes de 9:00 a 14:00 h.</td><td>Rollo (aprox.)</td><td>Sí</td></tr>
+					<tr><td>Baño 12</td><td>CEAS PUENTE DE LADRILLO</td><td>CEAS (acción social)</td><td>Lunes a viernes de 9:00 a 22:00 h.</td><td>Puente Ladrillo (aprox.)</td><td>Sí</td></tr>
+					<tr><td>Baño 13</td><td>CEAS VISTA HERMOSA - BUENOS AIRES</td><td>CEAS (acción social)</td><td>Lunes a jueves: · Mañanas de 08:30 a 14:00 h.Tardes de 16:00 a 22:00h · Viernes de 08:00 a 21.00h · Sábados de 10:30 a 13:00h</td><td>Vistahermosa (aprox.)</td><td>Sí</td></tr>
+					<tr><td>Baño 14</td><td>CMI JULIAN SANCHEZ EL CHARRO</td><td>Centro municipal integrado (CMI)</td><td>Lunes a viernes · Mañanas de 9:00 a 14:00 h. · Tardes de 17:00 a 22:00 h. · Sábados · Mañanas de 09:00 a 14:00 h.</td><td>Salesas (aprox.)</td><td>Sí</td></tr>
+					<tr><td>Baño 15</td><td>CMI VICTORIA ADRADOS</td><td>Centro municipal integrado (CMI)</td><td>Mañanas de 8:00 a 15:00 h. · Tardes de 16:00 a 22.00 h.</td><td>San Bernardo (aprox.)</td><td>Sí</td></tr>
+					<tr><td>Baño 16</td><td>AYUNTAMIENTO DE SALAMANCA. Calle Iscar Peyra 24</td><td>Ayuntamiento</td><td>Lunes a viernes de 8:30 a 14:00 h.</td><td>Centro (aprox.)</td><td>Sí</td></tr>
+					<tr><td>Baño 17</td><td>CMI TEJARES</td><td>Centro municipal integrado (CMI)</td><td>Lunes a viernes de 16:00h a 22:00 h.</td><td>Tejares (aprox.)</td><td>Sí</td></tr>
+					<tr><td>Baño 18</td><td>BIBLIOTECA GABRIEL Y GALÁN</td><td>Biblioteca municipal</td><td>Mañanas de 09:30 a 14:00 h. · Tardes de 17:00 a 20:00 h.</td><td>Labradores (aprox.)</td><td>Sí</td></tr>
+					<tr><td>Baño 19</td><td>CENTRO CIVICO VIRGEN DE LA VEGA</td><td>Centro cívico / espacio de participación</td><td>Mañanas de 09:30 a 14:00 h.</td><td>La Vega (aprox.)</td><td>Sí</td></tr>
+					<tr><td>Baño 20</td><td>CENTRO CIVICO PLAZA DE EXTREMADURA</td><td>Centro cívico / espacio de participación</td><td>Mañanas de 09:30 a 14:00 h</td><td>—</td><td>No</td></tr>
+					<tr><td>Baño 21</td><td>BIBLIOTECA TORRENTE BALLESTER</td><td>Biblioteca municipal</td><td>Lunes a viernes de 09:30 a 21:00 h. · Sábados de 09:30 a 14:00 h.</td><td>Chinchibarra (aprox.)</td><td>Sí</td></tr>
+					<tr><td>Baño 22</td><td>BIBLIOTECA DEL BARRIO VIDAL</td><td>Biblioteca municipal</td><td>Lunes a viernes: · Mañanas de 10:00 a 14:00 h. · Tardes de 17:00 a 20:00 h.</td><td>Vidal (aprox.)</td><td>Sí</td></tr>
+					<tr><td>Baño 23</td><td>ESPACIO DE PARTICIPACION MIGUEL DE UNAMUNO</td><td>Centro cívico / espacio de participación</td><td>Lunes a viernes de 9:00 a 14:00 h.</td><td>Blanco (aprox.)</td><td>Sí</td></tr>
+					<tr><td>Baño 24</td><td>HUERTOS URBANOS</td><td>Huertos urbanos</td><td>Mañanas de 9:00 a 14:00 h. · Tardes de 16:00 a 21:00 h.</td><td>Fuera de los límites usados</td><td>Sí</td></tr>
+					<tr><td>Baño 25</td><td>MERCADO CENTRAL</td><td>Mercado</td><td>Lunes a sábado · Mañanas de 08:00 a 14:00 h. · Lunes: · Tardes de 16:00 a 19:00 h. · Martes a viernes: · Tardes de 16:00 a 20:00 h.</td><td>Centro (aprox.)</td><td>Sí</td></tr>
+					<tr><td>Baño 26</td><td>MERCADO DE SAN JUAN</td><td>Mercado</td><td>Lunes a sábado de 9:00 a 15:00 h.</td><td>Labradores (aprox.)</td><td>Sí</td></tr>
+					<tr><td>Baño 27</td><td>MERCADO SAN BERNARDO</td><td>Mercado</td><td>Lunes a sábado: · Mañanas de 09:00 a 14:00h. · Tarde de 16:00 a 19:00 h.</td><td>San Bernardo (aprox.)</td><td>Sí</td></tr>
+					<tr><td>Baño 28</td><td>Plaza de Anaya (CATEDRAL NUEVA)</td><td>Catedral Nueva (plaza de Anaya)</td><td>Lunes a domingo de 11:00 a 18:00 h.</td><td>Centro (aprox.)</td><td>Sí</td></tr>
+					<tr><td>Baño 29</td><td>HUERTOS URBANOS</td><td>Huertos urbanos</td><td>Mañanas de 10:00 a 14:00 h. · Tardes de 18:00 a 21:30 h.</td><td>Fuera de los límites usados</td><td>Sí</td></tr>
+					<tr><td>Baño 30</td><td>Paseo Fluvial 1</td><td>Parque, paseo o calle</td><td>Sin horario indicado</td><td>—</td><td>No</td></tr>
+					<tr><td>Baño 31</td><td>Paseo Fluvial 2</td><td>Parque, paseo o calle</td><td>Sin horario indicado</td><td>Fontana (aprox.)</td><td>Sí</td></tr>
+					<tr><td>Baño32</td><td>Biblioteca Carmen Martin Gaite</td><td>Biblioteca municipal</td><td>Lunes a viernes · Mañanas de 10:00 a 14:00 h. · Tardes de 17:00 a 20:00 h.</td><td>Pizarrales (aprox.)</td><td>Sí</td></tr>
+					<tr><td>Baño 33</td><td>CEAS Pizarrales</td><td>CEAS (acción social)</td><td>Lunes a viernes de 9:00 a 14:00 h.</td><td>Pizarrales (aprox.)</td><td>Sí</td></tr>
+					<tr><td>Baño 34</td><td>Centro municipal para mayores trastormes</td><td>Centro de mayores</td><td>Lunes a viernes de 8:00 a 21:00 h. · Sábados y domingos de 10:00 a 21:00 h.</td><td>Chamberí (aprox.)</td><td>Sí</td></tr>
+					<tr><td>Baño 35</td><td>Centro mayores Juan de la Fuente</td><td>Centro de mayores</td><td>Lunes a viernes · Mañanas de 8:00 a 14:15 h. · Tardes de 15:45 a 20:30 h.</td><td>Centro (aprox.)</td><td>Sí</td></tr>
+					<tr><td>Baño 36</td><td>Centro mayores Tierra Charra</td><td>Centro de mayores</td><td>Lunes a viernes de 8:00 a 20:30 h. · Sábados de 9:00 a 17:45 h. · Domingos y festivos de 10:00 a 17:45 h.</td><td>Garrido Norte (aprox.)</td><td>Sí</td></tr>
+					<tr><td>Baño 37</td><td>Museo Domus Artium 2002 (DA2)</td><td>Museo</td><td>Martes a viernes · Mañanas de 12:00 a 14:00 h. · Tardes de 17:00 a 20:00 h. · Fines de semana y festivos · Mañanas de 11:00 a 15:00 h. · Tardes de 17:00 a 21:00 h.</td><td>Prosperidad (aprox.)</td><td>Sí</td></tr>
+					<tr><td>Baño 38</td><td>Museo del Comercio</td><td>Museo</td><td>Lunes a domingo · Mañanas de 10:00 a 14:00h. · Martes a sábado · Tardes de 17:00 a 20:00 h.</td><td>Delicias (aprox.)</td><td>Sí</td></tr>
+					<tr><td>Baño 39</td><td>Fonda Veracruz</td><td>Establecimiento hostelero</td><td>Mañanas de10:00 a 15:00 h</td><td>Centro (aprox.)</td><td>Sí</td></tr>
+					<tr><td>Baño 40</td><td>Pabellon Municipal Lazarillo del Tormes</td><td>Pabellón municipal</td><td>Mañanas de 8:00 a 15:00 h. · Tardes de 16:00 a 23:00 h.</td><td>Tejares (aprox.)</td><td>Sí</td></tr>
+					<tr><td>Baño 20</td><td>Pabellon Municipal Würzburg</td><td>Pabellón municipal</td><td>Mañanas de 8:00 a 15:00 h. · Tardes de 16:00 a 23:00 h.</td><td>Chinchibarra (aprox.)</td><td>Sí</td></tr>
+				  </tbody>
+				</table>
+				<p><small>Fuente: capa "baños públicos" de la IDE del Ayuntamiento de Salamanca. Clasificación por tipo de lugar elaborada por Open Salamanca a partir del nombre de cada ubicación.</small></p>
+			</div>
+
+			{% include categories.html %}
+
+        </div>
+    </section>
+
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+	<script>
+    const mapBanos = L.map('mapaBanos').setView([40.9650, -5.6630], 13);
+
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/light_all/{z}/{x}/{y}{r}.png?key=cb1_2izw_1_55d93b51ded1dcecfa044181', {
+      attribution: '&copy; OpenStreetMap &copy; CARTO | Datos: IDE Ayuntamiento de Salamanca',
+      subdomains: 'abcd',
+      maxZoom: 19
+    }).addTo(mapBanos);
+
+    const colores = {
+      'Equipamiento municipal': '#2C5F2D',
+      'Hostelería': '#F4A261',
+      'Museo o monumento': '#1E56A0',
+      'Parque, paseo o calle': '#264653'
+    };
+
+    // [denominación, lugar, horario, tipo, grupo, latitud, longitud, barrio aproximado]
+    const baños = [["Baño 2","Paseo del Rollo","","Parque, paseo o calle","Parque, paseo o calle",40.96795397,-5.65161853,"Rollo"],["Baño 6","Café Bar Heladería Los Jesuitas","Lunes a sábado: · Mañanas de 09:00 a 14:00h. · Tarde de 16:00 a 19:00 h.","Establecimiento hostelero","Hostelería",40.961764,-5.655601,"Prosperidad"],["Baño 7","Bar Baobar Sur","Consultar establecimiento.","Establecimiento hostelero","Hostelería",40.958118,-5.674189,"Arrabal"],["Baño 8","Bar Baobar Norte","Consultar establecimiento.","Establecimiento hostelero","Hostelería",40.981101,-5.652086,"Chinchibarra"],["Baño 9","Heladería La Alamedilla","Consultar establecimiento.","Establecimiento hostelero","Hostelería",40.968022,-5.658141,"Alamedilla"],["Baño 10","CEAS BARRIO SAN JOSE","Lunes a viernes de 9:00 a 14:00 h.","CEAS (acción social)","Equipamiento municipal",40.950621,-5.662524,"San José"],["Baño 11","CEAS MIRALTORMES","Lunes a viernes de 9:00 a 14:00 h.","CEAS (acción social)","Equipamiento municipal",40.965964,-5.649082,"Rollo"],["Baño 12","CEAS PUENTE DE LADRILLO","Lunes a viernes de 9:00 a 22:00 h.","CEAS (acción social)","Equipamiento municipal",40.972761,-5.641238,"Puente Ladrillo"],["Baño 13","CEAS VISTA HERMOSA - BUENOS AIRES","Lunes a jueves: · Mañanas de 08:30 a 14:00 h.Tardes de 16:00 a 22:00h · Viernes de 08:00 a 21.00h · Sábados de 10:30 a 13:00h","CEAS (acción social)","Equipamiento municipal",40.949798,-5.679939,"Vistahermosa"],["Baño 14","CMI JULIAN SANCHEZ EL CHARRO","Lunes a viernes · Mañanas de 9:00 a 14:00 h. · Tardes de 17:00 a 22:00 h. · Sábados · Mañanas de 09:00 a 14:00 h.","Centro municipal integrado (CMI)","Equipamiento municipal",40.974379,-5.658845,"Salesas"],["Baño 15","CMI VICTORIA ADRADOS","Mañanas de 8:00 a 15:00 h. · Tardes de 16:00 a 22.00 h.","Centro municipal integrado (CMI)","Equipamiento municipal",40.97103943,-5.67091511,"San Bernardo"],["Baño 16","AYUNTAMIENTO DE SALAMANCA. Calle Iscar Peyra 24","Lunes a viernes de 8:30 a 14:00 h.","Ayuntamiento","Equipamiento municipal",40.966184,-5.665648,"Centro"],["Baño 17","CMI TEJARES","Lunes a viernes de 16:00h a 22:00 h.","Centro municipal integrado (CMI)","Equipamiento municipal",40.954987,-5.695644,"Tejares"],["Baño 18","BIBLIOTECA GABRIEL Y GALÁN","Mañanas de 09:30 a 14:00 h. · Tardes de 17:00 a 20:00 h.","Biblioteca municipal","Equipamiento municipal",40.97006067,-5.66185813,"Labradores"],["Baño 19","CENTRO CIVICO VIRGEN DE LA VEGA","Mañanas de 09:30 a 14:00 h.","Centro cívico / espacio de participación","Equipamiento municipal",40.95005427,-5.66826708,"La Vega"],["Baño 21","BIBLIOTECA TORRENTE BALLESTER","Lunes a viernes de 09:30 a 21:00 h. · Sábados de 09:30 a 14:00 h.","Biblioteca municipal","Equipamiento municipal",40.97830318,-5.65460389,"Chinchibarra"],["Baño 22","BIBLIOTECA DEL BARRIO VIDAL","Lunes a viernes: · Mañanas de 10:00 a 14:00 h. · Tardes de 17:00 a 20:00 h.","Biblioteca municipal","Equipamiento municipal",40.97529209,-5.66712106,"Vidal"],["Baño 23","ESPACIO DE PARTICIPACION MIGUEL DE UNAMUNO","Lunes a viernes de 9:00 a 14:00 h.","Centro cívico / espacio de participación","Equipamiento municipal",40.97658961,-5.6727259,"Blanco"],["Baño 24","HUERTOS URBANOS","Mañanas de 9:00 a 14:00 h. · Tardes de 16:00 a 21:00 h.","Huertos urbanos","Equipamiento municipal",40.95851421,-5.68626553,""],["Baño 25","MERCADO CENTRAL","Lunes a sábado · Mañanas de 08:00 a 14:00 h. · Lunes: · Tardes de 16:00 a 19:00 h. · Martes a viernes: · Tardes de 16:00 a 20:00 h.","Mercado","Equipamiento municipal",40.96459657,-5.66313286,"Centro"],["Baño 26","MERCADO DE SAN JUAN","Lunes a sábado de 9:00 a 15:00 h.","Mercado","Equipamiento municipal",40.97143427,-5.66117309,"Labradores"],["Baño 27","MERCADO SAN BERNARDO","Lunes a sábado: · Mañanas de 09:00 a 14:00h. · Tarde de 16:00 a 19:00 h.","Mercado","Equipamiento municipal",40.9702287,-5.67433283,"San Bernardo"],["Baño 28","Plaza de Anaya (CATEDRAL NUEVA)","Lunes a domingo de 11:00 a 18:00 h.","Catedral Nueva (plaza de Anaya)","Museo o monumento",40.96099528,-5.66571307,"Centro"],["Baño 29","HUERTOS URBANOS","Mañanas de 10:00 a 14:00 h. · Tardes de 18:00 a 21:30 h.","Huertos urbanos","Equipamiento municipal",40.95718045,-5.68960944,""],["Baño 31","Paseo Fluvial 2","","Parque, paseo o calle","Parque, paseo o calle",40.95485281,-5.66313429,"Fontana"],["Baño32","Biblioteca Carmen Martin Gaite","Lunes a viernes · Mañanas de 10:00 a 14:00 h. · Tardes de 17:00 a 20:00 h.","Biblioteca municipal","Equipamiento municipal",40.97524422,-5.67761587,"Pizarrales"],["Baño 33","CEAS Pizarrales","Lunes a viernes de 9:00 a 14:00 h.","CEAS (acción social)","Equipamiento municipal",40.97849342,-5.67395129,"Pizarrales"],["Baño 34","Centro municipal para mayores trastormes","Lunes a viernes de 8:00 a 21:00 h. · Sábados y domingos de 10:00 a 21:00 h.","Centro de mayores","Equipamiento municipal",40.95664132,-5.68019819,"Chamberí"],["Baño 35","Centro mayores Juan de la Fuente","Lunes a viernes · Mañanas de 8:00 a 14:15 h. · Tardes de 15:45 a 20:30 h.","Centro de mayores","Equipamiento municipal",40.96157282,-5.66317029,"Centro"],["Baño 36","Centro mayores Tierra Charra","Lunes a viernes de 8:00 a 20:30 h. · Sábados de 9:00 a 17:45 h. · Domingos y festivos de 10:00 a 17:45 h.","Centro de mayores","Equipamiento municipal",40.97476626,-5.6504664,"Garrido Norte"],["Baño 37","Museo Domus Artium 2002 (DA2)","Martes a viernes · Mañanas de 12:00 a 14:00 h. · Tardes de 17:00 a 20:00 h. · Fines de semana y festivos · Mañanas de 11:00 a 15:00 h. · Tardes de 17:00 a 21:00 h.","Museo","Museo o monumento",40.95872552,-5.65205261,"Prosperidad"],["Baño 38","Museo del Comercio","Lunes a domingo · Mañanas de 10:00 a 14:00h. · Martes a sábado · Tardes de 17:00 a 20:00 h.","Museo","Museo o monumento",40.96502202,-5.65415619,"Delicias"],["Baño 39","Fonda Veracruz","Mañanas de10:00 a 15:00 h","Establecimiento hostelero","Hostelería",40.95979338,-5.66805935,"Centro"],["Baño 40","Pabellon Municipal Lazarillo del Tormes","Mañanas de 8:00 a 15:00 h. · Tardes de 16:00 a 23:00 h.","Pabellón municipal","Equipamiento municipal",40.9549149,-5.70164516,"Tejares"],["Baño 20","Pabellon Municipal Würzburg","Mañanas de 8:00 a 15:00 h. · Tardes de 16:00 a 23:00 h.","Pabellón municipal","Equipamiento municipal",40.98261988,-5.65290858,"Chinchibarra"]];
+
+    baños.forEach(b => {
+      const horario = b[2] ? b[2] : 'Sin horario indicado';
+      L.circleMarker([b[5], b[6]], {
+        radius: 8,
+        fillColor: colores[b[4]],
+        color: '#ffffff',
+        weight: 2,
+        fillOpacity: 0.9
+      }).bindPopup(`<b>${b[0]}</b><br>${b[1]}<br><i>${b[3]}</i><br>Horario: ${horario}`).addTo(mapBanos);
+    });
+
+    const leyenda = L.control({ position: 'bottomright' });
+    leyenda.onAdd = function () {
+      const div = L.DomUtil.create('div');
+      div.style.cssText = 'background:#fff;padding:8px 10px;border-radius:6px;font-size:12px;line-height:1.6;box-shadow:0 1px 4px rgba(0,0,0,.3)';
+      div.innerHTML = Object.entries(colores).map(([k, c]) => `<span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:${c};margin-right:6px"></span>${k}`).join('<br>');
+      return div;
+    };
+    leyenda.addTo(mapBanos);
+
+    new Chart(document.getElementById('banosTipoChart').getContext('2d'), {
+      type: 'bar',
+      data: {
+        labels: ["Parque, paseo o calle","Establecimiento hostelero","CEAS (acción social)","Biblioteca municipal","Centro municipal integrado (CMI)","Centro cívico / espacio de participación","Mercado","Centro de mayores","Huertos urbanos","Museo","Pabellón municipal","Ayuntamiento","Catedral Nueva (plaza de Anaya)"],
+        datasets: [{ label: 'Baños públicos', data: [7,5,5,4,3,3,3,3,2,2,2,1,1], backgroundColor: '#2C5F2D', borderRadius: 4 }]
+      },
+      options: {
+        indexAxis: 'y',
+        responsive: true,
+        plugins: { legend: { display: false } },
+        scales: { x: { beginAtZero: true, ticks: { stepSize: 1 }, title: { display: true, text: 'Número de baños (41 en total)' } } }
+      }
+    });
+  </script>
