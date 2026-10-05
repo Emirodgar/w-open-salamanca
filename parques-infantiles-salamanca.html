@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Parques y zonas de juegos infantiles
-description: Las zonas de juego infantil accesibles de Salamanca, sus renovaciones recientes y la inversion municipal en accesibilidad
-date: 15-09-2026
+description: Mapa de las 90 ubicaciones de juegos infantiles de Salamanca según la IDE municipal, con su reparto por barrios, las zonas accesibles y la inversión municipal en renovaciones
+date: 05-10-2026
 folder: Medio Ambiente
 permalink: parques-infantiles-salamanca
 ---
@@ -17,7 +17,7 @@ permalink: parques-infantiles-salamanca
 
 			<div id="section-content">
 
-  <!-- Mapa de zonas de juegos infantiles -->
+  <!-- Mapa de zonas de juegos infantiles (capa IDE Ayuntamiento) -->
   <div id="mapaInfantiles" style="width: 100%; height: 500px; border-radius: 8px; margin-bottom: 25px;"></div>
 
 
@@ -30,11 +30,25 @@ Salamanca cuenta ya con <b>51 zonas de juegos infantiles con elementos adaptados
 <ul>
 <li><b>De 35 a 51 zonas accesibles</b>: el programa de adaptación arrancó con la renovación de espacios como el Parque Fluvial, la Plaza de Diego Hurtado de Mendoza o la calle Cruz de Caravaca, y ha seguido creciendo hasta las 51 zonas actuales, entre ellas las plazas de Würzburg, Jesuitas, Carmelitas, Barcelona, Burgos, Baleares, Picasso, Ciudad Rodrigo, Colón o Enrique de Sena, además de La Alamedilla, Villar y Macías, el Bulevar de La Milagrosa o la propia Ciudad Deportiva de La Aldehuela.</li>
 <li><b>La accesibilidad, el eje de la inversión</b>: la reciente reforma de la Plaza de la Concordia añadió una estructura de sombra sobre los juegos infantiles, mientras que en la Avenida de Salamanca se renovaron a la vez la zona de juegos, las pistas deportivas y los aparatos biosaludables del mismo espacio.</li>
-<li><b>Barrios periféricos, los últimos en llegar</b>: el Ayuntamiento ya ha renovado y ampliado las zonas verdes y el parque infantil de Los Alcaldes, y tiene anteproyectos redactados para ampliar aún más la zona de juegos infantiles en el barrio del Zurguén, dos de las collaciones más jóvenes y con menor renta de la ciudad.</li>
+<li><b>Renovación en barrios de la periferia</b>: el Ayuntamiento ya ha renovado y ampliado las zonas verdes y el parque infantil de Los Alcaldes, y tiene anteproyectos redactados para ampliar aún más la zona de juegos infantiles en el barrio del Zurguén. Los Alcaldes figura en la capa geolocalizada con un solo punto; Zurguén, con nueve.</li>
 <li><b>Renovaciones más recientes</b>: la Plaza de Extremadura, en el barrio de Buenos Aires, y el entorno del Centro de Convivencia Victoria Adrados figuran entre las últimas actuaciones anunciadas por el Ayuntamiento.</li>
 </ul>
 
 <p>Esta red de juego se apoya en la misma infraestructura verde que analiza la página de <a href="/zonas-verdes">zonas verdes y esparcimiento canino</a> de la ciudad, con la que comparte buena parte de los grandes parques, y se complementa con las <a href="/parques-caninos-salamanca">zonas de esparcimiento canino</a> repartidas por los mismos espacios.</p>
+
+  <h2>Dónde están: 90 ubicaciones geolocalizadas</h2>
+  <p>
+La capa <b>"Juegos Infantiles"</b> de la IDE municipal (Infraestructura de Datos Espaciales del Ayuntamiento) contiene <b>91 puntos</b>. Dos de ellos, ambos con el nombre "Plaza de Castilla y León", tienen exactamente las mismas coordenadas, así que el mapa muestra <b>90 ubicaciones distintas</b>. Esta cifra no es la misma que las 51 zonas con elementos accesibles: la capa incluye todos los espacios de juego registrados, accesibles o no, y algunos puntos corresponden a una plaza o parque con varios juegos y otros a un único conjunto de columpios.</p>
+  <ul>
+    <li><b>Pizarrales (10) y Zurguén (9)</b> son los barrios con más puntos. En Zurguén, los 9 son pequeñas plazuelas del propio barrio (Willy Brandt, Konrad Adenauer, Jacques Delors, Jean Monnet o Robert Schuman), lo que apunta a un diseño con un espacio de juego cada pocas calles.</li>
+    <li><b>Blanco (6)</b>, <b>Prosperidad, San José y Platina (5 cada uno)</b> completan el grupo de cabeza.</li>
+    <li><b>Diez barrios no tienen ningún punto</b>: Fontana, Glorieta, Labradores, Marín, Montalvos, San Isidro, San Vicente, Santo Tomás, Tenerías y Vidal. Es un dato de la capa, no una afirmación de que no haya ningún espacio de juego en esos barrios.</li>
+    <li>Algunos registros no son parques infantiles clásicos: hay una pista de baloncesto y fútbol, un "Sports Field", un parque de cuerdas y aventura y el Museo del Comercio y la Industria. Otros tienen nombres genéricos ("Parque Infantil", "Parque") y no se pueden identificar sin consultar el mapa.</li>
+  </ul>
+  <p style="font-size: 0.9em; color: #555;">El barrio de cada punto se ha calculado cruzando sus coordenadas con los <a href="/mapa-capas-salamanca">límites aproximados de los barrios</a>, que no son oficiales, por lo que los puntos cercanos a una frontera pueden estar asignados al barrio vecino. Los nombres de los puntos son los de la capa original.</p>
+
+  <h2>Ubicaciones de juegos infantiles por barrio</h2>
+  <canvas id="infantilesBarriosChart" width="800" height="500"></canvas>
 
   <h2>Zonas de juego accesibles: de 35 a 51 en pocos años</h2>
   <canvas id="infantilesChart" width="800" height="350"></canvas>
@@ -95,33 +109,47 @@ Salamanca cuenta ya con <b>51 zonas de juegos infantiles con elementos adaptados
 	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 	<script>
-    // 1. Inicializar mapa de zonas de juegos infantiles (subconjunto con ubicación conocida)
+    // 1. Mapa con las 90 ubicaciones de la capa "Juegos Infantiles" de la IDE municipal
     const mapInfantiles = L.map('mapaInfantiles').setView([40.9650, -5.6630], 13);
 
     L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/light_all/{z}/{x}/{y}{r}.png?key=cb1_2izw_1_55d93b51ded1dcecfa044181', {
-      attribution: '&copy; OpenStreetMap &copy; CARTO',
+      attribution: '&copy; OpenStreetMap &copy; CARTO | Datos: IDE Ayuntamiento de Salamanca',
       subdomains: 'abcd',
       maxZoom: 19
     }).addTo(mapInfantiles);
 
-    const zonasInfantiles = [
-      { name: 'Plaza Würzburg', lat: 40.9770, lng: -5.6550, desc: 'Zona de juegos accesible, Garrido Norte' },
-      { name: 'Plaza de los Jesuitas', lat: 40.9638, lng: -5.6540, desc: 'Zona de juegos accesible, Providencia/Delicias' },
-      { name: 'La Alamedilla', lat: 40.9677, lng: -5.6561, desc: 'Zona de juegos accesible' },
-      { name: 'Plaza Baleares', lat: 40.9763, lng: -5.6798, desc: 'Zona de juegos accesible, Pizarrales' },
-      { name: 'Ciudad Deportiva de La Aldehuela', lat: 40.9550, lng: -5.6410, desc: 'Zona de juegos accesible dentro del complejo deportivo' },
-      { name: 'Los Alcaldes', lat: 40.9770, lng: -5.6600, desc: 'Parque infantil renovado y zonas verdes ampliadas' },
-      { name: 'El Zurguén', lat: 40.9423, lng: -5.6743, desc: 'Anteproyecto pendiente de ejecución' }
-    ];
+    // [nombre, latitud, longitud, barrio aproximado]
+    const zonasInfantiles = [["Avd. Salamanca",40.976464,-5.668586,"Blanco"],["Plaza de Colón",40.962342,-5.663541,"Centro"],["Parque Los jerónimos",40.956124,-5.656541,"Prosperidad"],["Plaza Campillo",40.969041,-5.66152,"Centro"],["Campo de San Francisco",40.966795,-5.668526,"Centro"],["Juegos Infantiles",40.952782,-5.681961,"Los Alambres"],["Plaza Extremadura",40.954115,-5.706375,"Buenos Aires"],["Parque los Alcaldes",40.952874,-5.689718,"Los Alcaldes"],["Calle Carolina Coronado",40.954759,-5.698123,"Tejares"],["Parque Lazarillo de Tormes",40.954739,-5.700599,"Tejares"],["Parque de las Musas",40.949956,-5.679331,"Vistahermosa"],["Calle Río Coa",40.951175,-5.679693,"Vistahermosa"],["Parque de Elio Antonio de Nebrija",40.958065,-5.674448,"Arrabal"],["Iglesia Nueva del Arrabal",40.955012,-5.66899,"Arrabal"],["Parque Miguel Delibes",40.956524,-5.675564,"Arrabal"],["Plaza Poniente",40.955478,-5.671976,"Arrabal"],["Plaza Willy Brandt",40.941469,-5.670713,"Zurguén"],["Plazuela Konrad Adenauer",40.942634,-5.669915,"Zurguén"],["Plazuela de la Fuente El Cántaro",40.946397,-5.670316,"Zurguén"],["Plazoleta Fuente Tormellas",40.947607,-5.671176,"Zurguén"],["Plaza de Jacques Delors",40.941757,-5.66982,"Zurguén"],["Plaza de Jean Monet",40.94407,-5.670141,"Zurguén"],["Plazuela de la Fuente Clara",40.946352,-5.670988,"Zurguén"],["Plazuela Robert Schuman",40.943865,-5.67133,"Zurguén"],["Plazuela Winston Churchill",40.942766,-5.671459,"Zurguén"],["Juegos Infantiles “Würzburg”.",40.981505,-5.651366,"Chinchibarra"],["Parque Infantil San José",40.952043,-5.666382,"Tormes"],["Plaza Alfonso Sánchez Montero",40.981493,-5.674837,"Pizarrales"],["Maestro Arriaga",40.946121,-5.659717,"San José"],["Calle Maestro Barbieri",40.948519,-5.661499,"San José"],["Parque",40.950127,-5.661984,"San José"],["Plaza Maestro Jimenez",40.949999,-5.661619,"San José"],["Plaza Maestro Tomás Luis de Victoria",40.949321,-5.661748,"San José"],["Plaza de Coimbra",40.950462,-5.672008,"Teso de la Feria"],["Parque Infantil Picasso",40.968378,-5.652389,"Rollo"],["Museo del Comercio y la Industria",40.965072,-5.654094,"Delicias"],["Parque Picasso",40.967326,-5.650823,"Rollo"],["Plaza del Zoco",40.978689,-5.676776,"Pizarrales"],["Parque de los Jesuitas",40.960665,-5.655811,"Prosperidad"],["Parque de Nuestro Padre Jesús del Perdón",40.959695,-5.648917,"Prosperidad"],["Calle de la Milagrosa",40.960735,-5.652252,"Prosperidad"],["Arco de las Bernardas Huerta de los Jesuitas",40.964178,-5.6569,"Prosperidad"],["Columpios infantiles",40.97458,-5.638079,"Puente Ladrillo"],["Pistas de baloncesto y fútbol",40.970547,-5.637759,"Puente Ladrillo"],["Parque Tomás Bretón",40.972491,-5.640407,"Puente Ladrillo"],["Calle Mieres",40.966428,-5.649004,"Rollo"],["Plaza de Castilla y León",40.967031,-5.64522,"Rollo"],["Parque de la Chinchibarra",40.977711,-5.656285,"Chinchibarra"],["Parque infantil con Mural",40.981354,-5.65947,"Ciudad Jardín"],["Parque Infantil",40.980783,-5.650452,"Garrido Norte"],["Parque Infantil",40.973786,-5.649663,"Garrido Norte"],["Parque de Garrido",40.975194,-5.653518,"Garrido Norte"],["Parque infantil Alamedilla",40.968345,-5.655887,"Alamedilla"],["Plaza del Poeta Claudio Rodríguez",40.971746,-5.655696,"Garrido Sur"],["Parque Infantil El Corte Inglés",40.974178,-5.658328,"Salesas"],["Parque de Salesas",40.975039,-5.661433,"Salesas"],["Parque infantil de la plaza Carmelitas",40.969101,-5.668086,"Oeste"],["Parque Don Juan Tenorio",40.965391,-5.688182,"Platina"],["Parque Infantil de Huerta Otea",40.963907,-5.686054,"Platina"],["Parque Infantil San Bernardo",40.967974,-5.670389,"San Bernardo"],["Parque Infantil Victoria Adrados",40.970695,-5.67039,"San Bernardo"],["Parque Villar y Macías",40.972968,-5.672907,"San Bernardo"],["Parque Infantil",40.980558,-5.671922,"Blanco"],["Parque Infantil",40.978478,-5.669414,"Blanco"],["Plaza Toneleros",40.978343,-5.672369,"Blanco"],["Plaza Catastrofe",40.981843,-5.667243,"Capuchinos"],["Plaza de Burgos",40.980043,-5.666319,"Capuchinos"],["Plaza de Dios le guarde",40.974211,-5.676125,"Carmen"],["Plaza de Guijuelo",40.974102,-5.675535,"Carmen"],["Sports Field",40.975513,-5.677433,"Pizarrales"],["Plaza de Baleares",40.97802,-5.677598,"Pizarrales"],["Plazuela Francisco Botello de Moraes",40.979417,-5.672141,"Blanco"],["Parque",40.980095,-5.674471,"Pizarrales"],["Plaza de Huerta Otea",40.964061,-5.686151,"Platina"],["Plaza de la enseñanza",40.978841,-5.67441,"Pizarrales"],["Parque Infantil",40.976314,-5.680483,"Pizarrales"],["Parque el Sol",40.955237,-5.688118,"Chamberí"],["Parque del Paseo del Lunes de Aguas",40.955711,-5.685176,"Chamberí"],["Parque Infantil",40.971745,-5.689015,"Platina"],["Parque Alvarado",40.96863,-5.693837,"Platina"],["Plaza virgen de la vega",40.950029,-5.66825,"La Vega"],["Parque Huerta Otea",40.964495,-5.682006,"San Bernardo"],["Plazoleta de los olivos",40.977607,-5.654184,"Chinchibarra"],["Plaza Enseñanza",40.978953,-5.674631,"Pizarrales"],["Plaza Oficios",40.980632,-5.675625,"Pizarrales"],["Parque San Juan Bosco",40.974788,-5.670647,"Blanco"],["Plaza Parque Valhondo",40.97659,-5.680739,"Pizarrales"],["Plaza Virgen de la Vega",40.949956,-5.668502,"La Vega"],["Parque de cuerdas y Aventura la Lonja",40.956678,-5.689891,""],["Plaza de Vistahermosa",40.949122,-5.680323,"Vistahermosa"]];
 
     zonasInfantiles.forEach(z => {
-      L.circleMarker([z.lat, z.lng], {
-        radius: 9,
+      L.circleMarker([z[1], z[2]], {
+        radius: 7,
         fillColor: '#F4A261',
         color: '#ffffff',
         weight: 2,
         fillOpacity: 0.85
-      }).bindPopup(`<b>${z.name}</b><br>${z.desc}`).addTo(mapInfantiles);
+      }).bindPopup(`<b>${z[0]}</b>${z[3] ? '<br>Barrio (aprox.): ' + z[3] : ''}`).addTo(mapInfantiles);
+    });
+
+    // 1b. Gráfico: ubicaciones por barrio (barrios con al menos 3 puntos)
+    const porBarrio = {};
+    zonasInfantiles.forEach(z => { if (z[3]) porBarrio[z[3]] = (porBarrio[z[3]] || 0) + 1; });
+    const topBarrios = Object.entries(porBarrio).filter(e => e[1] >= 3).sort((x, y) => y[1] - x[1]);
+    new Chart(document.getElementById('infantilesBarriosChart').getContext('2d'), {
+      type: 'bar',
+      data: {
+        labels: topBarrios.map(e => e[0]),
+        datasets: [{ label: 'Ubicaciones de juegos infantiles', data: topBarrios.map(e => e[1]), backgroundColor: '#F4A261', borderRadius: 4 }]
+      },
+      options: {
+        indexAxis: 'y',
+        responsive: true,
+        plugins: {
+          legend: { display: false },
+          title: { display: true, text: 'Barrios con 3 o más ubicaciones (barrio asignado de forma aproximada)', font: { size: 12 } }
+        },
+        scales: { x: { beginAtZero: true, ticks: { stepSize: 1 }, title: { display: true, text: 'Nº de ubicaciones' } } }
+      }
     });
 
     // 2. Gráfico: crecimiento de la red de zonas de juego accesibles
