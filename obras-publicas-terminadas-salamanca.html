@@ -1,0 +1,101 @@
+---
+layout: default
+title: Obras públicas terminadas en Salamanca
+description: Análisis de las nueve actuaciones de obra pública ya finalizadas por el Ayuntamiento de Salamanca - plazas, calles, peatonalizaciones, glorietas y seguridad
+date: 05-10-2026
+folder: Urbanismo
+permalink: obras-publicas-terminadas-salamanca
+---
+
+    <section class="featured dataset" id="datos">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="section-title">{{ page.title }}</h1>
+                <p class="section-description">{{ page.description }}</p>
+            </div>
+
+            <div id="section-content">
+
+                <h2>Casi ocho de cada diez obras terminadas son de espacio público</h2>
+
+                <p>
+El listado de obras terminadas publicado por el Ayuntamiento recoge <b>9 actuaciones</b>. Casi todas tienen el mismo perfil: <b>transformar calles y plazas para el peatón</b>. Siete de las nueve (el 78 %) son urbanizaciones, mejoras de plazas o peatonalizaciones. Las otras dos son una glorieta y una barrera de seguridad en una pasarela.</p>
+
+                <canvas id="obrasTipoChart" width="800" height="400"></canvas>
+
+                <h3>Qué tipo de obras son</h3>
+                <ul>
+                    <li><b>Urbanización de calles (3)</b>: <b>calle Ancha</b>, <b>calle La Alberca</b> (tramo entre la avenida de los Maristas y Filiberto Villalobos) y la reforma interior del barrio de <b>Chinchibarra</b>, que afecta a las calles Río Frío, Crisantemos, Margaritas y Hortensias.</li>
+                    <li><b>Plazas (2)</b>: la <b>plaza de Extremadura</b>, dentro del programa de adecuación y mantenimiento de equipamientos de los barrios, y la <b>plaza García Bernalt</b>.</li>
+                    <li><b>Peatonalización y viario de convivencia (2)</b>: el núcleo tradicional de <b>Tejares</b> (zona norte) y la <b>Vaguada de la Palma</b> con las calles Oviedo, Balmes y Veracruz.</li>
+                    <li><b>Tráfico (1)</b>: la <b>glorieta del Tratado de Tordesillas</b>, en el cruce de la avenida de San Agustín con la avenida de Salamanca.</li>
+                    <li><b>Seguridad (1)</b>: una <b>barrera de protección frente a la electrificación</b> en la pasarela de la calle San Ildefonso.</li>
+                </ul>
+
+                <h3>Lo que se ve en el conjunto</h3>
+                <ul>
+                    <li><b>Los barrios cuentan.</b> Dos de las obras nombran barrios enteros (Tejares y Chinchibarra) y el listado incluye otras actuaciones de mejora de barrios. No todo es el centro.</li>
+                    <li><b>Predomina la idea de "viario de convivencia".</b> Dos obras usan términos como peatonalización o convivencia, y las reformas de calles y plazas siguen una línea parecida. Es coherente con lo que se ve en <a href="/movilidad-peatonal">movilidad peatonal</a>.</li>
+                    <li><b>Hay obra pequeña de mantenimiento.</b> La barrera de San Ildefonso es una actuación puntual de seguridad. No tiene el tamaño de una urbanización, pero aparece en el mismo listado.</li>
+                </ul>
+
+                <h3>Lo que el listado no dice</h3>
+                <p>
+El fichero solo trae cuatro campos: número, título, dirección y enlace a una ficha técnica. <b>No incluye fechas, presupuestos, empresas adjudicatarias ni superficies</b>, así que no se puede saber cuánto costaron estas obras, cuándo acabaron ni cuál fue la más grande. Para eso hay que ir a cada ficha. Este análisis no se atreve a ordenar las obras por inversión ni a sumar importes. Para ver cifras de gasto, consulta el <a href="/presupuesto-inversion-municipal">presupuesto de inversión municipal</a> o la actividad de <a href="/licencias-obras-urbanismo">licencias y obras</a>.</p>
+
+                <p>
+También hay una pequeña incidencia en los datos: los números 6 y 8 aparecen dos veces, cada uno con una obra distinta, y falta el 5. Por eso hay 9 filas pero solo 7 identificadores distintos. Probablemente sea un error de numeración, no obras repetidas, ya que los títulos son diferentes.</p>
+
+            </div>
+
+            <div id="section-table">
+                <table border="1" cellpadding="5" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>Obra</th>
+                            <th>Tipo</th>
+                            <th>Ubicación</th>
+                            <th>Ficha</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Mejora de la plaza de Extremadura</td><td>Plaza</td><td>Plaza de Extremadura</td><td><a href="https://webserver-aytosalamanca-prd.lfr.cloud/documents/d/guest/TRIPTICO_PZA_EXTREMADURA" rel="noopener" target="_blank">Tríptico</a></td></tr>
+                        <tr><td>Urbanización de la plaza García Bernalt</td><td>Plaza</td><td>Plaza García Bernalt</td><td><a href="https://webserver-aytosalamanca-prd.lfr.cloud/documents/d/guest/TRIPTICO_PZA_GARCIA_BERNALT" rel="noopener" target="_blank">Tríptico</a></td></tr>
+                        <tr><td>Urbanización de la calle La Alberca (tramo avenida Maristas - Filiberto Villalobos)</td><td>Calle</td><td>Calle La Alberca, avenida Maristas, Filiberto Villalobos</td><td><a href="https://webserver-aytosalamanca-prd.lfr.cloud/documents/d/guest/TRIPTICO_CALLE_ALBERCA" rel="noopener" target="_blank">Tríptico</a></td></tr>
+                        <tr><td>Barrera de protección de electrificación en la pasarela de la calle San Ildefonso</td><td>Seguridad</td><td>Calle San Ildefonso</td><td><a href="https://webserver-aytosalamanca-prd.lfr.cloud/documents/d/guest/988" rel="noopener" target="_blank">Ficha</a></td></tr>
+                        <tr><td>Glorieta del Tratado de Tordesillas</td><td>Tráfico</td><td>Avenida San Agustín - avenida Salamanca</td><td><a href="https://webserver-aytosalamanca-prd.lfr.cloud/documents/d/guest/951_TRIPTICO" rel="noopener" target="_blank">Tríptico</a></td></tr>
+                        <tr><td>Urbanización de la calle Ancha</td><td>Calle</td><td>Calle Ancha</td><td><a href="https://webserver-aytosalamanca-prd.lfr.cloud/documents/d/guest/918TRIPTICO_OBRA_CALLE_ANCHA" rel="noopener" target="_blank">Tríptico</a></td></tr>
+                        <tr><td>Reforma interior del barrio de Chinchibarra</td><td>Calle</td><td>Calles Río Frío, Crisantemos, Margaritas y Hortensias</td><td><a href="https://webserver-aytosalamanca-prd.lfr.cloud/documents/d/guest/TRIPTICO_OBRA_CHINCHIBARRA" rel="noopener" target="_blank">Tríptico</a></td></tr>
+                        <tr><td>Reurbanización como viario de convivencia del núcleo tradicional de Tejares (zona norte)</td><td>Peatonalización</td><td>Barrio de Tejares</td><td><a href="https://webserver-aytosalamanca-prd.lfr.cloud/documents/d/guest/648_tiptico" rel="noopener" target="_blank">Tríptico</a></td></tr>
+                        <tr><td>Peatonalización de la Vaguada de la Palma y de las calles Oviedo, Balmes y Veracruz</td><td>Peatonalización</td><td>Vaguada de la Palma, Oviedo, Balmes y Veracruz</td><td><a href="https://webserver-aytosalamanca-prd.lfr.cloud/documents/d/guest/1004_triptico" rel="noopener" target="_blank">Tríptico</a></td></tr>
+                    </tbody>
+                </table>
+                <p><small>Fuente: listado "Obras terminadas" del Ayuntamiento de Salamanca. Clasificación por tipo elaborada por Open Salamanca a partir del título de cada obra.</small></p>
+            </div>
+
+            {% include categories.html %}
+
+        </div>
+    </section>
+
+    <script>
+    const ctxObras = document.getElementById('obrasTipoChart').getContext('2d');
+    new Chart(ctxObras, {
+      type: 'bar',
+      data: {
+        labels: ['Calles', 'Plazas', 'Peatonalización', 'Tráfico (glorieta)', 'Seguridad'],
+        datasets: [{
+          label: 'Obras terminadas',
+          data: [3, 2, 2, 1, 1],
+          backgroundColor: ['#1E56A0', '#2C5F2D', '#97BC62', '#F4A261', '#264653']
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: { legend: { display: false } },
+        scales: {
+          y: { beginAtZero: true, ticks: { stepSize: 1 }, title: { display: true, text: 'Número de obras' } }
+        }
+      }
+    });
+    </script>
