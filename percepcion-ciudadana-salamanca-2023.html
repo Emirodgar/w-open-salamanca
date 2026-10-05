@@ -1,0 +1,178 @@
+---
+layout: default
+title: Percepción ciudadana de los servicios municipales 2023
+description: Resultados de la encuesta de percepción ciudadana 2023 sobre el Ayuntamiento de Salamanca - satisfacción, servicios mejor y peor valorados, prioridades de gasto y participación, con 1.992 registros
+date: 05-10-2026
+folder: Politica
+permalink: percepcion-ciudadana-salamanca-2023
+---
+
+    <section class="featured dataset" id="datos">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="section-title">{{ page.title }}</h1>
+                <p class="section-description">{{ page.description }}</p>
+            </div>
+
+			<div id="section-content">
+
+			<h2>Una ciudad con buena nota general y deberes pendientes en barrios, información y participación</h2>
+
+			<p>
+La base de datos de la encuesta de percepción ciudadana 2023 contiene <b>1.992 registros</b>. Los salmantinos que contestan están, en general, contentos con vivir aquí: el <b>84,6 % se declara satisfecho o muy satisfecho</b> (35 % muy satisfecho) y solo el 3,6 % poco satisfecho. Las críticas se concentran en tres asuntos: <b>cómo se reparte la atención entre barrios</b>, <b>la información que llega del Ayuntamiento</b> y <b>la participación en las decisiones</b>.</p>
+
+<h3>Hallazgos clave</h3>
+<ul>
+<li><b>Satisfacción alta con la ciudad, más tibia con el Ayuntamiento.</b> El 66,7 % valora como buena o alta la calidad de vida en Salamanca, pero la calidad de los servicios municipales divide a los encuestados: 48,7 % la considera buena o alta y 51,3 % mejorable o baja. Sobre la evolución en los últimos cinco años, el 39,1 % opina que está igual, el 32,6 % que ha mejorado y el 21,3 % que ha empeorado.</li>
+<li><b>El trato entre barrios es el punto más débil.</b> Solo el 41,8 % cree que el Ayuntamiento atiende por igual las necesidades de todos los barrios (frente al 62,5 % que ve los servicios cercanos y accesibles y el 55,2 % que cree que resuelve con eficacia los problemas). Por zonas de residencia, la percepción más baja es la de la <b>zona VII</b> (Arrabal, San José, Tejares, La Vega, Chamberí, Buenos Aires, Teso de la Feria, entre otros), con un 23,9 %. La más alta es la de la zona V (Garrido Sur, Labradores y Salesas), con un 54,8 %.</li>
+<li><b>La información municipal no llega bien.</b> Solo el 32 % de quienes opinan considera buena la información que reciben sobre servicios, programas y actividades. El 44,2 % la ve mejorable y el 23,9 % insuficiente.</li>
+<li><b>Participación: interés sí, canales no.</b> El 59,9 % de quienes se pronuncian tiene interés en participar activamente en los asuntos municipales, pero solo el 25,3 % participó en una consulta el último año, solo el 24,5 % cree que el Ayuntamiento facilita la participación y solo el 11,7 % visitó el apartado de transparencia de la web.</li>
+<li><b>Lo básico funciona; la conservación de barrios convence menos.</b> Recogida de basuras y agua potable son lo mejor valorado (74,6 % de valoraciones buenas o muy buenas, y solo el 3,6 % y el 6,1 % negativas). En el extremo contrario, la rehabilitación y conservación de barrios solo logra un 32,5 % de valoraciones positivas frente a un 29,1 % de negativas; el carril bici (44,5 % positivas, 22 % negativas) y el mantenimiento de calles (46 % y 19,9 %) tampoco destacan. Más datos en <a href="/red-ciclista">red ciclista</a> y <a href="/obras-publicas-terminadas-salamanca">obras públicas terminadas</a>.</li>
+<li><b>Servicios con mejor y peor nota.</b> Entre los servicios valorados por al menos 100 personas, destacan las bibliotecas municipales (8,31) y sus actividades (8,28), las actividades educativas (7,87) y las culturales (7,75). Los peores son la <b>zona regulada ORA (5,82)</b>, la oferta municipal de vivienda pública (5,99, con justo 100 valoraciones) y desplazarse en bici (6,03). Ver <a href="/aparcamientos-estacionamiento-ora">ORA y aparcamientos</a> y <a href="/bibliotecas-cultura">bibliotecas</a>.</li>
+<li><b>Seguridad al desplazarse.</b> El 86,4 % se siente seguro o muy seguro al moverse por la ciudad; el 13,6 % algo o muy inseguro.</li>
+</ul>
+
+  <h2>¿Qué piensan del funcionamiento del Ayuntamiento?</h2>
+  <canvas id="funcionamientoChart" width="800" height="320"></canvas>
+
+  <h2>Servicios municipales básicos y actuaciones: valoraciones positivas y negativas</h2>
+  <canvas id="serviciosChart" width="800" height="520"></canvas>
+
+  <h2>Nota media de los servicios (0 a 10)</h2>
+  <p>Solo valoran cada servicio quienes lo han utilizado, así que la base cambia mucho de un servicio a otro. Aquí figuran los 30 con al menos 100 valoraciones; los 13 restantes están en la tabla.</p>
+  <canvas id="notasChart" width="800" height="900"></canvas>
+
+  <h2>Prioridades de gasto: en qué querrían que invirtiera el Ayuntamiento</h2>
+  <p>Cada persona podía elegir hasta tres opciones. El gráfico muestra el porcentaje de los 1.248 encuestados que eligió cada una. Un 5,5 % respondió que "todo está bien".</p>
+  <canvas id="prioridadesChart" width="800" height="360"></canvas>
+  <p>Ver también el <a href="/presupuesto-municipal">presupuesto municipal</a> y el de <a href="/presupuesto-inversion-municipal">inversión</a>.</p>
+
+  <h2>¿Se atiende por igual a todos los barrios? Opinión por zona de residencia</h2>
+  <canvas id="zonasChart" width="800" height="360"></canvas>
+  <p>Zonas definidas en la encuesta: I (Centro y casco histórico), II (Alamedilla, Delicias, Fontana, Prosperidad, Puente Ladrillo, Rollo, San Isidro y Santo Tomás), III (Carmelitas-Oeste, Hospital, La Platina y San Bernardo), IV (Blanco, Capuchinos, Carmen, Pizarrales y Vidal), V (Garrido Sur, Labradores y Salesas), VI (Chinchibarra, Estación, Garrido Norte y Glorieta-Ciudad Jardín) y VII (Alambres-San Buenaventura, Arrabal, Buenos Aires, Chamberí, La Vega, San José, Tejares, Teso de la Feria y otros barrios).</p>
+
+  <h2>Cómo leer estos datos</h2>
+  <ul>
+    <li><b>La muestra no está ponderada y no parece representativa de toda la población.</b> De quienes indican su perfil (unos 1.245), el 64 % son mujeres, el 37 % tiene entre 35 y 49 años, el 31 % entre 50 y 64, el 21 % 65 o más y solo el 11 % entre 15 y 34. Los resultados reflejan a quienes contestaron, no necesariamente a toda la ciudad.</li>
+    <li><b>Hay muchas respuestas en blanco.</b> Unos 750 registros no tienen perfil y cada pregunta tiene su propia base: la satisfacción con vivir en Salamanca la responden 1.262 personas, y las prioridades de gasto, 1.248. Cada porcentaje se calcula sobre quienes contestaron y, en las valoraciones, sin contar los NS/NC.</li>
+    <li><b>Los identificadores no son únicos.</b> 79 identificadores aparecen dos veces con respuestas distintas, por lo que se han tratado como registros independientes (1.992 en total).</li>
+    <li><b>Los datos no incluyen fecha de trabajo de campo, método ni margen de error.</b> Por eso las cifras se presentan como descriptivas.</li>
+    <li>Las diferencias por zona o por edad se basan en grupos de entre 90 y 240 personas. Por ejemplo, la satisfacción con vivir en Salamanca va del 80,9 % (zona VII) al 89,8 % (zona VI), y es mayor entre los mayores de 65 (91,9 %) que entre quienes tienen 35 a 49 años (80 %).</li>
+  </ul>
+
+			</div>
+
+			<div id="section-table">
+				<h2>Nota media de cada servicio (0 a 10)</h2>
+				<table border="1" cellpadding="5" cellspacing="0">
+				  <thead>
+					<tr>
+					  <th>Servicio</th>
+					  <th>Nota media</th>
+					  <th>Valoraciones</th>
+					  <th>Base suficiente (100 o más)</th>
+					</tr>
+				  </thead>
+				  <tbody>
+					<tr><td>Desplazarse a pie</td><td>8,75</td><td>1273</td><td>Sí</td></tr>
+					<tr><td>Bibliotecas municipales</td><td>8,31</td><td>887</td><td>Sí</td></tr>
+					<tr><td>Actividades de bibliotecas</td><td>8,28</td><td>461</td><td>Sí</td></tr>
+					<tr><td>Actividades educativas</td><td>7,87</td><td>318</td><td>Sí</td></tr>
+					<tr><td>Actividades culturales</td><td>7,75</td><td>613</td><td>Sí</td></tr>
+					<tr><td>Instalaciones culturales</td><td>7,74</td><td>590</td><td>Sí</td></tr>
+					<tr><td>Actividades para mayores</td><td>7,64</td><td>256</td><td>Sí</td></tr>
+					<tr><td>Desplazarse en taxi</td><td>7,60</td><td>664</td><td>Sí</td></tr>
+					<tr><td>Puntos limpios</td><td>7,53</td><td>961</td><td>Sí</td></tr>
+					<tr><td>Desplazarse en autobús</td><td>7,53</td><td>1135</td><td>Sí</td></tr>
+					<tr><td>Policía Local</td><td>7,51</td><td>517</td><td>Sí</td></tr>
+					<tr><td>Instalaciones para mayores</td><td>7,51</td><td>216</td><td>Sí</td></tr>
+					<tr><td>Actividades para la infancia</td><td>7,50</td><td>169</td><td>Sí</td></tr>
+					<tr><td>Actividades deportivas</td><td>7,49</td><td>277</td><td>Sí</td></tr>
+					<tr><td>CEAS (acción social)</td><td>7,42</td><td>358</td><td>Sí</td></tr>
+					<tr><td>SAC (atención a la ciudadanía)</td><td>7,28</td><td>668</td><td>Sí</td></tr>
+					<tr><td>Instalaciones deportivas</td><td>7,26</td><td>657</td><td>Sí</td></tr>
+					<tr><td>Instalaciones para la infancia</td><td>7,12</td><td>126</td><td>Sí</td></tr>
+					<tr><td>Piscinas municipales</td><td>7,07</td><td>821</td><td>Sí</td></tr>
+					<tr><td>OAGER (contribuyente)</td><td>6,98</td><td>564</td><td>Sí</td></tr>
+					<tr><td>SALenBICI</td><td>6,96</td><td>117</td><td>Sí</td></tr>
+					<tr><td>Ayudas sociales municipales</td><td>6,91</td><td>159</td><td>Sí</td></tr>
+					<tr><td>OMIC (consumidor)</td><td>6,91</td><td>394</td><td>Sí</td></tr>
+					<tr><td>Aparcamientos subterráneos</td><td>6,83</td><td>342</td><td>Sí</td></tr>
+					<tr><td>Desplazarse en coche</td><td>6,80</td><td>1022</td><td>Sí</td></tr>
+					<tr><td>010 (avisos telefónicos)</td><td>6,72</td><td>379</td><td>Sí</td></tr>
+					<tr><td>Aparcamientos en superficie</td><td>6,59</td><td>536</td><td>Sí</td></tr>
+					<tr><td>Desplazarse en bici</td><td>6,03</td><td>354</td><td>Sí</td></tr>
+					<tr><td>Vivienda pública municipal</td><td>5,99</td><td>100</td><td>Sí</td></tr>
+					<tr><td>Zona regulada (ORA)</td><td>5,82</td><td>728</td><td>Sí</td></tr>
+					<tr><td>Bomberos</td><td>8,71</td><td>84</td><td>No (menos de 100)</td></tr>
+					<tr><td>Desplazarse en moto</td><td>7,77</td><td>66</td><td>No (menos de 100)</td></tr>
+					<tr><td>CIAM (atención a la mujer)</td><td>7,76</td><td>29</td><td>No (menos de 100)</td></tr>
+					<tr><td>CEFOL (formación y empleo)</td><td>7,65</td><td>96</td><td>No (menos de 100)</td></tr>
+					<tr><td>Familia e Infancia</td><td>7,60</td><td>57</td><td>No (menos de 100)</td></tr>
+					<tr><td>Actividades para la juventud</td><td>7,53</td><td>81</td><td>No (menos de 100)</td></tr>
+					<tr><td>Control de plagas</td><td>7,08</td><td>60</td><td>No (menos de 100)</td></tr>
+					<tr><td>Instalaciones para la juventud</td><td>7,06</td><td>70</td><td>No (menos de 100)</td></tr>
+					<tr><td>Empleo Joven</td><td>6,73</td><td>64</td><td>No (menos de 100)</td></tr>
+					<tr><td>PAE (atención al emprendedor)</td><td>6,53</td><td>49</td><td>No (menos de 100)</td></tr>
+					<tr><td>Ayudas a empresas</td><td>6,12</td><td>33</td><td>No (menos de 100)</td></tr>
+					<tr><td>Apoyo a pymes</td><td>5,85</td><td>34</td><td>No (menos de 100)</td></tr>
+					<tr><td>Oficina riesgo de desahucio</td><td>5,83</td><td>6</td><td>No (menos de 100)</td></tr>
+				  </tbody>
+				</table>
+				<p><small>Fuente: base de datos de la encuesta de percepción ciudadana 2023 sobre los servicios del Ayuntamiento de Salamanca (fichero percepcion-ciudadana-2023-bbdd). Cálculos de Open Salamanca. La nota se pide solo a quienes han usado el servicio.</small></p>
+			</div>
+
+			{% include categories.html %}
+
+        </div>
+    </section>
+
+    <script>
+    new Chart(document.getElementById('funcionamientoChart').getContext('2d'), {
+      type: 'bar',
+      data: {
+        labels: ['Servicios cercanos y accesibles', 'Resuelven con eficacia los problemas', 'Atienden por igual a todos los barrios', 'La información recibida es buena'],
+        datasets: [{ label: '% de valoración positiva', data: [62.5, 55.2, 41.8, 32.0], backgroundColor: ['#2C5F2D', '#97BC62', '#F4A261', '#DC3545'], borderRadius: 4 }]
+      },
+      options: { indexAxis: 'y', responsive: true, plugins: { legend: { display: false } }, scales: { x: { beginAtZero: true, max: 100, title: { display: true, text: '% de quienes opinan (sin NS/NC)' } } } }
+    });
+
+    new Chart(document.getElementById('serviciosChart').getContext('2d'), {
+      type: 'bar',
+      data: {
+        labels: ["Parques y jardines", "Mantenimiento de calles", "Alumbrado", "Agua potable", "Recogida de basuras", "Autobús urbano", "Huertos urbanos", "Carril bici", "Rehabilitación y conservación de barrios", "Peatonalizaciones"],
+        datasets: [
+          { label: 'Bueno o muy bueno (%)', data: [49.8, 46.0, 61.1, 74.6, 74.6, 72.2, 68.5, 44.5, 32.5, 50.5], backgroundColor: '#2C5F2D' },
+          { label: 'Malo o deficiente (%)', data: [17.4, 19.9, 9.1, 6.1, 3.6, 7.2, 7.0, 22.0, 29.1, 15.4], backgroundColor: '#DC3545' }
+        ]
+      },
+      options: { indexAxis: 'y', responsive: true, plugins: { legend: { position: 'bottom' } }, scales: { x: { beginAtZero: true, max: 100, title: { display: true, text: '% de quienes opinan (sin NS/NC)' } } } }
+    });
+
+    new Chart(document.getElementById('notasChart').getContext('2d'), {
+      type: 'bar',
+      data: {
+        labels: ["Desplazarse a pie", "Bibliotecas municipales", "Actividades de bibliotecas", "Actividades educativas", "Actividades culturales", "Instalaciones culturales", "Actividades para mayores", "Desplazarse en taxi", "Puntos limpios", "Desplazarse en autobús", "Policía Local", "Instalaciones para mayores", "Actividades para la infancia", "Actividades deportivas", "CEAS (acción social)", "SAC (atención a la ciudadanía)", "Instalaciones deportivas", "Instalaciones para la infancia", "Piscinas municipales", "OAGER (contribuyente)", "SALenBICI", "Ayudas sociales municipales", "OMIC (consumidor)", "Aparcamientos subterráneos", "Desplazarse en coche", "010 (avisos telefónicos)", "Aparcamientos en superficie", "Desplazarse en bici", "Vivienda pública municipal", "Zona regulada (ORA)"],
+        datasets: [{ label: 'Nota media (0-10)', data: [8.75, 8.31, 8.28, 7.87, 7.75, 7.74, 7.64, 7.6, 7.53, 7.53, 7.51, 7.51, 7.5, 7.49, 7.42, 7.28, 7.26, 7.12, 7.07, 6.98, 6.96, 6.91, 6.91, 6.83, 6.8, 6.72, 6.59, 6.03, 5.99, 5.82], backgroundColor: '#1E56A0', borderRadius: 3 }]
+      },
+      options: { indexAxis: 'y', responsive: true, plugins: { legend: { display: false } }, scales: { x: { min: 0, max: 10, title: { display: true, text: 'Nota media de 0 a 10' } } } }
+    });
+
+    new Chart(document.getElementById('prioridadesChart').getContext('2d'), {
+      type: 'bar',
+      data: {
+        labels: ["Educación, cultura, deporte y turismo", "Servicios generales básicos", "Servicios sociales", "Tejido empresarial y empleo", "Transporte y movilidad", "Medio ambiente y desarrollo urbano sostenible"],
+        datasets: [{ label: '% que lo elige entre sus 3 prioridades', data: [55.1, 53.0, 47.4, 42.2, 38.2, 37.2], backgroundColor: '#F4A261', borderRadius: 4 }]
+      },
+      options: { indexAxis: 'y', responsive: true, plugins: { legend: { display: false } }, scales: { x: { beginAtZero: true, max: 100, title: { display: true, text: '% de encuestados' } } } }
+    });
+
+    new Chart(document.getElementById('zonasChart').getContext('2d'), {
+      type: 'bar',
+      data: {
+        labels: ["Zona I Centro", "Zona II", "Zona III", "Zona IV", "Zona V", "Zona VI", "Zona VII"],
+        datasets: [{ label: '% que cree que se atiende por igual a todos los barrios', data: [48.9, 38.2, 32.6, 34.4, 54.8, 37.0, 23.9], backgroundColor: '#264653', borderRadius: 4 }]
+      },
+      options: { responsive: true, plugins: { legend: { display: false } }, scales: { y: { beginAtZero: true, max: 100, title: { display: true, text: '% valoración positiva (alta o buena)' } }, x: { title: { display: true, text: 'Zona de residencia' } } } }
+    });
+    </script>
