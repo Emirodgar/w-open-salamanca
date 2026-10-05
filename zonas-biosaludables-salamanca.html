@@ -1,0 +1,157 @@
+---
+layout: default
+title: Zonas biosaludables y parques de calistenia
+description: Mapa de las 52 ubicaciones de juegos biosaludables de Salamanca según la IDE municipal, su reparto por barrios y su relación con los parques infantiles
+date: 05-10-2026
+folder: Salud
+permalink: zonas-biosaludables-salamanca
+---
+
+    <section class="featured dataset" id="datos">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="section-title">{{ page.title }}</h1>
+                <p class="section-description">{{ page.description }}</p>
+            </div>
+
+			<div id="section-content">
+
+  <div id="mapaBiosaludables" style="width: 100%; height: 500px; border-radius: 8px; margin-bottom: 25px;"></div>
+
+			<h2>Dónde hacer ejercicio al aire libre en Salamanca</h2>
+
+			<p>
+La capa <b>"Juegos Biosaludables"</b> de la IDE municipal (Infraestructura de Datos Espaciales del Ayuntamiento) registra <b>52 ubicaciones</b> con aparatos de ejercicio para adultos y mayores, incluidos varios parques de calistenia. Ninguna de las 52 coordenadas está repetida.</p>
+
+<h3>Hallazgos clave</h3>
+<ul>
+<li><b>San Bernardo (6) y Prosperidad (5)</b> son los barrios con más ubicaciones, seguidos de San José (4) y de Arrabal, Blanco y Puente Ladrillo (3 cada uno).</li>
+<li><b>Hay presencia en 28 de los 40 barrios.</b> Sin ninguna ubicación quedan Chamberí, Garrido Sur, Glorieta, Los Alambres, Marín, Montalvos, Oeste, San Isidro, San Vicente, Santo Tomás, Tenerías y Teso de la Feria, según los límites aproximados usados aquí.</li>
+<li><b>Muchas están pegadas a un parque infantil.</b> 30 de las 52 ubicaciones están a menos de 75 metros de un punto de la capa de <a href="/parques-infantiles-salamanca">juegos infantiles</a>. Es coherente con el modelo de un espacio donde los adultos hacen ejercicio mientras los niños juegan, como en la avenida de Salamanca, donde el Ayuntamiento renovó juntos los juegos, las pistas y los aparatos biosaludables.</li>
+<li><b>Parques grandes y plazas pequeñas.</b> Conviven espacios como Los Jerónimos, el Campo de San Francisco, la Chinchibarra o Tomás Bretón con calles y plazas (Maestro Jiménez, Villar del Profeta, Jilgueros). Hay además al menos tres puntos que se nombran como parque de calistenia: el de las pistas de atletismo, el del paseo fluvial y uno en el barrio de San Bernardo.</li>
+</ul>
+
+<p>Los espacios para hacer ejercicio al aire libre se apoyan en la misma red de <a href="/zonas-verdes">zonas verdes</a> de la ciudad y se complementan con las <a href="/instalaciones-deportivas">instalaciones deportivas</a> municipales.</p>
+
+  <h2>Ubicaciones biosaludables por barrio</h2>
+  <canvas id="biosaludablesChart" width="800" height="500"></canvas>
+
+  <p style="font-size: 0.9em; color: #555;">El barrio de cada punto se ha calculado cruzando sus coordenadas con los <a href="/mapa-capas-salamanca">límites aproximados de los barrios</a>, que no son oficiales: los puntos cercanos a una frontera pueden estar asignados al barrio vecino. Los nombres son los de la capa original y algunos son genéricos ("Playground", "Parque infantil", "Zona infantil"). La capa no indica cuántos aparatos hay en cada ubicación ni su estado.</p>
+
+			</div>
+
+			<div id="section-table">
+				<table border="1" cellpadding="5" cellspacing="0">
+				  <thead>
+					<tr>
+					  <th>Ubicación</th>
+					  <th>Barrio (aprox.)</th>
+					</tr>
+				  </thead>
+				  <tbody>
+					<tr><td>La Alamedilla</td><td>Alamedilla</td></tr>
+					<tr><td>Parque de Elio Antonio de Nebrija</td><td>Arrabal</td></tr>
+					<tr><td>Parque de calistenia (Pistas de atletismo)</td><td>Arrabal</td></tr>
+					<tr><td>Puente Romano</td><td>Arrabal</td></tr>
+					<tr><td>Parque Avenida de Salamanca</td><td>Blanco</td></tr>
+					<tr><td>Parque Mineros</td><td>Blanco</td></tr>
+					<tr><td>Plaza Toneleros</td><td>Blanco</td></tr>
+					<tr><td>Plaza Extremadura</td><td>Buenos Aires</td></tr>
+					<tr><td>Plaza Castrotorafe</td><td>Capuchinos</td></tr>
+					<tr><td>Calle Vallejera</td><td>Carmen</td></tr>
+					<tr><td>Campo de San Francisco</td><td>Centro</td></tr>
+					<tr><td>Monumento a Cristóbal Colón</td><td>Centro</td></tr>
+					<tr><td>Parque de Würzburg</td><td>Chinchibarra</td></tr>
+					<tr><td>Parque de la Chinchibarra</td><td>Chinchibarra</td></tr>
+					<tr><td>Parque infantil con Mural</td><td>Ciudad Jardín</td></tr>
+					<tr><td>Área de actividades deportivas</td><td>Delicias</td></tr>
+					<tr><td>Parque de calistenia (Paseo fluvial)</td><td>Fontana</td></tr>
+					<tr><td>Parque de Garrido</td><td>Garrido Norte</td></tr>
+					<tr><td>Plaza Barcelona</td><td>Garrido Norte</td></tr>
+					<tr><td>Avenida Carlos I</td><td>La Vega</td></tr>
+					<tr><td>Parque Infantil Julián Sánchez el Charro</td><td>Labradores</td></tr>
+					<tr><td>Parque los Alcaldes</td><td>Los Alcaldes</td></tr>
+					<tr><td>Bulevar Jesus Garcia Rodriguez</td><td>Pizarrales</td></tr>
+					<tr><td>Plaza de Baleares</td><td>Pizarrales</td></tr>
+					<tr><td>Parque Don Juan Tenorio</td><td>Platina</td></tr>
+					<tr><td>Arco de las Bernardas Huerta de los Jesuitas</td><td>Prosperidad</td></tr>
+					<tr><td>Bulevar de la Milagrosa</td><td>Prosperidad</td></tr>
+					<tr><td>Los Jerónimos</td><td>Prosperidad</td></tr>
+					<tr><td>Parque Salamanca</td><td>Prosperidad</td></tr>
+					<tr><td>Parque de los Jesuitas</td><td>Prosperidad</td></tr>
+					<tr><td>Avenida Santiago Madrigal</td><td>Puente Ladrillo</td></tr>
+					<tr><td>Parque Ciudad Rodrigo</td><td>Puente Ladrillo</td></tr>
+					<tr><td>Parque Tomás Bretón</td><td>Puente Ladrillo</td></tr>
+					<tr><td>Zona infantil (10 )</td><td>Rollo</td></tr>
+					<tr><td>Parque de las Salesas</td><td>Salesas</td></tr>
+					<tr><td>Centro de Convivencia Victoria Adrados</td><td>San Bernardo</td></tr>
+					<tr><td>Parque Huerta Otea</td><td>San Bernardo</td></tr>
+					<tr><td>Parque ISPE</td><td>San Bernardo</td></tr>
+					<tr><td>Parque Villar y Macías</td><td>San Bernardo</td></tr>
+					<tr><td>Parque de Calistenia</td><td>San Bernardo</td></tr>
+					<tr><td>Plaza Jilgueros</td><td>San Bernardo</td></tr>
+					<tr><td>Calle Maestro Caballero, 11</td><td>San José</td></tr>
+					<tr><td>Calle Maestro Jiménez</td><td>San José</td></tr>
+					<tr><td>Pabellón Frontón San José</td><td>San José</td></tr>
+					<tr><td>Parque infantil</td><td>San José</td></tr>
+					<tr><td>Playground</td><td>Tejares</td></tr>
+					<tr><td>Plaza del Maestro Luna</td><td>Tormes</td></tr>
+					<tr><td>Calle Marmolistas</td><td>Vidal</td></tr>
+					<tr><td>Parque del Doctor Martín</td><td>Vidal</td></tr>
+					<tr><td>Parque de las Musas</td><td>Vistahermosa</td></tr>
+					<tr><td>Calle Parlamento Europeo</td><td>Zurguén</td></tr>
+					<tr><td>Calle Villar del Profeta</td><td>Zurguén</td></tr>
+				  </tbody>
+				</table>
+				<p><small>Fuente: capa "Juegos Biosaludables" de la IDE del Ayuntamiento de Salamanca.</small></p>
+			</div>
+
+			{% include categories.html %}
+
+        </div>
+    </section>
+
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+	<script>
+    const mapBio = L.map('mapaBiosaludables').setView([40.9650, -5.6630], 13);
+
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/light_all/{z}/{x}/{y}{r}.png?key=cb1_2izw_1_55d93b51ded1dcecfa044181', {
+      attribution: '&copy; OpenStreetMap &copy; CARTO | Datos: IDE Ayuntamiento de Salamanca',
+      subdomains: 'abcd',
+      maxZoom: 19
+    }).addTo(mapBio);
+
+    // [nombre, latitud, longitud, barrio aproximado]
+    const zonasBio = [["Parque de calistenia (Pistas de atletismo)",40.95754,-5.672912,"Arrabal"],["Parque Avenida de Salamanca",40.976635,-5.66838,"Blanco"],["Monumento a Cristóbal Colón",40.962402,-5.66388,"Centro"],["Parque de calistenia (Paseo fluvial)",40.955761,-5.664393,"Fontana"],["Campo de San Francisco",40.96659,-5.668639,"Centro"],["Plaza Extremadura",40.953926,-5.705688,"Buenos Aires"],["Parque los Alcaldes",40.952874,-5.689718,"Los Alcaldes"],["Playground",40.954853,-5.698268,"Tejares"],["Parque de las Musas",40.949956,-5.679331,"Vistahermosa"],["Parque de Elio Antonio de Nebrija",40.958065,-5.674448,"Arrabal"],["Puente Romano",40.957835,-5.670142,"Arrabal"],["Plaza del Maestro Luna",40.951265,-5.665269,"Tormes"],["Calle Parlamento Europeo",40.942794,-5.670441,"Zurguén"],["Calle Villar del Profeta",40.946709,-5.671041,"Zurguén"],["Avenida Carlos I",40.949622,-5.665755,"La Vega"],["Pabellón Frontón San José",40.945983,-5.659741,"San José"],["Calle Maestro Caballero, 11",40.948054,-5.659293,"San José"],["Calle Maestro Jiménez",40.949966,-5.66179,"San José"],["Parque infantil",40.950678,-5.662659,"San José"],["Zona infantil (10 )",40.96762,-5.65086,"Rollo"],["Área de actividades deportivas",40.968722,-5.65321,"Delicias"],["Parque de los Jesuitas",40.960665,-5.655811,"Prosperidad"],["Parque Salamanca",40.961299,-5.650992,"Prosperidad"],["Los Jerónimos",40.956157,-5.656541,"Prosperidad"],["Bulevar de la Milagrosa",40.96399,-5.651324,"Prosperidad"],["Parque Ciudad Rodrigo",40.970865,-5.635282,"Puente Ladrillo"],["Avenida Santiago Madrigal",40.970896,-5.637926,"Puente Ladrillo"],["Parque Tomás Bretón",40.972491,-5.640407,"Puente Ladrillo"],["Parque del Doctor Martín",40.9755,-5.665783,"Vidal"],["Parque de la Chinchibarra",40.977711,-5.656285,"Chinchibarra"],["Parque de Würzburg",40.982357,-5.651711,"Chinchibarra"],["Parque infantil con Mural",40.981354,-5.65947,"Ciudad Jardín"],["Plaza Barcelona",40.973727,-5.650017,"Garrido Norte"],["Parque de Garrido",40.975194,-5.653518,"Garrido Norte"],["La Alamedilla",40.968088,-5.657738,"Alamedilla"],["Parque Infantil Julián Sánchez el Charro",40.970566,-5.661032,"Labradores"],["Parque de las Salesas",40.974931,-5.66151,"Salesas"],["Parque Don Juan Tenorio",40.965391,-5.688182,"Platina"],["Parque ISPE",40.966121,-5.680857,"San Bernardo"],["Parque de Calistenia",40.970859,-5.674248,"San Bernardo"],["Plaza Jilgueros",40.967798,-5.67205,"San Bernardo"],["Centro de Convivencia Victoria Adrados - Servicio de Atención Ciudadana del Ayuntamiento de Salamanca",40.970819,-5.670492,"San Bernardo"],["Parque Villar y Macías",40.972968,-5.672907,"San Bernardo"],["Arco de las Bernardas Huerta de los Jesuitas",40.964178,-5.6569,"Prosperidad"],["Calle Marmolistas",40.974588,-5.666336,"Vidal"],["Parque Mineros",40.975873,-5.672503,"Blanco"],["Plaza Toneleros",40.978293,-5.672372,"Blanco"],["Plaza Castrotorafe",40.982227,-5.667211,"Capuchinos"],["Calle Vallejera",40.97457,-5.674198,"Carmen"],["Bulevar Jesus Garcia Rodriguez",40.977469,-5.673308,"Pizarrales"],["Parque Huerta Otea",40.964495,-5.682006,"San Bernardo"],["Plaza de Baleares",40.97802,-5.677598,"Pizarrales"]];
+
+    zonasBio.forEach(z => {
+      L.circleMarker([z[1], z[2]], {
+        radius: 7,
+        fillColor: '#2C5F2D',
+        color: '#ffffff',
+        weight: 2,
+        fillOpacity: 0.85
+      }).bindPopup(`<b>${z[0]}</b>${z[3] ? '<br>Barrio (aprox.): ' + z[3] : ''}`).addTo(mapBio);
+    });
+
+    const porBarrioBio = {};
+    zonasBio.forEach(z => { if (z[3]) porBarrioBio[z[3]] = (porBarrioBio[z[3]] || 0) + 1; });
+    const topBio = Object.entries(porBarrioBio).filter(e => e[1] >= 2).sort((x, y) => y[1] - x[1]);
+    new Chart(document.getElementById('biosaludablesChart').getContext('2d'), {
+      type: 'bar',
+      data: {
+        labels: topBio.map(e => e[0]),
+        datasets: [{ label: 'Ubicaciones biosaludables', data: topBio.map(e => e[1]), backgroundColor: '#2C5F2D', borderRadius: 4 }]
+      },
+      options: {
+        indexAxis: 'y',
+        responsive: true,
+        plugins: {
+          legend: { display: false },
+          title: { display: true, text: 'Barrios con 2 o más ubicaciones (barrio asignado de forma aproximada)', font: { size: 12 } }
+        },
+        scales: { x: { beginAtZero: true, ticks: { stepSize: 1 }, title: { display: true, text: 'Nº de ubicaciones' } } }
+      }
+    });
+  </script>
