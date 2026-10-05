@@ -1,11 +1,11 @@
 {
   "url_base": "https://www.lagacetadesalamanca.es",
-  "generado_en": "2026-10-03T16:05:03+00:00",
+  "generado_en": "2026-10-05T14:18:24+00:00",
   "periodo_cubierto": {
-    "desde": "2026-09-30",
-    "hasta": "2026-10-03"
+    "desde": "2026-10-02",
+    "hasta": "2026-10-05"
   },
-  "total_urls_analizadas": 212,
+  "total_urls_analizadas": 245,
   "secciones_excluidas": [
     "gente-estilo",
     "nacional",
@@ -17,35 +17,35 @@
   "por_seccion": [
     [
       "salamanca",
-      74
+      79
     ],
     [
       "provincia",
-      63
+      71
     ],
     [
       "deportes",
-      36
+      50
     ],
     [
       "sucesos",
       22
     ],
     [
-      "campo",
-      7
+      "toros",
+      11
     ],
     [
-      "toros",
-      3
+      "campo",
+      5
     ],
     [
       "encuestas",
       3
     ],
     [
-      "cine-y-series",
-      2
+      "especiales",
+      1
     ],
     [
       "castilla-y-leon",
@@ -54,184 +54,200 @@
     [
       "virales",
       1
+    ],
+    [
+      "cine-y-series",
+      1
     ]
   ],
   "por_subseccion": [
     [
       "deportes/futbol-local",
-      23
+      29
     ],
     [
       "deportes/baloncesto-local",
-      7
+      9
     ],
     [
       "deportes/deporte-base",
+      2
+    ],
+    [
+      "especiales/concurso-intergeneracional",
+      1
+    ],
+    [
+      "deportes/carreras-populares",
       1
     ]
   ],
   "por_tipo_contenido": [
     [
       "noticia",
-      185
+      187
     ],
     [
       "galería",
-      24
+      52
     ],
     [
       "directo / en vivo",
-      3
+      6
     ]
   ],
   "heatmap_calendario": [
     {
-      "fecha": "2026-09-30",
-      "total": 38,
-      "salamanca": 13,
-      "provincia": 8,
-      "deportes": 10,
-      "sucesos": 6,
-      "campo": 0,
-      "toros": 0,
-      "encuestas": 1,
-      "cine-y-series": 0,
-      "castilla-y-leon": 0,
-      "virales": 0
-    },
-    {
-      "fecha": "2026-10-01",
-      "total": 67,
-      "salamanca": 18,
-      "provincia": 25,
-      "deportes": 14,
-      "sucesos": 5,
-      "campo": 4,
-      "toros": 0,
-      "encuestas": 1,
-      "cine-y-series": 0,
-      "castilla-y-leon": 0,
-      "virales": 0
-    },
-    {
       "fecha": "2026-10-02",
-      "total": 74,
-      "salamanca": 32,
-      "provincia": 24,
-      "deportes": 6,
-      "sucesos": 7,
-      "campo": 1,
+      "total": 54,
+      "salamanca": 16,
+      "provincia": 23,
+      "deportes": 5,
+      "sucesos": 6,
       "toros": 0,
+      "campo": 1,
       "encuestas": 1,
-      "cine-y-series": 2,
+      "especiales": 0,
       "castilla-y-leon": 0,
-      "virales": 1
+      "virales": 1,
+      "cine-y-series": 1
     },
     {
       "fecha": "2026-10-03",
-      "total": 33,
-      "salamanca": 11,
-      "provincia": 6,
-      "deportes": 6,
+      "total": 62,
+      "salamanca": 14,
+      "provincia": 18,
+      "deportes": 15,
       "sucesos": 4,
+      "toros": 7,
       "campo": 2,
-      "toros": 3,
-      "encuestas": 0,
-      "cine-y-series": 0,
+      "encuestas": 1,
+      "especiales": 0,
       "castilla-y-leon": 1,
-      "virales": 0
+      "virales": 0,
+      "cine-y-series": 0
+    },
+    {
+      "fecha": "2026-10-04",
+      "total": 83,
+      "salamanca": 25,
+      "provincia": 27,
+      "deportes": 21,
+      "sucesos": 6,
+      "toros": 3,
+      "campo": 0,
+      "encuestas": 1,
+      "especiales": 0,
+      "castilla-y-leon": 0,
+      "virales": 0,
+      "cine-y-series": 0
+    },
+    {
+      "fecha": "2026-10-05",
+      "total": 46,
+      "salamanca": 24,
+      "provincia": 3,
+      "deportes": 9,
+      "sucesos": 6,
+      "toros": 1,
+      "campo": 2,
+      "encuestas": 0,
+      "especiales": 1,
+      "castilla-y-leon": 0,
+      "virales": 0,
+      "cine-y-series": 0
     }
   ],
   "conceptos_destacados": [
     {
-      "concepto": "Santa Marta",
-      "piezas": 6,
+      "concepto": "Fiestas de la Virgen del Rosario",
+      "piezas": 10,
       "seccion_principal": "provincia",
-      "desde": "2026-10-01",
-      "hasta": "2026-10-02",
+      "desde": "2026-10-03",
+      "hasta": "2026-10-04",
       "ejemplos_redactados": [
-        "El municipio de Santa Marta ha logrado una campaña estival de limpieza con 145 acciones.",
-        "El equipo de fútbol de Santa Marta se enfrentó al Salamanca en un partido con señal en directo."
+        "Navamorales acompaña a la Virgen del Rosario en su día de fiesta.",
+        "Ciudad Rodrigo y Maíllo también celebran a su patrona, la Virgen del Rosario."
       ]
     },
     {
-      "concepto": "Ciudad Rodrigo",
+      "concepto": "Feria Medieval de Ciudad Rodrigo",
       "piezas": 5,
       "seccion_principal": "provincia",
-      "desde": "2026-09-30",
-      "hasta": "2026-10-03",
+      "desde": "2026-10-02",
+      "hasta": "2026-10-04",
       "ejemplos_redactados": [
-        "Ciudad Rodrigo se ha vestido de medievo con la feria de la Conjura.",
-        "Un hombre falleció mientras conducía en Ciudad Rodrigo."
+        "Ciudad Rodrigo celebra un apoteósico cierre de su feria medieval.",
+        "La ciudad se vistió de medievo con la feria de la Conjura."
       ]
     },
     {
-      "concepto": "Meins Avenida",
-      "piezas": 4,
+      "concepto": "Tire Pro Fest en Salamanca",
+      "piezas": 5,
+      "seccion_principal": "salamanca",
+      "desde": "2026-10-02",
+      "hasta": "2026-10-04",
+      "ejemplos_redactados": [
+        "La segunda jornada del Tire Pro Fest hace rugir Salamanca.",
+        "El evento dispara su cuarta edición hacia la consolidación."
+      ]
+    },
+    {
+      "concepto": "Debut del Meins Avenida",
+      "piezas": 5,
       "seccion_principal": "deportes",
-      "desde": "2026-09-30",
+      "desde": "2026-10-03",
+      "hasta": "2026-10-04",
+      "ejemplos_redactados": [
+        "Feliz debut para el Meins Avenida con victoria en su estreno.",
+        "El nuevo equipo entra en escena y vence con convicción."
+      ]
+    },
+    {
+      "concepto": "Marco Pérez en Las Ventas",
+      "piezas": 5,
+      "seccion_principal": "toros",
+      "desde": "2026-10-03",
       "hasta": "2026-10-03",
       "ejemplos_redactados": [
-        "El equipo Meins Avenida jugó contra el Cadí La Seu, con seguimiento en directo.",
-        "El Chartres francés será el tercer rival de Meins Avenida en la fase de grupos."
+        "Marco Pérez confirma su alternativa en Las Ventas.",
+        "Se analizan las claves de su tarde en Madrid."
       ]
     },
     {
-      "concepto": "Castilla y León",
+      "concepto": "Búsqueda de Agustín en Ledrada",
       "piezas": 4,
-      "seccion_principal": "deportes",
-      "desde": "2026-10-01",
-      "hasta": "2026-10-03",
+      "seccion_principal": "sucesos",
+      "desde": "2026-10-02",
+      "hasta": "2026-10-05",
       "ejemplos_redactados": [
-        "La Copa del Mundo de atletismo llega a Castilla y León.",
-        "Salamanca lidera la investigación sanitaria en Castilla y León con varios proyectos."
+        "Quinto día de rastro para Agustín bajo alerta en Ledrada.",
+        "La búsqueda se mantiene con un amplio dispositivo."
       ]
     },
     {
-      "concepto": "Guijuelo",
-      "piezas": 4,
-      "seccion_principal": "provincia",
-      "desde": "2026-10-01",
-      "hasta": "2026-10-03",
-      "ejemplos_redactados": [
-        "Las lluvias obligaron a suspender el encuentro entre el Atlético Mansillés y el Guijuelo.",
-        "Guijuelo se vuelca en la lucha contra el cáncer de mama."
-      ]
-    },
-    {
-      "concepto": "Fiestas locales",
-      "piezas": 4,
-      "seccion_principal": "provincia",
-      "desde": "2026-10-01",
-      "hasta": "2026-10-02",
-      "ejemplos_redactados": [
-        "Santibáñez de Béjar celebra sus esperadas fiestas.",
-        "San Miguel del Valero vibra con sus festejos patronales."
-      ]
-    },
-    {
-      "concepto": "Escuela de Salamanca",
+      "concepto": "Actualidad en Castilla y León",
       "piezas": 4,
       "seccion_principal": "salamanca",
-      "desde": "2026-09-30",
-      "hasta": "2026-10-02",
+      "desde": "2026-10-02",
+      "hasta": "2026-10-05",
       "ejemplos_redactados": [
-        "El Pleno de Peñaranda aprobó por unanimidad la ampliación de la escuela de música.",
-        "San Esteban reivindica la vigencia de la Escuela de Salamanca en un congreso."
+        "La inmigración sostiene la población en Castilla y León.",
+        "La Copa del Mundo llega a la región de la mano de la selección."
       ]
     },
     {
-      "concepto": "Búsqueda desaparecido Ledrada",
-      "piezas": 5,
-      "seccion_principal": "sucesos",
-      "desde": "2026-09-30",
-      "hasta": "2026-10-03",
+      "concepto": "Noticias de Peñaranda",
+      "piezas": 4,
+      "seccion_principal": "provincia",
+      "desde": "2026-10-02",
+      "hasta": "2026-10-04",
       "ejemplos_redactados": [
-        "Se ha desplegado un gran dispositivo de búsqueda para Agustín, un varón desaparecido en Ledrada.",
-        "La búsqueda de Agustín en Ledrada continúa por tercera jornada consecutiva."
+        "Peñaranda se vuelca en la XVI Marcha Solidaria Acopedis.",
+        "La biblioteca municipal ha sido galardonada con el Premio María Moliner."
       ]
     }
   ],
-  "resumen_borrador": "Se han publicado 212 noticias entre el 2026-09-30 y el 2026-10-03. La actividad se ha concentrado sobre todo en salamanca (74 piezas), provincia (63 piezas), deportes (36 piezas).\n\nLos conceptos con más piezas relacionadas son: Santa · Marta; Ciudad · Rodrigo; Busca; Paso. Revisa 'evidencia' de cada concepto para redactar el resumen final.",
-  "resumen": "La actualidad salmantina de los últimos días ha estado marcada por la intensa búsqueda de Agustín, un varón desaparecido en Ledrada, que ha movilizado un amplio dispositivo de emergencia. En el ámbito deportivo, el derbi entre Santa Marta y Salamanca UDS por un puesto en la Copa del Rey ha acaparado la atención, mientras el Meins Avenida ha iniciado su andadura en competición europea. La Copa del Mundo de atletismo llega a Castilla y León, y el Guijuelo ha visto suspendido un encuentro por las lluvias.\n\nLa provincia ha vivido diversas celebraciones, destacando la feria medieval de la Conjura en Ciudad Rodrigo y las fiestas patronales en municipios como Santibáñez de Béjar y San Miguel del Valero. También se ha puesto de manifiesto la preocupación por una escalada de robos violentos en la capital, con especial alerta por los dirigidos a personas mayores en el centro.\n\nEn el plano sanitario, ha comenzado la campaña de vacunación de la gripe en Castilla y León, priorizando a niños y residentes. Otros temas de interés incluyen la inversión en Lumbrales para un edificio multiusos, la inauguración del curso en la Universidad Pontificia y la subida del paro en septiembre a niveles prepandemia."
+  "resumen_borrador": "Se han publicado 245 noticias entre el 2026-10-02 y el 2026-10-05. La actividad se ha concentrado sobre todo en salamanca (79 piezas), provincia (71 piezas), deportes (50 piezas).\n\nLos conceptos con más piezas relacionadas son: Virgen · Rosario; Fiesta; Ciudad · Rodrigo; Tire · Pro. Revisa 'evidencia' de cada concepto para redactar el resumen final.",
+  "resumen": "La provincia de Salamanca ha vivido un periodo de intensa actividad entre el 2 y el 5 de octubre de 2026, marcado por diversas festividades y eventos. Destacan las celebraciones en honor a la Virgen del Rosario en localidades como Navamorales, Ciudad Rodrigo y Maíllo. Ciudad Rodrigo también cerró con éxito su feria medieval de la Conjura, que vistió de medievo sus calles. En la capital, el Tire Pro Fest rugió en su segunda jornada, consolidando su cuarta edición.\n\nEn el ámbito deportivo, el Meins Avenida tuvo un feliz y convincente debut con victoria. Mientras tanto, en el mundo taurino, Marco Pérez confirmó su alternativa en Las Ventas. La actualidad social en la capital incluyó una manifestación para exigir un mejor acceso a la vivienda y la celebración del Día de la Policía Nacional. La búsqueda de Agustín, un hombre desaparecido en Ledrada, continuó movilizando un amplio dispositivo.\n\nA nivel regional, se registró la convocatoria de elecciones generales, celebrada por el presidente Manueco. Además, se abordaron temas como la sostenibilidad de la población por la inmigración en Castilla y León y la llegada de la Copa del Mundo a la región. Peñaranda de Bracamonte también fue noticia por su XVI Marcha Solidaria Acopedis y el galardón a su biblioteca municipal."
 }

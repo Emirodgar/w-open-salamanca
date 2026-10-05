@@ -1,50 +1,6 @@
 {
-  "generado_en": "2026-10-03T16:05:03+00:00",
+  "generado_en": "2026-10-05T14:18:24+00:00",
   "eventos": [
-    {
-      "titulo": "Congreso Internacional Francisco de Vitoria y la Escuela de Salamanca",
-      "categoria": "Educación",
-      "fecha_inicio": "2026-10-01",
-      "fecha_fin": "2026-10-04",
-      "lugar": "San Esteban",
-      "descripcion": "Expertos dominicos analizarán el papel del movimiento revolucionario surgido en el monasterio en el marco del V Centenario de la Escuela de Salamanca.",
-      "fuente": "https://www.lagacetadesalamanca.es/salamanca/cumbre-dominica-internacional-san-esteban-centenario-escuela-20260927073000-nt.html"
-    },
-    {
-      "titulo": "Tire Pro Fest",
-      "categoria": "Cultura",
-      "fecha_inicio": "2026-10-02",
-      "fecha_fin": "2026-10-04",
-      "lugar": "Recinto Ferial de la Diputación de Salamanca",
-      "descripcion": "La cuarta edición del festival, impulsado por Grupo Andrés, Agencia 51 y la Diputación de Salamanca, combinará automovilismo, motociclismo, tecnología, exhibiciones, actividades familiares, gastronomía y música.",
-      "fuente": "https://www.lagacetadesalamanca.es/salamanca/salamanca-convertira-octubre-capital-motor-gracias-tire-20260928134116-nt.html"
-    },
-    {
-      "titulo": "XIII Vísperas Nupciales de Aldeatejada",
-      "categoria": "Cultura",
-      "fecha_inicio": "2026-10-02",
-      "fecha_fin": "2026-10-04",
-      "lugar": "Aldeatejada",
-      "descripcion": "Recreación renacentista ligada a la infanta María Manuela de Portugal, con talleres, teatro y, el domingo, la recreación histórica y el desfile del Cortejo Real.",
-      "fuente": "https://www.lagacetadesalamanca.es/provincia/aldeatejada-prepara-boda-real-20260930050000-nt.html"
-    },
-    {
-      "titulo": "III Feria Agroalimentaria de Cabrerizos",
-      "categoria": "Economía",
-      "fecha_inicio": "2026-10-03",
-      "fecha_fin": null,
-      "lugar": "Cabrerizos",
-      "descripcion": "La tercera edición de la Feria Agroalimentaria «Rivera del Tormes» contará con 30 expositores de productos locales y una actuación de Filarmónica Blues a las 18:30 horas.",
-      "fuente": "https://www.lagacetadesalamanca.es/provincia/cabrerizos-reunira-expositores-iii-feria-agroalimentaria-rivera-20260930194659-nt.html"
-    },
-    {
-      "titulo": "Mes de la Hispanidad: muestra de danzas andinas",
-      "categoria": "Cultura",
-      "fecha_inicio": "2026-10-03",
-      "fecha_fin": null,
-      "lugar": "Auditorio de San Blas",
-      "descripcion": "A las 17:30 h, con Salay Pasión Bolivia (filial Salamanca), Anqaras y Tinku Carcaje (filial Valladolid). Entrada libre hasta completar aforo. Inicia el Mes de la Hispanidad del Círculo Hispanoamericano, que se extiende hasta el 31 de octubre."
-    },
     {
       "titulo": "Semana del Comercio 2026",
       "categoria": "Economía",
@@ -79,6 +35,15 @@
       "fuente": "https://www.lagacetadesalamanca.es/provincia/siega-verde-celebrara-dia-europeo-arte-rupestre-20260928102613-nt.html"
     },
     {
+      "titulo": "Clase magistral de la Escuela Taurina",
+      "categoria": "Cultura",
+      "fecha_inicio": "2026-10-18",
+      "fecha_fin": null,
+      "lugar": "Plaza de toros cubierta de Alba de Tormes",
+      "descripcion": "La Escuela de Tauromaquia de Salamanca celebrará una clase magistral con antiguos alumnos como Juan del Álamo y Damián Castaño, enfrentándose a reses de diversas ganaderías. La entrada será gratuita y se espera llenar el coso albense.",
+      "fuente": "https://www.lagacetadesalamanca.es/toros/clase-magistral-escuela-taurina-cartel-20261005141008-nt.html"
+    },
+    {
       "titulo": "Taller 'Hispanidad en colores'",
       "categoria": "Cultura",
       "fecha_inicio": "2026-10-24",
@@ -94,6 +59,15 @@
       "lugar": "Casa de la Mujer, Salamanca",
       "descripcion": "Jornada dedicada al emprendimiento, la tecnología y el liderazgo femenino, con experiencias personales y mesas redondas.",
       "fuente": "https://www.lagacetadesalamanca.es/salamanca/escuela-municipal-igualdad-amplia-programacion-actividades-final-20260930182831-nt.html"
+    },
+    {
+      "titulo": "Primera ronda de la Copa del Rey: CD Guijuelo vs Sporting de Gijón",
+      "categoria": "Deportes",
+      "fecha_inicio": "2026-10-27",
+      "fecha_fin": "2026-10-29",
+      "lugar": "Municipal Luis Ramos, Guijuelo",
+      "descripcion": "El CD Guijuelo recibirá al Sporting de Gijón en el Municipal Luis Ramos en la primera ronda de la Copa del Rey, que se disputará a partido único entre el 27 y el 29 de octubre.",
+      "fuente": "https://www.lagacetadesalamanca.es/deportes/sorteo-copa-rey-directo-unionistas-salamanca-guijuelo-20261005123000-di.html"
     },
     {
       "titulo": "Actividad especial de Halloween en Guijuelo",
@@ -120,6 +94,15 @@
       "lugar": "Huerta",
       "descripcion": "Taller de magia para niños conducido por Christian Magritte, como parte de las celebraciones de Halloween.",
       "fuente": "https://www.lagacetadesalamanca.es/provincia/huerta-despliega-completa-agenda-actividades-dinamizar-mes-20261002221117-nt.html"
+    },
+    {
+      "titulo": "Concierto 'Candlelight' en Cantalpino",
+      "categoria": "Cultura",
+      "fecha_inicio": "2026-10-31",
+      "fecha_fin": null,
+      "lugar": "Iglesia parroquial de San Pedro Apóstol, Cantalpino",
+      "descripcion": "La iglesia de San Pedro Apóstol de Cantalpino acogerá su primer concierto 'Candlelight' con música de cámara, iluminado por velas y con la participación de la violinista Estefanía Moralejo Santos, la soprano Cristina Redondo y la pianista María Jesús González.",
+      "fuente": "https://www.lagacetadesalamanca.es/provincia/cantalpino-acogera-primer-concierto-candlelight-velas-san-20261004103953-nt.html"
     },
     {
       "titulo": "Investidura de António Guterres como doctor honoris causa por la USAL",
@@ -167,12 +150,12 @@
       "fuente": "https://www.lagacetadesalamanca.es/provincia/seis-municipios-suman-jornadas-micologicas-poner-valor-20260928164730-nt.html"
     },
     {
-      "titulo": "Clausura del Festival de La Candela en Santibáñez de Béjar",
+      "titulo": "Festival de La Candela en Puerto de Béjar",
       "categoria": "Cultura",
-      "fecha_inicio": "2026-11-28",
+      "fecha_inicio": "2026-11-21",
       "fecha_fin": null,
-      "lugar": "Santibáñez de Béjar",
-      "descripcion": "Jornada de clausura de la tercera edición de otoño del Festival de La Candela, organizado por la Mancomunidad de la Ruta de la Plata.",
+      "lugar": "Puerto de Béjar",
+      "descripcion": "Puerto de Béjar acogerá una de las últimas jornadas del Festival de La Candela en su edición de otoño, con actividades culturales y de promoción.",
       "fuente": "https://www.lagacetadesalamanca.es/provincia/festival-candela-comienza-andadura-otono-caminos-sierras-20261003171502-ga.html"
     },
     {

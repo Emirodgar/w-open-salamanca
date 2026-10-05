@@ -122,6 +122,30 @@
       ],
       "basado_en": "eventos.json",
       "fecha_creacion": "2026-10-03"
+    },
+    {
+      "id": "acceso-vivienda-salamanca-2026",
+      "pregunta": "Una manifestación en Salamanca ha exigido un mejor acceso a la vivienda. ¿Cree que el problema de acceso a la vivienda en la ciudad es grave y requiere medidas urgentes?",
+      "opciones": [
+        "Sí, es una prioridad social",
+        "No, hay problemas más urgentes",
+        "Es un problema, pero no grave",
+        "No tengo suficiente información"
+      ],
+      "basado_en": "actualidad.json",
+      "fecha_creacion": "2026-10-05"
+    },
+    {
+      "id": "honoris-causa-usal-2026",
+      "pregunta": "La Universidad de Salamanca investirá a António Guterres, secretario general de la ONU, como doctor honoris causa. ¿Cree que este tipo de reconocimientos a figuras internacionales refuerza el prestigio de la Universidad de Salamanca?",
+      "opciones": [
+        "Sí, atrae atención y prestigio internacional",
+        "No, su impacto es más simbólico que real",
+        "Depende de la relevancia de la figura",
+        "No tengo suficiente información"
+      ],
+      "basado_en": "eventos.json",
+      "fecha_creacion": "2026-10-05"
     }
   ]
 }

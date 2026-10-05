@@ -1,7 +1,7 @@
 {
   "mes": "2026-10",
   "titulo_mes": "Octubre 2026",
-  "resumen_mes": "El mes arranca con el inicio de la campaña de vacunación de la gripe en Castilla y León, la clasificación del Salamanca UDS para la Copa del Rey y la continuación de la búsqueda de un hombre desaparecido en Ledrada. La provincia celebra la feria medieval de la Conjura en Ciudad Rodrigo, mientras la capital se enfrenta a una escalada de robos violentos. También se ha registrado una subida del paro en septiembre y se ha inaugurado el curso en la Universidad Pontificia.",
+  "resumen_mes": "Octubre arranca con la convocatoria de elecciones generales y la continuidad de la búsqueda de un hombre desaparecido en Ledrada. El deporte local vive el debut del Meins Avenida y el sorteo de la Copa del Rey, mientras la provincia celebra sus fiestas y ferias medievales.",
   "hitos": [
     {
       "fecha": "2026-10-01",
@@ -9,7 +9,7 @@
       "categoria": "Sociedad",
       "descripcion": "La campaña comienza con niños y residencias, y el resto de grupos podrá vacunarse a partir del 13 de octubre.",
       "fuente": "https://www.lagacetadesalamanca.es/salamanca/arranca-vacunacion-gripe-castilla-leon-ninos-residencias-20261001124606-nt.html",
-      "destacado": true
+      "destacado": false
     },
     {
       "fecha": "2026-10-01",
@@ -58,6 +58,14 @@
       "descripcion": "Ciudad Rodrigo ha iniciado su feria de la Conjura con un gran ambiente medieval y ha continuado vistiéndose de medievo.",
       "fuente": "https://www.lagacetadesalamanca.es/provincia/ciudad-rodrigo-viste-medievo-feria-conjura-20261003161011-ga.html",
       "destacado": false
+    },
+    {
+      "fecha": "2026-10-05",
+      "titulo": "Manueco celebra la convocatoria de elecciones generales",
+      "categoria": "Política",
+      "descripcion": "El presidente Manueco ha celebrado la convocatoria de elecciones generales, marcando el final del gobierno.",
+      "fuente": "https://www.lagacetadesalamanca.es/salamanca/manueco-celebra-convocatoria-elecciones-generales-final-gobierno-20261005152925-nt.html",
+      "destacado": true
     }
   ]
 }
