@@ -2,8 +2,7 @@
 <div id="mapaParkings" style="width: 100%; height: 500px; border-radius: 8px; margin-bottom: 10px;"></div>
 <p style="font-size: 0.9em; margin-bottom: 25px;">
   <span style="color:#1E56A0;">&#9679;</span> Subterráneo de rotación &nbsp;
-  <span style="color:#2C5F2D;">&#9679;</span> Disuasorio gratuito conectado &nbsp;
-  <span style="color:#E63946;">&#9679;</span> Disuasorio gratuito fuera de la red (La Aldehuela). El tamaño del círculo es proporcional a las plazas.
+  <span style="color:#2C5F2D;">&#9679;</span> Disuasorio gratuito (24 aparcamientos, datos oficiales del Ayuntamiento). El tamaño del círculo es proporcional a las plazas.
 </p>
 
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
@@ -18,8 +17,8 @@
       maxZoom: 19
     }).addTo(mapPark);
 
-    // Subterráneos (Ayuntamiento de Salamanca) y red oficial de 10 disuasorios conectados
-    // (1.612 plazas, verificados por prensa local). Sin "plazas" = capacidad no verificada.
+    // Subterráneos (Ayuntamiento de Salamanca; sin "plazas" = capacidad no verificada) y
+    // disuasorios de la capa oficial del IDE del Ayuntamiento (02_parking_disuasorio): 24 aparcamientos, 3.175 plazas.
     const listaParkings = [
       { name: 'Avenida de Portugal', lat: 40.9600, lng: -5.6690, tipo: 'Subterráneo', plazas: 391 },
       { name: 'Santísima Trinidad', lat: 40.9705, lng: -5.6690, tipo: 'Subterráneo', plazas: 360 },
@@ -29,22 +28,35 @@
       { name: 'Le Mans', lat: 40.9664, lng: -5.6642, tipo: 'Subterráneo', address: 'Plaza de los Bandos, 5' },
       { name: 'Colón - Plaza Mayor', lat: 40.9635, lng: -5.6625, tipo: 'Subterráneo', address: 'Calle Juan de la Fuente, 14' },
       { name: 'Hospital Universitario', lat: 40.9592, lng: -5.6748, tipo: 'Subterráneo', address: 'Paseo de la Transición Española' },
-      { name: 'La Aldehuela', lat: 40.9560, lng: -5.6480, tipo: 'Disuasorio (fuera de red)', plazas: 1180 },
-      { name: 'Calle La Radio', lat: 40.9550, lng: -5.6560, tipo: 'Disuasorio', plazas: 302 },
-      { name: 'La Chinchibarra', lat: 40.9798, lng: -5.6550, tipo: 'Disuasorio', plazas: 226 },
-      { name: 'Mercasalamanca', lat: 40.9440, lng: -5.6870, tipo: 'Disuasorio', plazas: 200 },
-      { name: 'Glorieta de la Charrería', lat: 40.9520, lng: -5.6690, tipo: 'Disuasorio', plazas: 195 },
-      { name: 'Avenida de San Agustín', lat: 40.9770, lng: -5.6600, tipo: 'Disuasorio', plazas: 176 },
-      { name: 'José Lamano Beneite', lat: 40.9700, lng: -5.6420, tipo: 'Disuasorio', plazas: 139 },
-      { name: 'Las Pajas', lat: 40.9600, lng: -5.6800, tipo: 'Disuasorio', plazas: 101 },
-      { name: 'Maestro Luna', lat: 40.9600, lng: -5.6850, tipo: 'Disuasorio', plazas: 100 },
-      { name: 'Joaquín Rodrigo', lat: 40.9670, lng: -5.6390, tipo: 'Disuasorio', plazas: 87 },
-      { name: 'Las Bernardas', lat: 40.9540, lng: -5.6440, tipo: 'Disuasorio', plazas: 86 }
+      { name: 'La Aldehuela (2)', lat: 40.96252, lng: -5.63747, tipo: 'Disuasorio', plazas: 350, pmr: 30 },
+      { name: 'Calle La Radio', lat: 40.96928, lng: -5.65095, tipo: 'Disuasorio', plazas: 302, pmr: 15 },
+      { name: 'La Aldehuela (1)', lat: 40.96128, lng: -5.64043, tipo: 'Disuasorio', plazas: 300, pmr: 20 },
+      { name: 'Las Bernardas', lat: 40.96057, lng: -5.64831, tipo: 'Disuasorio', plazas: 242, pmr: 11 },
+      { name: 'Fernando Población', lat: 40.96984, lng: -5.6776, tipo: 'Disuasorio', plazas: 200, pmr: 4 },
+      { name: 'Glorieta de la Charrería', lat: 40.95763, lng: -5.67653, tipo: 'Disuasorio', plazas: 195, pmr: 11 },
+      { name: 'Avenida de San Agustín', lat: 40.97926, lng: -5.65864, tipo: 'Disuasorio', plazas: 176, pmr: 6 },
+      { name: 'Agustinos Recoletos', lat: 40.98264, lng: -5.66395, tipo: 'Disuasorio', plazas: 160, pmr: 6 },
+      { name: 'Montalvo I', lat: 40.94487, lng: -5.66, tipo: 'Disuasorio', plazas: 150, pmr: 9 },
+      { name: 'Antiguo Mercasalamanca', lat: 40.97507, lng: -5.6451, tipo: 'Disuasorio', plazas: 150, pmr: 5 },
+      { name: 'Huerta Otea', lat: 40.96587, lng: -5.68301, tipo: 'Disuasorio', plazas: 139, pmr: 4 },
+      { name: 'Avenida de San Agustín (2)', lat: 40.98036, lng: -5.65598, tipo: 'Disuasorio', plazas: 120, pmr: 6 },
+      { name: 'Calle Filipinas', lat: 40.9703, lng: -5.6444, tipo: 'Disuasorio', plazas: 112, pmr: 9 },
+      { name: 'Las Pajas', lat: 40.96802, lng: -5.64589, tipo: 'Disuasorio', plazas: 101, pmr: 9 },
+      { name: 'Avenida de Salamanca - Avenida de la Merced', lat: 40.97982, lng: -5.66025, tipo: 'Disuasorio', plazas: 88, pmr: 4 },
+      { name: 'Joaquín Rodrigo', lat: 40.95003, lng: -5.66056, tipo: 'Disuasorio', plazas: 87, pmr: 4 },
+      { name: 'Tejares', lat: 40.95368, lng: -5.69387, tipo: 'Disuasorio', plazas: 71, pmr: 3 },
+      { name: 'Henry Collet', lat: 40.971, lng: -5.67897, tipo: 'Disuasorio', plazas: 60, pmr: 3 },
+      { name: 'Maestro Luna', lat: 40.95123, lng: -5.66531, tipo: 'Disuasorio', plazas: 56, pmr: 2 },
+      { name: 'Lilas', lat: 40.97835, lng: -5.6509, tipo: 'Disuasorio', plazas: 32, pmr: 2 },
+      { name: 'Mayor de Chamberí', lat: 40.95031, lng: -5.68538, tipo: 'Disuasorio', plazas: 28, pmr: 2 },
+      { name: 'Coleo', lat: 40.97731, lng: -5.67833, tipo: 'Disuasorio', plazas: 24, pmr: 2 },
+      { name: 'Melilla', lat: 40.97786, lng: -5.67912, tipo: 'Disuasorio', plazas: 17, pmr: 2 },
+      { name: 'La Luz', lat: 40.97765, lng: -5.67796, tipo: 'Disuasorio', plazas: 15, pmr: 2 }
     ];
 
     listaParkings.forEach(pk => {
-      const color = pk.tipo === 'Subterráneo' ? '#1E56A0' : (pk.tipo.startsWith('Disuasorio (') ? '#E63946' : '#2C5F2D');
-      const detalle = (pk.plazas ? `<br>Capacidad: ${pk.plazas} plazas` : '') + (pk.address ? `<br>${pk.address}` : '');
+      const color = pk.tipo === 'Subterráneo' ? '#1E56A0' : '#2C5F2D';
+      const detalle = (pk.plazas ? `<br>Capacidad: ${pk.plazas} plazas` : '') + (pk.pmr ? `<br>Movilidad reducida: ${pk.pmr} plazas` : '') + (pk.address ? `<br>${pk.address}` : '');
       L.circleMarker([pk.lat, pk.lng], {
         radius: 6 + Math.sqrt(pk.plazas || 250) / 6,
         fillColor: color,
