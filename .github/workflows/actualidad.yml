@@ -63,6 +63,7 @@ jobs:
         run: python3 scripts/actualidad/build.py
 
       - name: Commit y push de lo que haya cambiado
+        id: commit
         if: steps.build.outcome == 'success'
         run: |
           # Solo los ficheros que el script declara haber tocado (nunca add -A).
@@ -75,3 +76,14 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git commit -m "Actualiza actualidad, timeline y Opina (${{ steps.build.outputs.periodo }})"
           git push
+          echo "nuevo=true" >> "$GITHUB_OUTPUT"
+
+      - name: Enviar el resumen por Telegram
+        # Un fallo aquí (o la falta de secrets) no debe tumbar el workflow:
+        # el commit ya está hecho.
+        if: steps.commit.outputs.nuevo == 'true'
+        continue-on-error: true
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python3 scripts/actualidad/telegram.py
