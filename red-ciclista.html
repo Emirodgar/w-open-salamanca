@@ -2,7 +2,7 @@
 layout: default
 title: Red ciclista y servicio SALenBICI
 description: Mapa interactivo de la red oficial de carril bici (ciudad y alfoz), estaciones de préstamo SALenBICI y estadísticas de movilidad sostenible
-date: 29-08-2026
+date: 06-10-2026
 folder: Movilidad
 permalink: red-ciclista
 ---
@@ -29,7 +29,7 @@ La infraestructura ciclista de Salamanca suma, según la capa oficial del Ayunta
 <h3>Indicadores de uso y expansión</h3>
 <ul>
 <li><b>Interconexión del alfoz</b>: Los carriles bici conectan directamente la capital con municipios vecinos como Santa Marta de Tormes, Carbajosa de la Sagrada, Villamayor y Aldeatejada, favoreciendo los desplazamientos cotidianos por motivos de trabajo o estudio.</li>
-<li><b>Crecimiento del sistema de préstamo</b>: SALenBICI cuenta con más de 40 bases operativas y un parque de bicicletas convencionales y eléctricas que supera los 300.000 usos anuales.</li>
+<li><b>Crecimiento del sistema de préstamo</b>: SALenBICI cuenta con <b>50 bases</b> según la capa oficial de la IDE, repartidas por el centro, los campus, las estaciones, varios barrios y Santa Marta de Tormes (3 bases). La capa de aparcabicis recoge además <b>216 puntos con horquillas</b>, y los 155 que indican plazas suman 691. La cifra de "más de 300.000 usos anuales" que figuraba aquí no tiene fuente (no verificado).</li>
 </ul>
 
 <h3>La red oficial de carril bici en cifras</h3>
@@ -44,7 +44,8 @@ La infraestructura ciclista de Salamanca suma, según la capa oficial del Ayunta
   <canvas id="carrilPeriodoChart" width="800" height="400"></canvas>
   <p><small>El campo de periodo (LEGISLAT) combina rangos de legislatura (2003-2011, 2011-2019) con años concretos desde 2018, por lo que los periodos se solapan; se muestran tal como los publica el Ayuntamiento. Un tramo de 358 m no tiene dato.</small></p>
 
-  <h2>Evolución de préstamos anuales en SALenBICI (2018-2025)</h2>
+  <h2>Evolución de préstamos anuales en SALenBICI (2018-2025, no verificado)</h2>
+  <p style="background:#FFF4E5; border-left:4px solid #F4A261; padding:10px 14px;"><b>No verificado.</b> Las cifras de préstamos anuales del gráfico proceden de una versión anterior y no tienen una fuente que Open Salamanca haya podido contrastar. Se mantienen solo como referencia.</p>
   <canvas id="biciPrestamosChart" width="800" height="400"></canvas>
 
   <p>Buena parte de este recorrido discurre junto a <a href="/zonas-verdes">zonas verdes y espacios de esparcimiento</a> de la ciudad, reforzando el uso recreativo de la red más allá de los desplazamientos diarios.</p>
@@ -52,26 +53,65 @@ La infraestructura ciclista de Salamanca suma, según la capa oficial del Ayunta
 			</div>
 			
 			<div id="section-table">
+			<h2>Las 50 bases de SALenBICI</h2>
 			<table border="1" cellpadding="5" cellspacing="0">
 			  <thead>
-				<tr>
-				  <th>Estación</th>
-				  <th>Ubicación</th>
-				  <th>Anclajes</th>
-				  <th>Tipo de Estación</th>
-				  <th>Conexión Intermodal</th>
-				</tr>
+				<tr><th>N.º de base</th><th>Nombre</th><th>Ubicación</th></tr>
 			  </thead>
 			  <tbody>
-				<tr><td>Plaza Mayor / Poeta Iglesias</td><td>Calle Poeta Iglesias</td><td>18</td><td>Mixta (Eléctrica / Mecánica)</td><td>Casco Histórico</td></tr>
-				<tr><td>Estación de Ferrocarril</td><td>Paseo de la Estación (Vialia)</td><td>24</td><td>Mixta</td><td>RENFE / Cercanías</td></tr>
-				<tr><td>Campus Unamuno</td><td>Avenida de la Merced</td><td>30</td><td>Mixta</td><td>Universidad / Facultades</td></tr>
-				<tr><td>Hospital Universitario</td><td>Paseo Transición Española</td><td>20</td><td>Mixta</td><td>Complejo Hospitalario</td></tr>
-				<tr><td>Plaza de España</td><td>Plaza de España / Gran Vía</td><td>22</td><td>Mixta</td><td>Líneas Bus Urbano</td></tr>
-				<tr><td>Estación de Autobuses</td><td>Avenida de Filiberto Villalobos</td><td>16</td><td>Mecánica</td><td>Autobuses Interurbanos</td></tr>
-				<tr><td>El Zurguén</td><td>Avenida de Saavedra y Fajardo</td><td>14</td><td>Mecánica</td><td>Red Sur / Conexión Alfoz</td></tr>
+				<tr><td>1</td><td>Plaza Poeta Iglesias</td><td>Plaza Del Poeta Iglesias (Acceso Plaza Mayor)</td></tr>
+				<tr><td>2</td><td>Plaza de los Bandos</td><td>Plaza De Los Bandos (Palacio De Alonso De Solís)</td></tr>
+				<tr><td>3</td><td>Puente Romano</td><td>Paseo De San Gregorio (Puente Romano)</td></tr>
+				<tr><td>4</td><td>Parking Hospital Clínico</td><td>Paseo De San Vicente (Acceso Parking Hospital Virgen De La Vega)</td></tr>
+				<tr><td>5</td><td>Hilario Goyenechea</td><td>Avenida Hilario Goyenechea, 19 (Unicaja Banco)</td></tr>
+				<tr><td>6</td><td>Plazoleta Tejares</td><td>Av. Juan Pablo Ii (Plazoleta De Tejares)</td></tr>
+				<tr><td>7</td><td>Parque de la Calle la Bañeza</td><td>Av. De Salamanca Esquina C/ La Bañeza (Plaza De Las Tres Fuentes)</td></tr>
+				<tr><td>8</td><td>Corte Inglés</td><td>C/ María Auxiliadora (Corte Inglés)</td></tr>
+				<tr><td>9</td><td>Vialia</td><td>Paseo De La Estación (Estación De Tren)</td></tr>
+				<tr><td>10</td><td>Estación de Autobuses</td><td>Av. De Filiberto Villalobos (Estación Autobuses)</td></tr>
+				<tr><td>11</td><td>Plaza de la Iglesia de Pizarrales</td><td>Plaza De La Iglesia De Pizarrales</td></tr>
+				<tr><td>12</td><td>Parque Jesuitas</td><td>C/ Marina Esquina Paseo De San Antonio</td></tr>
+				<tr><td>13</td><td>Facultad de Medicina</td><td>Facultad De Medicina (Glorieta Av. Dr. Gregorio Marañón)</td></tr>
+				<tr><td>14</td><td>Facultad de Ciencias</td><td>Plaza De La Merced (Facultad De Ciencias)</td></tr>
+				<tr><td>15</td><td>Facultad Psicología</td><td>Av. De La Merced (Facultad Psicología)</td></tr>
+				<tr><td>16</td><td>Edificio JCYL</td><td>C/ Príncipe De Vergara (Edificio Junta De Castilla Y León)</td></tr>
+				<tr><td>17</td><td>Plaza Valmuza</td><td>C/ Villar Del Profeta Esquina C/ Siegaverde (Plaza Valmuza)</td></tr>
+				<tr><td>18</td><td>C/ Manuel Ramos Andrade</td><td>C/ Manuel Ramos Andrade Esquina C/ George Borrow (Pistas Deportivas)</td></tr>
+				<tr><td>19</td><td>Glorieta Castilla y León</td><td>Av. De Federico Anaya (Glorieta Castilla Y León)</td></tr>
+				<tr><td>20</td><td>Plaza Alto del Rollo</td><td>Plaza Del Alto Del Rollo (C/ Cuenca)</td></tr>
+				<tr><td>21</td><td>Avda. Federico Anaya</td><td>Av. De Federico Anaya Esquina C/ De Los Tilos</td></tr>
+				<tr><td>22</td><td>Plaza Gabriel y Galán</td><td>Av. De Mirat (Plaza De Gabriel Y Galán)</td></tr>
+				<tr><td>23</td><td>Plaza de Toros</td><td>Av. Alfonso Vi Esquina Av. De San Agustín</td></tr>
+				<tr><td>24</td><td>Plaza del Oeste</td><td>C/ Wences Moreno (Plaza Del Oeste)</td></tr>
+				<tr><td>25</td><td>Canalejas</td><td>Paseo De Canalejas (Colegio Calasanz)</td></tr>
+				<tr><td>26</td><td>Plaza San Julián</td><td>Plaza De San Julián Esquina Gran Vía</td></tr>
+				<tr><td>27</td><td>Parque Antonio Nebrija (Salas bajas)</td><td>Puente De Sánchez Fabrés (Parque De Elio Antonio De Nebrija)</td></tr>
+				<tr><td>28</td><td>Parque de la Alamedilla</td><td>Paseo De La Estación (Plaza De España)</td></tr>
+				<tr><td>29</td><td>Calle La Radio</td><td>C/ De La Radio (Glorieta De Antonio Machado)</td></tr>
+				<tr><td>30</td><td>Glorieta Unión Deportiva Salamanca</td><td>Av. De Portugal (Glorieta Monumento A La Uds)</td></tr>
+				<tr><td>31</td><td>Plaza Santa Eulalia</td><td>Plaza Santa Eulalia (Acceso Parking Santa Eulalia)</td></tr>
+				<tr><td>32</td><td>Avda. Villamayor</td><td>C/ Víctor García De La Concha Esquina Av. De Villamayor</td></tr>
+				<tr><td>33</td><td>Rotonda Los Ovalle</td><td>Av. De Portugal, 48 (Rotonda De Los Ovalle)</td></tr>
+				<tr><td>34</td><td>Plaza Trujillo</td><td>Plaza Trujillo, 17</td></tr>
+				<tr><td>35</td><td>Puente Ladrillo</td><td>C/ Sumatra Esquina C/ De Jesús Arambarri</td></tr>
+				<tr><td>36</td><td>Barrio Vistahermosa</td><td>C/ Ramón De Mesonero Romanos (Pabellón Municipal Vistahermosa)</td></tr>
+				<tr><td>37</td><td>Ciudad deportiva de la Aldehuela</td><td>Av. De La Aldehuela (Acceso Ciudad Deportiva)</td></tr>
+				<tr><td>38</td><td>Barrio Los Alcaldes</td><td>Glorieta Alcaldes (C/ Alcalde Gutiérrez Rubio Esquina C/ Alcalde Cruz Hernández)</td></tr>
+				<tr><td>39</td><td>Santa Marta 1</td><td>N-501 (Plaza Mayor Santa Marta)</td></tr>
+				<tr><td>40</td><td>Santa Marta 2</td><td>N-501 (Lupa Supermercados)</td></tr>
+				<tr><td>41</td><td>C/ Lucio Marineo</td><td>C/ Arias Pinel (Aparcamiento Gratuito Las Bernardas)</td></tr>
+				<tr><td>42</td><td>Avenida de los Cedros</td><td>Av. De Los Cedros Esquina C/ De Gargabete</td></tr>
+				<tr><td>43</td><td>Plaza Barrio Vidal</td><td>Plaza Del Barrio Vidal Esquina C/ Príncipe</td></tr>
+				<tr><td>44</td><td>Avda. Portugal - Avda. Villamayor</td><td>Av. De Villamayor Esquina Av. De Portugal</td></tr>
+				<tr><td>45</td><td>Santa Marta</td><td>Av. Padres Paúles</td></tr>
+				<tr><td>46</td><td>Huertos Urbanos</td><td>Av. Padre Ignacio Ellacuría (Glorieta Acceso Huertos Urbanos)</td></tr>
+				<tr><td>47</td><td>Aparcamiento Calle Nobel</td><td>C/ De Nobel (Aparcamiento Gratuito Calle Nobel)</td></tr>
+				<tr><td>48</td><td>Carrefour</td><td>Glorieta Ruta De La Plata (Residencia Universitaria Agustiniana)</td></tr>
+				<tr><td>49</td><td>Aparcamiento San Agustín</td><td>Av. De San Agustín (Aparcamiento Gratuito Av. San Agustín)</td></tr>
+				<tr><td>50</td><td>Aparcamiento Huerta Otea</td><td>C/ Henry Collet Esquina C/ De José De Lamano Beneite</td></tr>
 			  </tbody>
 			</table>
+			<p><small>Fuente: capa "Bases Salenbici" de la IDE del Ayuntamiento de Salamanca (50 bases). La capa no indica el número de anclajes de cada base.</small></p>
 
 			<h2>Carril bici del alfoz por municipio</h2>
 			<table border="1" cellpadding="5" cellspacing="0">
@@ -134,26 +174,22 @@ La infraestructura ciclista de Salamanca suma, según la capa oficial del Ayunta
       })
       .catch(() => {});
 
-    // Listado de bases SALenBICI emblemáticas
-    const estacionesBici = [
-      { name: 'Base Plaza Mayor', lat: 40.9647, lng: -5.6632, slots: 18 },
-      { name: 'Base Estación RENFE', lat: 40.9712, lng: -5.6518, slots: 24 },
-      { name: 'Base Campus Unamuno', lat: 40.9688, lng: -5.6735, slots: 30 },
-      { name: 'Base Hospital Universitario', lat: 40.9595, lng: -5.6742, slots: 20 },
-      { name: 'Base Plaza de España', lat: 40.9672, lng: -5.6598, slots: 22 },
-      { name: 'Base Estación de Autobuses', lat: 40.9692, lng: -5.6765, slots: 16 }
-    ];
-
-    estacionesBici.forEach(st => {
-      L.circleMarker([st.lat, st.lng], {
-        radius: 8,
-        fillColor: '#2C5F2D',
-        color: '#ffffff',
-        weight: 2,
-        opacity: 1,
-        fillOpacity: 0.85
-      }).bindPopup(`<b>SALenBICI: ${st.name}</b><br>Anclajes disponibles: ${st.slots}`).addTo(mapBici);
+    // Bases SALenBICI y aparcabicis (capas "Bases Salenbici" y "Bici Horquillas" de la IDE)
+    // [n.º base, nombre, ubicación, lat, lng]
+    const basesBici = [[1,"Plaza Poeta Iglesias","PLAZA DEL POETA IGLESIAS (ACCESO PLAZA MAYOR)",40.9644,-5.664],[2,"Plaza de los Bandos","PLAZA DE LOS BANDOS (PALACIO DE ALONSO DE SOLÍS)",40.9669,-5.6643],[3,"Puente Romano","PASEO DE SAN GREGORIO (PUENTE ROMANO)",40.9592,-5.6693],[4,"Parking Hospital Clínico","PASEO DE SAN VICENTE (ACCESO PARKING HOSPITAL VIRGEN DE LA VEGA)",40.9643,-5.673],[5,"Hilario Goyenechea","AVENIDA HILARIO GOYENECHEA, 19 (UNICAJA BANCO)",40.9488,-5.6622],[6,"Plazoleta Tejares","AV. JUAN PABLO II (PLAZOLETA DE TEJARES)",40.9551,-5.6946],[7,"Parque de la Calle la Bañeza","AV. DE SALAMANCA ESQUINA C/ LA BAÑEZA (PLAZA DE LAS TRES FUENTES)",40.9787,-5.6658],[8,"Corte Inglés","C/ MARÍA AUXILIADORA (CORTE INGLÉS)",40.9733,-5.6573],[9,"Vialia","PASEO DE LA ESTACIÓN (ESTACIÓN DE TREN)",40.9724,-5.6488],[10,"Estación de Autobuses","AV. DE FILIBERTO VILLALOBOS (ESTACIÓN AUTOBUSES)",40.9705,-5.6748],[11,"Plaza de la Iglesia de Pizarrales","PLAZA DE LA IGLESIA DE PIZARRALES",40.9759,-5.675],[12,"Parque Jesuitas","C/ MARINA ESQUINA PASEO DE SAN ANTONIO",40.9645,-5.657],[13,"Facultad de Medicina","FACULTAD DE MEDICINA (GLORIETA AV. DR. GREGORIO MARAÑÓN)",40.9657,-5.6769],[14,"Facultad de Ciencias","PLAZA DE LA MERCED (FACULTAD DE CIENCIAS)",40.9603,-5.67],[15,"Facultad Psicología","AV. DE LA MERCED (FACULTAD PSICOLOGÍA)",40.9824,-5.6607],[16,"Edificio JCYL","C/ PRÍNCIPE DE VERGARA (EDIFICIO JUNTA DE CASTILLA Y LEÓN)",40.961,-5.6521],[17,"Plaza Valmuza","C/ VILLAR DEL PROFETA ESQUINA C/ SIEGAVERDE (PLAZA VALMUZA)",40.9468,-5.671],[18,"C/ Manuel Ramos Andrade","C/ MANUEL RAMOS ANDRADE ESQUINA C/ GEORGE BORROW (PISTAS DEPORTIVAS)",40.9677,-5.6836],[19,"Glorieta Castilla y León","AV. DE FEDERICO ANAYA (GLORIETA CASTILLA Y LEÓN)",40.9791,-5.6521],[20,"Plaza Alto del Rollo","PLAZA DEL ALTO DEL ROLLO (C/ CUENCA)",40.9688,-5.6474],[21,"Avda. Federico Anaya","AV. DE FEDERICO ANAYA ESQUINA C/ DE LOS TILOS",40.9761,-5.6546],[22,"Plaza Gabriel y Galán","AV. DE MIRAT (PLAZA DE GABRIEL Y GALÁN)",40.97,-5.6621],[23,"Plaza de Toros","AV. ALFONSO VI ESQUINA AV. DE SAN AGUSTÍN",40.9762,-5.6616],[24,"Plaza del Oeste","C/ WENCES MORENO (PLAZA DEL OESTE)",40.9705,-5.6671],[25,"Canalejas","PASEO DE CANALEJAS (COLEGIO CALASANZ)",40.9603,-5.6595],[26,"Plaza San Julián","PLAZA DE SAN JULIÁN ESQUINA GRAN VÍA",40.9646,-5.6611],[27,"Parque Antonio Nebrija (Salas bajas)","PUENTE DE SÁNCHEZ FABRÉS (PARQUE DE ELIO ANTONIO DE NEBRIJA)",40.9585,-5.6746],[28,"Parque de la Alamedilla","PASEO DE LA ESTACIÓN (PLAZA DE ESPAÑA)",40.9683,-5.6583],[29,"Calle La Radio","C/ DE LA RADIO (GLORIETA DE ANTONIO MACHADO)",40.9688,-5.6522],[30,"Glorieta Unión Deportiva Salamanca","AV. DE PORTUGAL (GLORIETA MONUMENTO A LA UDS)",40.9723,-5.6631],[31,"Plaza Santa Eulalia","PLAZA SANTA EULALIA (ACCESO PARKING SANTA EULALIA)",40.9667,-5.6612],[32,"Avda. Villamayor","C/ VÍCTOR GARCÍA DE LA CONCHA ESQUINA AV. DE VILLAMAYOR",40.969,-5.6692],[33,"Rotonda Los Ovalle","AV. DE PORTUGAL, 48 (ROTONDA DE LOS OVALLE)",40.9712,-5.6573],[34,"Plaza Trujillo","PLAZA TRUJILLO, 17",40.9649,-5.651],[35,"Puente Ladrillo","C/ SUMATRA ESQUINA C/ DE JESÚS ARAMBARRI",40.9712,-5.6414],[36,"Barrio Vistahermosa","C/ RAMÓN DE MESONERO ROMANOS (PABELLÓN MUNICIPAL VISTAHERMOSA)",40.9501,-5.6801],[37,"Ciudad deportiva de la Aldehuela","AV. DE LA ALDEHUELA (ACCESO CIUDAD DEPORTIVA)",40.9607,-5.6394],[38,"Barrio Los Alcaldes","GLORIETA ALCALDES (C/ ALCALDE GUTIÉRREZ RUBIO ESQUINA C/ ALCALDE CRUZ HERNÁNDEZ)",40.9524,-5.6903],[39,"Santa Marta 1","N-501 (PLAZA MAYOR SANTA MARTA)",40.95,-5.6326],[40,"Santa Marta 2","N-501 (LUPA SUPERMERCADOS)",40.9502,-5.6252],[41,"C/ Lucio Marineo","C/ ARIAS PINEL (APARCAMIENTO GRATUITO LAS BERNARDAS)",40.9609,-5.6488],[42,"Avenida de los Cedros","AV. DE LOS CEDROS ESQUINA C/ DE GARGABETE",40.9754,-5.6513],[43,"Plaza Barrio Vidal","PLAZA DEL BARRIO VIDAL ESQUINA C/ PRÍNCIPE",40.9733,-5.6675],[44,"Avda. Portugal - Avda. Villamayor","AV. DE VILLAMAYOR ESQUINA AV. DE PORTUGAL",40.9727,-5.6715],[45,"Santa Marta","AV. PADRES PAÚLES",40.9507,-5.6461],[46,"Huertos Urbanos","AV. PADRE IGNACIO ELLACURÍA (GLORIETA ACCESO HUERTOS URBANOS)",40.9583,-5.6863],[47,"Aparcamiento Calle Nobel","C/ DE NOBEL (APARCAMIENTO GRATUITO CALLE NOBEL)",40.942,-5.6665],[48,"Carrefour","GLORIETA RUTA DE LA PLATA (RESIDENCIA UNIVERSITARIA AGUSTINIANA)",40.9795,-5.663],[49,"Aparcamiento San Agustín","AV. DE SAN AGUSTÍN (APARCAMIENTO GRATUITO AV. SAN AGUSTÍN)",40.9792,-5.6581],[50,"Aparcamiento Huerta Otea","C/ HENRY COLLET ESQUINA C/ DE JOSÉ DE LAMANO BENEITE",40.9656,-5.682]];
+    // [dirección, lugar, plazas (0 = sin dato), lat, lng]
+    const horquillas = [["José Jaureguí, 19","Espacio Joven José Jauregui",4,40.9692,-5.6624],["Avda. Villamayor, 33","Hotel Corona Sol",2,40.9691,-5.6693],["Rector Tovar 33","Colegio Francisco Vitoria",2,40.9681,-5.6618],["Alto del Rollo","Alto del Rollo",2,40.9687,-5.6476],["Plaza Empresario","Plaza Empresario",2,40.9678,-5.6592],["Avda. Comuneros 33","Centro Salud Alamedilla",2,40.9688,-5.6549],["Plaza de la Fuente","Plaza de la Fuente",2,40.9673,-5.6669],["Plaza de España","Plaza de España",2,40.9687,-5.6586],["Rector Lucena, 28","Rector Lucena",2,40.9669,-5.6626],["Isabeles, 2","Isabeles",2,40.9678,-5.6641],["Plaza de la Libertad","Plaza de la Libertad",2,40.966,-5.6651],["Plaza Santa Eulalia","Plaza de Santa Eulalia",4,40.9669,-5.6615],["Plaza Colón","Plaza de Colón",2,40.9628,-5.664],["Plaza Poeta Iglesias, 1","Plaza Poeta Iglesias",5,40.9644,-5.6639],["Plaza de la Reina","Plaza de la Reina",2,40.9654,-5.6614],["Calle Fontiveros","Miraltormes",2,40.9657,-5.6489],["Ronda de Sancti Spiritus, 45","Centro de Salud Filiberto Villalobos",2,40.9651,-5.6588],["Avda. de las Artes, 108","CAEM",2,40.96,-5.6531],["Juan de la Fuente, 1","Juan de la Fuente, 1",2,40.9616,-5.6633],["Igancio Ellacuría - C/ Lagar","Centro de Salud Tejares",2,40.9583,-5.6836],["Parque Alamedilla","Parque Infantil Alamedilla",4,40.9682,-5.6564],["Tahonas Viejas, 10","Tahonas Viejas",9,40.9641,-5.6677],["García de Quiñones, 14","Mercado de San Juan",2,40.9712,-5.6615],["Pso. Dehesas - Dos Encinas","Campo de Fútbol Zurguén",2,40.9501,-5.6733],["Amapolas - Encina","Amapolas, 15",2,40.9774,-5.6506],["Nieto Bonal, 10","Nieto Bonal",2,40.9707,-5.6684],["Plaza San Justo","Plaza San Justo",2,40.9634,-5.6625],["Toro - Cristo de los Milagros","Toro",2,40.9686,-5.6597],["Plaza del Mercado","Plaza del Mercado",2,40.965,-5.6631],["Gran Vía, 50","Gran Vía, 50",2,40.9639,-5.6615],["Avda. Filiberto Villalobos, 112","Parque Villar y Macías",2,40.9725,-5.6767],["Alfareros 8","Centro Salud Pizarrales",2,40.976,-5.6739],["Pintores - Pza. Barrio Vidal","Pza. Barrio Vidal",2,40.974,-5.6674],["Alonso del Castillo, 34","Centro Julían Sánchez \"El Charro\"",4,40.9745,-5.6592],["Avda. Campoamor, 1","Avda. Campoamor, 1",2,40.9664,-5.6562],["Camino del Río, s/n","Club Piragüismo",4,40.9574,-5.6383],["Avda. Maristas, 1","Misioneras",2,40.9662,-5.6717],["Avda. Reyes de España, 27","Avda. Reyes de España, 27",4,40.9572,-5.6655],["Caldereros, 16","Juzgado de Guardia",2,40.9623,-5.6625],["Ceriñola, 9","CEIP Padre Manjón",2,40.9627,-5.6578],["Cerrada de Serranos, 8","Universidad Pontificia",8,40.9626,-5.6677],["Corregidor Caballero Llanes, 2","ASDEM",4,40.9765,-5.6597],["Fray Junípero Serra, 18","Instituto de Enseñanzas Aplicadas",4,40.9767,-5.658],["Plaza Anaya","Edificio Juan del Enzina",4,40.9609,-5.6656],["Plaza San Isidro, 1","Aulario San Isidro",8,40.9624,-5.6665],["Reyes Católicos, 2","C/ Reyes Católicos, 2",4,40.9685,-5.6639],["Soledad, 11","Soledad, 11",4,40.9637,-5.6593],["Valle Inclán, 8","Valle Inclán, 8",2,40.9721,-5.6694],["Escultor Carmona","",2,40.9699,-5.6692],["Gutemberg, 21","Gutemberg, 21",2,40.9712,-5.6693],["Pso. Rector Esperabé, 18","Puerta San Pablo",2,40.959,-5.6651],["Plaza San Román","Plaza San Román",2,40.9625,-5.6613],["Avda. Maristas s/n","Pabellón la Salud",4,40.9713,-5.6794],["Abraham Zacut, 25","Abraham Zacut, 25",2,40.9597,-5.65],["Príncipe de Vergara","Junta CyL",4,40.9611,-5.6522],["Palomo, 1","Plaza de la Constitución",4,40.9661,-5.6595],["Alamedilla","CEIP Rufino Blanco",5,40.9671,-5.6572],["Avda. Aldehuela, 43","Policía Local",10,40.959,-5.6499],["Parque Julián Sánchez el Charro por Plza Gabriel y Galán","",0,40.9705,-5.6613],["Plaza Julián S. Charro por Pérez Oliva","",0,40.9703,-5.6607],["Avda. Filiberto Villalobos, 75","Estación Autobuses",4,40.9705,-5.6747],["Río Carrión, 35","Pasarela Peatonal Fontana",5,40.958,-5.6492],["Avda. Aldehuela, 27","DA2",5,40.9586,-5.6522],["Cabeza de Vaca, 8","Cabeza de Vaca, 8",5,40.9728,-5.6565],["Avda. María Auxiliadora, 71-85","El Corte Inglés",6,40.9741,-5.6568],["Torres Villarroel, 38","Torres Villarroel, 38",5,40.973,-5.663],["Plaza Fray Luis","Colegio Fray Luis",4,40.9616,-5.6687],["Francisco Bernis","Campo Neme",4,40.9696,-5.6782],["Calatañazor, 5","ECyL",4,40.9618,-5.6583],["Puente Romano","Puente Romano",4,40.9592,-5.669],["Wences Moreno, 25","Wences Moreno, 25",4,40.9704,-5.6669],["Ramón de Mesonero Romanos","Centro Cultural Vistahermosa",4,40.9498,-5.6798],["Rosario - Marquesa Almarza","Calatrava",2,40.9604,-5.6608],["Peña de Francia, 46","Escuela de Idiomas",6,40.971,-5.6754],["Puerta Zamora","Toscano",2,40.9698,-5.6633],["Plaza Gabriel y Galán","Biblioteca Gabriel y Galán",2,40.9699,-5.6622],["Espoz y Mina, 35","Espoz y Mina - Prior",2,40.9652,-5.6654],["Avda. Cipreses,1","Multiusos",10,40.9785,-5.6503],["Cerezo","Biblioteca Torrente Ballester",10,40.978,-5.6545],["Docencia","IES Mateo Hernández",5,40.9807,-5.6529],["Avda. San Agustín, s/n","Pabellón Wüzburg",0,40.9825,-5.6532],["Juan del Rey, 3","Juan del Rey",4,40.9641,-5.6653],["Príncipe de Vergara, 53","Junta CyL",10,40.9614,-5.6517],["Avda. Filiberto Villalobos, 97","IES Lucía de Medrano",4,40.9712,-5.676],["Pso. Estación, 117","Vialia",5,40.9723,-5.649],["Plaza de Barcelona, s/n","Plaza Barcelona",5,40.9736,-5.6496],["Paseo de Canalejas, 139","Calasanz",8,40.9605,-5.6594],["Pso. Canalejas, 129","Seguridad Social",0,40.9608,-5.659],["Paseo del Ferrocarril, s/n","Piscina Alamedilla",11,40.9677,-5.6557],["Avda. Cipreses, 61","Mercadona Cipreses",2,40.9763,-5.6485],["Avda. Cipreses, 46","Bazar Cipreses",5,40.9765,-5.649],["C/ Lugo - Miraltormes","",0,40.966,-5.6491],["Zona Huertos Urbanos","",0,40.9573,-5.6897],["Avda. Obispo Sancho de Castilla, s/n","Tanatorio",5,40.9734,-5.6813],["Avda. Maristas s/n","IES Fray Luis de León",5,40.9706,-5.6769],["Avda. Ramos del Manzano - Avda. Maristas","Aparcamiento Maristas - Ramos del Manzano",5,40.97,-5.677],["Parque Salas Bajas","Parque Salas Bajas",5,40.9587,-5.6752],["Puente Romano","Puente Romano",5,40.9562,-5.6714],["Parque Jesuitas","Parque Jesuitas",5,40.9589,-5.6566],["Henry Collet,52-70","Pontificia Luis Vives",6,40.9686,-5.6804],["Palominos","Trasera Edificio Anaya",5,40.962,-5.6653],["Arco, 16","Arco, 16",3,40.9688,-5.6625],["Avda. Mirat, 26","Avda. Mirat, 26",4,40.9696,-5.6613],["Pso. Carmelitas, 81","Pso. Carmelitas, 81",2,40.9674,-5.6684],["Plaza Barrio Vidal, 8","Plaza Barrio Vidal, 8",4,40.9738,-5.6673],["Escuelas Menores","Escuelas Menores",4,40.9616,-5.6679],["Avda. Federico Anaya, 36","Avda. Federico Anaya, 36",2,40.9763,-5.6545],["Avda. Salamanca, s/n","Cruz Roja",10,40.979,-5.6626],["Cuesta Oviedo","Palacio de Congresos",4,40.9626,-5.669],["Calle Mazas, 23","Biblioteca Abraham Zacut",4,40.9602,-5.6689],["Plaza de la Merced","Facultad de Ciencias",8,40.9605,-5.6699],["Plaza de los Caídos","Facultad de Ciencias (entrada)",8,40.9606,-5.6702],["Veracruz","Veracruz - Libreros",4,40.96,-5.6682],["Iscar Peyra, 24","Ayuntamiento",6,40.9661,-5.6657],["C/ Fonseca, 29","Colegio Maestro Ávila",4,40.9648,-5.6703],["Hospital Clínico","Hospital Clínico",8,40.9641,-5.6749],["Norberto Cuesta Dutari","Lateral Escuela Enfermería",8,40.9649,-5.674],["C/ Donantes de Sangre s/n","Escuela Enfermería",4,40.9647,-5.6742],["Ramon y Cajal, 77","Campo San Francisco",2,40.9661,-5.6691],["Plaza San Cristóbal","Plaza San Cristóbal",2,40.9639,-5.6596],["Universidad de Coimbra","Universidad de Coimbra 4",4,40.9649,-5.6764],["Pso. Canalejas, 47","Canalejas 47",2,40.9653,-5.6578],["Parque de la Alamedilla, 13","IES Martínez Uribarri",5,40.9669,-5.6566],["Alicante, 3","Alicante, 3",6,40.9665,-5.6491],["Avenida Portugal - García de Quiñones","Junta de Cstilla y León",4,40.9719,-5.661],["C/ Lagar 30","Albergue Juvenil Lazarillo Tormes",5,40.9572,-5.6837],["Luis Cortés","Campo Fútbol Chamberí",4,40.9569,-5.6821],["Plaza de Burgos","Plaza de Burgos",2,40.98,-5.6669],["Plaza de Burgos","Plaza de Burgos 2",2,40.9793,-5.6669],["Federico Anaya - Bosque","Federico Anaya - Bosque",2,40.978,-5.6531],["Calle Pío Baroja, 1","CFIE Salamanca",4,40.9751,-5.6484],["Teso de la Feria, 50","Colegio Público Virgen de la Vega",4,40.9525,-5.6736],["Avda. Salamanca - Regato del Anís","Avda. Salamanca - Regato del Anís",3,40.9749,-5.6696],["Avda. Salamanca, 46","Avda. Salamanca, 46",2,40.9752,-5.6692],["Avda. Salamanca, 80","Avda. Salamanca, 80",2,40.9757,-5.6686],["Ctra. Fregeneda, 40","Ctra. Fregeneda, 40",5,40.9557,-5.6741],["Paseo Transición Española","Hospital Universitario",4,40.9624,-5.6761],["Francisco Tomás y Valiente","Tomás y Valiente",6,40.969,-5.6756],["Tomás y Valiente","Facultad de Derecho",8,40.9688,-5.6761],["Tomás y Valiente","Cafetería Facultad Derecho",12,40.9688,-5.6767],["Plaza Universidad Bolonia","Plaza Universidad Bolonia",12,40.9682,-5.6778],["Tomas y Valiente","Facultad Filosofía",8,40.9677,-5.678],["Tomás y Valiente","Edificio Departamental FES",12,40.9676,-5.6785],["Campus Unamuno","Edificio FES",4,40.9677,-5.6784],["Tomás y Valiente","Tomás y Valiente - Alfonso X",5,40.9672,-5.6784],["Avda. Gregorio Marañón, s/n","Pabellón",10,40.9664,-5.6766],["Universidad de Coimbra","Universidad de Coimbra 1",8,40.9652,-5.6761],["Universidad de Coimbra","Universidad de Coimbra 2",8,40.9651,-5.6762],["Universidad de Coimbra","Universidad de Coimbra 3",5,40.9651,-5.6763],["Universidad de Coimbra","Centro Investigación Cancer",8,40.9644,-5.6777],["Licenciado Méndez Nieto","Facultad Farmacia",10,40.9648,-5.6779],["","Facultad Biología",10,40.9652,-5.6772],["Plaza Doctores de la Reina","Facultad de Farmacia",4,40.9652,-5.6773],["Facultad de Farmacia","Trasera Laboratorios Docentes",4,40.9655,-5.6788],["Alfonso X el Sabio","Facultad de Medicina",6,40.9662,-5.6775],["Universidad de Coimbra","Comedor Colegio Oviedo",4,40.9664,-5.6785],["Alfonso X el Sabio","Alfonso X el Sabio",4,40.9669,-5.6776],["Alfonso X el Sabio","Cafetería Campus Unamuno 1",4,40.9669,-5.6781],["Alfonso X el Sabio","Cafetería Campus Unamuno 2",4,40.9669,-5.6781],["Brocense - Toro","",0,40.9666,-5.6628],["Helipuerto José Lamano Beneite","",0,40.9651,-5.6834],["Bartolo, calle serranos-cuesta oviedo","",0,40.9618,-5.6692],["","",0,40.9632,-5.6662],["Polideportivo Río Tormes","",0,40.9515,-5.6611],["Julián Sánchez \"El Charro\"","",0,40.9742,-5.6586],["Piscina Garrido (dentro)","",0,40.9798,-5.6537],["Parque Wüzburg","",0,40.9803,-5.6518],["Filiberto Villalobos, 82","",0,40.9716,-5.6757],["San José de Calasanz - El Salvador","",0,40.9678,-5.6456],["Bicicletas Gómez (eliminado)","",0,40.9692,-5.6565],["Gta. Antonio Machado (no existe)","",0,40.9691,-5.652],["Campús Cleretianos","",0,40.9827,-5.6612],["Campus Cleretianos","",0,40.9828,-5.662],["Colegio Santo Tomás de Villanueva","",0,40.9801,-5.6634],["Teso San Nicolás","",0,40.9585,-5.667],["Seguridad Social (foto y número de plazas)","",0,40.9608,-5.659],["Cipreses (La Gaceta)","",0,40.9751,-5.6476],["Final aparcamiento Wüzburg","",0,40.9819,-5.6522],["Colegio José Herrero Esquina Docencia - Avda. Agustín","",0,40.9815,-5.6547],["Avda. Salamanca (parque junto salesianos)","",0,40.9743,-5.6711],["Filiberto Villalobos 119, Facultad Ciencias Agrarias.","",0,40.9723,-5.677],["Hilario Goyenechea (INEM Gerencia Provincial)","",0,40.9486,-5.6627],["Carlos I (INEM)","",0,40.9492,-5.6642],["Salas Bajas entrada Puente Sánchez Fabrés","",0,40.9587,-5.6752],["Facultad Educación (C/ Ballesta)","",0,40.9587,-5.6596],["Facultad de Educación (Pso. Canalejas)","",0,40.9588,-5.6602],["Aparcamiento Vialia","",0,40.9725,-5.6479],["Parque Aldehuela","",0,40.9586,-5.6358],["Parque Aldehuela","",0,40.9603,-5.6356],["Parque Aldehuela","",0,40.9607,-5.637],["Parque Aldehuela","",0,40.9595,-5.6381],["Parque Aldehuela","",0,40.9597,-5.6389],["Parque Aldehuela","",0,40.9607,-5.6396],["Colegio Mayor San Bartolomé, Henry Collet","",0,40.9684,-5.6798],["Colegio Mayor San BArtolomé, Henry Collet","",0,40.9688,-5.6795],["Plaza del Oeste - Melchor Cano","",0,40.9708,-5.6673],["Peñuelas de San Blas","",0,40.9637,-5.67],["Calle Espejo - Bienestar Social","",0,40.965,-5.6707],["Pontificia - Cerrada de Cervantes - en el interior del edificio","",0,40.9627,-5.668],["Parque San Francisco por Calle Arriba","",0,40.9665,-5.6686],["Canalejas - Padilla","",0,40.9661,-5.6576],["Cruz de Caravaca- Nicaragua (Parque)","",0,40.9682,-5.6525],["Raimundo de Borgoña - Colegio Santa Teresa de Jesús","",0,40.978,-5.6633],["Profesor Camón Aznar (IB Franciso Salinas)","",0,40.9775,-5.6472],["Cipreses (Colegio San Mateo)","",0,40.9768,-5.6488],["Avda. Cedros, 42 llegando a Plaza Barcelona","",0,40.9742,-5.6503],["Ciudad Deportiva Aldehuela","",0,40.9581,-5.6376],["Calle Pesca (Casino Tormes)","",0,40.9584,-5.6673],["Avda. Salamanca (cerca de Gta. Gran Capitán)","",0,40.9771,-5.6677],["Pso. San Vicente - Residencias Universitaria Hernán Cortés","",0,40.9632,-5.6733],["Maristas - Fac. Derecho - Trasera Autobuses- Cerca Gta. Adolfo Suarez","",0,40.9695,-5.6764],["Campus Unamuno - Residencia Colegio Cuenca","",0,40.9675,-5.6759],["Tomás y Valiente (usalabici)","",0,40.9667,-5.6791],["Calle de la Esperanza","",4,40.9735,-5.666],["Calle Teso de San Nicolás","",15,40.9572,-5.6663],["Plaza del Maestro García Bernalt","",0,40.9709,-5.6707]];
+    const capaBases = L.layerGroup().addTo(mapBici);
+    const capaHorq = L.layerGroup();
+    basesBici.forEach(b => {
+      L.circleMarker([b[3], b[4]], { radius: 8, fillColor: '#2C5F2D', color: '#ffffff', weight: 2, opacity: 1, fillOpacity: 0.85 })
+        .bindPopup(`<b>SALenBICI, base ${b[0]}: ${b[1]}</b><br>${b[2]}`).addTo(capaBases);
     });
+    horquillas.forEach(h => {
+      L.circleMarker([h[3], h[4]], { radius: 4, fillColor: '#F4A261', color: '#ffffff', weight: 1, fillOpacity: 0.9 })
+        .bindPopup(`<b>Aparcabicis</b><br>${h[0]}${h[1] ? '<br>' + h[1] : ''}<br>${h[2] ? h[2] + ' plazas' : 'Plazas sin dato'}`).addTo(capaHorq);
+    });
+    L.control.layers(null, { 'Bases SALenBICI (50)': capaBases, 'Aparcabicis con horquillas (216)': capaHorq }, { collapsed: false, position: 'topleft' }).addTo(mapBici);
 
     // Gráfico de km de carril bici urbano por periodo
     new Chart(document.getElementById('carrilPeriodoChart').getContext('2d'), {
@@ -184,7 +220,7 @@ La infraestructura ciclista de Salamanca suma, según la capa oficial del Ayunta
       data: {
         labels: ['2018', '2019', '2020', '2021', '2022', '2023', '2024', '2025'],
         datasets: [{
-          label: 'Préstamos Anuales Totales',
+          label: 'Préstamos anuales totales (no verificado)',
           data: [185000, 210000, 115000, 160000, 225000, 280000, 315000, 340000],
           backgroundColor: 'rgba(244, 162, 97, 0.8)',
           borderColor: '#F4A261',
@@ -196,7 +232,7 @@ La infraestructura ciclista de Salamanca suma, según la capa oficial del Ayunta
         responsive: true,
         plugins: { legend: { display: false } },
         scales: {
-          y: { title: { display: true, text: 'Número de Usos' }, beginAtZero: true },
+          y: { title: { display: true, text: 'Número de usos (no verificado)' }, beginAtZero: true },
           x: { title: { display: true, text: 'Año' } }
         }
       }
