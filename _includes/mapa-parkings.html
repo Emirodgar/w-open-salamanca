@@ -17,17 +17,25 @@
       maxZoom: 19
     }).addTo(mapPark);
 
-    // Subterráneos (Ayuntamiento de Salamanca; sin "plazas" = capacidad no verificada) y
+    // Subterráneos (16 de la capa oficial de la IDE; capacidad solo donde consta en las capas municipales) y
     // disuasorios de la capa oficial del IDE del Ayuntamiento (02_parking_disuasorio): 24 aparcamientos, 3.175 plazas.
     const listaParkings = [
-      { name: 'Avenida de Portugal', lat: 40.9600, lng: -5.6690, tipo: 'Subterráneo', plazas: 391 },
-      { name: 'Santísima Trinidad', lat: 40.9705, lng: -5.6690, tipo: 'Subterráneo', plazas: 360 },
-      { name: 'Reyes de España', lat: 40.9585, lng: -5.6655, tipo: 'Subterráneo', plazas: 334 },
-      { name: 'El Campillo', lat: 40.9660, lng: -5.6660, tipo: 'Subterráneo', plazas: 258 },
-      { name: 'Santa Eulalia', lat: 40.9655, lng: -5.6605, tipo: 'Subterráneo', plazas: 239 },
-      { name: 'Le Mans', lat: 40.9664, lng: -5.6642, tipo: 'Subterráneo', address: 'Plaza de los Bandos, 5' },
-      { name: 'Colón - Plaza Mayor', lat: 40.9635, lng: -5.6625, tipo: 'Subterráneo', address: 'Calle Juan de la Fuente, 14' },
-      { name: 'Hospital Universitario', lat: 40.9592, lng: -5.6748, tipo: 'Subterráneo', address: 'Paseo de la Transición Española' },
+      { name: 'Vialia (estación)', lat: 40.9726, lng: -5.6482, tipo: 'Subterráneo', plazas: 438, pmr: 12 },
+      { name: 'Avenida de Portugal', lat: 40.9723, lng: -5.6625, tipo: 'Subterráneo', plazas: 391, pmr: 4 },
+      { name: 'Santísima Trinidad', lat: 40.9675, lng: -5.669, tipo: 'Subterráneo', plazas: 360, pmr: 16 },
+      { name: 'Reyes de España', lat: 40.9573, lng: -5.6656, tipo: 'Subterráneo', plazas: 334, pmr: 18 },
+      { name: 'Botánico (Centro Histórico - Universidad)', lat: 40.961, lng: -5.6707, tipo: 'Subterráneo', plazas: 255, pmr: 10 },
+      { name: 'El Campillo', lat: 40.969, lng: -5.6615, tipo: 'Subterráneo', plazas: 258, pmr: 9 },
+      { name: 'Santa Eulalia', lat: 40.9668, lng: -5.6616, tipo: 'Subterráneo', plazas: 239, pmr: 4 },
+      { name: 'Colón', lat: 40.9615, lng: -5.6634, tipo: 'Subterráneo' },
+      { name: 'Crespo Rascón', lat: 40.9687, lng: -5.6647, tipo: 'Subterráneo' },
+      { name: 'Garaje San Juan', lat: 40.9679, lng: -5.6665, tipo: 'Subterráneo' },
+      { name: 'Le Mans', lat: 40.9669, lng: -5.6652, tipo: 'Subterráneo' },
+      { name: 'Garajes Monroy', lat: 40.9681, lng: -5.66, tipo: 'Subterráneo' },
+      { name: 'Hospital Universitario', lat: 40.963, lng: -5.6769, tipo: 'Subterráneo' },
+      { name: 'Calasanz', lat: 40.9591, lng: -5.6577, tipo: 'Subterráneo' },
+      { name: 'Hospital Virgen de la Vega', lat: 40.9646, lng: -5.6732, tipo: 'Subterráneo' },
+      { name: 'Hall 88', lat: 40.9703, lng: -5.6765, tipo: 'Subterráneo' },
       { name: 'La Aldehuela (2)', lat: 40.96252, lng: -5.63747, tipo: 'Disuasorio', plazas: 350, pmr: 30 },
       { name: 'Calle La Radio', lat: 40.96928, lng: -5.65095, tipo: 'Disuasorio', plazas: 302, pmr: 15 },
       { name: 'La Aldehuela (1)', lat: 40.96128, lng: -5.64043, tipo: 'Disuasorio', plazas: 300, pmr: 20 },
