@@ -26,18 +26,6 @@
       "fecha_creacion": "2026-09-14"
     },
     {
-      "id": "feria-libro-antiguo-2026",
-      "pregunta": "El Ayuntamiento ha suspendido la Feria del Libro Antiguo de este año tras no llegar a un acuerdo con los libreros. ¿A quién crees que corresponde más responsabilidad en la ruptura?",
-      "opciones": [
-        "Al Ayuntamiento",
-        "A los libreros",
-        "A ambos por igual",
-        "No tengo suficiente información"
-      ],
-      "basado_en": "actualidad.json",
-      "fecha_creacion": "2026-09-17"
-    },
-    {
       "id": "colegios-rurales-2026",
       "pregunta": "Cinco colegios rurales de la provincia están en riesgo de cierre por tener solo tres o cuatro alumnos. ¿Crees que deberían mantenerse abiertos aunque tengan tan pocos estudiantes?",
       "opciones": [
@@ -80,18 +68,6 @@
         "Sí, refuerza su imagen académica",
         "No, su impacto es limitado",
         "Depende de la difusión que se le dé",
-        "No tengo suficiente información"
-      ],
-      "basado_en": "eventos.json",
-      "fecha_creacion": "2026-09-29"
-    },
-    {
-      "id": "tire-pro-fest-2026",
-      "pregunta": "Salamanca acogerá el 'Tire Pro Fest', un festival que combina motor, tecnología y ocio. ¿Considera que este evento es una buena iniciativa para atraer visitantes y dinamizar la ciudad?",
-      "opciones": [
-        "Sí, diversifica la oferta de ocio",
-        "No, no encaja con la imagen de la ciudad",
-        "Es una buena iniciativa, pero su impacto es limitado",
         "No tengo suficiente información"
       ],
       "basado_en": "eventos.json",
@@ -146,6 +122,31 @@
       ],
       "basado_en": "eventos.json",
       "fecha_creacion": "2026-10-05"
+    },
+    {
+      "id": "congreso-libro-blanco-2026",
+      "pregunta": "El VII Congreso del Libro Blanco ha iniciado en Salamanca para impulsar el futuro de la provincia con propuestas de expertos. ¿Cree que este tipo de congresos son efectivos para generar un impacto real en el desarrollo de Salamanca?",
+      "opciones": [
+        "Sí, son clave para la planificación estratégica",
+        "No, suelen quedarse en meras propuestas",
+        "Su impacto depende de la implementación posterior",
+        "No tengo suficiente información"
+      ],
+      "basado_en": "actualidad.json",
+      "fecha_creacion": "2026-10-06"
+    },
+    {
+      "id": "copa-rey-equipos-salamanca-2026",
+      "pregunta": "Los equipos salmantinos CD Guijuelo y Unionistas se enfrentarán a sus rivales en la primera ronda de la Copa del Rey. ¿Qué expectativas tiene sobre su desempeño en esta competición?",
+      "opciones": [
+        "Confío en que ambos avancen de ronda",
+        "Es difícil que pasen, pero darán buena imagen",
+        "Solo uno de ellos tiene opciones reales",
+        "No sigo la Copa del Rey",
+        "No tengo suficiente información"
+      ],
+      "basado_en": "eventos.json",
+      "fecha_creacion": "2026-10-06"
     }
   ]
 }

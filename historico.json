@@ -89,6 +89,45 @@
         "No lo sé, será muy igualado": 1
       },
       "total_votos": 6
+    },
+    {
+      "id": "feria-libro-antiguo-2026",
+      "pregunta": "El Ayuntamiento ha suspendido la Feria del Libro Antiguo de este año tras no llegar a un acuerdo con los libreros. ¿A quién crees que corresponde más responsabilidad en la ruptura?",
+      "opciones": [
+        "Al Ayuntamiento",
+        "A los libreros",
+        "A ambos por igual",
+        "No tengo suficiente información"
+      ],
+      "basado_en": "actualidad.json",
+      "fecha_creacion": "2026-09-17",
+      "fecha_archivado": "2026-10-06",
+      "resultados": {
+        "A los libreros": 3,
+        "Al Ayuntamiento": 8,
+        "No tengo suficiente información": 1,
+        "A ambos por igual": 1
+      },
+      "total_votos": 13
+    },
+    {
+      "id": "tire-pro-fest-2026",
+      "pregunta": "Salamanca acogerá el 'Tire Pro Fest', un festival que combina motor, tecnología y ocio. ¿Considera que este evento es una buena iniciativa para atraer visitantes y dinamizar la ciudad?",
+      "opciones": [
+        "Sí, diversifica la oferta de ocio",
+        "No, no encaja con la imagen de la ciudad",
+        "Es una buena iniciativa, pero su impacto es limitado",
+        "No tengo suficiente información"
+      ],
+      "basado_en": "eventos.json",
+      "fecha_creacion": "2026-09-29",
+      "fecha_archivado": "2026-10-06",
+      "resultados": {
+        "Sí, diversifica la oferta de ocio": 1,
+        "Es una buena iniciativa, pero su impacto es limitado": 1,
+        "No tengo suficiente información": 1
+      },
+      "total_votos": 3
     }
   ]
 }

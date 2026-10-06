@@ -1,7 +1,7 @@
 {
   "mes": "2026-10",
   "titulo_mes": "Octubre 2026",
-  "resumen_mes": "Octubre arranca con la convocatoria de elecciones generales y la continuidad de la búsqueda de un hombre desaparecido en Ledrada. El deporte local vive el debut del Meins Avenida y el sorteo de la Copa del Rey, mientras la provincia celebra sus fiestas y ferias medievales.",
+  "resumen_mes": "Octubre arranca con la convocatoria de elecciones generales y la continuidad de la búsqueda de un hombre desaparecido en Ledrada. El deporte local vive el debut del Meins Avenida y el Salamanca UDS logra su pase a la Copa del Rey, mientras la provincia celebra sus fiestas y ferias medievales. La capital acoge el inicio del VII Congreso del Libro Blanco.",
   "hitos": [
     {
       "fecha": "2026-10-01",
@@ -20,14 +20,6 @@
       "destacado": false
     },
     {
-      "fecha": "2026-10-01",
-      "titulo": "Inversión sanitaria en Salamanca",
-      "categoria": "Economía",
-      "descripcion": "La Sanidad ha destinado 800.000 euros al hospital para tratamientos vasculares.",
-      "fuente": "https://www.lagacetadesalamanca.es/salamanca/sanidad-destina-800000-euros-hospital-tratamientos-vasculares-20261001135024-nt.html",
-      "destacado": false
-    },
-    {
       "fecha": "2026-10-02",
       "titulo": "Subida del paro en septiembre",
       "categoria": "Economía",
@@ -36,27 +28,27 @@
       "destacado": false
     },
     {
-      "fecha": "2026-10-02",
-      "titulo": "Inauguración del curso en la Universidad Pontificia",
-      "categoria": "Educación",
-      "descripcion": "Se ha celebrado la inauguración del curso académico en el Aula Magna de la Universidad Pontificia.",
-      "fuente": "https://www.lagacetadesalamanca.es/salamanca/inauguracion-curso-aula-magna-universidad-pontificia-imagenes-20261002135631-ga.html",
-      "destacado": false
-    },
-    {
       "fecha": "2026-10-03",
       "titulo": "Continúa la búsqueda de un hombre desaparecido en Ledrada",
       "categoria": "Sucesos",
-      "descripcion": "La búsqueda de Agustín, un varón de 89 años desaparecido en Ledrada, se ha mantenido durante la noche con un amplio dispositivo y ha continuado por tercera jornada consecutiva.",
+      "descripcion": "La búsqueda de Agustín, un varón de 89 años desaparecido en Ledrada, afronta su sexto día con un amplio dispositivo y bajo alerta por fuertes lluvias.",
       "fuente": "https://www.lagacetadesalamanca.es/sucesos/tercera-jornada-busqueda-rastro-agustin-ledrada-lluvia-20261003101817-nt.html",
       "destacado": false
     },
     {
       "fecha": "2026-10-03",
-      "titulo": "La feria medieval de la Conjura viste de medievo Ciudad Rodrigo",
+      "titulo": "Feria medieval de la Conjura en Ciudad Rodrigo",
       "categoria": "Cultura",
-      "descripcion": "Ciudad Rodrigo ha iniciado su feria de la Conjura con un gran ambiente medieval y ha continuado vistiéndose de medievo.",
+      "descripcion": "Ciudad Rodrigo ha iniciado su feria de la Conjura con un gran ambiente medieval y la ha clausurado con un apoteósico cierre.",
       "fuente": "https://www.lagacetadesalamanca.es/provincia/ciudad-rodrigo-viste-medievo-feria-conjura-20261003161011-ga.html",
+      "destacado": false
+    },
+    {
+      "fecha": "2026-10-03",
+      "titulo": "Debut y victoria del Meins Avenida",
+      "categoria": "Deportes",
+      "descripcion": "El equipo Meins Avenida ha vencido y convencido en su estreno de temporada con un marcador de 73-57.",
+      "fuente": "https://www.lagacetadesalamanca.es/deportes/baloncesto-local/meins-avenida/meins-avenida-vence-convence-estreno-7357-20261003195516-nt.html",
       "destacado": false
     },
     {
@@ -66,6 +58,14 @@
       "descripcion": "El presidente Manueco ha celebrado la convocatoria de elecciones generales, marcando el final del gobierno.",
       "fuente": "https://www.lagacetadesalamanca.es/salamanca/manueco-celebra-convocatoria-elecciones-generales-final-gobierno-20261005152925-nt.html",
       "destacado": true
+    },
+    {
+      "fecha": "2026-10-05",
+      "titulo": "Arranca el VII Congreso del Libro Blanco",
+      "categoria": "Sociedad",
+      "descripcion": "La séptima edición del Libro Blanco de la Gaceta ha arrancado con el objetivo de impulsar el futuro de Salamanca.",
+      "fuente": "https://www.lagacetadesalamanca.es/salamanca/arranca-libro-blanco-gaceta-impulsar-futuro-salamanca-20261005103948-nt.html",
+      "destacado": false
     }
   ]
 }
