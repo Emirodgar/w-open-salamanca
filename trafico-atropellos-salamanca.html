@@ -1,0 +1,170 @@
+---
+layout: default
+title: Tráfico y atropellos en Salamanca
+description: Intensidad media de tráfico en 89 puntos de aforo de la IDE municipal y análisis de los 53 atropellos registrados en 2021 - causas, gravedad y dónde ocurrieron
+date: 06-10-2026
+folder: Movilidad
+permalink: trafico-atropellos-salamanca
+---
+
+    <section class="featured dataset" id="datos">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="section-title">{{ page.title }}</h1>
+                <p class="section-description">{{ page.description }}</p>
+            </div>
+
+			<div id="section-content">
+
+  <p style="margin-bottom:8px;"><b>Capa:</b>
+    <select id="capaTrafico" style="padding:4px 8px;">
+      <option value="aforos">Intensidad de tráfico (puntos de aforo)</option>
+      <option value="atropellos">Atropellos 2021</option>
+    </select></p>
+  <div id="mapaTrafico" style="width: 100%; height: 520px; border-radius: 8px; margin-bottom: 10px;"></div>
+  <p id="leyendaTrafico" style="font-size:0.9em; margin-bottom:25px;"></p>
+
+			<h2>Los puntos con más tráfico: Carmelitas supera los 18.000 vehículos al día</h2>
+
+			<p>
+La capa de aforos fijos de la IDE municipal (Infraestructura de Datos Espaciales del Ayuntamiento) recoge <b>89 puntos de medición</b>, de los que <b>84 tienen dato de intensidad media diaria (IMD)</b>, es decir, los vehículos que pasan de media por día en un sentido. Los valores de esta página son los de 2019 (el campo "imd" de la capa; también hay datos de 2018).
+</p>
+
+<h3>Hallazgos clave sobre el tráfico</h3>
+<ul>
+<li><b>El Paseo de Carmelitas es el eje con más tráfico.</b> Sus puntos de aforo ocupan los dos primeros puestos y varios más del listado: el tramo entre Crespo Rascón y Puerta Zamora registra <b>18.012 vehículos al día</b> en sentido Puerta Zamora, y el tramo entre Álvaro Gil y Fray Luis de Granada, 16.082.</li>
+<li><b>Las entradas por carretera también pesan.</b> La Vía Helmántica (Carretera de Madrid) supera los 14.500 vehículos al día en cada sentido, y el Puente Juan Carlos I, los 14.400 en sentido salida.</li>
+<li><b>La mayoría de los puntos tiene un límite de 30 km/h.</b> Es el límite de 67 de los 89 puntos de la capa; 14 son de 50 km/h y 4 de 20 km/h. Para el control de velocidad, consulta los <a href="/radares">radares fijos y de tramo</a>.</li>
+<li><b>Los datos son de un solo sentido.</b> Cada punto mide un sentido de circulación, así que para saber cuánto tráfico soporta una calle hay que sumar los dos sentidos cuando existen.</li>
+</ul>
+
+  <h2>Los 10 puntos de aforo con más tráfico</h2>
+  <canvas id="aforosChart" width="800" height="440"></canvas>
+
+			<h2>Atropellos en 2021: 53 casos, 42 por culpa del conductor</h2>
+
+			<p>
+La capa de atropellos de la IDE municipal contiene <b>53 registros, todos de 2021</b>. En <b>42 (el 79 %)</b> el responsable fue el conductor y en <b>11 (el 21 %)</b>, el peatón.
+</p>
+
+<h3>Hallazgos clave sobre los atropellos</h3>
+<ul>
+<li><b>La causa principal es no respetar el paso de peatones.</b> Aparece en 28 de los 53 casos (el 53 %), muy por delante de no respetar el semáforo (8), irrumpir en la calzada (6) y circular por la acera (3).</li>
+<li><b>Uno de cada cinco atropellos fue grave.</b> De los 53, 10 fueron graves, 42 leves y 1 sin lesiones. Ocho de los 10 graves fueron por culpa del conductor.</li>
+<li><b>El turismo es el vehículo más implicado.</b> Interviene en 40 de los 53 casos, seguido de la furgoneta (6), la moto (3), los vehículos de movilidad personal (3, como patinetes) y la bicicleta (1).</li>
+<li><b>Se reparten durante todo el año.</b> Hay entre 3 y 6 casos cada mes, salvo febrero, con solo 1. Por franjas, 18 ocurrieron por la tarde (12:00 a 18:00), 17 por la noche (18:00 a 24:00), 14 por la mañana y 3 de madrugada.</li>
+<li><b>Más casos entre semana.</b> El jueves (11), el lunes y el martes (10 cada uno) y el miércoles (9) concentran la mayoría; los fines de semana suman 8.</li>
+</ul>
+
+  <h2>Atropellos por causa</h2>
+  <canvas id="atropellosCausaChart" width="800" height="400"></canvas>
+
+  <h2>Cómo leer estos datos</h2>
+  <ul>
+    <li>Los atropellos son los de un único año (2021) y 53 casos: son suficientes para ver patrones generales, pero no para comparar calles o barrios entre sí.</li>
+    <li>Por tratarse de personas, esta página no reproduce edad, sexo ni hora de cada caso; el mapa solo muestra el lugar, el responsable, la causa y la gravedad. La capa original sí incluye esos campos.</li>
+    <li>La capa no indica si las coordenadas son exactas o aproximadas; la ubicación de cada caso es orientativa.</li>
+    <li>El responsable y la causa son los que registra la capa: no equivalen a una resolución judicial ni a una calificación de la Policía Local.</li>
+    <li>Las cifras de tráfico son intensidades medias diarias de 2019 por sentido. Cinco puntos de aforo no tienen dato.</li>
+  </ul>
+
+			</div>
+
+			<div id="section-table">
+				<table border="1" cellpadding="5" cellspacing="0">
+				  <thead>
+					<tr><th>Calle</th><th>Punto de medición</th><th>Vehículos/día (IMD 2019)</th><th>Límite</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>Paseo de Las Carmelitas</td><td>Pso. Carmelitas, entre Crespo Rascón y Puerta Zamora, sentido Puerta Zamora.</td><td>18.012</td><td>30 km/h</td></tr>
+					<tr><td>Paseo de Las Carmelitas</td><td>Paseo Carmelitas entre Álvaro Gil y Fray Luis de Granada, sentido Puerta Zamora.</td><td>16.082</td><td>30 km/h</td></tr>
+					<tr><td>Vía Helmántica</td><td>Carretera Madrid, sentido entrada ciudad.</td><td>14.543</td><td>50 km/h</td></tr>
+					<tr><td>Vía Helmántica</td><td>Carretera Madrid, sentido salida ciudad.</td><td>14.541</td><td>50 km/h</td></tr>
+					<tr><td>Puente Juan Carlos I</td><td>Puente Juan Carlos I, sentido salida ciudad.</td><td>14.404</td><td>50 km/h</td></tr>
+					<tr><td>Avenida de Mirat</td><td>Avenida Mirat, entre C/ Rodríguez Fabrés y Plaza Gabriel y Galán, sentido Puerta Zamora.</td><td>14.158</td><td>30 km/h</td></tr>
+					<tr><td>Puente de Sánchez Fabrés</td><td>Incorporación de Rector Esperabé en la Gta. de los Milagros.</td><td>13.831</td><td>30 km/h</td></tr>
+					<tr><td>Paseo del Doctor Torres Villarroel</td><td>Avda. Dr. Torres Villarroel frente al nº 43, entre Van Dyck y Avda. Portugal, sentido Pso. Carmelitas.</td><td>13.826</td><td>30 km/h</td></tr>
+					<tr><td>Paseo de Las Carmelitas</td><td>Paseo Carmelitas entre Avda. Villamayor y Nueva San Bernardo, sentido Pato Rojo.</td><td>13.531</td><td>30 km/h</td></tr>
+					<tr><td>Paseo de Las Carmelitas</td><td>Paseo Carmelitas entre Avda. Villamayor y Fray Luis de Granada, sentido Puerta Zamora.</td><td>13.196</td><td>30 km/h</td></tr>
+					<tr><td>Paseo de Canalejas</td><td>Paseo de Canalejas, entre Paseo de San Antonio y C/ Padilla, sentido salida ciudad.</td><td>12.850</td><td>30 km/h</td></tr>
+					<tr><td>Paseo del Doctor Torres Villarroel</td><td>Torres Villarroel, entre Puerta Zamora y Avda. Portugal, sentido Plaza de Toros.</td><td>12.795</td><td>30 km/h</td></tr>
+					<tr><td>Paseo del Tormes</td><td>Puente del Príncipe de Asturias, sentido salida ciudad.</td><td>12.509</td><td>30 km/h</td></tr>
+					<tr><td>Puente Juan Carlos I</td><td>Puente Juan Carlos I, sentido entrada ciudad.</td><td>12.479</td><td>50 km/h</td></tr>
+					<tr><td>Paseo de San Vicente</td><td>Paseo de Carmelitas, entre Filiberto Villalobos y Avenida de los Maristas, sentido entrada ciudad.</td><td>12.188</td><td>30 km/h</td></tr>
+					<tr><td>Avenida de los Cipreses</td><td>Avenida de los Cipreses, junto Calle Fernando Santos, sentido Gta. Castilla y León.</td><td>11.516</td><td>30 km/h</td></tr>
+					<tr><td>Calle Álvaro Gil</td><td>Álvaro Gil frente al nº 25, entre Juan Picornell y Avda. Italia.</td><td>11.464</td><td>30 km/h</td></tr>
+					<tr><td>Paseo de San Vicente</td><td>Paseo de Carmelitas, entre C/ Espejo y hospitales, sentido entrada ciudad.</td><td>11.459</td><td>30 km/h</td></tr>
+					<tr><td>Avenida de Mirat</td><td>: Avenida Mirat entre C/ Dimas Madariaga y C/ Pollo Martín, sentido Puerta Zamora.</td><td>11.375</td><td>30 km/h</td></tr>
+					<tr><td>Avenida de Mirat</td><td>Avenida Mirat, entre Puerta Zamora y C/ Bientocadas, sentido Plaza España.</td><td>11.261</td><td>30 km/h</td></tr>
+					<tr><td>Avenida de los Cipreses</td><td>Avenida de los Cipreses, junto Calle Trébol, sentido Viaducto.</td><td>11.248</td><td>30 km/h</td></tr>
+					<tr><td>Plaza de la Fuente</td><td>Plaza de la Fuente.</td><td>10.799</td><td>20 km/h</td></tr>
+					<tr><td>Paseo del Doctor Torres Villarroel</td><td>Avda. Dr. Torres Villarroel frente puerta del Cuartel, entre Plaza de Toros y Gómez Arias, sentido Pza. Toros.</td><td>10.742</td><td>30 km/h</td></tr>
+					<tr><td>Paseo del Doctor Torres Villarroel</td><td>Torres Villarroel frente puerta del Cuartel, entre Plaza de Toros y Gómez Arias, sentido Pso. Carmelitas.</td><td>10.396</td><td>30 km/h</td></tr>
+					<tr><td>Plaza de España</td><td>: Avenida Mirat entre María Auxiliadora y Plaza de España, sentido Puerta Zamora.</td><td>10.331</td><td>30 km/h</td></tr>
+				  </tbody>
+				</table>
+				<p><small>Se muestran los 25 puntos con más tráfico de los 84 con dato. Fuente: capas "Aforos fijos" y "Atropellos" de la IDE del Ayuntamiento de Salamanca. Cifras y clasificación elaboradas por Open Salamanca.</small></p>
+			</div>
+
+			{% include categories.html %}
+
+        </div>
+    </section>
+
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+	<script>
+    const mapTr = L.map('mapaTrafico').setView([40.9650, -5.6650], 13);
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/light_all/{z}/{x}/{y}{r}.png?key=cb1_2izw_1_55d93b51ded1dcecfa044181', {
+      attribution: '&copy; OpenStreetMap &copy; CARTO | Datos: IDE Ayuntamiento de Salamanca', subdomains: 'abcd', maxZoom: 19
+    }).addTo(mapTr);
+
+    // [calle, punto, IMD 2019, límite, lat, lng]
+    const aforos = [["Paseo de Las Carmelitas","Pso. Carmelitas, entre Crespo Rascón y Puerta Zamora, sentido Puerta Zamora.",18012,"30",40.9698,-5.6644],["Paseo de Las Carmelitas","Paseo Carmelitas entre Álvaro Gil y Fray Luis de Granada, sentido Puerta Zamora.",16082,"30",40.9691,-5.6661],["Vía Helmántica","Carretera Madrid, sentido entrada ciudad.",14543,"50",40.9525,-5.6607],["Vía Helmántica","Carretera Madrid, sentido salida ciudad.",14541,"50",40.9524,-5.6607],["Puente Juan Carlos I","Puente Juan Carlos I, sentido salida ciudad.",14404,"50",40.9609,-5.6448],["Avenida de Mirat","Avenida Mirat, entre C/ Rodríguez Fabrés y Plaza Gabriel y Galán, sentido Puerta Zamora.",14158,"30",40.9698,-5.6624],["Puente de Sánchez Fabrés","Incorporación de Rector Esperabé en la Gta. de los Milagros.",13831,"30",40.9587,-5.6745],["Paseo del Doctor Torres Villarroel","Avda. Dr. Torres Villarroel frente al nº 43, entre Van Dyck y Avda. Portugal, sentido Pso. Carmelitas.",13826,"30",40.9735,-5.663],["Paseo de Las Carmelitas","Paseo Carmelitas entre Avda. Villamayor y Nueva San Bernardo, sentido Pato Rojo.",13531,"30",40.9675,-5.6685],["Paseo de Las Carmelitas","Paseo Carmelitas entre Avda. Villamayor y Fray Luis de Granada, sentido Puerta Zamora.",13196,"30",40.9683,-5.6673],["Paseo de Canalejas","Paseo de Canalejas, entre Paseo de San Antonio y C/ Padilla, sentido salida ciudad.",12850,"30",40.9658,-5.6579],["Paseo del Doctor Torres Villarroel","Torres Villarroel, entre Puerta Zamora y Avda. Portugal, sentido Plaza de Toros.",12795,"30",40.9707,-5.6635],["Paseo del Tormes","Puente del Príncipe de Asturias, sentido salida ciudad.",12509,"30",40.9571,-5.6612],["Puente Juan Carlos I","Puente Juan Carlos I, sentido entrada ciudad.",12479,"50",40.9609,-5.6447],["Paseo de San Vicente","Paseo de Carmelitas, entre Filiberto Villalobos y Avenida de los Maristas, sentido entrada ciudad.",12188,"30",40.9661,-5.6706],["Avenida de los Cipreses","Avenida de los Cipreses, junto Calle Fernando Santos, sentido Gta. Castilla y León.",11516,"30",40.9754,-5.648],["Calle Álvaro Gil","Álvaro Gil frente al nº 25, entre Juan Picornell y Avda. Italia.",11464,"30",40.9714,-5.6637],["Paseo de San Vicente","Paseo de Carmelitas, entre C/ Espejo y hospitales, sentido entrada ciudad.",11459,"30",40.9654,-5.6716],["Avenida de Mirat",": Avenida Mirat entre C/ Dimas Madariaga y C/ Pollo Martín, sentido Puerta Zamora.",11375,"30",40.9693,-5.6602],["Avenida de Mirat","Avenida Mirat, entre Puerta Zamora y C/ Bientocadas, sentido Plaza España.",11261,"30",40.9698,-5.6625],["Avenida de los Cipreses","Avenida de los Cipreses, junto Calle Trébol, sentido Viaducto.",11248,"30",40.9754,-5.6481],["Plaza de la Fuente","Plaza de la Fuente.",10799,"20",40.9674,-5.6669],["Paseo del Doctor Torres Villarroel","Avda. Dr. Torres Villarroel frente puerta del Cuartel, entre Plaza de Toros y Gómez Arias, sentido Pza. Toros.",10742,"30",40.9751,-5.6627],["Paseo del Doctor Torres Villarroel","Torres Villarroel frente puerta del Cuartel, entre Plaza de Toros y Gómez Arias, sentido Pso. Carmelitas.",10396,"30",40.9751,-5.6628],["Plaza de España",": Avenida Mirat entre María Auxiliadora y Plaza de España, sentido Puerta Zamora.",10331,"30",40.9688,-5.6594],["Paseo de San Vicente","Pso. San Vicente, entrada a Gta. Sanitarios, sentido salida ciudad",10324,"30",40.9622,-5.6748],["Paseo de Las Carmelitas","Paseo Carmelitas entre Avda. Villamayor y Fray Luis de Granada, sentido salida ciudad.",10308,"30",40.9684,-5.6674],["Paseo del Desengaño","Pso. Desengaño, salida de Gta. Sanitarios, salida ciudad",10291,"30",40.9612,-5.6748],["Avenida de los Maristas","Avda. de los Maristas.",10171,"30",40.9677,-5.6736],["Puente Felipe VI","Puente del Príncipe de Asturias, sentido salida ciudad.",10005,"50",40.9532,-5.6617],["Paseo del Doctor Torres Villarroel","Torres Villarroel frente al nº 38, entre Avda. Portugal y Van Dick, sentido Plaza de Toros.",9765,"30",40.973,-5.663],["Puente del VIII Centenario","Puente de la Universidad, sentido entrada ciudad.",9612,"",40.9648,-5.6805],["Paseo de Canalejas","Paseo de Canalejas, entre Plaza España y C/ Padilla, sentido Plaza España.",9612,"30",40.9676,-5.6581],["Paseo de Canalejas","Paseo de Canalejas, entre Glorieta de Brujas y C/ Jardines, sentido salida ciudad.",9455,"30",40.9596,-5.66],["Paseo de San Vicente","Paseo de Carmelitas, entre C/ Ramón y Cajal y C/ Espejo, sentido entrada ciudad.",9320,"30",40.966,-5.6704],["Avenida José Núñez Larráz","Puente de la Universidad, sentido salida ciudad.",8962,"50",40.9588,-5.6817],["Paseo de Las Carmelitas","Paseo Carmelitas entre Álvaro Gil y Fray Luis de Granada, sentido salida ciudad.",8778,"30",40.9692,-5.6662],["Calle Gran Vía",": Gran Vía, entre Plaza de la Constitución y C/ la Rosa, sentido Pza. España.",8353,"30",40.9663,-5.6598],["Paseo de Canalejas","Paseo de Canalejas, entre Glorieta de Brujas y C/ Jardines, sentido Plaza España.",8282,"30",40.9595,-5.6599],["Paseo del Desengaño","Pso. Desengaño, acceso a Gta. Sanitarios, entrada ciudad.",7821,"30",40.9613,-5.6746],["Avenida de Portugal","Avda. Portugal frente al nº 117, entre Islas Canarias y Torres Villarroel, sentido Torres Villarroel.",7713,"30",40.9726,-5.6639],["Avenida de Saavedra y Fajardo","Ctra. Bejar, frente al radar, sentido salida ciudad.",7673,"50",40.9521,-5.6701],["Paseo de San Vicente","Pso. San Vicente, salida de Gta. Sanitarios, sentido entrada ciudad",7308,"30",40.9621,-5.6747],["Calle Gran Vía","Gran Vía, entre Plaza de la Constitución y C/ la Rosa, sentido bajada.",7218,"30",40.9663,-5.6598],["Paseo de Canalejas","Paseo Canalejas, entre C/ Padilla y C/ Alamedilla, sentido Pza. España.",6717,"30",40.9665,-5.6577],["Avenida de Saavedra y Fajardo","Ctra. Bejar, frente al radar, sentido entrada ciudad.",6661,"50",40.952,-5.67],["Paseo de Canalejas","Paseo de Canalejas, entre C/ San Quintín y C/ el Grillo, sentido Plaza España.",6631,"30",40.9628,-5.6586],["Avenida de San Agustín","Avda. San Agustín entre Plaza de Toros y Conde Don Vela, sentido entrada ciudad.",6616,"30",40.9764,-5.6616],["Paseo de Canalejas","Paseo. Canalejas, entre Paseo de San Antonio y C/ Padilla, sentido Pza. España.",6474,"30",40.9651,-5.6579],["Avenida de Portugal","Avda. Portugal, entre Torres Villarroel y Pza. Bº Vidal, sentido Pza. Bº Vidal.",6333,"30",40.9726,-5.6638],["Avenida Filiberto Villalobos","Filiberto Villalobos junto C/ La Vellés.",6283,"30",40.9676,-5.6714],["Paseo de Canalejas","Paseo Canalejas, entre C/ Jardines y C/ San Quintín, sentido Plaza España.",6239,"30",40.9609,-5.6593],["Avenida de los Reyes de España","Puente Enrique Estevan, sentido salida ciudad.",6090,"30",40.9584,-5.6651],["Avenida de los Reyes de España","Puente Enrique Estevan, sentido entrada ciudad.",6000,"30",40.9583,-5.665],["Paseo de Las Carmelitas","Paseo de Carmelitas, frente a Nueva de San Bernardo, sentido Puerta Zamora.",5530,"30",40.9668,-5.6692],["Calle Nueva de San Bernardo","Giro a izquierda desde Paseo de Carmelitas a Calle Nueva de San Bernardo.",5530,"30",40.9669,-5.6692],["Paseo de Canalejas","Paseo Canalejas, entre C/ Grillo y Paseo San Antonio, sentido al Plaza España.",5491,"30",40.9642,-5.6583],["Calle de María Auxiliadora",": Giro a la derecha desde Avenida de Mirat a María Auxiladora.",5173,"30",40.9689,-5.6594],["Avenida de Portugal","Avda. Portugal sentido Torres Villarroel",5083,"30",40.9729,-5.67],["Calle de María Auxiliadora","María Auxiliadora, entre C/ Van Dyck y C/ Alonso de Ojeda, sentido salida ciudad.",5061,"30",40.9727,-5.6572],["Calle Peña Primera","Peña Primera entre Iscar Peyra y Crespo Rascón.",4745,"20",40.9669,-5.6655],["Calle de San Gregorio","Incorporación de Rector Esperabé en la Gta. de los Milagros.",4640,"30",40.9601,-5.6725],["Calle Jardines","Incorporación de C/ Jardines",4555,"30",40.9596,-5.6591],["Calle de María Auxiliadora","María Auxiliadora, entre C/ Van Dyck y C/ Alonso de Ojeda, sentido Plaza España.",4522,"30",40.9727,-5.6573],["Calle Jardines","Calle Jardines en el carril hacia Avda. de la Aldehuela.",4273,"30",40.9596,-5.6591],["Avenida de Villamayor","Avda. Villamayor sentido Carmelitas",4032,"30",40.9696,-5.6695],["Calle José de Lamano Beneite","José Lamano Beneite sentido Glorieta Francisco López Villalobos",3947,"30",40.9654,-5.6809],["Calle Condes de Crespo Rascón","Crespo Rascón entre Peña Primera y C/ Santa Teresa.",3880,"20",40.9674,-5.6656],["Avenida de Portugal","Avda. Portugal, entre Plaza Bº Vidal y Ctra. de Ledesma, sentido Gta. del Jarama.",3663,"30",40.9729,-5.67],["Avenida de San Agustín","Avda. San Agustín frente Puerta Cuadrillas, sentido entrada ciudad.",3451,"30",40.9771,-5.6606],["Paseo de San Vicente","Giro a izquierda desde el Paseo de Carmelitas a avenida Filiberto Villalobos.",3314,"30",40.966,-5.6704],["Calle José de Lamano Beneite","José Lamano Beneite sentido Barrio Huerta Otea.",2880,"30",40.9654,-5.6809],["Avenida de Villamayor","Avda. Villamayor sentido Subida",2668,"30",40.9696,-5.6694],["Plaza del Barrio Vidal","Salida de la Plaza del Bº Vidal a la Avda. Portugal.",2405,"30",40.9731,-5.6675],["Paseo de la Transición Española","Pso. Transición Española, sentido Pte. Universidad",2248,"50",40.9626,-5.6766],["Calle Vaguada de la Palma","Incorporación de C/ la Palma en la Gta. de los Milagros.",2171,"30",40.9606,-5.6729],["Paseo de la Transición Española","Pso. Transición Española, sentido Gta. Sanitarios",1473,"50",40.9625,-5.6767],["Calle Santa Teresa","C/ Santa Teresa entre Crespo Rascón y Plaza de los Bandos.",1402,"20",40.9675,-5.6655],["Paseo de Canalejas","Paseo Canalejas, entre C/ Grillo y Paseo San Antonio, sentido al Paseo San Antonio.",1337,"30",40.9641,-5.6582],["Calle Henry Collet","Incorporación de C/ Henry Collet.",658,"30",40.9709,-5.6787],["Avenida Petra Zugarrondo","Incorporación de Avda. Petra Zugarrondo",638,"",40.9664,-5.6904],["Calle del Músico Antonio José","Incorporación de Avda. Reina Berenguela a C/ Músico Antonio José.",180,"50",40.9652,-5.6448],["Calle Juan Ruiz Peña","Incorporación de C/ Juan Ruiz Peña",99,"30",40.9656,-5.6897],["Avenida Petra Zugarrondo","Giro a izquierda hacia C/ Juan Ruiz Peña",60,"50",40.9659,-5.6898]];
+    // [lugar, responsable, causa, gravedad, vehículo, lat, lng]
+    const atropellos = [["Alvaro Gil - Pº Carmelitas","peatón","no respetar semáforo","leve","moto",40.97,-5.6647],["Avd. Italia 20","conductor","no respetar paso de peatones","leve","furgoneta",40.9709,-5.6649],["Avd. Gonzalo Torrente Ballester","conductor","no respetar paso de peatones","leve","turismo",40.9873,-5.6468],["Pº Francisco Tomás y Valiente","conductor","no respetar paso de peatones","leve","turismo",40.9673,-5.6785],["Calle Jamaica 2","peatón","irrumpir en la calzada","leve","turismo",40.9707,-5.6438],["Corrales de Monroy con Franciscas","conductor","no respeta prioridad peatón","leve","turismo",40.9679,-5.6602],["Príncipe de Vergara con Las Navas","conductor","no respetar paso de peatones","leve","turismo",40.9634,-5.654],["Alfonso IX de León con Gta. Doña Urraca","conductor","no respetar semáforo","leve","turismo",40.9746,-5.6558],["Avd. Portugal con Gta. San Juan Bosco","conductor","no respetar paso de peatones","grave","furgoneta",40.9732,-5.6725],["Pº de San Vicente con Virgen Vega","conductor","no respetar prioridad peatón","leve","furgoneta",40.9649,-5.6726],["Avd. Portugal con Crta. Ledesma","peatón","no respetar semáforo","leve","turismo",40.9729,-5.669],["Iscar Peyra con calle Prior","conductor","circular por la acera","leve","VMP",40.9652,-5.6658],["Comuneros 45","peatón","irrumpir en la calzada","leve","turismo",40.9686,-5.6541],["Crta. Fregeneda 26","peatón","irrumpir en la calzada","leve","moto",40.9555,-5.6728],["Gran Vía 25","peatón","no respetar semáforo","leve","turismo",40.9669,-5.6595],["Pº de los Robles con calle Moreras","conductor","no respetar paso de peatones","grave","turismo",40.9776,-5.6521],["pza. Colón con C/ San Pablo","conductor","no respetar paso de peatones","leve","turismo",40.962,-5.6642],["Avd. Raimundo de Borgoña 1","conductor","no respetar semáforo","leve","turismo",40.9764,-5.6628],["Pza. Barrio Vidal","conductor","no respetar paso de peatones","grave","turismo",40.9736,-5.6667],["Villares con Peña de Francia","conductor","no respetar paso de peatones","leve","turismo",40.9712,-5.6745],["paseo fluvial","peatón","irrumpir en carril bici","leve","bicicleta",40.9553,-5.6642],["Licenciado Vidriera con Guzmán de Alfarache","conductor","no respetar paso de peatones","grave","turismo",40.9792,-5.6707],["Alonso de Ojeda","conductor","no respetar paso de peatones","leve","turismo",40.9734,-5.658],["Borneo con Nueva Zelanda","conductor","no respetar paso de peatones","leve","turismo",40.9714,-5.643],["Consuelo 4","conductor","circula por zona peatonal","leve","turismo",40.9639,-5.6623],["Mayot de Chamberí con Canteras","peatón","irrumpir en la calzada montado en un monopatín","leve","turismo",40.9528,-5.6818],["Luis de Camoens con gt. San Marcelino Champagnat","conductor","no respetar paso de peatones","grave","turismo",40.9719,-5.6813],["Gta. Antonio Machado","peatón","irrumpir en la calzada","grave","turismo",40.9687,-5.653],["Avd. Portugal con Gta. Juan Bosco","conductor","no respetar paso de peatones","grave","turismo",40.9732,-5.6725],["Pintor González Ubierna 7","conductor","no respetar paso de peatones","leve","turismo",40.9666,-5.6446],["Avd. Villamayor con Avd. Portugal","conductor","no respetar paso de peatones","leve","turismo",40.9728,-5.6713],["Pza. Barrio Vidal con Emigdio de la Riva","conductor","no respetar paso de peatones","leve","furgoneta",40.9742,-5.6671],["Fernando de Rojas con Alfonso VI","conductor","no respetar paso de peatones","leve","turismo",40.9755,-5.6598],["Alfonso VI con Fernando de Rojas","conductor","no respetar paso de peatones","grave","turismo",40.9756,-5.6598],["carretera de Ledesma 32","conductor","circular por la acera","leve","VMP",40.9746,-5.6724],["calle Alamedilla","conductor","no inmovilizar vehículo estacionado","leve","furgoneta",40.9669,-5.657],["Luis de Camoens con Manuel Ramos Andrade","conductor","no respetar paso de peatones","grave","turismo",40.9703,-5.6838],["Carretera de Ledesma con Guijuelo","conductor","no respetar paso de peatones","leve","turismo",40.976,-5.6749],["pº de San Gregorio","conductor","no respetar paso de peatones","ileso","turismo",40.9592,-5.667],["pza. Barrio Vidal con Regato del Anís","conductor","no respetar paso de peatones","leve","turismo",40.974,-5.6673],["Pº de Carmelitas con Avd. Villamayor","conductor","no respetar semáforo","leve","VMP",40.9681,-5.6679],["Luis de Camoens (gasolinera)","conductor","marcha atrás","leve","turismo",40.9712,-5.6828],["Pº de la Estación con Avd. París","conductor","no respetar paso de peatones","leve","turismo",40.9724,-5.6489],["Pº de los Madroños con Río Guadalquivir","conductor","no respetar paso de peatones","leve","turismo",40.9737,-5.6489],["Avd. Portugal con María Auxiliadora","peatón","no respetar semáforo","leve","moto",40.9712,-5.658],["Licenciado Vidriera con Méndez Núñez","conductor","no respetar prioridad del peatón","leve","turismo",40.9791,-5.6711],["Bordadores con Cuesta del Carmen","conductor","no respetar prioridad del peatón","leve","furgoneta",40.9665,-5.6662],["Los Zúñiga con Pedro Lagasca","conductor","circular por la acera","leve","turismo",40.9718,-5.6514],["Peña de Francia con gta. Don Bosco","conductor","no respetar paso de peatones","leve","turismo",40.9728,-5.6723],["Gta. Ruta de la Plata con Agustinos Recoletos","conductor","no respetar semáforo","leve","turismo",40.9796,-5.6634],["Pº de San Antonio con Domingo de Soto","conductor","no respetar paso de peatones","leve","turismo",40.9647,-5.6571],["Reyes de España 16","peatón","irrumpir en la calzada","grave","turismo",40.9581,-5.6652],["Cesar Real de la Riva con Joaquín Vargas","conductor","no respetar paso de peatones","leve","turismo",40.9564,-5.6772]];
+    const esc = t => String(t).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+    const capa = L.layerGroup().addTo(mapTr);
+    const ley = document.getElementById('leyendaTrafico');
+
+    function pintar(tipo) {
+      capa.clearLayers();
+      if (tipo === 'aforos') {
+        aforos.forEach(a => L.circleMarker([a[4], a[5]], { radius: 4 + a[2] / 2200, fillColor: a[2] >= 12000 ? '#C0392B' : (a[2] >= 6000 ? '#F4A261' : '#1E56A0'), color: '#fff', weight: 1, fillOpacity: 0.8 })
+          .bindPopup(`<b>${esc(a[0])}</b><br>${esc(a[1])}<br>${a[2].toLocaleString('es-ES')} vehículos/día (IMD 2019)${a[3] ? '<br>Límite: ' + a[3] + ' km/h' : ''}`).addTo(capa));
+        ley.innerHTML = 'El tamaño del círculo es proporcional a la intensidad media diaria. <span style="color:#C0392B;">&#9679;</span> 12.000 o más &nbsp; <span style="color:#F4A261;">&#9679;</span> 6.000-11.999 &nbsp; <span style="color:#1E56A0;">&#9679;</span> menos de 6.000.';
+      } else {
+        atropellos.forEach(a => L.circleMarker([a[5], a[6]], { radius: a[3] === 'grave' ? 8 : 6, fillColor: a[3] === 'grave' ? '#C0392B' : '#F4A261', color: '#fff', weight: 1.5, fillOpacity: 0.9 })
+          .bindPopup(`<b>${esc(a[0])}</b><br>Responsable: ${esc(a[1])}<br>Causa: ${esc(a[2])}<br>Gravedad: ${esc(a[3])}`).addTo(capa));
+        ley.innerHTML = '<span style="color:#C0392B;">&#9679;</span> Grave (10) &nbsp; <span style="color:#F4A261;">&#9679;</span> Leve o sin lesiones (43). Ubicación orientativa.';
+      }
+    }
+    pintar('aforos');
+    document.getElementById('capaTrafico').addEventListener('change', e => pintar(e.target.value));
+
+    new Chart(document.getElementById('aforosChart').getContext('2d'), {
+      type: 'bar',
+      data: {
+        labels: ["Paseo de Las Carmelitas (Pso. Carmelitas, entre Crespo Rascón y…)", "Paseo de Las Carmelitas (Paseo Carmelitas entre Álvaro Gil y Fr…)", "Vía Helmántica (Carretera Madrid, sentido entrada ciud…)", "Vía Helmántica (Carretera Madrid, sentido salida ciuda…)", "Puente Juan Carlos I (Puente Juan Carlos I, sentido salida c…)", "Avenida de Mirat (Avenida Mirat, entre C/ Rodríguez Fabr…)", "Puente de Sánchez Fabrés (Incorporación de Rector Esperabé en la…)", "Paseo del Doctor Torres Villarroel (Avda. Dr. Torres Villarroel frente al …)", "Paseo de Las Carmelitas (Paseo Carmelitas entre Avda. Villamayo…)", "Paseo de Las Carmelitas (Paseo Carmelitas entre Avda. Villamayo…)"],
+        datasets: [{ label: 'Vehículos/día', data: [18012, 16082, 14543, 14541, 14404, 14158, 13831, 13826, 13531, 13196], backgroundColor: '#1E56A0', borderRadius: 4 }]
+      },
+      options: {
+        indexAxis: 'y', responsive: true,
+        plugins: { legend: { display: false } },
+        scales: { x: { beginAtZero: true, title: { display: true, text: 'Intensidad media diaria 2019 (vehículos por día y sentido)' } } }
+      }
+    });
+
+    new Chart(document.getElementById('atropellosCausaChart').getContext('2d'), {
+      type: 'bar',
+      data: {
+        labels: ['No respetar paso de peatones', 'No respetar semáforo', 'Irrumpir en la calzada', 'Circular por la acera', 'No respetar prioridad del peatón', 'Otras causas'],
+        datasets: [{ label: 'Atropellos 2021', data: [28, 8, 6, 3, 4, 4], backgroundColor: '#F4A261', borderRadius: 4 }]
+      },
+      options: {
+        indexAxis: 'y', responsive: true,
+        plugins: { legend: { display: false } },
+        scales: { x: { beginAtZero: true, ticks: { stepSize: 5 }, title: { display: true, text: 'Número de atropellos (53 en total)' } } }
+      }
+    });
+  </script>
