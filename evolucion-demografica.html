@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Evolución demográfica y pirámide de edad
-description: Envejecimiento poblacional, natalidad y saldo vegetativo por los 40 barrios de Salamanca
-date: 29-08-2026
+description: Qué dice la capa oficial de población por barrio sobre el envejecimiento de Salamanca y qué datos de natalidad y saldo vegetativo siguen sin verificar
+date: 06-10-2026
 folder: Demografia
 permalink: evolucion-demografica
 ---
@@ -17,25 +17,37 @@ permalink: evolucion-demografica
 			
 			<div id="section-content">
 						
+  <h2>Qué dice la capa oficial de población por barrio</h2>
+  <p>La capa de indicadores por barrio de la IDE municipal (Infraestructura de Datos Espaciales del Ayuntamiento) recoge la población y los grupos de edad de 49 barrios (143.660 habitantes, el 28,2 % de 65 o más y el 11,1 % de 0 a 14). No publica edad media, natalidad ni saldo vegetativo. Comparada con los datos de esta página, difiere en varios puntos:</p>
+  <ul>
+    <li><b>Zurguén sí es de los barrios más jóvenes</b>: solo el 10,7 % de sus 3.842 habitantes supera los 65 años y el 16,0 % tiene menos de 15. Es la parte de esta página que la capa respalda, junto con Tejares (11,9 % de mayores).</li>
+    <li><b>Chamberí no figura entre los más envejecidos</b>: tiene un 16,2 % de mayores de 65 años, frente a más del 30 % de Centro (33,8 %), Garrido Sur (33,4 %), Vidal (32,9 %) o Garrido Norte (32,1 %).</li>
+    <li><b>Las poblaciones no coinciden</b>: la capa da 3.415 habitantes al Centro (esta página, 26.200) y 11.271 a Garrido Norte y 8.445 a Garrido Sur (esta página, 19.200 a cada uno).</li>
+  </ul>
+  <p>Todos los detalles por barrio están en <a href="/poblacion-demografia">estructura demográfica por barrios</a>.</p>
+
+  <h2>Datos sin fuente verificada</h2>
+<p style="background:#FFF4E5; border-left:4px solid #F4A261; padding:10px 14px;"><b>No verificado.</b> Todo lo que sigue procede de una versión anterior de esta página y no tiene una fuente que Open Salamanca haya podido contrastar. La capa oficial de la IDE contradice varias de sus cifras (ver arriba), y la serie del padrón no coincide con la de la página de <a href="/poblacion">evolución de la población</a>. Se mantiene solo como referencia.</p>
+  <h3>Evolución del padrón 2015-2025 (no verificado)</h3>
   <canvas id="demografiaHistoricoChart" width="800" height="400"></canvas>
 
  
-			<h2>Análisis de la estructura y dinámica poblacional</h2>
+			<h3>Análisis de la estructura y dinámica poblacional (versión anterior, no verificado)</h3>
 			
 				<p>
 El perfil demográfico de Salamanca está marcado por un <b>progresivo envejecimiento de la población residente</b> y un saldo vegetativo negativo, compensado parcialmente por el flujo constante de <a href="/poblacion-universitaria">población flotante universitaria</a> y <a href="/inmigracion">migrante</a>. La edad media en la ciudad supera los 48 años, con diferencias notorias entre barrios consolidados y zonas de expansión.</p>
 
-<h3>Tendencias demográficas clave</h3>
+<h4>Tendencias demográficas clave (no verificado)</h4>
 <ul>
 <li><b><a href="/poblacion-demografia">Envejecimiento en barrios consolidados</a></b>: Centro, Garrido Norte, San Vicente, Vidal y Chamberí encabezan el envejecimiento, con edades medias por encima de 49 años y saldos vegetativos negativos que superan los -99 nacimientos/defunciones netos anuales en los tres primeros.</li>
 <li><b>Zurguén, la gran excepción</b>: frente al resto de la ciudad, Zurguén es el único barrio con un saldo vegetativo claramente positivo (+40 al año), fruto de su perfil de vivienda nueva y edad media más baja de Salamanca (39,2 años) — el mismo barrio que ya destacaba como el más joven en el <a href="/poblacion-demografia">análisis de población por barrios</a>.</li>
 <li><b>Periferia histórica, saldo casi neutro</b>: las 30 collaciones más pequeñas del casco antiguo (Los Alcaldes, Platina, Rollo, San Isidro, Tenerías...) tienen saldos vegetativos cercanos a cero, simplemente porque su población empadronada es demasiado pequeña para generar variaciones relevantes de nacimientos y defunciones cada año.</li>
 </ul>
 
-  <h2>Saldo vegetativo por barrio (nacimientos menos defunciones, anual)</h2>
+  <h3>Saldo vegetativo por barrio (nacimientos menos defunciones, anual, no verificado)</h3>
   <canvas id="saldoVegetativoChart" width="800" height="1150"></canvas>
 
-  <h2>Pirámide de edad de Salamanca capital (%)</h2>
+  <h3>Pirámide de edad de Salamanca capital (%, no verificado)</h3>
   <canvas id="piramideEdadChart" width="800" height="400"></canvas>
 
 			</div>
@@ -44,11 +56,11 @@ El perfil demográfico de Salamanca está marcado por un <b>progresivo envejecim
 			<table border="1" cellpadding="5" cellspacing="0">
 			  <thead>
 				<tr>
-				  <th>Barrio</th>
-				  <th>Población Padrón</th>
-				  <th>Edad Media</th>
-				  <th>% Mayor 65 años</th>
-				  <th>Saldo Vegetativo (anual)</th>
+				  <th>Barrio (no verificado)</th>
+				  <th>Población padrón (no verificado)</th>
+				  <th>Edad media (no verificado)</th>
+				  <th>% mayor de 65 años (no verificado)</th>
+				  <th>Saldo vegetativo anual (no verificado)</th>
 				</tr>
 			  </thead>
 			  <tbody>
@@ -94,6 +106,7 @@ El perfil demográfico de Salamanca está marcado por un <b>progresivo envejecim
 				<tr><td>Tenerías</td><td>265</td><td>44.5</td><td>18.2%</td><td>0</td></tr>
 			  </tbody>
 			</table>
+			<p><small>No verificado: todos los datos de esta tabla carecen de fuente contrastada y se mantienen solo como referencia.</small></p>
 
 			</div>
 			
@@ -110,7 +123,7 @@ El perfil demográfico de Salamanca está marcado por un <b>progresivo envejecim
       data: {
         labels: ['2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024', '2025'],
         datasets: [{
-          label: 'Población Empadronada Total',
+          label: 'Población empadronada total (no verificado)',
           data: [146438, 144949, 144436, 143978, 144228, 144825, 143269, 142412, 143956, 144500, 144850],
           borderColor: '#1E56A0',
           backgroundColor: 'rgba(30, 86, 160, 0.1)',
@@ -152,7 +165,7 @@ El perfil demográfico de Salamanca está marcado por un <b>progresivo envejecim
       data: {
         labels: saldoLabels,
         datasets: [{
-          label: 'Saldo Vegetativo Anual (nacimientos - defunciones)',
+          label: 'Saldo vegetativo anual (no verificado)',
           data: saldoValores,
           backgroundColor: saldoColores,
           borderColor: saldoBordes,
@@ -167,7 +180,7 @@ El perfil demográfico de Salamanca está marcado por un <b>progresivo envejecim
           legend: { display: true, position: 'top' }
         },
         scales: {
-          x: { title: { display: true, text: 'Saldo Vegetativo (personas/año)' } },
+          x: { title: { display: true, text: 'Saldo vegetativo (personas/año, no verificado)' } },
           y: { title: { display: true, text: 'Barrio' } }
         }
       }
@@ -181,12 +194,12 @@ El perfil demográfico de Salamanca está marcado por un <b>progresivo envejecim
         labels: ['0-14 años', '15-29 años', '30-44 años', '45-59 años', '60-74 años', '75+ años'],
         datasets: [
           {
-            label: 'Hombres (%)',
+            label: 'Hombres (%, no verificado)',
             data: [-5.4, -8.1, -9.2, -10.8, -8.2, -5.1],
             backgroundColor: 'rgba(30, 86, 160, 0.75)'
           },
           {
-            label: 'Mujeres (%)',
+            label: 'Mujeres (%, no verificado)',
             data: [5.1, 8.4, 9.5, 11.2, 9.6, 8.4],
             backgroundColor: 'rgba(230, 57, 70, 0.75)'
           }
@@ -206,7 +219,7 @@ El perfil demográfico de Salamanca está marcado por un <b>progresivo envejecim
         },
         scales: {
           x: {
-            title: { display: true, text: 'Porcentaje sobre la Población Total (%)' },
+            title: { display: true, text: 'Porcentaje sobre la población total (%, no verificado)' },
             ticks: {
               callback: function(value) { return Math.abs(value) + '%'; }
             }

@@ -2,7 +2,7 @@
 layout: default
 title: Renta per cápita por barrios y municipios
 description: Renta neta media por persona en los 40 barrios de Salamanca capital y en los municipios del alfoz
-date: 28-08-2026
+date: 06-10-2026
 folder: Economia
 permalink: renta-barrios
 ---
@@ -17,15 +17,18 @@ permalink: renta-barrios
 
 			<div id="section-content">
 
+<p style="background:#FFF4E5; border-left:4px solid #F4A261; padding:10px 14px;"><b>No verificado.</b> Las cifras de renta de esta página (texto, gráficos y tabla, para 40 barrios y 5 municipios) proceden de una versión anterior y no tienen una fuente que Open Salamanca haya podido contrastar: los valores descienden de forma casi regular de un barrio a otro, algo poco habitual en datos reales, y no se han podido comparar con ninguna capa oficial (la IDE municipal no publica renta). Se mantienen solo como referencia hasta localizar la fuente (por ejemplo, el Atlas de Distribución de Renta de los Hogares del INE por sección censal). Los barrios de esta página son además los 40 habituales, no los 49 de la capa de población de la IDE; la población oficial de cada uno está en <a href="/poblacion-demografia">estructura demográfica por barrios</a>.</p>
+
+  <h3>Renta neta media por persona (no verificado)</h3>
   <canvas id="rentaBarriosChart" width="800" height="1300"></canvas>
 
 
-			<h2>Análisis de las principales conclusiones</h2>
+			<h3>Análisis de las principales conclusiones (versión anterior, no verificado)</h3>
 
 				<p>
 El análisis de la renta neta media por persona en los 40 barrios de la capital y en los municipios del alfoz de Salamanca revela una <b>marcada brecha socioeconómica territorial</b>. Se observa una diferencia superior a los 6.500 euros anuales por habitante entre las zonas de mayor renta y los barrios periféricos con menor renta media, con una distribución que dibuja con claridad tres grandes anillos concéntricos en torno al casco histórico.</p>
 
-<h3>Tendencias territoriales clave</h3>
+<h4>Tendencias territoriales clave (no verificado)</h4>
 <ul>
 <li><b>Anillo de mayor renta (casco histórico y primera corona)</b>: <a href="/mapa-capas-salamanca">Centro</a> lidera el ranking con 18.450 €, seguido de San Vicente, Vidal, Chamberí, Carmen y Ciudad Jardín, todos por encima de los 16.000 €. En esta franja alta también se sitúan los municipios del alfoz residencial, con Carbajosa de la Sagrada (16.820 €) y Villamayor de Armuña (16.210 €) superando ampliamente la <a href="/renta-per-capita">media municipal</a> (ubicada en 15.319 €).</li>
 
@@ -36,7 +39,7 @@ El análisis de la renta neta media por persona en los 40 barrios de la capital 
 
 <p>Esta fotografía por barrios se completa con el análisis de la <a href="/renta-sexo">brecha de renta entre hombres y mujeres</a> en la ciudad, y con la perspectiva agregada de la <a href="/renta-desigualdad">renta por habitante y distribución del ingreso</a>, que profundiza en la desigualdad interna más allá de la división geográfica. La misma división territorial se refleja también en el <a href="/precio-vivienda">precio de la vivienda</a>, con una correlación muy estrecha entre renta y valor del metro cuadrado en la práctica totalidad de los barrios. Fuera de la capital, el <a href="/municipios-mayor-renta-salamanca">ranking de renta por municipio de la provincia y su evolución 2023-2024</a> muestra que el alfoz residencial (Cabrerizos, Aldeatejada, Carrascal de Barregas) supera en renta bruta a la propia ciudad. Para ver qué barrios cuentan con un local municipal de encuentro vecinal, consulta los <a href="/espacios-participacion-ciudadana-salamanca">espacios de participación ciudadana</a>.</p>
 
-  <h2>Variación porcentual respecto a la media municipal</h2>
+  <h3>Variación porcentual respecto a la media municipal (no verificado)</h3>
   <canvas id="rentaBarriosChart2" width="800" height="1300"></canvas>
 
 
@@ -48,10 +51,10 @@ El análisis de la renta neta media por persona en los 40 barrios de la capital 
 			<table border="1" cellpadding="5" cellspacing="0">
 			  <thead>
 				<tr>
-				  <th>Barrio / Municipio</th>
-				  <th>Renta Neta Media / Hab. (€)</th>
-				  <th>Diferencia sobre Media (€)</th>
-				  <th>Variación %</th>
+				  <th>Barrio / municipio (no verificado)</th>
+				  <th>Renta neta media / hab. (€, no verificado)</th>
+				  <th>Diferencia sobre media (€, no verificado)</th>
+				  <th>Variación % (no verificado)</th>
 				</tr>
 			  </thead>
 			  <tbody>
@@ -102,6 +105,7 @@ El análisis de la renta neta media por persona en los 40 barrios de la capital 
 				<tr><td>San José</td><td>11.950</td><td>-3.369</td><td>-21.99%</td></tr>
 			  </tbody>
 			</table>
+			<p><small>No verificado: todos los datos de esta tabla carecen de fuente contrastada y se mantienen solo como referencia.</small></p>
 
 			</div>
 
@@ -150,7 +154,7 @@ El análisis de la renta neta media por persona en los 40 barrios de la capital 
       data: {
         labels: rentaLabels,
         datasets: [{
-          label: 'Renta Neta Media por Persona (€)',
+          label: 'Renta neta media por persona (€, no verificado)',
           data: rentaValores,
           backgroundColor: 'rgba(30, 86, 160, 0.75)',
           borderColor: '#1E56A0',
@@ -172,7 +176,7 @@ El análisis de la renta neta media por persona en los 40 barrios de la capital 
             beginAtZero: false,
             title: {
               display: true,
-              text: 'Renta Neta (€)'
+              text: 'Renta neta (€, no verificado)'
             }
           },
           y: {
@@ -194,7 +198,7 @@ El análisis de la renta neta media por persona en los 40 barrios de la capital 
         labels: rentaLabels,
         datasets: [
           {
-            label: 'Diferencia % respecto a la Media',
+            label: 'Diferencia % respecto a la media (no verificado)',
             data: rentaVariacion,
             backgroundColor: rentaColoresFondo,
             borderColor: rentaColoresBorde,
@@ -217,7 +221,7 @@ El análisis de la renta neta media por persona en los 40 barrios de la capital 
             type: 'linear',
             title: {
               display: true,
-              text: 'Variación (%)'
+              text: 'Variación (%, no verificado)'
             }
           },
           y: {
