@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Estructura demográfica y evolución de la población
-description: Censo municipal, pirámide de edad, tasa de envejecimiento y distribución poblacional por los 40 barrios de Salamanca
-date: 30-08-2026
+description: Población, edad y sexo de los 49 barrios de la IDE municipal - cuáles envejecen más, cuáles son más jóvenes y más densos - y qué datos demográficos siguen sin verificar
+date: 06-10-2026
 folder: Demografia
 permalink: poblacion-demografia
 ---
@@ -14,18 +14,54 @@ permalink: poblacion-demografia
                 <h2 class="section-title">{{ page.title }}</h2>
                 <p class="section-description">{{ page.description }}</p>
             </div>
-			
+
 			<div id="section-content">
+
+  <div id="mapaPoblacion" style="width: 100%; height: 520px; border-radius: 8px; margin-bottom: 10px;"></div>
+  <p style="font-size:0.9em; margin-bottom:25px;">Cada barrio se colorea según el peso de los mayores de 65 años: <span style="color:#FED976;">&#9632;</span> menos del 20 % &nbsp; <span style="color:#FD8D3C;">&#9632;</span> 20-30 % &nbsp; <span style="color:#E31A1C;">&#9632;</span> 30-35 % &nbsp; <span style="color:#800026;">&#9632;</span> más del 35 %. Pulsa un barrio para ver sus datos.</p>
+
+			<h2>Salamanca en 49 barrios: 143.660 habitantes, el 28 % mayores de 65 años</h2>
+
+				<p>
+La capa de indicadores por barrio de la IDE municipal (Infraestructura de Datos Espaciales del Ayuntamiento) reparte a <b>143.660 habitantes en 49 zonas</b>. El <b>54,7 %</b> son mujeres (78.620 frente a 65.031 hombres), el <b>28,2 %</b> tiene más de 65 años (40.566 personas) y el <b>11,1 %</b> son menores de 15 (15.985). La capa no indica el año; la cifra queda por debajo de la del padrón más reciente que recoge la página de <a href="/poblacion">evolución de la población</a>.</p>
+
+<h3>Hallazgos clave</h3>
+<ul>
+<li><b>Garrido Norte es el barrio más poblado y el más denso.</b> Tiene 11.271 habitantes y unos 22.100 por km², más de un 50 % por encima del siguiente en densidad, Rollo (13.961). Le siguen en población Pizarrales (9.657), Garrido Sur (8.445) y Oeste (8.109).</li>
+<li><b>La población no está tan concentrada como se decía.</b> Los 10 barrios más poblados reúnen el 49,9 % de los habitantes, no el 87 % que afirmaba la versión anterior de esta página.</li>
+<li><b>Oeste, Labradores, Delicias y San Bernardo, los barrios grandes más envejecidos.</b> Entre los barrios de más de 3.000 habitantes, superan el 36 % de mayores de 65 años: Oeste (39,3 %), Labradores (37,1 %), Delicias y San Bernardo (36,4 % cada uno). En barrios más pequeños, Úrsulas - San Marcos llega al 43,4 %.</li>
+<li><b>Tejares y Zurguén, los más jóvenes entre los grandes.</b> Solo el 11,9 % y el 10,7 % de sus vecinos supera los 65 años, y los menores de 15 son el 17,6 % y el 16,0 %. Huerta Otea, con 2.738 habitantes, es aún más joven (7,2 % de mayores).</li>
+<li><b>El Centro es pequeño en población.</b> La zona "Centro" de esta capa tiene 3.415 habitantes. Las cifras de "Centro" de la versión anterior (26.200) no corresponden a este perímetro y no se han podido contrastar.</li>
+</ul>
+
+  <h2>Habitantes por barrio: los 15 más poblados</h2>
+  <canvas id="poblacionBarriosOficialChart" width="800" height="520"></canvas>
+
+  <h2>Menores de 15 y mayores de 65 años en los barrios de más de 3.000 habitantes</h2>
+  <canvas id="edadBarriosChart" width="800" height="560"></canvas>
+
+  <h2>Cómo leer estos datos</h2>
+  <ul>
+    <li>La población es la que publica la capa de indicadores por barrio de la IDE; no consta el año y no coincide con el padrón municipal más reciente. Las proporciones son orientativas.</li>
+    <li>Los grupos de edad de la capa son tres: 0 a 14, 15 a 64 y 65 o más. No hay edad media, población extranjera ni pirámide detallada.</li>
+    <li>Algunas zonas (Marín II, Montalvo, Zaldesa) figuran sin habitantes y La Platina tiene 9; se omiten en la tabla o no se comparan.</li>
+    <li>Las densidades se calculan con la superficie de cada barrio de la capa; para zonas muy pequeñas no se muestran.</li>
+  </ul>
+
+  <h2>Datos demográficos sin fuente verificada</h2>
+  <p style="background:#FFF4E5; border-left:4px solid #F4A261; padding:10px 14px;"><b>No verificado.</b> Todo lo que sigue procede de una versión anterior de esta página y no tiene una fuente que Open Salamanca haya podido contrastar. Contradice a la capa oficial en cifras clave (por ejemplo, el reparto de población por barrio, la concentración en los 10 barrios más poblados o la población del Centro). Incluye edad media y población extranjera por barrio, que la capa oficial no publica, y una pirámide de edad cuyos totales tampoco coinciden. Se mantiene solo como referencia.</p>
+  <div style="opacity:0.85;">
+
 						
   <canvas id="piramideEdadChart" width="800" height="400"></canvas>
 
  
-			<h2>Análisis del perfil demográfico y reto del envejecimiento</h2>
+			<h3>Análisis del perfil demográfico y reto del envejecimiento (versión anterior, no verificado)</h3>
 			
 				<p>
 El mapa demográfico de Salamanca viene marcado por el <b>acusado envejecimiento poblacional y la sobreimpresión de la población universitaria flotante</b>. Con una tasa de dependencia senil creciente, el padrón oficial refleja la pérdida paulatina de saldo vegetativo, compensada parcialmente por el <a href="/inmigracion">flujo migratorio</a> y la atracción estacional de estudiantes.</p>
 
-<h3>Rasgos estructurales de la población salmantina</h3>
+<h4>Rasgos estructurales de la población salmantina (no verificado)</h4>
 <ul>
 <li><b><a href="/evolucion-demografica">Alta tasa de envejecimiento</a></b>: más del 26% de los residentes empadronados supera los 65 años de edad, concentrándose la mayor longevidad en el Centro, Garrido Norte y los barrios históricos del casco antiguo (San Vicente, Vidal, Chamberí, Carmen), todos por encima del 27%.</li>
 <li><b>Impacto de la comunidad universitaria</b>: Salamanca acoge anualmente a más de <a href="/poblacion-universitaria">28.000 estudiantes flotantes no empadronados</a>, dinamizando la franja de edad de 18 a 25 años en los sectores residenciales próximos a los campus, muy especialmente en San Bernardo, cuya edad media (44,8 años) y peso de población extranjera (11,5%) contrastan con el resto de barrios de renta similar.</li>
@@ -33,23 +69,84 @@ El mapa demográfico de Salamanca viene marcado por el <b>acusado envejecimiento
 <li><b>Geografía de la población extranjera</b>: su peso relativo es más alto en los barrios periféricos y de menor renta (Los Alambres, Platina, Rollo, Los Alcaldes, San Isidro, todos por encima del 10%), en línea con la distribución que muestra el análisis de <a href="/inmigracion">inmigración en Salamanca</a>.</li>
 </ul>
 
-  <h2>Población empadronada por barrio (2025)</h2>
+  <h3>Población empadronada por barrio (2025, no verificado)</h3>
   <canvas id="poblacionBarriosChart" width="800" height="1150"></canvas>
 
-  <h2>Evolución del Padrón Municipal de habitantes (2018-2025)</h2>
+  <h3>Evolución del padrón municipal de habitantes (2018-2025, no verificado)</h3>
   <canvas id="poblacionEvolucionChart" width="800" height="400"></canvas>
+
+			
+  </div>
 
 			</div>
 
 			<div id="section-table">
-			<table border="1" cellpadding="5" cellspacing="0">
+				<h2>Población por barrio (capa oficial)</h2>
+				<table border="1" cellpadding="5" cellspacing="0">
+				  <thead>
+					<tr><th>Barrio</th><th>Habitantes</th><th>% de 0 a 14 años</th><th>% de 15 a 64 años</th><th>% de 65 o más</th><th>% de mujeres</th><th>Habitantes por km²</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>Garrido Norte</td><td>11.271</td><td>10,3</td><td>57,6</td><td>32,1</td><td>54,7</td><td>22.100</td></tr>
+					<tr><td>Pizarrales</td><td>9.657</td><td>14,4</td><td>67,8</td><td>17,9</td><td>52,7</td><td>10.974</td></tr>
+					<tr><td>Garrido Sur</td><td>8.445</td><td>10,3</td><td>56,3</td><td>33,4</td><td>55,3</td><td>46.917</td></tr>
+					<tr><td>Oeste</td><td>8.109</td><td>8,4</td><td>52,3</td><td>39,3</td><td>56,9</td><td>32.436</td></tr>
+					<tr><td>Rollo</td><td>6.841</td><td>9,9</td><td>61,5</td><td>28,6</td><td>54,9</td><td>13.961</td></tr>
+					<tr><td>Labradores</td><td>6.020</td><td>9,7</td><td>53,1</td><td>37,1</td><td>58,3</td><td>31.684</td></tr>
+					<tr><td>Salesas</td><td>5.850</td><td>9,3</td><td>55,5</td><td>35,2</td><td>56,0</td><td>26.591</td></tr>
+					<tr><td>Prosperidad</td><td>5.393</td><td>8,9</td><td>72,0</td><td>19,1</td><td>54,5</td><td>5.560</td></tr>
+					<tr><td>Vidal</td><td>5.053</td><td>9,4</td><td>57,6</td><td>32,9</td><td>56,1</td><td>17.424</td></tr>
+					<tr><td>Puente Ladrillo</td><td>5.038</td><td>14,4</td><td>71,6</td><td>14,0</td><td>51,2</td><td>9.688</td></tr>
+					<tr><td>Delicias</td><td>4.794</td><td>9,9</td><td>53,6</td><td>36,4</td><td>56,4</td><td>34.243</td></tr>
+					<tr><td>San Bernardo</td><td>4.427</td><td>7,6</td><td>56,0</td><td>36,4</td><td>55,5</td><td>10.798</td></tr>
+					<tr><td>Chinchibarra</td><td>4.341</td><td>9,6</td><td>63,7</td><td>26,7</td><td>55,0</td><td>9.236</td></tr>
+					<tr><td>Tejares</td><td>4.242</td><td>17,6</td><td>70,5</td><td>11,9</td><td>51,7</td><td>3.394</td></tr>
+					<tr><td>Zurguén</td><td>3.842</td><td>16,0</td><td>73,3</td><td>10,7</td><td>51,9</td><td>4.222</td></tr>
+					<tr><td>Centro</td><td>3.415</td><td>7,7</td><td>58,5</td><td>33,8</td><td>55,9</td><td>13.135</td></tr>
+					<tr><td>Capuchinos</td><td>3.358</td><td>11,2</td><td>71,4</td><td>17,4</td><td>52,9</td><td>9.876</td></tr>
+					<tr><td>San José</td><td>2.954</td><td>14,0</td><td>56,8</td><td>29,2</td><td>53,2</td><td>4.843</td></tr>
+					<tr><td>Las Claras</td><td>2.925</td><td>8,2</td><td>55,0</td><td>36,8</td><td>57,5</td><td>22.500</td></tr>
+					<tr><td>Huerta Otea</td><td>2.738</td><td>20,5</td><td>72,2</td><td>7,2</td><td>51,9</td><td>3.651</td></tr>
+					<tr><td>Vistahermosa</td><td>2.673</td><td>16,8</td><td>72,5</td><td>10,7</td><td>51,7</td><td>6.854</td></tr>
+					<tr><td>Blanco</td><td>2.428</td><td>10,7</td><td>63,8</td><td>25,5</td><td>54,0</td><td>12.140</td></tr>
+					<tr><td>Estación</td><td>2.289</td><td>8,8</td><td>56,3</td><td>34,9</td><td>55,1</td><td>4.870</td></tr>
+					<tr><td>San Isidro</td><td>2.178</td><td>9,6</td><td>50,5</td><td>39,9</td><td>57,6</td><td>27.225</td></tr>
+					<tr><td>Tormes</td><td>2.117</td><td>9,3</td><td>62,5</td><td>28,2</td><td>52,2</td><td>10.081</td></tr>
+					<tr><td>Carmen</td><td>2.070</td><td>11,4</td><td>57,7</td><td>30,9</td><td>54,8</td><td>17.250</td></tr>
+					<tr><td>Alamedilla</td><td>2.068</td><td>9,5</td><td>50,2</td><td>40,2</td><td>58,2</td><td>17.233</td></tr>
+					<tr><td>Úrsulas - San Marcos</td><td>2.017</td><td>8,2</td><td>48,4</td><td>43,4</td><td>56,7</td><td>14.407</td></tr>
+					<tr><td>Santo Tomás</td><td>1.986</td><td>10,2</td><td>57,9</td><td>31,9</td><td>53,7</td><td>6.620</td></tr>
+					<tr><td>San Juan</td><td>1.973</td><td>10,4</td><td>54,0</td><td>35,6</td><td>58,7</td><td>19.730</td></tr>
+					<tr><td>Chamberí</td><td>1.719</td><td>15,1</td><td>68,6</td><td>16,2</td><td>51,8</td><td>3.306</td></tr>
+					<tr><td>Teso de la Feria</td><td>1.537</td><td>13,7</td><td>66,0</td><td>20,2</td><td>50,9</td><td>7.319</td></tr>
+					<tr><td>Universidad</td><td>1.325</td><td>10,0</td><td>62,1</td><td>27,8</td><td>53,7</td><td>4.417</td></tr>
+					<tr><td>Sancti Spíritus</td><td>1.000</td><td>10,3</td><td>51,4</td><td>38,3</td><td>58,3</td><td>&ndash;</td></tr>
+					<tr><td>Ciudad Jardín</td><td>977</td><td>12,4</td><td>55,6</td><td>32,0</td><td>57,9</td><td>2.035</td></tr>
+					<tr><td>San Vicente</td><td>961</td><td>10,5</td><td>60,4</td><td>29,1</td><td>53,1</td><td>5.653</td></tr>
+					<tr><td>La Vega</td><td>903</td><td>10,7</td><td>59,4</td><td>29,9</td><td>53,3</td><td>6.946</td></tr>
+					<tr><td>Los Alambres</td><td>880</td><td>15,3</td><td>66,8</td><td>17,8</td><td>51,7</td><td>4.400</td></tr>
+					<tr><td>Buenos Aires</td><td>823</td><td>19,9</td><td>54,9</td><td>25,2</td><td>50,9</td><td>2.494</td></tr>
+					<tr><td>San Esteban</td><td>730</td><td>6,6</td><td>58,1</td><td>35,3</td><td>54,1</td><td>6.636</td></tr>
+					<tr><td>Arrabal</td><td>643</td><td>19,8</td><td>68,3</td><td>12,0</td><td>52,1</td><td>1.786</td></tr>
+					<tr><td>Tenerias</td><td>599</td><td>8,5</td><td>61,8</td><td>29,7</td><td>52,9</td><td>4.279</td></tr>
+					<tr><td>La Fontana</td><td>503</td><td>7,4</td><td>53,5</td><td>39,2</td><td>57,9</td><td>729</td></tr>
+					<tr><td>Hospital</td><td>466</td><td>5,2</td><td>68,5</td><td>26,4</td><td>61,2</td><td>971</td></tr>
+					<tr><td>Marín I</td><td>73</td><td>16,4</td><td>72,6</td><td>11,0</td><td>47,9</td><td>292</td></tr>
+					<tr><td>La Platina</td><td>9</td><td>11,1</td><td>88,9</td><td>0,0</td><td>66,7</td><td>19</td></tr>
+				  </tbody>
+				</table>
+				<p><small>Fuente: capa "Población por barrios" de indicadores de la IDE del Ayuntamiento de Salamanca (49 zonas). Porcentajes y densidades elaborados por Open Salamanca.</small></p>
+
+				<h2>Tabla anterior por barrio (no verificado)</h2>
+				<p style="background:#FFF4E5; border-left:4px solid #F4A261; padding:10px 14px;"><b>No verificado.</b> Sin fuente contrastada: Garrido Norte y Garrido Sur figuran con idéntica población y los barrios pequeños con cifras que descienden de forma regular, lo que apunta a una estimación. Se conserva solo como referencia.</p>
+<table border="1" cellpadding="5" cellspacing="0">
 			  <thead>
 				<tr>
-				  <th>Distrito / Barrio</th>
-				  <th>Población Empadronada</th>
-				  <th>Edad Media (Años)</th>
-				  <th>Mayores de 65 años (%)</th>
-				  <th>Población Extranjera (%)</th>
+				  <th>Distrito / barrio (no verificado)</th>
+				  <th>Población empadronada (no verificado)</th>
+				  <th>Edad media (no verificado)</th>
+				  <th>Mayores de 65 años % (no verificado)</th>
+				  <th>Población extranjera % (no verificado)</th>
 				</tr>
 			  </thead>
 			  <tbody>
@@ -95,15 +192,65 @@ El mapa demográfico de Salamanca viene marcado por el <b>acusado envejecimiento
 				<tr><td>Tenerías</td><td>265</td><td>44.5 años</td><td>18.2%</td><td>9.6%</td></tr>
 			  </tbody>
 			</table>
-
 			</div>
 
 			{% include categories.html %}
-            
+
         </div>
     </section>
 
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 	<script>
+    const mapPob = L.map('mapaPoblacion').setView([40.9650, -5.6650], 13);
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/light_all/{z}/{x}/{y}{r}.png?key=cb1_2izw_1_55d93b51ded1dcecfa044181', {
+      attribution: '&copy; OpenStreetMap &copy; CARTO | Datos: IDE Ayuntamiento de Salamanca', subdomains: 'abcd', maxZoom: 19
+    }).addTo(mapPob);
+    const fm = n => Math.round(n).toLocaleString('es-ES');
+    const pc = (a, b) => (a / b * 100).toLocaleString('es-ES', { maximumFractionDigits: 1 });
+    const color = v => v > 0.35 ? '#800026' : (v > 0.30 ? '#E31A1C' : (v > 0.20 ? '#FD8D3C' : '#FED976'));
+    fetch('/barrios-poblacion.json?v=1').then(r => r.json()).then(d => {
+      // barrios: [nombre, habitantes, 0-14, 15-64, 65+, hombres, mujeres, km2]
+      d.barrios.forEach((b, i) => {
+        if (!b[1]) return;
+        const dens = b[7] > 0.05 ? `<br>${fm(b[1] / b[7])} hab./km²` : '';
+        L.polygon(d.geo[i][1], { color: '#555', weight: 1, fillColor: color(b[4] / b[1]), fillOpacity: 0.65 })
+          .bindPopup(`<b>${b[0]}</b><br>${fm(b[1])} habitantes<br>0-14: ${pc(b[2], b[1])} % · 15-64: ${pc(b[3], b[1])} % · 65+: ${pc(b[4], b[1])} %<br>Mujeres: ${pc(b[6], b[1])} %${dens}`)
+          .addTo(mapPob);
+      });
+    }).catch(() => {});
+
+    new Chart(document.getElementById('poblacionBarriosOficialChart').getContext('2d'), {
+      type: 'bar',
+      data: {
+        labels: ["Garrido Norte", "Pizarrales", "Garrido Sur", "Oeste", "Rollo", "Labradores", "Salesas", "Prosperidad", "Vidal", "Puente Ladrillo", "Delicias", "San Bernardo", "Chinchibarra", "Tejares", "Zurguén"],
+        datasets: [{ label: 'Habitantes', data: [11271, 9657, 8445, 8109, 6841, 6020, 5850, 5393, 5053, 5038, 4794, 4427, 4341, 4242, 3842], backgroundColor: '#1E56A0', borderRadius: 4 }]
+      },
+      options: {
+        indexAxis: 'y', responsive: true,
+        plugins: { legend: { display: false } },
+        scales: { x: { beginAtZero: true, title: { display: true, text: 'Habitantes (143.660 en total)' } } }
+      }
+    });
+
+    new Chart(document.getElementById('edadBarriosChart').getContext('2d'), {
+      type: 'bar',
+      data: {
+        labels: ["Oeste", "Labradores", "Delicias", "San Bernardo", "Salesas", "Centro", "Garrido Sur", "Vidal", "Garrido Norte", "Rollo", "Chinchibarra", "Prosperidad", "Pizarrales", "Capuchinos", "Puente Ladrillo", "Tejares", "Zurguén"],
+        datasets: [
+          { label: '65 o más años', data: [39.3, 37.1, 36.4, 36.4, 35.2, 33.8, 33.4, 32.9, 32.1, 28.6, 26.7, 19.1, 17.9, 17.4, 14.0, 11.9, 10.7], backgroundColor: '#C0392B' },
+          { label: '0 a 14 años', data: [8.4, 9.7, 9.9, 7.6, 9.3, 7.7, 10.3, 9.4, 10.3, 9.9, 9.6, 8.9, 14.4, 11.2, 14.4, 17.6, 16.0], backgroundColor: '#2C8A3E' }
+        ]
+      },
+      options: {
+        indexAxis: 'y', responsive: true,
+        plugins: { legend: { position: 'top' } },
+        scales: { x: { beginAtZero: true, title: { display: true, text: 'Porcentaje de la población del barrio' } } }
+      }
+    });
+
+    // ---- Gráficos anteriores sin fuente verificada
+
     // Gráfico 1: Pirámide de Edad Simplificada (Hombres vs Mujeres)
     const ctxPir = document.getElementById('piramideEdadChart').getContext('2d');
     const piramideEdadChart = new Chart(ctxPir, {
@@ -126,7 +273,7 @@ El mapa demográfico de Salamanca viene marcado por el <b>acusado envejecimiento
       options: {
         responsive: true,
         plugins: {
-          title: { display: true, text: 'Distribución de la población por tramos de edad y sexo' }
+          title: { display: true, text: 'Distribución por tramos de edad y sexo (no verificado)' }
         },
         scales: {
           y: { title: { display: true, text: 'Número de Habitantes' }, beginAtZero: true },
@@ -208,4 +355,4 @@ El mapa demográfico de Salamanca viene marcado por el <b>acusado envejecimiento
         }
       }
     });
-  </script>
+    </script>
