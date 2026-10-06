@@ -1,0 +1,128 @@
+---
+layout: default
+title: Espacios de participación ciudadana de Salamanca
+description: Mapa y datos de los 19 espacios de participación ciudadana de los barrios de Salamanca según la IDE municipal - dónde están, cómo contactar y a qué distancia quedan de la Plaza Mayor
+date: 06-10-2026
+folder: Politica
+permalink: espacios-participacion-ciudadana-salamanca
+---
+
+    <section class="featured dataset" id="datos">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="section-title">{{ page.title }}</h1>
+                <p class="section-description">{{ page.description }}</p>
+            </div>
+
+			<div id="section-content">
+
+  <div id="mapaEPC" style="width: 100%; height: 500px; border-radius: 8px; margin-bottom: 10px;"></div>
+  <p style="font-size:0.9em; margin-bottom:25px;"><span style="color:#1E56A0;">&#9679;</span> Espacio de participación &nbsp; <span style="color:#E63946;">&#9679;</span> Casa de Juventud de Garrido (incluida en la misma capa) &nbsp; <span style="color:#555;">&#9679;</span> Plaza Mayor (referencia)</p>
+
+			<h2>Diecinueve espacios repartidos por los barrios</h2>
+
+			<p>
+La capa "EPC — Centros Municipales Integrados" de la IDE municipal (Infraestructura de Datos Espaciales del Ayuntamiento) recoge <b>20 puntos</b>: <b>19 espacios de participación ciudadana</b> y la <b>Casa de Juventud de Garrido</b>, que aparece en la misma capa pero no es un espacio de participación como tal. Los espacios cubren <b>17 barrios o zonas</b>; solo San Vicente tiene tres locales distintos (el 1, el 8 y uno sin número).
+</p>
+
+<h3>Hallazgos clave</h3>
+<ul>
+<li><b>Hay más presencia en los barrios que en el centro.</b> Solo cinco espacios quedan a menos de 1 km en línea recta de la Plaza Mayor: los tres locales de San Vicente, el de Universidad (el más cercano, a unos 620 m) y el del Oeste. El resto se reparte por barrios más alejados, hasta los unos 2,3 km de Huerta Otea.</li>
+<li><b>El contacto casi siempre es por correo.</b> 13 de los 19 espacios indican un email, que suele ser el de la asociación vecinal o entidad vinculada al local. Solo <b>uno</b>, el de Garrido Sur, publica un teléfono.</li>
+<li><b>Seis espacios no publican ningún dato de contacto en la capa:</b> Chamberí, La Vega, Pizarrales, Puente Ladrillo, Vidal y el local 1 de San Vicente. Para ellos, la única vía es la ficha web del Ayuntamiento.</li>
+<li><b>Los 19 espacios tienen ficha web.</b> La mayoría enlaza con la sección de espacios de participación de aytosalamanca.es; el de Universidad remite a una web antigua de participación social, y el de San Bernardo, a una dirección que parece incompleta.</li>
+</ul>
+
+<p>Para ver cómo se organiza la vida política local, consulta los <a href="/concejales-ayuntamiento-salamanca">concejales del Ayuntamiento</a>, la <a href="/percepcion-ciudadana-salamanca-2023">percepción ciudadana</a> y la <a href="/voto-mesas-salamanca-capital">participación electoral por mesas</a>.</p>
+
+  <h2>Distancia de cada espacio a la Plaza Mayor</h2>
+  <canvas id="epcDistChart" width="800" height="560"></canvas>
+
+  <h2>Cómo leer estos datos</h2>
+  <ul>
+    <li>La capa solo informa del nombre, la dirección, la posición y, cuando consta, el email, el teléfono y un enlace web. No indica horarios, aforo, actividades ni qué entidad gestiona cada local, así que esta página no lo evalúa.</li>
+    <li>Los emails y teléfonos son los que figuran en la capa y pueden estar desactualizados; "No consta" significa que la capa no lo recoge, no que el espacio no tenga contacto.</li>
+    <li>Las distancias son en línea recta desde la Plaza Mayor y se han calculado a partir de las coordenadas de la capa; no equivalen al trayecto a pie, y que un espacio esté lejos del centro no implica peor cobertura de su barrio.</li>
+  </ul>
+
+			</div>
+
+			<div id="section-table">
+				<table border="1" cellpadding="5" cellspacing="0">
+				  <thead>
+					<tr>
+					  <th>Espacio</th>
+					  <th>Tipo</th>
+					  <th>Dirección</th>
+					  <th>Distancia a la Plaza Mayor</th>
+					  <th>Contacto</th>
+					  <th>Más información</th>
+					</tr>
+				  </thead>
+				  <tbody>
+					<tr><td>Barrio Universidad</td><td>Espacio de participación</td><td>C/ Patio Chico, 2 (Interior), 37008, Salamanca</td><td>618 m</td><td><a href="mailto:fauba3@hotmail.com">fauba3@hotmail.com</a></td><td><a href="http://participacionsocial.aytosalamanca.es/es/espaciosparticipacion/" rel="nofollow noopener">Ficha</a></td></tr>
+					<tr><td>Barrio San Vicente - Local s/n</td><td>Espacio de participación</td><td>Plaza Nueva San Vicente, 37007, Salamanca</td><td>678 m</td><td><a href="mailto:fecisafederacion@gmail.com">fecisafederacion@gmail.com</a></td><td><a href="https://aytosalamanca.es/w/espacios-de-participaci%C3%B3n-barrio-san-vicente-local-sn" rel="nofollow noopener">Ficha</a></td></tr>
+					<tr><td>Barrio San Vicente - Local 8</td><td>Espacio de participación</td><td>Plaza Nueva San Vicente, 8, 37007, Salamanca</td><td>695 m</td><td><a href="mailto:fecisafederacion@gmail.com">fecisafederacion@gmail.com</a></td><td><a href="https://aytosalamanca.es/w/espacios-de-participaci%C3%B3n-barrio-san-vicente-local-8" rel="nofollow noopener">Ficha</a></td></tr>
+					<tr><td>Barrio San Vicente - Local 1</td><td>Espacio de participación</td><td>Plaza Nueva San Vicente, 1, 37007, Salamanca</td><td>737 m</td><td>No consta</td><td><a href="https://aytosalamanca.es/w/espacios-de-participaci%C3%B3n-barrio-san-vicente-local-1" rel="nofollow noopener">Ficha</a></td></tr>
+					<tr><td>Barrio del Oeste</td><td>Espacio de participación</td><td>C/ Valle Inclán, 8, 37007</td><td>883 m</td><td><a href="mailto:zoes@zoes.es">zoes@zoes.es</a></td><td><a href="https://aytosalamanca.es/w/espacios-de-participaci%C3%B3n-barrio-del-oeste" rel="nofollow noopener">Ficha</a></td></tr>
+					<tr><td>San Bernardo</td><td>Espacio de participación</td><td>C/ La Alberca, s/n, 37007, Salamanca</td><td>1.043 m</td><td><a href="mailto:asanber@gmail.com">asanber@gmail.com</a></td><td><a href="https://aytosalamanca.es/w/espacios-de-partio" rel="nofollow noopener">Ficha</a></td></tr>
+					<tr><td>Barrio Vidal</td><td>Espacio de participación</td><td>Calle Gran Capitán, 53-57, 37006, Salamanca</td><td>1.208 m</td><td>No consta</td><td><a href="https://aytosalamanca.es/w/espacios-de-participaci%C3%B3n-barrio-vidal" rel="nofollow noopener">Ficha</a></td></tr>
+					<tr><td>Barrio el Rollo</td><td>Espacio de participación</td><td>C/ Fontiveros s/n, 37003, Salamanca</td><td>1.302 m</td><td><a href="mailto:avvloscomuneros@gmail.com">avvloscomuneros@gmail.com</a></td><td><a href="https://aytosalamanca.es/w/espacios-de-participaci%C3%B3n-barrio-el-rollo" rel="nofollow noopener">Ficha</a></td></tr>
+					<tr><td>Barrio Garrido Sur</td><td>Espacio de participación</td><td>C/ Corregidor Caballero LLanes, nº 15 bajo, 37005, Salamanca</td><td>1.365 m</td><td><a href="mailto:asociacion.avesal@gmail.com">asociacion.avesal@gmail.com</a><br><a href="tel:923123026">923 12 30 26</a></td><td><a href="https://aytosalamanca.es/w/espacios-de-participaci%C3%B3n-barrio-garrido-sur" rel="nofollow noopener">Ficha</a></td></tr>
+					<tr><td>Barrio Pizarrales</td><td>Espacio de participación</td><td>C/ Profesor Lucas, 23, 37006, Salamanca</td><td>1.506 m</td><td>No consta</td><td><a href="https://aytosalamanca.es/w/espacios-de-participaci%C3%B3n-barrio-pizarrales" rel="nofollow noopener">Ficha</a></td></tr>
+					<tr><td>Barrio Capuchinos</td><td>Espacio de participación</td><td>C/ La Bañeza, 7, 37006, Salamanca</td><td>1.564 m</td><td><a href="mailto:capuchinos@hotmail.es">capuchinos@hotmail.es</a></td><td><a href="https://aytosalamanca.es/w/espacios-de-participaci%C3%B3n-barrio-capuchinos/" rel="nofollow noopener">Ficha</a></td></tr>
+					<tr><td>Barrio San José</td><td>Espacio de participación</td><td>C/ Maestro Argenta, 18, 37008, Salamanca</td><td>1.571 m</td><td><a href="mailto:avvsanjoseconcejodeltormes@gmail.com">avvsanjoseconcejodeltormes@gmail.com</a></td><td><a href="https://aytosalamanca.es/w/espacios-de-participaci%C3%B3n-barrio-san-jos%C3%A9" rel="nofollow noopener">Ficha</a></td></tr>
+					<tr><td>Barrio La Vega</td><td>Espacio de participación</td><td>C/ del Barco, 37008, Salamanca</td><td>1.662 m</td><td>No consta</td><td><a href="https://aytosalamanca.es/w/espacios-de-participaci%C3%B3n-barrio-la-vega" rel="nofollow noopener">Ficha</a></td></tr>
+					<tr><td>Barrio Buenos Aires</td><td>Espacio de participación</td><td>Plaza Extremadura, s/n, 37008, Salamanca</td><td>1.690 m</td><td><a href="mailto:avbuenosaires@hotmail.es">avbuenosaires@hotmail.es</a></td><td><a href="https://aytosalamanca.es/w/espacios-de-participaci%C3%B3n-barrio-buenos-aires" rel="nofollow noopener">Ficha</a></td></tr>
+					<tr><td>Casa de Juventud de Garrido</td><td>Casa de Juventud</td><td>C/ Calzada de Medina, 32. 37004, Salamanca.</td><td>1.774 m</td><td>No consta</td><td>No consta</td></tr>
+					<tr><td>Barrio Garrido Norte</td><td>Espacio de participación</td><td>C/ Amapolas 17, Bajo, 37004, Salamanca</td><td>1.782 m</td><td><a href="mailto:navega2010@live.com">navega2010@live.com</a></td><td><a href="https://aytosalamanca.es/w/espacios-de-participaci%C3%B3n-barrio-garrido-norte" rel="nofollow noopener">Ficha</a></td></tr>
+					<tr><td>El Zurguén</td><td>Espacio de participación</td><td>C/ Castroverde, 1 y C/ Rodasviejas 1, 37008, Salamanca</td><td>1.945 m</td><td><a href="mailto:asotesozurguen@gmail.com">asotesozurguen@gmail.com</a>, <a href="mailto:gruposcoutrigel@hotmail.com">gruposcoutrigel@hotmail.com</a></td><td><a href="https://aytosalamanca.es/w/espacios-de-participaci%C3%B3n-el-zurgu%C3%A9n" rel="nofollow noopener">Ficha</a></td></tr>
+					<tr><td>Barrio Puente Ladrillo</td><td>Espacio de participación</td><td>C/ Borneo 41-47, Portal 1, Local 10, 37003, Salamanca</td><td>2.040 m</td><td>No consta</td><td><a href="https://aytosalamanca.es/w/espacios-de-participaci%C3%B3n-barrio-puente-ladrillo" rel="nofollow noopener">Ficha</a></td></tr>
+					<tr><td>Barrio Chamberí</td><td>Espacio de participación</td><td>C/ Nuñez de Losada s/n, 37008, Salamanca</td><td>2.045 m</td><td>No consta</td><td><a href="https://aytosalamanca.es/w/espacios-de-participaci%C3%B3n-barrio-chamber%C3%AD" rel="nofollow noopener">Ficha</a></td></tr>
+					<tr><td>Barrio Huerta Otea</td><td>Espacio de participación</td><td>C/ Vicente Beltrán Heredia, 17-25, 37007, Salamanca</td><td>2.260 m</td><td><a href="mailto:avhuertaotea@gmail.com">avhuertaotea@gmail.com</a></td><td><a href="https://aytosalamanca.es/w/espacios-de-participaci%C3%B3n-barrio-huerta-otea" rel="nofollow noopener">Ficha</a></td></tr>
+				  </tbody>
+				</table>
+				<p><small>Fuente: capa "EPC — Centros Municipales Integrados" de la IDE del Ayuntamiento de Salamanca. Distancias elaboradas por Open Salamanca.</small></p>
+			</div>
+
+			{% include categories.html %}
+
+        </div>
+    </section>
+
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+	<script>
+    const mapEPC = L.map('mapaEPC').setView([40.9650, -5.6650], 13);
+
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/light_all/{z}/{x}/{y}{r}.png?key=cb1_2izw_1_55d93b51ded1dcecfa044181', {
+      attribution: '&copy; OpenStreetMap &copy; CARTO | Datos: IDE Ayuntamiento de Salamanca',
+      subdomains: 'abcd',
+      maxZoom: 19
+    }).addTo(mapEPC);
+
+    // [nombre, es espacio de participación, latitud, longitud, distancia a Plaza Mayor (m), dirección]
+    const epc = [["Barrio Universidad", true, 40.95977393, -5.6667841, 618, "C/ Patio Chico, 2 (Interior), 37008, Salamanca"], ["Barrio San Vicente - Local s/n", true, 40.96362357, -5.67190487, 678, "Plaza Nueva San Vicente, 37007, Salamanca"], ["Barrio San Vicente - Local 8", true, 40.963687, -5.67212635, 695, "Plaza Nueva San Vicente, 8, 37007, Salamanca"], ["Barrio San Vicente - Local 1", true, 40.96341883, -5.67255785, 737, "Plaza Nueva San Vicente, 1, 37007, Salamanca"], ["Barrio del Oeste", true, 40.97167422, -5.66953956, 883, "C/ Valle Inclán, 8, 37007"], ["San Bernardo", true, 40.96947401, -5.67487385, 1043, "C/ La Alberca, s/n, 37007, Salamanca"], ["Barrio Vidal", true, 40.97561367, -5.6665798, 1208, "Calle Gran Capitán, 53-57, 37006, Salamanca"], ["Barrio el Rollo", true, 40.96590498, -5.6485536, 1302, "C/ Fontiveros s/n, 37003, Salamanca"], ["Barrio Garrido Sur", true, 40.97658526, -5.65895133, 1365, "C/ Corregidor Caballero LLanes, nº 15 bajo, 37005, Salamanca"], ["Barrio Pizarrales", true, 40.97678759, -5.67266459, 1506, "C/ Profesor Lucas, 23, 37006, Salamanca"], ["Barrio Capuchinos", true, 40.97873536, -5.66751335, 1564, "C/ La Bañeza, 7, 37006, Salamanca"], ["Barrio San José", true, 40.9508086, -5.66314973, 1571, "C/ Maestro Argenta, 18, 37008, Salamanca"], ["Barrio La Vega", true, 40.95044212, -5.66893949, 1662, "C/ del Barco, 37008, Salamanca"], ["Barrio Buenos Aires", true, 40.97695724, -5.6763057, 1690, "Plaza Extremadura, s/n, 37008, Salamanca"], ["Casa de Juventud de Garrido", false, 40.97347774, -5.64617666, 1774, "C/ Calzada de Medina, 32. 37004, Salamanca."], ["Barrio Garrido Norte", true, 40.97726514, -5.65047244, 1782, "C/ Amapolas 17, Bajo, 37004, Salamanca"], ["El Zurguén", true, 40.9481083, -5.67041752, 1945, "C/ Castroverde, 1 y C/ Rodasviejas 1, 37008, Salamanca"], ["Barrio Puente Ladrillo", true, 40.9721407, -5.64166883, 2040, "C/ Borneo 41-47, Portal 1, Local 10, 37003, Salamanca"], ["Barrio Chamberí", true, 40.95336835, -5.68296447, 2045, "C/ Nuñez de Losada s/n, 37008, Salamanca"], ["Barrio Huerta Otea", true, 40.9642769, -5.6909169, 2260, "C/ Vicente Beltrán Heredia, 17-25, 37007, Salamanca"]];
+
+    L.circleMarker([40.96492, -5.66401], { radius: 6, fillColor: '#555', color: '#fff', weight: 2, fillOpacity: 0.9 })
+      .bindTooltip('Plaza Mayor (referencia)').addTo(mapEPC);
+
+    epc.forEach(e => {
+      L.circleMarker([e[2], e[3]], { radius: 8, fillColor: e[1] ? '#1E56A0' : '#E63946', color: '#fff', weight: 2, fillOpacity: 0.95 })
+        .bindPopup(`<b>${e[0]}</b><br>${e[5]}<br>A ${e[4].toLocaleString('es-ES')} m de la Plaza Mayor`).addTo(mapEPC);
+    });
+
+    new Chart(document.getElementById('epcDistChart').getContext('2d'), {
+      type: 'bar',
+      data: {
+        labels: ["Universidad", "San Vicente - Local s/n", "San Vicente - Local 8", "San Vicente - Local 1", "del Oeste", "San Bernardo", "Vidal", "el Rollo", "Garrido Sur", "Pizarrales", "Capuchinos", "San José", "La Vega", "Buenos Aires", "Casa de Juventud de Garrido", "Garrido Norte", "El Zurguén", "Puente Ladrillo", "Chamberí", "Huerta Otea"],
+        datasets: [{ label: 'Metros', data: [618, 678, 695, 737, 883, 1043, 1208, 1302, 1365, 1506, 1564, 1571, 1662, 1690, 1774, 1782, 1945, 2040, 2045, 2260], backgroundColor: ["#1E56A0", "#1E56A0", "#1E56A0", "#1E56A0", "#1E56A0", "#1E56A0", "#1E56A0", "#1E56A0", "#1E56A0", "#1E56A0", "#1E56A0", "#1E56A0", "#1E56A0", "#1E56A0", "#E63946", "#1E56A0", "#1E56A0", "#1E56A0", "#1E56A0", "#1E56A0"], borderRadius: 4 }]
+      },
+      options: {
+        indexAxis: 'y',
+        responsive: true,
+        plugins: { legend: { display: false } },
+        scales: { x: { beginAtZero: true, title: { display: true, text: 'Distancia en línea recta a la Plaza Mayor (metros)' } } }
+      }
+    });
+  </script>
