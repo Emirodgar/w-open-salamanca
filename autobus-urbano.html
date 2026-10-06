@@ -17,21 +17,24 @@ permalink: autobus-urbano
 			
 			<div id="section-content">
 						
+  <p style="background:#FFF4E5; border-left:4px solid #F4A261; padding:10px 14px;"><b>No verificado.</b> Las cifras de viajeros, los porcentajes de demanda y validaciones, las frecuencias y el ranking de líneas de esta página (texto, gráficos y tabla) proceden de una versión anterior y no tienen una fuente que Open Salamanca haya podido contrastar. Además, no coinciden con los de <a href="/transporte-urbano-bus">uso del transporte público y líneas de autobús</a> (por ejemplo, allí la línea 1 tiene 2,15 millones de viajeros y aquí los tiene la línea 7) ni con los recorridos de <a href="/mapa-lineas-autobus">Salamanca de Transportes</a>. Se mantienen solo como referencia hasta localizar datos oficiales.</p>
+
+  <h2>Evolución de viajeros 2015-2025 (no verificado)</h2>
   <canvas id="busHistoricoChart" width="800" height="400"></canvas>
 
  
 			<h2>Análisis de la demanda en la red de autobuses urbanos</h2>
 			
 				<p>
-El uso del autobús urbano en Salamanca muestra una <b>sólida recuperación de viajeros</b> tras el desplome registrado en 2020. La implantación de bonificaciones en las tarifas, la mejora de frecuencias y la reordenación de líneas han impulsado la demanda por encima de los 13 millones de usuarios anuales, aproximándose a los máximos históricos de la década.</p>
+El uso del autobús urbano en Salamanca muestra una <b>sólida recuperación de viajeros</b> tras el desplome registrado en 2020. La implantación de bonificaciones en las tarifas, la mejora de frecuencias y la reordenación de líneas han impulsado la demanda por encima de los 13 millones de usuarios anuales (no verificado), aproximándose a los máximos históricos de la década.</p>
 
 <h3>Claves del servicio urbano</h3>
 <ul>
-<li><b>Eje vertebrador del campus y hospitales</b>: Las líneas que conectan barrios populosos como Garrido o Tejares con el Complejo Hospitalario Universitario y el Campus Unamuno aglutinan más del 40% del pasaje total.</li>
-<li><b>Recuperación del viajero frecuente</b>: Las tarjetas bonificadas (bonobús ordinario y bonos jóvenes/universitarios) representan más del 85% de los validaciones totales, consolidando el autobús como opción prioritaria frente al vehículo privado.</li>
+<li><b>Eje vertebrador del campus y hospitales (no verificado)</b>: Las líneas que conectan barrios populosos como Garrido o Tejares con el Complejo Hospitalario Universitario y el Campus Unamuno aglutinan más del 40% del pasaje total.</li>
+<li><b>Recuperación del viajero frecuente (no verificado)</b>: Las tarjetas bonificadas (bonobús ordinario y bonos jóvenes/universitarios) representan más del 85% de los validaciones totales, consolidando el autobús como opción prioritaria frente al vehículo privado.</li>
 </ul>
 
-  <h2>Ranking de viajeros por línea (millones de usuarios/año)</h2>
+  <h2>Ranking de viajeros por línea (millones de usuarios/año, no verificado)</h2>
   <canvas id="busLineasChart" width="800" height="400"></canvas>
 
   <p>Para un desglose adicional de la evolución histórica y el detalle de cada trayecto, consulta también <a href="/transporte-urbano-bus">uso del transporte público y líneas de autobús</a>, con datos sobre la electrificación de la flota. Además, puedes explorar el trazado de cada línea en el <a href="/mapa-lineas-autobus">mapa interactivo</a>.</p>
@@ -43,10 +46,10 @@ El uso del autobús urbano en Salamanca muestra una <b>sólida recuperación de 
 			  <thead>
 				<tr>
 				  <th>Línea</th>
-				  <th>Recorrido Principal</th>
-				  <th>Viajeros Anuales</th>
-				  <th>Frecuencia Laborables</th>
-				  <th>Puntos de Interés</th>
+				  <th>Recorrido principal (no verificado)</th>
+				  <th>Viajeros anuales (no verificado)</th>
+				  <th>Frecuencia laborables (no verificado)</th>
+				  <th>Puntos de interés (no verificado)</th>
 				</tr>
 			  </thead>
 			  <tbody>
@@ -58,6 +61,7 @@ El uso del autobús urbano en Salamanca muestra una <b>sólida recuperación de 
 				<tr><td>Línea 12</td><td>Barrio San José &ndash; Pol. Montalvo</td><td>980.000</td><td>15 min</td><td>Zona Industrial, San José</td></tr>
 			  </tbody>
 			</table>
+			<p><small>No verificado: todos los datos de esta tabla carecen de fuente contrastada y se mantienen solo como referencia.</small></p>
 
 			</div>
 			
@@ -74,7 +78,7 @@ El uso del autobús urbano en Salamanca muestra una <b>sólida recuperación de 
       data: {
         labels: ['2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024', '2025'],
         datasets: [{
-          label: 'Total Viajeros Anuales (Millones)',
+          label: 'Total viajeros anuales (millones, no verificado)',
           data: [12.4, 12.6, 12.8, 13.1, 13.4, 6.8, 8.5, 10.9, 12.3, 13.0, 13.6],
           borderColor: '#1E56A0',
           backgroundColor: 'rgba(30, 86, 160, 0.15)',
@@ -86,7 +90,7 @@ El uso del autobús urbano en Salamanca muestra una <b>sólida recuperación de 
       options: {
         responsive: true,
         scales: {
-          y: { title: { display: true, text: 'Millones de Usuarios' }, beginAtZero: false },
+          y: { title: { display: true, text: 'Millones de usuarios (no verificado)' }, beginAtZero: false },
           x: { title: { display: true, text: 'Año' } }
         }
       }
@@ -99,7 +103,7 @@ El uso del autobús urbano en Salamanca muestra una <b>sólida recuperación de 
       data: {
         labels: ['Línea 7', 'Línea 1', 'Línea 3', 'Línea 10', 'Línea 4', 'Línea 12'],
         datasets: [{
-          label: 'Viajeros (Millones/Año)',
+          label: 'Viajeros (millones/año, no verificado)',
           data: [2.15, 1.92, 1.81, 1.45, 1.28, 0.98],
           backgroundColor: 'rgba(44, 95, 45, 0.75)',
           borderColor: '#2C5F2D',
@@ -111,7 +115,7 @@ El uso del autobús urbano en Salamanca muestra una <b>sólida recuperación de 
         responsive: true,
         plugins: { legend: { display: false } },
         scales: {
-          y: { title: { display: true, text: 'Millones de Pasajeros' }, beginAtZero: true },
+          y: { title: { display: true, text: 'Millones de pasajeros (no verificado)' }, beginAtZero: true },
           x: { title: { display: true, text: 'Línea de Autobús' } }
         }
       }
