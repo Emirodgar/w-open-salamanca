@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Red de bibliotecas y centros culturales
-description: Indicadores de préstamos, usuarios activos y asistencia a la programación cultural en Salamanca
-date: 29-08-2026
+description: Mapa de los 50 equipamientos culturales de la IDE municipal - museos, archivos, bibliotecas, auditorios, teatros y cines - y horarios de las 7 bibliotecas municipales
+date: 06-10-2026
 folder: Cultura y Ocio
 permalink: bibliotecas-cultura
 ---
@@ -14,114 +14,191 @@ permalink: bibliotecas-cultura
                 <h1 class="section-title">{{ page.title }}</h1>
                 <p class="section-description">{{ page.description }}</p>
             </div>
-			
+
 			<div id="section-content">
-						
-  <canvas id="prestamosHistoricoChart" width="800" height="400"></canvas>
 
- 
-			<h2>Análisis de la actividad cultural y lectora</h2>
-			
+  <div id="mapaCultura" style="width: 100%; height: 520px; border-radius: 8px; margin-bottom: 10px;"></div>
+  <p id="leyendaCultura" style="font-size:0.9em; margin-bottom:25px;"></p>
+
+			<h2>Una oferta cultural muy concentrada en el casco histórico</h2>
+
 				<p>
-La Red Municipal de Bibliotecas de Salamanca y los centros culturales del municipio registran una <b>intensa actividad comunitaria y de acceso a la cultura</b>. La digitalización de catálogos y la extensión del préstamo de libros electrónicos (eBiblio) han dinamizado el uso de estos equipamientos en todos los grupos de edad.</p>
+La capa de equipamientos culturales de la IDE municipal (Infraestructura de Datos Espaciales del Ayuntamiento) recoge <b>50 equipamientos</b>: 17 museos, 8 archivos, 7 bibliotecas, 6 auditorios, 5 centros culturales polivalentes, 4 teatros y 3 cines o espacios audiovisuales. Aparte, la capa "Bibliotecas" detalla las <b>7 bibliotecas municipales</b> con su dirección y horario.</p>
 
-<h3>Puntos clave del uso cultural</h3>
+<h3>Hallazgos clave</h3>
 <ul>
-<li><b>Descentralización del acceso al libro</b>: Centros como la Biblioteca Torrente Ballester actúan como polos culturales de barrio, aglutinando exposiciones, teatro infantil y talleres junto al servicio tradicional de lectura.</li>
-<li><b>Recuperación del libro físico y préstamo digital</b>: El volumen anual de préstamos supera las 450.000 unidades, combinando el formato papel tradicional con un crecimiento sostenido de la lectura digital en dispositivos móviles.</li>
+<li><b>Siete de cada diez equipamientos están a menos de un kilómetro de la Plaza Mayor.</b> Son 35 de los 50, entre ellos 16 de los 17 museos y 7 de los 8 archivos. Para más detalle sobre los museos, consulta <a href="/museos-salamanca">museos de Salamanca</a>.</li>
+<li><b>Las bibliotecas municipales están en los barrios, no en el centro.</b> Ninguna de las 7 está a menos de 500 m de la Plaza Mayor: la más cercana, Gabriel y Galán, queda a unos 600 m, y las demás entre 1,1 y 2,1 km (Vistahermosa es la más alejada). Tres de ellas son centros municipales integrados (CMI): Vistahermosa, La Vega y Trujillo.</li>
+<li><b>Un horario casi idéntico.</b> Seis de las siete abren de lunes a viernes por la mañana y por la tarde (de 10:00 a 14:00 y de 17:00 a 20:00, con apertura desde las 9:30 en Gabriel y Galán). La excepción es la <b>Biblioteca Torrente Ballester</b>: abre de lunes a viernes de 9:30 a 21:00 y también los <b>sábados</b> de 9:30 a 14:00. En periodos vacacionales todas reducen a la mañana (de 10:00 a 14:00).</li>
+<li><b>El espacio escénico y musical se agrupa en dos polos.</b> Los teatros y auditorios del casco histórico (Liceo, Juan del Enzina, Palacio de Congresos, San Blas) conviven con el polo de la avenida de las Artes (CAEM y Espacio Almargen).</li>
 </ul>
 
-<p>Junto a la lectura y la programación cultural, el Ayuntamiento mantiene una amplia red de <a href="/instalaciones-deportivas">instalaciones deportivas municipales</a> —piscinas, pabellones y polideportivos de barrio— que completa la oferta de equipamientos de ocio y proximidad de la ciudad.</p>
+  <h2>Equipamientos culturales por tipo</h2>
+  <canvas id="culturaTipoChart" width="800" height="380"></canvas>
 
-  <h2>Asistencia anual a eventos culturales por tipo de espacio</h2>
+  <h2>Datos de uso sin fuente verificada</h2>
+  <p style="background:#FFF4E5; border-left:4px solid #F4A261; padding:10px 14px;"><b>No verificado.</b> Las cifras de préstamos, usuarios y asistentes de los gráficos siguientes proceden de una versión anterior de esta página y no tienen una fuente que Open Salamanca haya podido contrastar. Se mantienen solo como referencia. La tabla de usuarios y préstamos por biblioteca de esa versión se ha retirado porque contradecía la capa oficial: por ejemplo, situaba la biblioteca Carmen Martín Gaite en el campus universitario, cuando la capa municipal la sitúa en la calle San Matías, y la Gabriel y Galán en la plaza de los Bandos, cuando está en la plaza Gabriel y Galán.</p>
+  <h3>Evolución de préstamos 2018-2025 (no verificado)</h3>
+  <canvas id="prestamosHistoricoChart" width="800" height="400"></canvas>
+  <h3>Asistencia anual estimada a eventos por espacio (no verificado)</h3>
   <canvas id="culturaAsistenciaChart" width="800" height="400"></canvas>
 
-			</div>
-			
-			<div id="section-table">
-			<table border="1" cellpadding="5" cellspacing="0">
-			  <thead>
-				<tr>
-				  <th>Centro / Biblioteca</th>
-				  <th>Ubicación / Barrio</th>
-				  <th>Usuarios Activos</th>
-				  <th>Préstamos Anuales</th>
-				  <th>Especialización / Destacado</th>
-				</tr>
-			  </thead>
-			  <tbody>
-				<tr><td>Biblioteca Torrente Ballester</td><td>Chinchibarra / Garrido Norte</td><td>18.400</td><td>165.000</td><td>Teatro, exposiciones y biblioteca infantil</td></tr>
-				<tr><td>Biblioteca Carmen Martín Gaite (USAL)</td><td>Campus Unamuno</td><td>24.200</td><td>142.000</td><td>Fondo universitario y sala 24h</td></tr>
-				<tr><td>Biblioteca Gabriel y Galán</td><td>Plaza de los Bandos (Centro)</td><td>11.500</td><td>85.000</td><td>Fondo local e historia salmantina</td></tr>
-				<tr><td>Centro Cultural Miraltormes</td><td>Providencia / Delicias</td><td>6.800</td><td>42.000</td><td>Talleres comunitarios y mediateca</td></tr>
-				<tr><td>Biblioteca Miguel de Cervantes</td><td>Pizarrales / Blanco</td><td>5.200</td><td>31.000</td><td>Clubes de lectura de barrio</td></tr>
-				<tr><td>Centro Cultural El Zurguén</td><td>El Zurguén</td><td>4.100</td><td>24.000</td><td>Actividades juveniles e infantiles</td></tr>
-			  </tbody>
-			</table>
+  <h2>Cómo leer estos datos</h2>
+  <ul>
+    <li>La capa de equipamientos culturales y la capa "Bibliotecas" no coinciden del todo: la primera incluye la Biblioteca Pública del Estado (calle Compañía) y no incluye Carmen Martín Gaite; la segunda lista las 7 bibliotecas municipales.</li>
+    <li>Los nombres y direcciones de la capa de equipamientos llegan sin tildes y con algunas erratas (por ejemplo "Compaaia" o "Espa7a"); aquí se han corregido, sin cambiar de equipamiento.</li>
+    <li>La capa no informa de usuarios, préstamos ni asistentes, así que esta página no mide el uso.</li>
+    <li>La distancia a la Plaza Mayor es en línea recta y la hemos calculado a partir de las coordenadas de la capa.</li>
+  </ul>
 
 			</div>
-			
+
+			<div id="section-table">
+				<h2>Las 7 bibliotecas municipales</h2>
+				<table border="1" cellpadding="5" cellspacing="0">
+				  <thead>
+					<tr><th>Biblioteca</th><th>Dirección</th><th>Horario</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>Biblioteca Gabriel y Galán</td><td>Pz. Gabriel y Galán, 14 37005, Salamanca</td><td>Lunes a viernes de 9:30 a 14:00 y de 17:00 a 20:00 | Periodos vacacionales: Lunes a viernes de 10:00 a 14:00</td></tr>
+					<tr><td>Biblioteca Torrente Ballester</td><td>Paseo de los Olivos, 10-22 37005, Salamanca</td><td>Lunes a viernes: de 09:30 a 21:00 h Sábados: de 09:30 a 14:00 h | Periodos vacacionales: Lunes a viernes de 10:00 a 14:00 horas.</td></tr>
+					<tr><td>Biblioteca C.M.I. Vistahermosa</td><td>C/ Ramón de Mesonero Romanos 10-20 37008 Salamanca</td><td>Lunes a viernes de 10:00 a 14:00 h y de 17:00 a 20:00 h | Periodos vacacionales: Mañanas de 10:00 a 14:00 horas</td></tr>
+					<tr><td>Biblioteca C.M.I. La Vega</td><td>Plaza de la Virgen de la Vega s/n 37008, Salamanca</td><td>Lunes a viernes de 10:00 a 14:00 y de 17:00 a 20:0 h | Periodos vacacionales: Lunes a viernes de 10:00 a 14:00 h</td></tr>
+					<tr><td>Biblioteca Barrio Vidal</td><td>C/Emigdio de la Riva 37005, Salamanca</td><td>Lunes a viernes: mañanas de 10:00 a 14:00 y tardes de 17:00 a 20:00 horas | Periodos vacacionales: de 10:00 a 14:00 horas</td></tr>
+					<tr><td>Biblioteca Carmen Martín Gaite</td><td>C/ San Matías 8-18 37006 Salamanca</td><td>Lunes a viernes: mañanas de 10:00 a 14:00 y tardes de 17:00 a 20:00 horas | Periodos vacacionales: de 10:00 a 14:00 horas.</td></tr>
+					<tr><td>Biblioteca C.M.I. Trujillo</td><td>Plaza de Trujillo, s/n 37003, Salamanca</td><td>Lunes a viernes de 10:00 a 14:00 y de 17:00 a 20:00 h | Periodos vacacionales: Lunes a viernes de 10:0 a 14:00 h</td></tr>
+				  </tbody>
+				</table>
+
+				<h2>Los 50 equipamientos culturales</h2>
+				<table border="1" cellpadding="5" cellspacing="0">
+				  <thead>
+					<tr><th>Equipamiento</th><th>Tipo</th><th>Dirección</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>Casa Museo de Unamuno</td><td>Museo</td><td>Calle Libreros, 25</td></tr>
+					<tr><td>Casa Museo de Zacarías González</td><td>Museo</td><td>Calle Alarcón, 26</td></tr>
+					<tr><td>Centro Documental de la Memoria Histórica-Logia Masónica</td><td>Museo</td><td>Calle Gibraltar, 2</td></tr>
+					<tr><td>Domus Artium 2002. DA2</td><td>Museo</td><td>Avenida de la Aldehuela, s/n</td></tr>
+					<tr><td>Filmoteca de Castilla y León (Museo)</td><td>Museo</td><td>Calle Doña Gonzala Santana, 1</td></tr>
+					<tr><td>Monumenta Salmanticae. Centro de Interpretación del Patrimonio Urbano y Arquitectónico de la Ciudad</td><td>Museo</td><td>Calle Veracruz, s/n</td></tr>
+					<tr><td>Museo Catedralicio</td><td>Museo</td><td>Calle Pla y Deniel, s/n</td></tr>
+					<tr><td>Museo Taurino Primitivo Sánchez Laso</td><td>Museo</td><td>Calle Doctor Piruela, 5-7</td></tr>
+					<tr><td>Museo de Art Nouveau y Art Déco (Casa Lis)</td><td>Museo</td><td>Calle Gibraltar, 14</td></tr>
+					<tr><td>Museo de Historia de la Automoción</td><td>Museo</td><td>Plaza Mercado Viejo, s/n</td></tr>
+					<tr><td>Museo de Pintura Medieval</td><td>Museo</td><td>Calle Santa Clara, 2</td></tr>
+					<tr><td>Museo de Salamanca</td><td>Museo</td><td>Calle Patio de Escuelas, 2</td></tr>
+					<tr><td>Museo de la Fábrica de Harinas</td><td>Museo</td><td>Calle La Pesca, 5</td></tr>
+					<tr><td>Museo de las Úrsulas</td><td>Museo</td><td>Calle de las Úrsulas, 2</td></tr>
+					<tr><td>Museo del Comercio y la Industria</td><td>Museo</td><td>Avenida Campoamor, s/n</td></tr>
+					<tr><td>Sala de Exposiciones Santo Domingo de la Cruz</td><td>Museo</td><td>Calle Arroyo de Santo Domingo, s/n</td></tr>
+					<tr><td>Salmantica Sedes Anticua Castrorum</td><td>Museo</td><td>Cuesta de Carvajal, 1</td></tr>
+					<tr><td>Archivo Catedralicio de Salamanca</td><td>Archivo</td><td>Calle Benedicto XVI, s/n</td></tr>
+					<tr><td>Archivo Diocesano de Salamanca</td><td>Archivo</td><td>Plaza de Juan XXIII, s/n</td></tr>
+					<tr><td>Archivo Histórico Provincial de Salamanca</td><td>Archivo</td><td>Calle de las Mazas, s/n</td></tr>
+					<tr><td>Archivo Municipal de Salamanca</td><td>Archivo</td><td>Paseo de los Nogales, 7</td></tr>
+					<tr><td>Archivo de la Diputación Provincial de Salamanca</td><td>Archivo</td><td>Calle Felipe Espino, 1</td></tr>
+					<tr><td>Archivo de la Universidad de Salamanca</td><td>Archivo</td><td>Calle Libreros, s/n</td></tr>
+					<tr><td>Archivo y Biblioteca de la Universidad Pontificia de Salamanca</td><td>Archivo</td><td>Calle Compañía, 5</td></tr>
+					<tr><td>Centro Documental de la Memoria Histórica</td><td>Archivo</td><td>Calle Gibraltar, 2</td></tr>
+					<tr><td>Biblioteca Pública Municipal "Gabriel y Galán"</td><td>Biblioteca</td><td>Plaza de Gabriel y Galán, 14</td></tr>
+					<tr><td>Biblioteca Pública Municipal "Torrente Ballester"</td><td>Biblioteca</td><td>Paseo de los Olivos, 10-22</td></tr>
+					<tr><td>Biblioteca Pública Municipal Centro Cultural La Vega</td><td>Biblioteca</td><td>Plaza de la Virgen de la Vega, s/n</td></tr>
+					<tr><td>Biblioteca Pública Municipal Centro Cultural de Vistahermosa</td><td>Biblioteca</td><td>Calle Ramón de Mesonero Romanos, 10-20</td></tr>
+					<tr><td>Biblioteca Pública Municipal Centro Municipal Integrado Plaza de Trujillo</td><td>Biblioteca</td><td>Plaza de Trujillo, s/n</td></tr>
+					<tr><td>Biblioteca Pública de Salamanca</td><td>Biblioteca</td><td>Calle de la Compañía, 2</td></tr>
+					<tr><td>Taller de Lectura del Barrio Vidal</td><td>Biblioteca</td><td>Calle Emigdio de la Riva, 17</td></tr>
+					<tr><td>Auditorio Calatrava</td><td>Auditorio</td><td>Calle Monte Olivete, s/n</td></tr>
+					<tr><td>Auditorio Municipal de San Blas</td><td>Auditorio</td><td>Cuesta de San Blas, s/n</td></tr>
+					<tr><td>Auditorio de la Facultad de Comunicación de la Universidad Pontificia de Salamanca</td><td>Auditorio</td><td>Calle Henry Collet, 90-98</td></tr>
+					<tr><td>Auditorio del Conservatorio Superior de Música de Salamanca</td><td>Auditorio</td><td>Calle Lazarillo de Tormes, 54-70</td></tr>
+					<tr><td>Centro de las Artes Escénicas y de la Música (CAEM)</td><td>Auditorio</td><td>Avenida de las Artes, 45-55</td></tr>
+					<tr><td>Palacio de Congresos y Exposiciones de Castilla y León</td><td>Auditorio</td><td>Cuesta de Oviedo, s/n</td></tr>
+					<tr><td>Centro Cultural Hispano-Japonés</td><td>Centro cultural polivalente</td><td>Plaza de San Boal, 11-13</td></tr>
+					<tr><td>Centro Cultural Miraltormes</td><td>Centro cultural polivalente</td><td>Calle Lugo, 9</td></tr>
+					<tr><td>Centro Municipal Integrado Julián Sánchez "El Charro"</td><td>Centro cultural polivalente</td><td>Plaza de la Concordia, s/n</td></tr>
+					<tr><td>Centro de Estudios Brasileños de la Universidad de Salamanca</td><td>Centro cultural polivalente</td><td>Plaza de San Benito, 1</td></tr>
+					<tr><td>Multiusos Sánchez Paraíso</td><td>Centro cultural polivalente</td><td>Avenida de los Cipreses, s/n</td></tr>
+					<tr><td>Espacio Almargen</td><td>Teatro</td><td>Avenida De las Artes, 70</td></tr>
+					<tr><td>Teatro Juan del Enzina</td><td>Teatro</td><td>Calle Tostado, 8</td></tr>
+					<tr><td>Teatro Liceo de Salamanca</td><td>Teatro</td><td>Plaza del Liceo, s/n</td></tr>
+					<tr><td>Teatro de Caja España-Duero</td><td>Teatro</td><td>Plaza de Santa Teresa, s/n</td></tr>
+					<tr><td>Cinebox Vialia</td><td>Cines y Audiovisuales</td><td>Paseo de la Estación, s/n</td></tr>
+					<tr><td>Cines Van Dyck</td><td>Cines y Audiovisuales</td><td>Paseo del doctor Torres Villarroel, 40</td></tr>
+					<tr><td>Filmoteca de Castilla y León (Cine)</td><td>Cines y Audiovisuales</td><td>Calle Doña Gonzala Santana, 1</td></tr>
+				  </tbody>
+				</table>
+				<p><small>Fuente: capas "Centros culturales" y "Bibliotecas" de la IDE del Ayuntamiento de Salamanca. Correcciones ortográficas y cálculo de distancias elaborados por Open Salamanca.</small></p>
+			</div>
+
 			{% include categories.html %}
-            
+
         </div>
     </section>
 
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 	<script>
-    // Gráfico 1: Evolución de Préstamos (2018-2025)
-    const ctxBibHist = document.getElementById('prestamosHistoricoChart').getContext('2d');
-    const prestamosHistoricoChart = new Chart(ctxBibHist, {
+    const mapCult = L.map('mapaCultura').setView([40.9650, -5.6640], 14);
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/light_all/{z}/{x}/{y}{r}.png?key=cb1_2izw_1_55d93b51ded1dcecfa044181', {
+      attribution: '&copy; OpenStreetMap &copy; CARTO | Datos: IDE Ayuntamiento de Salamanca', subdomains: 'abcd', maxZoom: 19
+    }).addTo(mapCult);
+
+    // [nombre, dirección, tipo, lat, lng]
+    const equipamientos = [["Casa Museo de Unamuno","Calle Libreros, 25","Museo",40.9612,-5.6675],["Casa Museo de Zacarías González","Calle Alarcón, 26","Museo",40.9691,-5.6711],["Centro Documental de la Memoria Histórica-Logia Masónica","Calle Gibraltar, 2","Museo",40.9597,-5.6672],["Domus Artium 2002. DA2","Avenida de la Aldehuela, s/n","Museo",40.9586,-5.652],["Filmoteca de Castilla y León (Museo)","Calle Doña Gonzala Santana, 1","Museo",40.9644,-5.6616],["Monumenta Salmanticae. Centro de Interpretación del Patrimonio Urbano y Arquitectónico de la Ciudad","Calle Veracruz, s/n","Museo",40.9601,-5.6684],["Museo Catedralicio","Calle Pla y Deniel, s/n","Museo",40.9604,-5.6669],["Museo Taurino Primitivo Sánchez Laso","Calle Doctor Piruela, 5-7","Museo",40.9657,-5.6636],["Museo de Art Nouveau y Art Déco (Casa Lis)","Calle Gibraltar, 14","Museo",40.9593,-5.6669],["Museo de Historia de la Automoción","Plaza Mercado Viejo, s/n","Museo",40.9584,-5.6669],["Museo de Pintura Medieval","Calle Santa Clara, 2","Museo",40.9617,-5.6601],["Museo de Salamanca","Calle Patio de Escuelas, 2","Museo",40.9617,-5.6679],["Museo de la Fábrica de Harinas","Calle La Pesca, 5","Museo",40.9583,-5.6673],["Museo de las Úrsulas","Calle de las Úrsulas, 2","Museo",40.9659,-5.6671],["Museo del Comercio y la Industria","Avenida Campoamor, s/n","Museo",40.9651,-5.6541],["Sala de Exposiciones Santo Domingo de la Cruz","Calle Arroyo de Santo Domingo, s/n","Museo",40.9597,-5.6629],["Salmantica Sedes Anticua Castrorum","Cuesta de Carvajal, 1","Museo",40.9602,-5.6647],["Archivo Catedralicio de Salamanca","Calle Benedicto XVI, s/n","Archivo",40.9609,-5.6667],["Archivo Diocesano de Salamanca","Plaza de Juan XXIII, s/n","Archivo",40.9606,-5.6673],["Archivo Histórico Provincial de Salamanca","Calle de las Mazas, s/n","Archivo",40.9609,-5.6685],["Archivo Municipal de Salamanca","Paseo de los Nogales, 7","Archivo",40.9783,-5.6538],["Archivo de la Diputación Provincial de Salamanca","Calle Felipe Espino, 1","Archivo",40.9635,-5.6645],["Archivo de la Universidad de Salamanca","Calle Libreros, s/n","Archivo",40.9612,-5.6676],["Archivo y Biblioteca de la Universidad Pontificia de Salamanca","Calle Compañía, 5","Archivo",40.9635,-5.6663],["Centro Documental de la Memoria Histórica","Calle Gibraltar, 2","Archivo",40.9597,-5.6672],["Biblioteca Pública Municipal \"Gabriel y Galán\"","Plaza de Gabriel y Galán, 14","Biblioteca",40.97,-5.6619],["Biblioteca Pública Municipal \"Torrente Ballester\"","Paseo de los Olivos, 10-22","Biblioteca",40.9782,-5.6546],["Biblioteca Pública Municipal Centro Cultural La Vega","Plaza de la Virgen de la Vega, s/n","Biblioteca",40.9502,-5.6683],["Biblioteca Pública Municipal Centro Cultural de Vistahermosa","Calle Ramón de Mesonero Romanos, 10-20","Biblioteca",40.9498,-5.6799],["Biblioteca Pública Municipal Centro Municipal Integrado Plaza de Trujillo","Plaza de Trujillo, s/n","Biblioteca",40.9653,-5.6509],["Biblioteca Pública de Salamanca","Calle de la Compañía, 2","Biblioteca",40.9629,-5.666],["Taller de Lectura del Barrio Vidal","Calle Emigdio de la Riva, 17","Biblioteca",40.9753,-5.6671],["Auditorio Calatrava","Calle Monte Olivete, s/n","Auditorio",40.9592,-5.6605],["Auditorio Municipal de San Blas","Cuesta de San Blas, s/n","Auditorio",40.9648,-5.6697],["Auditorio de la Facultad de Comunicación de la Universidad Pontificia de Salamanca","Calle Henry Collet, 90-98","Auditorio",40.9671,-5.6812],["Auditorio del Conservatorio Superior de Música de Salamanca","Calle Lazarillo de Tormes, 54-70","Auditorio",40.9778,-5.6588],["Centro de las Artes Escénicas y de la Música (CAEM)","Avenida de las Artes, 45-55","Auditorio",40.9599,-5.6529],["Palacio de Congresos y Exposiciones de Castilla y León","Cuesta de Oviedo, s/n","Auditorio",40.9628,-5.6697],["Centro Cultural Hispano-Japonés","Plaza de San Boal, 11-13","Centro cultural polivalente",40.9677,-5.6631],["Centro Cultural Miraltormes","Calle Lugo, 9","Centro cultural polivalente",40.9662,-5.6492],["Centro Municipal Integrado Julián Sánchez \"El Charro\"","Plaza de la Concordia, s/n","Centro cultural polivalente",40.9745,-5.6591],["Centro de Estudios Brasileños de la Universidad de Salamanca","Plaza de San Benito, 1","Centro cultural polivalente",40.964,-5.6658],["Multiusos Sánchez Paraíso","Avenida de los Cipreses, s/n","Centro cultural polivalente",40.9793,-5.6505],["Espacio Almargen","Avenida De las Artes, 70","Teatro",40.959,-5.6531],["Teatro Juan del Enzina","Calle Tostado, 8","Teatro",40.9607,-5.6652],["Teatro Liceo de Salamanca","Plaza del Liceo, s/n","Teatro",40.9663,-5.6624],["Teatro de Caja España-Duero","Plaza de Santa Teresa, s/n","Teatro",40.9673,-5.6646],["Cinebox Vialia","Paseo de la Estación, s/n","Cines y Audiovisuales",40.9724,-5.6487],["Cines Van Dyck","Paseo del doctor Torres Villarroel, 40","Cines y Audiovisuales",40.9732,-5.6628],["Filmoteca de Castilla y León (Cine)","Calle Doña Gonzala Santana, 1","Cines y Audiovisuales",40.9644,-5.6616]];
+    // [nombre, dirección, horario, lat, lng]
+    const bibliotecas = [["Biblioteca Gabriel y Galán","Pz. Gabriel y Galán, 14 37005, Salamanca","Lunes a viernes de 9:30 a 14:00 y de 17:00 a 20:00 | Periodos vacacionales: Lunes a viernes de 10:00 a 14:00",40.9701,-5.6619],["Biblioteca Torrente Ballester","Paseo de los Olivos, 10-22 37005, Salamanca","Lunes a viernes: de 09:30 a 21:00 h Sábados: de 09:30 a 14:00 h | Periodos vacacionales: Lunes a viernes de 10:00 a 14:00 horas.",40.9782,-5.6546],["Biblioteca C.M.I. Vistahermosa","C/ Ramón de Mesonero Romanos 10-20 37008 Salamanca","Lunes a viernes de 10:00 a 14:00 h y de 17:00 a 20:00 h | Periodos vacacionales: Mañanas de 10:00 a 14:00 horas",40.9499,-5.6801],["Biblioteca C.M.I. La Vega","Plaza de la Virgen de la Vega s/n 37008, Salamanca","Lunes a viernes de 10:00 a 14:00 y de 17:00 a 20:0 h | Periodos vacacionales: Lunes a viernes de 10:00 a 14:00 h",40.9502,-5.6681],["Biblioteca Barrio Vidal","C/Emigdio de la Riva 37005, Salamanca","Lunes a viernes: mañanas de 10:00 a 14:00 y tardes de 17:00 a 20:00 horas | Periodos vacacionales: de 10:00 a 14:00 horas",40.9753,-5.6671],["Biblioteca Carmen Martín Gaite","C/ San Matías 8-18 37006 Salamanca","Lunes a viernes: mañanas de 10:00 a 14:00 y tardes de 17:00 a 20:00 horas | Periodos vacacionales: de 10:00 a 14:00 horas.",40.9755,-5.678],["Biblioteca C.M.I. Trujillo","Plaza de Trujillo, s/n 37003, Salamanca","Lunes a viernes de 10:00 a 14:00 y de 17:00 a 20:00 h | Periodos vacacionales: Lunes a viernes de 10:0 a 14:00 h",40.9652,-5.6509]];
+    const colores = { 'Museo': '#1E56A0', 'Archivo': '#7B2CBF', 'Biblioteca': '#2C8A3E', 'Auditorio': '#E63946', 'Centro cultural polivalente': '#F4A261', 'Teatro': '#C0392B', 'Cines y Audiovisuales': '#264653' };
+    const esc = t => String(t).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+    equipamientos.forEach(e => L.circleMarker([e[3], e[4]], { radius: 7, fillColor: colores[e[2]], color: '#fff', weight: 1.5, fillOpacity: 0.9 })
+      .bindPopup(`<b>${esc(e[0])}</b><br>${esc(e[2])}<br>${esc(e[1])}`).addTo(mapCult));
+    bibliotecas.forEach(b => L.circleMarker([b[3], b[4]], { radius: 11, fillColor: 'none', fillOpacity: 0, color: '#2C8A3E', weight: 2.5 })
+      .bindPopup(`<b>${esc(b[0])}</b><br>Biblioteca municipal<br>${esc(b[1])}<br>${esc(b[2])}`).addTo(mapCult));
+    document.getElementById('leyendaCultura').innerHTML = Object.entries(colores).map(([k, c]) => `<span style="color:${c};">&#9679;</span> ${k}`).join(' &nbsp; ') + ' &nbsp; <span style="color:#2C8A3E;">&#9711;</span> Biblioteca municipal (con horario)';
+
+    new Chart(document.getElementById('culturaTipoChart').getContext('2d'), {
+      type: 'bar',
+      data: {
+        labels: ['Museo', 'Archivo', 'Biblioteca', 'Auditorio', 'Centro cultural polivalente', 'Teatro', 'Cines y audiovisuales'],
+        datasets: [{ label: 'Equipamientos', data: [17, 8, 7, 6, 5, 4, 3], backgroundColor: ['#1E56A0', '#7B2CBF', '#2C8A3E', '#E63946', '#F4A261', '#C0392B', '#264653'], borderRadius: 4 }]
+      },
+      options: {
+        indexAxis: 'y', responsive: true,
+        plugins: { legend: { display: false } },
+        scales: { x: { beginAtZero: true, ticks: { stepSize: 2 }, title: { display: true, text: 'Número de equipamientos (50 en total)' } } }
+      }
+    });
+
+    // Gráficos sin fuente verificada (versión anterior de la página)
+    new Chart(document.getElementById('prestamosHistoricoChart').getContext('2d'), {
       type: 'line',
       data: {
         labels: ['2018', '2019', '2020', '2021', '2022', '2023', '2024', '2025'],
         datasets: [
-          {
-            label: 'Préstamo Físico (Libros/Cine)',
-            data: [410000, 425000, 210000, 310000, 380000, 415000, 432000, 445000],
-            borderColor: '#1E56A0',
-            backgroundColor: 'rgba(30, 86, 160, 0.1)',
-            borderWidth: 2,
-            tension: 0.2,
-            fill: true
-          },
-          {
-            label: 'Préstamo Digital (eBiblio)',
-            data: [22000, 28000, 65000, 72000, 81000, 94000, 108000, 122000],
-            borderColor: '#F4A261',
-            backgroundColor: 'transparent',
-            borderWidth: 2,
-            borderDash: [5, 5],
-            tension: 0.2
-          }
+          { label: 'Préstamo físico (no verificado)', data: [410000, 425000, 210000, 310000, 380000, 415000, 432000, 445000], borderColor: '#1E56A0', backgroundColor: 'rgba(30, 86, 160, 0.1)', borderWidth: 2, tension: 0.2, fill: true },
+          { label: 'Préstamo digital eBiblio (no verificado)', data: [22000, 28000, 65000, 72000, 81000, 94000, 108000, 122000], borderColor: '#F4A261', backgroundColor: 'transparent', borderWidth: 2, borderDash: [5, 5], tension: 0.2 }
         ]
       },
       options: {
         responsive: true,
         scales: {
-          y: { title: { display: true, text: 'Número de Préstamos' }, beginAtZero: true },
+          y: { title: { display: true, text: 'Número de préstamos (no verificado)' }, beginAtZero: true },
           x: { title: { display: true, text: 'Año' } }
         }
       }
     });
-
-    // Gráfico 2: Asistencia a eventos por recinto
-    const ctxCult = document.getElementById('culturaAsistenciaChart').getContext('2d');
-    const culturaAsistenciaChart = new Chart(ctxCult, {
+    new Chart(document.getElementById('culturaAsistenciaChart').getContext('2d'), {
       type: 'bar',
       data: {
         labels: ['Teatro Liceo', 'CAEM', 'Bib. Torrente Ballester', 'DA2 (Arte Contemporáneo)', 'Centros de Barrio'],
-        datasets: [{
-          label: 'Asistentes Anuales Estimados',
-          data: [85000, 110000, 48000, 32000, 64000],
-          backgroundColor: '#2C5F2D',
-          borderRadius: 4
-        }]
+        datasets: [{ label: 'Asistentes anuales estimados (no verificado)', data: [85000, 110000, 48000, 32000, 64000], backgroundColor: 'rgba(150, 150, 150, 0.6)', borderRadius: 4 }]
       },
       options: {
         responsive: true,
-        plugins: { legend: { display: false } },
+        plugins: { legend: { display: true } },
         scales: {
-          y: { title: { display: true, text: 'Nº de Espectadores / Visitantes' }, beginAtZero: true },
-          x: { title: { display: true, text: 'Espacio Cultural' } }
+          y: { title: { display: true, text: 'Espectadores / visitantes (no verificado)' }, beginAtZero: true },
+          x: { title: { display: true, text: 'Espacio cultural' } }
         }
       }
     });
