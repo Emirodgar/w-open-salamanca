@@ -1,0 +1,121 @@
+---
+layout: default
+title: Zona de Bajas Emisiones de Salamanca
+description: Mapa de la Zona de Bajas Emisiones (ZBE) de Salamanca según la IDE municipal - superficie de la zona interior y exterior y qué aparcamientos, paradas de bus y servicios quedan dentro
+date: 06-10-2026
+folder: Movilidad
+permalink: zona-bajas-emisiones-salamanca
+---
+
+    <section class="featured dataset" id="datos">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="section-title">{{ page.title }}</h1>
+                <p class="section-description">{{ page.description }}</p>
+            </div>
+
+			<div id="section-content">
+
+  <div id="mapaZbe" style="width: 100%; height: 520px; border-radius: 8px; margin-bottom: 10px;"></div>
+  <p style="font-size:0.9em; margin-bottom:25px;">Activa o desactiva las capas arriba a la derecha. <span style="color:#C0392B;">&#9632;</span> ZBE interior &nbsp; <span style="color:#E9A23B;">&#9632;</span> ZBE exterior. Los puntos son aparcamientos subterráneos, paradas de bus, bases SALenBICI y puntos de recarga eléctrica.</p>
+
+			<h2>Una zona de bajas emisiones en dos ámbitos: interior y exterior</h2>
+
+			<p>
+La capa "ZBE" de la IDE municipal (Infraestructura de Datos Espaciales del Ayuntamiento) delimita <b>dos zonas</b>: la <b>ZBE interior</b>, de unos <b>0,46 km²</b> (calculados a partir del perímetro de la capa), que abarca el centro histórico y la Plaza Mayor, y la <b>ZBE exterior</b>, de unos <b>0,57 km²</b>, contigua a la interior y repartida en dos polígonos. En conjunto suman algo más de <b>1 km²</b>, una superficie muy pequeña frente al conjunto de la ciudad.
+</p>
+<p>La capa no detalla las restricciones de acceso de cada zona (a qué vehículos afectan, horarios o sanciones): remite a la <a href="https://aytosalamanca.es/w/zona-de-bajas-emisiones" rel="nofollow noopener">página oficial del Ayuntamiento sobre la Zona de Bajas Emisiones</a>, que es donde conviene consultarlas.</p>
+
+<h3>Qué queda dentro de cada zona</h3>
+<p>Cruzando el perímetro de la ZBE con otras capas de la IDE municipal, estos son los equipamientos de movilidad que quedan dentro:</p>
+<table border="1" cellpadding="5" cellspacing="0">
+  <thead><tr><th>Equipamiento (capa IDE)</th><th>ZBE interior</th><th>ZBE exterior</th><th>Total en la ciudad</th></tr></thead>
+  <tbody>
+    <tr><td>Parkings subterráneos</td><td>6</td><td>3</td><td>16</td></tr>
+    <tr><td>Paradas de bus urbano</td><td>3</td><td>16</td><td>386</td></tr>
+    <tr><td>Puntos de carga y descarga</td><td>15</td><td>20</td><td>186</td></tr>
+    <tr><td>Plazas para movilidad reducida (puntos / plazas)</td><td>6 / 12</td><td>34 / 68</td><td>525 / 1.019</td></tr>
+    <tr><td>Bases SALenBICI</td><td>5</td><td>1</td><td>50</td></tr>
+    <tr><td>Puntos de recarga para coche eléctrico (registros)</td><td>3</td><td>5</td><td>45</td></tr>
+    <tr><td>Aparcamientos disuasorios gratuitos</td><td>0</td><td>0</td><td>24</td></tr>
+  </tbody>
+</table>
+
+<h3>Hallazgos clave</h3>
+<ul>
+<li><b>Los parkings del centro quedan dentro.</b> Seis de los 16 subterráneos están en la zona interior (Botánico, Campillo, Crespo Rascón, Le Mans, Monroy y Santa Eulalia) y tres en la exterior (Colón, Garaje San Juan y Reyes de España). Los otros siete, entre ellos Vialia, Avenida de Portugal y los de los hospitales, quedan fuera de la ZBE.</li>
+<li><b>Ningún disuasorio gratuito está dentro de la ZBE.</b> Los 24 aparcamientos disuasorios están en el exterior de la zona, en coherencia con su función de dejar el coche fuera del centro. Consulta su <a href="/parkings">listado y mapa</a>.</li>
+<li><b>El autobús llega poco al interior.</b> Solo 3 de las 386 paradas de la capa están en la zona interior, frente a 16 en la exterior, un reflejo de que el casco histórico se recorre sobre todo a pie. Más datos en <a href="/transporte-urbano-bus">paradas y uso del autobús urbano</a>.</li>
+<li><b>La bici sí entra.</b> Cinco de las 50 bases de <a href="/red-ciclista">SALenBICI</a> están en la zona interior y una en la exterior, y la recarga eléctrica tiene 3 registros en la zona interior y 5 en la exterior.</li>
+<li><b>Hay servicio de reparto y movilidad reducida.</b> La zona interior concentra 15 puntos de carga y descarga, y 6 puntos con 12 plazas reservadas para personas con movilidad reducida. Los <a href="/aparcamientos-estacionamiento-ora">datos de la ORA</a> detallan las demás plazas de uso específico.</li>
+</ul>
+
+  <h2>Cómo leer estos datos</h2>
+  <ul>
+    <li>Las superficies se han calculado a partir del perímetro de la capa y son aproximadas, no cifras oficiales del Ayuntamiento.</li>
+    <li>Los recuentos de cada zona se calculan por separado, y las dos comparten parte de su perímetro.</li>
+    <li>Los recuentos son el resultado de comprobar qué puntos de cada capa caen dentro del perímetro de la ZBE; los puntos situados justo en el borde pueden asignarse a una u otra zona.</li>
+    <li>La posición de los parkings subterráneos y de las bases SALenBICI es la que publica la capa oficial; la de algunos parkings tiene una precisión de unas decenas de metros.</li>
+    <li>La capa no indica fechas de entrada en vigor ni restricciones, por lo que esta página no las describe.</li>
+  </ul>
+
+			</div>
+
+			<div id="section-table">
+				<table border="1" cellpadding="5" cellspacing="0">
+				  <thead>
+					<tr><th>Zona</th><th>Superficie aproximada</th><th>Qué abarca</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>ZBE interior</td><td>0,46 km²</td><td>Centro histórico y Plaza Mayor</td></tr>
+					<tr><td>ZBE exterior</td><td>0,57 km²</td><td>Área contigua a la zona interior (dos polígonos)</td></tr>
+				  </tbody>
+				</table>
+				<p><small>Fuente: capa "ZBE" de la IDE del Ayuntamiento de Salamanca. Superficies y recuentos elaborados por Open Salamanca.</small></p>
+			</div>
+
+			{% include categories.html %}
+
+        </div>
+    </section>
+
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+	<script>
+    const mapZbe = L.map('mapaZbe').setView([40.9645, -5.6655], 15);
+
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/light_all/{z}/{x}/{y}{r}.png?key=cb1_2izw_1_55d93b51ded1dcecfa044181', {
+      attribution: '&copy; OpenStreetMap &copy; CARTO | Datos: IDE Ayuntamiento de Salamanca',
+      subdomains: 'abcd',
+      maxZoom: 19
+    }).addTo(mapZbe);
+
+    const zonaInterior = [[[40.9698,-5.6639],[40.9699,-5.6631],[40.9698,-5.6628],[40.9698,-5.6627],[40.9695,-5.6617],[40.9694,-5.6613],[40.9692,-5.6604],[40.9684,-5.6591],[40.9682,-5.6588],[40.9675,-5.6592],[40.9645,-5.6611],[40.9624,-5.6623],[40.9628,-5.6633],[40.962,-5.6639],[40.9621,-5.6643],[40.9601,-5.6644],[40.9592,-5.6647],[40.9591,-5.665],[40.9592,-5.6669],[40.9594,-5.6687],[40.9595,-5.6698],[40.9599,-5.6718],[40.9611,-5.6713],[40.9618,-5.6708],[40.9629,-5.669],[40.9632,-5.6689],[40.9635,-5.6693],[40.9642,-5.6684],[40.9652,-5.6698],[40.9659,-5.669],[40.966,-5.669],[40.9664,-5.668],[40.9664,-5.6678],[40.9671,-5.6677],[40.9672,-5.6677],[40.9674,-5.6676],[40.9669,-5.667],[40.9672,-5.6669],[40.9676,-5.6666],[40.9676,-5.666],[40.9674,-5.6655],[40.9673,-5.6649],[40.9674,-5.6647],[40.9673,-5.6645],[40.9676,-5.6644],[40.9677,-5.6644],[40.9677,-5.6643],[40.9678,-5.6642],[40.9679,-5.6642],[40.9681,-5.6642],[40.9682,-5.6642],[40.9684,-5.6641],[40.9685,-5.6641],[40.9687,-5.6649],[40.9691,-5.6647],[40.9696,-5.6645],[40.9697,-5.6645],[40.9698,-5.6639]]];
+    const zonaExterior = [[[40.9586,-5.6646],[40.9547,-5.6667],[40.9582,-5.6745],[40.9603,-5.6727],[40.9607,-5.6735],[40.9611,-5.6743],[40.9614,-5.6746],[40.9616,-5.6747],[40.9618,-5.6747],[40.9621,-5.6746],[40.963,-5.6737],[40.9636,-5.6731],[40.9639,-5.6728],[40.9647,-5.6724],[40.9649,-5.6722],[40.9657,-5.671],[40.9661,-5.6701],[40.9663,-5.6697],[40.9679,-5.6678],[40.9683,-5.6672],[40.9689,-5.6664],[40.9694,-5.6654],[40.9697,-5.6646],[40.9697,-5.6645],[40.9696,-5.6645],[40.9691,-5.6647],[40.9687,-5.6649],[40.9685,-5.6641],[40.9684,-5.6641],[40.9682,-5.6642],[40.9681,-5.6642],[40.9679,-5.6642],[40.9678,-5.6642],[40.9677,-5.6643],[40.9677,-5.6644],[40.9676,-5.6644],[40.9673,-5.6645],[40.9674,-5.6647],[40.9673,-5.6649],[40.9674,-5.6655],[40.9676,-5.666],[40.9676,-5.6666],[40.9672,-5.6669],[40.9669,-5.667],[40.9674,-5.6676],[40.9672,-5.6677],[40.9671,-5.6677],[40.9664,-5.6678],[40.9664,-5.668],[40.966,-5.669],[40.9659,-5.669],[40.9652,-5.6698],[40.9642,-5.6684],[40.9635,-5.6693],[40.9632,-5.6689],[40.9629,-5.669],[40.9618,-5.6708],[40.9611,-5.6713],[40.9599,-5.6718],[40.9595,-5.6698],[40.9594,-5.6687],[40.9592,-5.6669],[40.9591,-5.665],[40.9592,-5.6647],[40.9601,-5.6644],[40.9621,-5.6643],[40.962,-5.6639],[40.9628,-5.6633],[40.9624,-5.6623],[40.9645,-5.6611],[40.9675,-5.6592],[40.9682,-5.6588],[40.9684,-5.6591],[40.9679,-5.6585],[40.9673,-5.6582],[40.9667,-5.658],[40.9663,-5.6579],[40.9659,-5.658],[40.9648,-5.6582],[40.9638,-5.6585],[40.9631,-5.6587],[40.9621,-5.659],[40.9614,-5.6592],[40.9608,-5.6595],[40.9602,-5.6597],[40.9598,-5.6599],[40.9589,-5.6605],[40.9584,-5.6608],[40.9582,-5.661],[40.9579,-5.6614],[40.9586,-5.6646]],[[40.9695,-5.6616],[40.9694,-5.6613],[40.9695,-5.6617],[40.9698,-5.6627],[40.9698,-5.6628],[40.9695,-5.6616]]];
+    // [nombre, lat, lng]
+    const subterraneos = [["Parking Botánico Salamanca",40.961,-5.6707],["Parking Colón",40.9615,-5.6634],["Parking Campillo",40.969,-5.6615],["Parking Crespo Rascón",40.9687,-5.6647],["Garaje San Juan 2002 SL",40.9679,-5.6665],["Parking Le Mans",40.9669,-5.6652],["Garajes Monroy",40.9681,-5.66],["Parking Hospital Universitario",40.963,-5.6769],["Aparcamiento Hospital Santísima Trinidad",40.9675,-5.669],["Aparcamiento Reyes de España Catedral",40.9573,-5.6656],["Aparcamiento Plaza de Santa Eulalia",40.9668,-5.6616],["Aparcamiento Avenida de Portugal",40.9723,-5.6625],["Aparcamiento Estación Adif Vialia",40.9726,-5.6482],["Aparcamiento Calasanz",40.9591,-5.6577],["Aparcamiento Hospital Virgen de la Vega",40.9646,-5.6732],["Hall 88",40.9703,-5.6765]];
+    // [n.º base, nombre, lat, lng]
+    const basesBici = [[11,"Plaza De La Iglesia De Pizarrales",40.9759,-5.675],[1,"Plaza Poeta Iglesias",40.9644,-5.664],[45,"Santa Marta",40.9507,-5.6461],[28,"Parque de la Alamedilla",40.9683,-5.6583],[2,"Plaza de los Bandos",40.9669,-5.6643],[3,"Puente Romano",40.9592,-5.6693],[4,"Parking Hospital Clínico",40.9643,-5.673],[5,"Hilario Goyenechea",40.9488,-5.6622],[7,"Parque De La Calle La Bañeza",40.9787,-5.6658],[8,"Corte Inglés",40.9733,-5.6573],[9,"Vialia",40.9724,-5.6488],[27,"Parque Antonio Nebrija (Salas bajas)",40.9585,-5.6746],[14,"Facultad de Ciencias",40.9603,-5.67],[21,"Avda. Federico Anaya",40.9761,-5.6546],[22,"Plaza Gabriel y Galán",40.97,-5.6621],[30,"Glorieta Unión Deportiva Salamanca",40.9723,-5.6631],[24,"Plaza del Oeste",40.9705,-5.6671],[25,"Canalejas",40.9603,-5.6595],[26,"Plaza San Julián",40.9646,-5.6611],[31,"Plaza Santa Eulalia",40.9667,-5.6612],[32,"Avda. Villamayor",40.969,-5.6692],[29,"Calle La Radio",40.9688,-5.6522],[33,"Rotonda Los Ovalle",40.9712,-5.6573],[34,"Plaza Trujillo",40.9649,-5.651],[6,"Plazoleta Tejares",40.9551,-5.6946],[23,"Plaza de Toros",40.9762,-5.6616],[10,"Estación de Autobuses",40.9705,-5.6748],[12,"Parque Jesuitas",40.9645,-5.657],[13,"Facultad de Medicina",40.9657,-5.6769],[15,"Facultad Psicología",40.9824,-5.6607],[16,"Edificio JCYL",40.961,-5.6521],[17,"Plaza Valmuza",40.9468,-5.671],[18,"C/ Manuel Ramos Andrade",40.9677,-5.6836],[19,"Glorieta Castilla y León",40.9791,-5.6521],[20,"Plaza Alto Del Rollo",40.9688,-5.6474],[35,"Puente Ladrillo",40.9712,-5.6414],[36,"Barrio Vistahermosa",40.9501,-5.6801],[38,"Barrio Los Alcaldes",40.9524,-5.6903],[48,"Carrefour",40.9795,-5.663],[37,"Ciudad deportiva de la Aldehuela",40.9607,-5.6394],[43,"Plaza Barrio Vidal",40.9733,-5.6675],[39,"Santa Marta 1",40.95,-5.6326],[40,"Santa Marta 2",40.9502,-5.6252],[41,"C/ Lucio Marineo",40.9609,-5.6488],[42,"Avenida De Los Cedros",40.9754,-5.6513],[44,"Avda. Portugal - Avda. Villamayor",40.9727,-5.6715],[46,"Huertos Urbanos",40.9583,-5.6863],[47,"Aparcamiento Calle Nobel",40.942,-5.6665],[49,"Aparcamiento San Agustín",40.9792,-5.6581],[50,"Aparcamiento Huerta Otea",40.9656,-5.682]];
+    // [operador, lat, lng]
+    const recarga = [["Iberdrola",40.9684,-5.6723],["Iberdrola",40.9676,-5.6783],["Iberdrola",40.9676,-5.6783],["Bricomart",40.9466,-5.6448],["Mercadona",40.9715,-5.6345],["Mercadona",40.9567,-5.678],["Iberdrola",40.9691,-5.6569],["Iberdrola",40.959,-5.6653],["Repsol",40.9884,-5.6457],["Centro Comercial Los Cipreses",40.9779,-5.6492],["Repsol",40.9787,-5.6584],["Sin operador indicado",40.9739,-5.6574],["Hotel Castellano II",40.9717,-5.6543],["Iberdrola",40.971,-5.6575],["Sin operador indicado",40.969,-5.6615],["Iberdrola",40.9646,-5.6563],["Empark",40.9667,-5.6616],["Sin operador indicado",40.9731,-5.6631],["Mercadona",40.9693,-5.6695],["Sin operador indicado",40.9603,-5.6637],["Sin operador indicado",40.9588,-5.6657],["Sin operador indicado",40.9583,-5.6673],["Sin operador indicado",40.9552,-5.6783],["Sin operador indicado",40.9531,-5.6718],["Iberdrola",40.9404,-5.668],["Sin operador indicado",40.9955,-5.6354],["Iberdrola",40.9682,-5.6693],["Endesa",40.9676,-5.669],["Sin operador indicado",40.9612,-5.6705],["Endesa",40.9571,-5.6657],["Endesa",40.9524,-5.656],["Iberdrola",40.9433,-5.6549],["Sin operador indicado",40.9423,-5.6644],["Sin operador indicado",40.9403,-5.6668],["Sin operador indicado",40.9411,-5.6548],["Easy Charger",40.9376,-5.6571],["Repsol - IBIL",40.9553,-5.7066],["Tanatorio San Carlos",40.973,-5.6823],["Sin operador indicado",40.993,-5.646],["Sin operador indicado",41.0048,-5.6494],["Sin operador indicado",40.994,-5.6377],["Sin operador indicado",40.9521,-5.6516],["Iberdrola",40.9468,-5.6428],["Endesa",40.946,-5.6398],["Iberdrola",40.9643,-5.673]];
+
+    const capas = {
+      'ZBE interior': L.layerGroup().addTo(mapZbe),
+      'ZBE exterior': L.layerGroup().addTo(mapZbe),
+      'Parkings subterráneos': L.layerGroup().addTo(mapZbe),
+      'Paradas de bus': L.layerGroup(),
+      'Bases SALenBICI': L.layerGroup().addTo(mapZbe),
+      'Recarga eléctrica': L.layerGroup()
+    };
+    L.polygon(zonaInterior, { color: '#C0392B', weight: 2, fillColor: '#C0392B', fillOpacity: 0.15 }).bindTooltip('ZBE interior (~0,46 km²)', { sticky: true }).addTo(capas['ZBE interior']);
+    zonaExterior.forEach(r => L.polygon([r], { color: '#E9A23B', weight: 2, fillColor: '#E9A23B', fillOpacity: 0.15 }).bindTooltip('ZBE exterior (~0,57 km²)', { sticky: true }).addTo(capas['ZBE exterior']));
+
+    const punto = (lat, lng, color, r, html, capa) => L.circleMarker([lat, lng], { radius: r, fillColor: color, color: '#fff', weight: 1.5, fillOpacity: 0.9 }).bindPopup(html).addTo(capa);
+    subterraneos.forEach(s => punto(s[1], s[2], '#1E56A0', 7, `<b>${s[0]}</b><br>Parking subterráneo`, capas['Parkings subterráneos']));
+    basesBici.forEach(b => punto(b[2], b[3], '#2C8A3E', 5, `<b>SALenBICI, base ${b[0]}</b><br>${b[1]}`, capas['Bases SALenBICI']));
+    recarga.forEach(e => punto(e[1], e[2], '#7B2CBF', 5, `<b>Recarga eléctrica</b><br>${e[0]}`, capas['Recarga eléctrica']));
+    fetch('/paradas-bus.json?v=1').then(r => r.json()).then(ps => {
+      ps.forEach(p => punto(p[3], p[4], '#F4A261', 4, `<b>${p[0]}</b><br>${p[1].length ? 'Líneas: ' + p[1].join(', ') : 'Sin línea indicada'}`, capas['Paradas de bus']));
+    }).catch(() => {});
+    L.control.layers(null, capas, { collapsed: false }).addTo(mapZbe);
+  </script>
