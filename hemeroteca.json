@@ -1,7 +1,7 @@
 {
-  "generado_en": "2026-10-05T20:39:16.592Z",
+  "generado_en": "2026-10-06T01:18:32.354Z",
   "dias_ventana": 20,
-  "total": 3193,
+  "total": 3200,
   "medios": [
     "Tribuna Salamanca",
     "Salamanca24Horas",
@@ -9,6 +9,34 @@
     "Salamancahoy"
   ],
   "noticias": [
+    {
+      "url": "https://www.salamancahoy.es/salamanca/provincia/espectaculares-trombas-agua-tormenta-vientos-huracanados-varios-20261005002805-nt.html",
+      "titulo": "Espectaculares trombas de agua con tormenta y vientos huracanados en varios pueblos de Salamanca",
+      "medio": "Salamancahoy",
+      "fecha": "2026-10-05",
+      "fecha_hora": "2026-10-05T22:34:32.000Z"
+    },
+    {
+      "url": "https://www.salamanca24horas.com/nacional/nuevas-cortes-constituiran-23-diciembre-tras-proximas-elecciones-generales",
+      "titulo": "Las nuevas Cortes se constituirán el 23 de diciembre tras las próximas elecciones generales",
+      "medio": "Salamanca24Horas",
+      "fecha": "2026-10-05",
+      "fecha_hora": "2026-10-05T21:30:45.000Z"
+    },
+    {
+      "url": "https://www.salamancahoy.es/salamanca/provincia/pueblo-pocos-kilometros-salamanca-reparte-31000-euros-20261005224519-nt.html",
+      "titulo": "Un pueblo a pocos kilómetros de Salamanca reparte más de 31.000 euros en La Primitiva",
+      "medio": "Salamancahoy",
+      "fecha": "2026-10-05",
+      "fecha_hora": "2026-10-05T20:52:06.000Z"
+    },
+    {
+      "url": "https://www.salamanca24horas.com/provincia/alba-de-tormes/primitiva-deja-premio-31-287-euros-alba-tormes",
+      "titulo": "La Primitiva deja un premio de 31.287 euros en Alba de Tormes",
+      "medio": "Salamanca24Horas",
+      "fecha": "2026-10-05",
+      "fecha_hora": "2026-10-05T20:48:56.000Z"
+    },
     {
       "url": "https://www.salamanca24horas.com/provincia/alba-de-tormes/pedraza-alba-zonas-afectadas-intensa-lluvia-salamanca",
       "titulo": "Pedraza de Alba, una de las zonas afectadas por la intensa lluvia en Salamanca",
@@ -318,6 +346,13 @@
       "fecha_hora": "2026-10-05T16:17:04.000Z"
     },
     {
+      "url": "https://www.tribunasalamanca.com/noticias/461491/salamanca-culmina-las-obras-de-libreros-y-preve-rematar-el-parque-de-wurzburg-este-mismo-mes",
+      "titulo": "Salamanca culmina las obras de Libreros y prevé rematar el parque de Würzburg este mismo mes",
+      "medio": "Tribuna Salamanca",
+      "fecha": "2026-10-05",
+      "fecha_hora": "2026-10-05T16:10:00.000Z"
+    },
+    {
       "url": "https://www.tribunasalamanca.com/noticias/461490/que-se-esta-haciendo-en-europa-para-atajar-la-crisis-de-vivienda",
       "titulo": "¿Qué se está haciendo en Europa para atajar la crisis de vivienda?",
       "medio": "Tribuna Salamanca",
@@ -612,6 +647,13 @@
       "fecha_hora": "2026-10-05T12:02:58.000Z"
     },
     {
+      "url": "https://www.tribunasalamanca.com/noticias/461451/transportes-no-garantiza-que-haya-trenes-de-viajeros-entre-salamanca-y-fuentes-de-onoro",
+      "titulo": "Transportes no garantiza que haya trenes de viajeros entre Salamanca y Fuentes de Oñoro",
+      "medio": "Tribuna Salamanca",
+      "fecha": "2026-10-05",
+      "fecha_hora": "2026-10-05T11:58:09.000Z"
+    },
+    {
       "url": "https://www.tribunasalamanca.com/noticias/461450/aprobado-el-decreto-que-convoca-elecciones-el-29-n-y-que-el-rey-firmara-telematicamente-desde-finlandia",
       "titulo": "Aprobado el decreto que convoca elecciones el 29-N y que el rey firmará telemáticamente desde Finlandia",
       "medio": "Tribuna Salamanca",
@@ -694,6 +736,13 @@
       "medio": "Salamanca24Horas",
       "fecha": "2026-10-05",
       "fecha_hora": "2026-10-05T11:21:58.000Z"
+    },
+    {
+      "url": "https://www.tribunasalamanca.com/noticias/461436/esta-pedro-que-se-ponga",
+      "titulo": "¿Está Pedro? Que se ponga",
+      "medio": "Tribuna Salamanca",
+      "fecha": "2026-10-05",
+      "fecha_hora": "2026-10-05T11:16:35.000Z"
     },
     {
       "url": "https://www.tribunasalamanca.com/noticias/461435/unicaja-acerca-a-fruit-attraction-su-apoyo-al-sector-hortofruticola-y-convierte-su-estand-en-un-punto-de-encuentro-para-los-profesionales",
@@ -2010,6 +2059,13 @@
       "medio": "Tribuna Salamanca",
       "fecha": "2026-10-04",
       "fecha_hora": "2026-10-04T10:23:52.000Z"
+    },
+    {
+      "url": "https://www.tribunasalamanca.com/noticias/461310/rincon-desconocido-de-la-semana-en-salamanca-de-residencia-del-medico-de-la-corte-a-sede-museistica",
+      "titulo": "Rincón desconocido de la semana en Salamanca: de residencia del médico de la Corte a sede museística",
+      "medio": "Tribuna Salamanca",
+      "fecha": "2026-10-04",
+      "fecha_hora": "2026-10-04T10:17:44.000Z"
     },
     {
       "url": "https://www.lagacetadesalamanca.es/salamanca/salamanca-suma-521-medicos-siete-anos-consolida-20261003120556-nt.html",
@@ -22198,13 +22254,6 @@
       "medio": "Salamancahoy",
       "fecha": "2026-09-16",
       "fecha_hora": "2026-09-16T06:18:53Z"
-    },
-    {
-      "url": "https://www.salamancahoy.es/salamanca/ciudad/antonito-molina-pone-broche-oro-fiestas-salamanca-20260915230708-ga.html",
-      "titulo": "Antoñito Molina pone el broche de oro a las Fiestas de Salamanca",
-      "medio": "Salamancahoy",
-      "fecha": "2026-09-15",
-      "fecha_hora": "2026-09-15T21:16:03Z"
     },
     {
       "url": "https://www.salamancahoy.es/salamanca/ciudad/varear-lana-ganarse-vida-anos-negocio-barrio-20260914160845-nt.html",
