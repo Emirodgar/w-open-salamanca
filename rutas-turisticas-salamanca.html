@@ -1,0 +1,89 @@
+---
+layout: default
+title: Rutas turísticas de Salamanca
+description: Mapa de las 6 rutas turísticas de la IDE municipal - Huellas de Teresa, Salamanca Jacobea, Patrimonio de la Humanidad, Barrio del Oeste, San Cristóbal - La Prosperidad y De la Cueva al Cielo - con sus paradas y calles
+date: 06-10-2026
+folder: Turismo
+permalink: rutas-turisticas-salamanca
+---
+
+    <section class="featured dataset" id="datos">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="section-title">{{ page.title }}</h1>
+                <p class="section-description">{{ page.description }}</p>
+            </div>
+
+			<div id="section-content">
+
+  <div id="mapaRutas" style="width: 100%; height: 520px; border-radius: 8px; margin-bottom: 10px;"></div>
+  <p style="font-size:0.9em; margin-bottom:25px;">Activa o desactiva cada ruta arriba a la derecha. Los círculos son paradas; las líneas, calles del recorrido.</p>
+
+			<h2>Seis rutas: cuatro de paradas y dos de calles</h2>
+
+			<p>
+La IDE municipal (Infraestructura de Datos Espaciales del Ayuntamiento) publica <b>6 rutas turísticas</b>. Cuatro son rutas de paradas: <b>Huellas de Teresa</b> (7 paradas), <b>Salamanca Jacobea</b> (8), <b>Patrimonio de la Humanidad</b> (4) y <b>De la Cueva al Cielo</b> (1 parada en la capa). Las otras dos se definen por calles: la ruta del <b>Barrio del Oeste</b> (14 tramos, unos 1.900 m) y la del <b>Barrio de San Cristóbal - La Prosperidad</b> (4 tramos, unos 560 m).
+</p>
+
+<h3>Hallazgos clave</h3>
+<ul>
+<li><b>Todas las rutas de paradas caen en el casco histórico.</b> Ninguna parada queda a más de unos 950 m de la Plaza Mayor en línea recta, por lo que cualquiera se recorre a pie.</li>
+<li><b>Huellas de Teresa pasa por los grandes hitos.</b> Reúne la Casa de Santa Teresa de Jesús, las dos universidades (USAL y UPSA), la Catedral Nueva, el Convento de San Esteban, el Palacio de Monterrey y la Plaza Mayor.</li>
+<li><b>Salamanca Jacobea reúne ocho paradas de patrimonio.</b> Incluye el Puente Romano, la Iglesia de Santiago, la Catedral Vieja, la Casa de las Conchas, la Clerecía, el Colegio Arzobispo Fonseca, las Agustinas y la Casa de las Muertes.</li>
+<li><b>Patrimonio de la Humanidad enlaza con otras páginas del portal.</b> Incluye el Huerto de Calixto y Melibea (también en <a href="/zonas-verdes">parques y jardines</a>), el Convento de las Dueñas, el Palacio de la Salina y la Casa Lis, sede del museo de Art Nouveau y Art Déco, que figura en la <a href="/museos-salamanca">guía de museos</a>.</li>
+<li><b>Dos rutas de barrio salen del centro.</b> La del Oeste recorre 14 calles (entre ellas Fray Luis de Granada, Juan de Juni, Palacio Valdés y León Felipe) y la de San Cristóbal - La Prosperidad, 4 tramos con calles como Santa Clara, Lucero y la plaza del Corrillo.</li>
+<li><b>La ruta De la Cueva al Cielo está casi vacía en la capa.</b> Solo recoge un punto, la Cueva de Salamanca, por lo que no se puede reconstruir el recorrido completo con estos datos.</li>
+</ul>
+
+<p>Si buscas vistas, la <a href="/miradores-salamanca">ruta de los 11 miradores</a> comparte buena parte de este itinerario.</p>
+
+  <h2>Cómo leer estos datos</h2>
+  <ul>
+    <li>La capa solo da los nombres y la posición de las paradas y calles; no informa de la duración, la distancia recomendada, el orden de las paradas, los horarios de entrada ni de si tienen coste.</li>
+    <li>Las longitudes de las rutas de calles son sumas en línea recta de los tramos de la capa y son aproximadas.</li>
+    <li>Los nombres se muestran como en la capa, con alguna corrección ortográfica en las abreviaturas de las calles.</li>
+  </ul>
+
+			</div>
+
+			<div id="section-table">
+				<table border="1" cellpadding="5" cellspacing="0">
+				  <thead>
+					<tr><th>Ruta</th><th>Tipo</th><th>Paradas o calles</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>De la Cueva al Cielo</td><td>Paradas (1)</td><td>Cueva de Salamanca</td></tr>
+					<tr><td>Huellas de Teresa</td><td>Paradas (7)</td><td>Casa de Santa Teresa de Jesús, Universidad Pontificia de Salamanca (UPSA), Universidad de Salamanca, Catedral Nueva de la Asunción de la Virgen de Salamanca, Convento de San Esteban, Palacio de Monterrey. Casa de Alba., Plaza Mayor</td></tr>
+					<tr><td>Patrimonio de la Humanidad</td><td>Paradas (4)</td><td>Huerto de Calixto y Melibea, Convento de Las Dueñas, Palacio de la Salina, Casa Lis (Museo de Art Déco y Art Nouveau)</td></tr>
+					<tr><td>Barrio de San Cristóbal - La Prosperidad</td><td>Calles (4 tramos, unos 561 m)</td><td>Calle Lucero, Calle Santa Clara, Plaza del Corrillo, Tramo sin nombre</td></tr>
+					<tr><td>Barrio del Oeste</td><td>Calles (14 tramos, unos 1.885 m)</td><td>Calle Melchor Cano, C/ Joaquin Costa, C/ Fray Luis de Granada, C/ Isidro Segovia, C/ Antonio Espinosa, Calle Prof. Sáez, Calle Vitigudino, Calle Palacio Valdés, Calle Nieto Bonal, Calle Papín, Calle Juan de Juni, Calle Leon Felipe, Calle Ledesma, Calle los Churriguera</td></tr>
+					<tr><td>Salamanca Jacobea</td><td>Paradas (8)</td><td>Puente Romano, Iglesia de Santiago, Catedral Vieja de Santa María de la Sede de Salamanca, Casa de las Conchas, La Clerecía, Colegio Arzobispo Fonseca, Convento de la Purísima - Las Agustinas, Casa de las Muertes</td></tr>
+				  </tbody>
+				</table>
+				<p><small>Fuente: capas "Rutas Turísticas Salamanca" de la IDE del Ayuntamiento de Salamanca. Cálculos elaborados por Open Salamanca.</small></p>
+			</div>
+
+			{% include categories.html %}
+
+        </div>
+    </section>
+
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+	<script>
+    const mapRutas = L.map('mapaRutas').setView([40.9640, -5.6660], 15);
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/light_all/{z}/{x}/{y}{r}.png?key=cb1_2izw_1_55d93b51ded1dcecfa044181', {
+      attribution: '&copy; OpenStreetMap &copy; CARTO | Datos: IDE Ayuntamiento de Salamanca', subdomains: 'abcd', maxZoom: 19
+    }).addTo(mapRutas);
+    const esc = t => String(t).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+    // t = título, c = color, p = paradas [nombre, lat, lng], l = tramos [nombre, [[lat, lng]...], metros]
+    const rutas = [{"t":"De la Cueva al Cielo","c":"#7B2CBF","p":[["Cueva de Salamanca",40.9601,-5.6646]],"l":[]},{"t":"Huellas de Teresa","c":"#C0392B","p":[["Casa de Santa Teresa de Jesús",40.9678,-5.6654],["Universidad Pontificia de Salamanca (UPSA)",40.9631,-5.6669],["Universidad de Salamanca",40.9613,-5.6669],["Catedral Nueva de la Asunción de la Virgen de Salamanca",40.9606,-5.6659],["Convento de San Esteban",40.9606,-5.6628],["Palacio de Monterrey. Casa de Alba.",40.9651,-5.6666],["Plaza Mayor",40.9647,-5.664]],"l":[]},{"t":"Patrimonio de la Humanidad","c":"#1E56A0","p":[["Huerto de Calixto y Melibea",40.9597,-5.6655],["Convento de Las Dueñas",40.9611,-5.6632],["Palacio de la Salina",40.9632,-5.6644],["Casa Lis (Museo de Art Déco y Art Nouveau)",40.9597,-5.6668]],"l":[]},{"t":"Barrio de San Cristóbal - La Prosperidad","c":"#2C8A3E","p":[],"l":[["Calle Lucero",[[40.962,-5.6599],[40.9614,-5.6601],[40.9612,-5.6601],[40.9611,-5.66]],105],["Calle Santa Clara",[[40.9623,-5.6607],[40.9618,-5.6592]],138],["Plaza del Corrillo",[[40.9647,-5.6646],[40.9646,-5.6646],[40.9645,-5.6648],[40.9644,-5.6648],[40.9641,-5.6648]],76],["Tramo sin nombre",[[40.9638,-5.66],[40.9643,-5.6597],[40.9644,-5.6595],[40.9644,-5.6593],[40.9642,-5.6589],[40.9642,-5.659],[40.9638,-5.66]],242]]},{"t":"Barrio del Oeste","c":"#F4A261","p":[],"l":[["Calle Melchor Cano",[[40.9716,-5.6667],[40.9707,-5.6673]],112],["C/ Joaquin Costa",[[40.9714,-5.6661],[40.9705,-5.6668]],116],["C/ Fray Luis de Granada",[[40.9721,-5.6677],[40.9707,-5.6674]],158],["C/ Isidro Segovia",[[40.9711,-5.6656],[40.9703,-5.6663]],107],["C/ Antonio Espinosa",[[40.9709,-5.6652],[40.9701,-5.6656]],95],["Calle Prof. Sáez",[[40.9701,-5.6658],[40.9695,-5.6669]],114],["Calle Vitigudino",[[40.9718,-5.669],[40.9714,-5.6676]],126],["Calle Palacio Valdés",[[40.9707,-5.6675],[40.9713,-5.6692]],158],["Calle Nieto Bonal",[[40.9707,-5.6701],[40.9707,-5.668],[40.9706,-5.6676],[40.9706,-5.6676]],212],["Calle Papín",[[40.9703,-5.6674],[40.9699,-5.6696]],190],["Calle Juan de Juni",[[40.971,-5.6693],[40.9706,-5.6692],[40.9697,-5.6686]],157],["Calle Leon Felipe",[[40.971,-5.6675],[40.9715,-5.6692]],153],["Calle Ledesma",[[40.972,-5.6684],[40.9718,-5.6677]],63],["Calle los Churriguera",[[40.971,-5.6699],[40.9706,-5.6698],[40.97,-5.6693]],124]]},{"t":"Salamanca Jacobea","c":"#264653","p":[["Puente Romano",40.9578,-5.6701],["Iglesia de Santiago",40.9588,-5.6683],["Catedral Vieja de Santa María de la Sede de Salamanca",40.9604,-5.6667],["Casa de las Conchas",40.9626,-5.6659],["La Clerecía",40.9628,-5.6664],["Colegio Arzobispo Fonseca",40.9654,-5.6701],["Convento de la Purísima - Las Agustinas",40.9649,-5.6669],["Casa de las Muertes",40.9658,-5.6665]],"l":[]}];
+    const capas = {};
+    rutas.forEach(r => {
+      const g = L.layerGroup().addTo(mapRutas);
+      r.p.forEach(p => L.circleMarker([p[1], p[2]], { radius: 8, fillColor: r.c, color: '#fff', weight: 2, fillOpacity: 0.9 }).bindPopup(`<b>${esc(p[0])}</b><br>${esc(r.t)}`).addTo(g));
+      r.l.forEach(l => L.polyline(l[1], { color: r.c, weight: 5, opacity: 0.85 }).bindPopup(`<b>${esc(l[0])}</b><br>${esc(r.t)}`).addTo(g));
+      capas[`<span style="color:${r.c};">&#9632;</span> ${r.t}`] = g;
+    });
+    L.control.layers(null, capas, { collapsed: false }).addTo(mapRutas);
+  </script>
