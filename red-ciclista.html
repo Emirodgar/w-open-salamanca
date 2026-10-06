@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Red ciclista y servicio SALenBICI
-description: Mapa interactivo de estaciones de préstamo, vías ciclistas y estadísticas de movilidad sostenible
+description: Mapa interactivo de la red oficial de carril bici (ciudad y alfoz), estaciones de préstamo SALenBICI y estadísticas de movilidad sostenible
 date: 29-08-2026
 folder: Movilidad
 permalink: red-ciclista
@@ -24,13 +24,25 @@ permalink: red-ciclista
 			<h2>Análisis del transporte ciclista y movilidad sostenible</h2>
 			
 				<p>
-La infraestructura ciclista de Salamanca supera los 100 kilómetros de <a href="/movilidad-ciclable-peatonal">vías segregadas y ciclocalles</a>, conectando los principales barrios con el centro urbano, el campus universitario y la corona metropolitana. El sistema municipal de préstamo <b>SALenBICI</b> actúa como complemento directo al transporte público urbano.</p>
+La infraestructura ciclista de Salamanca suma, según la capa oficial del Ayuntamiento, <b>unos 126,6 kilómetros</b> de <a href="/movilidad-ciclable-peatonal">carril bici</a>: 63,2 km en la ciudad y 63,4 km en el alfoz. Conecta los principales barrios con el centro urbano, el campus universitario y la corona metropolitana. El sistema municipal de préstamo <b>SALenBICI</b> actúa como complemento directo al transporte público urbano.</p>
 
 <h3>Indicadores de uso y expansión</h3>
 <ul>
 <li><b>Interconexión del alfoz</b>: Los carriles bici conectan directamente la capital con municipios vecinos como Santa Marta de Tormes, Carbajosa de la Sagrada, Villamayor y Aldeatejada, favoreciendo los desplazamientos cotidianos por motivos de trabajo o estudio.</li>
 <li><b>Crecimiento del sistema de préstamo</b>: SALenBICI cuenta con más de 40 bases operativas y un parque de bicicletas convencionales y eléctricas que supera los 300.000 usos anuales.</li>
 </ul>
+
+<h3>La red oficial de carril bici en cifras</h3>
+<p>La capa <i>Carril Bici</i> de la infraestructura de datos espaciales del Ayuntamiento recoge <b>135 tramos</b>: 97 en la ciudad (red existente o ejecutada según el Plan de Movilidad Urbana Sostenible, PMUS) y 38 en el alfoz.</p>
+<ul>
+<li><b>Ciudad: 63,2 km</b>. Unos 52,2 km son de doble sentido y 10,9 km unidireccionales. Los tramos marcados como compartidos suman 12,5 km, y 50,1 km figuran como no compartidos.</li>
+<li><b>Alfoz: 63,4 km</b>. El eje más largo es la antigua <b>línea de ferrocarril Salamanca-Alba de Tormes</b> (20,2 km), seguido de los tramos de Villamayor (9,5 km), Santa Marta de Tormes (8,9 km) y Villares de la Reina (6,7 km).</li>
+<li><b>Ritmo de construcción</b>: de los 63,2 km urbanos, 23,8 km corresponden al periodo 2003-2011 y 12,1 km al año 2023, el de mayor ampliación reciente. Los tramos fechados entre 2018 y 2025 suman unos 31,6 km.</li>
+</ul>
+
+  <h2>Kilómetros de carril bici urbano por periodo de ejecución</h2>
+  <canvas id="carrilPeriodoChart" width="800" height="400"></canvas>
+  <p><small>El campo de periodo (LEGISLAT) combina rangos de legislatura (2003-2011, 2011-2019) con años concretos desde 2018, por lo que los periodos se solapan; se muestran tal como los publica el Ayuntamiento. Un tramo de 358 m no tiene dato.</small></p>
 
   <h2>Evolución de préstamos anuales en SALenBICI (2018-2025)</h2>
   <canvas id="biciPrestamosChart" width="800" height="400"></canvas>
@@ -61,8 +73,30 @@ La infraestructura ciclista de Salamanca supera los 100 kilómetros de <a href="
 			  </tbody>
 			</table>
 
+			<h2>Carril bici del alfoz por municipio</h2>
+			<table border="1" cellpadding="5" cellspacing="0">
+			  <thead>
+				<tr><th>Ámbito</th><th>Tramos</th><th>Longitud</th></tr>
+			  </thead>
+			  <tbody>
+				<tr><td>Vía verde Salamanca-Alba de Tormes (antigua línea de FF.CC.)</td><td>1</td><td>20,2 km</td></tr>
+				<tr><td>Villamayor</td><td>10</td><td>9,5 km</td></tr>
+				<tr><td>Santa Marta de Tormes</td><td>8</td><td>8,9 km</td></tr>
+				<tr><td>Villares de la Reina</td><td>8</td><td>6,7 km</td></tr>
+				<tr><td>Carbajosa de la Sagrada</td><td>2</td><td>2,7 km</td></tr>
+				<tr><td>Cabrerizos</td><td>3</td><td>2,4 km</td></tr>
+				<tr><td>Aldeatejada</td><td>1</td><td>1,9 km</td></tr>
+				<tr><td>Castellanos de Moriscos</td><td>1</td><td>1,2 km</td></tr>
+				<tr><td>Otros tramos (Doña Brígida, Valcuevo, Camino del Canto, Montalvo)</td><td>4</td><td>10,0 km</td></tr>
+				<tr><th>Total alfoz</th><th>38</th><th>63,4 km</th></tr>
+			  </tbody>
+			</table>
+			<p><small>Fuente: IDE Ayuntamiento de Salamanca, capa Carril_Bici_ (servicio WFS). Datos consultados el 06-10-2026. La asignación a municipios se ha hecho a partir del nombre de cada tramo.</small></p>
+
 			</div>
 			
+			<p>Los límites de velocidad en las vías compartidas con ciclistas se controlan con <a href="/radares">radares fijos y de tramo</a>; la mayoría de los fijos de la ciudad vigilan 30 km/h.</p>
+
 			{% include categories.html %}
             
         </div>
@@ -80,6 +114,25 @@ La infraestructura ciclista de Salamanca supera los 100 kilómetros de <a href="
       subdomains: 'abcd',
       maxZoom: 19
     }).addTo(mapBici);
+
+    // Red oficial de carril bici (capa Carril_Bici_ del Ayuntamiento)
+    fetch('/carril-bici-salamanca.json')
+      .then(r => r.json())
+      .then(tramos => {
+        const capas = { ciudad: L.layerGroup(), alfoz: L.layerGroup() };
+        tramos.forEach(t => {
+          const alfoz = t.a === 1;
+          const extra = alfoz ? '' : `<br>Periodo: ${t.y || 'sin dato'}<br>${t.s ? 'Compartido' : 'No compartido'} · ${t.u ? 'Unidireccional' : 'Doble sentido'}`;
+          L.polyline(t.c, { color: alfoz ? '#E9C46A' : '#2C5F2D', weight: 4, opacity: 0.85 })
+            .bindPopup(`<b>${alfoz ? 'Alfoz' : 'Ciudad'}: ${t.n}</b><br>Longitud: ${t.l.toLocaleString('es-ES')} m${extra}`)
+            .addTo(alfoz ? capas.alfoz : capas.ciudad);
+        });
+        capas.ciudad.addTo(mapBici);
+        capas.alfoz.addTo(mapBici);
+        L.control.layers(null, { 'Carril bici ciudad': capas.ciudad, 'Carril bici alfoz': capas.alfoz }, { collapsed: false }).addTo(mapBici);
+        mapBici.fitBounds(L.featureGroup([capas.ciudad, capas.alfoz]).getBounds(), { padding: [20, 20] });
+      })
+      .catch(() => {});
 
     // Listado de bases SALenBICI emblemáticas
     const estacionesBici = [
@@ -100,6 +153,28 @@ La infraestructura ciclista de Salamanca supera los 100 kilómetros de <a href="
         opacity: 1,
         fillOpacity: 0.85
       }).bindPopup(`<b>SALenBICI: ${st.name}</b><br>Anclajes disponibles: ${st.slots}`).addTo(mapBici);
+    });
+
+    // Gráfico de km de carril bici urbano por periodo
+    new Chart(document.getElementById('carrilPeriodoChart').getContext('2d'), {
+      type: 'bar',
+      data: {
+        labels: ['2003-2011', '2011-2019', '2018', '2019', '2020', '2021', '2022', '2023', '2024', '2025', 'Sin dato'],
+        datasets: [{
+          label: 'Km de carril bici',
+          data: [23.8, 7.4, 4.0, 4.2, 3.2, 0.3, 3.4, 12.1, 3.7, 0.6, 0.4],
+          backgroundColor: 'rgba(44, 95, 45, 0.8)',
+          borderRadius: 4
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: { legend: { display: false } },
+        scales: {
+          y: { title: { display: true, text: 'Kilómetros' }, beginAtZero: true },
+          x: { title: { display: true, text: 'Periodo de ejecución' } }
+        }
+      }
     });
 
     // 2. Gráfico de evolución de uso de SALenBICI

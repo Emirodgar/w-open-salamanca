@@ -1,0 +1,144 @@
+---
+layout: default
+title: Radares de velocidad en Salamanca
+description: Mapa y listado de los 20 radares fijos y los 2 radares de tramo de la ciudad, con su límite de velocidad y ubicación
+date: 06-10-2026
+folder: Movilidad
+permalink: radares
+---
+
+    <section class="featured dataset" id="datos">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="section-title">{{ page.title }}</h1>
+                <p class="section-description">{{ page.description }}</p>
+            </div>
+
+			<div id="section-content">
+
+  <div id="mapaRadares" style="width: 100%; height: 500px; border-radius: 8px; margin-bottom: 25px;"></div>
+
+			<h2>Control de velocidad en la ciudad</h2>
+			<p>El Ayuntamiento de Salamanca publica en su infraestructura de datos espaciales la localización de sus radares. Hay <b>20 radares fijos</b> repartidos por las principales avenidas y <b>2 radares de tramo</b>, que miden la velocidad media entre dos puntos en lugar de la velocidad instantánea. Entre los fijos, 12 vigilan un límite de <b>30 km/h</b> y 8 un límite de <b>50 km/h</b>; los dos tramos controlan <b>30 km/h</b>.</p>
+
+			<h3>Radares fijos</h3>
+			<ul>
+			<li><b>Límite de 30 km/h</b>: 12 radares, sobre todo en vías con mucho tránsito peatonal y ciclista como Paseo de Canalejas, Avenida de Portugal o Avenida de Comuneros.</li>
+			<li><b>Límite de 50 km/h</b>: 8 radares, en ejes de mayor capacidad como Avenida Reina Berenguela, Vía Helmántica o Avenida Obispo Sancho de Castilla.</li>
+			</ul>
+
+			<h3>Radares de tramo</h3>
+			<p>La capa de radares de tramo contiene 2 recorridos distintos, con una longitud conjunta de unos 1.1 km. El servicio publica cada recorrido dos veces con geometría idéntica, por lo que aquí se muestran una sola vez.</p>
+
+  <h2>Radares fijos por límite de velocidad</h2>
+  <canvas id="radaresChart" width="800" height="300"></canvas>
+
+  <p>La velocidad de las vías también influye en la seguridad de quienes se mueven en <a href="/red-ciclista">bicicleta</a> o a pie; consulta además la <a href="/movilidad-peatonal">movilidad peatonal</a>, el <a href="/transporte-urbano-bus">transporte urbano en autobús</a> y el <a href="/aparcamientos-estacionamiento-ora">estacionamiento y la ORA</a>.</p>
+
+			</div>
+
+			<div id="section-table">
+			<h2>Radares fijos</h2>
+			<table border="1" cellpadding="5" cellspacing="0">
+			  <thead>
+				<tr><th>Ubicación</th><th>Límite</th><th>Coordenadas (lat, lng)</th></tr>
+			  </thead>
+			  <tbody>
+				<tr><td>Avenida Luis de Camoens</td><td>50 km/h</td><td>40.968795, -5.685757</td></tr>
+				<tr><td>Avenida Obispo Sancho de Castilla</td><td>50 km/h</td><td>40.973569, -5.681241</td></tr>
+				<tr><td>Avenida Reina Berenguela</td><td>50 km/h</td><td>40.965323, -5.644958</td></tr>
+				<tr><td>Avenida Saavedra y Fajardo</td><td>50 km/h</td><td>40.952334, -5.67013</td></tr>
+				<tr><td>Avenida de Comuneros, 44</td><td>30 km/h</td><td>40.968579, -5.649173</td></tr>
+				<tr><td>Avenida de Lasalle, 24</td><td>30 km/h</td><td>40.955055, -5.678648</td></tr>
+				<tr><td>Avenida de Portugal (Pérez Oliva), 79</td><td>30 km/h</td><td>40.971638, -5.660061</td></tr>
+				<tr><td>Avenida de Portugal (Villar y Macías)</td><td>30 km/h</td><td>40.973123, -5.674519</td></tr>
+				<tr><td>Avenida de Santiago Madrigal</td><td>30 km/h</td><td>40.971149, -5.635405</td></tr>
+				<tr><td>Avenida de los Cipreses</td><td>30 km/h</td><td>40.976533, -5.648797</td></tr>
+				<tr><td>Avenida el Doctor Ramos del Manzano</td><td>50 km/h</td><td>40.968135, -5.67876</td></tr>
+				<tr><td>Calle Alcalde Cruz Hernández</td><td>30 km/h</td><td>40.951803, -5.689338</td></tr>
+				<tr><td>Calle Cordel de Merinas, 117</td><td>50 km/h</td><td>40.951526, -5.681566</td></tr>
+				<tr><td>Calle Hilario Goyenechea</td><td>30 km/h</td><td>40.949452, -5.662922</td></tr>
+				<tr><td>Calle Jesús de Arambarri</td><td>30 km/h</td><td>40.970918, -5.641668</td></tr>
+				<tr><td>Calle Manuel Ramos Andrade</td><td>30 km/h</td><td>40.967201, -5.683135</td></tr>
+				<tr><td>Paseo de Canalejas (Calasanz), 139</td><td>30 km/h</td><td>40.959945, -5.659633</td></tr>
+				<tr><td>Paseo de Canalejas (Padilla), 31</td><td>30 km/h</td><td>40.965988, -5.657656</td></tr>
+				<tr><td>Paseo de la Transición Española</td><td>50 km/h</td><td>40.962865, -5.677088</td></tr>
+				<tr><td>Vía Helmántica</td><td>50 km/h</td><td>40.952229, -5.659378</td></tr>
+				
+			  </tbody>
+			</table>
+
+			<h2>Radares de tramo</h2>
+			<table border="1" cellpadding="5" cellspacing="0">
+			  <thead>
+				<tr><th>Tramo</th><th>Límite</th><th>Longitud</th><th>Inicio → fin (lat, lng)</th></tr>
+			  </thead>
+			  <tbody>
+				<tr><td>Tramo 1</td><td>30 km/h</td><td>424 m</td><td>40.954869, -5.691085 → 40.954916, -5.686039</td></tr>
+				<tr><td>Tramo 2</td><td>30 km/h</td><td>660 m</td><td>40.965299, -5.682865 → 40.962145, -5.689272</td></tr>
+				
+			  </tbody>
+			</table>
+			<p><small>Fuente: IDE Ayuntamiento de Salamanca (capas Radares_Fijos y RADAR_TRAMO, servicio WFS). Datos consultados el 06-10-2026.</small></p>
+			</div>
+
+			{% include categories.html %}
+
+        </div>
+    </section>
+
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+	<script>
+    const mapRadares = L.map('mapaRadares').setView([40.9640, -5.6650], 14);
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/light_all/{z}/{x}/{y}{r}.png?key=cb1_2izw_1_55d93b51ded1dcecfa044181', {
+      attribution: '&copy; OpenStreetMap &copy; CARTO',
+      subdomains: 'abcd',
+      maxZoom: 19
+    }).addTo(mapRadares);
+
+    const radaresFijos = [{"n": "Avenida Luis de Camoens", "v": 50, "lat": 40.968795, "lng": -5.685757}, {"n": "Avenida Obispo Sancho de Castilla", "v": 50, "lat": 40.973569, "lng": -5.681241}, {"n": "Avenida Reina Berenguela", "v": 50, "lat": 40.965323, "lng": -5.644958}, {"n": "Avenida Saavedra y Fajardo", "v": 50, "lat": 40.952334, "lng": -5.67013}, {"n": "Avenida de Comuneros, 44", "v": 30, "lat": 40.968579, "lng": -5.649173}, {"n": "Avenida de Lasalle, 24", "v": 30, "lat": 40.955055, "lng": -5.678648}, {"n": "Avenida de Portugal (Pérez Oliva), 79", "v": 30, "lat": 40.971638, "lng": -5.660061}, {"n": "Avenida de Portugal (Villar y Macías)", "v": 30, "lat": 40.973123, "lng": -5.674519}, {"n": "Avenida de Santiago Madrigal", "v": 30, "lat": 40.971149, "lng": -5.635405}, {"n": "Avenida de los Cipreses", "v": 30, "lat": 40.976533, "lng": -5.648797}, {"n": "Avenida el Doctor Ramos del Manzano", "v": 50, "lat": 40.968135, "lng": -5.67876}, {"n": "Calle Alcalde Cruz Hernández", "v": 30, "lat": 40.951803, "lng": -5.689338}, {"n": "Calle Cordel de Merinas, 117", "v": 50, "lat": 40.951526, "lng": -5.681566}, {"n": "Calle Hilario Goyenechea", "v": 30, "lat": 40.949452, "lng": -5.662922}, {"n": "Calle Jesús de Arambarri", "v": 30, "lat": 40.970918, "lng": -5.641668}, {"n": "Calle Manuel Ramos Andrade", "v": 30, "lat": 40.967201, "lng": -5.683135}, {"n": "Paseo de Canalejas (Calasanz), 139", "v": 30, "lat": 40.959945, "lng": -5.659633}, {"n": "Paseo de Canalejas (Padilla), 31", "v": 30, "lat": 40.965988, "lng": -5.657656}, {"n": "Paseo de la Transición Española", "v": 50, "lat": 40.962865, "lng": -5.677088}, {"n": "Vía Helmántica", "v": 50, "lat": 40.952229, "lng": -5.659378}];
+    const radaresTramo = [{"id": 1, "v": 30, "len": 424, "pts": [[40.954869, -5.691085], [40.954916, -5.686039]], "reg": 2}, {"id": 2, "v": 30, "len": 660, "pts": [[40.965299, -5.682865], [40.964995, -5.683608], [40.964893, -5.68376], [40.964734, -5.683867], [40.964505, -5.683985], [40.964384, -5.684047], [40.964246, -5.684206], [40.96394, -5.684675], [40.963561, -5.685293], [40.963317, -5.685716], [40.963139, -5.686175], [40.962887, -5.686777], [40.962145, -5.689272]], "reg": 2}];
+    const color = v => v === 30 ? '#E76F51' : '#2C5F2D';
+
+    radaresFijos.forEach(r => {
+      L.circleMarker([r.lat, r.lng], {
+        radius: 8, fillColor: color(r.v), color: '#ffffff', weight: 2, opacity: 1, fillOpacity: 0.9
+      }).bindPopup(`<b>Radar fijo</b><br>${r.n}<br>Límite: ${r.v} km/h`).addTo(mapRadares);
+    });
+
+    radaresTramo.forEach(t => {
+      L.polyline(t.pts, { color: '#264653', weight: 5, opacity: 0.85, dashArray: '8 6' })
+        .bindPopup(`<b>Radar de tramo ${t.id}</b><br>Límite: ${t.v} km/h<br>Longitud: ${t.len} m`).addTo(mapRadares);
+    });
+
+    const leyenda = L.control({ position: 'bottomright' });
+    leyenda.onAdd = () => {
+      const d = L.DomUtil.create('div');
+      d.style.cssText = 'background:#fff;padding:8px 10px;border-radius:6px;font-size:13px;line-height:1.6';
+      d.innerHTML = '<span style="color:#E76F51">●</span> Fijo 30 km/h<br><span style="color:#2C5F2D">●</span> Fijo 50 km/h<br><span style="color:#264653">╌╌</span> Radar de tramo';
+      return d;
+    };
+    leyenda.addTo(mapRadares);
+
+    new Chart(document.getElementById('radaresChart').getContext('2d'), {
+      type: 'bar',
+      data: {
+        labels: ['30 km/h', '50 km/h'],
+        datasets: [{
+          label: 'Radares fijos',
+          data: [12, 8],
+          backgroundColor: ['rgba(231, 111, 81, 0.8)', 'rgba(44, 95, 45, 0.8)'],
+          borderRadius: 4
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: { legend: { display: false } },
+        scales: {
+          y: { title: { display: true, text: 'Número de radares' }, beginAtZero: true, ticks: { precision: 0 } },
+          x: { title: { display: true, text: 'Límite de velocidad' } }
+        }
+      }
+    });
+  </script>
