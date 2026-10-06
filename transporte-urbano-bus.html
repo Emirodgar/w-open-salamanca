@@ -17,21 +17,24 @@ permalink: transporte-urbano-bus
 			
 			<div id="section-content">
 						
+  <p style="background:#FFF4E5; border-left:4px solid #F4A261; padding:10px 14px;"><b>No verificado.</b> Las cifras de viajeros, frecuencias, flota ecológica y porcentajes de demanda de esta página (texto, gráficos y tabla de líneas) proceden de una versión anterior y no tienen una fuente que Open Salamanca haya podido contrastar. Varios recorridos de la tabla tampoco coinciden con los de <a href="/mapa-lineas-autobus">Salamanca de Transportes</a>: por ejemplo, allí la línea 1 va de Chinchibarra a Buenos Aires. Se mantienen solo como referencia hasta localizar datos oficiales. Los datos de paradas de más abajo sí proceden de la IDE municipal y son verificables.</p>
+
+  <h2>Evolución de viajeros 2018-2025 (no verificado)</h2>
   <canvas id="busHistoricoChart" width="800" height="400"></canvas>
 
  
 			<h2>Análisis de la demanda del autobús urbano</h2>
 			
 				<p>
-El servicio de transporte urbano de Salamanca registra una <b>recuperación sostenida del volumen de viajeros</b>, superando la barrera de los 12 millones de usos anuales. Las medidas de bonificación tarifaria y la renovación de la flota con vehículos de cero y bajas emisiones han impulsado el uso del transporte público en los desplazamientos cotidianos.</p>
+El servicio de transporte urbano de Salamanca registra una <b>recuperación sostenida del volumen de viajeros</b>, superando la barrera de los 12 millones de usos anuales (no verificado). Las medidas de bonificación tarifaria y la renovación de la flota con vehículos de cero y bajas emisiones han impulsado el uso del transporte público en los desplazamientos cotidianos.</p>
 
 <h3>Claves de la movilidad colectiva</h3>
 <ul>
-<li><b>Ejes de mayor demanda</b>: Las líneas que conectan los barrios periféricos con el centro histórico, los hospitales y el Campus Unamuno concentran más del 50% de la demanda total.</li>
-<li><b>Electrificación de la flota</b>: La incorporación progresiva de autobuses 100% eléctricos y de gas natural comprimido permite reducir las emisiones del transporte colectivo en más de un 30%.</li>
+<li><b>Ejes de mayor demanda (no verificado)</b>: Las líneas que conectan los barrios periféricos con el centro histórico, los hospitales y el Campus Unamuno concentran más del 50% de la demanda total.</li>
+<li><b>Electrificación de la flota (no verificado)</b>: La incorporación progresiva de autobuses 100% eléctricos y de gas natural comprimido permite reducir las emisiones del transporte colectivo en más de un 30%.</li>
 </ul>
 
-  <h2>Volumen de viajeros anuales por línea principal (Millones)</h2>
+  <h2>Volumen de viajeros anuales por línea principal (millones, no verificado)</h2>
   <canvas id="lineasBusChart" width="800" height="400"></canvas>
 
   <h2>Dónde están las paradas: 386 paradas en la capa de la IDE municipal</h2>
@@ -61,10 +64,10 @@ El servicio de transporte urbano de Salamanca registra una <b>recuperación sost
 			<table border="1" cellpadding="5" cellspacing="0">
 			  <thead>
 				<tr>
-				  <th>Línea / Recorrido</th>
-				  <th>Viajeros Anuales</th>
-				  <th>Frecuencia Laborables</th>
-				  <th>Flota Ecológica (%)</th>
+				  <th>Línea / Recorrido (no verificado)</th>
+				  <th>Viajeros anuales (no verificado)</th>
+				  <th>Frecuencia laborables (no verificado)</th>
+				  <th>Flota ecológica (%) (no verificado)</th>
 				  <th>Conexiones Clave</th>
 				</tr>
 			  </thead>
@@ -77,6 +80,7 @@ El servicio de transporte urbano de Salamanca registra una <b>recuperación sost
 				<tr><td>L Nocturna: N1 / N2 (Servicio Búho)</td><td>165.000</td><td>60 min (Fines de semana)</td><td>50%</td><td>Ocio Nocturno, Barrios Periféricos</td></tr>
 			  </tbody>
 			</table>
+			<p><small>No verificado: todos los datos de esta tabla carecen de fuente contrastada y se mantienen solo como referencia.</small></p>
 
 			</div>
 			
@@ -142,7 +146,7 @@ El servicio de transporte urbano de Salamanca registra una <b>recuperación sost
       data: {
         labels: ['2018', '2019', '2020', '2021', '2022', '2023', '2024', '2025'],
         datasets: [{
-          label: 'Total Viajeros Autobús Urbano (Millones)',
+          label: 'Total viajeros autobús urbano (millones, no verificado)',
           data: [12.8, 13.1, 7.2, 8.9, 10.5, 11.8, 12.4, 12.9],
           borderColor: '#1E56A0',
           backgroundColor: 'rgba(30, 86, 160, 0.1)',
@@ -154,7 +158,7 @@ El servicio de transporte urbano de Salamanca registra una <b>recuperación sost
       options: {
         responsive: true,
         scales: {
-          y: { title: { display: true, text: 'Millones de Pasajeros' }, beginAtZero: false },
+          y: { title: { display: true, text: 'Millones de pasajeros (no verificado)' }, beginAtZero: false },
           x: { title: { display: true, text: 'Año' } }
         }
       }
@@ -167,7 +171,7 @@ El servicio de transporte urbano de Salamanca registra una <b>recuperación sost
       data: {
         labels: ['Línea 1', 'Línea 2', 'Línea 3', 'Línea 7', 'Línea 12', 'Nocturnos'],
         datasets: [{
-          label: 'Viajeros (Millones)',
+          label: 'Viajeros (millones, no verificado)',
           data: [2.15, 1.98, 1.75, 1.42, 0.98, 0.165],
           backgroundColor: '#F4A261',
           borderRadius: 4
@@ -177,7 +181,7 @@ El servicio de transporte urbano de Salamanca registra una <b>recuperación sost
         responsive: true,
         plugins: { legend: { display: false } },
         scales: {
-          y: { title: { display: true, text: 'Millones de Pasajeros' }, beginAtZero: true },
+          y: { title: { display: true, text: 'Millones de pasajeros (no verificado)' }, beginAtZero: true },
           x: { title: { display: true, text: 'Línea de Autobús' } }
         }
       }
