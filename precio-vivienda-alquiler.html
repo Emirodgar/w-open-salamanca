@@ -2,7 +2,7 @@
 layout: default
 title: Mercado inmobiliario y precio de la vivienda
 description: Evolución del precio por metro cuadrado en compraventa y alquiler en los 40 barrios de Salamanca y su alfoz
-date: 29-08-2026
+date: 06-10-2026
 folder: Urbanismo
 permalink: precio-vivienda-alquiler
 ---
@@ -17,22 +17,24 @@ permalink: precio-vivienda-alquiler
 			
 			<div id="section-content">
 						
+  <p style="background:#FFF4E5; border-left:4px solid #F4A261; padding:10px 14px;"><b>No verificado.</b> Los precios de compraventa y alquiler, las variaciones y la rentabilidad bruta estimada de esta página (texto, gráficos y tabla) proceden de una versión anterior y no tienen una fuente que Open Salamanca haya podido contrastar: no consta si vienen de portales inmobiliarios, notarios o estadísticas oficiales, y los valores por barrio coinciden con los de <a href="/precio-vivienda">evolución del precio de la vivienda</a>, igualmente sin fuente. La IDE municipal no publica precios de vivienda. Se mantienen solo como referencia.</p>
+
   <canvas id="viviendaHistoricoChart" width="800" height="400"></canvas>
 
  
-			<h2>Análisis de la dinámica residencial y precios del suelo</h2>
+			<h2>Análisis de la dinámica residencial y precios del suelo (no verificado)</h2>
 			
 				<p>
 El mercado residencial en Salamanca muestra una <b>elevada presión en los precios de arrendamiento</b>, empujada por la constante demanda de la población flotante universitaria. Mientras que el <a href="/precio-vivienda">precio de venta</a> mantiene una senda de crecimiento moderado, el coste del alquiler por metro cuadrado ha alcanzado máximos históricos en los distritos de la zona central y universitaria.</p>
 
-<h3>Factores determinantes del mercado residencial</h3>
+<h3>Factores determinantes del mercado residencial (no verificado)</h3>
 <ul>
 <li><b>La rentabilidad bruta se mueve al contrario que el precio</b>: los barrios más caros (Centro, San Vicente, Vidal) ofrecen la rentabilidad bruta más baja de la ciudad (en torno al 4,7-4,8%), mientras que los de menor precio de compra (San José, Platina, Rollo, Los Alambres) superan el 6,2% — el patrón habitual en cualquier mercado inmobiliario maduro, donde el precio de compra sube más rápido que el alquiler en las zonas más demandadas.</li>
 <li><b>La excepción de San Bernardo</b>: con un 5,3% de rentabilidad bruta y una variación anual de compra del +4,8% —la más alta de toda la ciudad—, San Bernardo rompe ese patrón general por la <a href="/poblacion-universitaria">intensa demanda de alquiler universitario</a> del entorno del Campus Miguel de Unamuno, tal y como ya se detalla en el <a href="/precio-vivienda">análisis de precios de compraventa por barrio</a>.</li>
 <li><b>Brecha entre centro y periferia</b>: existe una acusada diferencia en los valores de compraventa entre el centro urbano (que supera los 2.400 €/m²) y los barrios de la periferia histórica y el alfoz más alejado (por debajo de los 1.100 €/m²).</li>
 </ul>
 
-  <h2>Precio medio del alquiler por barrio (€/m²/mes)</h2>
+  <h2>Precio medio del alquiler por barrio (€/m²/mes) (no verificado)</h2>
   <canvas id="alquilerBarriosChart" width="800" height="1300"></canvas>
 
 			<p>Esta tensión en el alquiler residencial no se explica solo por la demanda universitaria: la creciente competencia de las viviendas de uso turístico por el mismo parque de pisos en el casco histórico agrava la escasez de oferta a largo plazo, como recoge el análisis específico sobre la <a href="/vivienda-alquiler-turismo-salamanca">relación entre alquiler y turismo en Salamanca</a>.</p>
@@ -43,11 +45,11 @@ El mercado residencial en Salamanca muestra una <b>elevada presión en los preci
 			<table border="1" cellpadding="5" cellspacing="0">
 			  <thead>
 				<tr>
-				  <th>Barrio / Municipio</th>
-				  <th>Precio Compra (€/m²)</th>
-				  <th>Precio Alquiler (€/m²/mes)</th>
-				  <th>Variación Anual Compra (%)</th>
-				  <th>Rentabilidad Bruta Est. (%)</th>
+				  <th>Barrio / Municipio (no verificado)</th>
+				  <th>Precio Compra (€/m²) (no verificado)</th>
+				  <th>Precio Alquiler (€/m²/mes) (no verificado)</th>
+				  <th>Variación Anual Compra (%) (no verificado)</th>
+				  <th>Rentabilidad Bruta Est. (%) (no verificado)</th>
 				</tr>
 			  </thead>
 			  <tbody>
@@ -98,6 +100,7 @@ El mercado residencial en Salamanca muestra una <b>elevada presión en los preci
 				<tr><td>San José</td><td>1.050 €</td><td>5.40 €</td><td>+1.5%</td><td>6.2%</td></tr>
 			  </tbody>
 			</table>
+			<p><small>No verificado: todos los datos de esta tabla carecen de fuente contrastada y se mantienen solo como referencia.</small></p>
 
 			</div>
 			
@@ -115,7 +118,7 @@ El mercado residencial en Salamanca muestra una <b>elevada presión en los preci
         labels: ['2018', '2019', '2020', '2021', '2022', '2023', '2024', '2025'],
         datasets: [
           {
-            label: 'Precio Compraventa (€/m²)',
+            label: 'Precio Compraventa (€/m²) (no verificado)',
             data: [1580, 1620, 1590, 1640, 1710, 1780, 1840, 1890],
             borderColor: '#1E56A0',
             backgroundColor: 'rgba(30, 86, 160, 0.1)',
@@ -125,7 +128,7 @@ El mercado residencial en Salamanca muestra una <b>elevada presión en los preci
             fill: true
           },
           {
-            label: 'Precio Alquiler (€/m²/mes)',
+            label: 'Precio Alquiler (€/m²/mes) (no verificado)',
             data: [6.8, 7.2, 7.1, 7.5, 8.1, 8.7, 9.2, 9.6],
             borderColor: '#E63946',
             backgroundColor: 'transparent',
@@ -143,14 +146,14 @@ El mercado residencial en Salamanca muestra una <b>elevada presión en los preci
             type: 'linear',
             display: true,
             position: 'left',
-            title: { display: true, text: 'Compraventa (€/m²)' }
+            title: { display: true, text: 'Compraventa (€/m²) (no verificado)' }
           },
           y1: {
             type: 'linear',
             display: true,
             position: 'right',
             grid: { drawOnChartArea: false },
-            title: { display: true, text: 'Alquiler (€/m²/mes)' }
+            title: { display: true, text: 'Alquiler (€/m²/mes) (no verificado)' }
           },
           x: { title: { display: true, text: 'Año' } }
         }
@@ -174,7 +177,7 @@ El mercado residencial en Salamanca muestra una <b>elevada presión en los preci
           'Los Alcaldes', 'Los Alambres', 'Rollo', 'Platina', 'San José'
         ],
         datasets: [{
-          label: 'Precio Alquiler (€/m²/mes)',
+          label: 'Precio Alquiler (€/m²/mes) (no verificado)',
           data: [
             9.80, 9.10, 8.90, 8.70, 8.50, 8.30, 8.40, 8.20, 8.10, 8.40,
             7.90, 7.80, 7.50, 6.90, 7.40, 7.40, 6.70, 7.40, 7.30, 7.20,
@@ -191,7 +194,7 @@ El mercado residencial en Salamanca muestra una <b>elevada presión en los preci
         responsive: true,
         plugins: { legend: { display: false } },
         scales: {
-          x: { title: { display: true, text: 'Euros por m² al mes (€)' } },
+          x: { title: { display: true, text: 'Euros por m² al mes (€) (no verificado)' } },
           y: { title: { display: true, text: 'Barrio / Municipio' } }
         }
       }

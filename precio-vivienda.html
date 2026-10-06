@@ -2,7 +2,7 @@
 layout: default
 title: Evolución del precio de la vivienda
 description: Precio medio por metro cuadrado en compraventa y alquiler en los 40 barrios de Salamanca y su alfoz
-date: 29-08-2026
+date: 06-10-2026
 folder: Urbanismo
 permalink: precio-vivienda
 ---
@@ -17,15 +17,17 @@ permalink: precio-vivienda
 
 			<div id="section-content">
 
+  <p style="background:#FFF4E5; border-left:4px solid #F4A261; padding:10px 14px;"><b>No verificado.</b> Los precios de venta y alquiler por barrio y la serie 2015-2025 de esta página (texto, gráficos y tabla) proceden de una versión anterior y no tienen una fuente que Open Salamanca haya podido contrastar: no consta si vienen de portales inmobiliarios, notarios o estadísticas oficiales, y los valores por barrio descienden de forma casi regular, algo poco habitual en datos reales. La serie llega hasta 2025, un ejercicio que algunas fuentes oficiales aún no han cerrado. La IDE municipal no publica precios de vivienda. Se mantienen solo como referencia.</p>
+
   <canvas id="viviendaBarriosChart" width="800" height="1300"></canvas>
 
 
-			<h2>Análisis de las principales conclusiones</h2>
+			<h2>Análisis de las principales conclusiones (no verificado)</h2>
 
 				<p>
 El mercado inmobiliario en los 40 barrios de la ciudad de Salamanca y sus municipios limítrofes presenta un <b>comportamiento fuertemente polarizado</b>. El dinamismo derivado de la demanda universitaria y turística mantiene tensionados los precios de compraventa y alquiler en el casco histórico y la primera corona de expansión, mientras que los barrios periféricos muestran crecimientos más moderados.</p>
 
-<h3>Tendencias inmobiliarias clave</h3>
+<h3>Tendencias inmobiliarias clave (no verificado)</h3>
 <ul>
 <li><b>Presión en el Centro y el anillo universitario</b>: El distrito Centro encabeza los precios superando los 2.480 €/m² en compraventa y los 9,80 €/m²/mes en alquiler, seguido de San Vicente, Vidal, Chamberí y Carmen, y de áreas de expansión del alfoz residencial como Carbajosa de la Sagrada y Villamayor de Armuña.</li>
 
@@ -36,7 +38,7 @@ El mercado inmobiliario en los 40 barrios de la ciudad de Salamanca y sus munici
 
 <p>Esta distribución por barrios se enmarca en la evolución agregada del mercado en la capital, con un precio medio que ha alcanzado los 1.885 €/m² en 2025 tras una década de crecimiento casi ininterrumpido.</p>
 
-  <h2>Evolución del precio medio de compraventa en Salamanca capital (2015-2025)</h2>
+  <h2>Evolución del precio medio de compraventa en Salamanca capital (2015-2025) (no verificado)</h2>
   <canvas id="viviendaHistoricoChart" width="800" height="400"></canvas>
 
 			</div>
@@ -45,10 +47,10 @@ El mercado inmobiliario en los 40 barrios de la ciudad de Salamanca y sus munici
 			<table border="1" cellpadding="5" cellspacing="0">
 			  <thead>
 				<tr>
-				  <th>Barrio / Municipio</th>
-				  <th>Precio Venta (€/m²)</th>
-				  <th>Precio Alquiler (€/m²/mes)</th>
-				  <th>Var. Anual Venta (%)</th>
+				  <th>Barrio / Municipio (no verificado)</th>
+				  <th>Precio Venta (€/m²) (no verificado)</th>
+				  <th>Precio Alquiler (€/m²/mes) (no verificado)</th>
+				  <th>Var. Anual Venta (%) (no verificado)</th>
 				</tr>
 			  </thead>
 			  <tbody>
@@ -99,6 +101,7 @@ El mercado inmobiliario en los 40 barrios de la ciudad de Salamanca y sus munici
 				<tr><td>San José</td><td>1.050</td><td>5.40</td><td>+1.5%</td></tr>
 			  </tbody>
 			</table>
+			<p><small>No verificado: todos los datos de esta tabla carecen de fuente contrastada y se mantienen solo como referencia.</small></p>
 
 			</div>
 
@@ -135,7 +138,7 @@ El mercado inmobiliario en los 40 barrios de la ciudad de Salamanca y sus munici
       data: {
         labels: viviendaLabels,
         datasets: [{
-          label: 'Precio Compraventa (€/m²)',
+          label: 'Precio Compraventa (€/m²) (no verificado)',
           data: viviendaPrecios,
           backgroundColor: 'rgba(30, 86, 160, 0.75)',
           borderColor: '#1E56A0',
@@ -150,7 +153,7 @@ El mercado inmobiliario en los 40 barrios de la ciudad de Salamanca y sus munici
           legend: { display: true, position: 'top' }
         },
         scales: {
-          x: { title: { display: true, text: 'Precio (€/m²)' } },
+          x: { title: { display: true, text: 'Precio (€/m²) (no verificado)' } },
           y: { title: { display: true, text: 'Zona / Barrio' } }
         }
       }
@@ -163,7 +166,7 @@ El mercado inmobiliario en los 40 barrios de la ciudad de Salamanca y sus munici
       data: {
         labels: ['2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024', '2025'],
         datasets: [{
-          label: 'Precio Medio Capital (€/m²)',
+          label: 'Precio Medio Capital (€/m²) (no verificado)',
           data: [1420, 1445, 1490, 1540, 1610, 1590, 1630, 1690, 1755, 1820, 1885],
           borderColor: '#2C5F2D',
           backgroundColor: 'rgba(44, 95, 45, 0.1)',
@@ -175,7 +178,7 @@ El mercado inmobiliario en los 40 barrios de la ciudad de Salamanca y sus munici
       options: {
         responsive: true,
         scales: {
-          y: { title: { display: true, text: 'Euros por m² (€)' } },
+          y: { title: { display: true, text: 'Euros por m² (€) (no verificado)' } },
           x: { title: { display: true, text: 'Año' } }
         }
       }
