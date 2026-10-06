@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Zonas de esparcimiento canino (ZEC)
-description: Los parques caninos de Salamanca, casi 151.000 m2 repartidos por la ciudad para los perros censados en la capital
-date: 15-09-2026
+description: Mapa de las 31 zonas de esparcimiento canino de Salamanca según la IDE municipal, con su superficie, su reparto por barrios y su relación con los parques infantiles
+date: 06-10-2026
 folder: Medio Ambiente
 permalink: parques-caninos-salamanca
 ---
@@ -28,7 +28,7 @@ Salamanca cuenta con una red de <b>32 parques caninos que suman 150.974 m²</b> 
 
 <h3>Hallazgos clave sobre los parques caninos</h3>
 <ul>
-<li><b>Un tamaño muy desigual</b>: el <a href="/zonas-verdes">Parque del Baldío</a> reserva, con diferencia, el mayor espacio para perros de la ciudad (115.280 m²), muy por encima del Parque de Valhondo (22.250 m²). En el extremo opuesto, el parque canino de las Islas Baleares, en Pizarrales, apenas ocupa 255 m².</li>
+<li><b>Un tamaño muy desigual</b>: el <a href="/zonas-verdes">Parque del Baldío</a> reserva, con diferencia, el mayor espacio para perros de la ciudad (115.280 m²), el 77 % de la superficie total de la capa de la IDE municipal. Le siguen los Jerónimos (3.300 m²), Villar y Macías (3.210 m²) y Valhondo (2.855 m²). En el extremo opuesto, la zona de la plaza de las Islas Baleares, en Pizarrales, apenas ocupa 255 m².</li>
 <li><b>Siete zonas nuevas repartidas por los barrios</b>: el Ayuntamiento amplió la red con siete parques caninos nuevos en el Parque El Sol (Chamberí), la Plaza de Santa Cecilia (San José), el entorno del CAEM (Prosperidad), el Parque de los Gozos y las Sombras (Garrido), la Avenida de Santiago Madrigal, el Parque de Tomás Bretón y la calle Juan Manso (Puente Ladrillo).</li>
 <li><b>Casi 15.000 perros censados</b>: el Sistema de Identificación de Mascotas registraba 14.959 perros en Salamanca capital. La cifra ya se acerca a las cerca de 20.000 mascotas totales (perros y gatos) que el propio Ayuntamiento contabilizaba en 2018, año en el que --por primera vez de forma constatada-- las <a href="/poblacion-demografia">mascotas superaron en número a los menores de 0 a 15 años</a> empadronados en la capital (17.372 frente a cerca de 20.000).</li>
 <li><b>Cinco parques caninos en pleno Casco Histórico</b>: pese a la limitación de espacio del centro urbano, la red incluye cinco zonas de esparcimiento canino dentro del casco antiguo, entre ellas una de las dos primeras que se instalaron en la ciudad, en el Parque de los Jesuitas.</li>
@@ -36,7 +36,22 @@ Salamanca cuenta con una red de <b>32 parques caninos que suman 150.974 m²</b> 
 
 <p>Esta red convive con el resto de <a href="/zonas-verdes">zonas verdes y parques urbanos</a> de la ciudad y con las <a href="/parques-infantiles-salamanca">zonas de juegos infantiles</a>, con las que en ocasiones comparte espacio dentro de un mismo parque.</p>
 
-  <h2>Superficie de los principales parques caninos (m²)</h2>
+  <h2>Las 31 zonas de la IDE municipal</h2>
+  <p>
+La capa "Zonas Perros Parque" de la IDE municipal (Infraestructura de Datos Espaciales del Ayuntamiento) contiene <b>31 zonas</b> con nombre, superficie y, en 30 de ellas, coordenadas. Suman <b>150.321 m²</b>, una cifra muy próxima a los 150.974 m² que cuenta la prensa para 32 parques.</p>
+  <ul>
+    <li><b>Un parque gigante y muchas zonas pequeñas.</b> Sin el Baldío, las otras 30 zonas suman 35.041 m² y miden de media 1.168 m². La mediana de las 31 es de 875 m²: 6 zonas tienen menos de 500 m², 15 entre 500 y 1.000 m², 7 entre 1.000 y 3.000 m² y solo 3 superan los 3.000 m² (el Baldío, los Jerónimos y Villar y Macías).</li>
+    <li><b>Presencia en casi todos los barrios.</b> Según los límites aproximados de los barrios, las 30 zonas localizadas se reparten por 21 barrios. San Bernardo tiene 3, y Chamberí, Prosperidad, Salesas, Pizarrales, Platina y Vidal tienen 2 cada uno. El Baldío queda fuera de esos límites, en el extremo este de la ciudad.</li>
+    <li><b>Casi siempre junto a un parque infantil.</b> 19 de las 30 zonas localizadas están a menos de 100 metros de un punto de la capa de <a href="/parques-infantiles-salamanca">juegos infantiles</a>, con ejemplos como la plaza de las Islas Baleares (12 m), Vistahermosa (10 m) o la avenida de Salamanca (12 m).</li>
+    <li><b>La capa no recoge las siete zonas nuevas.</b> Solo dos de las siete incorporaciones citadas arriba aparecen en la capa (la plaza de Santa Cecilia, 424 m², y el parque de los Gozos y las Sombras, 2.109 m²). Faltan el Parque El Sol, el entorno del CAEM, la avenida de Santiago Madrigal, el parque de Tomás Bretón y la calle Juan Manso, por lo que ya no se muestran en el mapa: sus coordenadas anteriores eran un punto central del barrio y no la ubicación real.</li>
+    <li><b>Superficie del Valhondo.</b> La prensa le atribuía 22.250 m², pero la capa de la IDE le asigna 2.855 m². Esta página utiliza la cifra de la capa.</li>
+  </ul>
+  <p style="font-size: 0.9em; color: #555;">El barrio de cada punto se calcula con los <a href="/mapa-capas-salamanca">límites aproximados de los barrios</a>, que no son oficiales. La capa tiene identificadores repetidos (el 6 aparece tres veces y el 21 dos) y una zona, la de la calle La Milagrosa (414 m²), sin coordenadas, por lo que no figura en el mapa.</p>
+
+  <h2>Distribución de las zonas por tamaño</h2>
+  <canvas id="caninosTamanoChart" width="800" height="320"></canvas>
+
+  <h2>Las diez mayores zonas sin contar el Baldío (m²)</h2>
   <canvas id="caninosChart" width="800" height="400"></canvas>
 
 			</div>
@@ -46,28 +61,47 @@ Salamanca cuenta con una red de <b>32 parques caninos que suman 150.974 m²</b> 
 			<table border="1" cellpadding="5" cellspacing="0">
 			  <thead>
 				<tr>
-				  <th>Parque Canino</th>
-				  <th>Barrio / Zona</th>
+				  <th>Zona de esparcimiento canino</th>
 				  <th>Superficie</th>
-				  <th>Estado</th>
+				  <th>Barrio</th>
+				  <th>Observación</th>
 				</tr>
 			  </thead>
 			  <tbody>
-				<tr><td>Parque del Baldío</td><td>n.d.</td><td>115.280 m²</td><td>Existente (el mayor de la ciudad)</td></tr>
-				<tr><td>Parque de Valhondo</td><td>Pizarrales</td><td>22.250 m²</td><td>Existente</td></tr>
-				<tr><td>Parque de los Jesuitas</td><td>Providencia / Delicias</td><td>n.d.</td><td>Existente (uno de los dos primeros)</td></tr>
-				<tr><td>Parque del Túnel de la Radio</td><td>n.d.</td><td>n.d.</td><td>Existente</td></tr>
-				<tr><td>Parque Islas Baleares</td><td>Pizarrales</td><td>255 m² (el menor de la red)</td><td>Existente</td></tr>
-				<tr><td>Parque El Sol</td><td>Chamberí</td><td>n.d.</td><td>Nuevo (ampliación de 7 zonas)</td></tr>
-				<tr><td>Plaza de Santa Cecilia</td><td>San José</td><td>n.d.</td><td>Nuevo (ampliación de 7 zonas)</td></tr>
-				<tr><td>Entorno del CAEM</td><td>Prosperidad</td><td>n.d.</td><td>Nuevo (ampliación de 7 zonas)</td></tr>
-				<tr><td>Parque de los Gozos y las Sombras</td><td>Garrido</td><td>n.d.</td><td>Nuevo (ampliación de 7 zonas)</td></tr>
-				<tr><td>Avenida de Santiago Madrigal</td><td>n.d.</td><td>n.d.</td><td>Nuevo (ampliación de 7 zonas)</td></tr>
-				<tr><td>Parque de Tomás Bretón</td><td>n.d.</td><td>n.d.</td><td>Nuevo (ampliación de 7 zonas)</td></tr>
-				<tr><td>Calle Juan Manso</td><td>Puente Ladrillo</td><td>n.d.</td><td>Nuevo (ampliación de 7 zonas)</td></tr>
+				<tr><td>Parque del Baldío</td><td>115.280 m²</td><td>Fuera de los límites usados</td><td></td></tr>
+				<tr><td>Parque de los Jerónimos</td><td>3.300 m²</td><td>Prosperidad (aprox.)</td><td></td></tr>
+				<tr><td>Villar y Macías</td><td>3.210 m²</td><td>San Bernardo (aprox.)</td><td></td></tr>
+				<tr><td>Parque Valhondo</td><td>2.855 m²</td><td>Pizarrales (aprox.)</td><td></td></tr>
+				<tr><td>Túnel de la radio</td><td>2.750 m²</td><td>Rollo (aprox.)</td><td></td></tr>
+				<tr><td>Parque de los Jesuitas</td><td>2.140 m²</td><td>Prosperidad (aprox.)</td><td></td></tr>
+				<tr><td>Parque de los Gozos y las Sombras</td><td>2.109 m²</td><td>Garrido Norte (aprox.)</td><td>Nueva en la ampliación de 7 zonas</td></tr>
+				<tr><td>Parque de la Chinchibarra</td><td>2.100 m²</td><td>Chinchibarra (aprox.)</td><td></td></tr>
+				<tr><td>Vistahermosa</td><td>1.600 m²</td><td>Vistahermosa (aprox.)</td><td></td></tr>
+				<tr><td>Enrique de Osso</td><td>1.230 m²</td><td>Vidal (aprox.)</td><td></td></tr>
+				<tr><td>Parque en Paseo del Lunes de Aguas</td><td>950 m²</td><td>Chamberí (aprox.)</td><td></td></tr>
+				<tr><td>Tejares - Bernardo Dorado</td><td>936 m²</td><td>Chamberí (aprox.)</td><td></td></tr>
+				<tr><td>Calle Navalmoral de la Mata - Barrio Buenos Aires</td><td>913 m²</td><td>Buenos Aires (aprox.)</td><td></td></tr>
+				<tr><td>Los Alcaldes</td><td>900 m²</td><td>Los Alcaldes (aprox.)</td><td></td></tr>
+				<tr><td>Parque Zurguén</td><td>900 m²</td><td>Teso de la Feria (aprox.)</td><td></td></tr>
+				<tr><td>Calle Muñovela</td><td>875 m²</td><td>Tejares (aprox.)</td><td></td></tr>
+				<tr><td>Plaza barrio Vidal</td><td>840 m²</td><td>Vidal (aprox.)</td><td></td></tr>
+				<tr><td>Parque Salesas</td><td>800 m²</td><td>Salesas (aprox.)</td><td></td></tr>
+				<tr><td>Plaza de la Concordia</td><td>795 m²</td><td>Salesas (aprox.)</td><td></td></tr>
+				<tr><td>Parque Don Juan Tenorio</td><td>795 m²</td><td>Platina (aprox.)</td><td></td></tr>
+				<tr><td>Parque Ciudad Rodrigo</td><td>690 m²</td><td>Puente Ladrillo (aprox.)</td><td></td></tr>
+				<tr><td>Parque Isidro García Barrado</td><td>550 m²</td><td>San Isidro (aprox.)</td><td></td></tr>
+				<tr><td>Campo San Francisco</td><td>550 m²</td><td>Centro (aprox.)</td><td></td></tr>
+				<tr><td>Parque Nueva de San Bernardo</td><td>535 m²</td><td>San Bernardo (aprox.)</td><td></td></tr>
+				<tr><td>Paseo Enrique de Sena</td><td>520 m²</td><td>Platina (aprox.)</td><td></td></tr>
+				<tr><td>Avda. Salamanca</td><td>455 m²</td><td>Blanco (aprox.)</td><td></td></tr>
+				<tr><td>Plaza Santa Cecilia</td><td>424 m²</td><td>San José (aprox.)</td><td>Nueva en la ampliación de 7 zonas</td></tr>
+				<tr><td>Calle La Milagrosa</td><td>414 m²</td><td>—</td><td>Sin coordenadas en la capa</td></tr>
+				<tr><td>Parque Calle los Villares</td><td>350 m²</td><td>San Bernardo (aprox.)</td><td></td></tr>
+				<tr><td>Julián Sánchez el Charro</td><td>300 m²</td><td>Labradores (aprox.)</td><td></td></tr>
+				<tr><td>Plaza Baleares</td><td>255 m²</td><td>Pizarrales (aprox.)</td><td></td></tr>
 			  </tbody>
 			</table>
-			<p style="font-size: 0.9em; color: #555;">*n.d.: dato no publicado en las fuentes consultadas. Superficies según prensa local; el resto de zonas de la red (hasta completar las 32-33 totales) no tiene desglose individual publicado.</p>
+			<p style="font-size: 0.9em; color: #555;">Fuente: capa "Zonas Perros Parque" de la IDE del Ayuntamiento de Salamanca. No figuran en la capa el Parque El Sol, el entorno del CAEM, la avenida de Santiago Madrigal, el parque de Tomás Bretón ni la calle Juan Manso, citados en las siete zonas nuevas.</p>
 
 			</div>
 
@@ -86,55 +120,52 @@ Salamanca cuenta con una red de <b>32 parques caninos que suman 150.974 m²</b> 
     const mapCaninos = L.map('mapaCaninos').setView([40.9650, -5.6630], 13);
 
     L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/light_all/{z}/{x}/{y}{r}.png?key=cb1_2izw_1_55d93b51ded1dcecfa044181', {
-      attribution: '&copy; OpenStreetMap &copy; CARTO',
+      attribution: '&copy; OpenStreetMap &copy; CARTO | Datos: IDE Ayuntamiento de Salamanca',
       subdomains: 'abcd',
       maxZoom: 19
     }).addTo(mapCaninos);
 
-    // Centroide real de cada barrio en barrios-salamanca.json para las zonas con ubicación conocida
-    const parquesCaninos = [
-      { name: 'Parque de Valhondo', lat: 40.9763, lng: -5.6798, desc: '22.250 m², en Pizarrales', color: '#2C5F2D' },
-      { name: 'Parque Islas Baleares', lat: 40.9763, lng: -5.6798, desc: '255 m², el más pequeño de la red, en Pizarrales', color: '#2C5F2D' },
-      { name: 'Parque El Sol', lat: 40.9558, lng: -5.6812, desc: 'Nueva zona canina en Chamberí', color: '#E63946' },
-      { name: 'Plaza de Santa Cecilia', lat: 40.9493, lng: -5.6596, desc: 'Nueva zona canina en San José', color: '#E63946' },
-      { name: 'Entorno del CAEM', lat: 40.9601, lng: -5.6519, desc: 'Nueva zona canina en Prosperidad', color: '#E63946' },
-      { name: 'Parque de los Gozos y las Sombras', lat: 40.9740, lng: -5.6500, desc: 'Nueva zona canina en Garrido', color: '#E63946' },
-      { name: 'Calle Juan Manso', lat: 40.9716, lng: -5.6382, desc: 'Nueva zona canina en Puente Ladrillo', color: '#E63946' }
-    ];
+    // [nombre, superficie en m², latitud, longitud, barrio aproximado]. Fuente: IDE Ayuntamiento de Salamanca
+    const parquesCaninos = [["Parque de la Chinchibarra",2100,40.97806776,-5.65660852,"Chinchibarra"],["Parque Nueva de San Bernardo",535,40.96821835,-5.67052057,"San Bernardo"],["Parque en Paseo del Lunes de Aguas",950,40.95612525,-5.68502154,"Chamberí"],["Parque de los Jerónimos",3300,40.9564829,-5.65680774,"Prosperidad"],["Vistahermosa",1600,40.94986669,-5.67934733,"Vistahermosa"],["Plaza de la Concordia",795,40.97473905,-5.65876147,"Salesas"],["Parque Isidro García Barrado",550,40.96622784,-5.65013219,"San Isidro"],["Túnel de la radio",2750,40.96928616,-5.65213398,"Rollo"],["Los Alcaldes",900,40.95297658,-5.69209116,"Los Alcaldes"],["Parque Zurguén",900,40.95135318,-5.6740497,"Teso de la Feria"],["Parque Valhondo",2855,40.97632393,-5.67981217,"Pizarrales"],["Parque Don Juan Tenorio",795,40.96582241,-5.68726274,"Platina"],["Plaza Baleares",255,40.97811888,-5.67755174,"Pizarrales"],["Parque de los Jesuitas",2140,40.96096031,-5.65490555,"Prosperidad"],["Parque del Baldío",115280,40.96707795,-5.6296608,""],["Villar y Macías",3210,40.97270354,-5.67419824,"San Bernardo"],["Parque Salesas",800,40.97473344,-5.66146052,"Salesas"],["Parque Calle los Villares",350,40.97063928,-5.67410999,"San Bernardo"],["Julián Sánchez el Charro",300,40.97056407,-5.66088821,"Labradores"],["Plaza barrio Vidal",840,40.97382438,-5.6670395,"Vidal"],["Avda. Salamanca",455,40.97647566,-5.66872412,"Blanco"],["Paseo Enrique de Sena",520,40.9638371,-5.68544357,"Platina"],["Campo San Francisco",550,40.96586991,-5.6683851,"Centro"],["Enrique de Osso",1230,40.97797442,-5.66542828,"Vidal"],["Tejares - Bernardo Dorado",936,40.95534164,-5.68836019,"Chamberí"],["Calle Navalmoral de la Mata - Barrio Buenos Aires",913,40.95434653,-5.7055174,"Buenos Aires"],["Parque Ciudad Rodrigo",690,40.9706439,-5.63667187,"Puente Ladrillo"],["Parque de los Gozos y las Sombras",2109,40.98033199,-5.65080586,"Garrido Norte"],["Plaza Santa Cecilia",424,40.9508325,-5.66260778,"San José"],["Calle Muñovela",875,40.95370907,-5.69628697,"Tejares"]];
+    const nuevas = ['Plaza Santa Cecilia', 'Parque de los Gozos y las Sombras'];
 
     parquesCaninos.forEach(p => {
-      L.circleMarker([p.lat, p.lng], {
-        radius: 9,
-        fillColor: p.color,
+      const nueva = nuevas.includes(p[0]);
+      L.circleMarker([p[2], p[3]], {
+        radius: p[0] === 'Parque del Baldío' ? 13 : 7,
+        fillColor: nueva ? '#E63946' : '#2C5F2D',
         color: '#ffffff',
         weight: 2,
         fillOpacity: 0.85
-      }).bindPopup(`<b>${p.name}</b><br>${p.desc}`).addTo(mapCaninos);
+      }).bindPopup(`<b>${p[0]}</b><br>${p[1].toLocaleString('es-ES')} m²${p[4] ? '<br>Barrio (aprox.): ' + p[4] : ''}${nueva ? '<br>Nueva en la ampliación de 7 zonas' : ''}`).addTo(mapCaninos);
     });
 
-    // 2. Gráfico de barras: superficie de los parques caninos con dato publicado
-    const ctxCaninos = document.getElementById('caninosChart').getContext('2d');
-    const caninosChart = new Chart(ctxCaninos, {
+    // 2. Gráfico: las diez mayores zonas sin el Baldío
+    new Chart(document.getElementById('caninosChart').getContext('2d'), {
       type: 'bar',
       data: {
-        labels: ['Parque del Baldío', 'Parque de Valhondo', 'Parque Islas Baleares (Pizarrales)'],
-        datasets: [{
-          label: 'Superficie (m²)',
-          data: [115280, 22250, 255],
-          backgroundColor: ['#2C5F2D', '#1E56A0', '#F4A261'],
-          borderRadius: 4
-        }]
+        labels: ["Parque de los Jerónimos", "Villar y Macías", "Parque Valhondo", "Túnel de la radio", "Parque de los Jesuitas", "Parque de los Gozos y las Sombras", "Parque de la Chinchibarra", "Vistahermosa", "Enrique de Osso", "Parque en Paseo del Lunes de Aguas"],
+        datasets: [{ label: 'Superficie (m²)', data: [3300, 3210, 2855, 2750, 2140, 2109, 2100, 1600, 1230, 950], backgroundColor: '#2C5F2D', borderRadius: 4 }]
       },
       options: {
         indexAxis: 'y',
         responsive: true,
-        plugins: {
-          legend: { display: false },
-          title: { display: true, text: 'El Baldío concentra más de 5 veces la superficie de Valhondo, el segundo mayor', font: { size: 13 } }
-        },
-        scales: {
-          x: { type: 'logarithmic', title: { display: true, text: 'Superficie en m² (escala logarítmica)' } }
-        }
+        plugins: { legend: { display: false } },
+        scales: { x: { beginAtZero: true, title: { display: true, text: 'Superficie en m²' } } }
+      }
+    });
+
+    // 3. Gráfico: distribución por tamaño
+    new Chart(document.getElementById('caninosTamanoChart').getContext('2d'), {
+      type: 'bar',
+      data: {
+        labels: ['Menos de 500 m²', '500 a 999 m²', '1.000 a 2.999 m²', '3.000 m² o más'],
+        datasets: [{ label: 'Zonas', data: [6, 15, 7, 3], backgroundColor: ['#F4A261', '#97BC62', '#2C5F2D', '#1E56A0'], borderRadius: 4 }]
+      },
+      options: {
+        responsive: true,
+        plugins: { legend: { display: false }, title: { display: true, text: '31 zonas; el Baldío (115.280 m²) está en el tramo de más de 3.000 m²', font: { size: 12 } } },
+        scales: { y: { beginAtZero: true, ticks: { stepSize: 2 }, title: { display: true, text: 'Número de zonas' } } }
       }
     });
   </script>
