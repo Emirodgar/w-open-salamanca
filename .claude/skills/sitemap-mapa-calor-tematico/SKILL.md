@@ -67,7 +67,7 @@ de la caché del navegador.
 
 Desde septiembre de 2026 la ejecución periódica **ya no la hace Claude Code**:
 el workflow [`.github/workflows/actualidad.yml`](../../../.github/workflows/actualidad.yml)
-lanza cada 48 h `scripts/actualidad/build.py`, que aplica estas mismas reglas
+lanza a diario (7:00-11:00 Madrid) `scripts/actualidad/build.py`, que aplica estas mismas reglas
 (pasos 1 a 6) llamando a la API de Gemini con el secret `GEMINI_API_KEY`.
 Reparto de trabajo:
 

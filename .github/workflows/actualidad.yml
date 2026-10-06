@@ -1,19 +1,17 @@
-name: Actualizar actualidad (Gemini, cada 48 h)
+name: Actualizar actualidad (Gemini, a diario)
 
 on:
   schedule:
     # GitHub Actions retrasa (y a veces directamente se salta) los
-    # triggers de `schedule` para esta cuenta: comprobado en la práctica
-    # que un cron puesto a las 5:00/6:00 UTC ha llegado a disparar hasta
-    # las 10:20 UTC, con 4-5h de retraso, y solo 3 de los ~8 disparos
-    # esperados en 4 días llegaron a producirse. Por eso NO intentamos
-    # acertar una hora exacta: disparamos un chequeo barato cada 3 horas
-    # todo el día, y el paso "Comprobar si toca actualizar" decide si
-    # procede mirando cuánto tiempo ha pasado de verdad desde el último
-    # commit de actualidad.json, no la hora del reloj. Así, la primera
-    # vez que GitHub se digne a lanzar el cron tras cumplirse el plazo,
-    # se ejecuta — sea a la hora que sea.
-    - cron: '0 */3 * * *'
+    # triggers de `schedule`: se ha comprobado que un cron a las 5:00/6:00 UTC
+    # ha llegado a disparar con 4-5 h de retraso y que se pierden disparos.
+    # Por eso hay varios disparadores entre las 7:00 y las 11:00 hora de
+    # Madrid (5-9 UTC en verano, 6-10 UTC en invierno; minuto :17 para evitar
+    # la hora en punto, la más saturada) y el paso "Comprobar si toca
+    # actualizar" decide: solo ejecuta si hoy (hora de Madrid) aún no se ha
+    # actualizado y ya son las 7:00 en Madrid. El primer disparo que llegue
+    # hace el trabajo; los siguientes de ese día se saltan.
+    - cron: '17 5,6,7,8,9 * * *'
   workflow_dispatch: {}
 
 permissions:
@@ -32,22 +30,21 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Comprobar si toca actualizar (por tiempo transcurrido, no por hora)
+      - name: Comprobar si toca actualizar (una vez al día, desde las 7:00 de Madrid)
         id: cuando
         run: |
-          ultimo=$(git log -1 --format=%ct -- actualidad.json || echo 0)
-          ahora=$(date -u +%s)
-          if [ -z "$ultimo" ]; then ultimo=0; fi
-          horas=$(( (ahora - ultimo) / 3600 ))
-          # Cada 48 h: el chequeo corre cada 3 h, así que con umbral 46 la
-          # ejecución cae entre las 46 y las 49 h del último commit.
-          umbral=46
-          if [ "$ultimo" = "0" ] || [ "$horas" -ge "$umbral" ]; then
-            echo "Han pasado ${horas}h desde el último commit de actualidad.json (umbral ${umbral}h): toca ejecutar."
-            echo "ejecutar=true" >> "$GITHUB_OUTPUT"
-          else
-            echo "Han pasado solo ${horas}h desde el último commit de actualidad.json (umbral ${umbral}h): no toca todavía."
+          hoy=$(TZ=Europe/Madrid date +%F)
+          hora=$(TZ=Europe/Madrid date +%H)
+          ultimo=$(TZ=Europe/Madrid git log -1 --date=format-local:%F --format=%cd -- actualidad.json || echo "")
+          if [ "$ultimo" = "$hoy" ]; then
+            echo "actualidad.json ya se actualizó hoy ($hoy): no toca."
             echo "ejecutar=false" >> "$GITHUB_OUTPUT"
+          elif [ "$((10#$hora))" -lt 7 ]; then
+            echo "Son las ${hora}h en Madrid (antes de las 7:00): no toca todavía."
+            echo "ejecutar=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "Último commit: ${ultimo:-ninguno}; hoy es $hoy y son las ${hora}h en Madrid: toca ejecutar."
+            echo "ejecutar=true" >> "$GITHUB_OUTPUT"
           fi
 
       - name: Configurar Python
