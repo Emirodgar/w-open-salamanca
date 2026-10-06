@@ -1,0 +1,154 @@
+---
+layout: default
+title: Farmacias, desfibriladores, gasolineras y cementerios de Salamanca
+description: Mapa de 82 farmacias, 56 desfibriladores en instalaciones municipales, 18 gasolineras y 2 cementerios de la IDE municipal, y qué barrios tienen más o menos cobertura
+date: 06-10-2026
+folder: Urbanismo
+permalink: servicios-ciudad-salamanca
+---
+
+    <section class="featured dataset" id="datos">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="section-title">{{ page.title }}</h1>
+                <p class="section-description">{{ page.description }}</p>
+            </div>
+
+			<div id="section-content">
+
+  <div id="mapaServicios" style="width: 100%; height: 520px; border-radius: 8px; margin-bottom: 10px;"></div>
+  <p style="font-size:0.9em; margin-bottom:25px;">Activa o desactiva cada capa arriba a la derecha. <span style="color:#2C8A3E;">&#9679;</span> Farmacias &nbsp; <span style="color:#C0392B;">&#9679;</span> Desfibriladores &nbsp; <span style="color:#F4A261;">&#9679;</span> Gasolineras &nbsp; <span style="color:#264653;">&#9679;</span> Cementerios.</p>
+
+			<h2>El Centro concentra 13 de las 82 farmacias</h2>
+
+			<p>
+La IDE municipal (Infraestructura de Datos Espaciales del Ayuntamiento) publica la ubicación de varios servicios de proximidad: <b>82 farmacias</b> (todas de titularidad privada), <b>56 desfibriladores</b> instalados en edificios municipales, <b>18 gasolineras</b> y <b>2 cementerios</b>. Con la población de cada barrio de la capa de indicadores de la IDE (unos 143.660 habitantes), la ciudad tiene <b>5,7 farmacias por cada 10.000 habitantes</b> y 3,9 desfibriladores municipales.
+</p>
+
+<h3>Hallazgos clave</h3>
+<ul>
+<li><b>El barrio Centro tiene casi siete veces más farmacias por habitante que la media.</b> Con 13 farmacias para unos 3.400 habitantes, sale a 38,1 por 10.000 habitantes. Le siguen San Bernardo (11,3) y Labradores (8,3). En el extremo opuesto, entre los barrios de más de 3.000 habitantes, están Puente Ladrillo (2,0), Pizarrales (2,1) y Tejares (2,4).</li>
+<li><b>Todos los barrios grandes tienen al menos una farmacia.</b> Ninguno de los 17 barrios de más de 3.000 habitantes se queda sin ninguna, aunque Pizarrales (9.657 habitantes) tiene solo 2.</li>
+<li><b>Cuatro barrios grandes no tienen ningún desfibrilador municipal en la capa:</b> Garrido Sur (8.445 habitantes), Oeste (8.109), Delicias (4.794) y Capuchinos (3.358). La capa recoge los desfibriladores de instalaciones municipales (bibliotecas, pabellones, centros municipales integrados, Policía Local, Bomberos...), no todos los de la ciudad, así que no equivale a la cobertura real.</li>
+<li><b>Prosperidad y Centro, los mejor dotados en desfibriladores entre los barrios de más de 3.000 habitantes.</b> Prosperidad suma 6 (11,1 por 10.000 habitantes) y el Centro 3 (8,8).</li>
+<li><b>Cinco gasolineras abren las 24 horas:</b> las dos Plenoil, la de gas natural de HAM (GNL y GNC), Repsol en la N-630 y BP. Esta última está en Aldeatejada, fuera del término municipal, aunque figura en la capa. Repsol es la marca dominante, con 10 de las 18.</li>
+<li><b>Dos cementerios.</b> San Carlos Borromeo abre de lunes a domingo de 9:00 a 21:00 y Virgen de la Salud, de 8:30 a 20:00.</li>
+</ul>
+
+  <h2>Farmacias por cada 10.000 habitantes en los barrios de más de 3.000 habitantes</h2>
+  <canvas id="farmaciasBarrioChart" width="800" height="460"></canvas>
+
+  <h2>Cómo leer estos datos</h2>
+  <ul>
+    <li>La población es la de la capa de indicadores por barrio de la IDE (campo de población total, sin año indicado); las ratios son orientativas.</li>
+    <li>El barrio de cada punto se calcula cruzando sus coordenadas con los polígonos de esa capa; los puntos fuera de los polígonos no cuentan en ningún barrio.</li>
+    <li>Los barrios con muy pocos habitantes se omiten porque una sola farmacia dispara la ratio. Una farmacia en un barrio pequeño o cerca de un límite puede atender también a los barrios vecinos.</li>
+    <li>La capa de farmacias identifica a los titulares con su nombre; aquí solo se muestra la dirección.</li>
+    <li>La capa de desfibriladores no incluye los de comercios, centros de salud, hospitales o espacios no municipales. No indica si están operativos ni su horario de acceso.</li>
+  </ul>
+
+			</div>
+
+			<div id="section-table">
+				<h2>Cobertura por barrio (barrios de más de 3.000 habitantes)</h2>
+				<table border="1" cellpadding="5" cellspacing="0">
+				  <thead>
+					<tr><th>Barrio</th><th>Habitantes</th><th>Farmacias</th><th>Farmacias por 10.000 hab.</th><th>Desfibriladores municipales</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>Centro</td><td>3.415</td><td>13</td><td>38,1</td><td>3</td></tr>
+					<tr><td>San Bernardo</td><td>4.427</td><td>5</td><td>11,3</td><td>1</td></tr>
+					<tr><td>Labradores</td><td>6.020</td><td>5</td><td>8,3</td><td>2</td></tr>
+					<tr><td>Salesas</td><td>5.850</td><td>4</td><td>6,8</td><td>1</td></tr>
+					<tr><td>Delicias</td><td>4.794</td><td>3</td><td>6,3</td><td>0</td></tr>
+					<tr><td>Oeste</td><td>8.109</td><td>5</td><td>6,2</td><td>0</td></tr>
+					<tr><td>Vidal</td><td>5.053</td><td>3</td><td>5,9</td><td>2</td></tr>
+					<tr><td>Garrido Norte</td><td>11.271</td><td>6</td><td>5,3</td><td>3</td></tr>
+					<tr><td>Zurguén</td><td>3.842</td><td>2</td><td>5,2</td><td>1</td></tr>
+					<tr><td>Chinchibarra</td><td>4.341</td><td>2</td><td>4,6</td><td>2</td></tr>
+					<tr><td>Rollo</td><td>6.841</td><td>3</td><td>4,4</td><td>1</td></tr>
+					<tr><td>Prosperidad</td><td>5.393</td><td>2</td><td>3,7</td><td>6</td></tr>
+					<tr><td>Garrido Sur</td><td>8.445</td><td>3</td><td>3,6</td><td>0</td></tr>
+					<tr><td>Capuchinos</td><td>3.358</td><td>1</td><td>3,0</td><td>0</td></tr>
+					<tr><td>Tejares</td><td>4.242</td><td>1</td><td>2,4</td><td>2</td></tr>
+					<tr><td>Pizarrales</td><td>9.657</td><td>2</td><td>2,1</td><td>4</td></tr>
+					<tr><td>Puente Ladrillo</td><td>5.038</td><td>1</td><td>2,0</td><td>1</td></tr>
+				  </tbody>
+				</table>
+
+				<h2>Gasolineras</h2>
+				<table border="1" cellpadding="5" cellspacing="0">
+				  <thead>
+					<tr><th>Estación</th><th>Dirección</th><th>Horario</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>Estación de Servicio Repsol</td><td>Av. de San Agustín, 78, 37005 Salamanca</td><td>07:00 - 23:00</td></tr>
+					<tr><td>Estación de Servicio Repsol</td><td>Av. Raimundo de Borgoña, 42, 37005 Salamanca</td><td>07:00 - 23:00</td></tr>
+					<tr><td>Estación de servicio Cepsa</td><td>Calle Calz. de Medina, 81, 37004 Salamanca</td><td>06:00 - 22:00</td></tr>
+					<tr><td>Estación de Servicio Repsol</td><td>Av. de Mirat, 40, D, 37005 Salamanca</td><td>07:00 - 23:00</td></tr>
+					<tr><td>Ronda Oeste</td><td>Av. de Luis Camoens, 20, 37007 Salamanca</td><td>07:00 - 23:00</td></tr>
+					<tr><td>Plenoil Salamanca I</td><td>Av. de la Aldehuela, 86, 37003 Salamanca</td><td>24h</td></tr>
+					<tr><td>Estación de Servicio Repsol</td><td>Avenida Aldehuela de los Guzmanes, 17, 37003 Salamanca</td><td>07:00 - 23:00</td></tr>
+					<tr><td>Repsol El Marín</td><td>C. Antonio López Borrasca, Nº2-14, 37008 Salamanca</td><td>07:00 - 23:00</td></tr>
+					<tr><td>Estación de Servicio Repsol</td><td>Av. de Lasalle, 198D, 37008 Salamanca</td><td>07:00 - 22:00</td></tr>
+					<tr><td>Estación de Servicio Repsol</td><td>Ctra. Fregeneda, 45, 37008 Salamanca</td><td>06:30 - 22:30</td></tr>
+					<tr><td>El Trébol</td><td>Ctra. Fregeneda, 12, 37008 Salamanca</td><td>07:00 - 23:00</td></tr>
+					<tr><td>Estación de Servicio Repsol</td><td>Av. de los Reyes de España, 26, 37008 Salamanca</td><td>07:00 - 3:00</td></tr>
+					<tr><td>Estación de Servicio Repsol</td><td>C. Saavedra y Fajardo, 78, 37008 Salamanca</td><td>06:00 - 24:00</td></tr>
+					<tr><td>Estación de Servicio Repsol</td><td>N-630, 338 DE, 37008 Salamanca</td><td>24h</td></tr>
+					<tr><td>Low Cost Carburantes</td><td>CL-517, Carr. Salamanca-Vitigudino, Km 1, 1, 37009 Salamanca</td><td>07:30 - 22:30</td></tr>
+					<tr><td>Ham Salamanca GNL - GNC</td><td>Calle Puerto de Gotemburgo, 1342A, 37008 Salamanca</td><td>24h</td></tr>
+					<tr><td>Plenoil Salamanca II</td><td>Diseminado Peñascal, s/n, 37008 Salamanca</td><td>24h</td></tr>
+					<tr><td>BP</td><td>C. Antonio Gaudi, 1, 37187 Aldeatejada, Salamanca</td><td>24h</td></tr>
+				  </tbody>
+				</table>
+				<p><small>Fuente: capas de farmacias, desfibriladores, gasolineras y cementerios de la IDE del Ayuntamiento de Salamanca; población por barrio de su capa de indicadores. Ratios elaboradas por Open Salamanca.</small></p>
+			</div>
+
+			{% include categories.html %}
+
+        </div>
+    </section>
+
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+	<script>
+    const mapServ = L.map('mapaServicios').setView([40.9650, -5.6650], 13);
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/light_all/{z}/{x}/{y}{r}.png?key=cb1_2izw_1_55d93b51ded1dcecfa044181', {
+      attribution: '&copy; OpenStreetMap &copy; CARTO | Datos: IDE Ayuntamiento de Salamanca', subdomains: 'abcd', maxZoom: 19
+    }).addTo(mapServ);
+    const esc = t => String(t).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+    // [dirección, lat, lng]
+    const farmacias = [["Paseo de los Nogales, 19",40.979,-5.6547],["Avenida de los Cedros, 25",40.9761,-5.6512],["Paseo de los Robles, 42",40.9777,-5.6515],["Paseo de la Estacion, 109",40.9724,-5.6494],["Avila, 15",40.973,-5.6539],["Maria Auxiliadora, 74",40.974,-5.6563],["Sumatra, 1-11",40.9714,-5.6418],["Plaza de Barcelona, 9",40.9742,-5.6491],["Alfonso VI, 1",40.9755,-5.6599],["Isaac Peral, 10-12",40.9748,-5.6543],["San Bruno, 66",40.9777,-5.6716],["Avenida Cipreses, 48",40.976,-5.6492],["Valles Mineros, s/n",40.9785,-5.6672],["Manuel Parada, 11",40.9484,-5.6585],["Paseo de la Estacion, 53",40.9701,-5.6542],["Garbalete, 1",40.974,-5.6524],["Federico Anaya, 43",40.9769,-5.6545],["Avenida Portugal, 30",40.9709,-5.6557],["M4 Auxiliadora, 45",40.9714,-5.6583],["Avenida Portugal, 82",40.9718,-5.6598],["Juan Pablo II, 4",40.9551,-5.6943],["Florencio Marcos, 21",40.9571,-5.6822],["La Alberca, 51",40.9692,-5.6743],["Avenida Portugal, 234",40.9733,-5.6743],["Plaza Jean Monet, 1",40.944,-5.6698],["Casablanca, 10",40.9476,-5.6713],["Avenida Villamayor, 69",40.9713,-5.6712],["Luis Vives, 13",40.972,-5.6657],["Paseo de San Vicente, 52-54",40.9653,-5.6722],["Avenida Villamayor, 28",40.9694,-5.6691],["Paseo San Vicente, 8",40.9666,-5.6698],["Apariles, 23",40.97,-5.6725],["Carretera Ledesma, 90",40.9763,-5.675],["Torres Villarroel, 45-49",40.9736,-5.6631],["Carretera Ledesma, 150",40.9786,-5.6758],["Plaza Virgen de la Vega, 8",40.9503,-5.6679],["Filiberto Villalobos, 43",40.9683,-5.6725],["Comercio, 2",40.9739,-5.6665],["Gran Capitan, 17",40.9736,-5.6642],["Maestro Jimenez, 8",40.9503,-5.6624],["Maestro Tarrega, 7",40.9514,-5.6649],["Plaza de San Julian, 13",40.9648,-5.6615],["Maria Auxiliadora, 8-10",40.9694,-5.6591],["Paseo de la Estacion, 11-13",40.9692,-5.6572],["Paseo Canalejas, 117-119",40.9616,-5.6586],["Avenida Comuneros, 25",40.9688,-5.6555],["Plaza del Oeste, 2",40.9705,-5.6678],["Gran Via, 24",40.9656,-5.6604],["Paseo del Rollo, 29",40.9659,-5.6521],["Cruz de Caravaca, 2",40.9681,-5.6527],["Rua Mayor, 27",40.963,-5.6652],["Plaza de la Fuente, 9",40.9678,-5.6675],["Calle Condes de Crespo Rascon, 2",40.9666,-5.6656],["Paseo Carmelitas, 54",40.9689,-5.6668],["Plaza del Corrillo, 18",40.9643,-5.665],["Camino de las Aguas, 6",40.9643,-5.6533],["Azafranal, 14",40.9669,-5.6612],["Toro, 70",40.9677,-5.6612],["Prior, 12",40.9652,-5.6653],["Plaza Canalejas, 55",40.9649,-5.6579],["Velarde, 3",40.9708,-5.6612],["Wences Moreno, 10",40.9702,-5.666],["Plaza de Breton, 6",40.963,-5.6605],["Plaza Mayor, 9",40.9646,-5.6636],["Paseo Rollo, 64",40.9667,-5.6499],["Avenida de la Salle, 26",40.9554,-5.6786],["Ancha, 22",40.9646,-5.6681],["San Justo, 16",40.9633,-5.6627],["Vazquez Coronado, 16-22",40.9678,-5.6627],["Zamora, 73",40.9692,-5.6638],["Salvador, s/n",40.9684,-5.6457],["Toro, 25",40.9664,-5.6628],["Avenida Campoamor, 26",40.9654,-5.6551],["Plaza del Mercado, 4",40.9651,-5.6632],["Zamora, 86",40.9695,-5.6635],["Doctor T. Villarroel, 22",40.9716,-5.6632],["Gran Via, 21-23",40.9671,-5.6592],["Plaza de los Basilios, 2",40.9612,-5.6619],["Camino de las Aguas, 59",40.9631,-5.6501],["Avenida Comuneros, 56-62",40.9685,-5.6486],["Poeta Iglesias, 21",40.9644,-5.6641],["Alfonso de Castro, 21",40.9733,-5.6599]];
+    // [ubicación, lat, lng]
+    const desfibriladores = [["Plaza Mayor",40.9654,-5.6639],["Íscar Peyra",40.9661,-5.6656],["CEFOL",40.9768,-5.6726],["Mantenimiento",40.9624,-5.6539],["Espacio Joven",40.9691,-5.6623],["CEAS San José",40.9505,-5.6624],["Bomberos",40.9788,-5.6612],["Biblioteca Gabriel y Galán",40.9701,-5.6619],["Biblioteca Torrente Ballester",40.9782,-5.6546],["Escuela de Música",40.9752,-5.6494],["Teatro Liceo",40.9663,-5.6625],["CAEM",40.96,-5.6524],["DA2",40.9587,-5.6521],["Centro Municipal Luis Vives",40.963,-5.6531],["CEAS Pizarrales",40.9785,-5.6743],["Complejo Deportivo Vicente del Bosque",40.9786,-5.6478],["Pabellón Municipal de Würzburg",40.9825,-5.653],["Parque Deportivo Rosa Colorado",40.9814,-5.6628],["Frontón San José",40.9461,-5.6598],["Pabellón Municipal de la Salud",40.9711,-5.6795],["CMI Puente Ladrillo",40.9711,-5.6381],["Centro de Convivencia Victoria Adrados",40.9716,-5.6711],["Peña Primera",40.9668,-5.6662],["EI Pizarrales",40.9795,-5.6749],["Polideportivo Río Tormes",40.9514,-5.6603],["CMI Tejares",40.955,-5.6956],["CMI Vistahermosa",40.9496,-5.6801],["Polideportivo Lazarillo de Tormes",40.955,-5.7017],["Centro de Emprendimiento y Formación Tormes +",40.9547,-5.6861],["Parque Móvil Municipal",40.9443,-5.6625],["Pabellón Municipal Reina Sofía",40.9474,-5.6629],["Centro Municipal de Mayores Trastormes",40.9566,-5.6802],["Centro Iglesia Vieja de Pizarrales",40.9779,-5.6757],["Biblioteca Municipal Carmen Martín Gaite",40.9751,-5.6775],["Torre de Vigilancia Aldehuela",40.9599,-5.6389],["Centro de Participación \"La Vega",40.95,-5.6683],["Museo Casa Lis",40.9596,-5.6668],["Centro de Recepción de Visitantes Fonda Veracruz",40.9597,-5.668],["Biblioteca Municipal Barrio Vidal",40.9753,-5.6671],["Estadio Helmantico",40.9957,-5.6632],["Casa Asociaciones",40.9758,-5.6666],["Pabellón de la Alamedilla",40.9679,-5.6563],["Campo de Fútbol Ángel Huerta",40.9864,-5.6459],["Campo de Fútbol la Salud",40.9711,-5.682],["Campo de Fútbol Zurguen",40.95,-5.673],["Campo de Fútbol Chamberí",40.9568,-5.6822],["Campo de Fútbol Nemesio Martín",40.9698,-5.6792],["Campo de Tiro El Pradillo",40.9508,-5.6582],["Casa de la Mujer \"Clara Campoamor",40.9664,-5.6495],["Centro Municipal de Mayores Tierra Charra",40.9748,-5.6505],["Comisaría Policía Local",40.9591,-5.6502],["Campo de Fútbol Reina Sofía",40.9464,-5.6656],["CMI Trujillo",40.9653,-5.6507],["C/ Valencia 1º",40.9711,-5.6608],["CMI Julián Sánchez El Charro",40.9742,-5.6588],["Centro Municipal de Mayores Juan de la Fuente",40.9615,-5.6634]];
+    // [nombre, dirección, horario, lat, lng]
+    const gasolineras = [["Estación de Servicio Repsol","Av. de San Agustín, 78, 37005 Salamanca","07:00 - 23:00",40.9788,-5.6581],["Estación de Servicio Repsol","Av. Raimundo de Borgoña, 42, 37005 Salamanca","07:00 - 23:00",40.9784,-5.6628],["Estación de servicio Cepsa","Calle Calz. de Medina, 81, 37004 Salamanca","06:00 - 22:00",40.9741,-5.6448],["Estación de Servicio Repsol","Av. de Mirat, 40, D, 37005 Salamanca","07:00 - 23:00",40.9701,-5.663],["Ronda Oeste","Av. de Luis Camoens, 20, 37007 Salamanca","07:00 - 23:00",40.9713,-5.6827],["Plenoil Salamanca I","Av. de la Aldehuela, 86, 37003 Salamanca","24h",40.9588,-5.6497],["Estación de Servicio Repsol","Avenida Aldehuela de los Guzmanes, 17, 37003 Salamanca","07:00 - 23:00",40.9581,-5.6533],["Repsol El Marín","C. Antonio López Borrasca, Nº2-14, 37008 Salamanca","07:00 - 23:00",40.9623,-5.6984],["Estación de Servicio Repsol","Av. de Lasalle, 198D, 37008 Salamanca","07:00 - 22:00",40.9551,-5.6935],["Estación de Servicio Repsol","Ctra. Fregeneda, 45, 37008 Salamanca","06:30 - 22:30",40.955,-5.6744],["El Trébol","Ctra. Fregeneda, 12, 37008 Salamanca","07:00 - 23:00",40.9558,-5.6728],["Estación de Servicio Repsol","Av. de los Reyes de España, 26, 37008 Salamanca","07:00 - 3:00",40.9572,-5.6659],["Estación de Servicio Repsol","C. Saavedra y Fajardo, 78, 37008 Salamanca","06:00 - 24:00",40.9475,-5.6701],["Estación de Servicio Repsol","N-630, 338 DE, 37008 Salamanca","24h",40.9553,-5.7064],["Low Cost Carburantes","CL-517, Carr. Salamanca-Vitigudino, Km 1, 1, 37009 Salamanca","07:30 - 22:30",40.9594,-5.7276],["Ham Salamanca GNL - GNC","Calle Puerto de Gotemburgo, 1342A, 37008 Salamanca","24h",40.9594,-5.7268],["Plenoil Salamanca II","Diseminado Peñascal, s/n, 37008 Salamanca","24h",40.939,-5.6836],["BP","C. Antonio Gaudi, 1, 37187 Aldeatejada, Salamanca","24h",40.9425,-5.6808]];
+    // [nombre, dirección, horario, teléfono, lat, lng]
+    const cementerios = [["Cementerio San Carlos Borromeo","Av. Obispo Sancho de Castilla, s/n, 37006 Salamanca","Lunes a Domingo de 09:00 a 21:00.","923 13 45 41",40.9734,-5.6845],["Cementerio Virgen Salud","C. San Ildefonso, 37008 Salamanca","Lunes a Domingo de 8:30-20:00.","923 19 37 23",40.9472,-5.6941]];
+    const capas = {
+      'Farmacias (82)': L.layerGroup().addTo(mapServ),
+      'Desfibriladores (56)': L.layerGroup().addTo(mapServ),
+      'Gasolineras (18)': L.layerGroup(),
+      'Cementerios (2)': L.layerGroup().addTo(mapServ)
+    };
+    const punto = (lat, lng, color, r, html, capa) => L.circleMarker([lat, lng], { radius: r, fillColor: color, color: '#fff', weight: 1.5, fillOpacity: 0.9 }).bindPopup(html).addTo(capa);
+    farmacias.forEach(f => punto(f[1], f[2], '#2C8A3E', 5, `<b>Farmacia</b><br>${esc(f[0])}`, capas['Farmacias (82)']));
+    desfibriladores.forEach(d => punto(d[1], d[2], '#C0392B', 5, `<b>Desfibrilador</b><br>${esc(d[0])}`, capas['Desfibriladores (56)']));
+    gasolineras.forEach(g => punto(g[3], g[4], '#F4A261', 6, `<b>${esc(g[0])}</b><br>${esc(g[1])}<br>${esc(g[2])}`, capas['Gasolineras (18)']));
+    cementerios.forEach(c => punto(c[4], c[5], '#264653', 9, `<b>${esc(c[0])}</b><br>${esc(c[1])}<br>${esc(c[2])}<br>Tel. ${esc(c[3])}`, capas['Cementerios (2)']));
+    L.control.layers(null, capas, { collapsed: false }).addTo(mapServ);
+
+    new Chart(document.getElementById('farmaciasBarrioChart').getContext('2d'), {
+      type: 'bar',
+      data: {
+        labels: ["Centro", "San Bernardo", "Labradores", "Salesas", "Delicias", "Oeste", "Vidal", "Garrido Norte", "Zurguén", "Chinchibarra", "Rollo", "Prosperidad", "Garrido Sur", "Capuchinos", "Tejares", "Pizarrales", "Puente Ladrillo"],
+        datasets: [{ label: 'Farmacias por 10.000 habitantes', data: [38.1, 11.3, 8.3, 6.8, 6.3, 6.2, 5.9, 5.3, 5.2, 4.6, 4.4, 3.7, 3.6, 3.0, 2.4, 2.1, 2.0], backgroundColor: '#2C8A3E', borderRadius: 4 }]
+      },
+      options: {
+        indexAxis: 'y', responsive: true,
+        plugins: { legend: { display: false } },
+        scales: { x: { beginAtZero: true, title: { display: true, text: 'Farmacias por 10.000 habitantes (media de la ciudad: 5,7)' } } }
+      }
+    });
+  </script>
