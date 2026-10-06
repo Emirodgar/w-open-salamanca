@@ -1,8 +1,8 @@
 ---
 layout: default
-title: Zonas verdes y esparcimiento canino
-description: Metros cuadrados de parque por habitante y mapa de áreas de esparcimiento canino en Salamanca
-date: 29-08-2026
+title: Parques y jardines de Salamanca
+description: Mapa y equipamiento de los 42 parques y jardines de la IDE municipal - zonas infantiles, pistas deportivas, máquinas de ejercicio, zonas para perros y merenderos - y qué datos de zonas verdes siguen sin verificar
+date: 06-10-2026
 folder: Medio Ambiente
 permalink: zonas-verdes
 ---
@@ -14,56 +14,139 @@ permalink: zonas-verdes
                 <h1 class="section-title">{{ page.title }}</h1>
                 <p class="section-description">{{ page.description }}</p>
             </div>
-			
+
 			<div id="section-content">
-						
-  <!-- Mapa interactivo de Parques y Zonas Caninas -->
-  <div id="mapaVerde" style="width: 100%; height: 500px; border-radius: 8px; margin-bottom: 25px;"></div>
 
- 
-			<h2>Análisis de la infraestructura verde urbana</h2>
-			
+  <p style="margin-bottom:8px;"><label for="filtroParque"><b>Mostrar parques con:</b></label>
+    <select id="filtroParque" style="padding:4px 8px;">
+      <option value="">Todos (42)</option>
+      <option value="infantil">Zona infantil</option>
+      <option value="pistas">Pistas deportivas</option>
+      <option value="maquinas">Máquinas de ejercicio</option>
+      <option value="calistenia">Zona de calistenia</option>
+      <option value="perros">Zona para perros</option>
+      <option value="merenderos">Merenderos</option>
+    </select>
+    <span id="filtroConteo" style="font-size:0.9em; margin-left:8px;"></span></p>
+  <div id="mapaVerde" style="width: 100%; height: 500px; border-radius: 8px; margin-bottom: 10px;"></div>
+  <p style="font-size:0.9em; margin-bottom:25px;">El color indica cuántos de los seis equipamientos tiene cada parque: <span style="color:#B7B7B7;">&#9679;</span> ninguno &nbsp; <span style="color:#97BC62;">&#9679;</span> 1-2 &nbsp; <span style="color:#2C8A3E;">&#9679;</span> 3 &nbsp; <span style="color:#1B4D1C;">&#9679;</span> 4 o más. Pulsa un parque para ver su ficha oficial.</p>
+
+			<h2>Qué tiene cada parque: 42 fichas de la IDE municipal</h2>
+
 				<p>
-Salamanca cuenta con más de <b>2,5 millones de metros cuadrados de zonas verdes</b>, destacando el corredor fluvial del río Tormes como el gran <a href="/calidad-aire">pulmón ecológico de la ciudad</a>. La dotación de metros cuadrados por habitante supera los estándares recomendados por la OMS en varios distritos periféricos.</p>
+La capa "Parques y jardines" de la IDE municipal (Infraestructura de Datos Espaciales del Ayuntamiento) recoge <b>42 espacios</b> y enlaza cada uno con una ficha en PDF que indica su dirección y si tiene zona infantil, pistas deportivas, máquinas de ejercicio, zona de calistenia, zona para perros y merenderos. No informa de la superficie ni del arbolado de cada parque.</p>
 
-<h3>Puntos clave sobre parques y áreas caninas</h3>
+<h3>Hallazgos clave</h3>
 <ul>
-<li><b>Corredor Fluvial del Tormes</b>: Parques como La Aldehuela, Huerta Otea y las Riberas del Tormes concentran la mayor superficie continua de arbolado y espacios recreativos.</li>
-<li><b>Espacios de Esparcimiento Canino (ZEC)</b>: la red municipal incluye más de 30 <a href="/parques-caninos-salamanca">zonas de esparcimiento canino</a> acotadas y acondicionadas con mobiliario específico, fuentes adaptadas y cerramientos de seguridad.</li>
-<li><b>Zonas de juego infantil accesibles</b>: buena parte de estos parques comparte espacio con las 51 <a href="/parques-infantiles-salamanca">zonas de juegos infantiles</a> con elementos adaptados que el Ayuntamiento ha ido habilitando en los últimos años.</li>
+<li><b>Los equipamientos más comunes son los infantiles y los caninos.</b> 30 de los 42 espacios tienen zona infantil y 23 tienen zona para perros. Les siguen las máquinas de ejercicio (16) y las pistas deportivas (15). La calistenia (6) y, sobre todo, los merenderos (5) son raros.</li>
+<li><b>Dos parques lo concentran casi todo.</b> Würzburg y Villar y Macías tienen cinco de los seis equipamientos (todos menos merenderos). Los siguen Los Jesuitas, Ciudad Rodrigo, Pablo Picasso y Lazarillo de Tormes con cuatro.</li>
+<li><b>Ocho espacios no tienen ningún equipamiento.</b> Son sobre todo plazas, jardines y espacios singulares: Paseo de las Dehesas, plaza de Anaya, Puente Romano, Tratado de Schengen, Huertos Urbanos, Jardín de la Merced, Huerto de Calixto y Melibea y Teso del Parador. Funcionan como espacios de paseo y estancia más que de juego o deporte.</li>
+<li><b>Los merenderos son escasos.</b> Solo los tienen cinco: el mirador del parque de Chamberí, Lazarillo de Tormes, el Parque Fluvial, Huerta Otea y La Aldehuela.</li>
+<li><b>Hay deporte variado.</b> Las pistas incluyen fútbol y baloncesto, petanca, frontón, mesa de ping-pong y, en el parque Elio Antonio de Nebrija, pista de atletismo y skate.</li>
+<li><b>Un parque queda fuera de la capital.</b> El Parque del Baldío tiene dirección en Cabrerizos, aunque figura en la capa municipal.</li>
 </ul>
 
-<p>El corredor fluvial también acoge buena parte de la <a href="/red-ciclista">red ciclista SALenBICI</a> y de los itinerarios peatonales que conectan los barrios con el río, reforzando una movilidad más sostenible y coherente con la mejora de la calidad del aire.</p>
+<p>Estos datos se refieren a cada parque como unidad. Las páginas de <a href="/parques-infantiles-salamanca">parques infantiles</a> (90 ubicaciones), <a href="/parques-caninos-salamanca">zonas caninas</a> (31) y <a href="/zonas-biosaludables-salamanca">zonas biosaludables</a> (52) usan otras capas de la IDE que cuentan cada instalación por separado, por lo que las cifras no coinciden con las de esta página. Para el arbolado, consulta <a href="/arbolado-zonas-verdes-salamanca">árboles y vegetación en las zonas verdes</a>.</p>
 
-  <h2>Superficie de zonas verdes por habitante (m²/hab.)</h2>
+  <h2>Equipamiento de los parques: cuántos de los 42 lo tienen</h2>
+  <canvas id="equipamientoChart" width="800" height="400"></canvas>
+
+  <h2>Cómo leer estos datos</h2>
+  <ul>
+    <li>Las fichas indican solo si existe cada equipamiento, no cuántos elementos hay ni su estado.</li>
+    <li>Tres espacios (Lazarillo de Tormes, Los Alcaldes y Paseo Lunes de Aguas) figuran con "zona verde: no" en su ficha, probablemente por cómo se clasifican, pero se muestran igualmente porque la capa los recoge como parques.</li>
+    <li>En la capa original, la plaza de Barcelona figura como "Paza de Barcelona"; aquí se ha corregido la errata. El resto de nombres, direcciones y datos se respetan como en la capa y las fichas.</li>
+    <li>El mapa y la tabla incluyen el Parque del Baldío, en Cabrerizos.</li>
+  </ul>
+
+  <h2>Datos sobre zonas verdes sin fuente verificada</h2>
+  <p style="background:#FFF4E5; border-left:4px solid #F4A261; padding:10px 14px;"><b>No verificado.</b> Los datos de esta sección proceden de una versión anterior de esta página y no tienen una fuente que Open Salamanca haya podido contrastar. Se mantienen solo como referencia hasta localizar una fuente oficial; no deben citarse como datos del Ayuntamiento.</p>
+  <ul>
+    <li><b>No verificado:</b> "más de 2,5 millones de metros cuadrados de zonas verdes". La página de <a href="/arbolado-zonas-verdes-salamanca">arbolado</a> habla de "más de 2,9 millones", así que las dos cifras no coinciden y ninguna se ha podido contrastar con la capa.</li>
+    <li><b>No verificado:</b> que la dotación por habitante supere el estándar de la OMS en varios distritos periféricos.</li>
+    <li><b>No verificado:</b> la superficie aproximada de los cinco parques siguientes (la capa oficial no incluye superficies):</li>
+  </ul>
+  <table border="1" cellpadding="5" cellspacing="0">
+    <thead><tr><th>Parque</th><th>Superficie aprox. (m²) — no verificada</th></tr></thead>
+    <tbody>
+      <tr><td>Parque de La Aldehuela</td><td>240.000</td></tr>
+      <tr><td>Parque de los Jesuitas</td><td>85.000</td></tr>
+      <tr><td>Parque Botánico Huerta Otea</td><td>65.000</td></tr>
+      <tr><td>Parque de la Alamedilla</td><td>25.000</td></tr>
+      <tr><td>Huerto de Calixto y Melibea</td><td>2.500</td></tr>
+    </tbody>
+  </table>
+  <h3>Superficie de zonas verdes por habitante por zona (m²/hab.) — no verificado</h3>
+  <p>El siguiente gráfico procede de la versión anterior y no tiene fuente; las cifras por zona no se han podido contrastar.</p>
   <canvas id="zonasVerdesChart" width="800" height="400"></canvas>
 
 			</div>
-			
+
 			<div id="section-table">
 			<table border="1" cellpadding="5" cellspacing="0">
 			  <thead>
 				<tr>
-				  <th>Parque / Zona Verde</th>
-				  <th>Ubicación / Barrio</th>
-				  <th>Superficie Aprox. (m²)</th>
-				  <th>Área Canina (ZEC)</th>
-				  <th>Equipamiento Destacado</th>
+				  <th>Parque / jardín (ficha oficial)</th>
+				  <th>Dirección</th>
+				  <th>Zona infantil</th>
+				  <th>Pistas deportivas</th>
+				  <th>Máquinas de ejercicio</th>
+				  <th>Calistenia</th>
+				  <th>Zona para perros</th>
+				  <th>Merenderos</th>
 				</tr>
 			  </thead>
 			  <tbody>
-				<tr><td>Parque de La Aldehuela</td><td>La Aldehuela / Vega del Tormes</td><td>240.000</td><td>Sí (Acotada)</td><td>Circuito deportivo, zonas infantiles</td></tr>
-				<tr><td>Parque de los Jesuitas</td><td>Providencia / Delicias</td><td>85.000</td><td>Sí</td><td>Pista de patinaje, cafetería, huertos</td></tr>
-				<tr><td>Parque de Huerta Otea</td><td>Huerta Otea</td><td>65.000</td><td>Sí</td><td>Jardín botánico, vistas al Tormes</td></tr>
-				<tr><td>Parque de la Alamedilla</td><td>Centro / España</td><td>25.000</td><td>No</td><td>Estanque de aves, zona infantil</td></tr>
-				<tr><td>Huerto de Calixto y Melibea</td><td>Casco Histórico</td><td>2.500</td><td>No</td><td>Jardín histórico y muralla</td></tr>
+				<tr><td><a href="https://www.aytosalamanca.es/documents/d/guest/FPark38" rel="nofollow noopener">Huerto Calixto y Melibea</a></td><td>Calle Arcediano, 20, 37008 Salamanca</td><td>No</td><td>No</td><td>No</td><td>No</td><td>No</td><td>No</td></tr>
+				<tr><td><a href="https://www.aytosalamanca.es/documents/d/guest/FPark22" rel="nofollow noopener">Huertos Urbanos</a></td><td>Av. Padre Ignacio Ellacuría, 156, 37008 Salamanca</td><td>No</td><td>No</td><td>No</td><td>No</td><td>No</td><td>No</td></tr>
+				<tr><td><a href="https://www.aytosalamanca.es/documents/d/guest/FPark20" rel="nofollow noopener">Jardines de Colón</a></td><td>Pl. de Colón, 37008 Salamanca</td><td>Sí</td><td>No</td><td>Sí</td><td>No</td><td>No</td><td>No</td></tr>
+				<tr><td><a href="https://www.aytosalamanca.es/documents/d/guest/FPark27" rel="nofollow noopener">Jardín de la Merced</a></td><td>Pl. Merced, 18, 37008 Salamanca</td><td>No</td><td>No</td><td>No</td><td>No</td><td>No</td><td>No</td></tr>
+				<tr><td><a href="https://www.aytosalamanca.es/documents/d/guest/FPark1" rel="nofollow noopener">Mirador Parque de Chamberí</a></td><td>C. Juan de Herrera, 37008 Salamanca</td><td>No</td><td>Sí (Petanca)</td><td>No</td><td>No</td><td>Sí</td><td>Sí</td></tr>
+				<tr><td><a href="https://www.aytosalamanca.es/documents/d/guest/FPark17" rel="nofollow noopener">Parque Barrio de Los Alcaldes</a></td><td>27, Calle Sector 59B, 37008 Salamanca</td><td>Sí</td><td>Sí (Pista de futbol)</td><td>No</td><td>No</td><td>Sí</td><td>No</td></tr>
+				<tr><td><a href="https://www.aytosalamanca.es/documents/d/guest/FPark32" rel="nofollow noopener">Parque Botánico Huerta Otea</a></td><td>C. Manuel Ramos Andrade, 8, 37007 Salamanca</td><td>Sí</td><td>Sí (Pista de futbol)</td><td>Sí</td><td>No</td><td>No</td><td>Sí</td></tr>
+				<tr><td><a href="https://www.aytosalamanca.es/documents/d/guest/FPark15" rel="nofollow noopener">Parque calle Bernardo Dorado</a></td><td>Calle Bernardo Dorado 37008 Salamanca</td><td>Sí</td><td>No</td><td>No</td><td>No</td><td>Sí</td><td>No</td></tr>
+				<tr><td><a href="https://www.aytosalamanca.es/documents/d/guest/FPark2" rel="nofollow noopener">Parque Calle Villares - San Bernardo</a></td><td>C. Nueva de San Bernardo, 27, 37007</td><td>Sí</td><td>No</td><td>No</td><td>No</td><td>Sí</td><td>No</td></tr>
+				<tr><td><a href="https://www.aytosalamanca.es/documents/d/guest/FPark26" rel="nofollow noopener">Parque Cañon</a></td><td>C. Mediodía, 31, 37008 Salamanca</td><td>Sí</td><td>No</td><td>Sí</td><td>No</td><td>Sí</td><td>No</td></tr>
+				<tr><td><a href="https://www.aytosalamanca.es/documents/d/guest/FPark4" rel="nofollow noopener">Parque de Ciudad Rodrigo</a></td><td>Av. Santiago Madrigal, 37003 Salamanca</td><td>Sí</td><td>Sí</td><td>No</td><td>Sí</td><td>Sí</td><td>No</td></tr>
+				<tr><td><a href="https://www.aytosalamanca.es/documents/d/guest/FPark34" rel="nofollow noopener">Parque de la Alamedilla</a></td><td>Av. de los Comuneros, 3, 37003 Salamanca</td><td>Sí</td><td>No</td><td>Sí</td><td>No</td><td>Sí</td><td>No</td></tr>
+				<tr><td><a href="https://www.aytosalamanca.es/documents/d/guest/FPark35" rel="nofollow noopener">Parque de la Aldehuela</a></td><td>Camino del Rio, s/n, 37003 Salamanca</td><td>No</td><td>Sí</td><td>No</td><td>No</td><td>No</td><td>Sí</td></tr>
+				<tr><td><a href="https://www.aytosalamanca.es/documents/d/guest/FPark30" rel="nofollow noopener">Parque de la Chinchibarra</a></td><td>C. de la Chinchibarra, 34-38, 37005 Salamanca</td><td>Sí</td><td>No</td><td>No</td><td>No</td><td>Sí</td><td>No</td></tr>
+				<tr><td><a href="https://www.aytosalamanca.es/documents/d/guest/FPark3" rel="nofollow noopener">Parque de las Musas</a></td><td>C. Francisco Fernández Villegas "Zeda", 41, 37008</td><td>Sí</td><td>No</td><td>Sí</td><td>No</td><td>No</td><td>No</td></tr>
+				<tr><td><a href="https://www.aytosalamanca.es/documents/d/guest/FPark33" rel="nofollow noopener">Parque de Los Jerónimos</a></td><td>Calle Molino Contrafuerte, 2, 37003 Salamanca</td><td>No</td><td>No</td><td>No</td><td>No</td><td>Sí</td><td>No</td></tr>
+				<tr><td><a href="https://www.aytosalamanca.es/documents/d/guest/FPark31" rel="nofollow noopener">Parque de los Jesuitas</a></td><td>Av. de la Aldehuela, 37003 Salamanca</td><td>Sí</td><td>Sí (Cancha de futbol y baloncesto)</td><td>No</td><td>Sí</td><td>Sí</td><td>No</td></tr>
+				<tr><td><a href="https://www.aytosalamanca.es/documents/d/guest/FPark19" rel="nofollow noopener">Parque de Wurzburg</a></td><td>Calz. Toro, s/n, 37004 Salamanca</td><td>Sí</td><td>Sí (Baloncesto, fronton)</td><td>Sí</td><td>Sí</td><td>Sí</td><td>No</td></tr>
+				<tr><td><a href="https://www.aytosalamanca.es/documents/d/guest/FPark42" rel="nofollow noopener">Parque del baldío</a></td><td>Cam. de los Frailes, 37193 Cabrerizos, Salamanca</td><td>No</td><td>No</td><td>No</td><td>No</td><td>Sí</td><td>No</td></tr>
+				<tr><td><a href="https://www.aytosalamanca.es/documents/d/guest/FPark13" rel="nofollow noopener">Parque Don Juan Tenorio</a></td><td>Calle Sector 61, 41, 37007 Salamanca</td><td>Sí</td><td>No</td><td>No</td><td>No</td><td>Sí</td><td>No</td></tr>
+				<tr><td><a href="https://www.aytosalamanca.es/documents/d/guest/FPark5" rel="nofollow noopener">Parque Elio Antonio de Nebrija</a></td><td>Paseo del Pogreso, s/n, 37008 Salamanca</td><td>Sí</td><td>Sí (Pista de atletismo, skate, futbol)</td><td>Sí</td><td>Sí</td><td>No</td><td>No</td></tr>
+				<tr><td><a href="https://www.aytosalamanca.es/documents/d/guest/FPark18" rel="nofollow noopener">Parque Fluvial</a></td><td>Av. de los Reyes de España, 27D, 37008 Salamanca</td><td>Sí</td><td>No</td><td>Sí</td><td>Sí</td><td>No</td><td>Sí</td></tr>
+				<tr><td><a href="https://www.aytosalamanca.es/documents/d/guest/FPark14" rel="nofollow noopener">Parque Garrido</a></td><td>Parque de Garrido, s/n, 37004 Salamanca</td><td>Sí</td><td>Sí</td><td>Sí</td><td>No</td><td>No</td><td>No</td></tr>
+				<tr><td><a href="https://www.aytosalamanca.es/documents/d/guest/FPark11" rel="nofollow noopener">Parque Las Salesas</a></td><td>C. Salesas, 20, 37005 Salamanca</td><td>Sí</td><td>No</td><td>No</td><td>No</td><td>Sí</td><td>No</td></tr>
+				<tr><td><a href="https://www.aytosalamanca.es/documents/d/guest/FPark16" rel="nofollow noopener">Parque Lazarillo de Tormes</a></td><td>C. Fuente de la Salud, 6, 37008 Salamanca</td><td>Sí</td><td>Sí</td><td>Sí</td><td>No</td><td>No</td><td>Sí</td></tr>
+				<tr><td><a href="https://www.aytosalamanca.es/documents/d/guest/FPark9" rel="nofollow noopener">Parque Los Gozos y las Sombras</a></td><td>Glorieta Castilla y León, s/n, 37004 Salamanca</td><td>Sí</td><td>Sí (Mesa de ping-pong, futbol infantil)</td><td>No</td><td>No</td><td>Sí</td><td>No</td></tr>
+				<tr><td><a href="https://www.aytosalamanca.es/documents/d/guest/FPark21" rel="nofollow noopener">Parque Miguel Delibes</a></td><td>Ctra. Fregeneda, 34, 37008 Salamanca</td><td>Sí</td><td>Sí (Pista de futbol y baloncesto)</td><td>No</td><td>No</td><td>Sí</td><td>No</td></tr>
+				<tr><td><a href="https://www.aytosalamanca.es/documents/d/guest/FPark36" rel="nofollow noopener">Parque Pablo Picasso</a></td><td>C. Pontevedra, 12, 37003 Salamanca</td><td>Sí</td><td>Sí (Pistas de baloncesto)</td><td>Sí</td><td>No</td><td>Sí</td><td>No</td></tr>
+				<tr><td><a href="https://www.aytosalamanca.es/documents/d/guest/FPark37" rel="nofollow noopener">Parque San Francisco</a></td><td>Campo de San Francisco, 1, 37002 Salamanca</td><td>Sí</td><td>No</td><td>Sí</td><td>No</td><td>Sí</td><td>No</td></tr>
+				<tr><td><a href="https://www.aytosalamanca.es/documents/d/guest/FPark23" rel="nofollow noopener">Parque San Juan Bosco</a></td><td>Av. de Salamanca, 1, 37006 Salamanca</td><td>Sí</td><td>No</td><td>Sí</td><td>No</td><td>Sí</td><td>No</td></tr>
+				<tr><td><a href="https://www.aytosalamanca.es/documents/d/guest/FPark12" rel="nofollow noopener">Parque Tratado de Shengen</a></td><td>P.º Convención de Schengen, 37008 Salamanca</td><td>No</td><td>No</td><td>No</td><td>No</td><td>No</td><td>No</td></tr>
+				<tr><td><a href="https://www.aytosalamanca.es/documents/d/guest/FPark25" rel="nofollow noopener">Parque Vaguada de la Palma</a></td><td>Calle Palma, 37007 Salamanca</td><td>Sí</td><td>No</td><td>No</td><td>No</td><td>No</td><td>No</td></tr>
+				<tr><td><a href="https://www.aytosalamanca.es/documents/d/guest/FPark39" rel="nofollow noopener">Parque Valhondo</a></td><td>Parque valhondo 24-25 1ºC, 37006 Salamanca</td><td>Sí</td><td>No</td><td>No</td><td>No</td><td>Sí</td><td>No</td></tr>
+				<tr><td><a href="https://www.aytosalamanca.es/documents/d/guest/FPark24" rel="nofollow noopener">Parque Villar Y Macias</a></td><td>Av. de Portugal, 212, 37006 Salamanca</td><td>Sí</td><td>Sí (Pistas de futbol y de baloncesto)</td><td>Sí</td><td>Sí</td><td>Sí</td><td>No</td></tr>
+				<tr><td><a href="https://www.aytosalamanca.es/documents/d/guest/FPark6" rel="nofollow noopener">Paseo de las dehesas</a></td><td>P.º Dehesas, 37008 Salamanca</td><td>No</td><td>No</td><td>No</td><td>No</td><td>No</td><td>No</td></tr>
+				<tr><td><a href="https://www.aytosalamanca.es/documents/d/guest/FPark29" rel="nofollow noopener">Paseo Lunes de Aguas</a></td><td>P.º César Real de la Riva, 37008 Salamanca</td><td>Sí</td><td>No</td><td>No</td><td>No</td><td>Sí</td><td>No</td></tr>
+				<tr><td><a href="https://www.aytosalamanca.es/documents/d/guest/FPark7" rel="nofollow noopener">Plaza de Anaya</a></td><td>Plaza Anaya 37008 Salamanca</td><td>No</td><td>No</td><td>No</td><td>No</td><td>No</td><td>No</td></tr>
+				<tr><td><a href="https://www.aytosalamanca.es/documents/d/guest/FPark8" rel="nofollow noopener">Plaza de Barcelona</a></td><td>Paseo de los Madroños 37004</td><td>Sí</td><td>No</td><td>Sí</td><td>No</td><td>No</td><td>No</td></tr>
+				<tr><td><a href="https://www.aytosalamanca.es/documents/d/guest/FPark28" rel="nofollow noopener">Plaza de Burgos</a></td><td>Pl. de Burgos, s/n, 37006 Salamanca</td><td>Sí</td><td>Sí (Pista de futbol y baloncesto)</td><td>No</td><td>No</td><td>No</td><td>No</td></tr>
+				<tr><td><a href="https://www.aytosalamanca.es/documents/d/guest/FPark41" rel="nofollow noopener">Plaza de las Islas Baleares</a></td><td>C. Rodríguez Hernández, 37006 Salamanca</td><td>Sí</td><td>No</td><td>Sí</td><td>No</td><td>Sí</td><td>No</td></tr>
+				<tr><td><a href="https://www.aytosalamanca.es/documents/d/guest/FPark10" rel="nofollow noopener">Puente Romano</a></td><td>Puente Romano, 37008 Salamanca</td><td>No</td><td>No</td><td>No</td><td>No</td><td>No</td><td>No</td></tr>
+				<tr><td><a href="https://www.aytosalamanca.es/documents/d/guest/FPark40" rel="nofollow noopener">Teso del Parador</a></td><td>C. Teso de la Feria, 2, 37008 Salamanca</td><td>No</td><td>No</td><td>No</td><td>No</td><td>No</td><td>No</td></tr>
 			  </tbody>
 			</table>
+			<p><small>Fuente: capa "Parques y jardines" de la IDE del Ayuntamiento de Salamanca y fichas oficiales de cada parque (<a href="https://opendata.aytosalamanca.es/datosabiertos/catalogo/es/dataset/parques-y-jardines" rel="nofollow noopener">datos abiertos</a>).</small></p>
 
 			</div>
-			
+
 			{% include categories.html %}
-            
+
         </div>
     </section>
 
@@ -71,55 +154,77 @@ Salamanca cuenta con más de <b>2,5 millones de metros cuadrados de zonas verdes
 	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 	<script>
-    // 1. Inicializar mapa Leaflet
-    const mapVerde = L.map('mapaVerde').setView([40.9630, -5.6630], 14);
+    const mapVerde = L.map('mapaVerde').setView([40.9650, -5.6650], 13);
 
     L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/light_all/{z}/{x}/{y}{r}.png?key=cb1_2izw_1_55d93b51ded1dcecfa044181', {
-      attribution: '&copy; OpenStreetMap &copy; CARTO',
+      attribution: '&copy; OpenStreetMap &copy; CARTO | Datos: IDE Ayuntamiento de Salamanca',
       subdomains: 'abcd',
       maxZoom: 19
     }).addTo(mapVerde);
 
-    // Parques y Zonas Caninas
-    const espaciosVerdes = [
-      { name: 'Parque de los Jesuitas', lat: 40.9638, lng: -5.6540, zec: true, type: 'Parque Urbano' },
-      { name: 'Parque de la Alamedilla', lat: 40.9668, lng: -5.6582, zec: false, type: 'Parque Urbano' },
-      { name: 'Parque de Huerta Otea', lat: 40.9655, lng: -5.6840, zec: true, type: 'Parque Fluvial' },
-      { name: 'Parque de La Aldehuela', lat: 40.9560, lng: -5.6420, zec: true, type: 'Complejo Periurbano' },
-      { name: 'Huerto de Calixto y Melibea', lat: 40.9598, lng: -5.6662, zec: false, type: 'Jardín Histórico' }
-    ];
+    // [id, nombre, dirección, lat, lng, infantil, pistas, detalle pistas, máquinas, calistenia, perros, merenderos, zona verde]
+    const parques = [[1,"Mirador Parque de Chamberí","C. Juan de Herrera, 37008 Salamanca",40.952347,-5.684793,0,1,"Petanca",0,0,1,1,1],[2,"Parque Calle Villares - San Bernardo","C. Nueva de San Bernardo, 27, 37007",40.970463,-5.673974,1,0,"",0,0,1,0,1],[3,"Parque de las Musas","C. Francisco Fernández Villegas \"Zeda\", 41, 37008",40.949803,-5.67924,1,0,"",1,0,0,0,1],[4,"Parque de Ciudad Rodrigo","Av. Santiago Madrigal, 37003 Salamanca",40.970902,-5.634704,1,1,"",0,1,1,0,1],[5,"Parque Elio Antonio de Nebrija","Paseo del Pogreso, s/n, 37008 Salamanca",40.958133,-5.67405,1,1,"Pista de atletismo, skate, futbol",1,1,0,0,1],[6,"Paseo de las dehesas","P.º Dehesas, 37008 Salamanca",40.948366,-5.674041,0,0,"",0,0,0,0,1],[7,"Plaza de Anaya","Plaza Anaya 37008 Salamanca",40.961268,-5.665859,0,0,"",0,0,0,0,1],[8,"Plaza de Barcelona","Paseo de los Madroños 37004",40.973738,-5.649983,1,0,"",1,0,0,0,1],[9,"Parque Los Gozos y las Sombras","Glorieta Castilla y León, s/n, 37004 Salamanca",40.980225,-5.650791,1,1,"Mesa de ping-pong, futbol infantil",0,0,1,0,1],[10,"Puente Romano","Puente Romano, 37008 Salamanca",40.958893,-5.669873,0,0,"",0,0,0,0,1],[11,"Parque Las Salesas","C. Salesas, 20, 37005 Salamanca",40.97503,-5.661569,1,0,"",0,0,1,0,1],[12,"Parque Tratado de Shengen","P.º Convención de Schengen, 37008 Salamanca",40.940959,-5.674553,0,0,"",0,0,0,0,1],[13,"Parque Don Juan Tenorio","Calle Sector 61, 41, 37007 Salamanca",40.965599,-5.688009,1,0,"",0,0,1,0,1],[14,"Parque Garrido","Parque de Garrido, s/n, 37004 Salamanca",40.975219,-5.653722,1,1,"",1,0,0,0,1],[15,"Parque calle Bernardo Dorado","Calle Bernardo Dorado 37008 Salamanca",40.95531,-5.68821,1,0,"",0,0,1,0,1],[16,"Parque Lazarillo de Tormes","C. Fuente de la Salud, 6, 37008 Salamanca",40.954086,-5.700837,1,1,"",1,0,0,1,0],[17,"Parque Barrio de Los Alcaldes","27, Calle Sector 59B, 37008 Salamanca",40.952864,-5.689833,1,1,"Pista de futbol",0,0,1,0,0],[18,"Parque Fluvial","Av. de los Reyes de España, 27D, 37008 Salamanca",40.956453,-5.664678,1,0,"",1,1,0,1,1],[19,"Parque de Wurzburg","Calz. Toro, s/n, 37004 Salamanca",40.981156,-5.651968,1,1,"Baloncesto, fronton",1,1,1,0,1],[20,"Jardines de Colón","Pl. de Colón, 37008 Salamanca",40.962419,-5.663909,1,0,"",1,0,0,0,1],[21,"Parque Miguel Delibes","Ctra. Fregeneda, 34, 37008 Salamanca",40.95652,-5.675427,1,1,"Pista de futbol y baloncesto",0,0,1,0,1],[22,"Huertos Urbanos","Av. Padre Ignacio Ellacuría, 156, 37008 Salamanca",40.958581,-5.686862,0,0,"",0,0,0,0,1],[23,"Parque San Juan Bosco","Av. de Salamanca, 1, 37006 Salamanca",40.974702,-5.670784,1,0,"",1,0,1,0,1],[24,"Parque Villar Y Macias","Av. de Portugal, 212, 37006 Salamanca",40.972923,-5.676231,1,1,"Pistas de futbol y de baloncesto",1,1,1,0,1],[25,"Parque Vaguada de la Palma","Calle Palma, 37007 Salamanca",40.961718,-5.671485,1,0,"",0,0,0,0,1],[26,"Parque Cañon","C. Mediodía, 31, 37008 Salamanca",40.953704,-5.695607,1,0,"",1,0,1,0,1],[27,"Jardín de la Merced","Pl. Merced, 18, 37008 Salamanca",40.959854,-5.669586,0,0,"",0,0,0,0,1],[28,"Plaza de Burgos","Pl. de Burgos, s/n, 37006 Salamanca",40.980131,-5.666534,1,1,"Pista de futbol y baloncesto",0,0,0,0,1],[29,"Paseo Lunes de Aguas","P.º César Real de la Riva, 37008 Salamanca",40.955459,-5.685296,1,0,"",0,0,1,0,0],[30,"Parque de la Chinchibarra","C. de la Chinchibarra, 34-38, 37005 Salamanca",40.977655,-5.656368,1,0,"",0,0,1,0,1],[31,"Parque de los Jesuitas","Av. de la Aldehuela, 37003 Salamanca",40.961161,-5.656005,1,1,"Cancha de futbol y baloncesto",0,1,1,0,1],[32,"Parque Botánico Huerta Otea","C. Manuel Ramos Andrade, 8, 37007 Salamanca",40.964508,-5.681511,1,1,"Pista de futbol",1,0,0,1,1],[33,"Parque de Los Jerónimos","Calle Molino Contrafuerte, 2, 37003 Salamanca",40.956129,-5.656523,0,0,"",0,0,1,0,1],[34,"Parque de la Alamedilla","Av. de los Comuneros, 3, 37003 Salamanca",40.96808,-5.657238,1,0,"",1,0,1,0,1],[35,"Parque de la Aldehuela","Camino del Rio, s/n, 37003 Salamanca",40.955437,-5.634223,0,1,"",0,0,0,1,1],[36,"Parque Pablo Picasso","C. Pontevedra, 12, 37003 Salamanca",40.96757,-5.651046,1,1,"Pistas de baloncesto",1,0,1,0,1],[37,"Parque San Francisco","Campo de San Francisco, 1, 37002 Salamanca",40.966398,-5.668672,1,0,"",1,0,1,0,1],[38,"Huerto Calixto y Melibea","Calle Arcediano, 20, 37008 Salamanca",40.959561,-5.665422,0,0,"",0,0,0,0,1],[39,"Parque Valhondo","Parque valhondo 24-25 1ºC, 37006 Salamanca",40.975709,-5.68049,1,0,"",0,0,1,0,1],[40,"Teso del Parador","C. Teso de la Feria, 2, 37008 Salamanca",40.952393,-5.672266,0,0,"",0,0,0,0,1],[41,"Plaza de las Islas Baleares","C. Rodríguez Hernández, 37006 Salamanca",40.978058,-5.677506,1,0,"",1,0,1,0,1],[42,"Parque del baldío","Cam. de los Frailes, 37193 Cabrerizos, Salamanca",40.965379,-5.633564,0,0,"",0,0,1,0,1]];
+    const claves = { infantil: 5, pistas: 6, maquinas: 8, calistenia: 9, perros: 10, merenderos: 11 };
+    const si = v => v ? 'Sí' : 'No';
+    const capa = L.layerGroup().addTo(mapVerde);
 
-    espaciosVerdes.forEach(p => {
-      L.circleMarker([p.lat, p.lng], {
-        radius: 9,
-        fillColor: p.zec ? '#2C5F2D' : '#1E56A0',
-        color: '#ffffff',
-        weight: 2,
-        fillOpacity: 0.85
-      }).bindPopup(`<b>${p.name}</b><br>Tipo: ${p.type}<br>Zona Canina (ZEC): ${p.zec ? 'Sí' : 'No'}`).addTo(mapVerde);
-    });
+    function pintar(filtro) {
+      capa.clearLayers();
+      let n = 0;
+      parques.forEach(p => {
+        if (filtro && !p[claves[filtro]]) return;
+        n++;
+        const equip = p[5] + p[6] + p[8] + p[9] + p[10] + p[11];
+        const color = equip === 0 ? '#B7B7B7' : (equip <= 2 ? '#97BC62' : (equip === 3 ? '#2C8A3E' : '#1B4D1C'));
+        L.circleMarker([p[3], p[4]], { radius: 8, fillColor: color, color: '#ffffff', weight: 2, fillOpacity: 0.9 })
+          .bindPopup(`<b>${p[1]}</b><br>${p[2]}<br>Zona infantil: ${si(p[5])} · Pistas: ${si(p[6])}${p[7] ? ' (' + p[7] + ')' : ''}<br>Máquinas: ${si(p[8])} · Calistenia: ${si(p[9])}<br>Zona para perros: ${si(p[10])} · Merenderos: ${si(p[11])}<br><a href="https://www.aytosalamanca.es/documents/d/guest/FPark${p[0]}" target="_blank" rel="nofollow noopener">Ficha oficial</a>`)
+          .addTo(capa);
+      });
+      document.getElementById('filtroConteo').textContent = n + ' parques';
+    }
+    pintar('');
+    document.getElementById('filtroParque').addEventListener('change', e => pintar(e.target.value));
 
-    // 2. Gráfico de m² por habitante por distritos
-    const ctxVerde = document.getElementById('zonasVerdesChart').getContext('2d');
-    const zonasVerdesChart = new Chart(ctxVerde, {
+    new Chart(document.getElementById('equipamientoChart').getContext('2d'), {
       type: 'bar',
       data: {
-        labels: ['Huerta Otea / Marin concrete', 'Tejares / Zurguén', 'Garrido', 'San Bernardo', 'Centro / Casco Histórico'],
+        labels: ['Zona infantil', 'Zona para perros', 'Máquinas de ejercicio', 'Pistas deportivas', 'Calistenia', 'Merenderos'],
         datasets: [{
-          label: 'm² de Zona Verde por Habitante',
+          label: 'Parques',
+          data: [30, 23, 16, 15, 6, 5],
+          backgroundColor: '#2C5F2D',
+          borderRadius: 4
+        }]
+      },
+      options: {
+        indexAxis: 'y',
+        responsive: true,
+        plugins: { legend: { display: false } },
+        scales: { x: { beginAtZero: true, title: { display: true, text: 'Número de parques (42 en total)' } } }
+      }
+    });
+
+    // Gráfico sin fuente verificada (versión anterior de la página)
+    new Chart(document.getElementById('zonasVerdesChart').getContext('2d'), {
+      type: 'bar',
+      data: {
+        labels: ['Huerta Otea', 'Tejares / Zurguén', 'Garrido', 'San Bernardo', 'Centro / Casco Histórico'],
+        datasets: [{
+          label: 'm² de zona verde por habitante (no verificado)',
           data: [28.5, 22.1, 11.4, 8.2, 4.5],
-          backgroundColor: 'rgba(44, 95, 45, 0.75)',
-          borderColor: '#2C5F2D',
+          backgroundColor: 'rgba(150, 150, 150, 0.6)',
+          borderColor: '#999999',
           borderWidth: 1.5,
+          borderDash: [4, 4],
           borderRadius: 4
         }]
       },
       options: {
         responsive: true,
-        plugins: { legend: { display: false } },
+        plugins: { legend: { display: true } },
         scales: {
-          y: { title: { display: true, text: 'm² / habitante' }, beginAtZero: true },
-          x: { title: { display: true, text: 'Distrito / Zona' } }
+          y: { title: { display: true, text: 'm² / habitante (no verificado)' }, beginAtZero: true },
+          x: { title: { display: true, text: 'Zona' } }
         }
       }
     });
