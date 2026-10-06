@@ -1,0 +1,102 @@
+---
+layout: default
+title: Huertos urbanos de Salamanca
+description: Mapa de las 665 parcelas de los huertos urbanos de la IDE municipal y de su equipamiento - riego, árboles, pérgolas, cámaras, pozos y placas solares - con superficie media de cada huerto
+date: 06-10-2026
+folder: Medio Ambiente
+permalink: huertos-urbanos-salamanca
+---
+
+    <section class="featured dataset" id="datos">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="section-title">{{ page.title }}</h1>
+                <p class="section-description">{{ page.description }}</p>
+            </div>
+
+			<div id="section-content">
+
+  <div id="mapaHuertos" style="width: 100%; height: 520px; border-radius: 8px; margin-bottom: 10px;"></div>
+  <p style="font-size:0.9em; margin-bottom:25px;">Activa o desactiva cada capa arriba a la derecha. Acerca el mapa para ver las parcelas de una en una.</p>
+
+			<h2>665 parcelas de unos 29 m² en el borde oeste de la ciudad</h2>
+
+			<p>
+La IDE municipal (Infraestructura de Datos Espaciales del Ayuntamiento) publica un inventario completo de los huertos urbanos: <b>665 parcelas</b> que ocupan en total unos <b>19.500 m²</b> (algo menos de 2 hectáreas). Cada parcela mide de media <b>29 m²</b> (la mediana es de 32 m²) y se localizan unos 2 km al oeste de la Plaza Mayor, junto a la avenida Padre Ignacio Ellacuría, donde la ciudad enlaza con el <a href="/corredor-verde-salamanca">corredor verde del Tormes</a>.
+</p>
+
+<h3>Hallazgos clave</h3>
+<ul>
+<li><b>Casi una línea de riego por parcela.</b> La capa recoge 643 líneas de riego, que suman unos 4,3 km, para 665 parcelas. Además hay 4 pozos de toma de agua y un aljibe de unos 128 m².</li>
+<li><b>Mucho equipamiento alrededor de las parcelas.</b> Se registran 217 puertas de acceso, 261 tramos de pérgolas, 150 tramos de bancos, 38 de papeleras, 479 farolas LED y 548 árboles plantados (la capa no indica su especie).</li>
+<li><b>Vigilancia y energía propias.</b> Hay 47 cámaras de seguridad (22 fijas, 20 de control de acceso, 4 rotatorias y una sin tipo) y 4 placas solares que ocupan en total unos 190 m².</li>
+<li><b>Servicios para quien trabaja allí.</b> Un edificio de aseos (unos 190 m²), 4 mesas de merendero, 2 zonas de juegos para niños (unos 610 m²) y 21 zonas de aparcamiento de bicicletas.</li>
+<li><b>Parcelas pequeñas.</b> Hay 65 con código que empieza por "M-", con 31 m² de media, frente a 29 m² del resto.</li>
+</ul>
+
+<p>Los huertos forman parte de la oferta de espacios verdes de la ciudad; consulta también <a href="/zonas-verdes">parques y jardines</a>, donde figura el espacio "Huertos Urbanos", y el <a href="/arbolado-zonas-verdes-salamanca">arbolado de las zonas verdes</a>.</p>
+
+  <h2>Cómo leer estos datos</h2>
+  <ul>
+    <li>La capa describe la instalación, no su gestión: no indica quién cultiva cada parcela, las condiciones de adjudicación, las tasas ni las listas de espera.</li>
+    <li>Las superficies se han calculado a partir de los polígonos de la capa y son aproximadas.</li>
+    <li>Algunos elementos (bancos, pérgolas, puertas, árboles o líneas de riego) están registrados como líneas, así que se cuentan como registros y no como unidades físicas exactas. Un identificador de parcela (019K) aparece repetido.</li>
+    <li>Los códigos de parcela (por ejemplo "014B" o "M-...") son los de la capa; no se conoce su significado.</li>
+  </ul>
+
+			</div>
+
+			<div id="section-table">
+				<table border="1" cellpadding="5" cellspacing="0">
+				  <thead>
+					<tr><th>Elemento (capa de huertos)</th><th>Registros</th><th>Detalle</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>Parcelas de huerto</td><td>665</td><td>Unos 19.500 m² en total; media de 29 m²</td></tr>
+					<tr><td>Líneas de riego</td><td>643</td><td>Unos 4,3 km</td></tr>
+					<tr><td>Árboles</td><td>548</td><td>Sin especie indicada</td></tr>
+					<tr><td>Farolas LED</td><td>479</td><td>Alumbrado público</td></tr>
+					<tr><td>Pérgolas</td><td>261</td><td>Tramos</td></tr>
+					<tr><td>Puertas de entrada</td><td>217</td><td>Tramos</td></tr>
+					<tr><td>Bancos</td><td>150</td><td>Tramos, unos 930 m</td></tr>
+					<tr><td>Cámaras de seguridad</td><td>47</td><td>22 fijas, 20 de control de acceso, 4 rotatorias</td></tr>
+					<tr><td>Papeleras</td><td>38</td><td>Tramos</td></tr>
+					<tr><td>Zonas de aparcamiento de bicicletas</td><td>21</td><td>Sin número de plazas en la capa</td></tr>
+					<tr><td>Placas solares</td><td>4</td><td>Unos 190 m²</td></tr>
+					<tr><td>Pozos de toma de agua</td><td>4</td><td>&ndash;</td></tr>
+					<tr><td>Mesas de merendero</td><td>4</td><td>&ndash;</td></tr>
+					<tr><td>Zonas de juegos para niños</td><td>2</td><td>Unos 610 m²</td></tr>
+					<tr><td>Edificio de aseos</td><td>1</td><td>Unos 190 m²</td></tr>
+					<tr><td>Aljibe</td><td>1</td><td>Unos 128 m²</td></tr>
+				  </tbody>
+				</table>
+				<p><small>Fuente: capas de la IDE del Ayuntamiento de Salamanca del espacio de trabajo "Huertos". Superficies y recuentos elaborados por Open Salamanca.</small></p>
+			</div>
+
+			{% include categories.html %}
+
+        </div>
+    </section>
+
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+	<script>
+    const mapH = L.map('mapaHuertos', { preferCanvas: true }).setView([40.9591, -5.6863], 17);
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/light_all/{z}/{x}/{y}{r}.png?key=cb1_2izw_1_55d93b51ded1dcecfa044181', {
+      attribution: '&copy; OpenStreetMap &copy; CARTO | Datos: IDE Ayuntamiento de Salamanca', subdomains: 'abcd', maxZoom: 20
+    }).addTo(mapH);
+    const esc = t => String(t).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+    const colores = { 'Zonas de aparcamiento de bicicletas': '#1E56A0', 'Cámaras de seguridad': '#C0392B', 'Pozos de toma de agua': '#2E86C1', 'Aljibe': '#2E86C1', 'Placas solares': '#F1C40F', 'Edificio de aseos': '#7B2CBF', 'Zonas de juegos para niños': '#E67E22', 'Mesas de merendero': '#8B5E3C' };
+    fetch('/huertos-urbanos.json?v=1').then(r => r.json()).then(d => {
+      const capas = { 'Parcelas de huerto (665)': L.layerGroup().addTo(mapH), 'Delimitación de los huertos': L.layerGroup().addTo(mapH), 'Delimitación de los jardines': L.layerGroup() };
+      d.parcelas.forEach(p => p[1].forEach(r => L.polygon(r, { color: '#2C5F2D', weight: 1, fillColor: '#97BC62', fillOpacity: 0.6 }).bindPopup(`<b>Parcela ${esc(p[0])}</b>`).addTo(capas['Parcelas de huerto (665)'])));
+      d.bordes.forEach(s => L.polyline(s, { color: '#264653', weight: 2 }).addTo(capas['Delimitación de los huertos']));
+      d.jardin.forEach(s => L.polyline(s, { color: '#2C8A3E', weight: 2, dashArray: '4 4' }).addTo(capas['Delimitación de los jardines']));
+      Object.entries(d.equip).forEach(([k, v]) => {
+        const g = L.layerGroup(); capas[`${k} (${v.length})`] = g;
+        if (k === 'Cámaras de seguridad') g.addTo(mapH);
+        v.forEach(c => L.circleMarker([c[0], c[1]], { radius: 5, fillColor: colores[k], color: '#fff', weight: 1.5, fillOpacity: 0.95 }).bindPopup(`<b>${esc(k)}</b>${c[2] ? '<br>' + esc(c[2]) : ''}`).addTo(g));
+      });
+      L.control.layers(null, capas, { collapsed: false }).addTo(mapH);
+    }).catch(() => {});
+  </script>
