@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Estructura hostelera y restauración
-description: Distribución de bares, restaurantes y plazas hoteleras en los 40 barrios de Salamanca y su alfoz
-date: 29-08-2026
+description: Mapa del censo de bares de la IDE municipal - 626 establecimientos, 247 con terraza y 24.080 plazas de aforo - su reparto por barrio, las 10 mayores terrazas y qué datos de hostelería siguen sin verificar
+date: 06-10-2026
 folder: Turismo
 permalink: estructura-hostelera
 ---
@@ -14,43 +14,127 @@ permalink: estructura-hostelera
                 <h1 class="section-title">{{ page.title }}</h1>
                 <p class="section-description">{{ page.description }}</p>
             </div>
-			
+
 			<div id="section-content">
-						
-  <!-- Mapa de ejes hosteleros Leaflet -->
-  <div id="mapaHosteleria" style="width: 100%; height: 500px; border-radius: 8px; margin-bottom: 25px;"></div>
 
- 
-			<h2>Análisis del tejido hostelero y gastronómico</h2>
-			
+  <div id="mapaHosteleria" style="width: 100%; height: 520px; border-radius: 8px; margin-bottom: 10px;"></div>
+  <p style="font-size:0.9em; margin-bottom:25px;">Activa o desactiva cada capa arriba a la derecha. <span style="color:#2C8A3E;">&#9679;</span> Bar con terraza &nbsp; <span style="color:#7F8C8D;">&#9679;</span> Bar sin terraza &nbsp; <span style="color:#C0392B;">&#9632;</span> Terrazas con superficie y mesas detalladas (10). Pulsa un punto para ver su aforo.</p>
+
+			<h2>El Centro concentra casi uno de cada cinco bares, con 34 por cada 1.000 habitantes</h2>
+
 				<p>
-La hostelería en Salamanca es uno de los motores económicos principales de la ciudad. La oferta combina <b>ejes monumentales de alta gama</b>, zonas tradicionales de tapeo con fuerte arraigo universitario y un volumen considerable de <a href="/viviendas-turisticas-alojamiento">plazas hoteleras orientadas al turismo urbano</a>.</p>
+El censo de establecimientos de la IDE municipal (Infraestructura de Datos Espaciales del Ayuntamiento) recoge <b>626 bares y cafeterías</b>, de los que <b>247 (el 39 %) tienen terraza</b>. Suman <b>24.080 plazas de aforo</b> declaradas y la mediana es de 46 plazas por local; 235 establecimientos no tienen aforo registrado. Con la población por barrio de la capa de indicadores de la IDE, la ciudad tiene <b>4,4 bares por cada 1.000 habitantes</b>.</p>
 
-<h3>Polos de actividad hostelera</h3>
+<h3>Hallazgos clave</h3>
 <ul>
-<li><b>Eje Monumental y Plaza Mayor</b>: Centro concentra, con diferencia, la mayor densidad de restaurantes y terrazas (505 locales y 4.850 plazas hoteleras), con una fuerte orientación al <a href="/visitantes-pernoctaciones">visitante nacional e internacional</a>.</li>
-<li><b>Eje Van Dyck &ndash; Labradores</b>: zona de referencia para el tapeo tradicional y universitario, con 147 locales concentrados en el pequeño barrio de Labradores, lo que da la densidad de bares por residente más alta de toda la ciudad, muy por encima de su tamaño real de población.</li>
-<li><b>Un segundo foco hotelero en el alfoz</b>: Carbajosa de la Sagrada, con sus centros comerciales y el acceso a la autovía, concentra un clúster de hoteles de carretera (260 plazas) y restauración de paso que no figuraba en el análisis original.</li>
-<li><b>Comercio de proximidad en el resto de la ciudad</b>: en las 30 collaciones históricas más pequeñas, la oferta se reduce a un puñado de bares y como mucho un restaurante por barrio, sin ninguna plaza hotelera.</li>
+<li><b>El barrio Centro tiene 116 bares: casi uno de cada cinco.</b> Con unos 3.400 habitantes, sale a <b>34 bares por cada 1.000 habitantes</b>, casi cinco veces más que Salesas (7,2), el siguiente barrio de más de 3.000 habitantes. Después del Centro, los barrios con más establecimientos en cifras absolutas son Oeste (44), Salesas (42) y Garrido Sur (39).</li>
+<li><b>La densidad cae mucho fuera del centro.</b> En los barrios grandes más alejados, como Zurguén (1,0), Capuchinos (1,2) o Tejares (0,7), hay uno o menos de un bar por cada 1.000 habitantes.</li>
+<li><b>Cuatro de cada diez bares tienen terraza.</b> De los 626 establecimientos del censo, 247 declaran terraza.</li>
+<li><b>Las licencias son recientes.</b> De los 394 establecimientos con fecha de licencia, 189 (el 48 %) son de los años veinte de este siglo y 100 de los diez anteriores; solo 9 son anteriores a 1990. Otros 232 no tienen fecha registrada.</li>
+<li><b>Las diez mayores terrazas suman casi 1.300 m².</b> Entre ellas ocupan 1.294,5 m², con 415 mesas y 1.851 sillas autorizadas. La mayor, Nero, tiene 230 m² y 260 sillas.</li>
 </ul>
 
-  <h2>Número de locales de restauración por barrio</h2>
-  <canvas id="hosteleriaBarriosChart" width="800" height="1150"></canvas>
+  <h2>Bares por barrio: los 12 con más establecimientos</h2>
+  <canvas id="hosteleriaBarriosChart" width="800" height="440"></canvas>
+
+  <h2>Años de las licencias</h2>
+  <canvas id="hosteleriaLicenciasChart" width="800" height="340"></canvas>
+
+  <h2>Cómo leer estos datos</h2>
+  <ul>
+    <li>El censo incluye cafeterías y bares y no recoge necesariamente los restaurantes ni los alojamientos; por eso no sirve para comparar con la oferta hotelera.</li>
+    <li>La posición de cada establecimiento es el centro de la parcela catastral en la que figura, y el barrio se calcula cruzándola con los polígonos de barrio de la capa de indicadores de población. Las ratios son orientativas, porque el Centro recibe también a clientes que no residen allí.</li>
+    <li>El aforo es el declarado en el censo (235 establecimientos no tienen); la fecha es la de la licencia, no la de apertura. La capa también identifica a los titulares, pero esta página no los reproduce.</li>
+    <li>Las terrazas con detalle son solo 10, no las 247 con terraza: son las únicas con superficie, mesas, sillas y veladores en la capa de terrazas.</li>
+  </ul>
+
+  <h2>Datos sin fuente verificada</h2>
+  <p style="background:#FFF4E5; border-left:4px solid #F4A261; padding:10px 14px;"><b>No verificado.</b> La versión anterior de esta página daba cifras de bares, restaurantes y plazas hoteleras por barrio y municipio (por ejemplo, 505 locales y 4.850 plazas hoteleras en el Centro, 147 locales en Labradores o 260 plazas en Carbajosa de la Sagrada). No tienen una fuente que Open Salamanca haya podido contrastar y no coinciden con el censo oficial (que da 116 bares en el Centro y 33 en Labradores), por lo que se mantienen solo como referencia en la tabla y el gráfico del final de la página.</p>
 
 			</div>
-			
+
 			<div id="section-table">
-			<table border="1" cellpadding="5" cellspacing="0">
-			  <thead>
-				<tr>
-				  <th>Zona / Barrio</th>
-				  <th>Bares y Cafeterías</th>
-				  <th>Restaurantes</th>
-				  <th>Plazas Hoteleras</th>
-				  <th>Densidad (Locales / 1.000 hab.)</th>
-				</tr>
-			  </thead>
-			  <tbody>
+				<h2>Las 10 terrazas con detalle</h2>
+				<table border="1" cellpadding="5" cellspacing="0">
+				  <thead>
+					<tr><th>Establecimiento</th><th>Superficie (m²)</th><th>Veladores</th><th>Mesas</th><th>Sillas</th><th>Licencia</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>Nero</td><td>230,0</td><td>20</td><td>50</td><td>260</td><td>2017</td></tr>
+					<tr><td>Abadia Plaza</td><td>180,0</td><td>4</td><td>40</td><td>220</td><td>2014</td></tr>
+					<tr><td>Berysa</td><td>160,0</td><td>10</td><td>55</td><td>195</td><td>2021</td></tr>
+					<tr><td>Cafe Novelty</td><td>142,5</td><td>10</td><td>60</td><td>220</td><td>2020</td></tr>
+					<tr><td>Cafeteria la Marquesa Brava</td><td>140,0</td><td>6</td><td>60</td><td>260</td><td>2025</td></tr>
+					<tr><td>Las Torres</td><td>114,0</td><td>4</td><td>50</td><td>200</td><td>2023</td></tr>
+					<tr><td>Meson Gonzalo</td><td>110,0</td><td>0</td><td>25</td><td>146</td><td>2020</td></tr>
+					<tr><td>Cervantes</td><td>98,0</td><td>0</td><td>40</td><td>180</td><td>2016</td></tr>
+					<tr><td>Cafeteria</td><td>70,0</td><td>0</td><td>20</td><td>90</td><td>2024</td></tr>
+					<tr><td>tentazion</td><td>50,0</td><td>0</td><td>15</td><td>80</td><td>2022</td></tr>
+				  </tbody>
+				</table>
+
+				<h2>Bares por barrio (censo oficial)</h2>
+				<table border="1" cellpadding="5" cellspacing="0">
+				  <thead>
+					<tr><th>Barrio</th><th>Bares</th><th>Con terraza</th><th>Aforo total</th><th>Bares por 1.000 hab.</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>Centro</td><td>116</td><td>57</td><td>6.543</td><td>34,0</td></tr>
+					<tr><td>Oeste</td><td>44</td><td>15</td><td>1.379</td><td>5,4</td></tr>
+					<tr><td>Salesas</td><td>42</td><td>15</td><td>1.683</td><td>7,2</td></tr>
+					<tr><td>Garrido Sur</td><td>39</td><td>7</td><td>871</td><td>4,6</td></tr>
+					<tr><td>Garrido Norte</td><td>36</td><td>22</td><td>1.272</td><td>3,2</td></tr>
+					<tr><td>Labradores</td><td>33</td><td>8</td><td>943</td><td>5,5</td></tr>
+					<tr><td>San Juan</td><td>32</td><td>8</td><td>877</td><td>16,2</td></tr>
+					<tr><td>Las Claras</td><td>29</td><td>13</td><td>1.309</td><td>9,9</td></tr>
+					<tr><td>San Bernardo</td><td>26</td><td>9</td><td>903</td><td>5,9</td></tr>
+					<tr><td>Úrsulas - San Marcos</td><td>25</td><td>12</td><td>1.310</td><td>12,4</td></tr>
+					<tr><td>Delicias</td><td>24</td><td>7</td><td>910</td><td>5,0</td></tr>
+					<tr><td>Vidal</td><td>19</td><td>7</td><td>744</td><td>3,8</td></tr>
+					<tr><td>Universidad</td><td>18</td><td>7</td><td>626</td><td>13,6</td></tr>
+					<tr><td>Pizarrales</td><td>15</td><td>4</td><td>262</td><td>1,6</td></tr>
+					<tr><td>Estación</td><td>13</td><td>5</td><td>415</td><td>5,7</td></tr>
+					<tr><td>Rollo</td><td>12</td><td>6</td><td>401</td><td>1,8</td></tr>
+					<tr><td>Alamedilla</td><td>10</td><td>3</td><td>332</td><td>4,8</td></tr>
+					<tr><td>Prosperidad</td><td>10</td><td>6</td><td>283</td><td>1,9</td></tr>
+					<tr><td>San Esteban</td><td>7</td><td>3</td><td>433</td><td>9,6</td></tr>
+					<tr><td>Chinchibarra</td><td>7</td><td>3</td><td>185</td><td>1,6</td></tr>
+					<tr><td>Puente Ladrillo</td><td>7</td><td>2</td><td>190</td><td>1,4</td></tr>
+					<tr><td>Sancti Spíritus</td><td>6</td><td>4</td><td>531</td><td>6,0</td></tr>
+					<tr><td>Carmen</td><td>5</td><td>5</td><td>162</td><td>2,4</td></tr>
+					<tr><td>Zurguén</td><td>4</td><td>4</td><td>207</td><td>1,0</td></tr>
+					<tr><td>Capuchinos</td><td>4</td><td>1</td><td>77</td><td>1,2</td></tr>
+					<tr><td>Montalvo</td><td>4</td><td>0</td><td>0</td><td>&ndash;</td></tr>
+					<tr><td>Tormes</td><td>4</td><td>1</td><td>76</td><td>1,9</td></tr>
+					<tr><td>San Isidro</td><td>4</td><td>3</td><td>163</td><td>1,8</td></tr>
+					<tr><td>Tejares</td><td>3</td><td>2</td><td>143</td><td>0,7</td></tr>
+					<tr><td>La Vega</td><td>3</td><td>1</td><td>84</td><td>3,3</td></tr>
+					<tr><td>San José</td><td>3</td><td>1</td><td>79</td><td>1,0</td></tr>
+					<tr><td>Ciudad Jardín</td><td>3</td><td>0</td><td>24</td><td>3,1</td></tr>
+					<tr><td>Santo Tomás</td><td>3</td><td>0</td><td>0</td><td>1,5</td></tr>
+					<tr><td>Buenos Aires</td><td>2</td><td>1</td><td>23</td><td>2,4</td></tr>
+					<tr><td>Huerta Otea</td><td>2</td><td>1</td><td>154</td><td>0,7</td></tr>
+					<tr><td>Teso de la Feria</td><td>2</td><td>2</td><td>203</td><td>1,3</td></tr>
+					<tr><td>San Vicente</td><td>2</td><td>0</td><td>0</td><td>2,1</td></tr>
+					<tr><td>Chamberí</td><td>1</td><td>1</td><td>56</td><td>0,6</td></tr>
+					<tr><td>Hospital</td><td>1</td><td>0</td><td>0</td><td>2,1</td></tr>
+					<tr><td>Vistahermosa</td><td>1</td><td>1</td><td>26</td><td>0,4</td></tr>
+					<tr><td>Blanco</td><td>1</td><td>0</td><td>0</td><td>0,4</td></tr>
+					<tr><td>Arrabal</td><td>1</td><td>0</td><td>34</td><td>1,6</td></tr>
+					<tr><td>Tenerias</td><td>1</td><td>0</td><td>84</td><td>1,7</td></tr>
+					<tr><td>La Fontana</td><td>1</td><td>0</td><td>83</td><td>2,0</td></tr>
+					<tr><td>Zaldesa</td><td>1</td><td>0</td><td>0</td><td>&ndash;</td></tr>
+				  </tbody>
+				</table>
+				<p><small>Fuente: capas "Censo de establecimientos" y "Terrazas" de la IDE del Ayuntamiento de Salamanca; población por barrio de su capa de indicadores. Ratios elaboradas por Open Salamanca.</small></p>
+
+				<h2>Tabla anterior (no verificado)</h2>
+				<p style="background:#FFF4E5; border-left:4px solid #F4A261; padding:10px 14px;"><b>No verificado.</b> Sin fuente contrastada; varias filas son idénticas (Garrido Norte y Garrido Sur) y muchas densidades están en torno a 15-17, lo que apunta a una estimación. Se conserva solo como referencia.</p>
+				<table border="1" cellpadding="5" cellspacing="0">
+				  <thead>
+					<tr><th>Zona / barrio (no verificado)</th><th>Bares y cafeterías (no verificado)</th><th>Restaurantes (no verificado)</th><th>Plazas hoteleras (no verificado)</th><th>Densidad locales/1.000 hab. (no verificado)</th></tr>
+				  </thead>
+				  <tbody>
 				<tr><td>Centro</td><td>340</td><td>165</td><td>4.850</td><td>38.2</td></tr>
 				<tr><td>Labradores (Van Dyck)</td><td>115</td><td>32</td><td>420</td><td>12.4</td></tr>
 				<tr><td>San Bernardo</td><td>85</td><td>24</td><td>310</td><td>13.1</td></tr>
@@ -93,12 +177,13 @@ La hostelería en Salamanca es uno de los motores económicos principales de la 
 				<tr><td>San Isidro</td><td>3</td><td>1</td><td>0</td><td>14.3</td></tr>
 				<tr><td>Tenerías</td><td>3</td><td>1</td><td>0</td><td>15.1</td></tr>
 			  </tbody>
-			</table>
-
+				</table>
+				<h3>Gráfico anterior: locales por barrio (no verificado)</h3>
+				<canvas id="hosteleriaAnteriorChart" width="800" height="1150"></canvas>
 			</div>
-			
+
 			{% include categories.html %}
-            
+
         </div>
     </section>
 
@@ -106,37 +191,62 @@ La hostelería en Salamanca es uno de los motores económicos principales de la 
 	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 	<script>
-    // 1. Inicializar mapa de focos hosteleros
-    const mapHost = L.map('mapaHosteleria').setView([40.9655, -5.6630], 14);
-
+    const mapHost = L.map('mapaHosteleria', { preferCanvas: true }).setView([40.9655, -5.6630], 14);
     L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/light_all/{z}/{x}/{y}{r}.png?key=cb1_2izw_1_55d93b51ded1dcecfa044181', {
-      attribution: '&copy; OpenStreetMap &copy; CARTO',
+      attribution: '&copy; OpenStreetMap &copy; CARTO | Datos: IDE Ayuntamiento de Salamanca',
       subdomains: 'abcd',
       maxZoom: 19
     }).addTo(mapHost);
+    const esc = t => String(t).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+    const capas = {
+      'Bares con terraza (247)': L.layerGroup().addTo(mapHost),
+      'Bares sin terraza (379)': L.layerGroup().addTo(mapHost),
+      'Terrazas con detalle (10)': L.layerGroup().addTo(mapHost)
+    };
+    // [nombre, superficie, veladores, mesas, sillas, año, polígono]
+    const terrazas = [["Nero",230.0,20,50,260,"2017",[[40.9648,-5.6645],[40.9649,-5.6646],[40.9651,-5.6645],[40.9651,-5.6644],[40.9648,-5.6645]]],["Abadia Plaza",180.0,4,40,220,"2014",[[40.9654,-5.6644],[40.9654,-5.6644],[40.9653,-5.6644],[40.9653,-5.6643],[40.9651,-5.6644],[40.9651,-5.6645],[40.9654,-5.6644]]],["Berysa",160.0,10,55,195,"2021",[[40.9648,-5.6643],[40.9648,-5.6645],[40.9648,-5.6645],[40.9648,-5.6645],[40.9647,-5.6643],[40.9648,-5.6643]]],["Cafe Novelty",142.5,10,60,220,"2020",[[40.9653,-5.6638],[40.9653,-5.6638],[40.9652,-5.6636],[40.9653,-5.6635],[40.9653,-5.6638]]],["Cafeteria la Marquesa Brava",140.0,6,60,260,"2025",[[40.9652,-5.6635],[40.9652,-5.6636],[40.9652,-5.6636],[40.9652,-5.6636],[40.9649,-5.6637],[40.9649,-5.6636],[40.9652,-5.6635]]],["Las Torres",114.0,4,50,200,"2023",[[40.9654,-5.6644],[40.9654,-5.6641],[40.9653,-5.6641],[40.9654,-5.6643],[40.9654,-5.6644]]],["Meson Gonzalo",110.0,0,25,146,"2020",[[40.9647,-5.664],[40.9648,-5.6643],[40.9647,-5.6643],[40.9647,-5.6641],[40.9647,-5.664]]],["Cervantes",98.0,0,40,180,"2016",[[40.9649,-5.6636],[40.9649,-5.6637],[40.9647,-5.6638],[40.9647,-5.6637],[40.9649,-5.6636]]],["Cafeteria",70.0,0,20,90,"2024",[[40.9647,-5.6638],[40.9647,-5.6637],[40.9646,-5.6637],[40.9646,-5.6638],[40.9647,-5.6638],[40.9647,-5.6638],[40.9647,-5.6638]]],["tentazion",50.0,0,15,80,"2022",[[40.9647,-5.664],[40.9647,-5.6639],[40.9646,-5.6639],[40.9646,-5.664],[40.9647,-5.664]]]];
+    terrazas.forEach(t => L.polygon(t[6], { color: '#C0392B', weight: 2, fillColor: '#C0392B', fillOpacity: 0.35 })
+      .bindPopup(`<b>${esc(t[0])}</b><br>${t[1].toLocaleString('es-ES')} m² · ${t[3]} mesas · ${t[4]} sillas · ${t[2]} veladores<br>Licencia: ${t[5]}`).addTo(capas['Terrazas con detalle (10)']));
+    // [nombre, dirección, terraza, aforo, lat, lng]
+    fetch('/hosteleria-censo.json?v=1').then(r => r.json()).then(d => {
+      d.forEach(b => L.circleMarker([b[4], b[5]], { radius: 4, fillColor: b[2] ? '#2C8A3E' : '#7F8C8D', color: '#fff', weight: 0.8, fillOpacity: 0.85 })
+        .bindPopup(`<b>${esc(b[0])}</b><br>${esc(b[1])}<br>${b[2] ? 'Con terraza' : 'Sin terraza'}${b[3] ? ' · Aforo: ' + b[3] : ' · Aforo no registrado'}`)
+        .addTo(capas[b[2] ? 'Bares con terraza (247)' : 'Bares sin terraza (379)']));
+    }).catch(() => {});
+    L.control.layers(null, capas, { collapsed: false }).addTo(mapHost);
 
-    // Nodos hosteleros por barrio: centroide real de cada polígono en barrios-salamanca.json.
-    const focosHosteleros = [
-      { name: 'Centro', lat: 40.9649, lng: -5.6639, desc: '505 locales y 4.850 plazas hoteleras · eje turístico y monumental', color: '#E63946' },
-      { name: 'Labradores (Van Dyck)', lat: 40.9706, lng: -5.6606, desc: '147 locales · polo tradicional de tapeo universitario', color: '#F4A261' },
-      { name: 'San Bernardo', lat: 40.9684, lng: -5.6738, desc: '109 locales y 310 plazas · cafeterías y menús de día estudiantiles', color: '#2A9D8F' },
-      { name: 'Garrido Norte', lat: 40.9768, lng: -5.6466, desc: '86 locales · hostelería de barrio y proximidad', color: '#264653' },
-      { name: 'Delicias', lat: 40.9668, lng: -5.6538, desc: '74 locales y 266 plazas hoteleras', color: '#264653' },
-      { name: 'Carbajosa de la Sagrada', lat: 40.9280, lng: -5.7080, desc: '36 locales y 260 plazas · hoteles de carretera y de centro comercial (alfoz)', color: '#E63946' }
-    ];
-
-    focosHosteleros.forEach(f => {
-      L.circle([f.lat, f.lng], {
-        color: f.color,
-        fillColor: f.color,
-        fillOpacity: 0.5,
-        radius: 300
-      }).bindPopup(`<b>${f.name}</b><br>${f.desc}`).addTo(mapHost);
+    new Chart(document.getElementById('hosteleriaBarriosChart').getContext('2d'), {
+      type: 'bar',
+      data: {
+        labels: ["Centro", "Oeste", "Salesas", "Garrido Sur", "Garrido Norte", "Labradores", "San Juan", "Las Claras", "San Bernardo", "Úrsulas - San Marcos", "Delicias", "Vidal"],
+        datasets: [
+          { label: 'Con terraza', data: [57, 15, 15, 7, 22, 8, 8, 13, 9, 12, 7, 7], backgroundColor: '#2C8A3E', stack: 'b' },
+          { label: 'Sin terraza', data: [59, 29, 27, 32, 14, 25, 24, 16, 17, 13, 17, 12], backgroundColor: '#7F8C8D', stack: 'b' }
+        ]
+      },
+      options: {
+        indexAxis: 'y', responsive: true,
+        plugins: { legend: { position: 'top' } },
+        scales: { x: { stacked: true, beginAtZero: true, title: { display: true, text: 'Número de bares (626 en total)' } }, y: { stacked: true } }
+      }
     });
 
-    // 2. Gráfico de barras de locales por zona
-    const ctxHost = document.getElementById('hosteleriaBarriosChart').getContext('2d');
-    const hosteleriaBarriosChart = new Chart(ctxHost, {
+    new Chart(document.getElementById('hosteleriaLicenciasChart').getContext('2d'), {
+      type: 'bar',
+      data: {
+        labels: ['1970-79', '1980-89', '1990-99', '2000-09', '2010-19', '2020-25'],
+        datasets: [{ label: 'Licencias', data: [1, 8, 44, 52, 100, 189], backgroundColor: '#1E56A0', borderRadius: 4 }]
+      },
+      options: {
+        responsive: true,
+        plugins: { legend: { display: false } },
+        scales: { y: { beginAtZero: true, title: { display: true, text: 'Bares con licencia (394 con fecha; 232 sin fecha)' } }, x: { title: { display: true, text: 'Década de la licencia' } } }
+      }
+    });
+
+    // Gráfico anterior sin fuente verificada
+    const ctxHostAnt = document.getElementById('hosteleriaAnteriorChart').getContext('2d');
+    new Chart(ctxHostAnt, {
       type: 'bar',
       data: {
         labels: [
@@ -151,7 +261,7 @@ La hostelería en Salamanca es uno de los motores económicos principales de la 
         ],
         datasets: [
           {
-            label: 'Bares y Cafeterías',
+            label: 'Bares y cafeterías (no verificado)',
             data: [
               340, 115, 85, 72, 72, 57, 22, 25, 24, 23,
               20, 20, 14, 13, 13, 11, 10, 10, 9, 9,
@@ -161,7 +271,7 @@ La hostelería en Salamanca es uno de los motores económicos principales de la 
             backgroundColor: 'rgba(30, 86, 160, 0.75)'
           },
           {
-            label: 'Restaurantes',
+            label: 'Restaurantes (no verificado)',
             data: [
               165, 32, 24, 14, 14, 17, 14, 5, 6, 4,
               6, 4, 5, 4, 4, 4, 3, 3, 3, 3,
@@ -177,7 +287,7 @@ La hostelería en Salamanca es uno de los motores económicos principales de la 
         responsive: true,
         plugins: { legend: { position: 'top' } },
         scales: {
-          x: { title: { display: true, text: 'Número de Establecimientos' }, beginAtZero: true },
+          x: { title: { display: true, text: 'Número de establecimientos (no verificado)' }, beginAtZero: true },
           y: { title: { display: true, text: 'Barrio / Municipio' } }
         }
       }
