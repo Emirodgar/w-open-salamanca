@@ -1,0 +1,148 @@
+---
+layout: default
+title: Reciclaje en Salamanca - contenedores y puntos limpios
+description: Mapa de los 1.849 puntos de contenedores, los 81 de ropa y los 4 puntos limpios de la IDE municipal, y qué barrios tienen más contenedores por habitante
+date: 06-10-2026
+folder: Medio Ambiente
+permalink: reciclaje-salamanca
+---
+
+    <section class="featured dataset" id="datos">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="section-title">{{ page.title }}</h1>
+                <p class="section-description">{{ page.description }}</p>
+            </div>
+
+			<div id="section-content">
+
+  <div id="mapaReciclaje" style="width: 100%; height: 520px; border-radius: 8px; margin-bottom: 10px;"></div>
+  <p style="font-size:0.9em; margin-bottom:25px;">Activa o desactiva cada capa arriba a la derecha. <span style="color:#8B5E3C;">&#9679;</span> Contenedores orgánicos &nbsp; <span style="color:#2C8A3E;">&#9679;</span> Islas de reciclaje &nbsp; <span style="color:#7B2CBF;">&#9679;</span> Contenedores de ropa &nbsp; <span style="color:#C0392B;">&#9650;</span> Puntos limpios.</p>
+
+			<h2>1.849 puntos de contenedores, unos 13 por cada 1.000 habitantes</h2>
+
+			<p>
+La IDE municipal (Infraestructura de Datos Espaciales del Ayuntamiento) publica la ubicación de los contenedores de residuos de la ciudad. La capa recoge <b>1.849 puntos</b>: <b>1.368 de contenedores orgánicos</b> (el 74 %) y <b>481 islas de reciclaje</b> (el 26 %), a los que se suman <b>81 contenedores de ropa</b> y <b>4 puntos limpios</b>. Según la capa de indicadores por barrio de la IDE, la ciudad tiene unos 143.660 habitantes, lo que da <b>12,9 puntos de contenedores por cada 1.000 habitantes</b>.
+</p>
+
+<h3>Hallazgos clave</h3>
+<ul>
+<li><b>San Bernardo y Huerta Otea lideran la dotación.</b> Entre los barrios con más de 1.500 habitantes, San Bernardo (18,7 puntos por 1.000 habitantes) y Huerta Otea (18,6) tienen la mayor densidad de contenedores, seguidos de Chamberí (15,7) y Úrsulas - San Marcos (15,4).</li>
+<li><b>Santo Tomás, Zurguén y Garrido Sur, a la cola.</b> Tienen 7,6, 7,8 y 9,0 puntos por 1.000 habitantes. Garrido Sur y Pizarrales (9,8) son además dos de los barrios más poblados, con casi 8.500 y 9.700 habitantes, por lo que reparten pocos puntos entre mucha gente.</li>
+<li><b>Los barrios más poblados tienen más puntos, pero no más por habitante.</b> Garrido Norte, el más poblado (11.271 habitantes), suma el mayor número de puntos (119), pero su ratio es de unos 10,6 por 1.000, por debajo de la media de la ciudad.</li>
+<li><b>Cuatro puntos limpios para toda la ciudad.</b> Capuchinos, Chinchibarra y La Aldehuela abren de lunes a sábado de 9:30 a 19:30 y los domingos de 10:00 a 15:00; el del Zurguén, solo de lunes a viernes de 9:00 a 17:00.</li>
+</ul>
+
+  <h2>Puntos de contenedores por 1.000 habitantes: los seis barrios con más y con menos</h2>
+  <canvas id="reciclajeBarrioChart" width="800" height="440"></canvas>
+
+  <h2>Cómo leer estos datos</h2>
+  <ul>
+    <li>Cada registro es un punto de contenedores, no un contenedor: una isla de reciclaje puede incluir varios contenedores (papel, envases, vidrio). Por eso las cifras miden la distribución de puntos y no la capacidad total.</li>
+    <li>El barrio de cada punto se ha calculado cruzando sus coordenadas con los polígonos de barrio de la capa de indicadores de población de la IDE; 12 puntos quedan fuera de esos polígonos y no cuentan en ningún barrio. Solo se comparan barrios con más de 1.500 habitantes.</li>
+    <li>La población es la de esa capa (campo de población total) y no se indica el año; las ratios son orientativas.</li>
+    <li>La capa no informa de los contenedores de envases, papel o vidrio por separado ni de su capacidad, y no incluye contenedores de resto o de otras fracciones distintas de las dos categorías anteriores.</li>
+  </ul>
+
+			</div>
+
+			<div id="section-table">
+				<h2>Puntos limpios</h2>
+				<table border="1" cellpadding="5" cellspacing="0">
+				  <thead>
+					<tr><th>Punto limpio</th><th>Dirección</th><th>Horario</th><th>Teléfono</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>Punto limpio Capuchinos Salamanca</td><td>C. Valles Mineros, s/n, 37006 Salamanca</td><td>De Lunes a Sabado 9:30-19:30 | Domingos 10:00-15:00</td><td>617 32 41 70</td></tr>
+					<tr><td>Punto limpio de Chinchibarra</td><td>Av. Vicente del Bosque, s/n, 37005 Salamanca</td><td>De Lunes a Sabado 9:30-19:30 | Domingos 10:00-15:00</td><td>617 32 41 78</td></tr>
+					<tr><td>Punto Limpio La Aldehuela Salamanca</td><td>Av. de la Aldehuela, 35, 37003 Salamanca</td><td>De Lunes a Sabado 9:30-19:30 | Domingos 10:00-15:00</td><td>617 32 41 38</td></tr>
+					<tr><td>Punto Limpio Zurguén Salamanca</td><td>Av. de la Virgen del Cueto, s/n, 37008 Salamanca</td><td>De Lunes a Viernes 9:00- 17:00</td><td>617 32 41 81</td></tr>
+				  </tbody>
+				</table>
+
+				<h2>Puntos de contenedores por barrio (barrios con más de 1.500 habitantes)</h2>
+				<table border="1" cellpadding="5" cellspacing="0">
+				  <thead>
+					<tr><th>Barrio</th><th>Habitantes</th><th>Puntos de contenedores</th><th>Puntos por 1.000 habitantes</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>San Bernardo</td><td>4.427</td><td>83</td><td>18,7</td></tr>
+					<tr><td>Huerta Otea</td><td>2.738</td><td>51</td><td>18,6</td></tr>
+					<tr><td>Chamberí</td><td>1.719</td><td>27</td><td>15,7</td></tr>
+					<tr><td>Úrsulas - San Marcos</td><td>2.017</td><td>31</td><td>15,4</td></tr>
+					<tr><td>Vistahermosa</td><td>2.673</td><td>41</td><td>15,3</td></tr>
+					<tr><td>Tejares</td><td>4.242</td><td>63</td><td>14,9</td></tr>
+					<tr><td>Chinchibarra</td><td>4.341</td><td>61</td><td>14,1</td></tr>
+					<tr><td>Vidal</td><td>5.053</td><td>71</td><td>14,1</td></tr>
+					<tr><td>Estación</td><td>2.289</td><td>32</td><td>14,0</td></tr>
+					<tr><td>Alamedilla</td><td>2.068</td><td>28</td><td>13,5</td></tr>
+					<tr><td>San José</td><td>2.954</td><td>39</td><td>13,2</td></tr>
+					<tr><td>San Juan</td><td>1.973</td><td>26</td><td>13,2</td></tr>
+					<tr><td>Blanco</td><td>2.428</td><td>31</td><td>12,8</td></tr>
+					<tr><td>Tormes</td><td>2.117</td><td>27</td><td>12,8</td></tr>
+					<tr><td>Delicias</td><td>4.794</td><td>55</td><td>11,5</td></tr>
+					<tr><td>Capuchinos</td><td>3.358</td><td>38</td><td>11,3</td></tr>
+					<tr><td>Salesas</td><td>5.850</td><td>66</td><td>11,3</td></tr>
+					<tr><td>Rollo</td><td>6.841</td><td>76</td><td>11,1</td></tr>
+					<tr><td>Teso de la Feria</td><td>1.537</td><td>17</td><td>11,1</td></tr>
+					<tr><td>Labradores</td><td>6.020</td><td>66</td><td>11,0</td></tr>
+					<tr><td>Prosperidad</td><td>5.393</td><td>59</td><td>10,9</td></tr>
+					<tr><td>Puente Ladrillo</td><td>5.038</td><td>55</td><td>10,9</td></tr>
+					<tr><td>Centro</td><td>3.415</td><td>37</td><td>10,8</td></tr>
+					<tr><td>Oeste</td><td>8.109</td><td>86</td><td>10,6</td></tr>
+					<tr><td>Las Claras</td><td>2.925</td><td>31</td><td>10,6</td></tr>
+					<tr><td>Garrido Norte</td><td>11.271</td><td>119</td><td>10,6</td></tr>
+					<tr><td>Pizarrales</td><td>9.657</td><td>95</td><td>9,8</td></tr>
+					<tr><td>San Isidro</td><td>2.178</td><td>21</td><td>9,6</td></tr>
+					<tr><td>Carmen</td><td>2.070</td><td>19</td><td>9,2</td></tr>
+					<tr><td>Garrido Sur</td><td>8.445</td><td>76</td><td>9,0</td></tr>
+					<tr><td>Zurguén</td><td>3.842</td><td>30</td><td>7,8</td></tr>
+					<tr><td>Santo Tomás</td><td>1.986</td><td>15</td><td>7,6</td></tr>
+				  </tbody>
+				</table>
+				<p><small>Fuente: capas de residuos, contenedores de ropa y puntos limpios de la IDE del Ayuntamiento de Salamanca; población por barrio de su capa de indicadores. Ratios elaboradas por Open Salamanca.</small></p>
+			</div>
+
+			{% include categories.html %}
+
+        </div>
+    </section>
+
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+	<script>
+    const mapRec = L.map('mapaReciclaje', { preferCanvas: true }).setView([40.9650, -5.6650], 13);
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/light_all/{z}/{x}/{y}{r}.png?key=cb1_2izw_1_55d93b51ded1dcecfa044181', {
+      attribution: '&copy; OpenStreetMap &copy; CARTO | Datos: IDE Ayuntamiento de Salamanca', subdomains: 'abcd', maxZoom: 19
+    }).addTo(mapRec);
+    const esc = t => String(t).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+    // [nombre, dirección, teléfono, horario, lat, lng]
+    const puntosLimpios = [["Punto limpio Capuchinos Salamanca","C. Valles Mineros, s/n, 37006 Salamanca","617 32 41 70","De Lunes a Sabado 9:30-19:30 | Domingos 10:00-15:00",40.9835,-5.667],["Punto limpio de Chinchibarra","Av. Vicente del Bosque, s/n, 37005 Salamanca","617 32 41 78","De Lunes a Sabado 9:30-19:30 | Domingos 10:00-15:00",40.9798,-5.6552],["Punto Limpio La Aldehuela Salamanca","Av. de la Aldehuela, 35, 37003 Salamanca","617 32 41 38","De Lunes a Sabado 9:30-19:30 | Domingos 10:00-15:00",40.9589,-5.6509],["Punto Limpio Zurguén Salamanca","Av. de la Virgen del Cueto, s/n, 37008 Salamanca","617 32 41 81","De Lunes a Viernes 9:00- 17:00",40.9447,-5.6724]];
+    const capas = {
+      'Contenedores orgánicos (1.368)': L.layerGroup().addTo(mapRec),
+      'Islas de reciclaje (481)': L.layerGroup().addTo(mapRec),
+      'Contenedores de ropa (81)': L.layerGroup(),
+      'Puntos limpios (4)': L.layerGroup().addTo(mapRec)
+    };
+    puntosLimpios.forEach(p => L.marker([p[4], p[5]]).bindPopup(`<b>${esc(p[0])}</b><br>${esc(p[1])}<br>${esc(p[3])}<br>Tel. ${esc(p[2])}`).addTo(capas['Puntos limpios (4)']));
+    fetch('/reciclaje-salamanca.json?v=1').then(r => r.json()).then(d => {
+      d.cont.forEach(c => L.circleMarker([c[1], c[2]], { radius: 3, fillColor: c[0] ? '#2C8A3E' : '#8B5E3C', color: '#fff', weight: 0.5, fillOpacity: 0.8 })
+        .bindPopup(`<b>${c[0] ? 'Isla de reciclaje' : 'Contenedor orgánico'}</b><br>${esc(c[3])}`).addTo(capas[c[0] ? 'Islas de reciclaje (481)' : 'Contenedores orgánicos (1.368)']));
+      d.ropa.forEach(c => L.circleMarker([c[1], c[2]], { radius: 4, fillColor: '#7B2CBF', color: '#fff', weight: 1, fillOpacity: 0.9 })
+        .bindPopup(`<b>Contenedor de ropa</b><br>${esc(c[0])}`).addTo(capas['Contenedores de ropa (81)']));
+    }).catch(() => {});
+    L.control.layers(null, capas, { collapsed: false }).addTo(mapRec);
+
+    new Chart(document.getElementById('reciclajeBarrioChart').getContext('2d'), {
+      type: 'bar',
+      data: {
+        labels: ["San Bernardo", "Huerta Otea", "Chamberí", "Úrsulas - San Marcos", "Vistahermosa", "Tejares", "Pizarrales", "San Isidro", "Carmen", "Garrido Sur", "Zurguén", "Santo Tomás"],
+        datasets: [{ label: 'Puntos por 1.000 habitantes', data: [18.7, 18.6, 15.7, 15.4, 15.3, 14.9, 9.8, 9.6, 9.2, 9.0, 7.8, 7.6], backgroundColor: ['#2C8A3E','#2C8A3E','#2C8A3E','#2C8A3E','#2C8A3E','#2C8A3E','#C0392B','#C0392B','#C0392B','#C0392B','#C0392B','#C0392B'], borderRadius: 4 }]
+      },
+      options: {
+        indexAxis: 'y', responsive: true,
+        plugins: { legend: { display: false } },
+        scales: { x: { beginAtZero: true, title: { display: true, text: 'Puntos de contenedores por 1.000 habitantes (media de la ciudad: 12,9)' } } }
+      }
+    });
+  </script>
