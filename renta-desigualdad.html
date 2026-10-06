@@ -2,7 +2,7 @@
 layout: default
 title: Renta por habitante y distribución del ingreso
 description: Análisis de la renta media por persona y hogar, distribución por los 40 barrios y brecha salarial en Salamanca
-date: 30-08-2026
+date: 06-10-2026
 folder: Demografia
 permalink: renta-desigualdad
 ---
@@ -17,29 +17,31 @@ permalink: renta-desigualdad
 			
 			<div id="section-content">
 						
+  <p style="background:#FFF4E5; border-left:4px solid #F4A261; padding:10px 14px;"><b>No verificado.</b> Las cifras de renta media, renta por hogar, brecha salarial de género y riesgo de pobreza por barrio de esta página (texto, gráficos y tabla) proceden de una versión anterior y no tienen una fuente que Open Salamanca haya podido contrastar; los valores por barrio coinciden con los de <a href="/renta-barrios">renta por barrios</a>, igualmente sin fuente. Se mantienen solo como referencia.</p>
+
   <canvas id="rentaHistoricaChart" width="800" height="400"></canvas>
 
  
-			<h2>Análisis de los niveles de ingreso y polarización urbana</h2>
+			<h2>Análisis de los niveles de ingreso y polarización urbana (no verificado)</h2>
 			
 				<p>
 Los datos de renta y distribución del ingreso en Salamanca reflejan una <b>brecha socioeconómica persistente entre el centro consolidado y la periferia</b>. Aunque la <a href="/renta-per-capita">renta media por habitante</a> ha experimentado un crecimiento nominal sostenido, la distribución del ingreso muestra marcadas diferencias según la sección censal y el distrito de residencia.</p>
 
-<h3>Indicadores clave de distribución socioeconómica</h3>
+<h3>Indicadores clave de distribución socioeconómica (no verificado)</h3>
 <ul>
 <li><b>Concentración de rentas altas</b>: Centro, San Vicente, Vidal y Chamberí, en el casco histórico, junto con Carbajosa de la Sagrada y Villamayor de Armuña en el alfoz, registran niveles de renta per cápita que superan la <a href="/renta-per-capita">media municipal</a> en más de un 8%.</li>
 <li><b>Vulnerabilidad en la periferia</b>: <a href="/renta-barrios">Barrios como San José, Platina, Rollo, Los Alambres y Los Alcaldes</a> presentan el mayor riesgo de pobreza de la ciudad, con tasas que superan el 26%, más de tres veces la del Centro.</li>
 <li><b>Zurguén, la excepción de la periferia</b>: pese a tener una renta per cápita similar a otros barrios de cola de tabla, Zurguén registra un riesgo de pobreza (16,5%) y una brecha salarial de género (17,0%) sensiblemente más bajos, coherente con su perfil de <a href="/evolucion-demografica">vivienda nueva y familias jóvenes con doble ingreso</a> ya detectado en el análisis demográfico del barrio.</li>
 </ul>
 
-  <h2>Renta media neta por habitante por barrio (€/año)</h2>
+  <h2>Renta media neta por habitante por barrio (€/año) (no verificado)</h2>
   <canvas id="rentaBarriosChart" width="800" height="1300"></canvas>
 
 <p>Esta desigualdad territorial convive con otra brecha, la de género, que va del 14,0% en Centro al 21,0% en San José —una diferencia que crece de forma casi paralela al riesgo de pobreza en cada barrio—, tal y como recoge la tabla siguiente.</p>
 
 <p>La desigualdad no se limita a la capital: entre los municipios de la provincia con más de 1.000 habitantes, la renta bruta media por declaración va de los 20.366 € de Macotera a los 36.623 € de Cabrerizos, como detalla el <a href="/municipios-mayor-renta-salamanca">ranking de renta por municipio con su evolución 2023-2024</a>.</p>
 
-  <h2>Población en riesgo de pobreza por barrio (%)</h2>
+  <h2>Población en riesgo de pobreza por barrio (%) (no verificado)</h2>
   <canvas id="pobrezaBarriosChart" width="800" height="1300"></canvas>
 
 			</div>
@@ -48,11 +50,11 @@ Los datos de renta y distribución del ingreso en Salamanca reflejan una <b>brec
 			<table border="1" cellpadding="5" cellspacing="0">
 			  <thead>
 				<tr>
-				  <th>Barrio / Municipio</th>
-				  <th>Renta Media / Hab (€)</th>
-				  <th>Renta Media Hogar (€)</th>
-				  <th>Brecha Salarial Género (%)</th>
-				  <th>Población en Riesgo Pobreza (%)</th>
+				  <th>Barrio / Municipio (no verificado)</th>
+				  <th>Renta Media / Hab (€) (no verificado)</th>
+				  <th>Renta Media Hogar (€) (no verificado)</th>
+				  <th>Brecha Salarial Género (%) (no verificado)</th>
+				  <th>Población en Riesgo Pobreza (%) (no verificado)</th>
 				</tr>
 			  </thead>
 			  <tbody>
@@ -103,6 +105,7 @@ Los datos de renta y distribución del ingreso en Salamanca reflejan una <b>brec
 				<tr><td>San José</td><td>11.950 €</td><td>28.080 €</td><td>21.0%</td><td>28.0%</td></tr>
 			  </tbody>
 			</table>
+			<p><small>No verificado: todos los datos de esta tabla carecen de fuente contrastada y se mantienen solo como referencia.</small></p>
 
 			</div>
 			
@@ -119,7 +122,7 @@ Los datos de renta y distribución del ingreso en Salamanca reflejan una <b>brec
       data: {
         labels: ['2018', '2019', '2020', '2021', '2022', '2023', '2024', '2025'],
         datasets: [{
-          label: 'Renta Media Neta por Habitante (€/año)',
+          label: 'Renta Media Neta por Habitante (€/año) (no verificado)',
           data: [11400, 11850, 11300, 11900, 12600, 13150, 13700, 14250],
           borderColor: '#1E56A0',
           backgroundColor: 'rgba(30, 86, 160, 0.1)',
@@ -131,7 +134,7 @@ Los datos de renta y distribución del ingreso en Salamanca reflejan una <b>brec
       options: {
         responsive: true,
         scales: {
-          y: { title: { display: true, text: 'Renta Neta (€)' }, beginAtZero: false },
+          y: { title: { display: true, text: 'Renta Neta (€) (no verificado)' }, beginAtZero: false },
           x: { title: { display: true, text: 'Año' } }
         }
       }
@@ -154,7 +157,7 @@ Los datos de renta y distribución del ingreso en Salamanca reflejan una <b>brec
           'Los Alcaldes', 'Los Alambres', 'Rollo', 'Platina', 'San José'
         ],
         datasets: [{
-          label: 'Renta Media / Hab (€)',
+          label: 'Renta Media / Hab (€) (no verificado)',
           data: [
             18450, 17280, 16940, 16820, 16610, 16320, 16210, 16080, 15870, 15690,
             15520, 15340, 15180, 15110, 14980, 14820, 14650, 14640, 14480, 14320,
@@ -173,7 +176,7 @@ Los datos de renta y distribución del ingreso en Salamanca reflejan una <b>brec
         responsive: true,
         plugins: { legend: { display: true, position: 'top' } },
         scales: {
-          x: { title: { display: true, text: 'Euros Anuales (€)' } },
+          x: { title: { display: true, text: 'Euros Anuales (€) (no verificado)' } },
           y: { title: { display: true, text: 'Barrio / Municipio' } }
         }
       }
@@ -196,7 +199,7 @@ Los datos de renta y distribución del ingreso en Salamanca reflejan una <b>brec
           'Chamberí', 'Carbajosa de la Sagrada', 'Vidal', 'San Vicente', 'Centro'
         ],
         datasets: [{
-          label: 'Población en Riesgo de Pobreza (%)',
+          label: 'Población en Riesgo de Pobreza (%) (no verificado)',
           data: [
             28.0, 27.5, 27.1, 26.6, 26.2, 25.3, 24.8, 24.4, 23.9, 23.5,
             23.0, 22.5, 22.1, 21.6, 21.2, 20.7, 20.3, 19.8, 19.4, 18.9,
@@ -215,7 +218,7 @@ Los datos de renta y distribución del ingreso en Salamanca reflejan una <b>brec
         responsive: true,
         plugins: { legend: { display: true, position: 'top' } },
         scales: {
-          x: { title: { display: true, text: 'Población en Riesgo de Pobreza (%)' } },
+          x: { title: { display: true, text: 'Población en Riesgo de Pobreza (%) (no verificado)' } },
           y: { title: { display: true, text: 'Barrio / Municipio' } }
         }
       }

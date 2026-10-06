@@ -2,7 +2,7 @@
 layout: default
 title: Evolución de la renta per cápita
 description: Renta neta media por persona en Salamanca entre 2015 y 2025
-date: 28-08-2026
+date: 06-10-2026
 folder: Economia
 permalink: renta-per-capita
 ---
@@ -17,15 +17,17 @@ permalink: renta-per-capita
 			
 			<div id="section-content">
 						
+  <p style="background:#FFF4E5; border-left:4px solid #F4A261; padding:10px 14px;"><b>No verificado.</b> Las cifras de renta anual de esta página (texto, gráficos y tabla, de 2015 a 2025) proceden de una versión anterior y no tienen una fuente que Open Salamanca haya podido contrastar. El dato de 2025 se presenta como "máximo histórico estimado" cuando las fuentes estadísticas oficiales de renta de los hogares (como el Atlas de Distribución de Renta de los Hogares del INE) aún no publican ese ejercicio. Se mantienen solo como referencia.</p>
+
   <canvas id="rentaChart" width="800" height="400"></canvas>
 
  
-			<h2>Análisis de las principales conclusiones</h2>
+			<h2>Análisis de las principales conclusiones (no verificado)</h2>
 			
 				<p>
 La evolución económica de los residentes en Salamanca ciudad en los últimos años muestra un <b>crecimiento sostenido de los ingresos netos tras una breve estancación durante el periodo de pandemia</b>. A pesar del impacto económico global experimentado entre 2020 y 2021, la renta per cápita de los salmantinos ha mantenido una trayectoria de convergencia y aceleración posterior, alcanzando en 2025 un máximo histórico estimado de 16.540 euros netos anuales por persona.</p>
 
-<h3>Tendencias económicas clave</h3>
+<h3>Tendencias económicas clave (no verificado)</h3>
 <ul>
 <li><b>Impacto de la pandemia y moderación (2019-2021)</b>: Tras años de progresivo ascenso, la renta media por habitante sufrió una leve ralentización en 2020 (+0,31%) y un ajuste moderado en 2021 (-0,73%), motivado por las restricciones de actividad, el peso del sector servicios y el perfil universitario/estudiantil de la capital.</li>
 
@@ -34,7 +36,7 @@ La evolución económica de los residentes en Salamanca ciudad en los últimos a
 
 <p>Esta evolución agregada convive con diferencias notables según el territorio y el género: el desglose por <a href="/renta-barrios">barrios y municipios del alfoz</a> refleja una brecha superior a los 6.500 euros anuales entre las zonas más y menos favorecidas, mientras que la comparativa de <a href="/renta-sexo">renta por sexo</a> muestra que la brecha salarial de género aún se sitúa cerca del 16%. Ambas perspectivas se enmarcan en el análisis más amplio de la <a href="/renta-desigualdad">renta y la desigualdad</a> en la provincia. Para el detalle por municipios, con la renta bruta declarada ante la Agencia Tributaria y su variación entre 2023 y 2024, puede consultarse el <a href="/municipios-mayor-renta-salamanca">ranking de renta de los municipios de Salamanca</a>.</p>
 
-  <h2>Evolución de la renta neta media por persona y variación anual (2015-2025)</h2>
+  <h2>Evolución de la renta neta media por persona y variación anual (2015-2025) (no verificado)</h2>
   <canvas id="rentaChart2" width="800" height="400"></canvas>
 
 
@@ -47,9 +49,9 @@ La evolución económica de los residentes en Salamanca ciudad en los últimos a
 			  <thead>
 				<tr>
 				  <th>Año</th>
-				  <th>Renta Neta Media / Hab. (€)</th>
-				  <th>Variación Anual (€)</th>
-				  <th>Variación %</th>
+				  <th>Renta Neta Media / Hab. (€) (no verificado)</th>
+				  <th>Variación Anual (€) (no verificado)</th>
+				  <th>Variación % (no verificado)</th>
 				</tr>
 			  </thead>
 			  <tbody>
@@ -66,6 +68,7 @@ La evolución económica de los residentes en Salamanca ciudad en los últimos a
 				<tr><td>2025</td><td>16.540</td><td>+610</td><td>+3.83%</td></tr>
 			  </tbody>
 			</table>
+			<p><small>No verificado: todos los datos de esta tabla carecen de fuente contrastada y se mantienen solo como referencia.</small></p>
 
 			</div>
 			
@@ -87,7 +90,7 @@ La evolución económica de los residentes en Salamanca ciudad en los últimos a
           '2020', '2021', '2022', '2023', '2024', '2025'
         ],
         datasets: [{
-          label: 'Renta Neta Media por Persona (€)',
+          label: 'Renta Neta Media por Persona (€) (no verificado)',
           data: [
             12180, 12450, 12890, 13310, 13820,
             13863, 13757, 14450, 15319, 15930, 16540
@@ -107,7 +110,7 @@ La evolución económica de los residentes en Salamanca ciudad en los últimos a
             beginAtZero: false,
             title: {
               display: true,
-              text: 'Euros (€)'
+              text: 'Euros (€) (no verificado)'
             }
           },
           x: {
@@ -131,7 +134,7 @@ La evolución económica de los residentes en Salamanca ciudad en los últimos a
         ],
         datasets: [
           {
-            label: 'Renta Neta Media por Persona (€)',
+            label: 'Renta Neta Media por Persona (€) (no verificado)',
             data: [
               12180, 12450, 12890, 13310, 13820,
               13863, 13757, 14450, 15319, 15930, 16540
@@ -145,7 +148,7 @@ La evolución económica de los residentes en Salamanca ciudad en los últimos a
             pointRadius: 4
           },
           {
-            label: 'Variación % Anual',
+            label: 'Variación % Anual (no verificado)',
             data: [
               null, 2.22, 3.53, 3.26, 3.83,
               0.31, -0.73, 5.04, 6.12, 3.99, 3.83
@@ -172,7 +175,7 @@ La evolución económica de los residentes en Salamanca ciudad en los últimos a
             position: 'left',
             title: {
               display: true,
-              text: 'Euros (€)'
+              text: 'Euros (€) (no verificado)'
             }
           },
           y2: {
@@ -180,7 +183,7 @@ La evolución económica de los residentes en Salamanca ciudad en los últimos a
             position: 'right',
             title: {
               display: true,
-              text: 'Variación %'
+              text: 'Variación % (no verificado)'
             },
             grid: {
               drawOnChartArea: false

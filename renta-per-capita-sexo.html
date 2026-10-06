@@ -2,7 +2,7 @@
 layout: default
 title: Renta per cápita por sexo
 description: Comparativa de renta neta media entre hombres y mujeres en Salamanca (2015-2025)
-date: 28-08-2026
+date: 06-10-2026
 folder: Economia
 permalink: renta-sexo
 ---
@@ -17,15 +17,17 @@ permalink: renta-sexo
 			
 			<div id="section-content">
 						
+  <p style="background:#FFF4E5; border-left:4px solid #F4A261; padding:10px 14px;"><b>No verificado.</b> Las cifras de renta por sexo y la brecha de género de esta página (texto, gráficos y tabla, de 2015 a 2025) proceden de una versión anterior y no tienen una fuente que Open Salamanca haya podido contrastar; la serie llega hasta 2025, un ejercicio que las estadísticas oficiales de renta de los hogares aún no publican. Se mantienen solo como referencia.</p>
+
   <canvas id="rentaSexoChart" width="800" height="400"></canvas>
 
  
-			<h2>Análisis de las principales conclusiones</h2>
+			<h2>Análisis de las principales conclusiones (no verificado)</h2>
 			
 				<p>
 El análisis de la renta neta media desglosada por sexo en Salamanca evidencia la persistencia de una <b>brecha de ingresos entre hombres y mujeres</b> a lo largo de la última década, aunque con una tendencia gradual hacia su reducción en los últimos años.</p>
 
-<h3>Tendencias clave por género</h3>
+<h3>Tendencias clave por género (no verificado)</h3>
 <ul>
 <li><b>Evolución sostenida pero desigual</b>: Ambas curvas muestran una tendencia ascendente desde 2015. Sin embargo, la renta media de los hombres ha sido sistemáticamente superior, superando la barrera de los 17.000€ en 2024, mientras que la de las mujeres alcanzó los 15.000€ ese mismo año.</li>
 <li><b>Reducción de la brecha salarial (2020-2025)</b>: Tras estabilizarse en torno al 18-19% durante el lustro anterior, la diferencia de ingresos ha comenzado a estrecharse progresivamente, situándose por debajo del 16% en 2025.</li>
@@ -33,7 +35,7 @@ El análisis de la renta neta media desglosada por sexo en Salamanca evidencia l
 
 <p>Esta brecha de género se entiende mejor en el contexto de la <a href="/renta-per-capita">evolución general de la renta per cápita</a> en Salamanca y de las diferencias que existen entre <a href="/renta-barrios">barrios y municipios</a> del área metropolitana. Territorio y género conforman juntos el mapa completo de la <a href="/renta-desigualdad">desigualdad de ingresos</a> en la ciudad.</p>
 
-  <h2>Evolución de la brecha salarial de género (%)</h2>
+  <h2>Evolución de la brecha salarial de género (%) (no verificado)</h2>
   <canvas id="brechaChart" width="800" height="400"></canvas>
 
 			</div>
@@ -43,10 +45,10 @@ El análisis de la renta neta media desglosada por sexo en Salamanca evidencia l
 			  <thead>
 				<tr>
 				  <th>Año</th>
-				  <th>Renta Hombres (€)</th>
-				  <th>Renta Mujeres (€)</th>
-				  <th>Diferencia (€)</th>
-				  <th>Brecha (%)</th>
+				  <th>Renta Hombres (€) (no verificado)</th>
+				  <th>Renta Mujeres (€) (no verificado)</th>
+				  <th>Diferencia (€) (no verificado)</th>
+				  <th>Brecha (%) (no verificado)</th>
 				</tr>
 			  </thead>
 			  <tbody>
@@ -63,6 +65,7 @@ El análisis de la renta neta media desglosada por sexo en Salamanca evidencia l
 				<tr><td>2025</td><td>18.050</td><td>15.180</td><td>2.870</td><td>15.90%</td></tr>
 			  </tbody>
 			</table>
+			<p><small>No verificado: todos los datos de esta tabla carecen de fuente contrastada y se mantienen solo como referencia.</small></p>
 
 			</div>
 			
@@ -80,7 +83,7 @@ El análisis de la renta neta media desglosada por sexo en Salamanca evidencia l
         labels: ['2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024', '2025'],
         datasets: [
           {
-            label: 'Hombres (€)',
+            label: 'Hombres (€) (no verificado)',
             data: [13480, 13750, 14220, 14650, 15200, 15230, 15100, 15850, 16780, 17420, 18050],
             borderColor: '#1E56A0',
             backgroundColor: 'rgba(30, 86, 160, 0.1)',
@@ -89,7 +92,7 @@ El análisis de la renta neta media desglosada por sexo en Salamanca evidencia l
             fill: true
           },
           {
-            label: 'Mujeres (€)',
+            label: 'Mujeres (€) (no verificado)',
             data: [10920, 11190, 11600, 12020, 12500, 12550, 12480, 13120, 13920, 14500, 15180],
             borderColor: '#E63946',
             backgroundColor: 'rgba(230, 57, 70, 0.1)',
@@ -102,7 +105,7 @@ El análisis de la renta neta media desglosada por sexo en Salamanca evidencia l
       options: {
         responsive: true,
         scales: {
-          y: { title: { display: true, text: 'Renta Neta Media (€)' } },
+          y: { title: { display: true, text: 'Renta Neta Media (€) (no verificado)' } },
           x: { title: { display: true, text: 'Año' } }
         }
       }
@@ -115,7 +118,7 @@ El análisis de la renta neta media desglosada por sexo en Salamanca evidencia l
       data: {
         labels: ['2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024', '2025'],
         datasets: [{
-          label: 'Brecha de Género (%)',
+          label: 'Brecha de Género (%) (no verificado)',
           data: [18.99, 18.61, 18.42, 17.95, 17.76, 17.60, 17.35, 17.22, 17.04, 16.76, 15.90],
           backgroundColor: 'rgba(244, 162, 97, 0.75)',
           borderColor: '#F4A261',
@@ -126,7 +129,7 @@ El análisis de la renta neta media desglosada por sexo en Salamanca evidencia l
       options: {
         responsive: true,
         scales: {
-          y: { title: { display: true, text: 'Diferencia (%)' }, beginAtZero: false },
+          y: { title: { display: true, text: 'Diferencia (%) (no verificado)' }, beginAtZero: false },
           x: { title: { display: true, text: 'Año' } }
         }
       }
