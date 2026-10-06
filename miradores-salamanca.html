@@ -1,0 +1,126 @@
+---
+layout: default
+title: Miradores de Salamanca
+description: Mapa y datos de los 11 miradores de Salamanca según la IDE municipal - cuáles forman la ruta numerada, dónde están y a qué distancia quedan de la Plaza Mayor
+date: 06-10-2026
+folder: Turismo
+permalink: miradores-salamanca
+---
+
+    <section class="featured dataset" id="datos">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="section-title">{{ page.title }}</h1>
+                <p class="section-description">{{ page.description }}</p>
+            </div>
+
+			<div id="section-content">
+
+  <div id="mapaMiradores" style="width: 100%; height: 500px; border-radius: 8px; margin-bottom: 10px;"></div>
+  <p style="font-size:0.9em; margin-bottom:25px;"><span style="color:#1E56A0;">&#9679;</span> Ruta de miradores (1 a 10), unidos en orden numérico con una línea recta orientativa &nbsp; <span style="color:#E63946;">&#9679;</span> Mirador fuera de la ruta numerada &nbsp; <span style="color:#555;">&#9679;</span> Plaza Mayor (referencia)</p>
+
+			<h2>Diez miradores en torno al casco histórico y uno más lejos</h2>
+
+			<p>
+La capa "Miradores" de la IDE municipal (Infraestructura de Datos Espaciales del Ayuntamiento) recoge <b>11 miradores</b>. Diez de ellos forman una <b>ruta numerada</b>, del Embarcadero al Mirador de Monterrey, y enlazan con fichas de la web <i>rutamiradoresdesalamanca.com</i>. El undécimo, el <b>Mirador del Volcán de Garrido</b>, no está numerado como parte de esa ruta y su enlace remite a una ubicación en Google Maps.
+</p>
+
+<h3>Hallazgos clave</h3>
+<ul>
+<li><b>La ruta numerada es compacta.</b> Los diez miradores quedan a menos de 1,2 km en línea recta de la Plaza Mayor, y el más cercano, Monterrey, a unos 230 m. Unidos en orden del 1 al 10, los tramos suman unos <b>3,6 km en línea recta</b>; el recorrido real a pie por las calles es más largo.</li>
+<li><b>Va del río al centro.</b> Los números 1 y 2 (Embarcadero y Puente Romano) están junto al río Tormes, al sur, y la ruta avanza hacia el norte hasta Monterrey, ya en pleno casco histórico.</li>
+<li><b>Tramos muy desiguales.</b> Celestina y Santo Domingo están a unos 130 m el uno del otro, mientras que el salto más largo es el de Scala Coeli a San Vicente, de unos 615 m, seguido del de Ieronimus a Las Claras, con unos 585 m.</li>
+<li><b>El Volcán de Garrido queda aparte.</b> Está en el norte de la ciudad, a unos <b>2,2 km</b> de la Plaza Mayor, el doble que el mirador más alejado de la ruta numerada (el Embarcadero, a 1,1 km), y exige un desplazamiento propio.</li>
+</ul>
+
+<p>Para completar la visita, consulta la <a href="/historia-salamanca">historia de Salamanca</a>, los <a href="/museos-salamanca">museos</a> y la <a href="/movilidad-peatonal">movilidad peatonal</a> para moverse a pie por el casco histórico.</p>
+
+  <h2>Distancia de cada mirador a la Plaza Mayor</h2>
+  <canvas id="miradoresDistChart" width="800" height="480"></canvas>
+
+  <h2>Cómo leer estos datos</h2>
+  <ul>
+    <li>La capa solo informa del nombre, la posición y un enlace de información de cada mirador. No indica horarios, accesibilidad, altura ni si hay que pagar entrada, así que esta página no lo evalúa.</li>
+    <li>Las distancias son en línea recta desde la Plaza Mayor y se han calculado a partir de las coordenadas de la capa; no equivalen al trayecto a pie.</li>
+    <li>La línea que une los miradores en el mapa sigue el orden numérico de la capa y es orientativa: no refleja el itinerario por las calles.</li>
+  </ul>
+
+			</div>
+
+			<div id="section-table">
+				<table border="1" cellpadding="5" cellspacing="0">
+				  <thead>
+					<tr>
+					  <th>N.º</th>
+					  <th>Mirador</th>
+					  <th>Ruta</th>
+					  <th>Distancia a la Plaza Mayor</th>
+					  <th>Más información</th>
+					</tr>
+				  </thead>
+				  <tbody>
+					<tr><td>1</td><td>Mirador del Embarcadero</td><td>Ruta numerada</td><td>1.116 m</td><td><a href="https://rutamiradoresdesalamanca.com/mirador/mirador-del-embarcadero/" rel="nofollow noopener">Ficha</a></td></tr>
+					<tr><td>2</td><td>Mirador del Puente Romano</td><td>Ruta numerada</td><td>925 m</td><td><a href="https://rutamiradoresdesalamanca.com/mirador/mirador-del-puente-romano/" rel="nofollow noopener">Ficha</a></td></tr>
+					<tr><td>3</td><td>Mirador de la Celestina</td><td>Ruta numerada</td><td>625 m</td><td><a href="https://rutamiradoresdesalamanca.com/mirador/03-mirador-de-la-celestina/" rel="nofollow noopener">Ficha</a></td></tr>
+					<tr><td>4</td><td>Mirador de Santo Domingo</td><td>Ruta numerada</td><td>624 m</td><td><a href="https://rutamiradoresdesalamanca.com/mirador/04-mirador-de-santo-domingo/" rel="nofollow noopener">Ficha</a></td></tr>
+					<tr><td>5</td><td>Mirador Ieronimus</td><td>Ruta numerada</td><td>557 m</td><td><a href="https://rutamiradoresdesalamanca.com/mirador/05-mirador-ieronimus/" rel="nofollow noopener">Ficha</a></td></tr>
+					<tr><td>6</td><td>Mirador de las Claras</td><td>Ruta numerada</td><td>482 m</td><td><a href="https://rutamiradoresdesalamanca.com/mirador/06-mirador-de-las-claras/" rel="nofollow noopener">Ficha</a></td></tr>
+					<tr><td>7</td><td>Mirador Scala Coeli</td><td>Ruta numerada</td><td>280 m</td><td><a href="https://rutamiradoresdesalamanca.com/mirador/07-mirador-scala-coeli/" rel="nofollow noopener">Ficha</a></td></tr>
+					<tr><td>8</td><td>Mirador de San Vicente</td><td>Ruta numerada</td><td>840 m</td><td><a href="https://rutamiradoresdesalamanca.com/mirador/08-mirador-de-san-vicente/" rel="nofollow noopener">Ficha</a></td></tr>
+					<tr><td>9</td><td>Mirador de los Irlandeses</td><td>Ruta numerada</td><td>501 m</td><td><a href="https://rutamiradoresdesalamanca.com/mirador/09-mirador-de-los-irlandeses/" rel="nofollow noopener">Ficha</a></td></tr>
+					<tr><td>10</td><td>Mirador de Monterrey</td><td>Ruta numerada</td><td>226 m</td><td><a href="https://rutamiradoresdesalamanca.com/mirador/10-mirador-de-monterrey/" rel="nofollow noopener">Ficha</a></td></tr>
+					<tr><td>11</td><td>Mirador del Volcán de Garrido</td><td>Fuera de la ruta numerada</td><td>2.226 m</td><td><a href="https://maps.app.goo.gl/m7U8E45pRVJFbwDd6" rel="nofollow noopener">Ficha</a></td></tr>
+				  </tbody>
+				</table>
+				<p><small>Fuente: capa "Miradores" de la IDE del Ayuntamiento de Salamanca. Distancias elaboradas por Open Salamanca.</small></p>
+			</div>
+
+			{% include categories.html %}
+
+        </div>
+    </section>
+
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+	<script>
+    const mapMir = L.map('mapaMiradores').setView([40.9610, -5.6650], 14);
+
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/light_all/{z}/{x}/{y}{r}.png?key=cb1_2izw_1_55d93b51ded1dcecfa044181', {
+      attribution: '&copy; OpenStreetMap &copy; CARTO | Datos: IDE Ayuntamiento de Salamanca',
+      subdomains: 'abcd',
+      maxZoom: 19
+    }).addTo(mapMir);
+
+    // [id, nombre, latitud, longitud, distancia a Plaza Mayor (m), enlace]
+    const miradores = [[1,"Mirador del Embarcadero",40.95527,-5.667645,1116,"https://rutamiradoresdesalamanca.com/mirador/mirador-del-embarcadero/"],[2,"Mirador del Puente Romano",40.957959,-5.670049,925,"https://rutamiradoresdesalamanca.com/mirador/mirador-del-puente-romano/"],[3,"Mirador de la Celestina",40.959364,-5.665156,625,"https://rutamiradoresdesalamanca.com/mirador/03-mirador-de-la-celestina/"],[4,"Mirador de Santo Domingo",40.95932,-5.663598,624,"https://rutamiradoresdesalamanca.com/mirador/04-mirador-de-santo-domingo/"],[5,"Mirador Ieronimus",40.960439,-5.666976,557,"https://rutamiradoresdesalamanca.com/mirador/05-mirador-ieronimus/"],[6,"Mirador de las Claras",40.961686,-5.660191,482,"https://rutamiradoresdesalamanca.com/mirador/06-mirador-de-las-claras/"],[7,"Mirador Scala Coeli",40.962978,-5.666138,280,"https://rutamiradoresdesalamanca.com/mirador/07-mirador-scala-coeli/"],[8,"Mirador de San Vicente",40.962339,-5.673412,840,"https://rutamiradoresdesalamanca.com/mirador/08-mirador-de-san-vicente/"],[9,"Mirador de los Irlandeses",40.963743,-5.669772,501,"https://rutamiradoresdesalamanca.com/mirador/09-mirador-de-los-irlandeses/"],[10,"Mirador de Monterrey",40.965165,-5.666679,226,"https://rutamiradoresdesalamanca.com/mirador/10-mirador-de-monterrey/"],[11,"Mirador del Volcán de Garrido",40.981049,-5.648311,2226,"https://maps.app.goo.gl/m7U8E45pRVJFbwDd6"]];
+
+    L.polyline(miradores.filter(m => m[0] <= 10).map(m => [m[2], m[3]]), { color: '#1E56A0', weight: 2, dashArray: '6 6', opacity: 0.7 }).addTo(mapMir);
+
+    L.circleMarker([40.96492, -5.66401], { radius: 6, fillColor: '#555', color: '#fff', weight: 2, fillOpacity: 0.9 })
+      .bindTooltip('Plaza Mayor (referencia)').addTo(mapMir);
+
+    miradores.forEach(m => {
+      const color = m[0] <= 10 ? '#1E56A0' : '#E63946';
+      L.marker([m[2], m[3]], {
+        icon: L.divIcon({
+          className: '',
+          html: `<div style="width:24px;height:24px;border-radius:50%;background:${color};color:#fff;border:2px solid #fff;font:bold 12px/20px sans-serif;text-align:center;box-shadow:0 1px 4px rgba(0,0,0,.4)">${m[0]}</div>`,
+          iconSize: [24, 24], iconAnchor: [12, 12]
+        })
+      }).bindPopup(`<b>${m[1]}</b><br>A ${m[4].toLocaleString('es-ES')} m de la Plaza Mayor<br><a href="${m[5]}" target="_blank" rel="nofollow noopener">Más información</a>`).addTo(mapMir);
+    });
+
+    new Chart(document.getElementById('miradoresDistChart').getContext('2d'), {
+      type: 'bar',
+      data: {
+        labels: ["de Monterrey", "Scala Coeli", "de las Claras", "de los Irlandeses", "Ieronimus", "de Santo Domingo", "de la Celestina", "de San Vicente", "del Puente Romano", "del Embarcadero", "del Volcán de Garrido"],
+        datasets: [{ label: 'Metros', data: [226, 280, 482, 501, 557, 624, 625, 840, 925, 1116, 2226], backgroundColor: ['#1E56A0', '#1E56A0', '#1E56A0', '#1E56A0', '#1E56A0', '#1E56A0', '#1E56A0', '#1E56A0', '#1E56A0', '#1E56A0', '#E63946'], borderRadius: 4 }]
+      },
+      options: {
+        indexAxis: 'y',
+        responsive: true,
+        plugins: { legend: { display: false } },
+        scales: { x: { beginAtZero: true, title: { display: true, text: 'Distancia en línea recta a la Plaza Mayor (metros)' } } }
+      }
+    });
+  </script>
