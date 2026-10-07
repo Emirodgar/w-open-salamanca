@@ -1,0 +1,106 @@
+---
+layout: default
+title: Puntos limpios de Salamanca
+description: Los 4 puntos limpios de la IDE municipal medidos por cobertura y horario - uno de cada dos residentes vive a menos de 1 km de uno, el Oeste y los barrios del sur quedan más lejos y el del Zurguén no abre fines de semana
+date: 07-10-2026
+folder: Medio Ambiente
+permalink: puntos-limpios-salamanca
+---
+
+    <section class="featured dataset" id="datos">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="section-title">{{ page.title }}</h1>
+                <p class="section-description">{{ page.description }}</p>
+            </div>
+
+			<div id="section-content">
+
+  <div id="mapaPl" style="width: 100%; height: 520px; border-radius: 8px; margin-bottom: 10px;"></div>
+  <p style="font-size:0.9em; margin-bottom:25px;">Los círculos marcan 1 km (línea continua) y 2 km (línea punteada) alrededor de cada punto limpio. <span style="color:#2C5F2D;">&#9679;</span> abre de lunes a domingo &nbsp; <span style="color:#F4A261;">&#9679;</span> solo de lunes a viernes. Pulsa en cada punto para ver su horario y teléfono.</p>
+
+			<h2>4 puntos limpios para toda la ciudad: ninguno en el centro ni en el Oeste</h2>
+
+			<p>
+La capa "Puntos Limpios" de la IDE municipal (Infraestructura de Datos Espaciales del Ayuntamiento) tiene <b>4 puntos limpios</b> con su dirección, teléfono y horario: Capuchinos, Chinchibarra, La Aldehuela y Zurguén. La página de <a href="/reciclaje-salamanca">reciclaje, contenedores y puntos limpios</a> los incluye junto a los 1.849 puntos de contenedores. Aquí se mide a cuántos residentes llega cada uno y cuántas horas está abierto, cruzándolos con la <b>población por portal</b> de la IDE (137.242 residentes).
+</p>
+
+<h3>Hallazgos clave</h3>
+<ul>
+<li><b>Uno de cada dos vecinos está a menos de 1 km.</b> El 12 % de los residentes tiene un punto limpio a menos de 500 m, el 51 % a menos de 1 km, el 86 % a menos de 1,5 km y el 97 % a menos de 2 km. La distancia típica es de unos 980 m y la máxima, de unos 3 km. Con 4 puntos para 137.000 residentes, salen unos 34.000 por punto.</li>
+<li><b>Todos están en la periferia.</b> El más cercano a la Plaza Mayor (La Aldehuela) queda a unos 1,3 km; los otros están a 1,8 km (Chinchibarra), 2,1 km (Capuchinos) y 2,4 km (Zurguén).</li>
+<li><b>Los barrios más alejados.</b> Entre los barrios con 2.000 o más residentes, la distancia media al más cercano es mayor en Huerta Otea (unos 2,4 km), Tejares (1,9 km), San Vicente (1,8 km), Puente Ladrillo (1,7 km) y San Bernardo (1,6 km). Entre los barrios alejados, el Oeste es el más poblado: unos 8.300 residentes a 1,3 km de media, una distancia parecida a la del Centro (1,2 km).</li>
+<li><b>Los mejor servidos.</b> Zurguén (unos 220 m de media), Chinchibarra (375 m), Capuchinos (400 m), Prosperidad (430 m) y Garrido Norte (560 m) tienen un punto limpio muy cerca.</li>
+<li><b>Chinchibarra atiende a más gente.</b> Es el punto más cercano para unos 45.400 residentes, seguido de La Aldehuela (39.400), Capuchinos (33.400) y Zurguén (19.100).</li>
+<li><b>El del Zurguén abre mucho menos.</b> Capuchinos, Chinchibarra y La Aldehuela abren de lunes a sábado de 9:30 a 19:30 y los domingos de 10:00 a 15:00, unas 65 horas a la semana. Zurguén abre solo de lunes a viernes de 9:00 a 17:00, unas 40 horas, sin fines de semana.</li>
+<li><b>Los fines de semana, la cobertura baja un poco.</b> Sin el del Zurguén, el 89 % de los residentes sigue a menos de 2 km de un punto limpio abierto y el 47 % a menos de 1 km. Los sábados y domingos hay abiertos 3 puntos, los del norte, el este y el sudeste.</li>
+<li><b>Ninguno abre de noche.</b> El cierre más tardío es a las 19:30, y los lunes a viernes solo hay 3 puntos abiertos después de las 17:00.</li>
+<li><b>Los ciudadanos los valoran con un 7,53.</b> En la <a href="/percepcion-ciudadana-salamanca-2023">encuesta de percepción ciudadana</a> los puntos limpios sacan un 7,53 sobre 10 con 961 valoraciones, casi un punto menos que las <a href="/bibliotecas-municipales-salamanca">bibliotecas municipales</a> (8,31).</li>
+</ul>
+
+<h3>Cobertura de los residentes</h3>
+<table border="1" cellpadding="5" cellspacing="0">
+  <thead><tr><th>Distancia en línea recta</th><th>Residentes cerca de un punto limpio</th></tr></thead>
+  <tbody>
+    <tr><td>Menos de 500 m</td><td>12 %</td></tr>
+    <tr><td>Menos de 1 km</td><td>51 %</td></tr>
+    <tr><td>Menos de 1,5 km</td><td>86 %</td></tr>
+    <tr><td>Menos de 2 km</td><td>97 %</td></tr>
+    <tr><td>Menos de 3 km</td><td>100 %</td></tr>
+  </tbody>
+</table>
+
+  <h2>Cómo leer estos datos</h2>
+  <ul>
+    <li>Las distancias son en línea recta desde cada portal, no por calle, y la población de cada portal es una estimación: se reparten los habitantes de cada calle a partes iguales entre sus portales; no es el padrón por portal. Los residentes por punto son los de los portales para los que ese punto es el más cercano.</li>
+    <li>Las horas semanales se han calculado a partir del texto del horario de la capa y suponen apertura continua en la franja indicada. La capa no distingue festivos ni cambios por temporada.</li>
+    <li>La capa solo incluye los 4 puntos limpios fijos. No recoge puntos limpios móviles, recogidas de enseres a domicilio ni contenedores de ropa, que pueden cubrir parte de lo que un punto fijo no alcanza.</li>
+    <li>La capa no informa de qué residuos admite cada punto, ni de su capacidad ni de su ocupación, así que no mide el servicio, solo el acceso.</li>
+    <li>La capa no tiene fecha de actualización y los horarios pueden haber cambiado.</li>
+  </ul>
+
+			</div>
+
+			<div id="section-table">
+				<h2>Los 4 puntos limpios: horas y residentes más cercanos</h2>
+				<table border="1" cellpadding="5" cellspacing="0">
+				  <thead>
+					<tr><th>Punto limpio</th><th>Dirección</th><th>Horario</th><th>Horas por semana (aprox.)</th><th>Residentes para los que es el más cercano</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>Punto limpio de Chinchibarra</td><td>Av. Vicente del Bosque, s/n, 37005 Salamanca</td><td>De Lunes a Sabado 9:30-19:30 | Domingos 10:00-15:00</td><td>65</td><td>45.400</td></tr>
+					<tr><td>Punto Limpio La Aldehuela Salamanca</td><td>Av. de la Aldehuela, 35, 37003 Salamanca</td><td>De Lunes a Sabado 9:30-19:30 | Domingos 10:00-15:00</td><td>65</td><td>39.400</td></tr>
+					<tr><td>Punto limpio Capuchinos Salamanca</td><td>C. Valles Mineros, s/n, 37006 Salamanca</td><td>De Lunes a Sabado 9:30-19:30 | Domingos 10:00-15:00</td><td>65</td><td>33.400</td></tr>
+					<tr><td>Punto Limpio Zurguén Salamanca</td><td>Av. de la Virgen del Cueto, s/n, 37008 Salamanca</td><td>De Lunes a Viernes 9:00- 17:00</td><td>40</td><td>19.100</td></tr>
+				  </tbody>
+				</table>
+				<p><small>Fuente: capa "Puntos Limpios" de la IDE del Ayuntamiento de Salamanca y capa de densidad de población por portal. Coberturas y horas elaboradas por Open Salamanca.</small></p>
+			</div>
+
+			{% include categories.html %}
+
+        </div>
+    </section>
+
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+	<script>
+    const mapPl = L.map('mapaPl').setView([40.9650, -5.6620], 13);
+
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/light_all/{z}/{x}/{y}{r}.png?key=cb1_2izw_1_55d93b51ded1dcecfa044181', {
+      attribution: '&copy; OpenStreetMap &copy; CARTO | Datos: IDE Ayuntamiento de Salamanca',
+      subdomains: 'abcd',
+      maxZoom: 19
+    }).addTo(mapPl);
+
+    // [nombre, dirección, horario, teléfono, lat, lon, abre fines de semana]
+    const puntosLimpios = [["Punto limpio de Chinchibarra","Av. Vicente del Bosque, s/n, 37005 Salamanca","De Lunes a Sabado 9:30-19:30 | Domingos 10:00-15:00","617 32 41 78",40.97983,-5.65523,true],["Punto Limpio La Aldehuela Salamanca","Av. de la Aldehuela, 35, 37003 Salamanca","De Lunes a Sabado 9:30-19:30 | Domingos 10:00-15:00","617 32 41 38",40.95888,-5.65088,true],["Punto limpio Capuchinos Salamanca","C. Valles Mineros, s/n, 37006 Salamanca","De Lunes a Sabado 9:30-19:30 | Domingos 10:00-15:00","617 32 41 70",40.98353,-5.66703,true],["Punto Limpio Zurguén Salamanca","Av. de la Virgen del Cueto, s/n, 37008 Salamanca","De Lunes a Viernes 9:00- 17:00","617 32 41 81",40.94467,-5.67238,false]];
+    const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;');
+
+    puntosLimpios.forEach(function (p) {
+      L.circle([p[4], p[5]], { radius: 1000, color: '#264653', weight: 1, fillColor: '#264653', fillOpacity: 0.06 }).addTo(mapPl);
+      L.circle([p[4], p[5]], { radius: 2000, color: '#264653', weight: 1, dashArray: '4', fill: false }).addTo(mapPl);
+      L.circleMarker([p[4], p[5]], { radius: 9, color: '#000', weight: 1, fillColor: p[6] ? '#2C5F2D' : '#F4A261', fillOpacity: 1 })
+        .addTo(mapPl).bindPopup('<b>' + esc(p[0]) + '</b><br>' + esc(p[1]) + '<br>' + esc(p[2]) + '<br>Tel. ' + esc(p[3]));
+    });
+	</script>
