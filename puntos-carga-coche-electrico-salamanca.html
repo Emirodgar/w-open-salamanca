@@ -1,0 +1,133 @@
+---
+layout: default
+title: Puntos de carga para coches eléctricos en Salamanca
+description: 45 puntos de recarga de la IDE municipal con 95 tomas declaradas - dónde están, quién puede usarlos, cuáles son de carga rápida y qué cobertura queda fuera del centro
+date: 07-10-2026
+folder: Movilidad
+permalink: puntos-carga-coche-electrico-salamanca
+---
+
+    <section class="featured dataset" id="datos">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="section-title">{{ page.title }}</h1>
+                <p class="section-description">{{ page.description }}</p>
+            </div>
+
+			<div id="section-content">
+
+  <div id="mapaCarga" style="width: 100%; height: 520px; border-radius: 8px; margin-bottom: 10px;"></div>
+  <p style="font-size:0.9em; margin-bottom:25px;"><span style="color:#2C5F2D;">&#9679;</span> acceso público &nbsp; <span style="color:#F4A261;">&#9679;</span> solo clientes &nbsp; <span style="color:#264653;">&#9679;</span> privado. Los puntos con borde negro grueso son de carga rápida y el tamaño crece con el número de tomas. Pulsa en cada punto para ver su operador.</p>
+
+			<h2>45 puntos de recarga, 32 de acceso público y solo 13 con carga rápida</h2>
+
+			<p>
+La capa "Puntos de Carga Coche Eléctrico" de la IDE municipal (Infraestructura de Datos Espaciales del Ayuntamiento) tiene <b>45 registros</b> que suman <b>95 tomas</b> (capacidad declarada; dos registros no la indican). De ellos, <b>33 registros y 65 tomas están en la capital</b>; los otros 12 quedan en los polígonos y centros comerciales de <b>Carbajosa de la Sagrada (6), Villares de la Reina (5) y Santa Marta de Tormes (1)</b>, en el área metropolitana.
+</p>
+<p>Un registro no es un cargador: es una ubicación, que puede tener de una a seis tomas. Por eso el dato útil para un conductor es el número de tomas y el tipo de acceso, no el de registros.</p>
+
+<h3>Quién puede usarlos</h3>
+<table border="1" cellpadding="5" cellspacing="0">
+  <thead><tr><th>Acceso</th><th>Registros</th><th>Tomas declaradas</th></tr></thead>
+  <tbody>
+    <tr><td>Público</td><td>32</td><td>66</td></tr>
+    <tr><td>Solo clientes (hoteles, casino y otros comercios)</td><td>8</td><td>14</td></tr>
+    <tr><td>Privado (una gasolinera, tres aparcamientos y un campus)</td><td>5</td><td>15</td></tr>
+    <tr><td><b>Total</b></td><td><b>45</b></td><td><b>95</b></td></tr>
+  </tbody>
+</table>
+
+<h3>Hallazgos clave</h3>
+<ul>
+<li><b>La carga rápida es la excepción.</b> Solo 13 de los 45 registros están marcados como de carga rápida (30 no lo están y 2 no lo indican). Y de esos 13, solo 8 son de acceso público: cuatro en la capital y cuatro en polígonos de Carbajosa y Villares de la Reina.</li>
+<li><b>Las cuatro rápidas públicas de la ciudad.</b> Están en el Paseo del Rector Esperabé (Iberdrola), el centro comercial Los Cipreses, la Avenida de la Carretera de Madrid (Endesa, junto al Ronald Gym Club) y la Avenida Juan Pablo II (Repsol-IBIL). Según la capa, quien necesite una carga de pocos minutos dentro de la ciudad tiene esas cuatro opciones.</li>
+<li><b>Las rápidas de hoteles son solo para clientes.</b> El Parador, el Hotel Vincci, el Hotel Rector y un punto en la calle San Buenaventura figuran como de carga rápida, pero con acceso restringido a clientes.</li>
+<li><b>En el barrio Centro no hay ningún punto público.</b> Sus 4 registros son los parkings del Campillo y de Santa Eulalia y el Campus de Ciencias (privados) y un punto para clientes en la calle San Buenaventura. Dentro de la <a href="/zona-bajas-emisiones-salamanca">Zona de Bajas Emisiones</a>, la capa tiene 3 registros en la zona interior y 5 en la exterior.</li>
+<li><b>San Bernardo concentra más puntos.</b> Es el barrio con más registros (7), por el entorno del Campus Miguel de Unamuno, el Hospital de la Santísima Trinidad y sus parkings, la Avenida de Filiberto Villalobos y el Gran Hotel Corona Sol; le siguen Tenerías y Centro, con 4 cada uno.</li>
+<li><b>Los comercios y las energéticas ponen la infraestructura.</b> Iberdrola figura como operador en 12 registros y Endesa en 4; Mercadona, Repsol, Bricomart y Easy Charger aparecen en el resto. En 17 registros la capa no indica operador.</li>
+<li><b>La tarifa no está en los datos.</b> El campo de tarificación está vacío en 43 de los 45 registros, así que la capa no permite comparar precios.</li>
+</ul>
+
+<h3>Carga rápida: los 13 registros</h3>
+<table border="1" cellpadding="5" cellspacing="0">
+  <thead><tr><th>Ubicación</th><th>Municipio</th><th>Operador</th><th>Acceso</th><th>Tomas</th></tr></thead>
+  <tbody>
+    <tr><td>Paseo del Rector Esperabé</td><td>Salamanca</td><td>Iberdrola</td><td>Público</td><td>2</td></tr>
+    <tr><td>Centro Comercial Los Cipreses</td><td>Salamanca</td><td>Centro Comercial Los Cipreses</td><td>Público</td><td>2</td></tr>
+    <tr><td>Avenida de la Carretera de Madrid (Ronald Gym Club)</td><td>Salamanca</td><td>Endesa</td><td>Público</td><td>2</td></tr>
+    <tr><td>Avenida Juan Pablo II</td><td>Salamanca</td><td>Repsol - IBIL</td><td>Público</td><td>2</td></tr>
+    <tr><td>Ballenoil, Calle Newton</td><td>Carbajosa de la Sagrada</td><td>Iberdrola</td><td>Público</td><td>2</td></tr>
+    <tr><td>Calle Vertical 5ª (Polígono El Montalvo)</td><td>Carbajosa de la Sagrada</td><td>Easy Charger</td><td>Público</td><td>3</td></tr>
+    <tr><td>Burger King, Calle las Columnas</td><td>Carbajosa de la Sagrada</td><td>Iberdrola</td><td>Público</td><td>2</td></tr>
+    <tr><td>Renault Auto Salamanca, Carretera de Valladolid</td><td>Villares de la Reina</td><td>No indicado</td><td>Público</td><td>1</td></tr>
+    <tr><td>Parador de Turismo</td><td>Salamanca</td><td>No indicado</td><td>Clientes</td><td>4</td></tr>
+    <tr><td>Hotel Vincci</td><td>Salamanca</td><td>No indicado</td><td>Clientes</td><td>2</td></tr>
+    <tr><td>Hotel Rector</td><td>Salamanca</td><td>No indicado</td><td>Clientes</td><td>1</td></tr>
+    <tr><td>Calle San Buenaventura</td><td>Salamanca</td><td>No indicado</td><td>Clientes</td><td>2</td></tr>
+    <tr><td>Repsol, Carretera de Valladolid</td><td>Villares de la Reina</td><td>Repsol</td><td>Privado</td><td>2</td></tr>
+  </tbody>
+</table>
+
+  <h2>Cómo leer estos datos</h2>
+  <ul>
+    <li>La capa no incluye fecha de actualización ni leyenda de los campos. Los conectores de tipo 2 son los más habituales (37 registros); los que además tienen CCS y CHAdeMO son los marcados como de carga rápida. Esta correspondencia es una interpretación de Open Salamanca a partir de los nombres de los campos, no una definición oficial.</li>
+    <li>"Tomas" es el campo de capacidad de la capa; no equivale necesariamente a plazas de aparcamiento ni a la potencia disponible, que la capa no informa.</li>
+    <li>El municipio se ha deducido de la dirección que consta en cada registro. Algunos puntos están junto al límite municipal.</li>
+    <li>El campo de operador a veces recoge el comercio donde está el punto (Mercadona, Bricomart) y no la empresa que gestiona el cargador, y en 17 registros está vacío.</li>
+    <li>La capa puede estar incompleta: no se ha contrastado con otros directorios de recarga ni con puntos instalados después de su última actualización.</li>
+  </ul>
+
+			</div>
+
+			<div id="section-table">
+				<table border="1" cellpadding="5" cellspacing="0">
+				  <thead>
+					<tr><th>Ámbito</th><th>Registros</th><th>Tomas</th><th>Carga rápida</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>Salamanca capital</td><td>33</td><td>65</td><td>8</td></tr>
+					<tr><td>Carbajosa de la Sagrada</td><td>6</td><td>18</td><td>3</td></tr>
+					<tr><td>Villares de la Reina</td><td>5</td><td>8</td><td>2</td></tr>
+					<tr><td>Santa Marta de Tormes</td><td>1</td><td>4</td><td>0</td></tr>
+				  </tbody>
+				</table>
+				<p><small>Fuente: capa "Puntos de Carga Coche Eléctrico" de la IDE del Ayuntamiento de Salamanca. Recuentos elaborados por Open Salamanca.</small></p>
+			</div>
+
+			{% include categories.html %}
+
+        </div>
+    </section>
+
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+	<script>
+    const mapCarga = L.map('mapaCarga').setView([40.9600, -5.6650], 13);
+
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/light_all/{z}/{x}/{y}{r}.png?key=cb1_2izw_1_55d93b51ded1dcecfa044181', {
+      attribution: '&copy; OpenStreetMap &copy; CARTO | Datos: IDE Ayuntamiento de Salamanca',
+      subdomains: 'abcd',
+      maxZoom: 19
+    }).addTo(mapCarga);
+
+    // [lat, lon, ubicación, tomas, operador, acceso, carga rápida, municipio]
+    const puntosCarga = [[40.96836,-5.67232,"Avenida Filiberto Villalobos, San Bernardo",2,"Iberdrola","público","no","Salamanca"],[40.96758,-5.67826,"Campus Miguel de Unamuno (Campus Biosanitario y Campus FES-Derecho), Paseo de la Transición Española",1,"Iberdrola","público","no","Salamanca"],[40.96763,-5.67832,"Campus Miguel de Unamuno (Campus Biosanitario y Campus FES-Derecho), Paseo de la Transición Española",1,"Iberdrola","público","no","Salamanca"],[40.94656,-5.64484,"Bricomart, Avenida de Galicia",6,"Bricomart","público","no","Carbajosa de la Sagrada"],[40.97153,-5.63445,"Mercadona, Calle Presbítero Pelayo",2,"Mercadona","público","no","Salamanca"],[40.95675,-5.67796,"Mercadona, Paseo César Real de la Riva",2,"Mercadona","público","no","Salamanca"],[40.96915,-5.65688,"Farmacia María Loreto Charro Santos, Paseo de la Estación",2,"Iberdrola","público","no","Salamanca"],[40.95899,-5.6653,"Paseo del Rector Esperabé, Tenerías",2,"Iberdrola","público","sí","Salamanca"],[40.98836,-5.64571,"Repsol, Carretera de Valladolid",2,"Repsol","privado","sí","Villares de la Reina"],[40.97793,-5.64922,"Centro Comercial los Cipreses, Calle Remigio González \"Adares\"",2,"Centro Comercial Los Cipreses","público","sí","Salamanca"],[40.97871,-5.65836,"Parking Avenida de San Agustín, Avenida de San Agustín",null,"Repsol","público",null,"Salamanca"],[40.97388,-5.6574,"El Corte Inglés, Calle de María Auxiliadora",2,null,"público","no","Salamanca"],[40.97166,-5.65434,"Calle Los Ovalle, Garrido Sur",1,"Hotel Castellano II","clientes","no","Salamanca"],[40.97102,-5.65748,"Avenida de Portugal, Labradores",2,"Iberdrola","público","no","Salamanca"],[40.96897,-5.66152,"Parking Campillo, Plaza del Campillo",2,null,"privado","no","Salamanca"],[40.96465,-5.65631,"Paseo de San Antonio, Prosperidad",2,"Iberdrola","público","no","Salamanca"],[40.9667,-5.66159,"Parking Santa Eulalia, Plaza de Santa Eulalia",3,"Empark","privado","no","Salamanca"],[40.97307,-5.66315,"Paseo del Doctor Torres Villarroel, Salesas",2,null,"privado","no","Salamanca"],[40.96925,-5.66949,"Gran Hotel Corona Sol, Calle Víctor García de la Concha",2,"Mercadona","público","no","Salamanca"],[40.96026,-5.66369,"Calle San Buenaventura, Centro",2,null,"clientes","sí","Salamanca"],[40.95878,-5.66571,"Hotel Rector, Paseo del Rector Esperabé",1,null,"clientes","sí","Salamanca"],[40.95825,-5.66731,"Casino del Tormes, Calle la Pesca",2,null,"clientes","no","Salamanca"],[40.95524,-5.67831,"Hotel Vincci, Calle Sánchez Rojas",2,null,"clientes","sí","Salamanca"],[40.9531,-5.67177,"Parador de Turismo, Calle del Teso de la Feria",4,null,"clientes","sí","Salamanca"],[40.94044,-5.66796,"Hotel Tryp Montalvo, Calle Hoces del Duratón",null,"Iberdrola","clientes",null,"Salamanca"],[40.99553,-5.63538,"Kiona, Carretera de Valladolid",2,null,"clientes","no","Villares de la Reina"],[40.96821,-5.66926,"Hospital Santísima Trinidad, Paseo de Las Carmelitas",2,"Iberdrola","público","no","Salamanca"],[40.96764,-5.66902,"Parking Santísima Trinidad, Paseo de Las Carmelitas",2,"Endesa","público","no","Salamanca"],[40.96121,-5.67053,"Campus de Ciencias, Calle San Juan de Alcázar",6,null,"privado","no","Salamanca"],[40.9571,-5.66575,"Avenida de los Reyes de España, Tenerías",2,"Endesa","público","no","Salamanca"],[40.95242,-5.65599,"Ronald Gym Club, Avenida de la Carretera de Madrid",2,"Endesa","público","sí","Salamanca"],[40.94328,-5.65494,"Ballenoil, Calle Newton",2,"Iberdrola","público","sí","Carbajosa de la Sagrada"],[40.94232,-5.66437,"Adarsa, Calle Nobel",2,null,"público","no","Salamanca"],[40.94035,-5.66675,"Adarsa Salamanca Mercedes-Benz, Calle Hoces del Duratón",2,null,"público","no","Salamanca"],[40.94111,-5.65477,"Tormes Motor, Calle Primera",1,null,"público","no","Carbajosa de la Sagrada"],[40.93757,-5.65707,"Calle Vertical 5ª, Polígono Industrial El Montalvo II y III",3,"Easy Charger","público","sí","Carbajosa de la Sagrada"],[40.95527,-5.70659,"Avenida Juan Pablo II, Buenos Aires",2,"Repsol - IBIL","público","sí","Salamanca"],[40.97296,-5.68235,"Tanatorio, Avenida Obispo Sancho de Castilla",2,"Tanatorio San Carlos","público","no","Salamanca"],[40.99297,-5.64602,"Avenida Fuentesaúco, Polígono Industrial Los Villares",2,null,"público","no","Villares de la Reina"],[41.00479,-5.64944,"Resotel, Paseo de las Delicias",1,null,"público","no","Villares de la Reina"],[40.99404,-5.6377,"Renault Auto Salamanca, Carretera de Valladolid",1,null,"público","sí","Villares de la Reina"],[40.95209,-5.65161,"Peugeot, Avenida Padres Paúles",4,null,"público","no","Santa Marta de Tormes"],[40.94677,-5.6428,"Burger King, Calle las Columnas",2,"Iberdrola","público","sí","Carbajosa de la Sagrada"],[40.94598,-5.63985,"E.Leclerc, Avenida E. Leclerc",4,"Endesa","público","no","Carbajosa de la Sagrada"],[40.96432,-5.67304,"Parking Hospital, Paseo de San Vicente",2,"Iberdrola","público","no","Salamanca"]];
+    const colorAcceso = { 'público': '#2C5F2D', 'clientes': '#F4A261', 'privado': '#264653' };
+
+    puntosCarga.forEach(function (p) {
+      const rapida = p[6] === 'sí';
+      L.circleMarker([p[0], p[1]], {
+        radius: 5 + (p[3] || 1) * 1.2,
+        color: rapida ? '#000' : '#fff',
+        weight: rapida ? 3 : 1,
+        fillColor: colorAcceso[p[5]] || '#888',
+        fillOpacity: 0.85
+      }).addTo(mapCarga).bindPopup(
+        '<b>' + p[2] + '</b><br>' + p[7] +
+        '<br>Operador: ' + (p[4] || 'no indicado') +
+        '<br>Acceso: ' + p[5] +
+        '<br>Tomas: ' + (p[3] || 'no indicado') +
+        '<br>Carga rápida: ' + (p[6] || 'no indicado')
+      );
+    });
+	</script>
