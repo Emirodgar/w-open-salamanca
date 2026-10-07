@@ -35,8 +35,44 @@ La red de recintos deportivos municipales garantiza la <b>cobertura de actividad
 
 <p>Esta red deportiva se suma a otros equipamientos municipales de proximidad, como la <a href="/bibliotecas-cultura">red de bibliotecas y centros culturales</a>, que también combina el uso vecinal con una programación abierta a todos los barrios.</p>
 
+  <h3>Qué recoge la capa de la IDE: 232 espacios deportivos</h3>
+<p>La capa "Instalaciones deportivas" de la IDE municipal (Infraestructura de Datos Espaciales del Ayuntamiento) tiene <b>232 registros</b>, uno por espacio (campo, pista, vaso de piscina, sala), y solo informa del nombre y la posición. Uno de ellos, la pista polideportiva de Vistahermosa, no tiene coordenadas, así que se analizan 231, que ocupan <b>129 ubicaciones</b>. Clasificados por su nombre, estos son los tipos principales y qué parte de los residentes (estimados con la población por portal de la IDE, 137.242) tiene uno cerca:</p>
+<table border="1" cellpadding="5" cellspacing="0">
+  <thead><tr><th>Tipo de espacio</th><th>Espacios</th><th>Ubicaciones</th><th>Residentes a menos de 500 m</th><th>Residentes a menos de 1 km</th></tr></thead>
+  <tbody>
+    <tr><td>Pistas polideportivas</td><td>43</td><td>38</td><td>71 %</td><td>99 %</td></tr>
+    <tr><td>Campos de fútbol (F11 y F7)</td><td>42</td><td>19</td><td>18 %</td><td>64 %</td></tr>
+    <tr><td>Pabellones, pistas cubiertas y salas</td><td>36</td><td>24</td><td>60 %</td><td>96 %</td></tr>
+    <tr><td>Piscinas (vasos y zonas de baño)</td><td>25</td><td>8</td><td>31 %</td><td>82 %</td></tr>
+    <tr><td>Pistas de tenis</td><td>22</td><td>7</td><td>4 %</td><td>22 %</td></tr>
+    <tr><td>Pistas de pádel</td><td>17</td><td>6</td><td>11 %</td><td>42 %</td></tr>
+    <tr><td>Gimnasios y salas de fitness</td><td>10</td><td>7</td><td>4 %</td><td>20 %</td></tr>
+    <tr><td>Frontones</td><td>6</td><td>6</td><td>3 %</td><td>18 %</td></tr>
+    <tr><td>Skate y BMX</td><td>6</td><td>6</td><td>13 %</td><td>50 %</td></tr>
+    <tr><td>Petanca y calva</td><td>6</td><td>5</td><td>19 %</td><td>76 %</td></tr>
+  </tbody>
+</table>
+
+<h3>Lo que muestran los 231 espacios</h3>
+<ul>
+<li><b>La Aldehuela concentra más de uno de cada cinco espacios.</b> 51 de los 231 están en la Ciudad Deportiva, con 8 pistas de tenis, 8 de pádel, 6 campos de fútbol y 4 vasos de piscina, además de velódromo, rocódromo y pista de atletismo cubierta. El barrio de Prosperidad, donde está, suma 55, muy por encima de cualquier otro (San José, el siguiente, tiene 22).</li>
+<li><b>La oferta de proximidad es la pista polideportiva.</b> Con 43 espacios en 38 ubicaciones, el 99 % de los residentes tiene una a menos de 1 km. Los espacios más especializados están mucho más concentrados: solo el 22 % de los residentes tiene una pista de tenis a menos de 1 km, y el 18 % un frontón.</li>
+<li><b>Cinco barrios grandes no tienen ningún espacio dentro de su perímetro:</b> Garrido Sur (8.445 habitantes), Oeste (8.109), Labradores (6.020), Vidal (5.053) y Centro (3.415). Eso no significa que sus vecinos no tengan instalaciones cerca: todos los residentes tienen algún espacio a menos de 1 km, y el 85 % a menos de 500 m. Dentro de la <a href="/zona-bajas-emisiones-salamanca">Zona de Bajas Emisiones</a> no hay ninguno.</li>
+<li><b>Por habitante, destacan Prosperidad y Chinchibarra</b> (14 espacios en un barrio de 4.300 habitantes). Entre los barrios de más de 3.000 habitantes, los que menos tienen por habitante son Puente Ladrillo (2 espacios para 5.038 habitantes) y Pizarrales (4 para 9.657), seguidos de El Rollo (4 para 6.841).</li>
+<li><b>Hay 8 ubicaciones de piscina y 7 recintos.</b> Las 25 piscinas de la capa son vasos y zonas de baño de Aldehuela, Tejares, Rosa Colorado, Garrido, Pizarrales, Alamedilla y San José (que figura en dos puntos cercanos). El 82 % de los residentes tiene una a menos de 1 km.</li>
+</ul>
+
   <h2>Aforo de los grandes pabellones cubiertos</h2>
   <canvas id="deportesUsoChart" width="800" height="350"></canvas>
+
+  <h2>Cómo leer estos datos</h2>
+  <ul>
+    <li>Cada registro de la capa es un espacio (un campo, una pista, un vaso), no una instalación completa. Por eso Aldehuela suma 51 registros y un pabellón con tres pistas suma tres.</li>
+    <li>La capa no indica el tipo ni la titularidad, y el recuento por tipo se ha hecho a partir del nombre de cada espacio, de modo que puede haber pequeños errores de clasificación. Pistas cubiertas, pabellones y salas de actividades se agrupan en un solo tipo.</li>
+    <li>Las distancias son en línea recta y la población de cada portal es una estimación: se reparten los habitantes de cada calle a partes iguales entre sus portales; no es el padrón por portal.</li>
+    <li>El barrio de cada espacio se ha calculado con los perímetros de barrio de la IDE, y los barrios pequeños pueden salir con muy pocos o ningún espacio sin que eso sea relevante.</li>
+    <li>La capa no informa de aforos, horarios, precios ni ocupación, de modo que no mide el uso. Las coordenadas del mapa de esta página se han ajustado a las de la capa.</li>
+  </ul>
 
 			</div>
 			
@@ -88,17 +124,17 @@ La red de recintos deportivos municipales garantiza la <b>cobertura de actividad
     }).addTo(mapDep);
 
     const recintosDeportivos = [
-      { name: 'Ciudad Deportiva La Aldehuela', lat: 40.9550, lng: -5.6410, desc: '+200.000 m²; más de 360.000 usos al año', type: 'Complejo' },
-      { name: 'Pabellón Würzburg', lat: 40.9770, lng: -5.6550, desc: 'Aforo de 2.400 personas, Av. de San Agustín', type: 'Pabellón' },
-      { name: 'Polideportivo Sindical', lat: 40.9730, lng: -5.6580, desc: 'Campo de fútbol, tenis, pádel y pabellón, Av. de la Merced', type: 'Pabellón' },
-      { name: 'Piscinas Rosa Colorado Luengo', lat: 40.9732, lng: -5.6575, desc: '3 vasos, uno olímpico: el único de la red municipal', type: 'Piscina' },
-      { name: 'Pabellón Alamedilla', lat: 40.9691, lng: -5.6531, desc: 'Aforo de 1.575 personas; sede central de reservas', type: 'Pabellón' },
-      { name: 'Piscina Municipal de la Alamedilla', lat: 40.9691, lng: -5.6531, desc: 'Piscina climatizada, Paseo del Ferrocarril', type: 'Piscina' },
-      { name: 'Piscina Municipal de Garrido', lat: 40.9750, lng: -5.6480, desc: 'Piscina climatizada, Av. Vicente del Bosque', type: 'Piscina' },
-      { name: 'Piscina de Pizarrales', lat: 40.9740, lng: -5.6850, desc: 'Piscina de temporada, carretera de Ledesma', type: 'Piscina' },
-      { name: 'Piscina San José', lat: 40.9493, lng: -5.6596, desc: 'Piscina climatizada municipal', type: 'Piscina' },
-      { name: 'Piscinas de Tejares', lat: 40.9552, lng: -5.6992, desc: '4 vasos en entorno arbolado', type: 'Piscina' },
-      { name: 'Campo de Fútbol del Zurguén', lat: 40.9423, lng: -5.6743, desc: '90x45 m, césped artificial renovado', type: 'Campo' }
+      { name: 'Ciudad Deportiva La Aldehuela', lat: 40.9590, lng: -5.6365, desc: '+200.000 m²; más de 360.000 usos al año', type: 'Complejo' },
+      { name: 'Pabellón Würzburg', lat: 40.9826, lng: -5.6528, desc: 'Aforo de 2.400 personas, Av. de San Agustín', type: 'Pabellón' },
+      { name: 'Polideportivo Sindical', lat: 40.9819, lng: -5.6620, desc: 'Campo de fútbol, tenis, pádel y pabellón, Av. de la Merced', type: 'Pabellón' },
+      { name: 'Piscinas Rosa Colorado Luengo', lat: 40.9821, lng: -5.6614, desc: '3 vasos, uno olímpico: el único de la red municipal', type: 'Piscina' },
+      { name: 'Pabellón Alamedilla', lat: 40.9678, lng: -5.6566, desc: 'Aforo de 1.575 personas; sede central de reservas', type: 'Pabellón' },
+      { name: 'Piscina Municipal de la Alamedilla', lat: 40.9681, lng: -5.6556, desc: 'Piscina climatizada, Paseo del Ferrocarril', type: 'Piscina' },
+      { name: 'Piscina Municipal de Garrido', lat: 40.9803, lng: -5.6533, desc: 'Piscina climatizada, Av. Vicente del Bosque', type: 'Piscina' },
+      { name: 'Piscina de Pizarrales', lat: 40.9787, lng: -5.6739, desc: 'Piscina de temporada, carretera de Ledesma', type: 'Piscina' },
+      { name: 'Piscina San José', lat: 40.9514, lng: -5.6609, desc: 'Piscina climatizada municipal', type: 'Piscina' },
+      { name: 'Piscinas de Tejares', lat: 40.9550, lng: -5.7028, desc: '4 vasos en entorno arbolado', type: 'Piscina' },
+      { name: 'Campo de Fútbol del Zurguén', lat: 40.9494, lng: -5.6729, desc: '90x45 m, césped artificial renovado', type: 'Campo' }
     ];
 
     recintosDeportivos.forEach(r => {
