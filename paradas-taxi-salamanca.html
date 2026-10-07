@@ -1,0 +1,139 @@
+---
+layout: default
+title: Paradas de taxi en Salamanca
+description: 31 paradas de la IDE municipal en 21 de los 49 barrios - el 67 % de los habitantes vive en un barrio con parada y Oeste, Vidal y Puente Ladrillo, con más de 5.000 vecinos cada uno, no tienen ninguna
+date: 07-10-2026
+folder: Movilidad
+permalink: paradas-taxi-salamanca
+---
+
+    <section class="featured dataset" id="datos">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="section-title">{{ page.title }}</h1>
+                <p class="section-description">{{ page.description }}</p>
+            </div>
+
+			<div id="section-content">
+
+  <div id="mapaTaxi" style="width: 100%; height: 520px; border-radius: 8px; margin-bottom: 10px;"></div>
+  <p style="font-size:0.9em; margin-bottom:25px;"><span style="color:#F4A261;">&#9679;</span> parada de taxi. Barrios: <span style="color:#97BC62;">&#9632;</span> con parada &nbsp; <span style="color:#E76F51;">&#9632;</span> sin parada y con 2.000 o más habitantes &nbsp; <span style="color:#BBB;">&#9632;</span> sin parada y con menos población.</p>
+
+			<h2>31 paradas en 21 de los 49 barrios: Oeste, Vidal y Puente Ladrillo no tienen ninguna</h2>
+
+			<p>
+La capa "Paradas de taxi" de la IDE municipal (Infraestructura de Datos Espaciales del Ayuntamiento) tiene <b>31 puntos</b>, uno por parada, y <b>ningún atributo más</b>: no indica el nombre de la parada, el número de plazas, el horario ni el teléfono. Los datos se actualizaron por última vez el 11 de noviembre de 2024. Con solo la posición, lo que se puede medir es dónde están, y para eso se han cruzado con los perímetros y la población de los barrios de la IDE, que suman <b>143.660 habitantes</b>.
+</p>
+<p>El resultado es que las paradas llegan a <b>21 de los 49 barrios</b>, en los que viven <b>96.305 personas (el 67 %)</b>. El otro 33 % vive en barrios donde la capa no tiene ninguna parada.</p>
+
+<h3>Hallazgos clave</h3>
+<ul>
+<li><b>Los tres barrios más grandes sin parada.</b> Oeste (8.109 habitantes), Vidal (5.053) y Puente Ladrillo (5.038) suman más de 18.000 vecinos y no tienen ninguna parada dentro de su perímetro. Es la mayor diferencia entre población y servicio de la capa.</li>
+<li><b>Labradores es el barrio con más paradas (3).</b> Con 2 paradas cada uno aparecen Capuchinos, Prosperidad, Centro, Santo Tomás, Pizarrales, Chinchibarra, San Bernardo y Hospital; los otros 12 barrios con parada tienen una.</li>
+<li><b>Garrido Norte, el más poblado, tiene una sola.</b> Con 11.271 habitantes, una parada para todo el barrio; Garrido Sur (8.445) también tiene una. Pizarrales (9.657) tiene dos.</li>
+<li><b>Hospital: 466 vecinos y 2 paradas.</b> Es el barrio con más paradas en relación con su población, lo que apunta a que esas paradas responden a la demanda del entorno hospitalario y no a la residencial.</li>
+<li><b>Las paradas se concentran hacia el centro.</b> Once de las 31 están a menos de un kilómetro de la Plaza Mayor (la más cercana, a unos 60 m) y la distancia típica hasta la parada más próxima es de unos 300 m. La más aislada, en Tejares, está a unos 1.350 m de otra.</li>
+<li><b>Solo 3 paradas dentro de la Zona de Bajas Emisiones.</b> Dos quedan en la zona interior y una en la exterior; consulta el <a href="/zona-bajas-emisiones-salamanca">mapa de la ZBE</a>.</li>
+<li><b>Dos registros prácticamente superpuestos.</b> Entre Santo Tomás y Delicias hay dos puntos separados por unos 14 m. Pueden ser la misma parada registrada dos veces o las dos aceras de la calle; la capa no lo aclara, así que se cuentan como dos.</li>
+<li><b>Los usuarios del taxi lo valoran bien.</b> En la <a href="/percepcion-ciudadana-salamanca-2023">encuesta de percepción ciudadana</a> "desplazarse en taxi" saca un 7,60 sobre 10, con 664 valoraciones.</li>
+</ul>
+
+<h3>Los barrios con 2.000 o más habitantes y sin parada</h3>
+<table border="1" cellpadding="5" cellspacing="0">
+  <thead><tr><th>Barrio</th><th>Habitantes</th></tr></thead>
+  <tbody>
+    <tr><td>Oeste</td><td>8.109</td></tr>
+    <tr><td>Vidal</td><td>5.053</td></tr>
+    <tr><td>Puente Ladrillo</td><td>5.038</td></tr>
+    <tr><td>Huerta Otea</td><td>2.738</td></tr>
+    <tr><td>Vistahermosa</td><td>2.673</td></tr>
+    <tr><td>Blanco</td><td>2.428</td></tr>
+    <tr><td>San Isidro</td><td>2.178</td></tr>
+    <tr><td>Tormes</td><td>2.117</td></tr>
+    <tr><td>Alamedilla</td><td>2.068</td></tr>
+    <tr><td>Úrsulas - San Marcos</td><td>2.017</td></tr>
+  </tbody>
+</table>
+
+  <h2>Cómo leer estos datos</h2>
+  <ul>
+    <li>Que un barrio no tenga parada no significa que no tenga servicio: el taxi también se pide por teléfono o aplicación y circula por toda la ciudad. La capa solo recoge las paradas fijas.</li>
+    <li>La capa no informa de cuántos taxis o licencias hay, ni de cuántas plazas tiene cada parada, por lo que no se puede medir la capacidad del servicio.</li>
+    <li>Cada parada se ha asignado a un barrio por su posición en el perímetro de los barrios de la IDE. Una parada en el borde de un barrio sirve también al vecino, así que "sin parada" no equivale a "lejos de una parada".</li>
+    <li>La población por barrio es la de la capa de indicadores de la IDE (143.660 habitantes). Algunos barrios son muy pequeños o rurales y por eso el listado se limita a los de 2.000 o más habitantes.</li>
+    <li>Las distancias son en línea recta y aproximadas. La Plaza Mayor se ha situado en unas coordenadas fijas.</li>
+    <li>Los datos son de noviembre de 2024: las paradas creadas o eliminadas desde entonces no aparecen.</li>
+  </ul>
+
+			</div>
+
+			<div id="section-table">
+				<h2>Paradas y habitantes por barrio (barrios con parada)</h2>
+				<table border="1" cellpadding="5" cellspacing="0">
+				  <thead>
+					<tr><th>Barrio</th><th>Paradas</th><th>Habitantes</th></tr>
+				  </thead>
+				  <tbody>
+    <tr><td>Labradores</td><td>3</td><td>6.020</td></tr>
+    <tr><td>Pizarrales</td><td>2</td><td>9.657</td></tr>
+    <tr><td>Prosperidad</td><td>2</td><td>5.393</td></tr>
+    <tr><td>San Bernardo</td><td>2</td><td>4.427</td></tr>
+    <tr><td>Chinchibarra</td><td>2</td><td>4.341</td></tr>
+    <tr><td>Centro</td><td>2</td><td>3.415</td></tr>
+    <tr><td>Capuchinos</td><td>2</td><td>3.358</td></tr>
+    <tr><td>Santo Tomás</td><td>2</td><td>1.986</td></tr>
+    <tr><td>Hospital</td><td>2</td><td>466</td></tr>
+    <tr><td>Garrido Norte</td><td>1</td><td>11.271</td></tr>
+    <tr><td>Garrido Sur</td><td>1</td><td>8.445</td></tr>
+    <tr><td>Rollo</td><td>1</td><td>6.841</td></tr>
+    <tr><td>Salesas</td><td>1</td><td>5.850</td></tr>
+    <tr><td>Delicias</td><td>1</td><td>4.794</td></tr>
+    <tr><td>Tejares</td><td>1</td><td>4.242</td></tr>
+    <tr><td>Zurguén</td><td>1</td><td>3.842</td></tr>
+    <tr><td>San José</td><td>1</td><td>2.954</td></tr>
+    <tr><td>Las Claras</td><td>1</td><td>2.925</td></tr>
+    <tr><td>Estación</td><td>1</td><td>2.289</td></tr>
+    <tr><td>Carmen</td><td>1</td><td>2.070</td></tr>
+    <tr><td>Chamberí</td><td>1</td><td>1.719</td></tr>
+				  </tbody>
+				</table>
+				<p><small>Fuente: capa "Paradas de taxi" de la IDE del Ayuntamiento de Salamanca (portal de datos abiertos) y capa de población por barrio de la IDE. Cruces elaborados por Open Salamanca.</small></p>
+			</div>
+
+			{% include categories.html %}
+
+        </div>
+    </section>
+
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+	<script>
+    const mapTaxi = L.map('mapaTaxi').setView([40.9640, -5.6640], 13);
+
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/light_all/{z}/{x}/{y}{r}.png?key=cb1_2izw_1_55d93b51ded1dcecfa044181', {
+      attribution: '&copy; OpenStreetMap &copy; CARTO | Datos: IDE Ayuntamiento de Salamanca',
+      subdomains: 'abcd',
+      maxZoom: 19
+    }).addTo(mapTaxi);
+
+    // [lat, lon, barrio]
+    const paradasTaxi = [[40.97964,-5.66436,"Capuchinos"],[40.96117,-5.64267,"Prosperidad"],[40.97288,-5.65165,"Garrido Sur"],[40.96682,-5.66446,"Centro"],[40.96083,-5.65928,"Santo Tomás"],[40.97193,-5.68192,"Pizarrales"],[40.9459,-5.67022,"Zurguén"],[40.96897,-5.65916,"Labradores"],[40.97221,-5.64925,"Estación"],[40.97512,-5.65586,"Chinchibarra"],[40.97022,-5.67442,"San Bernardo"],[40.96252,-5.66207,"Las Claras"],[40.94891,-5.66236,"San José"],[40.95465,-5.69462,"Tejares"],[40.97495,-5.67329,"Carmen"],[40.97348,-5.65696,"Salesas"],[40.96463,-5.66348,"Centro"],[40.97276,-5.68107,"Pizarrales"],[40.97128,-5.65851,"Labradores"],[40.96123,-5.65241,"Prosperidad"],[40.96827,-5.6477,"Rollo"],[40.97648,-5.66127,"Chinchibarra"],[40.96241,-5.67626,"Hospital"],[40.96497,-5.67245,"Hospital"],[40.95542,-5.67853,"Chamberí"],[40.98062,-5.66703,"Capuchinos"],[40.9682,-5.66837,"San Bernardo"],[40.97025,-5.66324,"Labradores"],[40.97723,-5.65353,"Garrido Norte"],[40.96467,-5.65475,"Santo Tomás"],[40.96478,-5.65483,"Delicias"]];
+    const barriosConParada = ["Capuchinos", "Carmen", "Centro", "Chamberí", "Chinchibarra", "Delicias", "Estación", "Garrido Norte", "Garrido Sur", "Hospital", "Labradores", "Las Claras", "Pizarrales", "Prosperidad", "Rollo", "Salesas", "San Bernardo", "San José", "Santo Tomás", "Tejares", "Zurguén"];
+    const fm = n => Math.round(n).toLocaleString('es-ES');
+
+    fetch('/barrios-poblacion.json?v=1').then(r => r.json()).then(d => {
+      // barrios: [nombre, habitantes, ...]
+      d.barrios.forEach((b, i) => {
+        const con = barriosConParada.indexOf(b[0]) >= 0;
+        const color = con ? '#97BC62' : (b[1] >= 2000 ? '#E76F51' : '#BBB');
+        L.polygon(d.geo[i][1], { color: '#777', weight: 1, fillColor: color, fillOpacity: 0.45 })
+          .bindTooltip(b[0] + ' - ' + fm(b[1]) + ' hab. - ' + (con ? 'con parada' : 'sin parada'))
+          .addTo(mapTaxi);
+      });
+    }).catch(() => {});
+
+    paradasTaxi.forEach(function (p) {
+      L.circleMarker([p[0], p[1]], { radius: 7, color: '#000', weight: 1, fillColor: '#F4A261', fillOpacity: 1 })
+        .addTo(mapTaxi).bindPopup('<b>Parada de taxi</b><br>Barrio: ' + p[2]);
+    });
+	</script>
