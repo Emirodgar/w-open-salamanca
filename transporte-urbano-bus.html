@@ -37,20 +37,50 @@ El servicio de transporte urbano de Salamanca registra una <b>recuperación sost
   <h2>Volumen de viajeros anuales por línea principal (millones, no verificado)</h2>
   <canvas id="lineasBusChart" width="800" height="400"></canvas>
 
-  <h2>Dónde están las paradas: 386 paradas en la capa de la IDE municipal</h2>
-  <p>La capa "paradas de bus urbano" de la IDE del Ayuntamiento recoge <b>386 paradas</b> (371 ubicaciones distintas), cada una con su dirección, el barrio y las líneas que paran en ella. El mapa permite filtrar por línea.</p>
+  <h2>Dónde están las paradas: 339 paradas con sus líneas en la capa de la IDE municipal</h2>
+  <p>La capa "Paradas de bus" (t03) de la IDE del Ayuntamiento recoge <b>339 paradas</b> (334 ubicaciones distintas), cada una con su dirección, el barrio y las líneas que paran en ella. Todas tienen al menos una línea indicada. El mapa permite filtrar por línea.</p>
   <p><label for="filtroLineaParada"><b>Mostrar paradas de la línea:</b></label>
     <select id="filtroLineaParada" style="padding:4px 8px;"><option value="">Todas</option></select>
     <span id="conteoParadas" style="font-size:0.9em; margin-left:8px;"></span></p>
   <div id="mapaParadasBus" style="width: 100%; height: 480px; border-radius: 8px; margin-bottom: 10px;"></div>
-  <p style="font-size:0.9em; margin-bottom:20px;"><span style="color:#B7B7B7;">&#9679;</span> Sin línea indicada &nbsp; <span style="color:#F4A261;">&#9679;</span> 1 línea &nbsp; <span style="color:#1E56A0;">&#9679;</span> 2 líneas &nbsp; <span style="color:#1B4D1C;">&#9679;</span> 3 o más líneas. Los códigos de línea son los de la capa (incluye 91 y 92, que no se corresponden con la numeración de otras fuentes).</p>
+  <p style="font-size:0.9em; margin-bottom:20px;"><span style="color:#F4A261;">&#9679;</span> 1 línea &nbsp; <span style="color:#1E56A0;">&#9679;</span> 2 líneas &nbsp; <span style="color:#1B4D1C;">&#9679;</span> 3 o 4 líneas &nbsp; <span style="color:#C0392B;">&#9679;</span> 5 o más líneas. Los códigos de línea son los de la capa (incluye 91 y 92, que no se corresponden con la numeración de otras fuentes).</p>
 
   <h3>Hallazgos clave sobre las paradas</h3>
   <ul>
-    <li><b>La mayoría de paradas tiene una sola línea.</b> 188 paradas son de una línea, 89 de dos, 40 de tres, 16 de cuatro y solo 5 de cinco. En 48 la capa no indica ninguna línea.</li>
-    <li><b>Las paradas con cinco líneas están en la Gran Vía.</b> Son cuatro paradas de Gran Vía (números 25, 38, 45 y 75) y la de Plaza Empresario.</li>
-    <li><b>Puente Ladrillo, Rollo, Tejares y San Bernardo son los barrios con más paradas</b> (20, 19, 17 y 16). En 52 paradas no figura el barrio en la capa, así que el reparto por barrio es incompleto.</li>
-    <li><b>La línea 12 es la que más paradas tiene en la capa</b> (68), seguida de las líneas 91, 92 y 4 (en torno a 43-44). La línea 2 solo figura en 15, por lo que no conviene leer estas cifras como una clasificación del servicio: la capa no incluye necesariamente todos los recorridos de cada línea.</li>
+    <li><b>La mayoría de paradas tiene una sola línea.</b> 189 paradas son de una línea, 89 de dos, 40 de tres, 10 de cuatro, 4 de cinco, 2 de seis y 5 de siete. En total, 21 paradas atienden a cuatro o más líneas.</li>
+    <li><b>Los grandes intercambiadores están en la Gran Vía y en la avenida de Mirat.</b> Con siete líneas cada una figuran la parada de Plaza Empresario, las de Gran Vía 25 y 45 y las de Avda. Mirat 15 y 43. Con seis, Gran Vía 75 y Avda. Mirat 22.</li>
+    <li><b>Puente Ladrillo, Rollo, Tejares y San Bernardo son los barrios con más paradas</b> (20, 19, 17 y 16), seguidos de Chamberí y San José (15 cada uno). Las paradas están repartidas en 45 barrios; solo cuatro no tienen barrio indicado en la capa.</li>
+    <li><b>La línea 12 es la que más paradas tiene en la capa</b> (68), seguida de las líneas 4 (45), 91 (44) y 92 (43). Las demás tienen entre 34 y 39, salvo la línea 2, con solo 21. La capa no incluye necesariamente todos los recorridos de cada línea, así que estas cifras no sirven como clasificación del servicio.</li>
+    <li><b>Hay paradas a menos de 100 m de más de la mitad de los residentes.</b> El 54 % de los residentes tiene una parada a 100 m o menos y el 99,3 % a 300 m o menos; la mediana es de unos 94 m (ver el apartado siguiente).</li>
+  </ul>
+
+  <h3>Cuántos residentes tienen una parada cerca</h3>
+  <p>Cruzando las paradas con la capa de <b>población por portal</b> de la IDE (137.242 residentes) se puede medir la distancia desde cada portal a la parada más cercana:</p>
+  <table border="1" cellpadding="5" cellspacing="0">
+    <thead><tr><th>Distancia en línea recta a la parada más cercana</th><th>Residentes que la tienen a esa distancia o menos</th></tr></thead>
+    <tbody>
+      <tr><td>100 m</td><td>54 %</td></tr>
+      <tr><td>150 m</td><td>82 %</td></tr>
+      <tr><td>200 m</td><td>94 %</td></tr>
+      <tr><td>300 m</td><td>99,3 %</td></tr>
+      <tr><td>500 m</td><td>100 %</td></tr>
+    </tbody>
+  </table>
+  <ul>
+    <li><b>Solo unos 910 residentes (el 0,7 %) viven a más de 300 m de una parada</b>, y nadie a más de unos 700 m. Casi la mitad de esas personas están en el barrio Universidad (unos 400, de 1.330 residentes), donde Traducción y Documentación y Geografía e Historia, de la <a href="/centros-universitarios-salamanca">USAL</a>, tampoco tienen parada a 300 m, y en Garrido Norte (unos 240).</li>
+    <li><b>Más líneas, menos barrios.</b> El 85 % de los residentes tiene al menos tres líneas distintas a menos de 300 m y el 52 % al menos cinco. Las Claras, el Centro, Labradores y San Vicente tienen cinco o más líneas a 300 m para el 97 % o más de sus vecinos; Capuchinos, Puente Ladrillo y Pizarrales, para casi ninguno, con parada cerca pero menos líneas.</li>
+    <li><b>Entre los barrios de 2.000 o más residentes, la distancia media más larga</b> es la de San Vicente (unos 154 m), Delicias (134 m), el Centro (132 m) y Pizarrales (124 m). Las más cortas, las de Capuchinos (71 m), Estación (74 m) y Labradores (77 m).</li>
+    <li><b>Los centros de salud están muy bien servidos.</b> Los 11 del listado de centros de salud tienen una parada a 181 m o menos y al menos tres paradas a menos de 300 m.</li>
+    <li><b>Los colegios, también, con cuatro excepciones.</b> De los 77 centros educativos del listado, 65 tienen tres o más paradas a 300 m y la mediana de distancia es de unos 110 m. Sin parada a 300 m quedan el IES Mateo Hernández (335 m) y el CEIP Félix Rodríguez de la Fuente (309 m), ambos en la calle de la Docencia, la escuela infantil El Tren (341 m) y la escuela infantil Tebeo, cuyas coordenadas del fichero la sitúan a 1,6 km y conviene verificar.</li>
+  </ul>
+
+  <h3>Cómo leer estos datos</h3>
+  <ul>
+    <li>Las distancias son en línea recta, no por calle ni por paso de peatones, y no distinguen el sentido de la marcha ni si la parada tiene marquesina o es accesible.</li>
+    <li>La población de cada portal es una estimación: se reparten los habitantes de cada calle a partes iguales entre sus portales, no es el padrón por portal.</li>
+    <li>Tener una parada cerca no mide la calidad del servicio: la capa no informa de frecuencias, horarios ni recorridos, y no se sabe qué líneas funcionan en festivos o de noche.</li>
+    <li>Esta página usa la capa "Paradas de bus" (t03), que tiene las líneas completas. La capa "paradas de bus urbano", que se usaba antes, tiene 386 puntos: 45 más sin ninguna línea ni barrio indicados, y las líneas incompletas en 12 paradas, por ejemplo la de Plaza Empresario, que figuraba con cinco líneas en vez de siete.</li>
+    <li>La capa no tiene fecha de actualización, y las líneas pueden haber cambiado.</li>
   </ul>
 
   <h3>Paradas por barrio (barrios con 8 o más)</h3>
@@ -84,7 +114,7 @@ El servicio de transporte urbano de Salamanca registra una <b>recuperación sost
 
 			</div>
 			
-			<p style="font-size:0.9em;">Fuente de las paradas: capa "paradas de bus urbano" de la <a href="https://ide.aytosalamanca.es" rel="nofollow noopener">IDE del Ayuntamiento de Salamanca</a>.</p>
+			<p style="font-size:0.9em;">Fuente de las paradas: capa "Paradas de bus" y capa de población por portal de la <a href="https://ide.aytosalamanca.es" rel="nofollow noopener">IDE del Ayuntamiento de Salamanca</a>. Cruces con centros de salud y colegios elaborados por Open Salamanca.</p>
 			<p>Para completar la movilidad en vehículo por la ciudad, consulta el mapa de <a href="/radares">radares de velocidad fijos y de tramo</a>.</p>
 
 			{% include categories.html %}
@@ -95,7 +125,7 @@ El servicio de transporte urbano de Salamanca registra una <b>recuperación sost
 	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 	<script>
-    // Mapa y gráfico de paradas (capa "paradas de bus urbano" de la IDE municipal)
+    // Mapa y gráfico de paradas (capa "Paradas de bus" de la IDE municipal)
     (function () {
       const mapa = L.map('mapaParadasBus').setView([40.9650, -5.6630], 13);
       L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/light_all/{z}/{x}/{y}{r}.png?key=cb1_2izw_1_55d93b51ded1dcecfa044181', {
@@ -103,7 +133,7 @@ El servicio de transporte urbano de Salamanca registra una <b>recuperación sost
       }).addTo(mapa);
       const esc = t => String(t).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
       const capa = L.layerGroup().addTo(mapa);
-      fetch('/paradas-bus.json?v=1').then(r => r.json()).then(paradas => {
+      fetch('/paradas-bus-t03.json?v=1').then(r => r.json()).then(paradas => {
         // [dirección, [líneas], barrio, lat, lng]
         const lineas = [...new Set(paradas.flatMap(p => p[1]))].sort((a, b) => a.length - b.length || a.localeCompare(b, 'es', { numeric: true }));
         const sel = document.getElementById('filtroLineaParada');
@@ -115,7 +145,7 @@ El servicio de transporte urbano de Salamanca registra una <b>recuperación sost
             if (filtro && !p[1].includes(filtro)) return;
             n++;
             const k = p[1].length;
-            const color = k === 0 ? '#B7B7B7' : (k === 1 ? '#F4A261' : (k === 2 ? '#1E56A0' : '#1B4D1C'));
+            const color = k === 1 ? '#F4A261' : (k === 2 ? '#1E56A0' : (k <= 4 ? '#1B4D1C' : '#C0392B'));
             L.circleMarker([p[3], p[4]], { radius: 5, fillColor: color, color: '#fff', weight: 1, fillOpacity: 0.9 })
               .bindPopup(`<b>${esc(p[0])}</b><br>${p[2] ? 'Barrio: ' + esc(p[2]) + '<br>' : ''}${k ? 'Líneas: ' + p[1].join(', ') : 'Sin línea indicada'}`).addTo(capa);
           });
@@ -133,7 +163,7 @@ El servicio de transporte urbano de Salamanca registra una <b>recuperación sost
           options: {
             indexAxis: 'y', responsive: true,
             plugins: { legend: { display: false } },
-            scales: { x: { beginAtZero: true, title: { display: true, text: 'Nº de paradas (386 en total; 52 sin barrio indicado)' } } }
+            scales: { x: { beginAtZero: true, title: { display: true, text: 'Nº de paradas (339 en total; 4 sin barrio indicado)' } } }
           }
         });
       }).catch(() => { document.getElementById('mapaParadasBus').innerHTML = '<p style="padding:20px">No se ha podido cargar el mapa de paradas.</p>'; });
