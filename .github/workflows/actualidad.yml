@@ -6,12 +6,15 @@ on:
     # triggers de `schedule`: se ha comprobado que un cron a las 5:00/6:00 UTC
     # ha llegado a disparar con 4-5 h de retraso y que se pierden disparos.
     # Por eso hay varios disparadores entre las 7:00 y las 11:00 hora de
-    # Madrid (5-9 UTC en verano, 6-10 UTC en invierno; minuto :17 para evitar
+    # Madrid (5-9 UTC en verano, 6-10 UTC en invierno; minutos :17/:47 para evitar
     # la hora en punto, la más saturada) y el paso "Comprobar si toca
     # actualizar" decide: solo ejecuta si hoy (hora de Madrid) aún no se ha
     # actualizado y ya son las 7:00 en Madrid. El primer disparo que llegue
-    # hace el trabajo; los siguientes de ese día se saltan.
-    - cron: '17 5,6,7,8,9 * * *'
+    # hace el trabajo; los siguientes de ese día se saltan. Como red de
+    # seguridad extra, el Worker de cloudflare-worker/actualidad-trigger lanza
+    # el workflow por workflow_dispatch si GitHub no ha disparado ninguno.
+    - cron: '17 5,6,7,8,9,10 * * *'
+    - cron: '47 5,7,9 * * *'
   workflow_dispatch: {}
 
 permissions:
