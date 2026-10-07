@@ -147,6 +147,30 @@
       ],
       "basado_en": "eventos.json",
       "fecha_creacion": "2026-10-06"
+    },
+    {
+      "id": "inundaciones-colegio-ciudad-rodrigo-2026",
+      "pregunta": "Ante las recientes inundaciones en un colegio de Ciudad Rodrigo, ¿cree que las autoridades locales deberían implementar medidas preventivas más robustas para proteger las infraestructuras educativas?",
+      "opciones": [
+        "Sí, es fundamental garantizar la seguridad de los centros escolares.",
+        "No, son eventos puntuales y difíciles de prevenir.",
+        "Depende de la causa de las inundaciones y la viabilidad de las medidas.",
+        "No tengo suficiente información."
+      ],
+      "basado_en": "actualidad.json",
+      "fecha_creacion": "2026-10-07"
+    },
+    {
+      "id": "centro-empresa-santa-marta-2026",
+      "pregunta": "Santa Marta de Tormes planea crear un centro de empresa para atraer talento. ¿Considera que la atracción de talento y el fomento empresarial deben ser una prioridad clave para el desarrollo del municipio?",
+      "opciones": [
+        "Sí, es esencial para el crecimiento económico y la innovación.",
+        "No, hay otras necesidades más urgentes para los vecinos.",
+        "Es importante, pero no la prioridad principal.",
+        "No tengo suficiente información."
+      ],
+      "basado_en": "actualidad.json",
+      "fecha_creacion": "2026-10-07"
     }
   ]
 }

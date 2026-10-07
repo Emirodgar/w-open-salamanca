@@ -1,11 +1,11 @@
 {
   "url_base": "https://www.lagacetadesalamanca.es",
-  "generado_en": "2026-10-06T14:25:42+00:00",
+  "generado_en": "2026-10-07T17:25:39+00:00",
   "periodo_cubierto": {
-    "desde": "2026-10-03",
-    "hasta": "2026-10-06"
+    "desde": "2026-10-04",
+    "hasta": "2026-10-07"
   },
-  "total_urls_analizadas": 238,
+  "total_urls_analizadas": 245,
   "secciones_excluidas": [
     "gente-estilo",
     "nacional",
@@ -16,12 +16,12 @@
   "nota_cobertura": "El análisis cubre únicamente las URLs presentes en el sitemap en el momento de la consulta (excluyendo, si se indicó, las secciones filtradas). Si el sitemap es incremental o 'rolling', el periodo real puede ser más corto que el solicitado — revisa 'periodo_cubierto' para confirmarlo.",
   "por_seccion": [
     [
-      "provincia",
-      74
+      "salamanca",
+      78
     ],
     [
-      "salamanca",
-      65
+      "provincia",
+      68
     ],
     [
       "deportes",
@@ -29,19 +29,19 @@
     ],
     [
       "sucesos",
-      24
-    ],
-    [
-      "toros",
-      11
+      26
     ],
     [
       "campo",
-      7
+      11
+    ],
+    [
+      "toros",
+      5
     ],
     [
       "encuestas",
-      3
+      4
     ],
     [
       "cine-y-series",
@@ -50,20 +50,16 @@
     [
       "especiales",
       1
-    ],
-    [
-      "castilla-y-leon",
-      1
     ]
   ],
   "por_subseccion": [
     [
       "deportes/futbol-local",
-      30
+      31
     ],
     [
       "deportes/baloncesto-local",
-      8
+      6
     ],
     [
       "deportes/deporte-base",
@@ -81,165 +77,161 @@
   "por_tipo_contenido": [
     [
       "noticia",
-      187
+      207
     ],
     [
       "galería",
-      45
+      35
     ],
     [
       "directo / en vivo",
-      6
+      3
     ]
   ],
   "heatmap_calendario": [
     {
-      "fecha": "2026-10-03",
-      "total": 47,
-      "provincia": 15,
-      "salamanca": 6,
-      "deportes": 12,
-      "sucesos": 4,
-      "toros": 7,
-      "campo": 1,
-      "encuestas": 1,
-      "cine-y-series": 0,
-      "especiales": 0,
-      "castilla-y-leon": 1
-    },
-    {
       "fecha": "2026-10-04",
-      "total": 76,
-      "provincia": 27,
-      "salamanca": 19,
-      "deportes": 21,
+      "total": 62,
+      "salamanca": 9,
+      "provincia": 24,
+      "deportes": 20,
       "sucesos": 5,
-      "toros": 3,
       "campo": 0,
+      "toros": 3,
       "encuestas": 1,
       "cine-y-series": 0,
-      "especiales": 0,
-      "castilla-y-leon": 0
+      "especiales": 0
     },
     {
       "fecha": "2026-10-05",
       "total": 68,
-      "provincia": 15,
       "salamanca": 24,
+      "provincia": 15,
       "deportes": 16,
       "sucesos": 8,
-      "toros": 1,
       "campo": 2,
+      "toros": 1,
       "encuestas": 1,
       "cine-y-series": 0,
-      "especiales": 1,
-      "castilla-y-leon": 0
+      "especiales": 1
     },
     {
       "fecha": "2026-10-06",
-      "total": 47,
-      "provincia": 17,
-      "salamanca": 16,
-      "deportes": 2,
+      "total": 65,
+      "salamanca": 21,
+      "provincia": 22,
+      "deportes": 5,
       "sucesos": 7,
+      "campo": 8,
       "toros": 0,
-      "campo": 4,
-      "encuestas": 0,
+      "encuestas": 1,
       "cine-y-series": 1,
-      "especiales": 0,
-      "castilla-y-leon": 0
+      "especiales": 0
+    },
+    {
+      "fecha": "2026-10-07",
+      "total": 50,
+      "salamanca": 24,
+      "provincia": 7,
+      "deportes": 10,
+      "sucesos": 6,
+      "campo": 1,
+      "toros": 1,
+      "encuestas": 1,
+      "cine-y-series": 0,
+      "especiales": 0
     }
   ],
   "conceptos_destacados": [
     {
       "concepto": "Virgen del Rosario",
-      "piezas": 10,
+      "piezas": 9,
       "seccion_principal": "provincia",
-      "desde": "2026-10-03",
-      "hasta": "2026-10-04",
+      "desde": "2026-10-04",
+      "hasta": "2026-10-07",
       "ejemplos_redactados": [
-        "Navamorales, Ciudad Rodrigo y Maíllo celebran el día grande de su patrona, la Virgen del Rosario.",
-        "Diversas localidades de la provincia honran a la Virgen del Rosario con festejos y tradiciones."
+        "Mancera de Abajo, Cantagallo y Pizarral celebran festividades en honor a la Virgen del Rosario.",
+        "Coca de Alba y Navamorales también acompañan a la Virgen del Rosario en su día de fiesta."
+      ]
+    },
+    {
+      "concepto": "Santa Marta de Tormes",
+      "piezas": 6,
+      "seccion_principal": "provincia",
+      "desde": "2026-10-04",
+      "hasta": "2026-10-07",
+      "ejemplos_redactados": [
+        "Santa Marta de Tormes aborda la contaminación lumínica y levanta un centro de empresa para atraer talento.",
+        "El municipio estrena un ciclo de otoño con bebecuentos y cuentacuentos, y renueva su parque infantil en la Plaza de Castilla."
       ]
     },
     {
       "concepto": "Ciudad Rodrigo",
-      "piezas": 8,
+      "piezas": 6,
       "seccion_principal": "provincia",
-      "desde": "2026-10-03",
+      "desde": "2026-10-04",
       "hasta": "2026-10-06",
       "ejemplos_redactados": [
-        "AFECIR ratifica su colaboración con la Feria de Teatro de Ciudad Rodrigo.",
-        "Cáritas de Ciudad Rodrigo retoma actividades para niños y adolescentes, mientras el agua vuelve a colarse en las aulas de un colegio."
+        "Cáritas Ciudad Rodrigo retoma actividades para niños y adolescentes y la AFECIR ratifica su colaboración con la Feria de Teatro.",
+        "El agua vuelve a colarse en las clases de un colegio, y la ciudad celebra la Virgen del Rosario."
       ]
     },
     {
-      "concepto": "Béjar",
-      "piezas": 8,
-      "seccion_principal": "provincia",
-      "desde": "2026-10-03",
-      "hasta": "2026-10-05",
+      "concepto": "Sucesos con hombres implicados",
+      "piezas": 6,
+      "seccion_principal": "sucesos",
+      "desde": "2026-10-04",
+      "hasta": "2026-10-07",
       "ejemplos_redactados": [
-        "La calle Libertad de Béjar es reabierta tras una semana de caos.",
-        "Un aguacero ceba Béjar, provocando inundaciones y un puente anegado."
+        "Un hombre resulta herido tras ser atropellado en la Avenida de las Artes.",
+        "Se detiene a un hombre en Madrid por presuntamente matar a sus padres y se busca a otro desaparecido en Vilvestre."
+      ]
+    },
+    {
+      "concepto": "Unionistas de Salamanca",
+      "piezas": 6,
+      "seccion_principal": "deportes",
+      "desde": "2026-10-04",
+      "hasta": "2026-10-07",
+      "ejemplos_redactados": [
+        "La enfermería de Unionistas suma un nuevo inquilino con Pau Ferrer y se confirma un nuevo horario para un partido en noviembre.",
+        "El club Unionistas de Salamanca muestra un crecimiento sin límites."
       ]
     },
     {
       "concepto": "Meins Avenida",
-      "piezas": 5,
+      "piezas": 4,
       "seccion_principal": "deportes",
-      "desde": "2026-10-03",
-      "hasta": "2026-10-06",
+      "desde": "2026-10-04",
+      "hasta": "2026-10-07",
       "ejemplos_redactados": [
-        "El Meins Avenida vence y convence en su estreno de temporada.",
-        "Se informa sobre el horario y dónde ver el partido del Valencia Basket contra el Meins Avenida."
+        "Valencia Basket y Meins Avenida se enfrentan en un primer test de altura.",
+        "El objetivo de Meins Avenida cambia con Raquel Romo y se informa sobre el horario para ver el partido en directo."
       ]
     },
     {
-      "concepto": "Marco Pérez",
-      "piezas": 5,
-      "seccion_principal": "toros",
-      "desde": "2026-10-03",
-      "hasta": "2026-10-03",
-      "ejemplos_redactados": [
-        "Se analizan las claves de la tarde de Marco Pérez en Madrid y se comparten imágenes de su confirmación de alternativa.",
-        "Las Ventas se prepara para la confirmación de alternativa de Marco Pérez."
-      ]
-    },
-    {
-      "concepto": "Libro Blanco",
+      "concepto": "Libro Blanco de la Gaceta",
       "piezas": 4,
       "seccion_principal": "salamanca",
       "desde": "2026-10-05",
       "hasta": "2026-10-05",
       "ejemplos_redactados": [
-        "Arranca la VII edición del Libro Blanco de la Gaceta para impulsar el futuro de Salamanca.",
-        "Expertos presentan propuestas para promover el progreso de la provincia en el congreso del Libro Blanco."
+        "La VII edición del Libro Blanco de la Gaceta arranca para impulsar el futuro de Salamanca.",
+        "Expertos proponen ideas para promover el progreso y avance en la ciudad."
       ]
     },
     {
-      "concepto": "Santa Marta",
+      "concepto": "Alba de Tormes",
       "piezas": 4,
       "seccion_principal": "provincia",
       "desde": "2026-10-04",
       "hasta": "2026-10-06",
       "ejemplos_redactados": [
-        "Santa Marta consolida su crecimiento sin renunciar a su esencia formativa.",
-        "El municipio estrena un ciclo de otoño de bebecuentos y cuentacuentos, y renueva el parque infantil de la Plaza de Castilla."
-      ]
-    },
-    {
-      "concepto": "Peñaranda",
-      "piezas": 4,
-      "seccion_principal": "provincia",
-      "desde": "2026-10-04",
-      "hasta": "2026-10-06",
-      "ejemplos_redactados": [
-        "Peñaranda de Bracamonte celebrará un novenario y fiesta en honor a Santa Teresa.",
-        "La biblioteca municipal de Peñaranda es galardonada con el Premio María Moliner."
+        "Coca de Alba pone fin a sus fiestas del Rosario y Alba de Tormes se presenta como inversión en salud y eventos de referencia.",
+        "Concepción Miguélez dejará la alcaldía de Alba de Tormes al finalizar su mandato."
       ]
     }
   ],
-  "resumen_borrador": "Se han publicado 238 noticias entre el 2026-10-03 y el 2026-10-06. La actividad se ha concentrado sobre todo en provincia (74 piezas), salamanca (65 piezas), deportes (51 piezas).\n\nLos conceptos con más piezas relacionadas son: Virgen · Rosario; Ciudad · Rodrigo; Bejar; Fiesta. Revisa 'evidencia' de cada concepto para redactar el resumen final.",
-  "resumen": "La provincia de Salamanca ha vivido un periodo marcado por las celebraciones patronales y eventos locales. Numerosas localidades como Navamorales, Ciudad Rodrigo y Maíllo han honrado a la Virgen del Rosario con sus festejos. En Béjar, la actualidad ha estado dominada por la reapertura de una calle principal y las consecuencias de un fuerte aguacero que provocó inundaciones. Ciudad Rodrigo, por su parte, ha clausurado su feria medieval y ha visto cómo Cáritas retoma sus actividades con niños y adolescentes, además de sufrir problemas de anegamientos en un colegio debido a las lluvias.\n\nEn el ámbito deportivo, el Meins Avenida ha tenido un feliz debut de temporada con una victoria convincente. En el mundo taurino, Marco Pérez ha confirmado su alternativa en Las Ventas, generando gran expectación. La capital salmantina ha sido escenario del inicio del VII Congreso del Libro Blanco, un evento destinado a impulsar el futuro de la provincia con propuestas de expertos. A nivel político, el presidente Manueco ha celebrado la convocatoria de elecciones generales.\n\nEl tiempo ha sido protagonista, con Salamanca concentrando lluvias intensas y alertas por tormentas y granizo. Se ha mantenido activa la búsqueda de un hombre desaparecido en Ledrada, que ha afrontado su sexto día sin rastro. Además, la Guardia Civil ha llevado a cabo un amplio despliegue antidroga con registros en viviendas, y se ha detenido a un fugitivo con múltiples órdenes judiciales pendientes."
+  "resumen_borrador": "Se han publicado 245 noticias entre el 2026-10-04 y el 2026-10-07. La actividad se ha concentrado sobre todo en salamanca (78 piezas), provincia (68 piezas), deportes (51 piezas).\n\nLos conceptos con más piezas relacionadas son: Virgen · Rosario; San; Santa · Marta; Ciudad · Rodrigo. Revisa 'evidencia' de cada concepto para redactar el resumen final.",
+  "resumen": "El inicio de octubre en Salamanca ha estado marcado por la intensa actividad en la provincia, donde diversas localidades han celebrado sus festividades patronales. Mancera de Abajo, Cantagallo, Pizarral, Coca de Alba y Navamorales rindieron honores a la Virgen del Rosario, mientras que Santibáñez de Béjar despidió su fiesta grande y Las Veguillas cerraron sus celebraciones patronales. En Santa Marta de Tormes, el foco estuvo en la lucha contra la contaminación lumínica y la creación de un centro de empresa para atraer talento, además de la renovación de su parque infantil. Ciudad Rodrigo, por su parte, vio a Cáritas retomar actividades para jóvenes y a la AFECIR ratificar su colaboración con la Feria de Teatro, aunque el municipio también sufrió inundaciones en un colegio.\n\nEn el ámbito deportivo, la actualidad giró en torno a los equipos locales. Unionistas de Salamanca sumó un nuevo inquilino a su enfermería, Pau Ferrer, y confirmó un nuevo horario para un partido en noviembre, mostrando un crecimiento constante. El Meins Avenida de baloncesto se enfrentó al Valencia Basket en un test de altura, con cambios en su plantilla y la difusión de horarios para seguir sus encuentros.\n\nLos sucesos también tuvieron su espacio, con un hombre herido tras ser atropellado en la Avenida de las Artes y la detención en Madrid de otro individuo acusado de parricidio. La capital salmantina acogió el inicio de la VII edición del Libro Blanco de La Gaceta, un evento que busca impulsar el futuro de la ciudad con propuestas de expertos. Finalmente, en Alba de Tormes, se anunciaron inversiones en salud y eventos de referencia, y se conoció que Concepción Miguélez dejará la alcaldía al finalizar su mandato."
 }
