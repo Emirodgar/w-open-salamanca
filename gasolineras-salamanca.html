@@ -1,0 +1,124 @@
+---
+layout: default
+title: Gasolineras de Salamanca
+description: 18 estaciones de servicio de la IDE municipal - solo 5 abren las 24 horas, el 98 % de los residentes tiene una a menos de 1 km pero solo el 18 % tiene una abierta de noche a esa distancia, y ninguna está en el casco histórico
+date: 07-10-2026
+folder: Movilidad
+permalink: gasolineras-salamanca
+---
+
+    <section class="featured dataset" id="datos">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="section-title">{{ page.title }}</h1>
+                <p class="section-description">{{ page.description }}</p>
+            </div>
+
+			<div id="section-content">
+
+  <div id="mapaGas" style="width: 100%; height: 520px; border-radius: 8px; margin-bottom: 10px;"></div>
+  <p style="font-size:0.9em; margin-bottom:25px;"><span style="color:#2C5F2D;">&#9679;</span> abierta las 24 horas (con un círculo de 1 km a su alrededor) &nbsp; <span style="color:#F4A261;">&#9679;</span> con horario limitado. Pulsa en cada punto para ver su dirección y horario.</p>
+
+			<h2>18 gasolineras, 5 abiertas las 24 horas y todas fuera del casco histórico</h2>
+
+			<p>
+La capa "Gasolineras" de la IDE municipal (Infraestructura de Datos Espaciales del Ayuntamiento) tiene <b>18 estaciones de servicio</b> con su nombre, dirección, horario y empresa. No indica los combustibles que vende ni los precios, de modo que lo que se puede analizar es dónde están y cuándo abren. Para medir la cobertura se han cruzado con la <b>población por portal</b> de la IDE, que suma 137.242 residentes.
+</p>
+<p>La capa se resume también en la página de <a href="/servicios-ciudad-salamanca">farmacias, desfibriladores, gasolineras y cementerios</a>; aquí se mide la cobertura de día y de noche.</p>
+
+<h3>Hallazgos clave</h3>
+<ul>
+<li><b>De día, la ciudad está bien cubierta.</b> El 39 % de los residentes tiene una gasolinera a menos de 500 m y el 98 % a menos de 1 km. La mitad de los residentes está a 570 m o menos de la más cercana.</li>
+<li><b>De noche, la cobertura se estrecha.</b> Solo 5 de las 18 abren las 24 horas (Plenoil Salamanca I y II, Repsol en la N-630, HAM de gas natural y BP). A menos de 1 km de una de ellas vive el 18 % de los residentes, a menos de 2 km el 68 % y la distancia típica es de unos 1,7 km.</li>
+<li><b>Las 24 horas están en la periferia.</b> Están en La Fontana, Buenos Aires, Zaldesa, el entorno de Peñascal y Aldeatejada (BP, fuera del término municipal pero incluida en la capa); ninguna queda en la mitad norte ni cerca del centro.</li>
+<li><b>Ninguna dentro del casco histórico.</b> La más cercana a la Plaza Mayor está a unos 560 m (Av. de Mirat, en Labradores) y la capa solo tiene una dentro de la <a href="/zona-bajas-emisiones-salamanca">Zona de Bajas Emisiones</a>: la Repsol de la Avenida de los Reyes de España, en la zona exterior.</li>
+<li><b>Once de las 18 están al sur y al oeste.</b> Respecto a la Plaza Mayor, 11 quedan en el cuadrante sudoeste (ejes de la Carretera de Fregeneda, Lasalle y Reyes de España), 4 al nordeste, 2 al sudeste y solo 1 al noroeste.</li>
+<li><b>Repsol domina.</b> Tiene 10 de las 18 (una de ellas figura sin empresa pero con el nombre de la marca). Plenoil tiene 2 y Cepsa, BP y HAM una cada una; otras tres son independientes (Ronda Oeste, El Trébol y Low Cost Carburantes).</li>
+<li><b>Las de gas natural son una.</b> Solo la de HAM (GNL y GNC) figura con combustible alternativo, en Zaldesa y abierta las 24 horas.</li>
+<li><b>Gasolinera y punto de recarga eléctrica casi no coinciden.</b> Solo 3 de las 18 tienen un punto de recarga público a menos de 150 m, y solo una (Repsol, en la Avenida Juan Pablo II) con carga rápida. Más en <a href="/puntos-carga-coche-electrico-salamanca">puntos de carga para coches eléctricos</a>.</li>
+</ul>
+
+<h3>Cobertura de los residentes</h3>
+<table border="1" cellpadding="5" cellspacing="0">
+  <thead><tr><th>Distancia en línea recta</th><th>Residentes cerca de cualquier gasolinera</th><th>Residentes cerca de una de 24 horas</th></tr></thead>
+  <tbody>
+    <tr><td>Menos de 500 m</td><td>39 %</td><td>2 %</td></tr>
+    <tr><td>Menos de 1 km</td><td>98 %</td><td>18 %</td></tr>
+    <tr><td>Menos de 1,5 km</td><td>100 %</td><td>38 %</td></tr>
+    <tr><td>Menos de 2 km</td><td>100 %</td><td>68 %</td></tr>
+  </tbody>
+</table>
+
+<h3>Los horarios</h3>
+<p>Seis estaciones abren de 07:00 a 23:00 (siete si se cuenta la que la capa escribe "07:0 - 23:00"). El resto va de 06:00 a 22:00, de 06:30 a 22:30, de 07:00 a 22:00, de 07:30 a 22:30 o de 06:00 a 24:00. Entre las 23:00 y las 06:00, además de las 5 de 24 horas, solo hay una abierta hasta la medianoche (Repsol de la calle Saavedra y Fajardo). La Repsol de Reyes de España figura de "07:00 - 3:00", que parece un error de la capa.</p>
+
+  <h2>Cómo leer estos datos</h2>
+  <ul>
+    <li>Las distancias son en línea recta desde cada portal, no por calle, y la población de cada portal es una estimación: se reparten los habitantes de cada calle a partes iguales entre sus portales, no es el padrón por portal.</li>
+    <li>La capa tiene solo 18 estaciones, y otras de los municipios vecinos, como las de los polígonos de Carbajosa de la Sagrada y Villares de la Reina, no están en ella; la cobertura real puede ser mejor.</li>
+    <li>La capa no tiene fecha de actualización. Los horarios pueden haber cambiado, y varios están escritos con errores (por ejemplo "07:0 - 23:00" o "07:00 - 3:00"), que se muestran tal cual.</li>
+    <li>La capa no informa de combustibles, precios ni de tiendas o lavado, por lo que no se puede comparar el servicio entre estaciones.</li>
+    <li>El cruce con los puntos de recarga eléctrica usa un radio de 150 m, y los datos de recarga tienen también sus propias limitaciones, explicadas en su página.</li>
+  </ul>
+
+			</div>
+
+			<div id="section-table">
+				<h2>Las 18 gasolineras de la capa</h2>
+				<table border="1" cellpadding="5" cellspacing="0">
+				  <thead>
+					<tr><th>Estación</th><th>Dirección</th><th>Horario</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>Estación de Servicio Repsol</td><td>Av. de San Agustín, 78, 37005 Salamanca</td><td>07:0 - 23:00</td></tr>
+					<tr><td>Estación de Servicio Repsol</td><td>Av. Raimundo de Borgoña, 42, 37005 Salamanca</td><td>07:00 - 23:00</td></tr>
+					<tr><td>Estación de servicio Cepsa</td><td>Calle Calz. de Medina, 81, 37004 Salamanca</td><td>06:00 - 22:00</td></tr>
+					<tr><td>Estación de Servicio Repsol</td><td>Av. de Mirat, 40, D, 37005 Salamanca</td><td>07:00 - 23:00</td></tr>
+					<tr><td>Ronda Oeste</td><td>Av. de Luis Camoens, 20, 37007 Salamanca</td><td>07:00 - 23:00</td></tr>
+					<tr><td>Plenoil Salamanca I</td><td>Av. de la Aldehuela, 86, 37003 Salamanca</td><td>24h</td></tr>
+					<tr><td>Estación de Servicio Repsol</td><td>Avenida Aldehuela de los Guzmanes, 17, 37003 Salamanca</td><td>07:00 - 23:00</td></tr>
+					<tr><td>Repsol El Marín</td><td>C. Antonio López Borrasca, Nº2-14, 37008 Salamanca</td><td>07:00 - 23:00</td></tr>
+					<tr><td>Estación de Servicio Repsol</td><td>Av. de Lasalle, 198D, 37008 Salamanca</td><td>07:00 - 22:00</td></tr>
+					<tr><td>Estación de Servicio Repsol</td><td>Ctra. Fregeneda, 45, 37008 Salamanca</td><td>06:30 - 22:30</td></tr>
+					<tr><td>El Trébol</td><td>Ctra. Fregeneda, 12, 37008 Salamanca</td><td>07:00 - 23:00</td></tr>
+					<tr><td>Estación de Servicio Repsol</td><td>Av. de los Reyes de España, 26, 37008 Salamanca</td><td>07:00 - 3:00</td></tr>
+					<tr><td>Estación de Servicio Repsol</td><td>C. Saavedra y Fajardo, 78, 37008 Salamanca</td><td>06:00 - 24:00</td></tr>
+					<tr><td>Estación de Servicio Repsol</td><td>N-630, 338 DE, 37008 Salamanca</td><td>24h</td></tr>
+					<tr><td>Low Cost Carburantes</td><td>CL-517, Carr. Salamanca-Vitigudino, Km 1, 1, 37009 Salamanca</td><td>07:30 - 22:30</td></tr>
+					<tr><td>Ham Salamanca GNL - GNC</td><td>Calle Puerto de Gotemburgo, 1342A, 37008 Salamanca</td><td>24h</td></tr>
+					<tr><td>Plenoil Salamanca II</td><td>Diseminado Peñascal, s/n, 37008 Salamanca</td><td>24h</td></tr>
+					<tr><td>BP</td><td>C. Antonio Gaudi, 1, 37187 Aldeatejada, Salamanca</td><td>24h</td></tr>
+				  </tbody>
+				</table>
+				<p><small>Fuente: capa "Gasolineras" de la IDE del Ayuntamiento de Salamanca y capa de densidad de población por portal. Coberturas elaboradas por Open Salamanca.</small></p>
+			</div>
+
+			{% include categories.html %}
+
+        </div>
+    </section>
+
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+	<script>
+    const mapGas = L.map('mapaGas').setView([40.9640, -5.6700], 13);
+
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/light_all/{z}/{x}/{y}{r}.png?key=cb1_2izw_1_55d93b51ded1dcecfa044181', {
+      attribution: '&copy; OpenStreetMap &copy; CARTO | Datos: IDE Ayuntamiento de Salamanca',
+      subdomains: 'abcd',
+      maxZoom: 19
+    }).addTo(mapGas);
+
+    // [nombre, dirección, horario, lat, lon]
+    const gasolineras = [["Estación de Servicio Repsol","Av. de San Agustín, 78, 37005 Salamanca","07:0 - 23:00",40.97879,-5.65805],["Estación de Servicio Repsol","Av. Raimundo de Borgoña, 42, 37005 Salamanca","07:00 - 23:00",40.97844,-5.66276],["Estación de servicio Cepsa","Calle Calz. de Medina, 81, 37004 Salamanca","06:00 - 22:00",40.97407,-5.64481],["Estación de Servicio Repsol","Av. de Mirat, 40, D, 37005 Salamanca","07:00 - 23:00",40.97006,-5.66297],["Ronda Oeste","Av. de Luis Camoens, 20, 37007 Salamanca","07:00 - 23:00",40.97134,-5.68269],["Plenoil Salamanca I","Av. de la Aldehuela, 86, 37003 Salamanca","24h",40.9588,-5.64966],["Estación de Servicio Repsol","Avenida Aldehuela de los Guzmanes, 17, 37003 Salamanca","07:00 - 23:00",40.9581,-5.65325],["Repsol El Marín","C. Antonio López Borrasca, Nº2-14, 37008 Salamanca","07:00 - 23:00",40.96227,-5.69844],["Estación de Servicio Repsol","Av. de Lasalle, 198D, 37008 Salamanca","07:00 - 22:00",40.95514,-5.69347],["Estación de Servicio Repsol","Ctra. Fregeneda, 45, 37008 Salamanca","06:30 - 22:30",40.95499,-5.67445],["El Trébol","Ctra. Fregeneda, 12, 37008 Salamanca","07:00 - 23:00",40.95578,-5.67276],["Estación de Servicio Repsol","Av. de los Reyes de España, 26, 37008 Salamanca","07:00 - 3:00",40.95719,-5.66587],["Estación de Servicio Repsol","C. Saavedra y Fajardo, 78, 37008 Salamanca","06:00 - 24:00",40.94753,-5.67009],["Estación de Servicio Repsol","N-630, 338 DE, 37008 Salamanca","24h",40.95533,-5.70636],["Low Cost Carburantes","CL-517, Carr. Salamanca-Vitigudino, Km 1, 1, 37009 Salamanca","07:30 - 22:30",40.95938,-5.72759],["Ham Salamanca GNL - GNC","Calle Puerto de Gotemburgo, 1342A, 37008 Salamanca","24h",40.95942,-5.72683],["Plenoil Salamanca II","Diseminado Peñascal, s/n, 37008 Salamanca","24h",40.93903,-5.68356],["BP","C. Antonio Gaudi, 1, 37187 Aldeatejada, Salamanca","24h",40.94248,-5.68079]];
+    const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;');
+
+    gasolineras.forEach(function (g) {
+      const noche = g[2] === '24h';
+      if (noche) {
+        L.circle([g[3], g[4]], { radius: 1000, color: '#2C5F2D', weight: 1, dashArray: '4', fillColor: '#2C5F2D', fillOpacity: 0.06 }).addTo(mapGas);
+      }
+      L.circleMarker([g[3], g[4]], { radius: 7, color: '#000', weight: 1, fillColor: noche ? '#2C5F2D' : '#F4A261', fillOpacity: 1 })
+        .addTo(mapGas).bindPopup('<b>' + esc(g[0]) + '</b><br>' + esc(g[1]) + '<br>Horario: ' + esc(g[2]));
+    });
+	</script>
