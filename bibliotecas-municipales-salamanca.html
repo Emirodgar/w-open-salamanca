@@ -1,0 +1,107 @@
+---
+layout: default
+title: Bibliotecas municipales de Salamanca
+description: Las 7 bibliotecas municipales de la IDE medidas por cobertura y horario - el 91 % de los residentes tiene una a menos de 1 km, pero solo una abre por la tarde hasta las 21:00 y los sábados, y ninguna en domingo
+date: 07-10-2026
+folder: Cultura y Ocio
+permalink: bibliotecas-municipales-salamanca
+---
+
+    <section class="featured dataset" id="datos">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="section-title">{{ page.title }}</h1>
+                <p class="section-description">{{ page.description }}</p>
+            </div>
+
+			<div id="section-content">
+
+  <div id="mapaBib" style="width: 100%; height: 520px; border-radius: 8px; margin-bottom: 10px;"></div>
+  <p style="font-size:0.9em; margin-bottom:25px;">Cada círculo marca 1 km alrededor de una biblioteca y el tamaño del punto crece con los residentes para los que es la más cercana. En verde, la única que abre por la tarde hasta las 21:00 y los sábados. Pulsa en cada punto para ver su horario.</p>
+
+			<h2>7 bibliotecas para toda la ciudad: bien repartidas, pero con un horario casi idéntico</h2>
+
+			<p>
+La capa "Bibliotecas" de la IDE municipal (Infraestructura de Datos Espaciales del Ayuntamiento) tiene <b>7 bibliotecas municipales</b> con su dirección, teléfono y horario. La página <a href="/bibliotecas-cultura">red de bibliotecas y centros culturales</a> describe cada una y las sitúa respecto al casco histórico. Aquí se mide algo distinto: a cuántos residentes llega cada una y cuántas horas está abierta. Para ello se han cruzado con la <b>población por portal</b> de la IDE, que suma 137.242 residentes.
+</p>
+
+<h3>Hallazgos clave</h3>
+<ul>
+<li><b>La cobertura geográfica es buena.</b> El 55 % de los residentes tiene una biblioteca municipal a menos de 500 m, el 91 % a menos de 1 km y el 98 % a menos de 1,5 km. La mitad está a 460 m o menos de la más cercana, y el punto más alejado de la ciudad queda a unos 2,2 km.</li>
+<li><b>Los barrios más alejados.</b> Entre los barrios con 2.000 o más residentes, la distancia media a la biblioteca más cercana es mayor en Puente Ladrillo (unos 1,3 km), Huerta Otea (1,3 km), San Vicente (1,1 km) y Tejares (1,0 km). En el otro extremo están Vidal, Labradores y Chinchibarra, a menos de 300 m de media.</li>
+<li><b>Unos 1.700 niños de 0 a 14 años viven a más de 1 km</b> de una biblioteca, alrededor del 11 % de los 15.000 que se estiman con la población por portal y la edad de cada barrio.</li>
+<li><b>Dos bibliotecas atienden a más gente que las demás.</b> La biblioteca de la Plaza de Trujillo es la más cercana para unos 29.500 residentes y la Gabriel y Galán para unos 29.200; después vienen Torrente Ballester (22.800), Vidal (18.900), Carmen Martín Gaite (17.200), La Vega (10.600) y Vistahermosa (9.100). Trujillo abre unas 35 horas a la semana, poco más de la mitad de las que abre Torrente Ballester.</li>
+<li><b>Una sola biblioteca abre más.</b> Torrente Ballester abre de lunes a viernes de 9:30 a 21:00 y los sábados de 9:30 a 14:00, unas 62 horas a la semana según su horario publicado. Las otras seis abren entre 35 y 37,5 horas, solo de lunes a viernes, con cierre a las 20:00. Torrente Ballester concentra por sí sola más de una quinta parte de las horas de apertura de toda la red.</li>
+<li><b>Los sábados y las noches dependen de ella.</b> Es la única que abre los sábados y la única con horario después de las 20:00. Solo el 10 % de los residentes la tiene a menos de 500 m y el 27 % a menos de 1 km; la distancia típica es de unos 1,4 km. A menos de 2 km vive el 77 %.</li>
+<li><b>Ninguna abre los domingos.</b> En periodos vacacionales, las siete reducen su horario a las mañanas (de 10:00 a 14:00 de lunes a viernes).</li>
+<li><b>Los usuarios las valoran muy bien.</b> En la <a href="/percepcion-ciudadana-salamanca-2023">encuesta de percepción ciudadana</a>, las bibliotecas municipales sacan un 8,31 sobre 10 con 887 valoraciones, la segunda nota más alta de los servicios de esa tabla, tras desplazarse a pie.</li>
+</ul>
+
+<h3>Cobertura de los residentes</h3>
+<table border="1" cellpadding="5" cellspacing="0">
+  <thead><tr><th>Distancia en línea recta</th><th>Residentes cerca de cualquier biblioteca</th><th>Residentes cerca de Torrente Ballester</th></tr></thead>
+  <tbody>
+    <tr><td>Menos de 500 m</td><td>55 %</td><td>10 %</td></tr>
+    <tr><td>Menos de 1 km</td><td>91 %</td><td>27 %</td></tr>
+    <tr><td>Menos de 1,5 km</td><td>98 %</td><td>53 %</td></tr>
+    <tr><td>Menos de 2 km</td><td>100 %</td><td>77 %</td></tr>
+  </tbody>
+</table>
+
+  <h2>Cómo leer estos datos</h2>
+  <ul>
+    <li>Las distancias son en línea recta desde cada portal, no por calle, y la población de cada portal es una estimación: se reparten los habitantes de cada calle a partes iguales entre sus portales; no es el padrón por portal.</li>
+    <li>Las horas semanales se han calculado a partir del texto del horario de la capa. Torrente Ballester figura abierta de forma continua de 9:30 a 21:00, aunque la capa no lo detalla. Los horarios de La Vega, Trujillo y otras tienen erratas ("20:0 h", "10:0") que se han leído como 20:00 y 10:00.</li>
+    <li>La estimación de niños de 0 a 14 años aplica a cada portal la proporción de ese grupo de edad en su barrio, de modo que no recoge diferencias dentro del barrio.</li>
+    <li>La capa solo incluye las 7 bibliotecas municipales. No cuenta la Biblioteca Pública del Estado ni las bibliotecas de las universidades, los colegios o los centros de mayores, que también están abiertas a parte de la población.</li>
+    <li>La capa no informa de préstamos, usuarios, fondos ni salas de estudio, por lo que no mide el uso de las bibliotecas. Las siete comparten además el mismo correo electrónico de contacto.</li>
+    <li>La capa no tiene fecha de actualización, y los horarios pueden haber cambiado.</li>
+  </ul>
+
+			</div>
+
+			<div id="section-table">
+				<h2>Las 7 bibliotecas municipales: horas y residentes más cercanos</h2>
+				<table border="1" cellpadding="5" cellspacing="0">
+				  <thead>
+					<tr><th>Biblioteca</th><th>Dirección</th><th>Horas por semana (aprox.)</th><th>Sábados</th><th>Residentes para los que es la más cercana</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>Biblioteca C.M.I. Trujillo</td><td>Plaza de Trujillo, s/n 37003, Salamanca</td><td>35</td><td>No</td><td>29.500</td></tr>
+					<tr><td>Biblioteca Gabriel y Galán</td><td>Pz. Gabriel y Galán, 14 37005, Salamanca</td><td>37,5</td><td>No</td><td>29.200</td></tr>
+					<tr><td>Biblioteca Torrente Ballester</td><td>Paseo de los Olivos, 10-22 37005, Salamanca</td><td>62</td><td>Sí</td><td>22.800</td></tr>
+					<tr><td>Biblioteca Barrio Vidal</td><td>C/Emigdio de la Riva 37005, Salamanca</td><td>35</td><td>No</td><td>18.900</td></tr>
+					<tr><td>Biblioteca Carmen Martín Gaite</td><td>C/ San Matías 8-18 37006 Salamanca</td><td>35</td><td>No</td><td>17.200</td></tr>
+					<tr><td>Biblioteca C.M.I. La Vega</td><td>Plaza de la Virgen de la Vega s/n 37008, Salamanca</td><td>35</td><td>No</td><td>10.600</td></tr>
+					<tr><td>Biblioteca C.M.I. Vistahermosa</td><td>C/ Ramón de Mesonero Romanos 10-20 37008 Salamanca</td><td>35</td><td>No</td><td>9.100</td></tr>
+				  </tbody>
+				</table>
+				<p><small>Fuente: capa "Bibliotecas" de la IDE del Ayuntamiento de Salamanca y capa de densidad de población por portal. Coberturas y horas elaboradas por Open Salamanca.</small></p>
+			</div>
+
+			{% include categories.html %}
+
+        </div>
+    </section>
+
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+	<script>
+    const mapBib = L.map('mapaBib').setView([40.9640, -5.6650], 13);
+
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/light_all/{z}/{x}/{y}{r}.png?key=cb1_2izw_1_55d93b51ded1dcecfa044181', {
+      attribution: '&copy; OpenStreetMap &copy; CARTO | Datos: IDE Ayuntamiento de Salamanca',
+      subdomains: 'abcd',
+      maxZoom: 19
+    }).addTo(mapBib);
+
+    // [nombre, horario, lat, lon, residentes más cercanos, abre sábados]
+    const bibliotecas = [["Biblioteca C.M.I. Trujillo","Lunes a viernes de 10:00 a 14:00 y de 17:00 a 20:00 h\n|| Periodos vacacionales: Lunes a viernes de 10:0 a 14:00 h",40.96521,-5.65088,29500,false],["Biblioteca Gabriel y Galán","Lunes a viernes de 9:30 a 14:00 y de 17:00 a 20:00 ||\nPeriodos vacacionales:\nLunes a viernes de 10:00 a 14:00",40.97006,-5.66185,29200,false],["Biblioteca Torrente Ballester","Lunes a viernes: de 09:30 a 21:00 h\nSábados: de 09:30 a 14:00 h ||\nPeriodos vacacionales: Lunes a viernes de 10:00 a 14:00 horas.",40.97823,-5.65457,22800,true],["Biblioteca Barrio Vidal","Lunes a viernes: mañanas de 10:00 a 14:00 y tardes de 17:00 a 20:00 horas ||\nPeriodos vacacionales: de 10:00 a 14:00 horas",40.9753,-5.6671,18900,false],["Biblioteca Carmen Martín Gaite","Lunes a viernes: mañanas de 10:00 a 14:00 y tardes de 17:00 a 20:00 horas || Periodos vacacionales: de 10:00 a 14:00 horas.",40.97545,-5.67796,17200,false],["Biblioteca C.M.I. La Vega","Lunes a viernes de 10:00 a 14:00 y de 17:00 a 20:0 h\n|| Periodos vacacionales:\nLunes a viernes de 10:00 a 14:00 h",40.95016,-5.66812,10600,false],["Biblioteca C.M.I. Vistahermosa","Lunes a viernes de 10:00 a 14:00 h y de 17:00 a 20:00 h || \nPeriodos vacacionales:\nMañanas de 10:00 a 14:00 horas",40.94992,-5.68012,9100,false]];
+    const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/\n/g, '<br>');
+
+    bibliotecas.forEach(function (b) {
+      L.circle([b[2], b[3]], { radius: 1000, color: '#264653', weight: 1, dashArray: '4', fillColor: '#264653', fillOpacity: 0.05 }).addTo(mapBib);
+      L.circleMarker([b[2], b[3]], { radius: 5 + b[4] / 2500, color: '#000', weight: 1, fillColor: b[5] ? '#2C5F2D' : '#F4A261', fillOpacity: 0.95 })
+        .addTo(mapBib).bindPopup('<b>' + esc(b[0]) + '</b><br>Más cercana para unos ' + b[4].toLocaleString('es-ES') + ' residentes<br><br>' + esc(b[1]));
+    });
+	</script>
