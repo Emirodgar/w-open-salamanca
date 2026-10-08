@@ -1,7 +1,7 @@
 {
-  "generado_en": "2026-10-08T18:50:50.665Z",
+  "generado_en": "2026-10-08T23:44:46.276Z",
   "dias_ventana": 20,
-  "total": 3724,
+  "total": 3736,
   "medios": [
     "Tribuna Salamanca",
     "Salamanca24Horas",
@@ -10,11 +10,95 @@
   ],
   "noticias": [
     {
+      "url": "https://www.tribunasalamanca.com/noticias/462019/restauran-el-cristo-novohispano-de-la-catedral-de-salamanca-con-tecnicas-de-conservacion-especializadas",
+      "titulo": "Restauran el Cristo novohispano de la Catedral de Salamanca con técnicas de conservación especializadas",
+      "medio": "Tribuna Salamanca",
+      "fecha": "2026-10-08",
+      "fecha_hora": "2026-10-08T21:31:11.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/sucesos/herido-motoristas-tras-salirse-via-chocarse-guardarrail-20261008211132-nt.html",
+      "titulo": "Herido un motorista tras salirse de la vía y chocarse contra el guardarraíl en Valdehijaderos",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-08",
+      "fecha_hora": "2026-10-08T20:45:33.000Z"
+    },
+    {
+      "url": "https://www.salamanca24horas.com/local/restaurado-crucificado-origen-novohispano-catedral-vieja",
+      "titulo": "Restaurado el Crucificado de origen novohispano de la Catedral Vieja",
+      "medio": "Salamanca24Horas",
+      "fecha": "2026-10-08",
+      "fecha_hora": "2026-10-08T20:31:56.000Z"
+    },
+    {
+      "url": "https://www.tribunasalamanca.com/noticias/462016/la-caprichosa-regresa-con-una-coleccion-nupcial-para-una-novia-que-se-sienta-representada",
+      "titulo": "La Caprichosa regresa con una colección nupcial para una novia que \"se sienta representada\"",
+      "medio": "Tribuna Salamanca",
+      "fecha": "2026-10-08",
+      "fecha_hora": "2026-10-08T20:31:53.000Z"
+    },
+    {
+      "url": "https://www.salamanca24horas.com/local/iv-gala-comercio-premia-ocho-establecimientos-que-aportan-prestigio-ciudad-hacen-comunidad",
+      "titulo": "La IV Gala del Comercio premia a ocho establecimientos “que aportan prestigio a la ciudad y hacen comunidad”",
+      "medio": "Salamanca24Horas",
+      "fecha": "2026-10-08",
+      "fecha_hora": "2026-10-08T20:02:05.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/salamanca/noticias-importantes-salamanca-hoy-jueves-octubre-20261008213140-nt.html",
+      "titulo": "Las noticias más importantes en Salamanca hoy jueves 8 de octubre",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-08",
+      "fecha_hora": "2026-10-08T19:32:10.000Z"
+    },
+    {
+      "url": "https://www.salamancahoy.es/salamanca/noticias-imprescindibles-salamanca-jueves-octubre-20261008212138-nt.html",
+      "titulo": "Las noticias imprescindibles de Salamanca este jueves 8 de octubre",
+      "medio": "Salamancahoy",
+      "fecha": "2026-10-08",
+      "fecha_hora": "2026-10-08T19:21:39.000Z"
+    },
+    {
+      "url": "https://www.salamanca24horas.com/sucesos/motorista-herido-tras-chocar-guardarrail-valdehijaderos",
+      "titulo": "Un motorista herido tras chocar contra un guardarraíl en Valdehijaderos",
+      "medio": "Salamanca24Horas",
+      "fecha": "2026-10-08",
+      "fecha_hora": "2026-10-08T19:07:27.000Z"
+    },
+    {
+      "url": "https://www.salamanca24horas.com/sucesos/entrega-policia-nacional-tras-agresion-discoteca-salamanca-acabo-victima-quirofano",
+      "titulo": "Se entrega en la Policía Nacional tras una agresión en una discoteca de Salamanca que acabó con la víctima en quirófano",
+      "medio": "Salamanca24Horas",
+      "fecha": "2026-10-08",
+      "fecha_hora": "2026-10-08T18:58:37.000Z"
+    },
+    {
+      "url": "https://www.salamancahoy.es/salamanca/ciudad/gonzalo-hermida-visita-salamanca-libertad-comunion-perfecta-20260928203216-nt.html",
+      "titulo": "Gonzalo Hermida visita Salamanca: «La libertad es la comunión perfecta entre lo que piensas y lo que sientes»",
+      "medio": "Salamancahoy",
+      "fecha": "2026-10-08",
+      "fecha_hora": "2026-10-08T18:32:17.000Z"
+    },
+    {
+      "url": "https://www.tribunasalamanca.com/noticias/462006/salamanca-aplaude-a-su-pequeno-comercio-el-que-hace-comunidad",
+      "titulo": "Salamanca aplaude a su pequeño comercio, el que \"hace comunidad\"",
+      "medio": "Tribuna Salamanca",
+      "fecha": "2026-10-08",
+      "fecha_hora": "2026-10-08T18:25:51.000Z"
+    },
+    {
       "url": "https://www.salamanca24horas.com/universidad/supremo-anula-decreto-universidades-considerar-era-tramite-urgente",
       "titulo": "El Supremo anula el decreto de Universidades al considerar que no era un trámite urgente",
       "medio": "Salamanca24Horas",
       "fecha": "2026-10-08",
       "fecha_hora": "2026-10-08T18:24:41.000Z"
+    },
+    {
+      "url": "https://www.tribunasalamanca.com/noticias/462004/lucia-peguero-debuta-en-la-pasarela-uniendo-moda-castilla-y-leon-con-una-coleccion-que-fusiona-moda-y-baile",
+      "titulo": "Lucía Peguero debuta en la Pasarela \"Uniendo Moda Castilla y León\" con una colección que fusiona moda y baile",
+      "medio": "Tribuna Salamanca",
+      "fecha": "2026-10-08",
+      "fecha_hora": "2026-10-08T18:16:24.000Z"
     },
     {
       "url": "https://www.tribunasalamanca.com/noticias/462003/la-upsa-inaugura-un-nuevo-curso-de-la-universidad-de-la-experiencia-con-mas-de-830-alumnos",
@@ -99,6 +183,13 @@
       "medio": "Salamanca24Horas",
       "fecha": "2026-10-08",
       "fecha_hora": "2026-10-08T17:29:00.000Z"
+    },
+    {
+      "url": "https://www.tribunasalamanca.com/noticias/461996/adios-a-las-glorietas-partidas-en-la-n-501-asi-seran-las-nuevas-rotondas-de-matacan-y-encinas-de-abajo",
+      "titulo": "Adiós a las glorietas partidas en la N-501: así serán las nuevas rotondas de Matacán y Encinas de Abajo",
+      "medio": "Tribuna Salamanca",
+      "fecha": "2026-10-08",
+      "fecha_hora": "2026-10-08T17:27:46.000Z"
     },
     {
       "url": "https://www.tribunasalamanca.com/noticias/461994/santander-explora-en-salamanca-vias-de-colaboracion-con-la-plataforma-logistica-zaldesa",
@@ -204,6 +295,13 @@
       "medio": "Tribuna Salamanca",
       "fecha": "2026-10-08",
       "fecha_hora": "2026-10-08T16:11:28.000Z"
+    },
+    {
+      "url": "https://www.tribunasalamanca.com/noticias/461982/aqui-no-se-arrima-nadie",
+      "titulo": "¡Aquí no se arrima nadie!",
+      "medio": "Tribuna Salamanca",
+      "fecha": "2026-10-08",
+      "fecha_hora": "2026-10-08T15:50:47.000Z"
     },
     {
       "url": "https://www.lagacetadesalamanca.es/provincia/ecoemprende-rural-pone-marcha-laboratorio-ideas-ciudad-20261008174711-nt.html",
@@ -25726,20 +25824,6 @@
       "medio": "Salamancahoy",
       "fecha": "2026-09-19",
       "fecha_hora": "2026-09-19T07:06:08Z"
-    },
-    {
-      "url": "https://www.salamancahoy.es/salamanca/ciudad/esperada-novillada-feria-salamanca-deja-premio-gordo-20260918212935-ga.html",
-      "titulo": "La esperada novillada de la feria de Salamanca deja sin premio 'gordo' a Diego Mateos",
-      "medio": "Salamancahoy",
-      "fecha": "2026-09-18",
-      "fecha_hora": "2026-09-18T19:29:36Z"
-    },
-    {
-      "url": "https://www.salamancahoy.es/salamanca/noticias-imprescindibles-salamanca-viernes-septiembre-20260918205636-nt.html",
-      "titulo": "Las noticias imprescindibles de Salamanca este viernes 18 de septiembre",
-      "medio": "Salamancahoy",
-      "fecha": "2026-09-18",
-      "fecha_hora": "2026-09-18T18:56:36Z"
     },
     {
       "url": "https://www.salamancahoy.es/salamanca/ciudad/busca-vecino-salamanca-puso-piscina-metros-cubicos-20260917122252-nt.html",
