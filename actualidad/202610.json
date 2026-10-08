@@ -1,16 +1,8 @@
 {
   "mes": "2026-10",
   "titulo_mes": "Octubre 2026",
-  "resumen_mes": "Octubre arranca con la convocatoria de elecciones generales y la continuidad de la búsqueda de un hombre desaparecido en Ledrada. El deporte local vive el debut del Meins Avenida y el Salamanca UDS logra su pase a la Copa del Rey, mientras la capital acoge el inicio del VII Congreso del Libro Blanco y una manifestación por el acceso a la vivienda. La provincia también ha sido escenario de diversas festividades y noticias relacionadas con la gestión municipal.",
+  "resumen_mes": "Octubre arranca con la convocatoria de elecciones generales y la continuidad de la búsqueda de un hombre desaparecido en Ledrada. El deporte local vive el debut y un importante test del Meins Avenida, y el Salamanca UDS logra su pase a la Copa del Rey, mientras la capital acoge el inicio del VII Congreso del Libro Blanco y una manifestación por el acceso a la vivienda.",
   "hitos": [
-    {
-      "fecha": "2026-10-01",
-      "titulo": "Arranca la vacunación de la gripe en Castilla y León",
-      "categoria": "Sociedad",
-      "descripcion": "La campaña comienza con niños y residencias, y el resto de grupos podrá vacunarse a partir del 13 de octubre.",
-      "fuente": "https://www.lagacetadesalamanca.es/salamanca/arranca-vacunacion-gripe-castilla-leon-ninos-residencias-20261001124606-nt.html",
-      "destacado": false
-    },
     {
       "fecha": "2026-10-01",
       "titulo": "Salamanca UDS logra el billete para la Copa del Rey",
@@ -25,14 +17,6 @@
       "categoria": "Economía",
       "descripcion": "El paro en septiembre ha registrado una subida, alcanzando niveles prepandemia.",
       "fuente": "https://www.lagacetadesalamanca.es/salamanca/septiembre-subida-paro-prepandemia-20261002060000-nt.html",
-      "destacado": false
-    },
-    {
-      "fecha": "2026-10-03",
-      "titulo": "Continúa la búsqueda de un hombre desaparecido en Ledrada",
-      "categoria": "Sucesos",
-      "descripcion": "La búsqueda de Agustín, un varón de 89 años desaparecido en Ledrada, afronta su sexto día con un amplio dispositivo y bajo alerta por fuertes lluvias.",
-      "fuente": "https://www.lagacetadesalamanca.es/sucesos/tercera-jornada-busqueda-rastro-agustin-ledrada-lluvia-20261003101817-nt.html",
       "destacado": false
     },
     {
@@ -65,6 +49,22 @@
       "categoria": "Sociedad",
       "descripcion": "La séptima edición del Libro Blanco de la Gaceta ha arrancado con el objetivo de impulsar el futuro de Salamanca.",
       "fuente": "https://www.lagacetadesalamanca.es/salamanca/arranca-libro-blanco-gaceta-impulsar-futuro-salamanca-20261005103948-nt.html",
+      "destacado": false
+    },
+    {
+      "fecha": "2026-10-06",
+      "titulo": "Búsqueda de Agustín continúa con dificultades",
+      "categoria": "Sucesos",
+      "descripcion": "La búsqueda de Agustín, desaparecido en Ledrada, afronta su octavo día, dificultada por las fuertes lluvias.",
+      "fuente": "https://www.lagacetadesalamanca.es/sucesos/octavo-dia-rastro-agustin-continua-busqueda-desaparecido-20261007072800-nt.html",
+      "destacado": false
+    },
+    {
+      "fecha": "2026-10-07",
+      "titulo": "El Meins Avenida pierde su primer test de altura",
+      "categoria": "Deportes",
+      "descripcion": "El equipo Meins Avenida topa con la realidad al perder contra el Valencia Basket en su primer encuentro de alto nivel.",
+      "fuente": "https://www.lagacetadesalamanca.es/deportes/baloncesto-local/meins-avenida/meins-avenida-topa-realidad-valencia-20261007220629-nt.html",
       "destacado": false
     }
   ]

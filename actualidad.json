@@ -1,11 +1,11 @@
 {
   "url_base": "https://www.lagacetadesalamanca.es",
-  "generado_en": "2026-10-07T17:25:39+00:00",
+  "generado_en": "2026-10-08T07:50:41+00:00",
   "periodo_cubierto": {
-    "desde": "2026-10-04",
-    "hasta": "2026-10-07"
+    "desde": "2026-10-05",
+    "hasta": "2026-10-08"
   },
-  "total_urls_analizadas": 245,
+  "total_urls_analizadas": 201,
   "secciones_excluidas": [
     "gente-estilo",
     "nacional",
@@ -17,31 +17,31 @@
   "por_seccion": [
     [
       "salamanca",
-      78
+      73
     ],
     [
       "provincia",
-      68
+      57
     ],
     [
       "deportes",
-      51
+      34
     ],
     [
       "sucesos",
-      26
+      19
     ],
     [
       "campo",
-      11
+      10
     ],
     [
       "toros",
-      5
+      3
     ],
     [
       "encuestas",
-      4
+      3
     ],
     [
       "cine-y-series",
@@ -55,11 +55,11 @@
   "por_subseccion": [
     [
       "deportes/futbol-local",
-      31
+      19
     ],
     [
       "deportes/baloncesto-local",
-      6
+      7
     ],
     [
       "deportes/deporte-base",
@@ -68,48 +68,31 @@
     [
       "especiales/concurso-intergeneracional",
       1
-    ],
-    [
-      "deportes/carreras-populares",
-      1
     ]
   ],
   "por_tipo_contenido": [
     [
       "noticia",
-      207
+      186
     ],
     [
       "galería",
-      35
+      13
     ],
     [
       "directo / en vivo",
-      3
+      2
     ]
   ],
   "heatmap_calendario": [
     {
-      "fecha": "2026-10-04",
-      "total": 62,
-      "salamanca": 9,
-      "provincia": 24,
-      "deportes": 20,
-      "sucesos": 5,
-      "campo": 0,
-      "toros": 3,
-      "encuestas": 1,
-      "cine-y-series": 0,
-      "especiales": 0
-    },
-    {
       "fecha": "2026-10-05",
-      "total": 68,
-      "salamanca": 24,
+      "total": 52,
+      "salamanca": 14,
       "provincia": 15,
-      "deportes": 16,
-      "sucesos": 8,
-      "campo": 2,
+      "deportes": 15,
+      "sucesos": 4,
+      "campo": 1,
       "toros": 1,
       "encuestas": 1,
       "cine-y-series": 0,
@@ -117,8 +100,8 @@
     },
     {
       "fecha": "2026-10-06",
-      "total": 65,
-      "salamanca": 21,
+      "total": 64,
+      "salamanca": 20,
       "provincia": 22,
       "deportes": 5,
       "sucesos": 7,
@@ -130,108 +113,99 @@
     },
     {
       "fecha": "2026-10-07",
-      "total": 50,
-      "salamanca": 24,
-      "provincia": 7,
-      "deportes": 10,
+      "total": 62,
+      "salamanca": 25,
+      "provincia": 14,
+      "deportes": 14,
       "sucesos": 6,
       "campo": 1,
       "toros": 1,
       "encuestas": 1,
       "cine-y-series": 0,
       "especiales": 0
+    },
+    {
+      "fecha": "2026-10-08",
+      "total": 23,
+      "salamanca": 14,
+      "provincia": 6,
+      "deportes": 0,
+      "sucesos": 2,
+      "campo": 0,
+      "toros": 1,
+      "encuestas": 0,
+      "cine-y-series": 0,
+      "especiales": 0
     }
   ],
   "conceptos_destacados": [
     {
-      "concepto": "Virgen del Rosario",
-      "piezas": 9,
-      "seccion_principal": "provincia",
-      "desde": "2026-10-04",
+      "concepto": "Meins Avenida",
+      "piezas": 6,
+      "seccion_principal": "deportes",
+      "desde": "2026-10-06",
       "hasta": "2026-10-07",
       "ejemplos_redactados": [
-        "Mancera de Abajo, Cantagallo y Pizarral celebran festividades en honor a la Virgen del Rosario.",
-        "Coca de Alba y Navamorales también acompañan a la Virgen del Rosario en su día de fiesta."
+        "El Valencia Basket fue el primer test de altura para el Meins Avenida.",
+        "Se analizan las claves de la derrota del Meins Avenida frente al Valencia Basket."
       ]
     },
     {
-      "concepto": "Santa Marta de Tormes",
-      "piezas": 6,
+      "concepto": "Santa Marta",
+      "piezas": 5,
       "seccion_principal": "provincia",
-      "desde": "2026-10-04",
+      "desde": "2026-10-05",
       "hasta": "2026-10-07",
       "ejemplos_redactados": [
-        "Santa Marta de Tormes aborda la contaminación lumínica y levanta un centro de empresa para atraer talento.",
-        "El municipio estrena un ciclo de otoño con bebecuentos y cuentacuentos, y renueva su parque infantil en la Plaza de Castilla."
+        "Santa Marta levanta un centro de empresa para atraer talento.",
+        "Santa Marta y Carbajosa se sitúan a la cabeza del alfoz en contaminación lumínica."
+      ]
+    },
+    {
+      "concepto": "Valencia Basket",
+      "piezas": 4,
+      "seccion_principal": "deportes",
+      "desde": "2026-10-06",
+      "hasta": "2026-10-07",
+      "ejemplos_redactados": [
+        "El Valencia Basket se enfrentó al Meins Avenida en un primer test de altura.",
+        "El Meins Avenida topó con la realidad ante el Valencia Basket."
       ]
     },
     {
       "concepto": "Ciudad Rodrigo",
-      "piezas": 6,
+      "piezas": 4,
       "seccion_principal": "provincia",
-      "desde": "2026-10-04",
+      "desde": "2026-10-05",
       "hasta": "2026-10-06",
       "ejemplos_redactados": [
-        "Cáritas Ciudad Rodrigo retoma actividades para niños y adolescentes y la AFECIR ratifica su colaboración con la Feria de Teatro.",
-        "El agua vuelve a colarse en las clases de un colegio, y la ciudad celebra la Virgen del Rosario."
+        "El agua volvió a colarse en las clases de un colegio de Ciudad Rodrigo.",
+        "AFECIR ratifica su colaboración con la Feria de Teatro de Ciudad Rodrigo."
       ]
     },
     {
-      "concepto": "Sucesos con hombres implicados",
-      "piezas": 6,
-      "seccion_principal": "sucesos",
-      "desde": "2026-10-04",
-      "hasta": "2026-10-07",
-      "ejemplos_redactados": [
-        "Un hombre resulta herido tras ser atropellado en la Avenida de las Artes.",
-        "Se detiene a un hombre en Madrid por presuntamente matar a sus padres y se busca a otro desaparecido en Vilvestre."
-      ]
-    },
-    {
-      "concepto": "Unionistas de Salamanca",
-      "piezas": 6,
-      "seccion_principal": "deportes",
-      "desde": "2026-10-04",
-      "hasta": "2026-10-07",
-      "ejemplos_redactados": [
-        "La enfermería de Unionistas suma un nuevo inquilino con Pau Ferrer y se confirma un nuevo horario para un partido en noviembre.",
-        "El club Unionistas de Salamanca muestra un crecimiento sin límites."
-      ]
-    },
-    {
-      "concepto": "Meins Avenida",
-      "piezas": 4,
-      "seccion_principal": "deportes",
-      "desde": "2026-10-04",
-      "hasta": "2026-10-07",
-      "ejemplos_redactados": [
-        "Valencia Basket y Meins Avenida se enfrentan en un primer test de altura.",
-        "El objetivo de Meins Avenida cambia con Raquel Romo y se informa sobre el horario para ver el partido en directo."
-      ]
-    },
-    {
-      "concepto": "Libro Blanco de la Gaceta",
+      "concepto": "Libro Blanco",
       "piezas": 4,
       "seccion_principal": "salamanca",
       "desde": "2026-10-05",
       "hasta": "2026-10-05",
       "ejemplos_redactados": [
-        "La VII edición del Libro Blanco de la Gaceta arranca para impulsar el futuro de Salamanca.",
-        "Expertos proponen ideas para promover el progreso y avance en la ciudad."
+        "Se celebró el VII Congreso del Libro Blanco.",
+        "Expertos propusieron ideas en el Libro Blanco para promover el progreso."
       ]
     },
     {
-      "concepto": "Alba de Tormes",
+      "concepto": "Unionistas",
       "piezas": 4,
-      "seccion_principal": "provincia",
-      "desde": "2026-10-04",
-      "hasta": "2026-10-06",
+      "seccion_principal": "deportes",
+      "desde": "2026-10-05",
+      "hasta": "2026-10-07",
       "ejemplos_redactados": [
-        "Coca de Alba pone fin a sus fiestas del Rosario y Alba de Tormes se presenta como inversión en salud y eventos de referencia.",
-        "Concepción Miguélez dejará la alcaldía de Alba de Tormes al finalizar su mandato."
+        "Unionistas de Salamanca es un club sin límites de crecimiento.",
+        "La enfermería de Unionistas suma un nuevo inquilino, Pau Ferrer."
       ]
     }
   ],
-  "resumen_borrador": "Se han publicado 245 noticias entre el 2026-10-04 y el 2026-10-07. La actividad se ha concentrado sobre todo en salamanca (78 piezas), provincia (68 piezas), deportes (51 piezas).\n\nLos conceptos con más piezas relacionadas son: Virgen · Rosario; San; Santa · Marta; Ciudad · Rodrigo. Revisa 'evidencia' de cada concepto para redactar el resumen final.",
-  "resumen": "El inicio de octubre en Salamanca ha estado marcado por la intensa actividad en la provincia, donde diversas localidades han celebrado sus festividades patronales. Mancera de Abajo, Cantagallo, Pizarral, Coca de Alba y Navamorales rindieron honores a la Virgen del Rosario, mientras que Santibáñez de Béjar despidió su fiesta grande y Las Veguillas cerraron sus celebraciones patronales. En Santa Marta de Tormes, el foco estuvo en la lucha contra la contaminación lumínica y la creación de un centro de empresa para atraer talento, además de la renovación de su parque infantil. Ciudad Rodrigo, por su parte, vio a Cáritas retomar actividades para jóvenes y a la AFECIR ratificar su colaboración con la Feria de Teatro, aunque el municipio también sufrió inundaciones en un colegio.\n\nEn el ámbito deportivo, la actualidad giró en torno a los equipos locales. Unionistas de Salamanca sumó un nuevo inquilino a su enfermería, Pau Ferrer, y confirmó un nuevo horario para un partido en noviembre, mostrando un crecimiento constante. El Meins Avenida de baloncesto se enfrentó al Valencia Basket en un test de altura, con cambios en su plantilla y la difusión de horarios para seguir sus encuentros.\n\nLos sucesos también tuvieron su espacio, con un hombre herido tras ser atropellado en la Avenida de las Artes y la detención en Madrid de otro individuo acusado de parricidio. La capital salmantina acogió el inicio de la VII edición del Libro Blanco de La Gaceta, un evento que busca impulsar el futuro de la ciudad con propuestas de expertos. Finalmente, en Alba de Tormes, se anunciaron inversiones en salud y eventos de referencia, y se conoció que Concepción Miguélez dejará la alcaldía al finalizar su mandato."
+  "resumen_borrador": "Se han publicado 201 noticias entre el 2026-10-05 y el 2026-10-08. La actividad se ha concentrado sobre todo en salamanca (73 piezas), provincia (57 piezas), deportes (34 piezas).\n\nLos conceptos con más piezas relacionadas son: Meins · Avenida; Santa · Marta; San; Paso. Revisa 'evidencia' de cada concepto para redactar el resumen final.",
+  "resumen": "La semana en Salamanca ha estado marcada por la actualidad política y deportiva. El presidente Manueco celebró la convocatoria de elecciones generales, un anuncio que ha centrado parte del debate público local. En el ámbito deportivo, el Meins Avenida afrontó un importante test de altura frente al Valencia Basket, mientras que Unionistas de Salamanca sigue consolidando su crecimiento.\n\nLa provincia también ha sido protagonista, con noticias como la situación de Santa Marta, que impulsa un centro de empresa para atraer talento, y los problemas de inundaciones en colegios de Ciudad Rodrigo. La búsqueda de Agustín, desaparecido en Ledrada, ha continuado durante estos días, enfrentando dificultades adicionales debido a las inclemencias meteorológicas.\n\nFinalmente, la capital ha acogido el inicio del VII Congreso del Libro Blanco, un evento destinado a impulsar el futuro de Salamanca, y se ha mantenido la atención en la situación de la vivienda con una manifestación ciudadana."
 }

@@ -1,5 +1,5 @@
 {
-  "generado_en": "2026-10-07T17:25:39+00:00",
+  "generado_en": "2026-10-08T07:50:41+00:00",
   "eventos": [
     {
       "titulo": "Semana del Comercio 2026",
@@ -17,15 +17,6 @@
       "lugar": "Convento de las Madres Carmelitas, Peñaranda de Bracamonte",
       "descripcion": "Peñaranda de Bracamonte acogerá el novenario y fiesta de Santa Teresa de Jesús en el Convento de las Madres Carmelitas. Los cultos, rezos y eucaristías se celebrarán durante diez días.",
       "fuente": "https://www.lagacetadesalamanca.es/provincia/penaranda-bracamonte-celebrara-novenario-fiesta-santa-teresa-20261006153226-nt.html"
-    },
-    {
-      "titulo": "Concierto 'Ecos del Barroco Misional: de Europa a Chiquitos'",
-      "categoria": "Cultura",
-      "fecha_inicio": "2026-10-07",
-      "fecha_fin": null,
-      "lugar": "Iglesia de la Clerecía",
-      "descripcion": "La agrupación Antiqua Camera de la Universidad Católica de Salta ofrecerá un concierto concebido como un puente cultural entre salones nobiliarios europeos y reducciones jesuíticas de América del Sur del siglo XVIII. La entrada será gratuita hasta completar aforo.",
-      "fuente": "https://www.lagacetadesalamanca.es/salamanca/clerecia-retoma-ciclo-pontificia-sonora-20261007092619-nt.html"
     },
     {
       "titulo": "Apertura de la temporada de cine en Guijuelo",
@@ -46,12 +37,30 @@
       "fuente": "https://www.lagacetadesalamanca.es/provincia/listo-disfrutar-muestra-teatro-aficionado-encinar-20261006192329-nt.html"
     },
     {
+      "titulo": "10ª Marcha solidaria a favor de AsaluCyL en Villar de Gallimazo",
+      "categoria": "Sociedad",
+      "fecha_inicio": "2026-10-11",
+      "fecha_fin": null,
+      "lugar": "Villar de Gallimazo",
+      "descripcion": "Villar de Gallimazo acogerá la décima edición de su marcha solidaria para visibilizar el lupus y recaudar fondos para AsaluCyL. Se ha dispuesto un servicio de autobús desde Peñaranda para facilitar la participación.",
+      "fuente": "https://www.lagacetadesalamanca.es/provincia/villar-gallimazo-prepara-celebrar-domingo-10a-marcha-20261008075407-nt.html"
+    },
+    {
       "titulo": "Trío Zendero Hidalguense: son huasteco",
       "categoria": "Cultura",
       "fecha_inicio": "2026-10-12",
       "fecha_fin": null,
       "lugar": "Casino de Salamanca",
       "descripcion": "A las 20:00 h, en el Día de la Hispanidad, actuación de música tradicional del estado mexicano de Hidalgo. Entrada libre hasta completar aforo."
+    },
+    {
+      "titulo": "Celebración de El Pilar de siete parroquias en Zorita de la Frontera",
+      "categoria": "Sociedad",
+      "fecha_inicio": "2026-10-12",
+      "fecha_fin": null,
+      "lugar": "Zorita de la Frontera",
+      "descripcion": "Zorita de la Frontera acogerá la celebración de la festividad de la Virgen del Pilar con una misa y una comida comunitaria, reuniendo a siete comunidades parroquiales.",
+      "fuente": "https://www.lagacetadesalamanca.es/provincia/zorita-frontera-acogera-celebracion-pilar-siete-parroquias-20261008081132-nt.html"
     },
     {
       "titulo": "24ª Jornadas Internacionales de Bomberos en Béjar",
@@ -211,6 +220,15 @@
       "lugar": "Salamanca",
       "descripcion": "Carrera competitiva, marcha y olimpiada infantil; la inscripción está abierta desde este viernes.",
       "fuente": "https://www.lagacetadesalamanca.es/deportes/carreras-populares/salamanca-volvera-correr-violencia-genero-noviembre-20260917122748-nt.html"
+    },
+    {
+      "titulo": "XIV Premios HosteleríaSalamanca.es",
+      "categoria": "Economía",
+      "fecha_inicio": "2026-11-09",
+      "fecha_fin": null,
+      "lugar": "Hotel Doña Brígida Salamanca Fórum",
+      "descripcion": "La XIV edición de los Premios HosteleríaSalamanca.es se celebrará en el Hotel Doña Brígida, coincidiendo con el 20 aniversario del portal. Se reconocerá la labor de 21 establecimientos y profesionales en siete categorías.",
+      "fuente": "https://www.lagacetadesalamanca.es/salamanca/premios-hosteleriasalamancaes-2026-finalistas-20261007184146-nt.html"
     },
     {
       "titulo": "'Bracamonte en Negro', festival de novela negra en Peñaranda",

@@ -171,6 +171,30 @@
       ],
       "basado_en": "actualidad.json",
       "fecha_creacion": "2026-10-07"
+    },
+    {
+      "id": "carrera-violencia-genero-2026",
+      "pregunta": "La Carrera contra la Violencia de Género de Salamanca se celebrará en noviembre. ¿Considera que este tipo de eventos deportivos solidarios son efectivos para concienciar sobre problemas sociales como la violencia de género?",
+      "opciones": [
+        "Sí, visibilizan el problema y fomentan la participación ciudadana.",
+        "No, su impacto en la concienciación es limitado.",
+        "Son un complemento, pero se necesitan otras acciones más directas.",
+        "No tengo suficiente información."
+      ],
+      "basado_en": "eventos.json",
+      "fecha_creacion": "2026-10-08"
+    },
+    {
+      "id": "carrera-lagares-2026",
+      "pregunta": "La carrera de los lagares rupestres en San Esteban de la Sierra abrirá el Circuito de Carreras Populares de la Diputación. ¿Cree que este tipo de eventos deportivos rurales contribuyen al desarrollo turístico y económico de la provincia?",
+      "opciones": [
+        "Sí, atraen visitantes y dinamizan la economía local.",
+        "No, su impacto es limitado y muy localizado.",
+        "Son importantes para la comunidad local, pero no tanto para el turismo.",
+        "No tengo suficiente información."
+      ],
+      "basado_en": "eventos.json",
+      "fecha_creacion": "2026-10-08"
     }
   ]
 }
