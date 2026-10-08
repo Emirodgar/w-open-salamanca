@@ -1,7 +1,7 @@
 {
-  "generado_en": "2026-10-08T00:12:44.895Z",
+  "generado_en": "2026-10-08T06:12:25.204Z",
   "dias_ventana": 20,
-  "total": 3554,
+  "total": 3586,
   "medios": [
     "Tribuna Salamanca",
     "Salamanca24Horas",
@@ -9,6 +9,230 @@
     "Salamancahoy"
   ],
   "noticias": [
+    {
+      "url": "https://www.salamanca24horas.com/universidad/publicadas-nuevas-ponderaciones-acceder-carreras-universitarias-usal",
+      "titulo": "Publicadas las nuevas ponderaciones para acceder a las carreras universitarias de la USAL",
+      "medio": "Salamanca24Horas",
+      "fecha": "2026-10-08",
+      "fecha_hora": "2026-10-08T06:00:00.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/provincia/villar-gallimazo-prepara-celebrar-domingo-10a-marcha-20261008075407-nt.html",
+      "titulo": "Villar de Gallimazo se prepara para celebrar este domingo la 10ª Marcha a favor de AsaluCyL",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-08",
+      "fecha_hora": "2026-10-08T05:54:08.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/salamanca/paso-dia-hoy-octubre-salamanca-20261007050000-nt.html",
+      "titulo": "¿Qué pasó tal día como hoy, 8 de octubre, en Salamanca?",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-08",
+      "fecha_hora": "2026-10-08T05:42:53.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/provincia/barcelona-pueblo-salmantino-reabrir-bar-vimos-era-20261007064500-nt.html",
+      "titulo": "De Barcelona a un pueblo salmantino para reabrir el bar: «Vimos que era viable y apostamos por ello»",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-08",
+      "fecha_hora": "2026-10-08T05:42:19.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/provincia/ayuntamiento-villoria-halla-valiosos-documentos-ineditos-sobre-20261008074146-nt.html",
+      "titulo": "El Ayuntamiento de Villoria halla valiosos documentos inéditos sobre el 'Aerogenio' en la casa del inventor Fernando Gallego",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-08",
+      "fecha_hora": "2026-10-08T05:41:46.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/salamanca/citycesa-tres-areas-solo-servicio-comercio-internacional-20261005050000-nt.html",
+      "titulo": "Citycesa: tres áreas, un solo servicio para el comercio internacional",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-08",
+      "fecha_hora": "2026-10-08T05:37:34.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/provincia/sentencia-silencia-reloj-iglesia-monte-mario-bejar-20261007070000-nt.html",
+      "titulo": "Una sentencia silencia el reloj de la iglesia de Monte Mario en Béjar después de 51 años",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-08",
+      "fecha_hora": "2026-10-08T05:34:23.000Z"
+    },
+    {
+      "url": "https://www.salamanca24horas.com/local/salamanca-registra-617-casos-violencia-genero-activos-mes-septiembre-1-12-menos-agosto",
+      "titulo": "Salamanca registra 617 casos de violencia de género activos en el mes de septiembre, un 1,12% menos que en agosto",
+      "medio": "Salamanca24Horas",
+      "fecha": "2026-10-08",
+      "fecha_hora": "2026-10-08T05:30:00.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/sucesos/octavo-dia-rastro-agustin-continua-busqueda-desaparecido-20261007072800-nt.html",
+      "titulo": "Octavo día sin rastro de Agustín: continúa la búsqueda del desaparecido en Ledrada",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-08",
+      "fecha_hora": "2026-10-08T05:28:00.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/salamanca/patologia-falta-aseos-evitan-multa-orinar-calle-20261007072300-nt.html",
+      "titulo": "Ni patología ni falta de aseos evitan la multa por orinar en la calle",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-08",
+      "fecha_hora": "2026-10-08T05:23:00.000Z"
+    },
+    {
+      "url": "https://www.salamanca24horas.com/provincia/comarca-de-salamanca/santa-marta-renueva-zona-exterior-escuela-municipal-hosteleria",
+      "titulo": "Santa Marta renueva la zona exterior de la Escuela Municipal de Hostelería",
+      "medio": "Salamanca24Horas",
+      "fecha": "2026-10-08",
+      "fecha_hora": "2026-10-08T05:20:00.000Z"
+    },
+    {
+      "url": "https://www.salamanca24horas.com/local/interior-negocia-mejora-pensiones-policias-guardias-civiles-enfrenta-sindicatos-alcance",
+      "titulo": "Interior negocia una mejora de las pensiones de policías y guardias civiles que enfrenta a los sindicatos por su alcance",
+      "medio": "Salamanca24Horas",
+      "fecha": "2026-10-08",
+      "fecha_hora": "2026-10-08T05:20:00.000Z"
+    },
+    {
+      "url": "https://www.salamanca24horas.com/universidad/premiado-proyecto-simulacion-inteligente-usal-permite-estudiantes-desarrollar-competencias-clinicas",
+      "titulo": "Premiado el proyecto de simulación inteligente de la USAL que permite a los estudiantes desarrollar competencias clínicas",
+      "medio": "Salamanca24Horas",
+      "fecha": "2026-10-08",
+      "fecha_hora": "2026-10-08T05:10:00.000Z"
+    },
+    {
+      "url": "https://www.salamanca24horas.com/deportes/unionistas-cf/antonio-paz-opciones-entrenar-hierba-natural-es-reclamo-mister-jugadores-cuerpo-tecnico-e-incluso-nivel-director-deportivo",
+      "titulo": "Antonio Paz y las opciones de entrenar en hierba natural: “Es un reclamo del míster, de los jugadores, del cuerpo técnico e incluso a nivel de director deportivo”",
+      "medio": "Salamanca24Horas",
+      "fecha": "2026-10-08",
+      "fecha_hora": "2026-10-08T05:05:00.000Z"
+    },
+    {
+      "url": "https://www.salamanca24horas.com/local/accesibilidad-edificios-publicos-levantar-mano-parar-bus-reivindicaciones-dia-mundial-vision",
+      "titulo": "Accesibilidad en edificios públicos o no levantar la mano para parar el bus: reivindicaciones por el Día Mundial de la Visión",
+      "medio": "Salamanca24Horas",
+      "fecha": "2026-10-08",
+      "fecha_hora": "2026-10-08T05:00:00.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/toros/peculiar-29n-damian-castano-20261007064500-nt.html",
+      "titulo": "El peculiar 29N de Damián Castaño",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-08",
+      "fecha_hora": "2026-10-08T04:45:06.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/salamanca/julia-navarro-salamanca-sueno-conocimiento-estudiar-ciudad-20261007063000-nt.html",
+      "titulo": "Julia Navarro: «Salamanca es el sueño del conocimiento. Estudiar en esta ciudad es un privilegio»",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-08",
+      "fecha_hora": "2026-10-08T04:30:04.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/salamanca/partidos-encienden-maquina-20261007061500-nt.html",
+      "titulo": "Los partidos encienden la máquina",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-08",
+      "fecha_hora": "2026-10-08T04:15:00.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/opinion/firmas/elena-salamanca-podemos-llamar-narcoestado-20261007060000-nt.html",
+      "titulo": "¿Lo podemos llamar ya Narcoestado?",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-08",
+      "fecha_hora": "2026-10-08T04:00:03.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/salamanca/covid-repunta-otono-nivel-epidemico-cuadruplica-gripe-20261007060000-nt.html",
+      "titulo": "El covid repunta en otoño: nivel epidémico y cuadruplica a la gripe",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-08",
+      "fecha_hora": "2026-10-08T04:00:00.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/salamanca/paso-cebra-incognito-calle-prior-20261007055800-nt.html",
+      "titulo": "Un paso de cebra de incógnito en la calle Prior",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-08",
+      "fecha_hora": "2026-10-08T03:58:00.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/opinion/firmas/juan-carlos-garcia-regalado-feijoo-empecemos-20261007055000-nt.html",
+      "titulo": "Feijóo, no empecemos",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-08",
+      "fecha_hora": "2026-10-08T03:50:20.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/opinion/firmas/antonio-civantos-otono-patriarca-20261007055000-nt.html",
+      "titulo": "El otoño del patriarca",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-08",
+      "fecha_hora": "2026-10-08T03:50:19.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/salamanca/retortillo-oportunidad-autonomia-energetica-europa-20261005050000-nt.html",
+      "titulo": "Retortillo, una oportunidad para la autonomía energética de Europa",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-08",
+      "fecha_hora": "2026-10-08T03:00:30.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/salamanca/premios-hosteleriasalamancaes-2026-finalistas-20261007184146-nt.html",
+      "titulo": "Los Premios HosteleríaSalamanca.es 2026 ya tienen finalistas",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-08",
+      "fecha_hora": "2026-10-08T03:00:27.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/provincia/nectar-rubi-san-martin-castanar-20261007050000-nt.html",
+      "titulo": "Néctar rubí en San Martín del Castañar",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-08",
+      "fecha_hora": "2026-10-08T03:00:21.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/opinion/humor/vineta-moran-20261007050000-nt.html",
+      "titulo": "La viñeta de Morán",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-08",
+      "fecha_hora": "2026-10-08T03:00:17.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/salamanca/villamayor-amplia-espacios-vivir-deporte-ano-20261005050000-nt.html",
+      "titulo": "Villamayor amplía sus espacios para vivir el deporte todo el año",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-08",
+      "fecha_hora": "2026-10-08T03:00:15.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/salamanca/salamanca-pone-valor-potencial-industrial-atraer-nuevas-20261006122133-nt.html",
+      "titulo": "Salamanca pone en valor su potencial industrial para atraer nuevas empresas",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-08",
+      "fecha_hora": "2026-10-08T03:00:12.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/salamanca/castellanos-moriscos-amplia-oferta-deportiva-20261005050000-nt.html",
+      "titulo": "Castellanos de Moriscos amplía su oferta deportiva",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-08",
+      "fecha_hora": "2026-10-08T03:00:09.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/salamanca/diputacion-apuesta-estrategias-basadas-modernizacion-empleo-turismo-20261005050000-nt.html",
+      "titulo": "La Diputación apuesta por estrategias basadas en la modernización, el empleo y el turismo",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-08",
+      "fecha_hora": "2026-10-08T03:00:07.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/salamanca/ejercicio-fisico-completo-adaptado-alcance-lumbrales-20261005050000-nt.html",
+      "titulo": "El ejercicio físico más completo y adaptado, al alcance en Lumbrales",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-08",
+      "fecha_hora": "2026-10-08T03:00:04.000Z"
+    },
     {
       "url": "https://www.lagacetadesalamanca.es/deportes/baloncesto-local/meins-avenida/meins-avenida-topa-realidad-valencia-20261007220629-nt.html",
       "titulo": "Meins Avenida se topa con la realidad en Valencia (82-57)",
