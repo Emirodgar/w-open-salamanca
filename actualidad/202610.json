@@ -1,7 +1,7 @@
 {
   "mes": "2026-10",
   "titulo_mes": "Octubre 2026",
-  "resumen_mes": "Octubre arranca con la convocatoria de elecciones generales y la continuidad de la búsqueda de un hombre desaparecido en Ledrada. El deporte local vive el debut y un importante test del Meins Avenida, y el Salamanca UDS logra su pase a la Copa del Rey. La capital acoge el inicio del VII Congreso del Libro Blanco, mientras se registra un repunte del COVID-19 y la congelación de impuestos por decimotercer año.",
+  "resumen_mes": "Octubre arranca con la convocatoria de elecciones generales y la continuidad de la búsqueda de un hombre desaparecido en Ledrada. El deporte local vive el debut y un importante test del Meins Avenida, y el Salamanca UDS logra su pase a la Copa del Rey. La capital acoge el inicio del VII Congreso del Libro Blanco, mientras se registra un repunte del COVID-19 y la congelación de impuestos por decimotercer año. El pleno también aprueba que la línea 15 de autobús circule los fines de semana.",
   "hitos": [
     {
       "fecha": "2026-10-01",
@@ -65,6 +65,14 @@
       "categoria": "Deportes",
       "descripcion": "El equipo Meins Avenida topa con la realidad al perder contra el Valencia Basket en su primer encuentro de alto nivel.",
       "fuente": "https://www.lagacetadesalamanca.es/deportes/baloncesto-local/meins-avenida/meins-avenida-topa-realidad-valencia-20261007220629-nt.html",
+      "destacado": false
+    },
+    {
+      "fecha": "2026-10-09",
+      "titulo": "El pleno aprueba que la línea 15 de bus circule los fines de semana",
+      "categoria": "Sociedad",
+      "descripcion": "El pleno da luz verde definitiva a la ampliación de la línea 15 a sábados, domingos y festivos entre Capuchinos, Pizarrales, Blanco, Hospital y Campus. Empezará este mes y costará 118.000 euros brutos al año, con 60 expediciones los sábados y 54 los domingos y festivos, cada 30 minutos.",
+      "fuente": "https://www.tribunasalamanca.com/noticias/460755/salamanca-pone-fecha-a-la-ampliacion-de-la-linea-15-de-autobus-a-sabados-y-domingos",
       "destacado": false
     }
   ]
