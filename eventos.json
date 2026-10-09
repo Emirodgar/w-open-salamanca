@@ -1,5 +1,5 @@
 {
-  "generado_en": "2026-10-08T07:50:41+00:00",
+  "generado_en": "2026-10-09T05:45:19+00:00",
   "eventos": [
     {
       "titulo": "Semana del Comercio 2026",
@@ -17,6 +17,15 @@
       "lugar": "Convento de las Madres Carmelitas, Peñaranda de Bracamonte",
       "descripcion": "Peñaranda de Bracamonte acogerá el novenario y fiesta de Santa Teresa de Jesús en el Convento de las Madres Carmelitas. Los cultos, rezos y eucaristías se celebrarán durante diez días.",
       "fuente": "https://www.lagacetadesalamanca.es/provincia/penaranda-bracamonte-celebrara-novenario-fiesta-santa-teresa-20261006153226-nt.html"
+    },
+    {
+      "titulo": "Recogida de materiales para la ambientación de Halloween en Castellanos de Moriscos",
+      "categoria": "Sociedad",
+      "fecha_inicio": "2026-10-09",
+      "fecha_fin": "2026-10-18",
+      "lugar": "Centro Joven, Castellanos de Moriscos",
+      "descripcion": "El Centro Joven de Castellanos de Moriscos recogerá materiales reutilizables para la ambientación de Halloween. Los vecinos pueden aportar objetos en desuso durante el segundo y tercer fin de semana de octubre.",
+      "fuente": "https://www.lagacetadesalamanca.es/provincia/castellanos-moriscos-prepara-halloween-ayuda-vecinos-20261008191841-nt.html"
     },
     {
       "titulo": "Apertura de la temporada de cine en Guijuelo",
@@ -107,6 +116,24 @@
       "fuente": "https://www.lagacetadesalamanca.es/toros/clase-magistral-escuela-taurina-cartel-20261005141008-nt.html"
     },
     {
+      "titulo": "III Congreso Gastronómico de LA GACETA",
+      "categoria": "Cultura",
+      "fecha_inicio": "2026-10-19",
+      "fecha_fin": "2026-10-20",
+      "lugar": "Hotel Abba Fonseca, Salamanca",
+      "descripcion": "El III Congreso Gastronómico de LA GACETA se celebrará en el Hotel Abba Fonseca, explorando la riqueza culinaria de Castilla y León. Habrá charlas, degustaciones y catas, con inscripción solidaria a favor del Banco de Alimentos.",
+      "fuente": "https://www.lagacetadesalamanca.es/salamanca/gastronomia-castilla-leon-cita-salamanca-inscribete-iii-20261008132812-nt.html"
+    },
+    {
+      "titulo": "Bebecuentos y Cuentacuentos 'Hojas' y 'El ladrón de calabazas'",
+      "categoria": "Cultura",
+      "fecha_inicio": "2026-10-22",
+      "fecha_fin": null,
+      "lugar": "Escuela Municipal Infantil, Santa Marta",
+      "descripcion": "Dentro del ciclo 'El otoño' de bebecuentos y cuentacuentos, se presentarán 'Hojas' para explorar la naturaleza y 'El ladrón de calabazas', una historia protagonizada por Pájaro y Ardilla. Las sesiones se realizan en la Escuela Municipal Infantil.",
+      "fuente": "https://www.lagacetadesalamanca.es/provincia/santa-marta-estrena-ciclo-otono-bebecuentos-cuentacuentos-20261006140315-nt.html"
+    },
+    {
       "titulo": "Taller 'Hispanidad en colores'",
       "categoria": "Cultura",
       "fecha_inicio": "2026-10-24",
@@ -140,15 +167,6 @@
       "lugar": "Ávila",
       "descripcion": "Unionistas disputará la primera ronda de la Copa del Rey a domicilio frente al Ávila. El partido se celebrará entre el 27 y el 29 de octubre.",
       "fuente": "https://www.lagacetadesalamanca.es/deportes/futbol-local/salamanca-volvera-recibir-helmantico-celta-primera-ronda-20261005133043-nt.html"
-    },
-    {
-      "titulo": "Bebecuentos y Cuentacuentos de Halloween: '¿Dónde está la señora bruja?' y 'El lobo llama a la puerta'",
-      "categoria": "Cultura",
-      "fecha_inicio": "2026-10-29",
-      "fecha_fin": null,
-      "lugar": "Escuela Municipal Infantil, Santa Marta",
-      "descripcion": "Sesiones especiales de Halloween con el bebecuentos '¿Dónde está la señora bruja?' y el cuentacuentos 'El lobo llama a la puerta', protagonizado por personajes de cuentos clásicos.",
-      "fuente": "https://www.lagacetadesalamanca.es/provincia/santa-marta-estrena-ciclo-otono-bebecuentos-cuentacuentos-20261006140315-nt.html"
     },
     {
       "titulo": "Actividad especial de Halloween en Guijuelo",
@@ -256,6 +274,15 @@
       "lugar": "Peñausende",
       "descripcion": "Jornada organizada por la Diputación de Salamanca para divulgar el patrimonio natural, fomentar la recolección responsable y poner en valor la micología.",
       "fuente": "https://www.lagacetadesalamanca.es/provincia/seis-municipios-suman-jornadas-micologicas-poner-valor-20260928164730-nt.html"
+    },
+    {
+      "titulo": "Encendido del alumbrado navideño en Salamanca",
+      "categoria": "Urbanismo",
+      "fecha_inicio": "2026-11-26",
+      "fecha_fin": null,
+      "lugar": "Salamanca",
+      "descripcion": "El alumbrado navideño de Salamanca se activará el jueves 26 de noviembre, coincidiendo con el Black Friday. El Ayuntamiento comenzará a colgar las luces alrededor del 19 de octubre.",
+      "fuente": "https://www.lagacetadesalamanca.es/salamanca/cuenta-atras-calles-brillen-navidad-20261008070000-nt.html"
     },
     {
       "titulo": "Clausura del Festival de La Candela en Santibáñez de Béjar",

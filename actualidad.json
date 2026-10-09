@@ -1,11 +1,11 @@
 {
   "url_base": "https://www.lagacetadesalamanca.es",
-  "generado_en": "2026-10-08T07:50:41+00:00",
+  "generado_en": "2026-10-09T05:45:19+00:00",
   "periodo_cubierto": {
-    "desde": "2026-10-05",
-    "hasta": "2026-10-08"
+    "desde": "2026-10-06",
+    "hasta": "2026-10-09"
   },
-  "total_urls_analizadas": 201,
+  "total_urls_analizadas": 187,
   "secciones_excluidas": [
     "gente-estilo",
     "nacional",
@@ -17,19 +17,19 @@
   "por_seccion": [
     [
       "salamanca",
-      73
+      63
     ],
     [
       "provincia",
-      57
+      56
     ],
     [
       "deportes",
-      34
+      29
     ],
     [
       "sucesos",
-      19
+      20
     ],
     [
       "campo",
@@ -37,175 +37,188 @@
     ],
     [
       "toros",
-      3
+      4
     ],
     [
       "encuestas",
       3
     ],
     [
-      "cine-y-series",
+      "fundacion-gaceta",
       1
     ],
     [
-      "especiales",
+      "cine-y-series",
       1
     ]
   ],
   "por_subseccion": [
     [
       "deportes/futbol-local",
-      19
+      18
     ],
     [
       "deportes/baloncesto-local",
-      7
-    ],
-    [
-      "deportes/deporte-base",
-      3
-    ],
-    [
-      "especiales/concurso-intergeneracional",
-      1
+      8
     ]
   ],
   "por_tipo_contenido": [
     [
       "noticia",
-      186
+      175
     ],
     [
       "galería",
-      13
+      11
     ],
     [
       "directo / en vivo",
-      2
+      1
     ]
   ],
   "heatmap_calendario": [
     {
-      "fecha": "2026-10-05",
-      "total": 52,
-      "salamanca": 14,
-      "provincia": 15,
-      "deportes": 15,
-      "sucesos": 4,
-      "campo": 1,
-      "toros": 1,
-      "encuestas": 1,
-      "cine-y-series": 0,
-      "especiales": 1
-    },
-    {
       "fecha": "2026-10-06",
-      "total": 64,
-      "salamanca": 20,
-      "provincia": 22,
+      "total": 48,
+      "salamanca": 9,
+      "provincia": 21,
       "deportes": 5,
-      "sucesos": 7,
-      "campo": 8,
+      "sucesos": 5,
+      "campo": 6,
       "toros": 0,
       "encuestas": 1,
-      "cine-y-series": 1,
-      "especiales": 0
+      "fundacion-gaceta": 0,
+      "cine-y-series": 1
     },
     {
       "fecha": "2026-10-07",
-      "total": 62,
-      "salamanca": 25,
+      "total": 55,
+      "salamanca": 18,
       "provincia": 14,
       "deportes": 14,
       "sucesos": 6,
       "campo": 1,
       "toros": 1,
       "encuestas": 1,
-      "cine-y-series": 0,
-      "especiales": 0
+      "fundacion-gaceta": 0,
+      "cine-y-series": 0
     },
     {
       "fecha": "2026-10-08",
-      "total": 23,
-      "salamanca": 14,
-      "provincia": 6,
-      "deportes": 0,
-      "sucesos": 2,
-      "campo": 0,
+      "total": 67,
+      "salamanca": 23,
+      "provincia": 21,
+      "deportes": 8,
+      "sucesos": 9,
+      "campo": 2,
+      "toros": 2,
+      "encuestas": 1,
+      "fundacion-gaceta": 1,
+      "cine-y-series": 0
+    },
+    {
+      "fecha": "2026-10-09",
+      "total": 17,
+      "salamanca": 13,
+      "provincia": 0,
+      "deportes": 2,
+      "sucesos": 0,
+      "campo": 1,
       "toros": 1,
       "encuestas": 0,
-      "cine-y-series": 0,
-      "especiales": 0
+      "fundacion-gaceta": 0,
+      "cine-y-series": 0
     }
   ],
   "conceptos_destacados": [
     {
-      "concepto": "Meins Avenida",
-      "piezas": 6,
+      "concepto": "Meins Avenida y Valencia Basket",
+      "piezas": 10,
       "seccion_principal": "deportes",
       "desde": "2026-10-06",
       "hasta": "2026-10-07",
       "ejemplos_redactados": [
-        "El Valencia Basket fue el primer test de altura para el Meins Avenida.",
-        "Se analizan las claves de la derrota del Meins Avenida frente al Valencia Basket."
-      ]
-    },
-    {
-      "concepto": "Santa Marta",
-      "piezas": 5,
-      "seccion_principal": "provincia",
-      "desde": "2026-10-05",
-      "hasta": "2026-10-07",
-      "ejemplos_redactados": [
-        "Santa Marta levanta un centro de empresa para atraer talento.",
-        "Santa Marta y Carbajosa se sitúan a la cabeza del alfoz en contaminación lumínica."
-      ]
-    },
-    {
-      "concepto": "Valencia Basket",
-      "piezas": 4,
-      "seccion_principal": "deportes",
-      "desde": "2026-10-06",
-      "hasta": "2026-10-07",
-      "ejemplos_redactados": [
-        "El Valencia Basket se enfrentó al Meins Avenida en un primer test de altura.",
-        "El Meins Avenida topó con la realidad ante el Valencia Basket."
+        "El equipo Meins Avenida se enfrentó al Valencia Basket en un primer test de altura, donde topó con la realidad de la derrota. Se analizaron las claves de este resultado.",
+        "El Valencia Basket y el Meins Avenida disputaron un partido de liga."
       ]
     },
     {
       "concepto": "Ciudad Rodrigo",
       "piezas": 4,
       "seccion_principal": "provincia",
-      "desde": "2026-10-05",
-      "hasta": "2026-10-06",
+      "desde": "2026-10-06",
+      "hasta": "2026-10-08",
       "ejemplos_redactados": [
-        "El agua volvió a colarse en las clases de un colegio de Ciudad Rodrigo.",
+        "Ciudad Rodrigo realizó cortes en cuatro calles debido a su mal estado. Cáritas de la localidad retoma sus actividades para niños y adolescentes.",
         "AFECIR ratifica su colaboración con la Feria de Teatro de Ciudad Rodrigo."
       ]
     },
     {
-      "concepto": "Libro Blanco",
+      "concepto": "Guijuelo",
       "piezas": 4,
-      "seccion_principal": "salamanca",
-      "desde": "2026-10-05",
-      "hasta": "2026-10-05",
+      "seccion_principal": "provincia",
+      "desde": "2026-10-06",
+      "hasta": "2026-10-09",
       "ejemplos_redactados": [
-        "Se celebró el VII Congreso del Libro Blanco.",
-        "Expertos propusieron ideas en el Libro Blanco para promover el progreso."
+        "Guijuelo se posiciona como referente en pleno empleo y calidad de vida en la provincia. El centro deportivo municipal amplía su material.",
+        "Se ha reportado malestar por el resultado del parcheo en la carretera Fuenterroble-Guijuelo."
       ]
     },
     {
       "concepto": "Unionistas",
       "piezas": 4,
       "seccion_principal": "deportes",
-      "desde": "2026-10-05",
+      "desde": "2026-10-07",
+      "hasta": "2026-10-08",
+      "ejemplos_redactados": [
+        "Unionistas afina su puntería y vacía la enfermería, aunque suma un nuevo inquilino con Pau Ferrer. La secretaría técnica del club sigue trabajando.",
+        "Se ha confirmado un nuevo horario para Unionistas en noviembre."
+      ]
+    },
+    {
+      "concepto": "Peñaranda",
+      "piezas": 4,
+      "seccion_principal": "provincia",
+      "desde": "2026-10-06",
+      "hasta": "2026-10-08",
+      "ejemplos_redactados": [
+        "Peñaranda sufrió un asalto de madrugada con lanza térmica para reventar una antigua caja. La marcha contra el cáncer en Peñaranda logró recaudar 5700 euros.",
+        "El PP exige al Ayuntamiento de Peñaranda el mantenimiento de la pista exterior."
+      ]
+    },
+    {
+      "concepto": "Santa Marta",
+      "piezas": 3,
+      "seccion_principal": "provincia",
+      "desde": "2026-10-06",
+      "hasta": "2026-10-09",
+      "ejemplos_redactados": [
+        "El Ayuntamiento de Santa Marta promueve el deporte como forma de vida en el municipio. La localidad estrena un ciclo de otoño con bebecuentos y cuentacuentos.",
+        "Santa Marta y Carbajosa de la Sagrada lideran el alfoz en contaminación lumínica."
+      ]
+    },
+    {
+      "concepto": "Virus Shamonda",
+      "piezas": 3,
+      "seccion_principal": "campo",
+      "desde": "2026-10-06",
+      "hasta": "2026-10-08",
+      "ejemplos_redactados": [
+        "El virus Shamonda avanza en la región, generando preocupación por posibles abortos en el ganado. Se alerta sobre la cercanía del virus y su impacto en la producción.",
+        "El virus Shamonda ha llegado a Castilla y León."
+      ]
+    },
+    {
+      "concepto": "COVID y Gripe",
+      "piezas": 2,
+      "seccion_principal": "salamanca",
+      "desde": "2026-10-07",
       "hasta": "2026-10-07",
       "ejemplos_redactados": [
-        "Unionistas de Salamanca es un club sin límites de crecimiento.",
-        "La enfermería de Unionistas suma un nuevo inquilino, Pau Ferrer."
+        "El COVID-19 repunta en otoño, alcanzando un nivel epidémico que cuadruplica la gripe. Se prevé la vacunación contra el COVID en esta estación."
       ]
     }
   ],
-  "resumen_borrador": "Se han publicado 201 noticias entre el 2026-10-05 y el 2026-10-08. La actividad se ha concentrado sobre todo en salamanca (73 piezas), provincia (57 piezas), deportes (34 piezas).\n\nLos conceptos con más piezas relacionadas son: Meins · Avenida; Santa · Marta; San; Paso. Revisa 'evidencia' de cada concepto para redactar el resumen final.",
-  "resumen": "La semana en Salamanca ha estado marcada por la actualidad política y deportiva. El presidente Manueco celebró la convocatoria de elecciones generales, un anuncio que ha centrado parte del debate público local. En el ámbito deportivo, el Meins Avenida afrontó un importante test de altura frente al Valencia Basket, mientras que Unionistas de Salamanca sigue consolidando su crecimiento.\n\nLa provincia también ha sido protagonista, con noticias como la situación de Santa Marta, que impulsa un centro de empresa para atraer talento, y los problemas de inundaciones en colegios de Ciudad Rodrigo. La búsqueda de Agustín, desaparecido en Ledrada, ha continuado durante estos días, enfrentando dificultades adicionales debido a las inclemencias meteorológicas.\n\nFinalmente, la capital ha acogido el inicio del VII Congreso del Libro Blanco, un evento destinado a impulsar el futuro de Salamanca, y se ha mantenido la atención en la situación de la vivienda con una manifestación ciudadana."
+  "resumen_borrador": "Se han publicado 187 noticias entre el 2026-10-06 y el 2026-10-09. La actividad se ha concentrado sobre todo en salamanca (63 piezas), provincia (56 piezas), deportes (29 piezas).\n\nLos conceptos con más piezas relacionadas son: Meins · Avenida; San; Otono; Ciudad · Rodrigo. Revisa 'evidencia' de cada concepto para redactar el resumen final.",
+  "resumen": "La actualidad salmantina de los últimos días ha estado marcada por diversos frentes. En el ámbito deportivo, el Meins Avenida se enfrentó al Valencia Basket en un test de altura, mientras que Unionistas de Salamanca ha trabajado en afinar su puntería y la recuperación de jugadores. El Salamanca UDS, por su parte, ultima preparativos para su gimnasio y la Copa del Rey. En el plano provincial, Guijuelo se consolida como referente de empleo y calidad de vida, y Ciudad Rodrigo ha abordado el mal estado de algunas de sus calles. Peñaranda de Bracamonte fue escenario de un asalto y de una exitosa marcha contra el cáncer. Santa Marta de Tormes ha destacado por su promoción del deporte y la cultura local. Además, se ha puesto el foco en la situación sanitaria con el repunte del COVID-19 en otoño, superando los niveles de gripe. El sector del campo ha mostrado preocupación por el avance del virus Shamonda en la región y sus posibles efectos en la producción. La ciudad también ha visto movimientos en torno a la logística, el comercio local y la preparación para las luces de Navidad."
 }

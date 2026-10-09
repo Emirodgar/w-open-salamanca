@@ -195,6 +195,30 @@
       ],
       "basado_en": "eventos.json",
       "fecha_creacion": "2026-10-08"
+    },
+    {
+      "id": "repunte-covid-2026",
+      "pregunta": "Ante el repunte del COVID-19 en Salamanca, superando los niveles de gripe, ¿cree que las autoridades deberían reforzar las medidas de prevención o información a la ciudadanía?",
+      "opciones": [
+        "Sí, es crucial actuar con antelación",
+        "No, la situación no requiere medidas adicionales",
+        "Solo si la presión hospitalaria aumenta",
+        "No tengo suficiente información"
+      ],
+      "basado_en": "actualidad.json",
+      "fecha_creacion": "2026-10-09"
+    },
+    {
+      "id": "virus-shamonda-2026",
+      "pregunta": "El sector agrario salmantino ha expresado preocupación por el avance del virus Shamonda. ¿Considera que las administraciones deben implementar medidas urgentes para proteger la producción local?",
+      "opciones": [
+        "Sí, es vital para la economía provincial",
+        "No, el impacto aún es incierto",
+        "Solo si se confirma un riesgo mayor",
+        "No tengo suficiente información"
+      ],
+      "basado_en": "actualidad.json",
+      "fecha_creacion": "2026-10-09"
     }
   ]
 }
