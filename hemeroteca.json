@@ -1,7 +1,7 @@
 {
-  "generado_en": "2026-10-10T20:08:16.845Z",
+  "generado_en": "2026-10-10T23:34:33.899Z",
   "dias_ventana": 20,
-  "total": 3888,
+  "total": 3892,
   "medios": [
     "Tribuna Salamanca",
     "Salamanca24Horas",
@@ -10,11 +10,95 @@
   ],
   "noticias": [
     {
+      "url": "https://www.tribunasalamanca.com/noticias/462243/mourinho-se-niega-a-comparecer-en-rueda-de-prensa-tras-la-victoria-ante-el-villarreal-y-la-polemica-arbitral",
+      "titulo": "Mourinho se niega a comparecer en rueda de prensa tras la victoria ante el Villarreal y la polémica arbitral",
+      "medio": "Tribuna Salamanca",
+      "fecha": "2026-10-10",
+      "fecha_hora": "2026-10-10T22:03:22.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/deportes/futbol-local/salamancauds/salamanca-duerme-lider-tras-superar-sanse-20261010215905-nt.html",
+      "titulo": "El Salamanca UDS duerme líder tras superar al Sanse (3-2)",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-10",
+      "fecha_hora": "2026-10-10T21:31:08.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/deportes/futbol-local/salamancauds/claves-victoria-salamanca-sanse-20261010232753-nt.html",
+      "titulo": "Las claves de la victoria del Salamanca UDS contra el Sanse",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-10",
+      "fecha_hora": "2026-10-10T21:27:53.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/deportes/diomande-salva-real-madrid-incendio-provocado-vinicius-20261010231843-nt.html",
+      "titulo": "Diomande salva al Real Madrid de un incendio provocado por Vinícius (1-0)",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-10",
+      "fecha_hora": "2026-10-10T21:18:43.000Z"
+    },
+    {
+      "url": "https://www.tribunasalamanca.com/noticias/462239/un-gol-de-diomande-rescata-al-real-madrid-de-la-polemica-expulsion-de-vinicius",
+      "titulo": "Un gol de Diomande rescata al Real Madrid de la polémica expulsión de Vinícius",
+      "medio": "Tribuna Salamanca",
+      "fecha": "2026-10-10",
+      "fecha_hora": "2026-10-10T21:18:00.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/deportes/futbol-local/salamancauds/muniain-queman-papas-jugadores-valientes-nunca-20261010224612-nt.html",
+      "titulo": "Muniain: «Cuando queman las papas, mis jugadores han sido más valientes que nunca»",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-10",
+      "fecha_hora": "2026-10-10T20:46:12.000Z"
+    },
+    {
+      "url": "https://www.tribunasalamanca.com/noticias/462237/fallece-atacado-por-un-tigre-tras-saltar-a-su-cercado-en-un-zoo-ingles",
+      "titulo": "Fallece atacado por un tigre tras saltar a su cercado en un zoo inglés",
+      "medio": "Tribuna Salamanca",
+      "fecha": "2026-10-10",
+      "fecha_hora": "2026-10-10T20:41:52.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/deportes/futbol-local/unionistas/claves-empate-unionistas-frente-cacereno-principe-felipe-20261010222715-nt.html",
+      "titulo": "Las claves del empate de Unionistas frente al Cacereño en el Príncipe Felipe",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-10",
+      "fecha_hora": "2026-10-10T20:27:15.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/deportes/barca-sigue-enchufado-20261010222055-nt.html",
+      "titulo": "El Barça sigue enchufado (3-0)",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-10",
+      "fecha_hora": "2026-10-10T20:20:56.000Z"
+    },
+    {
+      "url": "https://www.salamancahoy.es/deportes/salamanca-cf-uds/salamanca-sobrevive-locura-ante-sanse-suma-tres-20261010220347-ga.html",
+      "titulo": "El Salamanca CF UDS sobrevive a la locura ante el Sanse y suma tres puntos vitales",
+      "medio": "Salamancahoy",
+      "fecha": "2026-10-10",
+      "fecha_hora": "2026-10-10T20:08:59.000Z"
+    },
+    {
+      "url": "https://www.salamancahoy.es/deportes/unionistas-cf/javi-medina-critico-unionistas-pesar-punto-competido-20261010220457-nt.html",
+      "titulo": "Javi Medina, crítico con Unionistas a pesar del punto: «No hemos competido en la segunda parte»",
+      "medio": "Salamancahoy",
+      "fecha": "2026-10-10",
+      "fecha_hora": "2026-10-10T20:04:57.000Z"
+    },
+    {
       "url": "https://www.salamanca24horas.com/deportes/salamanca-cf-uds/3-2-salamanca-cf-uds-duerme-lider-golazo-caramelo",
       "titulo": "(3-2) El Salamanca CF UDS duerme líder con un golazo de Caramelo",
       "medio": "Salamanca24Horas",
       "fecha": "2026-10-10",
       "fecha_hora": "2026-10-10T19:57:52.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/deportes/futbol-local/unionistas/javi-medina-contundente-mejor-resultado-20261010215428-nt.html",
+      "titulo": "Javi Medina, contundente: «Lo mejor para nosotros ha sido el resultado»",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-10",
+      "fecha_hora": "2026-10-10T19:54:29.000Z"
     },
     {
       "url": "https://www.tribunasalamanca.com/noticias/462232/el-salamanca-cf-uds-se-reivindica-en-el-helmantico-del-dominio-al-golpe-definitivo",
@@ -1067,6 +1151,13 @@
       "fecha_hora": "2026-10-09T16:44:05.000Z"
     },
     {
+      "url": "https://www.tribunasalamanca.com/noticias/462146/como-se-ilumina-el-ayuntamiento-de-salamanca-este-puente-el-secreto-detras-de-su-rojo-y-amarillo",
+      "titulo": "¿Cómo se ilumina el Ayuntamiento de Salamanca este puente? El secreto detrás de su rojo y amarillo",
+      "medio": "Tribuna Salamanca",
+      "fecha": "2026-10-09",
+      "fecha_hora": "2026-10-09T16:36:47.000Z"
+    },
+    {
       "url": "https://www.lagacetadesalamanca.es/deportes/baloncesto-local/meins-avenida/kennedy-brown-refuerza-juego-interior-meins-avenida-20261009183254-nt.html",
       "titulo": "Kennedy Brown refuerza el juego interior de Meins Avenida",
       "medio": "La Gaceta de Salamanca",
@@ -1184,6 +1275,13 @@
       "medio": "La Gaceta de Salamanca",
       "fecha": "2026-10-09",
       "fecha_hora": "2026-10-09T15:11:12.000Z"
+    },
+    {
+      "url": "https://www.tribunasalamanca.com/noticias/462130/aqui-no-hay-quien-viva",
+      "titulo": "¡Aquí no hay quien viva!",
+      "medio": "Tribuna Salamanca",
+      "fecha": "2026-10-09",
+      "fecha_hora": "2026-10-09T15:10:38.000Z"
     },
     {
       "url": "https://www.lagacetadesalamanca.es/salamanca/david-mingo-elegido-presidente-diputacion-salamanca-tras-20261009132956-nt.html",
@@ -26762,76 +26860,6 @@
       "medio": "La Gaceta de Salamanca",
       "fecha": "2026-09-21",
       "fecha_hora": "2026-09-21T03:00:05Z"
-    },
-    {
-      "url": "https://www.lagacetadesalamanca.es/toros/carino-unico-intenta-estar-altura-circunstancias-20260920234930-nt.html",
-      "titulo": "«Todos me tienen mucho cariño y uno lo único que intenta es estar a la altura de las circunstancias»",
-      "medio": "La Gaceta de Salamanca",
-      "fecha": "2026-09-20",
-      "fecha_hora": "2026-09-20T22:25:48Z"
-    },
-    {
-      "url": "https://www.lagacetadesalamanca.es/toros/apuesta-morante-20260920235838-nt.html",
-      "titulo": "La apuesta de Morante",
-      "medio": "La Gaceta de Salamanca",
-      "fecha": "2026-09-20",
-      "fecha_hora": "2026-09-20T21:58:38Z"
-    },
-    {
-      "url": "https://www.lagacetadesalamanca.es/toros/ultima-vamos-20260920235536-nt.html",
-      "titulo": "La última y nos vamos",
-      "medio": "La Gaceta de Salamanca",
-      "fecha": "2026-09-20",
-      "fecha_hora": "2026-09-20T21:56:23Z"
-    },
-    {
-      "url": "https://www.tribunasalamanca.com/noticias/459440/recoletas-salud-salamanca-remonta-en-el-ultimo-cuarto-y-se-mete-en-la-final-de-la-copa-federacion",
-      "titulo": "Recoletas Salud Salamanca remonta en el último cuarto y se mete en la final de la Copa Federación",
-      "medio": "Tribuna Salamanca",
-      "fecha": "2026-09-20",
-      "fecha_hora": "2026-09-20T21:05:13Z"
-    },
-    {
-      "url": "https://www.lagacetadesalamanca.es/salamanca/prueba-talon-crece-enfermedades-20260920230251-nt.html",
-      "titulo": "La prueba del talón crece hasta las 29 enfermedades",
-      "medio": "La Gaceta de Salamanca",
-      "fecha": "2026-09-20",
-      "fecha_hora": "2026-09-20T21:03:10Z"
-    },
-    {
-      "url": "https://www.lagacetadesalamanca.es/salamanca/obligaria-mundo-cine-vez-semana-20260920225827-nt.html",
-      "titulo": "«Obligaría a todo el mundo a ir al cine una vez a la semana»",
-      "medio": "La Gaceta de Salamanca",
-      "fecha": "2026-09-20",
-      "fecha_hora": "2026-09-20T20:58:40Z"
-    },
-    {
-      "url": "https://www.lagacetadesalamanca.es/toros/ganas-glorieta-20260920224702-nt.html",
-      "titulo": "Con ganas de mucho más en La Glorieta",
-      "medio": "La Gaceta de Salamanca",
-      "fecha": "2026-09-20",
-      "fecha_hora": "2026-09-20T20:47:16Z"
-    },
-    {
-      "url": "https://www.tribunasalamanca.com/noticias/459438/el-palacio-de-los-hurtado-de-mendoza-vuelve-a-ceder-tres-semanas-despues-del-primer-derrumbe",
-      "titulo": "El Palacio de los Hurtado de Mendoza vuelve a ceder tres semanas después del primer derrumbe",
-      "medio": "Tribuna Salamanca",
-      "fecha": "2026-09-20",
-      "fecha_hora": "2026-09-20T20:43:32Z"
-    },
-    {
-      "url": "https://www.tribunasalamanca.com/noticias/459437/unionistas-recibe-una-bocanada-de-aire-resultados-y-clasificacion-en-1ª-rfef",
-      "titulo": "Unionistas recibe una bocanada de aire: Resultados y clasificación en 1ª RFEF",
-      "medio": "Tribuna Salamanca",
-      "fecha": "2026-09-20",
-      "fecha_hora": "2026-09-20T20:39:33Z"
-    },
-    {
-      "url": "https://www.lagacetadesalamanca.es/sucesos/hombre-hallado-muerto-fumadero-vivia-francia-familia-20260920221808-nt.html",
-      "titulo": "El hombre hallado muerto en el 'fumadero' vivía en Francia y su familia iba a denunciar su desaparición",
-      "medio": "La Gaceta de Salamanca",
-      "fecha": "2026-09-20",
-      "fecha_hora": "2026-09-20T20:22:27Z"
     },
     {
       "url": "https://www.salamancahoy.es/deportes/salamanca-cf-uds/rajadon-iker-muniain-tras-expulsion-murua-consentir-20260920180310-nt.html",
