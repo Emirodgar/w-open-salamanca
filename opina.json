@@ -219,6 +219,30 @@
       ],
       "basado_en": "actualidad.json",
       "fecha_creacion": "2026-10-09"
+    },
+    {
+      "id": "centro-salud-mental-2026",
+      "pregunta": "Ante la reclamación de un centro propio para la salud mental en Salamanca, ¿cree que la creación de esta infraestructura es una prioridad para garantizar su futuro en la ciudad?",
+      "opciones": [
+        "Sí, es fundamental para una atención adecuada",
+        "No, se pueden mejorar los recursos existentes sin un centro nuevo",
+        "Depende de la inversión y el modelo de gestión",
+        "No tengo suficiente información"
+      ],
+      "basado_en": "actualidad.json",
+      "fecha_creacion": "2026-10-10"
+    },
+    {
+      "id": "congelacion-impuestos-2026",
+      "pregunta": "El Ayuntamiento de Salamanca mantiene la congelación de impuestos por decimotercer año. ¿Considera que esta política fiscal es beneficiosa para la economía local y los ciudadanos?",
+      "opciones": [
+        "Sí, alivia la carga económica de los ciudadanos",
+        "No, limita la capacidad de inversión municipal",
+        "Es una medida necesaria en la situación actual",
+        "No tengo suficiente información"
+      ],
+      "basado_en": "actualidad.json",
+      "fecha_creacion": "2026-10-10"
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "mes": "2026-10",
   "titulo_mes": "Octubre 2026",
-  "resumen_mes": "Octubre arranca con la convocatoria de elecciones generales y la continuidad de la búsqueda de un hombre desaparecido en Ledrada. El deporte local vive el debut y un importante test del Meins Avenida, y el Salamanca UDS logra su pase a la Copa del Rey. La capital acoge el inicio del VII Congreso del Libro Blanco, mientras se registra un repunte del COVID-19 y la congelación de impuestos por decimotercer año. El pleno también aprueba que la línea 15 de autobús circule los fines de semana.",
+  "resumen_mes": "Octubre arranca con la convocatoria de elecciones generales y la continuidad de la búsqueda de un hombre desaparecido en Ledrada. El deporte local vive el debut y un importante test del Meins Avenida, y el Salamanca UDS logra su pase a la Copa del Rey. La capital acoge el inicio del VII Congreso del Libro Blanco, mientras se registra un repunte del COVID-19 y la congelación de impuestos por decimotercer año. David Mingo es elegido presidente de la Diputación y el pleno aprueba que la línea 15 de autobús circule los fines de semana.",
   "hitos": [
     {
       "fecha": "2026-10-01",
@@ -20,36 +20,12 @@
       "destacado": false
     },
     {
-      "fecha": "2026-10-03",
-      "titulo": "Debut y victoria del Meins Avenida en la temporada",
-      "categoria": "Deportes",
-      "descripcion": "El equipo Meins Avenida ha vencido y convencido en su estreno de temporada con un marcador de 73-57.",
-      "fuente": "https://www.lagacetadesalamanca.es/deportes/baloncesto-local/meins-avenida/meins-avenida-vence-convence-estreno-7357-20261003195516-nt.html",
-      "destacado": false
-    },
-    {
-      "fecha": "2026-10-04",
-      "titulo": "Manifestación en Salamanca por mejor acceso a vivienda",
-      "categoria": "Sociedad",
-      "descripcion": "Cientos de personas cortan la Gran Vía para exigir un mejor acceso a la vivienda en la ciudad.",
-      "fuente": "https://www.lagacetadesalamanca.es/salamanca/cientos-personas-cortan-gran-via-exigir-mejor-20261004122230-nt.html",
-      "destacado": false
-    },
-    {
       "fecha": "2026-10-05",
       "titulo": "Manueco celebra la convocatoria de elecciones generales",
       "categoria": "Política",
       "descripcion": "El presidente Manueco ha celebrado la convocatoria de elecciones generales, marcando el final del gobierno.",
       "fuente": "https://www.lagacetadesalamanca.es/salamanca/manueco-celebra-convocatoria-elecciones-generales-final-gobierno-20261005152925-nt.html",
       "destacado": true
-    },
-    {
-      "fecha": "2026-10-05",
-      "titulo": "Arranca el VII Congreso del Libro Blanco",
-      "categoria": "Sociedad",
-      "descripcion": "La séptima edición del Libro Blanco de la Gaceta ha arrancado con el objetivo de impulsar el futuro de Salamanca.",
-      "fuente": "https://www.lagacetadesalamanca.es/salamanca/arranca-libro-blanco-gaceta-impulsar-futuro-salamanca-20261005103948-nt.html",
-      "destacado": false
     },
     {
       "fecha": "2026-10-06",
@@ -68,11 +44,27 @@
       "destacado": false
     },
     {
-      "fecha": "2026-10-09",
-      "titulo": "El pleno aprueba que la línea 15 de bus circule los fines de semana",
+      "fecha": "2026-10-07",
+      "titulo": "Repunte de COVID-19 en otoño",
       "categoria": "Sociedad",
-      "descripcion": "El pleno da luz verde definitiva a la ampliación de la línea 15 a sábados, domingos y festivos entre Capuchinos, Pizarrales, Blanco, Hospital y Campus. Empezará este mes y costará 118.000 euros brutos al año, con 60 expediciones los sábados y 54 los domingos y festivos, cada 30 minutos.",
-      "fuente": "https://www.tribunasalamanca.com/noticias/460755/salamanca-pone-fecha-a-la-ampliacion-de-la-linea-15-de-autobus-a-sabados-y-domingos",
+      "descripcion": "El COVID-19 repunta en otoño, alcanzando un nivel epidémico y cuadruplicando los casos de gripe.",
+      "fuente": "https://www.lagacetadesalamanca.es/salamanca/covid-repunta-otono-nivel-epidemico-cuadruplica-gripe-20261007060000-nt.html",
+      "destacado": false
+    },
+    {
+      "fecha": "2026-10-08",
+      "titulo": "Fallecido y varios heridos en accidente de tráfico",
+      "categoria": "Sucesos",
+      "descripcion": "Un accidente grave que involucró a cuatro vehículos resultó en un fallecido y varios heridos.",
+      "fuente": "https://www.lagacetadesalamanca.es/sucesos/muerto-varios-heridos-grave-accidente-cuatro-vehiculos-20261009125952-nt.html",
+      "destacado": false
+    },
+    {
+      "fecha": "2026-10-09",
+      "titulo": "David Mingo, elegido presidente de la Diputación de Salamanca",
+      "categoria": "Política",
+      "descripcion": "David Mingo ha sido elegido presidente de la Diputación de Salamanca tras un proceso de votación.",
+      "fuente": "https://www.lagacetadesalamanca.es/salamanca/david-mingo-elegido-presidente-diputacion-salamanca-tras-20261009132956-nt.html",
       "destacado": false
     }
   ]
