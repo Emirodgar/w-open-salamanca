@@ -243,6 +243,30 @@
       ],
       "basado_en": "actualidad.json",
       "fecha_creacion": "2026-10-10"
+    },
+    {
+      "id": "premios-hosteleria-2026",
+      "pregunta": "Los XIV Premios HosteleríaSalamanca.es reconocerán la labor de 21 establecimientos y profesionales. ¿Cree que estos galardones contribuyen a la mejora y promoción del sector hostelero en la ciudad?",
+      "opciones": [
+        "Sí, incentivan la calidad y visibilidad",
+        "No, su impacto es limitado",
+        "Son un reconocimiento importante para los premiados",
+        "No tengo suficiente información"
+      ],
+      "basado_en": "eventos.json",
+      "fecha_creacion": "2026-10-11"
+    },
+    {
+      "id": "alumbrado-navidad-2026",
+      "pregunta": "El alumbrado navideño de Salamanca se activará el 26 de noviembre, coincidiendo con el Black Friday. ¿Considera que el encendido de las luces de Navidad en esta fecha es adecuado para fomentar el ambiente festivo y el comercio?",
+      "opciones": [
+        "Sí, ayuda a dinamizar las compras navideñas",
+        "No, es demasiado pronto para el espíritu navideño",
+        "Es indiferente, lo importante es que haya luces",
+        "No tengo suficiente información"
+      ],
+      "basado_en": "eventos.json",
+      "fecha_creacion": "2026-10-11"
     }
   ]
 }

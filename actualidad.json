@@ -1,11 +1,11 @@
 {
   "url_base": "https://www.lagacetadesalamanca.es",
-  "generado_en": "2026-10-10T05:45:17+00:00",
+  "generado_en": "2026-10-11T05:45:18+00:00",
   "periodo_cubierto": {
-    "desde": "2026-10-07",
-    "hasta": "2026-10-10"
+    "desde": "2026-10-08",
+    "hasta": "2026-10-11"
   },
-  "total_urls_analizadas": 184,
+  "total_urls_analizadas": 175,
   "secciones_excluidas": [
     "gente-estilo",
     "nacional",
@@ -17,7 +17,7 @@
   "por_seccion": [
     [
       "salamanca",
-      69
+      60
     ],
     [
       "provincia",
@@ -25,18 +25,18 @@
     ],
     [
       "deportes",
-      30
+      33
     ],
     [
       "sucesos",
-      21
+      19
     ],
     [
       "campo",
       7
     ],
     [
-      "toros",
+      "castilla-y-leon",
       4
     ],
     [
@@ -44,154 +44,191 @@
       3
     ],
     [
-      "castilla-y-leon",
-      3
+      "internacional",
+      1
     ],
     [
       "fundacion-gaceta",
+      1
+    ],
+    [
+      "toros",
       1
     ]
   ],
   "por_subseccion": [
     [
       "deportes/futbol-local",
-      19
+      24
     ],
     [
       "deportes/baloncesto-local",
-      7
+      4
     ]
   ],
   "por_tipo_contenido": [
     [
       "noticia",
-      173
+      156
     ],
     [
       "galería",
-      10
+      17
     ],
     [
       "directo / en vivo",
-      1
+      2
     ]
   ],
   "heatmap_calendario": [
     {
-      "fecha": "2026-10-07",
-      "total": 43,
-      "salamanca": 11,
-      "provincia": 13,
-      "deportes": 12,
-      "sucesos": 5,
-      "campo": 1,
-      "toros": 0,
-      "encuestas": 1,
-      "castilla-y-leon": 0,
-      "fundacion-gaceta": 0
-    },
-    {
       "fecha": "2026-10-08",
-      "total": 66,
-      "salamanca": 22,
-      "provincia": 21,
-      "deportes": 8,
-      "sucesos": 9,
+      "total": 49,
+      "salamanca": 11,
+      "provincia": 18,
+      "deportes": 7,
+      "sucesos": 8,
       "campo": 2,
-      "toros": 2,
-      "encuestas": 1,
       "castilla-y-leon": 0,
-      "fundacion-gaceta": 1
+      "encuestas": 1,
+      "internacional": 0,
+      "fundacion-gaceta": 1,
+      "toros": 1
     },
     {
       "fecha": "2026-10-09",
-      "total": 63,
+      "total": 62,
       "salamanca": 29,
       "provincia": 11,
       "deportes": 9,
       "sucesos": 6,
       "campo": 3,
-      "toros": 1,
-      "encuestas": 1,
       "castilla-y-leon": 3,
-      "fundacion-gaceta": 0
+      "encuestas": 1,
+      "internacional": 0,
+      "fundacion-gaceta": 0,
+      "toros": 0
     },
     {
       "fecha": "2026-10-10",
-      "total": 12,
-      "salamanca": 7,
+      "total": 51,
+      "salamanca": 11,
+      "provincia": 16,
+      "deportes": 15,
+      "sucesos": 4,
+      "campo": 2,
+      "castilla-y-leon": 1,
+      "encuestas": 1,
+      "internacional": 1,
+      "fundacion-gaceta": 0,
+      "toros": 0
+    },
+    {
+      "fecha": "2026-10-11",
+      "total": 13,
+      "salamanca": 9,
       "provincia": 1,
-      "deportes": 1,
+      "deportes": 2,
       "sucesos": 1,
-      "campo": 1,
-      "toros": 1,
-      "encuestas": 0,
+      "campo": 0,
       "castilla-y-leon": 0,
-      "fundacion-gaceta": 0
+      "encuestas": 0,
+      "internacional": 0,
+      "fundacion-gaceta": 0,
+      "toros": 0
     }
   ],
   "conceptos_destacados": [
     {
-      "concepto": "Unionistas de Salamanca",
-      "piezas": 6,
-      "seccion_principal": "deportes",
-      "desde": "2026-10-07",
-      "hasta": "2026-10-10",
-      "ejemplos_redactados": [
-        "Unionistas de Salamanca busca romper estadísticas en el Príncipe Felipe y afina su puntería, mientras su enfermería se vacía."
-      ]
-    },
-    {
-      "concepto": "Meins Avenida",
-      "piezas": 5,
-      "seccion_principal": "deportes",
-      "desde": "2026-10-07",
-      "hasta": "2026-10-09",
-      "ejemplos_redactados": [
-        "El Meins Avenida refuerza su juego interior con Kennedy Brown y reafirma su colaboración con la Universidad de Salamanca, aunque topa con la realidad del Valencia Basket."
-      ]
-    },
-    {
-      "concepto": "Salud Mental y Centros",
-      "piezas": 9,
+      "concepto": "Infraestructuras y Espacios",
+      "piezas": 4,
       "seccion_principal": "salamanca",
       "desde": "2026-10-08",
       "hasta": "2026-10-10",
       "ejemplos_redactados": [
-        "La salud mental reclama un centro propio para garantizar su futuro en Salamanca, donde se reivindica superar estigmas y miedos."
+        "Un camión daña varios canalones en el centro de la ciudad.",
+        "Los accesos al Pabellón Reina Sofía requieren atención.",
+        "La falta de espacio obliga al Centro de la Memoria a ocupar el archivo."
+      ]
+    },
+    {
+      "concepto": "Unionistas",
+      "piezas": 6,
+      "seccion_principal": "deportes",
+      "desde": "2026-10-08",
+      "hasta": "2026-10-10",
+      "ejemplos_redactados": [
+        "Unionistas empató frente al Cacereño en el Príncipe Felipe.",
+        "El equipo Unionistas busca romper estadísticas en el Príncipe Felipe."
       ]
     },
     {
       "concepto": "Castilla y León",
-      "piezas": 4,
-      "seccion_principal": "provincia",
+      "piezas": 5,
+      "seccion_principal": "castilla-y-leon",
       "desde": "2026-10-08",
-      "hasta": "2026-10-09",
+      "hasta": "2026-10-10",
       "ejemplos_redactados": [
-        "La Marcha de Trajano une Extremadura y Castilla y León, mientras la gastronomía regional tiene una cita en Salamanca y la comunidad inicia un periodo de riesgo medio de incendios."
-      ]
-    },
-    {
-      "concepto": "Alba de Tormes",
-      "piezas": 3,
-      "seccion_principal": "provincia",
-      "desde": "2026-10-07",
-      "hasta": "2026-10-09",
-      "ejemplos_redactados": [
-        "La Escuela Municipal de Música de Alba de Tormes inicia el curso, y la biblioteca local recibe por primera vez el premio María Moliner."
+        "Cuatro municipios de Castilla y León registraron temperaturas bajo cero el sábado.",
+        "Vuelve la Marcha Trajano que une Extremadura y Castilla y León."
       ]
     },
     {
       "concepto": "Ciudad Rodrigo",
-      "piezas": 3,
+      "piezas": 4,
       "seccion_principal": "provincia",
       "desde": "2026-10-08",
-      "hasta": "2026-10-09",
+      "hasta": "2026-10-10",
       "ejemplos_redactados": [
-        "Ciudad Rodrigo es la primera parada de una próxima ruta de exposición y abre sus encuentros arciprestales 2026-2027, aunque se ve obligada a cortar cuatro calles por mal estado."
+        "Ciudad Rodrigo celebra una noche de ópera.",
+        "Ciudad Rodrigo será la primera parada de una próxima ruta de exposición."
+      ]
+    },
+    {
+      "concepto": "Estadio Helmántico",
+      "piezas": 4,
+      "seccion_principal": "deportes",
+      "desde": "2026-10-09",
+      "hasta": "2026-10-10",
+      "ejemplos_redactados": [
+        "El Trofeo de la Copa del Rey luce en el Estadio Helmántico.",
+        "El Helmántico acoge un duelo directo el sábado por la noche."
+      ]
+    },
+    {
+      "concepto": "Salamanca UDS (Sanse)",
+      "piezas": 4,
+      "seccion_principal": "deportes",
+      "desde": "2026-10-10",
+      "hasta": "2026-10-10",
+      "ejemplos_redactados": [
+        "El Salamanca UDS se posiciona líder tras superar al Sanse.",
+        "Se analizan las claves de la victoria del Salamanca UDS frente al Sanse."
+      ]
+    },
+    {
+      "concepto": "Meins Avenida",
+      "piezas": 3,
+      "seccion_principal": "deportes",
+      "desde": "2026-10-09",
+      "hasta": "2026-10-11",
+      "ejemplos_redactados": [
+        "Meins Avenida continúa en fase de construcción del equipo.",
+        "La Universidad de Salamanca reafirma su colaboración con Meins Avenida."
+      ]
+    },
+    {
+      "concepto": "Puente del Pilar",
+      "piezas": 3,
+      "seccion_principal": "salamanca",
+      "desde": "2026-10-09",
+      "hasta": "2026-10-11",
+      "ejemplos_redactados": [
+        "Salamanca registra una alta ocupación hotelera durante el Puente del Pilar.",
+        "Se publican los horarios de apertura de Mercadona durante el Puente del Pilar."
       ]
     }
   ],
-  "resumen_borrador": "Se han publicado 184 noticias entre el 2026-10-07 y el 2026-10-10. La actividad se ha concentrado sobre todo en salamanca (69 piezas), provincia (46 piezas), deportes (30 piezas).\n\nLos conceptos con más piezas relacionadas son: Unionistas; Centro; Meins · Avenida; Paso. Revisa 'evidencia' de cada concepto para redactar el resumen final.",
-  "resumen": "La actualidad salmantina entre el 7 y el 10 de octubre ha estado marcada por diversos acontecimientos. En la capital, la salud mental ha reclamado un centro propio para garantizar su futuro, mientras David Mingo ha sido elegido presidente de la Diputación de Salamanca. La ciudad se prepara para el Día de la Hispanidad y mantiene la congelación de impuestos por decimotercer año. Se ha aprobado la ampliación de la línea 15 de autobús para fines de semana, y se ha registrado un repunte de casos de COVID-19.\n\nEn el ámbito deportivo, Unionistas de Salamanca busca romper estadísticas en el Príncipe Felipe y afina su puntería. El Meins Avenida ha reforzado su juego interior, aunque ha topado con la realidad del Valencia Basket en su primer test de altura. Por su parte, el Salamanca UDS ha visto el trofeo de la Copa del Rey llegar al Helmántico.\n\nLa provincia ha sido escenario de la Marcha de Trajano, que une Extremadura y Castilla y León, y de diversas actividades en localidades como Alba de Tormes y Ciudad Rodrigo. Doninos y Castellanos de Moriscos preparan sus celebraciones de Halloween. En sucesos, la búsqueda de Agustín continúa, y se ha registrado un accidente de tráfico con un fallecido y varios heridos. Castilla y León, por su parte, ha iniciado un periodo de riesgo medio de incendios y ha visto un incremento en el censo de electores."
+  "resumen_borrador": "Se han publicado 175 noticias entre el 2026-10-08 y el 2026-10-11. La actividad se ha concentrado sobre todo en salamanca (60 piezas), provincia (46 piezas), deportes (33 piezas).\n\nLos conceptos con más piezas relacionadas son: Centro; Unionistas; Castilla · Leon; Cuatro. Revisa 'evidencia' de cada concepto para redactar el resumen final.",
+  "resumen": "La actualidad salmantina entre el 8 y el 11 de octubre ha estado marcada por diversos acontecimientos en el ámbito deportivo y social. En el fútbol local, el Salamanca UDS se ha posicionado como líder tras su victoria ante el Sanse, mientras que Unionistas empató frente al Cacereño. El baloncesto también ha tenido protagonismo con el Meins Avenida, que continúa en la construcción de su equipo y ha recibido el refuerzo de Kennedy Brown. El Estadio Helmántico ha sido escenario de la exhibición del Trofeo de la Copa del Rey.\n\nEn el plano social, la salud mental ha sido un tema central, con profesionales reclamando un centro propio y la ciudad reivindicando la superación de estigmas. El Puente del Pilar ha generado una alta ocupación hotelera en Salamanca. Además, David Mingo ha sido elegido presidente de la Diputación de Salamanca. En sucesos, se ha registrado un accidente con un fallecido y varios heridos, y la Guardia Civil ha auxiliado a senderistas desorientados. Ciudad Rodrigo, por su parte, ha celebrado una noche de ópera."
 }

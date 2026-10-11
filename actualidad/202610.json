@@ -1,24 +1,8 @@
 {
   "mes": "2026-10",
   "titulo_mes": "Octubre 2026",
-  "resumen_mes": "Octubre arranca con la convocatoria de elecciones generales y la continuidad de la búsqueda de un hombre desaparecido en Ledrada. El deporte local vive el debut y un importante test del Meins Avenida, y el Salamanca UDS logra su pase a la Copa del Rey. La capital acoge el inicio del VII Congreso del Libro Blanco, mientras se registra un repunte del COVID-19 y la congelación de impuestos por decimotercer año. David Mingo es elegido presidente de la Diputación y el pleno aprueba que la línea 15 de autobús circule los fines de semana.",
+  "resumen_mes": "Octubre arranca con la convocatoria de elecciones generales y la continuidad de la búsqueda de un hombre desaparecido en Ledrada. El deporte local vive un importante test del Meins Avenida y el Salamanca UDS se posiciona como líder. David Mingo es elegido presidente de la Diputación, mientras la salud mental y la alta ocupación hotelera por el Puente del Pilar marcan la agenda social.",
   "hitos": [
-    {
-      "fecha": "2026-10-01",
-      "titulo": "Salamanca UDS logra el billete para la Copa del Rey",
-      "categoria": "Deportes",
-      "descripcion": "El Salamanca UDS asaltó el campo del Santa Marta y logró el billete para la Copa del Rey tras un emocionante derbi.",
-      "fuente": "https://www.lagacetadesalamanca.es/deportes/futbol-local/salamancauds/salamanca-logra-billete-copa-rey-tras-asaltar-20261001212443-nt.html",
-      "destacado": false
-    },
-    {
-      "fecha": "2026-10-02",
-      "titulo": "Subida del paro en septiembre",
-      "categoria": "Economía",
-      "descripcion": "El paro en septiembre ha registrado una subida, alcanzando niveles prepandemia.",
-      "fuente": "https://www.lagacetadesalamanca.es/salamanca/septiembre-subida-paro-prepandemia-20261002060000-nt.html",
-      "destacado": false
-    },
     {
       "fecha": "2026-10-05",
       "titulo": "Manueco celebra la convocatoria de elecciones generales",
@@ -44,14 +28,6 @@
       "destacado": false
     },
     {
-      "fecha": "2026-10-07",
-      "titulo": "Repunte de COVID-19 en otoño",
-      "categoria": "Sociedad",
-      "descripcion": "El COVID-19 repunta en otoño, alcanzando un nivel epidémico y cuadruplicando los casos de gripe.",
-      "fuente": "https://www.lagacetadesalamanca.es/salamanca/covid-repunta-otono-nivel-epidemico-cuadruplica-gripe-20261007060000-nt.html",
-      "destacado": false
-    },
-    {
       "fecha": "2026-10-08",
       "titulo": "Fallecido y varios heridos en accidente de tráfico",
       "categoria": "Sucesos",
@@ -65,6 +41,30 @@
       "categoria": "Política",
       "descripcion": "David Mingo ha sido elegido presidente de la Diputación de Salamanca tras un proceso de votación.",
       "fuente": "https://www.lagacetadesalamanca.es/salamanca/david-mingo-elegido-presidente-diputacion-salamanca-tras-20261009132956-nt.html",
+      "destacado": false
+    },
+    {
+      "fecha": "2026-10-09",
+      "titulo": "Profesionales de la salud mental reclaman centro propio",
+      "categoria": "Sociedad",
+      "descripcion": "Los profesionales de la salud mental en Salamanca demandan un centro propio para garantizar el futuro del sector.",
+      "fuente": "https://www.lagacetadesalamanca.es/salamanca/salud-mental-reclama-centro-propio-garantizar-futuro-20261009061500-nt.html",
+      "destacado": false
+    },
+    {
+      "fecha": "2026-10-10",
+      "titulo": "El Salamanca UDS se posiciona líder de su grupo",
+      "categoria": "Deportes",
+      "descripcion": "El Salamanca UDS duerme líder de su grupo tras una victoria clave frente al Sanse.",
+      "fuente": "https://www.lagacetadesalamanca.es/deportes/futbol-local/salamancauds/salamanca-duerme-lider-tras-superar-sanse-20261010215905-nt.html",
+      "destacado": false
+    },
+    {
+      "fecha": "2026-10-10",
+      "titulo": "Alta ocupación hotelera en Salamanca por el Puente del Pilar",
+      "categoria": "Sociedad",
+      "descripcion": "Los hoteles de Salamanca rozan el lleno durante el Puente del Pilar, impulsando el turismo local.",
+      "fuente": "https://www.lagacetadesalamanca.es/salamanca/salamanca-llena-puente-pilar-hoteles-rozando-lleno-20261010061500-nt.html",
       "destacado": false
     }
   ]

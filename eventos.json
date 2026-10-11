@@ -1,14 +1,6 @@
 {
-  "generado_en": "2026-10-10T05:45:17+00:00",
+  "generado_en": "2026-10-11T05:45:18+00:00",
   "eventos": [
-    {
-      "titulo": "Semana del Comercio 2026",
-      "categoria": "Economía",
-      "fecha_inicio": "2026-10-05",
-      "fecha_fin": "2026-10-10",
-      "descripcion": "Carpa itinerante por distintos barrios y puntos de Salamanca que obsequia con una bolsa de tela a quien presente el ticket de una compra en comercio local.",
-      "fuente": "https://www.lagacetadesalamanca.es/salamanca/comercio-sale-calle-busca-ventas-20260930182652-nt.html"
-    },
     {
       "titulo": "Novenario y fiesta de Santa Teresa en Peñaranda de Bracamonte",
       "categoria": "Cultura",
@@ -70,6 +62,15 @@
       "lugar": "Zorita de la Frontera",
       "descripcion": "Zorita de la Frontera acogerá la celebración de la festividad de la Virgen del Pilar con una misa y una comida comunitaria, reuniendo a siete comunidades parroquiales.",
       "fuente": "https://www.lagacetadesalamanca.es/provincia/zorita-frontera-acogera-celebracion-pilar-siete-parroquias-20261008081132-nt.html"
+    },
+    {
+      "titulo": "Celebración de la festividad de la Virgen del Pilar en Candelario",
+      "categoria": "Sociedad",
+      "fecha_inicio": "2026-10-12",
+      "fecha_fin": null,
+      "lugar": "Candelario",
+      "descripcion": "La Guardia Civil de Béjar celebrará la festividad de su patrona, la Virgen del Pilar, en Candelario el 12 de octubre, con misa en la iglesia parroquial y acto institucional en el Ayuntamiento.",
+      "fuente": "https://www.lagacetadesalamanca.es/provincia/guardia-civil-bejar-celebrara-fiesta-candelario-20261010141357-nt.html"
     },
     {
       "titulo": "24ª Jornadas Internacionales de Bomberos en Béjar",
@@ -321,12 +322,30 @@
       "fuente": "https://www.lagacetadesalamanca.es/provincia/festival-candela-comienza-andadura-otono-caminos-sierras-20261003171502-ga.html"
     },
     {
+      "titulo": "II Toro de San Andrés en Palaciosrubios",
+      "categoria": "Cultura",
+      "fecha_inicio": "2026-11-28",
+      "fecha_fin": null,
+      "lugar": "Palaciosrubios",
+      "descripcion": "Palaciosrubios acogerá el II Toro de San Andrés, un festejo taurino de cajón organizado por la Asociación Cultural Taurina Beleguina, el 28 de noviembre a las 16:00 horas.",
+      "fuente": "https://www.lagacetadesalamanca.es/provincia/palaciosrubios-celebrara-toro-san-andres-proximo-noviembre-20261010074747-nt.html"
+    },
+    {
       "titulo": "Entrega de premios del Concurso Intergeneracional 'Memoria del Corazón'",
       "categoria": "Cultura",
       "fecha_inicio": "2026-11-30",
       "fecha_fin": null,
       "descripcion": "Ceremonia de entrega de premios del Concurso Intergeneracional 'Memoria del Corazón' de LA GACETA, que reconoce relatos y vídeos que fomentan el encuentro entre generaciones.",
       "fuente": "https://www.lagacetadesalamanca.es/especiales/concurso-intergeneracional/historia-merece-contada-gaceta-busca-relatos-videos-20261005104029-nt.html"
+    },
+    {
+      "titulo": "Recital de villancicos «El espíritu de la Navidad» en Béjar",
+      "categoria": "Cultura",
+      "fecha_inicio": "2026-12-26",
+      "fecha_fin": null,
+      "lugar": "Teatro Cervantes de Béjar",
+      "descripcion": "El Teatro Cervantes de Béjar acogerá el recital 'El espíritu de la Navidad', con villancicos clásicos y éxitos de Il Divo, a cargo de la compañía de José A. Echevarría el 26 de diciembre.",
+      "fuente": "https://www.lagacetadesalamanca.es/provincia/cervantes-bejar-reabre-telon-ultimo-trimestre-red-20261010205240-nt.html"
     },
     {
       "titulo": "14ª Carrera del Roscón de Paradinas",
