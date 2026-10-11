@@ -1,7 +1,7 @@
 {
-  "generado_en": "2026-10-10T23:34:33.899Z",
+  "generado_en": "2026-10-11T05:48:37.963Z",
   "dias_ventana": 20,
-  "total": 3892,
+  "total": 3902,
   "medios": [
     "Tribuna Salamanca",
     "Salamanca24Horas",
@@ -9,6 +9,181 @@
     "Salamancahoy"
   ],
   "noticias": [
+    {
+      "url": "https://www.salamanca24horas.com/local/este-martes-arranca-campana-vacunacion-frente-gripe-covid-19-salamanca",
+      "titulo": "Este martes arranca la campaña de vacunación frente a la gripe y el Covid-19 en Salamanca",
+      "medio": "Salamanca24Horas",
+      "fecha": "2026-10-11",
+      "fecha_hora": "2026-10-11T05:30:00.000Z"
+    },
+    {
+      "url": "https://www.salamanca24horas.com/local/abierto-esperado-parque-infantil-barrio-chinchibarra",
+      "titulo": "Abierto un esperado parque infantil en en el barrio de la Chinchibarra",
+      "medio": "Salamanca24Horas",
+      "fecha": "2026-10-11",
+      "fecha_hora": "2026-10-11T05:25:00.000Z"
+    },
+    {
+      "url": "https://www.salamanca24horas.com/local/50-000-euros-centro-27-000-zona-trastormesina-cual-es-renta-bruta-media-barrios-salamanca",
+      "titulo": "De los 50.000 euros del centro a los 27.000 de la zona trastormesina: ¿Cuál es la renta bruta media de los barrios de Salamanca?",
+      "medio": "Salamanca24Horas",
+      "fecha": "2026-10-11",
+      "fecha_hora": "2026-10-11T05:20:00.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/provincia/provincia-apuesta-nuevas-viviendas-despoblacion-20261010070000-nt.html",
+      "titulo": "La provincia apuesta por las nuevas viviendas contra la despoblación",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-11",
+      "fecha_hora": "2026-10-11T05:00:21.000Z"
+    },
+    {
+      "url": "https://www.salamanca24horas.com/local/rutinas-pictogramas-autonomia-asi-es-dia-dia-personas-autismo-salamanca",
+      "titulo": "Rutinas, pictogramas y autonomía: así es el día a día de las personas con autismo en Salamanca",
+      "medio": "Salamanca24Horas",
+      "fecha": "2026-10-11",
+      "fecha_hora": "2026-10-11T05:00:00.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/deportes/baloncesto-local/meins-avenida/meins-avenida-seguir-construccion-20261010065000-nt.html",
+      "titulo": "Meins Avenida, a seguir con su construcción",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-11",
+      "fecha_hora": "2026-10-11T04:50:00.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/toros/toreros-grupo-especial-2027-estrenara-marco-perez-20261007064500-nt.html",
+      "titulo": "Estos son los 11 toreros del Grupo Especial de 2027 en el que se estrenará Marco Pérez",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-11",
+      "fecha_hora": "2026-10-11T04:45:00.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/salamanca/llore-desahucio-ver-nina-indefensa-negue-volver-20261010063500-nt.html",
+      "titulo": "«Lloré en un desahucio al ver a una niña indefensa y me negué a volver a ese hogar»",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-11",
+      "fecha_hora": "2026-10-11T04:35:00.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/salamanca/salamanca-llena-puente-pilar-hoteles-rozando-lleno-20261010061500-nt.html",
+      "titulo": "Salamanca se llena por el puente del Pilar con los hoteles rozando el lleno",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-11",
+      "fecha_hora": "2026-10-11T04:15:00.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/opinion/firmas/joaquin-leguina-puerta-sol-20261010055000-nt.html",
+      "titulo": "La Puerta del Sol",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-11",
+      "fecha_hora": "2026-10-11T04:14:55.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/opinion/firmas/susana-magdaleno-loco-loco-coloco-20261010060000-nt.html",
+      "titulo": "Loco, loco, pero te la coloco",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-11",
+      "fecha_hora": "2026-10-11T04:14:54.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/salamanca/tasa-suspensos-oposiciones-atiende-alta-demanda-20261010061000-nt.html",
+      "titulo": "«La tasa de suspensos en las oposiciones atiende a la alta demanda»",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-11",
+      "fecha_hora": "2026-10-11T04:14:30.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/salamanca/alta-oferta-maestros-contrasta-necesidad-especialistas-20261010060000-nt.html",
+      "titulo": "La alta oferta de maestros contrasta con la necesidad de especialistas",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-11",
+      "fecha_hora": "2026-10-11T04:14:21.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/salamanca/finlandia-ofrece-profesores-espanoles-1000-mes-20261010060500-nt.html",
+      "titulo": "Finlandia ofrece a los profesores españoles hasta 1.000 € más al mes",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-11",
+      "fecha_hora": "2026-10-11T04:14:16.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/opinion/firmas/roman-alvarez-anne-carson-premio-nobel-literatura-20261010055000-nt.html",
+      "titulo": "Anne Carson, Premio Nobel de Literatura",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-11",
+      "fecha_hora": "2026-10-11T04:14:05.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/salamanca/ocine-tormes-abre-nueva-etapa-cine-salamanca-20261009130308-nt.html",
+      "titulo": "OCINE Tormes abre una nueva etapa para el cine en Salamanca",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-11",
+      "fecha_hora": "2026-10-11T03:00:27.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/salamanca/vamos-pioneros-red-calor-1500-placas-20261006050000-nt.html",
+      "titulo": "«Vamos a ser pioneros con una red de calor que tendrá 1.500 placas»",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-11",
+      "fecha_hora": "2026-10-11T03:00:24.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/salamanca/ibsal-prepara-renovar-reconocimiento-europeo-excellence-research-20261007050000-nt.html",
+      "titulo": "El IBSAL se prepara para renovar el reconocimiento europeo HR Excellence in Research por su gestión del talento investigador",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-11",
+      "fecha_hora": "2026-10-11T03:00:22.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/salamanca/rsc-pasa-voluntaria-convertirse-exigencia-empresarial-vez-20261006050000-nt.html",
+      "titulo": "La RSC pasa de ser voluntaria a convertirse en una exigencia empresarial cada vez más medible",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-11",
+      "fecha_hora": "2026-10-11T03:00:19.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/salamanca/listo-iii-congreso-gastronomico-gaceta-20261008171107-nt.html",
+      "titulo": "Todo listo para el III Congreso Gastronómico de LA GACETA",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-11",
+      "fecha_hora": "2026-10-11T03:00:14.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/salamanca/tebrio-respuesta-biotecnologica-industrial-fragilidad-agroalimentaria-europea-20261006050000-nt.html",
+      "titulo": "Tebrio: una respuesta biotecnológica e industrial a la fragilidad agroalimentaria europea",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-11",
+      "fecha_hora": "2026-10-11T03:00:12.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/salamanca/accesos-pabellon-reina-sofia-piden-auxilio-20261010050000-nt.html",
+      "titulo": "Los accesos al pabellón Reina Sofía piden auxilio",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-11",
+      "fecha_hora": "2026-10-11T03:00:08.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/opinion/humor/vineta-moran-20261010050000-nt.html",
+      "titulo": "La viñeta de Morán",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-11",
+      "fecha_hora": "2026-10-11T03:00:06.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/salamanca/talento-joven-formate-hoy-encontrar-lugar-manana-20261006050000-nt.html",
+      "titulo": "Talento Joven: fórmate hoy para encontrar tu lugar mañana",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-11",
+      "fecha_hora": "2026-10-11T03:00:04.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/salamanca/morucha-dehesa-ituero-sabor-salamanca-vuelve-lilicook-20261008172426-nt.html",
+      "titulo": "Morucha 'Dehesa de Ituero': el sabor de Salamanca vuelve a Lilicook",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-11",
+      "fecha_hora": "2026-10-11T03:00:01.000Z"
+    },
     {
       "url": "https://www.tribunasalamanca.com/noticias/462243/mourinho-se-niega-a-comparecer-en-rueda-de-prensa-tras-la-victoria-ante-el-villarreal-y-la-polemica-arbitral",
       "titulo": "Mourinho se niega a comparecer en rueda de prensa tras la victoria ante el Villarreal y la polémica arbitral",
@@ -26755,111 +26930,6 @@
       "medio": "Salamancahoy",
       "fecha": "2026-09-21",
       "fecha_hora": "2026-09-21T05:57:07Z"
-    },
-    {
-      "url": "https://www.salamanca24horas.com/sucesos/salamanca-registra-42-delitos-libertad-sexual-ultimo-ano",
-      "titulo": "Salamanca registra 42 delitos contra la libertad sexual en el último año",
-      "medio": "Salamanca24Horas",
-      "fecha": "2026-09-21",
-      "fecha_hora": "2026-09-21T05:45:00Z"
-    },
-    {
-      "url": "https://www.salamanca24horas.com/deportes/unionistas-cf/monica-martin-maquina-datos-unionistas",
-      "titulo": "Mónica Martín, la ‘máquina de datos’ de Unionistas",
-      "medio": "Salamanca24Horas",
-      "fecha": "2026-09-21",
-      "fecha_hora": "2026-09-21T05:20:00Z"
-    },
-    {
-      "url": "https://www.lagacetadesalamanca.es/salamanca/once-condenas-ano-retransmision-ilicita-partidos-futbol-20260920071500-nt.html",
-      "titulo": "Once condenas en un año por la retransmisión ilícita de partidos de fútbol",
-      "medio": "La Gaceta de Salamanca",
-      "fecha": "2026-09-21",
-      "fecha_hora": "2026-09-21T05:15:00Z"
-    },
-    {
-      "url": "https://www.salamanca24horas.com/local/salamanca-afronta-semana-calor-cielos-despejados-maximas-33-grados",
-      "titulo": "Salamanca afronta una semana de calor y cielos despejados, con máximas de 33 grados",
-      "medio": "Salamanca24Horas",
-      "fecha": "2026-09-21",
-      "fecha_hora": "2026-09-21T05:10:00Z"
-    },
-    {
-      "url": "https://www.salamanca24horas.com/local/alzheimer-avanza-diagnostico-familias-siguen-esperando",
-      "titulo": "El Alzheimer avanza en su diagnóstico, pero las familias siguen esperando",
-      "medio": "Salamanca24Horas",
-      "fecha": "2026-09-21",
-      "fecha_hora": "2026-09-21T05:00:00Z"
-    },
-    {
-      "url": "https://www.lagacetadesalamanca.es/salamanca/conducir-bebido-drogado-carne-delito-seguridad-vial-20260920065000-nt.html",
-      "titulo": "Conducir bebido, drogado o sin carné, el delito de seguridad vial más habitual",
-      "medio": "La Gaceta de Salamanca",
-      "fecha": "2026-09-21",
-      "fecha_hora": "2026-09-21T04:50:00Z"
-    },
-    {
-      "url": "https://www.lagacetadesalamanca.es/salamanca/guijuelo-guatemala-conexiones-viaje-duraba-horas-billetes-20260920064500-nt.html",
-      "titulo": "De Guijuelo a Guatemala: «Las conexiones no eran como ahora, el viaje duraba 18 horas y los billetes valían casi 4.000 dólares»",
-      "medio": "La Gaceta de Salamanca",
-      "fecha": "2026-09-21",
-      "fecha_hora": "2026-09-21T04:45:00Z"
-    },
-    {
-      "url": "https://www.lagacetadesalamanca.es/salamanca/casos-graves-absentismo-escolar-triplican-ano-20260920061500-nt.html",
-      "titulo": "Los casos graves de absentismo escolar se triplican en un año",
-      "medio": "La Gaceta de Salamanca",
-      "fecha": "2026-09-21",
-      "fecha_hora": "2026-09-21T04:15:00Z"
-    },
-    {
-      "url": "https://www.lagacetadesalamanca.es/salamanca/fiscalia-salamanca-alerta-aumento-cibercrimen-reclama-barreras-20260920060000-nt.html",
-      "titulo": "La Fiscalía de Salamanca alerta del aumento de cibercrimen y reclama más barreras a los bancos para evitarlo",
-      "medio": "La Gaceta de Salamanca",
-      "fecha": "2026-09-21",
-      "fecha_hora": "2026-09-21T04:00:18Z"
-    },
-    {
-      "url": "https://www.lagacetadesalamanca.es/opinion/firmas/roberto-zamarbide-alimentando-monstruo-20260920060000-nt.html",
-      "titulo": "Alimentando al monstruo",
-      "medio": "La Gaceta de Salamanca",
-      "fecha": "2026-09-21",
-      "fecha_hora": "2026-09-21T04:00:14Z"
-    },
-    {
-      "url": "https://www.lagacetadesalamanca.es/salamanca/escaleras-sumidas-abandono-20260920055900-nt.html",
-      "titulo": "Escaleras sumidas en el abandono",
-      "medio": "La Gaceta de Salamanca",
-      "fecha": "2026-09-21",
-      "fecha_hora": "2026-09-21T03:59:00Z"
-    },
-    {
-      "url": "https://www.lagacetadesalamanca.es/salamanca/paso-dia-hoy-septiembre-salamanca-20260920055600-nt.html",
-      "titulo": "¿Qué pasó tal día como hoy, 21 de septiembre, en Salamanca?",
-      "medio": "La Gaceta de Salamanca",
-      "fecha": "2026-09-21",
-      "fecha_hora": "2026-09-21T03:56:00Z"
-    },
-    {
-      "url": "https://www.lagacetadesalamanca.es/opinion/firmas/elena-salamanca-rio-revuelto-20260920055000-nt.html",
-      "titulo": "A río revuelto...",
-      "medio": "La Gaceta de Salamanca",
-      "fecha": "2026-09-21",
-      "fecha_hora": "2026-09-21T03:50:01Z"
-    },
-    {
-      "url": "https://www.lagacetadesalamanca.es/opinion/firmas/rosalia-sanchez-principio-curso-20260920055000-nt.html",
-      "titulo": "Principio de curso",
-      "medio": "La Gaceta de Salamanca",
-      "fecha": "2026-09-21",
-      "fecha_hora": "2026-09-21T03:50:00Z"
-    },
-    {
-      "url": "https://www.lagacetadesalamanca.es/opinion/humor/vineta-moran-20260920050000-nt.html",
-      "titulo": "La viñeta de Morán",
-      "medio": "La Gaceta de Salamanca",
-      "fecha": "2026-09-21",
-      "fecha_hora": "2026-09-21T03:00:05Z"
     },
     {
       "url": "https://www.salamancahoy.es/deportes/salamanca-cf-uds/rajadon-iker-muniain-tras-expulsion-murua-consentir-20260920180310-nt.html",
