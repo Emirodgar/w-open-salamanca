@@ -62,18 +62,6 @@
       "fecha_creacion": "2026-09-28"
     },
     {
-      "id": "congreso-vitoria-2026",
-      "pregunta": "El Congreso Internacional Francisco de Vitoria y la Escuela de Salamanca se celebra en octubre. ¿Cree que este tipo de eventos contribuye significativamente a la proyección cultural de Salamanca?",
-      "opciones": [
-        "Sí, refuerza su imagen académica",
-        "No, su impacto es limitado",
-        "Depende de la difusión que se le dé",
-        "No tengo suficiente información"
-      ],
-      "basado_en": "eventos.json",
-      "fecha_creacion": "2026-09-29"
-    },
-    {
       "id": "robos-mayores-salamanca-2026",
       "pregunta": "Ante la preocupación por una escalada de robos violentos a personas mayores en el centro de Salamanca, ¿qué medidas considera más efectivas para abordar esta situación?",
       "opciones": [
@@ -84,19 +72,6 @@
         "No tengo suficiente información"
       ],
       "basado_en": "actualidad.json",
-      "fecha_creacion": "2026-10-03"
-    },
-    {
-      "id": "semana-comercio-salamanca-2026",
-      "pregunta": "La Semana del Comercio 2026 busca incentivar la compra en el comercio local con una carpa itinerante. ¿Cree que estas campañas son efectivas para fomentar el consumo en los establecimientos de Salamanca?",
-      "opciones": [
-        "Sí, ayudan a visibilizar y apoyar el comercio local",
-        "No, el impacto es mínimo frente a otros factores",
-        "Son un buen complemento, pero no la solución principal",
-        "Es indiferente",
-        "No tengo suficiente información"
-      ],
-      "basado_en": "eventos.json",
       "fecha_creacion": "2026-10-03"
     },
     {
@@ -122,18 +97,6 @@
       ],
       "basado_en": "eventos.json",
       "fecha_creacion": "2026-10-05"
-    },
-    {
-      "id": "congreso-libro-blanco-2026",
-      "pregunta": "El VII Congreso del Libro Blanco ha iniciado en Salamanca para impulsar el futuro de la provincia con propuestas de expertos. ¿Cree que este tipo de congresos son efectivos para generar un impacto real en el desarrollo de Salamanca?",
-      "opciones": [
-        "Sí, son clave para la planificación estratégica",
-        "No, suelen quedarse en meras propuestas",
-        "Su impacto depende de la implementación posterior",
-        "No tengo suficiente información"
-      ],
-      "basado_en": "actualidad.json",
-      "fecha_creacion": "2026-10-06"
     },
     {
       "id": "copa-rey-equipos-salamanca-2026",
@@ -267,6 +230,30 @@
       ],
       "basado_en": "eventos.json",
       "fecha_creacion": "2026-10-11"
+    },
+    {
+      "id": "presidencia-diputacion-mingo-2026",
+      "pregunta": "David Mingo ha sido elegido presidente de la Diputación de Salamanca. ¿Qué expectativas tiene sobre su gestión al frente de la institución provincial?",
+      "opciones": [
+        "Espero un impulso al desarrollo rural y provincial",
+        "Confío en la continuidad de las políticas actuales",
+        "No creo que haya cambios significativos",
+        "No tengo suficiente información"
+      ],
+      "basado_en": "actualidad.json",
+      "fecha_creacion": "2026-10-12"
+    },
+    {
+      "id": "congreso-gastronomico-2026",
+      "pregunta": "El III Congreso Gastronómico de LA GACETA explorará la riqueza culinaria de Castilla y León en Salamanca. ¿Cree que este tipo de eventos contribuye eficazmente a la promoción de la gastronomía local y el turismo en la provincia?",
+      "opciones": [
+        "Sí, son clave para la visibilidad y el atractivo turístico",
+        "No, su impacto es más bien limitado",
+        "Depende de la repercusión mediática y la participación",
+        "No tengo suficiente información"
+      ],
+      "basado_en": "eventos.json",
+      "fecha_creacion": "2026-10-12"
     }
   ]
 }

@@ -128,6 +128,61 @@
         "No tengo suficiente información": 1
       },
       "total_votos": 3
+    },
+    {
+      "id": "congreso-vitoria-2026",
+      "pregunta": "El Congreso Internacional Francisco de Vitoria y la Escuela de Salamanca se celebra en octubre. ¿Cree que este tipo de eventos contribuye significativamente a la proyección cultural de Salamanca?",
+      "opciones": [
+        "Sí, refuerza su imagen académica",
+        "No, su impacto es limitado",
+        "Depende de la difusión que se le dé",
+        "No tengo suficiente información"
+      ],
+      "basado_en": "eventos.json",
+      "fecha_creacion": "2026-09-29",
+      "fecha_archivado": "2026-10-12",
+      "resultados": {
+        "Depende de la difusión que se le dé": 1,
+        "Sí, refuerza su imagen académica": 1,
+        "No, su impacto es limitado": 1
+      },
+      "total_votos": 3
+    },
+    {
+      "id": "semana-comercio-salamanca-2026",
+      "pregunta": "La Semana del Comercio 2026 busca incentivar la compra en el comercio local con una carpa itinerante. ¿Cree que estas campañas son efectivas para fomentar el consumo en los establecimientos de Salamanca?",
+      "opciones": [
+        "Sí, ayudan a visibilizar y apoyar el comercio local",
+        "No, el impacto es mínimo frente a otros factores",
+        "Son un buen complemento, pero no la solución principal",
+        "Es indiferente",
+        "No tengo suficiente información"
+      ],
+      "basado_en": "eventos.json",
+      "fecha_creacion": "2026-10-03",
+      "fecha_archivado": "2026-10-12",
+      "resultados": {
+        "Sí, ayudan a visibilizar y apoyar el comercio local": 2,
+        "Son un buen complemento, pero no la solución principal": 1
+      },
+      "total_votos": 3
+    },
+    {
+      "id": "congreso-libro-blanco-2026",
+      "pregunta": "El VII Congreso del Libro Blanco ha iniciado en Salamanca para impulsar el futuro de la provincia con propuestas de expertos. ¿Cree que este tipo de congresos son efectivos para generar un impacto real en el desarrollo de Salamanca?",
+      "opciones": [
+        "Sí, son clave para la planificación estratégica",
+        "No, suelen quedarse en meras propuestas",
+        "Su impacto depende de la implementación posterior",
+        "No tengo suficiente información"
+      ],
+      "basado_en": "actualidad.json",
+      "fecha_creacion": "2026-10-06",
+      "fecha_archivado": "2026-10-12",
+      "resultados": {
+        "Sí, son clave para la planificación estratégica": 1
+      },
+      "total_votos": 1
     }
   ]
 }
