@@ -2,7 +2,7 @@
 layout: default
 title: Reciclaje en Salamanca - contenedores y puntos limpios
 description: Mapa de los 1.849 puntos de contenedores, los 81 de ropa y los 4 puntos limpios de la IDE municipal, y qué barrios tienen más contenedores por habitante
-date: 06-10-2026
+date: 12-10-2026
 folder: Medio Ambiente
 permalink: reciclaje-salamanca
 ---
@@ -30,11 +30,37 @@ La IDE municipal (Infraestructura de Datos Espaciales del Ayuntamiento) publica 
 <li><b>San Bernardo y Huerta Otea lideran la dotación.</b> Entre los barrios con más de 1.500 habitantes, San Bernardo (18,7 puntos por 1.000 habitantes) y Huerta Otea (18,6) tienen la mayor densidad de contenedores, seguidos de Chamberí (15,7) y Úrsulas - San Marcos (15,4).</li>
 <li><b>Santo Tomás, Zurguén y Garrido Sur, a la cola.</b> Tienen 7,6, 7,8 y 9,0 puntos por 1.000 habitantes. Garrido Sur y Pizarrales (9,8) son además dos de los barrios más poblados, con casi 8.500 y 9.700 habitantes, por lo que reparten pocos puntos entre mucha gente.</li>
 <li><b>Los barrios más poblados tienen más puntos, pero no más por habitante.</b> Garrido Norte, el más poblado (11.271 habitantes), suma el mayor número de puntos (119), pero su ratio es de unos 10,6 por 1.000, por debajo de la media de la ciudad.</li>
-<li><b>Cuatro puntos limpios para toda la ciudad.</b> Capuchinos, Chinchibarra y La Aldehuela abren de lunes a sábado de 9:30 a 19:30 y los domingos de 10:00 a 15:00; el del Zurguén, solo de lunes a viernes de 9:00 a 17:00. La cobertura por residentes y las horas de apertura están en <a href="/puntos-limpios-salamanca">puntos limpios de Salamanca</a>.</li>
+<li><b>Cuatro puntos limpios para toda la ciudad.</b> Capuchinos, Chinchibarra y La Aldehuela abren de lunes a sábado de 9:30 a 19:30 y los domingos de 10:00 a 15:00; el del Zurguén, solo de lunes a viernes de 9:00 a 17:00. La cobertura por residentes y las horas de apertura están en <a href="/puntos-limpios-salamanca">puntos limpios de Salamanca</a>. A la red se suman puntos de proximidad, un servicio itinerante y, desde el 13 de octubre de 2026, cuatro puntos limpios móviles (ver <a href="#red-reciclaje">la red de reciclaje</a>).</li>
 </ul>
 
   <h2>Puntos de contenedores por 1.000 habitantes: los seis barrios con más y con menos</h2>
   <canvas id="reciclajeBarrioChart" width="800" height="440"></canvas>
+
+  <h2 id="red-reciclaje">La red de reciclaje más allá de los contenedores</h2>
+  <p>Además de los contenedores y los 4 puntos limpios fijos de la IDE, la ciudad cuenta con otras instalaciones para residuos que no van al contenedor habitual. Los datos de esta sección proceden de la información difundida con el estreno de los puntos móviles y no están en la capa de la IDE.</p>
+  <ul>
+    <li><b>4 puntos limpios fijos</b> (Chinchibarra, Prosperidad, Capuchinos y El Zurguén). Los de la avenida de La Aldehuela, la avenida Vicente del Bosque y la calle Valles Mineros abren de lunes a sábado de 9:30 a 19:30 y los domingos de 10:00 a 15:00; el de la avenida de la Virgen del Cueto, de lunes a viernes de 9:00 a 16:00 y los sábados de 10:00 a 15:00 (la capa de la IDE lo da de lunes a viernes de 9:00 a 17:00).</li>
+    <li><b>4 puntos de proximidad</b> en la plaza Virgen de la Vega, la plaza del Alto del Rollo, la esquina de las calles Alfareros y Mineros y la plaza de Los Bandos. Admiten pilas, aerosoles vacíos, radiografías, bombillas, fluorescentes, cápsulas de café, aceite vegetal, libros, revistas y pequeños aparatos eléctricos (tostadoras, batidoras, secadores, licuadoras, planchas y exprimidores). De los ordenadores solo se aceptan componentes como ratones, teclados, discos duros o tarjetas.</li>
+    <li><b>Punto limpio móvil itinerante</b>, que ya recorre la ciudad de lunes a sábado de 14:00 a 19:30. Horarios y recorridos están en la web del Ayuntamiento de Salamanca.</li>
+    <li><b>4 nuevos puntos limpios móviles</b>, desde el martes 13 de octubre de 2026, con hasta 22 fracciones de residuos. Del 13 al 18 de octubre estarán en las calles Enrique de Sena, Mariano Ares y Sanz y Villanueva de la Serena, y en la avenida de Villamayor, junto al Centro Municipal Integrado Victoria Adrados; a partir del lunes 19, en la calle La Marina, la plaza de Barcelona, la plaza de la Concordia y el bulevar del Padre Enrique Basabe, junto a la Delegación Territorial de la Junta de Castilla y León. El proyecto es de la Consejería de Medio Ambiente, Vivienda y Ordenación del Territorio de la Junta de Castilla y León, cofinanciado con fondos europeos Next Generation.</li>
+  </ul>
+
+  <h3>Cantidades máximas por usuario y entrega</h3>
+  <table border="1" cellpadding="5" cellspacing="0">
+    <thead><tr><th>Residuo</th><th>Máximo</th></tr></thead>
+    <tbody>
+      <tr><td>Aceite usado</td><td>15 litros</td></tr>
+      <tr><td>Pilas</td><td>20</td></tr>
+      <tr><td>Aerosoles</td><td>7</td></tr>
+      <tr><td>Radiografías</td><td>10</td></tr>
+      <tr><td>Papel y cartón</td><td>15 kg</td></tr>
+      <tr><td>Textil y plásticos</td><td>15 kg</td></tr>
+      <tr><td>Metales y chatarra</td><td>50 kg</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Qué no se admite</h3>
+  <p>Medicamentos y residuos sanitarios, animales muertos, materiales tóxicos industriales, residuos radiactivos o infecciosos, neumáticos y líquidos de revelado fotográfico. Tampoco residuos de grandes productores ni materiales que superen los límites de peso y volumen.</p>
 
   <h2>Cómo leer estos datos</h2>
   <ul>
