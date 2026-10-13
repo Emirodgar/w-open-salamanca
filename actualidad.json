@@ -1,11 +1,11 @@
 {
   "url_base": "https://www.lagacetadesalamanca.es",
-  "generado_en": "2026-10-12T05:45:18+00:00",
+  "generado_en": "2026-10-13T05:45:18+00:00",
   "periodo_cubierto": {
-    "desde": "2026-10-09",
-    "hasta": "2026-10-12"
+    "desde": "2026-10-10",
+    "hasta": "2026-10-13"
   },
-  "total_urls_analizadas": 164,
+  "total_urls_analizadas": 143,
   "secciones_excluidas": [
     "gente-estilo",
     "nacional",
@@ -16,16 +16,16 @@
   "nota_cobertura": "El análisis cubre únicamente las URLs presentes en el sitemap en el momento de la consulta (excluyendo, si se indicó, las secciones filtradas). Si el sitemap es incremental o 'rolling', el periodo real puede ser más corto que el solicitado — revisa 'periodo_cubierto' para confirmarlo.",
   "por_seccion": [
     [
-      "salamanca",
-      53
+      "provincia",
+      47
     ],
     [
-      "provincia",
-      42
+      "salamanca",
+      35
     ],
     [
       "deportes",
-      40
+      35
     ],
     [
       "sucesos",
@@ -36,12 +36,12 @@
       4
     ],
     [
-      "castilla-y-leon",
-      4
-    ],
-    [
       "encuestas",
       3
+    ],
+    [
+      "castilla-y-leon",
+      1
     ],
     [
       "internacional",
@@ -51,11 +51,15 @@
   "por_subseccion": [
     [
       "deportes/futbol-local",
-      23
+      20
     ],
     [
       "deportes/baloncesto-local",
-      10
+      8
+    ],
+    [
+      "deportes/deporte-base",
+      2
     ],
     [
       "deportes/carreras-populares",
@@ -65,157 +69,157 @@
   "por_tipo_contenido": [
     [
       "noticia",
-      140
+      112
     ],
     [
       "galería",
-      21
+      30
     ],
     [
       "directo / en vivo",
-      3
+      1
     ]
   ],
   "heatmap_calendario": [
     {
-      "fecha": "2026-10-09",
-      "total": 51,
-      "salamanca": 21,
-      "provincia": 11,
-      "deportes": 7,
-      "sucesos": 6,
-      "campo": 2,
-      "castilla-y-leon": 3,
-      "encuestas": 1,
-      "internacional": 0
-    },
-    {
       "fecha": "2026-10-10",
-      "total": 49,
-      "salamanca": 11,
-      "provincia": 16,
-      "deportes": 15,
-      "sucesos": 2,
-      "campo": 2,
-      "castilla-y-leon": 1,
+      "total": 31,
+      "provincia": 14,
+      "salamanca": 1,
+      "deportes": 11,
+      "sucesos": 1,
+      "campo": 1,
       "encuestas": 1,
+      "castilla-y-leon": 1,
       "internacional": 1
     },
     {
       "fecha": "2026-10-11",
-      "total": 55,
-      "salamanca": 14,
+      "total": 52,
       "provincia": 15,
-      "deportes": 18,
+      "salamanca": 12,
+      "deportes": 17,
       "sucesos": 8,
       "campo": 0,
-      "castilla-y-leon": 0,
       "encuestas": 0,
+      "castilla-y-leon": 0,
       "internacional": 0
     },
     {
       "fecha": "2026-10-12",
-      "total": 9,
-      "salamanca": 7,
-      "provincia": 0,
-      "deportes": 0,
-      "sucesos": 1,
-      "campo": 0,
+      "total": 48,
+      "provincia": 14,
+      "salamanca": 16,
+      "deportes": 7,
+      "sucesos": 8,
+      "campo": 1,
+      "encuestas": 2,
       "castilla-y-leon": 0,
-      "encuestas": 1,
+      "internacional": 0
+    },
+    {
+      "fecha": "2026-10-13",
+      "total": 12,
+      "provincia": 4,
+      "salamanca": 6,
+      "deportes": 0,
+      "sucesos": 0,
+      "campo": 2,
+      "encuestas": 0,
+      "castilla-y-leon": 0,
       "internacional": 0
     }
   ],
   "conceptos_destacados": [
     {
-      "concepto": "Meins Avenida",
-      "piezas": 7,
-      "seccion_principal": "deportes",
-      "desde": "2026-10-09",
-      "hasta": "2026-10-11",
-      "ejemplos_redactados": [
-        "El Meins Avenida busca seguir en construcción.",
-        "Fiestón en Würzburg con un soberbio Meins Avenida que no tuvo piedad de Gernika."
-      ]
-    },
-    {
-      "concepto": "Unionistas",
-      "piezas": 6,
-      "seccion_principal": "deportes",
-      "desde": "2026-10-09",
-      "hasta": "2026-10-11",
-      "ejemplos_redactados": [
-        "Unionistas de División de Honor golea para seguir invicto.",
-        "Unionistas sigue sin dar con la tecla, empatando frente al Cacereño en el Príncipe Felipe."
-      ]
-    },
-    {
-      "concepto": "Alba de Tormes",
-      "piezas": 4,
+      "concepto": "Guardia Civil",
+      "piezas": 11,
       "seccion_principal": "provincia",
-      "desde": "2026-10-09",
+      "desde": "2026-10-10",
+      "hasta": "2026-10-13",
+      "ejemplos_redactados": [
+        "En Linares de Riofrío se unieron a la fiesta de la Guardia Civil.",
+        "Ledrada acompañó a la Virgen del Pilar y la Guardia Civil en su día."
+      ]
+    },
+    {
+      "concepto": "Meins Avenida",
+      "piezas": 5,
+      "seccion_principal": "deportes",
+      "desde": "2026-10-11",
       "hasta": "2026-10-11",
       "ejemplos_redactados": [
-        "Alba de Tormes nombra a Julián Moreiro Prieto hijo predilecto.",
-        "La Escuela Municipal de Música de Alba de Tormes inicia su curso."
+        "Las mejores imágenes del gran triunfo del Meins Avenida.",
+        "Se analizaron las claves de la exhibición del Meins Avenida ante Gernika."
+      ]
+    },
+    {
+      "concepto": "Estadio Helmántico",
+      "piezas": 5,
+      "seccion_principal": "deportes",
+      "desde": "2026-10-10",
+      "hasta": "2026-10-12",
+      "ejemplos_redactados": [
+        "Se prevé que el Helmántico se llenará frente al Celta.",
+        "El exterior del Helmántico prepara un popular festival universitario para el sábado."
+      ]
+    },
+    {
+      "concepto": "Béjar",
+      "piezas": 5,
+      "seccion_principal": "provincia",
+      "desde": "2026-10-10",
+      "hasta": "2026-10-12",
+      "ejemplos_redactados": [
+        "Una persona fue trasladada al hospital tras ser agredida por varias personas en Béjar.",
+        "El PP de Béjar critica la falta de gestión para reponer una bandera."
       ]
     },
     {
       "concepto": "Santa Marta",
       "piezas": 4,
-      "seccion_principal": "deportes",
-      "desde": "2026-10-10",
-      "hasta": "2026-10-11",
-      "ejemplos_redactados": [
-        "El Santa Marta suma un punto en Burgos.",
-        "La biblioteca de Santa Marta gana por sexta vez un premio."
-      ]
-    },
-    {
-      "concepto": "Estadio Helmántico",
-      "piezas": 4,
-      "seccion_principal": "deportes",
-      "desde": "2026-10-09",
-      "hasta": "2026-10-10",
-      "ejemplos_redactados": [
-        "Victoria del Salamanca en el Helmántico frente al Sanse.",
-        "El Trofeo de la Copa del Rey luce en el Estadio Helmántico."
-      ]
-    },
-    {
-      "concepto": "Béjar",
-      "piezas": 4,
       "seccion_principal": "provincia",
       "desde": "2026-10-10",
       "hasta": "2026-10-11",
       "ejemplos_redactados": [
-        "El PP de Béjar critica la falta de gestión para reponer una bandera.",
-        "Se celebra una concentración palestina en Béjar."
+        "La biblioteca de Santa Marta gana por sexta vez un premio.",
+        "Santa Marta remonta al Salamanca para llevarse el derbi."
       ]
     },
     {
-      "concepto": "Guardia Civil",
+      "concepto": "Atención Sanitaria en Sucesos",
+      "piezas": 4,
+      "seccion_principal": "sucesos",
+      "desde": "2026-10-11",
+      "hasta": "2026-10-12",
+      "ejemplos_redactados": [
+        "Una persona fue trasladada al hospital tras ser agredida por varias personas en Béjar.",
+        "Una mujer fue trasladada al hospital de Salamanca tras quedar atrapada por el brazo."
+      ]
+    },
+    {
+      "concepto": "Copa del Rey",
+      "piezas": 3,
+      "seccion_principal": "deportes",
+      "desde": "2026-10-10",
+      "hasta": "2026-10-12",
+      "ejemplos_redactados": [
+        "El Salamanca y el Celta consultan los precios oficiales para la Copa del Rey.",
+        "El trofeo de la Copa del Rey luce en el Estadio Helmántico."
+      ]
+    },
+    {
+      "concepto": "Desaparición en Ledrada",
       "piezas": 3,
       "seccion_principal": "sucesos",
       "desde": "2026-10-10",
-      "hasta": "2026-10-11",
+      "hasta": "2026-10-13",
       "ejemplos_redactados": [
-        "La Guardia Civil auxilia a dos senderistas desorientados.",
-        "Multitudinaria carrera solidaria de la Guardia Civil llena las calles."
-      ]
-    },
-    {
-      "concepto": "Puente del Pilar",
-      "piezas": 3,
-      "seccion_principal": "salamanca",
-      "desde": "2026-10-09",
-      "hasta": "2026-10-11",
-      "ejemplos_redactados": [
-        "Salamanca se llena por el Puente del Pilar con hoteles rozando el lleno.",
-        "El Puente del Pilar dejará lluvias en el sur peninsular y temperaturas suaves."
+        "Continúa la incertidumbre en la residencia de Agustín, desaparecido en Ledrada, sin pistas desesperadas.",
+        "Se buscan noticias de Agustín días después de su desaparición en Ledrada."
       ]
     }
   ],
-  "resumen_borrador": "Se han publicado 164 noticias entre el 2026-10-09 y el 2026-10-12. La actividad se ha concentrado sobre todo en salamanca (53 piezas), provincia (42 piezas), deportes (40 piezas).\n\nLos conceptos con más piezas relacionadas son: Meins · Avenida; Unionistas; Alba · Tormes; Santa · Marta. Revisa 'evidencia' de cada concepto para redactar el resumen final.",
-  "resumen": "El periodo del 9 al 12 de octubre de 2026 en Salamanca ha estado marcado por la actividad deportiva y las repercusiones del Puente del Pilar. En el ámbito deportivo, el Meins Avenida ha logrado una contundente victoria en casa, mientras que Unionistas de Salamanca sigue buscando la regularidad en sus resultados. El Salamanca UDS, por su parte, se ha posicionado como líder de su grupo tras una importante victoria en el Estadio Helmántico. La provincia ha visto noticias destacadas en Alba de Tormes, con el nombramiento de un hijo predilecto, y en Béjar, con críticas políticas y eventos culturales. La Guardia Civil ha intervenido en sucesos y ha celebrado una carrera solidaria. En la capital, la ocupación hotelera ha sido notablemente alta durante el Puente del Pilar, y se ha registrado una caída en el precio de la gasolina, rompiendo una racha de trece semanas de subidas. La actualidad también ha recogido la elección de David Mingo como presidente de la Diputación de Salamanca. Este breve periodo ha concentrado una diversidad de noticias locales, desde el deporte hasta la economía y la política provincial."
+  "resumen_borrador": "Se han publicado 143 noticias entre el 2026-10-10 y el 2026-10-13. La actividad se ha concentrado sobre todo en provincia (47 piezas), salamanca (35 piezas), deportes (35 piezas).\n\nLos conceptos con más piezas relacionadas son: Guardia · Civil; Meins · Avenida; Helmantico; Bejar. Revisa 'evidencia' de cada concepto para redactar el resumen final.",
+  "resumen": "El periodo del 10 al 13 de octubre de 2026 en Salamanca ha estado marcado por las celebraciones del Día de la Hispanidad y la Virgen del Pilar, con numerosos municipios de la provincia rindiendo homenaje a la Guardia Civil. En el ámbito deportivo, el Salamanca UDS se ha consolidado como líder de su grupo, mientras que el Meins Avenida ha ofrecido una destacada exhibición en su encuentro en casa. La atención se ha centrado también en la inminente venta de entradas para el partido de Copa del Rey contra el Celta, generando expectación en el Estadio Helmántico.\n\nEn la sección de sucesos, la incertidumbre persiste en Ledrada por la desaparición de Agustín, un caso que continúa sin pistas claras. Además, se han registrado varios incidentes que han requerido atención hospitalaria, incluyendo agresiones y accidentes de tráfico. La provincia también ha sido escenario de noticias locales, como la crítica del PP de Béjar por la gestión municipal y el reconocimiento a la biblioteca de Santa Marta.\n\nFinalmente, la agenda cultural y social ha incluido una noche de ópera en Ciudad Rodrigo y diversas actividades festivas en localidades como Linares de Riofrío y Fresnedoso, que han disfrutado de su primera fiesta de la vendimia. La vida cotidiana de la capital y la provincia se ha desarrollado con un enfoque en el deporte, las tradiciones y la gestión local."
 }

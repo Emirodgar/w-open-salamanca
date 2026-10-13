@@ -254,6 +254,30 @@
       ],
       "basado_en": "eventos.json",
       "fecha_creacion": "2026-10-12"
+    },
+    {
+      "id": "copa-rey-salamanca-uds-celta-2026",
+      "pregunta": "Ante la inminente venta de entradas y la expectación generada por el partido de Copa del Rey entre el Salamanca UDS y el Celta, ¿cree que el equipo salmantino tiene opciones reales de superar esta primera ronda?",
+      "opciones": [
+        "Sí, jugarán en casa y pueden dar la sorpresa",
+        "No, el Celta es un rival de categoría superior",
+        "Depende del rendimiento del día",
+        "No tengo suficiente información"
+      ],
+      "basado_en": "actualidad.json",
+      "fecha_creacion": "2026-10-13"
+    },
+    {
+      "id": "festival-universitario-helm-2026",
+      "pregunta": "Los exteriores del Estadio Helmántico acogerán un popular festival universitario que atraerá a estudiantes de toda España. ¿Cree que este tipo de eventos contribuye positivamente a la dinamización social y económica de Salamanca?",
+      "opciones": [
+        "Sí, atrae gente y genera actividad",
+        "No, su impacto es limitado o negativo",
+        "Depende de la organización y la afluencia",
+        "No tengo suficiente información"
+      ],
+      "basado_en": "eventos.json",
+      "fecha_creacion": "2026-10-13"
     }
   ]
 }
