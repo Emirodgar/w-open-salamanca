@@ -278,6 +278,30 @@
       ],
       "basado_en": "eventos.json",
       "fecha_creacion": "2026-10-13"
+    },
+    {
+      "id": "meins-avenida-eurocup-2026",
+      "pregunta": "El Meins Avenida debuta hoy en la Eurocup. ¿Qué expectativas tiene sobre su rendimiento en esta competición europea?",
+      "opciones": [
+        "Confío en que llegarán lejos",
+        "Tendrán un papel discreto",
+        "Es difícil predecir su recorrido",
+        "No sigo el baloncesto"
+      ],
+      "basado_en": "eventos.json",
+      "fecha_creacion": "2026-10-14"
+    },
+    {
+      "id": "mujeres-innovan-salamanca-2026",
+      "pregunta": "Salamanca acogerá la jornada 'Mujeres que innovan', centrada en emprendimiento y liderazgo femenino. ¿Cree que este tipo de iniciativas son clave para fomentar la igualdad de oportunidades en el ámbito profesional local?",
+      "opciones": [
+        "Sí, son fundamentales para visibilizar y empoderar",
+        "No, el impacto real es limitado",
+        "Son un buen complemento, pero se necesitan más acciones",
+        "No tengo suficiente información"
+      ],
+      "basado_en": "eventos.json",
+      "fecha_creacion": "2026-10-14"
     }
   ]
 }

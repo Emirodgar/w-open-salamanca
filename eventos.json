@@ -1,5 +1,5 @@
 {
-  "generado_en": "2026-10-13T05:45:18+00:00",
+  "generado_en": "2026-10-14T05:45:23+00:00",
   "eventos": [
     {
       "titulo": "Novenario y fiesta de Santa Teresa en Peñaranda de Bracamonte",
@@ -44,6 +44,15 @@
       "fecha_fin": null,
       "lugar": "Fonda Veracruz 22",
       "descripcion": "A las 18:00 h. La obra conmemora el centenario del primer vuelo en hidroavión entre Huelva y Argentina."
+    },
+    {
+      "titulo": "Partido de Eurocup: Meins Avenida vs. Ruzomberok",
+      "categoria": "Deportes",
+      "fecha_inicio": "2026-10-14",
+      "fecha_fin": null,
+      "lugar": "Pabellón de Würzburg Silvia Domínguez, Salamanca",
+      "descripcion": "El equipo Meins Avenida debuta en la Eurocup recibiendo en casa al Ruzomberok eslovaco en la primera jornada de la competición.",
+      "fuente": "https://www.lagacetadesalamanca.es/deportes/baloncesto-local/meins-avenida/meins-avenidaruzomberok-horario-ver-directo-partido-eurocup-20261013135224-nt.html"
     },
     {
       "titulo": "Día Europeo del Arte Rupestre en Siega Verde",
@@ -126,6 +135,24 @@
       "descripcion": "A las 10:00 h, dirigido por la arquitecta Valentina Duarte. Precio: 15 euros por participante, materiales incluidos."
     },
     {
+      "titulo": "Jornada lúdica y deportiva de Aviva",
+      "categoria": "Deportes",
+      "fecha_inicio": "2026-10-24",
+      "fecha_fin": null,
+      "lugar": "Pabellón Julián Sánchez ‘El Charro’, Salamanca",
+      "descripcion": "Jornada con actividades de deporte inclusivo como baloncesto en silla de ruedas y boccia, organizada por la Fundación Aviva.",
+      "fuente": "https://www.lagacetadesalamanca.es/salamanca/salamanca-tenira-rojo-carrera-mil-pasos-aviva-20261013191445-ga.html"
+    },
+    {
+      "titulo": "Partidos de los equipos de base en Guijuelo",
+      "categoria": "Deportes",
+      "fecha_inicio": "2026-10-24",
+      "fecha_fin": "2026-10-25",
+      "lugar": "Municipal Luis Ramos, Guijuelo",
+      "descripcion": "Los equipos de base del Guijuelo disputarán sus partidos en el Municipal Luis Ramos, sirviendo como antesala al encuentro de Copa del Rey.",
+      "fuente": "https://www.lagacetadesalamanca.es/deportes/futbol-local/guijuelo-fija-precios-encuentro-ante-sporting-gijon-20261013134216-nt.html"
+    },
+    {
       "titulo": "Jornada 'Mujeres que innovan' en Salamanca",
       "categoria": "Sociedad",
       "fecha_inicio": "2026-10-26",
@@ -133,6 +160,15 @@
       "lugar": "Casa de la Mujer, Salamanca",
       "descripcion": "Jornada dedicada al emprendimiento, la tecnología y el liderazgo femenino, con experiencias personales y mesas redondas.",
       "fuente": "https://www.lagacetadesalamanca.es/salamanca/escuela-municipal-igualdad-amplia-programacion-actividades-final-20260930182831-nt.html"
+    },
+    {
+      "titulo": "Taller infantil 'Monstruos y calabazas' en Carbajosa",
+      "categoria": "Cultura",
+      "fecha_inicio": "2026-10-26",
+      "fecha_fin": "2026-10-28",
+      "lugar": "Carbajosa de la Sagrada",
+      "descripcion": "Actividad de manualidades temáticas de Halloween en Carbajosa de la Sagrada, fomentando la creatividad y participación infantil.",
+      "fuente": "https://www.lagacetadesalamanca.es/provincia/talleres-infantiles-halloween-carbajosa-20261013200758-nt.html"
     },
     {
       "titulo": "Primera ronda de la Copa del Rey: CD Guijuelo vs Sporting de Gijón",
@@ -278,12 +314,12 @@
       "fuente": "https://www.lagacetadesalamanca.es/salamanca/carameloraro-presenta-tormes-proximos-conciertos-vibramahou-20261002112023-nt.html"
     },
     {
-      "titulo": "Concierto de Clarent en Salamanca",
+      "titulo": "Concierto de Antonio Orozco en Salamanca",
       "categoria": "Cultura",
-      "fecha_inicio": "2026-11-20",
+      "fecha_inicio": "2026-11-21",
       "fecha_fin": null,
-      "lugar": "Multiusos S\n\nchez Para\n\nso, Salamanca",
-      "descripcion": "El cantante puertorriqueño Clarent actuará en el Multiusos S\n\nchez Para\n\nso de Salamanca como parte de su nueva gira por Espa\n\na, presentando su \n\nltimo \n\nalbum 'No pasa nada hombre'.",
+      "lugar": "Multiusos Sánchez Paraíso, Salamanca",
+      "descripcion": "El cantante Antonio Orozco actuará en el Multiusos Sánchez Paraíso, un día después del concierto de Clarent.",
       "fuente": "https://www.lagacetadesalamanca.es/salamanca/locura-proximo-concierto-clarent-salamanca-entradas-agotando-20261011123642-nt.html"
     },
     {
@@ -347,6 +383,15 @@
       "lugar": "Paradinas de San Juan",
       "descripcion": "Prueba popular que ya tiene fecha confirmada para su 14ª edición.",
       "fuente": "https://www.lagacetadesalamanca.es/deportes/carreras-populares/paradinas-fecha-carrera-roscon-20260922084240-nt.html"
+    },
+    {
+      "titulo": "XXXIV Liga de Cross de Cabrerizos - Quinta prueba",
+      "categoria": "Deportes",
+      "fecha_inicio": "2027-02-07",
+      "fecha_fin": null,
+      "lugar": "Cabrerizos",
+      "descripcion": "Última de las cinco carreras que componen la trigésimo cuarta edición de la Liga de Cross de Cabrerizos, con un nuevo recorrido.",
+      "fuente": "https://www.lagacetadesalamanca.es/deportes/carreras-populares/xxxiv-liga-cross-cabrerizos-arrancara-noviembre-20261013195148-nt.html"
     }
   ]
 }

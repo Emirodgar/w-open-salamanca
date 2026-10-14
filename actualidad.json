@@ -1,11 +1,11 @@
 {
   "url_base": "https://www.lagacetadesalamanca.es",
-  "generado_en": "2026-10-13T05:45:18+00:00",
+  "generado_en": "2026-10-14T05:45:23+00:00",
   "periodo_cubierto": {
-    "desde": "2026-10-10",
-    "hasta": "2026-10-13"
+    "desde": "2026-10-11",
+    "hasta": "2026-10-14"
   },
-  "total_urls_analizadas": 143,
+  "total_urls_analizadas": 167,
   "secciones_excluidas": [
     "gente-estilo",
     "nacional",
@@ -16,64 +16,68 @@
   "nota_cobertura": "El análisis cubre únicamente las URLs presentes en el sitemap en el momento de la consulta (excluyendo, si se indicó, las secciones filtradas). Si el sitemap es incremental o 'rolling', el periodo real puede ser más corto que el solicitado — revisa 'periodo_cubierto' para confirmarlo.",
   "por_seccion": [
     [
-      "provincia",
-      47
+      "salamanca",
+      50
     ],
     [
-      "salamanca",
-      35
+      "provincia",
+      45
     ],
     [
       "deportes",
-      35
+      39
     ],
     [
       "sucesos",
-      17
+      20
     ],
     [
       "campo",
-      4
+      7
     ],
     [
       "encuestas",
       3
     ],
     [
-      "castilla-y-leon",
+      "toros",
       1
     ],
     [
       "internacional",
+      1
+    ],
+    [
+      "television",
       1
     ]
   ],
   "por_subseccion": [
     [
       "deportes/futbol-local",
-      20
+      21
     ],
     [
       "deportes/baloncesto-local",
-      8
+      9
     ],
     [
       "deportes/deporte-base",
-      2
+      5
     ],
     [
       "deportes/carreras-populares",
-      1
+      2
     ]
   ],
   "por_tipo_contenido": [
     [
       "noticia",
-      112
+      146
     ],
     [
       "galería",
-      30
+      20
     ],
     [
       "directo / en vivo",
@@ -82,144 +86,148 @@
   ],
   "heatmap_calendario": [
     {
-      "fecha": "2026-10-10",
-      "total": 31,
-      "provincia": 14,
-      "salamanca": 1,
-      "deportes": 11,
-      "sucesos": 1,
-      "campo": 1,
-      "encuestas": 1,
-      "castilla-y-leon": 1,
-      "internacional": 1
-    },
-    {
       "fecha": "2026-10-11",
-      "total": 52,
-      "provincia": 15,
-      "salamanca": 12,
-      "deportes": 17,
-      "sucesos": 8,
+      "total": 36,
+      "salamanca": 6,
+      "provincia": 11,
+      "deportes": 15,
+      "sucesos": 4,
       "campo": 0,
       "encuestas": 0,
-      "castilla-y-leon": 0,
-      "internacional": 0
+      "toros": 0,
+      "internacional": 0,
+      "television": 0
     },
     {
       "fecha": "2026-10-12",
-      "total": 48,
+      "total": 47,
+      "salamanca": 15,
       "provincia": 14,
-      "salamanca": 16,
       "deportes": 7,
       "sucesos": 8,
       "campo": 1,
       "encuestas": 2,
-      "castilla-y-leon": 0,
-      "internacional": 0
+      "toros": 0,
+      "internacional": 0,
+      "television": 0
     },
     {
       "fecha": "2026-10-13",
-      "total": 12,
-      "provincia": 4,
-      "salamanca": 6,
-      "deportes": 0,
+      "total": 77,
+      "salamanca": 24,
+      "provincia": 20,
+      "deportes": 16,
+      "sucesos": 8,
+      "campo": 6,
+      "encuestas": 1,
+      "toros": 0,
+      "internacional": 1,
+      "television": 1
+    },
+    {
+      "fecha": "2026-10-14",
+      "total": 7,
+      "salamanca": 5,
+      "provincia": 0,
+      "deportes": 1,
       "sucesos": 0,
-      "campo": 2,
+      "campo": 0,
       "encuestas": 0,
-      "castilla-y-leon": 0,
-      "internacional": 0
+      "toros": 1,
+      "internacional": 0,
+      "television": 0
     }
   ],
   "conceptos_destacados": [
     {
       "concepto": "Guardia Civil",
-      "piezas": 11,
+      "piezas": 8,
       "seccion_principal": "provincia",
-      "desde": "2026-10-10",
+      "desde": "2026-10-11",
       "hasta": "2026-10-13",
       "ejemplos_redactados": [
-        "En Linares de Riofrío se unieron a la fiesta de la Guardia Civil.",
-        "Ledrada acompañó a la Virgen del Pilar y la Guardia Civil en su día."
+        "Diversos municipios de la provincia, como Linares de Riofrío y Ledrada, se unieron a la celebración del Día de la Guardia Civil.",
+        "Salamanca capital acogió el primer desfile en honor a la Guardia Civil, con una multitudinaria carrera solidaria."
       ]
     },
     {
-      "concepto": "Meins Avenida",
+      "concepto": "Santa Marta",
       "piezas": 5,
-      "seccion_principal": "deportes",
+      "seccion_principal": "provincia",
       "desde": "2026-10-11",
-      "hasta": "2026-10-11",
+      "hasta": "2026-10-13",
       "ejemplos_redactados": [
-        "Las mejores imágenes del gran triunfo del Meins Avenida.",
-        "Se analizaron las claves de la exhibición del Meins Avenida ante Gernika."
+        "Una mujer resultó herida tras ser atropellada por una furgoneta en Santa Marta de Tormes.",
+        "El municipio de Santa Marta ha trasladado de forma temporal su pipicán y su biblioteca ha ganado un premio por sexta vez."
       ]
     },
     {
-      "concepto": "Estadio Helmántico",
+      "concepto": "Ciudad Rodrigo",
       "piezas": 5,
-      "seccion_principal": "deportes",
-      "desde": "2026-10-10",
-      "hasta": "2026-10-12",
+      "seccion_principal": "provincia",
+      "desde": "2026-10-12",
+      "hasta": "2026-10-13",
       "ejemplos_redactados": [
-        "Se prevé que el Helmántico se llenará frente al Celta.",
-        "El exterior del Helmántico prepara un popular festival universitario para el sábado."
+        "Cáritas Ciudad Rodrigo clausuró un taller de horticultura y floricultura, mientras el municipio acogió una marcha contra el cáncer.",
+        "Se presentó en Ciudad Rodrigo una red de apoyo a la mujer emprendedora y se iniciaron trabajos de mejora en la iglesia de la Tercera Orden."
       ]
     },
     {
       "concepto": "Béjar",
       "piezas": 5,
       "seccion_principal": "provincia",
-      "desde": "2026-10-10",
-      "hasta": "2026-10-12",
+      "desde": "2026-10-11",
+      "hasta": "2026-10-13",
       "ejemplos_redactados": [
-        "Una persona fue trasladada al hospital tras ser agredida por varias personas en Béjar.",
-        "El PP de Béjar critica la falta de gestión para reponer una bandera."
+        "La Escuela de Ingeniería de Béjar hizo un llamamiento a su alumnado para participar en el 175 aniversario.",
+        "Continúan los parcheados en la A-66 entre Béjar y Guijuelo a la espera de una reforma, y vuelven los cortos a la Filmoteca de Castilla y León en Béjar."
       ]
     },
     {
-      "concepto": "Santa Marta",
+      "concepto": "Fútbol Base",
       "piezas": 4,
-      "seccion_principal": "provincia",
-      "desde": "2026-10-10",
+      "seccion_principal": "deportes",
+      "desde": "2026-10-12",
+      "hasta": "2026-10-13",
+      "ejemplos_redactados": [
+        "La cuarta jornada del fútbol base salmantino dejó un once ideal de cracks y los mejores goles.",
+        "Se registró un nuevo altercado en el fútbol base salmantino, con una agresión a un árbitro en Peñaranda de Bracamonte."
+      ]
+    },
+    {
+      "concepto": "Meins Avenida",
+      "piezas": 4,
+      "seccion_principal": "deportes",
+      "desde": "2026-10-11",
       "hasta": "2026-10-11",
       "ejemplos_redactados": [
-        "La biblioteca de Santa Marta gana por sexta vez un premio.",
-        "Santa Marta remonta al Salamanca para llevarse el derbi."
-      ]
-    },
-    {
-      "concepto": "Atención Sanitaria en Sucesos",
-      "piezas": 4,
-      "seccion_principal": "sucesos",
-      "desde": "2026-10-11",
-      "hasta": "2026-10-12",
-      "ejemplos_redactados": [
-        "Una persona fue trasladada al hospital tras ser agredida por varias personas en Béjar.",
-        "Una mujer fue trasladada al hospital de Salamanca tras quedar atrapada por el brazo."
+        "El Meins Avenida logró un gran triunfo ante el Gernika, ofreciendo una exhibición en Würzburg.",
+        "Las claves de su victoria y las mejores imágenes del partido destacaron en la jornada deportiva."
       ]
     },
     {
       "concepto": "Copa del Rey",
       "piezas": 3,
       "seccion_principal": "deportes",
-      "desde": "2026-10-10",
-      "hasta": "2026-10-12",
+      "desde": "2026-10-12",
+      "hasta": "2026-10-13",
       "ejemplos_redactados": [
-        "El Salamanca y el Celta consultan los precios oficiales para la Copa del Rey.",
-        "El trofeo de la Copa del Rey luce en el Estadio Helmántico."
+        "El Salamanca UDS puso a la venta las entradas para la Copa del Rey, desatando la ilusión copera entre la afición.",
+        "Se vendieron 2.500 entradas en el primer día, confirmando el interés por el encuentro contra el Celta."
       ]
     },
     {
-      "concepto": "Desaparición en Ledrada",
-      "piezas": 3,
-      "seccion_principal": "sucesos",
-      "desde": "2026-10-10",
+      "concepto": "Guijuelo",
+      "piezas": 4,
+      "seccion_principal": "provincia",
+      "desde": "2026-10-11",
       "hasta": "2026-10-13",
       "ejemplos_redactados": [
-        "Continúa la incertidumbre en la residencia de Agustín, desaparecido en Ledrada, sin pistas desesperadas.",
-        "Se buscan noticias de Agustín días después de su desaparición en Ledrada."
+        "El Guijuelo fijó los precios para su encuentro contra el Sporting de Gijón.",
+        "Se convocó una asamblea en Guijuelo sobre el bloqueo de la negociación colectiva, mientras continúan los parcheados en la A-66 en dirección a Béjar."
       ]
     }
   ],
-  "resumen_borrador": "Se han publicado 143 noticias entre el 2026-10-10 y el 2026-10-13. La actividad se ha concentrado sobre todo en provincia (47 piezas), salamanca (35 piezas), deportes (35 piezas).\n\nLos conceptos con más piezas relacionadas son: Guardia · Civil; Meins · Avenida; Helmantico; Bejar. Revisa 'evidencia' de cada concepto para redactar el resumen final.",
-  "resumen": "El periodo del 10 al 13 de octubre de 2026 en Salamanca ha estado marcado por las celebraciones del Día de la Hispanidad y la Virgen del Pilar, con numerosos municipios de la provincia rindiendo homenaje a la Guardia Civil. En el ámbito deportivo, el Salamanca UDS se ha consolidado como líder de su grupo, mientras que el Meins Avenida ha ofrecido una destacada exhibición en su encuentro en casa. La atención se ha centrado también en la inminente venta de entradas para el partido de Copa del Rey contra el Celta, generando expectación en el Estadio Helmántico.\n\nEn la sección de sucesos, la incertidumbre persiste en Ledrada por la desaparición de Agustín, un caso que continúa sin pistas claras. Además, se han registrado varios incidentes que han requerido atención hospitalaria, incluyendo agresiones y accidentes de tráfico. La provincia también ha sido escenario de noticias locales, como la crítica del PP de Béjar por la gestión municipal y el reconocimiento a la biblioteca de Santa Marta.\n\nFinalmente, la agenda cultural y social ha incluido una noche de ópera en Ciudad Rodrigo y diversas actividades festivas en localidades como Linares de Riofrío y Fresnedoso, que han disfrutado de su primera fiesta de la vendimia. La vida cotidiana de la capital y la provincia se ha desarrollado con un enfoque en el deporte, las tradiciones y la gestión local."
+  "resumen_borrador": "Se han publicado 167 noticias entre el 2026-10-11 y el 2026-10-14. La actividad se ha concentrado sobre todo en salamanca (50 piezas), provincia (45 piezas), deportes (39 piezas).\n\nLos conceptos con más piezas relacionadas son: Guardia · Civil; Santa · Marta; Ciudad · Rodrigo; Bejar. Revisa 'evidencia' de cada concepto para redactar el resumen final.",
+  "resumen": "La provincia de Salamanca ha vivido unos días marcados por las celebraciones en honor a la Guardia Civil, con desfiles y actos en la capital y diversos municipios. La actualidad local también se ha centrado en incidencias y mejoras urbanísticas en Santa Marta y Ciudad Rodrigo, así como en la situación de la A-66 en la zona de Béjar y Guijuelo.\n\nEn el ámbito deportivo, el fútbol base salmantino ha sido noticia por un nuevo altercado, mientras que el Meins Avenida ha destacado con una contundente victoria. La afición del Salamanca UDS ha mostrado gran entusiasmo por la Copa del Rey, agotando rápidamente las entradas para el próximo encuentro. Los sucesos han incluido robos, accidentes de tráfico y alertas sanitarias.\n\nAdemás, la agenda política ha estado marcada por declaraciones sobre vivienda y presupuestos, y la sociedad salmantina ha respondido a la campaña de vacunación contra la gripe. Un hito internacional de gran relevancia ha sido la operación del Papa por cáncer de pulmón, que ha sido un éxito."
 }

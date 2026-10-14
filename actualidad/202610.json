@@ -1,7 +1,7 @@
 {
   "mes": "2026-10",
   "titulo_mes": "Octubre 2026",
-  "resumen_mes": "Octubre arranca con la convocatoria de elecciones generales y la continuidad de la búsqueda de un hombre desaparecido en Ledrada. El deporte local vive un importante test del Meins Avenida y el Salamanca UDS se posiciona como líder. David Mingo es elegido presidente de la Diputación, mientras la alta ocupación hotelera por el Puente del Pilar y la bajada de la gasolina marcan la agenda social y económica.",
+  "resumen_mes": "Octubre arranca con la convocatoria de elecciones generales y la continuidad de la búsqueda de un hombre desaparecido en Ledrada. El deporte local vive un importante test del Meins Avenida y el Salamanca UDS se posiciona como líder. David Mingo es elegido presidente de la Diputación, y la operación del Papa por cáncer de pulmón marca la agenda internacional.",
   "hitos": [
     {
       "fecha": "2026-10-05",
@@ -9,7 +9,7 @@
       "categoria": "Política",
       "descripcion": "El presidente Manueco ha celebrado la convocatoria de elecciones generales, marcando el final del gobierno.",
       "fuente": "https://www.lagacetadesalamanca.es/salamanca/manueco-celebra-convocatoria-elecciones-generales-final-gobierno-20261005152925-nt.html",
-      "destacado": true
+      "destacado": false
     },
     {
       "fecha": "2026-10-09",
@@ -37,14 +37,6 @@
     },
     {
       "fecha": "2026-10-10",
-      "titulo": "Alta ocupación hotelera en Salamanca por el Puente del Pilar",
-      "categoria": "Sociedad",
-      "descripcion": "Los hoteles de Salamanca rozan el lleno durante el Puente del Pilar, impulsando el turismo local.",
-      "fuente": "https://www.lagacetadesalamanca.es/salamanca/salamanca-llena-puente-pilar-hoteles-rozando-lleno-20261010061500-nt.html",
-      "destacado": false
-    },
-    {
-      "fecha": "2026-10-10",
       "titulo": "Incertidumbre por la desaparición de Agustín en Ledrada",
       "categoria": "Sucesos",
       "descripcion": "Continúa la búsqueda de Agustín en Ledrada días después de su desaparición, sin pistas desesperadas.",
@@ -60,12 +52,20 @@
       "destacado": false
     },
     {
-      "fecha": "2026-10-11",
-      "titulo": "La gasolina rompe su racha de subidas tras el Puente del Pilar",
-      "categoria": "Economía",
-      "descripcion": "El precio de la gasolina baja tras el Puente del Pilar, rompiendo una racha de trece semanas consecutivas de subidas.",
-      "fuente": "https://www.lagacetadesalamanca.es/salamanca/gasolina-baja-puente-rompe-trece-semanas-subidas-20261011070000-nt.html",
+      "fecha": "2026-10-12",
+      "titulo": "Salamanca celebra el primer desfile de la Guardia Civil",
+      "categoria": "Sociedad",
+      "descripcion": "Salamanca capital acogió el primer desfile de la Guardia Civil en la ciudad, en el marco de las celebraciones del día del Pilar.",
+      "fuente": "https://www.lagacetadesalamanca.es/salamanca/salamanca-celebra-primer-desfile-guardia-civil-honor-20261012144635-ga.html",
       "destacado": false
+    },
+    {
+      "fecha": "2026-10-13",
+      "titulo": "El Papa es operado con éxito de cáncer de pulmón",
+      "categoria": "Sociedad",
+      "descripcion": "El Papa fue operado con éxito de cáncer de pulmón, una noticia de repercusión internacional.",
+      "fuente": "https://www.lagacetadesalamanca.es/internacional/papa-operado-exito-cancer-pulmon-20261013222429-nt.html",
+      "destacado": true
     }
   ]
 }
