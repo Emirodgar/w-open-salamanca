@@ -1,7 +1,7 @@
 {
-  "generado_en": "2026-10-14T19:24:31.857Z",
+  "generado_en": "2026-10-14T23:15:05.728Z",
   "dias_ventana": 20,
-  "total": 3775,
+  "total": 3795,
   "medios": [
     "Tribuna Salamanca",
     "Salamanca24Horas",
@@ -9,6 +9,153 @@
     "Salamancahoy"
   ],
   "noticias": [
+    {
+      "url": "https://www.tribunasalamanca.com/noticias/462691/un-incendio-obliga-a-evacuar-una-fabrica-de-embutidos-en-la-comarca-de-guijuelo",
+      "titulo": "Un incendio obliga a evacuar una fábrica de embutidos en la comarca de Guijuelo",
+      "medio": "Tribuna Salamanca",
+      "fecha": "2026-10-14",
+      "fecha_hora": "2026-10-14T22:36:44.000Z"
+    },
+    {
+      "url": "https://www.tribunasalamanca.com/noticias/462688/el-salamanca-uds-se-queda-sin-final-tras-caer-ante-un-sestao-river-que-aprovecho-su-superioridad",
+      "titulo": "El Salamanca UDS se queda sin final tras caer ante un Sestao River que aprovechó su superioridad",
+      "medio": "Tribuna Salamanca",
+      "fecha": "2026-10-14",
+      "fecha_hora": "2026-10-14T22:06:47.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/deportes/baloncesto-local/meins-avenida/raquel-romo-viene-bien-partido-nivel-eurocup-20261014230409-nt.html",
+      "titulo": "Raquel Romo: «Nos viene muy bien este partido. Es el nivel de Eurocup, el nivel de dureza que sabemos que nos vamos a encontrar»",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-14",
+      "fecha_hora": "2026-10-14T22:00:43.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/deportes/futbol-local/salamancauds/claves-derrota-salamanca-sestao-20261014235715-nt.html",
+      "titulo": "Las claves de la derrota del Salamanca UDS en Sestao",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-14",
+      "fecha_hora": "2026-10-14T21:57:15.000Z"
+    },
+    {
+      "url": "https://www.tribunasalamanca.com/noticias/462686/claudia-soriano-tras-el-debut-europeo-de-meins-avenida-hemos-demostrado-que-a-esto-tambien-podemos-ganar",
+      "titulo": "Claudia Soriano, tras el debut europeo de Meins Avenida: \"Hemos demostrado que a esto también podemos ganar\"",
+      "medio": "Tribuna Salamanca",
+      "fecha": "2026-10-14",
+      "fecha_hora": "2026-10-14T21:32:07.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/deportes/futbol-local/salamancauds/muniain-capaces-estar-vivos-partido-20261014222121-nt.html",
+      "titulo": "Muniain: «Con uno menos, hemos sido capaces de estar vivos todo el partido»",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-14",
+      "fecha_hora": "2026-10-14T21:22:00.000Z"
+    },
+    {
+      "url": "https://www.tribunasalamanca.com/noticias/462684/el-real-madrid-firma-una-remontada-epica-ante-la-roma-con-tres-goles-en-los-ultimos-siete-minutos",
+      "titulo": "El Real Madrid firma una remontada épica ante la Roma con tres goles en los últimos siete minutos",
+      "medio": "Tribuna Salamanca",
+      "fecha": "2026-10-14",
+      "fecha_hora": "2026-10-14T21:20:00.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/provincia/historia-futuro-alba-ejes-pregon-duque-huescar-20261014222450-nt.html",
+      "titulo": "La historia y el futuro de Alba, ejes del pregón del duque de Huéscar",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-14",
+      "fecha_hora": "2026-10-14T21:11:11.000Z"
+    },
+    {
+      "url": "https://www.salamancahoy.es/deportes/salamanca-cf-uds/ruzomberok-reparte-diestro-siniestro-avenida-responde-trabajada-20261014222122-nt.html",
+      "titulo": "El Ruzomberok reparte a diestro y siniestro y Meins Avenida responde con una trabajada victoria para empezar la Eurocup",
+      "medio": "Salamancahoy",
+      "fecha": "2026-10-14",
+      "fecha_hora": "2026-10-14T21:02:41.000Z"
+    },
+    {
+      "url": "https://www.salamancahoy.es/deportes/baloncesto/meins-avenida/romo-tras-ganar-eurocup-trabajaremos-usar-plan-20261014230152-nt.html",
+      "titulo": "Romo, tras ganar en Eurocup: «Trabajaremos para usar el plan B cuando los partidos sean de esta dureza»",
+      "medio": "Salamancahoy",
+      "fecha": "2026-10-14",
+      "fecha_hora": "2026-10-14T21:01:53.000Z"
+    },
+    {
+      "url": "https://www.tribunasalamanca.com/noticias/462682/romo-destaca-la-fortaleza-mental-de-avenida-hemos-sabido-convertir-la-emocion-en-algo-positivo",
+      "titulo": "Romo destaca la fortaleza mental de Avenida: \"Hemos sabido convertir la emoción en algo positivo\"",
+      "medio": "Tribuna Salamanca",
+      "fecha": "2026-10-14",
+      "fecha_hora": "2026-10-14T20:58:13.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/deportes/baloncesto-local/meins-avenida/claves-importante-victoria-meins-avenida-ruzomberok-20261014225451-nt.html",
+      "titulo": "Las claves de la importante victoria de Meins Avenida contra el Ruzomberok",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-14",
+      "fecha_hora": "2026-10-14T20:54:52.000Z"
+    },
+    {
+      "url": "https://www.salamancahoy.es/deportes/baloncesto/meins-avenida/meins-avenida-mbk-ruzomberok-eurocup-imagenes-20261014213540-ga.html",
+      "titulo": "El Meins Avenida - MBK Ruzomberok de la Eurocup, en imágenes",
+      "medio": "Salamancahoy",
+      "fecha": "2026-10-14",
+      "fecha_hora": "2026-10-14T20:47:49.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/deportes/baloncesto-local/meins-avenida/meins-avenida-acaba-resistencia-eslovaca-suma-primera-20261014223511-nt.html",
+      "titulo": "Meins Avenida acaba con la resistencia eslovaca y suma su primera victoria en Europa: 75-64",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-14",
+      "fecha_hora": "2026-10-14T20:38:56.000Z"
+    },
+    {
+      "url": "https://www.tribunasalamanca.com/noticias/462680/meins-avenida-gana-la-partida-que-ružomberok-llevo-al-barro",
+      "titulo": "Meins Avenida gana la partida que Ružomberok llevó al barro",
+      "medio": "Tribuna Salamanca",
+      "fecha": "2026-10-14",
+      "fecha_hora": "2026-10-14T20:34:01.000Z"
+    },
+    {
+      "url": "https://www.salamanca24horas.com/provincia/carlos-fernandez-chanca-es-elegido-candidato-senado-comite-psoe",
+      "titulo": "Carlos Fernández Chanca es elegido candidato al Senado por el Comité del PSOE",
+      "medio": "Salamanca24Horas",
+      "fecha": "2026-10-14",
+      "fecha_hora": "2026-10-14T20:16:00.000Z"
+    },
+    {
+      "url": "https://www.salamancahoy.es/deportes/salamanca-cf-uds/salamanca-despide-copa-rfef-queda-primer-titulo-20261014213711-nt.html",
+      "titulo": "El Salamanca CF UDS se despide de la Copa RFEF y se queda sin el primer título de su historia",
+      "medio": "Salamancahoy",
+      "fecha": "2026-10-14",
+      "fecha_hora": "2026-10-14T20:09:44.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/salamanca/noticias-importantes-salamanca-hoy-miercoles-octubre-20261014215708-nt.html",
+      "titulo": "Las noticias más importantes en Salamanca hoy miércoles 14 de octubre",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-14",
+      "fecha_hora": "2026-10-14T19:58:02.000Z"
+    },
+    {
+      "url": "https://www.salamanca24horas.com/deportes/salamanca-cf-uds/salamanca-cf-uds-queda-puertas-final-copa-rfef-3-1",
+      "titulo": "El Salamanca CF UDS se queda a las puertas de la final de la Copa RFEF (3-1)",
+      "medio": "Salamanca24Horas",
+      "fecha": "2026-10-14",
+      "fecha_hora": "2026-10-14T19:53:00.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/deportes/futbol-local/salamancauds/adios-sueno-copa-federacion-polemica-derrota-sestao-20261014213259-nt.html",
+      "titulo": "Adiós al sueño de la Copa Federación en una polémica derrota en Sestao (3-1)",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-14",
+      "fecha_hora": "2026-10-14T19:42:09.000Z"
+    },
+    {
+      "url": "https://www.salamancahoy.es/salamanca/noticias-imprescindibles-salamanca-miercoles-octubre-20261014212434-nt.html",
+      "titulo": "Las noticias imprescindibles de Salamanca este miércoles 14 de octubre",
+      "medio": "Salamancahoy",
+      "fecha": "2026-10-14",
+      "fecha_hora": "2026-10-14T19:24:34.000Z"
+    },
     {
       "url": "https://www.lagacetadesalamanca.es/deportes/baloncesto-local/meins-avenida/meins-avenida-ruzomberok-directo-resultado-online-partido-20261014201222-di.html",
       "titulo": "Meins Avenida - Ruzomberok, en directo: resultado online del partido de Eucocup (26-26, min. 15)",
@@ -50,6 +197,13 @@
       "medio": "Salamanca24Horas",
       "fecha": "2026-10-14",
       "fecha_hora": "2026-10-14T18:36:00.000Z"
+    },
+    {
+      "url": "https://www.tribunasalamanca.com/noticias/462677/aficion-eslovaca-bandera-japonesa-y-una-camiseta-con-sorpresa-los-detalles-e-imagenes-de-la-noche-europea",
+      "titulo": "Afición eslovaca, bandera japonesa y una camiseta con sorpresa: los detalles e imágenes de la noche europea",
+      "medio": "Tribuna Salamanca",
+      "fecha": "2026-10-14",
+      "fecha_hora": "2026-10-14T18:32:47.000Z"
     },
     {
       "url": "https://www.tribunasalamanca.com/noticias/462675/el-psoe-de-salamanca-ratifica-a-david-serrada-y-carlos-fernandez-chanca-como-cabezas-de-lista-el-29n",
@@ -535,6 +689,13 @@
       "fecha_hora": "2026-10-14T11:01:27.000Z"
     },
     {
+      "url": "https://www.tribunasalamanca.com/noticias/462602/la-noble-casa-de-salamanca-que-dibujo-ricardo-madrazo-el-pintor-que-ahora-redescubre-el-museo-del-prado",
+      "titulo": "La noble casa de Salamanca que dibujó Ricardo Madrazo, el pintor que ahora redescubre el Museo del Prado",
+      "medio": "Tribuna Salamanca",
+      "fecha": "2026-10-14",
+      "fecha_hora": "2026-10-14T10:57:52.000Z"
+    },
+    {
       "url": "https://www.tribunasalamanca.com/noticias/462600/salamanca-pone-el-foco-en-la-salud-mental-de-los-jovenes-mas-atencion-para-prevenir-problemas-desde-la-infancia",
       "titulo": "Salamanca pone el foco en la salud mental de los jóvenes: \"Más atención para prevenir problemas desde la infancia\"",
       "medio": "Tribuna Salamanca",
@@ -799,6 +960,13 @@
       "medio": "La Gaceta de Salamanca",
       "fecha": "2026-10-14",
       "fecha_hora": "2026-10-14T08:49:43.000Z"
+    },
+    {
+      "url": "https://www.tribunasalamanca.com/noticias/462566/estos-jovenes",
+      "titulo": "¡Estos jóvenes!",
+      "medio": "Tribuna Salamanca",
+      "fecha": "2026-10-14",
+      "fecha_hora": "2026-10-14T08:48:40.000Z"
     },
     {
       "url": "https://www.tribunasalamanca.com/noticias/462564/cambios-en-la-diputacion-de-salamanca-mingo-reorganiza-las-delegaciones-y-la-junta-de-gobierno",
@@ -25740,34 +25908,6 @@
       "medio": "La Gaceta de Salamanca",
       "fecha": "2026-09-25",
       "fecha_hora": "2026-09-25T03:00:02.000Z"
-    },
-    {
-      "url": "https://www.salamanca24horas.com/local/estas-son-fotografias-optan-ser-cartel-semana-santa-2027",
-      "titulo": "Estas son las fotografías que optan a ser cartel de la Semana Santa 2027",
-      "medio": "Salamanca24Horas",
-      "fecha": "2026-09-24",
-      "fecha_hora": "2026-09-24T20:49:51.000Z"
-    },
-    {
-      "url": "https://www.lagacetadesalamanca.es/provincia/junta-destinara-500000-euros-conservar-puente-alba-20260924221210-nt.html",
-      "titulo": "La Junta destinará más de 500.000 euros a conservar el puente medieval de Alba de Tormes",
-      "medio": "La Gaceta de Salamanca",
-      "fecha": "2026-09-24",
-      "fecha_hora": "2026-09-24T20:13:01.000Z"
-    },
-    {
-      "url": "https://www.tribunasalamanca.com/noticias/460039/salamanca-alza-la-voz-contra-el-precio-de-la-vivienda-con-una-concentracion-en-la-calle",
-      "titulo": "Salamanca alza la voz contra el precio de la vivienda con una concentración en la calle",
-      "medio": "Tribuna Salamanca",
-      "fecha": "2026-09-24",
-      "fecha_hora": "2026-09-24T19:30:04.000Z"
-    },
-    {
-      "url": "https://www.salamancahoy.es/salamanca/noticias-imprescindibles-salamanca-jueves-septiembre-20260924212708-nt.html",
-      "titulo": "Las noticias imprescindibles de Salamanca este jueves 24 de septiembre",
-      "medio": "Salamancahoy",
-      "fecha": "2026-09-24",
-      "fecha_hora": "2026-09-24T19:27:34.000Z"
     },
     {
       "url": "https://www.salamancahoy.es/salamanca/ciudad/protestas-desahucio-maricarmen-salamanca-vuelven-gobierno-pedro-20260924200522-nt.html",
