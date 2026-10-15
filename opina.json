@@ -302,6 +302,30 @@
       ],
       "basado_en": "eventos.json",
       "fecha_creacion": "2026-10-14"
+    },
+    {
+      "id": "inflacion-cesta-compra-2026",
+      "pregunta": "Ante la subida de precios a niveles no vistos en tres años, ¿cómo cree que afecta la inflación a la cesta de la compra y a la economía familiar en Salamanca?",
+      "opciones": [
+        "De forma muy significativa",
+        "De forma moderada",
+        "Apenas lo noto",
+        "No tengo suficiente información"
+      ],
+      "basado_en": "actualidad.json",
+      "fecha_creacion": "2026-10-15"
+    },
+    {
+      "id": "huelga-carnico-guijuelo-2026",
+      "pregunta": "Ante la convocatoria de movilizaciones y huelga en el sector cárnico de Guijuelo por la falta de acuerdo en el convenio, ¿cree que estas acciones son necesarias para defender los derechos de los trabajadores?",
+      "opciones": [
+        "Sí, es la única vía para lograr mejoras laborales",
+        "No, perjudican la imagen y la economía del sector",
+        "Deberían buscarse otras vías de negociación antes de la huelga",
+        "No tengo suficiente información"
+      ],
+      "basado_en": "eventos.json",
+      "fecha_creacion": "2026-10-15"
     }
   ]
 }

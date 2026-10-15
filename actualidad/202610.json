@@ -1,7 +1,7 @@
 {
   "mes": "2026-10",
   "titulo_mes": "Octubre 2026",
-  "resumen_mes": "Octubre arranca con la convocatoria de elecciones generales y la continuidad de la búsqueda de un hombre desaparecido en Ledrada. El deporte local vive un importante test del Meins Avenida y el Salamanca UDS se posiciona como líder. David Mingo es elegido presidente de la Diputación, y la operación del Papa por cáncer de pulmón marca la agenda internacional.",
+  "resumen_mes": "Octubre arranca con la convocatoria de elecciones generales y la continuidad de la búsqueda de un hombre desaparecido en Ledrada. El deporte local vive un importante test del Meins Avenida y el Salamanca UDS se posiciona como líder. David Mingo es elegido presidente de la Diputación, y la operación del Papa por cáncer de pulmón marca la agenda internacional. La inflación y la llegada de nuevas empresas también son noticia.",
   "hitos": [
     {
       "fecha": "2026-10-05",
@@ -9,14 +9,6 @@
       "categoria": "Política",
       "descripcion": "El presidente Manueco ha celebrado la convocatoria de elecciones generales, marcando el final del gobierno.",
       "fuente": "https://www.lagacetadesalamanca.es/salamanca/manueco-celebra-convocatoria-elecciones-generales-final-gobierno-20261005152925-nt.html",
-      "destacado": false
-    },
-    {
-      "fecha": "2026-10-09",
-      "titulo": "Fallecido y varios heridos en accidente de tráfico",
-      "categoria": "Sucesos",
-      "descripcion": "Un accidente grave que involucró a cuatro vehículos resultó en un fallecido y varios heridos.",
-      "fuente": "https://www.lagacetadesalamanca.es/sucesos/muerto-varios-heridos-grave-accidente-cuatro-vehiculos-20261009125952-nt.html",
       "destacado": false
     },
     {
@@ -36,22 +28,6 @@
       "destacado": false
     },
     {
-      "fecha": "2026-10-10",
-      "titulo": "Incertidumbre por la desaparición de Agustín en Ledrada",
-      "categoria": "Sucesos",
-      "descripcion": "Continúa la búsqueda de Agustín en Ledrada días después de su desaparición, sin pistas desesperadas.",
-      "fuente": "https://www.lagacetadesalamanca.es/sucesos/incertidumbre-residencia-agustin-desaparecido-ledrada-pistas-desesperados-20261010071000-nt.html",
-      "destacado": false
-    },
-    {
-      "fecha": "2026-10-11",
-      "titulo": "El Meins Avenida golea en casa al Gernika",
-      "categoria": "Deportes",
-      "descripcion": "El Meins Avenida ofreció una exhibición soberbia en Würzburg, goleando sin piedad al Gernika.",
-      "fuente": "https://www.lagacetadesalamanca.es/deportes/baloncesto-local/meins-avenida/fieston-wurzburg-soberbio-meins-avenida-piedad-gernika-20261011134716-nt.html",
-      "destacado": false
-    },
-    {
       "fecha": "2026-10-12",
       "titulo": "Salamanca celebra el primer desfile de la Guardia Civil",
       "categoria": "Sociedad",
@@ -66,6 +42,30 @@
       "descripcion": "El Papa fue operado con éxito de cáncer de pulmón, una noticia de repercusión internacional.",
       "fuente": "https://www.lagacetadesalamanca.es/internacional/papa-operado-exito-cancer-pulmon-20261013222429-nt.html",
       "destacado": true
+    },
+    {
+      "fecha": "2026-10-14",
+      "titulo": "La Guardia Civil refuerza la búsqueda de Agustín en Ledrada",
+      "categoria": "Sucesos",
+      "descripcion": "La Guardia Civil ha reforzado la búsqueda de Agustín en Ledrada, días después de su desaparición, ante la angustia de sus familiares.",
+      "fuente": "https://www.lagacetadesalamanca.es/sucesos/guardia-civil-refuerza-busqueda-agustin-ledrada-guias-20261014150826-nt.html",
+      "destacado": false
+    },
+    {
+      "fecha": "2026-10-14",
+      "titulo": "El Meins Avenida logra una victoria clave en Eurocup",
+      "categoria": "Deportes",
+      "descripcion": "El Meins Avenida acabó con la resistencia eslovaca del Ruzomberok, sumando su primera victoria en la Eurocup.",
+      "fuente": "https://www.lagacetadesalamanca.es/deportes/baloncesto-local/meins-avenida/meins-avenida-acaba-resistencia-eslovaca-suma-primera-20261014223511-nt.html",
+      "destacado": false
+    },
+    {
+      "fecha": "2026-10-14",
+      "titulo": "La inflación dispara la subida de precios en Salamanca",
+      "categoria": "Economía",
+      "descripcion": "La inflación ha disparado la mayor subida de precios en tres años, reflejándose en la vida diaria de los salmantinos y en la cesta de la compra.",
+      "fuente": "https://www.lagacetadesalamanca.es/salamanca/inflacion-dispara-mayor-subida-precios-tres-anos-20261014095400-nt.html",
+      "destacado": false
     }
   ]
 }
