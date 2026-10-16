@@ -326,6 +326,31 @@
       ],
       "basado_en": "eventos.json",
       "fecha_creacion": "2026-10-15"
+    },
+    {
+      "id": "primark-el-tormes-2026",
+      "pregunta": "Ante el anuncio de la próxima llegada de Primark al Centro Comercial El Tormes, ¿cree que esta apertura beneficiará al comercio local de Salamanca?",
+      "opciones": [
+        "Sí, atraerá más clientes a la zona",
+        "No, perjudicará al pequeño comercio",
+        "Es indiferente, el impacto será limitado",
+        "No tengo suficiente información"
+      ],
+      "basado_en": "actualidad.json",
+      "fecha_creacion": "2026-10-16"
+    },
+    {
+      "id": "acoso-escolar-salamanca-2026",
+      "pregunta": "Ante el preocupante aumento de casos de acoso escolar en Salamanca, ¿qué medidas considera más urgentes para abordar esta situación en los centros educativos?",
+      "opciones": [
+        "Reforzar los programas de prevención y concienciación",
+        "Aumentar el personal especializado (psicólogos, mediadores)",
+        "Endurecer las sanciones a los acosadores",
+        "Mayor implicación de las familias",
+        "No tengo suficiente información"
+      ],
+      "basado_en": "actualidad.json",
+      "fecha_creacion": "2026-10-16"
     }
   ]
 }

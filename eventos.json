@@ -1,15 +1,6 @@
 {
-  "generado_en": "2026-10-15T05:45:22+00:00",
+  "generado_en": "2026-10-16T05:45:23+00:00",
   "eventos": [
-    {
-      "titulo": "Novenario y fiesta de Santa Teresa en Peñaranda de Bracamonte",
-      "categoria": "Cultura",
-      "fecha_inicio": "2026-10-06",
-      "fecha_fin": "2026-10-15",
-      "lugar": "Convento de las Madres Carmelitas, Peñaranda de Bracamonte",
-      "descripcion": "Peñaranda de Bracamonte acogerá el novenario y fiesta de Santa Teresa de Jesús en el Convento de las Madres Carmelitas. Los cultos, rezos y eucaristías se celebrarán durante diez días.",
-      "fuente": "https://www.lagacetadesalamanca.es/provincia/penaranda-bracamonte-celebrara-novenario-fiesta-santa-teresa-20261006153226-nt.html"
-    },
     {
       "titulo": "Recogida de materiales para la ambientación de Halloween en Castellanos de Moriscos",
       "categoria": "Sociedad",
@@ -74,6 +65,15 @@
       "fuente": "https://www.lagacetadesalamanca.es/deportes/futbol-local/salamancauds/exterior-helmantico-prepara-popular-festival-universitario-sabado-20261012142450-nt.html"
     },
     {
+      "titulo": "Partido de Primera Federación: Racing de Ferrol vs Unionistas",
+      "categoria": "Deportes",
+      "fecha_inicio": "2026-10-17",
+      "fecha_fin": null,
+      "lugar": "Estadio de A Malata, Ferrol",
+      "descripcion": "Unionistas se enfrentará al Racing de Ferrol en el Estadio de A Malata el sábado 17 de octubre a las 13:00 horas, en un encuentro de Primera Federación.",
+      "fuente": "https://www.lagacetadesalamanca.es/deportes/futbol-local/unionistas/racing-ferrolunionistas-horario-ver-directo-partido-primera-20261014133427-nt.html"
+    },
+    {
       "titulo": "Clase magistral de la Escuela Taurina",
       "categoria": "Cultura",
       "fecha_inicio": "2026-10-18",
@@ -101,6 +101,15 @@
       "fuente": "https://www.lagacetadesalamanca.es/provincia/ciudad-rodrigo-sacara-huchas-domund-fin-semana-20261014104942-nt.html"
     },
     {
+      "titulo": "Partido de Segunda Federación: Salamanca UDS vs Navalcarnero",
+      "categoria": "Deportes",
+      "fecha_inicio": "2026-10-18",
+      "fecha_fin": null,
+      "lugar": "Helmántico, Salamanca",
+      "descripcion": "El Salamanca UDS se enfrentará al Navalcarnero en el Helmántico el domingo 18 de octubre a las 17:00 horas, en un partido de la séptima jornada de Segunda Federación.",
+      "fuente": "https://www.lagacetadesalamanca.es/deportes/futbol-local/salamancauds/salamanca-udsnavalcarnero-horario-seguir-directo-partido-segunda-20261014131029-nt.html"
+    },
+    {
       "titulo": "III Congreso Gastronómico de LA GACETA",
       "categoria": "Cultura",
       "fecha_inicio": "2026-10-19",
@@ -108,15 +117,6 @@
       "lugar": "Hotel Abba Fonseca, Salamanca",
       "descripcion": "El III Congreso Gastronómico de LA GACETA se celebrará en el Hotel Abba Fonseca, explorando la riqueza culinaria de Castilla y León. Habrá charlas, degustaciones y catas, con inscripción solidaria a favor del Banco de Alimentos.",
       "fuente": "https://www.lagacetadesalamanca.es/salamanca/gastronomia-castilla-leon-cita-salamanca-inscribete-iii-20261008132812-nt.html"
-    },
-    {
-      "titulo": "Taller infantil 'Telarañas de lana' en Carbajosa",
-      "categoria": "Cultura",
-      "fecha_inicio": "2026-10-19",
-      "fecha_fin": "2026-10-21",
-      "lugar": "Carbajosa de la Sagrada",
-      "descripcion": "Actividad de manualidades temáticas de Halloween en Carbajosa de la Sagrada, fomentando la creatividad y participación infantil.",
-      "fuente": "https://www.lagacetadesalamanca.es/provincia/talleres-infantiles-halloween-carbajosa-20261013200758-nt.html"
     },
     {
       "titulo": "Bebecuentos y Cuentacuentos 'Hojas' y 'El ladrón de calabazas'",
@@ -154,6 +154,15 @@
       "fuente": "https://www.lagacetadesalamanca.es/deportes/futbol-local/guijuelo-fija-precios-encuentro-ante-sporting-gijon-20261013134216-nt.html"
     },
     {
+      "titulo": "Taller infantil 'Monstruos y calabazas' en Carbajosa",
+      "categoria": "Cultura",
+      "fecha_inicio": "2026-10-26",
+      "fecha_fin": "2026-10-28",
+      "lugar": "Carbajosa de la Sagrada",
+      "descripcion": "Taller de manualidades temáticas de Halloween en Carbajosa de la Sagrada, continuando la programación de actividades infantiles.",
+      "fuente": "https://www.lagacetadesalamanca.es/provincia/talleres-infantiles-halloween-carbajosa-20261013200758-nt.html"
+    },
+    {
       "titulo": "Jornada 'Mujeres que innovan' en Salamanca",
       "categoria": "Sociedad",
       "fecha_inicio": "2026-10-26",
@@ -187,16 +196,25 @@
       "fecha_fin": null,
       "lugar": "Madrid",
       "descripcion": "Asaja, COAG y Unión de Uniones de Agricultores y Ganaderos convocan una movilización para reclamar soluciones a los problemas del sector agrario. La protesta finalizará frente al Ministerio de Agricultura.",
-      "fuente": "https://www.lagacetadesalamanca.es/campo/campo-espanol-convoca-gran-tractorada-madrid-octubre-20261009150643-nt.html"
+      "fuente": "https://www.lagacetadesalamanca.es/campo/organizaciones-agrarias-salmantinas-llaman-asistir-tractorada-octubre-20261015070000-nt.html"
     },
     {
       "titulo": "Partido de Copa del Rey: Salamanca UDS vs Celta de Vigo",
       "categoria": "Deportes",
       "fecha_inicio": "2026-10-28",
       "fecha_fin": null,
-      "lugar": "Estadio Helm\n\nantico, Salamanca",
-      "descripcion": "El Salamanca UDS se enfrentar\n\n al Celta de Vigo en el Estadio Helm\n\nantico el mi\n\nercoles 28 de octubre a las 21:00 horas, en la primera ronda de la Copa del Rey.",
-      "fuente": "https://www.lagacetadesalamanca.es/deportes/futbol-local/salamancauds/salamanca-celta-consulta-precios-oficiales-copa-rey-20261012182154-nt.html"
+      "lugar": "Estadio Helmántico, Salamanca",
+      "descripcion": "El Salamanca UDS se enfrentará al Celta de Vigo en el Estadio Helmántico el miércoles 28 de octubre a las 21:00 horas, en la primera ronda de la Copa del Rey.",
+      "fuente": "https://www.lagacetadesalamanca.es/deportes/futbol-local/salamancauds/venta-entradas-salamanca-udscelta-copa-rey-helmantico-20261015211118-nt.html"
+    },
+    {
+      "titulo": "Partido de Copa del Rey: Real Ávila vs Unionistas",
+      "categoria": "Deportes",
+      "fecha_inicio": "2026-10-29",
+      "fecha_fin": null,
+      "lugar": "Estadio Adolfo Suárez, Ávila",
+      "descripcion": "Unionistas se enfrentará al Real Ávila en la primera ronda de la Copa del Rey el 29 de octubre a las 20:00 horas.",
+      "fuente": "https://www.lagacetadesalamanca.es/deportes/futbol-local/unionistas/entradas-euros-aficion-unionistas-partido-copa-rey-20261015190604-nt.html"
     },
     {
       "titulo": "Actividad especial de Halloween en Guijuelo",
@@ -277,6 +295,15 @@
       "lugar": "Universidad de Salamanca",
       "descripcion": "La Universidad de Salamanca investirá al secretario general de la ONU, António Guterres, como doctor honoris causa.",
       "fuente": "https://www.lagacetadesalamanca.es/salamanca/universidad-salamanca-investira-antonio-guterres-doctor-honoris-20260923140244-nt.html"
+    },
+    {
+      "titulo": "Partido de Primera Federación: Unionistas vs Zamora",
+      "categoria": "Deportes",
+      "fecha_inicio": "2026-11-07",
+      "fecha_fin": null,
+      "lugar": "Reina Sofía, Salamanca",
+      "descripcion": "Unionistas se enfrentará al Zamora en el Reina Sofía el sábado 7 de noviembre a las 18:45 horas, en un derbi castellano y leonés de la jornada 11 de Primera Federación.",
+      "fuente": "https://www.lagacetadesalamanca.es/deportes/futbol-local/unionistas/unionistaszamora-reina-sofia-fecha-hora-20261015184104-nt.html"
     },
     {
       "titulo": "Carrera contra la Violencia de Género de Salamanca",
@@ -377,6 +404,15 @@
       "fuente": "https://www.lagacetadesalamanca.es/especiales/concurso-intergeneracional/historia-merece-contada-gaceta-busca-relatos-videos-20261005104029-nt.html"
     },
     {
+      "titulo": "Concierto de Primital Brothers",
+      "categoria": "Cultura",
+      "fecha_inicio": "2026-12-18",
+      "fecha_fin": null,
+      "lugar": "Teatro Calderón, Peñaranda de Bracamonte",
+      "descripcion": "La propuesta musical de Primital Brothers pondrá el broche final a la programación teatral para adultos de Peñaranda de Bracamonte. La actuación será a las 20:30 horas.",
+      "fuente": "https://www.lagacetadesalamanca.es/provincia/penaranda-acerca-programacion-teatro-abonos-euros-20261015181205-nt.html"
+    },
+    {
       "titulo": "Recital de villancicos «El espíritu de la Navidad» en Béjar",
       "categoria": "Cultura",
       "fecha_inicio": "2026-12-26",
@@ -395,12 +431,12 @@
       "fuente": "https://www.lagacetadesalamanca.es/deportes/carreras-populares/paradinas-fecha-carrera-roscon-20260922084240-nt.html"
     },
     {
-      "titulo": "XXXIV Liga de Cross de Cabrerizos - Cuarta prueba",
+      "titulo": "XXXIV Liga de Cross de Cabrerizos - Quinta prueba",
       "categoria": "Deportes",
-      "fecha_inicio": "2027-01-24",
+      "fecha_inicio": "2027-02-07",
       "fecha_fin": null,
       "lugar": "Cabrerizos",
-      "descripcion": "Cuarta de las cinco carreras que componen la trigésimo cuarta edición de la Liga de Cross de Cabrerizos.",
+      "descripcion": "La quinta y última carrera de la trigésimo cuarta edición de la Liga de Cross de Cabrerizos se ha previsto para el 7 de febrero, estrenando un nuevo recorrido.",
       "fuente": "https://www.lagacetadesalamanca.es/deportes/carreras-populares/xxxiv-liga-cross-cabrerizos-arrancara-noviembre-20261013195148-nt.html"
     }
   ]

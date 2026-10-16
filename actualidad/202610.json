@@ -1,7 +1,7 @@
 {
   "mes": "2026-10",
   "titulo_mes": "Octubre 2026",
-  "resumen_mes": "Octubre arranca con la convocatoria de elecciones generales y la continuidad de la búsqueda de un hombre desaparecido en Ledrada. El deporte local vive un importante test del Meins Avenida y el Salamanca UDS se posiciona como líder. David Mingo es elegido presidente de la Diputación, y la operación del Papa por cáncer de pulmón marca la agenda internacional. La inflación y la llegada de nuevas empresas también son noticia.",
+  "resumen_mes": "Octubre arranca con importantes decisiones políticas a nivel regional y provincial, como la presentación de los presupuestos y la elección del presidente de la Diputación. El deporte local vive momentos clave con victorias europeas y la expectación de la Copa del Rey, mientras que sucesos como la búsqueda de un desaparecido y redadas policiales marcan la crónica. La llegada de nuevas empresas y el aumento del acoso escolar también son noticias destacadas.",
   "hitos": [
     {
       "fecha": "2026-10-05",
@@ -28,20 +28,20 @@
       "destacado": false
     },
     {
-      "fecha": "2026-10-12",
-      "titulo": "Salamanca celebra el primer desfile de la Guardia Civil",
-      "categoria": "Sociedad",
-      "descripcion": "Salamanca capital acogió el primer desfile de la Guardia Civil en la ciudad, en el marco de las celebraciones del día del Pilar.",
-      "fuente": "https://www.lagacetadesalamanca.es/salamanca/salamanca-celebra-primer-desfile-guardia-civil-honor-20261012144635-ga.html",
-      "destacado": false
-    },
-    {
       "fecha": "2026-10-13",
       "titulo": "El Papa es operado con éxito de cáncer de pulmón",
       "categoria": "Sociedad",
       "descripcion": "El Papa fue operado con éxito de cáncer de pulmón, una noticia de repercusión internacional.",
       "fuente": "https://www.lagacetadesalamanca.es/internacional/papa-operado-exito-cancer-pulmon-20261013222429-nt.html",
       "destacado": true
+    },
+    {
+      "fecha": "2026-10-13",
+      "titulo": "Manueco presenta el presupuesto de Castilla y León",
+      "categoria": "Política",
+      "descripcion": "Manueco presenta el presupuesto de Castilla y León, que incluye un alto nivel de impuestos.",
+      "fuente": "https://www.lagacetadesalamanca.es/salamanca/manueco-presenta-presupuesto-castilla-leon-alto-impuestos-20261013131031-nt.html",
+      "destacado": false
     },
     {
       "fecha": "2026-10-14",
@@ -61,26 +61,10 @@
     },
     {
       "fecha": "2026-10-14",
-      "titulo": "La inflación dispara la subida de precios en Salamanca",
+      "titulo": "Primark desembarcará en el Centro Comercial El Tormes",
       "categoria": "Economía",
-      "descripcion": "La inflación ha disparado la mayor subida de precios en tres años, reflejándose en la vida diaria de los salmantinos y en la cesta de la compra.",
-      "fuente": "https://www.lagacetadesalamanca.es/salamanca/inflacion-dispara-mayor-subida-precios-tres-anos-20261014095400-nt.html",
-      "destacado": false
-    },
-    {
-      "fecha": "2026-10-08",
-      "titulo": "Récord histórico del bus urbano: 64.490 viajeros en un día",
-      "categoria": "Movilidad",
-      "descripcion": "El autobús urbano de Salamanca superó su máximo anterior (64.031 viajeros, 30 de abril) y acumula 12,3 millones de viajeros de enero a septiembre de 2026.",
-      "fuente": "https://www.tribunasalamanca.com/noticias/462703/nuevo-record-de-viajeros-del-bus-urbano-de-salamanca-64-490-usuarios-en-un-solo-dia",
-      "destacado": false
-    },
-    {
-      "fecha": "2026-10-15",
-      "titulo": "Vox denuncia una subida del 5,5% en la tasa de basuras para el 92% de las viviendas",
-      "categoria": "Política",
-      "descripcion": "El concejal Ignacio Rivas sostiene que la tasa de basuras sube a 66.195 de las 71.510 viviendas y que el Ayuntamiento quiere recaudar 21,7 millones en 2027, pese a anunciar la congelación de los principales impuestos.",
-      "fuente": "sin fuente directa",
+      "descripcion": "La cadena Primark desembarcará en el Centro Comercial El Tormes de Salamanca de cara a la Navidad.",
+      "fuente": "https://www.lagacetadesalamanca.es/salamanca/primark-desembarcara-centro-comercial-tormes-navidad-20261014171515-nt.html",
       "destacado": false
     }
   ]

@@ -1,11 +1,11 @@
 {
   "url_base": "https://www.lagacetadesalamanca.es",
-  "generado_en": "2026-10-15T05:45:22+00:00",
+  "generado_en": "2026-10-16T05:45:23+00:00",
   "periodo_cubierto": {
-    "desde": "2026-10-12",
-    "hasta": "2026-10-15"
+    "desde": "2026-10-13",
+    "hasta": "2026-10-16"
   },
-  "total_urls_analizadas": 172,
+  "total_urls_analizadas": 193,
   "secciones_excluidas": [
     "gente-estilo",
     "nacional",
@@ -16,16 +16,16 @@
   "nota_cobertura": "El análisis cubre únicamente las URLs presentes en el sitemap en el momento de la consulta (excluyendo, si se indicó, las secciones filtradas). Si el sitemap es incremental o 'rolling', el periodo real puede ser más corto que el solicitado — revisa 'periodo_cubierto' para confirmarlo.",
   "por_seccion": [
     [
-      "provincia",
-      48
+      "salamanca",
+      61
     ],
     [
-      "salamanca",
-      47
+      "provincia",
+      55
     ],
     [
       "deportes",
-      38
+      37
     ],
     [
       "sucesos",
@@ -36,12 +36,12 @@
       7
     ],
     [
-      "encuestas",
+      "toros",
       3
     ],
     [
-      "toros",
-      2
+      "encuestas",
+      3
     ],
     [
       "internacional",
@@ -59,11 +59,11 @@
     ],
     [
       "deportes/baloncesto-local",
-      8
+      10
     ],
     [
       "deportes/deporte-base",
-      6
+      4
     ],
     [
       "deportes/carreras-populares",
@@ -73,7 +73,7 @@
   "por_tipo_contenido": [
     [
       "noticia",
-      150
+      171
     ],
     [
       "galería",
@@ -86,54 +86,54 @@
   ],
   "heatmap_calendario": [
     {
-      "fecha": "2026-10-12",
-      "total": 29,
-      "provincia": 12,
-      "salamanca": 3,
-      "deportes": 5,
-      "sucesos": 7,
-      "campo": 1,
-      "encuestas": 1,
-      "toros": 0,
-      "internacional": 0,
-      "television": 0
-    },
-    {
       "fecha": "2026-10-13",
-      "total": 75,
+      "total": 64,
+      "salamanca": 16,
       "provincia": 20,
-      "salamanca": 23,
-      "deportes": 16,
-      "sucesos": 8,
-      "campo": 6,
-      "encuestas": 1,
+      "deportes": 15,
+      "sucesos": 7,
+      "campo": 4,
       "toros": 0,
+      "encuestas": 1,
       "internacional": 0,
       "television": 1
     },
     {
       "fecha": "2026-10-14",
       "total": 60,
-      "provincia": 16,
       "salamanca": 15,
+      "provincia": 16,
       "deportes": 16,
       "sucesos": 10,
       "campo": 0,
-      "encuestas": 1,
       "toros": 1,
+      "encuestas": 1,
       "internacional": 1,
       "television": 0
     },
     {
       "fecha": "2026-10-15",
-      "total": 8,
-      "provincia": 0,
-      "salamanca": 6,
-      "deportes": 1,
-      "sucesos": 0,
-      "campo": 0,
-      "encuestas": 0,
+      "total": 60,
+      "salamanca": 23,
+      "provincia": 19,
+      "deportes": 6,
+      "sucesos": 8,
+      "campo": 2,
       "toros": 1,
+      "encuestas": 1,
+      "internacional": 0,
+      "television": 0
+    },
+    {
+      "fecha": "2026-10-16",
+      "total": 9,
+      "salamanca": 7,
+      "provincia": 0,
+      "deportes": 0,
+      "sucesos": 0,
+      "campo": 1,
+      "toros": 1,
+      "encuestas": 0,
       "internacional": 0,
       "television": 0
     }
@@ -141,35 +141,47 @@
   "conceptos_destacados": [
     {
       "concepto": "Ciudad Rodrigo",
-      "piezas": 8,
+      "piezas": 9,
       "seccion_principal": "provincia",
-      "desde": "2026-10-12",
-      "hasta": "2026-10-14",
+      "desde": "2026-10-13",
+      "hasta": "2026-10-15",
       "ejemplos_redactados": [
-        "Ciudad Rodrigo ampliará el horario de su cementerio municipal.",
-        "La localidad mirobrigense iniciará la musealización de los toriles para su posterior apertura."
-      ]
-    },
-    {
-      "concepto": "Guardia Civil",
-      "piezas": 8,
-      "seccion_principal": "provincia",
-      "desde": "2026-10-12",
-      "hasta": "2026-10-14",
-      "ejemplos_redactados": [
-        "La Guardia Civil refuerza la búsqueda de Agustín en Ledrada.",
-        "Linares de Riofrío se une a la fiesta de la Guardia Civil por el día del Pilar."
+        "Ciudad Rodrigo acoge una escuela de cine y un programa de formación y empleo.",
+        "Las Teresianas de Ciudad Rodrigo celebran la festividad de Santa Teresa de Jesús."
       ]
     },
     {
       "concepto": "Béjar",
+      "piezas": 6,
+      "seccion_principal": "provincia",
+      "desde": "2026-10-13",
+      "hasta": "2026-10-15",
+      "ejemplos_redactados": [
+        "Una impresionante tormenta sorprendió a Béjar el jueves.",
+        "El reloj silenciado de Béjar será digitalizado para cumplir la ley.",
+        "Doscientos bomberos participan en jornadas internacionales en Béjar."
+      ]
+    },
+    {
+      "concepto": "Guardia Civil",
+      "piezas": 5,
+      "seccion_principal": "sucesos",
+      "desde": "2026-10-13",
+      "hasta": "2026-10-15",
+      "ejemplos_redactados": [
+        "La búsqueda de Agustín en Ledrada continúa con el apoyo de la Guardia Civil.",
+        "Se ha registrado una redada de la Guardia Civil en Salamanca."
+      ]
+    },
+    {
+      "concepto": "Peñaranda",
       "piezas": 5,
       "seccion_principal": "provincia",
-      "desde": "2026-10-12",
-      "hasta": "2026-10-14",
+      "desde": "2026-10-13",
+      "hasta": "2026-10-15",
       "ejemplos_redactados": [
-        "Doscientos bomberos participan en las jornadas internacionales de la Semana de Béjar.",
-        "Vuelven los cortos de la Filmoteca de Castilla y León al Cervantes de Béjar."
+        "La Perla Negra desembarca en Peñaranda.",
+        "Peñaranda acerca su programación de teatro con abonos a precios reducidos."
       ]
     },
     {
@@ -179,33 +191,22 @@
       "desde": "2026-10-14",
       "hasta": "2026-10-14",
       "ejemplos_redactados": [
-        "El Meins Avenida logra una importante victoria ante el Ruzomberok en Eurocup.",
-        "El equipo salmantino superó la resistencia eslovaca sumando su primera victoria europea."
+        "El Meins Avenida acaba con la resistencia eslovaca y suma su primera victoria.",
+        "Se ha producido el estreno europeo del Meins Avenida."
       ]
     },
     {
-      "concepto": "Fútbol Base",
+      "concepto": "Guijuelo",
       "piezas": 4,
-      "seccion_principal": "deportes",
-      "desde": "2026-10-12",
-      "hasta": "2026-10-13",
-      "ejemplos_redactados": [
-        "Se destacan los mejores goles de la cuarta jornada del fútbol base salmantino.",
-        "El once ideal de cracks se conforma tras la jornada de fútbol base."
-      ]
-    },
-    {
-      "concepto": "Subida de Precios",
-      "piezas": 3,
-      "seccion_principal": "salamanca",
+      "seccion_principal": "provincia",
       "desde": "2026-10-13",
-      "hasta": "2026-10-14",
+      "hasta": "2026-10-15",
       "ejemplos_redactados": [
-        "La inflación dispara la mayor subida de precios en tres años.",
-        "Los consumidores notan en su vida diaria la subida de precios reflejada en el IPC."
+        "Guijuelo aplica una bajada del IBI para aliviar la economía familiar.",
+        "Se han fijado los precios para el encuentro del Guijuelo ante el Sporting de Gijón."
       ]
     }
   ],
-  "resumen_borrador": "Se han publicado 172 noticias entre el 2026-10-12 y el 2026-10-15. La actividad se ha concentrado sobre todo en provincia (48 piezas), salamanca (47 piezas), deportes (38 piezas).\n\nLos conceptos con más piezas relacionadas son: Ciudad · Rodrigo; Guardia · Civil; Bejar; Horario. Revisa 'evidencia' de cada concepto para redactar el resumen final.",
-  "resumen": "La provincia de Salamanca ha vivido días marcados por la actualidad deportiva y social. El Meins Avenida ha conseguido una importante victoria en la Eurocup, mientras que el Salamanca UDS fue eliminado de la Copa Federación. En el ámbito social, la Guardia Civil ha intensificado la búsqueda de Agustín en Ledrada, y la capital acogió el primer desfile de este cuerpo en la ciudad con motivo del día del Pilar.\n\nEn el plano económico, la inflación ha disparado la subida de precios a niveles no vistos en tres años, afectando la cesta de la compra. Sin embargo, también se anunciaron noticias positivas como el próximo desembarco de Primark en el Centro Comercial El Tormes y la consolidación de Salamanca como epicentro tecnológico con Startup Olé.\n\nOtros asuntos relevantes incluyen el regreso del Cristo de la Buena Muerte a los Dominicos tras su restauración y el inicio de obras de urbanismo en el Paseo de los Madroños. La Universidad de Salamanca, por su parte, aprobó un Doctorado Honoris Causa, y la sanidad local destacó por una innovadora técnica en operaciones de nódulos pulmonares."
+  "resumen_borrador": "Se han publicado 193 noticias entre el 2026-10-13 y el 2026-10-16. La actividad se ha concentrado sobre todo en salamanca (61 piezas), provincia (55 piezas), deportes (37 piezas).\n\nLos conceptos con más piezas relacionadas son: Ciudad · Rodrigo; Bejar; Guardia · Civil; Semana. Revisa 'evidencia' de cada concepto para redactar el resumen final.",
+  "resumen": "La actualidad salmantina entre el 13 y el 16 de octubre ha estado marcada por diversos acontecimientos en la capital y la provincia. En el ámbito político y económico, el presidente Manueco presentó el presupuesto de Castilla y León, mientras que en Salamanca se anunció la próxima llegada de Primark al Centro Comercial El Tormes. La Diputación de Salamanca eligió a David Mingo como su nuevo presidente.\n\nEn la provincia, Ciudad Rodrigo y Béjar fueron protagonistas con noticias sobre formación, eventos culturales y fenómenos meteorológicos. Peñaranda destacó por su programación teatral. En sucesos, la Guardia Civil continuó la búsqueda de Agustín en Ledrada y se llevó a cabo una redada en la capital. Además, se ha puesto de manifiesto el preocupante aumento de casos de acoso escolar en Salamanca y una caída temporal del sistema informático sanitario.\n\nEn el plano deportivo, el Meins Avenida logró una victoria clave en la Eurocup. La Copa del Rey generó expectación con la venta de entradas para los partidos del Salamanca UDS y Unionistas. Finalmente, se han convocado movilizaciones para el sector cárnico en noviembre y una tractorada agraria en octubre."
 }
