@@ -1,7 +1,7 @@
 {
-  "generado_en": "2026-10-17T19:24:20.192Z",
+  "generado_en": "2026-10-17T22:20:20.641Z",
   "dias_ventana": 20,
-  "total": 3833,
+  "total": 3840,
   "medios": [
     "Tribuna Salamanca",
     "Salamanca24Horas",
@@ -9,6 +9,90 @@
     "Salamancahoy"
   ],
   "noticias": [
+    {
+      "url": "https://www.salamanca24horas.com/local/ayuntamiento-salamanca-reforma-plaza-castrotorafe-casi-195-000-euros",
+      "titulo": "El Ayuntamiento de Salamanca reforma la plaza de Castrotorafe con casi 195.000 euros",
+      "medio": "Salamanca24Horas",
+      "fecha": "2026-10-17",
+      "fecha_hora": "2026-10-17T22:05:00.000Z"
+    },
+    {
+      "url": "https://www.salamanca24horas.com/provincia/alba-de-tormes/correfoc-alba-tormes-llena-fuego-villa-ducal",
+      "titulo": "El Correfoc de Alba de Tormes llena de fuego la villa ducal",
+      "medio": "Salamanca24Horas",
+      "fecha": "2026-10-17",
+      "fecha_hora": "2026-10-17T21:39:35.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/salamanca/david-mingo-politicos-debemos-tener-pies-tierra-20261017224858-nt.html",
+      "titulo": "David Mingo: «Los políticos debemos tener los pies en la tierra»",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-17",
+      "fecha_hora": "2026-10-17T20:49:20.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/salamanca/farsa-primarias-psoe-20261016060000-nt.html",
+      "titulo": "¿Son una farsa las primarias del PSOE?",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-17",
+      "fecha_hora": "2026-10-17T20:34:55.000Z"
+    },
+    {
+      "url": "https://www.salamanca24horas.com/deportes/pleno-triunfos-atletico-carbajosa",
+      "titulo": "Pleno de triunfos del Atlético Carbajosa",
+      "medio": "Salamanca24Horas",
+      "fecha": "2026-10-17",
+      "fecha_hora": "2026-10-17T20:25:05.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/salamanca/noticias-importantes-salamanca-hoy-sabado-octubre-20261017222239-nt.html",
+      "titulo": "Las noticias más importantes en Salamanca hoy sábado 17 de octubre",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-17",
+      "fecha_hora": "2026-10-17T20:23:11.000Z"
+    },
+    {
+      "url": "https://www.salamanca24horas.com/sucesos/calle-honduras-permanece-cortada-dos-horas-intervencion-bomberos-tejado-edificio",
+      "titulo": "La calle Honduras permanece cortada durante dos horas por la intervención de los bomberos en el tejado de un edificio",
+      "medio": "Salamanca24Horas",
+      "fecha": "2026-10-17",
+      "fecha_hora": "2026-10-17T20:22:17.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/encuestas/deberian-endurecer-medidas-ciudad-evitar-tantas-multas-20261017213539-nt.html",
+      "titulo": "¿Le parece bien que haya tantas calles limitadas a 30 km/h en Salamanca?",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-17",
+      "fecha_hora": "2026-10-17T20:21:07.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/deportes/futbol-local/salamancauds/salamanca-queda-premio-ante-jupiter-leones-20261017215949-nt.html",
+      "titulo": "El Salamanca UDS B se queda sin premio ante el Júpiter Leonés (0-2)",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-17",
+      "fecha_hora": "2026-10-17T19:59:50.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/deportes/baloncesto-local/meins-avenida/raquel-romo-pone-excusas-verdad-condicionantes-adaptar-20261017215428-nt.html",
+      "titulo": "Raquel Romo no pone excusas: «Es verdad que hay condicionantes, pero nos tenemos que adaptar»",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-17",
+      "fecha_hora": "2026-10-17T19:54:28.000Z"
+    },
+    {
+      "url": "https://www.tribunasalamanca.com/noticias/463016/raquel-romo-pone-el-foco-en-el-parcial-que-condeno-a-meins-avenida-en-estepona",
+      "titulo": "Raquel Romo pone el foco en el parcial que condenó a Meins Avenida en Estepona",
+      "medio": "Tribuna Salamanca",
+      "fecha": "2026-10-17",
+      "fecha_hora": "2026-10-17T19:35:26.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/deportes/baloncesto-local/meins-avenida/claves-derrota-meins-avenida-estepona-20261017212929-nt.html",
+      "titulo": "Las claves de la derrota de Meins Avenida en Estepona",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-17",
+      "fecha_hora": "2026-10-17T19:29:29.000Z"
+    },
     {
       "url": "https://www.tribunasalamanca.com/noticias/463015/el-barcelona-mantiene-su-pleno-de-victorias-en-la-cartuja-ante-un-betis-batallador",
       "titulo": "El Barcelona mantiene su pleno de victorias en La Cartuja ante un Betis batallador",
@@ -295,6 +379,13 @@
       "medio": "Tribuna Salamanca",
       "fecha": "2026-10-17",
       "fecha_hora": "2026-10-17T15:26:32.000Z"
+    },
+    {
+      "url": "https://www.tribunasalamanca.com/noticias/462992/salamanca-desafia-la-caida-del-diesel-y-dispara-el-consumo-de-gasolina-en-el-final-del-verano",
+      "titulo": "Salamanca desafía la caída del diésel y dispara el consumo de gasolina en el final del verano",
+      "medio": "Tribuna Salamanca",
+      "fecha": "2026-10-17",
+      "fecha_hora": "2026-10-17T15:18:48.000Z"
     },
     {
       "url": "https://www.salamanca24horas.com/sucesos/vehiculo-choca-quitamiedos-a-66-altura-municipio-bejar",
@@ -1263,6 +1354,13 @@
       "fecha_hora": "2026-10-16T16:18:15.000Z"
     },
     {
+      "url": "https://www.tribunasalamanca.com/noticias/462916/el-salamanca-uds-vuelve-al-helmantico-en-su-objetivo-de-asaltar-el-liderato",
+      "titulo": "El Salamanca UDS vuelve al Helmántico en su objetivo de asaltar el liderato",
+      "medio": "Tribuna Salamanca",
+      "fecha": "2026-10-16",
+      "fecha_hora": "2026-10-16T16:13:20.000Z"
+    },
+    {
       "url": "https://www.lagacetadesalamanca.es/salamanca/joya-salmantina-pasa-desaperciba-guarda-apasionante-historia-20261016172735-nt.html",
       "titulo": "La joya salmantina que pasa desapercibida, pero guarda una apasionante historia de nobles, rivalidades y el infame don Rodrigo",
       "medio": "La Gaceta de Salamanca",
@@ -1576,6 +1674,13 @@
       "medio": "La Gaceta de Salamanca",
       "fecha": "2026-10-16",
       "fecha_hora": "2026-10-16T12:00:30.000Z"
+    },
+    {
+      "url": "https://www.tribunasalamanca.com/noticias/462882/pido-perdon",
+      "titulo": "Pido perdón",
+      "medio": "Tribuna Salamanca",
+      "fecha": "2026-10-16",
+      "fecha_hora": "2026-10-16T11:57:32.000Z"
     },
     {
       "url": "https://www.tribunasalamanca.com/noticias/462880/sancionado",
@@ -25936,62 +26041,6 @@
       "medio": "Salamancahoy",
       "fecha": "2026-09-27",
       "fecha_hora": "2026-09-27T21:48:10.000Z"
-    },
-    {
-      "url": "https://www.salamanca24horas.com/local/barrio-huerta-otea-celebra-fiestas",
-      "titulo": "El barrio de Huerta Otea celebra sus fiestas",
-      "medio": "Salamanca24Horas",
-      "fecha": "2026-09-27",
-      "fecha_hora": "2026-09-27T21:05:36.000Z"
-    },
-    {
-      "url": "https://www.tribunasalamanca.com/noticias/460381/europa-recupera-la-copa-laver-sin-necesidad-de-que-alcaraz-salte-a-pista",
-      "titulo": "Europa recupera la Copa Laver sin necesidad de que Alcaraz salte a pista",
-      "medio": "Tribuna Salamanca",
-      "fecha": "2026-09-27",
-      "fecha_hora": "2026-09-27T21:04:40.000Z"
-    },
-    {
-      "url": "https://www.lagacetadesalamanca.es/deportes/futbol-local/salamancauds/muniain-sobre-insultos-aficion-alcala-enterado-dirigiendo-20260927204159-nt.html",
-      "titulo": "Muniain sobre los insultos de la afición del Alcalá: «Ni me he enterado que se estaban dirigiendo a mí»",
-      "medio": "La Gaceta de Salamanca",
-      "fecha": "2026-09-27",
-      "fecha_hora": "2026-09-27T20:35:50.000Z"
-    },
-    {
-      "url": "https://www.lagacetadesalamanca.es/deportes/zarapicos-celebra-grande-36o-aniversario-20260927222723-nt.html",
-      "titulo": "Zarapicos celebra a lo grande su 36º Aniversario",
-      "medio": "La Gaceta de Salamanca",
-      "fecha": "2026-09-27",
-      "fecha_hora": "2026-09-27T20:27:58.000Z"
-    },
-    {
-      "url": "https://www.lagacetadesalamanca.es/deportes/futbol-local/salamancauds/claves-victoria-salamanca-alcala-20260927221949-nt.html",
-      "titulo": "Las claves de la victoria del Salamanca UDS contra el Alcalá",
-      "medio": "La Gaceta de Salamanca",
-      "fecha": "2026-09-27",
-      "fecha_hora": "2026-09-27T20:19:49.000Z"
-    },
-    {
-      "url": "https://www.tribunasalamanca.com/noticias/460375/la-moda-de-castilla-y-leon-debuta-en-la-pasarela-larios-de-malaga-con-cuatro-firmas",
-      "titulo": "La moda de Castilla y León debuta en la Pasarela Larios de Málaga con cuatro firmas",
-      "medio": "Tribuna Salamanca",
-      "fecha": "2026-09-27",
-      "fecha_hora": "2026-09-27T20:02:07.000Z"
-    },
-    {
-      "url": "https://www.salamanca24horas.com/local/plaza-barcelona-vuelca-fiestas-vecinales-mano-garrido-contigo",
-      "titulo": "La Plaza de Barcelona se vuelca con las fiestas vecinales de la mano de ´Garrido Contigo'",
-      "medio": "Salamanca24Horas",
-      "fecha": "2026-09-27",
-      "fecha_hora": "2026-09-27T19:48:05.000Z"
-    },
-    {
-      "url": "https://www.lagacetadesalamanca.es/salamanca/noticias-importantes-salamanca-hoy-sabado-septiembre-20260927212605-nt.html",
-      "titulo": "Las noticias más importantes en Salamanca hoy domingo 27 de septiembre",
-      "medio": "La Gaceta de Salamanca",
-      "fecha": "2026-09-27",
-      "fecha_hora": "2026-09-27T19:32:31.000Z"
     },
     {
       "url": "https://www.salamancahoy.es/salamanca/noticias-imprescindibles-salamanca-domingo-septiembre-20260927201531-nt.html",
