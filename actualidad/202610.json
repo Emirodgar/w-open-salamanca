@@ -1,16 +1,8 @@
 {
   "mes": "2026-10",
   "titulo_mes": "Octubre 2026",
-  "resumen_mes": "Octubre arranca con importantes decisiones políticas a nivel regional y provincial, como la presentación de los presupuestos y la elección del presidente de la Diputación. El deporte local vive momentos clave con victorias europeas y la expectación de la Copa del Rey, mientras que sucesos como la búsqueda de un desaparecido y redadas policiales marcan la crónica. La llegada de nuevas empresas y el aumento del acoso escolar también son noticias destacadas.",
+  "resumen_mes": "Octubre arranca con importantes decisiones políticas a nivel regional y provincial, como la presentación de los presupuestos y la elección del presidente de la Diputación. El deporte local vive momentos clave con victorias europeas y la expectación de la Copa del Rey, mientras que sucesos como la búsqueda de un desaparecido y redadas policiales marcan la crónica. La llegada de nuevas empresas y el aumento del acoso escolar, junto a una incidencia informática en los servicios sanitarios, también son noticias destacadas.",
   "hitos": [
-    {
-      "fecha": "2026-10-05",
-      "titulo": "Manueco celebra la convocatoria de elecciones generales",
-      "categoria": "Política",
-      "descripcion": "El presidente Manueco ha celebrado la convocatoria de elecciones generales, marcando el final del gobierno.",
-      "fuente": "https://www.lagacetadesalamanca.es/salamanca/manueco-celebra-convocatoria-elecciones-generales-final-gobierno-20261005152925-nt.html",
-      "destacado": false
-    },
     {
       "fecha": "2026-10-09",
       "titulo": "David Mingo, elegido presidente de la Diputación de Salamanca",
@@ -53,18 +45,26 @@
     },
     {
       "fecha": "2026-10-14",
-      "titulo": "El Meins Avenida logra una victoria clave en Eurocup",
-      "categoria": "Deportes",
-      "descripcion": "El Meins Avenida acabó con la resistencia eslovaca del Ruzomberok, sumando su primera victoria en la Eurocup.",
-      "fuente": "https://www.lagacetadesalamanca.es/deportes/baloncesto-local/meins-avenida/meins-avenida-acaba-resistencia-eslovaca-suma-primera-20261014223511-nt.html",
-      "destacado": false
-    },
-    {
-      "fecha": "2026-10-14",
       "titulo": "Primark desembarcará en el Centro Comercial El Tormes",
       "categoria": "Economía",
       "descripcion": "La cadena Primark desembarcará en el Centro Comercial El Tormes de Salamanca de cara a la Navidad.",
       "fuente": "https://www.lagacetadesalamanca.es/salamanca/primark-desembarcara-centro-comercial-tormes-navidad-20261014171515-nt.html",
+      "destacado": false
+    },
+    {
+      "fecha": "2026-10-15",
+      "titulo": "Los casos de acoso escolar en Salamanca se duplican",
+      "categoria": "Educación",
+      "descripcion": "Los casos de acoso escolar en Salamanca se han duplicado en los últimos dos cursos, según datos recientes.",
+      "fuente": "https://www.lagacetadesalamanca.es/salamanca/casos-acoso-escolar-salamanca-duplican-dos-cursos-20261015203338-nt.html",
+      "destacado": false
+    },
+    {
+      "fecha": "2026-10-16",
+      "titulo": "Caída del sistema informático bloquea servicios sanitarios",
+      "categoria": "Sociedad",
+      "descripcion": "Una incidencia a nivel regional ha provocado la caída temporal del sistema informático, bloqueando vacunaciones, consultas y la receta electrónica.",
+      "fuente": "https://www.lagacetadesalamanca.es/salamanca/caida-sistema-informatico-bloquea-vacunaciones-consultas-receta-20261016091530-nt.html",
       "destacado": false
     }
   ]

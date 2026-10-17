@@ -351,6 +351,30 @@
       ],
       "basado_en": "actualidad.json",
       "fecha_creacion": "2026-10-16"
+    },
+    {
+      "id": "toro-san-andres-2026",
+      "pregunta": "Palaciosrubios acogerá el II Toro de San Andrés, un festejo taurino de cajón. ¿Considera que este tipo de eventos taurinos contribuyen a mantener las tradiciones locales y dinamizar los municipios?",
+      "opciones": [
+        "Sí, son parte de nuestra cultura y atraen gente",
+        "No, son un maltrato animal y no deberían celebrarse",
+        "Son un atractivo económico, pero con debate ético",
+        "No tengo suficiente información"
+      ],
+      "basado_en": "eventos.json",
+      "fecha_creacion": "2026-10-17"
+    },
+    {
+      "id": "marcha-trajano-2026",
+      "pregunta": "La Marcha de Trajano unirá Extremadura y Castilla y León, buscando reivindicar el legado romano y la vinculación de las localidades. ¿Cree que este tipo de iniciativas son efectivas para promover el patrimonio histórico y la colaboración interregional?",
+      "opciones": [
+        "Sí, fomentan el patrimonio y la unión entre regiones",
+        "No, su impacto es limitado y poco visible",
+        "Son más simbólicas que prácticas para el desarrollo",
+        "No tengo suficiente información"
+      ],
+      "basado_en": "eventos.json",
+      "fecha_creacion": "2026-10-17"
     }
   ]
 }

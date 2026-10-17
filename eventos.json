@@ -1,5 +1,5 @@
 {
-  "generado_en": "2026-10-16T05:45:23+00:00",
+  "generado_en": "2026-10-17T05:45:32+00:00",
   "eventos": [
     {
       "titulo": "Recogida de materiales para la ambientación de Halloween en Castellanos de Moriscos",
@@ -18,15 +18,6 @@
       "lugar": "Salón La Fábula de Javier Bueno, El Encinar",
       "descripcion": "La trigésima edición de la Muestra de Teatro Aficionado El Encinar reunirá a seis grupos de teatro aficionado de diferentes puntos de España. Las representaciones se llevarán a cabo los sábados y domingos, con entradas a 2 euros destinadas a ALCER Salamanca.",
       "fuente": "https://www.lagacetadesalamanca.es/provincia/listo-disfrutar-muestra-teatro-aficionado-encinar-20261006192329-nt.html"
-    },
-    {
-      "titulo": "24ª Jornadas Internacionales de Bomberos en Béjar",
-      "categoria": "Sociedad",
-      "fecha_inicio": "2026-10-13",
-      "fecha_fin": "2026-10-16",
-      "lugar": "Béjar",
-      "descripcion": "Béjar acogerá la 24ª edición de sus jornadas internacionales de Bomberos del 13 al 16 de octubre. El evento busca avanzar en la formación de los profesionales a través de talleres prácticos en diversos escenarios.",
-      "fuente": "https://www.lagacetadesalamanca.es/provincia/bejar-celebra-jornadas-bomberos-formacion-talleres-practicos-20261005191022-nt.html"
     },
     {
       "titulo": "Día Europeo del Arte Rupestre en Siega Verde",
@@ -74,6 +65,15 @@
       "fuente": "https://www.lagacetadesalamanca.es/deportes/futbol-local/unionistas/racing-ferrolunionistas-horario-ver-directo-partido-primera-20261014133427-nt.html"
     },
     {
+      "titulo": "Celebración del Domingo Mundial de las Misiones (Domund) en Ciudad Rodrigo",
+      "categoria": "Sociedad",
+      "fecha_inicio": "2026-10-17",
+      "fecha_fin": "2026-10-18",
+      "lugar": "Ciudad Rodrigo",
+      "descripcion": "La Diócesis de Ciudad Rodrigo celebrará el centenario del Domund, con actividades de recaudación de donativos el 17 de octubre y la conmemoración principal el 18 de octubre bajo el lema «Uno en Cristo, unidos en la misión».",
+      "fuente": "https://www.lagacetadesalamanca.es/provincia/ciudad-rodrigo-sacara-huchas-domund-fin-semana-20261014104942-nt.html"
+    },
+    {
       "titulo": "Clase magistral de la Escuela Taurina",
       "categoria": "Cultura",
       "fecha_inicio": "2026-10-18",
@@ -92,15 +92,6 @@
       "fuente": "https://www.lagacetadesalamanca.es/provincia/vuelve-marcha-trajano-une-extremadura-castilla-leon-20261009142108-nt.html"
     },
     {
-      "titulo": "Celebración del Domingo Mundial de las Misiones (Domund) en Ciudad Rodrigo",
-      "categoria": "Sociedad",
-      "fecha_inicio": "2026-10-18",
-      "fecha_fin": null,
-      "lugar": "Ciudad Rodrigo",
-      "descripcion": "La Diócesis de Ciudad Rodrigo celebrará el centenario del Domund bajo el lema «Uno en Cristo, unidos en la misión», invitando a colaborar con la labor evangelizadora.",
-      "fuente": "https://www.lagacetadesalamanca.es/provincia/ciudad-rodrigo-sacara-huchas-domund-fin-semana-20261014104942-nt.html"
-    },
-    {
       "titulo": "Partido de Segunda Federación: Salamanca UDS vs Navalcarnero",
       "categoria": "Deportes",
       "fecha_inicio": "2026-10-18",
@@ -117,6 +108,15 @@
       "lugar": "Hotel Abba Fonseca, Salamanca",
       "descripcion": "El III Congreso Gastronómico de LA GACETA se celebrará en el Hotel Abba Fonseca, explorando la riqueza culinaria de Castilla y León. Habrá charlas, degustaciones y catas, con inscripción solidaria a favor del Banco de Alimentos.",
       "fuente": "https://www.lagacetadesalamanca.es/salamanca/gastronomia-castilla-leon-cita-salamanca-inscribete-iii-20261008132812-nt.html"
+    },
+    {
+      "titulo": "Semana de la Biblioteca en Carbajosa de la Sagrada",
+      "categoria": "Cultura",
+      "fecha_inicio": "2026-10-19",
+      "fecha_fin": "2026-10-25",
+      "lugar": "Carbajosa de la Sagrada",
+      "descripcion": "Carbajosa de la Sagrada celebrará su 'Semana de la Biblioteca' del 19 al 25 de octubre, con una programación variada que incluye exposiciones, cuentacuentos, talleres interactivos y una castañada.",
+      "fuente": "https://www.lagacetadesalamanca.es/provincia/castanada-bebecuentos-cuentacuentos-semana-biblioteca-carbajosa-20261015120509-nt.html"
     },
     {
       "titulo": "Bebecuentos y Cuentacuentos 'Hojas' y 'El ladrón de calabazas'",
@@ -152,6 +152,15 @@
       "lugar": "Municipal Luis Ramos, Guijuelo",
       "descripcion": "Los equipos de base del Guijuelo disputarán sus partidos en el Municipal Luis Ramos, sirviendo como antesala al encuentro de Copa del Rey.",
       "fuente": "https://www.lagacetadesalamanca.es/deportes/futbol-local/guijuelo-fija-precios-encuentro-ante-sporting-gijon-20261013134216-nt.html"
+    },
+    {
+      "titulo": "Campeonato y Exposición Ornitológico Mirobriga",
+      "categoria": "Cultura",
+      "fecha_inicio": "2026-10-24",
+      "fecha_fin": "2026-11-02",
+      "lugar": "Antigua estación de tren, Ciudad Rodrigo",
+      "descripcion": "Ciudad Rodrigo acogerá la vigesimoséptima edición del Campeonato y Exposición Ornitológico de Castilla y León, con recepción de aves los días 24 y 25 de octubre y exposición al público del 28 de octubre al 2 de noviembre.",
+      "fuente": "https://www.lagacetadesalamanca.es/provincia/millar-aves-campeonato-ornitologico-mirobriga-20261015163344-nt.html"
     },
     {
       "titulo": "Taller infantil 'Monstruos y calabazas' en Carbajosa",
@@ -235,6 +244,15 @@
       "fuente": "https://www.lagacetadesalamanca.es/provincia/vuelven-cortos-filmoteca-castilla-leon-cervantes-bejar-20261013133327-nt.html"
     },
     {
+      "titulo": "Actividades de Halloween en Villamayor de Armuña",
+      "categoria": "Cultura",
+      "fecha_inicio": "2026-10-30",
+      "fecha_fin": "2026-10-31",
+      "lugar": "Villamayor de Armuña",
+      "descripcion": "Villamayor de Armuña celebrará Halloween con actividades gratuitas los días 30 y 31 de octubre, incluyendo un concurso de disfraces, un túnel del terror y bailes de muertos.",
+      "fuente": "https://www.lagacetadesalamanca.es/provincia/concurso-disfraces-tunel-terror-villamayor-armuna-halloween-20261016202756-nt.html"
+    },
+    {
       "titulo": "Jornada mexicana: Altar de los Muertos y viejada huasteca",
       "categoria": "Cultura",
       "fecha_inicio": "2026-10-31",
@@ -268,6 +286,15 @@
       "lugar": "centro polivalente, Doñinos de Salamanca",
       "descripcion": "El Ayuntamiento de Doñinos de Salamanca organiza una tarde de Halloween para toda la familia el 31 de octubre en el centro polivalente. La programación incluye entrenamiento de monstruos, pasacalles con piñatas, concurso de disfraces y discoteca familiar.",
       "fuente": "https://www.lagacetadesalamanca.es/provincia/doninos-prepara-tarde-halloween-familia-20261009122337-nt.html"
+    },
+    {
+      "titulo": "Primer Raid de Aventura y Orientación «Tierras Vetonas»",
+      "categoria": "Deportes",
+      "fecha_inicio": "2026-10-31",
+      "fecha_fin": null,
+      "lugar": "Béjar, Candelario y La Garganta",
+      "descripcion": "Las localidades de Béjar, Candelario y La Garganta acogerán el 31 de octubre el primer Raid de Aventura y Orientación «Tierras Vetonas», con una participación prevista de 50 equipos y 150 deportistas.",
+      "fuente": "https://www.lagacetadesalamanca.es/deportes/bejar-candelario-garganta-acogera-primer-raid-orientacion-20261016092727-nt.html"
     },
     {
       "titulo": "Carrera de los lagares rupestres en San Esteban de la Sierra",
@@ -376,6 +403,15 @@
       "lugar": "Salamanca",
       "descripcion": "El alumbrado navideño de Salamanca se activará el jueves 26 de noviembre, coincidiendo con el Black Friday. El Ayuntamiento comenzará a colgar las luces alrededor del 19 de octubre.",
       "fuente": "https://www.lagacetadesalamanca.es/salamanca/cuenta-atras-calles-brillen-navidad-20261008070000-nt.html"
+    },
+    {
+      "titulo": "Mercado Navideño de Salamanca",
+      "categoria": "Cultura",
+      "fecha_inicio": "2026-11-26",
+      "fecha_fin": "2027-01-05",
+      "lugar": "Plaza de Anaya, Salamanca",
+      "descripcion": "La Plaza de Anaya de Salamanca acogerá el Mercado Navideño desde el 26 de noviembre hasta el 5 de enero, con treinta y nueve casetas, un carrusel y actividades festivas.",
+      "fuente": "https://www.lagacetadesalamanca.es/salamanca/cuenta-atras-mercado-navideno-salamanca-fecha-lugar-20261016170049-nt.html"
     },
     {
       "titulo": "Clausura del Festival de La Candela en Santibáñez de Béjar",

@@ -22,8 +22,9 @@
     {"fecha": "2026-10-11", "total": 36, "salamanca": 6, "provincia": 11, "deportes": 15, "sucesos": 4, "campo": 0, "encuestas": 0, "toros": 0, "internacional": 0, "television": 0},
     {"fecha": "2026-10-12", "total": 29, "provincia": 12, "salamanca": 3, "deportes": 5, "sucesos": 7, "campo": 1, "encuestas": 1, "toros": 0, "internacional": 0, "television": 0},
     {"fecha": "2026-10-13", "total": 64, "salamanca": 16, "provincia": 20, "deportes": 15, "sucesos": 7, "campo": 4, "toros": 0, "encuestas": 1, "internacional": 0, "television": 1},
-    {"fecha": "2026-10-14", "total": 60, "salamanca": 15, "provincia": 16, "deportes": 16, "sucesos": 10, "campo": 0, "toros": 1, "encuestas": 1, "internacional": 1, "television": 0},
-    {"fecha": "2026-10-15", "total": 60, "salamanca": 23, "provincia": 19, "deportes": 6, "sucesos": 8, "campo": 2, "toros": 1, "encuestas": 1, "internacional": 0, "television": 0},
-    {"fecha": "2026-10-16", "total": 9, "salamanca": 7, "provincia": 0, "deportes": 0, "sucesos": 0, "campo": 1, "toros": 1, "encuestas": 0, "internacional": 0, "television": 0}
+    {"fecha": "2026-10-14", "total": 50, "salamanca": 9, "provincia": 16, "deportes": 14, "sucesos": 10, "toros": 0, "encuestas": 1, "campo": 0, "cine-y-series": 0},
+    {"fecha": "2026-10-15", "total": 57, "salamanca": 21, "provincia": 19, "deportes": 6, "sucesos": 8, "toros": 1, "encuestas": 1, "campo": 1, "cine-y-series": 0},
+    {"fecha": "2026-10-16", "total": 57, "salamanca": 21, "provincia": 18, "deportes": 7, "sucesos": 7, "toros": 1, "encuestas": 1, "campo": 1, "cine-y-series": 1},
+    {"fecha": "2026-10-17", "total": 9, "salamanca": 7, "provincia": 0, "deportes": 1, "sucesos": 0, "toros": 1, "encuestas": 0, "campo": 0, "cine-y-series": 0}
   ]
 }
