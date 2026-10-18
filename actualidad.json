@@ -1,11 +1,11 @@
 {
   "url_base": "https://www.lagacetadesalamanca.es",
-  "generado_en": "2026-10-17T05:45:32+00:00",
+  "generado_en": "2026-10-18T05:45:31+00:00",
   "periodo_cubierto": {
-    "desde": "2026-10-14",
-    "hasta": "2026-10-17"
+    "desde": "2026-10-15",
+    "hasta": "2026-10-18"
   },
-  "total_urls_analizadas": 173,
+  "total_urls_analizadas": 162,
   "secciones_excluidas": [
     "gente-estilo",
     "nacional",
@@ -17,23 +17,19 @@
   "por_seccion": [
     [
       "salamanca",
-      58
+      59
     ],
     [
       "provincia",
-      53
+      45
     ],
     [
       "deportes",
-      28
+      33
     ],
     [
       "sucesos",
-      25
-    ],
-    [
-      "toros",
-      3
+      18
     ],
     [
       "encuestas",
@@ -41,7 +37,7 @@
     ],
     [
       "campo",
-      2
+      3
     ],
     [
       "cine-y-series",
@@ -51,25 +47,21 @@
   "por_subseccion": [
     [
       "deportes/futbol-local",
-      13
+      17
     ],
     [
       "deportes/baloncesto-local",
       9
-    ],
-    [
-      "deportes/deporte-base",
-      1
     ]
   ],
   "por_tipo_contenido": [
     [
       "noticia",
-      156
+      143
     ],
     [
       "galería",
-      15
+      17
     ],
     [
       "directo / en vivo",
@@ -78,49 +70,45 @@
   ],
   "heatmap_calendario": [
     {
-      "fecha": "2026-10-14",
-      "total": 50,
-      "salamanca": 9,
-      "provincia": 16,
-      "deportes": 14,
-      "sucesos": 10,
-      "toros": 0,
-      "encuestas": 1,
-      "campo": 0,
-      "cine-y-series": 0
-    },
-    {
       "fecha": "2026-10-15",
-      "total": 57,
-      "salamanca": 21,
-      "provincia": 19,
-      "deportes": 6,
-      "sucesos": 8,
-      "toros": 1,
+      "total": 45,
+      "salamanca": 14,
+      "provincia": 17,
+      "deportes": 5,
+      "sucesos": 7,
       "encuestas": 1,
       "campo": 1,
       "cine-y-series": 0
     },
     {
       "fecha": "2026-10-16",
-      "total": 57,
+      "total": 56,
       "salamanca": 21,
       "provincia": 18,
       "deportes": 7,
       "sucesos": 7,
-      "toros": 1,
       "encuestas": 1,
       "campo": 1,
       "cine-y-series": 1
     },
     {
       "fecha": "2026-10-17",
-      "total": 9,
-      "salamanca": 7,
-      "provincia": 0,
+      "total": 53,
+      "salamanca": 19,
+      "provincia": 8,
+      "deportes": 20,
+      "sucesos": 4,
+      "encuestas": 1,
+      "campo": 1,
+      "cine-y-series": 0
+    },
+    {
+      "fecha": "2026-10-18",
+      "total": 8,
+      "salamanca": 5,
+      "provincia": 2,
       "deportes": 1,
       "sucesos": 0,
-      "toros": 1,
       "encuestas": 0,
       "campo": 0,
       "cine-y-series": 0
@@ -128,86 +116,94 @@
   ],
   "conceptos_destacados": [
     {
-      "concepto": "Ciudad Rodrigo",
-      "piezas": 8,
-      "seccion_principal": "provincia",
-      "desde": "2026-10-14",
-      "hasta": "2026-10-16",
-      "ejemplos_redactados": [
-        "Ciudad Rodrigo ha recibido inversiones millonarias y ha sido escenario de iniciativas solidarias en Nicaragua. Además, se ha destacado la ampliación del horario del cementerio municipal."
-      ]
-    },
-    {
       "concepto": "Béjar",
-      "piezas": 7,
+      "piezas": 6,
       "seccion_principal": "provincia",
-      "desde": "2026-10-14",
-      "hasta": "2026-10-16",
+      "desde": "2026-10-15",
+      "hasta": "2026-10-17",
       "ejemplos_redactados": [
-        "Béjar ha acogido jornadas de bomberos con balance positivo y ha experimentado una nueva avería en una de sus calles. La localidad también será sede de un raid de orientación."
+        "La localidad de Béjar ha sido escenario de una marcha para animar a las víctimas de cáncer.",
+        "Se ha realizado un balance positivo de las jornadas de bomberos en Béjar y se ha registrado una nueva avería en una calle."
       ]
     },
     {
-      "concepto": "Redadas Policiales",
+      "concepto": "Ciudad Rodrigo",
+      "piezas": 5,
+      "seccion_principal": "provincia",
+      "desde": "2026-10-15",
+      "hasta": "2026-10-16",
+      "ejemplos_redactados": [
+        "Ciudad Rodrigo ha recibido millones de euros en inversiones y ha celebrado el día de Santa Teresa de Jesús.",
+        "También se ha destacado la ayuda de la ciudad a Nicaragua durante años."
+      ]
+    },
+    {
+      "concepto": "Cáncer",
+      "piezas": 5,
+      "seccion_principal": "provincia",
+      "desde": "2026-10-16",
+      "hasta": "2026-10-17",
+      "ejemplos_redactados": [
+        "Se ha llevado a cabo una marcha en Béjar con consejos para víctimas de cáncer y Salamanca ha reclamado atención humana para mujeres con cáncer de mama.",
+        "La asociación del cáncer en Salamanca ha anunciado una demostración de baile."
+      ]
+    },
+    {
+      "concepto": "Meins Avenida",
       "piezas": 4,
-      "seccion_principal": "sucesos",
-      "desde": "2026-10-15",
-      "hasta": "2026-10-16",
-      "ejemplos_redactados": [
-        "Se han registrado nuevas redadas policiales en Salamanca, con un fuerte despliegue en el barrio de San José. Una pareja fue detenida por drogas en Pizarrales y posteriormente puesta en libertad."
-      ]
-    },
-    {
-      "concepto": "Alba de Tormes",
-      "piezas": 3,
-      "seccion_principal": "provincia",
-      "desde": "2026-10-15",
-      "hasta": "2026-10-16",
-      "ejemplos_redactados": [
-        "Alba de Tormes ha celebrado los quince años de las Palabras Teresianas y ha visto sus calles llenas de música y color con los cabezudos. También se ha destacado la actuación de Panorama City."
-      ]
-    },
-    {
-      "concepto": "Santa Teresa",
-      "piezas": 3,
-      "seccion_principal": "provincia",
-      "desde": "2026-10-14",
-      "hasta": "2026-10-16",
-      "ejemplos_redactados": [
-        "Las celebraciones en honor a Santa Teresa han contado con la presidencia de Rouco Varela. Las teresianas de Ciudad Rodrigo también han conmemorado a Santa Teresa de Jesús."
-      ]
-    },
-    {
-      "concepto": "Búsqueda de Agustín Ledrada",
-      "piezas": 3,
-      "seccion_principal": "sucesos",
-      "desde": "2026-10-14",
-      "hasta": "2026-10-15",
-      "ejemplos_redactados": [
-        "La Guardia Civil ha reforzado la búsqueda de Agustín Ledrada, desaparecido hace quince días. La operación continúa con la participación de guías caninos."
-      ]
-    },
-    {
-      "concepto": "Perfumerías Avenida (Baloncesto)",
-      "piezas": 3,
       "seccion_principal": "deportes",
-      "desde": "2026-10-14",
-      "hasta": "2026-10-14",
+      "desde": "2026-10-17",
+      "hasta": "2026-10-17",
       "ejemplos_redactados": [
-        "El equipo Perfumerías Avenida ha logrado una importante victoria en Eurocup, acabando con la resistencia eslovaca. Este hito forma parte de su historia en el baloncesto."
+        "El equipo Meins Avenida ha buscado prolongar su buen momento, aunque ha sufrido una derrota ante Estepona.",
+        "Se han analizado las claves de la derrota del Meins Avenida."
       ]
     },
     {
-      "concepto": "Asociaciones Salmantinas",
+      "concepto": "Redada",
       "piezas": 4,
+      "seccion_principal": "sucesos",
+      "desde": "2026-10-15",
+      "hasta": "2026-10-16",
+      "ejemplos_redactados": [
+        "Una pareja ha sido detenida en una redada de drogas en Pizarrales, siendo posteriormente puesta en libertad.",
+        "La Guardia Civil ha realizado una redada en Salamanca, con imágenes difundidas."
+      ]
+    },
+    {
+      "concepto": "Operación policial",
+      "piezas": 3,
+      "seccion_principal": "sucesos",
+      "desde": "2026-10-15",
+      "hasta": "2026-10-17",
+      "ejemplos_redactados": [
+        "Dos detenidos han ingresado en prisión tras la Operación Venterferia, de la que se han difundido imágenes espectaculares.",
+        "También se ha registrado un asalto a un restaurante en Villaseco de los Gamitos en una gran operación contra robos."
+      ]
+    },
+    {
+      "concepto": "Guardia Civil",
+      "piezas": 3,
+      "seccion_principal": "sucesos",
+      "desde": "2026-10-15",
+      "hasta": "2026-10-17",
+      "ejemplos_redactados": [
+        "La Guardia Civil ha auxiliado a un senderista tras sufrir una picadura y ha participado en una redada en Salamanca.",
+        "Continúa la búsqueda de Agustín en Ledrada con el apoyo de la Guardia Civil."
+      ]
+    },
+    {
+      "concepto": "Caída sistema informático sanitario",
+      "piezas": 3,
       "seccion_principal": "salamanca",
       "desde": "2026-10-15",
       "hasta": "2026-10-16",
       "ejemplos_redactados": [
-        "La Asociación contra el Cáncer de Salamanca ha organizado actividades de baile. Por otro lado, la Asociación de Hostelería Charra ha sido expulsada de la CEOE-Cepyme Salamanca."
+        "Una incidencia a nivel regional ha provocado la caída temporal de los sistemas informáticos sanitarios.",
+        "Esta caída ha bloqueado vacunaciones, consultas y la receta electrónica, afectando a numerosos usuarios."
       ]
     }
   ],
-  "resumen_borrador": "Se han publicado 173 noticias entre el 2026-10-14 y el 2026-10-17. La actividad se ha concentrado sobre todo en salamanca (58 piezas), provincia (53 piezas), deportes (28 piezas).\n\nLos conceptos con más piezas relacionadas son: Ciudad · Rodrigo; Bejar; Imagenes; Historia. Revisa 'evidencia' de cada concepto para redactar el resumen final.",
-  "resumen": "La actualidad salmantina de los últimos días ha estado marcada por diversos acontecimientos en la capital y la provincia. En el ámbito de sucesos, la búsqueda de Agustín Ledrada en Ledrada ha continuado con el refuerzo de la Guardia Civil, mientras que varias redadas policiales en Pizarrales han resultado en detenciones por drogas. También se ha registrado un incendio en una fábrica de embutidos en Campillo de Salvatierra y diversos accidentes de tráfico. Un incidente destacado ha sido el traslado de urgencia al hospital de Salamanca de una persona tras una caída. La caída de un sistema informático regional ha bloqueado vacunaciones y consultas. Otro suceso relevante es el aumento de los casos de acoso escolar en Salamanca, que se han duplicado en dos cursos.\n\nEn la provincia, Ciudad Rodrigo ha sido foco de noticias con inversiones y proyectos solidarios, así como la ampliación del horario de su cementerio. Béjar ha acogido jornadas de bomberos y se prepara para un raid de orientación. Alba de Tormes ha celebrado los quince años de las Palabras Teresianas y las festividades en honor a Santa Teresa han tenido lugar en varios municipios. La capital, por su parte, ha visto cómo el pleno municipal aprobaba la congelación de impuestos y se anunciaba la llegada de Primark al Centro Comercial El Tormes. La Asociación de Hostelería Charra ha sido expulsada de la CEOE-Cepyme Salamanca.\n\nEn el plano deportivo, el Perfumerías Avenida ha logrado una victoria significativa en la Eurocup. La agenda deportiva del fin de semana ha incluido partidos importantes para Unionistas y Salamanca UDS. Se ha informado sobre un superfichaje del Real Madrid que estudió en Salamanca y la preselección de tres deportistas de élite para España."
+  "resumen_borrador": "Se han publicado 162 noticias entre el 2026-10-15 y el 2026-10-18. La actividad se ha concentrado sobre todo en salamanca (59 piezas), provincia (45 piezas), deportes (33 piezas).\n\nLos conceptos con más piezas relacionadas son: Bejar; Ciudad · Rodrigo; Cancer; Meins · Avenida. Revisa 'evidencia' de cada concepto para redactar el resumen final.",
+  "resumen": "La provincia de Salamanca ha vivido un periodo de intensa actividad entre el 15 y el 18 de octubre de 2026, marcado por eventos deportivos, iniciativas locales y sucesos.\n\nEn el ámbito provincial, localidades como Béjar y Ciudad Rodrigo han sido protagonistas. Béjar ha acogido una marcha de concienciación sobre el cáncer y ha gestionado averías, mientras que Ciudad Rodrigo ha visto importantes inversiones y celebraciones religiosas. Alba de Tormes también ha tenido su cuota de noticias con actividades culturales y festivas. La lucha contra el cáncer ha sido un tema recurrente, con Salamanca reclamando atención y asociaciones locales organizando eventos.\n\nLos deportes han estado en el punto de mira con el equipo Meins Avenida, que ha experimentado una derrota, y Unionistas, que ha logrado romper una mala racha. En la crónica de sucesos, se han destacado redadas antidroga en Pizarrales y operaciones policiales como la 'Venterferia', que ha resultado en detenciones. La Guardia Civil ha estado activa en labores de auxilio y búsqueda de personas. Un evento de gran impacto ha sido la caída del sistema informático sanitario a nivel regional, que ha paralizado vacunaciones y consultas, generando preocupación entre la ciudadanía."
 }

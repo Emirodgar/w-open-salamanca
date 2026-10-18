@@ -1,7 +1,7 @@
 {
   "mes": "2026-10",
   "titulo_mes": "Octubre 2026",
-  "resumen_mes": "Octubre arranca con importantes decisiones políticas a nivel regional y provincial, como la presentación de los presupuestos y la elección del presidente de la Diputación. El deporte local vive momentos clave con victorias europeas y la expectación de la Copa del Rey, mientras que sucesos como la búsqueda de un desaparecido y redadas policiales marcan la crónica. La llegada de nuevas empresas y el aumento del acoso escolar, junto a una incidencia informática en los servicios sanitarios, también son noticias destacadas.",
+  "resumen_mes": "Octubre de 2026 ha sido un mes de importantes decisiones políticas y avances económicos en la provincia, con la elección del presidente de la Diputación y nuevas inversiones. El deporte local ha tenido altibajos, mientras que sucesos como operaciones policiales y la búsqueda de desaparecidos han mantenido la atención. La caída del sistema informático sanitario y el aumento de casos de acoso escolar han sido las notas más preocupantes en el ámbito social y educativo.",
   "hitos": [
     {
       "fecha": "2026-10-09",
@@ -21,26 +21,10 @@
     },
     {
       "fecha": "2026-10-13",
-      "titulo": "El Papa es operado con éxito de cáncer de pulmón",
-      "categoria": "Sociedad",
-      "descripcion": "El Papa fue operado con éxito de cáncer de pulmón, una noticia de repercusión internacional.",
-      "fuente": "https://www.lagacetadesalamanca.es/internacional/papa-operado-exito-cancer-pulmon-20261013222429-nt.html",
-      "destacado": true
-    },
-    {
-      "fecha": "2026-10-13",
       "titulo": "Manueco presenta el presupuesto de Castilla y León",
       "categoria": "Política",
       "descripcion": "Manueco presenta el presupuesto de Castilla y León, que incluye un alto nivel de impuestos.",
       "fuente": "https://www.lagacetadesalamanca.es/salamanca/manueco-presenta-presupuesto-castilla-leon-alto-impuestos-20261013131031-nt.html",
-      "destacado": false
-    },
-    {
-      "fecha": "2026-10-14",
-      "titulo": "La Guardia Civil refuerza la búsqueda de Agustín en Ledrada",
-      "categoria": "Sucesos",
-      "descripcion": "La Guardia Civil ha reforzado la búsqueda de Agustín en Ledrada, días después de su desaparición, ante la angustia de sus familiares.",
-      "fuente": "https://www.lagacetadesalamanca.es/sucesos/guardia-civil-refuerza-busqueda-agustin-ledrada-guias-20261014150826-nt.html",
       "destacado": false
     },
     {
@@ -65,6 +49,22 @@
       "categoria": "Sociedad",
       "descripcion": "Una incidencia a nivel regional ha provocado la caída temporal del sistema informático, bloqueando vacunaciones, consultas y la receta electrónica.",
       "fuente": "https://www.lagacetadesalamanca.es/salamanca/caida-sistema-informatico-bloquea-vacunaciones-consultas-receta-20261016091530-nt.html",
+      "destacado": true
+    },
+    {
+      "fecha": "2026-10-16",
+      "titulo": "Millones de euros en inversiones para Ciudad Rodrigo",
+      "categoria": "Urbanismo",
+      "descripcion": "Ciudad Rodrigo ha anunciado la llegada de millones de euros en inversiones, impulsando el desarrollo local.",
+      "fuente": "https://www.lagacetadesalamanca.es/provincia/millones-euros-inversiones-ciudad-rodrigo-20261016185333-nt.html",
+      "destacado": false
+    },
+    {
+      "fecha": "2026-10-17",
+      "titulo": "Prisión para dos detenidos en la Operación Venterferia",
+      "categoria": "Sucesos",
+      "descripcion": "Dos individuos han ingresado en prisión tras ser detenidos en el marco de la Operación Venterferia.",
+      "fuente": "https://www.lagacetadesalamanca.es/sucesos/prision-dos-detenidos-operacion-venterferia-20261017124523-nt.html",
       "destacado": false
     }
   ]

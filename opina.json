@@ -375,6 +375,30 @@
       ],
       "basado_en": "eventos.json",
       "fecha_creacion": "2026-10-17"
+    },
+    {
+      "id": "caida-sistema-sanitario-2026",
+      "pregunta": "Ante la caída del sistema informático sanitario a nivel regional, que ha paralizado vacunaciones y consultas, ¿cree que la Junta de Castilla y León debería invertir más en la modernización y seguridad de sus infraestructuras tecnológicas sanitarias?",
+      "opciones": [
+        "Sí, es crucial para garantizar la calidad del servicio.",
+        "No, hay otras prioridades sanitarias más urgentes.",
+        "Debería priorizarse la seguridad, pero no necesariamente más inversión general.",
+        "No tengo suficiente información."
+      ],
+      "basado_en": "actualidad.json",
+      "fecha_creacion": "2026-10-18"
+    },
+    {
+      "id": "tractorada-agraria-2026",
+      "pregunta": "Ante la convocatoria de una gran tractorada del campo español en Madrid, con participación de organizaciones salmantinas, ¿considera que las movilizaciones son la vía más efectiva para que el sector agrario logre soluciones a sus problemas?",
+      "opciones": [
+        "Sí, es la forma de visibilizar sus demandas y presionar.",
+        "No, se deberían priorizar las mesas de negociación y el diálogo.",
+        "Son necesarias como complemento a otras acciones.",
+        "No tengo suficiente información."
+      ],
+      "basado_en": "eventos.json",
+      "fecha_creacion": "2026-10-18"
     }
   ]
 }
