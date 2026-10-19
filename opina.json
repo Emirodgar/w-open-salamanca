@@ -280,18 +280,6 @@
       "fecha_creacion": "2026-10-13"
     },
     {
-      "id": "meins-avenida-eurocup-2026",
-      "pregunta": "El Meins Avenida debuta hoy en la Eurocup. ¿Qué expectativas tiene sobre su rendimiento en esta competición europea?",
-      "opciones": [
-        "Confío en que llegarán lejos",
-        "Tendrán un papel discreto",
-        "Es difícil predecir su recorrido",
-        "No sigo el baloncesto"
-      ],
-      "basado_en": "eventos.json",
-      "fecha_creacion": "2026-10-14"
-    },
-    {
       "id": "mujeres-innovan-salamanca-2026",
       "pregunta": "Salamanca acogerá la jornada 'Mujeres que innovan', centrada en emprendimiento y liderazgo femenino. ¿Cree que este tipo de iniciativas son clave para fomentar la igualdad de oportunidades en el ámbito profesional local?",
       "opciones": [
@@ -399,6 +387,30 @@
       ],
       "basado_en": "eventos.json",
       "fecha_creacion": "2026-10-18"
+    },
+    {
+      "id": "cocaina-rosa-menores-2026",
+      "pregunta": "Ante la alerta por el consumo de cocaína rosa en menores en Salamanca, ¿cree que las autoridades deberían intensificar las campañas de prevención y control en el ámbito juvenil?",
+      "opciones": [
+        "Sí, es una amenaza grave para la juventud",
+        "No, se está exagerando el problema",
+        "Deberían centrarse en la educación familiar",
+        "No tengo suficiente información"
+      ],
+      "basado_en": "actualidad.json",
+      "fecha_creacion": "2026-10-19"
+    },
+    {
+      "id": "huertos-urbanos-monterrubio-2026",
+      "pregunta": "El Ayuntamiento de Monterrubio ha renovado sus huertos urbanos con una inversión de 100.000 euros. ¿Cree que la inversión en huertos urbanos es una prioridad para fomentar la sostenibilidad y la participación ciudadana en los municipios?",
+      "opciones": [
+        "Sí, promueve la sostenibilidad y la comunidad",
+        "No, hay otras inversiones más urgentes",
+        "Es un buen complemento, pero no una prioridad",
+        "No tengo suficiente información"
+      ],
+      "basado_en": "eventos.json",
+      "fecha_creacion": "2026-10-19"
     }
   ]
 }

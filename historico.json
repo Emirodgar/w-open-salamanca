@@ -183,6 +183,24 @@
         "Sí, son clave para la planificación estratégica": 1
       },
       "total_votos": 1
+    },
+    {
+      "id": "meins-avenida-eurocup-2026",
+      "pregunta": "El Meins Avenida debuta hoy en la Eurocup. ¿Qué expectativas tiene sobre su rendimiento en esta competición europea?",
+      "opciones": [
+        "Confío en que llegarán lejos",
+        "Tendrán un papel discreto",
+        "Es difícil predecir su recorrido",
+        "No sigo el baloncesto"
+      ],
+      "basado_en": "eventos.json",
+      "fecha_creacion": "2026-10-14",
+      "fecha_archivado": "2026-10-19",
+      "resultados": {
+        "Tendrán un papel discreto": 2,
+        "Confío en que llegarán lejos": 1
+      },
+      "total_votos": 3
     }
   ]
 }

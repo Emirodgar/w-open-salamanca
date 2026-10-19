@@ -1,9 +1,9 @@
 {
   "url_base": "https://www.lagacetadesalamanca.es",
-  "generado_en": "2026-10-18T05:45:31+00:00",
+  "generado_en": "2026-10-19T05:45:34+00:00",
   "periodo_cubierto": {
-    "desde": "2026-10-15",
-    "hasta": "2026-10-18"
+    "desde": "2026-10-16",
+    "hasta": "2026-10-19"
   },
   "total_urls_analizadas": 162,
   "secciones_excluidas": [
@@ -17,27 +17,31 @@
   "por_seccion": [
     [
       "salamanca",
-      59
+      51
     ],
     [
       "provincia",
-      45
+      46
     ],
     [
       "deportes",
-      33
+      44
     ],
     [
       "sucesos",
-      18
+      13
     ],
     [
       "encuestas",
       3
     ],
     [
+      "toros",
+      2
+    ],
+    [
       "campo",
-      3
+      2
     ],
     [
       "cine-y-series",
@@ -47,163 +51,153 @@
   "por_subseccion": [
     [
       "deportes/futbol-local",
-      17
+      22
     ],
     [
       "deportes/baloncesto-local",
-      9
+      10
+    ],
+    [
+      "deportes/deporte-base",
+      1
     ]
   ],
   "por_tipo_contenido": [
     [
       "noticia",
-      143
+      138
     ],
     [
       "galería",
-      17
+      20
     ],
     [
       "directo / en vivo",
-      2
+      4
     ]
   ],
   "heatmap_calendario": [
     {
-      "fecha": "2026-10-15",
-      "total": 45,
-      "salamanca": 14,
-      "provincia": 17,
-      "deportes": 5,
-      "sucesos": 7,
-      "encuestas": 1,
-      "campo": 1,
-      "cine-y-series": 0
-    },
-    {
       "fecha": "2026-10-16",
-      "total": 56,
-      "salamanca": 21,
+      "total": 47,
+      "salamanca": 13,
       "provincia": 18,
       "deportes": 7,
       "sucesos": 7,
       "encuestas": 1,
-      "campo": 1,
+      "toros": 0,
+      "campo": 0,
       "cine-y-series": 1
     },
     {
       "fecha": "2026-10-17",
-      "total": 53,
-      "salamanca": 19,
+      "total": 51,
+      "salamanca": 17,
       "provincia": 8,
       "deportes": 20,
       "sucesos": 4,
       "encuestas": 1,
+      "toros": 0,
       "campo": 1,
       "cine-y-series": 0
     },
     {
       "fecha": "2026-10-18",
-      "total": 8,
-      "salamanca": 5,
-      "provincia": 2,
-      "deportes": 1,
+      "total": 53,
+      "salamanca": 13,
+      "provincia": 17,
+      "deportes": 17,
+      "sucesos": 2,
+      "encuestas": 1,
+      "toros": 2,
+      "campo": 1,
+      "cine-y-series": 0
+    },
+    {
+      "fecha": "2026-10-19",
+      "total": 11,
+      "salamanca": 8,
+      "provincia": 3,
+      "deportes": 0,
       "sucesos": 0,
       "encuestas": 0,
+      "toros": 0,
       "campo": 0,
       "cine-y-series": 0
     }
   ],
   "conceptos_destacados": [
     {
-      "concepto": "Béjar",
-      "piezas": 6,
-      "seccion_principal": "provincia",
-      "desde": "2026-10-15",
+      "concepto": "Unionistas",
+      "piezas": 7,
+      "seccion_principal": "deportes",
+      "desde": "2026-10-16",
       "hasta": "2026-10-17",
       "ejemplos_redactados": [
-        "La localidad de Béjar ha sido escenario de una marcha para animar a las víctimas de cáncer.",
-        "Se ha realizado un balance positivo de las jornadas de bomberos en Béjar y se ha registrado una nueva avería en una calle."
+        "Unionistas de Salamanca encajó su primera derrota de la temporada ante el Danok. El equipo analizó las claves de su caída frente al Racing de Ferrol en A Malata."
       ]
     },
     {
-      "concepto": "Ciudad Rodrigo",
+      "concepto": "Cáncer de Mama",
       "piezas": 5,
-      "seccion_principal": "provincia",
-      "desde": "2026-10-15",
-      "hasta": "2026-10-16",
+      "seccion_principal": "salamanca",
+      "desde": "2026-10-16",
+      "hasta": "2026-10-18",
       "ejemplos_redactados": [
-        "Ciudad Rodrigo ha recibido millones de euros en inversiones y ha celebrado el día de Santa Teresa de Jesús.",
-        "También se ha destacado la ayuda de la ciudad a Nicaragua durante años."
+        "Una psicooncóloga de Salamanca envió un mensaje de apoyo a las mujeres con cáncer de mama. El Hospital de Salamanca detecta aproximadamente 300 casos de cáncer de mama al año, y Cabrerizos formó un lazo humano como muestra de concienciación."
       ]
     },
     {
-      "concepto": "Cáncer",
+      "concepto": "Meins Avenida",
+      "piezas": 5,
+      "seccion_principal": "deportes",
+      "desde": "2026-10-17",
+      "hasta": "2026-10-18",
+      "ejemplos_redactados": [
+        "El USAL Meins Avenida cayó ante Marín. Se analizaron las claves de su derrota frente a Estepona, donde el equipo pagó la falta de acierto y el cansancio."
+      ]
+    },
+    {
+      "concepto": "Béjar",
       "piezas": 5,
       "seccion_principal": "provincia",
       "desde": "2026-10-16",
       "hasta": "2026-10-17",
       "ejemplos_redactados": [
-        "Se ha llevado a cabo una marcha en Béjar con consejos para víctimas de cáncer y Salamanca ha reclamado atención humana para mujeres con cáncer de mama.",
-        "La asociación del cáncer en Salamanca ha anunciado una demostración de baile."
+        "En Béjar se realizó una marcha con consejos para animar a las víctimas de cáncer. La localidad celebró el 100 cumpleaños de Fermín Domínguez 'Chori' y valoró positivamente las jornadas de bomberos."
       ]
     },
     {
-      "concepto": "Meins Avenida",
-      "piezas": 4,
+      "concepto": "Alba de Tormes",
+      "piezas": 3,
+      "seccion_principal": "provincia",
+      "desde": "2026-10-16",
+      "hasta": "2026-10-19",
+      "ejemplos_redactados": [
+        "Alba de Tormes se promociona por su patrimonio, naturaleza y turismo activo. La localidad acogió el cierre de la temporada taurina y celebró quince años de palabras teresianas."
+      ]
+    },
+    {
+      "concepto": "Clasificaciones Deportivas",
+      "piezas": 3,
       "seccion_principal": "deportes",
-      "desde": "2026-10-17",
-      "hasta": "2026-10-17",
+      "desde": "2026-10-18",
+      "hasta": "2026-10-18",
       "ejemplos_redactados": [
-        "El equipo Meins Avenida ha buscado prolongar su buen momento, aunque ha sufrido una derrota ante Estepona.",
-        "Se han analizado las claves de la derrota del Meins Avenida."
+        "Se publicaron las clasificaciones de los grupos de Primera y Segunda Federación, así como de la Liga Femenina, tras la última jornada."
       ]
     },
     {
-      "concepto": "Redada",
-      "piezas": 4,
-      "seccion_principal": "sucesos",
-      "desde": "2026-10-15",
-      "hasta": "2026-10-16",
-      "ejemplos_redactados": [
-        "Una pareja ha sido detenida en una redada de drogas en Pizarrales, siendo posteriormente puesta en libertad.",
-        "La Guardia Civil ha realizado una redada en Salamanca, con imágenes difundidas."
-      ]
-    },
-    {
-      "concepto": "Operación policial",
+      "concepto": "Ciudad Rodrigo",
       "piezas": 3,
-      "seccion_principal": "sucesos",
-      "desde": "2026-10-15",
-      "hasta": "2026-10-17",
+      "seccion_principal": "provincia",
+      "desde": "2026-10-16",
+      "hasta": "2026-10-18",
       "ejemplos_redactados": [
-        "Dos detenidos han ingresado en prisión tras la Operación Venterferia, de la que se han difundido imágenes espectaculares.",
-        "También se ha registrado un asalto a un restaurante en Villaseco de los Gamitos en una gran operación contra robos."
-      ]
-    },
-    {
-      "concepto": "Guardia Civil",
-      "piezas": 3,
-      "seccion_principal": "sucesos",
-      "desde": "2026-10-15",
-      "hasta": "2026-10-17",
-      "ejemplos_redactados": [
-        "La Guardia Civil ha auxiliado a un senderista tras sufrir una picadura y ha participado en una redada en Salamanca.",
-        "Continúa la búsqueda de Agustín en Ledrada con el apoyo de la Guardia Civil."
-      ]
-    },
-    {
-      "concepto": "Caída sistema informático sanitario",
-      "piezas": 3,
-      "seccion_principal": "salamanca",
-      "desde": "2026-10-15",
-      "hasta": "2026-10-16",
-      "ejemplos_redactados": [
-        "Una incidencia a nivel regional ha provocado la caída temporal de los sistemas informáticos sanitarios.",
-        "Esta caída ha bloqueado vacunaciones, consultas y la receta electrónica, afectando a numerosos usuarios."
+        "La asociación Asenavis realizó una recogida de basura en las carreteras de Ciudad Rodrigo. La ciudad ha recibido millones de euros en inversiones y conmemora años de ayuda a Nicaragua."
       ]
     }
   ],
-  "resumen_borrador": "Se han publicado 162 noticias entre el 2026-10-15 y el 2026-10-18. La actividad se ha concentrado sobre todo en salamanca (59 piezas), provincia (45 piezas), deportes (33 piezas).\n\nLos conceptos con más piezas relacionadas son: Bejar; Ciudad · Rodrigo; Cancer; Meins · Avenida. Revisa 'evidencia' de cada concepto para redactar el resumen final.",
-  "resumen": "La provincia de Salamanca ha vivido un periodo de intensa actividad entre el 15 y el 18 de octubre de 2026, marcado por eventos deportivos, iniciativas locales y sucesos.\n\nEn el ámbito provincial, localidades como Béjar y Ciudad Rodrigo han sido protagonistas. Béjar ha acogido una marcha de concienciación sobre el cáncer y ha gestionado averías, mientras que Ciudad Rodrigo ha visto importantes inversiones y celebraciones religiosas. Alba de Tormes también ha tenido su cuota de noticias con actividades culturales y festivas. La lucha contra el cáncer ha sido un tema recurrente, con Salamanca reclamando atención y asociaciones locales organizando eventos.\n\nLos deportes han estado en el punto de mira con el equipo Meins Avenida, que ha experimentado una derrota, y Unionistas, que ha logrado romper una mala racha. En la crónica de sucesos, se han destacado redadas antidroga en Pizarrales y operaciones policiales como la 'Venterferia', que ha resultado en detenciones. La Guardia Civil ha estado activa en labores de auxilio y búsqueda de personas. Un evento de gran impacto ha sido la caída del sistema informático sanitario a nivel regional, que ha paralizado vacunaciones y consultas, generando preocupación entre la ciudadanía."
+  "resumen_borrador": "Se han publicado 162 noticias entre el 2026-10-16 y el 2026-10-19. La actividad se ha concentrado sobre todo en salamanca (51 piezas), provincia (46 piezas), deportes (44 piezas).\n\nLos conceptos con más piezas relacionadas son: Unionistas; Cancer · Mama; Meins · Avenida; Bejar. Revisa 'evidencia' de cada concepto para redactar el resumen final.",
+  "resumen": "El período comprendido entre el 16 y el 19 de octubre de 2026 ha estado marcado por la actualidad deportiva, social y provincial en Salamanca. En el ámbito deportivo, Unionistas de Salamanca sufrió su primera derrota de la temporada, mientras que el USAL Meins Avenida también cayó en sus encuentros. Se actualizaron las clasificaciones de varias ligas de fútbol y baloncesto.\n\nLa provincia ha sido escenario de diversas noticias, con Béjar acogiendo eventos de concienciación sobre el cáncer y celebraciones locales. Alba de Tormes ha destacado por su promoción turística y el cierre de la temporada taurina. Ciudad Rodrigo, por su parte, ha visto inversiones significativas y acciones comunitarias.\n\nEn el plano social y de salud, se ha puesto de manifiesto la importancia de la concienciación sobre el cáncer de mama, con el hospital detectando un número considerable de casos anuales. La alerta por el consumo de cocaína rosa en menores y la preocupación por el uso problemático de pantallas en adolescentes han sido temas de relevancia. Asimismo, el pleno municipal aprobó la congelación de impuestos, y la caída del sistema informático sanitario generó interrupciones en los servicios."
 }
