@@ -9,5 +9,5 @@ exclude:
   - "scripts"
 
 # Imagen por defecto para Open Graph / Twitter Cards (1200x630).
-# Descomenta cuando exista el archivo assets/img/og-default.jpg.
-# default_image: /assets/img/og-default.jpg
+# Archivo: assets/img/og-default.jpg (1200x630).
+default_image: /assets/img/og-default.jpg
