@@ -3,8 +3,209 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page.title }}</title>
-    <meta name="description" content="Portal de datos abiertos y colaborativos de la ciudad de Salamanca. Explora, visualiza y contribuye con datos públicos.">
+    {%- assign site_name = "Open Salamanca" -%}
+    {%- assign site_desc_default = "Portal de datos abiertos y colaborativos de la ciudad de Salamanca. Explora, visualiza y contribuye con datos públicos." -%}
+    {%- assign canonical = page.url | replace: "/index.html", "/" | absolute_url -%}
+    {%- if page.description and page.description != "" -%}
+        {%- assign meta_desc = page.description | strip_html | strip_newlines | strip -%}
+    {%- else -%}
+        {%- assign meta_desc = site_desc_default -%}
+    {%- endif -%}
+    {%- if page.url == "/" -%}
+        {%- assign meta_title = page.title -%}
+    {%- else -%}
+        {%- capture meta_title %}{{ page.title }} | {{ site_name }}{% endcapture -%}
+    {%- endif -%}
+    {%- assign logo_url = "/assets/img/logo_os.jpg" | absolute_url -%}
+    {%- assign og_image = page.image | default: site.default_image -%}
+    {%- if page.date -%}{%- assign date_published = page.date | date: "%Y-%m-%d" -%}{%- endif -%}
+    {%- if page.modified -%}{%- assign date_modified = page.modified | date: "%Y-%m-%d" -%}{%- endif -%}
+
+    <title>{{ meta_title | escape }}</title>
+    <meta name="description" content="{{ meta_desc | escape }}">
+    <link rel="canonical" href="{{ canonical }}">
+
+    <!-- Open Graph / Twitter -->
+    <meta property="og:site_name" content="{{ site_name }}">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:type" content="{% if page.url == '/autor' %}profile{% else %}website{% endif %}">
+    <meta property="og:title" content="{{ meta_title | escape }}">
+    <meta property="og:description" content="{{ meta_desc | escape }}">
+    <meta property="og:url" content="{{ canonical }}">
+    {%- if og_image %}
+    <meta property="og:image" content="{{ og_image | absolute_url }}">{% endif %}
+    <meta name="twitter:card" content="{% if og_image %}summary_large_image{% else %}summary{% endif %}">
+    <meta name="twitter:site" content="@Emirodgar">
+    <meta name="twitter:title" content="{{ meta_title | escape }}">
+    <meta name="twitter:description" content="{{ meta_desc | escape }}">
+    {%- if og_image %}
+    <meta name="twitter:image" content="{{ og_image | absolute_url }}">{% endif %}
+
+    <!-- Datos estructurados (JSON-LD) -->
+    {%- assign org_id = "/#organization" | absolute_url -%}
+    {%- assign site_id = "/#website" | absolute_url -%}
+    {%- assign person_id = "/autor#person" | absolute_url -%}
+    {%- assign page_id = canonical | append: "#webpage" -%}
+    {%- assign crumb_id = canonical | append: "#breadcrumb" -%}
+    {%- if page.url == "/autor" -%}
+        {%- assign page_type = "ProfilePage" -%}
+    {%- elsif page.category and page.category != "" -%}
+        {%- assign page_type = "CollectionPage" -%}
+    {%- else -%}
+        {%- assign page_type = "WebPage" -%}
+    {%- endif -%}
+    {%- assign dataset_id = canonical | append: "#dataset" -%}
+    {%- assign has_dataset = false -%}
+    {%- if page.dataset_files and page.dataset_files.size > 0 -%}{%- assign has_dataset = true -%}{%- endif -%}
+    {%- assign has_crumbs = false -%}
+    {%- if page.folder and page.folder != "" -%}{%- assign has_crumbs = true -%}{%- endif %}
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": {{ org_id | jsonify }},
+          "name": {{ site_name | jsonify }},
+          "url": {{ "/" | absolute_url | jsonify }},
+          "description": {{ site_desc_default | jsonify }},
+          "logo": {
+            "@type": "ImageObject",
+            "url": {{ logo_url | jsonify }},
+            "width": 144,
+            "height": 144
+          },
+          "founder": { "@id": {{ person_id | jsonify }} },
+          "sameAs": [
+            "https://x.com/Emirodgar"
+          ]
+        },
+        {
+          "@type": "Person",
+          "@id": {{ person_id | jsonify }},
+          "name": "Emilio Rodríguez García",
+          "url": {{ "/autor" | absolute_url | jsonify }},
+          "jobTitle": "Director SEO",
+          "worksFor": [
+            { "@type": "Organization", "name": "Smartup" },
+            { "@type": "CollegeOrUniversity", "name": "Universidad de Salamanca" }
+          ],
+          "sameAs": [
+            "https://www.linkedin.com/in/emirodgar/",
+            "https://x.com/Emirodgar",
+            "https://emirodgar.com"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": {{ site_id | jsonify }},
+          "name": {{ site_name | jsonify }},
+          "url": {{ "/" | absolute_url | jsonify }},
+          "inLanguage": "es",
+          "publisher": { "@id": {{ org_id | jsonify }} }
+        },
+        {
+          "@type": {{ page_type | jsonify }},
+          "@id": {{ page_id | jsonify }},
+          "url": {{ canonical | jsonify }},
+          "name": {{ page.title | jsonify }},
+          "description": {{ meta_desc | jsonify }},
+          "inLanguage": "es",
+          "isPartOf": { "@id": {{ site_id | jsonify }} }
+          {%- if page.url == "/autor" %},
+          "mainEntity": { "@id": {{ person_id | jsonify }} }
+          {%- else %},
+          "publisher": { "@id": {{ org_id | jsonify }} }
+          {%- if has_dataset %},
+          "mainEntity": { "@id": {{ dataset_id | jsonify }} }
+          {%- endif %}
+          {%- endif %}
+          {%- if date_published %},
+          "datePublished": {{ date_published | jsonify }}
+          {%- endif %}
+          {%- if date_modified %},
+          "dateModified": {{ date_modified | jsonify }}
+          {%- endif %}
+          {%- if has_crumbs %},
+          "breadcrumb": { "@id": {{ crumb_id | jsonify }} }
+          {%- endif %}
+        }
+        {%- if has_dataset %},
+        {
+          "@type": "Dataset",
+          "@id": {{ dataset_id | jsonify }},
+          "name": {{ page.dataset_name | default: page.title | jsonify }},
+          "description": {{ meta_desc | jsonify }},
+          "url": {{ canonical | jsonify }},
+          "inLanguage": "es",
+          "isAccessibleForFree": true,
+          "license": "https://creativecommons.org/licenses/by/4.0/",
+          "creator": { "@id": {{ org_id | jsonify }} },
+          "publisher": { "@id": {{ org_id | jsonify }} },
+          "spatialCoverage": {
+            "@type": "Place",
+            "name": "Salamanca, España",
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": 40.9701,
+              "longitude": -5.6635
+            }
+          }
+          {%- if page.dataset_temporal %},
+          "temporalCoverage": {{ page.dataset_temporal | jsonify }}
+          {%- endif %}
+          {%- if date_published %},
+          "datePublished": {{ date_published | jsonify }}
+          {%- endif %}
+          {%- if date_modified %},
+          "dateModified": {{ date_modified | jsonify }}
+          {%- endif %},
+          "distribution": [
+            {%- for f in page.dataset_files %}
+            {
+              "@type": "DataDownload",
+              "contentUrl": {{ f | prepend: "/" | absolute_url | jsonify }},
+              "encodingFormat": {% if f contains ".xml" %}"application/xml"{% elsif f contains ".csv" %}"text/csv"{% else %}"application/json"{% endif %}
+            }{% unless forloop.last %},{% endunless %}
+            {%- endfor %}
+          ]
+        }
+        {%- endif %}
+        {%- if has_crumbs -%}
+        {%- assign category_page = site.pages | where: "category", page.folder | first -%}
+        {%- assign pos = 1 %},
+        {
+          "@type": "BreadcrumbList",
+          "@id": {{ crumb_id | jsonify }},
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": {{ pos }},
+              "name": "Inicio",
+              "item": {{ "/" | absolute_url | jsonify }}
+            }
+            {%- if category_page -%}
+            {%- assign pos = pos | plus: 1 %},
+            {
+              "@type": "ListItem",
+              "position": {{ pos }},
+              "name": {{ category_page.title | jsonify }},
+              "item": {{ category_page.url | absolute_url | jsonify }}
+            }
+            {%- endif -%}
+            {%- assign pos = pos | plus: 1 %},
+            {
+              "@type": "ListItem",
+              "position": {{ pos }},
+              "name": {{ page.title | jsonify }},
+              "item": {{ canonical | jsonify }}
+            }
+          ]
+        }
+        {%- endif %}
+      ]
+    }
+    </script>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
