@@ -194,3 +194,14 @@ Salamanca capital reúne una <b>oferta museística muy concentrada en el casco h
 			});
 	})();
 	</script>
+
+<script src="/assets/js/structured-data.js"></script>
+<script>
+OpenSalamancaLD.itemList({
+  file: '/museos-salamanca.json',
+  type: 'Museum',
+  name: 'Museos de Salamanca',
+  pick: function (d) { return d.capital.concat(d.provincia); },
+  map: function (r) { return { name: r.nombre_oficial, address: r.direccion, lat: r.coordenadas && r.coordenadas.lat, lon: r.coordenadas && r.coordenadas.lon, url: r.web_oficial }; }
+});
+</script>

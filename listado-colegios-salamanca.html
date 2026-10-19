@@ -185,3 +185,14 @@ Salamanca capital mantiene una red educativa con fuerte peso de la <b>enseñanza
 			});
 	})();
 	</script>
+
+<script src="/assets/js/structured-data.js"></script>
+<script>
+OpenSalamancaLD.itemList({
+  file: '/centros-educativos-salamanca.json',
+  type: 'School',
+  name: 'Colegios y centros educativos de Salamanca',
+  pick: function (d) { return d.centros; },
+  map: function (r) { return { name: r.nombre, address: r.direccion, lat: r.lat, lon: r.lon, url: r.web, telephone: r.telefono }; }
+});
+</script>

@@ -129,3 +129,14 @@ La atención primaria pública en la ciudad de Salamanca se organiza en <b>zonas
 			});
 	})();
 	</script>
+
+<script src="/assets/js/structured-data.js"></script>
+<script>
+OpenSalamancaLD.itemList({
+  file: '/centros-salud.json',
+  type: 'MedicalClinic',
+  name: 'Centros de salud de Salamanca',
+  pick: function (d) { return d.centros; },
+  map: function (r) { return { name: r.nombre, address: r.direccion, lat: r.lat, lon: r.lng, telephone: r.telefono }; }
+});
+</script>

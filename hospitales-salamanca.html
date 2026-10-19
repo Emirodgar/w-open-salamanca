@@ -174,3 +174,14 @@ La ciudad de Salamanca tiene, en la práctica, un gran hospital público y un ho
 		});
 	})();
 	</script>
+
+<script src="/assets/js/structured-data.js"></script>
+<script>
+OpenSalamancaLD.itemList({
+  file: '/hospitales-salamanca.json',
+  type: 'Hospital',
+  name: 'Hospitales de Salamanca',
+  pick: function (d) { return d.hospitales; },
+  map: function (r) { return { name: r.nombre_oficial, address: r.direccion, lat: r.coordenadas && r.coordenadas.lat, lon: r.coordenadas && r.coordenadas.lon }; }
+});
+</script>

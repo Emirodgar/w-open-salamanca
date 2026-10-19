@@ -7,3 +7,7 @@ exclude:
   - "Open Salamanca - Diseño y Arquitectura del Portal.md"
   - "cloudflare-worker"
   - "scripts"
+
+# Imagen por defecto para Open Graph / Twitter Cards (1200x630).
+# Descomenta cuando exista el archivo assets/img/og-default.jpg.
+# default_image: /assets/img/og-default.jpg
