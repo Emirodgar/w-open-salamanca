@@ -201,6 +201,24 @@
         "Confío en que llegarán lejos": 1
       },
       "total_votos": 3
+    },
+    {
+      "id": "congreso-gastronomico-2026",
+      "pregunta": "El III Congreso Gastronómico de LA GACETA explorará la riqueza culinaria de Castilla y León en Salamanca. ¿Cree que este tipo de eventos contribuye eficazmente a la promoción de la gastronomía local y el turismo en la provincia?",
+      "opciones": [
+        "Sí, son clave para la visibilidad y el atractivo turístico",
+        "No, su impacto es más bien limitado",
+        "Depende de la repercusión mediática y la participación",
+        "No tengo suficiente información"
+      ],
+      "basado_en": "eventos.json",
+      "fecha_creacion": "2026-10-12",
+      "fecha_archivado": "2026-10-20",
+      "resultados": {
+        "No, su impacto es más bien limitado": 2,
+        "Sí, son clave para la visibilidad y el atractivo turístico": 4
+      },
+      "total_votos": 6
     }
   ]
 }

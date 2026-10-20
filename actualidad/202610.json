@@ -1,7 +1,7 @@
 {
   "mes": "2026-10",
   "titulo_mes": "Octubre 2026",
-  "resumen_mes": "Octubre de 2026 ha sido un mes de importantes decisiones políticas y avances económicos en la provincia, con la elección del presidente de la Diputación y nuevas inversiones. El deporte local ha tenido altibajos, mientras que sucesos como operaciones policiales y la alerta por el consumo de drogas en menores han mantenido la atención. La caída del sistema informático sanitario y el aumento de casos de acoso escolar han sido las notas más preocupantes en el ámbito social y educativo.",
+  "resumen_mes": "Octubre de 2026 ha sido un mes de importantes decisiones políticas y avances económicos en la provincia, con la elección del presidente de la Diputación y nuevas inversiones. El deporte local ha tenido altibajos, con el Salamanca UDS liderando su grupo y Salamanca siendo elegida sede para un campeonato nacional. Sucesos como operaciones policiales y la alerta por el consumo de drogas en menores han mantenido la atención. La caída del sistema informático sanitario y el aumento de casos de acoso escolar han sido las notas más preocupantes en el ámbito social y educativo.",
   "hitos": [
     {
       "fecha": "2026-10-09",
@@ -44,14 +44,6 @@
       "destacado": true
     },
     {
-      "fecha": "2026-10-16",
-      "titulo": "Pleno aprueba congelación de cinco impuestos municipales",
-      "categoria": "Política",
-      "descripcion": "El pleno municipal ha dado luz verde inicialmente a la congelación de cinco impuestos municipales.",
-      "fuente": "https://www.lagacetadesalamanca.es/salamanca/pleno-aprueba-inicialmente-congelacion-cinco-impuestos-municipales-20261016095146-nt.html",
-      "destacado": false
-    },
-    {
       "fecha": "2026-10-17",
       "titulo": "Hospital de Salamanca detecta 300 casos de cáncer de mama al año",
       "categoria": "Sociedad",
@@ -65,6 +57,14 @@
       "categoria": "Sucesos",
       "descripcion": "Se ha emitido una alerta tras la detección del consumo de cocaína rosa entre menores de edad.",
       "fuente": "https://www.lagacetadesalamanca.es/salamanca/alerta-deteccion-consumo-cocaina-rosa-menores-drogas-20261018060000-nt.html",
+      "destacado": false
+    },
+    {
+      "fecha": "2026-10-19",
+      "titulo": "Salamanca, sede de la final del Campeonato de España de fútbol",
+      "categoria": "Deportes",
+      "descripcion": "Salamanca ha sido elegida para albergar la final del Campeonato de España de fútbol.",
+      "fuente": "https://www.lagacetadesalamanca.es/deportes/salamanca-elegida-sede-final-campeonato-espana-futbol-20261019170130-nt.html",
       "destacado": false
     }
   ]

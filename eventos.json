@@ -1,5 +1,5 @@
 {
-  "generado_en": "2026-10-19T05:45:34+00:00",
+  "generado_en": "2026-10-20T05:45:32+00:00",
   "eventos": [
     {
       "titulo": "30ª Muestra de Teatro Aficionado El Encinar",
@@ -29,22 +29,13 @@
       "fuente": "https://www.lagacetadesalamanca.es/provincia/castanada-bebecuentos-cuentacuentos-semana-biblioteca-carbajosa-20261015120509-nt.html"
     },
     {
-      "titulo": "Reunión sobre la renovación de huertos urbanos en Monterrubio",
-      "categoria": "Urbanismo",
+      "titulo": "Fiesta del Cine",
+      "categoria": "Cultura",
       "fecha_inicio": "2026-10-19",
-      "fecha_fin": null,
-      "lugar": "Salón de Plenos, Monterrubio",
-      "descripcion": "El Ayuntamiento de Monterrubio ha convocado una reunión para presentar las mejoras y explicar la nueva normativa de los huertos urbanos, tras una inversión de 100.000 euros.",
-      "fuente": "https://www.lagacetadesalamanca.es/provincia/monterrubio-renueva-huertos-urbanos-dara-charlas-sobre-20261017192945-nt.html"
-    },
-    {
-      "titulo": "Etapa de la XII Spain Classic Raid en Carbajosa de la Sagrada",
-      "categoria": "Deportes",
-      "fecha_inicio": "2026-10-19",
-      "fecha_fin": null,
-      "lugar": "recinto ferial, Carbajosa de la Sagrada",
-      "descripcion": "Carbajosa de la Sagrada acogerá la salida de la tercera etapa de la XII edición del Spain Classic Raid, una prueba de regularidad para vehículos clásicos. Participarán 170 equipos en un recorrido de 190 kilómetros con destino a Ávila.",
-      "fuente": "https://www.lagacetadesalamanca.es/provincia/carbajosa-acogera-etapa-historica-spain-classic-raid-20261016122033-nt.html"
+      "fecha_fin": "2026-10-22",
+      "lugar": "Cines Van Dyck",
+      "descripcion": "La Fiesta del Cine ofrece entradas a 3,50€ en Cines Van Dyck durante cuatro días. La iniciativa busca fomentar el hábito de la pantalla grande y agradecer la fidelidad del público.",
+      "fuente": "https://www.lagacetadesalamanca.es/salamanca/vuelve-fiesta-cine-cuatro-dias-entradas-350e-20261019104518-nt.html"
     },
     {
       "titulo": "Bebecuentos y Cuentacuentos 'Hojas' y 'El ladrón de calabazas'",
@@ -98,6 +89,15 @@
       "lugar": "Peñaranda de Bracamonte",
       "descripcion": "Peñaranda de Bracamonte acogerá la jornada 'Mujeres rurales: pasado, presente y futuro', un encuentro de asociacionismo femenino con un programa que combinará patrimonio, convivencia y representación institucional.",
       "fuente": "https://www.lagacetadesalamanca.es/provincia/penaranda-acogera-encuentro-asociaciones-mujeres-rurales-octubre-20261018220143-nt.html"
+    },
+    {
+      "titulo": "VI Congreso Educativo de Ajedrez",
+      "categoria": "Educación",
+      "fecha_inicio": "2026-10-24",
+      "fecha_fin": null,
+      "lugar": "Torre de los Anaya",
+      "descripcion": "El VI Congreso Educativo de Ajedrez se centrará en los beneficios del ajedrez para personas mayores y en la atención a alumnos con altas capacidades intelectuales. Se presentarán propuestas prácticas para usar el ajedrez como recurso educativo transversal.",
+      "fuente": "https://www.lagacetadesalamanca.es/deportes/torre-anaya-acoge-congreso-educativo-ajedrez-20261019165522-nt.html"
     },
     {
       "titulo": "Taller infantil 'Monstruos y calabazas' en Carbajosa",
@@ -420,6 +420,15 @@
       "lugar": "Cabrerizos",
       "descripcion": "La quinta y última carrera de la trigésimo cuarta edición de la Liga de Cross de Cabrerizos se ha previsto para el 7 de febrero, estrenando un nuevo recorrido.",
       "fuente": "https://www.lagacetadesalamanca.es/deportes/carreras-populares/xxxiv-liga-cross-cabrerizos-arrancara-noviembre-20261013195148-nt.html"
+    },
+    {
+      "titulo": "Campeonato de España de Fútbol 7",
+      "categoria": "Deportes",
+      "fecha_inicio": "2027-06-11",
+      "fecha_fin": "2027-06-13",
+      "lugar": "complejo deportivo de La Aldehuela, Salamanca",
+      "descripcion": "Salamanca acogerá el Campeonato de España de Fútbol 7 del 11 al 13 de junio de 2027, reuniendo a cerca de 700 participantes de todo el país. Los partidos se disputarán en el complejo deportivo de La Aldehuela.",
+      "fuente": "https://www.lagacetadesalamanca.es/deportes/salamanca-elegida-sede-final-campeonato-espana-futbol-20261019170130-nt.html"
     }
   ]
 }

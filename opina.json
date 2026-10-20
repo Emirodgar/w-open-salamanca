@@ -244,18 +244,6 @@
       "fecha_creacion": "2026-10-12"
     },
     {
-      "id": "congreso-gastronomico-2026",
-      "pregunta": "El III Congreso Gastronómico de LA GACETA explorará la riqueza culinaria de Castilla y León en Salamanca. ¿Cree que este tipo de eventos contribuye eficazmente a la promoción de la gastronomía local y el turismo en la provincia?",
-      "opciones": [
-        "Sí, son clave para la visibilidad y el atractivo turístico",
-        "No, su impacto es más bien limitado",
-        "Depende de la repercusión mediática y la participación",
-        "No tengo suficiente información"
-      ],
-      "basado_en": "eventos.json",
-      "fecha_creacion": "2026-10-12"
-    },
-    {
       "id": "copa-rey-salamanca-uds-celta-2026",
       "pregunta": "Ante la inminente venta de entradas y la expectación generada por el partido de Copa del Rey entre el Salamanca UDS y el Celta, ¿cree que el equipo salmantino tiene opciones reales de superar esta primera ronda?",
       "opciones": [
@@ -411,6 +399,30 @@
       ],
       "basado_en": "eventos.json",
       "fecha_creacion": "2026-10-19"
+    },
+    {
+      "id": "sede-campeonato-futbol-2027",
+      "pregunta": "Salamanca ha sido designada sede para la final del Campeonato de España de fútbol en 2027. ¿Cree que acoger este tipo de eventos deportivos de gran magnitud beneficia a la ciudad?",
+      "opciones": [
+        "Sí, impulsa el turismo y la economía local.",
+        "No, los beneficios son limitados y los costes elevados.",
+        "Depende de la organización y la promoción del evento.",
+        "No tengo suficiente información."
+      ],
+      "basado_en": "actualidad.json",
+      "fecha_creacion": "2026-10-20"
+    },
+    {
+      "id": "mercado-navideno-anaya-2026",
+      "pregunta": "La Plaza de Anaya acogerá el Mercado Navideño desde el 26 de noviembre hasta el 5 de enero. ¿Considera que este mercado contribuye a crear un ambiente festivo y a dinamizar el comercio local durante la Navidad?",
+      "opciones": [
+        "Sí, es un gran atractivo para vecinos y visitantes.",
+        "No, su impacto es limitado o no es relevante.",
+        "Es un buen complemento, pero no esencial para el comercio.",
+        "No tengo suficiente información."
+      ],
+      "basado_en": "eventos.json",
+      "fecha_creacion": "2026-10-20"
     }
   ]
 }
