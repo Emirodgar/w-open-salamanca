@@ -1,7 +1,7 @@
 {
   "mes": "2026-10",
   "titulo_mes": "Octubre 2026",
-  "resumen_mes": "Octubre de 2026 ha sido un mes de importantes decisiones políticas y avances económicos en la provincia, con la elección del presidente de la Diputación y nuevas inversiones. El deporte local ha tenido altibajos, con el Salamanca UDS liderando su grupo y Salamanca siendo elegida sede para un campeonato nacional. Sucesos como operaciones policiales y la alerta por el consumo de drogas en menores han mantenido la atención. La caída del sistema informático sanitario y el aumento de casos de acoso escolar han sido las notas más preocupantes en el ámbito social y educativo.",
+  "resumen_mes": "Octubre de 2026 ha sido un mes de importantes decisiones políticas y avances económicos en la provincia, con la elección del presidente de la Diputación y nuevas inversiones. El deporte local ha tenido altibajos, con el Salamanca UDS liderando su grupo y Salamanca siendo elegida sede para un campeonato nacional. Sucesos como el vuelco de un autobús en Alba de Tormes y la alerta por el consumo de drogas en menores han mantenido la atención. La caída del sistema informático sanitario, el aumento de casos de acoso escolar y las averías en el suministro de agua en Béjar han sido las notas más preocupantes en el ámbito social y urbanístico.",
   "hitos": [
     {
       "fecha": "2026-10-09",
@@ -36,35 +36,35 @@
       "destacado": false
     },
     {
-      "fecha": "2026-10-16",
-      "titulo": "Caída del sistema informático bloquea servicios sanitarios",
-      "categoria": "Sociedad",
-      "descripcion": "Una incidencia a nivel regional ha provocado la caída temporal del sistema informático, bloqueando vacunaciones, consultas y la receta electrónica.",
-      "fuente": "https://www.lagacetadesalamanca.es/salamanca/caida-sistema-informatico-bloquea-vacunaciones-consultas-receta-20261016091530-nt.html",
-      "destacado": true
-    },
-    {
-      "fecha": "2026-10-17",
-      "titulo": "Hospital de Salamanca detecta 300 casos de cáncer de mama al año",
-      "categoria": "Sociedad",
-      "descripcion": "El Hospital de Salamanca ha informado que detecta alrededor de 300 nuevos casos de cáncer de mama cada año.",
-      "fuente": "https://www.lagacetadesalamanca.es/salamanca/hospital-detecta-300-casos-cancer-mama-ano-20261017104001-nt.html",
-      "destacado": false
-    },
-    {
-      "fecha": "2026-10-18",
-      "titulo": "Alerta por detección de consumo de cocaína rosa en menores",
-      "categoria": "Sucesos",
-      "descripcion": "Se ha emitido una alerta tras la detección del consumo de cocaína rosa entre menores de edad.",
-      "fuente": "https://www.lagacetadesalamanca.es/salamanca/alerta-deteccion-consumo-cocaina-rosa-menores-drogas-20261018060000-nt.html",
-      "destacado": false
-    },
-    {
       "fecha": "2026-10-19",
       "titulo": "Salamanca, sede de la final del Campeonato de España de fútbol",
       "categoria": "Deportes",
       "descripcion": "Salamanca ha sido elegida para albergar la final del Campeonato de España de fútbol.",
       "fuente": "https://www.lagacetadesalamanca.es/deportes/salamanca-elegida-sede-final-campeonato-espana-futbol-20261019170130-nt.html",
+      "destacado": false
+    },
+    {
+      "fecha": "2026-10-19",
+      "titulo": "Béjar sufre dos averías en la red de suministro de agua",
+      "categoria": "Urbanismo",
+      "descripcion": "La localidad de Béjar ha experimentado dos averías en su red de suministro de agua.",
+      "fuente": "https://www.lagacetadesalamanca.es/provincia/bejar-sufre-dos-averias-red-suministrara-agua-20261019174223-nt.html",
+      "destacado": false
+    },
+    {
+      "fecha": "2026-10-20",
+      "titulo": "Vuelca un autobús en la carretera de Alba de Tormes",
+      "categoria": "Sucesos",
+      "descripcion": "Un autobús ha volcado en la carretera de Alba de Tormes después de que su conductor sufriera un desvanecimiento.",
+      "fuente": "https://www.lagacetadesalamanca.es/sucesos/autobus-vuelca-carretera-alba-tras-desvanecerse-conductor-20261020115922-nt.html",
+      "destacado": true
+    },
+    {
+      "fecha": "2026-10-20",
+      "titulo": "Gonzalo Robles deja el Senado tras cuatro décadas",
+      "categoria": "Política",
+      "descripcion": "Gonzalo Robles ha anunciado su retirada del Senado después de cuatro décadas de trayectoria política.",
+      "fuente": "https://www.lagacetadesalamanca.es/salamanca/gonzalo-robles-deja-senado-tras-cuatro-decadas-20261020130047-nt.html",
       "destacado": false
     }
   ]

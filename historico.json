@@ -219,6 +219,25 @@
         "Sí, son clave para la visibilidad y el atractivo turístico": 4
       },
       "total_votos": 6
+    },
+    {
+      "id": "festival-universitario-helm-2026",
+      "pregunta": "Los exteriores del Estadio Helmántico acogerán un popular festival universitario que atraerá a estudiantes de toda España. ¿Cree que este tipo de eventos contribuye positivamente a la dinamización social y económica de Salamanca?",
+      "opciones": [
+        "Sí, atrae gente y genera actividad",
+        "No, su impacto es limitado o negativo",
+        "Depende de la organización y la afluencia",
+        "No tengo suficiente información"
+      ],
+      "basado_en": "eventos.json",
+      "fecha_creacion": "2026-10-13",
+      "fecha_archivado": "2026-10-21",
+      "resultados": {
+        "Sí, atrae gente y genera actividad": 2,
+        "No, su impacto es limitado o negativo": 2,
+        "Depende de la organización y la afluencia": 1
+      },
+      "total_votos": 5
     }
   ]
 }

@@ -26,8 +26,9 @@
     {"fecha": "2026-10-15", "total": 45, "salamanca": 14, "provincia": 17, "deportes": 5, "sucesos": 7, "encuestas": 1, "campo": 1, "cine-y-series": 0},
     {"fecha": "2026-10-16", "total": 47, "salamanca": 13, "provincia": 18, "deportes": 7, "sucesos": 7, "encuestas": 1, "toros": 0, "campo": 0, "cine-y-series": 1},
     {"fecha": "2026-10-17", "total": 40, "salamanca": 9, "deportes": 17, "provincia": 8, "sucesos": 4, "campo": 1, "encuestas": 1, "toros": 0, "castilla-y-leon": 0},
-    {"fecha": "2026-10-18", "total": 50, "salamanca": 12, "deportes": 17, "provincia": 16, "sucesos": 2, "campo": 1, "encuestas": 1, "toros": 1, "castilla-y-leon": 0},
-    {"fecha": "2026-10-19", "total": 72, "salamanca": 32, "deportes": 15, "provincia": 15, "sucesos": 4, "campo": 2, "encuestas": 1, "toros": 2, "castilla-y-leon": 1},
-    {"fecha": "2026-10-20", "total": 9, "salamanca": 3, "deportes": 0, "provincia": 4, "sucesos": 0, "campo": 2, "encuestas": 0, "toros": 0, "castilla-y-leon": 0}
+    {"fecha": "2026-10-18", "total": 39, "salamanca": 4, "provincia": 14, "deportes": 16, "sucesos": 2, "campo": 1, "toros": 1, "encuestas": 1, "castilla-y-leon": 0, "economia": 0},
+    {"fecha": "2026-10-19", "total": 70, "salamanca": 30, "provincia": 15, "deportes": 15, "sucesos": 4, "campo": 2, "toros": 2, "encuestas": 1, "castilla-y-leon": 1, "economia": 0},
+    {"fecha": "2026-10-20", "total": 68, "salamanca": 27, "provincia": 13, "deportes": 6, "sucesos": 12, "campo": 7, "toros": 0, "encuestas": 1, "castilla-y-leon": 1, "economia": 1},
+    {"fecha": "2026-10-21", "total": 12, "salamanca": 5, "provincia": 5, "deportes": 1, "sucesos": 0, "campo": 0, "toros": 1, "encuestas": 0, "castilla-y-leon": 0, "economia": 0}
   ]
 }

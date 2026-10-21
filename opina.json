@@ -256,18 +256,6 @@
       "fecha_creacion": "2026-10-13"
     },
     {
-      "id": "festival-universitario-helm-2026",
-      "pregunta": "Los exteriores del Estadio Helmántico acogerán un popular festival universitario que atraerá a estudiantes de toda España. ¿Cree que este tipo de eventos contribuye positivamente a la dinamización social y económica de Salamanca?",
-      "opciones": [
-        "Sí, atrae gente y genera actividad",
-        "No, su impacto es limitado o negativo",
-        "Depende de la organización y la afluencia",
-        "No tengo suficiente información"
-      ],
-      "basado_en": "eventos.json",
-      "fecha_creacion": "2026-10-13"
-    },
-    {
       "id": "mujeres-innovan-salamanca-2026",
       "pregunta": "Salamanca acogerá la jornada 'Mujeres que innovan', centrada en emprendimiento y liderazgo femenino. ¿Cree que este tipo de iniciativas son clave para fomentar la igualdad de oportunidades en el ámbito profesional local?",
       "opciones": [
@@ -423,6 +411,30 @@
       ],
       "basado_en": "eventos.json",
       "fecha_creacion": "2026-10-20"
+    },
+    {
+      "id": "prioridades-bejar-2026",
+      "pregunta": "Ante las recientes convocatorias de empleo para La Covatilla y las averías en la red de agua, ¿cuál cree que debería ser la prioridad del Ayuntamiento de Béjar?",
+      "opciones": [
+        "Fomentar el empleo y el desarrollo turístico de La Covatilla",
+        "Garantizar y mejorar la infraestructura de servicios básicos como el agua",
+        "Ambas son igual de importantes y deben abordarse conjuntamente",
+        "No tengo suficiente información"
+      ],
+      "basado_en": "actualidad.json",
+      "fecha_creacion": "2026-10-21"
+    },
+    {
+      "id": "sorteo-navidad-ciudad-rodrigo-2027",
+      "pregunta": "Ciudad Rodrigo volverá a sortear un coche por Navidad. ¿Considera que este tipo de iniciativas comerciales son efectivas para dinamizar las compras y el comercio local durante las fiestas?",
+      "opciones": [
+        "Sí, incentivan el consumo y atraen clientes",
+        "No, su impacto es limitado y no beneficia a todos los comercios",
+        "Son un buen reclamo, pero no una solución a largo plazo",
+        "No tengo suficiente información"
+      ],
+      "basado_en": "eventos.json",
+      "fecha_creacion": "2026-10-21"
     }
   ]
 }

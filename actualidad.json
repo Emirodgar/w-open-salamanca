@@ -1,11 +1,11 @@
 {
   "url_base": "https://www.lagacetadesalamanca.es",
-  "generado_en": "2026-10-20T05:45:32+00:00",
+  "generado_en": "2026-10-21T05:45:41+00:00",
   "periodo_cubierto": {
-    "desde": "2026-10-17",
-    "hasta": "2026-10-20"
+    "desde": "2026-10-18",
+    "hasta": "2026-10-21"
   },
-  "total_urls_analizadas": 171,
+  "total_urls_analizadas": 189,
   "secciones_excluidas": [
     "gente-estilo",
     "nacional",
@@ -17,41 +17,45 @@
   "por_seccion": [
     [
       "salamanca",
-      56
-    ],
-    [
-      "deportes",
-      49
+      66
     ],
     [
       "provincia",
-      43
+      47
+    ],
+    [
+      "deportes",
+      38
     ],
     [
       "sucesos",
-      10
+      18
     ],
     [
       "campo",
-      6
+      10
+    ],
+    [
+      "toros",
+      4
     ],
     [
       "encuestas",
       3
     ],
     [
-      "toros",
-      3
+      "castilla-y-leon",
+      2
     ],
     [
-      "castilla-y-leon",
+      "economia",
       1
     ]
   ],
   "por_subseccion": [
     [
       "deportes/futbol-local",
-      27
+      19
     ],
     [
       "deportes/baloncesto-local",
@@ -65,111 +69,132 @@
   "por_tipo_contenido": [
     [
       "noticia",
-      144
+      169
     ],
     [
       "galería",
-      23
+      18
     ],
     [
       "directo / en vivo",
-      4
+      2
     ]
   ],
   "heatmap_calendario": [
     {
-      "fecha": "2026-10-17",
-      "total": 40,
-      "salamanca": 9,
-      "deportes": 17,
-      "provincia": 8,
-      "sucesos": 4,
-      "campo": 1,
-      "encuestas": 1,
-      "toros": 0,
-      "castilla-y-leon": 0
-    },
-    {
       "fecha": "2026-10-18",
-      "total": 50,
-      "salamanca": 12,
-      "deportes": 17,
-      "provincia": 16,
+      "total": 39,
+      "salamanca": 4,
+      "provincia": 14,
+      "deportes": 16,
       "sucesos": 2,
       "campo": 1,
-      "encuestas": 1,
       "toros": 1,
-      "castilla-y-leon": 0
+      "encuestas": 1,
+      "castilla-y-leon": 0,
+      "economia": 0
     },
     {
       "fecha": "2026-10-19",
-      "total": 72,
-      "salamanca": 32,
-      "deportes": 15,
+      "total": 70,
+      "salamanca": 30,
       "provincia": 15,
+      "deportes": 15,
       "sucesos": 4,
       "campo": 2,
-      "encuestas": 1,
       "toros": 2,
-      "castilla-y-leon": 1
+      "encuestas": 1,
+      "castilla-y-leon": 1,
+      "economia": 0
     },
     {
       "fecha": "2026-10-20",
-      "total": 9,
-      "salamanca": 3,
-      "deportes": 0,
-      "provincia": 4,
-      "sucesos": 0,
-      "campo": 2,
-      "encuestas": 0,
+      "total": 68,
+      "salamanca": 27,
+      "provincia": 13,
+      "deportes": 6,
+      "sucesos": 12,
+      "campo": 7,
       "toros": 0,
-      "castilla-y-leon": 0
+      "encuestas": 1,
+      "castilla-y-leon": 1,
+      "economia": 1
+    },
+    {
+      "fecha": "2026-10-21",
+      "total": 12,
+      "salamanca": 5,
+      "provincia": 5,
+      "deportes": 1,
+      "sucesos": 0,
+      "campo": 0,
+      "toros": 1,
+      "encuestas": 0,
+      "castilla-y-leon": 0,
+      "economia": 0
     }
   ],
   "conceptos_destacados": [
     {
-      "concepto": "Cáncer de Mama",
-      "piezas": 7,
-      "seccion_principal": "salamanca",
-      "desde": "2026-10-17",
-      "hasta": "2026-10-19",
-      "ejemplos_redactados": [
-        "Se formó un lazo humano en la ciudad con motivo del Día del Cáncer de Mama.",
-        "Un mural en El Encinar recuerda a las mujeres en el Día del Cáncer de Mama.",
-        "Se presenta una nueva estrategia de nanomedicina con potencial para tratar el cáncer de mama."
-      ]
-    },
-    {
-      "concepto": "Perfumerías Avenida",
-      "piezas": 4,
-      "seccion_principal": "deportes",
-      "desde": "2026-10-17",
-      "hasta": "2026-10-18",
-      "ejemplos_redactados": [
-        "El USAL Meins Avenida cayó ante Marín.",
-        "Se analizan las claves de la derrota del Meins Avenida en Estepona."
-      ]
-    },
-    {
-      "concepto": "Campeonatos de España",
-      "piezas": 4,
-      "seccion_principal": "deportes",
-      "desde": "2026-10-18",
-      "hasta": "2026-10-19",
-      "ejemplos_redactados": [
-        "Salamanca ha sido elegida sede para la final del Campeonato de España de fútbol.",
-        "Valmuza corona a sus campeonas de España en su categoría."
-      ]
-    },
-    {
       "concepto": "Ciudad Rodrigo",
-      "piezas": 3,
+      "piezas": 5,
       "seccion_principal": "provincia",
       "desde": "2026-10-18",
       "hasta": "2026-10-20",
       "ejemplos_redactados": [
-        "Una fiesta de barrio en Ciudad Rodrigo genera diferencias entre los vecinos.",
-        "Cáritas Ciudad Rodrigo acerca la lengua de signos al alumnado."
+        "La Diócesis de Ciudad Rodrigo participa en una jornada técnica. La ciudad se prepara para el sorteo del coche de Navidad.",
+        "Un incidente en una fiesta de barrio genera diferencias entre los vecinos."
+      ]
+    },
+    {
+      "concepto": "Mujeres",
+      "piezas": 5,
+      "seccion_principal": "provincia",
+      "desde": "2026-10-18",
+      "hasta": "2026-10-20",
+      "ejemplos_redactados": [
+        "Tres mujeres convierten el ibérico, el aceite y el vino en un medio de vida. Alba de Tormes brinda homenaje a las mujeres.",
+        "Se realiza un camino de fiesta para las mujeres de Alba de Tormes en Santa Teresa."
+      ]
+    },
+    {
+      "concepto": "Béjar",
+      "piezas": 5,
+      "seccion_principal": "provincia",
+      "desde": "2026-10-19",
+      "hasta": "2026-10-20",
+      "ejemplos_redactados": [
+        "Béjar abre convocatorias de empleo para monitores y ayudantes en La Covatilla. Se destaca el entorno de Béjar para disfrutar de la belleza del otoño."
+      ]
+    },
+    {
+      "concepto": "Encuentros y Eventos",
+      "piezas": 5,
+      "seccion_principal": "provincia",
+      "desde": "2026-10-18",
+      "hasta": "2026-10-21",
+      "ejemplos_redactados": [
+        "Villoria estará presente en el encuentro nacional de cofradías Minerva. Unionistas consigue 150 entradas para un encuentro de Copa."
+      ]
+    },
+    {
+      "concepto": "Cáncer de Mama",
+      "piezas": 4,
+      "seccion_principal": "provincia",
+      "desde": "2026-10-18",
+      "hasta": "2026-10-19",
+      "ejemplos_redactados": [
+        "Un mural en El Encinar recuerda a las mujeres en el Día del Cáncer de Mama. Se forma un lazo humano en Ciudad Rodrigo con motivo del Día del Cáncer de Mama."
+      ]
+    },
+    {
+      "concepto": "Ayuntamiento",
+      "piezas": 4,
+      "seccion_principal": "salamanca",
+      "desde": "2026-10-19",
+      "hasta": "2026-10-20",
+      "ejemplos_redactados": [
+        "El Ayuntamiento de Béjar reporta la ausencia temporal de un vicesecretario. Los finalistas de los premios HosteleríaSalamanca.es son citados en el Ayuntamiento."
       ]
     },
     {
@@ -179,22 +204,20 @@
       "desde": "2026-10-19",
       "hasta": "2026-10-19",
       "ejemplos_redactados": [
-        "Se destacan las mejores imágenes de la jornada de fútbol base en Salamanca.",
-        "Se publica el once ideal de los 'cracks' tras la jornada de fútbol base."
+        "Se publican las mejores imágenes de la jornada de fútbol base en Salamanca. El once ideal de cracks tras la jornada de fútbol base."
       ]
     },
     {
-      "concepto": "Clasificación Deportiva",
-      "piezas": 3,
+      "concepto": "Campeonatos Nacionales",
+      "piezas": 5,
       "seccion_principal": "deportes",
       "desde": "2026-10-18",
-      "hasta": "2026-10-18",
+      "hasta": "2026-10-20",
       "ejemplos_redactados": [
-        "Se actualiza la clasificación del grupo de Primera Federación tras la jornada.",
-        "También se presenta la clasificación de la Liga Femenina después de la cuarta jornada."
+        "Salamanca es elegida sede para la final del Campeonato de España de fútbol. Velsalamanca logra una brillante sexta posición en el Campeonato de España."
       ]
     }
   ],
-  "resumen_borrador": "Se han publicado 171 noticias entre el 2026-10-17 y el 2026-10-20. La actividad se ha concentrado sobre todo en salamanca (56 piezas), deportes (49 piezas), provincia (43 piezas).\n\nLos conceptos con más piezas relacionadas son: Cancer · Mama; Jornada; Mujeres; Meins · Avenida. Revisa 'evidencia' de cada concepto para redactar el resumen final.",
-  "resumen": "La actualidad salmantina entre el 17 y el 20 de octubre ha estado marcada por la conmemoración del Día del Cáncer de Mama, con diversas iniciativas de concienciación como la formación de un lazo humano y la iluminación de fachadas, además de avances en nanomedicina para su tratamiento. Otros temas sociales incluyen la alerta por el consumo de cocaína rosa en menores y el uso problemático de pantallas en adolescentes, así como la dificultad para cubrir puestos en el sector de la hostelería. En la provincia, se han registrado problemas de suministro de agua en Béjar y la realización de pruebas de seguridad en Covatilla de cara a la temporada de esquí. Un juicio por agresión y varios accidentes de tráfico completan la sección de sucesos. Algunas noticias resaltan la importancia de las farmacias como servicio sanitario cercano en el ámbito rural. La instalación de la iluminación navideña ha comenzado en la capital. \n\nEn el ámbito deportivo, Salamanca ha sido designada sede para la final del Campeonato de España de fútbol, destacando también los éxitos de Valmuza y Velsalamanca en sus respectivas categorías nacionales. La jornada de fútbol base ha dejado imágenes destacadas y se han actualizado las clasificaciones de diversas ligas. El equipo Perfumerías Avenida sufrió una derrota, mientras que el Salamanca UDS y Unionistas tuvieron resultados variados en sus encuentros. La actividad taurina cerró temporada en Alba de Tormes. \n\nLa provincia ha vivido episodios como una fiesta vecinal controvertida en Ciudad Rodrigo, problemas de suministro de agua en Béjar y la realización de pruebas de seguridad en Covatilla de cara a la temporada de esquí. Los sucesos han incluido el incendio de un camión en el barrio de Buenos Aires, el rescate de una persona caída en un pozo y varios accidentes de tráfico."
+  "resumen_borrador": "Se han publicado 189 noticias entre el 2026-10-18 y el 2026-10-21. La actividad se ha concentrado sobre todo en salamanca (66 piezas), provincia (47 piezas), deportes (38 piezas).\n\nLos conceptos con más piezas relacionadas son: Jornada; Ciudad · Rodrigo; Mujeres; Bejar. Revisa 'evidencia' de cada concepto para redactar el resumen final.",
+  "resumen": "El periodo del 18 al 21 de octubre ha estado marcado por diversas noticias en Salamanca y su provincia. En el ámbito deportivo, la ciudad ha sido designada como sede para la final del Campeonato de España de fútbol, mientras que el fútbol base ha cerrado una jornada con imágenes destacadas y el once ideal. Se han registrado también resultados en campeonatos nacionales de diversas disciplinas.\n\nA nivel provincial, Béjar ha anunciado convocatorias de empleo para La Covatilla y ha sufrido averías en su red de suministro de agua. Ciudad Rodrigo ha sido foco de noticias sobre eventos y la participación de su diócesis en jornadas técnicas. Además, se ha puesto de manifiesto el apoyo a las mujeres con homenajes y la visibilización del Día del Cáncer de Mama a través de murales y lazos humanos.\n\nEn el apartado de sucesos, un autobús volcó en la carretera de Alba de Tormes tras desvanecerse su conductor, generando una importante movilización. La política local también ha tenido su espacio con la salida de Gonzalo Robles del Senado tras cuatro décadas de servicio."
 }

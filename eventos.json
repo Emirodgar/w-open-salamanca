@@ -1,5 +1,5 @@
 {
-  "generado_en": "2026-10-20T05:45:32+00:00",
+  "generado_en": "2026-10-21T05:45:41+00:00",
   "eventos": [
     {
       "titulo": "30ª Muestra de Teatro Aficionado El Encinar",
@@ -9,15 +9,6 @@
       "lugar": "Salón La Fábula de Javier Bueno, El Encinar",
       "descripcion": "La trigésima edición de la Muestra de Teatro Aficionado El Encinar reunirá a seis grupos de teatro aficionado de diferentes puntos de España. Las representaciones se llevarán a cabo los sábados y domingos, con entradas a 2 euros destinadas a ALCER Salamanca.",
       "fuente": "https://www.lagacetadesalamanca.es/provincia/listo-disfrutar-muestra-teatro-aficionado-encinar-20261006192329-nt.html"
-    },
-    {
-      "titulo": "III Congreso Gastronómico de LA GACETA",
-      "categoria": "Cultura",
-      "fecha_inicio": "2026-10-19",
-      "fecha_fin": "2026-10-20",
-      "lugar": "Hotel Abba Fonseca, Salamanca",
-      "descripcion": "El III Congreso Gastronómico de LA GACETA se celebrará en el Hotel Abba Fonseca, explorando la riqueza culinaria de Castilla y León. Habrá charlas, degustaciones y catas, con inscripción solidaria a favor del Banco de Alimentos.",
-      "fuente": "https://www.lagacetadesalamanca.es/salamanca/gastronomia-castilla-leon-cita-salamanca-inscribete-iii-20261008132812-nt.html"
     },
     {
       "titulo": "Semana de la Biblioteca en Carbajosa de la Sagrada",
@@ -404,6 +395,15 @@
       "fuente": "https://www.lagacetadesalamanca.es/provincia/cervantes-bejar-reabre-telon-ultimo-trimestre-red-20261010205240-nt.html"
     },
     {
+      "titulo": "Sorteo del coche de Navidad en Ciudad Rodrigo",
+      "categoria": "Sociedad",
+      "fecha_inicio": "2027-01-02",
+      "fecha_fin": null,
+      "lugar": "Plaza Mayor, Ciudad Rodrigo",
+      "descripcion": "Ciudad Rodrigo volverá a sortear un coche por Navidad en la Plaza Mayor, con la colaboración del Ayuntamiento y Afecir. Como novedad, se realizará un segundo sorteo no presencial para un paquete turístico.",
+      "fuente": "https://www.lagacetadesalamanca.es/provincia/vuelve-ciudad-rodrigo-sorteo-coche-navidad-20261020155428-nt.html"
+    },
+    {
       "titulo": "14ª Carrera del Roscón de Paradinas",
       "categoria": "Deportes",
       "fecha_inicio": "2027-01-03",
@@ -420,6 +420,15 @@
       "lugar": "Cabrerizos",
       "descripcion": "La quinta y última carrera de la trigésimo cuarta edición de la Liga de Cross de Cabrerizos se ha previsto para el 7 de febrero, estrenando un nuevo recorrido.",
       "fuente": "https://www.lagacetadesalamanca.es/deportes/carreras-populares/xxxiv-liga-cross-cabrerizos-arrancara-noviembre-20261013195148-nt.html"
+    },
+    {
+      "titulo": "Concierto de Delgao 'El Angelito Tour'",
+      "categoria": "Cultura",
+      "fecha_inicio": "2027-02-19",
+      "fecha_fin": null,
+      "lugar": "Sala B del Centro de las Artes escénicas y de la Música (CAEM), Salamanca",
+      "descripcion": "El artista segoviano Delgao presentará su nueva gira 'El Angelito Tour' en la Sala B del CAEM de Salamanca. Regresa a los escenarios tras un año de retiro creativo con un nuevo álbum que combina pop urbano con cadencias afro, funk brasileño y bachata.",
+      "fuente": "https://www.lagacetadesalamanca.es/salamanca/delgao-traera-angelito-tour-sala-caem-20261020202815-nt.html"
     },
     {
       "titulo": "Campeonato de España de Fútbol 7",
