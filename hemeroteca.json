@@ -1,5 +1,5 @@
 {
-  "generado_en": "2026-10-22T20:07:03.477Z",
+  "generado_en": "2026-10-22T23:23:22.584Z",
   "dias_ventana": 20,
   "total": 3435,
   "medios": [
@@ -9,6 +9,13 @@
     "Salamancahoy"
   ],
   "noticias": [
+    {
+      "url": "https://www.lagacetadesalamanca.es/castilla-y-leon/ciudad-castilla-leon-nuevo-millonario-primer-premio-20261022221136-nt.html",
+      "titulo": "Una ciudad de Castilla y León tiene un nuevo millonario con un primer premio de La Bonoloto",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-22",
+      "fecha_hora": "2026-10-22T20:12:40.000Z"
+    },
     {
       "url": "https://www.lagacetadesalamanca.es/provincia/puente-congosto-escucha-vecinos-elaborar-plan-vivienda-20261022213416-nt.html",
       "titulo": "Puente del Congosto escucha a sus vecinos para elaborar un Plan de Vivienda",
@@ -150,6 +157,13 @@
       "fecha_hora": "2026-10-22T16:56:33.000Z"
     },
     {
+      "url": "https://www.tribunasalamanca.com/noticias/463655/salamanca-ya-ha-limpiado-en-2026-mas-metros-cuadrados-de-pintadas-de-los-que-ocupa-la-plaza-mayor",
+      "titulo": "Salamanca ya ha limpiado en 2026 más metros cuadrados de pintadas de los que ocupa la Plaza Mayor",
+      "medio": "Tribuna Salamanca",
+      "fecha": "2026-10-22",
+      "fecha_hora": "2026-10-22T16:47:11.000Z"
+    },
+    {
       "url": "https://www.lagacetadesalamanca.es/nacional/ami-pide-bruselas-frene-nuevas-condiciones-meta-20261022183558-nt.html",
       "titulo": "AMI pide a Bruselas que frene las nuevas condiciones de Meta: «El periodismo profesional no puede ser una materia prima gratuita»",
       "medio": "La Gaceta de Salamanca",
@@ -260,6 +274,13 @@
       "medio": "Tribuna Salamanca",
       "fecha": "2026-10-22",
       "fecha_hora": "2026-10-22T15:19:22.000Z"
+    },
+    {
+      "url": "https://www.tribunasalamanca.com/noticias/463640/ley-de-abuelos",
+      "titulo": "¡Ley de abuelos!",
+      "medio": "Tribuna Salamanca",
+      "fecha": "2026-10-22",
+      "fecha_hora": "2026-10-22T15:13:19.000Z"
     },
     {
       "url": "https://www.salamanca24horas.com/local/castanas-llenan-calles-salamanca",
@@ -24032,27 +24053,6 @@
       "medio": "La Gaceta de Salamanca",
       "fecha": "2026-10-03",
       "fecha_hora": "2026-10-03T03:00:00.000Z"
-    },
-    {
-      "url": "https://www.lagacetadesalamanca.es/provincia/mayores-estrenan-fiesta-ragama-20261002222428-nt.html",
-      "titulo": "Los mayores estrenan la fiesta en Rágama",
-      "medio": "La Gaceta de Salamanca",
-      "fecha": "2026-10-02",
-      "fecha_hora": "2026-10-02T20:40:33.000Z"
-    },
-    {
-      "url": "https://www.lagacetadesalamanca.es/provincia/chupinazo-artes-escenicas-marcan-inicio-festivo-poveda-20261002223631-nt.html",
-      "titulo": "Chupinazo y artes escénicas marcan el inicio festivo en Poveda de las Cintas",
-      "medio": "La Gaceta de Salamanca",
-      "fecha": "2026-10-02",
-      "fecha_hora": "2026-10-02T20:36:31.000Z"
-    },
-    {
-      "url": "https://www.lagacetadesalamanca.es/provincia/huerta-despliega-completa-agenda-actividades-dinamizar-mes-20261002221117-nt.html",
-      "titulo": "Huerta despliega una completa agenda de actividades para dinamizar el mes de octubre",
-      "medio": "La Gaceta de Salamanca",
-      "fecha": "2026-10-02",
-      "fecha_hora": "2026-10-02T20:11:17.000Z"
     }
   ]
 }
