@@ -435,6 +435,30 @@
       ],
       "basado_en": "eventos.json",
       "fecha_creacion": "2026-10-21"
+    },
+    {
+      "id": "nuevo-consistorio-castellanos-2026",
+      "pregunta": "El Ayuntamiento de Castellanos de Moriscos ha licitado un nuevo consistorio. ¿Considera que esta inversión es prioritaria para el municipio?",
+      "opciones": [
+        "Sí, es una infraestructura necesaria para el desarrollo local.",
+        "No, hay otras prioridades más urgentes para los vecinos.",
+        "Depende del coste y el impacto en las arcas municipales.",
+        "No tengo suficiente información."
+      ],
+      "basado_en": "actualidad.json",
+      "fecha_creacion": "2026-10-22"
+    },
+    {
+      "id": "prevencion-juegos-redes-2026",
+      "pregunta": "Ciudad Rodrigo acogerá jornadas de prevención sobre juegos de azar y redes sociales para familias. ¿Cree que las administraciones deberían intensificar las acciones de prevención y concienciación sobre estos riesgos en el ámbito juvenil y familiar?",
+      "opciones": [
+        "Sí, es una preocupación creciente y requiere más atención.",
+        "No, la responsabilidad principal recae en las familias.",
+        "Deberían enfocarse en la educación en los centros educativos.",
+        "No tengo suficiente información."
+      ],
+      "basado_en": "eventos.json",
+      "fecha_creacion": "2026-10-22"
     }
   ]
 }

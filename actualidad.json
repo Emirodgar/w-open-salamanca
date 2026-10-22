@@ -1,11 +1,11 @@
 {
   "url_base": "https://www.lagacetadesalamanca.es",
-  "generado_en": "2026-10-21T05:45:41+00:00",
+  "generado_en": "2026-10-22T05:45:41+00:00",
   "periodo_cubierto": {
-    "desde": "2026-10-18",
-    "hasta": "2026-10-21"
+    "desde": "2026-10-19",
+    "hasta": "2026-10-22"
   },
-  "total_urls_analizadas": 189,
+  "total_urls_analizadas": 201,
   "secciones_excluidas": [
     "gente-estilo",
     "nacional",
@@ -17,7 +17,7 @@
   "por_seccion": [
     [
       "salamanca",
-      66
+      72
     ],
     [
       "provincia",
@@ -25,27 +25,27 @@
     ],
     [
       "deportes",
-      38
+      36
     ],
     [
       "sucesos",
-      18
+      23
     ],
     [
       "campo",
-      10
+      12
+    ],
+    [
+      "castilla-y-leon",
+      4
     ],
     [
       "toros",
-      4
+      3
     ],
     [
       "encuestas",
       3
-    ],
-    [
-      "castilla-y-leon",
-      2
     ],
     [
       "economia",
@@ -55,146 +55,145 @@
   "por_subseccion": [
     [
       "deportes/futbol-local",
-      19
+      18
     ],
     [
       "deportes/baloncesto-local",
-      8
+      10
     ],
     [
       "deportes/deporte-base",
-      4
+      3
     ]
   ],
   "por_tipo_contenido": [
     [
       "noticia",
-      169
+      188
     ],
     [
       "galería",
-      18
+      12
     ],
     [
       "directo / en vivo",
-      2
+      1
     ]
   ],
   "heatmap_calendario": [
     {
-      "fecha": "2026-10-18",
-      "total": 39,
-      "salamanca": 4,
-      "provincia": 14,
-      "deportes": 16,
-      "sucesos": 2,
-      "campo": 1,
-      "toros": 1,
-      "encuestas": 1,
-      "castilla-y-leon": 0,
-      "economia": 0
-    },
-    {
       "fecha": "2026-10-19",
-      "total": 70,
-      "salamanca": 30,
-      "provincia": 15,
+      "total": 57,
+      "salamanca": 19,
+      "provincia": 14,
       "deportes": 15,
       "sucesos": 4,
       "campo": 2,
-      "toros": 2,
-      "encuestas": 1,
       "castilla-y-leon": 1,
+      "toros": 1,
+      "encuestas": 1,
       "economia": 0
     },
     {
       "fecha": "2026-10-20",
-      "total": 68,
-      "salamanca": 27,
+      "total": 66,
+      "salamanca": 26,
       "provincia": 13,
       "deportes": 6,
-      "sucesos": 12,
+      "sucesos": 11,
       "campo": 7,
+      "castilla-y-leon": 1,
       "toros": 0,
       "encuestas": 1,
-      "castilla-y-leon": 1,
       "economia": 1
     },
     {
       "fecha": "2026-10-21",
-      "total": 12,
-      "salamanca": 5,
-      "provincia": 5,
-      "deportes": 1,
-      "sucesos": 0,
+      "total": 70,
+      "salamanca": 23,
+      "provincia": 20,
+      "deportes": 13,
+      "sucesos": 7,
+      "campo": 3,
+      "castilla-y-leon": 2,
+      "toros": 1,
+      "encuestas": 1,
+      "economia": 0
+    },
+    {
+      "fecha": "2026-10-22",
+      "total": 8,
+      "salamanca": 4,
+      "provincia": 0,
+      "deportes": 2,
+      "sucesos": 1,
       "campo": 0,
+      "castilla-y-leon": 0,
       "toros": 1,
       "encuestas": 0,
-      "castilla-y-leon": 0,
       "economia": 0
     }
   ],
   "conceptos_destacados": [
     {
-      "concepto": "Ciudad Rodrigo",
+      "concepto": "Meins Avenida",
+      "piezas": 9,
+      "seccion_principal": "deportes",
+      "desde": "2026-10-20",
+      "hasta": "2026-10-21",
+      "ejemplos_redactados": [
+        "El equipo Meins Avenida sufrió una dura derrota frente a Chartres por 102-101. Se analizan las claves de esta derrota y la necesidad de mejorar la gestión de minutos finales.",
+        "El encuentro entre Chartres y Meins Avenida representó un pulso físico para crecer en Europa."
+      ]
+    },
+    {
+      "concepto": "Ayuntamiento",
+      "piezas": 5,
+      "seccion_principal": "salamanca",
+      "desde": "2026-10-19",
+      "hasta": "2026-10-21",
+      "ejemplos_redactados": [
+        "Castellanos de Moriscos ha licitado un nuevo ayuntamiento. En Béjar, el ayuntamiento se enfrenta a un bloqueo administrativo por la ausencia temporal del vicesecretario."
+      ]
+    },
+    {
+      "concepto": "Santa Marta",
       "piezas": 5,
       "seccion_principal": "provincia",
-      "desde": "2026-10-18",
-      "hasta": "2026-10-20",
+      "desde": "2026-10-20",
+      "hasta": "2026-10-21",
       "ejemplos_redactados": [
-        "La Diócesis de Ciudad Rodrigo participa en una jornada técnica. La ciudad se prepara para el sorteo del coche de Navidad.",
-        "Un incidente en una fiesta de barrio genera diferencias entre los vecinos."
+        "Santa Marta ha ganado 100 plazas de aparcamiento junto a una nueva zona. La localidad acogerá en febrero una exposición de grabados de Van Gogh."
       ]
     },
     {
       "concepto": "Mujeres",
       "piezas": 5,
-      "seccion_principal": "provincia",
-      "desde": "2026-10-18",
-      "hasta": "2026-10-20",
-      "ejemplos_redactados": [
-        "Tres mujeres convierten el ibérico, el aceite y el vino en un medio de vida. Alba de Tormes brinda homenaje a las mujeres.",
-        "Se realiza un camino de fiesta para las mujeres de Alba de Tormes en Santa Teresa."
-      ]
-    },
-    {
-      "concepto": "Béjar",
-      "piezas": 5,
-      "seccion_principal": "provincia",
-      "desde": "2026-10-19",
-      "hasta": "2026-10-20",
-      "ejemplos_redactados": [
-        "Béjar abre convocatorias de empleo para monitores y ayudantes en La Covatilla. Se destaca el entorno de Béjar para disfrutar de la belleza del otoño."
-      ]
-    },
-    {
-      "concepto": "Encuentros y Eventos",
-      "piezas": 5,
-      "seccion_principal": "provincia",
-      "desde": "2026-10-18",
-      "hasta": "2026-10-21",
-      "ejemplos_redactados": [
-        "Villoria estará presente en el encuentro nacional de cofradías Minerva. Unionistas consigue 150 entradas para un encuentro de Copa."
-      ]
-    },
-    {
-      "concepto": "Cáncer de Mama",
-      "piezas": 4,
-      "seccion_principal": "provincia",
-      "desde": "2026-10-18",
-      "hasta": "2026-10-19",
-      "ejemplos_redactados": [
-        "Un mural en El Encinar recuerda a las mujeres en el Día del Cáncer de Mama. Se forma un lazo humano en Ciudad Rodrigo con motivo del Día del Cáncer de Mama."
-      ]
-    },
-    {
-      "concepto": "Ayuntamiento",
-      "piezas": 4,
       "seccion_principal": "salamanca",
       "desde": "2026-10-19",
+      "hasta": "2026-10-21",
+      "ejemplos_redactados": [
+        "Se conmemoran cuarenta años de lucha por los derechos de las mujeres. Un proyecto en la provincia destaca a tres mujeres que convierten el medio rural en oportunidad a través del ibérico, el aceite y el vino."
+      ]
+    },
+    {
+      "concepto": "Ciudad Rodrigo",
+      "piezas": 4,
+      "seccion_principal": "provincia",
+      "desde": "2026-10-19",
       "hasta": "2026-10-20",
       "ejemplos_redactados": [
-        "El Ayuntamiento de Béjar reporta la ausencia temporal de un vicesecretario. Los finalistas de los premios HosteleríaSalamanca.es son citados en el Ayuntamiento."
+        "La fiesta de un barrio en Ciudad Rodrigo ha generado diferencias entre los vecinos. La diócesis de Ciudad Rodrigo participa en una jornada técnica."
+      ]
+    },
+    {
+      "concepto": "Sucesos con mujeres",
+      "piezas": 4,
+      "seccion_principal": "sucesos",
+      "desde": "2026-10-20",
+      "hasta": "2026-10-21",
+      "ejemplos_redactados": [
+        "Un hombre ha sido detenido en Junquera como presunto autor de un robo con violencia a una mujer. Una mujer ha fallecido tras sufrir una parada cardiorrespiratoria en la avenida Raimundo de Borgoña."
       ]
     },
     {
@@ -204,20 +203,20 @@
       "desde": "2026-10-19",
       "hasta": "2026-10-19",
       "ejemplos_redactados": [
-        "Se publican las mejores imágenes de la jornada de fútbol base en Salamanca. El once ideal de cracks tras la jornada de fútbol base."
+        "Se han publicado las mejores imágenes de la jornada de fútbol base en Salamanca. Un bonito gesto deportivo entre benjamines de fútbol base ha sido destacado."
       ]
     },
     {
-      "concepto": "Campeonatos Nacionales",
-      "piezas": 5,
-      "seccion_principal": "deportes",
-      "desde": "2026-10-18",
-      "hasta": "2026-10-20",
+      "concepto": "Cáncer de Mama",
+      "piezas": 3,
+      "seccion_principal": "provincia",
+      "desde": "2026-10-19",
+      "hasta": "2026-10-19",
       "ejemplos_redactados": [
-        "Salamanca es elegida sede para la final del Campeonato de España de fútbol. Velsalamanca logra una brillante sexta posición en el Campeonato de España."
+        "Se ha creado un mural en El Encinar para recordar a las mujeres en el Día del Cáncer de Mama. Una nueva estrategia de nanomedicina muestra potencial para tratar el cáncer de mama."
       ]
     }
   ],
-  "resumen_borrador": "Se han publicado 189 noticias entre el 2026-10-18 y el 2026-10-21. La actividad se ha concentrado sobre todo en salamanca (66 piezas), provincia (47 piezas), deportes (38 piezas).\n\nLos conceptos con más piezas relacionadas son: Jornada; Ciudad · Rodrigo; Mujeres; Bejar. Revisa 'evidencia' de cada concepto para redactar el resumen final.",
-  "resumen": "El periodo del 18 al 21 de octubre ha estado marcado por diversas noticias en Salamanca y su provincia. En el ámbito deportivo, la ciudad ha sido designada como sede para la final del Campeonato de España de fútbol, mientras que el fútbol base ha cerrado una jornada con imágenes destacadas y el once ideal. Se han registrado también resultados en campeonatos nacionales de diversas disciplinas.\n\nA nivel provincial, Béjar ha anunciado convocatorias de empleo para La Covatilla y ha sufrido averías en su red de suministro de agua. Ciudad Rodrigo ha sido foco de noticias sobre eventos y la participación de su diócesis en jornadas técnicas. Además, se ha puesto de manifiesto el apoyo a las mujeres con homenajes y la visibilización del Día del Cáncer de Mama a través de murales y lazos humanos.\n\nEn el apartado de sucesos, un autobús volcó en la carretera de Alba de Tormes tras desvanecerse su conductor, generando una importante movilización. La política local también ha tenido su espacio con la salida de Gonzalo Robles del Senado tras cuatro décadas de servicio."
+  "resumen_borrador": "Se han publicado 201 noticias entre el 2026-10-19 y el 2026-10-22. La actividad se ha concentrado sobre todo en salamanca (72 piezas), provincia (47 piezas), deportes (36 piezas).\n\nLos conceptos con más piezas relacionadas son: Encuentro; Ayuntamiento; Chartres; Santa. Revisa 'evidencia' de cada concepto para redactar el resumen final.",
+  "resumen": "El periodo comprendido entre el 19 y el 22 de octubre ha estado marcado por diversas noticias en la provincia de Salamanca. En el ámbito deportivo, el equipo de baloncesto Meins Avenida sufrió una derrota ajustada frente a Chartres en un encuentro europeo, mientras que el fútbol base local continuó su actividad con la publicación de las mejores imágenes de la jornada. El Salamanca UDS, por su parte, ha superado las 6.000 entradas vendidas para su partido de Copa.\n\nEn la esfera local y provincial, el Ayuntamiento de Castellanos de Moriscos ha licitado un nuevo consistorio y Santa Marta ha ampliado su capacidad de aparcamiento con cien nuevas plazas. Ciudad Rodrigo ha vivido diferencias vecinales a raíz de una fiesta de barrio. En el plano social, se ha destacado la lucha por los derechos de las mujeres durante cuarenta años y se han realizado acciones de concienciación por el Día del Cáncer de Mama.\n\nLos sucesos han incluido la detención de un hombre por robo con violencia a una mujer y el fallecimiento de otra por parada cardiorrespiratoria. Un incendio en una vivienda en la calle Luis Gonzaga y un segundo robo en un restaurante también han requerido la intervención de los servicios de emergencia."
 }
