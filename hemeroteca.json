@@ -1,7 +1,7 @@
 {
-  "generado_en": "2026-10-23T09:21:02.820Z",
+  "generado_en": "2026-10-23T15:04:18.621Z",
   "dias_ventana": 20,
-  "total": 3421,
+  "total": 3467,
   "medios": [
     "Tribuna Salamanca",
     "Salamanca24Horas",
@@ -10,11 +10,564 @@
   ],
   "noticias": [
     {
+      "url": "https://www.lagacetadesalamanca.es/sucesos/fallece-hector-menor-anos-sufrio-accidente-patinete-20261023142728-nt.html",
+      "titulo": "Fallece Héctor, el menor de 15 años que sufrió un accidente con un patinete eléctrico en Pizarrales",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-23",
+      "fecha_hora": "2026-10-23T14:52:32.000Z"
+    },
+    {
+      "url": "https://www.salamanca24horas.com/deportes/unionistas-cf/unionistas-urgencias-recibe-rival-playoff",
+      "titulo": "Un Unionistas con urgencias recibe a un rival de playoff",
+      "medio": "Salamanca24Horas",
+      "fecha": "2026-10-23",
+      "fecha_hora": "2026-10-23T14:51:52.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/salamanca/carmen-seguin-numero-congreso-diputados-pp-20261023164314-nt.html",
+      "titulo": "Carmen Seguín, número uno al Congreso de los Diputados por el PP",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-23",
+      "fecha_hora": "2026-10-23T14:43:15.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/provincia/festival-ficcion-ciudad-rodrigo-alcanza-15o-aniversario-20261023163319-nt.html",
+      "titulo": "El festival «Ficci-on» de Ciudad Rodrigo alcanza su 15º aniversario",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-23",
+      "fecha_hora": "2026-10-23T14:33:20.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/provincia/ciudad-rodrigo-organiza-cuarta-jornada-homenaje-jubilados-20261023162946-nt.html",
+      "titulo": "Ciudad Rodrigo organiza la cuarta jornada de homenaje a los jubilados",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-23",
+      "fecha_hora": "2026-10-23T14:29:47.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/provincia/ciudad-rodrigo-rinde-homenaje-arte-domingo-santos-20261023155533-nt.html",
+      "titulo": "Ciudad Rodrigo rinde homenaje al arte de Domingo Santos Garduño con una exposición: «no llegó a vivir este momento»",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-23",
+      "fecha_hora": "2026-10-23T13:55:34.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/sucesos/herido-motorista-fresno-alhandiga-tercero-viernes-20261023155358-nt.html",
+      "titulo": "Herido un motorista en Fresno Alhándiga: el tercero de este viernes",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-23",
+      "fecha_hora": "2026-10-23T13:54:19.000Z"
+    },
+    {
+      "url": "https://www.salamancahoy.es/salamanca/provincia/gran-pozo-sondeo-pueblo-salamanca-pide-permiso-20261023155226-nt.html",
+      "titulo": "El gran pozo y sondeo en un pueblo de Salamanca que pide permiso para sacar 16 millones de litros de un acuífero para sus 140 habitantes",
+      "medio": "Salamancahoy",
+      "fecha": "2026-10-23",
+      "fecha_hora": "2026-10-23T13:52:26.000Z"
+    },
+    {
+      "url": "https://www.salamanca24horas.com/local/septiembre-gran-mes-ocupacion-hotelera-salamanca",
+      "titulo": "Septiembre, un gran mes para la ocupación hotelera en Salamanca",
+      "medio": "Salamanca24Horas",
+      "fecha": "2026-10-23",
+      "fecha_hora": "2026-10-23T13:29:43.000Z"
+    },
+    {
+      "url": "https://www.salamanca24horas.com/universidad/usal-realizara-examenes-ielts-british-council",
+      "titulo": "La USAL realizará exámenes IELTS del British Council",
+      "medio": "Salamanca24Horas",
+      "fecha": "2026-10-23",
+      "fecha_hora": "2026-10-23T13:17:10.000Z"
+    },
+    {
+      "url": "https://www.salamancahoy.es/salamanca/ciudad/palecete-neobarroco-derruido-salamanca-nuevo-edificio-anexo-20261022121405-nt.html",
+      "titulo": "El palacete neobarroco derruido de Salamanca y su nuevo edificio anexo que serán 26 viviendas y locales",
+      "medio": "Salamancahoy",
+      "fecha": "2026-10-23",
+      "fecha_hora": "2026-10-23T12:54:07.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/salamanca/upsa-reflexiona-sobre-mediacion-escolar-herramienta-prevenir-20261023145313-nt.html",
+      "titulo": "La UPSA reflexiona sobre la mediación escolar como herramienta para prevenir la violencia y favorecer la convivencia intercultural",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-23",
+      "fecha_hora": "2026-10-23T12:53:14.000Z"
+    },
+    {
+      "url": "https://www.salamanca24horas.com/provincia/comarca-de-salamanca/tunel-terror-discoteca-movil-talleres-asi-sera-halloween-carbajosa",
+      "titulo": "Túnel del Terror, discoteca móvil y talleres, así será el Halloween de Carbajosa",
+      "medio": "Salamanca24Horas",
+      "fecha": "2026-10-23",
+      "fecha_hora": "2026-10-23T12:48:15.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/salamanca/salamanca-suma-iii-semana-voluntariado-cocacola-iniciativas-20261023144327-nt.html",
+      "titulo": "Salamanca se suma a la III Semana del Voluntariado de Coca-Cola con iniciativas sociales y medioambientales",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-23",
+      "fecha_hora": "2026-10-23T12:43:27.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/deportes/deporte-base/luto-futbol-base-salmantino-20261023142128-nt.html",
+      "titulo": "Luto en el Pizarrales tras el fallecimiento de uno de sus cadetes: «Siempre serás uno de los nuestros»",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-23",
+      "fecha_hora": "2026-10-23T12:30:16.000Z"
+    },
+    {
+      "url": "https://www.salamancahoy.es/salamanca/ciudad/galeria-urbana-barrio-oeste-salamanca-contara-nueva-20261023134831-nt.html",
+      "titulo": "La Galería Urbana del barrio del Oeste de Salamanca contará con nueva iluminación",
+      "medio": "Salamancahoy",
+      "fecha": "2026-10-23",
+      "fecha_hora": "2026-10-23T12:26:54.000Z"
+    },
+    {
+      "url": "https://www.tribunasalamanca.com/noticias/463756/de-la-nutricion-de-precision-a-la-dieta-de-los-astronautas-la-upsa-reune-a-los-expertos-en-dietetica-de-cyl",
+      "titulo": "De la nutrición de precisión a la dieta de los astronautas: la UPSA reúne a los expertos en dietética de CyL",
+      "medio": "Tribuna Salamanca",
+      "fecha": "2026-10-23",
+      "fecha_hora": "2026-10-23T12:24:00.000Z"
+    },
+    {
+      "url": "https://www.tribunasalamanca.com/noticias/463754/una-vecina-y-un-guardia-civil-de-guijuelo-entre-los-galardonados-con-las-medallas-de-proteccion-ciudadana",
+      "titulo": "Una vecina y un Guardia Civil de Guijuelo, entre los galardonados con las medallas de protección ciudadana",
+      "medio": "Tribuna Salamanca",
+      "fecha": "2026-10-23",
+      "fecha_hora": "2026-10-23T12:21:19.000Z"
+    },
+    {
+      "url": "https://www.salamanca24horas.com/local/salvar-vida-persona-sufrio-atragantamiento-guijuelo-medalla-plata-merito-ciudadano-junta",
+      "titulo": "Salvar la vida a una persona que sufrió un atragantamiento en Guijuelo, Medalla de Plata al Mérito Ciudadano de la Junta",
+      "medio": "Salamanca24Horas",
+      "fecha": "2026-10-23",
+      "fecha_hora": "2026-10-23T12:20:05.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/salamanca/hosteleria-suma-reservas-nunca-final-ano-20261023141840-nt.html",
+      "titulo": "La hostelería suma más reservas “que nunca” hasta final de año",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-23",
+      "fecha_hora": "2026-10-23T12:18:41.000Z"
+    },
+    {
+      "url": "https://www.salamancahoy.es/salamanca/ciudad/manifestacion-sindicato-inquilinas-cupula-pp-feijoo-poco-20261023141424-nt.html",
+      "titulo": "La manifestación del sindicato de Inquilinas y la cúpula del PP con Feijóo, a poco más de un kilómetro este domingo en Salamanca",
+      "medio": "Salamancahoy",
+      "fecha": "2026-10-23",
+      "fecha_hora": "2026-10-23T12:15:50.000Z"
+    },
+    {
+      "url": "https://www.salamanca24horas.com/local/camilo-garcia-historia-doblaje-espana-nombrado-huesped-distinguido-salamanca",
+      "titulo": "Camilo García, historia del doblaje en España, nombrado Huésped Distinguido de Salamanca",
+      "medio": "Salamanca24Horas",
+      "fecha": "2026-10-23",
+      "fecha_hora": "2026-10-23T12:15:24.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/salamanca/junta-reconoce-labor-proteccion-civil-salamanca-campana-20261023135010-nt.html",
+      "titulo": "La Junta reconoce la labor de Protección Civil de Salamanca durante la campaña de incendios forestales",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-23",
+      "fecha_hora": "2026-10-23T12:13:47.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/sucesos/prision-detenido-robos-restaurante-verssache-local-amazonia-20261023135523-nt.html",
+      "titulo": "A prisión el detenido por los robos en el restaurante Verssache y en el local Amazonia Açaí de Gran Vía",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-23",
+      "fecha_hora": "2026-10-23T12:06:27.000Z"
+    },
+    {
+      "url": "https://www.tribunasalamanca.com/noticias/463744/los-escolares-salmantinos-recogen-185-kilos-de-basura-en-la-ribera-del-rio-tormes",
+      "titulo": "Los escolares salmantinos recogen 185 kilos de basura en la ribera del río Tormes",
+      "medio": "Tribuna Salamanca",
+      "fecha": "2026-10-23",
+      "fecha_hora": "2026-10-23T12:01:46.000Z"
+    },
+    {
+      "url": "https://www.salamancahoy.es/salamanca/ciudad/actor-salamanca-dio-voz-anthony-hopkins-nombrado-20261023135155-nt.html",
+      "titulo": "El actor de Salamanca que da voz a Anthony Hopkins, entre otros, nombrado Huésped Distinguido",
+      "medio": "Salamancahoy",
+      "fecha": "2026-10-23",
+      "fecha_hora": "2026-10-23T11:57:28.000Z"
+    },
+    {
+      "url": "https://www.salamancahoy.es/salamanca/ciudad/conocido-actor-serrano-llega-salamanca-rodar-video-20261023135122-nt.html",
+      "titulo": "El conocido actor de 'Los Serrano' que llega a Salamanca para rodar un vídeo promocional de la ciudad",
+      "medio": "Salamancahoy",
+      "fecha": "2026-10-23",
+      "fecha_hora": "2026-10-23T11:51:22.000Z"
+    },
+    {
+      "url": "https://www.salamanca24horas.com/sucesos/fallece-joven-16-anos-tuvo-accidente-patinete-electrico-salamanca",
+      "titulo": "Fallece el joven de 16 años que tuvo un accidente con un patinete eléctrico en Salamanca",
+      "medio": "Salamanca24Horas",
+      "fecha": "2026-10-23",
+      "fecha_hora": "2026-10-23T11:50:24.000Z"
+    },
+    {
+      "url": "https://www.tribunasalamanca.com/noticias/463741/a-prision-un-hombre-tras-ser-detenido-cuatro-veces-en-una-semana-por-robos-en-salamanca",
+      "titulo": "A prisión un hombre tras ser detenido cuatro veces en una semana por robos en Salamanca",
+      "medio": "Tribuna Salamanca",
+      "fecha": "2026-10-23",
+      "fecha_hora": "2026-10-23T11:49:04.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/provincia/conferencia-sobre-monasterio-carbajalas-edad-media-cerro-20261023134817-nt.html",
+      "titulo": "Una conferencia sobre el monasterio de las Carbajalas en la Edad Media cerró la Semana Cultural de Santa Marta",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-23",
+      "fecha_hora": "2026-10-23T11:48:17.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/deportes/agenda-deportiva-unionistas-salamanca-meins-avenida-fin-20261023134807-nt.html",
+      "titulo": "Agenda deportiva: Unionistas, Salamanca UDS y Meins Avenida, este fin de semana por televisión",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-23",
+      "fecha_hora": "2026-10-23T11:48:08.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/provincia/santa-marta-pide-junta-castilla-leon-ampliar-20261023134429-nt.html",
+      "titulo": "Santa Marta pide a la Junta de Castilla y León ampliar el servicio del autobús nocturno",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-23",
+      "fecha_hora": "2026-10-23T11:44:29.000Z"
+    },
+    {
+      "url": "https://www.salamanca24horas.com/sucesos/reincidente-ingresa-prision-tras-robar-bar-agredir-trabajadora-intento-retenerlo-salamanca",
+      "titulo": "Un reincidente ingresa en prisión tras robar en un bar y agredir a la trabajadora que intentó retenerlo en Salamanca",
+      "medio": "Salamanca24Horas",
+      "fecha": "2026-10-23",
+      "fecha_hora": "2026-10-23T11:38:16.000Z"
+    },
+    {
+      "url": "https://www.salamanca24horas.com/local/m-valle-ares-nueva-consejera-educacion-junta",
+      "titulo": "Mª del Valle Ares, nueva consejera de Educación de la Junta",
+      "medio": "Salamanca24Horas",
+      "fecha": "2026-10-23",
+      "fecha_hora": "2026-10-23T11:31:35.000Z"
+    },
+    {
+      "url": "https://www.tribunasalamanca.com/noticias/463736/asi-es-la-propuesta-para-que-santa-marta-y-carbajosa-tengan-buho-a-salamanca-de-jueves-a-domingo",
+      "titulo": "Así es la propuesta para que Santa Marta y Carbajosa tengan 'búho' a Salamanca de jueves a domingo",
+      "medio": "Tribuna Salamanca",
+      "fecha": "2026-10-23",
+      "fecha_hora": "2026-10-23T11:30:13.000Z"
+    },
+    {
+      "url": "https://www.salamancahoy.es/salamanca/ciudad/detenido-robar-violencia-dinero-objetos-valor-establecimiento-20261023132919-nt.html",
+      "titulo": "Detenido por robar con violencia dinero y objetos de valor en un establecimiento de Salamanca",
+      "medio": "Salamancahoy",
+      "fecha": "2026-10-23",
+      "fecha_hora": "2026-10-23T11:29:19.000Z"
+    },
+    {
+      "url": "https://www.tribunasalamanca.com/noticias/463735/maria-del-valle-ares-sera-la-nueva-consejera-de-educacion-de-castilla-y-leon",
+      "titulo": "María del Valle Ares será la nueva consejera de Educación de Castilla y León",
+      "medio": "Tribuna Salamanca",
+      "fecha": "2026-10-23",
+      "fecha_hora": "2026-10-23T11:28:22.000Z"
+    },
+    {
+      "url": "https://www.salamanca24horas.com/local/actor-alejo-sauras-encuentra-salamanca-grabando-video-lleva-titulo-salamanca-ciudad-rodarla",
+      "titulo": "El actor Alejo Sauras se encuentra en Salamanca grabando el vídeo que lleva por título 'Salamanca. Una ciudad para rodarla'",
+      "medio": "Salamanca24Horas",
+      "fecha": "2026-10-23",
+      "fecha_hora": "2026-10-23T11:27:32.000Z"
+    },
+    {
+      "url": "https://www.tribunasalamanca.com/noticias/463734/luces-artisticas-para-13-murales-del-barrio-del-oeste-de-salamanca",
+      "titulo": "Luces artísticas para 13 murales del Barrio del Oeste de Salamanca",
+      "medio": "Tribuna Salamanca",
+      "fecha": "2026-10-23",
+      "fecha_hora": "2026-10-23T11:24:22.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/nacional/supremo-cinco-dias-gobierno-entregar-lista-163020-20261023132256-nt.html",
+      "titulo": "El Supremo da cinco días al Gobierno para entregar la lista de 163.020 afectados por la 'ley de nietos'",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-23",
+      "fecha_hora": "2026-10-23T11:22:56.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/sucesos/herido-motorista-tras-chocar-turismo-capuchinos-20261023131615-nt.html",
+      "titulo": "Herido un motorista tras chocar con un turismo en Capuchinos",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-23",
+      "fecha_hora": "2026-10-23T11:16:22.000Z"
+    },
+    {
+      "url": "https://www.tribunasalamanca.com/noticias/463732/la-consejera-de-educacion-de-castilla-y-leon-tendra-que-dimitir-al-entrar-en-las-listas-del-pp-al-congreso",
+      "titulo": "La consejera de Educación de Castilla y León tendrá que dimitir al entrar en las listas del PP al Congreso",
+      "medio": "Tribuna Salamanca",
+      "fecha": "2026-10-23",
+      "fecha_hora": "2026-10-23T11:13:38.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/nacional/congreso-retira-retratos-presidentes-cortes-franquistas-tras-20261023131129-nt.html",
+      "titulo": "El Congreso retira los retratos de los presidentes de las Cortes franquistas tras décadas de reclamaciones",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-23",
+      "fecha_hora": "2026-10-23T11:11:30.000Z"
+    },
+    {
+      "url": "https://www.tribunasalamanca.com/noticias/463731/camilo-garcia-casar-la-voz-de-grandes-del-cine-nuevo-huesped-distinguido-de-salamanca",
+      "titulo": "Camilo Garçía Casar, la voz de grandes del cine, nuevo Huésped Distinguido de Salamanca",
+      "medio": "Tribuna Salamanca",
+      "fecha": "2026-10-23",
+      "fecha_hora": "2026-10-23T11:09:09.000Z"
+    },
+    {
+      "url": "https://www.salamanca24horas.com/sucesos/motorista-resulta-herido-tras-sufrir-accidente-salamanca-capital",
+      "titulo": "Un motorista resulta herido tras sufrir un accidente en Salamanca capital",
+      "medio": "Salamanca24Horas",
+      "fecha": "2026-10-23",
+      "fecha_hora": "2026-10-23T11:05:31.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/toros/julio-norte-suma-premios-contratos-ecuador-figuras-20261023130509-nt.html",
+      "titulo": "Julio Norte suma más premios y más contratos en Ecuador con las figuras",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-23",
+      "fecha_hora": "2026-10-23T11:05:09.000Z"
+    },
+    {
+      "url": "https://www.tribunasalamanca.com/noticias/463730/el-periodista-angel-benito-pregonero-de-la-semana-santa-de-salamanca-2027",
+      "titulo": "El periodista Ángel Benito, pregonero de la Semana Santa de Salamanca 2027",
+      "medio": "Tribuna Salamanca",
+      "fecha": "2026-10-23",
+      "fecha_hora": "2026-10-23T11:02:17.000Z"
+    },
+    {
+      "url": "https://www.tribunasalamanca.com/noticias/463729/veolia-impulsa-en-castilla-y-leon-la-seguridad-de-los-recursos-frente-al-cambio-climatico",
+      "titulo": "Veolia impulsa en Castilla y León la seguridad de los recursos frente al cambio climático",
+      "medio": "Tribuna Salamanca",
+      "fecha": "2026-10-23",
+      "fecha_hora": "2026-10-23T11:00:59.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/provincia/pasacalles-pasaje-terror-disfrutar-halloween-aldeatejada-20261023125620-nt.html",
+      "titulo": "Pasacalles y pasaje del terror para disfrutar de Halloween en Aldeatejada",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-23",
+      "fecha_hora": "2026-10-23T10:56:21.000Z"
+    },
+    {
+      "url": "https://www.tribunasalamanca.com/noticias/463728/es-una-infraestructura-vital-carlos-martinez-pide-un-estudio-de-viabilidad-para-reabrir-la-via-de-la-plata",
+      "titulo": "\"Es una infraestructura vital\": Carlos Martínez pide un estudio de viabilidad para reabrir la Vía de la Plata",
+      "medio": "Tribuna Salamanca",
+      "fecha": "2026-10-23",
+      "fecha_hora": "2026-10-23T10:55:52.000Z"
+    },
+    {
+      "url": "https://www.tribunasalamanca.com/noticias/463719/aldeatejada-se-prepara-para-halloween-con-pasacalles-pasaje-del-terror-y-espectaculos-de-fuego",
+      "titulo": "Aldeatejada se prepara para Halloween con pasacalles, pasaje del terror y espectáculos de fuego",
+      "medio": "Tribuna Salamanca",
+      "fecha": "2026-10-23",
+      "fecha_hora": "2026-10-23T10:34:50.000Z"
+    },
+    {
+      "url": "https://www.tribunasalamanca.com/noticias/463718/de-la-materia-prima-al-objeto-el-nuevo-paradigma-de-la-arqueologia-se-debate-en-salamanca",
+      "titulo": "De la materia prima al objeto: el nuevo paradigma de la Arqueología se debate en Salamanca",
+      "medio": "Tribuna Salamanca",
+      "fecha": "2026-10-23",
+      "fecha_hora": "2026-10-23T10:31:58.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/provincia/fiestas-patronales-seguras-multitudinarias-alba-tormes-20261023123146-nt.html",
+      "titulo": "Unas fiestas patronales seguras y multitudinarias en Alba de Tormes",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-23",
+      "fecha_hora": "2026-10-23T10:31:47.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/campo/patata-alcanza-salamanca-precio-alto-campana-segundo-20261023123057-nt.html",
+      "titulo": "La patata alcanza en Salamanca su precio más alto de campaña, pero es el segundo más bajo de Castilla y León",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-23",
+      "fecha_hora": "2026-10-23T10:30:57.000Z"
+    },
+    {
+      "url": "https://www.tribunasalamanca.com/noticias/463714/los-nuevos-sellos-de-correos-dedicado-la-princesa-de-asturias",
+      "titulo": "Los nuevos sellos de Correos dedicado la princesa de Asturias",
+      "medio": "Tribuna Salamanca",
+      "fecha": "2026-10-23",
+      "fecha_hora": "2026-10-23T10:21:51.000Z"
+    },
+    {
+      "url": "https://www.salamancahoy.es/deportes/mas-deportes/marta-garcia-rincon-abre-participacion-espanola-mundial-20261023122010-nt.html",
+      "titulo": "Marta García Rincón abre la participación española en el Mundial Absoluto de Halterofilia",
+      "medio": "Salamancahoy",
+      "fecha": "2026-10-23",
+      "fecha_hora": "2026-10-23T10:20:11.000Z"
+    },
+    {
+      "url": "https://www.salamancahoy.es/salamanca/ciudad/teatro-liceo-acoge-manana-estreno-absoluto-obra-20261023120420-nt.html",
+      "titulo": "El Teatro Liceo acoge mañana el estreno absoluto de la obra 'El sueño de una reina'",
+      "medio": "Salamancahoy",
+      "fecha": "2026-10-23",
+      "fecha_hora": "2026-10-23T10:19:15.000Z"
+    },
+    {
+      "url": "https://www.salamancahoy.es/salamanca/ciudad/malu-ofrecera-concierto-sabado-centro-artes-escenicas-20261023121444-nt.html",
+      "titulo": "Malú regresa a Salamanca para un concierto en el Centro de las Artes Escénicas y de la Música",
+      "medio": "Salamancahoy",
+      "fecha": "2026-10-23",
+      "fecha_hora": "2026-10-23T10:18:43.000Z"
+    },
+    {
+      "url": "https://www.salamancahoy.es/salamanca/ciudad/xvii-carrera-1000-pasos-provocara-domingo-cortes-20261023121453-nt.html",
+      "titulo": "La XVII Carrera de los 1.000 Pasos provocará este domingo cortes de tráfico en Salamanca",
+      "medio": "Salamancahoy",
+      "fecha": "2026-10-23",
+      "fecha_hora": "2026-10-23T10:14:53.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/salamanca/espacios-podran-visitar-llaves-ciudad-2026-20261023121244-nt.html",
+      "titulo": "Estas son los 29 espacios que se podrán visitar en 'Las llaves de la ciudad 2026'",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-23",
+      "fecha_hora": "2026-10-23T10:12:44.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/deportes/futbol-local/unionistas/javi-medina-motivacion-volver-coger-buenas-sensaciones-20261023121001-nt.html",
+      "titulo": "Javi Medina: «Tenemos la motivación de volver a coger buenas sensaciones»",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-23",
+      "fecha_hora": "2026-10-23T10:10:38.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/salamanca/tras-vida-hosteleria-toca-sacar-adelante-propio-20261022120608-nt.html",
+      "titulo": "Tras toda la vida en la hostelería toca sacar adelante su propio negocio: Begoña presume de ser charra por los cuatro costados",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-23",
+      "fecha_hora": "2026-10-23T10:09:58.000Z"
+    },
+    {
+      "url": "https://www.salamanca24horas.com/deportes/unionistas-cf/javi-medina-recupera-pau-ferrer-juanma-nava-enfrentarse-bilbao-athletic",
+      "titulo": "Javi Medina recupera a Pau Ferrer, Juanma y De la Nava para enfrentarse al Bilbao Athletic",
+      "medio": "Salamanca24Horas",
+      "fecha": "2026-10-23",
+      "fecha_hora": "2026-10-23T10:07:19.000Z"
+    },
+    {
+      "url": "https://www.tribunasalamanca.com/noticias/463710/javi-medina-es-un-filial-muy-completo-pero-somos-capaces-de-meterles-mano",
+      "titulo": "Javi Medina: \"Es un filial muy completo, pero somos capaces de meterles mano\"",
+      "medio": "Tribuna Salamanca",
+      "fecha": "2026-10-23",
+      "fecha_hora": "2026-10-23T10:05:07.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/deportes/futbol-local/salamancauds/helmantico-prepara-bienvenida-grande-celta-vigo-20261023120000-nt.html",
+      "titulo": "El Helmántico prepara una bienvenida a lo grande para el Celta de Vigo",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-23",
+      "fecha_hora": "2026-10-23T10:00:00.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/deportes/marta-garcia-rincon-abre-telon-mundial-absoluto-20261023115725-nt.html",
+      "titulo": "Marta García Rincón abre el telón del Mundial absoluto de halterofilia en China",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-23",
+      "fecha_hora": "2026-10-23T09:57:25.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/salamanca/tres-novedades-trabaja-junta-semana-santa-cara-20261023115504-nt.html",
+      "titulo": "Las tres novedades en las que trabaja la Junta de Semana Santa de cara al 2027",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-23",
+      "fecha_hora": "2026-10-23T09:55:04.000Z"
+    },
+    {
+      "url": "https://www.salamanca24horas.com/local/llaves-ciudad-abren-29-espacios-patrimoniales-salamanca",
+      "titulo": "Las Llaves de la Ciudad \"abren\" 29 espacios patrimoniales en Salamanca",
+      "medio": "Salamanca24Horas",
+      "fecha": "2026-10-23",
+      "fecha_hora": "2026-10-23T09:50:32.000Z"
+    },
+    {
+      "url": "https://www.tribunasalamanca.com/noticias/463707/cortes-de-trafico-en-salamanca-este-domingo-por-la-carrera-de-los-1-000-pasos-calles-afectadas-y-recorridos",
+      "titulo": "Cortes de tráfico en Salamanca este domingo por la Carrera de los 1.000 Pasos: calles afectadas y recorridos",
+      "medio": "Tribuna Salamanca",
+      "fecha": "2026-10-23",
+      "fecha_hora": "2026-10-23T09:49:26.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/provincia/recomendado-rincon-corazon-sierra-disfrutar-experiencia-familiar-20261022114508-nt.html",
+      "titulo": "El recomendado rincón en el corazón de la Sierra para disfrutar de una experiencia familiar en pleno otoño",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-23",
+      "fecha_hora": "2026-10-23T09:45:09.000Z"
+    },
+    {
+      "url": "https://www.tribunasalamanca.com/noticias/463705/malu-regresa-a-salamanca-con-quince-concierto-este-sabado-en-el-caem",
+      "titulo": "'Malú' regresa a Salamanca con 'Quince': concierto este sábado en el CAEM",
+      "medio": "Tribuna Salamanca",
+      "fecha": "2026-10-23",
+      "fecha_hora": "2026-10-23T09:42:07.000Z"
+    },
+    {
+      "url": "https://www.salamancahoy.es/salamanca/ciudad/programacion-completa-novedades-nueva-edicion-llaves-ciudad-20261023111837-nt.html",
+      "titulo": "Programación completa y novedades de la nueva edición de 'Las Llaves de la Ciudad' que redescubre Salamanca",
+      "medio": "Salamancahoy",
+      "fecha": "2026-10-23",
+      "fecha_hora": "2026-10-23T09:41:34.000Z"
+    },
+    {
+      "url": "https://www.salamancahoy.es/salamanca/provincia/ciclo-musica-luz-velas-iluminara-tres-localidades-20261023114028-nt.html",
+      "titulo": "El ciclo 'Música a la luz de las velas' iluminará tres localidades salmantinas para hablar del cáncer",
+      "medio": "Salamancahoy",
+      "fecha": "2026-10-23",
+      "fecha_hora": "2026-10-23T09:40:29.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/provincia/anos-defendiendo-tradiciones-pueblos-sierra-francia-queremos-20261022113634-nt.html",
+      "titulo": "Más de 15 años defendiendo las tradiciones de los pueblos de la Sierra de Francia: «Queremos la catalogación nacional y luego la de la UNESCO»",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-23",
+      "fecha_hora": "2026-10-23T09:37:57.000Z"
+    },
+    {
+      "url": "https://www.salamanca24horas.com/local/policia-nacional-alerta-cuentas-curis-humillan-alumnos-profesores-redes-sociales",
+      "titulo": "La Policía Nacional alerta de las cuentas ‘curis’ que humillan a alumnos y profesores en redes sociales",
+      "medio": "Salamanca24Horas",
+      "fecha": "2026-10-23",
+      "fecha_hora": "2026-10-23T09:37:32.000Z"
+    },
+    {
+      "url": "https://www.tribunasalamanca.com/noticias/463703/arranca-las-llaves-de-la-ciudad-los-29-monumentos-salamanca-que-puedes-visitar-gratis-este-otono",
+      "titulo": "Arranca 'Las llaves de la ciudad': los 29 monumentos Salamanca que puedes visitar gratis este otoño",
+      "medio": "Tribuna Salamanca",
+      "fecha": "2026-10-23",
+      "fecha_hora": "2026-10-23T09:30:58.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/salamanca/xiang-yanan-unen-oriente-occidente-magia-musica-20261022112301-nt.html",
+      "titulo": "Xiang Yi y Xu Yanan unen Oriente y Occidente con la magia de su música",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-23",
+      "fecha_hora": "2026-10-23T09:23:56.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/campo/mal-jovenes-quieran-quedarse-campo-20261023112302-nt.html",
+      "titulo": "«Ahora mismo lo tienen muy mal los jóvenes que quieran quedarse en el campo»",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-23",
+      "fecha_hora": "2026-10-23T09:23:02.000Z"
+    },
+    {
       "url": "https://www.tribunasalamanca.com/noticias/463696/a-que-edad-tienen-los-ninos-su-primer-telefono-la-edad-media-baja-a-los-10-8-anos-en-castilla-y-leon",
       "titulo": "¿A qué edad tienen los niños su primer teléfono?: la edad media baja a los 10,8 años en Castilla y León",
       "medio": "Tribuna Salamanca",
       "fecha": "2026-10-23",
       "fecha_hora": "2026-10-23T09:15:00.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/salamanca/nueva-luz-obras-galeria-urbana-20261023105912-nt.html",
+      "titulo": "Nueva luz para 13 obras de la Galería Urbana",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-23",
+      "fecha_hora": "2026-10-23T08:59:12.000Z"
     },
     {
       "url": "https://www.lagacetadesalamanca.es/gente-estilo/rosa-benito-durisima-rocio-carrasco-honduras-tia-20261023104301-nt.html",
@@ -23719,242 +24272,11 @@
       "fecha_hora": "2026-10-03T15:18:26.000Z"
     },
     {
-      "url": "https://www.salamanca24horas.com/deportes/salamanca-cf-uds/salamanca-cf-uds-de-dulce-quiere-seguir-racha-tordesillas",
-      "titulo": "Un Salamanca CF UDS ‘de dulce’ quiere seguir su racha en Tordesillas",
-      "medio": "Salamanca24Horas",
-      "fecha": "2026-10-03",
-      "fecha_hora": "2026-10-03T15:00:00.000Z"
-    },
-    {
-      "url": "https://www.lagacetadesalamanca.es/toros/despreciado-ebanista-toros-confirmacion-marco-perez-ventas-20261003141757-nt.html",
-      "titulo": "Despreciado y Ebanista: así son los toros de la confirmación de Marco Pérez en Las Ventas",
-      "medio": "La Gaceta de Salamanca",
-      "fecha": "2026-10-03",
-      "fecha_hora": "2026-10-03T13:50:47.000Z"
-    },
-    {
-      "url": "https://www.tribunasalamanca.com/noticias/461246/10-rutas-por-salamanca-para-hacer-a-pie-o-en-bici-y-descubrir-sus-rincones-naturales-e-historicos",
-      "titulo": "10 rutas por Salamanca para hacer a pie o en bici y descubrir sus rincones naturales e históricos",
-      "medio": "Tribuna Salamanca",
-      "fecha": "2026-10-03",
-      "fecha_hora": "2026-10-03T13:30:30.000Z"
-    },
-    {
-      "url": "https://www.lagacetadesalamanca.es/toros/24000-almas-abarrotaran-imponente-escenario-ver-confirmacion-20261003152202-nt.html",
-      "titulo": "Casi 24.000 almas abarrotarán este imponente escenario para ver la confirmación de Marco Pérez",
-      "medio": "La Gaceta de Salamanca",
-      "fecha": "2026-10-03",
-      "fecha_hora": "2026-10-03T13:22:03.000Z"
-    },
-    {
-      "url": "https://www.tribunasalamanca.com/noticias/461243/galeria-de-imagenes-el-reina-sofia-se-lleno-de-urgencias-y-ambiente-de-derbi-entre-unionistas-y-cultural",
-      "titulo": "Galería de imágenes: El Reina Sofía se llenó de urgencias y ambiente de derbi entre Unionistas y Cultural",
-      "medio": "Tribuna Salamanca",
-      "fecha": "2026-10-03",
-      "fecha_hora": "2026-10-03T12:10:24.000Z"
-    },
-    {
-      "url": "https://www.lagacetadesalamanca.es/salamanca/guisos-castanas-pota-precio-ganga-cambia-mercado-20261003140609-nt.html",
-      "titulo": "Guisos, castañas y una pota a precio de ganga: así cambia el mercado con la llegada del frío",
-      "medio": "La Gaceta de Salamanca",
-      "fecha": "2026-10-03",
-      "fecha_hora": "2026-10-03T12:06:09.000Z"
-    },
-    {
-      "url": "https://www.salamanca24horas.com/castilla-y-leon/castellanos-leoneses-destinan-cada-cuatro-euros-salario-hipoteca",
-      "titulo": "Los castellanos y leoneses destinan uno de cada cuatro euros del salario a la hipoteca",
-      "medio": "Salamanca24Horas",
-      "fecha": "2026-10-03",
-      "fecha_hora": "2026-10-03T11:41:09.000Z"
-    },
-    {
-      "url": "https://www.tribunasalamanca.com/noticias/461240/disney-amplia-su-plan-de-recortes-con-casi-300-despidos-y-nuevas-jubilaciones-anticipadas",
-      "titulo": "Disney amplía su plan de recortes con casi 300 despidos y nuevas jubilaciones anticipadas",
-      "medio": "Tribuna Salamanca",
-      "fecha": "2026-10-03",
-      "fecha_hora": "2026-10-03T11:40:58.000Z"
-    },
-    {
-      "url": "https://www.tribunasalamanca.com/noticias/461239/los-javis-conquistan-estados-unidos-y-reciben-su-primer-gran-premio-por-la-bola-negra",
-      "titulo": "Los Javis conquistan Estados Unidos y reciben su primer gran premio por 'La bola negra'",
-      "medio": "Tribuna Salamanca",
-      "fecha": "2026-10-03",
-      "fecha_hora": "2026-10-03T11:34:53.000Z"
-    },
-    {
-      "url": "https://www.salamancahoy.es/salamanca/ciudad/centro-tormes-salamanca-acoge-taller-sobre-ciberseguridad-20261003132105-nt.html",
-      "titulo": "El 'Centro Tormes +' de Salamanca acoge un taller sobre ciberseguridad con un simulacro de ciberataque",
-      "medio": "Salamancahoy",
-      "fecha": "2026-10-03",
-      "fecha_hora": "2026-10-03T11:21:05.000Z"
-    },
-    {
-      "url": "https://www.lagacetadesalamanca.es/castilla-y-leon/muere-joven-anos-tras-atropellada-turismo-avila-20261003132015-nt.html",
-      "titulo": "Muere una joven de 25 años tras ser atropellada por un turismo en Ávila",
-      "medio": "La Gaceta de Salamanca",
-      "fecha": "2026-10-03",
-      "fecha_hora": "2026-10-03T11:20:15.000Z"
-    },
-    {
-      "url": "https://www.salamancahoy.es/salamanca/ciudad/taller-belenes-navidenos-mayores-anos-salamanca-20261003131804-nt.html",
-      "titulo": "Taller de belenes navideños para mayores de 18 años en Salamanca",
-      "medio": "Salamancahoy",
-      "fecha": "2026-10-03",
-      "fecha_hora": "2026-10-03T11:18:27.000Z"
-    },
-    {
-      "url": "https://www.tribunasalamanca.com/noticias/461237/la-junta-reivindica-a-veterinarios-e-ingenieros-de-montes-como-claves-para-la-seguridad-alimentaria-y-la-gestion-del-territorio",
-      "titulo": "La Junta reivindica a veterinarios e ingenieros de montes como \"claves\" para la seguridad alimentaria y la gestión del territorio",
-      "medio": "Tribuna Salamanca",
-      "fecha": "2026-10-03",
-      "fecha_hora": "2026-10-03T11:17:05.000Z"
-    },
-    {
-      "url": "https://www.tribunasalamanca.com/noticias/461236/el-vuelo-de-flydubai-que-rozo-la-tragedia-emiratos-confirma-un-intento-de-atentado-terrorista",
-      "titulo": "El vuelo de Flydubai que rozó la tragedia: Emiratos confirma un intento de atentado terrorista",
-      "medio": "Tribuna Salamanca",
-      "fecha": "2026-10-03",
-      "fecha_hora": "2026-10-03T11:13:39.000Z"
-    },
-    {
-      "url": "https://www.salamanca24horas.com/local/buscyl-alcanza-casi-6-millones-viajes-salamanca-prepara-reserva-previa-nueva-aplicacion",
-      "titulo": "Buscyl alcanza casi 6 millones de viajes en Salamanca y prepara la reserva previa y su nueva aplicación",
-      "medio": "Salamanca24Horas",
-      "fecha": "2026-10-03",
-      "fecha_hora": "2026-10-03T11:07:20.000Z"
-    },
-    {
-      "url": "https://www.salamanca24horas.com/provincia/comarca-de-salamanca/carbajosa-mejora-patio-primaria-colegio-ladera",
-      "titulo": "Carbajosa mejora el patio de Primaria del colegio La Ladera",
-      "medio": "Salamanca24Horas",
-      "fecha": "2026-10-03",
-      "fecha_hora": "2026-10-03T10:58:21.000Z"
-    },
-    {
-      "url": "https://www.lagacetadesalamanca.es/deportes/copa-mundo-llega-castilla-leon-mano-seleccion-20261003125729-nt.html",
-      "titulo": "La Copa del Mundo llega a Castilla y León de la mano de la Selección Española",
-      "medio": "La Gaceta de Salamanca",
-      "fecha": "2026-10-03",
-      "fecha_hora": "2026-10-03T10:57:29.000Z"
-    },
-    {
-      "url": "https://www.tribunasalamanca.com/noticias/461234/miles-de-personas-toman-la-calle-en-la-marcha-por-la-vivienda-tenemos-un-congreso-secuestrado-por-el-rentismo",
-      "titulo": "Miles de personas toman la calle en la marcha por la vivienda: \"Tenemos un Congreso secuestrado por el rentismo\"",
-      "medio": "Tribuna Salamanca",
-      "fecha": "2026-10-03",
-      "fecha_hora": "2026-10-03T10:56:02.000Z"
-    },
-    {
-      "url": "https://www.tribunasalamanca.com/noticias/461233/la-paradoja-de-la-vivienda-en-castilla-y-leon-hipotecas-mas-grandes-pero-cuotas-aun-contenidas",
-      "titulo": "La paradoja de la vivienda en Castilla y León: hipotecas más grandes, pero cuotas aún contenidas",
-      "medio": "Tribuna Salamanca",
-      "fecha": "2026-10-03",
-      "fecha_hora": "2026-10-03T10:47:13.000Z"
-    },
-    {
-      "url": "https://www.salamancahoy.es/salamanca/provincia/prolongada-alerta-lluvias-tormentas-granizo-salamanca-comunidad-20261003115805-nt.html",
-      "titulo": "Prolongada la alerta por lluvias y tormentas con granizo en Salamanca y en toda la comunidad",
-      "medio": "Salamancahoy",
-      "fecha": "2026-10-03",
-      "fecha_hora": "2026-10-03T10:35:55.000Z"
-    },
-    {
-      "url": "https://www.tribunasalamanca.com/noticias/461230/castilla-y-leon-ensaya-la-reserva-previa-y-la-app-movil-de-buscyl",
-      "titulo": "Castilla y León ensaya la reserva previa y la app móvil de Buscyl",
-      "medio": "Tribuna Salamanca",
-      "fecha": "2026-10-03",
-      "fecha_hora": "2026-10-03T10:31:10.000Z"
-    },
-    {
-      "url": "https://www.tribunasalamanca.com/noticias/461229/verstappen-vuelve-a-la-pole-y-encabezara-la-parrilla-del-gran-premio-de-barein-este-domingo",
-      "titulo": "Verstappen vuelve a la pole y encabezará la parrilla del Gran Premio de Baréin este domingo",
-      "medio": "Tribuna Salamanca",
-      "fecha": "2026-10-03",
-      "fecha_hora": "2026-10-03T10:27:40.000Z"
-    },
-    {
       "url": "https://www.salamancahoy.es/salamanca/provincia/amplio-dispositivo-terrestre-aereo-sigue-buscando-hombre-20261003112002-nt.html",
       "titulo": "Un amplio dispositivo terrestre y aéreo sigue buscando al hombre de 89 años desaparecido de un pueblo de Salamanca",
       "medio": "Salamancahoy",
       "fecha": "2026-10-03",
       "fecha_hora": "2026-10-03T10:21:57.000Z"
-    },
-    {
-      "url": "https://www.salamancahoy.es/salamanca/ciudad/mitico-bar-salamanca-varias-generaciones-quedado-tomar-20260925121624-nt.html",
-      "titulo": "El mítico bar de Salamanca donde varias generaciones han quedado para tomar sus famosas patatas bravas con tres salsas",
-      "medio": "Salamancahoy",
-      "fecha": "2026-10-03",
-      "fecha_hora": "2026-10-03T10:16:24.000Z"
-    },
-    {
-      "url": "https://www.salamanca24horas.com/local/salamanca-prepara-dia-lluvias-tormentas-30-litros-hora-sur-provincia",
-      "titulo": "Salamanca se prepara para un día de lluvias y tormentas con hasta 30 litros por hora en el sur de la provincia",
-      "medio": "Salamanca24Horas",
-      "fecha": "2026-10-03",
-      "fecha_hora": "2026-10-03T10:11:46.000Z"
-    },
-    {
-      "url": "https://www.tribunasalamanca.com/noticias/461223/el-telesilla-de-la-covatilla-vuelve-a-moverse-la-prueba-de-carga-ya-es-el-siguiente-paso",
-      "titulo": "El telesilla de La Covatilla vuelve a moverse: la prueba de carga ya es el siguiente paso",
-      "medio": "Tribuna Salamanca",
-      "fecha": "2026-10-03",
-      "fecha_hora": "2026-10-03T09:53:49.000Z"
-    },
-    {
-      "url": "https://www.salamanca24horas.com/sucesos/dia-busqueda-ledrada-lluvia-complicando-labores-localizar-hombre-89-anos-desaparecido",
-      "titulo": "Un día más de búsqueda en Ledrada, con la lluvia complicando las labores para localizar al hombre de 89 años desaparecido",
-      "medio": "Salamanca24Horas",
-      "fecha": "2026-10-03",
-      "fecha_hora": "2026-10-03T09:52:32.000Z"
-    },
-    {
-      "url": "https://www.lagacetadesalamanca.es/salamanca/salamanca-prepara-sabado-pasado-agua-sur-punto-20261003115223-nt.html",
-      "titulo": "Salamanca se prepara para un sábado pasado por agua: el sur, en el punto de mira",
-      "medio": "La Gaceta de Salamanca",
-      "fecha": "2026-10-03",
-      "fecha_hora": "2026-10-03T09:52:23.000Z"
-    },
-    {
-      "url": "https://www.tribunasalamanca.com/noticias/461221/el-peligroso-grupo-de-whatsapp-del-que-alerta-incibe-tras-la-denuncia-de-la-madre-de-un-menor",
-      "titulo": "El peligroso grupo de WhatsApp del que alerta Incibe tras la denuncia de la madre de un menor",
-      "medio": "Tribuna Salamanca",
-      "fecha": "2026-10-03",
-      "fecha_hora": "2026-10-03T09:46:54.000Z"
-    },
-    {
-      "url": "https://www.tribunasalamanca.com/noticias/461220/opep-afronta-el-pulso-del-petroleo-tras-la-liberacion-de-reservas-del-g7",
-      "titulo": "OPEP+ afronta el pulso del petróleo tras la liberación de reservas del G7",
-      "medio": "Tribuna Salamanca",
-      "fecha": "2026-10-03",
-      "fecha_hora": "2026-10-03T09:38:44.000Z"
-    },
-    {
-      "url": "https://www.lagacetadesalamanca.es/sucesos/gran-batida-movilizo-150-voluntarios-agustin-sigue-20261003112853-nt.html",
-      "titulo": "Una gran batida movilizó a 150 voluntarios, pero Agustín sigue sin aparecer",
-      "medio": "La Gaceta de Salamanca",
-      "fecha": "2026-10-03",
-      "fecha_hora": "2026-10-03T09:31:26.000Z"
-    },
-    {
-      "url": "https://www.salamanca24horas.com/castilla-y-leon/muere-mujer-tras-ser-atropellada-carretera-sonsoles-avila",
-      "titulo": "Muere una mujer tras ser atropellada en la carretera de Sonsoles, en Ávila",
-      "medio": "Salamanca24Horas",
-      "fecha": "2026-10-03",
-      "fecha_hora": "2026-10-03T09:30:55.000Z"
-    },
-    {
-      "url": "https://www.tribunasalamanca.com/noticias/461218/castilla-y-leon-en-alerta-por-lluvias-y-tormentas-proteccion-civil-recuerda-lo-que-no-debe-hacerse",
-      "titulo": "Castilla y León, en alerta por lluvias y tormentas: Protección Civil recuerda lo que no debe hacerse",
-      "medio": "Tribuna Salamanca",
-      "fecha": "2026-10-03",
-      "fecha_hora": "2026-10-03T09:28:13.000Z"
-    },
-    {
-      "url": "https://www.tribunasalamanca.com/noticias/461217/el-dispositivo-no-cesa-en-ledrada-continua-la-busqueda-del-hombre-de-89-anos-desaparecido",
-      "titulo": "El dispositivo no cesa en Ledrada: continúa la búsqueda del hombre de 89 años desaparecido",
-      "medio": "Tribuna Salamanca",
-      "fecha": "2026-10-03",
-      "fecha_hora": "2026-10-03T09:25:45.000Z"
     }
   ]
 }
