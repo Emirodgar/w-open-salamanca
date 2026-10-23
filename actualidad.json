@@ -1,11 +1,11 @@
 {
   "url_base": "https://www.lagacetadesalamanca.es",
-  "generado_en": "2026-10-22T05:45:41+00:00",
+  "generado_en": "2026-10-23T05:45:42+00:00",
   "periodo_cubierto": {
-    "desde": "2026-10-19",
-    "hasta": "2026-10-22"
+    "desde": "2026-10-20",
+    "hasta": "2026-10-23"
   },
-  "total_urls_analizadas": 201,
+  "total_urls_analizadas": 182,
   "secciones_excluidas": [
     "gente-estilo",
     "nacional",
@@ -17,15 +17,15 @@
   "por_seccion": [
     [
       "salamanca",
-      72
+      69
     ],
     [
       "provincia",
-      47
+      44
     ],
     [
       "deportes",
-      36
+      25
     ],
     [
       "sucesos",
@@ -33,19 +33,19 @@
     ],
     [
       "campo",
-      12
+      10
     ],
     [
       "castilla-y-leon",
-      4
-    ],
-    [
-      "toros",
-      3
+      5
     ],
     [
       "encuestas",
       3
+    ],
+    [
+      "toros",
+      2
     ],
     [
       "economia",
@@ -54,26 +54,26 @@
   ],
   "por_subseccion": [
     [
-      "deportes/futbol-local",
-      18
-    ],
-    [
       "deportes/baloncesto-local",
       10
     ],
     [
+      "deportes/futbol-local",
+      10
+    ],
+    [
       "deportes/deporte-base",
-      3
+      1
     ]
   ],
   "por_tipo_contenido": [
     [
       "noticia",
-      188
+      171
     ],
     [
       "galería",
-      12
+      10
     ],
     [
       "directo / en vivo",
@@ -82,141 +82,148 @@
   ],
   "heatmap_calendario": [
     {
-      "fecha": "2026-10-19",
-      "total": 57,
-      "salamanca": 19,
-      "provincia": 14,
-      "deportes": 15,
-      "sucesos": 4,
-      "campo": 2,
-      "castilla-y-leon": 1,
-      "toros": 1,
-      "encuestas": 1,
-      "economia": 0
-    },
-    {
       "fecha": "2026-10-20",
-      "total": 66,
-      "salamanca": 26,
-      "provincia": 13,
+      "total": 52,
+      "salamanca": 20,
+      "provincia": 8,
       "deportes": 6,
       "sucesos": 11,
-      "campo": 7,
+      "campo": 4,
       "castilla-y-leon": 1,
-      "toros": 0,
       "encuestas": 1,
+      "toros": 0,
       "economia": 1
     },
     {
       "fecha": "2026-10-21",
-      "total": 70,
-      "salamanca": 23,
+      "total": 68,
+      "salamanca": 22,
       "provincia": 20,
       "deportes": 13,
-      "sucesos": 7,
+      "sucesos": 6,
       "campo": 3,
       "castilla-y-leon": 2,
-      "toros": 1,
       "encuestas": 1,
+      "toros": 1,
       "economia": 0
     },
     {
       "fecha": "2026-10-22",
+      "total": 54,
+      "salamanca": 20,
+      "provincia": 16,
+      "deportes": 6,
+      "sucesos": 5,
+      "campo": 3,
+      "castilla-y-leon": 2,
+      "encuestas": 1,
+      "toros": 1,
+      "economia": 0
+    },
+    {
+      "fecha": "2026-10-23",
       "total": 8,
-      "salamanca": 4,
+      "salamanca": 7,
       "provincia": 0,
-      "deportes": 2,
+      "deportes": 0,
       "sucesos": 1,
       "campo": 0,
       "castilla-y-leon": 0,
-      "toros": 1,
       "encuestas": 0,
+      "toros": 0,
       "economia": 0
     }
   ],
   "conceptos_destacados": [
     {
-      "concepto": "Meins Avenida",
-      "piezas": 9,
-      "seccion_principal": "deportes",
-      "desde": "2026-10-20",
-      "hasta": "2026-10-21",
-      "ejemplos_redactados": [
-        "El equipo Meins Avenida sufrió una dura derrota frente a Chartres por 102-101. Se analizan las claves de esta derrota y la necesidad de mejorar la gestión de minutos finales.",
-        "El encuentro entre Chartres y Meins Avenida representó un pulso físico para crecer en Europa."
-      ]
-    },
-    {
-      "concepto": "Ayuntamiento",
-      "piezas": 5,
-      "seccion_principal": "salamanca",
-      "desde": "2026-10-19",
-      "hasta": "2026-10-21",
-      "ejemplos_redactados": [
-        "Castellanos de Moriscos ha licitado un nuevo ayuntamiento. En Béjar, el ayuntamiento se enfrenta a un bloqueo administrativo por la ausencia temporal del vicesecretario."
-      ]
-    },
-    {
-      "concepto": "Santa Marta",
-      "piezas": 5,
+      "concepto": "Béjar",
+      "piezas": 6,
       "seccion_principal": "provincia",
       "desde": "2026-10-20",
-      "hasta": "2026-10-21",
+      "hasta": "2026-10-22",
       "ejemplos_redactados": [
-        "Santa Marta ha ganado 100 plazas de aparcamiento junto a una nueva zona. La localidad acogerá en febrero una exposición de grabados de Van Gogh."
-      ]
-    },
-    {
-      "concepto": "Mujeres",
-      "piezas": 5,
-      "seccion_principal": "salamanca",
-      "desde": "2026-10-19",
-      "hasta": "2026-10-21",
-      "ejemplos_redactados": [
-        "Se conmemoran cuarenta años de lucha por los derechos de las mujeres. Un proyecto en la provincia destaca a tres mujeres que convierten el medio rural en oportunidad a través del ibérico, el aceite y el vino."
+        "Las obras en la SA-20 vuelven a colapsar el tráfico, provocando largas retenciones en Béjar.",
+        "Béjar ha abierto convocatorias de empleo para monitores y ayudantes en La Covatilla."
       ]
     },
     {
       "concepto": "Ciudad Rodrigo",
-      "piezas": 4,
+      "piezas": 5,
       "seccion_principal": "provincia",
-      "desde": "2026-10-19",
-      "hasta": "2026-10-20",
+      "desde": "2026-10-20",
+      "hasta": "2026-10-22",
       "ejemplos_redactados": [
-        "La fiesta de un barrio en Ciudad Rodrigo ha generado diferencias entre los vecinos. La diócesis de Ciudad Rodrigo participa en una jornada técnica."
+        "Irlanda estrecha lazos con Ciudad Rodrigo en un evento reciente.",
+        "Virginia Rubio presenta su primera novela en Ciudad Rodrigo."
       ]
     },
     {
-      "concepto": "Sucesos con mujeres",
-      "piezas": 4,
+      "concepto": "Mujer",
+      "piezas": 5,
       "seccion_principal": "sucesos",
       "desde": "2026-10-20",
+      "hasta": "2026-10-22",
+      "ejemplos_redactados": [
+        "Un hombre ha sido condenado por violar a una mujer ebria y drogada en Magaluf.",
+        "Bomberos fueron movilizados por una mujer en parada cardiorrespiratoria en la Avenida Raimundo."
+      ]
+    },
+    {
+      "concepto": "Meins Avenida",
+      "piezas": 4,
+      "seccion_principal": "deportes",
+      "desde": "2026-10-21",
       "hasta": "2026-10-21",
       "ejemplos_redactados": [
-        "Un hombre ha sido detenido en Junquera como presunto autor de un robo con violencia a una mujer. Una mujer ha fallecido tras sufrir una parada cardiorrespiratoria en la avenida Raimundo de Borgoña."
+        "Dura derrota del Meins Avenida en Chartres con un resultado de 102-101.",
+        "El Chartres y el Meins Avenida mantuvieron un pulso físico para crecer en Europa."
       ]
     },
     {
-      "concepto": "Fútbol Base",
-      "piezas": 3,
+      "concepto": "Unión Deportiva Salamanca (Unionistas)",
+      "piezas": 4,
       "seccion_principal": "deportes",
-      "desde": "2026-10-19",
-      "hasta": "2026-10-19",
+      "desde": "2026-10-20",
+      "hasta": "2026-10-22",
       "ejemplos_redactados": [
-        "Se han publicado las mejores imágenes de la jornada de fútbol base en Salamanca. Un bonito gesto deportivo entre benjamines de fútbol base ha sido destacado."
+        "Unionistas ha iniciado una limpieza especial en Reina Sofía.",
+        "Se reportan buenas y malas noticias a partes iguales en el entrenamiento de Unionistas."
       ]
     },
     {
-      "concepto": "Cáncer de Mama",
-      "piezas": 3,
-      "seccion_principal": "provincia",
-      "desde": "2026-10-19",
-      "hasta": "2026-10-19",
+      "concepto": "Cárcel",
+      "piezas": 4,
+      "seccion_principal": "sucesos",
+      "desde": "2026-10-21",
+      "hasta": "2026-10-22",
       "ejemplos_redactados": [
-        "Se ha creado un mural en El Encinar para recordar a las mujeres en el Día del Cáncer de Mama. Una nueva estrategia de nanomedicina muestra potencial para tratar el cáncer de mama."
+        "Piden tres años de cárcel por entrar en el dormitorio de una cuñada.",
+        "Siete años y ocho meses de cárcel por someter sexualmente a una persona."
+      ]
+    },
+    {
+      "concepto": "Shamonda",
+      "piezas": 2,
+      "seccion_principal": "campo",
+      "desde": "2026-10-22",
+      "hasta": "2026-10-22",
+      "ejemplos_redactados": [
+        "Francia registra el primer fallecimiento por el virus Shamonda, que afecta al ganado.",
+        "España se encuentra en alerta ante el virus Shamonda, con información sobre síntomas y casos."
+      ]
+    },
+    {
+      "concepto": "Tarifas Taxi",
+      "piezas": 2,
+      "seccion_principal": "salamanca",
+      "desde": "2026-10-21",
+      "hasta": "2026-10-21",
+      "ejemplos_redactados": [
+        "Se ha dado luz verde al incremento de las nuevas tarifas del taxi para 2027.",
+        "Una encuesta pregunta si el incremento de las tarifas del taxi para 2027 parece proporcionado."
       ]
     }
   ],
-  "resumen_borrador": "Se han publicado 201 noticias entre el 2026-10-19 y el 2026-10-22. La actividad se ha concentrado sobre todo en salamanca (72 piezas), provincia (47 piezas), deportes (36 piezas).\n\nLos conceptos con más piezas relacionadas son: Encuentro; Ayuntamiento; Chartres; Santa. Revisa 'evidencia' de cada concepto para redactar el resumen final.",
-  "resumen": "El periodo comprendido entre el 19 y el 22 de octubre ha estado marcado por diversas noticias en la provincia de Salamanca. En el ámbito deportivo, el equipo de baloncesto Meins Avenida sufrió una derrota ajustada frente a Chartres en un encuentro europeo, mientras que el fútbol base local continuó su actividad con la publicación de las mejores imágenes de la jornada. El Salamanca UDS, por su parte, ha superado las 6.000 entradas vendidas para su partido de Copa.\n\nEn la esfera local y provincial, el Ayuntamiento de Castellanos de Moriscos ha licitado un nuevo consistorio y Santa Marta ha ampliado su capacidad de aparcamiento con cien nuevas plazas. Ciudad Rodrigo ha vivido diferencias vecinales a raíz de una fiesta de barrio. En el plano social, se ha destacado la lucha por los derechos de las mujeres durante cuarenta años y se han realizado acciones de concienciación por el Día del Cáncer de Mama.\n\nLos sucesos han incluido la detención de un hombre por robo con violencia a una mujer y el fallecimiento de otra por parada cardiorrespiratoria. Un incendio en una vivienda en la calle Luis Gonzaga y un segundo robo en un restaurante también han requerido la intervención de los servicios de emergencia."
+  "resumen_borrador": "Se han publicado 182 noticias entre el 2026-10-20 y el 2026-10-23. La actividad se ha concentrado sobre todo en salamanca (69 piezas), provincia (44 piezas), deportes (25 piezas).\n\nLos conceptos con más piezas relacionadas son: Bejar; Ciudad · Rodrigo; Vecinos; Mujer. Revisa 'evidencia' de cada concepto para redactar el resumen final.",
+  "resumen": "La actualidad en Salamanca y su provincia entre el 20 y el 23 de octubre de 2026 ha estado marcada por diversos acontecimientos. En el ámbito deportivo, el equipo de baloncesto Meins Avenida sufrió una dura derrota en Chartres por un ajustado 102-101, mientras que el Salamanca UDS y Unionistas se preparan para sus próximos encuentros de Copa del Rey. En la provincia, Béjar ha sido noticia por las retenciones en la SA-20 debido a obras y por la apertura de convocatorias de empleo. Ciudad Rodrigo, por su parte, ha estrechado lazos con Irlanda y ha acogido la presentación de una novela.\n\nEn el apartado de sucesos, se han registrado condenas por delitos graves, como la violación de una mujer en Magaluf y penas de cárcel por agresión. También se ha informado del fallecimiento de una mujer tras una parada cardiorrespiratoria en la Avenida Raimundo. La ciudad ha visto la aprobación del incremento de las tarifas del taxi para 2027 y se ha alertado sobre el virus Shamonda, que ha causado un fallecimiento en Francia y mantiene a España en alerta.\n\nFinalmente, la Universidad de Salamanca prepara un encuentro de dirigentes internacionales para debatir problemas globales, y Renfe ha eliminado la reserva obligatoria de asiento en los trenes con origen o destino en Salamanca, facilitando los desplazamientos de los usuarios."
 }

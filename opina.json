@@ -459,6 +459,30 @@
       ],
       "basado_en": "eventos.json",
       "fecha_creacion": "2026-10-22"
+    },
+    {
+      "id": "tarifas-taxi-salamanca-2027",
+      "pregunta": "Ante la aprobación del incremento de las tarifas del taxi para 2027 en Salamanca, ¿cree que esta medida es necesaria para el sector o afectará negativamente a los usuarios?",
+      "opciones": [
+        "Es necesaria para la viabilidad del servicio",
+        "Afectará negativamente a los usuarios",
+        "Es un equilibrio razonable",
+        "No tengo suficiente información"
+      ],
+      "basado_en": "actualidad.json",
+      "fecha_creacion": "2026-10-23"
+    },
+    {
+      "id": "renfe-reserva-asiento-2026",
+      "pregunta": "Renfe ha eliminado la reserva obligatoria de asiento en los trenes con origen o destino en Salamanca. ¿Cree que esta medida facilitará los desplazamientos de los usuarios o generará problemas de aforo?",
+      "opciones": [
+        "Facilitará los desplazamientos y la flexibilidad",
+        "Generará problemas de aforo y comodidad",
+        "Es una medida con impacto limitado",
+        "No tengo suficiente información"
+      ],
+      "basado_en": "actualidad.json",
+      "fecha_creacion": "2026-10-23"
     }
   ]
 }
