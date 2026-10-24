@@ -1,7 +1,7 @@
 {
   "mes": "2026-10",
   "titulo_mes": "Octubre 2026",
-  "resumen_mes": "Octubre de 2026 ha sido un mes de importantes decisiones políticas y avances económicos en la provincia, con la elección del presidente de la Diputación y nuevas inversiones. En el ámbito deportivo, el Salamanca UDS lidera su grupo y la ciudad ha sido elegida sede para un campeonato nacional, aunque el equipo de baloncesto Meins Avenida sufrió una derrota en Europa. Los sucesos han incluido el vuelco de un autobús en Alba de Tormes y la condena por delitos graves. Socialmente, ha habido preocupación por el acoso escolar, la lucha por los derechos de las mujeres, y Salamanca ha sido señalada como capital española de la soledad, además de aprobarse el incremento de tarifas del taxi para 2027. Urbanísticamente, Béjar ha enfrentado averías en el suministro de agua y Castellanos de Moriscos ha licitado un nuevo ayuntamiento.",
+  "resumen_mes": "Octubre de 2026 ha sido un mes de importantes decisiones políticas y avances económicos en la provincia, con la elección del presidente de la Diputación y nuevas inversiones. En el ámbito deportivo, el Salamanca UDS lidera su grupo y la ciudad ha sido elegida sede para un campeonato nacional, aunque el equipo de baloncesto Meins Avenida sufrió una derrota en Europa. Los sucesos han incluido el trágico fallecimiento de un menor y la condena por delitos graves. Socialmente, ha habido preocupación por el acoso escolar, la lucha por los derechos de las mujeres, y Salamanca ha sido señalada como capital española de la soledad, además de aprobarse el incremento de tarifas del taxi para 2027. Urbanísticamente, Béjar ha enfrentado averías en el suministro de agua y Castellanos de Moriscos ha licitado un nuevo ayuntamiento.",
   "hitos": [
     {
       "fecha": "2026-10-09",
@@ -52,20 +52,20 @@
       "destacado": false
     },
     {
-      "fecha": "2026-10-20",
-      "titulo": "Vuelca un autobús en la carretera de Alba de Tormes",
-      "categoria": "Sucesos",
-      "descripcion": "Un autobús ha volcado en la carretera de Alba de Tormes después de que su conductor sufriera un desvanecimiento.",
-      "fuente": "https://www.lagacetadesalamanca.es/sucesos/autobus-vuelca-carretera-alba-tras-desvanecerse-conductor-20261020115922-nt.html",
-      "destacado": true
+      "fecha": "2026-10-22",
+      "titulo": "Salamanca, señalada como capital española de la soledad",
+      "categoria": "Sociedad",
+      "descripcion": "Salamanca ha sido destacada como la capital española de la soledad, con 386 hogares unipersonales.",
+      "fuente": "https://www.lagacetadesalamanca.es/salamanca/salamanca-capital-espanola-soledad-386-hogares-unipersonal-20261022060000-nt.html",
+      "destacado": false
     },
     {
-      "fecha": "2026-10-20",
-      "titulo": "Gonzalo Robles deja el Senado tras cuatro décadas",
-      "categoria": "Política",
-      "descripcion": "Gonzalo Robles ha anunciado su retirada del Senado después de cuatro décadas de trayectoria política.",
-      "fuente": "https://www.lagacetadesalamanca.es/salamanca/gonzalo-robles-deja-senado-tras-cuatro-decadas-20261020130047-nt.html",
-      "destacado": false
+      "fecha": "2026-10-23",
+      "titulo": "Fallece Héctor, menor de edad, tras accidente de patinete",
+      "categoria": "Sucesos",
+      "descripcion": "Un menor de edad, identificado como Héctor, ha fallecido tras sufrir un accidente con patinete.",
+      "fuente": "https://www.lagacetadesalamanca.es/sucesos/fallece-hector-menor-anos-sufrio-accidente-patinete-20261023142728-nt.html",
+      "destacado": true
     }
   ]
 }

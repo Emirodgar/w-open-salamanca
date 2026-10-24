@@ -483,6 +483,30 @@
       ],
       "basado_en": "actualidad.json",
       "fecha_creacion": "2026-10-23"
+    },
+    {
+      "id": "citas-extranjeria-salamanca-2026",
+      "pregunta": "Ante la preocupación por la falta de citas para la tramitación de documentos de extranjeros en Salamanca, ¿cree que las administraciones deberían destinar más recursos para agilizar este servicio?",
+      "opciones": [
+        "Sí, es un servicio esencial que debe ser eficiente",
+        "No, los recursos son limitados y hay otras prioridades",
+        "Deberían explorarse soluciones digitales para reducir la presencialidad",
+        "No tengo suficiente información"
+      ],
+      "basado_en": "actualidad.json",
+      "fecha_creacion": "2026-10-24"
+    },
+    {
+      "id": "seguridad-restaurantes-salamanca-2026",
+      "pregunta": "Ante los recientes robos en el Restaurante Verssache y otros incidentes de seguridad en la capital, ¿cree que las autoridades deberían reforzar la vigilancia en zonas comerciales y de ocio de Salamanca?",
+      "opciones": [
+        "Sí, es crucial para la seguridad de negocios y clientes",
+        "No, son hechos aislados que no requieren medidas adicionales",
+        "Deberían ser los propios negocios quienes refuercen su seguridad",
+        "No tengo suficiente información"
+      ],
+      "basado_en": "actualidad.json",
+      "fecha_creacion": "2026-10-24"
     }
   ]
 }

@@ -1,11 +1,11 @@
 {
   "url_base": "https://www.lagacetadesalamanca.es",
-  "generado_en": "2026-10-23T05:45:42+00:00",
+  "generado_en": "2026-10-24T05:45:40+00:00",
   "periodo_cubierto": {
-    "desde": "2026-10-20",
-    "hasta": "2026-10-23"
+    "desde": "2026-10-21",
+    "hasta": "2026-10-24"
   },
-  "total_urls_analizadas": 182,
+  "total_urls_analizadas": 187,
   "secciones_excluidas": [
     "gente-estilo",
     "nacional",
@@ -17,23 +17,23 @@
   "por_seccion": [
     [
       "salamanca",
-      69
+      64
     ],
     [
       "provincia",
-      44
+      53
     ],
     [
       "deportes",
-      25
+      32
     ],
     [
       "sucesos",
-      23
+      20
     ],
     [
       "campo",
-      10
+      8
     ],
     [
       "castilla-y-leon",
@@ -44,32 +44,32 @@
       3
     ],
     [
-      "toros",
-      2
+      "promociones",
+      1
     ],
     [
-      "economia",
+      "toros",
       1
     ]
   ],
   "por_subseccion": [
     [
-      "deportes/baloncesto-local",
-      10
+      "deportes/futbol-local",
+      14
     ],
     [
-      "deportes/futbol-local",
-      10
+      "deportes/baloncesto-local",
+      7
     ],
     [
       "deportes/deporte-base",
-      1
+      4
     ]
   ],
   "por_tipo_contenido": [
     [
       "noticia",
-      171
+      176
     ],
     [
       "galería",
@@ -82,90 +82,90 @@
   ],
   "heatmap_calendario": [
     {
-      "fecha": "2026-10-20",
-      "total": 52,
-      "salamanca": 20,
-      "provincia": 8,
-      "deportes": 6,
-      "sucesos": 11,
-      "campo": 4,
-      "castilla-y-leon": 1,
-      "encuestas": 1,
-      "toros": 0,
-      "economia": 1
-    },
-    {
       "fecha": "2026-10-21",
-      "total": 68,
-      "salamanca": 22,
-      "provincia": 20,
-      "deportes": 13,
-      "sucesos": 6,
-      "campo": 3,
-      "castilla-y-leon": 2,
-      "encuestas": 1,
-      "toros": 1,
-      "economia": 0
-    },
-    {
-      "fecha": "2026-10-22",
-      "total": 54,
-      "salamanca": 20,
-      "provincia": 16,
-      "deportes": 6,
+      "total": 48,
+      "salamanca": 12,
+      "provincia": 13,
+      "deportes": 12,
       "sucesos": 5,
       "campo": 3,
       "castilla-y-leon": 2,
       "encuestas": 1,
-      "toros": 1,
-      "economia": 0
+      "promociones": 0,
+      "toros": 0
+    },
+    {
+      "fecha": "2026-10-22",
+      "total": 52,
+      "salamanca": 20,
+      "provincia": 16,
+      "deportes": 6,
+      "sucesos": 5,
+      "campo": 2,
+      "castilla-y-leon": 2,
+      "encuestas": 1,
+      "promociones": 0,
+      "toros": 0
     },
     {
       "fecha": "2026-10-23",
-      "total": 8,
-      "salamanca": 7,
+      "total": 77,
+      "salamanca": 24,
+      "provincia": 24,
+      "deportes": 14,
+      "sucesos": 8,
+      "campo": 3,
+      "castilla-y-leon": 1,
+      "encuestas": 1,
+      "promociones": 1,
+      "toros": 1
+    },
+    {
+      "fecha": "2026-10-24",
+      "total": 10,
+      "salamanca": 8,
       "provincia": 0,
       "deportes": 0,
-      "sucesos": 1,
+      "sucesos": 2,
       "campo": 0,
       "castilla-y-leon": 0,
       "encuestas": 0,
-      "toros": 0,
-      "economia": 0
+      "promociones": 0,
+      "toros": 0
     }
   ],
   "conceptos_destacados": [
     {
-      "concepto": "Béjar",
-      "piezas": 6,
-      "seccion_principal": "provincia",
-      "desde": "2026-10-20",
-      "hasta": "2026-10-22",
-      "ejemplos_redactados": [
-        "Las obras en la SA-20 vuelven a colapsar el tráfico, provocando largas retenciones en Béjar.",
-        "Béjar ha abierto convocatorias de empleo para monitores y ayudantes en La Covatilla."
-      ]
-    },
-    {
       "concepto": "Ciudad Rodrigo",
-      "piezas": 5,
+      "piezas": 8,
       "seccion_principal": "provincia",
-      "desde": "2026-10-20",
-      "hasta": "2026-10-22",
+      "desde": "2026-10-22",
+      "hasta": "2026-10-23",
       "ejemplos_redactados": [
-        "Irlanda estrecha lazos con Ciudad Rodrigo en un evento reciente.",
-        "Virginia Rubio presenta su primera novela en Ciudad Rodrigo."
+        "Ciudad Rodrigo ha organizado la cuarta jornada de homenaje a los jubilados.",
+        "El Festival de Ficción de Ciudad Rodrigo celebra su 15º aniversario, rindiendo homenaje al arte de Domingo Santos."
       ]
     },
     {
-      "concepto": "Mujer",
+      "concepto": "Béjar",
       "piezas": 5,
-      "seccion_principal": "sucesos",
-      "desde": "2026-10-20",
-      "hasta": "2026-10-22",
+      "seccion_principal": "provincia",
+      "desde": "2026-10-21",
+      "hasta": "2026-10-23",
       "ejemplos_redactados": [
-        "Un hombre ha sido condenado por violar a una mujer ebria y drogada en Magaluf.",
-        "Bomberos fueron movilizados por una mujer en parada cardiorrespiratoria en la Avenida Raimundo."
+        "Cruz Roja Béjar ha ofrecido un curso gratuito de mantenimiento.",
+        "Las obras han vuelto a colapsar la SA-20, provocando retenciones en Béjar."
+      ]
+    },
+    {
+      "concepto": "Peñaranda",
+      "piezas": 5,
+      "seccion_principal": "provincia",
+      "desde": "2026-10-21",
+      "hasta": "2026-10-23",
+      "ejemplos_redactados": [
+        "Peñaranda ha estrenado un plan de gestión para 150 gatos.",
+        "El municipio ha licitado la segunda fase del proyecto de vestuarios por 173.000 euros."
       ]
     },
     {
@@ -173,57 +173,57 @@
       "piezas": 4,
       "seccion_principal": "deportes",
       "desde": "2026-10-21",
-      "hasta": "2026-10-21",
+      "hasta": "2026-10-23",
       "ejemplos_redactados": [
-        "Dura derrota del Meins Avenida en Chartres con un resultado de 102-101.",
-        "El Chartres y el Meins Avenida mantuvieron un pulso físico para crecer en Europa."
+        "El Meins Avenida sufrió una dura derrota frente al Chartres.",
+        "Se ha publicado la agenda deportiva del equipo para el fin de semana."
       ]
     },
     {
-      "concepto": "Unión Deportiva Salamanca (Unionistas)",
-      "piezas": 4,
-      "seccion_principal": "deportes",
-      "desde": "2026-10-20",
-      "hasta": "2026-10-22",
+      "concepto": "Piden cárcel",
+      "piezas": 3,
+      "seccion_principal": "sucesos",
+      "desde": "2026-10-22",
+      "hasta": "2026-10-24",
       "ejemplos_redactados": [
-        "Unionistas ha iniciado una limpieza especial en Reina Sofía.",
-        "Se reportan buenas y malas noticias a partes iguales en el entrenamiento de Unionistas."
+        "Se han solicitado penas de cárcel por extorsión con fotos íntimas en Instagram.",
+        "También se piden años de prisión por apuñalar y rociar con gas."
       ]
     },
     {
-      "concepto": "Cárcel",
-      "piezas": 4,
+      "concepto": "Restaurante Verssache",
+      "piezas": 3,
       "seccion_principal": "sucesos",
       "desde": "2026-10-21",
-      "hasta": "2026-10-22",
+      "hasta": "2026-10-23",
       "ejemplos_redactados": [
-        "Piden tres años de cárcel por entrar en el dormitorio de una cuñada.",
-        "Siete años y ocho meses de cárcel por someter sexualmente a una persona."
+        "Un detenido ha ingresado en prisión por robos en el Restaurante Verssache y en el local Amazonia.",
+        "Este es el segundo robo en el establecimiento en un mes."
       ]
     },
     {
-      "concepto": "Shamonda",
-      "piezas": 2,
-      "seccion_principal": "campo",
-      "desde": "2026-10-22",
-      "hasta": "2026-10-22",
-      "ejemplos_redactados": [
-        "Francia registra el primer fallecimiento por el virus Shamonda, que afecta al ganado.",
-        "España se encuentra en alerta ante el virus Shamonda, con información sobre síntomas y casos."
-      ]
-    },
-    {
-      "concepto": "Tarifas Taxi",
-      "piezas": 2,
-      "seccion_principal": "salamanca",
+      "concepto": "Herido motorista",
+      "piezas": 3,
+      "seccion_principal": "sucesos",
       "desde": "2026-10-21",
-      "hasta": "2026-10-21",
+      "hasta": "2026-10-23",
       "ejemplos_redactados": [
-        "Se ha dado luz verde al incremento de las nuevas tarifas del taxi para 2027.",
-        "Una encuesta pregunta si el incremento de las tarifas del taxi para 2027 parece proporcionado."
+        "Un motorista resultó herido tras chocar con un turismo en Capuchinos.",
+        "Otro accidente de moto se registró en la glorieta Vetones y Vacceos."
+      ]
+    },
+    {
+      "concepto": "Semana Santa",
+      "piezas": 3,
+      "seccion_principal": "salamanca",
+      "desde": "2026-10-22",
+      "hasta": "2026-10-23",
+      "ejemplos_redactados": [
+        "El periodista Ángel Benito ha sido nombrado pregonero de la Semana Santa 2027.",
+        "La Junta de Cofradías trabaja en tres novedades para la próxima edición."
       ]
     }
   ],
-  "resumen_borrador": "Se han publicado 182 noticias entre el 2026-10-20 y el 2026-10-23. La actividad se ha concentrado sobre todo en salamanca (69 piezas), provincia (44 piezas), deportes (25 piezas).\n\nLos conceptos con más piezas relacionadas son: Bejar; Ciudad · Rodrigo; Vecinos; Mujer. Revisa 'evidencia' de cada concepto para redactar el resumen final.",
-  "resumen": "La actualidad en Salamanca y su provincia entre el 20 y el 23 de octubre de 2026 ha estado marcada por diversos acontecimientos. En el ámbito deportivo, el equipo de baloncesto Meins Avenida sufrió una dura derrota en Chartres por un ajustado 102-101, mientras que el Salamanca UDS y Unionistas se preparan para sus próximos encuentros de Copa del Rey. En la provincia, Béjar ha sido noticia por las retenciones en la SA-20 debido a obras y por la apertura de convocatorias de empleo. Ciudad Rodrigo, por su parte, ha estrechado lazos con Irlanda y ha acogido la presentación de una novela.\n\nEn el apartado de sucesos, se han registrado condenas por delitos graves, como la violación de una mujer en Magaluf y penas de cárcel por agresión. También se ha informado del fallecimiento de una mujer tras una parada cardiorrespiratoria en la Avenida Raimundo. La ciudad ha visto la aprobación del incremento de las tarifas del taxi para 2027 y se ha alertado sobre el virus Shamonda, que ha causado un fallecimiento en Francia y mantiene a España en alerta.\n\nFinalmente, la Universidad de Salamanca prepara un encuentro de dirigentes internacionales para debatir problemas globales, y Renfe ha eliminado la reserva obligatoria de asiento en los trenes con origen o destino en Salamanca, facilitando los desplazamientos de los usuarios."
+  "resumen_borrador": "Se han publicado 187 noticias entre el 2026-10-21 y el 2026-10-24. La actividad se ha concentrado sobre todo en salamanca (64 piezas), provincia (53 piezas), deportes (32 piezas).\n\nLos conceptos con más piezas relacionadas son: Ciudad · Rodrigo; Bejar; Penaranda; Vecinos. Revisa 'evidencia' de cada concepto para redactar el resumen final.",
+  "resumen": "La provincia de Salamanca ha registrado una intensa actividad en los últimos días. En Ciudad Rodrigo, se han celebrado homenajes a jubilados y el Festival de Ficción ha alcanzado su 15º aniversario. Béjar ha sido escenario de cursos de mantenimiento de Cruz Roja y retenciones de tráfico por obras, mientras que Peñaranda ha implementado un plan de gestión para gatos y ha licitado mejoras en sus vestuarios municipales. Las localidades se preparan también para eventos de Halloween.\n\nEn el ámbito de sucesos, la capital ha visto solicitudes de cárcel por extorsión con fotos íntimas y apuñalamientos. Se ha detenido a un individuo por robos en el Restaurante Verssache, que ha sufrido ya dos incidentes este mes. La preocupación por la seguridad vial se mantiene con varios motoristas heridos en distintos accidentes. Un lamentable suceso ha sido el fallecimiento de un menor tras un accidente de patinete.\n\nDeportivamente, el Meins Avenida ha encajado una dura derrota en su encuentro frente al Chartres. La Semana Santa de 2027 ya tiene pregonero, el periodista Ángel Benito, y se perfilan novedades para la celebración. Socialmente, se ha destacado la preocupación por la falta de citas para documentos de extranjeros y la aprobación del incremento de tarifas del taxi para el próximo año."
 }
