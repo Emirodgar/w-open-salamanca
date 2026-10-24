@@ -1,7 +1,7 @@
 {
-  "generado_en": "2026-10-24T20:49:57.602Z",
+  "generado_en": "2026-10-24T22:29:09.190Z",
   "dias_ventana": 20,
-  "total": 3469,
+  "total": 3471,
   "medios": [
     "Tribuna Salamanca",
     "Salamanca24Horas",
@@ -9,6 +9,27 @@
     "Salamancahoy"
   ],
   "noticias": [
+    {
+      "url": "https://www.lagacetadesalamanca.es/sucesos/incendio-finca-mozarbez-moviliza-dos-dotaciones-bomberos-20261024232514-nt.html",
+      "titulo": "Un incendio en una finca de Mozárbez moviliza dos dotaciones de Bomberos de la Diputación",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-24",
+      "fecha_hora": "2026-10-24T21:49:16.000Z"
+    },
+    {
+      "url": "https://www.salamanca24horas.com/sucesos/bomberos-acuden-finca-mozarbez-incendio-vivienda",
+      "titulo": "Los bomberos acuden a una finca de Mozárbez por el incendio de una vivienda",
+      "medio": "Salamanca24Horas",
+      "fecha": "2026-10-24",
+      "fecha_hora": "2026-10-24T21:32:13.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/salamanca/arquitecta-poner-pinchos-20261024230229-nt.html",
+      "titulo": "De arquitecta a poner pinchos",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-10-24",
+      "fecha_hora": "2026-10-24T21:02:29.000Z"
+    },
     {
       "url": "https://www.lagacetadesalamanca.es/encuestas/cree-instituciones-deberian-facilitar-division-pisos-gran-20261024222845-nt.html",
       "titulo": "¿Cree que las instituciones deberían facilitar la división de los pisos de gran tamaño para combatir el problema de la vivienda?",
@@ -29,6 +50,13 @@
       "medio": "Salamanca24Horas",
       "fecha": "2026-10-24",
       "fecha_hora": "2026-10-24T20:20:01.000Z"
+    },
+    {
+      "url": "https://www.salamancahoy.es/salamanca/noticias-imprescindibles-salamanca-sabado-octubre-20261024220720-nt.html",
+      "titulo": "Las noticias imprescindibles de Salamanca este sábado 24 de octubre",
+      "medio": "Salamancahoy",
+      "fecha": "2026-10-24",
+      "fecha_hora": "2026-10-24T20:07:20.000Z"
     },
     {
       "url": "https://www.lagacetadesalamanca.es/salamanca/noticias-importantes-salamanca-hoy-sabado-octubtre-20261024213546-nt.html",
@@ -274,6 +302,13 @@
       "medio": "Tribuna Salamanca",
       "fecha": "2026-10-24",
       "fecha_hora": "2026-10-24T16:50:16.000Z"
+    },
+    {
+      "url": "https://www.tribunasalamanca.com/noticias/463895/vivir-en-salamanca-cuesta-cada-vez-mas-y-la-razon-la-vivienda-se-dispara-y-la-renta-no-sigue-el-ritmo",
+      "titulo": "Vivir en Salamanca cuesta cada vez más y la razón: la vivienda se dispara y la renta no sigue el ritmo",
+      "medio": "Tribuna Salamanca",
+      "fecha": "2026-10-24",
+      "fecha_hora": "2026-10-24T16:43:47.000Z"
     },
     {
       "url": "https://www.lagacetadesalamanca.es/deportes/baloncesto-local/meins-avenida/raquel-romo-recibir-zaragoza-necesitamos-mejor-version-20261024183648-nt.html",
@@ -1800,6 +1835,13 @@
       "medio": "Tribuna Salamanca",
       "fecha": "2026-10-23",
       "fecha_hora": "2026-10-23T10:55:52.000Z"
+    },
+    {
+      "url": "https://www.tribunasalamanca.com/noticias/463724/veni-vidi",
+      "titulo": "¡Veni, vidi...!",
+      "medio": "Tribuna Salamanca",
+      "fecha": "2026-10-23",
+      "fecha_hora": "2026-10-23T10:46:10.000Z"
     },
     {
       "url": "https://www.tribunasalamanca.com/noticias/463722/por-fin-algo-que-baja",
@@ -24258,39 +24300,11 @@
       "fecha_hora": "2026-10-05T03:09:01.000Z"
     },
     {
-      "url": "https://www.lagacetadesalamanca.es/nacional/hora-pedro-sanchez-preparado-adelantar-elecciones-20261004234051-nt.html",
-      "titulo": "La hora de Pedro Sánchez: preparado para adelantar elecciones",
-      "medio": "La Gaceta de Salamanca",
-      "fecha": "2026-10-04",
-      "fecha_hora": "2026-10-04T21:41:05.000Z"
-    },
-    {
-      "url": "https://www.lagacetadesalamanca.es/toros/torero-estrella-20261004220351-nt.html",
-      "titulo": "Un torero con estrella",
-      "medio": "La Gaceta de Salamanca",
-      "fecha": "2026-10-04",
-      "fecha_hora": "2026-10-04T21:32:39.000Z"
-    },
-    {
-      "url": "https://www.salamancahoy.es/salamanca/provincia/guardia-civil-busca-pueblo-salamanca-hombre-desaparecido-20261004210418-nt.html",
-      "titulo": "Localizan con vida al hombre desaparecido en el pueblo salmantino de Vilvestre",
-      "medio": "Salamancahoy",
-      "fecha": "2026-10-04",
-      "fecha_hora": "2026-10-04T21:14:40.000Z"
-    },
-    {
       "url": "https://www.salamancahoy.es/salamanca/provincia/evolucion-ultimas-fabricas-tejidos-lana-salamanca-ensenaron-20260921194859-nt.html",
       "titulo": "La evolución de una de las últimas fábricas de tejidos de lana en Salamanca: «Todo lo que sé me lo enseñaron los trabajadores»",
       "medio": "Salamancahoy",
       "fecha": "2026-10-04",
       "fecha_hora": "2026-10-04T18:03:56.000Z"
-    },
-    {
-      "url": "https://www.salamancahoy.es/salamanca/provincia/amplio-dispositivo-terrestre-aereo-sigue-buscando-hombre-20261003112002-nt.html",
-      "titulo": "Un amplio dispositivo terrestre y aéreo sigue buscando al hombre de 89 años desaparecido de un pueblo de Salamanca",
-      "medio": "Salamancahoy",
-      "fecha": "2026-10-03",
-      "fecha_hora": "2026-10-03T10:21:57.000Z"
     }
   ]
 }
