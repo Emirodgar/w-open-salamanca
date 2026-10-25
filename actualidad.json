@@ -1,9 +1,9 @@
 {
   "url_base": "https://www.lagacetadesalamanca.es",
-  "generado_en": "2026-10-24T05:45:40+00:00",
+  "generado_en": "2026-10-25T05:45:49+00:00",
   "periodo_cubierto": {
-    "desde": "2026-10-21",
-    "hasta": "2026-10-24"
+    "desde": "2026-10-22",
+    "hasta": "2026-10-25"
   },
   "total_urls_analizadas": 187,
   "secciones_excluidas": [
@@ -17,7 +17,7 @@
   "por_seccion": [
     [
       "salamanca",
-      64
+      63
     ],
     [
       "provincia",
@@ -25,55 +25,63 @@
     ],
     [
       "deportes",
-      32
+      33
     ],
     [
       "sucesos",
-      20
+      19
     ],
     [
       "campo",
       8
     ],
     [
-      "castilla-y-leon",
-      5
-    ],
-    [
       "encuestas",
       3
     ],
     [
-      "promociones",
-      1
+      "castilla-y-leon",
+      3
     ],
     [
       "toros",
+      2
+    ],
+    [
+      "fundacion-gaceta",
+      1
+    ],
+    [
+      "elecciones",
+      1
+    ],
+    [
+      "promociones",
       1
     ]
   ],
   "por_subseccion": [
     [
       "deportes/futbol-local",
-      14
-    ],
-    [
-      "deportes/baloncesto-local",
-      7
+      16
     ],
     [
       "deportes/deporte-base",
+      5
+    ],
+    [
+      "deportes/baloncesto-local",
       4
     ]
   ],
   "por_tipo_contenido": [
     [
       "noticia",
-      176
+      173
     ],
     [
       "galería",
-      10
+      13
     ],
     [
       "directo / en vivo",
@@ -82,148 +90,156 @@
   ],
   "heatmap_calendario": [
     {
-      "fecha": "2026-10-21",
-      "total": 48,
-      "salamanca": 12,
-      "provincia": 13,
-      "deportes": 12,
-      "sucesos": 5,
-      "campo": 3,
-      "castilla-y-leon": 2,
-      "encuestas": 1,
-      "promociones": 0,
-      "toros": 0
-    },
-    {
       "fecha": "2026-10-22",
-      "total": 52,
-      "salamanca": 20,
-      "provincia": 16,
-      "deportes": 6,
-      "sucesos": 5,
+      "total": 41,
+      "salamanca": 15,
+      "provincia": 15,
+      "deportes": 4,
+      "sucesos": 2,
       "campo": 2,
-      "castilla-y-leon": 2,
       "encuestas": 1,
-      "promociones": 0,
-      "toros": 0
+      "castilla-y-leon": 2,
+      "toros": 0,
+      "fundacion-gaceta": 0,
+      "elecciones": 0,
+      "promociones": 0
     },
     {
       "fecha": "2026-10-23",
-      "total": 77,
+      "total": 76,
       "salamanca": 24,
       "provincia": 24,
       "deportes": 14,
-      "sucesos": 8,
+      "sucesos": 7,
       "campo": 3,
-      "castilla-y-leon": 1,
       "encuestas": 1,
-      "promociones": 1,
-      "toros": 1
+      "castilla-y-leon": 1,
+      "toros": 1,
+      "fundacion-gaceta": 0,
+      "elecciones": 0,
+      "promociones": 1
     },
     {
       "fecha": "2026-10-24",
-      "total": 10,
-      "salamanca": 8,
+      "total": 64,
+      "salamanca": 19,
+      "provincia": 14,
+      "deportes": 15,
+      "sucesos": 9,
+      "campo": 3,
+      "encuestas": 1,
+      "castilla-y-leon": 0,
+      "toros": 1,
+      "fundacion-gaceta": 1,
+      "elecciones": 1,
+      "promociones": 0
+    },
+    {
+      "fecha": "2026-10-25",
+      "total": 6,
+      "salamanca": 5,
       "provincia": 0,
       "deportes": 0,
-      "sucesos": 2,
+      "sucesos": 1,
       "campo": 0,
-      "castilla-y-leon": 0,
       "encuestas": 0,
-      "promociones": 0,
-      "toros": 0
+      "castilla-y-leon": 0,
+      "toros": 0,
+      "fundacion-gaceta": 0,
+      "elecciones": 0,
+      "promociones": 0
     }
   ],
   "conceptos_destacados": [
     {
       "concepto": "Ciudad Rodrigo",
-      "piezas": 8,
+      "piezas": 9,
       "seccion_principal": "provincia",
       "desde": "2026-10-22",
-      "hasta": "2026-10-23",
+      "hasta": "2026-10-24",
       "ejemplos_redactados": [
-        "Ciudad Rodrigo ha organizado la cuarta jornada de homenaje a los jubilados.",
-        "El Festival de Ficción de Ciudad Rodrigo celebra su 15º aniversario, rindiendo homenaje al arte de Domingo Santos."
+        "La Fundación Ciudad Rodrigo y la Asociación Hijos del Maíz firman un acuerdo.",
+        "El Festival de Ficción de Ciudad Rodrigo celebra su decimoquinto aniversario."
       ]
     },
     {
-      "concepto": "Béjar",
+      "concepto": "Unionistas",
       "piezas": 5,
-      "seccion_principal": "provincia",
-      "desde": "2026-10-21",
-      "hasta": "2026-10-23",
+      "seccion_principal": "deportes",
+      "desde": "2026-10-23",
+      "hasta": "2026-10-24",
       "ejemplos_redactados": [
-        "Cruz Roja Béjar ha ofrecido un curso gratuito de mantenimiento.",
-        "Las obras han vuelto a colapsar la SA-20, provocando retenciones en Béjar."
+        "Unionistas se enfrenta al Bilbao Athletic en un partido con seguimiento online.",
+        "El equipo conoce el horario de su próxima visita a Barakaldo."
       ]
     },
     {
       "concepto": "Peñaranda",
       "piezas": 5,
       "seccion_principal": "provincia",
-      "desde": "2026-10-21",
-      "hasta": "2026-10-23",
+      "desde": "2026-10-23",
+      "hasta": "2026-10-24",
       "ejemplos_redactados": [
-        "Peñaranda ha estrenado un plan de gestión para 150 gatos.",
-        "El municipio ha licitado la segunda fase del proyecto de vestuarios por 173.000 euros."
+        "Se celebra un encuentro rural femenino en Peñaranda.",
+        "La localidad estrena un plan de gestión para el control de 150 gatos."
       ]
     },
     {
-      "concepto": "Meins Avenida",
+      "concepto": "Bilbao Athletic",
       "piezas": 4,
       "seccion_principal": "deportes",
-      "desde": "2026-10-21",
-      "hasta": "2026-10-23",
+      "desde": "2026-10-24",
+      "hasta": "2026-10-24",
       "ejemplos_redactados": [
-        "El Meins Avenida sufrió una dura derrota frente al Chartres.",
-        "Se ha publicado la agenda deportiva del equipo para el fin de semana."
+        "Unionistas se mide al Bilbao Athletic en un partido directo con resultado en línea.",
+        "El equipo salmantino sufre un zarpazo del Bilbao Athletic."
       ]
     },
     {
-      "concepto": "Piden cárcel",
+      "concepto": "Castilla y León",
+      "piezas": 4,
+      "seccion_principal": "castilla-y-leon",
+      "desde": "2026-10-22",
+      "hasta": "2026-10-23",
+      "ejemplos_redactados": [
+        "El Ministerio de Cultura cuestiona las ayudas al cine en Castilla y León.",
+        "El frío aprieta en la región, con diez municipios bajo cero."
+      ]
+    },
+    {
+      "concepto": "Santa Marta",
+      "piezas": 4,
+      "seccion_principal": "deportes",
+      "desde": "2026-10-23",
+      "hasta": "2026-10-24",
+      "ejemplos_redactados": [
+        "El Santa Marta consigue tres puntos en el descuento.",
+        "Se anuncian nuevas viviendas para jóvenes en Santa Marta."
+      ]
+    },
+    {
+      "concepto": "Alba de Tormes",
       "piezas": 3,
-      "seccion_principal": "sucesos",
+      "seccion_principal": "provincia",
       "desde": "2026-10-22",
       "hasta": "2026-10-24",
       "ejemplos_redactados": [
-        "Se han solicitado penas de cárcel por extorsión con fotos íntimas en Instagram.",
-        "También se piden años de prisión por apuñalar y rociar con gas."
+        "Alba de Tormes mejora el estado del firme y drenaje de un camino.",
+        "Se celebran fiestas patronales seguras y multitudinarias en la localidad."
       ]
     },
     {
-      "concepto": "Restaurante Verssache",
+      "concepto": "Virus Shamonda",
       "piezas": 3,
-      "seccion_principal": "sucesos",
-      "desde": "2026-10-21",
-      "hasta": "2026-10-23",
-      "ejemplos_redactados": [
-        "Un detenido ha ingresado en prisión por robos en el Restaurante Verssache y en el local Amazonia.",
-        "Este es el segundo robo en el establecimiento en un mes."
-      ]
-    },
-    {
-      "concepto": "Herido motorista",
-      "piezas": 3,
-      "seccion_principal": "sucesos",
-      "desde": "2026-10-21",
-      "hasta": "2026-10-23",
-      "ejemplos_redactados": [
-        "Un motorista resultó herido tras chocar con un turismo en Capuchinos.",
-        "Otro accidente de moto se registró en la glorieta Vetones y Vacceos."
-      ]
-    },
-    {
-      "concepto": "Semana Santa",
-      "piezas": 3,
-      "seccion_principal": "salamanca",
+      "seccion_principal": "campo",
       "desde": "2026-10-22",
-      "hasta": "2026-10-23",
+      "hasta": "2026-10-24",
       "ejemplos_redactados": [
-        "El periodista Ángel Benito ha sido nombrado pregonero de la Semana Santa 2027.",
-        "La Junta de Cofradías trabaja en tres novedades para la próxima edición."
+        "Se registra el primer infectado por el virus Shamonda en Francia.",
+        "España se mantiene en alerta ante la expansión del virus Shamonda."
       ]
     }
   ],
-  "resumen_borrador": "Se han publicado 187 noticias entre el 2026-10-21 y el 2026-10-24. La actividad se ha concentrado sobre todo en salamanca (64 piezas), provincia (53 piezas), deportes (32 piezas).\n\nLos conceptos con más piezas relacionadas son: Ciudad · Rodrigo; Bejar; Penaranda; Vecinos. Revisa 'evidencia' de cada concepto para redactar el resumen final.",
-  "resumen": "La provincia de Salamanca ha registrado una intensa actividad en los últimos días. En Ciudad Rodrigo, se han celebrado homenajes a jubilados y el Festival de Ficción ha alcanzado su 15º aniversario. Béjar ha sido escenario de cursos de mantenimiento de Cruz Roja y retenciones de tráfico por obras, mientras que Peñaranda ha implementado un plan de gestión para gatos y ha licitado mejoras en sus vestuarios municipales. Las localidades se preparan también para eventos de Halloween.\n\nEn el ámbito de sucesos, la capital ha visto solicitudes de cárcel por extorsión con fotos íntimas y apuñalamientos. Se ha detenido a un individuo por robos en el Restaurante Verssache, que ha sufrido ya dos incidentes este mes. La preocupación por la seguridad vial se mantiene con varios motoristas heridos en distintos accidentes. Un lamentable suceso ha sido el fallecimiento de un menor tras un accidente de patinete.\n\nDeportivamente, el Meins Avenida ha encajado una dura derrota en su encuentro frente al Chartres. La Semana Santa de 2027 ya tiene pregonero, el periodista Ángel Benito, y se perfilan novedades para la celebración. Socialmente, se ha destacado la preocupación por la falta de citas para documentos de extranjeros y la aprobación del incremento de tarifas del taxi para el próximo año."
+  "resumen_borrador": "Se han publicado 187 noticias entre el 2026-10-22 y el 2026-10-25. La actividad se ha concentrado sobre todo en salamanca (63 piezas), provincia (53 piezas), deportes (33 piezas).\n\nLos conceptos con más piezas relacionadas son: Ciudad · Rodrigo; Unionistas; Penaranda; Suma. Revisa 'evidencia' de cada concepto para redactar el resumen final.",
+  "resumen": "La actualidad en Salamanca durante los últimos días ha estado marcada por diversos acontecimientos en el ámbito deportivo, social y provincial. En el plano deportivo, Unionistas de Salamanca se enfrentó al Bilbao Athletic, mientras que el Santa Marta logró una victoria en el descuento. La comunidad del fútbol base salmantino lamentó el fallecimiento de Héctor, un menor que sufrió un accidente de patinete, generando un luto generalizado.\n\nEn cuanto a sucesos, se registró un incendio en una finca de Mozárbez y se llevaron a cabo detenciones por robos en el centro de la ciudad. La provincia también fue escenario de noticias como la mejora de infraestructuras en Alba de Tormes y la celebración de eventos culturales en Ciudad Rodrigo. Peñaranda, por su parte, licitó la segunda fase de un proyecto de vestuarios y presentó un plan de gestión para la población felina. La alerta por el virus Shamonda, con un primer caso en Francia, ha generado preocupación en el ámbito sanitario y rural.\n\nSocialmente, se puso de manifiesto la preocupación por el ciberacoso en las aulas y se abordó el debate sobre la división de grandes pisos en la capital. La ciudad también experimentó bajas temperaturas y se gestionaron cuestiones como la venta de entradas para la Copa del Rey y la programación de diversas actividades culturales y de ocio, incluyendo celebraciones de Halloween en varios municipios."
 }

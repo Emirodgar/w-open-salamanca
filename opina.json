@@ -507,6 +507,30 @@
       ],
       "basado_en": "actualidad.json",
       "fecha_creacion": "2026-10-24"
+    },
+    {
+      "id": "division-pisos-capital-2026",
+      "pregunta": "Ante el debate sobre la división de grandes pisos en la capital salmantina, ¿cree que esta medida sería beneficiosa para el mercado de la vivienda?",
+      "opciones": [
+        "Sí, aumentaría la oferta y facilitaría el acceso.",
+        "No, podría generar problemas de convivencia y saturación.",
+        "Depende de la regulación y las zonas.",
+        "No tengo suficiente información."
+      ],
+      "basado_en": "actualidad.json",
+      "fecha_creacion": "2026-10-25"
+    },
+    {
+      "id": "seguridad-patinetes-menores-2026",
+      "pregunta": "Tras el lamentable accidente de patinete que ha generado luto en el fútbol base salmantino, ¿considera que deberían reforzarse las medidas de seguridad y regulación para el uso de patinetes por menores?",
+      "opciones": [
+        "Sí, es urgente proteger a los menores.",
+        "No, la responsabilidad recae en los padres y la educación.",
+        "Debería haber más campañas de concienciación, no solo regulación.",
+        "No tengo suficiente información."
+      ],
+      "basado_en": "actualidad.json",
+      "fecha_creacion": "2026-10-25"
     }
   ]
 }

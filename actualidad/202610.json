@@ -1,7 +1,7 @@
 {
   "mes": "2026-10",
   "titulo_mes": "Octubre 2026",
-  "resumen_mes": "Octubre de 2026 ha sido un mes de importantes decisiones políticas y avances económicos en la provincia, con la elección del presidente de la Diputación y nuevas inversiones. En el ámbito deportivo, el Salamanca UDS lidera su grupo y la ciudad ha sido elegida sede para un campeonato nacional, aunque el equipo de baloncesto Meins Avenida sufrió una derrota en Europa. Los sucesos han incluido el trágico fallecimiento de un menor y la condena por delitos graves. Socialmente, ha habido preocupación por el acoso escolar, la lucha por los derechos de las mujeres, y Salamanca ha sido señalada como capital española de la soledad, además de aprobarse el incremento de tarifas del taxi para 2027. Urbanísticamente, Béjar ha enfrentado averías en el suministro de agua y Castellanos de Moriscos ha licitado un nuevo ayuntamiento.",
+  "resumen_mes": "Octubre de 2026 ha sido un mes de importantes decisiones políticas y avances económicos en la provincia, con la elección del presidente de la Diputación y nuevas inversiones como la llegada de Primark. En el ámbito deportivo, el Salamanca UDS lidera su grupo y la ciudad ha sido elegida sede para un campeonato nacional. Los sucesos han incluido el trágico fallecimiento de un menor y la condena por delitos graves, además de la alerta por el virus Shamonda. Socialmente, ha habido preocupación por el acoso escolar y el ciberacoso, la lucha por los derechos de las mujeres, y Salamanca ha sido señalada como capital española de la soledad, además de aprobarse el incremento de tarifas del taxi para 2027.",
   "hitos": [
     {
       "fecha": "2026-10-09",
@@ -44,14 +44,6 @@
       "destacado": false
     },
     {
-      "fecha": "2026-10-19",
-      "titulo": "Béjar sufre dos averías en la red de suministro de agua",
-      "categoria": "Urbanismo",
-      "descripcion": "La localidad de Béjar ha experimentado dos averías en su red de suministro de agua.",
-      "fuente": "https://www.lagacetadesalamanca.es/provincia/bejar-sufre-dos-averias-red-suministrara-agua-20261019174223-nt.html",
-      "destacado": false
-    },
-    {
       "fecha": "2026-10-22",
       "titulo": "Salamanca, señalada como capital española de la soledad",
       "categoria": "Sociedad",
@@ -60,10 +52,18 @@
       "destacado": false
     },
     {
+      "fecha": "2026-10-22",
+      "titulo": "Primer caso de virus Shamonda en Francia",
+      "categoria": "Sucesos",
+      "descripcion": "Se ha registrado el primer fallecido en Francia por el virus Shamonda, que afecta a humanos.",
+      "fuente": "https://www.lagacetadesalamanca.es/campo/muere-francia-primer-infectado-virus-shamonda-afecta-20261022135958-nt.html",
+      "destacado": false
+    },
+    {
       "fecha": "2026-10-23",
       "titulo": "Fallece Héctor, menor de edad, tras accidente de patinete",
       "categoria": "Sucesos",
-      "descripcion": "Un menor de edad, identificado como Héctor, ha fallecido tras sufrir un accidente con patinete.",
+      "descripcion": "Un menor de edad, identificado como Héctor, ha fallecido tras sufrir un accidente con patinete, causando luto en el fútbol base salmantino.",
       "fuente": "https://www.lagacetadesalamanca.es/sucesos/fallece-hector-menor-anos-sufrio-accidente-patinete-20261023142728-nt.html",
       "destacado": true
     }
