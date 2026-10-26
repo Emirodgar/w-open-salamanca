@@ -531,6 +531,30 @@
       ],
       "basado_en": "actualidad.json",
       "fecha_creacion": "2026-10-25"
+    },
+    {
+      "id": "llaves-ciudad-2026",
+      "pregunta": "El programa 'Las Llaves de la Ciudad 2026' ofrece visitas a 29 espacios patrimoniales, incluyendo novedades como el Convento de San Esteban. ¿Considera que esta iniciativa es efectiva para acercar el patrimonio a los ciudadanos y turistas?",
+      "opciones": [
+        "Sí, es una excelente forma de difundir el patrimonio",
+        "No, su impacto es limitado y no llega a todos",
+        "Es un buen complemento, pero se necesitan más acciones",
+        "No tengo suficiente información"
+      ],
+      "basado_en": "eventos.json",
+      "fecha_creacion": "2026-10-26"
+    },
+    {
+      "id": "festival-ficcion-ciudad-rodrigo-2026",
+      "pregunta": "Ciudad Rodrigo celebra la 15ª edición de su Festival Internacional de Cine 'Ficci-on'. ¿Cree que este festival contribuye significativamente a la promoción cultural y turística de la ciudad?",
+      "opciones": [
+        "Sí, es un evento clave para la cultura y el turismo local",
+        "No, su relevancia es más bien local y limitada",
+        "Es importante, pero podría tener más proyección",
+        "No tengo suficiente información"
+      ],
+      "basado_en": "eventos.json",
+      "fecha_creacion": "2026-10-26"
     }
   ]
 }
