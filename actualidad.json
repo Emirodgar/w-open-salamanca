@@ -1,11 +1,11 @@
 {
   "url_base": "https://www.lagacetadesalamanca.es",
-  "generado_en": "2026-10-26T05:45:55+00:00",
+  "generado_en": "2026-10-27T05:45:49+00:00",
   "periodo_cubierto": {
-    "desde": "2026-10-23",
-    "hasta": "2026-10-26"
+    "desde": "2026-10-24",
+    "hasta": "2026-10-27"
   },
-  "total_urls_analizadas": 196,
+  "total_urls_analizadas": 190,
   "secciones_excluidas": [
     "gente-estilo",
     "nacional",
@@ -16,36 +16,36 @@
   "nota_cobertura": "El análisis cubre únicamente las URLs presentes en el sitemap en el momento de la consulta (excluyendo, si se indicó, las secciones filtradas). Si el sitemap es incremental o 'rolling', el periodo real puede ser más corto que el solicitado — revisa 'periodo_cubierto' para confirmarlo.",
   "por_seccion": [
     [
+      "deportes",
+      54
+    ],
+    [
       "provincia",
-      56
+      53
     ],
     [
       "salamanca",
-      52
-    ],
-    [
-      "deportes",
-      49
+      48
     ],
     [
       "sucesos",
-      21
+      19
     ],
     [
       "campo",
-      6
+      8
     ],
     [
       "toros",
-      4
-    ],
-    [
-      "encuestas",
-      3
+      2
     ],
     [
       "internacional",
-      1
+      2
+    ],
+    [
+      "encuestas",
+      2
     ],
     [
       "fundacion-gaceta",
@@ -54,20 +54,12 @@
     [
       "elecciones",
       1
-    ],
-    [
-      "promociones",
-      1
-    ],
-    [
-      "castilla-y-leon",
-      1
     ]
   ],
   "por_subseccion": [
     [
       "deportes/futbol-local",
-      24
+      30
     ],
     [
       "deportes/baloncesto-local",
@@ -81,11 +73,11 @@
   "por_tipo_contenido": [
     [
       "noticia",
-      175
+      168
     ],
     [
       "galería",
-      18
+      19
     ],
     [
       "directo / en vivo",
@@ -94,152 +86,144 @@
   ],
   "heatmap_calendario": [
     {
-      "fecha": "2026-10-23",
-      "total": 59,
-      "provincia": 22,
-      "salamanca": 13,
-      "deportes": 12,
-      "sucesos": 6,
-      "campo": 2,
-      "toros": 1,
-      "encuestas": 1,
-      "internacional": 0,
-      "fundacion-gaceta": 0,
-      "elecciones": 0,
-      "promociones": 1,
-      "castilla-y-leon": 1
-    },
-    {
       "fecha": "2026-10-24",
-      "total": 63,
-      "provincia": 14,
-      "salamanca": 19,
-      "deportes": 14,
-      "sucesos": 9,
+      "total": 48,
+      "deportes": 13,
+      "provincia": 13,
+      "salamanca": 10,
+      "sucesos": 6,
       "campo": 3,
-      "toros": 1,
-      "encuestas": 1,
+      "toros": 0,
       "internacional": 0,
+      "encuestas": 1,
       "fundacion-gaceta": 1,
-      "elecciones": 1,
-      "promociones": 0,
-      "castilla-y-leon": 0
+      "elecciones": 1
     },
     {
       "fecha": "2026-10-25",
-      "total": 70,
-      "provincia": 20,
-      "salamanca": 16,
+      "total": 63,
       "deportes": 23,
+      "provincia": 17,
+      "salamanca": 13,
       "sucesos": 6,
       "campo": 1,
-      "toros": 2,
-      "encuestas": 1,
+      "toros": 1,
       "internacional": 1,
+      "encuestas": 1,
       "fundacion-gaceta": 0,
-      "elecciones": 0,
-      "promociones": 0,
-      "castilla-y-leon": 0
+      "elecciones": 0
     },
     {
       "fecha": "2026-10-26",
-      "total": 4,
-      "provincia": 0,
-      "salamanca": 4,
-      "deportes": 0,
-      "sucesos": 0,
-      "campo": 0,
-      "toros": 0,
+      "total": 76,
+      "deportes": 18,
+      "provincia": 23,
+      "salamanca": 24,
+      "sucesos": 7,
+      "campo": 2,
+      "toros": 1,
+      "internacional": 1,
       "encuestas": 0,
-      "internacional": 0,
       "fundacion-gaceta": 0,
-      "elecciones": 0,
-      "promociones": 0,
-      "castilla-y-leon": 0
+      "elecciones": 0
+    },
+    {
+      "fecha": "2026-10-27",
+      "total": 3,
+      "deportes": 0,
+      "provincia": 0,
+      "salamanca": 1,
+      "sucesos": 0,
+      "campo": 2,
+      "toros": 0,
+      "internacional": 0,
+      "encuestas": 0,
+      "fundacion-gaceta": 0,
+      "elecciones": 0
     }
   ],
   "conceptos_destacados": [
     {
-      "concepto": "Ciudad Rodrigo",
+      "concepto": "Jornada de Fútbol Base",
       "piezas": 8,
-      "seccion_principal": "provincia",
-      "desde": "2026-10-23",
-      "hasta": "2026-10-25",
+      "seccion_principal": "deportes",
+      "desde": "2026-10-24",
+      "hasta": "2026-10-26",
       "ejemplos_redactados": [
-        "La recogida de basura en Ciudad Rodrigo es noticia. Un compositor y actor de Ciudad Rodrigo decidió volver a emprender. La Fundación Ciudad Rodrigo y la asociación Hijos del Maíz firmaron un acuerdo."
+        "La jornada del fútbol base salmantino ha dejado las mejores imágenes y goles, con la selección del once ideal de jóvenes promesas."
       ]
     },
     {
-      "concepto": "Meins Avenida",
+      "concepto": "Unionistas de Salamanca",
       "piezas": 6,
       "seccion_principal": "deportes",
-      "desde": "2026-10-23",
-      "hasta": "2026-10-25",
+      "desde": "2026-10-24",
+      "hasta": "2026-10-26",
       "ejemplos_redactados": [
-        "El Meins Avenida se enfrentó al Casademont Zaragoza en un partido con resultado en directo. El Casademont Zaragoza se impuso al Meins Avenida. Se analizaron las claves de la derrota del Meins Avenida contra el Casademont Zaragoza."
+        "Unionistas se prepara para la Copa del Rey, tras un derbi ante el Guijuelo y un zarpazo al Bilbao Athletic."
       ]
     },
     {
-      "concepto": "Peñaranda de Bracamonte",
+      "concepto": "Ciudad Rodrigo",
       "piezas": 5,
       "seccion_principal": "provincia",
-      "desde": "2026-10-23",
-      "hasta": "2026-10-24",
+      "desde": "2026-10-24",
+      "hasta": "2026-10-26",
       "ejemplos_redactados": [
-        "Peñaranda acogió un encuentro rural femenino. La localidad celebró una fiesta de fantasmas, brujas y calabazas bajo techo. Peñaranda estrenó un plan de gestión para 150 gatos."
+        "Ciudad Rodrigo es candidata a la iluminación navideña de Ferrero Rocher, mientras se debate sobre la fiesta de Halloween y se organiza una peregrinación."
       ]
     },
     {
-      "concepto": "Bilbao Athletic",
-      "piezas": 4,
+      "concepto": "Perfumerías Avenida",
+      "piezas": 5,
       "seccion_principal": "deportes",
       "desde": "2026-10-24",
       "hasta": "2026-10-25",
       "ejemplos_redactados": [
-        "Unionistas logró un zarpazo ante el Bilbao Athletic. Se siguió en directo el resultado y los goles del partido entre Unionistas y Bilbao Athletic. Unionistas necesitaba una victoria contra el Bilbao Athletic para coger impulso."
+        "Perfumerías Avenida ha conseguido su primera victoria ante Casademont Zaragoza, a pesar de una derrota en Eurocup."
       ]
     },
     {
-      "concepto": "Santa Marta de Tormes",
+      "concepto": "Premios y Reconocimientos",
       "piezas": 4,
-      "seccion_principal": "provincia",
-      "desde": "2026-10-23",
-      "hasta": "2026-10-24",
+      "seccion_principal": "salamanca",
+      "desde": "2026-10-24",
+      "hasta": "2026-10-26",
       "ejemplos_redactados": [
-        "Santa Marta de Tormes contará con nuevas viviendas para jóvenes tras una cesión. El Santa Marta consiguió tres puntos en el descuento. Santa Marta pidió a la Junta de Castilla y León una ampliación."
+        "Se han entregado premios a la mejor faena taurina, a la apuesta cultural de Morille y a una profesora salmantina por su enseñanza de literatura."
       ]
     },
     {
-      "concepto": "Talavera de la Reina (fútbol)",
+      "concepto": "Salamanca UDS y Talavera",
       "piezas": 4,
       "seccion_principal": "deportes",
       "desde": "2026-10-25",
       "hasta": "2026-10-25",
       "ejemplos_redactados": [
-        "El Salamanca conquistó Talavera. Se ofreció el resultado en directo del partido entre Talavera y Salamanca. El Salamanca se sintió 'vacío' en Talavera tras una polémica actuación arbitral."
+        "El Salamanca UDS sufrió una polémica derrota ante Talavera, con actuaciones arbitrales cuestionadas."
       ]
     },
     {
-      "concepto": "Lucha contra el Cáncer",
+      "concepto": "Juventud y Vivienda",
       "piezas": 4,
       "seccion_principal": "provincia",
       "desde": "2026-10-24",
-      "hasta": "2026-10-25",
+      "hasta": "2026-10-26",
       "ejemplos_redactados": [
-        "Santos celebró una marcha contra el cáncer. Aldeavieja de Tormes se volcó en la lucha contra el cáncer. Se anunció que los niños con cáncer de Salamanca tendrán acceso a protonterapia en el primer trimestre."
+        "Se debate la dificultad de los jóvenes para emanciparse en Salamanca, mientras Carbajosa contrata a cinco jóvenes y Santa Marta planea nuevas viviendas."
       ]
     },
     {
-      "concepto": "Juventud salmantina",
+      "concepto": "Sucesos con Heridos",
       "piezas": 4,
-      "seccion_principal": "encuestas",
-      "desde": "2026-10-23",
-      "hasta": "2026-10-25",
+      "seccion_principal": "sucesos",
+      "desde": "2026-10-25",
+      "hasta": "2026-10-26",
       "ejemplos_redactados": [
-        "Se consideró una misión imposible que los jóvenes puedan emanciparse en Salamanca. Chaikovskyi se alzó con el primer puesto en el XXIX Certamen de Jóvenes. Santa Marta de Tormes promoverá nuevas viviendas para jóvenes."
+        "Varios accidentes han dejado heridos, incluyendo motoristas, conductores de patinete eléctrico y un hombre tras salirse de la vía."
       ]
     }
   ],
-  "resumen_borrador": "Se han publicado 196 noticias entre el 2026-10-23 y el 2026-10-26. La actividad se ha concentrado sobre todo en provincia (56 piezas), salamanca (52 piezas), deportes (49 piezas).\n\nLos conceptos con más piezas relacionadas son: Ciudad · Rodrigo; Meins · Avenida; Suma; Penaranda. Revisa 'evidencia' de cada concepto para redactar el resumen final.",
-  "resumen": "La actividad en Salamanca y su provincia entre el 23 y el 26 de octubre de 2026 ha estado marcada por diversos acontecimientos en el ámbito deportivo, social y político. En el plano deportivo, Unionistas logró una victoria significativa ante el Bilbao Athletic, mientras que el Meins Avenida sufrió una derrota frente al Casademont Zaragoza. El Salamanca UDS, por su parte, cayó en Talavera en un encuentro con actuación arbitral polémica. El fútbol base salmantino se vistió de luto por el fallecimiento de un menor tras un accidente de patinete, suceso que generó una gran conmoción local.\n\nEn el ámbito social y provincial, la preocupación por la emancipación de los jóvenes en Salamanca ha sido un tema recurrente, destacando la dificultad para acceder a la vivienda. Se celebraron diversas marchas y eventos en la provincia en apoyo a la lucha contra el cáncer, mostrando la solidaridad de localidades como Santos y Aldeavieja de Tormes. Peñaranda de Bracamonte fue escenario de un encuentro rural femenino y de festividades temáticas de Halloween, mientras que Ciudad Rodrigo organizó jornadas de homenaje a jubilados y su Festival de Ficción. Se registró también el fallecimiento del cineasta salmantino José Luis García Sánchez.\n\nLa política local tuvo un hito con la visita del líder del Partido Popular, Alberto Núñez Feijóo, a Salamanca, donde participó en un mitin acompañado por destacados dirigentes autonómicos y locales. En cuanto a sucesos, se reportaron agresiones en la capital, varios accidentes de motoristas y detenciones por robos, manteniendo la atención en la seguridad ciudadana."
+  "resumen_borrador": "Se han publicado 190 noticias entre el 2026-10-24 y el 2026-10-27. La actividad se ha concentrado sobre todo en deportes (54 piezas), provincia (53 piezas), salamanca (48 piezas).\n\nLos conceptos con más piezas relacionadas son: Jornada; Unionistas; Ciudad · Rodrigo; Meins · Avenida. Revisa 'evidencia' de cada concepto para redactar el resumen final.",
+  "resumen": "Durante el periodo del 24 al 27 de octubre de 2026, la actualidad salmantina ha estado marcada por una intensa actividad en diversos frentes. En el ámbito deportivo, el fútbol base ha generado las mejores imágenes y goles de la jornada, mientras que Unionistas de Salamanca se prepara para la Copa del Rey tras un derbi y un encuentro con el Bilbao Athletic. El Perfumerías Avenida ha logrado una victoria y ha competido en Eurocup. El Salamanca UDS, por su parte, sufrió una polémica derrota ante Talavera, activando el modo Copa del Rey. Se han registrado también éxitos en kickboxing y judo. Mientras tanto, una huelga ferroviaria ha provocado la suspensión de trenes al inicio del puente. La hostelería salmantina ha premiado a sus profesionales y se ha anunciado la fecha de apertura de la tienda Primark en el Centro Comercial El Tormes. El CIFP Rodríguez Fabrés ha sido finalista nacional y la Universidad ha impulsado el emprendimiento sostenible. La Navidad salmantina busca nuevas figuras y se ha celebrado la Semana de las Legumbres. En el ámbito político, el líder del PP, Alberto Núñez Feijóo, ha visitado Salamanca para un mitin, acompañado por dirigentes locales y autonómicos, lanzando promesas sobre impuestos. En la provincia, Ciudad Rodrigo ha sido noticia por su candidatura a la iluminación navideña de Ferrero Rocher y por debates sobre festividades locales. Se han impulsado iniciativas para la juventud en Carbajosa y Santa Marta, y Morille ha recibido un premio por su apuesta cultural. La consejera de Medio Ambiente y Energía ha realizado una visita a la planta de Villarino, y se han reportado avances en infraestructuras y la mecanización de la recogida de castañas. En sucesos, se han registrado múltiples heridos en accidentes de tráfico y agresiones, además de detenciones por robos y un incendio en Mozárbez. El mercado de ganados ha duplicado su asistencia y se ha producido un relevo en la propiedad de E.Leclerc Salamanca. La preocupación por la emancipación juvenil y el ciberacoso también han estado presentes en la agenda social."
 }

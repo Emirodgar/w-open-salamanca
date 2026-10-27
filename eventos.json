@@ -1,5 +1,5 @@
 {
-  "generado_en": "2026-10-26T05:45:55+00:00",
+  "generado_en": "2026-10-27T05:45:49+00:00",
   "eventos": [
     {
       "titulo": "Exposición 'Iconografía' de grabados de Van Dyck",
@@ -38,15 +38,6 @@
       "fuente": "https://www.lagacetadesalamanca.es/provincia/talleres-infantiles-halloween-carbajosa-20261013200758-nt.html"
     },
     {
-      "titulo": "Jornada 'Mujeres que innovan' en Salamanca",
-      "categoria": "Sociedad",
-      "fecha_inicio": "2026-10-26",
-      "fecha_fin": null,
-      "lugar": "Casa de la Mujer, Salamanca",
-      "descripcion": "Jornada dedicada al emprendimiento, la tecnología y el liderazgo femenino, con experiencias personales y mesas redondas.",
-      "fuente": "https://www.lagacetadesalamanca.es/salamanca/escuela-municipal-igualdad-amplia-programacion-actividades-final-20260930182831-nt.html"
-    },
-    {
       "titulo": "Primera ronda de la Copa del Rey: CD Guijuelo vs Sporting de Gijón",
       "categoria": "Deportes",
       "fecha_inicio": "2026-10-27",
@@ -74,6 +65,15 @@
       "fuente": "https://www.lagacetadesalamanca.es/provincia/jornadas-prevencion-juegos-azar-redes-sociales-ciudad-20261021155714-nt.html"
     },
     {
+      "titulo": "Taller 'Primeros pasos con la Inteligencia Artificial Generativa para el mundo rural' en Coca de Alba",
+      "categoria": "Educación",
+      "fecha_inicio": "2026-10-27",
+      "fecha_fin": null,
+      "lugar": "online",
+      "descripcion": "El Ayuntamiento de Coca de Alba organiza un taller práctico y gratuito para acercar las nuevas tecnologías a las mujeres del entorno rural. La formación, impartida online, no requiere conocimientos previos y abordará herramientas como ChatGPT y Gemini.",
+      "fuente": "https://www.lagacetadesalamanca.es/provincia/mujeres-aprenderan-inteligencia-artificial-coca-alba-20261026095433-nt.html"
+    },
+    {
       "titulo": "Gran tractorada del campo español en Madrid",
       "categoria": "Sociedad",
       "fecha_inicio": "2026-10-28",
@@ -99,6 +99,24 @@
       "lugar": "Estadio Adolfo Suárez, Ávila",
       "descripcion": "Unionistas se enfrentará al Real Ávila en la primera ronda de la Copa del Rey el 29 de octubre a las 20:00 horas.",
       "fuente": "https://www.lagacetadesalamanca.es/deportes/futbol-local/unionistas/entradas-euros-aficion-unionistas-partido-copa-rey-20261015190604-nt.html"
+    },
+    {
+      "titulo": "Apertura del curso 2026-2027 de la Universidad de la Experiencia en Béjar",
+      "categoria": "Educación",
+      "fecha_inicio": "2026-10-29",
+      "fecha_fin": null,
+      "lugar": "Escuela de Ingeniería de Béjar",
+      "descripcion": "La Escuela de Ingeniería de Béjar acogerá la jornada de apertura de una nueva edición de la Universidad de la Experiencia, con la presencia de responsables del programa y una conferencia inaugural.",
+      "fuente": "https://www.lagacetadesalamanca.es/provincia/vuelve-universidad-experiencia-bejar-20261026193016-nt.html"
+    },
+    {
+      "titulo": "Jornada de la Mujer Rural en Salamanca",
+      "categoria": "Sociedad",
+      "fecha_inicio": "2026-10-29",
+      "fecha_fin": null,
+      "lugar": "Recinto Ferial de Salamanca",
+      "descripcion": "Más de 2.000 mujeres de la provincia se reunirán en el Recinto Ferial de Salamanca en una jornada organizada por la Diputación, en el marco del Día Internacional de la Mujer Rural. El evento busca reconocer la contribución de las mujeres a la vida económica, social y familiar de los pueblos.",
+      "fuente": "https://www.lagacetadesalamanca.es/provincia/2000-mujeres-reuniran-salamanca-reivindicar-papel-dinamizadoras-20261026123240-nt.html"
     },
     {
       "titulo": "Actividad especial de Halloween en Guijuelo",
@@ -208,6 +226,15 @@
       "fuente": "https://www.lagacetadesalamanca.es/provincia/penaranda-fiesta-fantasmas-brujas-calabazas-bajo-techo-20261023074805-nt.html"
     },
     {
+      "titulo": "Homenaje con placa al novillero Antonio del Castillo en Masueco",
+      "categoria": "Cultura",
+      "fecha_inicio": "2026-10-31",
+      "fecha_fin": null,
+      "lugar": "plaza de la Iglesia, Masueco",
+      "descripcion": "La localidad de Masueco descubrirá una placa en la plaza de la Iglesia en recuerdo al novillero Antonio del Castillo, fallecido en 1952. Familiares del torero sevillano participarán en este emotivo acto.",
+      "fuente": "https://www.lagacetadesalamanca.es/provincia/masueco-rendira-homenaje-placa-novillero-antonio-castillo-20261026170512-nt.html"
+    },
+    {
       "titulo": "Carrera de los lagares rupestres en San Esteban de la Sierra",
       "categoria": "Deportes",
       "fecha_inicio": "2026-11-01",
@@ -235,6 +262,15 @@
       "fuente": "https://www.lagacetadesalamanca.es/provincia/zorita-frontera-disfrutara-comedia-moscas-cojoneras-20261020152831-nt.html"
     },
     {
+      "titulo": "Décima edición de la Semana de las Legumbres en Salamanca",
+      "categoria": "Cultura",
+      "fecha_inicio": "2026-11-03",
+      "fecha_fin": "2026-11-08",
+      "lugar": "Salamanca",
+      "descripcion": "Salamanca acogerá la décima edición de la Semana de las Legumbres, organizada por la OMIC, con el objetivo de fomentar el consumo de productos de proximidad. La programación incluye demostraciones culinarias, talleres, rutas gastronómicas y actividades divulgativas.",
+      "fuente": "https://www.lagacetadesalamanca.es/salamanca/llega-semana-legumbres-lanzamiento-nueva-lenteja-tras-20261026123551-nt.html"
+    },
+    {
       "titulo": "Foro de Salamanca",
       "categoria": "Sociedad",
       "fecha_inicio": "2026-11-04",
@@ -242,6 +278,15 @@
       "lugar": "Universidad de Salamanca",
       "descripcion": "El Foro de Salamanca reunirá a representantes de universidades, instituciones y empresas para debatir sobre los principales retos internacionales, en el marco del V Centenario de la Escuela de Salamanca. Contará con la participación de dirigentes internacionales, embajadores y expertos en economía, innovación y tecnología.",
       "fuente": "https://www.lagacetadesalamanca.es/salamanca/universidad-reunira-dirigentes-internacionales-debatir-sobre-problemas-20261022174028-nt.html"
+    },
+    {
+      "titulo": "Ciclo 'Bebecuentos' en Carbajosa",
+      "categoria": "Educación",
+      "fecha_inicio": "2026-11-05",
+      "fecha_fin": "2026-11-26",
+      "lugar": "Centro Cultural, Carbajosa de la Sagrada",
+      "descripcion": "El ciclo 'Bebecuentos', dirigido a bebés de 6 a 36 meses, se celebrará los jueves por la tarde en el Centro Cultural de Carbajosa de la Sagrada. Esta iniciativa busca estimular los sentidos y el lenguaje temprano a través de historias ambientadas en la naturaleza otoñal.",
+      "fuente": "https://www.lagacetadesalamanca.es/provincia/carbajosa-fomentara-lectura-pequenos-bebecuentos-animacion-lectura-20261026141714-nt.html"
     },
     {
       "titulo": "Investidura de António Guterres como doctor honoris causa por la USAL",
@@ -332,6 +377,15 @@
       "lugar": "Sala Camelot, Salamanca",
       "descripcion": "Carameloraro actuará en el circuito VibraMahou, compartiendo escenario con la banda emergente salmantina Estrés.",
       "fuente": "https://www.lagacetadesalamanca.es/salamanca/carameloraro-presenta-tormes-proximos-conciertos-vibramahou-20261002112023-nt.html"
+    },
+    {
+      "titulo": "Representación de 'Nadie es inocente' en la XXX Muestra de Teatro Aficionado El Encinar",
+      "categoria": "Cultura",
+      "fecha_inicio": "2026-11-14",
+      "fecha_fin": null,
+      "lugar": "teatro La Fábula de Javier Bueno, El Encinar",
+      "descripcion": "La obra 'Nadie es inocente', del grupo local Aquí se hace Teatro, se representará el 14 de noviembre en el teatro La Fábula de Javier Bueno, como parte de la XXX Muestra de Teatro Aficionado El Encinar. Esta función pondrá el broche final a la edición y estará acompañada de la entrega de la recaudación solidaria a ALCER Salamanca.",
+      "fuente": "https://www.lagacetadesalamanca.es/provincia/encinar-aplaza-ultima-funcion-muestra-teatro-aficionado-20261024215357-nt.html"
     },
     {
       "titulo": "Concierto de Antonio Orozco en Salamanca",

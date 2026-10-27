@@ -99,19 +99,6 @@
       "fecha_creacion": "2026-10-05"
     },
     {
-      "id": "copa-rey-equipos-salamanca-2026",
-      "pregunta": "Los equipos salmantinos CD Guijuelo y Unionistas se enfrentarán a sus rivales en la primera ronda de la Copa del Rey. ¿Qué expectativas tiene sobre su desempeño en esta competición?",
-      "opciones": [
-        "Confío en que ambos avancen de ronda",
-        "Es difícil que pasen, pero darán buena imagen",
-        "Solo uno de ellos tiene opciones reales",
-        "No sigo la Copa del Rey",
-        "No tengo suficiente información"
-      ],
-      "basado_en": "eventos.json",
-      "fecha_creacion": "2026-10-06"
-    },
-    {
       "id": "inundaciones-colegio-ciudad-rodrigo-2026",
       "pregunta": "Ante las recientes inundaciones en un colegio de Ciudad Rodrigo, ¿cree que las autoridades locales deberían implementar medidas preventivas más robustas para proteger las infraestructuras educativas?",
       "opciones": [
@@ -555,6 +542,30 @@
       ],
       "basado_en": "eventos.json",
       "fecha_creacion": "2026-10-26"
+    },
+    {
+      "id": "huelga-ferroviaria-2026",
+      "pregunta": "Ante la huelga ferroviaria que ha provocado la suspensión de trenes al inicio del puente, ¿cree que estas movilizaciones son una herramienta efectiva para que los trabajadores logren sus demandas?",
+      "opciones": [
+        "Sí, es la única vía para presionar",
+        "No, perjudican a los usuarios y la imagen del servicio",
+        "Deberían buscarse otras vías de negociación",
+        "No tengo suficiente información"
+      ],
+      "basado_en": "actualidad.json",
+      "fecha_creacion": "2026-10-27"
+    },
+    {
+      "id": "ferrero-rocher-ciudad-rodrigo-2026",
+      "pregunta": "Ciudad Rodrigo ha presentado su candidatura para la iluminación navideña de Ferrero Rocher. ¿Cree que este tipo de iniciativas son efectivas para promocionar la ciudad y atraer turismo en Navidad?",
+      "opciones": [
+        "Sí, generan gran visibilidad y atractivo",
+        "No, el impacto es limitado y no justifica el esfuerzo",
+        "Son un buen complemento, pero no lo principal",
+        "No tengo suficiente información"
+      ],
+      "basado_en": "actualidad.json",
+      "fecha_creacion": "2026-10-27"
     }
   ]
 }

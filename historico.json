@@ -238,6 +238,27 @@
         "Depende de la organización y la afluencia": 1
       },
       "total_votos": 5
+    },
+    {
+      "id": "copa-rey-equipos-salamanca-2026",
+      "pregunta": "Los equipos salmantinos CD Guijuelo y Unionistas se enfrentarán a sus rivales en la primera ronda de la Copa del Rey. ¿Qué expectativas tiene sobre su desempeño en esta competición?",
+      "opciones": [
+        "Confío en que ambos avancen de ronda",
+        "Es difícil que pasen, pero darán buena imagen",
+        "Solo uno de ellos tiene opciones reales",
+        "No sigo la Copa del Rey",
+        "No tengo suficiente información"
+      ],
+      "basado_en": "eventos.json",
+      "fecha_creacion": "2026-10-06",
+      "fecha_archivado": "2026-10-27",
+      "resultados": {
+        "Es difícil que pasen, pero darán buena imagen": 1,
+        "No sigo la Copa del Rey": 2,
+        "Solo uno de ellos tiene opciones reales": 3,
+        "Confío en que ambos avancen de ronda": 1
+      },
+      "total_votos": 7
     }
   ]
 }

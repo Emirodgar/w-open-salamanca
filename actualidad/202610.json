@@ -1,7 +1,7 @@
 {
   "mes": "2026-10",
   "titulo_mes": "Octubre 2026",
-  "resumen_mes": "Octubre de 2026 ha sido un mes de importantes decisiones políticas y avances económicos en la provincia, con la elección del presidente de la Diputación y nuevas inversiones como la llegada de Primark. En el ámbito deportivo, el Salamanca UDS lidera su grupo y la ciudad ha sido elegida sede para un campeonato nacional. Los sucesos han incluido el trágico fallecimiento de un menor y la condena por delitos graves. Socialmente, ha habido preocupación por el acoso escolar y la emancipación juvenil, la lucha por los derechos de las mujeres, y Salamanca ha sido señalada como capital española de la soledad, además de aprobarse el incremento de tarifas del taxi para 2027. La visita de Feijóo a Salamanca también marcó la agenda política.",
+  "resumen_mes": "Octubre de 2026 ha sido un mes de importantes decisiones políticas y avances económicos en la provincia, con la elección del presidente de la Diputación y el anuncio de la fecha de apertura de Primark. En el ámbito deportivo, el Salamanca UDS lidera su grupo. Los sucesos han incluido el trágico fallecimiento de un menor y una huelga ferroviaria. Socialmente, ha habido preocupación por el acoso escolar y la emancipación juvenil. La visita de Feijóo a Salamanca y el fallecimiento del cineasta José Luis García Sánchez también marcaron la agenda.",
   "hitos": [
     {
       "fecha": "2026-10-09",
@@ -21,10 +21,10 @@
     },
     {
       "fecha": "2026-10-14",
-      "titulo": "Primark desembarcará en el Centro Comercial El Tormes",
+      "titulo": "Primark anuncia fecha de apertura en el Centro Comercial El Tormes",
       "categoria": "Economía",
-      "descripcion": "La cadena Primark desembarcará en el Centro Comercial El Tormes de Salamanca de cara a la Navidad.",
-      "fuente": "https://www.lagacetadesalamanca.es/salamanca/primark-desembarcara-centro-comercial-tormes-navidad-20261014171515-nt.html",
+      "descripcion": "La cadena Primark ha anunciado la fecha de apertura de su primera tienda en el Centro Comercial El Tormes.",
+      "fuente": "https://www.lagacetadesalamanca.es/salamanca/primark-fecha-abrir-primera-tienda-salamanca-20261026114117-nt.html",
       "destacado": false
     },
     {
@@ -33,22 +33,6 @@
       "categoria": "Educación",
       "descripcion": "Los casos de acoso escolar en Salamanca se han duplicado en los últimos dos cursos, según datos recientes.",
       "fuente": "https://www.lagacetadesalamanca.es/salamanca/casos-acoso-escolar-salamanca-duplican-dos-cursos-20261015203338-nt.html",
-      "destacado": false
-    },
-    {
-      "fecha": "2026-10-19",
-      "titulo": "Salamanca, sede de la final del Campeonato de España de fútbol",
-      "categoria": "Deportes",
-      "descripcion": "Salamanca ha sido elegida para albergar la final del Campeonato de España de fútbol.",
-      "fuente": "https://www.lagacetadesalamanca.es/deportes/salamanca-elegida-sede-final-campeonato-espana-futbol-20261019170130-nt.html",
-      "destacado": false
-    },
-    {
-      "fecha": "2026-10-22",
-      "titulo": "Salamanca, señalada como capital española de la soledad",
-      "categoria": "Sociedad",
-      "descripcion": "Salamanca ha sido destacada como la capital española de la soledad, con 386 hogares unipersonales.",
-      "fuente": "https://www.lagacetadesalamanca.es/salamanca/salamanca-capital-espanola-soledad-386-hogares-unipersonal-20261022060000-nt.html",
       "destacado": false
     },
     {
@@ -65,6 +49,22 @@
       "categoria": "Política",
       "descripcion": "El líder del PP, Alberto Núñez Feijóo, visitó Salamanca para un mitin, acompañado por dirigentes locales y autonómicos, lanzando promesas sobre impuestos.",
       "fuente": "https://www.lagacetadesalamanca.es/salamanca/feijoo-lanza-salamanca-promesa-cambio-impuestos-millon-20261025132329-nt.html",
+      "destacado": false
+    },
+    {
+      "fecha": "2026-10-25",
+      "titulo": "Fallece el cineasta salmantino José Luis García Sánchez",
+      "categoria": "Cultura",
+      "descripcion": "El reconocido cineasta salmantino José Luis García Sánchez ha fallecido.",
+      "fuente": "https://www.lagacetadesalamanca.es/salamanca/muere-cineasta-salmantino-jose-luis-garcia-sanchez-20261025110624-nt.html",
+      "destacado": false
+    },
+    {
+      "fecha": "2026-10-26",
+      "titulo": "Huelga ferroviaria provoca suspensiones de trenes",
+      "categoria": "Sociedad",
+      "descripcion": "Una huelga ferroviaria ha provocado la suspensión de una docena de trenes al inicio del puente.",
+      "fuente": "https://www.lagacetadesalamanca.es/salamanca/huelga-ferroviaria-inicio-puente-docena-trenes-suspendidos-20261026112436-nt.html",
       "destacado": false
     }
   ]
