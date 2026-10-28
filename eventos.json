@@ -1,5 +1,5 @@
 {
-  "generado_en": "2026-10-27T05:45:49+00:00",
+  "generado_en": "2026-10-28T05:45:46+00:00",
   "eventos": [
     {
       "titulo": "Exposición 'Iconografía' de grabados de Van Dyck",
@@ -56,24 +56,6 @@
       "fuente": "https://www.lagacetadesalamanca.es/deportes/futbol-local/salamanca-volvera-recibir-helmantico-celta-primera-ronda-20261005133043-nt.html"
     },
     {
-      "titulo": "Jornadas de prevención de juegos de azar y redes sociales (Taller para familias)",
-      "categoria": "Educación",
-      "fecha_inicio": "2026-10-27",
-      "fecha_fin": null,
-      "lugar": "edificio educativo de la calle San Fernando, Ciudad Rodrigo",
-      "descripcion": "Taller con Silvia Wobbeking para familias, ofreciendo herramientas y consejos prácticos para identificar conductas de riesgo, prevenir problemas relacionados con el juego y las redes sociales, y saber cómo actuar.",
-      "fuente": "https://www.lagacetadesalamanca.es/provincia/jornadas-prevencion-juegos-azar-redes-sociales-ciudad-20261021155714-nt.html"
-    },
-    {
-      "titulo": "Taller 'Primeros pasos con la Inteligencia Artificial Generativa para el mundo rural' en Coca de Alba",
-      "categoria": "Educación",
-      "fecha_inicio": "2026-10-27",
-      "fecha_fin": null,
-      "lugar": "online",
-      "descripcion": "El Ayuntamiento de Coca de Alba organiza un taller práctico y gratuito para acercar las nuevas tecnologías a las mujeres del entorno rural. La formación, impartida online, no requiere conocimientos previos y abordará herramientas como ChatGPT y Gemini.",
-      "fuente": "https://www.lagacetadesalamanca.es/provincia/mujeres-aprenderan-inteligencia-artificial-coca-alba-20261026095433-nt.html"
-    },
-    {
       "titulo": "Gran tractorada del campo español en Madrid",
       "categoria": "Sociedad",
       "fecha_inicio": "2026-10-28",
@@ -89,7 +71,16 @@
       "fecha_fin": null,
       "lugar": "Estadio Helmántico, Salamanca",
       "descripcion": "El Salamanca UDS se enfrentará al Celta de Vigo en el Estadio Helmántico el miércoles 28 de octubre a las 21:00 horas, en la primera ronda de la Copa del Rey.",
-      "fuente": "https://www.lagacetadesalamanca.es/deportes/futbol-local/salamancauds/venta-entradas-salamanca-udscelta-copa-rey-helmantico-20261015211118-nt.html"
+      "fuente": "https://www.lagacetadesalamanca.es/deportes/futbol-local/salamancauds/salamanca-udscelta-vigo-horario-ver-directo-partido-20261026182137-nt.html"
+    },
+    {
+      "titulo": "Partido de Eurocup: Namur vs Meins Avenida",
+      "categoria": "Deportes",
+      "fecha_inicio": "2026-10-28",
+      "fecha_fin": null,
+      "lugar": "Hall Octave Henry, Bélgica",
+      "descripcion": "Meins Avenida se enfrentará al Namur Capitale en el Hall Octave Henry de Bélgica en la tercera jornada de la Eurocup.",
+      "fuente": "https://www.lagacetadesalamanca.es/deportes/baloncesto-local/meins-avenida/namurmeins-avenida-horario-ver-directo-partido-eurocup-20261026185152-nt.html"
     },
     {
       "titulo": "Partido de Copa del Rey: Real Ávila vs Unionistas",
@@ -97,8 +88,8 @@
       "fecha_inicio": "2026-10-29",
       "fecha_fin": null,
       "lugar": "Estadio Adolfo Suárez, Ávila",
-      "descripcion": "Unionistas se enfrentará al Real Ávila en la primera ronda de la Copa del Rey el 29 de octubre a las 20:00 horas.",
-      "fuente": "https://www.lagacetadesalamanca.es/deportes/futbol-local/unionistas/entradas-euros-aficion-unionistas-partido-copa-rey-20261015190604-nt.html"
+      "descripcion": "Unionistas se enfrentará al Real Ávila en el Estadio Adolfo Suárez el jueves 29 de octubre a las 20:00 horas, en la primera ronda de la Copa del Rey.",
+      "fuente": "https://www.lagacetadesalamanca.es/deportes/futbol-local/unionistas/real-avilaunionistas-horario-seguir-directo-partido-copa-20261026183109-nt.html"
     },
     {
       "titulo": "Apertura del curso 2026-2027 de la Universidad de la Experiencia en Béjar",
@@ -117,6 +108,15 @@
       "lugar": "Recinto Ferial de Salamanca",
       "descripcion": "Más de 2.000 mujeres de la provincia se reunirán en el Recinto Ferial de Salamanca en una jornada organizada por la Diputación, en el marco del Día Internacional de la Mujer Rural. El evento busca reconocer la contribución de las mujeres a la vida económica, social y familiar de los pueblos.",
       "fuente": "https://www.lagacetadesalamanca.es/provincia/2000-mujeres-reuniran-salamanca-reivindicar-papel-dinamizadoras-20261026123240-nt.html"
+    },
+    {
+      "titulo": "Partido de Copa del Rey: CD Guijuelo vs Sporting de Gijón",
+      "categoria": "Deportes",
+      "fecha_inicio": "2026-10-29",
+      "fecha_fin": null,
+      "lugar": "Estadio Municipal Luis Ramos, Guijuelo",
+      "descripcion": "El CD Guijuelo se enfrentará al Sporting de Gijón en el Estadio Municipal Luis Ramos el jueves 29 de octubre a las 20:00 horas, en la primera ronda de la Copa del Rey.",
+      "fuente": "https://www.lagacetadesalamanca.es/deportes/futbol-local/guijuelosporting-gijon-horario-ver-directo-partido-copa-20261026184014-nt.html"
     },
     {
       "titulo": "Actividad especial de Halloween en Guijuelo",
@@ -262,6 +262,24 @@
       "fuente": "https://www.lagacetadesalamanca.es/provincia/zorita-frontera-disfrutara-comedia-moscas-cojoneras-20261020152831-nt.html"
     },
     {
+      "titulo": "Fiesta de Halloween en el Teatro Cervantes de Béjar",
+      "categoria": "Cultura",
+      "fecha_inicio": "2026-11-01",
+      "fecha_fin": null,
+      "lugar": "Teatro Cervantes, Béjar",
+      "descripcion": "Béjar celebrará una fiesta de Halloween con una actuación a modo de túnel del terror para todos los públicos, con pases de unos 15 minutos.",
+      "fuente": "https://www.lagacetadesalamanca.es/provincia/bejar-celebra-sabado-fiesta-halloween-teatro-cervantes-20261027154708-nt.html"
+    },
+    {
+      "titulo": "Festividad de Todos los Santos y Fieles Difuntos en Guijuelo",
+      "categoria": "Sociedad",
+      "fecha_inicio": "2026-11-01",
+      "fecha_fin": "2026-11-02",
+      "lugar": "cementerio de Guijuelo",
+      "descripcion": "El cementerio de Guijuelo se prepara para recibir a los visitantes con motivo de la festividad de Todos los Santos y Fieles Difuntos, con mejoras en las instalaciones y refuerzo de servicios.",
+      "fuente": "https://www.lagacetadesalamanca.es/provincia/cementerio-guijuelo-espera-llegada-festividad-santos-20261026102032-nt.html"
+    },
+    {
       "titulo": "Décima edición de la Semana de las Legumbres en Salamanca",
       "categoria": "Cultura",
       "fecha_inicio": "2026-11-03",
@@ -278,6 +296,15 @@
       "lugar": "Universidad de Salamanca",
       "descripcion": "El Foro de Salamanca reunirá a representantes de universidades, instituciones y empresas para debatir sobre los principales retos internacionales, en el marco del V Centenario de la Escuela de Salamanca. Contará con la participación de dirigentes internacionales, embajadores y expertos en economía, innovación y tecnología.",
       "fuente": "https://www.lagacetadesalamanca.es/salamanca/universidad-reunira-dirigentes-internacionales-debatir-sobre-problemas-20261022174028-nt.html"
+    },
+    {
+      "titulo": "Huelga y concentración de docentes en Salamanca",
+      "categoria": "Educación",
+      "fecha_inicio": "2026-11-04",
+      "fecha_fin": null,
+      "lugar": "Salamanca",
+      "descripcion": "UGT y CCOO convocan una huelga de docentes en Castilla y León y Salamanca para exigir mejoras salariales y laborales, con una concentración frente a la Delegación Territorial de la Junta y en la plaza de los Bandos.",
+      "fuente": "https://www.lagacetadesalamanca.es/salamanca/ugt-ccoo-llaman-huelga-noviembre-dignificacion-ensenanza-20261026172320-nt.html"
     },
     {
       "titulo": "Ciclo 'Bebecuentos' en Carbajosa",
@@ -325,6 +352,15 @@
       "fuente": "https://www.lagacetadesalamanca.es/deportes/futbol-local/unionistas/unionistaszamora-reina-sofia-fecha-hora-20261015184104-nt.html"
     },
     {
+      "titulo": "X Feria Transfronteriza Ecoraya",
+      "categoria": "Cultura",
+      "fecha_inicio": "2026-11-07",
+      "fecha_fin": "2026-11-08",
+      "lugar": "Recinto Ferial de la Diputación de Salamanca",
+      "descripcion": "La X Feria Transfronteriza Ecoraya reunirá a productores agroalimentarios españoles y portugueses en dos jornadas centradas en la gastronomía, cultura y tradiciones de ambos países.",
+      "fuente": "https://www.lagacetadesalamanca.es/provincia/gastronomia-cultura-tradicion-feria-ecoraya-salamanca-20261027145238-nt.html"
+    },
+    {
       "titulo": "Carrera contra la Violencia de Género de Salamanca",
       "categoria": "Sociedad",
       "fecha_inicio": "2026-11-08",
@@ -332,6 +368,15 @@
       "lugar": "Salamanca",
       "descripcion": "Carrera competitiva, marcha y olimpiada infantil; la inscripción está abierta desde este viernes.",
       "fuente": "https://www.lagacetadesalamanca.es/deportes/carreras-populares/salamanca-volvera-correr-violencia-genero-noviembre-20260917122748-nt.html"
+    },
+    {
+      "titulo": "Jornada de limpieza de espacios naturales en Cabrerizos",
+      "categoria": "Sociedad",
+      "fecha_inicio": "2026-11-08",
+      "fecha_fin": null,
+      "lugar": "Cabrerizos",
+      "descripcion": "Cabrerizos celebrará una jornada de recogida de residuos en sus entornos naturales, enmarcada en la campaña nacional '1m² contra la basuraleza', con el objetivo de concienciar sobre el impacto de los residuos.",
+      "fuente": "https://www.lagacetadesalamanca.es/provincia/cabrerizos-organiza-jornada-limpieza-espacios-naturales-noviembre-20261027202348-nt.html"
     },
     {
       "titulo": "XIV Premios HosteleríaSalamanca.es",
@@ -424,6 +469,15 @@
       "fuente": "https://www.lagacetadesalamanca.es/deportes/futbol-local/unionistas/unionistas-conoce-horario-visita-barakaldo-20261024124643-nt.html"
     },
     {
+      "titulo": "XIV Carrera solidaria 'El jamón veloz de Guijuelo'",
+      "categoria": "Deportes",
+      "fecha_inicio": "2026-11-22",
+      "fecha_fin": null,
+      "lugar": "Guijuelo",
+      "descripcion": "La décimo cuarta edición de la carrera solidaria «El jamón veloz de Guijuelo» se disputará con un recorrido urbano, recaudando fondos para la Asociación Española de Síndrome Nefrótico Infantil.",
+      "fuente": "https://www.lagacetadesalamanca.es/deportes/jamon-veloz-guijuelo-llegara-caracter-solidario-noviembre-20261027183348-nt.html"
+    },
+    {
       "titulo": "Encendido del alumbrado navideño en Salamanca",
       "categoria": "Urbanismo",
       "fecha_inicio": "2026-11-26",
@@ -460,12 +514,30 @@
       "fuente": "https://www.lagacetadesalamanca.es/provincia/palaciosrubios-celebrara-toro-san-andres-proximo-noviembre-20261010074747-nt.html"
     },
     {
+      "titulo": "Comida solidaria en Guijuelo en la lucha contra el cáncer",
+      "categoria": "Sociedad",
+      "fecha_inicio": "2026-11-28",
+      "fecha_fin": null,
+      "lugar": "salones del Pernil, Guijuelo",
+      "descripcion": "Comida solidaria organizada por la junta local de la Asociación Española contra el Cáncer (AECC) para recaudar fondos para la investigación del cáncer.",
+      "fuente": "https://www.lagacetadesalamanca.es/provincia/guijuelo-acogera-tres-comidas-solidarias-lucha-cancer-20261027162753-nt.html"
+    },
+    {
       "titulo": "Entrega de premios del Concurso Intergeneracional 'Memoria del Corazón'",
       "categoria": "Cultura",
       "fecha_inicio": "2026-11-30",
       "fecha_fin": null,
       "descripcion": "Ceremonia de entrega de premios del Concurso Intergeneracional 'Memoria del Corazón' de LA GACETA, que reconoce relatos y vídeos que fomentan el encuentro entre generaciones.",
       "fuente": "https://www.lagacetadesalamanca.es/especiales/concurso-intergeneracional/historia-merece-contada-gaceta-busca-relatos-videos-20261005104029-nt.html"
+    },
+    {
+      "titulo": "Jornada sobre sexualidad y diversidad en Peñaranda",
+      "categoria": "Educación",
+      "fecha_inicio": "2026-11-30",
+      "fecha_fin": null,
+      "lugar": "Peñaranda de Bracamonte",
+      "descripcion": "Jornada formativa sobre sexualidad y diversidad, organizada por ACOPEDIS, dirigida a personas con discapacidad intelectual o del desarrollo, profesionales, familias y público interesado.",
+      "fuente": "https://www.lagacetadesalamanca.es/provincia/penaranda-acogera-jornadas-sobre-sexualidad-diversidad-20261027105117-nt.html"
     },
     {
       "titulo": "Recital de villancicos «El espíritu de la Navidad» en Béjar",

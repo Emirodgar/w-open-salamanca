@@ -231,18 +231,6 @@
       "fecha_creacion": "2026-10-12"
     },
     {
-      "id": "copa-rey-salamanca-uds-celta-2026",
-      "pregunta": "Ante la inminente venta de entradas y la expectación generada por el partido de Copa del Rey entre el Salamanca UDS y el Celta, ¿cree que el equipo salmantino tiene opciones reales de superar esta primera ronda?",
-      "opciones": [
-        "Sí, jugarán en casa y pueden dar la sorpresa",
-        "No, el Celta es un rival de categoría superior",
-        "Depende del rendimiento del día",
-        "No tengo suficiente información"
-      ],
-      "basado_en": "actualidad.json",
-      "fecha_creacion": "2026-10-13"
-    },
-    {
       "id": "mujeres-innovan-salamanca-2026",
       "pregunta": "Salamanca acogerá la jornada 'Mujeres que innovan', centrada en emprendimiento y liderazgo femenino. ¿Cree que este tipo de iniciativas son clave para fomentar la igualdad de oportunidades en el ámbito profesional local?",
       "opciones": [
@@ -337,18 +325,6 @@
         "No tengo suficiente información."
       ],
       "basado_en": "actualidad.json",
-      "fecha_creacion": "2026-10-18"
-    },
-    {
-      "id": "tractorada-agraria-2026",
-      "pregunta": "Ante la convocatoria de una gran tractorada del campo español en Madrid, con participación de organizaciones salmantinas, ¿considera que las movilizaciones son la vía más efectiva para que el sector agrario logre soluciones a sus problemas?",
-      "opciones": [
-        "Sí, es la forma de visibilizar sus demandas y presionar.",
-        "No, se deberían priorizar las mesas de negociación y el diálogo.",
-        "Son necesarias como complemento a otras acciones.",
-        "No tengo suficiente información."
-      ],
-      "basado_en": "eventos.json",
       "fecha_creacion": "2026-10-18"
     },
     {
@@ -566,6 +542,30 @@
       ],
       "basado_en": "actualidad.json",
       "fecha_creacion": "2026-10-27"
+    },
+    {
+      "id": "desempleo-salamanca-2026",
+      "pregunta": "La tasa de desempleo en la provincia de Salamanca ha subido al 9,04% en el tercer trimestre de 2026. ¿Considera que la situación del mercado laboral provincial es preocupante?",
+      "opciones": [
+        "Sí, es una cifra alarmante",
+        "No, es un repunte estacional y se recuperará",
+        "Es preocupante, pero no grave",
+        "No tengo suficiente información"
+      ],
+      "basado_en": "actualidad.json",
+      "fecha_creacion": "2026-10-28"
+    },
+    {
+      "id": "perfumerias-avenida-eurocup-2026",
+      "pregunta": "Perfumerías Avenida se enfrenta al Namur en la tercera jornada de la Eurocup. ¿Cree que el equipo salmantino logrará una victoria en este encuentro europeo?",
+      "opciones": [
+        "Sí, el equipo está en buena forma",
+        "No, será un partido complicado",
+        "Depende del rendimiento del día",
+        "No tengo suficiente información"
+      ],
+      "basado_en": "eventos.json",
+      "fecha_creacion": "2026-10-28"
     }
   ]
 }

@@ -1,11 +1,11 @@
 {
   "url_base": "https://www.lagacetadesalamanca.es",
-  "generado_en": "2026-10-27T05:45:49+00:00",
+  "generado_en": "2026-10-28T05:45:46+00:00",
   "periodo_cubierto": {
-    "desde": "2026-10-24",
-    "hasta": "2026-10-27"
+    "desde": "2026-10-25",
+    "hasta": "2026-10-28"
   },
-  "total_urls_analizadas": 190,
+  "total_urls_analizadas": 196,
   "secciones_excluidas": [
     "gente-estilo",
     "nacional",
@@ -16,20 +16,20 @@
   "nota_cobertura": "El análisis cubre únicamente las URLs presentes en el sitemap en el momento de la consulta (excluyendo, si se indicó, las secciones filtradas). Si el sitemap es incremental o 'rolling', el periodo real puede ser más corto que el solicitado — revisa 'periodo_cubierto' para confirmarlo.",
   "por_seccion": [
     [
-      "deportes",
-      54
-    ],
-    [
       "provincia",
-      53
+      58
     ],
     [
       "salamanca",
-      48
+      54
+    ],
+    [
+      "deportes",
+      50
     ],
     [
       "sucesos",
-      19
+      18
     ],
     [
       "campo",
@@ -37,193 +37,185 @@
     ],
     [
       "toros",
-      2
+      3
     ],
     [
       "internacional",
-      2
+      3
     ],
     [
       "encuestas",
       2
-    ],
-    [
-      "fundacion-gaceta",
-      1
-    ],
-    [
-      "elecciones",
-      1
     ]
   ],
   "por_subseccion": [
     [
       "deportes/futbol-local",
-      30
+      28
     ],
     [
       "deportes/baloncesto-local",
-      10
+      8
     ],
     [
       "deportes/deporte-base",
-      6
+      5
     ]
   ],
   "por_tipo_contenido": [
     [
       "noticia",
-      168
+      179
     ],
     [
       "galería",
-      19
+      15
     ],
     [
       "directo / en vivo",
-      3
+      2
     ]
   ],
   "heatmap_calendario": [
     {
-      "fecha": "2026-10-24",
-      "total": 48,
-      "deportes": 13,
-      "provincia": 13,
-      "salamanca": 10,
-      "sucesos": 6,
-      "campo": 3,
-      "toros": 0,
-      "internacional": 0,
-      "encuestas": 1,
-      "fundacion-gaceta": 1,
-      "elecciones": 1
-    },
-    {
       "fecha": "2026-10-25",
-      "total": 63,
-      "deportes": 23,
-      "provincia": 17,
-      "salamanca": 13,
-      "sucesos": 6,
+      "total": 54,
+      "provincia": 16,
+      "salamanca": 9,
+      "deportes": 21,
+      "sucesos": 4,
       "campo": 1,
       "toros": 1,
       "internacional": 1,
-      "encuestas": 1,
-      "fundacion-gaceta": 0,
-      "elecciones": 0
+      "encuestas": 1
     },
     {
       "fecha": "2026-10-26",
-      "total": 76,
-      "deportes": 18,
+      "total": 74,
       "provincia": 23,
       "salamanca": 24,
-      "sucesos": 7,
+      "deportes": 17,
+      "sucesos": 6,
       "campo": 2,
       "toros": 1,
       "internacional": 1,
-      "encuestas": 0,
-      "fundacion-gaceta": 0,
-      "elecciones": 0
+      "encuestas": 0
     },
     {
       "fecha": "2026-10-27",
+      "total": 65,
+      "provincia": 19,
+      "salamanca": 18,
+      "deportes": 12,
+      "sucesos": 8,
+      "campo": 5,
+      "toros": 1,
+      "internacional": 1,
+      "encuestas": 1
+    },
+    {
+      "fecha": "2026-10-28",
       "total": 3,
-      "deportes": 0,
       "provincia": 0,
-      "salamanca": 1,
+      "salamanca": 3,
+      "deportes": 0,
       "sucesos": 0,
-      "campo": 2,
+      "campo": 0,
       "toros": 0,
       "internacional": 0,
-      "encuestas": 0,
-      "fundacion-gaceta": 0,
-      "elecciones": 0
+      "encuestas": 0
     }
   ],
   "conceptos_destacados": [
     {
-      "concepto": "Jornada de Fútbol Base",
-      "piezas": 8,
-      "seccion_principal": "deportes",
-      "desde": "2026-10-24",
-      "hasta": "2026-10-26",
+      "concepto": "Béjar",
+      "piezas": 7,
+      "seccion_principal": "provincia",
+      "desde": "2026-10-25",
+      "hasta": "2026-10-27",
       "ejemplos_redactados": [
-        "La jornada del fútbol base salmantino ha dejado las mejores imágenes y goles, con la selección del once ideal de jóvenes promesas."
-      ]
-    },
-    {
-      "concepto": "Unionistas de Salamanca",
-      "piezas": 6,
-      "seccion_principal": "deportes",
-      "desde": "2026-10-24",
-      "hasta": "2026-10-26",
-      "ejemplos_redactados": [
-        "Unionistas se prepara para la Copa del Rey, tras un derbi ante el Guijuelo y un zarpazo al Bilbao Athletic."
+        "La localidad de Béjar se prepara para celebrar una fiesta de Halloween en el Teatro Cervantes.",
+        "Béjar concluye las pruebas de su telesilla, un requisito para la autorización de la Junta."
       ]
     },
     {
       "concepto": "Ciudad Rodrigo",
       "piezas": 5,
       "seccion_principal": "provincia",
-      "desde": "2026-10-24",
-      "hasta": "2026-10-26",
+      "desde": "2026-10-25",
+      "hasta": "2026-10-27",
       "ejemplos_redactados": [
-        "Ciudad Rodrigo es candidata a la iluminación navideña de Ferrero Rocher, mientras se debate sobre la fiesta de Halloween y se organiza una peregrinación."
+        "Cáritas Ciudad Rodrigo implementa una nueva herramienta de entrevista motivacional.",
+        "Ciudad Rodrigo es candidata para la iluminación navideña de Ferrero Rocher."
+      ]
+    },
+    {
+      "concepto": "Fútbol Base",
+      "piezas": 4,
+      "seccion_principal": "deportes",
+      "desde": "2026-10-26",
+      "hasta": "2026-10-27",
+      "ejemplos_redactados": [
+        "El fútbol base salmantino lamenta la pérdida de un canterano de Cabrerizos.",
+        "Se destacan los mejores goles y el once ideal de la cuarta jornada del fútbol base salmantino."
+      ]
+    },
+    {
+      "concepto": "Copa del Rey",
+      "piezas": 4,
+      "seccion_principal": "deportes",
+      "desde": "2026-10-26",
+      "hasta": "2026-10-27",
+      "ejemplos_redactados": [
+        "Un árbitro de Salamanca ha sido designado para el partido de Copa del Rey entre UDS y Celta.",
+        "El Municipal Luis Ramos es punto de venta de billetes para la Copa del Rey."
       ]
     },
     {
       "concepto": "Perfumerías Avenida",
-      "piezas": 5,
-      "seccion_principal": "deportes",
-      "desde": "2026-10-24",
-      "hasta": "2026-10-25",
-      "ejemplos_redactados": [
-        "Perfumerías Avenida ha conseguido su primera victoria ante Casademont Zaragoza, a pesar de una derrota en Eurocup."
-      ]
-    },
-    {
-      "concepto": "Premios y Reconocimientos",
-      "piezas": 4,
-      "seccion_principal": "salamanca",
-      "desde": "2026-10-24",
-      "hasta": "2026-10-26",
-      "ejemplos_redactados": [
-        "Se han entregado premios a la mejor faena taurina, a la apuesta cultural de Morille y a una profesora salmantina por su enseñanza de literatura."
-      ]
-    },
-    {
-      "concepto": "Salamanca UDS y Talavera",
       "piezas": 4,
       "seccion_principal": "deportes",
       "desde": "2026-10-25",
       "hasta": "2026-10-25",
       "ejemplos_redactados": [
-        "El Salamanca UDS sufrió una polémica derrota ante Talavera, con actuaciones arbitrales cuestionadas."
+        "El Casademont Zaragoza se impone ante Perfumerías Avenida.",
+        "Se analizan las claves de la derrota de Perfumerías Avenida frente al Casademont Zaragoza."
       ]
     },
     {
-      "concepto": "Juventud y Vivienda",
+      "concepto": "Guijuelo",
       "piezas": 4,
       "seccion_principal": "provincia",
-      "desde": "2026-10-24",
-      "hasta": "2026-10-26",
+      "desde": "2026-10-25",
+      "hasta": "2026-10-27",
       "ejemplos_redactados": [
-        "Se debate la dificultad de los jóvenes para emanciparse en Salamanca, mientras Carbajosa contrata a cinco jóvenes y Santa Marta planea nuevas viviendas."
+        "Guijuelo acogerá tres comidas solidarias en la lucha contra el cáncer.",
+        "El cementerio de Guijuelo se prepara para la festividad de Todos los Santos."
       ]
     },
     {
-      "concepto": "Sucesos con Heridos",
+      "concepto": "Cabrerizos",
       "piezas": 4,
-      "seccion_principal": "sucesos",
-      "desde": "2026-10-25",
-      "hasta": "2026-10-26",
+      "seccion_principal": "provincia",
+      "desde": "2026-10-26",
+      "hasta": "2026-10-27",
       "ejemplos_redactados": [
-        "Varios accidentes han dejado heridos, incluyendo motoristas, conductores de patinete eléctrico y un hombre tras salirse de la vía."
+        "Cabrerizos acondiciona kilómetros de caminos rurales con trabajos de nivelación.",
+        "El municipio organiza una jornada de limpieza de espacios naturales en noviembre."
+      ]
+    },
+    {
+      "concepto": "Jornada",
+      "piezas": 8,
+      "seccion_principal": "deportes",
+      "desde": "2026-10-25",
+      "hasta": "2026-10-27",
+      "ejemplos_redactados": [
+        "Cabrerizos organiza una jornada de limpieza de espacios naturales en noviembre.",
+        "Se destacan los mejores goles de la cuarta jornada del fútbol base salmantino."
       ]
     }
   ],
-  "resumen_borrador": "Se han publicado 190 noticias entre el 2026-10-24 y el 2026-10-27. La actividad se ha concentrado sobre todo en deportes (54 piezas), provincia (53 piezas), salamanca (48 piezas).\n\nLos conceptos con más piezas relacionadas son: Jornada; Unionistas; Ciudad · Rodrigo; Meins · Avenida. Revisa 'evidencia' de cada concepto para redactar el resumen final.",
-  "resumen": "Durante el periodo del 24 al 27 de octubre de 2026, la actualidad salmantina ha estado marcada por una intensa actividad en diversos frentes. En el ámbito deportivo, el fútbol base ha generado las mejores imágenes y goles de la jornada, mientras que Unionistas de Salamanca se prepara para la Copa del Rey tras un derbi y un encuentro con el Bilbao Athletic. El Perfumerías Avenida ha logrado una victoria y ha competido en Eurocup. El Salamanca UDS, por su parte, sufrió una polémica derrota ante Talavera, activando el modo Copa del Rey. Se han registrado también éxitos en kickboxing y judo. Mientras tanto, una huelga ferroviaria ha provocado la suspensión de trenes al inicio del puente. La hostelería salmantina ha premiado a sus profesionales y se ha anunciado la fecha de apertura de la tienda Primark en el Centro Comercial El Tormes. El CIFP Rodríguez Fabrés ha sido finalista nacional y la Universidad ha impulsado el emprendimiento sostenible. La Navidad salmantina busca nuevas figuras y se ha celebrado la Semana de las Legumbres. En el ámbito político, el líder del PP, Alberto Núñez Feijóo, ha visitado Salamanca para un mitin, acompañado por dirigentes locales y autonómicos, lanzando promesas sobre impuestos. En la provincia, Ciudad Rodrigo ha sido noticia por su candidatura a la iluminación navideña de Ferrero Rocher y por debates sobre festividades locales. Se han impulsado iniciativas para la juventud en Carbajosa y Santa Marta, y Morille ha recibido un premio por su apuesta cultural. La consejera de Medio Ambiente y Energía ha realizado una visita a la planta de Villarino, y se han reportado avances en infraestructuras y la mecanización de la recogida de castañas. En sucesos, se han registrado múltiples heridos en accidentes de tráfico y agresiones, además de detenciones por robos y un incendio en Mozárbez. El mercado de ganados ha duplicado su asistencia y se ha producido un relevo en la propiedad de E.Leclerc Salamanca. La preocupación por la emancipación juvenil y el ciberacoso también han estado presentes en la agenda social."
+  "resumen_borrador": "Se han publicado 196 noticias entre el 2026-10-25 y el 2026-10-28. La actividad se ha concentrado sobre todo en provincia (58 piezas), salamanca (54 piezas), deportes (50 piezas).\n\nLos conceptos con más piezas relacionadas son: Jornada; Bejar; Ciudad · Rodrigo; Futbol · Base. Revisa 'evidencia' de cada concepto para redactar el resumen final.",
+  "resumen": "La provincia de Salamanca ha vivido unos días intensos entre el 25 y el 28 de octubre de 2026, marcados por la actualidad deportiva y diversos acontecimientos locales. En el ámbito deportivo, la Copa del Rey ha generado expectación con la venta de entradas y la preparación de los equipos salmantinos. El fútbol base ha sido protagonista de noticias, incluyendo un trágico suceso, mientras que el equipo de baloncesto Perfumerías Avenida ha disputado encuentros relevantes.\n\nEn el plano provincial, localidades como Béjar, Ciudad Rodrigo, Guijuelo y Cabrerizos han centrado la atención con noticias que van desde la conclusión de pruebas para un telesilla en Béjar, la candidatura de Ciudad Rodrigo para la iluminación navideña, actividades solidarias en Guijuelo, y trabajos de acondicionamiento de caminos en Cabrerizos. La festividad de Todos los Santos también ha comenzado a preparar a los municipios. En el ámbito económico, se ha registrado un repunte en el número de parados tras el verano, con la tasa de desempleo subiendo al 9,04% en el tercer trimestre.\n\nLos sucesos han tenido un peso significativo, con el trágico fallecimiento de dos motoristas en un \"martes negro\" en Salamanca, y la conmoción por la muerte de un guardia civil de tráfico en Béjar. La agenda política incluyó la visita de Feijóo a Salamanca, mientras que la sociedad se ha visto afectada por una huelga ferroviaria que provocó suspensiones de trenes. En el ámbito cultural, se lamentó el fallecimiento del cineasta salmantino José Luis García Sánchez."
 }
