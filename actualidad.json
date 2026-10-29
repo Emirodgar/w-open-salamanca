@@ -1,11 +1,11 @@
 {
   "url_base": "https://www.lagacetadesalamanca.es",
-  "generado_en": "2026-10-28T05:45:46+00:00",
+  "generado_en": "2026-10-29T05:46:16+00:00",
   "periodo_cubierto": {
-    "desde": "2026-10-25",
-    "hasta": "2026-10-28"
+    "desde": "2026-10-26",
+    "hasta": "2026-10-29"
   },
-  "total_urls_analizadas": 196,
+  "total_urls_analizadas": 208,
   "secciones_excluidas": [
     "gente-estilo",
     "nacional",
@@ -16,137 +16,185 @@
   "nota_cobertura": "El análisis cubre únicamente las URLs presentes en el sitemap en el momento de la consulta (excluyendo, si se indicó, las secciones filtradas). Si el sitemap es incremental o 'rolling', el periodo real puede ser más corto que el solicitado — revisa 'periodo_cubierto' para confirmarlo.",
   "por_seccion": [
     [
-      "provincia",
-      58
+      "salamanca",
+      67
     ],
     [
-      "salamanca",
-      54
+      "provincia",
+      55
     ],
     [
       "deportes",
-      50
+      45
     ],
     [
       "sucesos",
-      18
+      20
     ],
     [
       "campo",
-      8
+      12
     ],
     [
       "toros",
       3
     ],
     [
-      "internacional",
-      3
+      "encuestas",
+      2
     ],
     [
-      "encuestas",
+      "castilla-y-leon",
+      2
+    ],
+    [
+      "internacional",
       2
     ]
   ],
   "por_subseccion": [
     [
       "deportes/futbol-local",
-      28
+      32
     ],
     [
       "deportes/baloncesto-local",
-      8
+      3
     ],
     [
       "deportes/deporte-base",
-      5
+      3
     ]
   ],
   "por_tipo_contenido": [
     [
       "noticia",
-      179
+      195
     ],
     [
       "galería",
-      15
-    ],
-    [
-      "directo / en vivo",
-      2
+      13
     ]
   ],
   "heatmap_calendario": [
     {
-      "fecha": "2026-10-25",
-      "total": 54,
-      "provincia": 16,
-      "salamanca": 9,
-      "deportes": 21,
-      "sucesos": 4,
-      "campo": 1,
-      "toros": 1,
-      "internacional": 1,
-      "encuestas": 1
-    },
-    {
       "fecha": "2026-10-26",
-      "total": 74,
-      "provincia": 23,
-      "salamanca": 24,
-      "deportes": 17,
-      "sucesos": 6,
+      "total": 63,
+      "salamanca": 19,
+      "provincia": 20,
+      "deportes": 16,
+      "sucesos": 4,
       "campo": 2,
       "toros": 1,
-      "internacional": 1,
-      "encuestas": 0
+      "encuestas": 0,
+      "castilla-y-leon": 0,
+      "internacional": 1
     },
     {
       "fecha": "2026-10-27",
-      "total": 65,
+      "total": 62,
+      "salamanca": 16,
       "provincia": 19,
-      "salamanca": 18,
       "deportes": 12,
-      "sucesos": 8,
+      "sucesos": 7,
       "campo": 5,
       "toros": 1,
-      "internacional": 1,
-      "encuestas": 1
+      "encuestas": 1,
+      "castilla-y-leon": 0,
+      "internacional": 1
     },
     {
       "fecha": "2026-10-28",
-      "total": 3,
+      "total": 78,
+      "salamanca": 27,
+      "provincia": 16,
+      "deportes": 17,
+      "sucesos": 9,
+      "campo": 5,
+      "toros": 1,
+      "encuestas": 1,
+      "castilla-y-leon": 2,
+      "internacional": 0
+    },
+    {
+      "fecha": "2026-10-29",
+      "total": 5,
+      "salamanca": 5,
       "provincia": 0,
-      "salamanca": 3,
       "deportes": 0,
       "sucesos": 0,
       "campo": 0,
       "toros": 0,
-      "internacional": 0,
-      "encuestas": 0
+      "encuestas": 0,
+      "castilla-y-leon": 0,
+      "internacional": 0
     }
   ],
   "conceptos_destacados": [
     {
-      "concepto": "Béjar",
-      "piezas": 7,
-      "seccion_principal": "provincia",
-      "desde": "2026-10-25",
-      "hasta": "2026-10-27",
+      "concepto": "Copa del Rey",
+      "piezas": 9,
+      "seccion_principal": "deportes",
+      "desde": "2026-10-26",
+      "hasta": "2026-10-28",
       "ejemplos_redactados": [
-        "La localidad de Béjar se prepara para celebrar una fiesta de Halloween en el Teatro Cervantes.",
-        "Béjar concluye las pruebas de su telesilla, un requisito para la autorización de la Junta."
+        "La ciudad de Salamanca se preparaba para una gran noche de Copa del Rey en el Helmántico, aunque posteriormente la jornada fue suspendida.",
+        "El Salamanca UDS ha anunciado que devolverá el dinero de las entradas de Copa del Rey a la mayor brevedad posible."
       ]
     },
     {
       "concepto": "Ciudad Rodrigo",
+      "piezas": 7,
+      "seccion_principal": "provincia",
+      "desde": "2026-10-26",
+      "hasta": "2026-10-28",
+      "ejemplos_redactados": [
+        "El barrio de Las Canteras en Ciudad Rodrigo ha suspendido sus actividades, mientras la localidad se prepara para Halloween.",
+        "Ciudad Rodrigo participa en el futuro nodo NEB y es candidata a la iluminación navideña de Ferrero Rocher."
+      ]
+    },
+    {
+      "concepto": "Helmántico",
+      "piezas": 6,
+      "seccion_principal": "deportes",
+      "desde": "2026-10-26",
+      "hasta": "2026-10-28",
+      "ejemplos_redactados": [
+        "El Salamanca UDS ha entrenado en el Helmántico tras la suspensión del partido de Copa del Rey, un estadio que luce televisivo.",
+        "El Helmántico estrenará un palco sensorial pionero para recibir al Celta."
+      ]
+    },
+    {
+      "concepto": "Guijuelo",
       "piezas": 5,
       "seccion_principal": "provincia",
-      "desde": "2026-10-25",
-      "hasta": "2026-10-27",
+      "desde": "2026-10-26",
+      "hasta": "2026-10-28",
       "ejemplos_redactados": [
-        "Cáritas Ciudad Rodrigo implementa una nueva herramienta de entrevista motivacional.",
-        "Ciudad Rodrigo es candidata para la iluminación navideña de Ferrero Rocher."
+        "Guijuelo estrena este fin de semana el nuevo césped municipal y acogerá tres comidas solidarias en la lucha contra el cáncer.",
+        "Decenas de vecinos se han sumado en Guijuelo a un minuto de silencio por las víctimas, y la localidad espera la festividad de Todos los Santos."
+      ]
+    },
+    {
+      "concepto": "Béjar",
+      "piezas": 5,
+      "seccion_principal": "provincia",
+      "desde": "2026-10-26",
+      "hasta": "2026-10-28",
+      "ejemplos_redactados": [
+        "La muerte de un guardia civil de Tráfico en Béjar ha conmocionado a la localidad, que también ha concluido las pruebas de su telesilla.",
+        "Béjar celebrará el sábado su fiesta de Halloween en el Teatro Cervantes y acoge la Universidad de la Experiencia."
+      ]
+    },
+    {
+      "concepto": "Accidente Ferroviario",
+      "piezas": 4,
+      "seccion_principal": "salamanca",
+      "desde": "2026-10-28",
+      "hasta": "2026-10-28",
+      "ejemplos_redactados": [
+        "Un emotivo minuto de silencio se ha guardado en la Plaza por las víctimas del accidente ferroviario de Toledo, que ha generado preocupación salmantina.",
+        "El presidente Mañueco ha trasladado su pésame por las víctimas del accidente, cuya causa probable apunta a un error humano."
       ]
     },
     {
@@ -156,66 +204,22 @@
       "desde": "2026-10-26",
       "hasta": "2026-10-27",
       "ejemplos_redactados": [
-        "El fútbol base salmantino lamenta la pérdida de un canterano de Cabrerizos.",
-        "Se destacan los mejores goles y el once ideal de la cuarta jornada del fútbol base salmantino."
+        "El fútbol base salmantino llora la pérdida de un canterano de Cabrerizos, mientras se muestran los mejores goles e imágenes de la cuarta jornada.",
+        "Se ha destacado el once ideal de cracks tras la jornada de fútbol base."
       ]
     },
     {
-      "concepto": "Copa del Rey",
+      "concepto": "Ávila",
       "piezas": 4,
       "seccion_principal": "deportes",
       "desde": "2026-10-26",
-      "hasta": "2026-10-27",
+      "hasta": "2026-10-28",
       "ejemplos_redactados": [
-        "Un árbitro de Salamanca ha sido designado para el partido de Copa del Rey entre UDS y Celta.",
-        "El Municipal Luis Ramos es punto de venta de billetes para la Copa del Rey."
-      ]
-    },
-    {
-      "concepto": "Perfumerías Avenida",
-      "piezas": 4,
-      "seccion_principal": "deportes",
-      "desde": "2026-10-25",
-      "hasta": "2026-10-25",
-      "ejemplos_redactados": [
-        "El Casademont Zaragoza se impone ante Perfumerías Avenida.",
-        "Se analizan las claves de la derrota de Perfumerías Avenida frente al Casademont Zaragoza."
-      ]
-    },
-    {
-      "concepto": "Guijuelo",
-      "piezas": 4,
-      "seccion_principal": "provincia",
-      "desde": "2026-10-25",
-      "hasta": "2026-10-27",
-      "ejemplos_redactados": [
-        "Guijuelo acogerá tres comidas solidarias en la lucha contra el cáncer.",
-        "El cementerio de Guijuelo se prepara para la festividad de Todos los Santos."
-      ]
-    },
-    {
-      "concepto": "Cabrerizos",
-      "piezas": 4,
-      "seccion_principal": "provincia",
-      "desde": "2026-10-26",
-      "hasta": "2026-10-27",
-      "ejemplos_redactados": [
-        "Cabrerizos acondiciona kilómetros de caminos rurales con trabajos de nivelación.",
-        "El municipio organiza una jornada de limpieza de espacios naturales en noviembre."
-      ]
-    },
-    {
-      "concepto": "Jornada",
-      "piezas": 8,
-      "seccion_principal": "deportes",
-      "desde": "2026-10-25",
-      "hasta": "2026-10-27",
-      "ejemplos_redactados": [
-        "Cabrerizos organiza una jornada de limpieza de espacios naturales en noviembre.",
-        "Se destacan los mejores goles de la cuarta jornada del fútbol base salmantino."
+        "Juanma Lendínez es baja confirmada para el Real Ávila en el partido contra Unionistas, que sufrió un freno en seco en su marea blanquinegra en la Copa del Rey.",
+        "Unionistas se prepara para un partido copero contra el Real Ávila."
       ]
     }
   ],
-  "resumen_borrador": "Se han publicado 196 noticias entre el 2026-10-25 y el 2026-10-28. La actividad se ha concentrado sobre todo en provincia (58 piezas), salamanca (54 piezas), deportes (50 piezas).\n\nLos conceptos con más piezas relacionadas son: Jornada; Bejar; Ciudad · Rodrigo; Futbol · Base. Revisa 'evidencia' de cada concepto para redactar el resumen final.",
-  "resumen": "La provincia de Salamanca ha vivido unos días intensos entre el 25 y el 28 de octubre de 2026, marcados por la actualidad deportiva y diversos acontecimientos locales. En el ámbito deportivo, la Copa del Rey ha generado expectación con la venta de entradas y la preparación de los equipos salmantinos. El fútbol base ha sido protagonista de noticias, incluyendo un trágico suceso, mientras que el equipo de baloncesto Perfumerías Avenida ha disputado encuentros relevantes.\n\nEn el plano provincial, localidades como Béjar, Ciudad Rodrigo, Guijuelo y Cabrerizos han centrado la atención con noticias que van desde la conclusión de pruebas para un telesilla en Béjar, la candidatura de Ciudad Rodrigo para la iluminación navideña, actividades solidarias en Guijuelo, y trabajos de acondicionamiento de caminos en Cabrerizos. La festividad de Todos los Santos también ha comenzado a preparar a los municipios. En el ámbito económico, se ha registrado un repunte en el número de parados tras el verano, con la tasa de desempleo subiendo al 9,04% en el tercer trimestre.\n\nLos sucesos han tenido un peso significativo, con el trágico fallecimiento de dos motoristas en un \"martes negro\" en Salamanca, y la conmoción por la muerte de un guardia civil de tráfico en Béjar. La agenda política incluyó la visita de Feijóo a Salamanca, mientras que la sociedad se ha visto afectada por una huelga ferroviaria que provocó suspensiones de trenes. En el ámbito cultural, se lamentó el fallecimiento del cineasta salmantino José Luis García Sánchez."
+  "resumen_borrador": "Se han publicado 208 noticias entre el 2026-10-26 y el 2026-10-29. La actividad se ha concentrado sobre todo en salamanca (67 piezas), provincia (55 piezas), deportes (45 piezas).\n\nLos conceptos con más piezas relacionadas son: Copa · Rey; Ciudad · Rodrigo; Jornada; Helmantico. Revisa 'evidencia' de cada concepto para redactar el resumen final.",
+  "resumen": "La provincia de Salamanca ha vivido unos días marcados por la conmoción tras el grave accidente ferroviario ocurrido en Toledo, que ha provocado un minuto de silencio en la capital salmantina y la preocupación de los ciudadanos. Este suceso ha coincidido con una huelga ferroviaria que ya había causado la suspensión de una docena de trenes al inicio del puente.\n\nEn el ámbito deportivo, la suspensión de la jornada de la Copa del Rey ha afectado a los equipos salmantinos, entre ellos el Salamanca UDS, Unionistas y Guijuelo, que veían aplazados sus encuentros. Por otro lado, la tasa de paro en Salamanca ha registrado un incremento, situándose en el 9,04% en el tercer trimestre del año, mientras que agricultores salmantinos han participado en una tractorada en Madrid para reivindicar sus demandas.\n\nLa agenda provincial también ha destacado por el rodaje de una serie alemana de Netflix en localidades como Candelario y La Alberca, así como por el trágico fallecimiento de un Guardia Civil de Tráfico en Béjar, que ha generado gran pesar en la comarca. Otros eventos incluyen los preparativos de Halloween en Ciudad Rodrigo y Béjar, y diversas actividades culturales y solidarias en Guijuelo y Cabrerizos."
 }

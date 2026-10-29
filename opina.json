@@ -231,18 +231,6 @@
       "fecha_creacion": "2026-10-12"
     },
     {
-      "id": "mujeres-innovan-salamanca-2026",
-      "pregunta": "Salamanca acogerá la jornada 'Mujeres que innovan', centrada en emprendimiento y liderazgo femenino. ¿Cree que este tipo de iniciativas son clave para fomentar la igualdad de oportunidades en el ámbito profesional local?",
-      "opciones": [
-        "Sí, son fundamentales para visibilizar y empoderar",
-        "No, el impacto real es limitado",
-        "Son un buen complemento, pero se necesitan más acciones",
-        "No tengo suficiente información"
-      ],
-      "basado_en": "eventos.json",
-      "fecha_creacion": "2026-10-14"
-    },
-    {
       "id": "inflacion-cesta-compra-2026",
       "pregunta": "Ante la subida de precios a niveles no vistos en tres años, ¿cómo cree que afecta la inflación a la cesta de la compra y a la economía familiar en Salamanca?",
       "opciones": [
@@ -298,18 +286,6 @@
         "Sí, son parte de nuestra cultura y atraen gente",
         "No, son un maltrato animal y no deberían celebrarse",
         "Son un atractivo económico, pero con debate ético",
-        "No tengo suficiente información"
-      ],
-      "basado_en": "eventos.json",
-      "fecha_creacion": "2026-10-17"
-    },
-    {
-      "id": "marcha-trajano-2026",
-      "pregunta": "La Marcha de Trajano unirá Extremadura y Castilla y León, buscando reivindicar el legado romano y la vinculación de las localidades. ¿Cree que este tipo de iniciativas son efectivas para promover el patrimonio histórico y la colaboración interregional?",
-      "opciones": [
-        "Sí, fomentan el patrimonio y la unión entre regiones",
-        "No, su impacto es limitado y poco visible",
-        "Son más simbólicas que prácticas para el desarrollo",
         "No tengo suficiente información"
       ],
       "basado_en": "eventos.json",
@@ -409,18 +385,6 @@
         "No tengo suficiente información."
       ],
       "basado_en": "actualidad.json",
-      "fecha_creacion": "2026-10-22"
-    },
-    {
-      "id": "prevencion-juegos-redes-2026",
-      "pregunta": "Ciudad Rodrigo acogerá jornadas de prevención sobre juegos de azar y redes sociales para familias. ¿Cree que las administraciones deberían intensificar las acciones de prevención y concienciación sobre estos riesgos en el ámbito juvenil y familiar?",
-      "opciones": [
-        "Sí, es una preocupación creciente y requiere más atención.",
-        "No, la responsabilidad principal recae en las familias.",
-        "Deberían enfocarse en la educación en los centros educativos.",
-        "No tengo suficiente información."
-      ],
-      "basado_en": "eventos.json",
       "fecha_creacion": "2026-10-22"
     },
     {
@@ -566,6 +530,30 @@
       ],
       "basado_en": "eventos.json",
       "fecha_creacion": "2026-10-28"
+    },
+    {
+      "id": "rodaje-netflix-salamanca-2026",
+      "pregunta": "La provincia de Salamanca ha acogido el rodaje de una serie alemana de Netflix en localidades como Candelario y La Alberca. ¿Cree que este tipo de producciones audiovisuales benefician al turismo y la economía local?",
+      "opciones": [
+        "Sí, atraen visitantes y visibilidad",
+        "No, el impacto es limitado y temporal",
+        "Depende de la promoción posterior",
+        "No tengo suficiente información"
+      ],
+      "basado_en": "actualidad.json",
+      "fecha_creacion": "2026-10-29"
+    },
+    {
+      "id": "huelga-docentes-salamanca-2026",
+      "pregunta": "UGT y CCOO han convocado una huelga de docentes en Salamanca para exigir mejoras salariales y laborales. ¿Considera que estas movilizaciones son una herramienta efectiva para que los trabajadores de la enseñanza logren sus demandas?",
+      "opciones": [
+        "Sí, es la única vía para presionar y lograr cambios",
+        "No, perjudican la educación y no resuelven el problema",
+        "Deberían buscarse otras vías de negociación antes de la huelga",
+        "No tengo suficiente información"
+      ],
+      "basado_en": "eventos.json",
+      "fecha_creacion": "2026-10-29"
     }
   ]
 }

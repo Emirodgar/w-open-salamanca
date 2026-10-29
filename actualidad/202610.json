@@ -1,7 +1,7 @@
 {
   "mes": "2026-10",
   "titulo_mes": "Octubre 2026",
-  "resumen_mes": "Octubre de 2026 ha sido un mes de importantes decisiones políticas y avances económicos en la provincia, con la elección del presidente de la Diputación y el anuncio de la fecha de apertura de Primark. En el ámbito deportivo, el Salamanca UDS lidera su grupo. Los sucesos han incluido el trágico fallecimiento de un menor y una huelga ferroviaria, además de repuntes de siniestralidad. Socialmente, ha habido preocupación por el acoso escolar y la emancipación juvenil. La visita de Feijóo a Salamanca y el fallecimiento del cineasta José Luis García Sánchez también marcaron la agenda, mientras que la tasa de paro ha mostrado un incremento.",
+  "resumen_mes": "Octubre de 2026 ha sido un mes de importantes decisiones políticas y avances económicos en la provincia, con la elección del presidente de la Diputación y el anuncio de la fecha de apertura de Primark. En el ámbito deportivo, el Salamanca UDS lidera su grupo y la Copa del Rey ha generado expectación y suspensiones. Los sucesos han incluido el trágico fallecimiento de un menor, una huelga ferroviaria y un grave accidente en Toledo. Socialmente, ha habido preocupación por el acoso escolar y la emancipación juvenil, además de una tractorada de agricultores. La visita de Feijóo y el fallecimiento del cineasta José Luis García Sánchez también marcaron la agenda, mientras que la tasa de paro ha mostrado un incremento.",
   "hitos": [
     {
       "fecha": "2026-10-09",
@@ -36,14 +36,6 @@
       "destacado": false
     },
     {
-      "fecha": "2026-10-23",
-      "titulo": "Fallece Héctor, menor de edad, tras accidente de patinete",
-      "categoria": "Sucesos",
-      "descripcion": "Un menor de edad, identificado como Héctor, ha fallecido tras sufrir un accidente con patinete, causando luto en el fútbol base salmantino.",
-      "fuente": "https://www.lagacetadesalamanca.es/sucesos/fallece-hector-menor-anos-sufrio-accidente-patinete-20261023142728-nt.html",
-      "destacado": true
-    },
-    {
       "fecha": "2026-10-25",
       "titulo": "Feijóo visita Salamanca en un mitin del PP",
       "categoria": "Política",
@@ -66,6 +58,14 @@
       "descripcion": "Una huelga ferroviaria ha provocado la suspensión de una docena de trenes al inicio del puente.",
       "fuente": "https://www.lagacetadesalamanca.es/salamanca/huelga-ferroviaria-inicio-puente-docena-trenes-suspendidos-20261026112436-nt.html",
       "destacado": false
+    },
+    {
+      "fecha": "2026-10-28",
+      "titulo": "Grave accidente ferroviario en Toledo genera conmoción en Salamanca",
+      "categoria": "Sucesos",
+      "descripcion": "Un grave accidente ferroviario en Toledo, con dos trenes colisionando, ha provocado conmoción en Salamanca, donde se guardó un minuto de silencio por las víctimas y se expresó preocupación por la seguridad.",
+      "fuente": "https://www.lagacetadesalamanca.es/sucesos/dos-trenes-colisionan-toledo-dejan-dos-vagones-20261028094838-nt.html",
+      "destacado": true
     }
   ]
 }

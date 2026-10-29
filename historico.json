@@ -295,6 +295,61 @@
         "Son necesarias como complemento a otras acciones.": 1
       },
       "total_votos": 4
+    },
+    {
+      "id": "mujeres-innovan-salamanca-2026",
+      "pregunta": "Salamanca acogerá la jornada 'Mujeres que innovan', centrada en emprendimiento y liderazgo femenino. ¿Cree que este tipo de iniciativas son clave para fomentar la igualdad de oportunidades en el ámbito profesional local?",
+      "opciones": [
+        "Sí, son fundamentales para visibilizar y empoderar",
+        "No, el impacto real es limitado",
+        "Son un buen complemento, pero se necesitan más acciones",
+        "No tengo suficiente información"
+      ],
+      "basado_en": "eventos.json",
+      "fecha_creacion": "2026-10-14",
+      "fecha_archivado": "2026-10-29",
+      "resultados": {
+        "Sí, son fundamentales para visibilizar y empoderar": 2,
+        "Son un buen complemento, pero se necesitan más acciones": 3,
+        "No, el impacto real es limitado": 1
+      },
+      "total_votos": 6
+    },
+    {
+      "id": "marcha-trajano-2026",
+      "pregunta": "La Marcha de Trajano unirá Extremadura y Castilla y León, buscando reivindicar el legado romano y la vinculación de las localidades. ¿Cree que este tipo de iniciativas son efectivas para promover el patrimonio histórico y la colaboración interregional?",
+      "opciones": [
+        "Sí, fomentan el patrimonio y la unión entre regiones",
+        "No, su impacto es limitado y poco visible",
+        "Son más simbólicas que prácticas para el desarrollo",
+        "No tengo suficiente información"
+      ],
+      "basado_en": "eventos.json",
+      "fecha_creacion": "2026-10-17",
+      "fecha_archivado": "2026-10-29",
+      "resultados": {
+        "Sí, fomentan el patrimonio y la unión entre regiones": 4,
+        "No, su impacto es limitado y poco visible": 1
+      },
+      "total_votos": 5
+    },
+    {
+      "id": "prevencion-juegos-redes-2026",
+      "pregunta": "Ciudad Rodrigo acogerá jornadas de prevención sobre juegos de azar y redes sociales para familias. ¿Cree que las administraciones deberían intensificar las acciones de prevención y concienciación sobre estos riesgos en el ámbito juvenil y familiar?",
+      "opciones": [
+        "Sí, es una preocupación creciente y requiere más atención.",
+        "No, la responsabilidad principal recae en las familias.",
+        "Deberían enfocarse en la educación en los centros educativos.",
+        "No tengo suficiente información."
+      ],
+      "basado_en": "eventos.json",
+      "fecha_creacion": "2026-10-22",
+      "fecha_archivado": "2026-10-29",
+      "resultados": {
+        "No, la responsabilidad principal recae en las familias.": 1,
+        "Sí, es una preocupación creciente y requiere más atención.": 1
+      },
+      "total_votos": 2
     }
   ]
 }
