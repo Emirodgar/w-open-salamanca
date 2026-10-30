@@ -1,7 +1,7 @@
 {
-  "generado_en": "2026-10-30T21:30:11.241Z",
+  "generado_en": "2026-10-30T23:47:54.072Z",
   "dias_ventana": 20,
-  "total": 3487,
+  "total": 3486,
   "medios": [
     "Tribuna Salamanca",
     "Salamanca24Horas",
@@ -407,6 +407,13 @@
       "medio": "Tribuna Salamanca",
       "fecha": "2026-10-30",
       "fecha_hora": "2026-10-30T12:23:41.000Z"
+    },
+    {
+      "url": "https://www.tribunasalamanca.com/noticias/464699/a-las-victimas-de-urda",
+      "titulo": "A las víctimas de Urda",
+      "medio": "Tribuna Salamanca",
+      "fecha": "2026-10-30",
+      "fecha_hora": "2026-10-30T12:17:21.000Z"
     },
     {
       "url": "https://www.salamanca24horas.com/sucesos/asalta-peluqueria-villares-reina-forcejea-empleada-antes-darse-fuga-acaba-detenido-bar-aldeaseca",
@@ -24403,20 +24410,6 @@
       "medio": "La Gaceta de Salamanca",
       "fecha": "2026-10-11",
       "fecha_hora": "2026-10-11T03:00:01.000Z"
-    },
-    {
-      "url": "https://www.tribunasalamanca.com/noticias/462243/mourinho-se-niega-a-comparecer-en-rueda-de-prensa-tras-la-victoria-ante-el-villarreal-y-la-polemica-arbitral",
-      "titulo": "Mourinho se niega a comparecer en rueda de prensa tras la victoria ante el Villarreal y la polémica arbitral",
-      "medio": "Tribuna Salamanca",
-      "fecha": "2026-10-10",
-      "fecha_hora": "2026-10-10T22:03:22.000Z"
-    },
-    {
-      "url": "https://www.lagacetadesalamanca.es/deportes/futbol-local/salamancauds/salamanca-duerme-lider-tras-superar-sanse-20261010215905-nt.html",
-      "titulo": "El Salamanca UDS duerme líder tras superar al Sanse (3-2)",
-      "medio": "La Gaceta de Salamanca",
-      "fecha": "2026-10-10",
-      "fecha_hora": "2026-10-10T21:31:08.000Z"
     }
   ]
 }
