@@ -1,7 +1,7 @@
 {
   "mes": "2026-10",
   "titulo_mes": "Octubre 2026",
-  "resumen_mes": "Octubre de 2026 ha sido un mes de importantes decisiones políticas y avances económicos en la provincia, con la elección del presidente de la Diputación y el anuncio de la fecha de apertura de Primark. En el ámbito deportivo, el Salamanca UDS lidera su grupo y la Copa del Rey ha generado expectación y suspensiones. Los sucesos han incluido el trágico fallecimiento de un menor, una huelga ferroviaria y un grave accidente en Toledo. Socialmente, ha habido preocupación por el acoso escolar y la emancipación juvenil, además de una tractorada de agricultores. La visita de Feijóo y el fallecimiento del cineasta José Luis García Sánchez también marcaron la agenda, mientras que la tasa de paro ha mostrado un incremento.",
+  "resumen_mes": "Octubre de 2026 ha sido un mes de importantes decisiones políticas y avances económicos, con la elección del presidente de la Diputación y la fecha de apertura de Primark. Los sucesos han incluido el trágico fallecimiento de un menor, una huelga ferroviaria, un grave accidente en Toledo con repercusiones en la provincia, y la muerte de un guardia civil en Béjar. En el ámbito social, la preocupación por el acoso escolar y la participación de agricultores en una tractorada han marcado la agenda, mientras que en deportes, la Copa del Rey generó expectación y suspensiones.",
   "hitos": [
     {
       "fecha": "2026-10-09",
@@ -9,14 +9,6 @@
       "categoria": "Política",
       "descripcion": "David Mingo ha sido elegido presidente de la Diputación de Salamanca tras un proceso de votación.",
       "fuente": "https://www.lagacetadesalamanca.es/salamanca/david-mingo-elegido-presidente-diputacion-salamanca-tras-20261009132956-nt.html",
-      "destacado": false
-    },
-    {
-      "fecha": "2026-10-10",
-      "titulo": "El Salamanca UDS se posiciona líder de su grupo",
-      "categoria": "Deportes",
-      "descripcion": "El Salamanca UDS duerme líder de su grupo tras una victoria clave frente al Sanse.",
-      "fuente": "https://www.lagacetadesalamanca.es/deportes/futbol-local/salamancauds/salamanca-duerme-lider-tras-superar-sanse-20261010215905-nt.html",
       "destacado": false
     },
     {
@@ -28,27 +20,11 @@
       "destacado": false
     },
     {
-      "fecha": "2026-10-15",
-      "titulo": "Los casos de acoso escolar en Salamanca se duplican",
-      "categoria": "Educación",
-      "descripcion": "Los casos de acoso escolar en Salamanca se han duplicado en los últimos dos cursos, según datos recientes.",
-      "fuente": "https://www.lagacetadesalamanca.es/salamanca/casos-acoso-escolar-salamanca-duplican-dos-cursos-20261015203338-nt.html",
-      "destacado": false
-    },
-    {
       "fecha": "2026-10-25",
       "titulo": "Feijóo visita Salamanca en un mitin del PP",
       "categoria": "Política",
       "descripcion": "El líder del PP, Alberto Núñez Feijóo, visitó Salamanca para un mitin, acompañado por dirigentes locales y autonómicos, lanzando promesas sobre impuestos.",
       "fuente": "https://www.lagacetadesalamanca.es/salamanca/feijoo-lanza-salamanca-promesa-cambio-impuestos-millon-20261025132329-nt.html",
-      "destacado": false
-    },
-    {
-      "fecha": "2026-10-25",
-      "titulo": "Fallece el cineasta salmantino José Luis García Sánchez",
-      "categoria": "Cultura",
-      "descripcion": "El reconocido cineasta salmantino José Luis García Sánchez ha fallecido.",
-      "fuente": "https://www.lagacetadesalamanca.es/salamanca/muere-cineasta-salmantino-jose-luis-garcia-sanchez-20261025110624-nt.html",
       "destacado": false
     },
     {
@@ -60,12 +36,36 @@
       "destacado": false
     },
     {
+      "fecha": "2026-10-27",
+      "titulo": "Fallecimiento de un guardia civil de tráfico conmociona Béjar",
+      "categoria": "Sucesos",
+      "descripcion": "La muerte de Raúl, un guardia civil de tráfico, ha generado gran conmoción en Béjar y en la provincia.",
+      "fuente": "https://www.lagacetadesalamanca.es/sucesos/muerte-raul-guardia-civil-trafico-bejar-conmociona-20261027181020-nt.html",
+      "destacado": false
+    },
+    {
       "fecha": "2026-10-28",
       "titulo": "Grave accidente ferroviario en Toledo genera conmoción en Salamanca",
       "categoria": "Sucesos",
       "descripcion": "Un grave accidente ferroviario en Toledo, con dos trenes colisionando, ha provocado conmoción en Salamanca, donde se guardó un minuto de silencio por las víctimas y se expresó preocupación por la seguridad.",
       "fuente": "https://www.lagacetadesalamanca.es/sucesos/dos-trenes-colisionan-toledo-dejan-dos-vagones-20261028094838-nt.html",
       "destacado": true
+    },
+    {
+      "fecha": "2026-10-28",
+      "titulo": "Suspendida la jornada de Copa del Rey, afectando al Salamanca UDS",
+      "categoria": "Deportes",
+      "descripcion": "La jornada de la Copa del Rey, incluyendo el partido del Salamanca UDS contra el Celta, fue suspendida por el luto nacional tras el accidente ferroviario.",
+      "fuente": "https://www.lagacetadesalamanca.es/deportes/futbol-local/salamancauds/suspendida-jornada-copa-rey-incluido-salamanca-celta-20261028125355-nt.html",
+      "destacado": false
+    },
+    {
+      "fecha": "2026-10-28",
+      "titulo": "Agricultores salmantinos participan en tractorada en Madrid",
+      "categoria": "Sociedad",
+      "descripcion": "Tres autobuses de agricultores salmantinos partieron hacia Madrid para participar en una tractorada en protesta por la situación del sector.",
+      "fuente": "https://www.lagacetadesalamanca.es/campo/tres-autobuses-agricultores-salmantinos-parten-primera-hora-20261028075614-nt.html",
+      "destacado": false
     }
   ]
 }
