@@ -1,7 +1,7 @@
 {
   "mes": "2026-10",
   "titulo_mes": "Octubre 2026",
-  "resumen_mes": "Octubre de 2026 ha sido un mes de importantes decisiones políticas y avances económicos, con la elección del presidente de la Diputación y la fecha de apertura de Primark. Los sucesos han incluido el trágico fallecimiento de un menor, una huelga ferroviaria, un grave accidente en Toledo con repercusiones en la provincia, y la muerte de un guardia civil en Béjar. En el ámbito social, la preocupación por el acoso escolar y la participación de agricultores en una tractorada han marcado la agenda, mientras que en deportes, la Copa del Rey generó expectación y suspensiones.",
+  "resumen_mes": "Octubre de 2026 ha sido un mes de importantes decisiones políticas y avances económicos, con la elección del presidente de la Diputación y la fecha de apertura de Primark. Los sucesos han incluido el trágico fallecimiento de un menor, una huelga ferroviaria, un grave accidente en Toledo con repercusiones en la provincia, y la muerte de un guardia civil en Béjar. En el ámbito social, la preocupación por el acoso escolar y la participación de agricultores en una tractorada han marcado la agenda, mientras que en deportes, la Copa del Rey generó expectación y suspensiones, culminando con la eliminación de equipos locales.",
   "hitos": [
     {
       "fecha": "2026-10-09",
@@ -45,19 +45,11 @@
     },
     {
       "fecha": "2026-10-28",
-      "titulo": "Grave accidente ferroviario en Toledo genera conmoción en Salamanca",
+      "titulo": "Grave accidente ferroviario en Toledo con impacto en Salamanca",
       "categoria": "Sucesos",
-      "descripcion": "Un grave accidente ferroviario en Toledo, con dos trenes colisionando, ha provocado conmoción en Salamanca, donde se guardó un minuto de silencio por las víctimas y se expresó preocupación por la seguridad.",
+      "descripcion": "Un grave accidente ferroviario en Toledo, con dos trenes colisionando, ha provocado conmoción en Salamanca, donde se guardó un minuto de silencio por las víctimas, incluyendo un vecino de Montemayor del Río, y se expresó preocupación por la seguridad.",
       "fuente": "https://www.lagacetadesalamanca.es/sucesos/dos-trenes-colisionan-toledo-dejan-dos-vagones-20261028094838-nt.html",
       "destacado": true
-    },
-    {
-      "fecha": "2026-10-28",
-      "titulo": "Suspendida la jornada de Copa del Rey, afectando al Salamanca UDS",
-      "categoria": "Deportes",
-      "descripcion": "La jornada de la Copa del Rey, incluyendo el partido del Salamanca UDS contra el Celta, fue suspendida por el luto nacional tras el accidente ferroviario.",
-      "fuente": "https://www.lagacetadesalamanca.es/deportes/futbol-local/salamancauds/suspendida-jornada-copa-rey-incluido-salamanca-celta-20261028125355-nt.html",
-      "destacado": false
     },
     {
       "fecha": "2026-10-28",
@@ -65,6 +57,14 @@
       "categoria": "Sociedad",
       "descripcion": "Tres autobuses de agricultores salmantinos partieron hacia Madrid para participar en una tractorada en protesta por la situación del sector.",
       "fuente": "https://www.lagacetadesalamanca.es/campo/tres-autobuses-agricultores-salmantinos-parten-primera-hora-20261028075614-nt.html",
+      "destacado": false
+    },
+    {
+      "fecha": "2026-10-29",
+      "titulo": "Guijuelo y Unionistas caen eliminados en la Copa del Rey",
+      "categoria": "Deportes",
+      "descripcion": "El Guijuelo y Unionistas fueron eliminados de la Copa del Rey tras sus respectivos partidos, poniendo fin a su sueño copero.",
+      "fuente": "https://www.lagacetadesalamanca.es/deportes/futbol-local/guijuelo-despierta-sueno-copero-remontada-expres-sporting-20261029220636-nt.html",
       "destacado": false
     }
   ]

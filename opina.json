@@ -578,6 +578,30 @@
       ],
       "basado_en": "actualidad.json",
       "fecha_creacion": "2026-10-30"
+    },
+    {
+      "id": "movilizacion-agraria-2026",
+      "pregunta": "El sector agrícola salmantino ha participado en una tractorada en Madrid para visibilizar sus demandas. ¿Cree que este tipo de movilizaciones son efectivas para lograr mejoras para el campo?",
+      "opciones": [
+        "Sí, son cruciales para presionar y conseguir cambios.",
+        "No, generan más inconvenientes que soluciones reales.",
+        "Son un paso necesario, pero deben ir acompañadas de negociación.",
+        "No tengo suficiente información."
+      ],
+      "basado_en": "actualidad.json",
+      "fecha_creacion": "2026-10-31"
+    },
+    {
+      "id": "mariquelo-subida-2026",
+      "pregunta": "Ángel Rufino, 'El Mariquelo', realizará su cuadragésima subida a la Catedral con un marcado carácter solidario. ¿Considera que esta tradición mantiene su relevancia y valor para la ciudad de Salamanca?",
+      "opciones": [
+        "Sí, es un símbolo cultural y solidario importante.",
+        "No, ha perdido parte de su significado original.",
+        "Es un evento más, sin gran impacto actual.",
+        "No tengo suficiente información."
+      ],
+      "basado_en": "eventos.json",
+      "fecha_creacion": "2026-10-31"
     }
   ]
 }
