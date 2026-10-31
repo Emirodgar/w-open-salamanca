@@ -1,0 +1,138 @@
+---
+layout: default
+title: Listas de espera quirúrgicas en Salamanca, pacientes y demora media
+description: El Hospital de Salamanca cierra el tercer trimestre de 2026 con 6.908 pacientes pendientes de operarse, el mayor número de Castilla y León, y una demora media de 131 días
+date: 31-10-2026
+folder: Salud
+permalink: listas-espera-quirurgica-salamanca
+---
+
+    <!-- Featured Datasets Section -->
+    <section class="featured dataset" id="datos">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="section-title">{{ page.title }}</h1>
+                <p class="section-description">{{ page.description }}</p>
+            </div>
+
+			<div id="section-content">
+
+<h2>Dónde estamos: 6.908 pacientes y 131 días de espera</h2>
+
+<p>El Hospital de Salamanca cerró el tercer trimestre de 2026 con <b>6.908 pacientes pendientes de una intervención quirúrgica</b>, la cifra más elevada de los 14 hospitales públicos de Castilla y León. A esa acumulación se suma el aumento de la <b>demora media, que se sitúa en 131 días</b>, frente a los 94 de finales de junio y los 91 del mismo periodo de 2025. Son 37 días más en un trimestre y 40 más en un año. Los datos son de las listas de espera de Sacyl, publicados el 30 de octubre de 2026 y recogidos por <a href="https://www.tribunasalamanca.com/noticias/464737/salamanca-supera-los-130-dias-de-espera-para-operarse-y-acumula-casi-7-000-pacientes-pendientes-de-cirugia" target="_blank" rel="noopener">Tribuna de Salamanca</a>.</p>
+
+<canvas id="demoraSalamancaChart" width="800" height="350"></canvas>
+<p style="font-size: 0.85em; color: #555;">Demora media quirúrgica del Hospital de Salamanca, en días, al cierre de cada periodo (septiembre de 2025, junio de 2026 y septiembre de 2026).</p>
+
+<h2>Cómo se compara con el resto de Castilla y León</h2>
+
+<p>En número de pacientes pendientes, Salamanca está por delante del Hospital de León (5.392), el de Burgos (4.675), el Río Hortega de Valladolid (3.679), el Hospital del Bierzo (3.313) y el Clínico de Valladolid (1.794). En <b>demora media</b>, en cambio, Salamanca es la cuarta de los 14 hospitales, por detrás del Bierzo (215 días), el Santiago Apóstol de Miranda de Ebro (168) y el de Burgos (151).</p>
+
+<canvas id="pendientesChart" width="800" height="400"></canvas>
+<p style="font-size: 0.85em; color: #555;">Pacientes pendientes de intervención quirúrgica a 30 de septiembre de 2026. Solo se incluyen los seis hospitales para los que la prensa publica la cifra.</p>
+
+<p>El conjunto de la comunidad cerró septiembre con <b>36.353 pacientes pendientes</b>, 3.319 más que en junio y 9.174 más que hace un año, y una demora media de <b>119 días</b> (101 en junio y 87 en septiembre de 2025). Salamanca, por tanto, está 12 días por encima de la media autonómica y concentra casi uno de cada cinco pacientes en lista (6.908 de 36.353, un 19 %, cálculo de Open Salamanca a partir de las dos cifras).</p>
+
+<h2>Qué se espera: especialidades y diagnósticos</h2>
+
+<p>El desglose por especialidades y diagnósticos que ha publicado la prensa es del conjunto de los hospitales de la comunidad, no de Salamanca. Por especialidades, <b>traumatología</b> concentra el mayor número de pacientes pendientes (11.866), seguida de cirugía general y digestivo (6.386) y oftalmología (6.130). Por diagnósticos, las <b>cataratas</b> encabezan la lista (4.791 pacientes), seguidas de la hernia inguinal (1.809), la artrosis de rodilla (1.762) y las deformaciones adquiridas en dedos de manos y pies (1.417).</p>
+
+<h2>Por qué ha empeorado</h2>
+
+<p>La información publicada atribuye parte del empeoramiento autonómico a la suspensión de operaciones y consultas por las <b>sucesivas semanas de huelga médica</b> de este año, dentro de las protestas para negociar un nuevo Estatuto Marco nacional. No se ha publicado cuántas intervenciones se suspendieron, así que no es posible medir cuánto del aumento se debe a ello, ni si en Salamanca pesa más o menos que en el resto de la comunidad.</p>
+
+<h2>Cómo leer estos datos</h2>
+
+<ul>
+<li>La <b>demora media</b> es un promedio: no dice cuánto espera un paciente concreto, que depende de la especialidad y de su prioridad clínica.</li>
+<li>La cifra de pacientes pendientes y la demora media se refieren a la lista de espera quirúrgica a 30 de septiembre de 2026, y no incluyen las consultas externas ni las pruebas diagnósticas.</li>
+<li>La prensa no publica la demora por especialidad en el Hospital de Salamanca; las especialidades citadas arriba son del total de Castilla y León.</li>
+<li>Los datos proceden de lo publicado por Tribuna de Salamanca a partir de Sacyl; Open Salamanca no ha podido contrastarlos con la publicación original.</li>
+</ul>
+
+<p>Para conocer los centros, las especialidades y la plantilla, consulta <a href="/hospitales-salamanca">hospitales de Salamanca</a>; para la atención primaria, <a href="/centros-salud-salamanca">centros de salud de Salamanca</a>.</p>
+
+			</div>
+
+			<div id="section-table">
+			<h2>Demora media quirúrgica por hospital de Castilla y León</h2>
+			<table border="1" cellpadding="5" cellspacing="0">
+			  <thead>
+				<tr>
+				  <th>Hospital</th>
+				  <th>Septiembre 2026 (días)</th>
+				  <th>Junio 2026 (días)</th>
+				  <th>Septiembre 2025 (días)</th>
+				</tr>
+			  </thead>
+			  <tbody>
+				<tr><td>Hospital del Bierzo</td><td>215</td><td>201</td><td>112</td></tr>
+				<tr><td>Santiago Apóstol (Miranda de Ebro)</td><td>168</td><td>147</td><td>91</td></tr>
+				<tr><td>Hospital de Burgos</td><td>151</td><td>137</td><td>117</td></tr>
+				<tr><td><b>Hospital de Salamanca</b></td><td><b>131</b></td><td><b>94</b></td><td><b>91</b></td></tr>
+				<tr><td>Hospital de León</td><td>120</td><td>93</td><td>103</td></tr>
+				<tr><td>Santos Reyes (Aranda de Duero)</td><td>109</td><td>105</td><td>95</td></tr>
+				<tr><td>Río Hortega (Valladolid)</td><td>96</td><td>90</td><td>84</td></tr>
+				<tr><td>Hospital de Ávila</td><td>92</td><td>78</td><td>62</td></tr>
+				<tr><td>Hospital de Zamora</td><td>90</td><td>76</td><td>62</td></tr>
+				<tr><td>Hospital de Soria</td><td>82</td><td>75</td><td>71</td></tr>
+				<tr><td>Medina del Campo</td><td>65</td><td>54</td><td>62</td></tr>
+				<tr><td>Hospital de Segovia</td><td>61</td><td>52</td><td>52</td></tr>
+				<tr><td>Hospital de Palencia</td><td>50</td><td>39</td><td>32</td></tr>
+				<tr><td>Clínico (Valladolid)</td><td>37</td><td>44</td><td>41</td></tr>
+				<tr><td><b>Castilla y León (media)</b></td><td><b>119</b></td><td><b>101</b></td><td><b>87</b></td></tr>
+			  </tbody>
+			</table>
+			<p style="font-size: 0.85em; color: #555;">Fuente: listas de espera de Sacyl a 30 de septiembre de 2026, según <a href="https://www.tribunasalamanca.com/noticias/464738/la-espera-para-operarse-en-castilla-y-leon-se-dispara-a-119-dias-y-ya-hay-mas-de-36-000-pacientes-pendientes" target="_blank" rel="noopener">Tribuna de Salamanca</a> (30-10-2026).</p>
+
+			</div>
+
+			{% include categories.html %}
+
+        </div>
+    </section>
+
+	<script>
+    const ctxDemora = document.getElementById('demoraSalamancaChart').getContext('2d');
+    new Chart(ctxDemora, {
+      type: 'bar',
+      data: {
+        labels: ['Septiembre 2025', 'Junio 2026', 'Septiembre 2026'],
+        datasets: [{
+          label: 'Demora media (días)',
+          data: [91, 94, 131],
+          backgroundColor: ['#97BC62', '#97BC62', '#1E56A0'],
+          borderRadius: 4
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: { legend: { display: false } },
+        scales: {
+          y: { title: { display: true, text: 'Días' }, beginAtZero: true }
+        }
+      }
+    });
+
+    const ctxPendientes = document.getElementById('pendientesChart').getContext('2d');
+    new Chart(ctxPendientes, {
+      type: 'bar',
+      data: {
+        labels: ['Salamanca', 'León', 'Burgos', 'Río Hortega (Valladolid)', 'El Bierzo', 'Clínico (Valladolid)'],
+        datasets: [{
+          label: 'Pacientes pendientes',
+          data: [6908, 5392, 4675, 3679, 3313, 1794],
+          backgroundColor: ['#1E56A0', '#97BC62', '#97BC62', '#97BC62', '#97BC62', '#97BC62'],
+          borderRadius: 4
+        }]
+      },
+      options: {
+        indexAxis: 'y',
+        responsive: true,
+        plugins: { legend: { display: false } },
+        scales: {
+          x: { title: { display: true, text: 'Nº de pacientes' }, beginAtZero: true }
+        }
+      }
+    });
+  </script>
