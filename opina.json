@@ -602,6 +602,30 @@
       ],
       "basado_en": "eventos.json",
       "fecha_creacion": "2026-10-31"
+    },
+    {
+      "id": "seguridad-ferroviaria-salamanca-2026",
+      "pregunta": "Tras el grave accidente ferroviario de Urda, que ha afectado a salmantinos, y la atención centrada en la seguridad de las infraestructuras, ¿cree que se debería invertir más en la mejora y mantenimiento de la red ferroviaria en la provincia de Salamanca?",
+      "opciones": [
+        "Sí, es una prioridad para la seguridad de los ciudadanos",
+        "No, los recursos son limitados y hay otras prioridades",
+        "Debería priorizarse la inversión a nivel nacional, no solo provincial",
+        "No tengo suficiente información"
+      ],
+      "basado_en": "actualidad.json",
+      "fecha_creacion": "2026-11-01"
+    },
+    {
+      "id": "seccion-violencia-mujer-salamanca-2026",
+      "pregunta": "Ante la creación de una nueva sección de violencia sobre la mujer en Salamanca, ¿cree que esta iniciativa es fundamental para mejorar la atención y protección a las víctimas en la provincia?",
+      "opciones": [
+        "Sí, es un paso crucial para combatir la violencia de género",
+        "No, se necesitan otras medidas más integrales",
+        "Es un buen complemento, pero no suficiente",
+        "No tengo suficiente información"
+      ],
+      "basado_en": "actualidad.json",
+      "fecha_creacion": "2026-11-01"
     }
   ]
 }

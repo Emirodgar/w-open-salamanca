@@ -1,11 +1,11 @@
 {
   "url_base": "https://www.lagacetadesalamanca.es",
-  "generado_en": "2026-10-31T05:46:14+00:00",
+  "generado_en": "2026-11-01T05:45:38+00:00",
   "periodo_cubierto": {
-    "desde": "2026-10-28",
-    "hasta": "2026-10-31"
+    "desde": "2026-10-29",
+    "hasta": "2026-11-01"
   },
-  "total_urls_analizadas": 193,
+  "total_urls_analizadas": 171,
   "secciones_excluidas": [
     "gente-estilo",
     "nacional",
@@ -17,23 +17,23 @@
   "por_seccion": [
     [
       "salamanca",
-      66
-    ],
-    [
-      "deportes",
-      46
+      63
     ],
     [
       "provincia",
-      44
+      45
+    ],
+    [
+      "deportes",
+      37
     ],
     [
       "sucesos",
-      21
+      16
     ],
     [
       "campo",
-      8
+      5
     ],
     [
       "encuestas",
@@ -41,17 +41,13 @@
     ],
     [
       "toros",
-      3
-    ],
-    [
-      "castilla-y-leon",
       2
     ]
   ],
   "por_subseccion": [
     [
       "deportes/futbol-local",
-      32
+      22
     ],
     [
       "deportes/baloncesto-local",
@@ -61,11 +57,11 @@
   "por_tipo_contenido": [
     [
       "noticia",
-      179
+      155
     ],
     [
       "galería",
-      11
+      13
     ],
     [
       "directo / en vivo",
@@ -74,144 +70,133 @@
   ],
   "heatmap_calendario": [
     {
-      "fecha": "2026-10-28",
-      "total": 59,
-      "salamanca": 17,
-      "deportes": 14,
-      "provincia": 14,
-      "sucesos": 8,
-      "campo": 4,
-      "encuestas": 0,
-      "toros": 0,
-      "castilla-y-leon": 2
-    },
-    {
       "fecha": "2026-10-29",
-      "total": 74,
-      "salamanca": 24,
-      "deportes": 21,
+      "total": 58,
+      "salamanca": 15,
       "provincia": 15,
-      "sucesos": 9,
-      "campo": 2,
-      "encuestas": 1,
-      "toros": 2,
-      "castilla-y-leon": 0
+      "deportes": 18,
+      "sucesos": 8,
+      "campo": 1,
+      "encuestas": 0,
+      "toros": 1
     },
     {
       "fecha": "2026-10-30",
-      "total": 52,
-      "salamanca": 19,
-      "deportes": 11,
+      "total": 49,
+      "salamanca": 18,
       "provincia": 14,
-      "sucesos": 3,
+      "deportes": 10,
+      "sucesos": 2,
       "campo": 2,
       "encuestas": 2,
-      "toros": 1,
-      "castilla-y-leon": 0
+      "toros": 1
     },
     {
       "fecha": "2026-10-31",
-      "total": 8,
-      "salamanca": 6,
+      "total": 60,
+      "salamanca": 26,
+      "provincia": 16,
+      "deportes": 9,
+      "sucesos": 6,
+      "campo": 2,
+      "encuestas": 1,
+      "toros": 0
+    },
+    {
+      "fecha": "2026-11-01",
+      "total": 4,
+      "salamanca": 4,
+      "provincia": 0,
       "deportes": 0,
-      "provincia": 1,
-      "sucesos": 1,
+      "sucesos": 0,
       "campo": 0,
       "encuestas": 0,
-      "toros": 0,
-      "castilla-y-leon": 0
+      "toros": 0
     }
   ],
   "conceptos_destacados": [
     {
+      "concepto": "Accidente Ferroviario de Urda",
+      "piezas": 14,
+      "seccion_principal": "salamanca",
+      "desde": "2026-10-29",
+      "hasta": "2026-10-31",
+      "ejemplos_redactados": [
+        "La provincia de Salamanca ha vivido días de luto oficial y homenajes a las víctimas del accidente ferroviario de Urda, que incluyó a salmantinos entre los fallecidos.",
+        "Compañeros del científico salmantino Manuel Castrillo Tambay, víctima del siniestro, han expresado sus condolencias."
+      ]
+    },
+    {
       "concepto": "Meins Avenida",
-      "piezas": 6,
-      "seccion_principal": "deportes",
-      "desde": "2026-10-28",
-      "hasta": "2026-10-30",
-      "ejemplos_redactados": [
-        "El equipo Meins Avenida buscaba un triunfo en Bélgica para liderar su grupo.",
-        "Meins Avenida estrenó domicilio con una brillante interpretación en Bélgica, logrando una importante victoria."
-      ]
-    },
-    {
-      "concepto": "Copa del Rey",
-      "piezas": 6,
-      "seccion_principal": "deportes",
-      "desde": "2026-10-28",
-      "hasta": "2026-10-29",
-      "ejemplos_redactados": [
-        "La jornada de Copa del Rey fue suspendida, afectando a equipos como el Salamanca Celta.",
-        "El Guijuelo y Luis Ramos se preparaban para sus encuentros de Copa del Rey."
-      ]
-    },
-    {
-      "concepto": "Santa Marta",
       "piezas": 5,
-      "seccion_principal": "provincia",
-      "desde": "2026-10-28",
-      "hasta": "2026-10-30",
+      "seccion_principal": "deportes",
+      "desde": "2026-10-29",
+      "hasta": "2026-10-31",
       "ejemplos_redactados": [
-        "Santa Marta inició el asfaltado de un nuevo aparcamiento.",
-        "Los mayores de Santa Marta diseñaron un árbol de la memoria."
+        "El equipo de baloncesto Meins Avenida ha disputado partidos clave, logrando un triunfo importante en Bélgica y enfrentando desafíos en los minutos finales contra la USAL."
       ]
     },
     {
       "concepto": "Javi Medina",
       "piezas": 5,
       "seccion_principal": "deportes",
-      "desde": "2026-10-28",
-      "hasta": "2026-10-30",
+      "desde": "2026-10-29",
+      "hasta": "2026-10-31",
       "ejemplos_redactados": [
-        "Javi Medina jugará en el puesto de Francisco Hera en Unionistas.",
-        "La afición de Unionistas mostró crispación ante la situación de Javi Medina."
+        "El futuro del técnico Javi Medina ha sido tema de debate en el ámbito futbolístico local, especialmente tras la eliminación de Unionistas en la Copa."
       ]
     },
     {
-      "concepto": "Accidente Ferroviario",
-      "piezas": 5,
-      "seccion_principal": "salamanca",
-      "desde": "2026-10-28",
-      "hasta": "2026-10-30",
-      "ejemplos_redactados": [
-        "Un vecino de Montemayor del Río fue uno de los fallecidos en el accidente ferroviario de Urda.",
-        "Se guardó un emotivo minuto de silencio en la plaza por las víctimas del accidente ferroviario."
-      ]
-    },
-    {
-      "concepto": "Ciudad Rodrigo",
-      "piezas": 5,
-      "seccion_principal": "provincia",
-      "desde": "2026-10-28",
-      "hasta": "2026-10-29",
-      "ejemplos_redactados": [
-        "Ciudad Rodrigo estimula el emprendimiento entre estudiantes de ciclos formativos.",
-        "Ciudad Rodrigo se sumó al recuerdo de los fallecidos en el accidente de Urda."
-      ]
-    },
-    {
-      "concepto": "Minuto Silencio",
+      "concepto": "Santa Marta",
       "piezas": 4,
       "seccion_principal": "provincia",
-      "desde": "2026-10-28",
-      "hasta": "2026-10-29",
+      "desde": "2026-10-29",
+      "hasta": "2026-10-30",
       "ejemplos_redactados": [
-        "Sorihuela y Guijuelo guardaron un minuto de silencio por las víctimas del accidente ferroviario.",
-        "Se realizó un emotivo minuto de silencio en el partido de Copa en memoria de Luis Ramos."
+        "El municipio de Santa Marta ha iniciado el asfaltado de un nuevo aparcamiento y ha acogido actividades como el diseño de un árbol de la memoria por parte de sus mayores."
       ]
     },
     {
-      "concepto": "Peñaranda",
+      "concepto": "Carbajosa",
       "piezas": 4,
       "seccion_principal": "provincia",
-      "desde": "2026-10-28",
+      "desde": "2026-10-30",
+      "hasta": "2026-10-31",
+      "ejemplos_redactados": [
+        "Carbajosa ha anunciado una inversión de 580.000 euros para renovar el parque de la ciudad y ha sido escenario de un accidente de tráfico."
+      ]
+    },
+    {
+      "concepto": "Heridos en Accidentes",
+      "piezas": 4,
+      "seccion_principal": "sucesos",
+      "desde": "2026-10-29",
+      "hasta": "2026-10-31",
+      "ejemplos_redactados": [
+        "Varios sucesos han dejado heridos en la provincia, incluyendo accidentes de moto, colisiones de vehículos y choques de patinetes."
+      ]
+    },
+    {
+      "concepto": "Raquel Romo",
+      "piezas": 3,
+      "seccion_principal": "deportes",
+      "desde": "2026-10-29",
+      "hasta": "2026-10-31",
+      "ejemplos_redactados": [
+        "La jugadora Raquel Romo ha sido parte de la convocatoria de la selección española y ha expresado su compromiso con el equipo."
+      ]
+    },
+    {
+      "concepto": "Guijuelo en Copa del Rey",
+      "piezas": 3,
+      "seccion_principal": "deportes",
+      "desde": "2026-10-29",
       "hasta": "2026-10-30",
       "ejemplos_redactados": [
-        "Peñaranda y Paradinas recibieron una campaña sobre gestión sostenible.",
-        "Se dio a conocer el programa de Santos y Fieles Difuntos en Peñaranda."
+        "El Guijuelo se despidió de la Copa del Rey tras un partido contra el Sporting, donde intentó una remontada que finalmente no fue suficiente."
       ]
     }
   ],
-  "resumen_borrador": "Se han publicado 193 noticias entre el 2026-10-28 y el 2026-10-31. La actividad se ha concentrado sobre todo en salamanca (66 piezas), deportes (46 piezas), provincia (44 piezas).\n\nLos conceptos con más piezas relacionadas son: Meins · Avenida; Copa · Rey; Santa · Marta; Javi · Medina. Revisa 'evidencia' de cada concepto para redactar el resumen final.",
-  "resumen": "La provincia de Salamanca ha vivido unos días marcados por la conmoción y el luto, tras el grave accidente ferroviario de Toledo, que ha tenido repercusiones directas en la región, con víctimas salmantinas y numerosos actos de recuerdo. Este suceso ha generado un clima de preocupación y ha llevado a la suspensión de eventos deportivos, como la jornada de la Copa del Rey.\n\nEn el ámbito deportivo, la Copa del Rey ha dejado la eliminación de equipos locales como el Guijuelo y Unionistas. Por otro lado, el Meins Avenida de baloncesto ha logrado una importante victoria en Europa. La actualidad provincial se ha centrado en iniciativas de urbanismo en Santa Marta y Ciudad Rodrigo, así como en la preparación de las festividades de Todos los Santos en diversas localidades.\n\nFinalmente, la Fiscalía ha solicitado penas de cárcel en varios casos de sucesos, mientras que el sector agrícola salmantino ha continuado su movilización, participando en una tractorada en Madrid, reflejando las demandas del campo."
+  "resumen_borrador": "Se han publicado 171 noticias entre el 2026-10-29 y el 2026-11-01. La actividad se ha concentrado sobre todo en salamanca (63 piezas), provincia (45 piezas), deportes (37 piezas).\n\nLos conceptos con más piezas relacionadas son: Urda; Meins · Avenida; Javi · Medina; Santa · Marta. Revisa 'evidencia' de cada concepto para redactar el resumen final.",
+  "resumen": "Los últimos días de octubre en Salamanca han estado marcados por la conmoción y el luto oficial tras el grave accidente ferroviario de Urda, que ha tenido repercusiones directas en la provincia con el fallecimiento de salmantinos. Se han sucedido homenajes y muestras de condolencia, mientras la atención se centraba en la seguridad de las infraestructuras ferroviarias.\n\nEn el ámbito deportivo, la actualidad ha estado dominada por la eliminación de equipos locales como el Guijuelo y Unionistas en la Copa del Rey, generando debate sobre la situación de sus técnicos. El baloncesto femenino también ha tenido protagonismo con la destacada actuación del Meins Avenida y la participación de Raquel Romo en la selección nacional.\n\nLa agenda local ha incluido noticias sobre inversiones en municipios como Carbajosa, obras de urbanismo en Santa Marta y la creación de una nueva sección de violencia sobre la mujer en Salamanca, reflejando la diversidad de temas que ocupan a la provincia en este corto periodo."
 }
