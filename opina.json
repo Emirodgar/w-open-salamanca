@@ -520,18 +520,6 @@
       "fecha_creacion": "2026-10-28"
     },
     {
-      "id": "perfumerias-avenida-eurocup-2026",
-      "pregunta": "Perfumerías Avenida se enfrenta al Namur en la tercera jornada de la Eurocup. ¿Cree que el equipo salmantino logrará una victoria en este encuentro europeo?",
-      "opciones": [
-        "Sí, el equipo está en buena forma",
-        "No, será un partido complicado",
-        "Depende del rendimiento del día",
-        "No tengo suficiente información"
-      ],
-      "basado_en": "eventos.json",
-      "fecha_creacion": "2026-10-28"
-    },
-    {
       "id": "rodaje-netflix-salamanca-2026",
       "pregunta": "La provincia de Salamanca ha acogido el rodaje de una serie alemana de Netflix en localidades como Candelario y La Alberca. ¿Cree que este tipo de producciones audiovisuales benefician al turismo y la economía local?",
       "opciones": [
@@ -626,6 +614,30 @@
       ],
       "basado_en": "actualidad.json",
       "fecha_creacion": "2026-11-01"
+    },
+    {
+      "id": "semana-legumbres-2026",
+      "pregunta": "La décima edición de la Semana de las Legumbres busca fomentar el consumo de productos de proximidad. ¿Cree que estas iniciativas son efectivas para apoyar el producto local y la alimentación saludable?",
+      "opciones": [
+        "Sí, son clave para el producto local y la salud",
+        "No, su impacto es limitado",
+        "Son un buen complemento, pero no lo principal",
+        "No tengo suficiente información"
+      ],
+      "basado_en": "eventos.json",
+      "fecha_creacion": "2026-11-02"
+    },
+    {
+      "id": "feria-ecoraya-2026",
+      "pregunta": "La X Feria Transfronteriza Ecoraya reunirá a productores españoles y portugueses. ¿Cree que este tipo de ferias son importantes para fomentar la colaboración transfronteriza y el desarrollo económico local?",
+      "opciones": [
+        "Sí, impulsan la economía y las relaciones transfronterizas",
+        "No, su impacto es limitado y muy específico",
+        "Son un buen escaparate, pero no generan un gran impacto económico",
+        "No tengo suficiente información"
+      ],
+      "basado_en": "eventos.json",
+      "fecha_creacion": "2026-11-02"
     }
   ]
 }

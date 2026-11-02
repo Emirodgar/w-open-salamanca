@@ -350,6 +350,21 @@
         "Sí, es una preocupación creciente y requiere más atención.": 1
       },
       "total_votos": 2
+    },
+    {
+      "id": "perfumerias-avenida-eurocup-2026",
+      "pregunta": "Perfumerías Avenida se enfrenta al Namur en la tercera jornada de la Eurocup. ¿Cree que el equipo salmantino logrará una victoria en este encuentro europeo?",
+      "opciones": [
+        "Sí, el equipo está en buena forma",
+        "No, será un partido complicado",
+        "Depende del rendimiento del día",
+        "No tengo suficiente información"
+      ],
+      "basado_en": "eventos.json",
+      "fecha_creacion": "2026-10-28",
+      "fecha_archivado": "2026-11-02",
+      "resultados": {},
+      "total_votos": 0
     }
   ]
 }
