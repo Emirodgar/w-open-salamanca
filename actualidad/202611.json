@@ -1,7 +1,7 @@
 {
   "mes": "2026-11",
   "titulo_mes": "Noviembre 2026",
-  "resumen_mes": "Noviembre ha comenzado con el triste fallecimiento de Charo Diego, figura política destacada. En el ámbito deportivo, Unionistas y Meins Avenida han vivido jornadas complicadas, mientras que las celebraciones del Día de Todos los Santos han marcado la vida social de la provincia.",
+  "resumen_mes": "Noviembre ha comenzado con el triste fallecimiento de Charo Diego, figura política destacada, y la alta ocupación turística durante el puente de Todos los Santos. En el ámbito deportivo, Unionistas y Meins Avenida han vivido jornadas complicadas, mientras que las celebraciones del Día de Todos los Santos han marcado la vida social de la provincia. También se ha registrado una agresión en la cárcel de Topas y la declaración de emergencia cinegética por el problema de los jabalíes.",
   "hitos": [
     {
       "fecha": "2026-11-01",
@@ -49,6 +49,22 @@
       "categoria": "Sociedad",
       "descripcion": "El puente festivo de Todos los Santos ha rozado el lleno en Salamanca, manteniendo un buen tirón turístico durante los tres días.",
       "fuente": "https://www.lagacetadesalamanca.es/salamanca/puente-roza-lleno-sabado-mantiene-tiron-tres-20261101060000-nt.html",
+      "destacado": false
+    },
+    {
+      "fecha": "2026-11-02",
+      "titulo": "Agresión a un funcionario en la cárcel de Topas",
+      "categoria": "Sucesos",
+      "descripcion": "Un interno de la cárcel de Topas propinó un puñetazo a un funcionario, generando una nueva agresión en el centro penitenciario.",
+      "fuente": "https://www.lagacetadesalamanca.es/sucesos/nueva-agresion-topas-interno-propina-punetazo-funcionario-20261102195220-nt.html",
+      "destacado": false
+    },
+    {
+      "fecha": "2026-11-02",
+      "titulo": "Emergencia cinegética por el problema del jabalí",
+      "categoria": "Sociedad",
+      "descripcion": "La expansión del jabalí ha sido declarada emergencia cinegética, buscando frenar su crecimiento y el impacto en el campo salmantino.",
+      "fuente": "https://www.lagacetadesalamanca.es/salamanca/problema-jabali-emergencia-cinegetica-frena-expansion-20261102135923-nt.html",
       "destacado": false
     }
   ]

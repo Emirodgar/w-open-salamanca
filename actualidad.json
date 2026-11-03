@@ -1,11 +1,11 @@
 {
   "url_base": "https://www.lagacetadesalamanca.es",
-  "generado_en": "2026-11-02T05:45:52+00:00",
+  "generado_en": "2026-11-03T05:45:30+00:00",
   "periodo_cubierto": {
-    "desde": "2026-10-30",
-    "hasta": "2026-11-02"
+    "desde": "2026-10-31",
+    "hasta": "2026-11-03"
   },
-  "total_urls_analizadas": 153,
+  "total_urls_analizadas": 142,
   "secciones_excluidas": [
     "gente-estilo",
     "nacional",
@@ -17,37 +17,45 @@
   "por_seccion": [
     [
       "salamanca",
-      51
+      46
     ],
     [
       "provincia",
-      42
+      36
     ],
     [
       "deportes",
-      37
+      36
     ],
     [
       "sucesos",
-      16
-    ],
-    [
-      "campo",
-      4
+      18
     ],
     [
       "encuestas",
       3
+    ],
+    [
+      "castilla-y-leon",
+      1
+    ],
+    [
+      "internacional",
+      1
+    ],
+    [
+      "campo",
+      1
     ]
   ],
   "por_subseccion": [
     [
       "deportes/futbol-local",
-      22
+      21
     ],
     [
       "deportes/baloncesto-local",
-      10
+      9
     ],
     [
       "deportes/carreras-populares",
@@ -57,11 +65,11 @@
   "por_tipo_contenido": [
     [
       "noticia",
-      130
+      116
     ],
     [
       "galería",
-      20
+      23
     ],
     [
       "directo / en vivo",
@@ -70,55 +78,63 @@
   ],
   "heatmap_calendario": [
     {
-      "fecha": "2026-10-30",
-      "total": 30,
-      "salamanca": 6,
-      "provincia": 14,
-      "deportes": 6,
-      "sucesos": 1,
-      "campo": 2,
-      "encuestas": 1
-    },
-    {
       "fecha": "2026-10-31",
-      "total": 60,
-      "salamanca": 26,
-      "provincia": 16,
+      "total": 43,
+      "salamanca": 15,
+      "provincia": 13,
       "deportes": 9,
-      "sucesos": 6,
-      "campo": 2,
-      "encuestas": 1
+      "sucesos": 4,
+      "encuestas": 1,
+      "castilla-y-leon": 0,
+      "internacional": 0,
+      "campo": 1
     },
     {
       "fecha": "2026-11-01",
-      "total": 60,
-      "salamanca": 16,
+      "total": 55,
+      "salamanca": 13,
       "provincia": 12,
-      "deportes": 22,
-      "sucesos": 9,
-      "campo": 0,
-      "encuestas": 1
+      "deportes": 21,
+      "sucesos": 8,
+      "encuestas": 1,
+      "castilla-y-leon": 0,
+      "internacional": 0,
+      "campo": 0
     },
     {
       "fecha": "2026-11-02",
+      "total": 41,
+      "salamanca": 16,
+      "provincia": 11,
+      "deportes": 5,
+      "sucesos": 6,
+      "encuestas": 1,
+      "castilla-y-leon": 1,
+      "internacional": 1,
+      "campo": 0
+    },
+    {
+      "fecha": "2026-11-03",
       "total": 3,
-      "salamanca": 3,
+      "salamanca": 2,
       "provincia": 0,
-      "deportes": 0,
+      "deportes": 1,
       "sucesos": 0,
-      "campo": 0,
-      "encuestas": 0
+      "encuestas": 0,
+      "castilla-y-leon": 0,
+      "internacional": 0,
+      "campo": 0
     }
   ],
   "conceptos_destacados": [
     {
-      "concepto": "Unionistas",
-      "piezas": 9,
+      "concepto": "Unionistas de Salamanca",
+      "piezas": 7,
       "seccion_principal": "deportes",
-      "desde": "2026-10-30",
-      "hasta": "2026-11-01",
+      "desde": "2026-10-31",
+      "hasta": "2026-11-03",
       "ejemplos_redactados": [
-        "Unionistas ha sido protagonista en la sección de deportes con su búsqueda de un triunfo en Almendralejo. El equipo sufrió una abultada derrota frente a Francisco Hera, generando crispación en la afición."
+        "El equipo Unionistas de Salamanca ha vivido jornadas deportivas complejas, incluyendo una abultada derrota que ha generado debate en torno a la figura de Javi Medina. Un exjugador del club, Jesús Miguel, sufrió un brutal golpe."
       ]
     },
     {
@@ -128,70 +144,70 @@
       "desde": "2026-10-31",
       "hasta": "2026-11-01",
       "ejemplos_redactados": [
-        "El equipo Meins Avenida ha enfrentado un calendario exigente, sufriendo una derrota ante Hozono Global Jairis. Raquel Romo ha señalado los deberes del equipo."
+        "El equipo de baloncesto femenino Meins Avenida ha enfrentado desafíos en la cancha, con una derrota destacada ante Hozono Global Jairis. El calendario deportivo ha marcado una tregua para el equipo."
       ]
     },
     {
-      "concepto": "Javi Medina",
-      "piezas": 5,
-      "seccion_principal": "deportes",
-      "desde": "2026-10-30",
-      "hasta": "2026-11-01",
-      "ejemplos_redactados": [
-        "Javi Medina ha expresado su sentir tras la derrota de Unionistas, asumiendo que su juego en los partidos de esta semana es crucial. La afición de Unionistas ha mostrado crispación en torno a su figura."
-      ]
-    },
-    {
-      "concepto": "Accidente Ferroviario de Urda",
-      "piezas": 8,
-      "seccion_principal": "salamanca",
-      "desde": "2026-10-30",
-      "hasta": "2026-10-31",
-      "ejemplos_redactados": [
-        "El accidente ferroviario de Urda ha causado conmoción, con el fallecimiento de Manuel Castrillo Tambay y David Jiménez Gil, víctimas salmantinas. Compañeros del científico salmantino han expresado su pesar."
-      ]
-    },
-    {
-      "concepto": "Celebraciones de Santos",
+      "concepto": "Celebraciones del Día de Todos los Santos",
       "piezas": 5,
       "seccion_principal": "provincia",
-      "desde": "2026-10-30",
-      "hasta": "2026-11-01",
+      "desde": "2026-10-31",
+      "hasta": "2026-11-02",
       "ejemplos_redactados": [
-        "Diversos municipios de la provincia, como Valbuena, Lagunilla y Alba de Tormes, han celebrado el Día de Todos los Santos con convivencias y tradiciones."
+        "Diversos municipios de la provincia, como Lagunilla, Alba de Tormes, Béjar y Candelario, han celebrado el Día de Todos los Santos con tradiciones como rosarios, degustaciones de calbotes y castañas asadas."
       ]
     },
     {
-      "concepto": "Carbajosa",
+      "concepto": "Sucesos y Accidentes en la provincia",
       "piezas": 4,
-      "seccion_principal": "provincia",
-      "desde": "2026-10-30",
-      "hasta": "2026-10-31",
+      "seccion_principal": "sucesos",
+      "desde": "2026-10-31",
+      "hasta": "2026-11-02",
       "ejemplos_redactados": [
-        "El municipio de Carbajosa ha anunciado una inversión de 580.000 euros para renovar el parque de la ciudad. También se ha reportado una mujer herida en una colisión de vehículos."
-      ]
-    },
-    {
-      "concepto": "Música Tradicional en la Provincia",
-      "piezas": 4,
-      "seccion_principal": "provincia",
-      "desde": "2026-10-30",
-      "hasta": "2026-11-01",
-      "ejemplos_redactados": [
-        "La música tradicional ha tenido presencia en la provincia, con la cantante Cristina Len y homenajes a seres queridos en Cantalpino con velas y música."
+        "La provincia ha registrado varios incidentes, incluyendo un accidente ferroviario en Urda con víctimas salmantinas y una llamativa reconstrucción de un accidente en Filiberto Villalobos. También se ha reportado un atropello en Ciudad Rodrigo y una agresión a un funcionario en Topas."
       ]
     },
     {
       "concepto": "Fallecimiento de Charo Diego",
-      "piezas": 1,
+      "piezas": 3,
       "seccion_principal": "salamanca",
       "desde": "2026-11-01",
-      "hasta": "2026-11-01",
+      "hasta": "2026-11-02",
       "ejemplos_redactados": [
-        "Charo Diego, la primera mujer presidenta de la Diputación, ha fallecido."
+        "Salamanca ha despedido con pesar a Charo Diego, la primera mujer en ocupar la presidencia de la Diputación, cuya muerte ha sido lamentada por la institución provincial."
+      ]
+    },
+    {
+      "concepto": "Problema de los jabalíes en el campo",
+      "piezas": 2,
+      "seccion_principal": "salamanca",
+      "desde": "2026-11-02",
+      "hasta": "2026-11-02",
+      "ejemplos_redactados": [
+        "La expansión de los jabalíes y el impacto de las piaras en los cultivos, como el maíz, han generado preocupación en la provincia, siendo calificado como un problema de emergencia cinegética."
+      ]
+    },
+    {
+      "concepto": "Actuaciones en Villamayor",
+      "piezas": 3,
+      "seccion_principal": "provincia",
+      "desde": "2026-10-31",
+      "hasta": "2026-11-02",
+      "ejemplos_redactados": [
+        "El municipio de Villamayor ha llevado a cabo mejoras en la seguridad vial, reforzando la señalética, y ha renovado el camino del Ahogado para facilitar el acceso a los almendros. Se ha registrado una colisión con cinco heridos."
+      ]
+    },
+    {
+      "concepto": "Noticias de Béjar",
+      "piezas": 3,
+      "seccion_principal": "provincia",
+      "desde": "2026-11-01",
+      "hasta": "2026-11-02",
+      "ejemplos_redactados": [
+        "Béjar ha disfrutado del sabor de las castañas asadas y ha sido sede del primer raid de orientación. El Ayuntamiento tramita la compra de un dron para facilitar las inspecciones."
       ]
     }
   ],
-  "resumen_borrador": "Se han publicado 153 noticias entre el 2026-10-30 y el 2026-11-02. La actividad se ha concentrado sobre todo en salamanca (51 piezas), provincia (42 piezas), deportes (37 piezas).\n\nLos conceptos con más piezas relacionadas son: Unionistas; Meins · Avenida; Javi · Medina; Santos. Revisa 'evidencia' de cada concepto para redactar el resumen final.",
-  "resumen": "El periodo comprendido entre el 30 de octubre y el 2 de noviembre ha estado marcado por el luto en Salamanca y la provincia, tras confirmarse el fallecimiento de víctimas salmantinas en el accidente ferroviario de Urda. Además, la política local se ha visto impactada por el deceso de Charo Diego, ex presidenta de la Diputación. El puente de Todos los Santos ha propiciado diversas celebraciones y una alta ocupación turística en la capital.\n\nEn el ámbito deportivo, Unionistas ha vivido una jornada complicada con una abultada derrota que ha generado crispación entre sus seguidores, mientras que el Meins Avenida también sumó una derrota en su encuentro. La provincia ha sido escenario de actividades culturales, destacando la presencia de la música tradicional y la inversión en urbanismo en municipios como Carbajosa.\n\nLos sucesos han incluido un incendio de vehículo en Chamberí durante la noche de Halloween. La agenda futura ya apunta a eventos deportivos y culturales, como un partido de fútbol y un concierto de Niña Pastori, así como exposiciones y programaciones teatrales que cerrarán el tramo final del año."
+  "resumen_borrador": "Se han publicado 142 noticias entre el 2026-10-31 y el 2026-11-03. La actividad se ha concentrado sobre todo en salamanca (46 piezas), provincia (36 piezas), deportes (36 piezas).\n\nLos conceptos con más piezas relacionadas son: Unionistas; Meins · Avenida; Santos; Ciudad. Revisa 'evidencia' de cada concepto para redactar el resumen final.",
+  "resumen": "El periodo comprendido entre el 31 de octubre y el 3 de noviembre de 2026 ha estado marcado por el luto en la provincia de Salamanca, con el fallecimiento de Charo Diego, la primera mujer en presidir la Diputación. Este suceso ha generado un sentido adiós en la esfera política y social local. En el ámbito deportivo, Unionistas de Salamanca ha vivido momentos de tensión tras una abultada derrota, mientras que el equipo de baloncesto femenino Meins Avenida también ha registrado un revés en la cancha.\n\nLos sucesos han incluido la continuación de la conmoción por el accidente ferroviario de Urda, que afectó a salmantinos, y la reconstrucción de un incidente en Filiberto Villalobos. Además, se han reportado nuevos incidentes como un atropello en Ciudad Rodrigo y una agresión en la cárcel de Topas. La gestión de la fauna silvestre también ha sido noticia, con la preocupación por la expansión de los jabalíes y su impacto en los cultivos.\n\nLa vida en la provincia ha girado en torno a las celebraciones del Día de Todos los Santos, con diversas tradiciones como las calbotadas y rosarios en municipios como Lagunilla, Alba de Tormes y Béjar. En el plano local, Villamayor ha impulsado mejoras en la seguridad vial y en sus caminos, mientras que Béjar ha acogido un raid de orientación y gestiona la adquisición de un dron para inspecciones."
 }

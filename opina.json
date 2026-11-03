@@ -638,6 +638,30 @@
       ],
       "basado_en": "eventos.json",
       "fecha_creacion": "2026-11-02"
+    },
+    {
+      "id": "legado-charo-diego-2026",
+      "pregunta": "El fallecimiento de Charo Diego, primera mujer en presidir la Diputación de Salamanca, ha generado un sentido adiós. ¿Cree que su legado tendrá un impacto duradero en la política provincial?",
+      "opciones": [
+        "Sí, su figura es un referente",
+        "No, su impacto será limitado",
+        "Es pronto para valorarlo",
+        "No tengo suficiente información"
+      ],
+      "basado_en": "actualidad.json",
+      "fecha_creacion": "2026-11-03"
+    },
+    {
+      "id": "gestion-jabalies-2026",
+      "pregunta": "Ante la preocupación por la expansión de los jabalíes y su impacto en los cultivos de la provincia, ¿qué medidas considera más efectivas para gestionar esta situación?",
+      "opciones": [
+        "Aumentar las batidas y controles de población",
+        "Implementar medidas de protección de cultivos",
+        "Fomentar la coexistencia y el equilibrio ecológico",
+        "No tengo suficiente información"
+      ],
+      "basado_en": "actualidad.json",
+      "fecha_creacion": "2026-11-03"
     }
   ]
 }
