@@ -365,6 +365,57 @@
       "fecha_archivado": "2026-11-02",
       "resultados": {},
       "total_votos": 0
+    },
+    {
+      "id": "huelga-ferroviaria-2026",
+      "pregunta": "Ante la huelga ferroviaria que ha provocado la suspensión de trenes al inicio del puente, ¿cree que estas movilizaciones son una herramienta efectiva para que los trabajadores logren sus demandas?",
+      "opciones": [
+        "Sí, es la única vía para presionar",
+        "No, perjudican a los usuarios y la imagen del servicio",
+        "Deberían buscarse otras vías de negociación",
+        "No tengo suficiente información"
+      ],
+      "basado_en": "actualidad.json",
+      "fecha_creacion": "2026-10-27",
+      "fecha_archivado": "2026-11-04",
+      "resultados": {
+        "Sí, es la única vía para presionar": 1
+      },
+      "total_votos": 1
+    },
+    {
+      "id": "suspension-eventos-luto-2026",
+      "pregunta": "Ante la suspensión de eventos deportivos en Salamanca, como la jornada de Copa del Rey del Salamanca UDS, debido al luto nacional por el accidente ferroviario de Toledo, ¿considera adecuada la decisión de suspender actividades lúdicas y deportivas en señal de duelo?",
+      "opciones": [
+        "Sí, es un gesto necesario de respeto",
+        "No, la vida debe seguir con normalidad",
+        "Depende de la magnitud del suceso",
+        "No tengo suficiente información"
+      ],
+      "basado_en": "actualidad.json",
+      "fecha_creacion": "2026-10-30",
+      "fecha_archivado": "2026-11-04",
+      "resultados": {
+        "No, la vida debe seguir con normalidad": 1
+      },
+      "total_votos": 1
+    },
+    {
+      "id": "halloween-luto-2026",
+      "pregunta": "A pesar del luto por el accidente ferroviario de Toledo, varios municipios salmantinos mantienen sus actividades de Halloween. ¿Cree que es apropiado celebrar estas festividades en un contexto de duelo nacional?",
+      "opciones": [
+        "Sí, es importante mantener la normalidad y el ánimo",
+        "No, debería prevalecer el respeto y la sobriedad",
+        "Depende de la naturaleza de cada evento",
+        "No tengo suficiente información"
+      ],
+      "basado_en": "actualidad.json",
+      "fecha_creacion": "2026-10-30",
+      "fecha_archivado": "2026-11-04",
+      "resultados": {
+        "Sí, es importante mantener la normalidad y el ánimo": 1
+      },
+      "total_votos": 1
     }
   ]
 }
