@@ -650,6 +650,30 @@
       ],
       "basado_en": "actualidad.json",
       "fecha_creacion": "2026-11-04"
+    },
+    {
+      "id": "alianzas-usal-2026",
+      "pregunta": "La Universidad de Salamanca busca nuevas alianzas internacionales. ¿Cree que esta estrategia es clave para el futuro y el prestigio de la institución?",
+      "opciones": [
+        "Sí, es fundamental para su proyección global",
+        "No, debería centrarse en el ámbito nacional",
+        "Es importante, pero no la prioridad principal",
+        "No tengo suficiente información"
+      ],
+      "basado_en": "actualidad.json",
+      "fecha_creacion": "2026-11-05"
+    },
+    {
+      "id": "huelga-general-salamanca-2026",
+      "pregunta": "CCOO y UGT han convocado una huelga general en Salamanca para el 11 de noviembre. ¿Cree que esta movilización es una herramienta efectiva para lograr mejoras en salarios y servicios públicos?",
+      "opciones": [
+        "Sí, es crucial para presionar y conseguir cambios",
+        "No, genera más inconvenientes que soluciones reales",
+        "Es un paso necesario, pero debe ir acompañada de negociación",
+        "No tengo suficiente información"
+      ],
+      "basado_en": "eventos.json",
+      "fecha_creacion": "2026-11-05"
     }
   ]
 }

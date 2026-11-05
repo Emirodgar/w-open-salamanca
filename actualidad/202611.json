@@ -1,7 +1,7 @@
 {
   "mes": "2026-11",
   "titulo_mes": "Noviembre 2026",
-  "resumen_mes": "Noviembre ha comenzado con el triste fallecimiento de Jesús Miguel, exjugador de Unionistas, y de Charo Diego, primera mujer presidenta de la Diputación. El puente de Todos los Santos ha registrado una alta ocupación, mientras la Universidad y el ámbito sanitario han generado noticias relevantes.",
+  "resumen_mes": "Noviembre ha comenzado con el triste fallecimiento de Jesús Miguel, exjugador de Unionistas, y de Charo Diego, primera mujer presidenta de la Diputación. El puente de Todos los Santos ha registrado una alta ocupación, mientras la Universidad y el ámbito sanitario han generado noticias relevantes. Además, el mes ha visto el inicio de una huelga docente y un repunte del paro.",
   "hitos": [
     {
       "fecha": "2026-11-01",
@@ -17,22 +17,6 @@
       "categoria": "Sociedad",
       "descripcion": "El puente festivo de Todos los Santos ha rozado el lleno en Salamanca, manteniendo un buen tirón turístico durante los tres días.",
       "fuente": "https://www.lagacetadesalamanca.es/salamanca/puente-roza-lleno-sabado-mantiene-tiron-tres-20261101060000-nt.html",
-      "destacado": false
-    },
-    {
-      "fecha": "2026-11-01",
-      "titulo": "Meins Avenida pierde ante Hozono Global Jairis",
-      "categoria": "Deportes",
-      "descripcion": "El equipo Meins Avenida sufrió una derrota, quedando sin gasolina en el partido contra Hozono Global Jairis, a pesar de los esfuerzos de Raquel Romo.",
-      "fuente": "https://www.lagacetadesalamanca.es/deportes/baloncesto-local/meins-avenida/claves-derrota-meins-avenida-hozono-global-jairis-20261101142258-nt.html",
-      "destacado": false
-    },
-    {
-      "fecha": "2026-11-02",
-      "titulo": "Agresión a un funcionario en la cárcel de Topas",
-      "categoria": "Sucesos",
-      "descripcion": "Un interno de la cárcel de Topas propinó un puñetazo a un funcionario, generando una nueva agresión en el centro penitenciario.",
-      "fuente": "https://www.lagacetadesalamanca.es/sucesos/nueva-agresion-topas-interno-propina-punetazo-funcionario-20261102195220-nt.html",
       "destacado": false
     },
     {
@@ -61,10 +45,26 @@
     },
     {
       "fecha": "2026-11-03",
-      "titulo": "Convocada huelga docente en Salamanca para noviembre",
+      "titulo": "La huelga docente se inicia en Salamanca",
       "categoria": "Educación",
-      "descripcion": "Sindicatos han convocado una huelga docente para el mes de noviembre en Salamanca, afectando a los alumnos de la provincia.",
+      "descripcion": "Sindicatos han convocado una huelga docente para el mes de noviembre en Salamanca, con piquetes informativos en los colegios.",
       "fuente": "https://www.lagacetadesalamanca.es/salamanca/huelga-docente-noviembre-salamanca-pasa-alumnos-20261103141559-nt.html",
+      "destacado": false
+    },
+    {
+      "fecha": "2026-11-04",
+      "titulo": "Meins Avenida logra un triunfo en Eurocup",
+      "categoria": "Deportes",
+      "descripcion": "El equipo Meins Avenida consiguió una importante victoria en la Eurocup, demostrando sus virtudes frente al Ruzomberok.",
+      "fuente": "https://www.lagacetadesalamanca.es/deportes/baloncesto-local/meins-avenida/claves-gran-triunfo-meins-avenida-frente-ruzomberok-20261104202544-nt.html",
+      "destacado": false
+    },
+    {
+      "fecha": "2026-11-04",
+      "titulo": "El paro aumenta en Salamanca durante octubre",
+      "categoria": "Economía",
+      "descripcion": "El mes de octubre ha registrado un aumento del paro y una caída en el número de contratos en Salamanca, afectando al empleo local.",
+      "fuente": "https://www.lagacetadesalamanca.es/salamanca/octubre-golpea-empleo-salamanca-paro-contratos-20261104101517-nt.html",
       "destacado": false
     }
   ]

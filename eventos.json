@@ -1,5 +1,5 @@
 {
-  "generado_en": "2026-11-04T05:45:49+00:00",
+  "generado_en": "2026-11-05T05:46:05+00:00",
   "eventos": [
     {
       "titulo": "Exposición 'Iconografía' de grabados de Van Dyck",
@@ -54,15 +54,6 @@
       "lugar": "Universidad de Salamanca",
       "descripcion": "El Foro de Salamanca reunirá a representantes de universidades, instituciones y empresas para debatir sobre los principales retos internacionales, en el marco del V Centenario de la Escuela de Salamanca. Contará con la participación de dirigentes internacionales, embajadores y expertos en economía, innovación y tecnología.",
       "fuente": "https://www.lagacetadesalamanca.es/salamanca/universidad-reunira-dirigentes-internacionales-debatir-sobre-problemas-20261022174028-nt.html"
-    },
-    {
-      "titulo": "Huelga y concentración de docentes en Salamanca",
-      "categoria": "Educación",
-      "fecha_inicio": "2026-11-04",
-      "fecha_fin": null,
-      "lugar": "Salamanca",
-      "descripcion": "UGT y CCOO convocan una huelga de docentes en Castilla y León y Salamanca para exigir mejoras salariales y laborales, con una concentración frente a la Delegación Territorial de la Junta y en la plaza de los Bandos.",
-      "fuente": "https://www.lagacetadesalamanca.es/salamanca/ugt-ccoo-llaman-huelga-noviembre-dignificacion-ensenanza-20261026172320-nt.html"
     },
     {
       "titulo": "Inauguración de la exposición 'Crónica negra en tierra de Peñaranda'",
@@ -128,6 +119,15 @@
       "fuente": "https://www.lagacetadesalamanca.es/provincia/nueva-edicion-rally-fotografico-solidario-hermandad-jesus-20261103184215-nt.html"
     },
     {
+      "titulo": "Festival de la Candela en Navacarros",
+      "categoria": "Cultura",
+      "fecha_inicio": "2026-11-07",
+      "fecha_fin": null,
+      "lugar": "Navacarros",
+      "descripcion": "La localidad de Navacarros retomará la programación del Festival de la Candela el 7 de noviembre, con una ruta senderista, visita a la iglesia y una charla sobre el patrimonio natural de la comarca.",
+      "fuente": "https://www.lagacetadesalamanca.es/provincia/navacarros-retomara-noviembre-actividad-festival-candela-20261104191930-nt.html"
+    },
+    {
       "titulo": "Carrera contra la Violencia de Género de Salamanca",
       "categoria": "Sociedad",
       "fecha_inicio": "2026-11-08",
@@ -144,6 +144,15 @@
       "lugar": "Cabrerizos",
       "descripcion": "Cabrerizos celebrará una jornada de recogida de residuos en sus entornos naturales, enmarcada en la campaña nacional '1m² contra la basuraleza', con el objetivo de concienciar sobre el impacto de los residuos.",
       "fuente": "https://www.lagacetadesalamanca.es/provincia/cabrerizos-organiza-jornada-limpieza-espacios-naturales-noviembre-20261027202348-nt.html"
+    },
+    {
+      "titulo": "Representación teatral 'Nanay de la China'",
+      "categoria": "Cultura",
+      "fecha_inicio": "2026-11-08",
+      "fecha_fin": null,
+      "lugar": "Teatro Municipal de Alba de Tormes",
+      "descripcion": "El Teatro Municipal de Alba de Tormes acogerá el 8 de noviembre la representación 'Nanay de la China', una propuesta teatral de la compañía Pérez&Fernández dirigida al público familiar que combina interpretación y títeres.",
+      "fuente": "https://www.lagacetadesalamanca.es/provincia/nanay-china-llega-escenario-alba-tormes-20261104174050-nt.html"
     },
     {
       "titulo": "XIV Premios HosteleríaSalamanca.es",
@@ -207,6 +216,24 @@
       "lugar": "teatro La Fábula de Javier Bueno, El Encinar",
       "descripcion": "La obra 'Nadie es inocente', del grupo local Aquí se hace Teatro, se representará el 14 de noviembre en el teatro La Fábula de Javier Bueno, como parte de la XXX Muestra de Teatro Aficionado El Encinar. Esta función pondrá el broche final a la edición y estará acompañada de la entrega de la recaudación solidaria a ALCER Salamanca.",
       "fuente": "https://www.lagacetadesalamanca.es/provincia/encinar-aplaza-ultima-funcion-muestra-teatro-aficionado-20261024215357-nt.html"
+    },
+    {
+      "titulo": "V Encuentro de Iniciativa Transfronteriza para el desarrollo de La Raya",
+      "categoria": "Sociedad",
+      "fecha_inicio": "2026-11-16",
+      "fecha_fin": null,
+      "lugar": "local multiusos del municipio, ubicado junto a la Plaza Mayor, Villar de la Yegua",
+      "descripcion": "Villar de la Yegua acogerá el V Encuentro de Iniciativa Transfronteriza para el desarrollo de La Raya, reuniendo a asociaciones y empresas para debatir sobre el territorio y abordar proyectos que impulsen el emprendimiento y el asentamiento poblacional.",
+      "fuente": "https://www.lagacetadesalamanca.es/provincia/villar-yegua-acogera-encuentro-iniciativa-transfronteriza-desarrollo-20261104140729-nt.html"
+    },
+    {
+      "titulo": "Semana Micológica de Carbajosa de la Sagrada",
+      "categoria": "Cultura",
+      "fecha_inicio": "2026-11-16",
+      "fecha_fin": "2026-11-21",
+      "lugar": "Carbajosa de la Sagrada",
+      "descripcion": "El Ayuntamiento de Carbajosa de la Sagrada organiza una Semana Micológica del 16 al 21 de noviembre, que incluirá una exposición, charlas con un especialista, una degustación de setas y una ruta solidaria a Navasfrías.",
+      "fuente": "https://www.lagacetadesalamanca.es/provincia/carbajosa-organiza-semana-micologica-charla-degustacion-ruta-20261104120036-nt.html"
     },
     {
       "titulo": "Curso de primeros auxilios de Cruz Roja en Carbajosa",
@@ -360,12 +387,12 @@
       "fuente": "https://www.lagacetadesalamanca.es/provincia/penaranda-acogera-jornadas-sobre-sexualidad-diversidad-20261027105117-nt.html"
     },
     {
-      "titulo": "XI Concurso de Decoración Navideña \"Ciudad Rodrigo, la estrella de la Navidad\"",
+      "titulo": "III Mercado Navideño de Ciudad Rodrigo",
       "categoria": "Cultura",
       "fecha_inicio": "2026-12-04",
-      "fecha_fin": "2027-01-06",
-      "lugar": "Ciudad Rodrigo",
-      "descripcion": "Nueva edición del concurso de decoración navideña, abierto a vecinos y comercios, con premios para incentivar la implicación en la ornamentación de barrios y calles.",
+      "fecha_fin": "2026-12-08",
+      "lugar": "plazuela del Buen Alcalde, Ciudad Rodrigo",
+      "descripcion": "El Ayuntamiento de Ciudad Rodrigo organiza el III Mercado Navideño, que se celebrará del 4 al 8 de diciembre en la plazuela del Buen Alcalde, ofreciendo productos de temática navideña y gastronomía local.",
       "fuente": "https://www.lagacetadesalamanca.es/provincia/ciudad-rodrigo-convoca-iii-mercado-concurso-decoracion-20261103173756-nt.html"
     },
     {

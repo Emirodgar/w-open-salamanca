@@ -1,11 +1,11 @@
 {
   "url_base": "https://www.lagacetadesalamanca.es",
-  "generado_en": "2026-11-04T05:45:49+00:00",
+  "generado_en": "2026-11-05T05:46:05+00:00",
   "periodo_cubierto": {
-    "desde": "2026-11-01",
-    "hasta": "2026-11-04"
+    "desde": "2026-11-02",
+    "hasta": "2026-11-05"
   },
-  "total_urls_analizadas": 156,
+  "total_urls_analizadas": 172,
   "secciones_excluidas": [
     "gente-estilo",
     "nacional",
@@ -17,15 +17,15 @@
   "por_seccion": [
     [
       "salamanca",
-      50
+      59
     ],
     [
       "provincia",
-      40
+      47
     ],
     [
       "deportes",
-      39
+      32
     ],
     [
       "sucesos",
@@ -33,29 +33,37 @@
     ],
     [
       "campo",
-      6
+      9
     ],
     [
       "encuestas",
       3
     ],
     [
+      "internacional",
+      2
+    ],
+    [
       "toros",
+      2
+    ],
+    [
+      "salud",
+      1
+    ],
+    [
+      "virales",
       1
     ],
     [
       "castilla-y-leon",
-      1
-    ],
-    [
-      "internacional",
       1
     ]
   ],
   "por_subseccion": [
     [
       "deportes/futbol-local",
-      23
+      15
     ],
     [
       "deportes/baloncesto-local",
@@ -69,143 +77,151 @@
   "por_tipo_contenido": [
     [
       "noticia",
-      137
+      163
     ],
     [
       "galería",
-      16
+      8
     ],
     [
       "directo / en vivo",
-      3
+      1
     ]
   ],
   "heatmap_calendario": [
     {
-      "fecha": "2026-11-01",
-      "total": 41,
-      "salamanca": 6,
-      "provincia": 10,
-      "deportes": 18,
-      "sucesos": 6,
-      "campo": 0,
-      "encuestas": 1,
-      "toros": 0,
-      "castilla-y-leon": 0,
-      "internacional": 0
-    },
-    {
       "fecha": "2026-11-02",
-      "total": 41,
-      "salamanca": 16,
+      "total": 33,
+      "salamanca": 10,
       "provincia": 11,
-      "deportes": 5,
-      "sucesos": 6,
+      "deportes": 4,
+      "sucesos": 5,
       "campo": 0,
       "encuestas": 1,
+      "internacional": 1,
       "toros": 0,
-      "castilla-y-leon": 1,
-      "internacional": 1
+      "salud": 0,
+      "virales": 0,
+      "castilla-y-leon": 1
     },
     {
       "fecha": "2026-11-03",
-      "total": 67,
+      "total": 66,
       "salamanca": 22,
       "provincia": 19,
       "deportes": 16,
-      "sucesos": 3,
+      "sucesos": 2,
       "campo": 6,
       "encuestas": 0,
+      "internacional": 0,
       "toros": 1,
-      "castilla-y-leon": 0,
-      "internacional": 0
+      "salud": 0,
+      "virales": 0,
+      "castilla-y-leon": 0
     },
     {
       "fecha": "2026-11-04",
-      "total": 7,
-      "salamanca": 6,
+      "total": 68,
+      "salamanca": 22,
+      "provincia": 17,
+      "deportes": 12,
+      "sucesos": 8,
+      "campo": 3,
+      "encuestas": 2,
+      "internacional": 1,
+      "toros": 1,
+      "salud": 1,
+      "virales": 1,
+      "castilla-y-leon": 0
+    },
+    {
+      "fecha": "2026-11-05",
+      "total": 5,
+      "salamanca": 5,
       "provincia": 0,
       "deportes": 0,
       "sucesos": 0,
       "campo": 0,
-      "encuestas": 1,
+      "encuestas": 0,
+      "internacional": 0,
       "toros": 0,
-      "castilla-y-leon": 0,
-      "internacional": 0
+      "salud": 0,
+      "virales": 0,
+      "castilla-y-leon": 0
     }
   ],
   "conceptos_destacados": [
     {
-      "concepto": "Fallecimiento de Jesús Miguel",
+      "concepto": "Jesus · Miguel",
       "piezas": 9,
       "seccion_principal": "deportes",
       "desde": "2026-11-03",
       "hasta": "2026-11-03",
       "ejemplos_redactados": [
-        "El mundo del fútbol salmantino llora la pérdida de Jesús Miguel, exjugador de Unionistas, tras un brutal suceso. Se han sucedido las palabras de consuelo y recuerdo hacia el goleador."
+        "El exjugador de Unionistas, Jesús Miguel, ha fallecido tras un brutal golpe, generando un luto en el mundo del fútbol que ha recordado sus últimas palabras como aficionado."
       ]
     },
     {
-      "concepto": "Fallecimiento de Charo Diego",
-      "piezas": 3,
-      "seccion_principal": "salamanca",
-      "desde": "2026-11-01",
-      "hasta": "2026-11-02",
+      "concepto": "Unionistas",
+      "piezas": 8,
+      "seccion_principal": "deportes",
+      "desde": "2026-11-02",
+      "hasta": "2026-11-04",
       "ejemplos_redactados": [
-        "Salamanca se despide con pesar de Charo Diego, quien fuera la primera mujer en presidir la Diputación provincial."
+        "Unionistas ha regresado al trabajo con mayor intensidad, guardando un emotivo minuto de silencio en memoria de Jesús Miguel, exjugador del club."
       ]
     },
     {
-      "concepto": "Actividad de la Universidad de Salamanca",
-      "piezas": 4,
+      "concepto": "Universidad",
+      "piezas": 5,
       "seccion_principal": "salamanca",
       "desde": "2026-11-02",
       "hasta": "2026-11-04",
       "ejemplos_redactados": [
-        "La Universidad de Salamanca saca a la luz tesoros y honra a figuras como Tomás de Mercado. Además, su grado sanitario se posiciona como favorito entre las universidades españolas."
+        "La Universidad de Salamanca ha sacado a la luz tesoros y ha sido reconocida por su grado sanitario, mientras un exalumno se convierte en el primer gobernador latino de California."
       ]
     },
     {
-      "concepto": "Jornada deportiva de Meins Avenida",
+      "concepto": "Huelga",
+      "piezas": 5,
+      "seccion_principal": "salamanca",
+      "desde": "2026-11-03",
+      "hasta": "2026-11-04",
+      "ejemplos_redactados": [
+        "Cuatro profesores en Salamanca han secundado la huelga docente, con piquetes informativos en las puertas de los colegios."
+      ]
+    },
+    {
+      "concepto": "Ciudad · Rodrigo",
       "piezas": 4,
+      "seccion_principal": "provincia",
+      "desde": "2026-11-03",
+      "hasta": "2026-11-04",
+      "ejemplos_redactados": [
+        "Los maestros de Ciudad Rodrigo han secundado la huelga docente, mientras la ciudad convoca su III Mercado y Concurso de Decoración."
+      ]
+    },
+    {
+      "concepto": "Bejar",
+      "piezas": 4,
+      "seccion_principal": "provincia",
+      "desde": "2026-11-02",
+      "hasta": "2026-11-04",
+      "ejemplos_redactados": [
+        "Béjar ha recibido una donación de un retablo y ha puesto en funcionamiento el servicio externalizado de autobús municipal."
+      ]
+    },
+    {
+      "concepto": "Meins · Avenida",
+      "piezas": 3,
       "seccion_principal": "deportes",
-      "desde": "2026-11-01",
-      "hasta": "2026-11-01",
+      "desde": "2026-11-04",
+      "hasta": "2026-11-04",
       "ejemplos_redactados": [
-        "El equipo Meins Avenida sufrió una derrota, quedando sin gasolina en un encuentro clave, a pesar de los esfuerzos de Raquel Romo."
-      ]
-    },
-    {
-      "concepto": "Novedades en Ciudad Rodrigo",
-      "piezas": 4,
-      "seccion_principal": "provincia",
-      "desde": "2026-11-01",
-      "hasta": "2026-11-03",
-      "ejemplos_redactados": [
-        "Ciudad Rodrigo ha convocado su III Mercado y Concurso de Decoración, mientras el PP ha mantenido encuentros con alcaldes de la comarca."
-      ]
-    },
-    {
-      "concepto": "Actividad municipal en Béjar",
-      "piezas": 4,
-      "seccion_principal": "provincia",
-      "desde": "2026-11-01",
-      "hasta": "2026-11-03",
-      "ejemplos_redactados": [
-        "El Ayuntamiento de Béjar tramita la compra de un dron para facilitar inspecciones y ha puesto en funcionamiento un servicio externalizado de autobús municipal."
-      ]
-    },
-    {
-      "concepto": "Celebraciones del Día de Todos los Santos",
-      "piezas": 4,
-      "seccion_principal": "provincia",
-      "desde": "2026-11-01",
-      "hasta": "2026-11-02",
-      "ejemplos_redactados": [
-        "Lagunilla y Alba de Tormes, entre otros municipios, disfrutaron de la tradición y las celebraciones del Día de Todos los Santos."
+        "Meins Avenida ha logrado un gran triunfo frente a Ruzomberok en la Eurocup, superando el cansancio y luciendo sus virtudes."
       ]
     }
   ],
-  "resumen_borrador": "Se han publicado 156 noticias entre el 2026-11-01 y el 2026-11-04. La actividad se ha concentrado sobre todo en salamanca (50 piezas), provincia (40 piezas), deportes (39 piezas).\n\nLos conceptos con más piezas relacionadas son: Jesus · Miguel; Ciudad · Rodrigo; Meins · Avenida; Horas. Revisa 'evidencia' de cada concepto para redactar el resumen final.",
-  "resumen": "La actualidad salmantina de los primeros días de noviembre ha estado marcada por el luto y el recuerdo. El mundo del fútbol local se ha conmocionado con el fallecimiento de Jesús Miguel, exjugador de Unionistas, tras un trágico suceso. Las muestras de condolencia y homenaje se han sucedido en todo el ámbito deportivo. Asimismo, la provincia ha despedido a Charo Diego, figura política relevante y primera mujer en presidir la Diputación de Salamanca.\n\nEn el plano social, el puente de Todos los Santos ha registrado una alta ocupación turística, reflejando el atractivo de la capital y su provincia. Por otro lado, la Universidad de Salamanca ha sido noticia por la puesta en valor de sus tesoros y por el reconocimiento de su grado sanitario como uno de los favoritos a nivel nacional. En el ámbito deportivo, el Meins Avenida ha tenido una jornada complicada con una derrota.\n\nLa provincia también ha sido escenario de diversas noticias, desde la convocatoria de un mercado y concurso de decoración en Ciudad Rodrigo hasta la tramitación de la compra de un dron por parte del Ayuntamiento de Béjar. La sanidad ha estado en el foco con la limitación de horas de guardia para residentes y la educación con la convocatoria de una huelga docente para el mes de noviembre."
+  "resumen_borrador": "Se han publicado 172 noticias entre el 2026-11-02 y el 2026-11-05. La actividad se ha concentrado sobre todo en salamanca (59 piezas), provincia (47 piezas), deportes (32 piezas).\n\nLos conceptos con más piezas relacionadas son: Jesus · Miguel; Unionistas; Universidad; Huelga. Revisa 'evidencia' de cada concepto para redactar el resumen final.",
+  "resumen": "El inicio de noviembre en Salamanca ha estado marcado por el luto en el ámbito deportivo y político. El exjugador de Unionistas, Jesús Miguel, ha fallecido tras un trágico suceso, generando numerosas muestras de condolencia en el mundo del fútbol local y nacional. Asimismo, la provincia ha despedido a Charo Diego, la primera mujer en presidir la Diputación de Salamanca.\n\nEn el ámbito educativo, la Universidad de Salamanca ha sido noticia por el reconocimiento de su grado sanitario como uno de los favoritos a nivel nacional, así como por la búsqueda de nuevas alianzas internacionales. Sin embargo, la educación también ha sido escenario de conflicto con el inicio de una huelga docente en la provincia, que ha llevado a piquetes informativos en los colegios.\n\nOtros temas destacados incluyen la victoria del equipo Meins Avenida en la Eurocup, el aumento del paro en Salamanca durante el mes de octubre, y la caída de los delitos de violencia machista, acompañada de un incremento en las órdenes de protección. La Consejería de Sanidad, por su parte, ha limitado las horas de guardia de los residentes, al tiempo que ha mejorado sus retribuciones."
 }
