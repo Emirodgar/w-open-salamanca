@@ -1,7 +1,7 @@
 {
-  "generado_en": "2026-11-04T19:45:14.046Z",
+  "generado_en": "2026-11-05T00:54:10.262Z",
   "dias_ventana": 20,
-  "total": 3505,
+  "total": 3522,
   "medios": [
     "Tribuna Salamanca",
     "Salamanca24Horas",
@@ -10,11 +10,158 @@
   ],
   "noticias": [
     {
+      "url": "https://www.tribunasalamanca.com/noticias/465315/el-betis-cae-con-las-botas-puestas-en-dortmund",
+      "titulo": "El Betis cae con las botas puestas en Dortmund",
+      "medio": "Tribuna Salamanca",
+      "fecha": "2026-11-04",
+      "fecha_hora": "2026-11-04T22:29:35.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/provincia/villamayor-adapta-ordenanza-basura-pasara-trimestre-partir-20261104231915-nt.html",
+      "titulo": "Villamayor adapta la ordenanza de basura que pasará de 18 € al trimestre a 25 € a partir de 2027",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-11-04",
+      "fecha_hora": "2026-11-04T22:19:24.000Z"
+    },
+    {
+      "url": "https://www.tribunasalamanca.com/noticias/465314/carlos-cuerpo-se-reune-con-puente-y-fija-como-prioridad-recuperar-la-confianza-en-la-alta-velocidad",
+      "titulo": "Carlos Cuerpo se reúne con Puente y fija como prioridad recuperar la confianza en la alta velocidad",
+      "medio": "Tribuna Salamanca",
+      "fecha": "2026-11-04",
+      "fecha_hora": "2026-11-04T22:12:50.000Z"
+    },
+    {
+      "url": "https://www.salamanca24horas.com/local/ayuntamiento-salamanca-da-bienvenida-rectores-participantes-salamanca-forum-2026",
+      "titulo": "El Ayuntamiento de Salamanca da la bienvenida a los rectores participantes en el Salamanca Forum 2026",
+      "medio": "Salamanca24Horas",
+      "fecha": "2026-11-04",
+      "fecha_hora": "2026-11-04T22:09:15.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/sucesos/herido-motorista-tras-colision-alcance-turismo-avenida-20261104223707-nt.html",
+      "titulo": "Herido un motorista tras una colisión por alcance contra un turismo en la avenida Portugal",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-11-04",
+      "fecha_hora": "2026-11-04T21:37:21.000Z"
+    },
+    {
+      "url": "https://www.tribunasalamanca.com/noticias/465311/el-presidente-de-adif-toma-la-misma-salida-que-puente-dimite-tras-reunirse-con-cuerpo",
+      "titulo": "El presidente de Adif toma la misma salida que Puente: dimite tras reunirse con Cuerpo",
+      "medio": "Tribuna Salamanca",
+      "fecha": "2026-11-04",
+      "fecha_hora": "2026-11-04T21:07:27.000Z"
+    },
+    {
+      "url": "https://www.salamancahoy.es/salamanca/provincia/fincas-pueblo-salamanca-vivienda-buscan-herederos-quedara-20261104214609-nt.html",
+      "titulo": "Las 14 fincas de un pueblo de Salamanca y una vivienda que buscan herederos o se las quedará el Estado",
+      "medio": "Salamancahoy",
+      "fecha": "2026-11-04",
+      "fecha_hora": "2026-11-04T20:53:26.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/provincia/guijuelo-entrega-premios-concurso-saborea-20261104215212-nt.html",
+      "titulo": "Guijuelo entrega los premios del concurso «Saborea»",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-11-04",
+      "fecha_hora": "2026-11-04T20:52:12.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/provincia/inversion-empresa-castellanos-moriscos-permitira-trasladar-campo-20261104213846-nt.html",
+      "titulo": "Una inversión de 19 M€ de una empresa en Castellanos de Moriscos permitirá trasladar el campo de fútbol",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-11-04",
+      "fecha_hora": "2026-11-04T20:39:12.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/salamanca/noticias-importantes-salamanca-hoy-miercoles-noviembre-20261104213542-nt.html",
+      "titulo": "Las noticias más importantes en Salamanca hoy miércoles 4 de noviembre",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-11-04",
+      "fecha_hora": "2026-11-04T20:37:47.000Z"
+    },
+    {
+      "url": "https://www.salamanca24horas.com/provincia/ultimo-aviso-posibles-herederos-luis-cuenya-estado-podria-quedarse-propiedades-salamanca",
+      "titulo": "Último aviso para los posibles herederos de Luis Cuenya: el Estado podría quedarse con sus propiedades en Salamanca",
+      "medio": "Salamanca24Horas",
+      "fecha": "2026-11-04",
+      "fecha_hora": "2026-11-04T20:33:20.000Z"
+    },
+    {
+      "url": "https://www.salamancahoy.es/salamanca/noticias-imprescindibles-salamanca-miercoles-noviembre-20261104212400-nt.html",
+      "titulo": "Las noticias imprescindibles de Salamanca este miércoles 4 de noviembre",
+      "medio": "Salamancahoy",
+      "fecha": "2026-11-04",
+      "fecha_hora": "2026-11-04T20:24:00.000Z"
+    },
+    {
+      "url": "https://www.tribunasalamanca.com/noticias/465309/el-madrid-sale-vivo-de-atenas-tras-caminar-sobre-el-alambre",
+      "titulo": "El Madrid sale vivo de Atenas tras caminar sobre el alambre",
+      "medio": "Tribuna Salamanca",
+      "fecha": "2026-11-04",
+      "fecha_hora": "2026-11-04T20:15:31.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/salud/roberto-brasero-anuncia-primeras-nevadas-alcanzar-5oc-20261104210801-nt.html",
+      "titulo": "Roberto Brasero anuncia las primeras nevadas: «Se podrían alcanzar los -5ºC»",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-11-04",
+      "fecha_hora": "2026-11-04T20:08:29.000Z"
+    },
+    {
+      "url": "https://www.salamanca24horas.com/local/salamanca-recibira-euro-80-millones-destinados-recuperar-monumentos",
+      "titulo": "Salamanca no recibirá ni un euro de los 80 millones destinados a recuperar monumentos",
+      "medio": "Salamanca24Horas",
+      "fecha": "2026-11-04",
+      "fecha_hora": "2026-11-04T19:58:08.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/provincia/destino-bienes-herederos-20261104204859-nt.html",
+      "titulo": "Un vecino de San Felices deja 14 fincas y una casa sin herederos",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-11-04",
+      "fecha_hora": "2026-11-04T19:57:44.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/salamanca/salamanca-sienta-bases-impulsar-alianza-universitaria-internacional-20261104204510-nt.html",
+      "titulo": "Salamanca sienta las bases para impulsar una alianza universitaria internacional",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-11-04",
+      "fecha_hora": "2026-11-04T19:54:53.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/salamanca/erasmus-paises-tres-continentes-20261104205024-nt.html",
+      "titulo": "¿Un Erasmus entre 11 países y tres continentes?",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-11-04",
+      "fecha_hora": "2026-11-04T19:50:25.000Z"
+    },
+    {
+      "url": "https://www.salamancahoy.es/salamanca/universidad/usal-coordinara-red-internacional-universidades-primer-compromiso-20261104204715-nt.html",
+      "titulo": "La USAL coordinará una red internacional de universidades como primer compromiso del Salamanca Forum 2026",
+      "medio": "Salamancahoy",
+      "fecha": "2026-11-04",
+      "fecha_hora": "2026-11-04T19:47:16.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/deportes/baloncesto-local/meins-avenida/raquel-romo-podido-correr-jugar-baloncesto-20261104204003-nt.html",
+      "titulo": "Raquel Romo: «Hemos podido correr y jugar nuestro baloncesto»",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-11-04",
+      "fecha_hora": "2026-11-04T19:40:03.000Z"
+    },
+    {
       "url": "https://www.tribunasalamanca.com/noticias/465307/raquel-romo-hemos-estado-muy-serias-y-hemos-crecido-con-el-partido",
       "titulo": "Raquel Romo: \"Hemos estado muy serias y hemos crecido con el partido\"",
       "medio": "Tribuna Salamanca",
       "fecha": "2026-11-04",
       "fecha_hora": "2026-11-04T19:31:03.000Z"
+    },
+    {
+      "url": "https://www.salamancahoy.es/deportes/baloncesto/meins-avenida/romo-tras-ganar-eslovaquia-contenta-evolucion-partido-20261104202955-nt.html",
+      "titulo": "Romo, tras ganar en Eslovaquia: «Estoy muy contenta de la evolución del partido, de cómo empezó y cómo acabó»",
+      "medio": "Salamancahoy",
+      "fecha": "2026-11-04",
+      "fecha_hora": "2026-11-04T19:29:56.000Z"
     },
     {
       "url": "https://www.lagacetadesalamanca.es/deportes/baloncesto-local/meins-avenida/claves-gran-triunfo-meins-avenida-frente-ruzomberok-20261104202544-nt.html",
@@ -57,6 +204,13 @@
       "medio": "Salamanca24Horas",
       "fecha": "2026-11-04",
       "fecha_hora": "2026-11-04T19:13:53.000Z"
+    },
+    {
+      "url": "https://www.salamancahoy.es/salamanca/ciudad/imagenes-manifestacion-educacion-publica-salamanca-20261104200213-ga.html",
+      "titulo": "En imágenes, la manifestación por la educación pública en Salamanca",
+      "medio": "Salamancahoy",
+      "fecha": "2026-11-04",
+      "fecha_hora": "2026-11-04T19:02:13.000Z"
     },
     {
       "url": "https://www.tribunasalamanca.com/noticias/465301/meins-avenida-vence-y-convence-en-tierras-eslovacas",
@@ -197,6 +351,13 @@
       "medio": "Salamancahoy",
       "fecha": "2026-11-04",
       "fecha_hora": "2026-11-04T17:25:10.000Z"
+    },
+    {
+      "url": "https://www.tribunasalamanca.com/noticias/465292/van-dyck-culmina-la-retirada-progresiva-de-sus-terrazas-y-completa-la-recuperacion-de-43-aparcamientos",
+      "titulo": "Van Dyck culmina la retirada progresiva de sus terrazas y completa la recuperación de 43 aparcamientos",
+      "medio": "Tribuna Salamanca",
+      "fecha": "2026-11-04",
+      "fecha_hora": "2026-11-04T17:24:27.000Z"
     },
     {
       "url": "https://www.salamancahoy.es/salamanca/provincia/herido-motorista-tras-accidente-coche-rotonda-santa-20261104181853-nt.html",
@@ -617,6 +778,13 @@
       "medio": "Tribuna Salamanca",
       "fecha": "2026-11-04",
       "fecha_hora": "2026-11-04T11:39:49.000Z"
+    },
+    {
+      "url": "https://www.tribunasalamanca.com/noticias/465232/este-tren-ya-paso",
+      "titulo": "Este tren ya pasó...",
+      "medio": "Tribuna Salamanca",
+      "fecha": "2026-11-04",
+      "fecha_hora": "2026-11-04T11:34:15.000Z"
     },
     {
       "url": "https://www.tribunasalamanca.com/noticias/465231/esta-navidad-trapa-reinventa-el-polvoron-de-toda-la-vida-con-una-irresistible-version-de-chocolate",
@@ -24466,55 +24634,6 @@
       "medio": "La Gaceta de Salamanca",
       "fecha": "2026-10-16",
       "fecha_hora": "2026-10-16T03:00:00.000Z"
-    },
-    {
-      "url": "https://www.lagacetadesalamanca.es/nacional/terremoto-magnitud-deja-sentir-ponferrada-20261015232641-nt.html",
-      "titulo": "Un terremoto de magnitud 4,0 se deja sentir en Ponferrada",
-      "medio": "La Gaceta de Salamanca",
-      "fecha": "2026-10-15",
-      "fecha_hora": "2026-10-15T21:53:51.000Z"
-    },
-    {
-      "url": "https://www.tribunasalamanca.com/noticias/462803/silvia-dominguez-en-su-entrada-al-hall-of-fame-avenida-ha-sido-el-club-de-mi-vida",
-      "titulo": "Silvia Domínguez en su entrada al Hall of Fame: \"Avenida ha sido el club de mi vida\"",
-      "medio": "Tribuna Salamanca",
-      "fecha": "2026-10-15",
-      "fecha_hora": "2026-10-15T20:44:44.000Z"
-    },
-    {
-      "url": "https://www.salamanca24horas.com/deportes/cb-avenida-entra-salon-fama-baloncesto-espanol-comparte-reconocimiento-silvia-dominguez",
-      "titulo": "El CB Avenida entra en el Salón de la Fama del baloncesto español y comparte reconocimiento con Silvia Domínguez",
-      "medio": "Salamanca24Horas",
-      "fecha": "2026-10-15",
-      "fecha_hora": "2026-10-15T20:29:09.000Z"
-    },
-    {
-      "url": "https://www.salamancahoy.es/deportes/baloncesto/meins-avenida/avenida-salamanca-entra-historia-inclusion-hall-fame-20261015215917-nt.html",
-      "titulo": "El CB Avenida de Salamanca entra en la historia con su inclusión en el Hall of Fame del baloncesto español",
-      "medio": "Salamancahoy",
-      "fecha": "2026-10-15",
-      "fecha_hora": "2026-10-15T20:25:58.000Z"
-    },
-    {
-      "url": "https://www.tribunasalamanca.com/noticias/462802/jorge-recio-emocionado-por-la-entrada-de-cb-avenida-en-el-hall-of-fame-es-importante-quedar-para-la-historia",
-      "titulo": "Jorge Recio, emocionado por la entrada de CB Avenida en el Hall of Fame: \"Es importante quedar para la historia\"",
-      "medio": "Tribuna Salamanca",
-      "fecha": "2026-10-15",
-      "fecha_hora": "2026-10-15T20:14:15.000Z"
-    },
-    {
-      "url": "https://www.lagacetadesalamanca.es/salamanca/startup-ole-busca-atraer-empresas-salmantinas-tras-20261015214740-nt.html",
-      "titulo": "Startup Olé busca atraer a más empresas salmantinas tras una nueva edición de récord",
-      "medio": "La Gaceta de Salamanca",
-      "fecha": "2026-10-15",
-      "fecha_hora": "2026-10-15T19:47:41.000Z"
-    },
-    {
-      "url": "https://www.salamancahoy.es/salamanca/noticias-imprescindibles-salamanca-jueves-octubre-20261015212801-nt.html",
-      "titulo": "Las noticias imprescindibles de Salamanca este jueves 15 de octubre",
-      "medio": "Salamancahoy",
-      "fecha": "2026-10-15",
-      "fecha_hora": "2026-10-15T19:28:01.000Z"
     },
     {
       "url": "https://www.salamancahoy.es/salamanca/ciudad/ceoe-cepyme-salamanca-acuerda-expulsion-asociacion-hosteleria-20261015211152-nt.html",
