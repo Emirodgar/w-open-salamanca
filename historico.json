@@ -416,6 +416,24 @@
         "Sí, es importante mantener la normalidad y el ánimo": 1
       },
       "total_votos": 1
+    },
+    {
+      "id": "mariquelo-subida-2026",
+      "pregunta": "Ángel Rufino, 'El Mariquelo', realizará su cuadragésima subida a la Catedral con un marcado carácter solidario. ¿Considera que esta tradición mantiene su relevancia y valor para la ciudad de Salamanca?",
+      "opciones": [
+        "Sí, es un símbolo cultural y solidario importante.",
+        "No, ha perdido parte de su significado original.",
+        "Es un evento más, sin gran impacto actual.",
+        "No tengo suficiente información."
+      ],
+      "basado_en": "eventos.json",
+      "fecha_creacion": "2026-10-31",
+      "fecha_archivado": "2026-11-06",
+      "resultados": {
+        "Sí, es un símbolo cultural y solidario importante.": 1,
+        "No, ha perdido parte de su significado original.": 1
+      },
+      "total_votos": 2
     }
   ]
 }

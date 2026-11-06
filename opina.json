@@ -544,18 +544,6 @@
       "fecha_creacion": "2026-10-31"
     },
     {
-      "id": "mariquelo-subida-2026",
-      "pregunta": "Ángel Rufino, 'El Mariquelo', realizará su cuadragésima subida a la Catedral con un marcado carácter solidario. ¿Considera que esta tradición mantiene su relevancia y valor para la ciudad de Salamanca?",
-      "opciones": [
-        "Sí, es un símbolo cultural y solidario importante.",
-        "No, ha perdido parte de su significado original.",
-        "Es un evento más, sin gran impacto actual.",
-        "No tengo suficiente información."
-      ],
-      "basado_en": "eventos.json",
-      "fecha_creacion": "2026-10-31"
-    },
-    {
       "id": "seguridad-ferroviaria-salamanca-2026",
       "pregunta": "Tras el grave accidente ferroviario de Urda, que ha afectado a salmantinos, y la atención centrada en la seguridad de las infraestructuras, ¿cree que se debería invertir más en la mejora y mantenimiento de la red ferroviaria en la provincia de Salamanca?",
       "opciones": [
@@ -674,6 +662,30 @@
       ],
       "basado_en": "eventos.json",
       "fecha_creacion": "2026-11-05"
+    },
+    {
+      "id": "fabrica-meins-salamanca-2026",
+      "pregunta": "Ante el anuncio de una nueva fábrica de Meins en Salamanca, ¿cree que esta inversión contribuirá significativamente a la creación de empleo y al desarrollo económico de la provincia?",
+      "opciones": [
+        "Sí, es un gran impulso para el empleo local",
+        "No, el impacto será limitado",
+        "Depende de la magnitud de la inversión y los puestos creados",
+        "No tengo suficiente información"
+      ],
+      "basado_en": "actualidad.json",
+      "fecha_creacion": "2026-11-06"
+    },
+    {
+      "id": "ordenanza-terrazas-salamanca-2026",
+      "pregunta": "Tras la aprobación de la nueva ordenanza de terrazas en la capital, ¿cree que esta medida beneficiará la convivencia ciudadana y la actividad hostelera en Salamanca?",
+      "opciones": [
+        "Sí, mejorará la convivencia y ordenará el espacio",
+        "No, perjudicará a la hostelería y su actividad",
+        "Es un equilibrio necesario, pero con puntos a mejorar",
+        "No tengo suficiente información"
+      ],
+      "basado_en": "actualidad.json",
+      "fecha_creacion": "2026-11-06"
     }
   ]
 }

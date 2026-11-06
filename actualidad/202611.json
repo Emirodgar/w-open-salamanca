@@ -1,7 +1,7 @@
 {
   "mes": "2026-11",
   "titulo_mes": "Noviembre 2026",
-  "resumen_mes": "Noviembre ha comenzado con el triste fallecimiento de Jesús Miguel, exjugador de Unionistas, y de Charo Diego, primera mujer presidenta de la Diputación. El puente de Todos los Santos ha registrado una alta ocupación, mientras la Universidad y el ámbito sanitario han generado noticias relevantes. Además, el mes ha visto el inicio de una huelga docente y un repunte del paro.",
+  "resumen_mes": "Noviembre ha estado marcado por el triste fallecimiento de Jesús Miguel, exjugador de Unionistas, y de Charo Diego, primera mujer presidenta de la Diputación. El mes ha visto el inicio de una huelga docente y un repunte del paro, mientras que la Universidad de Salamanca ha protagonizado una declaración pionera. Destacan también la aprobación de la nueva ordenanza de terrazas y el anuncio de una nueva fábrica de Meins.",
   "hitos": [
     {
       "fecha": "2026-11-01",
@@ -12,36 +12,12 @@
       "destacado": false
     },
     {
-      "fecha": "2026-11-01",
-      "titulo": "El puente de Todos los Santos registra alta ocupación",
-      "categoria": "Sociedad",
-      "descripcion": "El puente festivo de Todos los Santos ha rozado el lleno en Salamanca, manteniendo un buen tirón turístico durante los tres días.",
-      "fuente": "https://www.lagacetadesalamanca.es/salamanca/puente-roza-lleno-sabado-mantiene-tiron-tres-20261101060000-nt.html",
-      "destacado": false
-    },
-    {
-      "fecha": "2026-11-02",
-      "titulo": "El grado sanitario de la Universidad de Salamanca es favorito en España",
-      "categoria": "Educación",
-      "descripcion": "El grado sanitario impartido por la Universidad de Salamanca se ha posicionado como uno de los favoritos entre las universidades españolas.",
-      "fuente": "https://www.lagacetadesalamanca.es/salamanca/grado-sanitario-universidad-salamanca-favorito-universidades-espanolas-20261102191330-nt.html",
-      "destacado": false
-    },
-    {
       "fecha": "2026-11-03",
       "titulo": "Fallece Jesús Miguel, exjugador de Unionistas, tras un brutal suceso",
       "categoria": "Deportes",
       "descripcion": "El mundo del fútbol local lamenta la pérdida de Jesús Miguel, quien fuera delantero de Unionistas, tras un trágico incidente. Se han sucedido las muestras de condolencia.",
       "fuente": "https://www.lagacetadesalamanca.es/deportes/futbol-local/unionistas/fallece-jesus-miguel-exjugador-unionistas-tras-brutal-20261103093621-nt.html",
       "destacado": true
-    },
-    {
-      "fecha": "2026-11-03",
-      "titulo": "Sanidad limita las horas de guardia de los residentes",
-      "categoria": "Sociedad",
-      "descripcion": "La Consejería de Sanidad ha establecido una limitación en las horas de guardia para los médicos residentes, al tiempo que aumenta sus retribuciones.",
-      "fuente": "https://www.lagacetadesalamanca.es/salamanca/sanidad-limita-horas-guardias-residentes-aumenta-retribuciones-20261103185444-nt.html",
-      "destacado": false
     },
     {
       "fecha": "2026-11-03",
@@ -65,6 +41,30 @@
       "categoria": "Economía",
       "descripcion": "El mes de octubre ha registrado un aumento del paro y una caída en el número de contratos en Salamanca, afectando al empleo local.",
       "fuente": "https://www.lagacetadesalamanca.es/salamanca/octubre-golpea-empleo-salamanca-paro-contratos-20261104101517-nt.html",
+      "destacado": false
+    },
+    {
+      "fecha": "2026-11-04",
+      "titulo": "Meins construirá una nueva fábrica en Salamanca",
+      "categoria": "Economía",
+      "descripcion": "La empresa Meins ha anunciado la construcción de una nueva fábrica en Salamanca, siendo la primera en instalarse en la zona designada.",
+      "fuente": "https://www.lagacetadesalamanca.es/salamanca/meins-construira-nueva-fabrica-primera-empresa-instalarse-20261104173330-nt.html",
+      "destacado": false
+    },
+    {
+      "fecha": "2026-11-05",
+      "titulo": "Declaración pionera de la USAL con Ministerio de Juventud e Infancia",
+      "categoria": "Sociedad",
+      "descripcion": "La Universidad de Salamanca ha emitido una declaración pionera junto al Ministerio de Juventud e Infancia para la protección de la infancia.",
+      "fuente": "https://www.lagacetadesalamanca.es/salamanca/declaracion-pionera-universidad-ministerio-juventud-infancia-proteger-20261105184358-nt.html",
+      "destacado": false
+    },
+    {
+      "fecha": "2026-11-05",
+      "titulo": "Aprobada nueva ordenanza de terrazas en Salamanca",
+      "categoria": "Urbanismo",
+      "descripcion": "Se ha dado luz verde a la nueva ordenanza de terrazas en Salamanca, a pesar de las críticas relacionadas con el ruido.",
+      "fuente": "https://www.lagacetadesalamanca.es/salamanca/luz-verde-nueva-ordenanza-terrazas-criticas-ruido-20261105112647-nt.html",
       "destacado": false
     }
   ]
