@@ -1,11 +1,11 @@
 {
   "url_base": "https://www.lagacetadesalamanca.es",
-  "generado_en": "2026-11-06T05:46:04+00:00",
+  "generado_en": "2026-11-07T05:45:33+00:00",
   "periodo_cubierto": {
-    "desde": "2026-11-03",
-    "hasta": "2026-11-06"
+    "desde": "2026-11-04",
+    "hasta": "2026-11-07"
   },
-  "total_urls_analizadas": 184,
+  "total_urls_analizadas": 193,
   "secciones_excluidas": [
     "gente-estilo",
     "nacional",
@@ -17,35 +17,43 @@
   "por_seccion": [
     [
       "salamanca",
-      63
+      71
     ],
     [
       "provincia",
-      49
+      51
     ],
     [
       "deportes",
-      37
+      36
     ],
     [
       "sucesos",
-      18
+      21
     ],
     [
       "campo",
-      7
+      4
     ],
     [
       "encuestas",
       3
     ],
     [
-      "toros",
-      3
-    ],
-    [
       "virales",
       2
+    ],
+    [
+      "especiales",
+      1
+    ],
+    [
+      "fundacion-gaceta",
+      1
+    ],
+    [
+      "toros",
+      1
     ],
     [
       "salud",
@@ -59,175 +67,195 @@
   "por_subseccion": [
     [
       "deportes/futbol-local",
-      18
+      16
     ],
     [
       "deportes/baloncesto-local",
-      10
-    ],
-    [
-      "deportes/deporte-base",
-      1
+      12
     ],
     [
       "deportes/carreras-populares",
+      2
+    ],
+    [
+      "especiales/concurso-dibujo-infantil",
+      1
+    ],
+    [
+      "deportes/deporte-base",
       1
     ]
   ],
   "por_tipo_contenido": [
     [
       "noticia",
-      177
+      184
     ],
     [
       "galería",
-      6
+      7
     ],
     [
       "directo / en vivo",
-      1
+      2
     ]
   ],
   "heatmap_calendario": [
     {
-      "fecha": "2026-11-03",
-      "total": 50,
-      "salamanca": 13,
-      "provincia": 16,
-      "deportes": 15,
-      "sucesos": 2,
-      "campo": 3,
-      "encuestas": 0,
-      "toros": 1,
-      "virales": 0,
-      "salud": 0,
-      "internacional": 0
-    },
-    {
       "fecha": "2026-11-04",
-      "total": 68,
-      "salamanca": 22,
-      "provincia": 17,
-      "deportes": 12,
-      "sucesos": 8,
-      "campo": 3,
-      "encuestas": 2,
-      "toros": 1,
+      "total": 51,
+      "salamanca": 14,
+      "provincia": 16,
+      "deportes": 10,
+      "sucesos": 5,
+      "campo": 2,
+      "encuestas": 1,
       "virales": 1,
+      "especiales": 0,
+      "fundacion-gaceta": 0,
+      "toros": 0,
       "salud": 1,
       "internacional": 1
     },
     {
       "fecha": "2026-11-05",
-      "total": 63,
-      "salamanca": 25,
+      "total": 60,
+      "salamanca": 22,
       "provincia": 16,
       "deportes": 10,
       "sucesos": 8,
       "campo": 1,
       "encuestas": 1,
-      "toros": 1,
       "virales": 1,
+      "especiales": 0,
+      "fundacion-gaceta": 0,
+      "toros": 1,
       "salud": 0,
       "internacional": 0
     },
     {
       "fecha": "2026-11-06",
-      "total": 3,
-      "salamanca": 3,
-      "provincia": 0,
+      "total": 75,
+      "salamanca": 29,
+      "provincia": 18,
+      "deportes": 16,
+      "sucesos": 8,
+      "campo": 1,
+      "encuestas": 1,
+      "virales": 0,
+      "especiales": 1,
+      "fundacion-gaceta": 1,
+      "toros": 0,
+      "salud": 0,
+      "internacional": 0
+    },
+    {
+      "fecha": "2026-11-07",
+      "total": 7,
+      "salamanca": 6,
+      "provincia": 1,
       "deportes": 0,
       "sucesos": 0,
       "campo": 0,
       "encuestas": 0,
-      "toros": 0,
       "virales": 0,
+      "especiales": 0,
+      "fundacion-gaceta": 0,
+      "toros": 0,
       "salud": 0,
       "internacional": 0
     }
   ],
   "conceptos_destacados": [
     {
-      "concepto": "Fallecimiento de Jesús Miguel",
-      "piezas": 10,
-      "seccion_principal": "deportes",
-      "desde": "2026-11-03",
-      "hasta": "2026-11-05",
-      "ejemplos_redactados": [
-        "El mundo del fútbol salmantino lamenta el fallecimiento de Jesús Miguel, exjugador de Unionistas, tras un trágico suceso. El club ha preparado un homenaje en su memoria."
-      ]
-    },
-    {
-      "concepto": "Huelga docente en Salamanca",
-      "piezas": 5,
+      "concepto": "Paso",
+      "piezas": 6,
       "seccion_principal": "salamanca",
-      "desde": "2026-11-03",
-      "hasta": "2026-11-04",
+      "desde": "2026-11-05",
+      "hasta": "2026-11-07",
       "ejemplos_redactados": [
-        "Los colegios de Salamanca y Ciudad Rodrigo han sido escenario de piquetes informativos con motivo de la huelga docente. Cuatro profesores en Salamanca han secundado la convocatoria."
+        "La seguridad en los pasos de peatones ha sido objeto de debate, planteándose la instalación de semáforos ámbar.",
+        "Se ha abordado la naturaleza y exclusividad del paso por el centro de Salamanca."
       ]
     },
     {
-      "concepto": "Éxito de Meins Avenida",
-      "piezas": 3,
-      "seccion_principal": "deportes",
-      "desde": "2026-11-03",
-      "hasta": "2026-11-05",
-      "ejemplos_redactados": [
-        "El equipo Meins Avenida ha certificado un nuevo triunfo en la Eurocup, destacando la actuación de jugadoras como Raquel Romo. Salamanca celebra el ingreso del equipo en el Hall of Fame."
-      ]
-    },
-    {
-      "concepto": "Inversiones en Ciudad Rodrigo",
+      "concepto": "Meins Avenida",
       "piezas": 5,
-      "seccion_principal": "provincia",
-      "desde": "2026-11-03",
-      "hasta": "2026-11-05",
+      "seccion_principal": "deportes",
+      "desde": "2026-11-04",
+      "hasta": "2026-11-06",
       "ejemplos_redactados": [
-        "La Diócesis de Ciudad Rodrigo invertirá 300.000 euros en reparaciones. La localidad también ha convocado el III Mercado y Concurso de Decoración."
+        "El equipo Meins Avenida ha buscado fuerzas ante el Euskotren en un encuentro crucial.",
+        "Se ha seguido en directo el resultado del partido entre Meins Avenida y Mirai Euskotren."
       ]
     },
     {
-      "concepto": "Novedades en la Universidad de Salamanca",
-      "piezas": 4,
-      "seccion_principal": "salamanca",
-      "desde": "2026-11-03",
-      "hasta": "2026-11-05",
-      "ejemplos_redactados": [
-        "La Universidad de Salamanca ha realizado una declaración pionera con el Ministerio de Juventud e Infancia para proteger a la infancia. Un exalumno ha sido nombrado el primer gobernador latino de California."
-      ]
-    },
-    {
-      "concepto": "Debate sobre el Puente de Diciembre",
+      "concepto": "Puente",
       "piezas": 5,
       "seccion_principal": "salamanca",
       "desde": "2026-11-04",
       "hasta": "2026-11-05",
       "ejemplos_redactados": [
-        "El comercio salmantino cuestiona la apertura durante el puente de diciembre de 2027. Las encuestas reflejan opiniones divididas sobre esta medida."
+        "El comercio salmantino ha cuestionado la apertura durante el puente de diciembre de 2027.",
+        "Se han compartido dudas sobre la decisión de apertura en el puente."
       ]
     },
     {
-      "concepto": "Desarrollos urbanísticos en Santa Marta",
-      "piezas": 3,
+      "concepto": "Unionistas",
+      "piezas": 5,
+      "seccion_principal": "deportes",
+      "desde": "2026-11-04",
+      "hasta": "2026-11-06",
+      "ejemplos_redactados": [
+        "Unionistas ha preparado un homenaje en recuerdo de Jesús Miguel.",
+        "La afición de Unionistas ha despedido a Jesús Miguel con un último adiós."
+      ]
+    },
+    {
+      "concepto": "Santa Marta de Tormes",
+      "piezas": 4,
       "seccion_principal": "provincia",
-      "desde": "2026-11-03",
-      "hasta": "2026-11-05",
+      "desde": "2026-11-04",
+      "hasta": "2026-11-06",
       "ejemplos_redactados": [
-        "Santa Marta ha inaugurado una nueva zona deportiva en el paseo de Valdelagua y se ha aprobado la creación de un aparcamiento de 100 plazas."
+        "Santa Marta de Tormes ha adjudicado obras de pavimentación por 237.000 euros.",
+        "Se ha inaugurado una nueva zona deportiva en el paseo de Valdelagua de Santa Marta."
       ]
     },
     {
-      "concepto": "Actividad del PSOE en Salamanca",
-      "piezas": 3,
-      "seccion_principal": "salamanca",
-      "desde": "2026-11-03",
-      "hasta": "2026-11-05",
+      "concepto": "Ciudad Rodrigo",
+      "piezas": 4,
+      "seccion_principal": "provincia",
+      "desde": "2026-11-04",
+      "hasta": "2026-11-06",
       "ejemplos_redactados": [
-        "El PSOE ha reivindicado la educación pública y ha propuesto pisos vacíos para alquiler asequible. Han acusado al gobierno de falta de empatía respecto a los puentes festivos."
+        "Se han adjudicado obras para el centro de innovación social en Ciudad Rodrigo.",
+        "La diócesis de Ciudad Rodrigo invertirá 300.000 euros en reparaciones."
+      ]
+    },
+    {
+      "concepto": "Béjar",
+      "piezas": 4,
+      "seccion_principal": "provincia",
+      "desde": "2026-11-04",
+      "hasta": "2026-11-06",
+      "ejemplos_redactados": [
+        "El PP de Béjar ha acusado al equipo de gobierno de saltarse plazos.",
+        "Se ha puesto freno al depósito de enseres en Béjar tras dos años de funcionamiento."
+      ]
+    },
+    {
+      "concepto": "Jesús Miguel",
+      "piezas": 3,
+      "seccion_principal": "deportes",
+      "desde": "2026-11-05",
+      "hasta": "2026-11-06",
+      "ejemplos_redactados": [
+        "El fútbol español ha rendido homenaje a Jesús Miguel durante el fin de semana.",
+        "Unionistas ha preparado un homenaje a la altura de Jesús Miguel."
       ]
     }
   ],
-  "resumen_borrador": "Se han publicado 184 noticias entre el 2026-11-03 y el 2026-11-06. La actividad se ha concentrado sobre todo en salamanca (63 piezas), provincia (49 piezas), deportes (37 piezas).\n\nLos conceptos con más piezas relacionadas son: Jesus · Miguel; Unionistas; Ciudad · Rodrigo; Huelga. Revisa 'evidencia' de cada concepto para redactar el resumen final.",
-  "resumen": "Los primeros días de noviembre en Salamanca han estado marcados por el luto en el ámbito deportivo, con el fallecimiento del exjugador de Unionistas, Jesús Miguel, generando numerosas muestras de condolencia. En el sector educativo, se ha iniciado una huelga docente que ha afectado a colegios de la capital y la provincia.\n\nEn el ámbito deportivo, el equipo Meins Avenida ha logrado una victoria destacada en la Eurocup. La provincia ha visto actividad con inversiones en Ciudad Rodrigo y nuevos desarrollos urbanísticos en Santa Marta. La Universidad de Salamanca ha sido protagonista de una declaración pionera con el Ministerio de Juventud e Infancia.\n\nOtros temas relevantes incluyen el debate sobre la apertura comercial durante el futuro puente de diciembre de 2027, la actividad política del PSOE local y el anuncio de una nueva fábrica de Meins en Salamanca. También se ha aprobado una nueva ordenanza de terrazas en la capital."
+  "resumen_borrador": "Se han publicado 193 noticias entre el 2026-11-04 y el 2026-11-07. La actividad se ha concentrado sobre todo en salamanca (71 piezas), provincia (51 piezas), deportes (36 piezas).\n\nLos conceptos con más piezas relacionadas son: Paso; Meins · Avenida; Puente; Euskotren. Revisa 'evidencia' de cada concepto para redactar el resumen final.",
+  "resumen": "La actualidad salmantina entre el 4 y el 7 de noviembre ha estado marcada por diversos acontecimientos en la capital y la provincia. En el ámbito deportivo, Unionistas de Salamanca ha rendido tributo a su exjugador Jesús Miguel, mientras que el equipo de baloncesto Meins Avenida ha disputado encuentros importantes, incluyendo uno contra Euskotren. Se ha generado debate en Salamanca sobre la seguridad en los pasos de peatones y las implicaciones de la apertura comercial durante el próximo puente de diciembre de 2027.\n\nEn la provincia, municipios como Santa Marta de Tormes y Ciudad Rodrigo han sido protagonistas de noticias relacionadas con inversiones y adjudicaciones de obras. Béjar también ha acaparado atención con acusaciones políticas y la gestión de servicios. En el plano social y de sucesos, la búsqueda de dos menores desaparecidas ha generado alarma, y se ha puesto de manifiesto la importancia del acceso universal a la secuenciación genética en el tratamiento del cáncer.\n\nLa Universidad de Salamanca ha firmado una declaración pionera con el Ministerio de Juventud e Infancia. Además, el mes de noviembre ha continuado con la huelga docente iniciada a principios de mes y el anuncio de una nueva fábrica de Meins en la capital, reflejando la dinámica económica y educativa de la región."
 }

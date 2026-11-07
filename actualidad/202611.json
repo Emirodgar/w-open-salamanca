@@ -1,7 +1,7 @@
 {
   "mes": "2026-11",
   "titulo_mes": "Noviembre 2026",
-  "resumen_mes": "Noviembre ha estado marcado por el triste fallecimiento de Jesús Miguel, exjugador de Unionistas, y de Charo Diego, primera mujer presidenta de la Diputación. El mes ha visto el inicio de una huelga docente y un repunte del paro, mientras que la Universidad de Salamanca ha protagonizado una declaración pionera. Destacan también la aprobación de la nueva ordenanza de terrazas y el anuncio de una nueva fábrica de Meins.",
+  "resumen_mes": "Noviembre ha estado marcado por el triste fallecimiento de Jesús Miguel, exjugador de Unionistas, y de Charo Diego, primera mujer presidenta de la Diputación. El mes ha visto el inicio de una huelga docente, un repunte del paro y el anuncio de una nueva fábrica de Meins. Destacan también la declaración pionera de la Universidad de Salamanca, la búsqueda de dos menores desaparecidas y el debate sobre el acceso a la secuenciación genética para el cáncer.",
   "hitos": [
     {
       "fecha": "2026-11-01",
@@ -13,9 +13,9 @@
     },
     {
       "fecha": "2026-11-03",
-      "titulo": "Fallece Jesús Miguel, exjugador de Unionistas, tras un brutal suceso",
+      "titulo": "Fallece Jesús Miguel, exjugador de Unionistas; se prepara homenaje",
       "categoria": "Deportes",
-      "descripcion": "El mundo del fútbol local lamenta la pérdida de Jesús Miguel, quien fuera delantero de Unionistas, tras un trágico incidente. Se han sucedido las muestras de condolencia.",
+      "descripcion": "El mundo del fútbol local lamenta la pérdida de Jesús Miguel, quien fuera delantero de Unionistas, tras un trágico incidente. Se han sucedido las muestras de condolencia y se prepara un homenaje en su honor.",
       "fuente": "https://www.lagacetadesalamanca.es/deportes/futbol-local/unionistas/fallece-jesus-miguel-exjugador-unionistas-tras-brutal-20261103093621-nt.html",
       "destacado": true
     },
@@ -25,14 +25,6 @@
       "categoria": "Educación",
       "descripcion": "Sindicatos han convocado una huelga docente para el mes de noviembre en Salamanca, con piquetes informativos en los colegios.",
       "fuente": "https://www.lagacetadesalamanca.es/salamanca/huelga-docente-noviembre-salamanca-pasa-alumnos-20261103141559-nt.html",
-      "destacado": false
-    },
-    {
-      "fecha": "2026-11-04",
-      "titulo": "Meins Avenida logra un triunfo en Eurocup",
-      "categoria": "Deportes",
-      "descripcion": "El equipo Meins Avenida consiguió una importante victoria en la Eurocup, demostrando sus virtudes frente al Ruzomberok.",
-      "fuente": "https://www.lagacetadesalamanca.es/deportes/baloncesto-local/meins-avenida/claves-gran-triunfo-meins-avenida-frente-ruzomberok-20261104202544-nt.html",
       "destacado": false
     },
     {
@@ -61,10 +53,18 @@
     },
     {
       "fecha": "2026-11-05",
-      "titulo": "Aprobada nueva ordenanza de terrazas en Salamanca",
-      "categoria": "Urbanismo",
-      "descripcion": "Se ha dado luz verde a la nueva ordenanza de terrazas en Salamanca, a pesar de las críticas relacionadas con el ruido.",
-      "fuente": "https://www.lagacetadesalamanca.es/salamanca/luz-verde-nueva-ordenanza-terrazas-criticas-ruido-20261105112647-nt.html",
+      "titulo": "Expertos piden acceso universal a secuenciación genética para tratar cáncer",
+      "categoria": "Sucesos",
+      "descripcion": "Expertos en oncología reunidos en Salamanca han alertado sobre la necesidad de un acceso universal a la secuenciación genética para el tratamiento del cáncer.",
+      "fuente": "https://www.lagacetadesalamanca.es/salamanca/acceso-secuenciacion-genetica-tratar-cancer-deberia-universal-20261105131358-nt.html",
+      "destacado": false
+    },
+    {
+      "fecha": "2026-11-06",
+      "titulo": "Activa la búsqueda de dos menores desaparecidas en Salamanca",
+      "categoria": "Sucesos",
+      "descripcion": "Se ha activado la búsqueda de dos menores que desaparecieron en Salamanca el lunes, generando preocupación en la comunidad.",
+      "fuente": "https://www.lagacetadesalamanca.es/sucesos/buscan-dos-menores-desaparecidas-salamanca-lunes-20261106221452-nt.html",
       "destacado": false
     }
   ]

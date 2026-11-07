@@ -1,5 +1,5 @@
 {
-  "generado_en": "2026-11-06T05:46:04+00:00",
+  "generado_en": "2026-11-07T05:45:33+00:00",
   "eventos": [
     {
       "titulo": "Exposición 'Iconografía' de grabados de Van Dyck",
@@ -29,6 +29,15 @@
       "fuente": "https://www.lagacetadesalamanca.es/salamanca/antigua-bodega-huelva-da2-primera-exposicion-ismael-20261030192324-ga.html"
     },
     {
+      "titulo": "Curso de alfarería en Alba de Tormes",
+      "categoria": "Cultura",
+      "fecha_inicio": "2026-11-01",
+      "fecha_fin": "2026-12-31",
+      "lugar": "Alba de Tormes",
+      "descripcion": "La villa ducal de Alba de Tormes acogerá un curso de alfarería de 50 horas lectivas, organizado por ADRECAG en colaboración con el Ayuntamiento. Las clases, dirigidas a adultos en edad laboral, se impartirán durante noviembre y diciembre, enseñando las bases del oficio y la filigrana albense.",
+      "fuente": "https://www.lagacetadesalamanca.es/provincia/alba-acogera-nuevo-curso-dedicado-ensenanza-alfareria-20261105193413-nt.html"
+    },
+    {
       "titulo": "Novenario por los difuntos en Peñaranda de Bracamonte",
       "categoria": "Sociedad",
       "fecha_inicio": "2026-11-03",
@@ -47,33 +56,6 @@
       "fuente": "https://www.lagacetadesalamanca.es/salamanca/llega-semana-legumbres-lanzamiento-nueva-lenteja-tras-20261026123551-nt.html"
     },
     {
-      "titulo": "Foro de Salamanca",
-      "categoria": "Sociedad",
-      "fecha_inicio": "2026-11-04",
-      "fecha_fin": "2026-11-06",
-      "lugar": "Universidad de Salamanca",
-      "descripcion": "El Foro de Salamanca reunirá a representantes de universidades, instituciones y empresas para debatir sobre los principales retos internacionales, en el marco del V Centenario de la Escuela de Salamanca. Contará con la participación de dirigentes internacionales, embajadores y expertos en economía, innovación y tecnología.",
-      "fuente": "https://www.lagacetadesalamanca.es/salamanca/universidad-reunira-dirigentes-internacionales-debatir-sobre-problemas-20261022174028-nt.html"
-    },
-    {
-      "titulo": "Investidura de António Guterres como doctor honoris causa por la USAL",
-      "categoria": "Educación",
-      "fecha_inicio": "2026-11-06",
-      "fecha_fin": null,
-      "lugar": "Universidad de Salamanca",
-      "descripcion": "La Universidad de Salamanca investirá al secretario general de la ONU, António Guterres, como doctor honoris causa.",
-      "fuente": "https://www.lagacetadesalamanca.es/salamanca/universidad-salamanca-investira-antonio-guterres-doctor-honoris-20260923140244-nt.html"
-    },
-    {
-      "titulo": "Representación de 'Hamlet' en Peñaranda",
-      "categoria": "Cultura",
-      "fecha_inicio": "2026-11-06",
-      "fecha_fin": null,
-      "lugar": "Teatro Calderón, Peñaranda de Bracamonte",
-      "descripcion": "Guayominí Producciones llevará a escena el clásico 'Hamlet' en el Teatro Calderón de Peñaranda de Bracamonte, como parte de la programación teatral para adultos.",
-      "fuente": "https://www.lagacetadesalamanca.es/provincia/penaranda-acerca-programacion-teatro-abonos-euros-20261015181205-nt.html"
-    },
-    {
       "titulo": "15º Festival Internacional de Cine de Ciudad Rodrigo 'Ficci-on'",
       "categoria": "Cultura",
       "fecha_inicio": "2026-11-06",
@@ -88,8 +70,8 @@
       "fecha_inicio": "2026-11-07",
       "fecha_fin": null,
       "lugar": "Reina Sofía, Salamanca",
-      "descripcion": "Unionistas se enfrentará al Zamora en el Reina Sofía el sábado 7 de noviembre a las 18:45 horas, en un derbi declarado 'Día de ayuda al club' para la undécima jornada de liga.",
-      "fuente": "https://www.lagacetadesalamanca.es/deportes/futbol-local/unionistas/derbi-unionistas-zamora-declarado-dia-ayuda-club-20261029121751-nt.html"
+      "descripcion": "Unionistas se enfrentará al Zamora en el Reina Sofía el sábado 7 de noviembre a las 18:45 horas, en un derbi regional que estará marcado por el recuerdo a Jesús de Miguel. El encuentro es parte de la 11ª jornada de Primera Federación.",
+      "fuente": "https://www.lagacetadesalamanca.es/deportes/futbol-local/unionistas/unionistaszamora-horario-ver-directo-partido-primera-federacion-20261106181104-nt.html"
     },
     {
       "titulo": "X Feria Transfronteriza Ecoraya",
@@ -115,8 +97,17 @@
       "fecha_inicio": "2026-11-07",
       "fecha_fin": null,
       "lugar": "Navacarros",
-      "descripcion": "La localidad de Navacarros retomará la programación del Festival de la Candela el 7 de noviembre, con una ruta senderista, visita a la iglesia y una charla sobre el patrimonio natural de la comarca.",
+      "descripcion": "La localidad de Navacarros retomará la programación del Festival de la Candela este sábado 7 de noviembre. La jornada incluirá una ruta senderista por los alrededores, una visita a la iglesia parroquial y una charla sobre el patrimonio natural de la comarca.",
       "fuente": "https://www.lagacetadesalamanca.es/provincia/navacarros-retomara-noviembre-actividad-festival-candela-20261104191930-nt.html"
+    },
+    {
+      "titulo": "Circuito de Matanzas Tradicionales de la Diputación de Salamanca",
+      "categoria": "Cultura",
+      "fecha_inicio": "2026-11-07",
+      "fecha_fin": "2027-03-20",
+      "lugar": "pueblos salmantinos",
+      "descripcion": "La novena edición del Circuito de Matanzas Tradicionales de la Diputación de Salamanca contará con 105 celebraciones en diversos pueblos de la provincia. El evento busca recuperar una de las tradiciones más arraigadas de la identidad salmantina, combinando gastronomía y convivencia.",
+      "fuente": "https://www.lagacetadesalamanca.es/provincia/matanza-tradicional-suman-105-citas-20261106184423-nt.html"
     },
     {
       "titulo": "Carrera contra la Violencia de Género de Salamanca",
@@ -124,8 +115,8 @@
       "fecha_inicio": "2026-11-08",
       "fecha_fin": null,
       "lugar": "Salamanca",
-      "descripcion": "Carrera competitiva, marcha y olimpiada infantil; la inscripción está abierta desde este viernes.",
-      "fuente": "https://www.lagacetadesalamanca.es/deportes/carreras-populares/salamanca-volvera-correr-violencia-genero-noviembre-20260917122748-nt.html"
+      "descripcion": "La Carrera contra la Violencia de Género se celebrará este domingo 8 de noviembre en Salamanca, con salida y llegada en la Plaza Mayor a las 10:00 horas. La prueba ocasionará cortes de tráfico en el centro de la ciudad y en la zona del Puente Romano y Tejares.",
+      "fuente": "https://www.lagacetadesalamanca.es/deportes/carreras-populares/cortes-trafico-motivo-carrera-violencia-genero-domingo-20261106132407-nt.html"
     },
     {
       "titulo": "Jornada de limpieza de espacios naturales en Cabrerizos",
@@ -146,6 +137,15 @@
       "fuente": "https://www.lagacetadesalamanca.es/provincia/nanay-china-llega-escenario-alba-tormes-20261104174050-nt.html"
     },
     {
+      "titulo": "Partido de Segunda Federación: Real Ávila - Salamanca UDS",
+      "categoria": "Deportes",
+      "fecha_inicio": "2026-11-08",
+      "fecha_fin": null,
+      "lugar": "Adolfo Suárez de Ávila",
+      "descripcion": "El Salamanca UDS visitará el Adolfo Suárez de Ávila para enfrentarse al Real Ávila en la 10ª jornada del Grupo 5 de Segunda Federación. El equipo charro buscará una victoria para mantenerse en la zona noble de la clasificación.",
+      "fuente": "https://www.lagacetadesalamanca.es/deportes/futbol-local/salamancauds/real-avilasalamanca-horario-seguir-directo-partido-segunda-20261106182416-nt.html"
+    },
+    {
       "titulo": "XIV Premios HosteleríaSalamanca.es",
       "categoria": "Economía",
       "fecha_inicio": "2026-11-09",
@@ -164,13 +164,22 @@
       "fuente": "https://www.lagacetadesalamanca.es/provincia/convocadas-movilizaciones-huelga-sector-carnico-dias-noviembre-20261014205531-nt.html"
     },
     {
+      "titulo": "Campeonato de Europa de Kickboxing",
+      "categoria": "Deportes",
+      "fecha_inicio": "2026-11-09",
+      "fecha_fin": null,
+      "lugar": "Macedonia del Norte",
+      "descripcion": "Tres deportistas salmantinos de la Escuela Élite Kickboxing Salamanca, Jaime Lizana, Laura Cortés y Claudia Criado, viajarán a Macedonia del Norte para competir en el Campeonato de Europa. Afrontarán el campeonato en diferentes modalidades y categorías.",
+      "fuente": "https://www.lagacetadesalamanca.es/deportes/tres-salmantinos-rumbo-europeo-kickboxing-20261106181929-nt.html"
+    },
+    {
       "titulo": "Huelga general en Salamanca",
       "categoria": "Política",
       "fecha_inicio": "2026-11-11",
       "fecha_fin": null,
       "lugar": "Salamanca",
-      "descripcion": "CCOO y UGT Salamanca intensifican las acciones informativas de cara a la huelga general convocada para el 11 de noviembre, reclamando salarios dignos, soluciones al problema de la vivienda, pensiones públicas y mejores servicios públicos.",
-      "fuente": "https://www.lagacetadesalamanca.es/salamanca/sindicatos-calientan-motores-salamanca-cara-huelga-general-20261103141853-nt.html"
+      "descripcion": "UGT y CCOO convocan una huelga general en Salamanca para el 11 de noviembre, reclamando mejoras salariales y medidas que faciliten el acceso a la vivienda. Se realizarán dos manifestaciones en la ciudad, una por la mañana desde el campus universitario hasta la Plaza Mayor, y otra por la tarde desde Gran Vía hasta la Plaza Mayor.",
+      "fuente": "https://www.lagacetadesalamanca.es/salamanca/ugt-ccoo-llaman-huelga-general-11n-vivienda-20261106182914-nt.html"
     },
     {
       "titulo": "'Bracamonte en Negro', festival de novela negra en Peñaranda",
@@ -223,8 +232,17 @@
       "fecha_inicio": "2026-11-16",
       "fecha_fin": "2026-11-21",
       "lugar": "Carbajosa de la Sagrada",
-      "descripcion": "El Ayuntamiento de Carbajosa de la Sagrada organiza una Semana Micológica del 16 al 21 de noviembre, que incluirá una exposición, charlas con un especialista, una degustación de setas y una ruta solidaria a Navasfrías.",
+      "descripcion": "El Ayuntamiento de Carbajosa de la Sagrada organiza una Semana Micológica del 16 al 21 de noviembre, con una exposición fotográfica y de ejemplares, sesiones de consulta con un especialista, una charla con degustación y una ruta solidaria a Navasfrías. El objetivo es acercar el mundo de las setas a los vecinos y fomentar el contacto con la naturaleza.",
       "fuente": "https://www.lagacetadesalamanca.es/provincia/carbajosa-organiza-semana-micologica-charla-degustacion-ruta-20261104120036-nt.html"
+    },
+    {
+      "titulo": "Concurso de dibujo infantil de La Gaceta",
+      "categoria": "Educación",
+      "fecha_inicio": "2026-11-16",
+      "fecha_fin": "2026-12-01",
+      "lugar": "oficinas de Caja Rural de Salamanca",
+      "descripcion": "La Gaceta de Salamanca organiza la XV edición de su Concurso de Dibujo Infantil, invitando a escolares y colegios de Salamanca y provincia a participar. Los trabajos, con temática de animales y vida en el campo, se entregarán en las oficinas de Caja Rural de Salamanca.",
+      "fuente": "https://www.lagacetadesalamanca.es/especiales/concurso-dibujo-infantil/gaceta-invita-escolares-colegios-salamanca-participar-concurso-20261106172058-nt.html"
     },
     {
       "titulo": "Curso de primeros auxilios de Cruz Roja en Carbajosa",
@@ -289,6 +307,24 @@
       "fuente": "https://www.lagacetadesalamanca.es/deportes/futbol-local/unionistas/unionistas-conoce-horario-visita-barakaldo-20261024124643-nt.html"
     },
     {
+      "titulo": "Manualidades otoñales en Guijuelo",
+      "categoria": "Cultura",
+      "fecha_inicio": "2026-11-21",
+      "fecha_fin": null,
+      "lugar": "Guijuelo",
+      "descripcion": "El centro juvenil de Guijuelo ofrecerá una actividad de manualidades otoñales el sábado 21 de noviembre.",
+      "fuente": "https://www.lagacetadesalamanca.es/provincia/guijuelo-joven-celebrara-noviembre-vigesima-edicion-concurso-20261105194615-nt.html"
+    },
+    {
+      "titulo": "Fiesta de bienvenida a las grullas en El Campo de Peñaranda",
+      "categoria": "Cultura",
+      "fecha_inicio": "2026-11-21",
+      "fecha_fin": "2026-11-22",
+      "lugar": "El Campo de Peñaranda",
+      "descripcion": "El Ayuntamiento de El Campo de Peñaranda organizará por primera vez una fiesta de bienvenida a las grullas en el azud de Riolobos, con dos jornadas de actividades. Incluirá manualidades familiares el sábado 21 de noviembre y un paseo ornitológico con avistamiento de grullas el domingo 22.",
+      "fuente": "https://www.lagacetadesalamanca.es/provincia/campo-penaranda-dara-bienvenida-grullas-fiesta-20261106120223-nt.html"
+    },
+    {
       "titulo": "XIV Carrera solidaria 'El jamón veloz de Guijuelo'",
       "categoria": "Deportes",
       "fecha_inicio": "2026-11-22",
@@ -314,15 +350,6 @@
       "lugar": "Paraninfo de las Escuelas Mayores, Universidad de Salamanca",
       "descripcion": "La Reina Sofía entregará el XXXV Premio de Poesía Iberoamericana al poeta Jaime Siles y recibirá la Medalla de la Universidad de Salamanca en una ceremonia que regresa a la ciudad.",
       "fuente": "https://www.lagacetadesalamanca.es/salamanca/entrega-premio-reina-sofia-vuelve-universidad-coincidira-20261029123623-nt.html"
-    },
-    {
-      "titulo": "Actividades por el Día contra la Violencia de Género en Guijuelo",
-      "categoria": "Sociedad",
-      "fecha_inicio": "2026-11-24",
-      "fecha_fin": "2026-11-26",
-      "lugar": "Guijuelo",
-      "descripcion": "El centro juvenil de Guijuelo organizará propuestas para conmemorar el Día contra la Violencia de Género, desarrollándose durante la última semana de noviembre.",
-      "fuente": "https://www.lagacetadesalamanca.es/provincia/guijuelo-joven-celebrara-noviembre-vigesima-edicion-concurso-20261105194615-nt.html"
     },
     {
       "titulo": "Encendido del alumbrado navideño en Salamanca",
