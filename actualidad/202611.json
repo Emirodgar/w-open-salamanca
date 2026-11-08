@@ -1,7 +1,7 @@
 {
   "mes": "2026-11",
   "titulo_mes": "Noviembre 2026",
-  "resumen_mes": "Noviembre ha estado marcado por el triste fallecimiento de Jesús Miguel, exjugador de Unionistas, y de Charo Diego, primera mujer presidenta de la Diputación. El mes ha visto el inicio de una huelga docente, un repunte del paro y el anuncio de una nueva fábrica de Meins. Destacan también la declaración pionera de la Universidad de Salamanca, la búsqueda de dos menores desaparecidas y el debate sobre el acceso a la secuenciación genética para el cáncer.",
+  "resumen_mes": "Noviembre ha estado marcado por el triste fallecimiento de Jesús Miguel, exjugador de Unionistas, y de Charo Diego, primera mujer presidenta de la Diputación. El mes ha visto el inicio de una huelga docente, un repunte del paro y el anuncio de una nueva fábrica de Meins. Destacan también la declaración pionera de la Universidad de Salamanca, la investidura de Antonio Guterres como Doctor Honoris Causa, la búsqueda de dos menores desaparecidas y el fallecimiento de Curro Sánchez en un accidente.",
   "hitos": [
     {
       "fecha": "2026-11-01",
@@ -52,19 +52,19 @@
       "destacado": false
     },
     {
-      "fecha": "2026-11-05",
-      "titulo": "Expertos piden acceso universal a secuenciación genética para tratar cáncer",
-      "categoria": "Sucesos",
-      "descripcion": "Expertos en oncología reunidos en Salamanca han alertado sobre la necesidad de un acceso universal a la secuenciación genética para el tratamiento del cáncer.",
-      "fuente": "https://www.lagacetadesalamanca.es/salamanca/acceso-secuenciacion-genetica-tratar-cancer-deberia-universal-20261105131358-nt.html",
+      "fecha": "2026-11-06",
+      "titulo": "Antonio Guterres investido Doctor Honoris Causa por la USAL",
+      "categoria": "Sociedad",
+      "descripcion": "El secretario general de la ONU, Antonio Guterres, ha sido investido Doctor Honoris Causa por la Universidad de Salamanca en un acto solemne.",
+      "fuente": "https://www.lagacetadesalamanca.es/salamanca/investidura-antonio-guterres-doctor-honoris-causa-imagenes-20261106142826-ga.html",
       "destacado": false
     },
     {
-      "fecha": "2026-11-06",
-      "titulo": "Activa la búsqueda de dos menores desaparecidas en Salamanca",
+      "fecha": "2026-11-07",
+      "titulo": "Fallece Curro Sánchez en accidente de tráfico",
       "categoria": "Sucesos",
-      "descripcion": "Se ha activado la búsqueda de dos menores que desaparecieron en Salamanca el lunes, generando preocupación en la comunidad.",
-      "fuente": "https://www.lagacetadesalamanca.es/sucesos/buscan-dos-menores-desaparecidas-salamanca-lunes-20261106221452-nt.html",
+      "descripcion": "Curro Sánchez, figura reconocida, ha fallecido en un accidente de tráfico en la N-620, cerca de Fuente de San Esteban. La noticia ha causado luto en Ciudad Rodrigo.",
+      "fuente": "https://www.lagacetadesalamanca.es/sucesos/fallecido-accidente-fuente-san-esteban-curro-sanchez-20261107110631-nt.html",
       "destacado": false
     }
   ]

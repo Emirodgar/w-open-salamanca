@@ -556,30 +556,6 @@
       "fecha_creacion": "2026-11-01"
     },
     {
-      "id": "semana-legumbres-2026",
-      "pregunta": "La décima edición de la Semana de las Legumbres busca fomentar el consumo de productos de proximidad. ¿Cree que estas iniciativas son efectivas para apoyar el producto local y la alimentación saludable?",
-      "opciones": [
-        "Sí, son clave para el producto local y la salud",
-        "No, su impacto es limitado",
-        "Son un buen complemento, pero no lo principal",
-        "No tengo suficiente información"
-      ],
-      "basado_en": "eventos.json",
-      "fecha_creacion": "2026-11-02"
-    },
-    {
-      "id": "feria-ecoraya-2026",
-      "pregunta": "La X Feria Transfronteriza Ecoraya reunirá a productores españoles y portugueses. ¿Cree que este tipo de ferias son importantes para fomentar la colaboración transfronteriza y el desarrollo económico local?",
-      "opciones": [
-        "Sí, impulsan la economía y las relaciones transfronterizas",
-        "No, su impacto es limitado y muy específico",
-        "Son un buen escaparate, pero no generan un gran impacto económico",
-        "No tengo suficiente información"
-      ],
-      "basado_en": "eventos.json",
-      "fecha_creacion": "2026-11-02"
-    },
-    {
       "id": "legado-charo-diego-2026",
       "pregunta": "El fallecimiento de Charo Diego, primera mujer en presidir la Diputación de Salamanca, ha generado un sentido adiós. ¿Cree que su legado tendrá un impacto duradero en la política provincial?",
       "opciones": [
@@ -698,6 +674,30 @@
       ],
       "basado_en": "eventos.json",
       "fecha_creacion": "2026-11-07"
+    },
+    {
+      "id": "robos-whatsapp-castilla-leon-2026",
+      "pregunta": "Ante la oleada de robos en Castilla y León mediante suplantación de WhatsApp, ¿cree que las autoridades deberían intensificar las campañas de concienciación y medidas de seguridad digital para proteger a los ciudadanos?",
+      "opciones": [
+        "Sí, es crucial para prevenir estafas digitales",
+        "No, la responsabilidad recae en la precaución individual",
+        "Deberían centrarse en la persecución de los delincuentes",
+        "No tengo suficiente información"
+      ],
+      "basado_en": "actualidad.json",
+      "fecha_creacion": "2026-11-08"
+    },
+    {
+      "id": "seguridad-paso-nivel-babilafuente-2026",
+      "pregunta": "Tras la rotura en el paso a nivel de Babilafuente que generó peligro, ¿considera que se deberían revisar y reforzar las medidas de seguridad en los pasos a nivel de la provincia para evitar incidentes?",
+      "opciones": [
+        "Sí, la seguridad ferroviaria es prioritaria",
+        "No, fue un incidente puntual que no requiere medidas adicionales",
+        "Debería priorizarse la eliminación de los pasos a nivel",
+        "No tengo suficiente información"
+      ],
+      "basado_en": "actualidad.json",
+      "fecha_creacion": "2026-11-08"
     }
   ]
 }

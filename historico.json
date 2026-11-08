@@ -454,6 +454,42 @@
         "Son importantes para la comunidad local, pero no tanto para el turismo.": 1
       },
       "total_votos": 8
+    },
+    {
+      "id": "semana-legumbres-2026",
+      "pregunta": "La décima edición de la Semana de las Legumbres busca fomentar el consumo de productos de proximidad. ¿Cree que estas iniciativas son efectivas para apoyar el producto local y la alimentación saludable?",
+      "opciones": [
+        "Sí, son clave para el producto local y la salud",
+        "No, su impacto es limitado",
+        "Son un buen complemento, pero no lo principal",
+        "No tengo suficiente información"
+      ],
+      "basado_en": "eventos.json",
+      "fecha_creacion": "2026-11-02",
+      "fecha_archivado": "2026-11-08",
+      "resultados": {
+        "No, su impacto es limitado": 1,
+        "Sí, son clave para el producto local y la salud": 1
+      },
+      "total_votos": 2
+    },
+    {
+      "id": "feria-ecoraya-2026",
+      "pregunta": "La X Feria Transfronteriza Ecoraya reunirá a productores españoles y portugueses. ¿Cree que este tipo de ferias son importantes para fomentar la colaboración transfronteriza y el desarrollo económico local?",
+      "opciones": [
+        "Sí, impulsan la economía y las relaciones transfronterizas",
+        "No, su impacto es limitado y muy específico",
+        "Son un buen escaparate, pero no generan un gran impacto económico",
+        "No tengo suficiente información"
+      ],
+      "basado_en": "eventos.json",
+      "fecha_creacion": "2026-11-02",
+      "fecha_archivado": "2026-11-08",
+      "resultados": {
+        "Sí, impulsan la economía y las relaciones transfronterizas": 1,
+        "Son un buen escaparate, pero no generan un gran impacto económico": 1
+      },
+      "total_votos": 2
     }
   ]
 }
