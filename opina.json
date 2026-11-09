@@ -87,18 +87,6 @@
       "fecha_creacion": "2026-10-05"
     },
     {
-      "id": "honoris-causa-usal-2026",
-      "pregunta": "La Universidad de Salamanca investirá a António Guterres, secretario general de la ONU, como doctor honoris causa. ¿Cree que este tipo de reconocimientos a figuras internacionales refuerza el prestigio de la Universidad de Salamanca?",
-      "opciones": [
-        "Sí, atrae atención y prestigio internacional",
-        "No, su impacto es más simbólico que real",
-        "Depende de la relevancia de la figura",
-        "No tengo suficiente información"
-      ],
-      "basado_en": "eventos.json",
-      "fecha_creacion": "2026-10-05"
-    },
-    {
       "id": "inundaciones-colegio-ciudad-rodrigo-2026",
       "pregunta": "Ante las recientes inundaciones en un colegio de Ciudad Rodrigo, ¿cree que las autoridades locales deberían implementar medidas preventivas más robustas para proteger las infraestructuras educativas?",
       "opciones": [
@@ -580,18 +568,6 @@
       "fecha_creacion": "2026-11-03"
     },
     {
-      "id": "homenaje-jesus-miguel-2026",
-      "pregunta": "Tras el trágico fallecimiento de Jesús Miguel, exjugador de Unionistas, ¿cree que el club y la ciudad deberían realizar un homenaje especial para recordar su figura?",
-      "opciones": [
-        "Sí, es importante reconocer su legado deportivo",
-        "No, los homenajes deben ser más discretos",
-        "Depende de la voluntad de la familia",
-        "No tengo suficiente información"
-      ],
-      "basado_en": "actualidad.json",
-      "fecha_creacion": "2026-11-04"
-    },
-    {
       "id": "limitacion-guardias-residentes-2026",
       "pregunta": "Ante la limitación de horas de guardia para residentes en sanidad, ¿cree que esta medida mejorará la calidad de la formación y el bienestar de los profesionales, o afectará a la cobertura asistencial?",
       "opciones": [
@@ -698,6 +674,30 @@
       ],
       "basado_en": "actualidad.json",
       "fecha_creacion": "2026-11-08"
+    },
+    {
+      "id": "exodo-laboral-provincia-2026",
+      "pregunta": "Ante la alerta sobre el éxodo laboral que afecta a la provincia de Salamanca, ¿cree que las administraciones deberían implementar medidas urgentes para retener el talento y la población activa?",
+      "opciones": [
+        "Sí, es crucial para el futuro demográfico y económico",
+        "No, es un proceso natural y difícil de revertir",
+        "Deberían centrarse en atraer nuevas empresas, no solo retener",
+        "No tengo suficiente información"
+      ],
+      "basado_en": "actualidad.json",
+      "fecha_creacion": "2026-11-09"
+    },
+    {
+      "id": "viviendas-jovenes-salamanca-2026",
+      "pregunta": "El Ayuntamiento de Salamanca ha entregado viviendas a jóvenes. ¿Considera que las políticas de vivienda dirigidas específicamente a la juventud son una medida efectiva para facilitar su emancipación en la ciudad?",
+      "opciones": [
+        "Sí, es fundamental para la emancipación juvenil",
+        "No, se necesitan soluciones más amplias para el mercado de vivienda",
+        "Es un buen inicio, pero insuficiente por sí solo",
+        "No tengo suficiente información"
+      ],
+      "basado_en": "actualidad.json",
+      "fecha_creacion": "2026-11-09"
     }
   ]
 }

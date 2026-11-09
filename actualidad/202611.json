@@ -1,7 +1,7 @@
 {
   "mes": "2026-11",
   "titulo_mes": "Noviembre 2026",
-  "resumen_mes": "Noviembre ha estado marcado por el triste fallecimiento de Jesús Miguel, exjugador de Unionistas, y de Charo Diego, primera mujer presidenta de la Diputación. El mes ha visto el inicio de una huelga docente, un repunte del paro y el anuncio de una nueva fábrica de Meins. Destacan también la declaración pionera de la Universidad de Salamanca, la investidura de Antonio Guterres como Doctor Honoris Causa, la búsqueda de dos menores desaparecidas y el fallecimiento de Curro Sánchez en un accidente.",
+  "resumen_mes": "Noviembre ha estado marcado por el triste fallecimiento de Jesús Miguel, exjugador de Unionistas, y de Charo Diego, primera mujer presidenta de la Diputación. El mes ha visto el inicio de una huelga docente, la investidura de Antonio Guterres como Doctor Honoris Causa, el éxodo laboral y la desaparición y posterior localización de dos menores, así como el fallecimiento de Curro Sánchez en un accidente de tráfico.",
   "hitos": [
     {
       "fecha": "2026-11-01",
@@ -36,22 +36,6 @@
       "destacado": false
     },
     {
-      "fecha": "2026-11-04",
-      "titulo": "Meins construirá una nueva fábrica en Salamanca",
-      "categoria": "Economía",
-      "descripcion": "La empresa Meins ha anunciado la construcción de una nueva fábrica en Salamanca, siendo la primera en instalarse en la zona designada.",
-      "fuente": "https://www.lagacetadesalamanca.es/salamanca/meins-construira-nueva-fabrica-primera-empresa-instalarse-20261104173330-nt.html",
-      "destacado": false
-    },
-    {
-      "fecha": "2026-11-05",
-      "titulo": "Declaración pionera de la USAL con Ministerio de Juventud e Infancia",
-      "categoria": "Sociedad",
-      "descripcion": "La Universidad de Salamanca ha emitido una declaración pionera junto al Ministerio de Juventud e Infancia para la protección de la infancia.",
-      "fuente": "https://www.lagacetadesalamanca.es/salamanca/declaracion-pionera-universidad-ministerio-juventud-infancia-proteger-20261105184358-nt.html",
-      "destacado": false
-    },
-    {
       "fecha": "2026-11-06",
       "titulo": "Antonio Guterres investido Doctor Honoris Causa por la USAL",
       "categoria": "Sociedad",
@@ -60,11 +44,27 @@
       "destacado": false
     },
     {
+      "fecha": "2026-11-06",
+      "titulo": "Desaparición y localización de dos menores en Salamanca",
+      "categoria": "Sucesos",
+      "descripcion": "Dos menores que habían desaparecido en Salamanca el lunes fueron localizadas al día siguiente.",
+      "fuente": "https://www.lagacetadesalamanca.es/sucesos/localizadas-dos-menores-desaparecidas-salamanca-20261107074457-nt.html",
+      "destacado": false
+    },
+    {
       "fecha": "2026-11-07",
       "titulo": "Fallece Curro Sánchez en accidente de tráfico",
       "categoria": "Sucesos",
       "descripcion": "Curro Sánchez, figura reconocida, ha fallecido en un accidente de tráfico en la N-620, cerca de Fuente de San Esteban. La noticia ha causado luto en Ciudad Rodrigo.",
       "fuente": "https://www.lagacetadesalamanca.es/sucesos/fallecido-accidente-fuente-san-esteban-curro-sanchez-20261107110631-nt.html",
+      "destacado": false
+    },
+    {
+      "fecha": "2026-11-08",
+      "titulo": "El éxodo laboral agrava la situación en Salamanca",
+      "categoria": "Economía",
+      "descripcion": "Salamanca pierde trabajadores cada día, agravando la situación del éxodo laboral en la provincia.",
+      "fuente": "https://www.lagacetadesalamanca.es/salamanca/exodo-laboral-agrava-salamanca-pierde-trabajadores-dia-20261108143250-nt.html",
       "destacado": false
     }
   ]

@@ -490,6 +490,43 @@
         "Son un buen escaparate, pero no generan un gran impacto económico": 1
       },
       "total_votos": 2
+    },
+    {
+      "id": "homenaje-jesus-miguel-2026",
+      "pregunta": "Tras el trágico fallecimiento de Jesús Miguel, exjugador de Unionistas, ¿cree que el club y la ciudad deberían realizar un homenaje especial para recordar su figura?",
+      "opciones": [
+        "Sí, es importante reconocer su legado deportivo",
+        "No, los homenajes deben ser más discretos",
+        "Depende de la voluntad de la familia",
+        "No tengo suficiente información"
+      ],
+      "basado_en": "actualidad.json",
+      "fecha_creacion": "2026-11-04",
+      "fecha_archivado": "2026-11-09",
+      "resultados": {
+        "Sí, es importante reconocer su legado deportivo": 1
+      },
+      "total_votos": 1
+    },
+    {
+      "id": "honoris-causa-usal-2026",
+      "pregunta": "La Universidad de Salamanca investirá a António Guterres, secretario general de la ONU, como doctor honoris causa. ¿Cree que este tipo de reconocimientos a figuras internacionales refuerza el prestigio de la Universidad de Salamanca?",
+      "opciones": [
+        "Sí, atrae atención y prestigio internacional",
+        "No, su impacto es más simbólico que real",
+        "Depende de la relevancia de la figura",
+        "No tengo suficiente información"
+      ],
+      "basado_en": "eventos.json",
+      "fecha_creacion": "2026-10-05",
+      "fecha_archivado": "2026-11-09",
+      "resultados": {
+        "No, su impacto es más simbólico que real": 4,
+        "Depende de la relevancia de la figura": 3,
+        "No tengo suficiente información": 1,
+        "Sí, atrae atención y prestigio internacional": 1
+      },
+      "total_votos": 9
     }
   ]
 }

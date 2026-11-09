@@ -1,11 +1,11 @@
 {
   "url_base": "https://www.lagacetadesalamanca.es",
-  "generado_en": "2026-11-08T05:45:57+00:00",
+  "generado_en": "2026-11-09T05:45:55+00:00",
   "periodo_cubierto": {
-    "desde": "2026-11-05",
-    "hasta": "2026-11-08"
+    "desde": "2026-11-06",
+    "hasta": "2026-11-09"
   },
-  "total_urls_analizadas": 189,
+  "total_urls_analizadas": 179,
   "secciones_excluidas": [
     "gente-estilo",
     "nacional",
@@ -17,11 +17,11 @@
   "por_seccion": [
     [
       "salamanca",
-      62
+      53
     ],
     [
       "provincia",
-      46
+      45
     ],
     [
       "deportes",
@@ -29,10 +29,10 @@
     ],
     [
       "sucesos",
-      24
+      23
     ],
     [
-      "campo",
+      "castilla-y-leon",
       4
     ],
     [
@@ -40,8 +40,8 @@
       3
     ],
     [
-      "castilla-y-leon",
-      2
+      "campo",
+      3
     ],
     [
       "toros",
@@ -63,65 +63,50 @@
   "por_subseccion": [
     [
       "deportes/futbol-local",
-      28
+      31
     ],
     [
       "deportes/baloncesto-local",
-      8
-    ],
-    [
-      "deportes/deporte-base",
-      2
-    ],
-    [
-      "especiales/concurso-dibujo-infantil",
-      1
+      5
     ],
     [
       "deportes/carreras-populares",
+      2
+    ],
+    [
+      "deportes/deporte-base",
+      1
+    ],
+    [
+      "especiales/concurso-dibujo-infantil",
       1
     ]
   ],
   "por_tipo_contenido": [
     [
       "noticia",
-      171
+      156
     ],
     [
       "galería",
-      17
+      21
     ],
     [
       "directo / en vivo",
-      1
+      2
     ]
   ],
   "heatmap_calendario": [
     {
-      "fecha": "2026-11-05",
-      "total": 46,
-      "salamanca": 12,
-      "provincia": 14,
-      "deportes": 10,
-      "sucesos": 8,
-      "campo": 1,
-      "encuestas": 1,
-      "castilla-y-leon": 0,
-      "toros": 0,
-      "noticias": 0,
-      "especiales": 0,
-      "fundacion-gaceta": 0
-    },
-    {
       "fecha": "2026-11-06",
-      "total": 74,
-      "salamanca": 29,
-      "provincia": 18,
-      "deportes": 15,
+      "total": 59,
+      "salamanca": 17,
+      "provincia": 16,
+      "deportes": 14,
       "sucesos": 8,
-      "campo": 1,
-      "encuestas": 1,
       "castilla-y-leon": 0,
+      "encuestas": 1,
+      "campo": 1,
       "toros": 0,
       "noticias": 0,
       "especiales": 1,
@@ -129,29 +114,44 @@
     },
     {
       "fecha": "2026-11-07",
-      "total": 61,
-      "salamanca": 13,
+      "total": 58,
+      "salamanca": 12,
       "provincia": 14,
-      "deportes": 19,
+      "deportes": 18,
       "sucesos": 8,
-      "campo": 2,
-      "encuestas": 1,
       "castilla-y-leon": 2,
-      "toros": 1,
+      "encuestas": 1,
+      "campo": 2,
+      "toros": 0,
       "noticias": 1,
       "especiales": 0,
       "fundacion-gaceta": 0
     },
     {
       "fecha": "2026-11-08",
+      "total": 54,
+      "salamanca": 17,
+      "provincia": 15,
+      "deportes": 12,
+      "sucesos": 6,
+      "castilla-y-leon": 2,
+      "encuestas": 1,
+      "campo": 0,
+      "toros": 1,
+      "noticias": 0,
+      "especiales": 0,
+      "fundacion-gaceta": 0
+    },
+    {
+      "fecha": "2026-11-09",
       "total": 8,
-      "salamanca": 8,
+      "salamanca": 7,
       "provincia": 0,
       "deportes": 0,
-      "sucesos": 0,
-      "campo": 0,
-      "encuestas": 0,
+      "sucesos": 1,
       "castilla-y-leon": 0,
+      "encuestas": 0,
+      "campo": 0,
       "toros": 0,
       "noticias": 0,
       "especiales": 0,
@@ -160,94 +160,95 @@
   ],
   "conceptos_destacados": [
     {
-      "concepto": "Jesús Miguel y el Reina Sofía",
+      "concepto": "Río Tormes y su comarca",
       "piezas": 7,
-      "seccion_principal": "deportes",
-      "desde": "2026-11-05",
-      "hasta": "2026-11-07",
-      "ejemplos_redactados": [
-        "El derbi entre Unionistas y Zamora en el Reina Sofía sirvió de homenaje al exjugador Jesús Miguel. Se vivieron momentos emotivos recordando su figura.",
-        "La victoria de Unionistas sobre el Zamora en el Reina Sofía estuvo marcada por el recuerdo a Jesús Miguel."
-      ]
-    },
-    {
-      "concepto": "Ciudad Rodrigo",
-      "piezas": 5,
       "seccion_principal": "provincia",
-      "desde": "2026-11-05",
-      "hasta": "2026-11-07",
-      "ejemplos_redactados": [
-        "La localidad de Ciudad Rodrigo ha presumido de su capa y ha desvelado los ganadores de su concurso Miropincho.",
-        "Ciudad Rodrigo se ha sumido en luto por el fallecimiento de Curro Sánchez."
-      ]
-    },
-    {
-      "concepto": "Santa Marta de Tormes",
-      "piezas": 4,
-      "seccion_principal": "provincia",
-      "desde": "2026-11-05",
-      "hasta": "2026-11-07",
-      "ejemplos_redactados": [
-        "Santa Marta de Tormes ha logrado una goleada que la coloca líder en el fútbol local.",
-        "El municipio ha adjudicado 237.000 euros para pavimentación y ha puesto a punto la pista de atletismo de un colegio."
-      ]
-    },
-    {
-      "concepto": "Castilla y León",
-      "piezas": 4,
-      "seccion_principal": "provincia",
-      "desde": "2026-11-05",
-      "hasta": "2026-11-07",
-      "ejemplos_redactados": [
-        "La región de Castilla y León ha experimentado una oleada de robos por suplantación de cuentas de WhatsApp.",
-        "Ha nacido una asociación de pueblos bonitos en Castilla y León."
-      ]
-    },
-    {
-      "concepto": "Concursos",
-      "piezas": 4,
-      "seccion_principal": "provincia",
-      "desde": "2026-11-05",
+      "desde": "2026-11-06",
       "hasta": "2026-11-08",
       "ejemplos_redactados": [
-        "Se han convocado concursos de belenes y decoración navideña en Villamayor.",
-        "La Gaceta ha invitado a escolares de Salamanca a participar en un certamen, y Ciudad Rodrigo ha desvelado los ganadores de su concurso Miropincho."
+        "El Estado conserva setenta propiedades en Salvatierra de Tormes.",
+        "Los Charritos de Cespedosa de Tormes celebran años de historia.",
+        "La Ribera del Tormes ofrece 123 viviendas para disfrutar."
       ]
     },
     {
-      "concepto": "Guijuelo",
-      "piezas": 4,
+      "concepto": "Actualidad de Ciudad Rodrigo",
+      "piezas": 5,
       "seccion_principal": "provincia",
-      "desde": "2026-11-05",
-      "hasta": "2026-11-07",
+      "desde": "2026-11-06",
+      "hasta": "2026-11-08",
       "ejemplos_redactados": [
-        "La buena racha del Guijuelo en el fútbol ha sido cortada por el Villaralbo.",
-        "Una gala taurina en Guijuelo fue suspendida tras un fallecimiento."
+        "Ciudad Rodrigo se une a la marcha por la investigación del cáncer y presume de su capa.",
+        "La localidad está de luto por el fallecimiento de Curro Sánchez."
       ]
     },
     {
-      "concepto": "Meins Avenida",
-      "piezas": 3,
+      "concepto": "Homenaje a Jesús Miguel",
+      "piezas": 5,
       "seccion_principal": "deportes",
       "desde": "2026-11-06",
       "hasta": "2026-11-07",
       "ejemplos_redactados": [
-        "El equipo de baloncesto Meins Avenida ha buscado fuerzas ante el Euskotren.",
-        "El Meins Avenida perdió un partido contra el Mirai Euskotren por 70-74."
+        "Unionistas dedicó el derbi contra el Zamora a Jesús Miguel.",
+        "El estadio Reina Sofía se emocionó recordando al exjugador."
       ]
     },
     {
-      "concepto": "Béjar",
+      "concepto": "Movimiento económico en euros",
+      "piezas": 5,
+      "seccion_principal": "provincia",
+      "desde": "2026-11-06",
+      "hasta": "2026-11-09",
+      "ejemplos_redactados": [
+        "El precio de una noche de hotel en el Puente de Diciembre alcanza los 400 euros.",
+        "Ecoraya cierra su décima edición con 50.000 euros en ventas y la Bonoloto deja un premio de 65.000 euros en la capital."
+      ]
+    },
+    {
+      "concepto": "Noticias de Castilla y León",
+      "piezas": 4,
+      "seccion_principal": "castilla-y-leon",
+      "desde": "2026-11-06",
+      "hasta": "2026-11-08",
+      "ejemplos_redactados": [
+        "Se ha declarado alerta meteorológica por lluvias en Castilla y León.",
+        "La región ha sufrido una oleada de robos por suplantación de cuentas de WhatsApp y ha visto nacer una asociación de pueblos bonitos."
+      ]
+    },
+    {
+      "concepto": "Actividad en Béjar",
       "piezas": 4,
       "seccion_principal": "provincia",
       "desde": "2026-11-06",
-      "hasta": "2026-11-07",
+      "hasta": "2026-11-08",
       "ejemplos_redactados": [
-        "La Hermandad Jesús Nazareno de Béjar ha abierto su agenda navideña.",
-        "El PP de Béjar ha acusado al equipo de gobierno de saltarse los plazos."
+        "Béjar estrena un espacio en San Juan para fomentar la práctica deportiva.",
+        "La Hermandad Jesús Nazareno abre su agenda de Navidad y el PP acusa al equipo de gobierno de saltarse los plazos."
+      ]
+    },
+    {
+      "concepto": "Novedades sobre viviendas",
+      "piezas": 4,
+      "seccion_principal": "salamanca",
+      "desde": "2026-11-07",
+      "hasta": "2026-11-09",
+      "ejemplos_redactados": [
+        "El Ayuntamiento de Salamanca entrega viviendas a jóvenes.",
+        "La Ribera del Tormes ofrece 123 viviendas y los arquitectos son clave en su construcción."
+      ]
+    },
+    {
+      "concepto": "Enfrentamientos deportivos en Ávila",
+      "piezas": 4,
+      "seccion_principal": "deportes",
+      "desde": "2026-11-08",
+      "hasta": "2026-11-08",
+      "ejemplos_redactados": [
+        "El Salamanca conquista Ávila en un encuentro de liga.",
+        "La ciudad de Salamanca generó locura en Ávila durante el partido."
       ]
     }
   ],
-  "resumen_borrador": "Se han publicado 189 noticias entre el 2026-11-05 y el 2026-11-08. La actividad se ha concentrado sobre todo en salamanca (62 piezas), provincia (46 piezas), deportes (44 piezas).\n\nLos conceptos con más piezas relacionadas son: Jesus · Miguel; Paso; Ciudad · Rodrigo; Euros. Revisa 'evidencia' de cada concepto para redactar el resumen final.",
-  "resumen": "La actualidad salmantina entre el 5 y el 8 de noviembre de 2026 ha estado marcada por un emotivo homenaje al exjugador de Unionistas Jesús Miguel, con el derbi contra el Zamora en el Reina Sofía como telón de fondo. En baloncesto, el equipo Meins Avenida ha disputado partidos relevantes. El fútbol local también ha visto la goleada del Santa Marta, que lo coloca en posición de liderazgo.\n\nEn la provincia, Ciudad Rodrigo ha destacado por su capa, el luto por Curro Sánchez y el concurso Miropincho. Guijuelo ha suspendido una gala taurina y ha visto cortada su buena racha deportiva. Santa Marta de Tormes ha realizado adjudicaciones para pavimentación y ha finalizado una pista de atletismo. Béjar ha iniciado su agenda navideña y ha sido escenario de acusaciones políticas.\n\nLos sucesos han incluido varios accidentes de tráfico, como el fallecimiento de Curro Sánchez en Fuente San Esteban y una rotura en el paso a nivel de Babilafuente que generó peligro. Se ha registrado una oleada de robos en Castilla y León mediante suplantación de WhatsApp y la búsqueda de dos menores desaparecidas en Salamanca. Otros temas de interés han sido la situación de las residencias, el reencuentro de antiguos alumnos de la USAL y la investidura de Antonio Guterres como Doctor Honoris Causa."
+  "resumen_borrador": "Se han publicado 179 noticias entre el 2026-11-06 y el 2026-11-09. La actividad se ha concentrado sobre todo en salamanca (53 piezas), provincia (45 piezas), deportes (44 piezas).\n\nLos conceptos con más piezas relacionadas son: Tormes; Ciudad · Rodrigo; Jesus · Miguel; Euros. Revisa 'evidencia' de cada concepto para redactar el resumen final.",
+  "resumen": "La actualidad de Salamanca y su provincia entre el 6 y el 9 de noviembre de 2026 ha estado marcada por diversos acontecimientos. En el ámbito deportivo, Unionistas de Salamanca venció al Zamora en un derbi que sirvió como emotivo homenaje al exjugador Jesús Miguel en el estadio Reina Sofía. Por su parte, el Salamanca UDS consiguió una victoria en Ávila.\n\nEn la capital, el Ayuntamiento ha entregado viviendas a jóvenes, mientras que se ha alertado sobre el éxodo laboral que afecta a la provincia. La Universidad de Salamanca acogió la investidura de Antonio Guterres como Doctor Honoris Causa. La provincia ha registrado noticias como la marcha por la investigación del cáncer en Ciudad Rodrigo, la celebración de los Charritos en Cespedosa de Tormes y la apertura de la agenda de Navidad en Béjar.\n\nEn cuanto a sucesos, se ha producido el fallecimiento de Curro Sánchez en un accidente de tráfico y se ha activado una alerta meteorológica por lluvias intensas en Castilla y León. También se localizó a dos menores desaparecidas en Salamanca."
 }
