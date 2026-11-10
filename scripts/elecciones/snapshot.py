@@ -22,6 +22,11 @@ CONVOCATORIA = {
 }
 
 
+# Partidos de ámbito autonómico que no concurren en la circunscripción de Salamanca.
+# Atalaya los incluye (p. ej. un PNV por Salamanca viene de un error de su fuente): aquí se descartan.
+NO_CONCURREN = {'PNV', 'EHB', 'BILDU', 'ERC', 'JUNTS', 'BNG', 'CC', 'UPN', 'COMPROMIS', 'SALF'}
+
+
 def get(name):
     with urllib.request.urlopen(AT + name, timeout=30) as r:
         return json.loads(r.read().decode('utf8'))
@@ -49,11 +54,11 @@ if conv is None:
     conv = dict(CONVOCATORIA, estado='pendiente')
     prox['convocatorias'].append(conv)
 if conv.get('estado') == 'pendiente':
-    conv['candidaturas'] = prov['candidatos']
+    conv['candidaturas'] = [c for c in prov['candidatos'] if c['partido'] not in NO_CONCURREN]
     nac = get('politicos.json')['politicos']
     conv['nacionales'] = [
         {'nombre': x['nombre'], 'partido': x['partidoId'], 'cargo': x.get('cargo'), 'wiki': x.get('wiki')}
-        for x in nac if x.get('estado') == 'candidato' and x.get('nombre')]
+        for x in nac if x.get('estado') == 'candidato' and x.get('nombre') and x['partidoId'] not in NO_CONCURREN]
     sanchez = next((x for x in nac if x['id'] == 'pedro-snchez'), None)
     gob = [dict(g) for g in prov['gobierno']]
     if sanchez:

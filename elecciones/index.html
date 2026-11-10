@@ -188,7 +188,7 @@ table.dt tr:last-child td{border-bottom:0}
       <div><label for="polP">Partido</label><select id="polP"><option value="">Todos los partidos</option></select></div>
     </div>
     <div id="polBody"></div>
-    <p class="el-note">Fichas reutilizadas de Atalaya (Wikipedia y Wikidata); la foto y la descripción se leen de Wikipedia. Las listas del 29N son provinciales: en Salamanca se vota entre las cinco candidaturas de arriba, y los candidatos a presidir el Gobierno encabezan sus partidos en toda España. Las etiquetas «verificar» señalan datos de fuente abierta aún sin contrastar.</p>
+    <p class="el-note">Fichas reutilizadas de Atalaya (Wikipedia y Wikidata); la foto y la descripción se leen de Wikipedia. Las listas del 29N son provinciales: en Salamanca se vota entre las candidaturas de arriba, y los candidatos a presidir el Gobierno encabezan sus partidos en toda España. Las etiquetas «verificar» señalan datos de fuente abierta aún sin contrastar.</p>
   </div>
 
   <p class="el-note" style="margin:var(--spacing-xl) 0">Datos: resultados por municipio del Ministerio del Interior y la Junta de Castilla y León (archivados en <code>elecciones/</code>); límites, padrón y candidaturas de Atalaya (INE, IGN, Wikipedia y Wikidata); encuestas archivadas en <code>elecciones/encuestas.json</code>. Las candidaturas del 29N son provinciales: iguales en los 362 municipios. Las municipales de mayo de 2027 se añadirán cuando se publiquen las listas.</p>
@@ -335,7 +335,7 @@ function start(idx,raw,prox,gj,pad,encArch,encAt){
   const PKMAP={'Partido Popular':'PP','Partido Socialista Obrero Español':'PSOE','Vox':'VOX'};
   const ini=n=>n.split(/\s+/).filter(w=>w.length>2).slice(0,2).map(w=>w[0]).join('').toUpperCase();
   function person(p,rol,pk,verif){
-    const k=PKMAP[pk]||pk,col=({FA:colF('IZQ'),PNV:'#3C8D40'})[k]||colF(fam(k||''));
+    const k=PKMAP[pk]||pk,col=({FA:colF('IZQ')})[k]||colF(fam(k||''));
     const link=p.wiki?'<a href="https://es.wikipedia.org/wiki/'+encodeURIComponent(p.wiki)+'" target="_blank" rel="noopener">'+esc(p.nombre)+'</a>':esc(p.nombre);
     return '<div class="pc"><div class="av" style="background:'+col+'">'+esc(ini(p.nombre))+'</div><div><div class="nm">'+link+'</div><div class="rl"><span class="pty" style="background:'+col+'">'+esc(k||'—')+'</span>'+esc(rol)+(verif?'<span class="tag">verificar</span>':'')+'</div></div></div>';
   }
@@ -343,7 +343,7 @@ function start(idx,raw,prox,gj,pad,encArch,encAt){
     if(!next)return '';
     const ord=['PP','PSOE','VOX','FA','PNV'];
     const cs=(next.candidaturas||[]).slice().sort((a,b)=>(ord.indexOf(a.partido)+99)%99-(ord.indexOf(b.partido)+99)%99);
-    return '<div class="p-sec"><h3>Se presentan · '+esc(next.etiqueta)+' <span class="tag ok">Congreso</span></h3><p class="sub">Cabezas de lista por Salamanca. '+(sel?'Son las mismas en todos los municipios.':'Pulsa un municipio para ver su historial.')+'</p>'+cs.map(c=>person(c,'Cabeza de lista'+(c.nota?' ('+c.nota.replace(/\[\[|\]\]/g,'').split('|').pop()+')':''),c.partido,c.partido==='PNV')).join('')+'</div>';
+    return '<div class="p-sec"><h3>Se presentan · '+esc(next.etiqueta)+' <span class="tag ok">Congreso</span></h3><p class="sub">Cabezas de lista por Salamanca. '+(sel?'Son las mismas en todos los municipios.':'Pulsa un municipio para ver su historial.')+'</p>'+cs.map(c=>person(c,'Cabeza de lista'+(c.nota?' ('+c.nota.replace(/\[\[|\]\]/g,'').split('|').pop()+')':''),c.partido,false)).join('')+'</div>';
   }
   function gobierno(){
     if(!next)return '';
@@ -503,7 +503,7 @@ function start(idx,raw,prox,gj,pad,encArch,encAt){
     const pf=$('polF').value,pp=$('polP').value;
     let h='';
     if(pf!=='gob'){
-      h+=sec('Cabezas de lista por Salamanca',prov.length+' candidaturas · Congreso',prov.map(c=>ficha(c,'Cabeza de lista por Salamanca'+(c.nota?' ('+c.nota.replace(/\[\[|\]\]/g,'').split('|').pop()+')':''),c.partido,c.partido==='PNV','cand')).join(''));
+      h+=sec('Cabezas de lista por Salamanca',prov.length+' candidaturas · Congreso',prov.map(c=>ficha(c,'Cabeza de lista por Salamanca'+(c.nota?' ('+c.nota.replace(/\[\[|\]\]/g,'').split('|').pop()+')':''),c.partido,false,'cand')).join(''));
       h+=sec('Candidatos a presidir el Gobierno',nac.length+' candidaturas nacionales',nac.map(c=>ficha(c,c.cargo||'Candidato/a',c.partido,false,'cand')).join(''));
     }
     if(pf!=='cand'){
