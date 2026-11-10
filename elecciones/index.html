@@ -283,8 +283,8 @@ function start(idx,raw,prox,gj,pad,encArch,encAt){
   const geo=L.geoJSON(GEO,{style:style,onEachFeature:function(f,l){
     const c=f.properties.c;layers[c]=l;
     l.on({click:()=>select(c,false),
-      mouseover:e=>{if(c!==sel)e.target.setStyle({weight:2,color:'#264653'});e.target.bringToFront();if(sel&&layers[sel])layers[sel].bringToFront()},
-      mouseout:e=>{if(c!==sel)geo.resetStyle(e.target)}});
+      mouseover:e=>{if(c!==sel)e.target.setStyle({weight:2,color:'#264653'})},
+      mouseout:e=>{e.target.closeTooltip();if(c!==sel)geo.resetStyle(e.target)}});
     l.bindTooltip(()=>{const m=byId[selEid].mun[c];let t='<b>'+esc(f.properties.n)+'</b><br>'+(POP[c]?fmt(POP[c])+' hab.':'');
       if(cmpId){const s=swing(c);if(s)t+=' · sube '+FAM[s.k].n+' ('+(s.d>=0?'+':'')+f1(s.d)+' pp)'}else if(m&&m.win)t+=' · gana '+FAM[m.win].n+' ('+f1(pct(byId[selEid],c,m.win))+'%)';return t},{sticky:true});
   }}).addTo(map);
