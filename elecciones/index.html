@@ -1,0 +1,247 @@
+---
+layout: default
+title: Elecciones en Salamanca: quién se presenta en cada municipio
+description: Mapa de los 362 municipios de la provincia de Salamanca con los cabezas de lista de las elecciones generales del 29 de noviembre de 2026, quién gobierna hoy y cómo votó cada localidad en las municipales de 2023
+date: 10-11-2026
+folder: Politica
+permalink: /elecciones/
+---
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<style>
+.el-hero{padding:var(--spacing-2xl) 0 var(--spacing-lg)}
+.el-hero .kicker{display:inline-flex;gap:8px;align-items:center;font-size:.78rem;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--primary-color)}
+.el-hero .kicker i{width:8px;height:8px;border-radius:50%;background:var(--accent-color);display:inline-block}
+.el-hero h1{font-size:clamp(1.7rem,3.2vw,2.4rem);line-height:1.15;margin:.4rem 0 .6rem;color:var(--neutral-color)}
+.el-hero p{max-width:760px;color:#555;line-height:1.65;margin:0}
+.el-meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:var(--spacing-md)}
+.chip{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--border-color);background:#fff;border-radius:999px;padding:5px 12px;font-size:.8rem;color:var(--neutral-color)}
+.chip b{color:var(--primary-color)}
+.chip.warn{background:#FFF6EC;border-color:#F4D7B6}
+.el-controls{display:flex;flex-wrap:wrap;gap:var(--spacing-md);align-items:flex-end;margin:var(--spacing-lg) 0 var(--spacing-md)}
+.el-controls label{display:block;font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.04em;color:var(--neutral-color);margin-bottom:4px}
+.el-controls input,.el-controls select{font:inherit;font-size:.92rem;padding:9px 12px;border:1px solid var(--border-color);border-radius:8px;background:#fff;min-width:230px}
+.el-controls input:focus,.el-controls select:focus{outline:2px solid var(--secondary-color);outline-offset:1px}
+.el-grid{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(340px,1fr);gap:var(--spacing-lg);align-items:start}
+.el-mapwrap{position:relative}
+#mapa{height:660px;border-radius:12px;box-shadow:var(--shadow-md);background:#EEF2ED;border:1px solid var(--border-color)}
+.el-legend{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.lg{display:inline-flex;align-items:center;gap:7px;font:inherit;font-size:.8rem;border:1px solid var(--border-color);background:#fff;border-radius:999px;padding:5px 11px;cursor:pointer;color:var(--text-color)}
+.lg:hover{border-color:var(--secondary-color)}
+.lg.on{background:var(--neutral-color);color:#fff;border-color:var(--neutral-color)}
+.lg i{width:11px;height:11px;border-radius:50%;display:inline-block}
+.lg small{opacity:.7}
+.el-note{font-size:.82rem;color:var(--neutral-color);line-height:1.6;margin-top:10px}
+.panel{background:#fff;border:1px solid var(--border-color);border-radius:12px;box-shadow:var(--shadow-md);position:sticky;top:calc(var(--header-height,70px) + 12px);max-height:calc(100vh - var(--header-height,70px) - 28px);overflow:auto}
+.p-head{padding:var(--spacing-lg) var(--spacing-lg) var(--spacing-md);border-bottom:1px solid var(--border-color);background:linear-gradient(180deg,#F6F9F4,#fff)}
+.p-head .crumb{font-size:.75rem;color:#777;margin-bottom:4px;display:flex;justify-content:space-between;gap:8px}
+.p-head .crumb button{font:inherit;font-size:.75rem;color:var(--primary-color);background:none;border:0;cursor:pointer;padding:0;text-decoration:underline}
+.p-head h2{margin:0;font-size:1.45rem;color:var(--neutral-color);line-height:1.2}
+.p-stats{display:flex;gap:18px;flex-wrap:wrap;margin-top:10px;font-size:.82rem;color:#555}
+.p-stats b{display:block;font-size:1.05rem;color:var(--primary-color);font-family:var(--font-mono)}
+.p-sec{padding:var(--spacing-md) var(--spacing-lg);border-bottom:1px solid var(--border-color)}
+.p-sec:last-child{border-bottom:0}
+.p-sec h3{margin:0 0 4px;font-size:.78rem;text-transform:uppercase;letter-spacing:.05em;color:var(--primary-color);font-weight:700}
+.p-sec .sub{font-size:.8rem;color:#777;margin:0 0 10px;line-height:1.5}
+.tag{display:inline-block;font-size:.68rem;font-weight:600;padding:1px 7px;border-radius:999px;background:#FFF6EC;color:#9A5B16;border:1px solid #F4D7B6;margin-left:6px;vertical-align:middle;text-transform:none;letter-spacing:0}
+.tag.ok{background:#EEF6EC;color:var(--primary-color);border-color:#C9DFC0}
+.pc{display:flex;gap:12px;align-items:center;padding:9px 0;border-top:1px solid #F1F3F1}
+.pc:first-of-type{border-top:0}
+.av{flex:0 0 40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:.82rem}
+.pc .nm{font-weight:600;color:var(--text-color);line-height:1.25;font-size:.93rem}
+.pc .nm a{color:inherit;text-decoration:none;border-bottom:1px dotted #aaa}
+.pc .nm a:hover{color:var(--primary-color);border-color:var(--primary-color)}
+.pc .rl{font-size:.78rem;color:#777;margin-top:2px;line-height:1.35}
+.pty{display:inline-block;font-size:.7rem;font-weight:700;color:#fff;padding:1px 8px;border-radius:4px;margin-right:6px;letter-spacing:.02em}
+.bar{display:grid;grid-template-columns:78px 1fr 110px;gap:8px;align-items:center;font-size:.8rem;margin:5px 0}
+.bar .t{height:9px;background:#EEF2ED;border-radius:5px;overflow:hidden}
+.bar .t i{display:block;height:100%;border-radius:5px}
+.bar .v{text-align:right;font-family:var(--font-mono);color:#555;font-size:.74rem}
+.bar .n{font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.empty{font-size:.82rem;color:#777;background:#F8FAF7;border:1px dashed #D5DFD0;border-radius:8px;padding:10px 12px;line-height:1.5}
+.src{margin:var(--spacing-2xl) 0}
+.src h2{color:var(--neutral-color)}
+.src table{width:100%;border-collapse:collapse;font-size:.88rem;background:#fff;border:1px solid var(--border-color)}
+.src th{text-align:left;background:#F2F6EF;color:var(--neutral-color);font-size:.74rem;text-transform:uppercase;letter-spacing:.04em}
+.src th,.src td{padding:10px 14px;border-bottom:1px solid var(--border-color);vertical-align:top}
+.src code{font-family:var(--font-mono);font-size:.78rem;background:#F2F6EF;padding:1px 6px;border-radius:4px}
+.src .tbl{overflow-x:auto;border-radius:12px}
+.leaflet-container{font-family:var(--font-family)}
+.leaflet-tooltip{border-radius:8px;border:1px solid var(--border-color);box-shadow:var(--shadow-md);font-size:.82rem;padding:6px 10px}
+.leaflet-tooltip b{color:var(--neutral-color)}
+@media (max-width:980px){.el-grid{grid-template-columns:1fr}.panel{position:static;max-height:none}#mapa{height:460px}.el-controls input,.el-controls select{min-width:0;width:100%}.el-controls>div{flex:1 1 100%}}
+</style>
+<section class="container">
+  <section class="el-hero">
+    <span class="kicker"><i></i>Elecciones generales · 29 de noviembre de 2026</span>
+    <h1>Quién se presenta en la provincia de Salamanca</h1>
+    <p>Pulsa cualquiera de los 362 municipios para ver las candidaturas que se presentan, quién gobierna hoy y cómo votó esa localidad en las últimas municipales.</p>
+    <div class="el-meta">
+      <span class="chip"><b id="dias">—</b> hasta las urnas</span>
+      <span class="chip"><b>5</b> cabezas de lista al Congreso por Salamanca</span>
+      <span class="chip"><b>362</b> municipios</span>
+    </div>
+  </section>
+
+  <div class="el-controls">
+    <div><label for="q">Buscar municipio</label><input id="q" list="dl" placeholder="Ej.: Alba de Tormes" autocomplete="off"><datalist id="dl"></datalist></div>
+    <div><label for="modo">Colorear mapa por</label>
+      <select id="modo"><option value="gan">Partido más votado · municipales 2023</option><option value="pob">Población · padrón 2025</option></select></div>
+  </div>
+
+  <div class="el-grid">
+    <div class="el-mapwrap">
+      <div id="mapa" role="application" aria-label="Mapa de municipios de la provincia de Salamanca"></div>
+      <div class="el-legend" id="leyenda"></div>
+      <p class="el-note" id="nota"></p>
+    </div>
+    <aside class="panel" id="panel" aria-live="polite"></aside>
+  </div>
+
+  <section class="src">
+    <h2>De dónde sale cada dato</h2>
+    <p class="el-note" style="margin-top:0">Nada de esta página es nuevo: todo se lee de los ficheros que ya alimentan <b>Atalaya</b> y de los datasets que ya tiene Open Salamanca.</p>
+    <div class="tbl"><table>
+      <thead><tr><th>Qué se ve</th><th>Nivel</th><th>Fichero reutilizado</th><th>Origen</th></tr></thead>
+      <tbody>
+        <tr><td>Límites de los municipios</td><td>Municipio</td><td><code>atalaya/data/prov/37.geojson</code></td><td>IGN / Opendatasoft</td></tr>
+        <tr><td>Cabezas de lista al Congreso (29N)</td><td>Provincia</td><td><code>atalaya/data/politicos_prov.json</code> → <code>prov.37.candidatos</code></td><td>Wikipedia</td></tr>
+        <tr><td>Quién gobierna (Junta, capital, Diputación)</td><td>Provincia / capital</td><td><code>atalaya/data/politicos_prov.json</code> → <code>prov.37.gobierno</code></td><td>Wikidata y Wikipedia</td></tr>
+        <tr><td>Voto por municipio, municipales 2023</td><td>Municipio</td><td><code>elecciones/municipales-2023-05.json</code> (ya en Open Salamanca)</td><td>Ministerio del Interior</td></tr>
+        <tr><td>Población</td><td>Municipio</td><td><code>atalaya/data/padron.json</code></td><td>INE, padrón 2025</td></tr>
+      </tbody></table></div>
+    <p class="el-note"><b>Qué no existe todavía:</b> candidaturas por localidad. Las listas del 29N son provinciales (iguales en todos los municipios) y las municipales son en mayo de 2027, así que aún no hay concejales ni alcaldables por pueblo. Cuando se publiquen, este mismo panel los mostraría sin cambiar el diseño.</p>
+  </section>
+</section>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+(function(){
+const AT='https://emirodgar.es/atalaya/data/';
+const urls=['/elecciones/municipales-2023-05.json',AT+'prov/37.geojson',AT+'padron.json',AT+'politicos_prov.json',AT+'resultados/municipales-2023-05/37.json'];
+Promise.all(urls.map(u=>fetch(u).then(r=>{if(!r.ok)throw new Error(u+' '+r.status);return r.json()}))).then(function(d){
+  const os=d[0],gj=d[1],pad=d[2],pol=d[3],at=d[4];
+  const MUN={},NAMES={},POP={};
+  Object.keys(os.municipios).forEach(c=>{
+    const m=os.municipios[c],a=(at.mun||{})[c]||{};
+    MUN[c]={n:m.nombre,cen:a.censo||m.censo,vot:a.votantes||m.votantes,res:m.resultados.map(r=>[r.siglas,r.votos]).sort((x,y)=>y[1]-x[1])};
+    if(pad.mun[c])POP[c]=pad.mun[c][0];
+  });
+  const seen={};
+  const GEO={type:'FeatureCollection',features:gj.features.filter(f=>{const c=f.properties.c;if(!MUN[c]||seen[c])return false;seen[c]=1;NAMES[c]=f.properties.n;return true})};
+  const PN={};Object.keys(at.partidos||{}).forEach(k=>{if(k!=='Total votos a candidatos'&&k!=='Votos')PN[k]=at.partidos[k]});
+  const PROVPOP=Object.keys(POP).reduce((s,c)=>s+POP[c],0);
+  init(GEO,MUN,POP,PROVPOP,NAMES,pol.prov['37'],PN);
+}).catch(function(e){
+  console.error('Elecciones: no se pudieron cargar los datos',e);
+  document.getElementById('panel').innerHTML='<div class="p-sec"><div class="empty">No se han podido cargar los datos electorales. Inténtalo de nuevo en unos minutos.</div></div>';
+});
+function init(GEO,MUN,POP,PROVPOP,NAMES,PP,PN){
+const $=id=>document.getElementById(id);
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const fmt=n=>n.toLocaleString('es-ES');
+const COL={PP:'#1E56A0',PSOE:'#A8201A',VOX:'#2C5F2D',CS:'#F4A261','PODEMOS-IU-AV':'#7B2D8B',FA:'#7B2D8B',PNV:'#3C8D40','U.P.L.':'#B5651D'};
+const OTROS='#8A8A8A';
+const colp=s=>COL[s]||OTROS;
+const PORDER=['PP','PSOE','VOX','FA','PNV'];
+const CAPITAL='37274';
+const dd=Math.round((new Date('2026-11-29T00:00:00')-new Date(new Date().toDateString()))/864e5);
+$('dias').textContent=dd>0?(dd+' días'):dd===0?'Hoy':'Jornada pasada';
+const ini=n=>n.split(/\s+/).filter(w=>w.length>2).slice(0,2).map(w=>w[0]).join('').toUpperCase();
+
+function winner(code){const m=MUN[code];return m&&m.res&&m.res.length?m.res[0][0]:null}
+const key=t=>COL[t]?t:'OTROS';
+const ganCount={};Object.keys(MUN).forEach(c=>{const t=winner(c);if(t){const k=key(t);ganCount[k]=(ganCount[k]||0)+1}});
+
+// ---------- mapa ----------
+const map=L.map('mapa',{zoomControl:true,minZoom:8,zoomSnap:.25});
+let modo='gan',sel=null,hl=null;const layers={};
+const POPBINS=[[0,100,'#EEF2ED'],[100,500,'#C9DFC0'],[500,2000,'#97BC62'],[2000,10000,'#5C8A44'],[10000,1e9,'#2C5F2D']];
+function fill(c){
+  if(modo==='pob'){const p=POP[c]||0;return(POPBINS.find(b=>p>=b[0]&&p<b[1])||POPBINS[0])[2]}
+  const t=winner(c);if(!t)return '#DADADA';
+  if(hl&&key(t)!==hl)return '#E6EAE4';
+  return colp(t);
+}
+function style(f){const c=f.properties.c,on=c===sel;return{fillColor:fill(c),fillOpacity:.88,color:on?'#F4A261':'#fff',weight:on?3:.6,opacity:1}}
+const geo=L.geoJSON(GEO,{style,onEachFeature:(f,l)=>{
+  const c=f.properties.c;layers[c]=l;
+  l.on({click:()=>select(c,false),
+    mouseover:e=>{if(c!==sel)e.target.setStyle({weight:2,color:'#264653'});e.target.bringToFront();if(sel&&layers[sel])layers[sel].bringToFront()},
+    mouseout:e=>{if(c!==sel)geo.resetStyle(e.target)}});
+  const t=winner(c);
+  l.bindTooltip('<b>'+esc(f.properties.n)+'</b><br>'+(POP[c]?fmt(POP[c])+' hab.':'')+(t?' · ganó '+esc(t)+' (2023)':''),{sticky:true});
+}}).addTo(map);
+map.fitBounds(geo.getBounds(),{padding:[8,8]});
+map.setMaxBounds(geo.getBounds().pad(.6));
+
+function legend(){
+  let h='';
+  if(modo==='gan'){
+    h=['PP','PSOE','VOX','CS','OTROS'].filter(k=>ganCount[k]).map(k=>'<button class="lg'+(hl===k?' on':'')+'" data-k="'+k+'"><i style="background:'+(k==='OTROS'?OTROS:colp(k))+'"></i>'+(k==='OTROS'?'Otras candidaturas':k)+' <small>'+ganCount[k]+'</small></button>').join('');
+    $('nota').textContent='Cada municipio se colorea con el partido más votado en las municipales del 28 de mayo de 2023. Pulsa una sigla para resaltar solo esos municipios.';
+  }else{
+    h=POPBINS.map(b=>'<span class="lg" style="cursor:default"><i style="background:'+b[2]+';border:1px solid #cfd8cc"></i>'+(b[0]===0?'&lt; 100':b[1]>=1e9?'&gt; 10.000':fmt(b[0])+'–'+fmt(b[1]))+'</span>').join('');
+    $('nota').textContent='Habitantes según el padrón del INE de 2025.';
+  }
+  $('leyenda').innerHTML=h;
+  $('leyenda').querySelectorAll('button').forEach(b=>b.onclick=()=>{hl=hl===b.dataset.k?null:b.dataset.k;repaint();legend()});
+}
+function repaint(){geo.setStyle(style);if(sel&&layers[sel])layers[sel].bringToFront()}
+$('modo').onchange=e=>{modo=e.target.value;hl=null;repaint();legend()};
+
+// ---------- panel ----------
+const PKMAP={'Partido Popular':'PP','Partido Socialista Obrero Español':'PSOE','Vox':'VOX'};
+const PK=n=>n?(PKMAP[n]||n):null;
+function person(p,rol,pk,verif){
+  const link=p.wiki?'<a href="https://es.wikipedia.org/wiki/'+encodeURIComponent(p.wiki)+'" target="_blank" rel="noopener">'+esc(p.nombre)+'</a>':esc(p.nombre);
+  return '<div class="pc"><div class="av" style="background:'+colp(pk)+'">'+esc(ini(p.nombre))+'</div><div><div class="nm">'+link+'</div><div class="rl"><span class="pty" style="background:'+colp(pk)+'">'+esc(pk||'—')+'</span>'+esc(rol)+(verif?'<span class="tag">verificar</span>':'')+'</div></div></div>';
+}
+function gobBlock(code){
+  let h='';
+  [['autonómico'],['provincial'],['municipal']].forEach(([a])=>{
+    if(a==='municipal'&&code&&code!==CAPITAL){
+      h+='<div class="empty" style="margin-top:8px"><b>Alcaldía de '+esc(MUN[code]?MUN[code].n:'este municipio')+':</b> Atalaya solo recoge a quien gobierna la capital de cada provincia; no hay dato por pueblo.</div>';return;
+    }
+    PP.gobierno.filter(x=>x.ambito===a).forEach(x=>{h+=person(x,x.rol,PK(x.partido),/verificar/i.test(x.fuente||''))});
+  });
+  return h;
+}
+function bars(code){
+  const m=MUN[code];if(!m||!m.res.length)return '<div class="empty">Sin votos a candidaturas registrados.</div>';
+  const tot=m.res.reduce((a,r)=>a+r[1],0),max=m.res[0][1];
+  return m.res.slice(0,6).map(r=>'<div class="bar"><span class="n" title="'+esc(PN[r[0]]||r[0])+'">'+esc(r[0])+'</span><span class="t"><i style="width:'+(r[1]/max*100).toFixed(1)+'%;background:'+colp(r[0])+'"></i></span><span class="v">'+(r[1]/tot*100).toFixed(1)+'% · '+fmt(r[1])+'</span></div>').join('')+(m.res.length>6?'<div style="font-size:.76rem;color:#777;margin-top:4px">+ '+(m.res.length-6)+' candidaturas más</div>':'');
+}
+const cands=PP.candidatos.slice().sort((a,b)=>PORDER.indexOf(a.partido)-PORDER.indexOf(b.partido));
+function render(){
+  const m=sel?MUN[sel]:null;
+  let h='<div class="p-head"><div class="crumb"><span>Provincia de Salamanca'+(sel?' › Municipio':'')+'</span>'+(sel?'<button id="volver">Ver toda la provincia</button>':'')+'</div>';
+  if(sel){
+    const name=NAMES[sel]||sel;
+    const part=m&&m.cen?Math.round(m.vot/m.cen*100):null;
+    h+='<h2>'+esc(name)+'</h2><div class="p-stats"><div><b>'+(POP[sel]?fmt(POP[sel]):'—')+'</b>habitantes</div>'+(m&&m.cen?'<div><b>'+fmt(m.cen)+'</b>electores</div>':'')+(part!==null?'<div><b>'+part+'%</b>participación 2023</div>':'')+'</div>';
+  }else{
+    h+='<h2>Provincia de Salamanca</h2><div class="p-stats"><div><b>'+Object.keys(NAMES).length+'</b>municipios</div><div><b>'+fmt(PROVPOP)+'</b>habitantes</div><div><b>'+cands.length+'</b>candidaturas</div></div>';
+  }
+  h+='</div>';
+  h+='<div class="p-sec"><h3>Se presentan el 29N <span class="tag ok">Congreso</span></h3><p class="sub">Cabezas de lista por la circunscripción de Salamanca. '+(sel?'Son las mismas en todos los municipios de la provincia.':'Pulsa un municipio del mapa para ver también su historial de voto.')+'</p>'+cands.map(c=>person(c,'Cabeza de lista'+(c.nota?' ('+c.nota.replace(/\[\[|\]\]/g,'').split('|').pop()+')':''),c.partido,c.partido==='PNV')).join('')+'</div>';
+  h+='<div class="p-sec"><h3>Quién gobierna hoy</h3>'+gobBlock(sel)+'</div>';
+  if(sel)h+='<div class="p-sec"><h3>Así votó en las municipales de 2023</h3><p class="sub">Porcentaje sobre los votos a candidaturas; la barra es relativa a la más votada.</p>'+bars(sel)+'</div>';
+  h+='<div class="p-sec" style="font-size:.76rem;color:#777;line-height:1.5">Datos reutilizados de Atalaya (Wikidata, Wikipedia, INE) y del Ministerio del Interior. Las etiquetas <span class="tag">verificar</span> señalan datos de fuente abierta aún sin contrastar.</div>';
+  $('panel').innerHTML=h;
+  const v=$('volver');if(v)v.onclick=()=>select(null);
+}
+function select(c,zoom){
+  if(zoom===undefined)zoom=true;
+  const prev=sel;sel=c;
+  if(prev&&layers[prev])geo.resetStyle(layers[prev]);
+  if(c&&layers[c]){layers[c].setStyle(style(layers[c].feature));layers[c].bringToFront();if(zoom)map.fitBounds(layers[c].getBounds(),{maxZoom:12,padding:[40,40]});$('q').value=NAMES[c]||''}
+  if(!c){map.fitBounds(geo.getBounds(),{padding:[8,8]});$('q').value=''}
+  render();
+}
+const names=Object.keys(NAMES).map(c=>[NAMES[c],c]).sort((a,b)=>a[0].localeCompare(b[0],'es'));
+$('dl').innerHTML=names.map(n=>'<option value="'+esc(n[0])+'">').join('');
+$('q').addEventListener('change',e=>{const v=e.target.value.trim().toLowerCase();const f=names.find(n=>n[0].toLowerCase()===v);if(f)select(f[1])});
+legend();
+select(CAPITAL,false);
+}
+})();
+</script>
