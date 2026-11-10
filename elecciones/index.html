@@ -79,6 +79,19 @@ table.dt tr:last-child td{border-bottom:0}
 .split{display:grid;grid-template-columns:1fr 1fr;gap:var(--spacing-lg)}
 .up-box{border:1px dashed #C9DFC0;background:#F8FBF6;border-radius:12px;padding:var(--spacing-md);margin:var(--spacing-md) 0}
 .up-box p{margin:0 0 8px;font-size:.82rem;line-height:1.55;color:#555}
+.fichas{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:16px;margin-bottom:var(--spacing-xl)}
+.ficha{--pc:#8A8A8A;background:#fff;border:1px solid var(--border-color);border-top:4px solid var(--pc);border-radius:12px;padding:16px;display:flex;flex-direction:column;gap:10px;box-shadow:var(--shadow-sm,0 1px 3px rgba(0,0,0,.06))}
+.ficha .top{display:flex;gap:12px;align-items:center}
+.ficha .ph{flex:0 0 60px;height:60px;border-radius:50%;background:var(--pc);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:1.05rem;overflow:hidden}
+.ficha .ph img{width:100%;height:100%;object-fit:cover}
+.ficha h4{margin:0;font-size:1rem;line-height:1.25;color:var(--neutral-color)}
+.ficha .rol{font-size:.8rem;color:#555;line-height:1.4}
+.ficha .desc{font-size:.76rem;color:#777;line-height:1.45;min-height:1.1em}
+.ficha .ft{display:flex;justify-content:space-between;align-items:center;margin-top:auto;font-size:.76rem}
+.ficha .ft a{color:var(--primary-color)}
+.sec-h{display:flex;align-items:baseline;gap:10px;margin:var(--spacing-lg) 0 var(--spacing-md)}
+.sec-h h3{margin:0;color:var(--neutral-color);font-size:1.1rem}
+.sec-h span{font-size:.8rem;color:#777}
 .leaflet-container{font-family:var(--font-family)}
 .leaflet-tooltip{border-radius:8px;border:1px solid var(--border-color);box-shadow:var(--shadow-md);font-size:.8rem;padding:6px 10px}
 @media (max-width:980px){.el-grid,.split{grid-template-columns:1fr}.panel{position:static;max-height:none}#mapa{height:440px}.el-controls input,.el-controls select{min-width:0;width:100%}.el-controls>div{flex:1 1 100%}}
@@ -101,6 +114,7 @@ table.dt tr:last-child td{border-bottom:0}
     <button role="tab" data-v="hist" aria-selected="false">Histórico</button>
     <button role="tab" data-v="comp" aria-selected="false">Comparar</button>
     <button role="tab" data-v="enc" aria-selected="false">Encuestas</button>
+    <button role="tab" data-v="pol" aria-selected="false">Políticos</button>
   </div>
 
   <!-- MAPA -->
@@ -165,6 +179,16 @@ table.dt tr:last-child td{border-bottom:0}
       </div>
       <p id="encMsg" style="margin:8px 0 0"></p>
     </div>
+  </div>
+
+  <!-- POLÍTICOS -->
+  <div class="view" id="v-pol">
+    <div class="el-controls">
+      <div><label for="polF">Mostrar</label><select id="polF"><option value="">Todos</option><option value="cand">Se presentan</option><option value="gob">Gobiernan hoy</option></select></div>
+      <div><label for="polP">Partido</label><select id="polP"><option value="">Todos los partidos</option></select></div>
+    </div>
+    <div id="polBody"></div>
+    <p class="el-note">Fichas reutilizadas de Atalaya (Wikipedia y Wikidata); la foto y la descripción se leen de Wikipedia. Las listas del 29N son provinciales: en Salamanca se vota entre las cinco candidaturas de arriba, y los candidatos a presidir el Gobierno encabezan sus partidos en toda España. Las etiquetas «verificar» señalan datos de fuente abierta aún sin contrastar.</p>
   </div>
 
   <p class="el-note" style="margin:var(--spacing-xl) 0">Datos: resultados por municipio del Ministerio del Interior y la Junta de Castilla y León (archivados en <code>elecciones/</code>); límites, padrón y candidaturas de Atalaya (INE, IGN, Wikipedia y Wikidata); encuestas archivadas en <code>elecciones/encuestas.json</code>. Las candidaturas del 29N son provinciales: iguales en los 362 municipios. Las municipales de mayo de 2027 se añadirán cuando se publiquen las listas.</p>
@@ -255,10 +279,11 @@ function start(idx,raw,prox,gj,pad,encArch,encAt){
   function show(v){
     document.querySelectorAll('#tabs button').forEach(b=>b.setAttribute('aria-selected',b.dataset.v===v));
     document.querySelectorAll('.view').forEach(x=>x.classList.toggle('on',x.id==='v-'+v));
-    if(v==='mapa')map.invalidateSize();
+    if(v==='mapa'){map.invalidateSize();fit()}
     if(v==='hist')renderHist();
     if(v==='comp')renderComp();
     if(v==='enc')renderEnc();
+    if(v==='pol')renderPol();
     try{history.replaceState(null,'','#'+v)}catch(e){}
   }
   document.querySelectorAll('#tabs button').forEach(b=>b.onclick=()=>show(b.dataset.v));
@@ -288,7 +313,12 @@ function start(idx,raw,prox,gj,pad,encArch,encAt){
     l.bindTooltip(()=>{const m=byId[selEid].mun[c];let t='<b>'+esc(f.properties.n)+'</b><br>'+(POP[c]?fmt(POP[c])+' hab.':'');
       if(cmpId){const s=swing(c);if(s)t+=' · sube '+FAM[s.k].n+' ('+(s.d>=0?'+':'')+f1(s.d)+' pp)'}else if(m&&m.win)t+=' · gana '+FAM[m.win].n+' ('+f1(pct(byId[selEid],c,m.win))+'%)';return t},{sticky:true});
   }}).addTo(map);
-  map.fitBounds(geo.getBounds(),{padding:[8,8]});map.setMaxBounds(geo.getBounds().pad(.6));
+  let fitted=false;
+  function fit(){ // con la pestaña oculta el mapa mide 0 px: se encuadra cuando haya tamaño
+    if(fitted)return;map.invalidateSize();const s=map.getSize();if(!s.x||!s.y)return;
+    map.fitBounds(geo.getBounds(),{padding:[8,8]});map.setMaxBounds(geo.getBounds().pad(.6));fitted=true;
+  }
+  fit();window.addEventListener('resize',()=>{map.invalidateSize();fit()});
 
   function legend(){
     const e=byId[selEid],cnt={};
@@ -350,8 +380,8 @@ function start(idx,raw,prox,gj,pad,encArch,encAt){
     if(zoom===undefined)zoom=true;
     const prev=sel;sel=c;
     if(prev&&layers[prev])geo.resetStyle(layers[prev]);
-    if(c&&layers[c]){layers[c].setStyle(style(layers[c].feature));layers[c].bringToFront();if(zoom)map.fitBounds(layers[c].getBounds(),{maxZoom:12,padding:[40,40]});$('q').value=NAMES[c]}
-    if(!c){map.fitBounds(geo.getBounds(),{padding:[8,8]});$('q').value=''}
+    if(c&&layers[c]){layers[c].setStyle(style(layers[c].feature));layers[c].bringToFront();if(zoom&&fitted)map.fitBounds(layers[c].getBounds(),{maxZoom:12,padding:[40,40]});$('q').value=NAMES[c]}
+    if(!c){if(fitted)map.fitBounds(geo.getBounds(),{padding:[8,8]});$('q').value=''}
     render();
   }
   $('q').addEventListener('change',e=>{const v=e.target.value.trim().toLowerCase();const c=Object.keys(NAMES).find(k=>NAMES[k].toLowerCase()===v);if(c)select(c)});
@@ -456,7 +486,45 @@ function start(idx,raw,prox,gj,pad,encArch,encAt){
   $('btnClear').onclick=function(){if(confirm('¿Borrar las encuestas que has cargado en este navegador?')){store.del(MINE);encSel=[];$('encMsg').textContent='';renderEnc()}};
   $('nEnc').textContent=allEnc().length;
 
-  const h=(location.hash||'').slice(1);if(['hist','comp','enc'].indexOf(h)>=0)show(h);
+  /* ---------- políticos (fichas) ---------- */
+  const PC2={PP:'#1E56A0',PSOE:'#A8201A',VOX:'#2C5F2D',SUMAR:'#C03C8D',PODEMOS:'#7B2D8B',FA:'#7B2D8B',ERC:'#E8A400',JUNTS:'#00A19A',PNV:'#3C8D40',BNG:'#6FA8DC',CC:'#F2C200',UPN:'#1B5FA8',BILDU:'#7FB12E'};
+  const wcache={};
+  function ficha(p,rol,pk,verif,kind){
+    const k=PKMAP[pk]||pk||'',col=PC2[k]||'#8A8A8A';
+    return '<article class="ficha" style="--pc:'+col+'" data-k="'+esc(k)+'"><div class="top"><div class="ph" data-w="'+esc(p.wiki||'')+'">'+esc(ini(p.nombre))+'</div><div><h4>'+esc(p.nombre)+'</h4><span class="pty" style="background:'+col+';margin:4px 0 0">'+esc(k||'—')+'</span></div></div><div class="rol">'+esc(rol)+(verif?'<span class="tag">verificar</span>':'')+'</div><div class="desc"></div><div class="ft"><span>'+(kind==='gob'?'Gobierna hoy':'Se presenta')+'</span>'+(p.wiki?'<a href="https://es.wikipedia.org/wiki/'+encodeURIComponent(p.wiki)+'" target="_blank" rel="noopener">Wikipedia ↗</a>':'')+'</div></article>';
+  }
+  function renderPol(){
+    if(!next){$('polBody').innerHTML='<div class="empty">No hay una convocatoria abierta.</div>';return}
+    const ord=['PP','PSOE','VOX','FA','PNV'];
+    const prov=(next.candidaturas||[]).slice().sort((a,b)=>(ord.indexOf(a.partido)+99)%99-(ord.indexOf(b.partido)+99)%99);
+    const nac=next.nacionales||[],gob=next.gobierno||[];
+    const AMBN={nacional:'Gobierno de España',autonómico:'Junta de Castilla y León',provincial:'Diputación de Salamanca',municipal:'Ayuntamiento de Salamanca'};
+    const sec=(t,n,h)=>'<div class="sec-h"><h3>'+t+'</h3><span>'+n+'</span></div><div class="fichas">'+h+'</div>';
+    const pf=$('polF').value,pp=$('polP').value;
+    let h='';
+    if(pf!=='gob'){
+      h+=sec('Cabezas de lista por Salamanca',prov.length+' candidaturas · Congreso',prov.map(c=>ficha(c,'Cabeza de lista por Salamanca'+(c.nota?' ('+c.nota.replace(/\[\[|\]\]/g,'').split('|').pop()+')':''),c.partido,c.partido==='PNV','cand')).join(''));
+      h+=sec('Candidatos a presidir el Gobierno',nac.length+' candidaturas nacionales',nac.map(c=>ficha(c,c.cargo||'Candidato/a',c.partido,false,'cand')).join(''));
+    }
+    if(pf!=='cand'){
+      h+=sec('Gobiernan hoy',gob.length+' cargos',gob.map(g=>ficha(g,(AMBN[g.ambito]?AMBN[g.ambito]+' · ':'')+g.rol,g.partido,/verificar/i.test(g.fuente||''),'gob')).join(''));
+    }
+    $('polBody').innerHTML=h;
+    const ps={};document.querySelectorAll('#polBody .ficha').forEach(f=>{if(f.dataset.k)ps[f.dataset.k]=1});
+    const cur=$('polP').value;
+    $('polP').innerHTML='<option value="">Todos los partidos</option>'+Object.keys(ps).sort().map(k=>'<option>'+esc(k)+'</option>').join('');
+    if(cur&&ps[cur])$('polP').value=cur;
+    if(pp&&ps[pp])document.querySelectorAll('#polBody .ficha').forEach(f=>{if(f.dataset.k!==pp)f.style.display='none'});
+    document.querySelectorAll('#polBody .ph').forEach(el=>{
+      const w=el.dataset.w;if(!w)return;
+      const done=d=>{if(!d)return;const c=el.closest('.ficha');if(d.thumbnail&&d.thumbnail.source){const im=new Image();im.alt='';im.onload=()=>{el.textContent='';el.appendChild(im)};im.src=d.thumbnail.source}if(d.description)c.querySelector('.desc').textContent=d.description.charAt(0).toUpperCase()+d.description.slice(1)};
+      if(wcache[w]!==undefined){done(wcache[w]);return}
+      fetch('https://es.wikipedia.org/api/rest_v1/page/summary/'+encodeURIComponent(w)).then(r=>r.ok?r.json():null).catch(()=>null).then(d=>{wcache[w]=d||null;done(d)});
+    });
+  }
+  $('polF').onchange=renderPol;$('polP').onchange=renderPol;
+
+  const h=(location.hash||'').slice(1);if(['hist','comp','enc','pol'].indexOf(h)>=0)show(h);
 }
 })();
 </script>

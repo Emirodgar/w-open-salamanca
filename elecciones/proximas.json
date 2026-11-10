@@ -40,6 +40,14 @@
    ],
    "gobierno": [
     {
+     "rol": "Presidente del Gobierno de España",
+     "ambito": "nacional",
+     "nombre": "Pedro Sánchez",
+     "partido": "PSOE",
+     "wiki": "Pedro_Sánchez",
+     "fuente": "Atalaya"
+    },
+    {
      "rol": "Presidente/a de Castilla y León",
      "ambito": "autonómico",
      "nombre": "Alfonso Fernández Mañueco",
@@ -65,7 +73,75 @@
     }
    ],
    "fuente": "Atalaya (emirodgar.es/atalaya): Wikipedia y Wikidata",
-   "capturado": "2026-11-10"
+   "capturado": "2026-11-10",
+   "nacionales": [
+    {
+     "nombre": "Alberto Núñez Feijóo",
+     "partido": "PP",
+     "cargo": "Presidente del PP",
+     "wiki": "Alberto_Núñez_Feijóo"
+    },
+    {
+     "nombre": "Pedro Sánchez",
+     "partido": "PSOE",
+     "cargo": "Presidente del Gobierno y secretario general del PSOE",
+     "wiki": "Pedro_Sánchez"
+    },
+    {
+     "nombre": "Santiago Abascal",
+     "partido": "VOX",
+     "cargo": "Presidente de Vox",
+     "wiki": "Santiago_Abascal"
+    },
+    {
+     "nombre": "Ada Colau",
+     "partido": "SUMAR",
+     "cargo": "Cabeza de lista de Frente Amplio, alianza heredera de Sumar",
+     "wiki": "Ada_Colau"
+    },
+    {
+     "nombre": "Irene Montero",
+     "partido": "PODEMOS",
+     "cargo": "Candidata de Podemos, que concurre en solitario",
+     "wiki": "Irene_Montero"
+    },
+    {
+     "nombre": "Gabriel Rufián",
+     "partido": "ERC",
+     "cargo": "Portavoz de ERC en el Congreso",
+     "wiki": "Gabriel_Rufián"
+    },
+    {
+     "nombre": "Míriam Nogueras",
+     "partido": "JUNTS",
+     "cargo": "Portavoz de Junts en el Congreso",
+     "wiki": "Míriam_Nogueras"
+    },
+    {
+     "nombre": "Maribel Vaquero",
+     "partido": "PNV",
+     "cargo": null,
+     "wiki": "Maribel_Vaquero"
+    },
+    {
+     "nombre": "Néstor Rego",
+     "partido": "BNG",
+     "cargo": "Portavoz del BNG en el Congreso",
+     "wiki": "Néstor_Rego"
+    },
+    {
+     "nombre": "Cristina Valido",
+     "partido": "CC",
+     "cargo": "Diputada de Coalición Canaria",
+     "wiki": "Cristina_Valido"
+    },
+    {
+     "nombre": "Alberto Catalán",
+     "partido": "UPN",
+     "cargo": "Diputado de UPN",
+     "wiki": "Alberto_Catalán"
+    }
+   ]
   }
  ],
  "actualizado": "2026-11-10"

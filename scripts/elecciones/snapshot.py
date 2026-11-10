@@ -50,7 +50,16 @@ if conv is None:
     prox['convocatorias'].append(conv)
 if conv.get('estado') == 'pendiente':
     conv['candidaturas'] = prov['candidatos']
-    conv['gobierno'] = prov['gobierno']
+    nac = get('politicos.json')['politicos']
+    conv['nacionales'] = [
+        {'nombre': x['nombre'], 'partido': x['partidoId'], 'cargo': x.get('cargo'), 'wiki': x.get('wiki')}
+        for x in nac if x.get('estado') == 'candidato' and x.get('nombre')]
+    sanchez = next((x for x in nac if x['id'] == 'pedro-snchez'), None)
+    gob = [dict(g) for g in prov['gobierno']]
+    if sanchez:
+        gob.insert(0, {'rol': 'Presidente del Gobierno de España', 'ambito': 'nacional', 'nombre': sanchez['nombre'],
+                       'partido': 'PSOE', 'wiki': sanchez.get('wiki'), 'fuente': 'Atalaya'})
+    conv['gobierno'] = gob
     conv['fuente'] = 'Atalaya (emirodgar.es/atalaya): Wikipedia y Wikidata'
     conv['capturado'] = hoy
 prox['actualizado'] = hoy
