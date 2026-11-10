@@ -1,7 +1,7 @@
 {
   "mes": "2026-11",
   "titulo_mes": "Noviembre 2026",
-  "resumen_mes": "Noviembre ha estado marcado por el triste fallecimiento de Jesús Miguel, exjugador de Unionistas, y de Charo Diego, primera mujer presidenta de la Diputación. El mes ha visto el inicio de una huelga docente, la investidura de Antonio Guterres como Doctor Honoris Causa, el éxodo laboral y la desaparición y posterior localización de dos menores, así como el fallecimiento de Curro Sánchez en un accidente de tráfico.",
+  "resumen_mes": "Noviembre ha estado marcado por el triste fallecimiento de Jesús Miguel, exjugador de Unionistas, y de Charo Diego, primera mujer presidenta de la Diputación. El mes ha visto el inicio de una huelga docente, la investidura de Antonio Guterres como Doctor Honoris Causa, el éxodo laboral y la afectación del transporte por una huelga general, así como el fallecimiento de Curro Sánchez en un accidente de tráfico y una alerta por lluvias en la región.",
   "hitos": [
     {
       "fecha": "2026-11-01",
@@ -13,9 +13,9 @@
     },
     {
       "fecha": "2026-11-03",
-      "titulo": "Fallece Jesús Miguel, exjugador de Unionistas; se prepara homenaje",
+      "titulo": "Fallece Jesús Miguel, exjugador de Unionistas; se celebra homenaje",
       "categoria": "Deportes",
-      "descripcion": "El mundo del fútbol local lamenta la pérdida de Jesús Miguel, quien fuera delantero de Unionistas, tras un trágico incidente. Se han sucedido las muestras de condolencia y se prepara un homenaje en su honor.",
+      "descripcion": "El mundo del fútbol local lamenta la pérdida de Jesús Miguel, exjugador de Unionistas. Se le ha rendido un emotivo homenaje en el estadio Reina Sofía.",
       "fuente": "https://www.lagacetadesalamanca.es/deportes/futbol-local/unionistas/fallece-jesus-miguel-exjugador-unionistas-tras-brutal-20261103093621-nt.html",
       "destacado": true
     },
@@ -28,27 +28,11 @@
       "destacado": false
     },
     {
-      "fecha": "2026-11-04",
-      "titulo": "El paro aumenta en Salamanca durante octubre",
-      "categoria": "Economía",
-      "descripcion": "El mes de octubre ha registrado un aumento del paro y una caída en el número de contratos en Salamanca, afectando al empleo local.",
-      "fuente": "https://www.lagacetadesalamanca.es/salamanca/octubre-golpea-empleo-salamanca-paro-contratos-20261104101517-nt.html",
-      "destacado": false
-    },
-    {
       "fecha": "2026-11-06",
       "titulo": "Antonio Guterres investido Doctor Honoris Causa por la USAL",
       "categoria": "Sociedad",
       "descripcion": "El secretario general de la ONU, Antonio Guterres, ha sido investido Doctor Honoris Causa por la Universidad de Salamanca en un acto solemne.",
       "fuente": "https://www.lagacetadesalamanca.es/salamanca/investidura-antonio-guterres-doctor-honoris-causa-imagenes-20261106142826-ga.html",
-      "destacado": false
-    },
-    {
-      "fecha": "2026-11-06",
-      "titulo": "Desaparición y localización de dos menores en Salamanca",
-      "categoria": "Sucesos",
-      "descripcion": "Dos menores que habían desaparecido en Salamanca el lunes fueron localizadas al día siguiente.",
-      "fuente": "https://www.lagacetadesalamanca.es/sucesos/localizadas-dos-menores-desaparecidas-salamanca-20261107074457-nt.html",
       "destacado": false
     },
     {
@@ -65,6 +49,22 @@
       "categoria": "Economía",
       "descripcion": "Salamanca pierde trabajadores cada día, agravando la situación del éxodo laboral en la provincia.",
       "fuente": "https://www.lagacetadesalamanca.es/salamanca/exodo-laboral-agrava-salamanca-pierde-trabajadores-dia-20261108143250-nt.html",
+      "destacado": false
+    },
+    {
+      "fecha": "2026-11-08",
+      "titulo": "Declarada alerta meteorológica por lluvias en Castilla y León",
+      "categoria": "Sucesos",
+      "descripcion": "La Agencia de Protección Civil ha declarado una alerta meteorológica por intensas lluvias en Castilla y León, advirtiendo sobre posibles incidencias.",
+      "fuente": "https://www.lagacetadesalamanca.es/castilla-y-leon/declarada-alerta-meteorologica-lluvias-castilla-leon-20261108142634-nt.html",
+      "destacado": false
+    },
+    {
+      "fecha": "2026-11-09",
+      "titulo": "La huelga general afecta al transporte en Salamanca",
+      "categoria": "Sociedad",
+      "descripcion": "La huelga general ha generado incertidumbre en el transporte de Salamanca, con la implementación de servicios mínimos en las líneas urbanas y metropolitanas.",
+      "fuente": "https://www.lagacetadesalamanca.es/salamanca/incertidumbre-transporte-salamanca-impacto-huelga-general-20261109060000-nt.html",
       "destacado": false
     }
   ]

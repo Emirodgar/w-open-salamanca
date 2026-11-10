@@ -171,18 +171,6 @@
       "fecha_creacion": "2026-10-10"
     },
     {
-      "id": "premios-hosteleria-2026",
-      "pregunta": "Los XIV Premios HosteleríaSalamanca.es reconocerán la labor de 21 establecimientos y profesionales. ¿Cree que estos galardones contribuyen a la mejora y promoción del sector hostelero en la ciudad?",
-      "opciones": [
-        "Sí, incentivan la calidad y visibilidad",
-        "No, su impacto es limitado",
-        "Son un reconocimiento importante para los premiados",
-        "No tengo suficiente información"
-      ],
-      "basado_en": "eventos.json",
-      "fecha_creacion": "2026-10-11"
-    },
-    {
       "id": "alumbrado-navidad-2026",
       "pregunta": "El alumbrado navideño de Salamanca se activará el 26 de noviembre, coincidiendo con el Black Friday. ¿Considera que el encendido de las luces de Navidad en esta fecha es adecuado para fomentar el ambiente festivo y el comercio?",
       "opciones": [
@@ -698,6 +686,30 @@
       ],
       "basado_en": "actualidad.json",
       "fecha_creacion": "2026-11-09"
+    },
+    {
+      "id": "posibilidades-ferrero-rocher-ciudad-rodrigo-2026",
+      "pregunta": "Ciudad Rodrigo ha avanzado a la segunda ronda del concurso navideño de Ferrero Rocher. ¿Cree que el municipio tiene posibilidades reales de ganar la iluminación navideña este año?",
+      "opciones": [
+        "Sí, la campaña de apoyo es fuerte",
+        "No, la competencia es muy alta",
+        "Es incierto, dependerá de la movilización final",
+        "No tengo suficiente información"
+      ],
+      "basado_en": "eventos.json",
+      "fecha_creacion": "2026-11-10"
+    },
+    {
+      "id": "apertura-covatilla-2026",
+      "pregunta": "La estación de esquí Sierra de Béjar - La Covatilla prevé su apertura el 4 de diciembre, inicialmente con servicios y pistas si hay nieve. ¿Cree que la estación estará plenamente operativa para esa fecha?",
+      "opciones": [
+        "Sí, las condiciones serán favorables",
+        "No, es probable que haya retrasos o limitaciones",
+        "Es incierto, dependerá del clima",
+        "No tengo suficiente información"
+      ],
+      "basado_en": "eventos.json",
+      "fecha_creacion": "2026-11-10"
     }
   ]
 }

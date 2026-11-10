@@ -527,6 +527,24 @@
         "Sí, atrae atención y prestigio internacional": 1
       },
       "total_votos": 9
+    },
+    {
+      "id": "premios-hosteleria-2026",
+      "pregunta": "Los XIV Premios HosteleríaSalamanca.es reconocerán la labor de 21 establecimientos y profesionales. ¿Cree que estos galardones contribuyen a la mejora y promoción del sector hostelero en la ciudad?",
+      "opciones": [
+        "Sí, incentivan la calidad y visibilidad",
+        "No, su impacto es limitado",
+        "Son un reconocimiento importante para los premiados",
+        "No tengo suficiente información"
+      ],
+      "basado_en": "eventos.json",
+      "fecha_creacion": "2026-10-11",
+      "fecha_archivado": "2026-11-10",
+      "resultados": {
+        "Son un reconocimiento importante para los premiados": 7,
+        "No, su impacto es limitado": 1
+      },
+      "total_votos": 8
     }
   ]
 }
