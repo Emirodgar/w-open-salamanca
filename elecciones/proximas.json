@@ -1,0 +1,72 @@
+{
+ "convocatorias": [
+  {
+   "id": "generales-2026-11",
+   "tipo": "Generales (Congreso)",
+   "fecha": "2026-11-29",
+   "etiqueta": "Generales, 29 de noviembre de 2026",
+   "estado": "pendiente",
+   "candidaturas": [
+    {
+     "partido": "PP",
+     "nombre": "María del Carmen Seguín Kattán",
+     "wiki": null,
+     "nota": null
+    },
+    {
+     "partido": "PSOE",
+     "nombre": "David Serrada Pariente",
+     "wiki": "David_Serrada",
+     "nota": null
+    },
+    {
+     "partido": "VOX",
+     "nombre": "Laura Magdalena Miquel",
+     "wiki": null,
+     "nota": null
+    },
+    {
+     "partido": "FA",
+     "nombre": "Miriam Ruiz Arias",
+     "wiki": null,
+     "nota": "[[Izquierda Unida|IU]]"
+    },
+    {
+     "partido": "PNV",
+     "nombre": "María Aurora Zarco Blanco",
+     "wiki": null,
+     "nota": null
+    }
+   ],
+   "gobierno": [
+    {
+     "rol": "Presidente/a de Castilla y León",
+     "ambito": "autonómico",
+     "nombre": "Alfonso Fernández Mañueco",
+     "partido": "Partido Popular",
+     "wiki": "Alfonso_Fernández_Mañueco",
+     "fuente": "Wikidata"
+    },
+    {
+     "rol": "Alcalde/sa de Salamanca",
+     "ambito": "municipal",
+     "nombre": "Carlos Manuel García Carbayo",
+     "partido": "Partido Popular",
+     "wiki": "Carlos_García_Carbayo",
+     "fuente": "Wikidata"
+    },
+    {
+     "rol": "Presidente/a de la Diputación",
+     "ambito": "provincial",
+     "nombre": "David Mingo Pérez",
+     "partido": "Partido Popular",
+     "wiki": null,
+     "fuente": "Wikipedia (infobox; verificar)"
+    }
+   ],
+   "fuente": "Atalaya (emirodgar.es/atalaya): Wikipedia y Wikidata",
+   "capturado": "2026-11-10"
+  }
+ ],
+ "actualizado": "2026-11-10"
+}
