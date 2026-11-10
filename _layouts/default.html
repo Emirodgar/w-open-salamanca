@@ -141,7 +141,12 @@
           "url": {{ canonical | jsonify }},
           "inLanguage": "es",
           "isAccessibleForFree": true,
-          "includedInDataCatalog": { "@id": {{ catalog_id | jsonify }} },
+          "includedInDataCatalog": {
+            "@type": "DataCatalog",
+            "@id": {{ catalog_id | jsonify }},
+            "name": "Catálogo de datos abiertos de Open Salamanca",
+            "url": {{ "/" | absolute_url | jsonify }}
+          },
           "license": "https://creativecommons.org/licenses/by/4.0/",
           "creator": { "@id": {{ org_id | jsonify }} },
           "publisher": { "@id": {{ org_id | jsonify }} },
@@ -182,13 +187,8 @@
           "url": {{ "/" | absolute_url | jsonify }},
           "inLanguage": "es",
           "license": "https://creativecommons.org/licenses/by/4.0/",
-          "publisher": { "@id": {{ org_id | jsonify }} },
-          "dataset": [
-            {%- assign catalog_pages = site.pages | where_exp: "p", "p.dataset_files" -%}
-            {%- for p in catalog_pages %}
-            { "@id": {{ p.url | absolute_url | append: "#dataset" | jsonify }} }{% unless forloop.last %},{% endunless %}
-            {%- endfor %}
-          ]
+          "creator": { "@id": {{ org_id | jsonify }} },
+          "publisher": { "@id": {{ org_id | jsonify }} }
         }
         {%- endif %}
         {%- if has_crumbs -%}
