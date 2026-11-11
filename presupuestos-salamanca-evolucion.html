@@ -1,0 +1,257 @@
+---
+layout: default
+title: "Presupuestos de Salamanca: en qué se gasta el dinero público y cómo ha evolucionado (2005-2024)"
+description: Veinte años de cuentas reales del Ayuntamiento de Salamanca, de 2005 a 2024. Qué se ingresa, en qué se gasta, cuánto por habitante y cómo cambia con la inflación
+date: 11-11-2026
+folder: Hacienda Local
+permalink: presupuestos-salamanca
+---
+
+    <section class="featured dataset" id="datos">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="section-title">{{ page.title }}</h1>
+                <p class="section-description">{{ page.description }}</p>
+            </div>
+
+            <div id="section-content">
+
+<p>Estas cifras no son lo que el Ayuntamiento prevé gastar, sino lo que <b>realmente ha ingresado y gastado</b> cada año: son las liquidaciones del presupuesto que el Ayuntamiento envía al Ministerio de Hacienda (derechos y obligaciones reconocidas netas, presupuesto consolidado). La serie cubre de 2005 a 2024, el último ejercicio con liquidación definitiva publicada.</p>
+
+<h2>Lo esencial en cuatro datos</h2>
+<ul>
+<li><b>El gasto real tocó techo en 2009 y cayó con la crisis.</b> Pasó de 184,2 M€ en 2009 a 138,8 M€ en 2013, un 25% menos en euros corrientes.</li>
+<li><b>La recuperación ha sido lenta.</b> En 2024 se liquidaron 194,4 M€; en euros constantes de 2024, el gasto de 2009 equivale a 246,6 M€, así que el nivel actual sigue por debajo del de entonces.</li>
+<li><b>Hay menos habitantes entre los que repartir.</b> La población pasó de 160.331 (2005) a 144.866 (2024). Por habitante, el gasto de 2024 es de unos 1.342 €.</li>
+<li><b>La inversión se ha hundido y no ha vuelto del todo.</b> Suponía el 21,3% del gasto en 2009 y el 6,4% en 2013; en 2024 es el 13,1%.</li>
+</ul>
+
+<h3>Qué ha cambiado entre 2010 y 2024 (euros constantes de 2024)</h3>
+<ul>
+<li><b>Gastan más:</b> comercio, turismo y pymes (de 2,4 a 15,2 M€), servicios sociales (de 12,7 a 17,8 M€), cultura (de 10,6 a 14,3 M€) y deporte (de 5,2 a 8,5 M€).</li>
+<li><b>Gastan menos:</b> vivienda y urbanismo (de 24,9 a 12,8 M€), educación (de 7,1 a 3,1 M€) y deuda pública (de 20,5 a 6,2 M€).</li>
+<li><b>Estables:</b> bienestar comunitario (limpieza, agua, alumbrado), unos 30 M€ al año y el 15,5% del gasto de 2024, y seguridad y movilidad, entre 18 y 21 M€.</li>
+</ul>
+
+<h2>Explora los datos</h2>
+
+<div class="pres-controles" role="group" aria-label="Forma de mostrar los importes">
+  <span class="pres-etiqueta">Mostrar importes:</span>
+  <button type="button" class="pres-btn activo" data-modo="nominal" aria-pressed="true">Euros de cada año</button>
+  <button type="button" class="pres-btn" data-modo="real" aria-pressed="false">Euros constantes de 2024</button>
+  <button type="button" class="pres-btn" data-modo="habitante" aria-pressed="false">Por habitante (constantes 2024)</button>
+</div>
+<p class="pres-nota" id="presModoNota"></p>
+
+<h3>Ingresos y gastos cada año</h3>
+<div class="pres-chart"><canvas id="chEvolucion" aria-label="Evolución de ingresos y gastos"></canvas></div>
+
+<h3>¿En qué se gasta? Por tipo de gasto</h3>
+<p>Qué compra el Ayuntamiento: personal, contratos y suministros (bienes y servicios), subvenciones (transferencias), inversiones y deuda.</p>
+<div class="pres-chart"><canvas id="chCapitulos" aria-label="Gasto por tipo"></canvas></div>
+
+<h3>¿Para qué se gasta? Por áreas de política</h3>
+<p>A qué se destina el dinero. Desde 2010 el Ministerio usa cinco áreas más la deuda; antes de 2010 la clasificación era distinta y no es comparable, por eso esta serie empieza ahí.</p>
+<div class="pres-chart"><canvas id="chAreas" aria-label="Gasto por área de política"></canvas></div>
+
+<h3>Con más detalle: cada política de gasto</h3>
+<p>Dentro de esas áreas, la clasificación por programas permite ver cuánto se destina a seguridad, cultura, deporte, servicios sociales, limpieza o vivienda. Elige una política para ver su evolución desde 2010; la tabla compara 2010 con 2024.</p>
+<div class="pres-controles">
+  <label for="presPol" class="pres-etiqueta">Política de gasto:</label>
+  <select id="presPol"></select>
+</div>
+<div class="pres-chart"><canvas id="chPolitica" aria-label="Evolución del gasto en la política elegida"></canvas></div>
+<div id="presPoliticas"></div>
+<p class="pres-nota">Cada política incluye todos los tipos de gasto (personal, contratos, subvenciones e inversión). Por ejemplo, en cultura el 62% de 2024 son subvenciones y transferencias, mientras que en seguridad el 69% es personal. Es lo que el Ayuntamiento clasifica en cada programa, no un juicio sobre su eficacia.</p>
+
+<h3>¿De dónde viene el dinero? Ingresos</h3>
+<div class="pres-chart"><canvas id="chIngresos" aria-label="Ingresos por origen"></canvas></div>
+
+<h3>Un año en detalle</h3>
+<div class="pres-controles">
+  <label for="presAnio" class="pres-etiqueta">Año:</label>
+  <select id="presAnio"></select>
+</div>
+<div id="presDetalle"></div>
+
+<h2>Cómo leer estas cifras</h2>
+<ul>
+<li><b>Presupuestado no es gastado.</b> Esta página usa dinero liquidado. Por eso el dato de 2024 no coincide con las cifras de presupuesto inicial que aparecen en <a href="/presupuesto-municipal">el presupuesto de 2026</a>, que además incluye previsiones.</li>
+<li><b>Los ingresos incluyen endeudamiento.</b> Los «pasivos financieros» son préstamos recibidos y por eso un año puede ingresar más de lo que gasta sin que sobre dinero. El ahorro real se ve mejor en los ingresos corrientes (impuestos, tasas y transferencias).</li>
+<li><b>Euros constantes.</b> Se ajustan con el IPC general nacional del INE (media anual) para comparar años sin que la subida de precios los distorsione.</li>
+<li><b>Políticas de gasto.</b> El desglose por programas empieza en 2010, cuando entró en vigor la clasificación actual, y se muestra a dos dígitos (por ejemplo, «Cultura» o «Seguridad y movilidad ciudadana»), sin bajar a cada servicio concreto.</li>
+<li><b>Presupuesto consolidado.</b> Suma el Ayuntamiento y sus organismos dependientes, sin duplicar los traspasos entre ellos.</li>
+</ul>
+
+<p>Para completar el cuadro, consulta también la <a href="/deuda-impuestos">deuda y recaudación de impuestos</a>, los <a href="/impuestos-municipales-salamanca">impuestos municipales</a>, las <a href="/subvenciones-ayuntamiento">subvenciones</a> y la <a href="/contratacion-licitaciones-publicas">contratación pública</a>.</p>
+
+<p class="pres-nota">Fuente: Ministerio de Hacienda, <a href="https://serviciostelematicosext.hacienda.gob.es/SGFAL/CONPREL" rel="noopener">CONPREL, Consulta de presupuestos y liquidaciones de las entidades locales</a> (liquidaciones 2005-2024, Castilla y León). IPC: <a href="https://www.ine.es/" rel="noopener">INE</a>, índice general nacional, media anual. Datos descargables en <a href="/presupuestos-salamanca.json">formato JSON</a>.</p>
+
+            </div>
+
+            {% include categories.html %}
+
+        </div>
+    </section>
+
+<style>
+.pres-controles{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center;margin:1rem 0}
+.pres-etiqueta{font-weight:600}
+.pres-btn{padding:.5rem .9rem;border:1px solid var(--border-color);background:#fff;border-radius:6px;cursor:pointer;font:inherit}
+.pres-btn.activo{background:var(--primary-color);color:#fff;border-color:var(--primary-color)}
+.pres-btn:focus-visible,#presAnio:focus-visible{outline:3px solid var(--accent-color);outline-offset:2px}
+#presPoliticas table{width:100%;border-collapse:collapse;margin:.5rem 0 1rem}
+#presPoliticas th,#presPoliticas td{padding:.4rem .6rem;border-bottom:1px solid var(--border-color);text-align:left}
+#presPoliticas td.num,#presPoliticas th.num{text-align:right;font-variant-numeric:tabular-nums}
+#presPol:focus-visible{outline:3px solid var(--accent-color);outline-offset:2px}
+#presPol,#presAnio{padding:.45rem .7rem;font:inherit;border:1px solid var(--border-color);border-radius:6px}
+.pres-chart{position:relative;height:380px;margin:.5rem 0 1.5rem}
+.pres-nota{font-size:.9em;color:#555}
+#presDetalle table{width:100%;border-collapse:collapse;margin:.5rem 0 1rem}
+#presDetalle th,#presDetalle td{padding:.4rem .6rem;border-bottom:1px solid var(--border-color);text-align:left}
+#presDetalle td.num,#presDetalle th.num{text-align:right;font-variant-numeric:tabular-nums}
+#presDetalle .pres-doble{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
+@media (max-width:768px){#presDetalle .pres-doble{grid-template-columns:1fr}.pres-chart{height:320px}}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var COL = ['#2C5F2D','#97BC62','#F4A261','#264653','#3D7DCA','#8E6FA8','#C98A2B','#C1443A','#7C6A58'];
+  var GASTOS = [['personal','Personal'],['bienes_servicios','Bienes y servicios'],['transf_corrientes','Subvenciones y transferencias corrientes'],['inversiones','Inversiones'],['transf_capital','Transferencias de capital'],['financieros','Intereses de deuda'],['pasivos_fin','Amortización de deuda'],['contingencia','Fondo de contingencia'],['activos_fin','Activos financieros']];
+  var ING = [['impuestos_directos','Impuestos directos (IBI, IVTM, IAE…)'],['impuestos_indirectos','Impuestos indirectos (ICIO…)'],['tasas_otros','Tasas, precios públicos y otros'],['transf_corrientes','Transferencias corrientes'],['transf_capital','Transferencias de capital'],['patrimoniales','Ingresos patrimoniales'],['pasivos_fin','Préstamos recibidos'],['enajenacion','Venta de inversiones'],['activos_fin','Activos financieros']];
+  var AREAS = [['servicios_basicos','Servicios públicos básicos (seguridad, limpieza, movilidad…)'],['proteccion_social','Protección y promoción social'],['bienes_preferentes','Bienes públicos preferentes (educación, cultura, deporte, sanidad)'],['economico','Actuaciones de carácter económico'],['general','Actuaciones de carácter general (administración)'],['deuda','Deuda pública']];
+  var NOTAS = {
+    nominal: 'Importes tal como se liquidaron cada año, en millones de euros.',
+    real: 'Importes ajustados por inflación a euros de 2024, en millones de euros.',
+    habitante: 'Euros por habitante y año, ajustados por inflación a euros de 2024.'
+  };
+  var fmtEur = new Intl.NumberFormat('es-ES', { maximumFractionDigits: 0 });
+  var fmtM = new Intl.NumberFormat('es-ES', { minimumFractionDigits: 1, maximumFractionDigits: 1 });
+  var modo = 'nominal', D, anios, charts = {};
+
+  function val(y, v) {
+    var a = D.anios[y];
+    var f = D.ipc_base2021['2024'] / D.ipc_base2021[y];
+    if (modo === 'nominal') return v / 1e6;
+    if (modo === 'real') return v * f / 1e6;
+    return v * f / a.poblacion;
+  }
+  function unidad() { return modo === 'habitante' ? '€/hab.' : 'M€'; }
+  function fmtV(x) { return modo === 'habitante' ? fmtEur.format(x) + ' €' : fmtM.format(x) + ' M€'; }
+
+  function opciones(apilado) {
+    return {
+      responsive: true, maintainAspectRatio: false,
+      interaction: { mode: 'index', intersect: false },
+      plugins: {
+        legend: { position: 'bottom' },
+        tooltip: { callbacks: { label: function (c) { return c.dataset.label + ': ' + fmtV(c.parsed.y); } } }
+      },
+      scales: {
+        x: { stacked: apilado },
+        y: { stacked: apilado, beginAtZero: true, title: { display: true, text: modo === 'habitante' ? 'Euros por habitante' : 'Millones de euros' } }
+      }
+    };
+  }
+  function serie(lista, tipo, ys, extraPorCampo) {
+    return lista.map(function (c, i) {
+      return {
+        label: c[1], backgroundColor: COL[i % COL.length], borderColor: COL[i % COL.length],
+        data: ys.map(function (y) { var g = D.anios[y][extraPorCampo]; return val(y, tipo ? g[c[0]] : 0); }),
+        borderWidth: 1
+      };
+    }).filter(function (s) { return s.data.some(function (v) { return v > 0; }); });
+  }
+  function dibuja(id, tipo, data, apilado) {
+    if (charts[id]) charts[id].destroy();
+    charts[id] = new Chart(document.getElementById(id), { type: tipo, data: data, options: opciones(apilado) });
+  }
+
+  function pintaTodo() {
+    document.getElementById('presModoNota').textContent = NOTAS[modo];
+    var ys = anios;
+    dibuja('chEvolucion', 'line', {
+      labels: ys,
+      datasets: [
+        { label: 'Ingresos', data: ys.map(function (y) { return val(y, D.anios[y].total_ingresos); }), borderColor: COL[0], backgroundColor: COL[0], tension: .2 },
+        { label: 'Gastos', data: ys.map(function (y) { return val(y, D.anios[y].total_gastos); }), borderColor: COL[2], backgroundColor: COL[2], tension: .2 }
+      ]
+    }, false);
+    dibuja('chCapitulos', 'bar', { labels: ys, datasets: serie(GASTOS, true, ys, 'gastos') }, true);
+    var ys10 = ys.filter(function (y) { return +y >= 2010; });
+    dibuja('chAreas', 'bar', { labels: ys10, datasets: serie(AREAS, true, ys10, 'areas') }, true);
+    dibuja('chIngresos', 'bar', { labels: ys, datasets: serie(ING, true, ys, 'ingresos') }, true);
+    pintaPolitica();
+    pintaDetalle();
+  }
+
+  function totalPol(y, k) { var p = D.anios[y].politicas && D.anios[y].politicas[k]; return p ? p[0] : 0; }
+  function pintaPolitica() {
+    var k = document.getElementById('presPol').value, ys10 = anios.filter(function (y) { return +y >= 2010; });
+    var cfg = {
+      type: 'line',
+      data: { labels: ys10, datasets: [{ label: D.politicas[k], data: ys10.map(function (y) { return val(y, totalPol(y, k)); }), borderColor: COL[0], backgroundColor: COL[0], tension: .2, fill: false }] },
+      options: opciones(false)
+    };
+    cfg.options.plugins.tooltip.callbacks.afterLabel = function (c) {
+      var y = ys10[c.dataIndex]; return fmtM.format(100 * totalPol(y, k) / D.anios[y].total_gastos) + '% del gasto total del año';
+    };
+    if (charts.chPolitica) charts.chPolitica.destroy();
+    charts.chPolitica = new Chart(document.getElementById('chPolitica'), cfg);
+    var cods = Object.keys(D.politicas).filter(function (c) { return totalPol('2010', c) || totalPol('2024', c); })
+      .sort(function (a, b) { return totalPol('2024', b) - totalPol('2024', a); });
+    var h = '<table><thead><tr><th>Política de gasto</th><th class="num">2010 (' + unidad() + ')</th><th class="num">2024 (' + unidad() + ')</th><th class="num">Variación</th><th class="num">% del gasto 2024</th></tr></thead><tbody>';
+    cods.forEach(function (c) {
+      var a = val('2010', totalPol('2010', c)), b = val('2024', totalPol('2024', c));
+      var vr = a > 0 ? fmtM.format(100 * (b - a) / a) + '%' : 'n.d.';
+      var f = function (x) { return modo === 'habitante' ? fmtEur.format(x) : fmtM.format(x); };
+      h += '<tr><td>' + D.politicas[c] + '</td><td class="num">' + f(a) + '</td><td class="num">' + f(b) + '</td><td class="num">' + vr + '</td><td class="num">' + fmtM.format(100 * totalPol('2024', c) / D.anios['2024'].total_gastos) + '%</td></tr>';
+    });
+    document.getElementById('presPoliticas').innerHTML = h + '</tbody></table>';
+  }
+
+  function tabla(titulo, lista, obj, total, y) {
+    var h = '<table><caption class="screen-reader-text" style="text-align:left;font-weight:600">' + titulo + '</caption><thead><tr><th>' + titulo + '</th><th class="num">' + unidad() + '</th><th class="num">%</th></tr></thead><tbody>';
+    lista.forEach(function (c) {
+      var v = obj[c[0]]; if (!v) return;
+      h += '<tr><td>' + c[1] + '</td><td class="num">' + fmtV(val(y, v)).replace(/ (M€|€)$/, '') + '</td><td class="num">' + fmtM.format(100 * v / total) + '%</td></tr>';
+    });
+    return h + '</tbody></table>';
+  }
+  function pintaDetalle() {
+    var y = document.getElementById('presAnio').value, a = D.anios[y];
+    var h = '<p><b>' + y + ':</b> ingresos ' + fmtV(val(y, a.total_ingresos)) + ', gastos ' + fmtV(val(y, a.total_gastos)) + ', población ' + fmtEur.format(a.poblacion) + ' habitantes.</p><div class="pres-doble"><div>' +
+      tabla('Gasto por tipo', GASTOS, a.gastos, a.total_gastos, y) + '</div><div>' +
+      (a.areas ? tabla('Gasto por área de política', AREAS, a.areas, a.total_gastos, y) : '<p class="pres-nota">Antes de 2010 la clasificación por áreas no es comparable y no se muestra.</p>') +
+      '</div></div>' + (a.politicas ? tabla('Gasto por política de gasto', Object.keys(D.politicas).map(function (c) { return [c, D.politicas[c]]; })
+        .sort(function (p, q) { return a.politicas[q[0]] ? (a.politicas[p[0]] ? a.politicas[q[0]][0] - a.politicas[p[0]][0] : 1) : -1; }),
+        Object.keys(a.politicas).reduce(function (o, c) { o[c] = a.politicas[c][0]; return o; }, {}), a.total_gastos, y) : '') +
+      tabla('Ingresos por origen', ING, a.ingresos, a.total_ingresos, y);
+    document.getElementById('presDetalle').innerHTML = h;
+  }
+
+  fetch('/presupuestos-salamanca.json').then(function (r) { return r.json(); }).then(function (d) {
+    D = d; anios = Object.keys(d.anios).sort();
+    var sel = document.getElementById('presAnio');
+    anios.slice().reverse().forEach(function (y) { var o = document.createElement('option'); o.value = y; o.textContent = y; sel.appendChild(o); });
+    sel.addEventListener('change', pintaDetalle);
+    var sp = document.getElementById('presPol');
+    Object.keys(d.politicas).filter(function (c) { return d.anios['2024'].politicas[c] && d.anios['2024'].politicas[c][0] > 0; })
+      .sort(function (a, b) { return d.anios['2024'].politicas[b][0] - d.anios['2024'].politicas[a][0]; })
+      .forEach(function (c) { var o = document.createElement('option'); o.value = c; o.textContent = d.politicas[c]; sp.appendChild(o); });
+    sp.addEventListener('change', pintaPolitica);
+    document.querySelectorAll('.pres-btn').forEach(function (b) {
+      b.addEventListener('click', function () {
+        modo = b.getAttribute('data-modo');
+        document.querySelectorAll('.pres-btn').forEach(function (x) {
+          var on = x === b; x.classList.toggle('activo', on); x.setAttribute('aria-pressed', on);
+        });
+        pintaTodo();
+      });
+    });
+    pintaTodo();
+  }).catch(function () {
+    document.getElementById('presModoNota').textContent = 'No se han podido cargar los datos. Inténtalo de nuevo más tarde.';
+  });
+});
+</script>
