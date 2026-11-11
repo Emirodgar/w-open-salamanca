@@ -111,18 +111,6 @@
       "fecha_creacion": "2026-10-07"
     },
     {
-      "id": "carrera-violencia-genero-2026",
-      "pregunta": "La Carrera contra la Violencia de Género de Salamanca se celebrará en noviembre. ¿Considera que este tipo de eventos deportivos solidarios son efectivos para concienciar sobre problemas sociales como la violencia de género?",
-      "opciones": [
-        "Sí, visibilizan el problema y fomentan la participación ciudadana.",
-        "No, su impacto en la concienciación es limitado.",
-        "Son un complemento, pero se necesitan otras acciones más directas.",
-        "No tengo suficiente información."
-      ],
-      "basado_en": "eventos.json",
-      "fecha_creacion": "2026-10-08"
-    },
-    {
       "id": "repunte-covid-2026",
       "pregunta": "Ante el repunte del COVID-19 en Salamanca, superando los niveles de gripe, ¿cree que las autoridades deberían reforzar las medidas de prevención o información a la ciudadanía?",
       "opciones": [
@@ -448,18 +436,6 @@
       "fecha_creacion": "2026-10-26"
     },
     {
-      "id": "ferrero-rocher-ciudad-rodrigo-2026",
-      "pregunta": "Ciudad Rodrigo ha presentado su candidatura para la iluminación navideña de Ferrero Rocher. ¿Cree que este tipo de iniciativas son efectivas para promocionar la ciudad y atraer turismo en Navidad?",
-      "opciones": [
-        "Sí, generan gran visibilidad y atractivo",
-        "No, el impacto es limitado y no justifica el esfuerzo",
-        "Son un buen complemento, pero no lo principal",
-        "No tengo suficiente información"
-      ],
-      "basado_en": "actualidad.json",
-      "fecha_creacion": "2026-10-27"
-    },
-    {
       "id": "desempleo-salamanca-2026",
       "pregunta": "La tasa de desempleo en la provincia de Salamanca ha subido al 9,04% en el tercer trimestre de 2026. ¿Considera que la situación del mercado laboral provincial es preocupante?",
       "opciones": [
@@ -481,18 +457,6 @@
         "No tengo suficiente información"
       ],
       "basado_en": "actualidad.json",
-      "fecha_creacion": "2026-10-29"
-    },
-    {
-      "id": "huelga-docentes-salamanca-2026",
-      "pregunta": "UGT y CCOO han convocado una huelga de docentes en Salamanca para exigir mejoras salariales y laborales. ¿Considera que estas movilizaciones son una herramienta efectiva para que los trabajadores de la enseñanza logren sus demandas?",
-      "opciones": [
-        "Sí, es la única vía para presionar y lograr cambios",
-        "No, perjudican la educación y no resuelven el problema",
-        "Deberían buscarse otras vías de negociación antes de la huelga",
-        "No tengo suficiente información"
-      ],
-      "basado_en": "eventos.json",
       "fecha_creacion": "2026-10-29"
     },
     {
@@ -710,6 +674,30 @@
       ],
       "basado_en": "eventos.json",
       "fecha_creacion": "2026-11-10"
+    },
+    {
+      "id": "semana-micologica-carbajosa-2026",
+      "pregunta": "El Ayuntamiento de Carbajosa de la Sagrada organiza una Semana Micológica para acercar el mundo de las setas a los vecinos. ¿Considera que este tipo de iniciativas culturales y de contacto con la naturaleza son beneficiosas para el municipio?",
+      "opciones": [
+        "Sí, fomentan la cultura local y el medio ambiente.",
+        "No, hay otras prioridades más urgentes para los vecinos.",
+        "Son un buen complemento, pero su impacto es limitado.",
+        "No tengo suficiente información."
+      ],
+      "basado_en": "eventos.json",
+      "fecha_creacion": "2026-11-11"
+    },
+    {
+      "id": "curso-primeros-auxilios-carbajosa-2026",
+      "pregunta": "El Ayuntamiento de Carbajosa de la Sagrada, en colaboración con Cruz Roja, organiza un curso de primeros auxilios. ¿Cree que es importante que los municipios ofrezcan formación en habilidades básicas de emergencia a sus vecinos?",
+      "opciones": [
+        "Sí, es fundamental para la seguridad y el bienestar ciudadano.",
+        "No, la responsabilidad recae en la formación individual.",
+        "Es útil, pero no una prioridad municipal.",
+        "No tengo suficiente información."
+      ],
+      "basado_en": "eventos.json",
+      "fecha_creacion": "2026-11-11"
     }
   ]
 }

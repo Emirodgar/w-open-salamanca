@@ -545,6 +545,63 @@
         "No, su impacto es limitado": 1
       },
       "total_votos": 8
+    },
+    {
+      "id": "carrera-violencia-genero-2026",
+      "pregunta": "La Carrera contra la Violencia de Género de Salamanca se celebrará en noviembre. ¿Considera que este tipo de eventos deportivos solidarios son efectivos para concienciar sobre problemas sociales como la violencia de género?",
+      "opciones": [
+        "Sí, visibilizan el problema y fomentan la participación ciudadana.",
+        "No, su impacto en la concienciación es limitado.",
+        "Son un complemento, pero se necesitan otras acciones más directas.",
+        "No tengo suficiente información."
+      ],
+      "basado_en": "eventos.json",
+      "fecha_creacion": "2026-10-08",
+      "fecha_archivado": "2026-11-11",
+      "resultados": {
+        "Son un complemento, pero se necesitan otras acciones más directas.": 2,
+        "Sí, visibilizan el problema y fomentan la participación ciudadana.": 4,
+        "No, su impacto en la concienciación es limitado.": 2,
+        "No tengo suficiente información.": 1
+      },
+      "total_votos": 9
+    },
+    {
+      "id": "ferrero-rocher-ciudad-rodrigo-2026",
+      "pregunta": "Ciudad Rodrigo ha presentado su candidatura para la iluminación navideña de Ferrero Rocher. ¿Cree que este tipo de iniciativas son efectivas para promocionar la ciudad y atraer turismo en Navidad?",
+      "opciones": [
+        "Sí, generan gran visibilidad y atractivo",
+        "No, el impacto es limitado y no justifica el esfuerzo",
+        "Son un buen complemento, pero no lo principal",
+        "No tengo suficiente información"
+      ],
+      "basado_en": "actualidad.json",
+      "fecha_creacion": "2026-10-27",
+      "fecha_archivado": "2026-11-11",
+      "resultados": {
+        "Sí, generan gran visibilidad y atractivo": 3,
+        "No, el impacto es limitado y no justifica el esfuerzo": 1
+      },
+      "total_votos": 4
+    },
+    {
+      "id": "huelga-docentes-salamanca-2026",
+      "pregunta": "UGT y CCOO han convocado una huelga de docentes en Salamanca para exigir mejoras salariales y laborales. ¿Considera que estas movilizaciones son una herramienta efectiva para que los trabajadores de la enseñanza logren sus demandas?",
+      "opciones": [
+        "Sí, es la única vía para presionar y lograr cambios",
+        "No, perjudican la educación y no resuelven el problema",
+        "Deberían buscarse otras vías de negociación antes de la huelga",
+        "No tengo suficiente información"
+      ],
+      "basado_en": "eventos.json",
+      "fecha_creacion": "2026-10-29",
+      "fecha_archivado": "2026-11-11",
+      "resultados": {
+        "Sí, es la única vía para presionar y lograr cambios": 2,
+        "No, perjudican la educación y no resuelven el problema": 1,
+        "Deberían buscarse otras vías de negociación antes de la huelga": 1
+      },
+      "total_votos": 4
     }
   ]
 }

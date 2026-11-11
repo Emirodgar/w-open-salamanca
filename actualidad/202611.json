@@ -1,7 +1,7 @@
 {
   "mes": "2026-11",
   "titulo_mes": "Noviembre 2026",
-  "resumen_mes": "Noviembre ha estado marcado por el triste fallecimiento de Jesús Miguel, exjugador de Unionistas, y de Charo Diego, primera mujer presidenta de la Diputación. El mes ha visto el inicio de una huelga docente, la investidura de Antonio Guterres como Doctor Honoris Causa, el éxodo laboral y la afectación del transporte por una huelga general, así como el fallecimiento de Curro Sánchez en un accidente de tráfico y una alerta por lluvias en la región.",
+  "resumen_mes": "Noviembre ha estado marcado por el triste fallecimiento de Jesús Miguel, exjugador de Unionistas, y de Charo Diego, primera mujer presidenta de la Diputación. El mes ha visto la investidura de Antonio Guterres como Doctor Honoris Causa, el fallecimiento de Curro Sánchez en un accidente de tráfico y la afectación del transporte por una huelga general. Destacan también la acusación a una presa en Topas, la tensión en Montalvos y la designación de Salamanca como capital mundial del ajedrez juvenil.",
   "hitos": [
     {
       "fecha": "2026-11-01",
@@ -20,14 +20,6 @@
       "destacado": true
     },
     {
-      "fecha": "2026-11-03",
-      "titulo": "La huelga docente se inicia en Salamanca",
-      "categoria": "Educación",
-      "descripcion": "Sindicatos han convocado una huelga docente para el mes de noviembre en Salamanca, con piquetes informativos en los colegios.",
-      "fuente": "https://www.lagacetadesalamanca.es/salamanca/huelga-docente-noviembre-salamanca-pasa-alumnos-20261103141559-nt.html",
-      "destacado": false
-    },
-    {
       "fecha": "2026-11-06",
       "titulo": "Antonio Guterres investido Doctor Honoris Causa por la USAL",
       "categoria": "Sociedad",
@@ -44,27 +36,35 @@
       "destacado": false
     },
     {
-      "fecha": "2026-11-08",
-      "titulo": "El éxodo laboral agrava la situación en Salamanca",
-      "categoria": "Economía",
-      "descripcion": "Salamanca pierde trabajadores cada día, agravando la situación del éxodo laboral en la provincia.",
-      "fuente": "https://www.lagacetadesalamanca.es/salamanca/exodo-laboral-agrava-salamanca-pierde-trabajadores-dia-20261108143250-nt.html",
-      "destacado": false
-    },
-    {
-      "fecha": "2026-11-08",
-      "titulo": "Declarada alerta meteorológica por lluvias en Castilla y León",
-      "categoria": "Sucesos",
-      "descripcion": "La Agencia de Protección Civil ha declarado una alerta meteorológica por intensas lluvias en Castilla y León, advirtiendo sobre posibles incidencias.",
-      "fuente": "https://www.lagacetadesalamanca.es/castilla-y-leon/declarada-alerta-meteorologica-lluvias-castilla-leon-20261108142634-nt.html",
-      "destacado": false
-    },
-    {
       "fecha": "2026-11-09",
       "titulo": "La huelga general afecta al transporte en Salamanca",
       "categoria": "Sociedad",
       "descripcion": "La huelga general ha generado incertidumbre en el transporte de Salamanca, con la implementación de servicios mínimos en las líneas urbanas y metropolitanas.",
       "fuente": "https://www.lagacetadesalamanca.es/salamanca/incertidumbre-transporte-salamanca-impacto-huelga-general-20261109060000-nt.html",
+      "destacado": false
+    },
+    {
+      "fecha": "2026-11-10",
+      "titulo": "Fiscalía acusa a presa de Topas de estrangular a compañera de celda",
+      "categoria": "Sucesos",
+      "descripcion": "La Fiscalía ha acusado a una presa del centro penitenciario de Topas de estrangular a una compañera de celda, un caso que ha llegado a la Audiencia Provincial.",
+      "fuente": "https://www.lagacetadesalamanca.es/sucesos/fiscalia-acusa-presa-topas-estrangular-companera-celda-20261110060000-nt.html",
+      "destacado": false
+    },
+    {
+      "fecha": "2026-11-10",
+      "titulo": "Comienza la tensión en Montalvos con cargas policiales",
+      "categoria": "Sociedad",
+      "descripcion": "Se ha registrado tensión en Montalvos, con cargas policiales e insultos, en el marco de las movilizaciones por la huelga general.",
+      "fuente": "https://www.lagacetadesalamanca.es/salamanca/comienza-tension-montalvos-crispacion-cargas-policiales-insultos-20261110233331-nt.html",
+      "destacado": false
+    },
+    {
+      "fecha": "2026-11-10",
+      "titulo": "Salamanca, capital mundial del ajedrez juvenil",
+      "categoria": "Deportes",
+      "descripcion": "Salamanca se ha convertido en la capital mundial del ajedrez al acoger un evento para jóvenes prodigios de este deporte.",
+      "fuente": "https://www.lagacetadesalamanca.es/deportes/salamanca-convierte-capital-mundial-ajedrez-jovenes-prodigios-20261110223703-nt.html",
       "destacado": false
     }
   ]
