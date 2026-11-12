@@ -177,7 +177,9 @@ permalink: actualidad
 					cursor.setUTCDate(cursor.getUTCDate() + 1);
 				}
 			}
-			dias = dias.slice(-DIAS_MAX_MOSTRADOS);
+			// Los 30 días más recientes, del más nuevo al más antiguo: así los días
+			// en verde (semana actual) quedan siempre a la vista, sin hacer scroll.
+			dias = dias.slice(-DIAS_MAX_MOSTRADOS).reverse();
 
 			const maxVal = Math.max(...dias.flatMap(f => secciones.map(s => f[s] || 0)), 1);
 
