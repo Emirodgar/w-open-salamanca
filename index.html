@@ -159,15 +159,21 @@ description: Portal de datos abiertos y colaborativos de la ciudad de Salamanca.
                 <p class="section-description">Índice de las páginas de datos abiertos, agrupadas por categoría</p>
             </div>
             {%- assign ds_pages = site.pages | where_exp: "p", "p.folder" | sort: "title" -%}
-            {%- assign folders = ds_pages | map: "folder" | uniq | sort -%}
+            {%- assign folders = ds_pages | map: "folder" | uniq | sort %}
+            <div class="home-index-grid">
             {%- for fo in folders %}
-            <h3 class="home-index-cat">{{ fo }}</h3>
-            <ul>
-                {%- for d in ds_pages %}{% if d.folder == fo and d.sitemap != false %}
-                <li><a href="{{ d.url }}">{{ d.title }}</a></li>
-                {%- endif %}{% endfor %}
-            </ul>
+            {%- assign n = 0 %}
+            {%- for d in ds_pages %}{% if d.folder == fo and d.sitemap != false %}{% assign n = n | plus: 1 %}{% endif %}{% endfor %}
+                <div class="home-index-card">
+                    <h3 class="home-index-cat"><span>{{ fo }}</span><span class="home-index-count">{{ n }}</span></h3>
+                    <ul>
+                        {%- for d in ds_pages %}{% if d.folder == fo and d.sitemap != false %}
+                        <li><a href="{{ d.url }}">{{ d.title }}</a></li>
+                        {%- endif %}{% endfor %}
+                    </ul>
+                </div>
             {%- endfor %}
+            </div>
         </div>
     </section>
 

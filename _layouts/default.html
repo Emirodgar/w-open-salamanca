@@ -423,6 +423,23 @@
         </div>
     </footer>
 
+    <button type="button" class="back-to-top" id="backToTop" aria-label="Volver arriba">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="18 15 12 9 6 15"></polyline></svg>
+    </button>
+    <script>
+    (function () {
+        var btn = document.getElementById('backToTop');
+        if (!btn) return;
+        function toggle() { btn.classList.toggle('visible', window.scrollY > 600); }
+        window.addEventListener('scroll', toggle, { passive: true });
+        toggle();
+        btn.addEventListener('click', function () {
+            var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+            window.scrollTo({ top: 0, behavior: reduce ? 'auto' : 'smooth' });
+        });
+    })();
+    </script>
+
     <!-- Scripts -->
     <script src="/assets/js/main.js?v={{ site.time | date: '%s' }}"></script>
 </body>
