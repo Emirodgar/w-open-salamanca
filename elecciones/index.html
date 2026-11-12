@@ -164,7 +164,7 @@ table.dt tr:last-child td{border-bottom:0}
       <div><label for="selV">Convocatoria y ámbito</label><select id="selV"></select></div>
       <div><label for="selN">Ventana de la media</label><select id="selN"><option value="3">Últimas 3</option><option value="5" selected>Últimas 5</option><option value="10">Últimas 10</option></select></div>
     </div>
-    <div class="card"><h3>Evolución de los sondeos</h3><p class="el-note" style="margin-top:0">Intención directa de voto estimada, en %.</p><div class="chartbox"><canvas id="chEnc"></canvas></div></div>
+    <div class="card"><h3>Evolución de los sondeos</h3><p class="el-note" style="margin-top:0">Intención directa de voto estimada, en %. Las líneas son la tendencia (media ponderada de los sondeos cercanos en el tiempo) y los puntos claros, cada sondeo individual: pasa el cursor sobre uno para ver quién lo hizo. Solo partidos que concurren en Salamanca.</p><div class="chartbox"><canvas id="chEnc"></canvas></div></div>
     <div class="split">
       <div class="card"><h3>Media de las últimas encuestas</h3><div class="tbl"><table class="dt" id="tbMedia"></table></div></div>
       <div class="card"><h3>Comparar dos encuestas</h3><p class="el-note" style="margin-top:0">Marca dos filas de la tabla.</p><div class="tbl"><table class="dt" id="tbDiff"><tr><td>Selecciona dos encuestas.</td></tr></table></div></div>
@@ -433,6 +433,38 @@ function start(idx,raw,prox,gj,pad,encArch,encAt){
     const o={};allEnc().forEach(e=>{const k=(e.convocatoria||'—')+'|'+(e.ambito||'ES');o[k]=(o[k]||0)+1});return o;
   }
   const AMB={ES:'España',EU:'Europa',CYL:'Castilla y León',SA:'Salamanca'};
+  const DAY=864e5,tms=f=>Date.parse(f+'T12:00:00Z');
+  const MES=['ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic'];
+  const encTick=v=>{const d=new Date(v);return MES[d.getUTCMonth()]+(d.getUTCMonth()===0?' '+d.getUTCFullYear():'')};
+  const hexA=(h,a)=>{const n=parseInt(h.slice(1),16);return 'rgba('+(n>>16)+','+(n>>8&255)+','+(n&255)+','+a+')'};
+  /* Tendencia: media ponderada (núcleo gaussiano, σ = 10 días) de todos los sondeos cercanos, por partido */
+  function encTrend(pts){
+    if(!pts.length)return [];
+    const t0=pts[0].x,t1=pts[pts.length-1].x,steps=Math.max(2,Math.min(60,Math.round((t1-t0)/(3*DAY))+1)),sg=10*DAY,out=[];
+    for(let i=0;i<=steps;i++){
+      const x=pts.length===1?t0:t0+(t1-t0)*i/steps;let w=0,v=0;
+      pts.forEach(p=>{const k=Math.exp(-Math.pow((p.x-x)/sg,2)/2);w+=k;v+=k*p.y});
+      if(w>1e-9)out.push({x:x,y:v/w});
+    }
+    return out;
+  }
+  function encDatasets(es,ps){
+    const ds=[];
+    ps.forEach(p=>{
+      const pts=es.filter(e=>e.voto[p]!=null).map(e=>({x:tms(e.fecha),y:e.voto[p],e:e})).sort((a,b)=>a.x-b.x);
+      const c=pcol(p);
+      ds.push({type:'line',label:p,data:encTrend(pts),borderColor:c,backgroundColor:c,borderWidth:3,pointRadius:0,pointHitRadius:0,tension:.25,order:1,isTrend:true});
+      ds.push({type:'scatter',label:p+' · sondeos',data:pts,backgroundColor:hexA(c,.35),borderColor:'transparent',pointRadius:3.5,pointHoverRadius:6,order:2});
+    });
+    return ds;
+  }
+  const encEndLabels={id:'encEnd',afterDatasetsDraw(ch){
+    const x=ch.ctx,area=ch.chartArea,ys=[];
+    ch.data.datasets.forEach((d,i)=>{if(!d.isTrend||!d.data.length)return;const m=ch.getDatasetMeta(i);if(m.hidden)return;const pt=m.data[m.data.length-1],last=d.data[d.data.length-1];ys.push({y:pt.y,x:pt.x,t:d.label+' '+f1(last.y)+' %',c:d.borderColor})});
+    ys.sort((a,b)=>a.y-b.y);for(let i=1;i<ys.length;i++)if(ys[i].y-ys[i-1].y<14)ys[i].y=ys[i-1].y+14;
+    x.save();x.font='700 12px system-ui,sans-serif';x.textBaseline='middle';
+    ys.forEach(l=>{x.fillStyle=l.c;x.fillText(l.t,l.x+6,l.y)});x.restore();
+  }};
   function renderEnc(){
     const v=vistas(),keys=Object.keys(v).sort().reverse(),cur=$('selV').value;
     $('selV').innerHTML=keys.map(k=>{const p=k.split('|');return '<option value="'+k+'">'+esc(p[0])+' · '+esc(AMB[p[1]]||p[1])+' ('+v[k]+')</option>'}).join('');
@@ -440,9 +472,9 @@ function start(idx,raw,prox,gj,pad,encArch,encAt){
     const ks=$('selV').value.split('|');
     const es=allEnc().filter(e=>(e.convocatoria||'—')===ks[0]&&(e.ambito||'ES')===ks[1]);
     $('nEnc').textContent=allEnc().length;
-    const ps=Object.keys(es.reduce((o,e)=>{Object.keys(e.voto).forEach(p=>o[p]=1);return o},{})).sort((a,b)=>(PORD.indexOf(a)+99)%99-(PORD.indexOf(b)+99)%99);
+    const ps=Object.keys(es.reduce((o,e)=>{Object.keys(e.voto).forEach(p=>{if(PORD.indexOf(p)>=0)o[p]=1});return o},{})).sort((a,b)=>(PORD.indexOf(a)+99)%99-(PORD.indexOf(b)+99)%99);
     if(chE)chE.destroy();
-    chE=new Chart($('chEnc'),{type:'line',data:{datasets:ps.map(p=>({label:p,data:es.filter(e=>e.voto[p]!=null).map(e=>({x:e.fecha,y:e.voto[p]})),borderColor:pcol(p),backgroundColor:pcol(p),tension:.2,pointRadius:3,spanGaps:true}))},options:Object.assign(baseOpt(),{parsing:false,scales:{x:{type:'category',labels:Array.from(new Set(es.map(e=>e.fecha))),ticks:{maxTicksLimit:10}},y:{beginAtZero:true,ticks:{callback:v=>v+'%'}}}})});
+    chE=new Chart($('chEnc'),{type:'scatter',data:{datasets:encDatasets(es,ps)},plugins:[encEndLabels],options:{responsive:true,maintainAspectRatio:false,animation:false,layout:{padding:{right:92}},interaction:{mode:'nearest',intersect:true},plugins:{legend:{position:'top',align:'start',labels:{boxWidth:18,boxHeight:3,filter:i=>!/ · sondeos$/.test(i.text)}},tooltip:{filter:c=>/ · sondeos$/.test(c.dataset.label),callbacks:{title:c=>{const e=c[0].raw.e;return e.empresa+(e.medio?' ('+e.medio+')':'')+' · '+e.fecha},label:c=>c.dataset.label.replace(' · sondeos','')+': '+f1(c.parsed.y)+' %'}}},scales:{x:{type:'linear',grid:{display:false},ticks:{maxTicksLimit:9,callback:v=>encTick(v)}},y:{beginAtZero:true,suggestedMax:40,ticks:{callback:v=>v+' %'}}}}});
     const n=+$('selN').value,last=es.slice(-n);
     $('tbMedia').innerHTML=last.length?'<tr><th>Partido</th><th class="n">Media</th><th class="n">Mín.</th><th class="n">Máx.</th></tr>'+ps.map(p=>{const vs=last.map(e=>e.voto[p]).filter(x=>x!=null);if(!vs.length)return '';return '<tr><td><span class="sw" style="background:'+pcol(p)+'"></span>'+esc(p)+'</td><td class="n"><b>'+f1(vs.reduce((a,b)=>a+b,0)/vs.length)+'</b></td><td class="n">'+f1(Math.min.apply(null,vs))+'</td><td class="n">'+f1(Math.max.apply(null,vs))+'</td></tr>'}).join(''):'<tr><td>Sin encuestas.</td></tr>';
     $('tbEnc').innerHTML='<tr><th></th><th>Fecha</th><th>Empresa</th><th>Medio</th><th class="n">Muestra</th>'+ps.map(p=>'<th class="n">'+esc(p)+'</th>').join('')+'</tr>'+es.slice().reverse().map(e=>'<tr><td><input type="checkbox" data-k="'+esc(ek(e))+'" aria-label="Seleccionar"'+(encSel.indexOf(ek(e))>=0?' checked':'')+'></td><td>'+e.fecha+'</td><td>'+esc(e.empresa)+(e.propia?'<span class="tag">tuya</span>':'')+(e.tipo==='oficial'?'<span class="tag ok">oficial</span>':'')+'</td><td>'+esc(e.medio||'')+'</td><td class="n">'+(e.muestra?fmt(e.muestra):'—')+'</td>'+ps.map(p=>'<td class="n">'+(e.voto[p]==null?'—':f1(e.voto[p]))+'</td>').join('')+'</tr>').join('');
