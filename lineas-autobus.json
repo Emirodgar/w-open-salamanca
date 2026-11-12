@@ -161,7 +161,7 @@
     "id": "2",
     "nombre": "PIZARRALES - SAN JULIÁN",
     "color": "#ff904d",
-    "trayecto": "Pizarrales (291) > San Julían (266)",
+    "trayecto": "Pizarrales (291) > San Julián (266)",
     "paradas": [
       {
         "lat": 40.9800249303138,
@@ -232,7 +232,7 @@
       {
         "lat": 40.9646367741123,
         "lng": -5.66109269915308,
-        "name": "Pza. San Julían, 6",
+        "name": "Pza. San Julián, 6",
         "ref": "266"
       }
     ]
@@ -361,7 +361,7 @@
   },
   {
     "id": "4",
-    "nombre": "CEMENTERIO - PUENTE LADRLLO",
+    "nombre": "CEMENTERIO - PUENTE LADRILLO",
     "color": "#cb6be6",
     "trayecto": "Puente Ladrillo (309) > Cementerio (342)",
     "paradas": [
@@ -3245,12 +3245,12 @@
     "id": "99",
     "nombre": "AGROPECUARIA",
     "color": "#f1ca2e",
-    "trayecto": "San Julían (266 > Feria Monografica (319)",
+    "trayecto": "San Julián (266) > Feria Monográfica (319)",
     "paradas": [
       {
         "lat": 40.9646367741123,
         "lng": -5.66109269915308,
-        "name": "Pza. San Julían, 6",
+        "name": "Pza. San Julián, 6",
         "ref": "266"
       },
       {
@@ -3268,7 +3268,7 @@
       {
         "lat": 40.9495472804713,
         "lng": -5.7251819153739,
-        "name": "Feria Monografica",
+        "name": "Feria Monográfica",
         "ref": "327"
       }
     ]
@@ -3277,12 +3277,12 @@
     "id": "699",
     "nombre": "SERVICIO ESPECIAL",
     "color": "#ff4eb3",
-    "trayecto": "San Julían (266) > Eco Raya (182)",
+    "trayecto": "San Julián (266) > Eco Raya (182)",
     "paradas": [
       {
         "lat": 40.9646367741123,
         "lng": -5.66109269915308,
-        "name": "Pza. San Julían, 6",
+        "name": "Pza. San Julián, 6",
         "ref": "266"
       },
       {
