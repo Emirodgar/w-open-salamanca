@@ -79,6 +79,12 @@
             "height": 144
           },
           "founder": { "@id": {{ person_id | jsonify }} },
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "customer support",
+            "url": {{ "/acerca-de" | absolute_url | jsonify }},
+            "availableLanguage": "es"
+          },
           "sameAs": [
             "https://x.com/Emirodgar"
           ]
@@ -152,6 +158,14 @@
           "license": "https://creativecommons.org/licenses/by/4.0/",
           "creator": { "@id": {{ org_id | jsonify }} },
           "publisher": { "@id": {{ org_id | jsonify }} },
+          "keywords": [{% if crumb_cat and crumb_cat != "" %}{{ crumb_cat | jsonify }}, {% endif %}"Salamanca", "datos abiertos"],
+          {%- if page.dataset_source %}
+          "isBasedOn": {
+            "@type": "CreativeWork",
+            "name": {{ page.dataset_source | jsonify }}{% if page.dataset_source_url %},
+            "url": {{ page.dataset_source_url | jsonify }}{% endif %}
+          },
+          {%- endif %}
           "spatialCoverage": {
             "@type": "Place",
             "name": "Salamanca, España",

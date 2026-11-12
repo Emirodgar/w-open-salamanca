@@ -69,6 +69,8 @@ parent_title: Mapa de líneas de autobús
 permalink: @SLUG@
 dataset_files:
   - lineas-autobus.json
+dataset_source: "Salamanca de Transportes (información de líneas)"
+dataset_source_url: https://salamancadetransportes.com/informacion-de-lineas/lineas/
 ---
 
     <section class="featured dataset" id="datos">
