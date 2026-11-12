@@ -40,6 +40,10 @@ Según el Censo de Población y Viviendas 2021 del INE, de las 63.990 viviendas 
   <h2>Régimen de tenencia: España y Castilla y León (ECV 2025)</h2>
   <canvas id="tenenciaECVChart" width="800" height="300"></canvas>
 
+  <h2>Alquiler medio mensual en capitales de Castilla y León (Renta 2024)</h2>
+  <p>Viviendas arrendadas como residencia habitual, según la estadística de viviendas del IRPF de la Agencia Tributaria (León, Burgos, Salamanca y Valladolid, las capitales de la comunidad que aparecen en esa tabla).</p>
+  <canvas id="alquilerMedioChart" width="800" height="300"></canvas>
+
 				</div>
 
 				<div id="section-table">
@@ -66,6 +70,8 @@ Según el Censo de Población y Viviendas 2021 del INE, de las 63.990 viviendas 
 					<tr><td>España, hogares en propiedad (ECV 2025)</td><td>73,3%</td><td>INE, Encuesta de Condiciones de Vida 2025</td></tr>
 					<tr><td>España, hogares en alquiler (ECV 2025)</td><td>20,2% (16,7% a precio de mercado + 3,5% inferior)</td><td>INE, Encuesta de Condiciones de Vida 2025</td></tr>
 					<tr><td>Castilla y León, hogares en propiedad (ECV 2025)</td><td>81,2%</td><td>INE, Encuesta de Condiciones de Vida 2025</td></tr>
+					<tr><td>Alquiler medio mensual en Salamanca (Renta 2024)</td><td>557 € (6,8 €/m²)</td><td>Agencia Tributaria, estadística de viviendas del IRPF 2024</td></tr>
+					<tr><td>Alquiler medio mensual en León / Burgos / Valladolid (Renta 2024)</td><td>508 € / 549 € / 560 €</td><td>Agencia Tributaria, estadística de viviendas del IRPF 2024</td></tr>
 					<tr><td>Castilla y León, hogares en alquiler (ECV 2025)</td><td>13,0% (11,2% a precio de mercado + 1,8% inferior)</td><td>INE, Encuesta de Condiciones de Vida 2025</td></tr>
 				  </tbody>
 				</table>
@@ -142,6 +148,28 @@ Según el Censo de Población y Viviendas 2021 del INE, de las 63.990 viviendas 
         scales: {
           x: { stacked: true, max: 100, title: { display: true, text: '% de hogares (ECV 2025, INE)' } },
           y: { stacked: true }
+        }
+      }
+    });
+
+    // Gráfico 4: alquiler medio mensual, capitales CyL (AEAT, Renta 2024, residencia habitual)
+    const ctxAlquilerMedio = document.getElementById('alquilerMedioChart').getContext('2d');
+    new Chart(ctxAlquilerMedio, {
+      type: 'bar',
+      data: {
+        labels: ['León', 'Burgos', 'Salamanca', 'Valladolid'],
+        datasets: [{
+          label: 'Alquiler medio mensual (€)',
+          data: [508, 549, 557, 560],
+          backgroundColor: ['#8D99AE', '#8D99AE', '#F4A261', '#8D99AE'],
+          borderRadius: 4
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: { legend: { display: false } },
+        scales: {
+          y: { title: { display: true, text: '€ al mes' }, beginAtZero: true }
         }
       }
     });
