@@ -1,7 +1,7 @@
 {
-  "generado_en": "2026-11-11T19:35:42.344Z",
+  "generado_en": "2026-11-12T01:54:17.628Z",
   "dias_ventana": 20,
-  "total": 3610,
+  "total": 3624,
   "medios": [
     "Tribuna Salamanca",
     "Salamanca24Horas",
@@ -9,6 +9,90 @@
     "Salamancahoy"
   ],
   "noticias": [
+    {
+      "url": "https://www.salamanca24horas.com/local/sindicatos-califican-masiva-manifestacion-ven-desproporcionada-actuacion-policial",
+      "titulo": "Los sindicatos ven \"masiva\" la manifestación y \"desproporcionada\" la actuación policial en Salamanca",
+      "medio": "Salamanca24Horas",
+      "fecha": "2026-11-11",
+      "fecha_hora": "2026-11-11T22:08:00.000Z"
+    },
+    {
+      "url": "https://www.salamancahoy.es/salamanca/provincia/nubes-grifo-horas-lluvias-llenaron-embalse-salamanca-20261111201210-nt.html",
+      "titulo": "De las nubes al grifo: las 36 horas en las que las lluvias llenaron un embalse de Salamanca con agua para 4 años",
+      "medio": "Salamancahoy",
+      "fecha": "2026-11-11",
+      "fecha_hora": "2026-11-11T22:06:39.000Z"
+    },
+    {
+      "url": "https://www.salamancahoy.es/salamanca/ciudad/sindicatos-denuncian-salamanca-cargas-policiales-desproporcionadas-tras-20261111205113-nt.html",
+      "titulo": "Los sindicatos denuncian en Salamanca cargas policiales «desproporcionadas» y reivindican en una gran marcha la huelga tras una jornada con un seguimiento discreto",
+      "medio": "Salamancahoy",
+      "fecha": "2026-11-11",
+      "fecha_hora": "2026-11-11T21:52:06.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/salamanca/noticias-importantes-salamanca-hoy-miercoles-noviembre-20261111222351-nt.html",
+      "titulo": "Las noticias más importantes en Salamanca hoy miércoles 11 de noviembre",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-11-11",
+      "fecha_hora": "2026-11-11T21:24:09.000Z"
+    },
+    {
+      "url": "https://www.salamancahoy.es/salamanca/noticias-imprescindibles-salamanca-miercoles-noviembre-20261111215814-nt.html",
+      "titulo": "Las noticias imprescindibles de Salamanca este miércoles 11 de noviembre",
+      "medio": "Salamancahoy",
+      "fecha": "2026-11-11",
+      "fecha_hora": "2026-11-11T20:58:14.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/provincia/centro-estudios-bejaranos-prepara-nuevos-proyectos-2027-20261111215442-nt.html",
+      "titulo": "El Centro de Estudios Bejaranos prepara nuevos proyectos para 2027",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-11-11",
+      "fecha_hora": "2026-11-11T20:54:42.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/provincia/castanada-actos-santa-cecilia-agenda-noviembre-guijuelo-20261111214639-nt.html",
+      "titulo": "La castañada o los actos de Santa Cecilia, en la agenda de noviembre de Guijuelo",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-11-11",
+      "fecha_hora": "2026-11-11T20:46:40.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/provincia/chd-activa-aviso-amarillo-rio-mayas-20261111214203-nt.html",
+      "titulo": "La CHD activa el aviso amarillo en el río Mayas",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-11-11",
+      "fecha_hora": "2026-11-11T20:43:15.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/provincia/taller-igualdad-urbanizacion-encinar-20261111203604-nt.html",
+      "titulo": "Taller de igualdad en la urbanización El Encinar",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-11-11",
+      "fecha_hora": "2026-11-11T19:36:04.000Z"
+    },
+    {
+      "url": "https://www.salamanca24horas.com/local/manifestacion-favor-huelga-general-toma-plaza-mayor-salamanca",
+      "titulo": "Más de 7.000 personas secundan la manifestación de la huelga general a pesar de la lluvia",
+      "medio": "Salamanca24Horas",
+      "fecha": "2026-11-11",
+      "fecha_hora": "2026-11-11T19:36:00.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/provincia/colegio-san-blas-santa-marta-renueva-patio-20261111202519-nt.html",
+      "titulo": "El colegio San Blas de Santa Marta renueva su patio con el césped artificial reciclado del campo de fútbol",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-11-11",
+      "fecha_hora": "2026-11-11T19:25:19.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/deportes/jaime-lizana-semifinales-campeonato-europa-kickboxing-20261111202355-nt.html",
+      "titulo": "Jaime Lizana, a las semifinales del Campeonato de Europa de kickboxing",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-11-11",
+      "fecha_hora": "2026-11-11T19:23:56.000Z"
+    },
     {
       "url": "https://www.lagacetadesalamanca.es/salamanca/dia-pinchazo-general-20261111193524-nt.html",
       "titulo": "El día del «pinchazo general»",
@@ -29,6 +113,13 @@
       "medio": "La Gaceta de Salamanca",
       "fecha": "2026-11-11",
       "fecha_hora": "2026-11-11T19:14:57.000Z"
+    },
+    {
+      "url": "https://www.salamancahoy.es/salamanca/ciudad/bomberos-ayuntamiento-salamanca-utilizan-115-nuevos-trajes-20261111201320-nt.html",
+      "titulo": "Los bomberos del Ayuntamiento de Salamanca ya utilizan los 115 nuevos trajes de extinción, trabajo y rescate técnico",
+      "medio": "Salamancahoy",
+      "fecha": "2026-11-11",
+      "fecha_hora": "2026-11-11T19:13:21.000Z"
     },
     {
       "url": "https://www.lagacetadesalamanca.es/salamanca/centro-cancer-universidad-salamanca-recibe-300000-investigar-20261111200428-nt.html",
@@ -157,6 +248,13 @@
       "fecha_hora": "2026-11-11T17:31:00.000Z"
     },
     {
+      "url": "https://www.tribunasalamanca.com/noticias/466177/buscan-al-salmantino-que-se-olvido-el-coche-en-elda-este-verano-en-10-dias-lo-mandan-al-desguace",
+      "titulo": "Buscan al salmantino que se olvidó el coche en Elda este verano: en 10 días lo mandan al desguace",
+      "medio": "Tribuna Salamanca",
+      "fecha": "2026-11-11",
+      "fecha_hora": "2026-11-11T17:30:45.000Z"
+    },
+    {
       "url": "https://www.tribunasalamanca.com/noticias/466175/el-accidente-de-un-camion-obliga-a-cortar-la-a-66-a-la-altura-de-montejo",
       "titulo": "El accidente de un camión obliga a cortar la A-66 a la altura de Montejo",
       "medio": "Tribuna Salamanca",
@@ -211,6 +309,13 @@
       "medio": "Tribuna Salamanca",
       "fecha": "2026-11-11",
       "fecha_hora": "2026-11-11T17:09:23.000Z"
+    },
+    {
+      "url": "https://www.tribunasalamanca.com/noticias/466167/cristeto-vendran-momentos-dificiles-pero-nosotros-tenemos-que-estar-preparados",
+      "titulo": "Cristeto: \"Vendrán momentos difíciles, pero nosotros tenemos que estar preparados\"",
+      "medio": "Tribuna Salamanca",
+      "fecha": "2026-11-11",
+      "fecha_hora": "2026-11-11T17:06:44.000Z"
     },
     {
       "url": "https://www.salamanca24horas.com/sucesos/camion-accidentado-obliga-cortar-circulacion-a-66",
@@ -694,6 +799,13 @@
       "medio": "Salamanca24Horas",
       "fecha": "2026-11-11",
       "fecha_hora": "2026-11-11T11:41:46.000Z"
+    },
+    {
+      "url": "https://www.tribunasalamanca.com/noticias/466115/a-las-calles",
+      "titulo": "¡A las calles!",
+      "medio": "Tribuna Salamanca",
+      "fecha": "2026-11-11",
+      "fecha_hora": "2026-11-11T11:36:47.000Z"
     },
     {
       "url": "https://www.lagacetadesalamanca.es/salamanca/salamanca-queda-alerta-tras-crecidas-llevaron-tormes-20261111123108-nt.html",
@@ -25264,20 +25376,6 @@
       "medio": "La Gaceta de Salamanca",
       "fecha": "2026-10-23",
       "fecha_hora": "2026-10-23T03:00:00.000Z"
-    },
-    {
-      "url": "https://www.lagacetadesalamanca.es/castilla-y-leon/ciudad-castilla-leon-nuevo-millonario-primer-premio-20261022221136-nt.html",
-      "titulo": "Una ciudad de Castilla y León tiene un nuevo millonario con un primer premio de La Bonoloto",
-      "medio": "La Gaceta de Salamanca",
-      "fecha": "2026-10-22",
-      "fecha_hora": "2026-10-22T20:12:40.000Z"
-    },
-    {
-      "url": "https://www.salamancahoy.es/salamanca/noticias-imprescindibles-salamanca-jueves-octubre-20261022212753-nt.html",
-      "titulo": "Las noticias imprescindibles de Salamanca este jueves 22 de octubre",
-      "medio": "Salamancahoy",
-      "fecha": "2026-10-22",
-      "fecha_hora": "2026-10-22T19:27:54.000Z"
     }
   ]
 }
