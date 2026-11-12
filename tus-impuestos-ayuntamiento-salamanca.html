@@ -1,0 +1,169 @@
+---
+layout: default
+title: "¿A dónde van tus impuestos municipales? Calculadora para vecinos de Salamanca"
+description: Escribe lo que pagas al Ayuntamiento de Salamanca (IBI, impuesto de vehículos, tasas) y mira cómo se reparte según en qué gasta de verdad el dinero público, de 2010 a 2024
+date: 12-11-2026
+folder: Hacienda Local
+permalink: tus-impuestos-ayuntamiento-salamanca
+---
+
+    <section class="featured dataset" id="datos">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="section-title">{{ page.title }}</h1>
+                <p class="section-description">{{ page.description }}</p>
+            </div>
+
+            <div id="section-content">
+
+<p>Cada año pagas al Ayuntamiento el <a href="/impuestos-municipales-salamanca">IBI, el impuesto de vehículos</a> y distintas tasas. ¿Qué parte acaba en limpieza, en seguridad, en cultura o en pagar deuda? Esta calculadora lo estima con el <b>gasto real</b> del Ayuntamiento (liquidaciones oficiales enviadas al Ministerio de Hacienda), no con lo presupuestado. Todo se calcula en tu navegador: lo que escribes no se envía ni se guarda en ningún sitio.</p>
+
+<h2>Calcula tu parte</h2>
+
+<form class="imp-form" onsubmit="return false" aria-label="Importes que pagas al Ayuntamiento">
+  <div class="imp-campo">
+    <label for="impIbi">IBI (€ al año)</label>
+    <input id="impIbi" type="text" inputmode="decimal" autocomplete="off" placeholder="0">
+  </div>
+  <div class="imp-campo">
+    <label for="impIvtm">Impuesto de vehículos (€ al año)</label>
+    <input id="impIvtm" type="text" inputmode="decimal" autocomplete="off" placeholder="0">
+  </div>
+  <div class="imp-campo">
+    <label for="impTasas">Tasas y otros (basura, etc., € al año)</label>
+    <input id="impTasas" type="text" inputmode="decimal" autocomplete="off" placeholder="0">
+  </div>
+  <div class="imp-campo">
+    <label for="impAnio">Gasto del año</label>
+    <select id="impAnio"></select>
+  </div>
+</form>
+<p class="pres-nota">Puedes rellenar solo uno de los campos. Si lo dejas todo vacío, verás cómo se reparten cada <b>100 €</b>.</p>
+
+<p id="impResumen" class="imp-resumen" aria-live="polite"></p>
+
+<div class="imp-chart" id="impChartBox"><canvas id="chImp" aria-label="Reparto de tu aportación por política de gasto"></canvas></div>
+<div id="impTabla"></div>
+
+<h2>Lo que conviene saber antes de fiarte del reparto</h2>
+<ul>
+<li><b>Es un reparto proporcional, no una traza.</b> El dinero de los impuestos no va a un destino concreto: entra en una caja común y se gasta según el presupuesto. Aquí se reparte tu importe con el mismo peso que cada política tiene en el gasto total de ese año.</li>
+<li id="impFinanciacion"></li>
+<li><b>Hay políticas que se pagan con otras vías.</b> Por ejemplo, parte de los servicios sociales, de la cultura o de las inversiones se financia con subvenciones de otras administraciones o con fondos europeos. Tu parte de esas políticas es, por tanto, una estimación por tamaño, no una cantidad que hayas pagado tú.</li>
+<li><b>Los importes de cada política son del Ayuntamiento y sus organismos dependientes</b> (presupuesto consolidado). Las empresas municipales con contabilidad propia quedan fuera.</li>
+<li>Para el contexto histórico y la comparación con otras ciudades, consulta la <a href="/presupuestos-salamanca">evolución del gasto de 2005 a 2024</a> y la <a href="/presupuestos-salamanca-comparativa">comparativa con otras ciudades</a>.</li>
+</ul>
+
+<p class="pres-nota">Fuente: Ministerio de Hacienda, <a href="https://serviciostelematicosext.hacienda.gob.es/SGFAL/CONPREL" rel="noopener">CONPREL, Consulta de presupuestos y liquidaciones de las entidades locales</a> (liquidaciones 2010-2024). Datos descargables en <a href="/presupuestos-salamanca.json">formato JSON</a>.</p>
+
+            </div>
+
+            {% include categories.html %}
+
+        </div>
+    </section>
+
+<style>
+.imp-form{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:1rem;margin:1rem 0 .5rem}
+.imp-campo{display:flex;flex-direction:column;gap:.35rem}
+.imp-campo label{font-weight:600}
+.imp-campo input,.imp-campo select{padding:.55rem .7rem;font:inherit;border:1px solid var(--border-color);border-radius:6px;width:100%;box-sizing:border-box}
+.imp-campo input:focus-visible,.imp-campo select:focus-visible{outline:3px solid var(--accent-color);outline-offset:2px}
+.imp-resumen{font-size:1.05em;padding:.8rem 1rem;border:1px solid var(--border-color);border-radius:6px;background:#f4f8f1}
+.imp-chart{position:relative;margin:.5rem 0 1.5rem}
+.pres-nota{font-size:.9em;color:#555}
+#impTabla table{width:100%;border-collapse:collapse;margin:.5rem 0 1rem}
+#impTabla th,#impTabla td{padding:.45rem .6rem;border-bottom:1px solid var(--border-color);text-align:left;vertical-align:top}
+#impTabla td.num,#impTabla th.num{text-align:right;font-variant-numeric:tabular-nums}
+#impTabla small{display:block;color:#555}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var DESC = {
+    '16': 'Recogida de basuras, limpieza viaria, agua, alcantarillado, alumbrado y cementerios',
+    '92': 'Administración general: personal, servicios jurídicos, informática y gestión interna',
+    '13': 'Policía local, tráfico, movilidad y protección civil',
+    '23': 'Ayudas y servicios sociales, atención a mayores, infancia y familia',
+    '43': 'Promoción turística, comercio y desarrollo empresarial',
+    '33': 'Bibliotecas, museos, teatros, fiestas y programación cultural',
+    '44': 'Transporte público de viajeros (autobús urbano)',
+    '15': 'Vivienda, urbanismo y pavimentación de calles',
+    '21': 'Pensiones de antiguos empleados municipales',
+    '34': 'Instalaciones y actividades deportivas',
+    '17': 'Parques y jardines y protección del medio ambiente',
+    '93': 'Gestión tributaria y recaudación',
+    '01': 'Intereses y amortización de préstamos',
+    '32': 'Colegios y actividades educativas municipales',
+    '91': 'Alcaldía, Pleno y concejales',
+    '24': 'Programas de formación y promoción del empleo',
+    '31': 'Salud pública y centros sanitarios',
+    '22': 'Otras prestaciones a empleados municipales',
+    '45': 'Infraestructuras',
+    '49': 'Otras actuaciones de carácter económico'
+  };
+  var COL = '#2C5F2D';
+  var D, chart;
+  var f2 = new Intl.NumberFormat('es-ES', { minimumFractionDigits: 2, maximumFractionDigits: 2, useGrouping: 'always' });
+  var f1 = new Intl.NumberFormat('es-ES', { minimumFractionDigits: 1, maximumFractionDigits: 1 });
+  var f0 = new Intl.NumberFormat('es-ES', { maximumFractionDigits: 0, useGrouping: 'always' });
+  function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
+  function num(id) {
+    var s = document.getElementById(id).value.replace(/\s/g, '').replace(/\.(?=\d{3}(\D|$))/g, '').replace(',', '.');
+    var v = parseFloat(s);
+    return isFinite(v) && v > 0 ? v : 0;
+  }
+  function nombreCorto(k) { return D.politicas[k].replace(/ \(.*\)/, ''); }
+
+  function pinta() {
+    var y = document.getElementById('impAnio').value, a = D.anios[y];
+    var pagado = num('impIbi') + num('impIvtm') + num('impTasas');
+    var base = pagado > 0 ? pagado : 100;
+    var tot = a.total_gastos;
+    var ks = Object.keys(a.politicas).filter(function (k) { return a.politicas[k][0] > 0; })
+      .sort(function (p, q) { return a.politicas[q][0] - a.politicas[p][0]; });
+    var parte = {}; ks.forEach(function (k) { parte[k] = base * a.politicas[k][0] / tot; });
+    var top = ks[0];
+    document.getElementById('impResumen').textContent = (pagado > 0
+      ? 'Con ' + f2.format(pagado) + ' € al año pagados al Ayuntamiento'
+      : 'De cada 100 € de impuestos y tasas municipales') +
+      ', según el gasto de ' + y + ', ' + f2.format(parte[top]) + ' € van a «' + nombreCorto(top).toLowerCase() + '», ' +
+      f2.format(parte[ks[1]]) + ' € a «' + nombreCorto(ks[1]).toLowerCase() + '» y ' + f2.format(parte[ks[2]]) + ' € a «' + nombreCorto(ks[2]).toLowerCase() + '».';
+
+    document.getElementById('impChartBox').style.height = (ks.length * 30 + 80) + 'px';
+    if (chart) chart.destroy();
+    chart = new Chart(document.getElementById('chImp'), {
+      type: 'bar',
+      data: { labels: ks.map(nombreCorto), datasets: [{ label: pagado > 0 ? 'Tu parte (€ al año)' : 'Por cada 100 € (€)', data: ks.map(function (k) { return parte[k]; }), backgroundColor: COL }] },
+      options: {
+        indexAxis: 'y', responsive: true, maintainAspectRatio: false,
+        plugins: { legend: { display: false }, tooltip: { callbacks: { label: function (c) { return f2.format(c.parsed.x) + ' €'; } } } },
+        scales: { x: { beginAtZero: true, title: { display: true, text: pagado > 0 ? 'Euros al año' : 'Euros de cada 100 €' } } }
+      }
+    });
+
+    var h = '<table><thead><tr><th>Política de gasto</th><th class="num">% del gasto</th><th class="num">' + (pagado > 0 ? 'Tu parte (€/año)' : 'De cada 100 € (€)') + '</th><th class="num">Gasto medio por vecino (€/año)</th></tr></thead><tbody>';
+    ks.forEach(function (k) {
+      h += '<tr><td>' + esc(nombreCorto(k)) + '<small>' + esc(DESC[k] || '') + '</small></td><td class="num">' + f1.format(100 * a.politicas[k][0] / tot) + '%</td><td class="num">' + f2.format(parte[k]) + '</td><td class="num">' + f0.format(a.politicas[k][0] / a.poblacion) + '</td></tr>';
+    });
+    document.getElementById('impTabla').innerHTML = h + '</tbody></table>';
+
+    var i = a.ingresos, cor = i.impuestos_directos + i.impuestos_indirectos + i.tasas_otros + i.transf_corrientes + i.patrimoniales;
+    var propios = i.impuestos_directos + i.impuestos_indirectos + i.tasas_otros;
+    document.getElementById('impFinanciacion').innerHTML = '<b>Tus impuestos no pagan todo.</b> En ' + y + ', los impuestos, tasas y precios públicos cubrieron el ' + f1.format(100 * propios / cor) + '% de los ingresos corrientes del Ayuntamiento; las transferencias de otras administraciones (Estado y Junta), el ' + f1.format(100 * i.transf_corrientes / cor) + '%, y el resto, ingresos patrimoniales.';
+  }
+
+  fetch('/presupuestos-salamanca.json').then(function (r) { return r.json(); }).then(function (d) {
+    D = d;
+    var s = document.getElementById('impAnio');
+    Object.keys(d.anios).filter(function (y) { return d.anios[y].politicas; }).sort().reverse().forEach(function (y) {
+      var o = document.createElement('option'); o.value = y; o.textContent = y; s.appendChild(o);
+    });
+    ['impIbi', 'impIvtm', 'impTasas'].forEach(function (id) { document.getElementById(id).addEventListener('input', pinta); });
+    s.addEventListener('change', pinta);
+    pinta();
+  }).catch(function () {
+    document.getElementById('impResumen').textContent = 'No se han podido cargar los datos. Inténtalo de nuevo más tarde.';
+  });
+});
+</script>
