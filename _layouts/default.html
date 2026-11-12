@@ -24,7 +24,7 @@
     <title>{{ meta_title | escape }}</title>
     <meta name="description" content="{{ meta_desc | escape }}">
     <link rel="canonical" href="{{ canonical }}">
-    <meta name="robots" content="max-image-preview:large">
+    <meta name="robots" content="{% if page.noindex %}noindex, follow{% else %}index, follow, max-image-preview:large{% endif %}">
 
     <!-- Open Graph / Twitter -->
     <meta property="og:site_name" content="{{ site_name }}">
@@ -259,17 +259,17 @@
             <div class="header-content">
                 <div class="logo">
                     <a href="https://opensalamanca.es" class="logo-link">
-                        {% if page.url == "/" %}<h1>Open Salamanca</h1>{% else %}<h2>Open Salamanca</h2>{% endif %}
+                        <span class="logo-name">Open Salamanca</span>
                         <span class="tagline">Datos Abiertos</span>
                     </a>
                 </div>
 
                 <nav class="nav" id="siteNav">
-                    {% unless page.url == "/" %}<a href="https://opensalamanca.es" class="nav-link">Inicio</a>
+                    <a href="/" class="nav-link{% if page.url == '/' %} active{% endif %}">Inicio</a>
                     <a href="https://opensalamanca.es/actualidad" class="nav-link{% if page.url == '/actualidad' %} active{% endif %}">Actualidad</a>
                     <a href="https://opensalamanca.es/hemeroteca" class="nav-link{% if page.url == '/hemeroteca' %} active{% endif %}">Hemeroteca</a>
                     <a href="https://opensalamanca.es/opina" class="nav-link{% if page.url == '/opina' %} active{% endif %}">Opina</a>
-                    <a href="https://opensalamanca.es/elecciones/" class="nav-link{% if page.url == '/elecciones/' %} active{% endif %}">Elecciones</a>{% endunless %}<!--
+                    <a href="https://opensalamanca.es/elecciones/" class="nav-link{% if page.url == '/elecciones/' %} active{% endif %}">Elecciones</a><!--
                     <a href="#datos" class="nav-link">Datos</a>
                     <a href="#categorias" class="nav-link">Categorías</a>
                     <a href="#contribuir" class="nav-link">Contribuir</a>

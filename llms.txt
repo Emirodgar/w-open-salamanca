@@ -1,0 +1,181 @@
+# Open Salamanca
+
+> Portal independiente de datos abiertos sobre la ciudad y la provincia de Salamanca (España). Reúne, limpia y visualiza datos públicos de fuentes oficiales (INE, Ayuntamiento de Salamanca, Junta de Castilla y León y otros organismos) sobre población, renta, vivienda, presupuesto municipal, movilidad, medio ambiente, salud, educación, turismo, cultura y elecciones. Creado y mantenido por Emilio Rodríguez García. Los datos se publican bajo licencia CC BY 4.0: se pueden reutilizar citando "Open Salamanca" y enlazando la página de origen.
+
+Notas para citar este sitio:
+- Cada página de datos incluye su análisis, tablas y, cuando existe, el fichero JSON o XML descargable enlazado desde la propia página.
+- Las páginas Actualidad, Hemeroteca y Opina se actualizan con regularidad; el resto son conjuntos de datos con la fecha de referencia indicada en cada página.
+- Autor: https://opensalamanca.es/autor
+
+## Secciones principales
+
+- [Inicio](https://opensalamanca.es/): índice de categorías y datasets
+- [Actualidad de Salamanca](https://opensalamanca.es/actualidad): resumen semanal de la actualidad local
+- [Hemeroteca](https://opensalamanca.es/hemeroteca): archivo de noticias locales
+- [Opina](https://opensalamanca.es/opina): pregunta ciudadana de la semana
+- [Elecciones en Salamanca](https://opensalamanca.es/elecciones/): histórico de resultados, mapa por municipio y encuestas
+- [Autor](https://opensalamanca.es/autor): quién está detrás del proyecto
+
+## Cultura y Ocio
+
+- [Bibliotecas y centros culturales de Salamanca](https://opensalamanca.es/bibliotecas-cultura): Mapa de los 50 equipamientos culturales de la IDE municipal - museos, archivos, bibliotecas, auditorios, teatros y cines - y horarios de las 7 bibliotecas municipales
+- [Bibliotecas municipales de Salamanca](https://opensalamanca.es/bibliotecas-municipales-salamanca): Las 7 bibliotecas municipales de la IDE medidas por cobertura y horario - el 91 % de los residentes tiene una a menos de 1 km, pero solo una abre por la tarde hasta las 21:00 y los sábados, y ninguna en domingo
+- [Carreras populares en Salamanca: calendario y análisis](https://opensalamanca.es/carreras-populares-salamanca): Guía completa de las pruebas de running y carreras populares en la ciudad de Salamanca, abarcando desde distancias cortas hasta maratones y medias maratones
+- [Cementerios de Salamanca](https://opensalamanca.es/cementerios-salamanca): Historia, curiosidades y ubicación de los dos cementerios municipales - San Carlos Borromeo, abierto en 1832 en una antigua huerta, y Virgen de la Salud, en Tejares - y a cuántos vecinos sirve cada uno
+- [Cofradías de Salamanca: procesiones y Semana Santa](https://opensalamanca.es/cofradias-semana-santa-salamanca): Qué cofradías y hermandades procesionan en Salamanca, cuáles son las procesiones más habituales y en qué día y hora sale cada una
+- [Salamanca CF UDS y Unionistas: comparativa de clubes](https://opensalamanca.es/comparativa-salamanca-unionistas): Los dos herederos de la UD Salamanca cara a cara, modelo de propiedad, socios, estadios, categoría actual y trayectoria deportiva desde 2013
+- [Escritores salmantinos contemporáneos y sus libros](https://opensalamanca.es/escritores-salmantinos-contemporaneos): Recopilación de escritores y poetas salmantinos en activo, famosos o no, y un listado de novelas y libros ambientados en Salamanca o protagonizados por sus personajes históricos
+- [Eventos tradicionales y festivales de Salamanca](https://opensalamanca.es/eventos-tradicionales-salamanca): Análisis del calendario anual de los eventos más arraigados de Salamanca, combinando celebraciones oficiales, tradiciones populares y macroeventos privados
+- [Gastronomía típica de Salamanca](https://opensalamanca.es/gastronomia-salamanca): Del hornazo al jamón de Guijuelo, platos, embutidos, quesos, dulces y las ocho denominaciones de origen que definen la cocina salmantina
+- [Historia de los cines de Salamanca](https://opensalamanca.es/historia-cines-salamanca): De las grandes salas del centro a los multicines y las plataformas de streaming, cómo ha cambiado la forma de ir al cine en Salamanca desde 1896 y qué supone el relevo de Van Dyck por Ocine en El Tormes
+- [Historia de Salamanca: nacimiento y grandes hitos](https://opensalamanca.es/historia-salamanca): Del primer asentamiento en el Cerro de San Vicente al Patrimonio de la Humanidad, un recorrido por los orígenes y los hitos más importantes de la historia de Salamanca
+- [Unión Deportiva Salamanca: historia (1923-2013)](https://opensalamanca.es/historia-union-deportiva-salamanca): Los 90 años de la UD Salamanca, desde su fundación hasta su desaparición, con títulos, plantillas, jugadores destacados, entrenadores y evolución de socios
+- [Instalaciones deportivas de Salamanca y su ocupación](https://opensalamanca.es/instalaciones-deportivas): Las instalaciones deportivas municipales reales de Salamanca (piscinas, pabellones y campos), con dirección, aforo y horario
+- [Medios de comunicación en Salamanca: evolución](https://opensalamanca.es/medios-comunicacion-prensa-salamanca): Análisis comparativo de la prensa escrita en papel y los periódicos digitales, tiradas, audiencias y transformación del ecosistema informativo local
+- [Museos de Salamanca](https://opensalamanca.es/museos-salamanca): Todos los museos y casas-museo de la ciudad de Salamanca, con un apartado dedicado a los museos del resto de la provincia
+- [Personajes históricos e influyentes de Salamanca](https://opensalamanca.es/personas-influyentes-historia-salamanca): Ranking y análisis de las 26 personalidades más relevantes e influyentes en la historia de Salamanca
+- [Salmantinos famosos de todos los tiempos](https://opensalamanca.es/salmantinos-famosos): Del Lute a Silvia Alonso, de Del Bosque a los Juegos Olímpicos, quiénes son los salmantinos y salmantinas más conocidos de la historia y, sobre todo, de los últimos 30 años
+
+## Demografia
+
+- [Evolución demográfica de Salamanca: pirámide de edad](https://opensalamanca.es/evolucion-demografica): Qué dice la capa oficial de población por barrio sobre el envejecimiento de Salamanca y qué datos de natalidad y saldo vegetativo siguen sin verificar
+- [Evolución de la inmigración en Salamanca](https://opensalamanca.es/inmigracion): Ranking de nacionalidades extranjeras en la capital y su evolución 2021-2024
+- [Fallecimientos en Salamanca: evolución y datos](https://opensalamanca.es/fallecimientos): Evolución de los fallecimientos en Salamanca: serie histórica por año y principales causas de muerte
+- [Población de Salamanca por calles y distritos](https://opensalamanca.es/poblacion-calles-distritos-salamanca): Residentes de 1.022 calles y 7.910 portales de la IDE municipal, mapa de densidad por cuadrículas de 100 metros y densidad por los 6 distritos censales - y qué calles concentran más población
+- [Estructura demográfica de Salamanca y su evolución](https://opensalamanca.es/poblacion-demografia): Población, edad y sexo de los 49 barrios de la IDE municipal - cuáles envejecen más, cuáles son más jóvenes y más densos - y qué datos demográficos siguen sin verificar
+- [Población de Salamanca por edad y género](https://opensalamanca.es/poblacion-genero-edad): Población de Salamanca por edad y género: cuántos hombres y mujeres hay en cada tramo de edad
+- [Población universitaria y temporal de Salamanca](https://opensalamanca.es/poblacion-universitaria): Impacto del alumnado de la USAL y la UPSA en la población flotante y el padrón de los barrios de Salamanca
+- [Evolución de la población de Salamanca (2015-2025)](https://opensalamanca.es/poblacion): Evolución de la población de Salamanca entre 2015 y 2025: habitantes censados cada año y variación anual
+- [Renta por habitante y desigualdad en Salamanca](https://opensalamanca.es/renta-desigualdad): Análisis de la renta media por persona y hogar, distribución por los 40 barrios y brecha salarial en Salamanca
+
+## Economia
+
+- [Centros comerciales de Salamanca: cuáles hay y dónde](https://opensalamanca.es/centros-comerciales-salamanca): Vialia, Los Cipreses y El Corte Inglés dentro del término municipal, y por qué los grandes centros como El Tormes están, en realidad, en Santa Marta de Tormes y Carbajosa de la Sagrada
+- [Tejido empresarial y comercio local de Salamanca](https://opensalamanca.es/comercio-actividad-empresarial): Densidad comercial, polígonos industriales y polos de innovación empresarial por ejes económicos en Salamanca y su alfoz
+- [Espacios de innovación en Salamanca: parques y coworkings](https://opensalamanca.es/espacios-innovacion-provincia-salamanca): Del Parque Científico de la USAL al nuevo Espacio de Innovación de Santa Marta de Tormes, las células rurales de Vitigudino, Candelario y Peromingo y los viveros de Béjar, Ciudad Rodrigo y Peñaranda
+- [Ingreso mínimo vital en Salamanca: beneficiarios](https://opensalamanca.es/ingreso-minimo-vital-salamanca): Evolución, perfil demográfico e impacto social de la prestación del Ingreso Mínimo Vital (IMV) en los hogares salmantinos
+- [Renta por municipio en Salamanca: ranking 2023-2024](https://opensalamanca.es/municipios-mayor-renta-salamanca): Renta bruta media por declaración de IRPF (Agencia Tributaria, ejercicio 2024) de los municipios salmantinos de más de 1.000 habitantes, con su evolución respecto a 2023 y tabla ordenable
+- [Grandes fortunas y patrimonios empresariales de Salamanca](https://opensalamanca.es/grandes-fortunas-patrimonio-salamanca): Ranking y análisis de las familias y empresarios con mayor patrimonio e impacto patrimonial en la provincia
+- [Polígonos industriales de Salamanca: Montalvo y Puerto Seco](https://opensalamanca.es/poligonos-industriales-salamanca): A diferencia de los grandes centros comerciales, el suelo industrial de Salamanca sí está mayoritariamente dentro de la ciudad, concentrado en un corredor logístico al oeste
+- [Ranking de empresas de Salamanca por facturación](https://opensalamanca.es/ranking-empresas-facturacion): Ranking de las 15 empresas con mayor volumen de ingresos, plantilla y evolución económica en Salamanca
+- [Renta per cápita por barrios y municipios de Salamanca](https://opensalamanca.es/renta-barrios): Renta neta media por persona en los 40 barrios de Salamanca capital y en los municipios del alfoz
+- [Renta per cápita por sexo en Salamanca](https://opensalamanca.es/renta-sexo): Comparativa de renta neta media entre hombres y mujeres en Salamanca (2015-2025)
+- [Evolución de la renta per cápita en Salamanca](https://opensalamanca.es/renta-per-capita): Renta neta media por persona en Salamanca entre 2015 y 2025: evolución anual y comparación con otras ciudades
+- [Subvenciones municipales de Salamanca: evolución y tipos](https://opensalamanca.es/subvenciones-ayuntamiento-salamanca): Análisis temporal, distribución por tipos y cuantía de las ayudas y subvenciones otorgadas por el Ayuntamiento de Salamanca
+
+## Educacion
+
+- [Centros universitarios de Salamanca](https://opensalamanca.es/centros-universitarios-salamanca): Las 26 facultades de la USAL y la UPSA en la IDE municipal - 14 ubicaciones, siete de las nueve de la UPSA en una misma dirección y 12 centros dentro de la Zona de Bajas Emisiones
+- [Radiografía escolar de Salamanca: alumnos y centros](https://opensalamanca.es/colegios-centros-educativos-salamanca): Análisis exhaustivo de los centros educativos en la ciudad, distribución de alumnos por zonas y comparativa entre la red pública y concertada
+- [USAL y UPSA: comparativa institucional](https://opensalamanca.es/comparativa-usal-upsa): Diagnóstico comparativo del modelo público y privado, volumen de estudiantes, oferta académica e impacto económico
+- [Comunidad estudiantil y oferta académica en Salamanca](https://opensalamanca.es/comunidad-estudiantil-universidades): Análisis del volumen de estudiantes, distribución por facultades y peso demográfico de las universidades en Salamanca
+- [Estudiantes y residencias universitarias en Salamanca](https://opensalamanca.es/estudiantes-residencias-universitarias-salamanca): Cuántos estudiantes llegan cada curso a la ciudad y cómo ha evolucionado el parque de residencias y colegios mayores que los aloja
+- [Informe PISA: Castilla y León en el contexto educativo](https://opensalamanca.es/informe-pisa-castilla-y-leon-salamanca): Análisis comparativo de los resultados del informe PISA de la OCDE, situando a Castilla y León y su entorno educativo frente a España y la media internacional
+- [Listado de colegios y centros educativos de Salamanca](https://opensalamanca.es/listado-colegios-salamanca): Directorio completo de los centros educativos no universitarios de la ciudad de Salamanca, con dirección, ubicación en el mapa y si son públicos, concertados o privados
+- [Presupuesto e impacto económico universitario en Salamanca](https://opensalamanca.es/presupuesto-impacto-economico-universidades): Evolución de los presupuestos, fuentes de ingresos y peso financiero de la USAL y la UPSA en Salamanca
+
+## Hacienda Local
+
+- [Contratación pública y licitaciones en Salamanca](https://opensalamanca.es/contratacion-licitaciones-publicas): Adjudicación de contratos, volumen de licitación, procedimientos y concurrencia de PYMEs en Salamanca
+- [Deuda municipal e impuestos en Salamanca: evolución](https://opensalamanca.es/deuda-impuestos): Evolución de la deuda per cápita y comportamiento de los principales tributos locales en Salamanca
+- [Impuestos municipales de Salamanca: tipos vigentes](https://opensalamanca.es/impuestos-municipales-salamanca): Los 5 impuestos que cobra el Ayuntamiento de Salamanca (IBI, IAE, IVTM, ICIO e IIVTNU), con sus tipos impositivos, bonificaciones y plazos de pago vigentes
+- [Presupuesto municipal de Salamanca: ingresos y gasto](https://opensalamanca.es/presupuesto-inversion-municipal): Evolución real del presupuesto municipal, la deuda viva y el grado de ejecución del Ayuntamiento de Salamanca (2023-2026)
+- [Presupuesto municipal de Salamanca: inversión por barrios](https://opensalamanca.es/presupuesto-municipal): El presupuesto real del Ayuntamiento de Salamanca para 2026 (210,3 M€), sus partidas destacadas y sus grandes proyectos de inversión
+- [Salamanca frente a otras ciudades: cuánto gasta por habitante y en qué (2010-2024)](https://opensalamanca.es/presupuestos-salamanca-comparativa): Compara el gasto por habitante del Ayuntamiento de Salamanca con ciudades de tamaño parecido, de Castilla y León o con cualquier ciudad de más de 50.000 habitantes, por política de gasto
+- [Presupuestos de Salamanca: en qué se gasta el dinero público y cómo ha evolucionado (2005-2024)](https://opensalamanca.es/presupuestos-salamanca): Veinte años de cuentas reales del Ayuntamiento de Salamanca, de 2005 a 2024. Qué se ingresa, en qué se gasta, cuánto por habitante y cómo cambia con la inflación
+- [¿A dónde van tus impuestos municipales? Calculadora para vecinos de Salamanca](https://opensalamanca.es/tus-impuestos-ayuntamiento-salamanca): Escribe lo que pagas al Ayuntamiento de Salamanca (IBI, impuesto de vehículos, tasas) y mira cómo se reparte según en qué gasta de verdad el dinero público, de 2010 a 2024
+
+## Medio Ambiente
+
+- [Árboles y vegetación en las zonas verdes de Salamanca](https://opensalamanca.es/arbolado-zonas-verdes-salamanca): Cantidad y tipos de árboles y arbustos que forman el bosque urbano de la ciudad
+- [Calidad del aire y contaminación en Salamanca](https://opensalamanca.es/calidad-aire): Registro histórico de NO2, PM10 y PM2.5 en las estaciones de medición de Salamanca
+- [Temperaturas mínimas en Salamanca: los puntos más fríos de la provincia](https://opensalamanca.es/clima-temperaturas-salamanca): Navasfrías y el aeropuerto de Matacán, entre las diez estaciones más frías de España el 26 de octubre de 2026 según Aemet
+- [Corredor verde del Tormes en Salamanca](https://opensalamanca.es/corredor-verde-salamanca): Mapa y inventario del corredor verde de la IDE municipal - caminos, carril bici, sendas, bancos, farolas, nidos y puentes de madera - en el tramo oeste del río Tormes
+- [Los embalses de la provincia de Salamanca](https://opensalamanca.es/embalses-provincia-salamanca): Cuáles son, dónde están y cómo ha evolucionado su nivel de llenado en los últimos años, según los datos del Ministerio y la Confederación Hidrográfica del Duero
+- [Flora autóctona y de bajo mantenimiento en Salamanca](https://opensalamanca.es/flora-autoctona-salamanca): Especies vegetales propias de la ciudad y la provincia de Salamanca, con menores necesidades de agua y cuidados
+- [Huertos urbanos de Salamanca](https://opensalamanca.es/huertos-urbanos-salamanca): Mapa de las 665 parcelas de los huertos urbanos de la IDE municipal y de su equipamiento - riego, árboles, pérgolas, cámaras, pozos y placas solares - con superficie media de cada huerto
+- [Incendios más graves de la provincia de Salamanca](https://opensalamanca.es/incendios-provincia-salamanca): Del histórico incendio de Cipérez (2025), el mayor jamás registrado en la provincia, al de Monsagro (2022), pasando por los sustos que ha vivido el patrimonio histórico de la capital
+- [Parques caninos de Salamanca (ZEC)](https://opensalamanca.es/parques-caninos-salamanca): Mapa de las 31 zonas de esparcimiento canino de Salamanca según la IDE municipal, con su superficie, su reparto por barrios y su relación con los parques infantiles
+- [Parques infantiles de Salamanca](https://opensalamanca.es/parques-infantiles-salamanca): Mapa de las 90 ubicaciones de juegos infantiles de Salamanca según la IDE municipal, con su reparto por barrios, las zonas accesibles y la inversión municipal en renovaciones
+- [Puntos limpios de Salamanca](https://opensalamanca.es/puntos-limpios-salamanca): Los 4 puntos limpios de la IDE municipal medidos por cobertura y horario - uno de cada dos residentes vive a menos de 1 km de uno, el Oeste y los barrios del sur quedan más lejos y el del Zurguén no abre fines de semana
+- [Reciclaje en Salamanca: contenedores y puntos limpios](https://opensalamanca.es/reciclaje-salamanca): Mapa de los 1.849 puntos de contenedores, los 81 de ropa y los 4 puntos limpios de la IDE municipal, y qué barrios tienen más contenedores por habitante
+- [Ruido en los edificios de Salamanca](https://opensalamanca.es/ruido-edificios-salamanca): Nivel de ruido en 9.218 edificios de la IDE municipal - casi tres de cada diez edificios residenciales superan los 65 dB, y la mitad de los de servicios públicos - con mapa por cuadrículas de 150 metros
+- [Parques y jardines de Salamanca](https://opensalamanca.es/zonas-verdes): Mapa y equipamiento de los 42 parques y jardines de la IDE municipal - zonas infantiles, pistas deportivas, máquinas de ejercicio, zonas para perros y merenderos - y qué datos de zonas verdes siguen sin verificar
+
+## Mercado Laboral
+
+- [Densidad comercial y tejido empresarial de Salamanca](https://opensalamanca.es/densidad-comercial): Distribución del pequeño comercio, servicios y grandes superficies en los 40 barrios de Salamanca y su alfoz
+- [Desempleo y afiliación en Salamanca: evolución](https://opensalamanca.es/desempleo-afiliacion): Análisis histórico del paro, filiación a la Seguridad Social y distribución por sectores en Salamanca
+- [Mercado laboral en Salamanca: afiliación y paro](https://opensalamanca.es/empleo-afiliacion-paro): Evolución de la afiliación a la Seguridad Social, distribución por sectores y perfil profesional en Salamanca
+
+## Movilidad
+
+- [Aparcamiento en Salamanca: zona ORA y parkings públicos](https://opensalamanca.es/aparcamientos-estacionamiento-ora): Calles de la zona azul y verde de la ORA, qué significa la nueva doble línea (Zona 0) y capacidad de los parkings subterráneos y disuasorios de Salamanca
+- [Autobús urbano de Salamanca: líneas más utilizadas](https://opensalamanca.es/autobus-urbano): Evolución de viajeros, ranking de líneas e información del transporte público en Salamanca
+- [Gasolineras de Salamanca](https://opensalamanca.es/gasolineras-salamanca): 18 estaciones de servicio de la IDE municipal - solo 5 abren las 24 horas, el 98 % de los residentes tiene una a menos de 1 km pero solo el 18 % tiene una abierta de noche a esa distancia, y ninguna está en el casco histórico
+- [Gratuidad del transporte para menores en Salamanca](https://opensalamanca.es/impacto-gratuidad-transporte-menores): Análisis de la adopción del bus metropolitano gratuito y visualización del ahorro económico directo en las familias salmantinas
+- [Mapa de líneas de autobús urbano de Salamanca](https://opensalamanca.es/mapa-lineas-autobus): Activa y desactiva cada línea de Salamanca de Transportes para explorar su recorrido y sus paradas sobre el mapa de la ciudad
+- [Carriles bici y zonas peatonales de Salamanca](https://opensalamanca.es/movilidad-ciclable-peatonal): Infraestructura ciclable, extensión de vías peatonales y puntos de alquiler de bicicletas en Salamanca
+- [Carriles bici de Salamanca: mapa y normas](https://opensalamanca.es/normas-carril-bici-salamanca): Mapa de los itinerarios ciclistas de la capital y los municipios cercanos, y las normas básicas para circular en bicicleta tras los cambios de la DGT del 1 de octubre
+- [Paradas de taxi en Salamanca](https://opensalamanca.es/paradas-taxi-salamanca): 31 paradas de la IDE municipal en 21 de los 49 barrios - el 67 % de los habitantes vive en un barrio con parada y Oeste, Vidal y Puente Ladrillo, con más de 5.000 vecinos cada uno, no tienen ninguna
+- [Parkings y aparcamientos de Salamanca](https://opensalamanca.es/parkings): Mapa, capacidad y ubicación de los parkings subterráneos y disuasorios gratuitos de Salamanca, con la evolución histórica y los nuevos proyectos
+- [Puntos de carga para coche eléctrico en Salamanca](https://opensalamanca.es/puntos-carga-coche-electrico-salamanca): 45 puntos de recarga de la IDE municipal con 95 tomas declaradas - dónde están, quién puede usarlos, cuáles son de carga rápida y qué cobertura queda fuera del centro
+- [Radares de velocidad en Salamanca](https://opensalamanca.es/radares): Mapa y listado de los 20 radares fijos y los 2 radares de tramo de la ciudad, con su límite de velocidad y ubicación
+- [Red ciclista de Salamanca y servicio SALenBICI](https://opensalamanca.es/red-ciclista): Mapa interactivo de la red oficial de carril bici (ciudad y alfoz), estaciones de préstamo SALenBICI y estadísticas de movilidad sostenible
+- [Tráfico y atropellos en Salamanca](https://opensalamanca.es/trafico-atropellos-salamanca): Intensidad media de tráfico en 89 puntos de aforo de la IDE municipal y análisis de los 53 atropellos registrados en 2021 - causas, gravedad y dónde ocurrieron
+- [Uso del transporte público y autobús en Salamanca](https://opensalamanca.es/transporte-urbano-bus): Evolución de viajeros en autobús urbano, frecuencias y uso por líneas en Salamanca
+- [Zona de Bajas Emisiones de Salamanca](https://opensalamanca.es/zona-bajas-emisiones-salamanca): Mapa de la Zona de Bajas Emisiones (ZBE) de Salamanca según la IDE municipal - superficie de la zona interior y exterior y qué aparcamientos, paradas de bus y servicios quedan dentro
+
+## Politica
+
+- [Alcaldes de Salamanca: historia y gobernabilidad municipal](https://opensalamanca.es/alcaldes-salamanca): Análisis histórico y político de los regidores de Salamanca, continuidad institucional, alternancia y homenajes en el nomenclátor
+- [Asociaciones vecinales de Salamanca](https://opensalamanca.es/asociaciones-vecinales-salamanca): Directorio de las 18 asociaciones de vecinos de Salamanca federadas en FEVESA - barrio, dirección, contacto y número de socios - y cuáles tienen un espacio municipal de participación
+- [Concejales del Ayuntamiento de Salamanca (2015-2026)](https://opensalamanca.es/concejales-ayuntamiento-salamanca): Todos los concejales de los tres últimos mandatos municipales, con su partido, su cargo y los años exactos en el puesto
+- [Resultados electorales por municipio de Salamanca](https://opensalamanca.es/elecciones-municipios-salamanca): Mapa interactivo del partido más votado en cada uno de los 362 municipios salmantinos, con datos oficiales del Ministerio del Interior y comparativa entre convocatorias
+- [Elecciones en Salamanca: histórico, mapa y encuestas](https://opensalamanca.es/elecciones/): Panel de control con el histórico de todas las elecciones en la provincia de Salamanca: mapa por municipio, quién se presenta, comparador entre convocatorias y sondeos
+- [Espacios de participación ciudadana de Salamanca](https://opensalamanca.es/espacios-participacion-ciudadana-salamanca): Mapa y datos de los 19 espacios de participación ciudadana de los barrios de Salamanca según la IDE municipal - dónde están, cómo contactar y a qué distancia quedan de la Plaza Mayor
+- [Percepción ciudadana de los servicios de Salamanca (2023)](https://opensalamanca.es/percepcion-ciudadana-salamanca-2023): Resultados de la encuesta de percepción ciudadana 2023 sobre el Ayuntamiento de Salamanca - satisfacción, servicios mejor y peor valorados, prioridades de gasto y participación, con 1.992 registros
+- [El voto mesa a mesa en Salamanca capital](https://opensalamanca.es/voto-mesas-salamanca-capital): Resultados oficiales de las 171 mesas electorales de la capital en las generales de julio de 2023, con la comparativa entre los 6 distritos municipales
+
+## Salud
+
+- [Centros de salud de Salamanca: mapa y direcciones](https://opensalamanca.es/centros-salud-salamanca): Los centros de salud públicos de atención primaria de la ciudad de Salamanca, con su zona básica, dirección y teléfono, incluido el nuevo centro de Prosperidad inaugurado en septiembre de 2026
+- [Hospitales de Salamanca: ubicación y especialidades](https://opensalamanca.es/hospitales-salamanca): Un análisis de los hospitales de la ciudad de Salamanca, con su ubicación, especialidades médicas, personal empleado y los médicos más conocidos vinculados a ellos
+- [Listas de espera quirúrgicas en Salamanca, pacientes y demora media](https://opensalamanca.es/listas-espera-quirurgica-salamanca): El Hospital de Salamanca cierra el tercer trimestre de 2026 con 6.908 pacientes pendientes de operarse, el mayor número de Castilla y León, y una demora media de 131 días
+- [Residencias de mayores en Salamanca: plazas y gestores](https://opensalamanca.es/residencias-mayores-salamanca): Mapa y listado de las 16 residencias de personas mayores de la capital, su titularidad pública o privada, sus plazas y el nuevo modelo de cuidados que impulsa el Ayuntamiento
+- [Zonas biosaludables y calistenia en Salamanca](https://opensalamanca.es/zonas-biosaludables-salamanca): Mapa de las 52 ubicaciones de juegos biosaludables de Salamanca según la IDE municipal, su reparto por barrios y su relación con los parques infantiles
+- [Zonas básicas de salud y CEAS de Salamanca](https://opensalamanca.es/zonas-salud-ceas-salamanca): Mapa de las 11 zonas básicas de salud de la IDE municipal (delimitación de 2012) y de los 8 CEAS (centros de acción social) con su dirección, teléfono y horario
+
+## Turismo
+
+- [Estructura hostelera y restauración de Salamanca](https://opensalamanca.es/estructura-hostelera): Mapa del censo de bares de la IDE municipal - 626 establecimientos, 247 con terraza y 24.080 plazas de aforo - su reparto por barrio, las 10 mayores terrazas y qué datos de hostelería siguen sin verificar
+- [Programa de turismo del Imserso en Salamanca](https://opensalamanca.es/imserso-viajes-mayores-salamanca): Cuántos salmantinos viajan con el Imserso, qué destinos prefieren y cuántas plazas se reservan para quienes visitan la provincia
+- [Miradores de Salamanca](https://opensalamanca.es/miradores-salamanca): Mapa y datos de los 11 miradores de Salamanca según la IDE municipal - cuáles forman la ruta numerada, dónde están y a qué distancia quedan de la Plaza Mayor
+- [Las playas más cercanas a Salamanca](https://opensalamanca.es/playas-mas-cercanas-salamanca): Las auténticas playas fluviales más próximas a la ciudad y, como referencia, la distancia hasta el mar en Aveiro (Portugal) y el norte de España
+- [Los pueblos más bonitos de la provincia de Salamanca](https://opensalamanca.es/pueblos-mas-bonitos-salamanca): Los seis municipios salmantinos reconocidos por la asociación Los Pueblos más Bonitos de España, por qué destacan y cuándo es mejor visitarlos
+- [Rutas de senderismo de la provincia de Salamanca](https://opensalamanca.es/rutas-senderismo-salamanca): Las rutas señalizadas más conocidas de la provincia, desde el Pozo de los Humos y la Peña de Francia hasta los Arribes del Duero y la Sierra de Béjar, con mapa, distancia y dificultad
+- [Rutas turísticas de Salamanca](https://opensalamanca.es/rutas-turisticas-salamanca): Mapa de las 6 rutas turísticas de la IDE municipal - Huellas de Teresa, Salamanca Jacobea, Patrimonio de la Humanidad, Barrio del Oeste, San Cristóbal - La Prosperidad y De la Cueva al Cielo - con sus paradas y calles
+- [Visitantes y pernoctaciones en Salamanca](https://opensalamanca.es/visitantes-pernoctaciones): Evolución del turismo, procedencia de viajeros y estacionalidad hotelera en Salamanca
+- [Viviendas turísticas y capacidad hotelera en Salamanca](https://opensalamanca.es/viviendas-turisticas-alojamiento): Pernoctaciones, ocupación hotelera real y el auge y caída regulatoria de las VUT en Salamanca
+- [Viviendas de uso turístico (VUT) en Salamanca](https://opensalamanca.es/viviendas-turisticas): Cuántas viviendas de uso turístico hay realmente en Salamanca según cada registro oficial, y dónde se concentran
+- [Zonas de baño de la provincia de Salamanca](https://opensalamanca.es/zonas-de-bano-provincia-salamanca): Salamanca es la única provincia de Castilla y León sin zonas de baño oficialmente censadas, pero cuenta con piscinas naturales y playas fluviales muy populares en sus sierras y arribes
+
+## Urbanismo
+
+- [Alquiler y propiedad de la vivienda en Salamanca](https://opensalamanca.es/alquiler-propiedad-vivienda-salamanca): Evolución del peso del alquiler frente a la propiedad en la vivienda principal de la capital, según el Censo 2021 del INE y la Agencia Tributaria
+- [Arterias de Salamanca: comercio y tráfico](https://opensalamanca.es/calles-negocios-trafico-salamanca): Análisis de las calles con mayor densidad de negocios y las vías con mayor intensidad de tráfico rodado en la ciudad de Salamanca
+- [Baños públicos de Salamanca](https://opensalamanca.es/banos-publicos-salamanca): Mapa y análisis de los 41 baños públicos de Salamanca según la IDE municipal - dónde están, en qué tipo de edificio y en qué horarios se pueden usar
+- [Edificios municipales de Salamanca](https://opensalamanca.es/edificios-municipales-salamanca): Los 92 edificios y servicios municipales de la IDE en 18 categorías - uno de cada cuatro está en la Zona de Bajas Emisiones, el Centro reúne 14 y los barrios de Garrido Sur y Oeste, con más de 8.000 vecinos cada uno, no tienen ninguno
+- [Licencias de obra y rehabilitación en Salamanca](https://opensalamanca.es/licencias-obras-urbanismo): Evolución de visados de construcción, licencias urbanísticas y actuaciones de rehabilitación en los 40 barrios de Salamanca
+- [Mapa de capas de Salamanca](https://opensalamanca.es/mapa-capas): Activa capas de barrios, centros de salud y líneas de autobús, y colorea los barrios según renta, vivienda o población
+- [Obras públicas terminadas en Salamanca](https://opensalamanca.es/obras-publicas-terminadas-salamanca): Análisis de las nueve actuaciones de obra pública ya finalizadas por el Ayuntamiento de Salamanca - plazas, calles, peatonalizaciones, glorietas y seguridad
+- [Mercado inmobiliario de Salamanca: precio y alquiler](https://opensalamanca.es/precio-vivienda-alquiler): Evolución del precio por metro cuadrado en compraventa y alquiler en los 40 barrios de Salamanca y su alfoz
+- [Evolución del precio de la vivienda en Salamanca](https://opensalamanca.es/precio-vivienda): Precio medio por metro cuadrado en compraventa y alquiler en los 40 barrios de Salamanca y su alfoz
+- [Puntos wifi municipales de Salamanca](https://opensalamanca.es/puntos-wifi-salamanca): 24 puntos WIFI del Ayuntamiento en 18 de los 49 barrios - el 53 % de los residentes tiene uno a menos de 300 m, pero Pizarrales, Garrido Sur, Oeste y Rollo no tienen ninguno y el CMI de Puente Ladrillo queda a más de 1 km del más cercano
+- [Servicios de Salamanca: farmacias, desfibriladores y más](https://opensalamanca.es/servicios-ciudad-salamanca): Mapa de 82 farmacias, 56 desfibriladores en instalaciones municipales, 18 gasolineras y 2 cementerios de la IDE municipal, y qué barrios tienen más o menos cobertura
+- [Vivienda y turismo en Salamanca: alquiler y VUT](https://opensalamanca.es/vivienda-alquiler-turismo-salamanca): Cómo la presión de las Viviendas de Uso Turístico (VUT) y del alquiler de temporada tensiona el mercado de alquiler residencial en Salamanca
+
+## Datos descargables
+
+- [Catálogo de datasets en JSON](https://opensalamanca.es/datasets.json): listado de todas las páginas de datos con título, descripción, categoría y URL
+- [Mapa del sitio](https://opensalamanca.es/sitemap.xml)

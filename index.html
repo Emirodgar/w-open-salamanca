@@ -9,7 +9,7 @@ description: Portal de datos abiertos y colaborativos de la ciudad de Salamanca.
         <div class="container">
             <div class="hero-content">
                 <div class="hero-text">
-                    <h2 class="hero-title">Salamanca en datos</h2>
+                    <h1 class="hero-title">Salamanca en datos</h1>
                     <p class="hero-description">
                         Explora, visualiza y contribuye con datos públicos de nuestra ciudad.
                         Un portal colaborativo para la transparencia y el conocimiento ciudadano.
@@ -138,8 +138,36 @@ description: Portal de datos abiertos y colaborativos de la ciudad de Salamanca.
             </div>
 
             <div class="categories-grid" id="categoriesGrid">
-                <!-- Categories will be loaded dynamically -->
+                {%- assign cat_pages = site.pages | where_exp: "p", "p.category and p.category != ''" | sort: "title" -%}
+                {%- for c in cat_pages %}
+                <div class="category-card" onclick="window.location.href = '{{ c.url }}'">
+                    <div class="category-icon">
+                        <span style="font-size: 24px;">{% case c.category %}{% when 'Demografia' %}👥{% when 'Economia' %}💰{% when 'Educacion' %}🎓{% when 'Finanzas' %}📊{% when 'Movilidad' %}🚌{% when 'Urbanismo' %}🏙️{% when 'Turismo' %}🗺️{% when 'Mercado Laboral' %}💼{% when 'Medio Ambiente' %}🌱{% when 'Cultura y Ocio' %}🎭{% when 'Hacienda Local' %}🏛️{% when 'Politica' %}🗳️{% when 'Salud' %}🏥{% else %}📋{% endcase %}</span>
+                    </div>
+                    <h4 class="category-title"><a href="{{ c.url }}">{{ c.category }}</a></h4>
+                </div>
+                {%- endfor %}
             </div>
+        </div>
+    </section>
+
+    <!-- Índice completo de datasets (HTML estático, rastreable sin JavaScript) -->
+    <section class="home-index" id="indice-datasets">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Todos los datasets de Salamanca</h2>
+                <p class="section-description">Índice de las páginas de datos abiertos, agrupadas por categoría</p>
+            </div>
+            {%- assign ds_pages = site.pages | where_exp: "p", "p.folder and p.folder != ''" | sort: "title" -%}
+            {%- assign folders = ds_pages | map: "folder" | uniq | sort -%}
+            {%- for fo in folders %}
+            <h3 class="home-index-cat">{{ fo }}</h3>
+            <ul>
+                {%- for d in ds_pages %}{% if d.folder == fo and d.sitemap != false %}
+                <li><a href="{{ d.url }}">{{ d.title }}</a></li>
+                {%- endif %}{% endfor %}
+            </ul>
+            {%- endfor %}
         </div>
     </section>
 
