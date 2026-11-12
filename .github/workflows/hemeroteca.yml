@@ -51,14 +51,17 @@ jobs:
       - name: Generar hemeroteca.json
         run: node scripts/hemeroteca/build.mjs
 
+      - name: Generar fragmentos HTML estáticos (para buscadores sin JS)
+        run: python3 scripts/render_estatico.py hemeroteca
+
       - name: Commit y push si hay cambios
         run: |
-          if git diff --quiet -- hemeroteca.json; then
+          if git diff --quiet -- hemeroteca.json _includes/hemeroteca-meta.html _includes/hemeroteca-listado.html; then
             echo "Sin cambios."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add hemeroteca.json
+          git add hemeroteca.json _includes/hemeroteca-meta.html _includes/hemeroteca-listado.html
           git commit -m "Actualiza hemeroteca.json [skip ci]"
           git push

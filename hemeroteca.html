@@ -25,10 +25,10 @@ permalink: hemeroteca
                         </svg>
                         <input type="text" id="hemerotecaBuscador" class="hemeroteca-buscador" placeholder="Escribe un tema para filtrar (por ejemplo: feria, tráfico, Ayuntamiento…)" autocomplete="off">
                     </div>
-                    <p class="hemeroteca-meta" id="hemerotecaMeta">Cargando publicaciones…</p>
+                    <p class="hemeroteca-meta" id="hemerotecaMeta">{% include hemeroteca-meta.html %}</p>
                 </div>
 
-                <div id="hemerotecaListado"></div>
+                <div id="hemerotecaListado">{% include hemeroteca-listado.html %}</div>
 
                 <p class="hemeroteca-sin-resultados" id="hemerotecaSinResultados" style="display:none;">
                     No hay publicaciones que coincidan con “<span id="hemerotecaTerminoBuscado"></span>”.

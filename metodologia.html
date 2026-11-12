@@ -1,0 +1,68 @@
+---
+layout: default
+title: "Metodología de Open Salamanca: fuentes y actualización de los datos"
+description: "De dónde salen los datos de Open Salamanca, cómo se procesan, qué se calcula o se estima, cada cuánto se actualizan y cuáles son sus limitaciones"
+date: 12-11-2026
+folder:
+permalink: metodologia
+---
+
+    <section class="featured dataset" id="metodologia">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="section-title">{{ page.title }}</h1>
+                <p class="section-description">{{ page.description }}</p>
+            </div>
+
+            <div id="section-content">
+
+  <h2>Principios</h2>
+  <ul>
+    <li><b>Fuentes públicas y verificables.</b> Los datos proceden de organismos y publicaciones oficiales o de fuentes abiertas, y cada página indica de dónde sale lo que muestra.</li>
+    <li><b>Qué es dato y qué es estimación.</b> Cuando una cifra se calcula o se estima (por ejemplo, superficies a partir de perímetros o residentes repartidos por portal), la página lo dice en su apartado de lectura de los datos.</li>
+    <li><b>Sin inventar lo que la fuente no dice.</b> Si un dato no está en la fuente (horarios, restricciones, fechas), la página lo indica y remite a la fuente oficial.</li>
+  </ul>
+
+  <h2>Fuentes de datos</h2>
+  <p>Las principales fuentes que usa el portal, según la página, son:</p>
+  <ul>
+    <li><b>Infraestructura de Datos Espaciales (IDE) del Ayuntamiento de Salamanca</b>: capas geográficas de zona de bajas emisiones, ORA, parkings, equipamientos, paradas, puntos de recarga y otras (<a href="https://ide.aytosalamanca.es" rel="nofollow noopener" target="_blank">ide.aytosalamanca.es</a>).</li>
+    <li><b>Instituto Nacional de Estadística (INE)</b>: población, demografía, censo, encuestas de condiciones de vida y otras estadísticas.</li>
+    <li><b>Agencia Tributaria</b>: estadísticas de renta y de viviendas del IRPF.</li>
+    <li><b>Presupuestos de las entidades locales</b>: datos presupuestarios del Ayuntamiento de Salamanca y de otras ciudades para las comparativas.</li>
+    <li><b>Salamanca de Transportes</b>: líneas y paradas del autobús urbano.</li>
+    <li><b>Junta de Castilla y León y otros organismos públicos</b>, además de las webs oficiales de cada institución citada en cada página.</li>
+    <li><b>OpenStreetMap / Nominatim</b>: para geocodificar direcciones en los listados con mapa.</li>
+  </ul>
+
+  <h2>Cómo se procesan los datos</h2>
+  <ol>
+    <li>Se descarga o consulta el dato en su fuente original.</li>
+    <li>Se limpia y se estructura en un fichero JSON o XML reutilizable, que suele poder descargarse desde la propia página.</li>
+    <li>Se visualiza con tablas, gráficos y mapas, y se añade un análisis con los hallazgos principales.</li>
+    <li>Se señalan las limitaciones: cobertura, año de referencia, estimaciones y diferencias con otras fuentes.</li>
+  </ol>
+
+  <h2>Actualización</h2>
+  <ul>
+    <li><b>Páginas de datos</b>: se revisan cuando la fuente publica una nueva edición. La fecha de publicación y, cuando existe, la de modificación figuran al pie de cada página, y el año de referencia aparece en el propio análisis.</li>
+    <li><b><a href="/actualidad">Actualidad</a></b>: resumen semanal que se genera de forma automática cada día a partir de las noticias publicadas en el mapa del sitio de la prensa local. La redacción del resumen la realiza un modelo de inteligencia artificial y el contenido es orientativo; no sustituye la lectura de las noticias originales.</li>
+    <li><b><a href="/hemeroteca">Hemeroteca</a></b>: listado automático de titulares, fecha, medio y enlace de Tribuna Salamanca, Salamanca24Horas, La Gaceta de Salamanca y Salamancahoy durante los últimos 20 días. No reproduce el contenido de las noticias: enlaza a cada medio.</li>
+    <li><b><a href="/opina">Opina</a></b>: pregunta ciudadana semanal. Es una consulta abierta, no una encuesta con muestra representativa, y sus resultados no deben interpretarse como opinión de toda la población.</li>
+  </ul>
+
+  <h2>Limitaciones</h2>
+  <ul>
+    <li>Los datos de distintas fuentes pueden no coincidir entre sí por diferencias de definición, fecha o ámbito geográfico.</li>
+    <li>Las capas geográficas pueden tener imprecisiones de posición, y las superficies calculadas son aproximadas.</li>
+    <li>Algunas series son anteriores al último año disponible porque la fuente aún no ha publicado la edición más reciente.</li>
+  </ul>
+
+  <h2>Correcciones</h2>
+  <p>Si detectas un error, avisa al autor por los canales de la página <a href="/acerca-de">Acerca de Open Salamanca</a>. Las correcciones se aplican en la propia página y se reflejan en su fecha de modificación.</p>
+
+  <p style="font-size:0.9em; color:#555;">Última revisión de esta página: 12 de noviembre de 2026.</p>
+
+            </div>
+        </div>
+    </section>

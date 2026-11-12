@@ -17,13 +17,13 @@ permalink: actualidad
 
 			<div id="section-content">
 
-				<p class="actualidad-meta" id="actualidad-periodo">Cargando datos…</p>
+				<p class="actualidad-meta" id="actualidad-periodo">{% include actualidad-periodo.html %}</p>
 
 				<p class="actualidad-ver-timeline"><a href="/timeline">Ver la línea de tiempo mensual de Salamanca →</a></p>
 
 				<div class="actualidad-card">
 					<h2 class="actualidad-card-title">Resumen</h2>
-					<div class="actualidad-resumen" id="actualidad-resumen"></div>
+					<div class="actualidad-resumen" id="actualidad-resumen">{% include actualidad-resumen.html %}</div>
 				</div>
 
 				<div class="actualidad-card" id="actualidad-eventos-card" style="display:none;">
@@ -35,7 +35,7 @@ permalink: actualidad
 
 				<div class="actualidad-card">
 					<h2 class="actualidad-card-title">De qué han hablado los titulares</h2>
-					<div class="actualidad-conceptos" id="actualidad-conceptos"></div>
+					<div class="actualidad-conceptos" id="actualidad-conceptos">{% include actualidad-conceptos.html %}</div>
 				</div>
 
 				<div class="actualidad-card">

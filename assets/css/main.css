@@ -1039,3 +1039,7 @@ li a:hover {
 
 /* Respuesta directa al inicio de la página (útil para lectores y motores de respuesta) */
 .answer-first { background: var(--bg-secondary, #f4f7fb); border-left: 4px solid var(--primary-color); padding: 0.9rem 1.1rem; border-radius: 6px; margin: 0 0 1.5rem; }
+
+/* Línea de autoría y fecha al pie de las páginas de datos */
+.page-meta { font-size: 0.85rem; color: var(--secondary-color); margin: var(--spacing-lg) 0; padding-top: var(--spacing-md); border-top: 1px solid var(--border-color, #e5e7eb); }
+.page-meta a { color: inherit; text-decoration: underline; }

@@ -65,12 +65,16 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY || vars.GEMINI_API_KEY }}
         run: python3 scripts/actualidad/build.py
 
+      - name: Generar fragmentos HTML estáticos (para buscadores sin JS)
+        if: steps.build.outcome == 'success'
+        run: python3 scripts/render_estatico.py actualidad
+
       - name: Commit y push de lo que haya cambiado
         id: commit
         if: steps.build.outcome == 'success'
         run: |
           # Solo los ficheros que el script declara haber tocado (nunca add -A).
-          git add ${{ steps.build.outputs.ficheros }}
+          git add ${{ steps.build.outputs.ficheros }} _includes/actualidad-periodo.html _includes/actualidad-resumen.html _includes/actualidad-conceptos.html
           if git diff --cached --quiet; then
             echo "Sin cambios."
             exit 0

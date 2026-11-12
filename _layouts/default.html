@@ -118,7 +118,8 @@
           {%- if page.url == "/autor" %},
           "mainEntity": { "@id": {{ person_id | jsonify }} }
           {%- else %},
-          "publisher": { "@id": {{ org_id | jsonify }} }
+          "publisher": { "@id": {{ org_id | jsonify }} },
+          "author": { "@id": {{ person_id | jsonify }} }
           {%- if has_dataset %},
           "mainEntity": { "@id": {{ dataset_id | jsonify }} }
           {%- endif %}
@@ -339,6 +340,12 @@
 
     {{ content }}
 
+    {%- if page.date and page.url != "/" and page.url != "/autor" and page.url != "/opina-archivo" and page.url != "/historico" and page.url != "/timeline" and page.url != "/actualidad" and page.url != "/hemeroteca" and page.url != "/opina" and page.url != "/elecciones/" and page.category == nil %}
+    <div class="container">
+        <p class="page-meta">Publicado el {{ page.date | date: "%d/%m/%Y" }}{% if page.modified %} · Actualizado el {{ page.modified | date: "%d/%m/%Y" }}{% endif %} · Por <a href="/autor">Emilio Rodríguez García</a> · <a href="/metodologia">Metodología y fuentes</a></p>
+    </div>
+    {%- endif %}
+
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
@@ -400,7 +407,7 @@
 
             <div class="footer-bottom">
                 <p>&copy; <span id="footerYear">2025</span> Open Salamanca. Proyecto creado por <a href="/autor">Emilio</a>.</p>
-                <p>Datos bajo licencia <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></p>
+                <p>Datos bajo licencia <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · <a href="/acerca-de">Acerca de</a> · <a href="/metodologia">Metodología</a> · <a href="/autor">Autor</a></p>
             </div>
         </div>
     </footer>
