@@ -1,7 +1,7 @@
 {
   "mes": "2026-11",
   "titulo_mes": "Noviembre 2026",
-  "resumen_mes": "Noviembre ha estado marcado por el triste fallecimiento de Jesús Miguel, exjugador de Unionistas, y de Charo Diego, primera mujer presidenta de la Diputación. El mes ha visto la investidura de Antonio Guterres como Doctor Honoris Causa, el fallecimiento de Curro Sánchez en un accidente de tráfico y la afectación del transporte por una huelga general. Destacan también la acusación a una presa en Topas, la tensión en Montalvos y la designación de Salamanca como capital mundial del ajedrez juvenil.",
+  "resumen_mes": "Noviembre ha estado marcado por el triste fallecimiento de Jesús Miguel, exjugador de Unionistas, y de Charo Diego, primera mujer presidenta de la Diputación. El mes ha visto la investidura de Antonio Guterres como Doctor Honoris Causa, el fallecimiento de Curro Sánchez en un accidente de tráfico y la celebración de la gala de los Premios Hosteleriasalamanca.es. La huelga general ha generado tensión, mientras que la Fiscalía ha acusado a una presa en Topas y Salamanca ha sido designada capital mundial del ajedrez juvenil.",
   "hitos": [
     {
       "fecha": "2026-11-01",
@@ -17,7 +17,7 @@
       "categoria": "Deportes",
       "descripcion": "El mundo del fútbol local lamenta la pérdida de Jesús Miguel, exjugador de Unionistas. Se le ha rendido un emotivo homenaje en el estadio Reina Sofía.",
       "fuente": "https://www.lagacetadesalamanca.es/deportes/futbol-local/unionistas/fallece-jesus-miguel-exjugador-unionistas-tras-brutal-20261103093621-nt.html",
-      "destacado": true
+      "destacado": false
     },
     {
       "fecha": "2026-11-06",
@@ -37,10 +37,10 @@
     },
     {
       "fecha": "2026-11-09",
-      "titulo": "La huelga general afecta al transporte en Salamanca",
+      "titulo": "Se celebra la gala de los Premios Hosteleriasalamanca.es 2026",
       "categoria": "Sociedad",
-      "descripcion": "La huelga general ha generado incertidumbre en el transporte de Salamanca, con la implementación de servicios mínimos en las líneas urbanas y metropolitanas.",
-      "fuente": "https://www.lagacetadesalamanca.es/salamanca/incertidumbre-transporte-salamanca-impacto-huelga-general-20261109060000-nt.html",
+      "descripcion": "La gala de los Premios Hosteleriasalamanca.es 2026 se lleva a cabo, reconociendo a los profesionales del sector.",
+      "fuente": "https://www.lagacetadesalamanca.es/salamanca/gala-premios-hosteleriasalamancaes-2026-imagenes-20261109224641-ga.html",
       "destacado": false
     },
     {
@@ -53,19 +53,19 @@
     },
     {
       "fecha": "2026-11-10",
-      "titulo": "Comienza la tensión en Montalvos con cargas policiales",
-      "categoria": "Sociedad",
-      "descripcion": "Se ha registrado tensión en Montalvos, con cargas policiales e insultos, en el marco de las movilizaciones por la huelga general.",
-      "fuente": "https://www.lagacetadesalamanca.es/salamanca/comienza-tension-montalvos-crispacion-cargas-policiales-insultos-20261110233331-nt.html",
+      "titulo": "Ciudad Rodrigo aprueba una rebaja del tipo impositivo del IBI",
+      "categoria": "Política",
+      "descripcion": "El Ayuntamiento de Ciudad Rodrigo aprueba una rebaja del tipo impositivo del Impuesto sobre Bienes Inmuebles (IBI).",
+      "fuente": "https://www.lagacetadesalamanca.es/provincia/ciudad-rodrigo-aprueba-rebaja-tipo-impositivo-ibi-20261110211956-nt.html",
       "destacado": false
     },
     {
-      "fecha": "2026-11-10",
-      "titulo": "Salamanca, capital mundial del ajedrez juvenil",
-      "categoria": "Deportes",
-      "descripcion": "Salamanca se ha convertido en la capital mundial del ajedrez al acoger un evento para jóvenes prodigios de este deporte.",
-      "fuente": "https://www.lagacetadesalamanca.es/deportes/salamanca-convierte-capital-mundial-ajedrez-jovenes-prodigios-20261110223703-nt.html",
-      "destacado": false
+      "fecha": "2026-11-11",
+      "titulo": "La huelga general en Salamanca registra seguimiento testimonial e incidentes",
+      "categoria": "Sociedad",
+      "descripcion": "La jornada de huelga general en Salamanca se salda con un seguimiento testimonial y algunos incidentes, incluyendo cargas policiales y manifestaciones.",
+      "fuente": "https://www.lagacetadesalamanca.es/salamanca/huelga-general-salamanca-salda-seguimiento-testimonial-incidentes-20261111133650-nt.html",
+      "destacado": true
     }
   ]
 }

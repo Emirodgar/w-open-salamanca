@@ -195,18 +195,6 @@
       "fecha_creacion": "2026-10-15"
     },
     {
-      "id": "huelga-carnico-guijuelo-2026",
-      "pregunta": "Ante la convocatoria de movilizaciones y huelga en el sector cárnico de Guijuelo por la falta de acuerdo en el convenio, ¿cree que estas acciones son necesarias para defender los derechos de los trabajadores?",
-      "opciones": [
-        "Sí, es la única vía para lograr mejoras laborales",
-        "No, perjudican la imagen y la economía del sector",
-        "Deberían buscarse otras vías de negociación antes de la huelga",
-        "No tengo suficiente información"
-      ],
-      "basado_en": "eventos.json",
-      "fecha_creacion": "2026-10-15"
-    },
-    {
       "id": "primark-el-tormes-2026",
       "pregunta": "Ante el anuncio de la próxima llegada de Primark al Centro Comercial El Tormes, ¿cree que esta apertura beneficiará al comercio local de Salamanca?",
       "opciones": [
@@ -424,18 +412,6 @@
       "fecha_creacion": "2026-10-26"
     },
     {
-      "id": "festival-ficcion-ciudad-rodrigo-2026",
-      "pregunta": "Ciudad Rodrigo celebra la 15ª edición de su Festival Internacional de Cine 'Ficci-on'. ¿Cree que este festival contribuye significativamente a la promoción cultural y turística de la ciudad?",
-      "opciones": [
-        "Sí, es un evento clave para la cultura y el turismo local",
-        "No, su relevancia es más bien local y limitada",
-        "Es importante, pero podría tener más proyección",
-        "No tengo suficiente información"
-      ],
-      "basado_en": "eventos.json",
-      "fecha_creacion": "2026-10-26"
-    },
-    {
       "id": "desempleo-salamanca-2026",
       "pregunta": "La tasa de desempleo en la provincia de Salamanca ha subido al 9,04% en el tercer trimestre de 2026. ¿Considera que la situación del mercado laboral provincial es preocupante?",
       "opciones": [
@@ -541,18 +517,6 @@
         "No tengo suficiente información"
       ],
       "basado_en": "actualidad.json",
-      "fecha_creacion": "2026-11-05"
-    },
-    {
-      "id": "huelga-general-salamanca-2026",
-      "pregunta": "CCOO y UGT han convocado una huelga general en Salamanca para el 11 de noviembre. ¿Cree que esta movilización es una herramienta efectiva para lograr mejoras en salarios y servicios públicos?",
-      "opciones": [
-        "Sí, es crucial para presionar y conseguir cambios",
-        "No, genera más inconvenientes que soluciones reales",
-        "Es un paso necesario, pero debe ir acompañada de negociación",
-        "No tengo suficiente información"
-      ],
-      "basado_en": "eventos.json",
       "fecha_creacion": "2026-11-05"
     },
     {
@@ -698,6 +662,30 @@
       ],
       "basado_en": "eventos.json",
       "fecha_creacion": "2026-11-11"
+    },
+    {
+      "id": "rebaja-ibi-ciudad-rodrigo-2026",
+      "pregunta": "Ciudad Rodrigo ha aprobado una rebaja del tipo impositivo del IBI. ¿Considera que esta medida beneficiará significativamente a los vecinos y a la economía local?",
+      "opciones": [
+        "Sí, aliviará la carga fiscal y estimulará el consumo.",
+        "No, el impacto será limitado y podría afectar a los servicios municipales.",
+        "Es una medida positiva, pero se necesitan otras acciones complementarias.",
+        "No tengo suficiente información."
+      ],
+      "basado_en": "actualidad.json",
+      "fecha_creacion": "2026-11-12"
+    },
+    {
+      "id": "bautismos-blancos-ampliacion-2027",
+      "pregunta": "El programa 'Bautismos Blancos 2027' de la Diputación de Salamanca incrementa sus plazas y permitirá el uso de todas las pistas de La Covatilla. ¿Cree que esta ampliación mejorará el acceso de los escolares a los deportes de invierno?",
+      "opciones": [
+        "Sí, facilitará que más niños disfruten de la nieve.",
+        "No, la oferta sigue siendo insuficiente para la demanda.",
+        "Es un paso positivo, pero la clave es la disponibilidad de nieve.",
+        "No tengo suficiente información."
+      ],
+      "basado_en": "eventos.json",
+      "fecha_creacion": "2026-11-12"
     }
   ]
 }

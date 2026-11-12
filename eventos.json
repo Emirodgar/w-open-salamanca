@@ -1,5 +1,5 @@
 {
-  "generado_en": "2026-11-11T05:45:54+00:00",
+  "generado_en": "2026-11-12T05:45:59+00:00",
   "eventos": [
     {
       "titulo": "Exposición 'Iconografía' de grabados de Van Dyck",
@@ -98,15 +98,6 @@
       "fecha_fin": "2026-11-30",
       "descripcion": "Ciudad Rodrigo participa en la segunda ronda del concurso navideño \"Juntos Brillamos más\" de Ferrero Rocher, siendo el único representante de Castilla y León. Se hace un llamamiento al voto hasta el 30 de noviembre para que el municipio pueda ser el ganador.",
       "fuente": "https://www.lagacetadesalamanca.es/provincia/ciudad-rodrigo-sigue-adelante-concurso-navideno-ferrero-20261109121555-nt.html"
-    },
-    {
-      "titulo": "Huelga general en Salamanca",
-      "categoria": "Política",
-      "fecha_inicio": "2026-11-11",
-      "fecha_fin": null,
-      "lugar": "Salamanca",
-      "descripcion": "UGT y CCOO convocan una huelga general en Salamanca para el 11 de noviembre, reclamando mejoras salariales y medidas que faciliten el acceso a la vivienda. Se realizarán dos manifestaciones en la ciudad, una por la mañana desde el campus universitario hasta la Plaza Mayor, y otra por la tarde desde Gran Vía hasta la Plaza Mayor.",
-      "fuente": "https://www.lagacetadesalamanca.es/salamanca/ugt-ccoo-llaman-huelga-general-11n-vivienda-20261106182914-nt.html"
     },
     {
       "titulo": "'Bracamonte en Negro', festival de novela negra en Peñaranda",
@@ -315,6 +306,15 @@
       "fuente": "https://www.lagacetadesalamanca.es/provincia/preparativos-bejar-aniversario-muerte-venerable-aurora-calvo-20261109170556-nt.html"
     },
     {
+      "titulo": "Taller de técnicas tradicionales de repostería en Macotera",
+      "categoria": "Educación",
+      "fecha_inicio": "2026-11-23",
+      "fecha_fin": "2026-11-30",
+      "lugar": "antiguo colegio Miguel Delibes de Macotera",
+      "descripcion": "Macotera acogerá un taller gratuito de técnicas tradicionales de repostería los días 23 y 30 de noviembre en el antiguo colegio Miguel Delibes, buscando fomentar el autoempleo y las oportunidades laborales.",
+      "fuente": "https://www.lagacetadesalamanca.es/provincia/macotera-acogera-taller-gratuito-reposteria-impulsar-autoempleo-20261111193059-nt.html"
+    },
+    {
       "titulo": "Cuentacuentos 'Palabras que hacen cosquillas' en Carbajosa",
       "categoria": "Educación",
       "fecha_inicio": "2026-11-24",
@@ -369,6 +369,15 @@
       "fuente": "https://www.lagacetadesalamanca.es/provincia/figuras-mundo-taurino-reuniran-alba-tormes-dar-20261107191236-nt.html"
     },
     {
+      "titulo": "Castañada en Guijuelo",
+      "categoria": "Sociedad",
+      "fecha_inicio": "2026-11-27",
+      "fecha_fin": null,
+      "lugar": "Plaza Mayor, Guijuelo",
+      "descripcion": "Tradicional castañada en Guijuelo, que regresará a la Plaza Mayor el 27 de noviembre por la tarde con animación, música y reparto solidario de castañas para recaudar fondos para Manos Unidas.",
+      "fuente": "https://www.lagacetadesalamanca.es/provincia/castanada-actos-santa-cecilia-agenda-noviembre-guijuelo-20261111214639-nt.html"
+    },
+    {
       "titulo": "Comida solidaria en Guijuelo en la lucha contra el cáncer",
       "categoria": "Sociedad",
       "fecha_inicio": "2026-11-28",
@@ -413,6 +422,15 @@
       "fuente": "https://www.lagacetadesalamanca.es/provincia/penaranda-acogera-jornadas-sobre-sexualidad-diversidad-20261027105117-nt.html"
     },
     {
+      "titulo": "Sorteo público de plazas para la Cabalgata de Reyes de Salamanca",
+      "categoria": "Sociedad",
+      "fecha_inicio": "2026-12-02",
+      "fecha_fin": null,
+      "descripcion": "Si el número de solicitudes excede las plazas, se realizará un sorteo público el 2 de diciembre a las 10:00 horas en la Sala de la Palabra del Teatro Liceo para seleccionar a los participantes de la Cabalgata de Reyes.",
+      "fuente": "https://www.lagacetadesalamanca.es/salamanca/fecha-inscripcion-acompanar-reyes-magos-cabalgata-salamanca-20261109180538-nt.html",
+      "lugar": "Sala de la Palabra del Teatro Liceo"
+    },
+    {
       "titulo": "XI Concurso de Decoración Navideña 'Ciudad Rodrigo, la estrella de la Navidad'",
       "categoria": "Cultura",
       "fecha_inicio": "2026-12-04",
@@ -438,6 +456,15 @@
       "lugar": "Auditorio Municipal Reina Berenguela, Villares de la Reina",
       "descripcion": "El mago Toni Rivero presenta 'Me parto de magia', un espectáculo para todos los públicos, dentro de la programación cultural 'VillarEscénicos'.",
       "fuente": "https://www.lagacetadesalamanca.es/provincia/villarescenicos-encara-tramo-final-programacion-musica-teatro-20261030192740-nt.html"
+    },
+    {
+      "titulo": "XI Certamen de Villancicos en el Centro Comercial El Tormes",
+      "categoria": "Cultura",
+      "fecha_inicio": "2026-12-15",
+      "fecha_fin": "2026-12-18",
+      "lugar": "Centro Comercial El Tormes, Jardines de Santo Domingo",
+      "descripcion": "El XI Certamen de Villancicos reunirá a escolares de Salamanca y alfoz los días 15 y 16 de diciembre en el Centro Comercial El Tormes. Los grupos ganadores repetirán actuación el 17 de diciembre en El Tormes y el 18 de diciembre en los Jardines de Santo Domingo.",
+      "fuente": "https://www.lagacetadesalamanca.es/salamanca/tormes-pone-musica-voz-navidad-20261111194445-nt.html"
     },
     {
       "titulo": "Fallo y entrega de premios de concursos navideños en Villamayor",
@@ -474,15 +501,6 @@
       "lugar": "Paradinas de San Juan",
       "descripcion": "Prueba popular que ya tiene fecha confirmada para su 14ª edición.",
       "fuente": "https://www.lagacetadesalamanca.es/deportes/carreras-populares/paradinas-fecha-carrera-roscon-20260922084240-nt.html"
-    },
-    {
-      "titulo": "Cabalgata de Reyes de Salamanca",
-      "categoria": "Cultura",
-      "fecha_inicio": "2027-01-05",
-      "fecha_fin": null,
-      "descripcion": "La Cabalgata de Reyes de Salamanca se celebrará el 5 de enero de 2027. El plazo de inscripción para participar se abrirá del 13 al 27 de noviembre, con un sorteo público el 2 de diciembre si es necesario.",
-      "fuente": "https://www.lagacetadesalamanca.es/salamanca/fecha-inscripcion-acompanar-reyes-magos-cabalgata-salamanca-20261109180538-nt.html",
-      "lugar": "Sala de la Palabra del Teatro Liceo"
     },
     {
       "titulo": "Concierto de Niña Pastori 'Color Fania'",

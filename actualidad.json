@@ -1,11 +1,11 @@
 {
   "url_base": "https://www.lagacetadesalamanca.es",
-  "generado_en": "2026-11-11T05:45:54+00:00",
+  "generado_en": "2026-11-12T05:45:59+00:00",
   "periodo_cubierto": {
-    "desde": "2026-11-08",
-    "hasta": "2026-11-11"
+    "desde": "2026-11-09",
+    "hasta": "2026-11-12"
   },
-  "total_urls_analizadas": 184,
+  "total_urls_analizadas": 202,
   "secciones_excluidas": [
     "gente-estilo",
     "nacional",
@@ -17,37 +17,41 @@
   "por_seccion": [
     [
       "salamanca",
-      72
+      89
     ],
     [
       "provincia",
-      50
+      54
     ],
     [
       "deportes",
-      25
+      23
     ],
     [
       "sucesos",
-      21
+      19
     ],
     [
       "campo",
-      8
-    ],
-    [
-      "castilla-y-leon",
-      5
+      10
     ],
     [
       "encuestas",
       3
+    ],
+    [
+      "castilla-y-leon",
+      3
+    ],
+    [
+      "toros",
+      1
     ]
   ],
   "por_subseccion": [
     [
       "deportes/futbol-local",
-      17
+      15
     ],
     [
       "deportes/deporte-base",
@@ -56,20 +60,16 @@
     [
       "deportes/baloncesto-local",
       1
-    ],
-    [
-      "deportes/carreras-populares",
-      1
     ]
   ],
   "por_tipo_contenido": [
     [
       "noticia",
-      166
+      186
     ],
     [
       "galería",
-      17
+      15
     ],
     [
       "directo / en vivo",
@@ -78,119 +78,113 @@
   ],
   "heatmap_calendario": [
     {
-      "fecha": "2026-11-08",
-      "total": 35,
-      "salamanca": 6,
-      "provincia": 11,
-      "deportes": 10,
-      "sucesos": 5,
-      "campo": 0,
-      "castilla-y-leon": 2,
-      "encuestas": 1
-    },
-    {
       "fecha": "2026-11-09",
-      "total": 64,
-      "salamanca": 29,
-      "provincia": 20,
+      "total": 53,
+      "salamanca": 23,
+      "provincia": 17,
       "deportes": 7,
-      "sucesos": 6,
+      "sucesos": 4,
       "campo": 1,
+      "encuestas": 1,
       "castilla-y-leon": 0,
-      "encuestas": 1
+      "toros": 0
     },
     {
       "fecha": "2026-11-10",
-      "total": 77,
+      "total": 76,
       "salamanca": 30,
-      "provincia": 19,
+      "provincia": 18,
       "deportes": 8,
       "sucesos": 9,
       "campo": 7,
+      "encuestas": 1,
       "castilla-y-leon": 3,
-      "encuestas": 1
+      "toros": 0
     },
     {
       "fecha": "2026-11-11",
-      "total": 8,
-      "salamanca": 7,
+      "total": 71,
+      "salamanca": 34,
+      "provincia": 19,
+      "deportes": 8,
+      "sucesos": 6,
+      "campo": 2,
+      "encuestas": 1,
+      "castilla-y-leon": 0,
+      "toros": 1
+    },
+    {
+      "fecha": "2026-11-12",
+      "total": 2,
+      "salamanca": 2,
       "provincia": 0,
       "deportes": 0,
-      "sucesos": 1,
+      "sucesos": 0,
       "campo": 0,
+      "encuestas": 0,
       "castilla-y-leon": 0,
-      "encuestas": 0
+      "toros": 0
     }
   ],
   "conceptos_destacados": [
     {
-      "concepto": "Ciudad Rodrigo",
-      "piezas": 8,
-      "seccion_principal": "provincia",
-      "desde": "2026-11-08",
-      "hasta": "2026-11-10",
-      "ejemplos_redactados": [
-        "Cruz Roja ha organizado en Ciudad Rodrigo una charla para prevenir riesgos. El municipio ha aprobado una rebaja en el tipo impositivo del IBI y acogerá un encuentro de ilustradores."
-      ]
-    },
-    {
-      "concepto": "Castilla y León",
-      "piezas": 5,
-      "seccion_principal": "salamanca",
-      "desde": "2026-11-08",
-      "hasta": "2026-11-10",
-      "ejemplos_redactados": [
-        "Se impulsa la vivienda protegida en Castilla y León, mientras que Cabanuelas y Jorge Rey ponen el foco en la región. Se busca proteger el lechazo de Salamanca y del resto de Castilla y León."
-      ]
-    },
-    {
       "concepto": "Huelga General",
-      "piezas": 4,
+      "piezas": 10,
       "seccion_principal": "salamanca",
       "desde": "2026-11-09",
-      "hasta": "2026-11-10",
+      "hasta": "2026-11-11",
       "ejemplos_redactados": [
-        "La incertidumbre se apodera del transporte en Salamanca ante el impacto de la huelga general. Sindicatos del sector cárnico reforzarán la presión coincidiendo con la convocatoria."
+        "La huelga general del 11 de noviembre en Salamanca se inicia con los primeros piquetes.",
+        "El seguimiento de la huelga general en Salamanca resulta testimonial, con algunos incidentes registrados.",
+        "Miles de personas participan en la manifestación que cierra la jornada de huelga general."
       ]
     },
     {
-      "concepto": "Carbajosa de la Sagrada",
-      "piezas": 4,
-      "seccion_principal": "provincia",
-      "desde": "2026-11-08",
-      "hasta": "2026-11-10",
-      "ejemplos_redactados": [
-        "Carbajosa destinará 378.000 euros al alumbrado público para 2030. El municipio mejorará la zona de atención al paciente en el consultorio médico y contará con nuevas pistas de pádel y pickleball en Albahonda."
-      ]
-    },
-    {
-      "concepto": "Béjar",
-      "piezas": 4,
+      "concepto": "Ciudad Rodrigo",
+      "piezas": 7,
       "seccion_principal": "provincia",
       "desde": "2026-11-09",
       "hasta": "2026-11-10",
       "ejemplos_redactados": [
-        "El PP de Béjar acusa al PSOE y TAB de querer facilitar ciertas acciones. Se prepara la renovación de la presidencia de la Cofradía de la Santa Vera Cruz y los preparativos para el aniversario de la muerte de la Venerable Aurora Calvo."
+        "Ciudad Rodrigo aprueba una rebaja del tipo impositivo del IBI.",
+        "Un acusado en un caso de calvario de pareja en Ciudad Rodrigo niega los hechos o ratifica su declaración.",
+        "Cruz Roja organiza en Ciudad Rodrigo una charla para prevenir ciertas situaciones."
       ]
     },
     {
-      "concepto": "Santa Marta de Tormes",
-      "piezas": 3,
+      "concepto": "Santa Marta",
+      "piezas": 4,
       "seccion_principal": "provincia",
       "desde": "2026-11-09",
-      "hasta": "2026-11-10",
+      "hasta": "2026-11-11",
       "ejemplos_redactados": [
-        "Santa Marta abre el plazo para los bautismos blancos en La Covatilla. La Sala de Protagonistas de Santa Marta de Tormes estrena una muestra."
+        "El colegio San Blas de Santa Marta renueva su patio.",
+        "Se registran árboles caídos en Santa Marta, afectando el acceso a la localidad.",
+        "Santa Marta abre el plazo para los bautismos blancos en la Covatilla."
       ]
     },
     {
       "concepto": "Sector Cárnico",
-      "piezas": 3,
+      "piezas": 4,
       "seccion_principal": "campo",
       "desde": "2026-11-09",
-      "hasta": "2026-11-10",
+      "hasta": "2026-11-11",
       "ejemplos_redactados": [
-        "La participación en la huelga del sector cárnico ha sido desigual. La huelga arrancó de madrugada con un seguimiento mejor de lo esperado."
+        "La huelga del sector cárnico es desconvocada tras alcanzarse un preacuerdo para un nuevo convenio.",
+        "La participación en la huelga del sector cárnico es desigual.",
+        "La huelga del sector cárnico arranca de madrugada con un seguimiento que se considera mejor de lo esperado."
+      ]
+    },
+    {
+      "concepto": "Unionistas",
+      "piezas": 4,
+      "seccion_principal": "deportes",
+      "desde": "2026-11-10",
+      "hasta": "2026-11-11",
+      "ejemplos_redactados": [
+        "El Guijuelo refuerza su defensa con la llegada de Adrián Vázquez, procedente de Unionistas.",
+        "Se anuncia un nuevo horario y una modificación en el calendario de Unionistas.",
+        "La afición de Unionistas volverá a apoyar al equipo en el feudo del Coria."
       ]
     },
     {
@@ -200,10 +194,36 @@
       "desde": "2026-11-09",
       "hasta": "2026-11-09",
       "ejemplos_redactados": [
-        "Se celebró la gala de los Premios Hosteleriasalamanca.es 2026, con imágenes destacadas de la pasarela y la historia de estos galardones."
+        "La pasarela de los Premios Hosteleriasalamanca.es 2026 concentra la atención.",
+        "Se repasa la historia de los Premios Hosteleriasalamanca.es en 2026.",
+        "Imágenes de la gala de los Premios Hosteleriasalamanca.es 2026."
+      ]
+    },
+    {
+      "concepto": "Jornada Fútbol Base",
+      "piezas": 3,
+      "seccion_principal": "deportes",
+      "desde": "2026-11-09",
+      "hasta": "2026-11-09",
+      "ejemplos_redactados": [
+        "Se publica el once ideal de la jornada tras el fútbol base.",
+        "Las mejores imágenes de la jornada de fútbol base en Salamanca.",
+        "Los mejores goles de la séptima jornada de fútbol base llenan las redes."
+      ]
+    },
+    {
+      "concepto": "CHD",
+      "piezas": 3,
+      "seccion_principal": "provincia",
+      "desde": "2026-11-10",
+      "hasta": "2026-11-11",
+      "ejemplos_redactados": [
+        "La CHD activa el aviso amarillo en el río Mayas.",
+        "La CHD vigila el aumento del caudal del Tormes ante las previsiones de lluvias.",
+        "La CHD activa el nivel amarillo en el río Tormes a su paso por la provincia."
       ]
     }
   ],
-  "resumen_borrador": "Se han publicado 184 noticias entre el 2026-11-08 y el 2026-11-11. La actividad se ha concentrado sobre todo en salamanca (72 piezas), provincia (50 piezas), deportes (25 piezas).\n\nLos conceptos con más piezas relacionadas son: Ciudad · Rodrigo; Castilla · Leon; Huelga · General; Carbajosa. Revisa 'evidencia' de cada concepto para redactar el resumen final.",
-  "resumen": "La actualidad salmantina entre el 8 y el 11 de noviembre ha estado marcada por la huelga general y sus repercusiones en el sector del transporte y el cárnico, generando incertidumbre y movilizaciones en la provincia. A nivel local, municipios como Ciudad Rodrigo, Carbajosa de la Sagrada, Béjar y Santa Marta de Tormes han sido protagonistas con noticias sobre gestión municipal, mejoras de infraestructuras y eventos culturales.\n\nEn el ámbito regional, Castilla y León ha centrado la atención en el impulso de la vivienda protegida y la protección del lechazo. La Universidad de Salamanca ha destacado por su liderazgo en investigación y la apertura de su primera escuela de español en Indonesia.\n\nOtros eventos relevantes incluyen la celebración de los Premios Hosteleriasalamanca.es, la organización de un congreso sobre la Guerra Civil y la preparación de varias citas navideñas en la provincia."
+  "resumen_borrador": "Se han publicado 202 noticias entre el 2026-11-09 y el 2026-11-12. La actividad se ha concentrado sobre todo en salamanca (89 piezas), provincia (54 piezas), deportes (23 piezas).\n\nLos conceptos con más piezas relacionadas son: Huelga · General; Ciudad · Rodrigo; Imagenes; Centro. Revisa 'evidencia' de cada concepto para redactar el resumen final.",
+  "resumen": "La provincia de Salamanca ha vivido unos días marcados por la huelga general del 11 de noviembre, que ha registrado un seguimiento testimonial en la capital, aunque con algunos incidentes y cargas policiales. En el ámbito laboral, el sector cárnico ha desconvocado su huelga tras alcanzar un preacuerdo.\n\nEn la actualidad local, Ciudad Rodrigo ha aprobado una rebaja del tipo impositivo del IBI, mientras que Santa Marta de Tormes ha sido noticia por la renovación de un patio escolar y la apertura del plazo para bautismos blancos. La Confederación Hidrográfica del Duero (CHD) ha mantenido la vigilancia sobre el caudal de los ríos, activando alertas ante el aumento por las lluvias.\n\nEn el plano deportivo, Unionistas ha presentado novedades en su calendario y movimientos en su plantilla. Además, se ha celebrado la gala de los Premios Hosteleriasalamanca.es 2026 y se ha puesto el foco en la jornada de fútbol base de la provincia."
 }
