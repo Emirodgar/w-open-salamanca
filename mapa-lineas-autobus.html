@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Mapa de líneas de autobús urbano de Salamanca
-description: Activa y desactiva cada línea de Salamanca de Transportes para explorar su recorrido y sus paradas sobre el mapa de la ciudad
+title: "Mapa y líneas de autobús urbano de Salamanca: recorridos y paradas"
+description: Mapa interactivo de las 15 líneas de autobús urbano de Salamanca y sus servicios especiales: recorrido, paradas y trayecto de cada línea
 date: 31-08-2026
 folder: Movilidad
 permalink: mapa-lineas-autobus
@@ -38,6 +38,49 @@ dataset_files:
 				</div>
 
 				<div id="mapaLineasBus" class="bus-map-canvas"></div>
+    <h2>Líneas de autobús urbano de Salamanca</h2>
+    <p>La red de Salamanca de Transportes que recoge este mapa tiene <b>15 líneas regulares</b> (de la 1 a la 15) y <b>12 servicios especiales, de refuerzo y nocturnos</b>. Activa cada línea en el mapa para ver su recorrido y sus paradas; la tabla resume el trayecto de cada una.</p>
+    <table class="bus-lineas-tabla" border="1" cellpadding="5" cellspacing="0">
+     <caption>Líneas regulares de autobús urbano</caption>
+     <thead><tr><th scope="col">Línea</th><th scope="col">Nombre</th><th scope="col">Trayecto (parada de inicio → fin)</th><th scope="col">Paradas en el mapa</th></tr></thead>
+     <tbody>
+      <tr><td><b>1</b></td><td>Chinchibarra – Buenos Aires (por Centro)</td><td>Chinchibarra (351) → Buenos Aires (16)</td><td>25</td></tr>
+      <tr><td><b>2</b></td><td>Pizarrales – San Julián</td><td>Pizarrales (291) → San Julián (266)</td><td>12</td></tr>
+      <tr><td><b>3</b></td><td>Garrido – San José (por Centro)</td><td>San José (82) → Garrido (97)</td><td>19</td></tr>
+      <tr><td><b>4</b></td><td>Cementerio – Puente Ladrillo</td><td>Puente Ladrillo (309) → Cementerio (342)</td><td>26</td></tr>
+      <tr><td><b>5</b></td><td>Ciudad Jardín – Los Alcaldes</td><td>Los Alcaldes (206) → Ciudad Jardín (129)</td><td>21</td></tr>
+      <tr><td><b>6</b></td><td>Garrido – San José (por Hospitales)</td><td>San José (147) → Garrido (97)</td><td>21</td></tr>
+      <tr><td><b>7</b></td><td>Hospital Universitario – Prosperidad</td><td>Hospital Universitario (336) → Prosperidad (230)</td><td>22</td></tr>
+      <tr><td><b>8</b></td><td>Aldehuela – Vistahermosa</td><td>Aldehuela (212) → Vistahermosa (278)</td><td>24</td></tr>
+      <tr><td><b>9</b></td><td>Capuchinos – Zurguén</td><td>Zurguén (196) → Capuchinos (317)</td><td>20</td></tr>
+      <tr><td><b>10</b></td><td>Puente Ladrillo – Vistahermosa</td><td>Vistahermosa (233) → Puente Ladrillo (309)</td><td>23</td></tr>
+      <tr><td><b>11</b></td><td>Los Cipreses – Buenos Aires (por Hospitales)</td><td>Los Cipreses (268) → Buenos Aires (16)</td><td>22</td></tr>
+      <tr><td><b>12</b></td><td>Barrio Blanco – Montalvo II</td><td>Barrio Blanco (237) → Montalvo (280)</td><td>33</td></tr>
+      <tr><td><b>13</b></td><td>Huerta Otea – San José</td><td>Huerta Otea (251) → San José (79)</td><td>20</td></tr>
+      <tr><td><b>14</b></td><td>Zurguén – Huerta Otea</td><td>Zurguén (196) → Huerta Otea (251)</td><td>19</td></tr>
+      <tr><td><b>15</b></td><td>Capuchinos – Hospital Universitario</td><td>Hospital Universitario (335) → Capuchinos (217)</td><td>18</td></tr>
+     </tbody>
+    </table>
+
+    <table class="bus-lineas-tabla" border="1" cellpadding="5" cellspacing="0">
+     <caption>Refuerzos, servicios nocturnos y líneas especiales</caption>
+     <thead><tr><th scope="col">Línea</th><th scope="col">Nombre</th><th scope="col">Trayecto (parada de inicio → fin)</th><th scope="col">Paradas en el mapa</th></tr></thead>
+     <tbody>
+      <tr><td><b>26</b></td><td>Refuerzo línea 13</td><td>Huerta Otea (251) → Avda. Mirat (42)</td><td>12</td></tr>
+      <tr><td><b>28</b></td><td>Refuerzo línea 10</td><td>Vistahermosa (233) → Avda. Mirat (42)</td><td>12</td></tr>
+      <tr><td><b>91</b></td><td>Servicio nocturno (sentido Norte)</td><td>Servicio Nocturno 1 Norte (222)</td><td>51</td></tr>
+      <tr><td><b>92</b></td><td>Servicio nocturno (sentido Sur)</td><td>Servicio Nocturno 2 Sur (301)</td><td>44</td></tr>
+      <tr><td><b>93</b></td><td>Especial Aldehuela</td><td>Aldehuela (212) → Plaza de España (103)</td><td>7</td></tr>
+      <tr><td><b>94</b></td><td>Rastro Pizarrales</td><td>Pizarrales (291) → Av Mirat (33)</td><td>10</td></tr>
+      <tr><td><b>95</b></td><td>Lunes de Aguas</td><td>Aldehuela (212) → Plaza de España (103)</td><td>7</td></tr>
+      <tr><td><b>96</b></td><td>Los Santos</td><td>Cementerio (295) → Los Toreses (309)</td><td>23</td></tr>
+      <tr><td><b>97</b></td><td>Rastro Aldehuela</td><td>Aldehuela (212) → Plaza de España (103)</td><td>7</td></tr>
+      <tr><td><b>98</b></td><td>Ferias</td><td>Gabriel y Galán (34) → Aldehuela (212)</td><td>9</td></tr>
+      <tr><td><b>99</b></td><td>Agropecuaria</td><td>San Julián (266) → Feria Monografica (319)</td><td>4</td></tr>
+      <tr><td><b>699</b></td><td>Servicio Especial</td><td>San Julián (266) → Eco Raya (182)</td><td>4</td></tr>
+     </tbody>
+    </table>
+
 
 				<p class="bus-map-nota">Para ver todas las paradas de la red según la IDE municipal, con filtro por línea, consulta <a href="/transporte-urbano-bus">paradas y uso del autobús urbano</a>. El trazado conecta las paradas en el orden real de cada línea (dato de <a href="https://salamancadetransportes.com/informacion-de-lineas/lineas/" target="_blank" rel="noopener">Salamanca de Transportes</a>); no representa el recorrido exacto calle a calle. Cuando una línea tiene varios trayectos (por ejemplo, ida y vuelta con paradas distintas), se muestra el más largo de ellos.</p>
 

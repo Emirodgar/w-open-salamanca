@@ -1036,3 +1036,6 @@ li a:hover {
 .home-index h3 { margin: var(--spacing-md) 0 var(--spacing-xs); }
 .home-index ul { columns: 2 280px; column-gap: var(--spacing-lg); list-style: none; padding: 0; margin: 0; }
 .home-index li { margin-bottom: 0.35rem; break-inside: avoid; }
+
+/* Respuesta directa al inicio de la página (útil para lectores y motores de respuesta) */
+.answer-first { background: var(--bg-secondary, #f4f7fb); border-left: 4px solid var(--primary-color); padding: 0.9rem 1.1rem; border-radius: 6px; margin: 0 0 1.5rem; }

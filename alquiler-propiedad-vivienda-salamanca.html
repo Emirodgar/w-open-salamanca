@@ -2,7 +2,7 @@
 layout: default
 title: Alquiler y propiedad de la vivienda en Salamanca
 description: Evolución del peso del alquiler frente a la propiedad en la vivienda principal de la capital, según el Censo 2021 del INE y la Agencia Tributaria
-date: 17-09-2026
+date: 12-11-2026
 folder: Urbanismo
 permalink: alquiler-propiedad-vivienda-salamanca
 ---
@@ -30,11 +30,15 @@ Según el Censo de Población y Viviendas 2021 del INE, de las 63.990 viviendas 
 <li><b>El alquiler ha ganado terreno desde 2021</b>: según los datos de la campaña de la Renta 2024 publicados por la Agencia Tributaria, ya el 21,79% de las 78.214 viviendas declaradas en la capital están arrendadas (17.049), de las que 13.947 se alquilan como residencia habitual y 3.102 como alquiler de corta duración. Censo y Agencia Tributaria miden universos distintos (hogares con vivienda principal frente a inmuebles declarados en el IRPF), pero ambas fuentes apuntan en la misma dirección: el peso del alquiler crece.</li>
 <li><b>Salamanca, segunda de Castilla y León</b>: con esas 17.049 viviendas arrendadas, la capital solo queda por detrás de Valladolid (23.074) en el conjunto de la comunidad, según la misma fuente.</li>
 <li><b>Por debajo de la media nacional en propiedad</b>: en el Censo 2021, España registraba un 75,5% de hogares en propiedad y un 16,1% en alquiler (frente al 78,9% en propiedad de 2011). Salamanca capital partía con una propiedad más extendida que la media (84,2%), lo que hace aún más notable el salto hasta el 21,79% de alquiler de 2024.</li>
+<li><b>El contexto nacional en 2025</b>: según la Encuesta de Condiciones de Vida 2025 del INE, el 73,3% de los hogares españoles vive en una vivienda en propiedad y el 20,2% en alquiler (16,7% a precio de mercado y 3,5% por debajo del mercado), mientras que el 6,5% vive en vivienda cedida. En Castilla y León la propiedad llega al 81,2% y el alquiler al 13,0% (11,2% a precio de mercado y 1,8% por debajo), con un 5,9% de cesión. Se trata de una encuesta por muestreo, no de un censo, y no desglosa Salamanca capital.</li>
 <li><b>La presión universitaria, motor del cambio</b>: el crecimiento del alquiler coincide con el aumento sostenido de la <a href="/poblacion-universitaria">población universitaria y residentes temporales</a> de la ciudad, que también explica por qué el <a href="/precio-vivienda-alquiler">precio del alquiler por barrio</a> y la presión de las <a href="/vivienda-alquiler-turismo-salamanca">viviendas de uso turístico y el alquiler de temporada</a> se concentran en las mismas zonas.</li>
 </ul>
 
   <h2>Salamanca frente a otras capitales de Castilla y León (Censo 2021)</h2>
   <canvas id="tenenciaCyLChart" width="800" height="400"></canvas>
+
+  <h2>Régimen de tenencia: España y Castilla y León (ECV 2025)</h2>
+  <canvas id="tenenciaECVChart" width="800" height="300"></canvas>
 
 				</div>
 
@@ -59,6 +63,10 @@ Según el Censo de Población y Viviendas 2021 del INE, de las 63.990 viviendas 
 					<tr><td>Viviendas arrendadas en Valladolid capital (Renta 2024)</td><td>23.074</td><td>Agencia Tributaria, Campaña de la Renta 2024</td></tr>
 					<tr><td>España, hogares en propiedad (Censo 2021)</td><td>75,5%</td><td>INE, Censo de Población y Viviendas 2021</td></tr>
 					<tr><td>España, hogares en alquiler (Censo 2021)</td><td>16,1%</td><td>INE, Censo de Población y Viviendas 2021</td></tr>
+					<tr><td>España, hogares en propiedad (ECV 2025)</td><td>73,3%</td><td>INE, Encuesta de Condiciones de Vida 2025</td></tr>
+					<tr><td>España, hogares en alquiler (ECV 2025)</td><td>20,2% (16,7% a precio de mercado + 3,5% inferior)</td><td>INE, Encuesta de Condiciones de Vida 2025</td></tr>
+					<tr><td>Castilla y León, hogares en propiedad (ECV 2025)</td><td>81,2%</td><td>INE, Encuesta de Condiciones de Vida 2025</td></tr>
+					<tr><td>Castilla y León, hogares en alquiler (ECV 2025)</td><td>13,0% (11,2% a precio de mercado + 1,8% inferior)</td><td>INE, Encuesta de Condiciones de Vida 2025</td></tr>
 				  </tbody>
 				</table>
 
@@ -111,6 +119,29 @@ Según el Censo de Población y Viviendas 2021 del INE, de las 63.990 viviendas 
         plugins: { legend: { display: false } },
         scales: {
           x: { title: { display: true, text: '% en alquiler' }, beginAtZero: true }
+        }
+      }
+    });
+
+    // Gráfico 3: tenencia de la vivienda, ECV 2025 (% de hogares)
+    const ctxTenenciaECV = document.getElementById('tenenciaECVChart').getContext('2d');
+    new Chart(ctxTenenciaECV, {
+      type: 'bar',
+      data: {
+        labels: ['España', 'Castilla y León'],
+        datasets: [
+          { label: 'Propiedad', data: [73.3, 81.2], backgroundColor: '#1E56A0' },
+          { label: 'Alquiler a precio de mercado', data: [16.7, 11.2], backgroundColor: '#F4A261' },
+          { label: 'Alquiler inferior al mercado', data: [3.5, 1.8], backgroundColor: '#E76F51' },
+          { label: 'Cesión', data: [6.5, 5.9], backgroundColor: '#8D99AE' }
+        ]
+      },
+      options: {
+        indexAxis: 'y',
+        responsive: true,
+        scales: {
+          x: { stacked: true, max: 100, title: { display: true, text: '% de hogares (ECV 2025, INE)' } },
+          y: { stacked: true }
         }
       }
     });
