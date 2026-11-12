@@ -1,0 +1,180 @@
+---
+layout: default
+title: "Presupuestado frente a gastado: ¿cumple el Ayuntamiento de Salamanca lo que presupuesta? (2010-2024)"
+description: Compara cada año el presupuesto inicial del Ayuntamiento de Salamanca con lo que realmente se ingresó y se gastó, por tipo de gasto y por política, durante quince ejercicios
+date: 12-11-2026
+folder: Hacienda Local
+permalink: presupuestos-salamanca-ejecucion
+---
+
+    <section class="featured dataset" id="datos">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="section-title">{{ page.title }}</h1>
+                <p class="section-description">{{ page.description }}</p>
+            </div>
+
+            <div id="section-content">
+
+<p>Cada diciembre se aprueba un presupuesto para el año siguiente. Esta página mide <b>qué distancia hay entre esa previsión y lo que de verdad pasa</b>: compara el presupuesto inicial con el gasto y los ingresos finalmente reconocidos en la liquidación, de 2010 a 2024, según los datos que el Ayuntamiento envía al Ministerio de Hacienda. Complementa la <a href="/presupuestos-salamanca">evolución del gasto</a>, que usa solo lo liquidado.</p>
+
+<h2>Lo esencial</h2>
+<ul>
+<li><b>En conjunto, se gasta algo más de lo presupuestado.</b> En 8 de los 15 años el gasto real superó al presupuesto inicial, y de media fue el 103% del previsto. Va del 89% de 2021 al 118% de 2023.</li>
+<li><b>Lo corriente se cumple.</b> Personal y compras de bienes y servicios se ejecutan casi siempre entre el 90% y el 105% de lo previsto.</li>
+<li><b>La inversión es lo más impredecible.</b> Un año se gasta menos de la mitad de lo previsto (el 39% en 2021: 13,3 millones frente a 33,6 previstos) y otro, mucho más (el 177% en 2024: 25,4 millones frente a 14,3). En 11 de los 15 años queda fuera del margen del 80% al 120%.</li>
+<li><b>Los ingresos se mueven igual.</b> El Ayuntamiento ingresó el 88% de lo previsto en 2021 y el 120% en 2022, de modo que gasto e ingresos suelen crecer y bajar juntos.</li>
+</ul>
+
+<h2>Gasto total, presupuestado y real</h2>
+<div class="pres-chart"><canvas id="chEjTotal" aria-label="Presupuesto inicial de gasto frente a gasto liquidado por año"></canvas></div>
+
+<h2>Explora una partida</h2>
+<div class="pres-controles">
+  <label for="ejItem" class="pres-etiqueta">Partida:</label>
+  <select id="ejItem"></select>
+</div>
+<p class="pres-nota">Barras: gasto real como porcentaje del presupuesto inicial de esa partida. La línea marca el 100%, es decir, haber gastado exactamente lo previsto.</p>
+<div class="pres-chart"><canvas id="chEjItem" aria-label="Porcentaje de ejecución de la partida elegida"></canvas></div>
+
+<h2>Un año en detalle</h2>
+<div class="pres-controles">
+  <label for="ejAnio" class="pres-etiqueta">Año:</label>
+  <select id="ejAnio"></select>
+</div>
+<div id="ejTabla"></div>
+
+<h2>Cómo leer estas cifras</h2>
+<ul>
+<li><b>Gastar más del 100% no es, por sí solo, un descontrol.</b> El presupuesto se modifica durante el año: se incorporan remanentes del ejercicio anterior, se generan créditos por ingresos que no estaban previstos (subvenciones, fondos europeos) y se hacen transferencias entre partidas. Aquí se compara con el presupuesto <b>inicial</b>, no con el definitivo tras esas modificaciones.</li>
+<li><b>Gastar menos del 100% tampoco es necesariamente ahorro.</b> Puede indicar que una obra se retrasó o que un proyecto no llegó a ejecutarse.</li>
+<li><b>Las partidas pequeñas se disparan en porcentaje.</b> Un programa de 200.000 € que gasta 600.000 € aparece como el 300%, aunque en euros sea poco. Mira siempre también las cifras absolutas de la tabla.</li>
+<li><b>Presupuesto consolidado.</b> Suma el Ayuntamiento y sus organismos dependientes, sin duplicar traspasos. Las empresas municipales con contabilidad propia quedan fuera.</li>
+<li><b>Ingresos de la tabla.</b> Los préstamos recibidos figuran como ingreso («pasivos financieros»), igual que en la liquidación.</li>
+</ul>
+
+<p class="pres-nota">Fuente: Ministerio de Hacienda, <a href="https://serviciostelematicosext.hacienda.gob.es/SGFAL/CONPREL" rel="noopener">CONPREL, Consulta de presupuestos y liquidaciones de las entidades locales</a>: presupuestos iniciales y liquidaciones 2010-2024, ficheros de máximo desglose. Datos descargables en <a href="/presupuestos-salamanca.json">formato JSON</a>.</p>
+
+            </div>
+
+            {% include categories.html %}
+
+        </div>
+    </section>
+
+<style>
+.pres-controles{display:flex;flex-wrap:wrap;gap:.5rem 1rem;align-items:center;margin:1rem 0}
+.pres-etiqueta{font-weight:600}
+.pres-controles select{padding:.45rem .7rem;font:inherit;border:1px solid var(--border-color);border-radius:6px;max-width:100%}
+.pres-controles select:focus-visible{outline:3px solid var(--accent-color);outline-offset:2px}
+.pres-chart{position:relative;height:380px;margin:.5rem 0 1.5rem}
+.pres-nota{font-size:.9em;color:#555}
+#ejTabla table{width:100%;border-collapse:collapse;margin:.5rem 0 1.5rem}
+#ejTabla th,#ejTabla td{padding:.4rem .6rem;border-bottom:1px solid var(--border-color);text-align:left}
+#ejTabla td.num,#ejTabla th.num{text-align:right;font-variant-numeric:tabular-nums}
+#ejTabla tr.sub td{font-weight:700;background:#f4f8f1}
+@media (max-width:768px){.pres-chart{height:320px}}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var CSAL = '#2C5F2D', CINI = '#97BC62', CAVISO = '#F4A261';
+  var GASTOS = [['personal', 'Personal'], ['bienes_servicios', 'Bienes y servicios'], ['transf_corrientes', 'Subvenciones y transferencias corrientes'], ['inversiones', 'Inversiones'], ['transf_capital', 'Transferencias de capital'], ['financieros', 'Intereses de deuda'], ['pasivos_fin', 'Amortización de deuda']];
+  var D, anios, charts = {};
+  var fM = new Intl.NumberFormat('es-ES', { minimumFractionDigits: 1, maximumFractionDigits: 1 });
+  var fP = new Intl.NumberFormat('es-ES', { maximumFractionDigits: 0 });
+  function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
+
+  // par [inicial, liquidado] de una partida en un año; item: 'tot', 'ing', 'g:<clave>', 'p:<código>'
+  function par(y, item) {
+    var a = D.anios[y], i = a.inicial;
+    if (!i) return null;
+    if (item === 'tot') return [i.total_gastos, a.total_gastos];
+    if (item === 'ing') return [i.total_ingresos, a.total_ingresos];
+    var t = item.slice(0, 1), k = item.slice(2);
+    if (t === 'g') return [i.gastos[k] || 0, a.gastos[k] || 0];
+    return [i.politicas[k] || 0, a.politicas && a.politicas[k] ? a.politicas[k][0] : 0];
+  }
+  function nombre(item) {
+    if (item === 'tot') return 'Gasto total';
+    if (item === 'ing') return 'Ingresos totales';
+    var k = item.slice(2);
+    if (item.charAt(0) === 'g') return GASTOS.filter(function (g) { return g[0] === k; })[0][1];
+    return D.politicas[k].replace(/ \(.*\)/, '');
+  }
+
+  function pintaTotal() {
+    var ini = anios.map(function (y) { return D.anios[y].inicial.total_gastos / 1e6; });
+    var liq = anios.map(function (y) { return D.anios[y].total_gastos / 1e6; });
+    if (charts.tot) charts.tot.destroy();
+    charts.tot = new Chart(document.getElementById('chEjTotal'), {
+      type: 'bar',
+      data: { labels: anios, datasets: [
+        { label: 'Presupuesto inicial', data: ini, backgroundColor: CINI },
+        { label: 'Gasto real (liquidado)', data: liq, backgroundColor: CSAL }
+      ] },
+      options: {
+        responsive: true, maintainAspectRatio: false,
+        plugins: { legend: { position: 'bottom' }, tooltip: { callbacks: {
+          label: function (c) { return c.dataset.label + ': ' + fM.format(c.parsed.y) + ' M€'; },
+          afterBody: function (cs) { var i = cs[0].dataIndex; return 'Ejecución: ' + fP.format(100 * liq[i] / ini[i]) + '%'; } } } },
+        scales: { y: { beginAtZero: true, title: { display: true, text: 'Millones de euros (de cada año)' } } }
+      }
+    });
+  }
+
+  function pintaItem() {
+    var item = document.getElementById('ejItem').value;
+    var pct = anios.map(function (y) { var p = par(y, item); return p && p[0] > 0 ? 100 * p[1] / p[0] : null; });
+    var unos = anios.map(function () { return 100; });
+    if (charts.item) charts.item.destroy();
+    charts.item = new Chart(document.getElementById('chEjItem'), {
+      data: { labels: anios, datasets: [
+        { type: 'bar', label: 'Ejecución de «' + nombre(item) + '»', data: pct, backgroundColor: pct.map(function (v) { return v != null && v >= 100 ? CAVISO : CSAL; }) },
+        { type: 'line', label: 'Presupuesto inicial = 100%', data: unos, borderColor: '#264653', borderDash: [6, 4], pointRadius: 0, fill: false }
+      ] },
+      options: {
+        responsive: true, maintainAspectRatio: false,
+        plugins: { legend: { position: 'bottom' }, tooltip: { callbacks: {
+          label: function (c) { return c.parsed.y == null ? 'Sin presupuesto inicial' : c.dataset.label + ': ' + fP.format(c.parsed.y) + '%'; },
+          afterBody: function (cs) { var p = par(anios[cs[0].dataIndex], item); return p ? 'Inicial ' + fM.format(p[0] / 1e6) + ' M€ · real ' + fM.format(p[1] / 1e6) + ' M€' : ''; } } } },
+        scales: { y: { beginAtZero: true, title: { display: true, text: '% del presupuesto inicial' } } }
+      }
+    });
+  }
+
+  function fila(item, etiqueta, y, cls) {
+    var p = par(y, item); if (!p || (p[0] === 0 && p[1] === 0)) return '';
+    var dif = p[1] - p[0];
+    return '<tr' + (cls ? ' class="' + cls + '"' : '') + '><td>' + esc(etiqueta) + '</td><td class="num">' + fM.format(p[0] / 1e6) + '</td><td class="num">' + fM.format(p[1] / 1e6) + '</td><td class="num">' + (dif >= 0 ? '+' : '') + fM.format(dif / 1e6) + '</td><td class="num">' + (p[0] > 0 ? fP.format(100 * p[1] / p[0]) + '%' : 'n. c.') + '</td></tr>';
+  }
+  function cab(t) { return '<table><thead><tr><th>' + t + '</th><th class="num">Inicial (M€)</th><th class="num">Real (M€)</th><th class="num">Diferencia (M€)</th><th class="num">Ejecución</th></tr></thead><tbody>'; }
+  function pintaTabla() {
+    var y = document.getElementById('ejAnio').value;
+    var h = cab('Gasto por tipo') + fila('tot', 'Gasto total', y, 'sub');
+    GASTOS.forEach(function (g) { h += fila('g:' + g[0], g[1], y); });
+    h += '</tbody></table>' + cab('Gasto por política') + fila('tot', 'Gasto total', y, 'sub');
+    Object.keys(D.politicas).sort(function (a, b) { var pa = par(y, 'p:' + a), pb = par(y, 'p:' + b); return pb[1] - pa[1]; })
+      .forEach(function (k) { h += fila('p:' + k, D.politicas[k].replace(/ \(.*\)/, ''), y); });
+    h += '</tbody></table>' + cab('Ingresos') + fila('ing', 'Ingresos totales', y, 'sub') + '</tbody></table>';
+    document.getElementById('ejTabla').innerHTML = h;
+  }
+
+  fetch('/presupuestos-salamanca.json').then(function (r) { return r.json(); }).then(function (d) {
+    D = d; anios = Object.keys(d.anios).filter(function (y) { return d.anios[y].inicial; }).sort();
+    var si = document.getElementById('ejItem');
+    function add(v, t) { var o = document.createElement('option'); o.value = v; o.textContent = t; si.appendChild(o); }
+    add('tot', 'Gasto total'); add('ing', 'Ingresos totales');
+    GASTOS.forEach(function (g) { add('g:' + g[0], 'Gasto: ' + g[1]); });
+    Object.keys(d.politicas).filter(function (k) { return d.anios['2024'].politicas[k] && d.anios['2024'].politicas[k][0] > 0; })
+      .sort(function (a, b) { return d.anios['2024'].politicas[b][0] - d.anios['2024'].politicas[a][0]; })
+      .forEach(function (k) { add('p:' + k, 'Política: ' + d.politicas[k].replace(/ \(.*\)/, '')); });
+    var sa = document.getElementById('ejAnio');
+    anios.slice().reverse().forEach(function (y) { var o = document.createElement('option'); o.value = y; o.textContent = y; sa.appendChild(o); });
+    si.addEventListener('change', pintaItem); sa.addEventListener('change', pintaTabla);
+    pintaTotal(); pintaItem(); pintaTabla();
+  }).catch(function () {
+    document.getElementById('ejTabla').textContent = 'No se han podido cargar los datos. Inténtalo de nuevo más tarde.';
+  });
+});
+</script>
