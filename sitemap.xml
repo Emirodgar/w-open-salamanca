@@ -1,0 +1,21 @@
+---
+layout: null
+sitemap: false
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{%- for p in site.html_pages %}
+{%- unless p.sitemap == false or p.noindex %}
+  <url>
+    <loc>{{ p.url | replace: "/index.html", "/" | absolute_url | xml_escape }}</loc>
+    {%- if p.modified %}
+    <lastmod>{{ p.modified | date: "%Y-%m-%d" }}</lastmod>
+    {%- elsif p.url == "/" or p.url == "/actualidad" or p.url == "/hemeroteca" or p.url == "/timeline" or p.url == "/opina" %}
+    <lastmod>{{ site.time | date: "%Y-%m-%d" }}</lastmod>
+    {%- elsif p.date %}
+    <lastmod>{{ p.date | date: "%Y-%m-%d" }}</lastmod>
+    {%- endif %}
+  </url>
+{%- endunless %}
+{%- endfor %}
+</urlset>

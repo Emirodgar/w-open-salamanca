@@ -262,20 +262,17 @@
     <link rel="stylesheet" href="/assets/css/components.css?v={{ site.time | date: '%s' }}">
     <link rel="stylesheet" href="/assets/css/visualizations.css?v={{ site.time | date: '%s' }}">
 
-	<link rel="shortcut icon" href="https://substackcdn.com/image/fetch/$s_!UQES!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ff3556a8e-7324-4e96-ab21-5ac8e40ccfe6%2Ffavicon.ico">
-    <link rel="icon" type="image/png" sizes="16x16" href="https://substackcdn.com/image/fetch/$s_!mTqN!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ff3556a8e-7324-4e96-ab21-5ac8e40ccfe6%2Ffavicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="https://substackcdn.com/image/fetch/$s_!xR54!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ff3556a8e-7324-4e96-ab21-5ac8e40ccfe6%2Ffavicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="48x48" href="https://substackcdn.com/image/fetch/$s_!FNcS!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ff3556a8e-7324-4e96-ab21-5ac8e40ccfe6%2Ffavicon-48x48.png">
-    <link rel="apple-touch-icon" sizes="57x57" href="https://substackcdn.com/image/fetch/$s_!dq8S!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ff3556a8e-7324-4e96-ab21-5ac8e40ccfe6%2Fapple-touch-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="https://substackcdn.com/image/fetch/$s_!uyxW!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ff3556a8e-7324-4e96-ab21-5ac8e40ccfe6%2Fapple-touch-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="https://substackcdn.com/image/fetch/$s_!m8d8!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ff3556a8e-7324-4e96-ab21-5ac8e40ccfe6%2Fapple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="https://substackcdn.com/image/fetch/$s_!WXK6!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ff3556a8e-7324-4e96-ab21-5ac8e40ccfe6%2Fapple-touch-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="https://substackcdn.com/image/fetch/$s_!ycOI!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ff3556a8e-7324-4e96-ab21-5ac8e40ccfe6%2Fapple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="https://substackcdn.com/image/fetch/$s_!JwxL!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ff3556a8e-7324-4e96-ab21-5ac8e40ccfe6%2Fapple-touch-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="https://substackcdn.com/image/fetch/$s_!w-jt!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ff3556a8e-7324-4e96-ab21-5ac8e40ccfe6%2Fapple-touch-icon-144x144.png">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/icon-32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="theme-color" content="#2C5F2D">
 
-    <!-- Chart.js for visualizations -->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    {%- if content contains "Chart" %}
+    <!-- Chart.js (versión fija), solo en las páginas que dibujan gráficos -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.6.1/dist/chart.umd.min.js"></script>
+    {%- endif %}
 </head>
 <body{% if has_crumbs %} class="has-breadcrumb"{% endif %}>
     <!-- Header -->
