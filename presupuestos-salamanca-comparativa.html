@@ -1,0 +1,223 @@
+---
+layout: default
+title: "Salamanca frente a otras ciudades: cuánto gasta por habitante y en qué (2010-2024)"
+description: Compara el gasto por habitante del Ayuntamiento de Salamanca con ciudades de tamaño parecido, de Castilla y León o con cualquier ciudad de más de 50.000 habitantes, por política de gasto
+date: 12-11-2026
+folder: Hacienda Local
+permalink: presupuestos-salamanca-comparativa
+---
+
+    <section class="featured dataset" id="datos">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="section-title">{{ page.title }}</h1>
+                <p class="section-description">{{ page.description }}</p>
+            </div>
+
+            <div id="section-content">
+
+<p>Saber que Salamanca gasta 194 millones al año dice poco sin un punto de referencia. Esta página usa el <b>gasto por habitante</b> de las liquidaciones oficiales (lo realmente gastado) de 145 ayuntamientos de más de 50.000 habitantes, y lo compara por política de gasto: cultura, seguridad, servicios sociales, educación, etc. Complementa la <a href="/presupuestos-salamanca">evolución del gasto de Salamanca</a>.</p>
+
+<h2>Lo esencial (2024, frente a las otras 33 ciudades de 100.000 a 200.000 habitantes)</h2>
+<ul>
+<li><b>En conjunto, Salamanca gasta algo más que la mediana:</b> 1.342 € por habitante frente a 1.249 € (un 7% más), en el puesto 12 de 34.</li>
+<li><b>Gasta bastante más en:</b> comercio, turismo y pymes (105 € por habitante frente a 25 €, la primera de las 34), transporte público (97 € frente a 32 €) y cultura (99 € frente a 69 €).</li>
+<li><b>Gasta bastante menos en:</b> educación (22 € frente a 51 €), fomento del empleo (9 € frente a 25 €) y deuda pública (43 € frente a 75 €).</li>
+<li><b>Cerca de la mediana</b> en seguridad y movilidad (127 € frente a 139 €), deporte, vivienda y urbanismo y medio ambiente.</li>
+</ul>
+
+<h2>Compara tú mismo</h2>
+
+<div class="pres-controles">
+  <label for="cmpAnio" class="pres-etiqueta">Año:</label>
+  <select id="cmpAnio"></select>
+  <label for="cmpGrupo" class="pres-etiqueta">Comparar con:</label>
+  <select id="cmpGrupo"></select>
+</div>
+<p id="cmpResumen" class="pres-resumen" aria-live="polite"></p>
+
+<h3>Gasto por habitante en cada política</h3>
+<div class="pres-chart" id="cmpChartBox"><canvas id="chCmp" aria-label="Gasto por habitante de Salamanca y de la mediana del grupo, por política"></canvas></div>
+<div id="cmpTabla"></div>
+
+<h3>Evolución y ranking de una política</h3>
+<div class="pres-controles">
+  <label for="cmpPol" class="pres-etiqueta">Política de gasto:</label>
+  <select id="cmpPol"></select>
+</div>
+<p class="pres-nota">Euros por habitante, ajustados por inflación a euros de 2024.</p>
+<div class="pres-chart"><canvas id="chCmpEvo" aria-label="Evolución del gasto por habitante en la política elegida"></canvas></div>
+<div id="cmpRanking"></div>
+
+<h2>Cómo leer esta comparación</h2>
+<ul>
+<li><b>Gastar más o menos no significa gestionar mejor o peor.</b> Depende de qué servicios presta directamente cada ayuntamiento (el agua, el transporte o la recogida de residuos pueden estar en empresas, mancomunidades u otras administraciones) y de cómo los clasifica contablemente.</li>
+<li><b>La mediana</b> es el valor central del grupo, sin contar a Salamanca; no la distorsionan una o dos ciudades extremas.</li>
+<li><b>El grupo «tamaño parecido»</b> son las ciudades que ese año tenían entre 100.000 y 200.000 habitantes. Incluye capitales de provincia y también grandes municipios de áreas metropolitanas, que tienen una estructura de gasto distinta. Compárate también solo con otra ciudad concreta, o con Castilla y León, en el desplegable.</li>
+<li><b>«n. c.»</b> aparece cuando la mayoría de las ciudades no registran gasto en esa política (por ejemplo, las pensiones de antiguos empleados, que solo algunos ayuntamientos pagan directamente), y no hay una mediana útil.</li>
+<li><b>Gasto liquidado, consolidado.</b> Son obligaciones reconocidas netas del Ayuntamiento y sus organismos dependientes, tal y como las envían los ayuntamientos al Ministerio de Hacienda. Las empresas municipales con contabilidad propia quedan fuera.</li>
+</ul>
+
+<p class="pres-nota">Fuente: Ministerio de Hacienda, <a href="https://serviciostelematicosext.hacienda.gob.es/SGFAL/CONPREL" rel="noopener">CONPREL, Consulta de presupuestos y liquidaciones de las entidades locales</a> (liquidaciones 2010-2024, fichero de máximo desglose). Población: la que figura en esa misma base para cada año. IPC: <a href="https://www.ine.es/" rel="noopener">INE</a>. Datos descargables en <a href="/presupuestos-ciudades.json">formato JSON</a>.</p>
+
+            </div>
+
+            {% include categories.html %}
+
+        </div>
+    </section>
+
+<style>
+.pres-controles{display:flex;flex-wrap:wrap;gap:.5rem 1rem;align-items:center;margin:1rem 0}
+.pres-etiqueta{font-weight:600}
+.pres-controles select{padding:.45rem .7rem;font:inherit;border:1px solid var(--border-color);border-radius:6px;max-width:100%}
+.pres-controles select:focus-visible{outline:3px solid var(--accent-color);outline-offset:2px}
+.pres-resumen{font-size:1.05em;padding:.8rem 1rem;border-left:4px solid var(--primary-color);background:#f4f8f1}
+.pres-chart{position:relative;height:380px;margin:.5rem 0 1.5rem}
+.pres-nota{font-size:.9em;color:#555}
+#cmpTabla table,#cmpRanking table{width:100%;border-collapse:collapse;margin:.5rem 0 1rem}
+#cmpTabla th,#cmpTabla td,#cmpRanking th,#cmpRanking td{padding:.4rem .6rem;border-bottom:1px solid var(--border-color);text-align:left}
+#cmpTabla td.num,#cmpTabla th.num,#cmpRanking td.num,#cmpRanking th.num{text-align:right;font-variant-numeric:tabular-nums}
+#cmpRanking tr.sal td{font-weight:700;background:#f4f8f1}
+@media (max-width:768px){.pres-chart{height:320px}}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var SAL = '37274', CYL = ['05', '09', '24', '34', '37', '40', '42', '47', '49'];
+  var CSAL = '#2C5F2D', CPAR = '#F4A261';
+  var D, C, charts = {};
+  var fe = new Intl.NumberFormat('es-ES', { maximumFractionDigits: 0, useGrouping: 'always' });
+  var fp = new Intl.NumberFormat('es-ES', { maximumFractionDigits: 0, signDisplay: 'exceptZero' });
+  function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
+
+  function mediana(a) {
+    if (!a.length) return null;
+    a = a.slice().sort(function (x, y) { return x - y; });
+    var m = a.length >> 1;
+    return a.length % 2 ? a[m] : (a[m - 1] + a[m]) / 2;
+  }
+  // gasto por habitante de una ciudad en el índice de año i; k = 'tot' o código de política; null si no hay dato
+  function pc(cod, k, i) {
+    var e = C[cod]; if (!e || !e.pob[i] || e.tot[i] == null) return null;
+    var v = k === 'tot' ? e.tot[i] : (e.p[k] ? e.p[k][i] : 0);
+    return (v || 0) / e.pob[i];
+  }
+  function miembros(grupo, i) {
+    return Object.keys(C).filter(function (c) {
+      var e = C[c]; if (!e.pob[i] || e.tot[i] == null) return false;
+      if (grupo === 'parecidas') return e.pob[i] >= 100000 && e.pob[i] <= 200000;
+      if (grupo === 'cyl') return CYL.indexOf(c.slice(0, 2)) >= 0;
+      if (grupo === 'todas') return true;
+      return c === grupo;
+    });
+  }
+  function nombreGrupo(g) {
+    if (g === 'parecidas') return 'las ciudades de 100.000 a 200.000 habitantes';
+    if (g === 'cyl') return 'las ciudades de Castilla y León de más de 50.000 habitantes';
+    if (g === 'todas') return 'las ciudades de más de 50.000 habitantes';
+    return C[g].n;
+  }
+  // estadísticas de una política: Salamanca, mediana del grupo (sin Salamanca), puesto
+  function stats(k, i, grupo) {
+    var m = miembros(grupo, i), otros = m.filter(function (c) { return c !== SAL; });
+    var vals = otros.map(function (c) { return pc(c, k, i); }).filter(function (v) { return v != null; });
+    var sal = pc(SAL, k, i);
+    var conGasto = vals.filter(function (v) { return v > 0; }).length;
+    var med = mediana(vals);
+    var todos = vals.concat([sal]).sort(function (a, b) { return b - a; });
+    return { sal: sal, med: med, n: todos.length, puesto: todos.indexOf(sal) + 1, util: vals.length > 0 && conGasto * 2 > vals.length, otros: vals.length };
+  }
+  function etiquetaRef(g) { return C[g] ? C[g].n : 'Mediana del grupo'; }
+  function selected(id) { return document.getElementById(id).value; }
+
+  function pintaPrincipal() {
+    var i = +selected('cmpAnio'), g = selected('cmpGrupo');
+    var ks = Object.keys(D.politicas).filter(function (k) {
+      var s = stats(k, i, g); return (s.sal || 0) > 0 || (s.med || 0) > 0;
+    });
+    var st = {}; ks.forEach(function (k) { st[k] = stats(k, i, g); });
+    ks.sort(function (a, b) { return (st[b].sal || 0) - (st[a].sal || 0); });
+    var t = stats('tot', i, g), anio = D.anios[i];
+    var cmp = t.med ? Math.abs(100 * (t.sal - t.med) / t.med) : 0;
+    var masMenos = fe.format(cmp) + '% ' + (t.sal >= t.med ? 'más' : 'menos') + ' en Salamanca';
+    document.getElementById('cmpResumen').textContent = C[g]
+      ? 'En ' + anio + ', Salamanca gastó ' + fe.format(t.sal) + ' € por habitante y ' + C[g].n + ' ' + fe.format(t.med) + ' € (' + masMenos + ').'
+      : 'En ' + anio + ', Salamanca gastó ' + fe.format(t.sal) + ' € por habitante. La mediana de ' + nombreGrupo(g) + ' es de ' + fe.format(t.med) + ' € (' + masMenos + '). Puesto ' + t.puesto + ' de ' + t.n + ', de mayor a menor gasto.';
+
+    var box = document.getElementById('cmpChartBox'); box.style.height = (ks.length * 38 + 90) + 'px';
+    if (charts.main) charts.main.destroy();
+    charts.main = new Chart(document.getElementById('chCmp'), {
+      type: 'bar',
+      data: {
+        labels: ks.map(function (k) { return D.politicas[k].replace(/ \(.*\)/, ''); }),
+        datasets: [
+          { label: 'Salamanca', data: ks.map(function (k) { return st[k].sal; }), backgroundColor: CSAL },
+          { label: etiquetaRef(g), data: ks.map(function (k) { return st[k].med; }), backgroundColor: CPAR }
+        ]
+      },
+      options: {
+        indexAxis: 'y', responsive: true, maintainAspectRatio: false,
+        plugins: { legend: { position: 'bottom' }, tooltip: { callbacks: { label: function (c) { return c.dataset.label + ': ' + fe.format(c.parsed.x) + ' € por habitante'; } } } },
+        scales: { x: { beginAtZero: true, title: { display: true, text: 'Euros por habitante y año' } } }
+      }
+    });
+
+    var h = '<table><thead><tr><th>Política de gasto</th><th class="num">Salamanca (€/hab.)</th><th class="num">' + (C[g] ? esc(C[g].n) : 'Mediana') + ' (€/hab.)</th><th class="num">Diferencia</th><th class="num">Puesto</th></tr></thead><tbody>';
+    ks.forEach(function (k) {
+      var s = st[k];
+      h += '<tr><td>' + esc(D.politicas[k]) + '</td><td class="num">' + fe.format(s.sal || 0) + '</td><td class="num">' + (s.util ? fe.format(s.med) : 'n. c.') + '</td><td class="num">' + (s.util && s.med > 0 ? fp.format(100 * (s.sal - s.med) / s.med) + '%' : 'n. c.') + '</td><td class="num">' + s.puesto + ' de ' + s.n + '</td></tr>';
+    });
+    document.getElementById('cmpTabla').innerHTML = h + '</tbody></table>';
+    pintaEvolucion();
+  }
+
+  function pintaEvolucion() {
+    var k = selected('cmpPol'), g = selected('cmpGrupo'), ia = +selected('cmpAnio');
+    var def = function (i) { return D.ipc_base2021['2024'] / D.ipc_base2021[String(D.anios[i])]; };
+    var idx = D.anios.map(function (_, i) { return i; });
+    var sal = idx.map(function (i) { var v = pc(SAL, k, i); return v == null ? null : v * def(i); });
+    var med = idx.map(function (i) { var s = stats(k, i, g); return s.med == null ? null : s.med * def(i); });
+    if (charts.evo) charts.evo.destroy();
+    charts.evo = new Chart(document.getElementById('chCmpEvo'), {
+      type: 'line',
+      data: { labels: D.anios, datasets: [
+        { label: 'Salamanca', data: sal, borderColor: CSAL, backgroundColor: CSAL, tension: .2 },
+        { label: etiquetaRef(g), data: med, borderColor: CPAR, backgroundColor: CPAR, tension: .2 }
+      ] },
+      options: {
+        responsive: true, maintainAspectRatio: false, interaction: { mode: 'index', intersect: false },
+        plugins: { legend: { position: 'bottom' }, tooltip: { callbacks: { label: function (c) { return c.dataset.label + ': ' + fe.format(c.parsed.y) + ' € por habitante'; } } } },
+        scales: { y: { beginAtZero: true, title: { display: true, text: 'Euros por habitante (constantes de 2024)' } } }
+      }
+    });
+    var m = miembros(g, ia); if (m.indexOf(SAL) < 0) m.push(SAL);
+    var fila = m.map(function (c) { return { c: c, v: pc(c, k, ia) }; }).filter(function (x) { return x.v != null; }).sort(function (a, b) { return b.v - a.v; });
+    var h = '<table><caption style="text-align:left;font-weight:600">Ranking ' + D.anios[ia] + ': ' + esc(k === 'tot' ? 'Gasto total' : D.politicas[k]) + ' (€ por habitante)</caption><thead><tr><th class="num">Puesto</th><th>Ciudad</th><th class="num">€/hab.</th></tr></thead><tbody>';
+    fila.forEach(function (x, j) {
+      if (fila.length > 15 && j >= 10 && x.c !== SAL && j < fila.length - 3) return;
+      h += '<tr' + (x.c === SAL ? ' class="sal"' : '') + '><td class="num">' + (j + 1) + '</td><td>' + esc(C[x.c].n) + '</td><td class="num">' + fe.format(x.v) + '</td></tr>';
+    });
+    document.getElementById('cmpRanking').innerHTML = h + '</tbody></table>' + (fila.length > 15 ? '<p class="pres-nota">Se muestran las 10 primeras, las 3 últimas y Salamanca.</p>' : '');
+  }
+
+  fetch('/presupuestos-ciudades.json').then(function (r) { return r.json(); }).then(function (d) {
+    D = d; C = d.ciudades;
+    var sa = document.getElementById('cmpAnio');
+    d.anios.map(function (y, i) { return [i, y]; }).reverse().forEach(function (p) { var o = document.createElement('option'); o.value = p[0]; o.textContent = p[1]; sa.appendChild(o); });
+    var sg = document.getElementById('cmpGrupo');
+    [['parecidas', 'Ciudades de tamaño parecido (100.000 a 200.000 hab.)'], ['cyl', 'Ciudades de Castilla y León (más de 50.000 hab.)'], ['todas', 'Todas las ciudades de más de 50.000 hab.']].forEach(function (p) { var o = document.createElement('option'); o.value = p[0]; o.textContent = p[1]; sg.appendChild(o); });
+    var og = document.createElement('optgroup'); og.label = 'Una ciudad concreta';
+    Object.keys(C).filter(function (c) { return c !== SAL; }).sort(function (a, b) { return C[a].n.localeCompare(C[b].n, 'es'); }).forEach(function (c) { var o = document.createElement('option'); o.value = c; o.textContent = C[c].n; og.appendChild(o); });
+    sg.appendChild(og);
+    var sp = document.getElementById('cmpPol');
+    var o0 = document.createElement('option'); o0.value = 'tot'; o0.textContent = 'Gasto total'; sp.appendChild(o0);
+    Object.keys(d.politicas).filter(function (k) { return C[SAL].p[k]; }).sort(function (a, b) { return (C[SAL].p[b][14] || 0) - (C[SAL].p[a][14] || 0); })
+      .forEach(function (k) { var o = document.createElement('option'); o.value = k; o.textContent = d.politicas[k]; sp.appendChild(o); });
+    sa.addEventListener('change', pintaPrincipal); sg.addEventListener('change', pintaPrincipal); sp.addEventListener('change', pintaEvolucion);
+    pintaPrincipal();
+  }).catch(function () {
+    document.getElementById('cmpResumen').textContent = 'No se han podido cargar los datos. Inténtalo de nuevo más tarde.';
+  });
+});
+</script>
