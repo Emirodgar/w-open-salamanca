@@ -60,7 +60,8 @@
     {%- assign has_dataset = false -%}
     {%- if page.dataset_files and page.dataset_files.size > 0 -%}{%- assign has_dataset = true -%}{%- endif -%}
     {%- assign has_crumbs = false -%}
-    {%- if page.folder and page.folder != "" -%}{%- assign has_crumbs = true -%}{%- endif %}
+    {%- assign crumb_cat = page.folder | default: page.crumb_category -%}
+    {%- if crumb_cat and crumb_cat != "" -%}{%- assign has_crumbs = true -%}{%- endif %}
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -192,7 +193,7 @@
         }
         {%- endif %}
         {%- if has_crumbs -%}
-        {%- assign category_page = site.pages | where: "category", page.folder | first -%}
+        {%- assign category_page = site.pages | where: "category", crumb_cat | first -%}
         {%- assign pos = 1 %},
         {
           "@type": "BreadcrumbList",
@@ -211,6 +212,15 @@
               "position": {{ pos }},
               "name": {{ category_page.title | jsonify }},
               "item": {{ category_page.url | absolute_url | jsonify }}
+            }
+            {%- endif -%}
+            {%- if page.parent_url -%}
+            {%- assign pos = pos | plus: 1 %},
+            {
+              "@type": "ListItem",
+              "position": {{ pos }},
+              "name": {{ page.parent_title | jsonify }},
+              "item": {{ page.parent_url | absolute_url | jsonify }}
             }
             {%- endif -%}
             {%- assign pos = pos | plus: 1 %},
@@ -252,7 +262,7 @@
     <!-- Chart.js for visualizations -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
-<body{% if page.folder and page.folder != "" %} class="has-breadcrumb"{% endif %}>
+<body{% if has_crumbs %} class="has-breadcrumb"{% endif %}>
     <!-- Header -->
     <header class="header">
         <div class="container">
@@ -306,8 +316,8 @@
     })();
     </script>
 
-    {% if page.folder and page.folder != "" %}
-    {% assign category_page = site.pages | where: "category", page.folder | first %}
+    {% if has_crumbs %}
+    {% assign category_page = site.pages | where: "category", crumb_cat | first %}
     <nav class="breadcrumb" aria-label="breadcrumb">
         <div class="container">
             <a href="/">Inicio</a>
@@ -315,7 +325,11 @@
             {% if category_page %}
             <a href="{{ category_page.url }}">{{ category_page.title }}</a>
             {% else %}
-            <span>{{ page.folder }}</span>
+            <span>{{ crumb_cat }}</span>
+            {% endif %}
+            {% if page.parent_url %}
+            <span class="breadcrumb-separator">/</span>
+            <a href="{{ page.parent_url }}">{{ page.parent_title }}</a>
             {% endif %}
             <span class="breadcrumb-separator">/</span>
             <span class="breadcrumb-current">{{ page.title }}</span>
