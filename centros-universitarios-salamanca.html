@@ -109,7 +109,7 @@ La capa "Centros universitarios" de la IDE municipal (Infraestructura de Datos E
     </section>
 
 	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script><script>L.Map.addInitHook(function(){var m=this;if(!m.scrollWheelZoom)return;m.scrollWheelZoom.disable();m.on("click",function(){m.scrollWheelZoom.enable()});m.on("mouseout",function(){m.scrollWheelZoom.disable()})});</script>
 	<script>
     const mapUni = L.map('mapaUni').setView([40.9680, -5.6700], 14);
 

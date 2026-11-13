@@ -76,7 +76,7 @@ El sector del alojamiento turístico en Salamanca registra una <b>transformació
 
 	<!-- Hojas de estilo y scripts de Leaflet -->
 	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script><script>L.Map.addInitHook(function(){var m=this;if(!m.scrollWheelZoom)return;m.scrollWheelZoom.disable();m.on("click",function(){m.scrollWheelZoom.enable()});m.on("mouseout",function(){m.scrollWheelZoom.disable()})});</script>
 	<script>
     // 1. Inicializar mapa de densidad turística
     const mapTur = L.map('mapaTurismo').setView([40.9645, -5.6635], 15);

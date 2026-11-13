@@ -107,7 +107,7 @@ El comercio de Salamanca destaca por la <b>polarización entre el eje comercial 
 
 	<!-- Hojas de estilo y scripts de Leaflet -->
 	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script><script>L.Map.addInitHook(function(){var m=this;if(!m.scrollWheelZoom)return;m.scrollWheelZoom.disable();m.on("click",function(){m.scrollWheelZoom.enable()});m.on("mouseout",function(){m.scrollWheelZoom.disable()})});</script>
 	<script>
     // 1. Inicializar mapa de ejes comerciales
     const mapComercio = L.map('mapaComercio').setView([40.9660, -5.6620], 14);

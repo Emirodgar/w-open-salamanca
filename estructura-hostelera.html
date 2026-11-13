@@ -193,7 +193,7 @@ El censo de establecimientos de la IDE municipal (Infraestructura de Datos Espac
 
 	<!-- Hojas de estilo y scripts de Leaflet -->
 	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script><script>L.Map.addInitHook(function(){var m=this;if(!m.scrollWheelZoom)return;m.scrollWheelZoom.disable();m.on("click",function(){m.scrollWheelZoom.enable()});m.on("mouseout",function(){m.scrollWheelZoom.disable()})});</script>
 	<script>
     const mapHost = L.map('mapaHosteleria', { preferCanvas: true }).setView([40.9655, -5.6630], 14);
     L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/light_all/{z}/{x}/{y}{r}.png?key=cb1_2izw_1_55d93b51ded1dcecfa044181', {

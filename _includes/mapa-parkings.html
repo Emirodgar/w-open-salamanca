@@ -6,7 +6,7 @@
 </p>
 
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script><script>L.Map.addInitHook(function(){var m=this;if(!m.scrollWheelZoom)return;m.scrollWheelZoom.disable();m.on("click",function(){m.scrollWheelZoom.enable()});m.on("mouseout",function(){m.scrollWheelZoom.disable()})});</script>
 <script>
   (function () {
     const mapPark = L.map('mapaParkings').setView([40.9650, -5.6630], 14);

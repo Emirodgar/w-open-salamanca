@@ -86,7 +86,7 @@ Salamanca capital mantiene una red educativa con fuerte peso de la <b>enseñanza
 
 	<!-- Hojas de estilo y scripts de Leaflet -->
 	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script><script>L.Map.addInitHook(function(){var m=this;if(!m.scrollWheelZoom)return;m.scrollWheelZoom.disable();m.on("click",function(){m.scrollWheelZoom.enable()});m.on("mouseout",function(){m.scrollWheelZoom.disable()})});</script>
 	<script>
 	(function () {
 		const COLORES = { 'Público': '#A8201A', 'Concertado': '#1E56A0', 'Privado': '#F4A261' };
