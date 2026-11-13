@@ -3,6 +3,29 @@ layout: default
 title: "Open Salamanca: datos abiertos y conocimiento de la ciudad"
 description: Portal de datos abiertos y colaborativos de la ciudad de Salamanca. Explora, visualiza y contribuye con datos públicos.
 ---
+{%- comment -%} Cifras de la home calculadas en el build, para que se vean sin JavaScript. El JS las vuelve a calcular con datasets.json y debe dar lo mismo. {%- endcomment -%}
+{%- assign ds_pages = site.pages | where_exp: "p", "p.folder" | sort: "title" -%}
+{%- assign folders = ds_pages | map: "folder" | uniq | sort -%}
+{%- assign cat_pages = site.pages | where_exp: "p", "p.category" | sort: "title" -%}
+{%- assign n_datasets = 0 -%}{%- assign n_este_anio = 0 -%}{%- assign anio_actual = site.time | date: "%Y" -%}{%- assign ultima = "" -%}
+{%- for d in ds_pages -%}{%- if d.folder != "" -%}
+  {%- assign n_datasets = n_datasets | plus: 1 -%}
+  {%- assign iso = d.date | date: "%Y-%m-%d" -%}
+  {%- assign anio = d.date | date: "%Y" -%}
+  {%- if anio == anio_actual -%}{%- assign n_este_anio = n_este_anio | plus: 1 -%}{%- endif -%}
+  {%- if iso > ultima -%}{%- assign ultima = iso -%}{%- endif -%}
+{%- endif -%}{%- endfor -%}
+{%- assign n_categorias = 0 -%}
+{%- for c in cat_pages -%}{%- if folders contains c.category -%}{%- assign n_categorias = n_categorias | plus: 1 -%}{%- endif -%}{%- endfor -%}
+{%- capture actualidad_periodo -%}{% include actualidad-periodo.html %}{%- endcapture -%}
+{%- capture actualidad_resumen -%}{% include actualidad-resumen.html %}{%- endcapture -%}
+{%- assign actualidad_hasta = actualidad_periodo | split: " al " | last | strip -%}
+{%- if actualidad_hasta > ultima -%}{%- assign ultima = actualidad_hasta -%}{%- endif -%}
+{%- assign meses_abr = "ene feb mar abr may jun jul ago sep oct nov dic" | split: " " -%}
+{%- assign ultima_mes = ultima | slice: 5, 2 | plus: 0 | minus: 1 -%}
+{%- assign ultima_dia = ultima | slice: 8, 2 | plus: 0 -%}
+{%- assign ultima_anio = ultima | slice: 0, 4 -%}
+{%- assign ultima_txt = ultima_dia | append: " " | append: meses_abr[ultima_mes] | append: " " | append: ultima_anio -%}
 
     <!-- Hero Section -->
     <section class="hero" id="inicio">
@@ -23,19 +46,19 @@ description: Portal de datos abiertos y colaborativos de la ciudad de Salamanca.
 
                 <div class="hero-stats">
                     <div class="stat-card">
-                        <div class="stat-number" id="totalDatasets">0</div>
+                        <div class="stat-number" id="totalDatasets">{{ n_datasets }}</div>
                         <div class="stat-label">Datasets</div>
                     </div>
                     <div class="stat-card">
-                        <div class="stat-number" id="totalCategories">0</div>
+                        <div class="stat-number" id="totalCategories">{{ n_categorias }}</div>
                         <div class="stat-label">Categorías</div>
                     </div>
                     <div class="stat-card">
-                        <div class="stat-number" id="totalViews">0</div>
+                        <div class="stat-number" id="totalViews">{{ n_este_anio }}</div>
                         <div class="stat-label">Publicados este año</div>
                     </div>
                     <div class="stat-card">
-                        <div class="stat-number" id="lastUpdate">Hoy</div>
+                        <div class="stat-number" id="lastUpdate">{{ ultima_txt }}</div>
                         <div class="stat-label">Última actualización</div>
                     </div>
                 </div>
@@ -50,8 +73,8 @@ description: Portal de datos abiertos y colaborativos de la ciudad de Salamanca.
                 <div class="actualidad-highlight-text">
                     <span class="actualidad-highlight-eyebrow">Actualidad</span>
                     <h3 class="actualidad-highlight-title">Lo más destacado de esta semana</h3>
-                    <p class="actualidad-highlight-summary" id="actualidadHighlightSummary">Cargando resumen…</p>
-                    <p class="actualidad-highlight-meta" id="actualidadHighlightMeta"></p>
+                    <p class="actualidad-highlight-summary" id="actualidadHighlightSummary"{% if actualidad_resumen != "" %} data-ssr="1"{% endif %}>{% if actualidad_resumen != "" %}{{ actualidad_resumen | split: "</p>" | first | remove_first: "<p>" }}{% else %}El resumen semanal se actualiza cada pocos días. Consulta el <a href="/actualidad">análisis de actualidad</a>.{% endif %}</p>
+                    <p class="actualidad-highlight-meta" id="actualidadHighlightMeta">{{ actualidad_periodo }}</p>
                 </div>
                 <div class="actualidad-highlight-actions">
                     <a href="/actualidad" class="btn btn-primary">Análisis de actualidad</a>
@@ -129,7 +152,8 @@ description: Portal de datos abiertos y colaborativos de la ciudad de Salamanca.
 		const metaEl = document.getElementById('actualidadHighlightMeta');
 		if (!summaryEl) return;
 
-		fetch('/actualidad.json?v=' + Date.now(), { cache: 'no-store' })
+		// Si el resumen ya viene renderizado en el HTML (data-ssr), no se vuelve a pedir ni a pisar.
+		if (!summaryEl.dataset.ssr) fetch('/actualidad.json?v=' + Date.now(), { cache: 'no-store' })
 			.then(r => r.json())
 			.then(d => {
 				const primerParrafo = (d.resumen || '').split('\n\n')[0];
@@ -176,13 +200,12 @@ description: Portal de datos abiertos y colaborativos de la ciudad de Salamanca.
             </div>
 
             <div class="categories-grid" id="categoriesGrid">
-                {%- assign cat_pages = site.pages | where_exp: "p", "p.category" | sort: "title" -%}
                 {%- for c in cat_pages %}
                 <div class="category-card" onclick="window.location.href = '{{ c.url }}'">
                     <div class="category-icon">
                         <span style="font-size: 24px;">{% case c.category %}{% when 'Demografia' %}👥{% when 'Economia' %}💰{% when 'Educacion' %}🎓{% when 'Finanzas' %}📊{% when 'Movilidad' %}🚌{% when 'Urbanismo' %}🏙️{% when 'Turismo' %}🗺️{% when 'Mercado Laboral' %}💼{% when 'Medio Ambiente' %}🌱{% when 'Cultura y Ocio' %}🎭{% when 'Hacienda Local' %}🏛️{% when 'Politica' %}🗳️{% when 'Salud' %}🏥{% else %}📋{% endcase %}</span>
                     </div>
-                    <h4 class="category-title"><a href="{{ c.url }}">{{ c.category }}</a></h4>
+                    <h4 class="category-title"><a href="{{ c.url }}">{% include categoria-nombre.html n=c.category %}</a></h4>
                 </div>
                 {%- endfor %}
             </div>
@@ -196,14 +219,12 @@ description: Portal de datos abiertos y colaborativos de la ciudad de Salamanca.
                 <h2 class="section-title">Todos los datasets de Salamanca</h2>
                 <p class="section-description">Índice de las páginas de datos abiertos, agrupadas por categoría</p>
             </div>
-            {%- assign ds_pages = site.pages | where_exp: "p", "p.folder" | sort: "title" -%}
-            {%- assign folders = ds_pages | map: "folder" | uniq | sort %}
             <div class="home-index-grid">
             {%- for fo in folders %}
             {%- assign n = 0 %}
             {%- for d in ds_pages %}{% if d.folder == fo and d.sitemap != false %}{% assign n = n | plus: 1 %}{% endif %}{% endfor %}
                 <div class="home-index-card">
-                    <h3 class="home-index-cat"><span>{{ fo }}</span><span class="home-index-count">{{ n }}</span></h3>
+                    <h3 class="home-index-cat"><span>{% include categoria-nombre.html n=fo %}</span><span class="home-index-count">{{ n }}</span></h3>
                     <ul>
                         {%- for d in ds_pages %}{% if d.folder == fo and d.sitemap != false %}
                         <li><a href="{{ d.url }}">{{ d.title }}</a></li>
@@ -293,7 +314,7 @@ description: Portal de datos abiertos y colaborativos de la ciudad de Salamanca.
 
                     <div class="contribute-actions">
                         <button class="btn btn-primary" onclick="openUploadModal()">Subir Dataset</button>
-                        <a href="#" class="btn btn-secondary" onclick="downloadSchema()">Descargar Esquema XML</a>
+                        <a href="/dataset-schema.xsd" class="btn btn-secondary" download>Descargar Esquema XML</a>
                     </div>
                 </div>
 

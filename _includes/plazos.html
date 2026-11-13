@@ -22,9 +22,9 @@
 <style>
 	/* El sitio añade viñeta, sangría y márgenes a todos los ul/li/p: aquí se anulan */
 	.plazos .plazos-lista { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--spacing-sm); line-height: 1.4; }
-	.plazos .plazos-item { position: static; margin: 0; padding: 0.8rem 1rem; border: 1px solid var(--border-color); border-radius: 8px; background: #fff; }
+	.plazos .plazos-item { position: static; margin: 0; padding: 0.8rem 1rem; border: 1px solid var(--border-color); border-left: 4px solid var(--primary-color); border-radius: 8px; background: #fff; }
 	.plazos .plazos-item::before { content: none; }
-	.plazos .plazos-item.plazos-urgente { border-color: var(--error-color); background: #fff8f7; }
+	.plazos .plazos-item.plazos-urgente { border-left-color: var(--error-color); background: #fff8f7; }
 	.plazos .plazos-cab { display: flex; flex-wrap: wrap; gap: 0.2rem 0.8rem; align-items: baseline; font-size: 0.85rem; color: #4a4a4a; }
 	.plazos .plazos-tipo { text-transform: uppercase; letter-spacing: 0.04em; font-size: 0.75rem; }
 	.plazos .plazos-fecha { font-weight: 700; color: var(--neutral-color); }

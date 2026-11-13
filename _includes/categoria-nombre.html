@@ -1,0 +1,8 @@
+{%- comment -%}Nombre visible de una categoría. La clave interna, sin tildes, es el nombre de carpeta y de front matter.{%- endcomment -%}
+{%- case include.n -%}
+{%- when 'Demografia' -%}Demografía
+{%- when 'Economia' -%}Economía
+{%- when 'Educacion' -%}Educación
+{%- when 'Politica' -%}Política
+{%- else -%}{{ include.n }}
+{%- endcase -%}
