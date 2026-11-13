@@ -1,0 +1,365 @@
+---
+layout: default
+title: ¿Qué barrio de Salamanca te encaja?
+description: Marca lo que te importa (centro, universidad, precio, tranquilidad, niños, transporte) y ordena los barrios de Salamanca según su encaje, con los datos y las limitaciones a la vista
+date: 13-11-2026
+folder: Urbanismo
+permalink: barrio-ideal
+dataset_files:
+  - barrios-matcher.json
+  - barrios-salamanca.json
+---
+
+    <section class="featured dataset" id="datos">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="section-title">{{ page.title }}</h1>
+                <p class="section-description">{{ page.description }}</p>
+            </div>
+
+			<div id="section-content">
+
+				<p>Salamanca tiene 40 barrios y no todos sirven para lo mismo. Esta herramienta ordena <b>35 de ellos</b> según lo que tú valores, con indicadores que ya publica el portal: distancia al centro y a las sedes universitarias, precio de la vivienda, densidad, edad de los vecinos, líneas de autobús y distancia al centro de salud. No es una recomendación: es una forma de comparar. Al final de la página está cómo se calcula y qué datos <b>no están verificados</b>. Si acabas de llegar, mira también la guía de <a href="/llegar-a-salamanca">tus primeras dos semanas en Salamanca</a>.</p>
+
+				<noscript><p><b>Esta herramienta necesita JavaScript.</b> Mientras tanto, puedes consultar los indicadores de cada barrio en <a href="/barrios-matcher.json">barrios-matcher.json</a>.</p></noscript>
+
+				<div class="bi-layout">
+					<form class="bi-controles" id="biControles" onsubmit="return false;" aria-label="Qué te importa a la hora de elegir barrio">
+						<h2 class="bi-h2">1. ¿Qué te importa?</h2>
+						<div class="bi-perfiles" role="group" aria-label="Perfiles rápidos">
+							<span class="bi-perfiles-label">Perfiles rápidos:</span>
+							<button type="button" class="bi-chip" data-perfil="estudiante">Estudiante</button>
+							<button type="button" class="bi-chip" data-perfil="familia">Familia con niños</button>
+							<button type="button" class="bi-chip" data-perfil="tranquilo">Tranquilidad</button>
+							<button type="button" class="bi-chip" data-perfil="presupuesto">Presupuesto ajustado</button>
+							<button type="button" class="bi-chip" data-perfil="sincoche">Sin coche</button>
+							<button type="button" class="bi-chip bi-chip-limpiar" id="biLimpiar">Borrar</button>
+						</div>
+						<div id="biCriterios"></div>
+					</form>
+
+					<div class="bi-resultados" aria-live="polite">
+						<h2 class="bi-h2">2. Tus barrios</h2>
+						<div id="biTop"></div>
+					</div>
+				</div>
+
+				<h2 class="bi-h2">Mapa del encaje</h2>
+				<div id="biMapa" class="bus-map-canvas"></div>
+				<div class="capas-leyenda" id="biLeyenda" style="display:none;">
+					<span class="capas-leyenda-min">Encaje bajo</span>
+					<span class="capas-leyenda-barra"></span>
+					<span class="capas-leyenda-max">Encaje alto</span>
+				</div>
+				<p class="bus-map-nota">Los barrios en gris no se puntúan porque tienen menos de 500 habitantes (Glorieta, Los Alcaldes, Marín, Montalvos y Platina) o porque no tienen datos. Los límites son aproximados (OpenStreetMap, no son oficiales).</p>
+
+				<details class="bi-tabla-det" id="biTablaDet">
+					<summary>Ver el ranking completo de los 35 barrios</summary>
+					<div class="bi-tabla-wrap"><table class="bi-tabla" id="biTabla"></table></div>
+				</details>
+
+				<h2 class="bi-h2">Cómo se calcula</h2>
+				<ol class="bi-metodo">
+					<li><b>Cada criterio puntúa de 0 a 100 según la posición del barrio entre los 35.</b> Si un barrio es el que más cerca está del centro, saca 100 en ese criterio; si es el más lejano, 0. No importa cuánta diferencia haya en metros: cuenta el orden, para que un barrio extremo no distorsione el resto.</li>
+					<li><b>Tú decides cuánto pesa cada criterio.</b> "Importa" cuenta una vez y "Muy importante" cuenta el doble. El encaje es la media ponderada de las puntuaciones de los criterios que marques, de 0 a 100. Un 100 solo lo saca un barrio que sea el mejor en todo lo que has marcado.</li>
+					<li><b>Qué mide cada criterio y de dónde sale:</b>
+						<ul>
+							<li><i>Cerca del centro</i>: distancia en línea recta desde el centro aproximado del barrio hasta la Plaza Mayor.</li>
+							<li><i>Cerca de la universidad</i>: distancia a la sede universitaria más cercana de las 14 ubicaciones de la IDE municipal (<a href="/centros-universitarios-salamanca">centros universitarios</a>).</li>
+							<li><i>Vivienda más asequible</i>: precio de venta por m² de <a href="/precio-vivienda">precio de la vivienda</a>. <b>Dato no verificado</b>: carece de fuente contrastada.</li>
+							<li><i>Más espacio, menos densidad</i>: habitantes por km² con la <a href="/poblacion-demografia">población por barrio</a> de la IDE. Es solo un indicador indirecto de tranquilidad: no mide el ruido real (consulta el <a href="/ruido-edificios-salamanca">ruido en edificios</a>).</li>
+							<li><i>Ambiente familiar</i>: porcentaje de vecinos menores de 15 años, de la misma fuente de población.</li>
+							<li><i>Buen transporte público</i>: líneas de autobús urbano distintas con parada en el barrio, con desempate por número de paradas (<a href="/transporte-urbano-bus">transporte urbano</a>). No tiene en cuenta frecuencias ni horarios.</li>
+							<li><i>Centro de salud cerca</i>: distancia al centro de salud público más cercano (<a href="/centros-salud-salamanca">centros de salud</a>).</li>
+						</ul>
+					</li>
+					<li><b>Límites de la herramienta.</b> Las distancias se miden desde el centro aproximado del barrio, no desde tu portal: en barrios grandes pueden variar mucho de una calle a otra. Los límites de los barrios son aproximados. La renta y el precio de la vivienda proceden de páginas del portal sin fuente contrastada. No incluye alquiler, aparcamiento, zonas verdes, seguridad ni oferta comercial. Úsala para descartar y comparar, y visita la zona antes de decidir.</li>
+					<li><b>Datos abiertos.</b> Todos los indicadores están en <a href="/barrios-matcher.json">barrios-matcher.json</a> (licencia CC BY 4.0), generado con un script a partir de los datasets del portal. Si ves un dato erróneo, escríbenos desde <a href="/contacto">contacto</a>.</li>
+				</ol>
+
+			</div>
+
+			{% include categories.html %}
+
+        </div>
+    </section>
+
+	<style>
+		.bi-layout { display: grid; grid-template-columns: 1fr; gap: var(--spacing-xl); margin: var(--spacing-lg) 0; }
+		@media (min-width: 900px) { .bi-layout { grid-template-columns: minmax(300px, 5fr) 6fr; align-items: start; } }
+		.bi-h2 { font-size: 1.2rem; margin: var(--spacing-lg) 0 var(--spacing-sm); color: var(--neutral-color); }
+		.bi-layout .bi-h2 { margin-top: 0; }
+		.bi-perfiles { display: flex; flex-wrap: wrap; gap: 0.4rem; align-items: center; margin-bottom: var(--spacing-md); }
+		.bi-perfiles-label { font-size: 0.9rem; color: #4a4a4a; }
+		.bi-chip { border: 1px solid var(--primary-color); background: #fff; color: var(--primary-color); border-radius: 999px; padding: 0.3rem 0.8rem; font-size: 0.85rem; cursor: pointer; font-family: inherit; }
+		.bi-chip:hover, .bi-chip.activo { background: var(--primary-color); color: #fff; }
+		.bi-chip-limpiar { border-color: var(--border-color); color: #595959; }
+		.bi-criterio { border: 0; padding: 0.55rem 0; border-bottom: 1px solid var(--border-color); }
+		.bi-criterio legend { font-weight: 600; font-size: 0.95rem; padding: 0; float: left; width: 100%; margin-bottom: 0.3rem; }
+		.bi-criterio .bi-ayuda { font-weight: 400; font-size: 0.8rem; color: #595959; display: block; }
+		.bi-seg { display: inline-flex; border: 1px solid var(--border-color); border-radius: 6px; overflow: hidden; clear: both; }
+		.bi-seg label { padding: 0.3rem 0.8rem; font-size: 0.85rem; cursor: pointer; background: #fff; border-right: 1px solid var(--border-color); }
+		.bi-seg label:last-child { border-right: 0; }
+		.bi-seg input { position: absolute; opacity: 0; pointer-events: none; }
+		.bi-seg input:checked + span { font-weight: 700; }
+		.bi-seg label:has(input:checked) { background: var(--primary-color); color: #fff; }
+		.bi-seg label:has(input:focus-visible) { outline: 2px solid var(--accent-color); outline-offset: -2px; }
+		.bi-aviso { font-size: 0.75rem; color: #7a4e00; }
+		.bi-vacio { padding: var(--spacing-lg); background: var(--heat-0); border-radius: 8px; color: #444; }
+		.bi-top { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--spacing-sm); }
+		.bi-card { border: 1px solid var(--border-color); border-radius: 8px; padding: 0.8rem 1rem; background: #fff; }
+		.bi-card-cab { display: flex; align-items: baseline; justify-content: space-between; gap: 0.5rem; }
+		.bi-card-nombre { font-size: 1.05rem; font-weight: 700; color: var(--primary-color); background: none; border: 0; padding: 0; cursor: pointer; font-family: inherit; text-align: left; }
+		.bi-card-nombre:hover { text-decoration: underline; }
+		.bi-card-pos { color: #595959; font-weight: 400; margin-right: 0.3rem; }
+		.bi-card-pct { font-size: 1.3rem; font-weight: 700; color: var(--neutral-color); white-space: nowrap; }
+		.bi-barra { height: 6px; background: var(--heat-0); border-radius: 3px; margin: 0.4rem 0 0.5rem; overflow: hidden; }
+		.bi-barra span { display: block; height: 100%; background: var(--primary-color); }
+		.bi-razones { list-style: none; margin: 0; padding: 0; font-size: 0.85rem; display: grid; gap: 0.15rem; }
+		.bi-razones li::before { content: attr(data-marca); display: inline-block; width: 1.2em; font-weight: 700; }
+		.bi-razones li[data-marca="✔"]::before { color: var(--success-color); }
+		.bi-razones li[data-marca="✖"]::before { color: var(--error-color); }
+		.bi-razones li[data-marca="•"]::before { color: #595959; }
+		.bi-mas { font-size: 0.8rem; color: #595959; margin-top: 0.4rem; }
+		.bi-tabla-det { margin: var(--spacing-md) 0; }
+		.bi-tabla-det summary { cursor: pointer; font-weight: 600; color: var(--primary-color); }
+		.bi-tabla-wrap { overflow-x: auto; margin-top: var(--spacing-sm); }
+		.bi-tabla { border-collapse: collapse; width: 100%; font-size: 0.85rem; }
+		.bi-tabla th, .bi-tabla td { padding: 0.35rem 0.6rem; border-bottom: 1px solid var(--border-color); text-align: right; white-space: nowrap; }
+		.bi-tabla th:first-child, .bi-tabla td:first-child, .bi-tabla th:nth-child(2), .bi-tabla td:nth-child(2) { text-align: left; }
+		.bi-metodo { padding-left: 1.2rem; display: grid; gap: var(--spacing-sm); }
+		.bi-metodo ul { margin: 0.3rem 0 0 1.1rem; }
+	</style>
+
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script><script>L.Map.addInitHook(function(){var m=this;if(!m.scrollWheelZoom)return;m.scrollWheelZoom.disable();m.on("click",function(){m.scrollWheelZoom.enable()});m.on("mouseout",function(){m.scrollWheelZoom.disable()})});</script>
+	<script>
+	(function () {
+		// ---- Criterios ----
+		// mejor: 'bajo' = cuanto menor el valor, mejor; 'alto' = cuanto mayor, mejor.
+		const fmt = n => String(Math.round(n)).replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+		const fmtDec = n => n.toFixed(1).replace('.', ',');
+		const metros = m => m >= 1000 ? fmtDec(m / 1000) + ' km' : fmt(m) + ' m';
+
+		const CRITERIOS = [
+			{ id: 'centro', etiqueta: 'Cerca del centro', ayuda: 'Distancia a la Plaza Mayor', mejor: 'bajo',
+			  val: b => b.dist_centro_m, texto: b => `a ${metros(b.dist_centro_m)} de la Plaza Mayor` },
+			{ id: 'univ', etiqueta: 'Cerca de la universidad', ayuda: 'Distancia a la sede universitaria más cercana', mejor: 'bajo',
+			  val: b => b.dist_univ_m, texto: b => `a ${metros(b.dist_univ_m)} de la sede universitaria más cercana` },
+			{ id: 'precio', etiqueta: 'Vivienda más asequible', ayuda: 'Precio de venta por m²', mejor: 'bajo', aviso: 'dato no verificado',
+			  val: b => b.vivienda, texto: b => `vivienda a ${fmt(b.vivienda)} €/m² (dato no verificado)` },
+			{ id: 'tranquilo', etiqueta: 'Más espacio, menos densidad', ayuda: 'Habitantes por km² (indicador indirecto de tranquilidad)', mejor: 'bajo',
+			  val: b => b.densidad, texto: b => `${fmt(b.densidad)} hab/km²` },
+			{ id: 'ninos', etiqueta: 'Ambiente familiar', ayuda: 'Porcentaje de menores de 15 años', mejor: 'alto',
+			  val: b => b.pct_0_14, texto: b => `${fmtDec(b.pct_0_14)} % de vecinos menores de 15 años` },
+			{ id: 'bus', etiqueta: 'Buen transporte público', ayuda: 'Líneas de autobús urbano con parada en el barrio', mejor: 'alto',
+			  val: b => b.lineas * 1000 + b.paradas, texto: b => `${b.lineas} ${b.lineas === 1 ? 'línea' : 'líneas'} de bus y ${b.paradas} ${b.paradas === 1 ? 'parada' : 'paradas'}` },
+			{ id: 'salud', etiqueta: 'Centro de salud cerca', ayuda: 'Distancia al centro de salud público más cercano', mejor: 'bajo',
+			  val: b => b.dist_salud_m, texto: b => `centro de salud a ${metros(b.dist_salud_m)}` }
+		];
+
+		const PERFILES = {
+			estudiante:  { univ: 2, precio: 2, centro: 1, bus: 1 },
+			familia:     { ninos: 2, tranquilo: 1, salud: 1, bus: 1 },
+			tranquilo:   { tranquilo: 2, salud: 1 },
+			presupuesto: { precio: 2, bus: 1 },
+			sincoche:    { bus: 2, centro: 1, salud: 1 }
+		};
+
+		let barrios = [];
+		let pesos = {};          // id criterio -> 0, 1, 2
+		let poligonos = {};      // nombre -> L.polygon
+		let mapa = null;
+
+		// ---- Puntuación por posición (0-1) en cada criterio ----
+		function calcularPuntos() {
+			CRITERIOS.forEach(c => {
+				const vals = barrios.map(b => c.val(b));
+				barrios.forEach(b => {
+					const v = c.val(b);
+					let peor = 0, iguales = 0;
+					vals.forEach(o => {
+						if (o === v) iguales++;
+						else if (c.mejor === 'bajo' ? o > v : o < v) peor++;
+					});
+					b._p = b._p || {};
+					b._p[c.id] = (peor + (iguales - 1) / 2) / (barrios.length - 1);
+				});
+			});
+		}
+
+		function puntuar() {
+			const activos = CRITERIOS.filter(c => pesos[c.id] > 0);
+			const suma = activos.reduce((s, c) => s + pesos[c.id], 0);
+			barrios.forEach(b => {
+				b._score = suma ? 100 * activos.reduce((s, c) => s + pesos[c.id] * b._p[c.id], 0) / suma : null;
+			});
+			return activos;
+		}
+
+		// ---- Interfaz ----
+		function construirControles() {
+			const cont = document.getElementById('biCriterios');
+			cont.innerHTML = CRITERIOS.map(c => `
+				<fieldset class="bi-criterio">
+					<legend>${c.etiqueta}<span class="bi-ayuda">${c.ayuda}${c.aviso ? ` · <span class="bi-aviso">${c.aviso}</span>` : ''}</span></legend>
+					<div class="bi-seg">
+						<label><input type="radio" name="bi-${c.id}" value="0"><span>No me importa</span></label>
+						<label><input type="radio" name="bi-${c.id}" value="1"><span>Importa</span></label>
+						<label><input type="radio" name="bi-${c.id}" value="2"><span>Muy importante</span></label>
+					</div>
+				</fieldset>`).join('');
+			cont.addEventListener('change', e => {
+				const m = /^bi-(.+)$/.exec(e.target.name || '');
+				if (!m) return;
+				pesos[m[1]] = parseInt(e.target.value, 10);
+				marcarPerfil(null);
+				actualizar();
+			});
+			document.querySelectorAll('[data-perfil]').forEach(btn => btn.addEventListener('click', () => {
+				pesos = Object.assign({}, PERFILES[btn.dataset.perfil]);
+				marcarPerfil(btn.dataset.perfil);
+				actualizar();
+			}));
+			document.getElementById('biLimpiar').addEventListener('click', () => {
+				pesos = {};
+				marcarPerfil(null);
+				actualizar();
+			});
+		}
+
+		function marcarPerfil(id) {
+			document.querySelectorAll('[data-perfil]').forEach(b => b.classList.toggle('activo', b.dataset.perfil === id));
+		}
+
+		function sincronizarRadios() {
+			CRITERIOS.forEach(c => {
+				const v = pesos[c.id] || 0;
+				const r = document.querySelector(`input[name="bi-${c.id}"][value="${v}"]`);
+				if (r) r.checked = true;
+			});
+		}
+
+		// El estado se guarda en la URL (#univ=2&precio=1) para poder compartir el resultado.
+		function escribirHash() {
+			const partes = CRITERIOS.filter(c => pesos[c.id] > 0).map(c => `${c.id}=${pesos[c.id]}`);
+			try { history.replaceState(null, '', partes.length ? '#' + partes.join('&') : location.pathname + location.search); } catch (e) {}
+		}
+
+		function leerHash() {
+			const h = location.hash.replace(/^#/, '');
+			if (!h) return;
+			if (PERFILES[h]) { pesos = Object.assign({}, PERFILES[h]); marcarPerfil(h); return; }
+			h.split('&').forEach(par => {
+				const [k, v] = par.split('=');
+				const n = parseInt(v, 10);
+				if (CRITERIOS.some(c => c.id === k) && (n === 1 || n === 2)) pesos[k] = n;
+			});
+		}
+
+		function razones(b, activos) {
+			return activos.map(c => {
+				const p = b._p[c.id];
+				const marca = p >= 0.66 ? '✔' : p <= 0.33 ? '✖' : '•';
+				return `<li data-marca="${marca}">${c.texto(b)}</li>`;
+			}).join('');
+		}
+
+		function pintarTop(ordenados, activos) {
+			const cont = document.getElementById('biTop');
+			if (!activos.length) {
+				cont.innerHTML = '<div class="bi-vacio">Elige un perfil rápido o marca qué te importa a la izquierda. Te mostraremos los cinco barrios que mejor encajan y por qué.</div>';
+				return;
+			}
+			const top = ordenados.slice(0, 5);
+			cont.innerHTML = '<ol class="bi-top">' + top.map((b, i) => `
+				<li class="bi-card">
+					<div class="bi-card-cab">
+						<button type="button" class="bi-card-nombre" data-barrio="${b.nombre}"><span class="bi-card-pos">${i + 1}.</span>${b.nombre}</button>
+						<span class="bi-card-pct">${Math.round(b._score)} %</span>
+					</div>
+					<div class="bi-barra" aria-hidden="true"><span style="width:${b._score}%"></span></div>
+					<ul class="bi-razones">${razones(b, activos)}</ul>
+					<div class="bi-mas">${fmt(b.habitantes)} habitantes</div>
+				</li>`).join('') + '</ol>' +
+				'<p class="bi-mas">✔ entre el tercio mejor de los 35 barrios · • en el medio · ✖ entre el tercio peor. El porcentaje es el encaje con lo que has marcado, no una nota del barrio.</p>';
+			cont.querySelectorAll('[data-barrio]').forEach(btn => btn.addEventListener('click', () => irAlBarrio(btn.dataset.barrio)));
+		}
+
+		function pintarTabla(ordenados, activos) {
+			const t = document.getElementById('biTabla');
+			const cols = activos.length ? activos : CRITERIOS;
+			t.innerHTML = '<thead><tr><th>#</th><th>Barrio</th>' + (activos.length ? '<th>Encaje</th>' : '<th>Habitantes</th>') +
+				cols.map(c => `<th>${c.etiqueta}</th>`).join('') + '</tr></thead><tbody>' +
+				ordenados.map((b, i) => `<tr><td>${activos.length ? i + 1 : ''}</td><td>${b.nombre}</td>` +
+					(activos.length ? `<td>${Math.round(b._score)} %</td>` : `<td>${fmt(b.habitantes)}</td>`) +
+					cols.map(c => `<td>${c.texto(b)}</td>`).join('') + '</tr>').join('') + '</tbody>';
+		}
+
+		// ---- Mapa ----
+		const CLARO = [201, 223, 192], OSCURO = [44, 95, 45];
+		function color(score) {
+			const t = score / 100;
+			return 'rgb(' + CLARO.map((c, i) => Math.round(c + (OSCURO[i] - c) * t)).join(',') + ')';
+		}
+
+		function pintarMapa(activos) {
+			const porNombre = {};
+			barrios.forEach(b => { porNombre[b.nombre] = b; });
+			Object.keys(poligonos).forEach(nombre => {
+				const b = porNombre[nombre];
+				const poly = poligonos[nombre];
+				const conScore = b && b._score !== null;
+				poly.setStyle({
+					fillColor: conScore ? color(b._score) : (b ? '#2C5F2D' : '#E9ECEF'),
+					fillOpacity: conScore ? 0.8 : (b ? 0.08 : 0.5),
+					color: '#2C5F2D', weight: 1.5
+				});
+				poly.bindPopup(b ? `<b>${nombre}</b>` + (conScore ? `<br>Encaje: ${Math.round(b._score)} %` : '') + `<br>${fmt(b.habitantes)} habitantes`
+					: `<b>${nombre}</b><br>Sin puntuar (menos de 500 habitantes o sin datos)`);
+			});
+			document.getElementById('biLeyenda').style.display = activos.length ? '' : 'none';
+		}
+
+		function irAlBarrio(nombre) {
+			const poly = poligonos[nombre];
+			if (!poly) return;
+			document.getElementById('biMapa').scrollIntoView({ behavior: 'smooth', block: 'center' });
+			mapa.fitBounds(poly.getBounds(), { maxZoom: 15 });
+			poly.openPopup();
+		}
+
+		function actualizar() {
+			const activos = puntuar();
+			const ordenados = barrios.slice().sort((a, b) =>
+				activos.length ? (b._score - a._score) || a.nombre.localeCompare(b.nombre, 'es') : a.nombre.localeCompare(b.nombre, 'es'));
+			sincronizarRadios();
+			pintarTop(ordenados, activos);
+			pintarTabla(ordenados, activos);
+			if (mapa) pintarMapa(activos);
+			escribirHash();
+		}
+
+		// ---- Arranque ----
+		construirControles();
+		mapa = L.map('biMapa').setView([40.9650, -5.6630], 13);
+		L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/light_all/{z}/{x}/{y}{r}.png?key=cb1_2izw_1_55d93b51ded1dcecfa044181', {
+			attribution: '&copy; OpenStreetMap &copy; CARTO', maxZoom: 19
+		}).addTo(mapa);
+
+		Promise.all([
+			fetch('/barrios-matcher.json').then(r => r.json()),
+			fetch('/barrios-salamanca.json').then(r => r.json())
+		]).then(([matcher, limites]) => {
+			barrios = matcher.barrios;
+			calcularPuntos();
+			(limites.barrios || []).forEach(b => {
+				poligonos[b.nombre] = L.polygon(b.coordenadas, { weight: 1.5 }).addTo(mapa);
+			});
+			leerHash();
+			actualizar();
+		}).catch(() => {
+			document.getElementById('biTop').innerHTML = '<div class="bi-vacio">No se han podido cargar los datos. Prueba a recargar la página.</div>';
+		});
+	})();
+	</script>

@@ -1,0 +1,38 @@
+{
+  "actualizado": "2026-11-13",
+  "items": [
+    {
+      "titulo": "Pago voluntario del IAE (recibos de 2026)",
+      "fecha": "2026-11-30",
+      "tipo": "Fin de plazo",
+      "afecta": "Quien tenga una actividad económica sujeta al IAE. Están exentas las personas físicas y las entidades con menos de 1 millón de euros de facturación.",
+      "nota": "OAGER publicó el 1 de octubre de 2026 el aviso de recibos del IAE. El fin del periodo (30 de noviembre) es el que recoge la ficha de impuestos de este portal: confírmalo en OAGER antes de pagar.",
+      "enlace": "/impuestos-municipales-salamanca",
+      "fuente": "https://www.oager.com/",
+      "fuente_nombre": "OAGER",
+      "verificado": "2026-11-13"
+    },
+    {
+      "titulo": "Alta en Pago a la Carta del Ayuntamiento",
+      "fecha": "2027-01-20",
+      "tipo": "Fin de plazo",
+      "afecta": "Contribuyentes que quieran fraccionar el pago de sus tributos municipales.",
+      "nota": "El aviso de OAGER (11 de noviembre de 2026) dice \"hasta el 20 de enero\" sin indicar el año: por la fecha de publicación se entiende enero de 2027.",
+      "enlace": "/impuestos-municipales-salamanca",
+      "fuente": "https://www.oager.com/",
+      "fuente_nombre": "OAGER",
+      "verificado": "2026-11-13"
+    },
+    {
+      "titulo": "Elecciones municipales",
+      "fecha": "2027-05-23",
+      "tipo": "Fecha electoral",
+      "afecta": "Todos los electores de Salamanca.",
+      "nota": "La ley electoral fija las elecciones locales para el cuarto domingo de mayo. La convocatoria oficial se publica en el BOE unos dos meses antes.",
+      "enlace": "/elecciones-municipios-salamanca",
+      "fuente": "https://www.boe.es/buscar/act.php?id=BOE-A-1985-11672",
+      "fuente_nombre": "Ley Orgánica del Régimen Electoral General (BOE)",
+      "verificado": "2026-11-13"
+    }
+  ]
+}

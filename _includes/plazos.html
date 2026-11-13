@@ -1,0 +1,50 @@
+{%- assign plazos_items = site.data.plazos.items | sort: "fecha" -%}
+<div class="plazos" id="plazosBloque">
+	<ul class="plazos-lista">
+	{%- for p in plazos_items %}
+		<li class="plazos-item" data-fecha="{{ p.fecha }}">
+			<div class="plazos-cab">
+				<span class="plazos-tipo">{{ p.tipo }}</span>
+				<time class="plazos-fecha" datetime="{{ p.fecha }}">{{ p.fecha | date: "%d/%m/%Y" }}</time>
+				<span class="plazos-faltan" data-faltan></span>
+			</div>
+			<p class="plazos-titulo">{% if p.enlace %}<a href="{{ p.enlace }}">{{ p.titulo }}</a>{% else %}{{ p.titulo }}{% endif %}</p>
+			{%- if include.completo %}
+			<p class="plazos-detalle"><b>A quién afecta:</b> {{ p.afecta }}</p>
+			<p class="plazos-detalle">{{ p.nota }}</p>
+			<p class="plazos-fuente">Fuente: <a href="{{ p.fuente }}" rel="noopener">{{ p.fuente_nombre }}</a> · comprobado el {{ p.verificado | date: "%d/%m/%Y" }}</p>
+			{%- endif %}
+		</li>
+	{%- endfor %}
+	</ul>
+	<p class="plazos-vacio" id="plazosVacio" style="display:none;">Ahora mismo no hay ningún plazo con fecha confirmada. Preferimos no mostrar nada antes que mostrar una fecha dudosa.</p>
+</div>
+<style>
+	.plazos-lista { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--spacing-sm); }
+	.plazos-item { border: 1px solid var(--border-color); border-left: 4px solid var(--primary-color); border-radius: 6px; padding: 0.7rem 1rem; background: #fff; }
+	.plazos-item.plazos-urgente { border-left-color: var(--error-color); }
+	.plazos-cab { display: flex; flex-wrap: wrap; gap: 0.2rem 0.8rem; align-items: baseline; font-size: 0.85rem; color: #4a4a4a; }
+	.plazos-tipo { text-transform: uppercase; letter-spacing: 0.04em; font-size: 0.75rem; }
+	.plazos-fecha { font-weight: 700; color: var(--neutral-color); }
+	.plazos-urgente .plazos-faltan { color: #a52a2a; font-weight: 700; }
+	.plazos-titulo { margin: 0.2rem 0 0; font-weight: 600; }
+	.plazos-detalle { margin: 0.3rem 0 0; font-size: 0.9rem; }
+	.plazos-fuente { margin: 0.3rem 0 0; font-size: 0.8rem; color: #4a4a4a; }
+	.plazos-vacio { padding: var(--spacing-md); background: var(--heat-0); border-radius: 6px; }
+</style>
+<script>
+(function () {
+	const hoy = new Date(); hoy.setHours(0, 0, 0, 0);
+	let visibles = 0;
+	document.querySelectorAll('#plazosBloque .plazos-item').forEach(li => {
+		const [y, m, d] = li.dataset.fecha.split('-').map(Number);
+		const dias = Math.round((new Date(y, m - 1, d) - hoy) / 86400000);
+		if (dias < 0) { li.style.display = 'none'; return; }
+		visibles++;
+		const el = li.querySelector('[data-faltan]');
+		el.textContent = dias === 0 ? 'hoy' : dias === 1 ? 'mañana' : 'faltan ' + dias + ' días';
+		if (dias <= 14) li.classList.add('plazos-urgente');
+	});
+	if (!visibles) document.getElementById('plazosVacio').style.display = '';
+})();
+</script>

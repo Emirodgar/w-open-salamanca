@@ -1,0 +1,99 @@
+---
+layout: default
+title: Tus primeras dos semanas en Salamanca
+description: Guía para quien llega a Salamanca, sea estudiante o no, con qué hacer cada día y los datos de la ciudad para elegir barrio, centro de salud, transporte y sitios de estudio
+date: 13-11-2026
+folder: Educacion
+permalink: llegar-a-salamanca
+---
+
+    <section class="featured dataset" id="datos">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="section-title">{{ page.title }}</h1>
+                <p class="section-description">{{ page.description }}</p>
+            </div>
+
+			<div id="section-content">
+				<p>Salamanca recibe más de 30.000 universitarios cada curso, y también gente que llega por trabajo. Esta guía ordena lo que conviene resolver en las primeras dos semanas y enlaza, en cada paso, los datos de la ciudad que te ayudan a decidir. Marca lo que vayas haciendo: tu progreso se guarda solo en este navegador.</p>
+				<p class="ll-aviso">Los trámites dependen de tu situación y cambian con el tiempo. Donde la guía habla de un trámite, enlaza a la fuente oficial y no sustituye sus requisitos.</p>
+
+				<div class="ll-progreso" id="llProgreso" aria-live="polite"></div>
+
+				<h2>Antes de llegar</h2>
+				<ul class="ll-lista">
+					<li><label><input type="checkbox" data-paso="alojamiento"> <b>Cierra dónde vas a vivir.</b></label>
+						<p>El mercado va justo en septiembre. Hay 5.754 plazas en 43 residencias universitarias (2026), y el 87 % de las residencias son privadas: <a href="/estudiantes-residencias-universitarias-salamanca">estudiantes y residencias</a>. Para piso, la <a href="/precio-vivienda-alquiler">evolución del alquiler</a> te da una referencia (parte de sus datos no está verificada, y la página lo indica).</p></li>
+					<li><label><input type="checkbox" data-paso="barrio"> <b>Elige barrio.</b></label>
+						<p>Prueba el <a href="/barrio-ideal">buscador de barrio ideal</a>: cerca de la universidad, precio, transporte, centro de salud y más.</p></li>
+				</ul>
+
+				<h2>Primeros días</h2>
+				<ul class="ll-lista">
+					<li><label><input type="checkbox" data-paso="padron"> <b>Decide si te empadronas.</b></label>
+						<p>La ley obliga a inscribirse en el padrón del municipio donde se reside habitualmente. Muchos estudiantes pasan el curso aquí sin empadronarse (lo cuenta <a href="/poblacion-universitaria">población universitaria</a>), y la decisión depende de tu caso. Consulta requisitos, documentos y cita en el <a href="https://www.aytosalamanca.es" rel="noopener">Ayuntamiento de Salamanca</a>: esta guía no los verifica.</p></li>
+					<li><label><input type="checkbox" data-paso="salud"> <b>Localiza tu centro de salud.</b></label>
+						<p>La atención primaria se organiza por zonas básicas de salud, y el mapa de la capital cambió el 14 de agosto de 2026. Mira dónde está cada centro, su teléfono y su zona en <a href="/centros-salud-salamanca">centros de salud de Salamanca</a>. Los trámites sanitarios se hacen con Sacyl.</p></li>
+					<li><label><input type="checkbox" data-paso="bus"> <b>Aprende a moverte.</b></label>
+						<p>La ciudad tiene 15 líneas de autobús urbano: <a href="/mapa-lineas-autobus">mapa de líneas</a>. El carril bici suma unos 126,6 km (63,2 km en la ciudad) y SALenBICI tiene 50 bases, con una a menos de 300 m para el 81 % de los residentes: <a href="/red-ciclista">red ciclista y SALenBICI</a>. Si vas a tener coche, mira antes la <a href="/zona-bajas-emisiones-salamanca">zona de bajas emisiones</a>.</p></li>
+				</ul>
+
+				<h2>Primera semana</h2>
+				<ul class="ll-lista">
+					<li><label><input type="checkbox" data-paso="estudio"> <b>Encuentra dónde estudiar.</b></label>
+						<p>Hay 7 bibliotecas municipales y solo una abre por la tarde hasta las 21:00 y los sábados; ninguna abre en domingo. Mira cuál te queda cerca y su horario en <a href="/bibliotecas-municipales-salamanca">bibliotecas municipales</a>. También hay <a href="/puntos-wifi-salamanca">24 puntos wifi municipales</a>.</p></li>
+					<li><label><input type="checkbox" data-paso="reciclaje"> <b>Apunta dónde reciclar.</b></label>
+						<p>Hay 4 puntos limpios (Capuchinos, Chinchibarra, La Aldehuela y Zurguén), con horarios distintos: <a href="/puntos-limpios-salamanca">puntos limpios</a>. Más en <a href="/reciclaje-salamanca">reciclaje en Salamanca</a>.</p></li>
+					<li><label><input type="checkbox" data-paso="deporte"> <b>Busca tu sitio para hacer deporte.</b></label>
+						<p>El Ayuntamiento tiene siete piscinas municipales, pabellones y campos: <a href="/instalaciones-deportivas">instalaciones deportivas</a>.</p></li>
+				</ul>
+
+				<h2>Segunda semana</h2>
+				<ul class="ll-lista">
+					<li><label><input type="checkbox" data-paso="ciudad"> <b>Conoce la ciudad.</b></label>
+						<p>Los museos se concentran en el casco histórico: <a href="/museos-salamanca">museos de Salamanca</a>. Para planes de la semana, mira <a href="/actualidad">actualidad</a> y sus próximos eventos.</p></li>
+					<li><label><input type="checkbox" data-paso="plazos"> <b>Revisa los plazos que te afectan.</b></label>
+						<p>Impuestos municipales, trámites y elecciones están en <a href="/plazos-salamanca">plazos que importan</a>.</p></li>
+				</ul>
+
+				<p class="ll-aviso">¿Falta algo que te hubiera gustado saber al llegar? Escríbenos desde <a href="/contacto">contacto</a>.</p>
+			</div>
+
+			{% include categories.html %}
+        </div>
+    </section>
+
+	<style>
+		.ll-aviso { font-size: 0.9rem; color: #4a4a4a; background: var(--heat-0); padding: 0.6rem 0.9rem; border-radius: 6px; }
+		.ll-progreso { font-weight: 600; color: var(--primary-color); margin: var(--spacing-md) 0; }
+		.ll-lista { list-style: none; margin: 0 0 var(--spacing-md); padding: 0; display: grid; gap: var(--spacing-sm); }
+		.ll-lista li { border: 1px solid var(--border-color); border-radius: 6px; padding: 0.7rem 1rem; background: #fff; }
+		.ll-lista li.hecho { background: var(--heat-0); }
+		.ll-lista li.hecho label b { text-decoration: line-through; color: #4a4a4a; }
+		.ll-lista label { cursor: pointer; display: block; }
+		.ll-lista p { margin: 0.3rem 0 0 1.6rem; font-size: 0.95rem; }
+	</style>
+	<script>
+	(function () {
+		const KEY = 'llegada-pasos';
+		let hechos = {};
+		try { hechos = JSON.parse(localStorage.getItem(KEY)) || {}; } catch (e) {}
+		const cajas = document.querySelectorAll('input[data-paso]');
+		const prog = document.getElementById('llProgreso');
+		function pintar() {
+			let n = 0;
+			cajas.forEach(c => {
+				c.checked = !!hechos[c.dataset.paso];
+				c.closest('li').classList.toggle('hecho', c.checked);
+				if (c.checked) n++;
+			});
+			prog.textContent = n + ' de ' + cajas.length + ' pasos hechos';
+		}
+		cajas.forEach(c => c.addEventListener('change', () => {
+			hechos[c.dataset.paso] = c.checked;
+			try { localStorage.setItem(KEY, JSON.stringify(hechos)); } catch (e) {}
+			pintar();
+		}));
+		pintar();
+	})();
+	</script>

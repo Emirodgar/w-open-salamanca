@@ -1,0 +1,41 @@
+---
+layout: default
+title: Plazos que importan en Salamanca
+description: Fechas límite de impuestos municipales, trámites y elecciones en Salamanca, con la fuente y el día en que se comprobó cada una
+date: 13-11-2026
+folder: Hacienda Local
+permalink: plazos-salamanca
+---
+
+    <section class="featured dataset" id="datos">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="section-title">{{ page.title }}</h1>
+                <p class="section-description">{{ page.description }}</p>
+            </div>
+
+			<div id="section-content">
+				<p>Solo aparecen plazos con fecha comprobada en una fuente oficial. Cuando una fecha no se ha podido confirmar, no se publica. Última revisión: <b>{{ site.data.plazos.actualizado | date: "%d/%m/%Y" }}</b>. Los plazos vencidos desaparecen solos.</p>
+
+				{% include plazos.html completo=true %}
+
+				<h2>Plazos que se repiten cada año</h2>
+				<p>Estas reglas vienen de las ordenanzas fiscales y no dependen de una fecha concreta. Los periodos de cobro de cada año los anuncia OAGER, el organismo municipal de recaudación, y no hay fechas fijas publicadas que podamos garantizar.</p>
+				<table>
+					<thead><tr><th>Tributo</th><th>Plazo</th></tr></thead>
+					<tbody>
+						<tr><td>IBI</td><td>Se anuncia cada año en el calendario del contribuyente de OAGER</td></tr>
+						<tr><td>IVTM (vehículos)</td><td>Primer mes del ejercicio, según la ficha de impuestos del portal</td></tr>
+						<tr><td>Plusvalía municipal</td><td>30 días hábiles en transmisiones entre vivos; 6 meses en herencias</td></tr>
+						<tr><td>ICIO (obras)</td><td>Al conceder la licencia, por autoliquidación</td></tr>
+					</tbody>
+				</table>
+				<p style="font-size: 0.9em; color: #4a4a4a;">Tipos, bonificaciones y fuentes de cada impuesto están en <a href="/impuestos-municipales-salamanca">impuestos municipales de Salamanca</a>. Puedes estimar lo que pagarás con <a href="/tus-impuestos-ayuntamiento-salamanca">tus impuestos al Ayuntamiento</a>.</p>
+
+				<h2>¿Falta algún plazo?</h2>
+				<p>Si conoces una fecha límite que debería estar aquí (ayudas, matrículas, tasas, trámites), escríbenos desde <a href="/contacto">contacto</a> con el enlace a la fuente oficial. La añadimos cuando la comprobemos.</p>
+			</div>
+
+			{% include categories.html %}
+        </div>
+    </section>
