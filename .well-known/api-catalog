@@ -1,0 +1,17 @@
+{
+  "linkset": [
+    {
+      "anchor": "https://opensalamanca.es/datasets.json",
+      "service-desc": [
+        { "href": "https://opensalamanca.es/dataset-schema.xsd", "type": "application/xml" }
+      ],
+      "service-doc": [
+        { "href": "https://opensalamanca.es/metodologia", "type": "text/html" },
+        { "href": "https://opensalamanca.es/llms.txt", "type": "text/plain" }
+      ],
+      "status": [
+        { "href": "https://opensalamanca.es/sitemap.xml", "type": "application/xml" }
+      ]
+    }
+  ]
+}
