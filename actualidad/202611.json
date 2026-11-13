@@ -1,7 +1,7 @@
 {
   "mes": "2026-11",
   "titulo_mes": "Noviembre 2026",
-  "resumen_mes": "Noviembre ha estado marcado por el triste fallecimiento de Jesús Miguel, exjugador de Unionistas, y de Charo Diego, primera mujer presidenta de la Diputación. El mes ha visto la investidura de Antonio Guterres como Doctor Honoris Causa, el fallecimiento de Curro Sánchez en un accidente de tráfico y la celebración de la gala de los Premios Hosteleriasalamanca.es. La huelga general ha generado tensión, mientras que la Fiscalía ha acusado a una presa en Topas y Salamanca ha sido designada capital mundial del ajedrez juvenil.",
+  "resumen_mes": "Noviembre ha estado marcado por el triste fallecimiento de Jesús Miguel, exjugador de Unionistas, y de Charo Diego, primera mujer presidenta de la Diputación. El mes ha visto la investidura de Antonio Guterres como Doctor Honoris Causa, el fallecimiento de Curro Sánchez en un accidente de tráfico y la celebración de la gala de los Premios Hosteleriasalamanca.es. La huelga general ha generado tensión y la Fiscalía ha acusado a una presa en Topas. Además, Salamanca ha sido designada capital mundial del ajedrez juvenil y ha recuperado población tras siete años.",
   "hitos": [
     {
       "fecha": "2026-11-01",
@@ -36,14 +36,6 @@
       "destacado": false
     },
     {
-      "fecha": "2026-11-09",
-      "titulo": "Se celebra la gala de los Premios Hosteleriasalamanca.es 2026",
-      "categoria": "Sociedad",
-      "descripcion": "La gala de los Premios Hosteleriasalamanca.es 2026 se lleva a cabo, reconociendo a los profesionales del sector.",
-      "fuente": "https://www.lagacetadesalamanca.es/salamanca/gala-premios-hosteleriasalamancaes-2026-imagenes-20261109224641-ga.html",
-      "destacado": false
-    },
-    {
       "fecha": "2026-11-10",
       "titulo": "Fiscalía acusa a presa de Topas de estrangular a compañera de celda",
       "categoria": "Sucesos",
@@ -53,10 +45,10 @@
     },
     {
       "fecha": "2026-11-10",
-      "titulo": "Ciudad Rodrigo aprueba una rebaja del tipo impositivo del IBI",
-      "categoria": "Política",
-      "descripcion": "El Ayuntamiento de Ciudad Rodrigo aprueba una rebaja del tipo impositivo del Impuesto sobre Bienes Inmuebles (IBI).",
-      "fuente": "https://www.lagacetadesalamanca.es/provincia/ciudad-rodrigo-aprueba-rebaja-tipo-impositivo-ibi-20261110211956-nt.html",
+      "titulo": "Salamanca se convierte en capital mundial del ajedrez juvenil",
+      "categoria": "Deportes",
+      "descripcion": "Salamanca ha sido designada como capital mundial del ajedrez para jóvenes prodigios, acogiendo un evento de relevancia internacional.",
+      "fuente": "https://www.lagacetadesalamanca.es/deportes/salamanca-convierte-capital-mundial-ajedrez-jovenes-prodigios-20261110223703-nt.html",
       "destacado": false
     },
     {
@@ -66,6 +58,14 @@
       "descripcion": "La jornada de huelga general en Salamanca se salda con un seguimiento testimonial y algunos incidentes, incluyendo cargas policiales y manifestaciones.",
       "fuente": "https://www.lagacetadesalamanca.es/salamanca/huelga-general-salamanca-salda-seguimiento-testimonial-incidentes-20261111133650-nt.html",
       "destacado": true
+    },
+    {
+      "fecha": "2026-11-12",
+      "titulo": "Salamanca recupera población tras siete años",
+      "categoria": "Sociedad",
+      "descripcion": "La ciudad de Salamanca ha sumado habitantes, recuperando así población tras un periodo de siete años de descenso demográfico.",
+      "fuente": "https://www.lagacetadesalamanca.es/salamanca/salamanca-suma-habitantes-recupera-poblacion-siete-anos-20261112100822-nt.html",
+      "destacado": false
     }
   ]
 }

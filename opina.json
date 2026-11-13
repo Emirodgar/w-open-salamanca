@@ -111,18 +111,6 @@
       "fecha_creacion": "2026-10-07"
     },
     {
-      "id": "repunte-covid-2026",
-      "pregunta": "Ante el repunte del COVID-19 en Salamanca, superando los niveles de gripe, ¿cree que las autoridades deberían reforzar las medidas de prevención o información a la ciudadanía?",
-      "opciones": [
-        "Sí, es crucial actuar con antelación",
-        "No, la situación no requiere medidas adicionales",
-        "Solo si la presión hospitalaria aumenta",
-        "No tengo suficiente información"
-      ],
-      "basado_en": "actualidad.json",
-      "fecha_creacion": "2026-10-09"
-    },
-    {
       "id": "virus-shamonda-2026",
       "pregunta": "El sector agrario salmantino ha expresado preocupación por el avance del virus Shamonda. ¿Considera que las administraciones deben implementar medidas urgentes para proteger la producción local?",
       "opciones": [
@@ -364,36 +352,12 @@
       "fecha_creacion": "2026-10-24"
     },
     {
-      "id": "seguridad-restaurantes-salamanca-2026",
-      "pregunta": "Ante los recientes robos en el Restaurante Verssache y otros incidentes de seguridad en la capital, ¿cree que las autoridades deberían reforzar la vigilancia en zonas comerciales y de ocio de Salamanca?",
-      "opciones": [
-        "Sí, es crucial para la seguridad de negocios y clientes",
-        "No, son hechos aislados que no requieren medidas adicionales",
-        "Deberían ser los propios negocios quienes refuercen su seguridad",
-        "No tengo suficiente información"
-      ],
-      "basado_en": "actualidad.json",
-      "fecha_creacion": "2026-10-24"
-    },
-    {
       "id": "division-pisos-capital-2026",
       "pregunta": "Ante el debate sobre la división de grandes pisos en la capital salmantina, ¿cree que esta medida sería beneficiosa para el mercado de la vivienda?",
       "opciones": [
         "Sí, aumentaría la oferta y facilitaría el acceso.",
         "No, podría generar problemas de convivencia y saturación.",
         "Depende de la regulación y las zonas.",
-        "No tengo suficiente información."
-      ],
-      "basado_en": "actualidad.json",
-      "fecha_creacion": "2026-10-25"
-    },
-    {
-      "id": "seguridad-patinetes-menores-2026",
-      "pregunta": "Tras el lamentable accidente de patinete que ha generado luto en el fútbol base salmantino, ¿considera que deberían reforzarse las medidas de seguridad y regulación para el uso de patinetes por menores?",
-      "opciones": [
-        "Sí, es urgente proteger a los menores.",
-        "No, la responsabilidad recae en los padres y la educación.",
-        "Debería haber más campañas de concienciación, no solo regulación.",
         "No tengo suficiente información."
       ],
       "basado_en": "actualidad.json",
@@ -686,6 +650,30 @@
       ],
       "basado_en": "eventos.json",
       "fecha_creacion": "2026-11-12"
+    },
+    {
+      "id": "copa-rey-impacto-2026",
+      "pregunta": "La ciudad se prepara para recibir al Celta en la Copa del Rey, con gran expectación. ¿Cree que la celebración de partidos de este calibre beneficia la imagen deportiva y económica de Salamanca?",
+      "opciones": [
+        "Sí, impulsa el turismo y la visibilidad de la ciudad.",
+        "No, los beneficios son limitados y los costes elevados.",
+        "Depende de la repercusión mediática y el resultado deportivo.",
+        "No tengo suficiente información."
+      ],
+      "basado_en": "actualidad.json",
+      "fecha_creacion": "2026-11-13"
+    },
+    {
+      "id": "huelga-carnico-guijuelo-impacto-2026",
+      "pregunta": "La huelga en el sector cárnico de Guijuelo finaliza hoy, 13 de noviembre, tras varios días de movilizaciones. ¿Cree que estas acciones lograrán mejoras significativas en las condiciones laborales de los trabajadores?",
+      "opciones": [
+        "Sí, la presión sindical es efectiva para conseguir cambios.",
+        "No, el impacto será limitado y no se verán grandes mejoras.",
+        "Es incierto, dependerá de las negociaciones futuras.",
+        "No tengo suficiente información."
+      ],
+      "basado_en": "eventos.json",
+      "fecha_creacion": "2026-11-13"
     }
   ]
 }

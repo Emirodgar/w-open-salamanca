@@ -659,6 +659,62 @@
         "No, su relevancia es más bien local y limitada": 1
       },
       "total_votos": 5
+    },
+    {
+      "id": "repunte-covid-2026",
+      "pregunta": "Ante el repunte del COVID-19 en Salamanca, superando los niveles de gripe, ¿cree que las autoridades deberían reforzar las medidas de prevención o información a la ciudadanía?",
+      "opciones": [
+        "Sí, es crucial actuar con antelación",
+        "No, la situación no requiere medidas adicionales",
+        "Solo si la presión hospitalaria aumenta",
+        "No tengo suficiente información"
+      ],
+      "basado_en": "actualidad.json",
+      "fecha_creacion": "2026-10-09",
+      "fecha_archivado": "2026-11-13",
+      "resultados": {
+        "Sí, es crucial actuar con antelación": 3,
+        "Solo si la presión hospitalaria aumenta": 4,
+        "No, la situación no requiere medidas adicionales": 2
+      },
+      "total_votos": 9
+    },
+    {
+      "id": "seguridad-restaurantes-salamanca-2026",
+      "pregunta": "Ante los recientes robos en el Restaurante Verssache y otros incidentes de seguridad en la capital, ¿cree que las autoridades deberían reforzar la vigilancia en zonas comerciales y de ocio de Salamanca?",
+      "opciones": [
+        "Sí, es crucial para la seguridad de negocios y clientes",
+        "No, son hechos aislados que no requieren medidas adicionales",
+        "Deberían ser los propios negocios quienes refuercen su seguridad",
+        "No tengo suficiente información"
+      ],
+      "basado_en": "actualidad.json",
+      "fecha_creacion": "2026-10-24",
+      "fecha_archivado": "2026-11-13",
+      "resultados": {
+        "No, son hechos aislados que no requieren medidas adicionales": 2,
+        "Sí, es crucial para la seguridad de negocios y clientes": 1,
+        "Deberían ser los propios negocios quienes refuercen su seguridad": 1
+      },
+      "total_votos": 4
+    },
+    {
+      "id": "seguridad-patinetes-menores-2026",
+      "pregunta": "Tras el lamentable accidente de patinete que ha generado luto en el fútbol base salmantino, ¿considera que deberían reforzarse las medidas de seguridad y regulación para el uso de patinetes por menores?",
+      "opciones": [
+        "Sí, es urgente proteger a los menores.",
+        "No, la responsabilidad recae en los padres y la educación.",
+        "Debería haber más campañas de concienciación, no solo regulación.",
+        "No tengo suficiente información."
+      ],
+      "basado_en": "actualidad.json",
+      "fecha_creacion": "2026-10-25",
+      "fecha_archivado": "2026-11-13",
+      "resultados": {
+        "Sí, es urgente proteger a los menores.": 3,
+        "No, la responsabilidad recae en los padres y la educación.": 2
+      },
+      "total_votos": 5
     }
   ]
 }
