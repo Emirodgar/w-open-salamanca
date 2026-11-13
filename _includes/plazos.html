@@ -20,17 +20,19 @@
 	<p class="plazos-vacio" id="plazosVacio" style="display:none;">Ahora mismo no hay ningún plazo con fecha confirmada. Preferimos no mostrar nada antes que mostrar una fecha dudosa.</p>
 </div>
 <style>
-	.plazos-lista { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--spacing-sm); }
-	.plazos-item { border: 1px solid var(--border-color); border-left: 4px solid var(--primary-color); border-radius: 6px; padding: 0.7rem 1rem; background: #fff; }
-	.plazos-item.plazos-urgente { border-left-color: var(--error-color); }
-	.plazos-cab { display: flex; flex-wrap: wrap; gap: 0.2rem 0.8rem; align-items: baseline; font-size: 0.85rem; color: #4a4a4a; }
-	.plazos-tipo { text-transform: uppercase; letter-spacing: 0.04em; font-size: 0.75rem; }
-	.plazos-fecha { font-weight: 700; color: var(--neutral-color); }
-	.plazos-urgente .plazos-faltan { color: #a52a2a; font-weight: 700; }
-	.plazos-titulo { margin: 0.2rem 0 0; font-weight: 600; }
-	.plazos-detalle { margin: 0.3rem 0 0; font-size: 0.9rem; }
-	.plazos-fuente { margin: 0.3rem 0 0; font-size: 0.8rem; color: #4a4a4a; }
-	.plazos-vacio { padding: var(--spacing-md); background: var(--heat-0); border-radius: 6px; }
+	/* El sitio añade viñeta, sangría y márgenes a todos los ul/li/p: aquí se anulan */
+	.plazos .plazos-lista { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--spacing-sm); line-height: 1.4; }
+	.plazos .plazos-item { position: static; margin: 0; padding: 0.8rem 1rem; border: 1px solid var(--border-color); border-radius: 8px; background: #fff; }
+	.plazos .plazos-item::before { content: none; }
+	.plazos .plazos-item.plazos-urgente { border-color: var(--error-color); background: #fff8f7; }
+	.plazos .plazos-cab { display: flex; flex-wrap: wrap; gap: 0.2rem 0.8rem; align-items: baseline; font-size: 0.85rem; color: #4a4a4a; }
+	.plazos .plazos-tipo { text-transform: uppercase; letter-spacing: 0.04em; font-size: 0.75rem; }
+	.plazos .plazos-fecha { font-weight: 700; color: var(--neutral-color); }
+	.plazos .plazos-urgente .plazos-faltan { color: #a52a2a; font-weight: 700; }
+	#section-content .plazos p, .plazos p { margin: 0.35rem 0 0; line-height: 1.5; font-size: 0.9rem; color: var(--text-color); }
+	#section-content .plazos p.plazos-titulo, .plazos p.plazos-titulo { margin-top: 0.25rem; font-size: 1.05rem; font-weight: 600; }
+	#section-content .plazos p.plazos-fuente, .plazos p.plazos-fuente { font-size: 0.8rem; color: #4a4a4a; }
+	.plazos p.plazos-vacio { padding: var(--spacing-md); background: var(--heat-0); border-radius: 6px; }
 </style>
 <script>
 (function () {

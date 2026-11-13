@@ -92,7 +92,7 @@ dataset_files:
 		.bi-perfiles { display: flex; flex-wrap: wrap; gap: 0.4rem; align-items: center; margin-bottom: var(--spacing-md); }
 		.bi-perfiles-label { font-size: 0.9rem; color: #4a4a4a; }
 		.bi-chip { border: 1px solid var(--primary-color); background: #fff; color: var(--primary-color); border-radius: 999px; padding: 0.3rem 0.8rem; font-size: 0.85rem; cursor: pointer; font-family: inherit; }
-		.bi-chip:hover, .bi-chip.activo { background: var(--primary-color); color: #fff; }
+		.bi-chip:hover, .bi-chip.activo { background: #2C5F2D; color: #fff; }
 		.bi-chip-limpiar { border-color: var(--border-color); color: #595959; }
 		.bi-criterio { border: 0; padding: 0.55rem 0; border-bottom: 1px solid var(--border-color); }
 		.bi-criterio legend { font-weight: 600; font-size: 0.95rem; padding: 0; float: left; width: 100%; margin-bottom: 0.3rem; }
@@ -102,7 +102,7 @@ dataset_files:
 		.bi-seg label:last-child { border-right: 0; }
 		.bi-seg input { position: absolute; opacity: 0; pointer-events: none; }
 		.bi-seg input:checked + span { font-weight: 700; }
-		.bi-seg label:has(input:checked) { background: var(--primary-color); color: #fff; }
+		.bi-seg label:has(input:checked) { background: #2C5F2D; color: #fff; }
 		.bi-seg label:has(input:focus-visible) { outline: 2px solid var(--accent-color); outline-offset: -2px; }
 		.bi-aviso { font-size: 0.75rem; color: #7a4e00; }
 		.bi-vacio { padding: var(--spacing-lg); background: var(--heat-0); border-radius: 8px; color: #444; }
@@ -115,8 +115,12 @@ dataset_files:
 		.bi-card-pct { font-size: 1.3rem; font-weight: 700; color: var(--neutral-color); white-space: nowrap; }
 		.bi-barra { height: 6px; background: var(--heat-0); border-radius: 3px; margin: 0.4rem 0 0.5rem; overflow: hidden; }
 		.bi-barra span { display: block; height: 100%; background: var(--primary-color); }
-		.bi-razones { list-style: none; margin: 0; padding: 0; font-size: 0.85rem; display: grid; gap: 0.15rem; }
-		.bi-razones li::before { content: attr(data-marca); display: inline-block; width: 1.2em; font-weight: 700; }
+		/* El sitio añade viñeta, sangría y márgenes a todos los ul/li/p: aquí se anulan */
+		#section-content .bi-top { list-style: none; margin: 0; padding: 0; }
+		#section-content .bi-razones { list-style: none; margin: 0; padding: 0; font-size: 0.85rem; display: grid; gap: 0.15rem; line-height: 1.4; }
+		#section-content .bi-razones li { padding: 0; margin: 0; }
+		#section-content .bi-razones li::before { content: attr(data-marca); position: static; display: inline-block; width: 1.2em; font-weight: 700; }
+		#section-content p.bi-mas, #section-content div.bi-mas { margin: 0.4rem 0 0; line-height: 1.4; }
 		.bi-razones li[data-marca="✔"]::before { color: var(--success-color); }
 		.bi-razones li[data-marca="✖"]::before { color: var(--error-color); }
 		.bi-razones li[data-marca="•"]::before { color: #595959; }

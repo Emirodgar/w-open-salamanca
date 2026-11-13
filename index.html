@@ -61,6 +61,33 @@ description: Portal de datos abiertos y colaborativos de la ciudad de Salamanca.
         </div>
     </section>
 
+    <!-- Herramientas -->
+    <section class="eventos-highlight" id="herramientasHighlightSection">
+        <div class="container">
+            <div class="home-tools">
+                <a class="home-tool" href="/barrio-ideal">
+                    <span class="home-tool-eyebrow">Herramienta</span>
+                    <span class="home-tool-title">¿Qué barrio te encaja?</span>
+                    <span class="home-tool-text">Marca lo que te importa y ordena los barrios de Salamanca según su encaje.</span>
+                </a>
+                <a class="home-tool" href="/llegar-a-salamanca">
+                    <span class="home-tool-eyebrow">Guía</span>
+                    <span class="home-tool-title">Tus primeras dos semanas en Salamanca</span>
+                    <span class="home-tool-text">Lista de pasos para quien llega a la ciudad, con los datos para cada decisión.</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <style>
+        .home-tools { display: grid; grid-template-columns: 1fr; gap: var(--spacing-md); }
+        @media (min-width: 768px) { .home-tools { grid-template-columns: 1fr 1fr; } }
+        .home-tool { display: flex; flex-direction: column; gap: 0.35rem; padding: var(--spacing-lg); background: #fff; border: 1px solid var(--border-color); border-radius: 16px; box-shadow: var(--shadow-sm); text-decoration: none; color: var(--text-color); }
+        .home-tool:hover, .home-tool:focus-visible { border-color: var(--primary-color); }
+        .home-tool-eyebrow { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.04em; color: #4a4a4a; }
+        .home-tool-title { font-size: 1.15rem; font-weight: 600; color: var(--primary-color); }
+        .home-tool-text { font-size: 0.95rem; line-height: 1.5; }
+    </style>
+
     <!-- Plazos que importan -->
     <section class="eventos-highlight" id="plazosHighlightSection">
         <div class="container">

@@ -66,12 +66,14 @@ permalink: llegar-a-salamanca
 	<style>
 		.ll-aviso { font-size: 0.9rem; color: #4a4a4a; background: var(--heat-0); padding: 0.6rem 0.9rem; border-radius: 6px; }
 		.ll-progreso { font-weight: 600; color: var(--primary-color); margin: var(--spacing-md) 0; }
-		.ll-lista { list-style: none; margin: 0 0 var(--spacing-md); padding: 0; display: grid; gap: var(--spacing-sm); }
-		.ll-lista li { border: 1px solid var(--border-color); border-radius: 6px; padding: 0.7rem 1rem; background: #fff; }
-		.ll-lista li.hecho { background: var(--heat-0); }
+		/* El sitio añade viñeta, sangría y márgenes a todos los ul/li/p: aquí se anulan */
+		#section-content .ll-lista { list-style: none; margin: 0 0 var(--spacing-md); padding: 0; display: grid; gap: var(--spacing-sm); line-height: 1.5; }
+		#section-content .ll-lista li { position: static; margin: 0; padding: 0.8rem 1rem; border: 1px solid var(--border-color); border-radius: 8px; background: #fff; }
+		#section-content .ll-lista li::before { content: none; }
+		#section-content .ll-lista li.hecho { background: var(--heat-0); }
 		.ll-lista li.hecho label b { text-decoration: line-through; color: #4a4a4a; }
 		.ll-lista label { cursor: pointer; display: block; }
-		.ll-lista p { margin: 0.3rem 0 0 1.6rem; font-size: 0.95rem; }
+		#section-content .ll-lista p { margin: 0.3rem 0 0 1.6rem; font-size: 0.95rem; line-height: 1.5; }
 	</style>
 	<script>
 	(function () {
