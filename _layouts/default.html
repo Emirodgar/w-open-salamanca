@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {%- assign site_name = "Open Salamanca" -%}
     {%- assign site_desc_default = "Portal de datos abiertos y colaborativos de la ciudad de Salamanca. Explora, visualiza y contribuye con datos públicos." -%}
-    {%- assign canonical = page.url | replace: "/index.html", "/" | absolute_url -%}
+    {%- assign canonical = page.canonical_url | default: page.url | replace: "/index.html", "/" | absolute_url -%}
     {%- if page.description and page.description != "" -%}
         {%- assign meta_desc = page.description | strip_html | strip_newlines | strip -%}
     {%- else -%}
@@ -418,7 +418,7 @@
 
             <div class="footer-bottom">
                 <p>&copy; <span id="footerYear">2025</span> Open Salamanca. Proyecto creado por <a href="/autor">Emilio</a>.</p>
-                <p>Datos bajo licencia <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · <a href="/acerca-de">Acerca de</a> · <a href="/metodologia">Metodología</a> · <a href="/autor">Autor</a> · <a href="/contacto">Contacto</a> · <a href="/privacidad">Privacidad</a></p>
+                <p>Datos bajo licencia <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · <a href="/acerca-de">Acerca de</a> · <a href="/sobre-nosotros">Sobre nosotros</a> · <a href="/metodologia">Metodología</a> · <a href="/autor">Autor</a> · <a href="/contacto">Contacto</a> · <a href="/privacidad">Privacidad</a></p>
             </div>
         </div>
     </footer>
