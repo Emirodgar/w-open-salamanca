@@ -1,7 +1,7 @@
 {
   "mes": "2026-11",
   "titulo_mes": "Noviembre 2026",
-  "resumen_mes": "Noviembre ha estado marcado por el triste fallecimiento de Jesús Miguel, exjugador de Unionistas, y de Charo Diego, primera mujer presidenta de la Diputación. El mes ha visto la investidura de Antonio Guterres como Doctor Honoris Causa, el fallecimiento de Curro Sánchez en un accidente de tráfico y la celebración de la gala de los Premios Hosteleriasalamanca.es. La huelga general ha generado tensión y la Fiscalía ha acusado a una presa en Topas. Además, Salamanca ha sido designada capital mundial del ajedrez juvenil y ha recuperado población tras siete años.",
+  "resumen_mes": "Noviembre ha estado marcado por el triste fallecimiento de Jesús Miguel, exjugador de Unionistas, y de Charo Diego, primera mujer presidenta de la Diputación. El mes ha visto la investidura de Antonio Guterres como Doctor Honoris Causa, el fallecimiento de Curro Sánchez en un accidente de tráfico y la celebración de la gala de los Premios Hosteleriasalamanca.es. La huelga general ha generado tensión, y la ciudad ha recuperado población. Además, el Salamanca UDS se enfrentó al Celta de Vigo en la Copa del Rey, y las campañas electorales arrancaron en la provincia.",
   "hitos": [
     {
       "fecha": "2026-11-01",
@@ -36,22 +36,6 @@
       "destacado": false
     },
     {
-      "fecha": "2026-11-10",
-      "titulo": "Fiscalía acusa a presa de Topas de estrangular a compañera de celda",
-      "categoria": "Sucesos",
-      "descripcion": "La Fiscalía ha acusado a una presa del centro penitenciario de Topas de estrangular a una compañera de celda, un caso que ha llegado a la Audiencia Provincial.",
-      "fuente": "https://www.lagacetadesalamanca.es/sucesos/fiscalia-acusa-presa-topas-estrangular-companera-celda-20261110060000-nt.html",
-      "destacado": false
-    },
-    {
-      "fecha": "2026-11-10",
-      "titulo": "Salamanca se convierte en capital mundial del ajedrez juvenil",
-      "categoria": "Deportes",
-      "descripcion": "Salamanca ha sido designada como capital mundial del ajedrez para jóvenes prodigios, acogiendo un evento de relevancia internacional.",
-      "fuente": "https://www.lagacetadesalamanca.es/deportes/salamanca-convierte-capital-mundial-ajedrez-jovenes-prodigios-20261110223703-nt.html",
-      "destacado": false
-    },
-    {
       "fecha": "2026-11-11",
       "titulo": "La huelga general en Salamanca registra seguimiento testimonial e incidentes",
       "categoria": "Sociedad",
@@ -65,6 +49,22 @@
       "categoria": "Sociedad",
       "descripcion": "La ciudad de Salamanca ha sumado habitantes, recuperando así población tras un periodo de siete años de descenso demográfico.",
       "fuente": "https://www.lagacetadesalamanca.es/salamanca/salamanca-suma-habitantes-recupera-poblacion-siete-anos-20261112100822-nt.html",
+      "destacado": false
+    },
+    {
+      "fecha": "2026-11-13",
+      "titulo": "Salamanca UDS se enfrenta al Celta de Vigo en la Copa del Rey",
+      "categoria": "Deportes",
+      "descripcion": "El Salamanca UDS se midió al Celta de Vigo en un emocionante partido de Copa del Rey en el Helmántico, generando gran expectación en la ciudad.",
+      "fuente": "https://www.lagacetadesalamanca.es/deportes/futbol-local/salamancauds/salamanca-revive-pesadilla-celta-20261113225143-nt.html",
+      "destacado": false
+    },
+    {
+      "fecha": "2026-11-13",
+      "titulo": "Inicio de campañas electorales en la provincia",
+      "categoria": "Política",
+      "descripcion": "Diversos partidos políticos arrancaron sus campañas electorales en localidades de la provincia como Ciudad Rodrigo, Béjar y Peñaranda.",
+      "fuente": "https://www.lagacetadesalamanca.es/provincia/psoe-ciudad-rodrigo-arranca-campana-electoral-20261113201841-ga.html",
       "destacado": false
     }
   ]

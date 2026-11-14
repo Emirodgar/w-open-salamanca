@@ -674,6 +674,30 @@
       ],
       "basado_en": "eventos.json",
       "fecha_creacion": "2026-11-13"
+    },
+    {
+      "id": "cine-penaranda-2026",
+      "pregunta": "Peñaranda de Bracamonte ha impulsado un nuevo convenio para garantizar la pervivencia del cine. ¿Considera que la inversión municipal en la continuidad de servicios culturales como el cine es una prioridad para los pueblos de la provincia?",
+      "opciones": [
+        "Sí, es esencial para la vida cultural y el ocio local.",
+        "No, hay otras prioridades más urgentes para los vecinos.",
+        "Es importante, pero debería autofinanciarse.",
+        "No tengo suficiente información."
+      ],
+      "basado_en": "eventos.json",
+      "fecha_creacion": "2026-11-14"
+    },
+    {
+      "id": "huelga-general-efectividad-2026",
+      "pregunta": "La huelga general del 11 de noviembre en Salamanca tuvo un seguimiento testimonial y se registraron incidentes. ¿Considera que este tipo de movilizaciones son efectivas para lograr cambios sociales o laborales en la ciudad?",
+      "opciones": [
+        "Sí, son necesarias para visibilizar demandas.",
+        "No, su impacto es limitado y generan inconvenientes.",
+        "Depende del apoyo ciudadano y la organización.",
+        "No tengo suficiente información."
+      ],
+      "basado_en": "actualidad.json",
+      "fecha_creacion": "2026-11-14"
     }
   ]
 }
