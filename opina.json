@@ -698,6 +698,30 @@
       ],
       "basado_en": "actualidad.json",
       "fecha_creacion": "2026-11-14"
+    },
+    {
+      "id": "villa-navidena-santa-marta-2026",
+      "pregunta": "Santa Marta de Tormes se transformará por sexto año consecutivo en una Villa Navideña, incluyendo la 'Isla de la Navidad'. ¿Cree que esta iniciativa es un atractivo clave para el turismo y el ambiente festivo en la provincia?",
+      "opciones": [
+        "Sí, atrae a muchos visitantes y crea un gran ambiente.",
+        "No, su impacto es local y limitado.",
+        "Es un buen complemento, pero no un motor turístico principal.",
+        "No tengo suficiente información."
+      ],
+      "basado_en": "eventos.json",
+      "fecha_creacion": "2026-11-15"
+    },
+    {
+      "id": "campanas-electorales-provincia-2026",
+      "pregunta": "Con el arranque de las campañas electorales en diversas localidades de la provincia, ¿considera que estas movilizaciones tempranas son efectivas para captar el interés de la ciudadanía de cara a las próximas elecciones?",
+      "opciones": [
+        "Sí, son cruciales para informar y movilizar al electorado.",
+        "No, la mayoría de la gente decide más cerca de las elecciones.",
+        "Generan algo de interés, pero no son decisivas.",
+        "No tengo suficiente información."
+      ],
+      "basado_en": "actualidad.json",
+      "fecha_creacion": "2026-11-15"
     }
   ]
 }

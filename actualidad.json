@@ -1,9 +1,9 @@
 {
   "url_base": "https://www.lagacetadesalamanca.es",
-  "generado_en": "2026-11-14T05:46:02+00:00",
+  "generado_en": "2026-11-15T05:46:04+00:00",
   "periodo_cubierto": {
-    "desde": "2026-11-11",
-    "hasta": "2026-11-14"
+    "desde": "2026-11-12",
+    "hasta": "2026-11-15"
   },
   "total_urls_analizadas": 205,
   "secciones_excluidas": [
@@ -17,26 +17,26 @@
   "por_seccion": [
     [
       "salamanca",
-      72
+      66
     ],
     [
       "provincia",
-      56
+      57
     ],
     [
       "deportes",
-      44
+      50
     ],
     [
       "sucesos",
-      17
-    ],
-    [
-      "campo",
-      7
+      18
     ],
     [
       "toros",
+      5
+    ],
+    [
+      "campo",
       4
     ],
     [
@@ -55,50 +55,45 @@
   "por_subseccion": [
     [
       "deportes/futbol-local",
-      30
+      34
     ],
     [
       "deportes/deporte-base",
-      4
+      3
+    ],
+    [
+      "deportes/baloncesto-local",
+      2
+    ],
+    [
+      "deportes/carreras-populares",
+      1
     ]
   ],
   "por_tipo_contenido": [
     [
       "noticia",
-      186
+      181
     ],
     [
       "galería",
-      18
+      22
     ],
     [
       "directo / en vivo",
-      1
+      2
     ]
   ],
   "heatmap_calendario": [
     {
-      "fecha": "2026-11-11",
-      "total": 54,
-      "salamanca": 22,
-      "provincia": 17,
-      "deportes": 7,
-      "sucesos": 5,
-      "campo": 2,
-      "toros": 0,
-      "encuestas": 1,
-      "virales": 0,
-      "internacional": 0
-    },
-    {
       "fecha": "2026-11-12",
-      "total": 65,
-      "salamanca": 24,
-      "provincia": 12,
-      "deportes": 13,
-      "sucesos": 9,
-      "campo": 3,
+      "total": 57,
+      "salamanca": 20,
+      "provincia": 11,
+      "deportes": 12,
+      "sucesos": 8,
       "toros": 3,
+      "campo": 2,
       "encuestas": 1,
       "virales": 0,
       "internacional": 0
@@ -110,21 +105,34 @@
       "provincia": 27,
       "deportes": 24,
       "sucesos": 3,
-      "campo": 1,
       "toros": 1,
+      "campo": 1,
       "encuestas": 1,
       "virales": 1,
       "internacional": 1
     },
     {
       "fecha": "2026-11-14",
-      "total": 6,
-      "salamanca": 5,
+      "total": 59,
+      "salamanca": 16,
+      "provincia": 19,
+      "deportes": 14,
+      "sucesos": 7,
+      "toros": 1,
+      "campo": 1,
+      "encuestas": 1,
+      "virales": 0,
+      "internacional": 0
+    },
+    {
+      "fecha": "2026-11-15",
+      "total": 9,
+      "salamanca": 9,
       "provincia": 0,
       "deportes": 0,
       "sucesos": 0,
-      "campo": 1,
       "toros": 0,
+      "campo": 0,
       "encuestas": 0,
       "virales": 0,
       "internacional": 0
@@ -132,39 +140,47 @@
   ],
   "conceptos_destacados": [
     {
+      "concepto": "Ciudad Rodrigo",
+      "piezas": 10,
+      "seccion_principal": "provincia",
+      "desde": "2026-11-12",
+      "hasta": "2026-11-14",
+      "ejemplos_redactados": [
+        "Los partidos políticos, como PSOE y PP, han intensificado sus campañas electorales en Ciudad Rodrigo, buscando movilizar el voto ciudadano. La localidad también ha sido escenario de eventos culturales.",
+        "Ciudad Rodrigo se prepara para celebrar el centenario de la primera llegada de los Reyes Magos y apuesta por la Navidad como motor turístico."
+      ]
+    },
+    {
       "concepto": "Helmantico",
       "piezas": 7,
       "seccion_principal": "deportes",
       "desde": "2026-11-13",
       "hasta": "2026-11-13",
       "ejemplos_redactados": [
-        "El estadio Helmántico vivió un gran ambiente en sus gradas durante el encuentro.",
-        "La llegada del Celta de Vigo a Salamanca y su recibimiento en el Helmántico generaron expectación.",
-        "La Copa del Rey dejó los corazones divididos en el Helmántico tras el partido."
+        "El estadio Helmántico ha vivido un ambiente destacado, especialmente durante el partido de Copa del Rey, que generó expectación y ovaciones para jugadores como Iago Aspas.",
+        "El encuentro de Copa del Rey en el Helmántico dejó corazones divididos entre los aficionados."
       ]
     },
     {
-      "concepto": "Ciudad Rodrigo",
+      "concepto": "Unionistas",
+      "piezas": 6,
+      "seccion_principal": "deportes",
+      "desde": "2026-11-13",
+      "hasta": "2026-11-14",
+      "ejemplos_redactados": [
+        "Unionistas de Salamanca se prepara para partidos clave, enfrentándose a desafíos en la liga y buscando mantener su racha de victorias.",
+        "El equipo de Unionistas ha logrado un segundo triunfo consecutivo en las Pistas, aunque también ha sufrido una derrota ante el Coria."
+      ]
+    },
+    {
+      "concepto": "Guijuelo",
       "piezas": 6,
       "seccion_principal": "provincia",
       "desde": "2026-11-12",
-      "hasta": "2026-11-13",
+      "hasta": "2026-11-14",
       "ejemplos_redactados": [
-        "Ciudad Rodrigo impulsa una campaña para prevenir la violencia de género.",
-        "El PSOE de Ciudad Rodrigo arrancó su campaña electoral en la localidad.",
-        "Ciudad Rodrigo apuesta por la Navidad como punta de lanza para el turismo local."
-      ]
-    },
-    {
-      "concepto": "Navidad",
-      "piezas": 6,
-      "seccion_principal": "provincia",
-      "desde": "2026-11-11",
-      "hasta": "2026-11-13",
-      "ejemplos_redactados": [
-        "Santa Marta contará con una villa navideña que incluirá una isla de Navidad.",
-        "Salamanca busca conquistar al turista con su propuesta de Navidad europea.",
-        "Ciudad Rodrigo enfoca la Navidad como un motor para el turismo."
+        "Guijuelo ha mostrado su compromiso en la lucha contra el cáncer, mientras su equipo de fútbol disputa encuentros importantes y los partidos políticos realizan actos de campaña.",
+        "La localidad acoge ferias de negocio y prepara su XII Concurso Solidario de Adornos Navideños."
       ]
     },
     {
@@ -174,60 +190,44 @@
       "desde": "2026-11-12",
       "hasta": "2026-11-13",
       "ejemplos_redactados": [
-        "Iago Aspas desató la locura a su llegada con el Celta a Salamanca.",
-        "El jugador tuvo un detallazo con María, una aficionada del Celta en silla de ruedas.",
-        "Una sonora ovación recibió a Iago Aspas en su regreso al Helmántico."
+        "La llegada de Iago Aspas a Salamanca con el Celta desató la euforia, recibiendo una sonora ovación en el Helmántico y mostrando gestos de cercanía con la afición.",
+        "El jugador Muniain deshizo en elogios hacia Iago Aspas, destacando su impacto en el Celta."
       ]
     },
     {
-      "concepto": "Huelga General",
-      "piezas": 5,
-      "seccion_principal": "salamanca",
-      "desde": "2026-11-11",
-      "hasta": "2026-11-11",
-      "ejemplos_redactados": [
-        "La huelga general en Salamanca se saldó con un seguimiento testimonial e incidentes.",
-        "La Plaza Mayor concentró a manifestantes durante la jornada de huelga general.",
-        "Se registraron imágenes de la manifestación durante la huelga general en Salamanca."
-      ]
-    },
-    {
-      "concepto": "Universidad",
-      "piezas": 5,
-      "seccion_principal": "salamanca",
-      "desde": "2026-11-11",
-      "hasta": "2026-11-13",
-      "ejemplos_redactados": [
-        "La Universidad de Salamanca descubre recursos en el medio rural.",
-        "Se firma un nuevo convenio entre México y la Universidad de Salamanca.",
-        "La Universidad acercará los secretos del cerebro a colegios y pueblos."
-      ]
-    },
-    {
-      "concepto": "PSOE",
+      "concepto": "Navidad",
       "piezas": 5,
       "seccion_principal": "salamanca",
       "desde": "2026-11-12",
-      "hasta": "2026-11-13",
+      "hasta": "2026-11-14",
       "ejemplos_redactados": [
-        "El PSOE de Ciudad Rodrigo arrancó su campaña electoral.",
-        "El PSOE de Béjar inició su campaña en la Plaza Mayor.",
-        "El PSOE apela a concentrar el voto progresista para evitar que gobierne la derecha."
+        "La ciudad de Salamanca y municipios como Santa Marta se preparan para la Navidad con iniciativas que buscan atraer al turismo y adornar las calles.",
+        "El Corte Inglés anuncia actividades para llenar Salamanca de Papá Noeles y elfos."
       ]
     },
     {
       "concepto": "Peñaranda",
       "piezas": 5,
       "seccion_principal": "provincia",
-      "desde": "2026-11-11",
-      "hasta": "2026-11-13",
+      "desde": "2026-11-12",
+      "hasta": "2026-11-14",
       "ejemplos_redactados": [
-        "Peñaranda inició su campaña electoral para las elecciones nacionales de forma tradicional.",
-        "Estudiantes de Peñaranda conocen las claves de la criminología.",
-        "Se vive un ambiente de suspense en Peñaranda."
+        "Peñaranda de Bracamonte ha sido foco de actividad cultural con un festival de novela negra y ha acogido el inicio de campañas electorales, además de jornadas educativas para estudiantes.",
+        "Un espectacular vuelco de un tráiler en la CL-610 ha sido registrado cerca de Peñaranda."
+      ]
+    },
+    {
+      "concepto": "Campañas Electorales",
+      "piezas": 4,
+      "seccion_principal": "provincia",
+      "desde": "2026-11-13",
+      "hasta": "2026-11-14",
+      "ejemplos_redactados": [
+        "La provincia ha visto el inicio de diversas campañas electorales, con actos de partidos como el PSOE y el PP en Béjar, Guijuelo y Ciudad Rodrigo, marcando el pulso político.",
+        "En Peñaranda también se ha dado inicio a la campaña electoral para las elecciones nacionales."
       ]
     }
   ],
-  "resumen_borrador": "Se han publicado 205 noticias entre el 2026-11-11 y el 2026-11-14. La actividad se ha concentrado sobre todo en salamanca (72 piezas), provincia (56 piezas), deportes (44 piezas).\n\nLos conceptos con más piezas relacionadas son: Helmantico; Ciudad · Rodrigo; Navidad; Iago · Aspas. Revisa 'evidencia' de cada concepto para redactar el resumen final.",
-  "resumen": "La actividad en Salamanca y su provincia entre el 11 y el 14 de noviembre de 2026 ha estado marcada por diversos acontecimientos, desde la disputa de un importante partido de Copa del Rey hasta el inicio de las campañas electorales y una huelga general. El 11 de noviembre, la ciudad vivió una jornada de huelga general que se saldó con un seguimiento testimonial y algunos incidentes, incluyendo cargas policiales y manifestaciones en la Plaza Mayor. Las intensas lluvias también trastocaron los planes de la ciudad y causaron crecidas en el Tormes, que posteriormente recuperó su nivel.\n\nEn el ámbito deportivo, el 13 de noviembre, el Salamanca UDS se enfrentó al Celta de Vigo en la Copa del Rey, un evento que generó gran expectación y un notable ambiente en el Helmántico, con la llegada de Iago Aspas desatando la locura entre los aficionados. Paralelamente, la provincia ha sido escenario del arranque de las campañas electorales en diversas localidades como Ciudad Rodrigo, Béjar y Peñaranda, con los partidos presentando sus propuestas. En el plano económico, Salamanca se situó a la cabeza de España en una nueva escalada de precios.\n\nOtros titulares destacables incluyen la recuperación de población en Salamanca tras siete años, la disolución de un botellón con cientos de estudiantes en San Blas, y diversas iniciativas municipales y universitarias. Entre ellas, Ciudad Rodrigo impulsó una campaña para prevenir la violencia de género, y la Universidad de Salamanca firmó un nuevo convenio con México y exploró recursos en el medio rural. La proximidad de la Navidad también comenzó a notarse con diversas iniciativas y preparativos en la capital y en municipios como Santa Marta."
+  "resumen_borrador": "Se han publicado 205 noticias entre el 2026-11-12 y el 2026-11-15. La actividad se ha concentrado sobre todo en salamanca (66 piezas), provincia (57 piezas), deportes (50 piezas).\n\nLos conceptos con más piezas relacionadas son: Ciudad · Rodrigo; Helmantico; Unionistas; Guijuelo. Revisa 'evidencia' de cada concepto para redactar el resumen final.",
+  "resumen": "La actualidad salmantina de los últimos días ha estado marcada por el ámbito deportivo y político. El estadio Helmántico fue el escenario del encuentro de Copa del Rey entre el Salamanca UDS y el Celta de Vigo, un evento que generó gran expectación y la presencia destacada del jugador Iago Aspas. En paralelo, diversas localidades de la provincia como Ciudad Rodrigo, Peñaranda, Béjar y Guijuelo han visto el arranque de las campañas electorales, con los partidos políticos intensificando sus actividades y mensajes a la ciudadanía. Algunas encuestas sugieren movimientos en el reparto de escaños. Además, el Magistral de Ajedrez de Salamanca ha llegado a su fin. La provincia también ha sido escenario de diversas actividades culturales y sociales, como el festival de novela negra en Peñaranda o las iniciativas navideñas en Santa Marta y Guijuelo. En el plano local, se han abordado cuestiones de salud pública, como las esperas para citas con especialistas, y se han llevado a cabo mejoras urbanísticas en municipios como Santa Marta y Carbajosa. La preparación para la temporada navideña ya se vislumbra en Salamanca y su provincia, con iniciativas para el turismo y adornos festivos. Otros eventos culturales y educativos han tenido lugar en Peñaranda y Alba de Tormes. La crónica de sucesos ha recogido varios accidentes de tráfico, incluyendo el vuelco de un turismo en Narros de Matalayegua y una colisión en cadena en la A-50. También se han reportado incidentes como un atropello a un peatón en Salamanca y operaciones policiales contra el tráfico de drogas y asaltos a viviendas. El cierre de un convento de clausura en Salamanca también ha sido noticia."
 }
