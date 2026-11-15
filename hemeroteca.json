@@ -1,7 +1,7 @@
 {
-  "generado_en": "2026-11-14T23:55:22.858Z",
+  "generado_en": "2026-11-15T06:33:44.029Z",
   "dias_ventana": 20,
-  "total": 3650,
+  "total": 3653,
   "medios": [
     "Tribuna Salamanca",
     "Salamanca24Horas",
@@ -9,6 +9,139 @@
     "Salamancahoy"
   ],
   "noticias": [
+    {
+      "url": "https://www.salamanca24horas.com/cultura/ecologistas-accion-invita-repensar-salud-cuidados-ecofeminismo-casa-conchas",
+      "titulo": "Ecologistas en Acción invita a repensar la salud y los cuidados desde el ecofeminismo en la Casa de las Conchas",
+      "medio": "Salamanca24Horas",
+      "fecha": "2026-11-15",
+      "fecha_hora": "2026-11-15T06:30:00.000Z"
+    },
+    {
+      "url": "https://www.salamanca24horas.com/campo/castilla-leon-lidera-produccion-nacional-trucha-arcoiris-diversifica-acuicultura",
+      "titulo": "Castilla y León lidera la producción nacional de trucha arcoíris y diversifica su acuicultura",
+      "medio": "Salamanca24Horas",
+      "fecha": "2026-11-15",
+      "fecha_hora": "2026-11-15T06:15:00.000Z"
+    },
+    {
+      "url": "https://www.salamanca24horas.com/castilla-y-leon/apenas-200-menores-26-anos-emprendieron-castilla-leon-ano-mientras-45-empresarios-supera-55",
+      "titulo": "Apenas 200 menores de 26 años emprendieron en Castilla y León en un año, mientras el 45% de los empresarios supera ya los 55",
+      "medio": "Salamanca24Horas",
+      "fecha": "2026-11-15",
+      "fecha_hora": "2026-11-15T06:15:00.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/salamanca/sucia-huella-11n-20261114071200-nt.html",
+      "titulo": "La sucia huella del 11-N",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-11-15",
+      "fecha_hora": "2026-11-15T06:12:00.000Z"
+    },
+    {
+      "url": "https://www.salamanca24horas.com/local/salamanca-arranca-nueva-edicion-educar-familia-apoyar-crianza-menores",
+      "titulo": "Salamanca arranca una nueva edición de 'Educar en Familia' para apoyar la crianza de menores",
+      "medio": "Salamanca24Horas",
+      "fecha": "2026-11-15",
+      "fecha_hora": "2026-11-15T06:10:00.000Z"
+    },
+    {
+      "url": "https://www.salamanca24horas.com/local/salamanca-inicia-proxima-semana-campana-anual-poda-conservar-arbolado-urbano",
+      "titulo": "Salamanca inicia la próxima semana su campaña anual de poda para conservar el arbolado urbano",
+      "medio": "Salamanca24Horas",
+      "fecha": "2026-11-15",
+      "fecha_hora": "2026-11-15T06:05:00.000Z"
+    },
+    {
+      "url": "https://www.salamanca24horas.com/deportes/nuevo-record-deportivo-mundial-salamanca-en-primeras-nueve-horas-companero-perdio-cuatro-kilos",
+      "titulo": "Nuevo récord deportivo mundial en Salamanca: “En las primeras nueve horas mi compañero perdió cuatro kilos”",
+      "medio": "Salamanca24Horas",
+      "fecha": "2026-11-15",
+      "fecha_hora": "2026-11-15T06:00:00.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/sucesos/paga-euros-paquete-salamanca-descubre-engano-abrir-20261114061500-nt.html",
+      "titulo": "Paga 60 euros por un paquete en Salamanca y descubre el engaño al abrir la caja",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-11-15",
+      "fecha_hora": "2026-11-15T05:15:00.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/salamanca/falta-personal-agrava-esperas-tener-cita-especialista-20261113060000-nt.html",
+      "titulo": "La falta de personal agrava las esperas para tener una cita con el especialista",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-11-15",
+      "fecha_hora": "2026-11-15T05:00:12.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/opinion/humor/garcia-moran-vineta-moran-20261114060000-nt.html",
+      "titulo": "La viñeta de Morán",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-11-15",
+      "fecha_hora": "2026-11-15T05:00:07.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/salamanca/baldosas-levantadas-rotas-plena-gran-via-20261114055700-nt.html",
+      "titulo": "Baldosas levantadas y rotas en plena Gran Vía",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-11-15",
+      "fecha_hora": "2026-11-15T04:57:01.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/salamanca/atencion-primaria-hospital-deben-dejar-trabajar-espaldas-20261113055500-nt.html",
+      "titulo": "«Atención Primaria y el Hospital deben dejar de trabajar de espaldas»",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-11-15",
+      "fecha_hora": "2026-11-15T04:55:00.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/salamanca/recursos-facilidad-cancelar-citas-peticiones-ante-demoras-20261113055000-nt.html",
+      "titulo": "Más recursos y facilidad para cancelar citas, las peticiones ante las demoras sanitarias",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-11-15",
+      "fecha_hora": "2026-11-15T04:50:01.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/salamanca/gestion-inteligente-agua-permite-anticiparse-fugas-mejorar-20261113050000-nt.html",
+      "titulo": "La gestión inteligente del agua permite anticiparse a las fugas y mejorar la eficiencia de la red en Salamanca",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-11-15",
+      "fecha_hora": "2026-11-15T04:00:23.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/salamanca/residencia-vida-comparte-generaciones-20261112050000-nt.html",
+      "titulo": "Una residencia donde la vida se comparte entre generaciones",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-11-15",
+      "fecha_hora": "2026-11-15T04:00:19.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/salamanca/campo-ganaderia-protagonizan-concurso-dibujo-gaceta-20261112050000-nt.html",
+      "titulo": "El campo y la ganadería protagonizan el Concurso de Dibujo de LA GACETA",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-11-15",
+      "fecha_hora": "2026-11-15T04:00:11.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/salamanca/tiempo-actividad-manera-cuidarte-20261112050000-nt.html",
+      "titulo": "Tu tiempo, tu actividad, tu manera de cuidarte",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-11-15",
+      "fecha_hora": "2026-11-15T04:00:08.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/salamanca/terrazas-parador-viviendas-diseno-comodidades-servicios-20261111050000-nt.html",
+      "titulo": "Terrazas del Parador, viviendas de diseño con todas las comodidades y servicios",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-11-15",
+      "fecha_hora": "2026-11-15T04:00:05.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/salamanca/cinco-siglos-despues-iberoamerica-sigue-eligiendo-salamanca-20261112050000-nt.html",
+      "titulo": "Cinco siglos después, Iberoamérica sigue eligiendo Salamanca",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-11-15",
+      "fecha_hora": "2026-11-15T04:00:02.000Z"
+    },
     {
       "url": "https://www.tribunasalamanca.com/noticias/466597/vallejo-vuelve-a-reinar-salamanca-presencia-el-regreso-triunfal-del-gran-maestro-espanol",
       "titulo": "Vallejo vuelve a reinar: Salamanca presencia el regreso triunfal del gran maestro español",
@@ -25418,118 +25551,6 @@
       "medio": "La Gaceta de Salamanca",
       "fecha": "2026-10-26",
       "fecha_hora": "2026-10-26T06:42:12.000Z"
-    },
-    {
-      "url": "https://www.salamanca24horas.com/local/dinamiza-joven-abre-este-lunes-inscripciones-actividades-noviembre-salamanca",
-      "titulo": "Dinamiza Joven abre este lunes las inscripciones para sus actividades de noviembre en Salamanca",
-      "medio": "Salamanca24Horas",
-      "fecha": "2026-10-26",
-      "fecha_hora": "2026-10-26T06:20:00.000Z"
-    },
-    {
-      "url": "https://www.salamanca24horas.com/provincia/ciudad-rodrigo/monsagro-da-nuevo-paso-recuperacion-montes-quemados-plantacion-400-arboles-e-inicia-inventario-castanos-centenarios",
-      "titulo": "Monsagro da un nuevo paso en la recuperación de sus montes quemados con la plantación de 400 árboles e inicia el inventario de sus castaños centenarios",
-      "medio": "Salamanca24Horas",
-      "fecha": "2026-10-26",
-      "fecha_hora": "2026-10-26T06:15:00.000Z"
-    },
-    {
-      "url": "https://www.salamanca24horas.com/local/fechas-clave-saber-si-ha-tocado-mesa-electoral-29-n",
-      "titulo": "Las fechas clave para saber si te ha tocado mesa electoral el 29N",
-      "medio": "Salamanca24Horas",
-      "fecha": "2026-10-26",
-      "fecha_hora": "2026-10-26T06:10:00.000Z"
-    },
-    {
-      "url": "https://www.salamanca24horas.com/castilla-y-leon/centros-escolares-castilla-leon-registran-1-500-incidencias-robos-destrozos-ultimo-curso",
-      "titulo": "Los centros escolares de Castilla y León registran más de 1.500 incidencias por robos y destrozos en el último curso",
-      "medio": "Salamanca24Horas",
-      "fecha": "2026-10-26",
-      "fecha_hora": "2026-10-26T06:10:00.000Z"
-    },
-    {
-      "url": "https://www.salamanca24horas.com/local/salamanca-encara-final-octubre-sol-maximas-25-grados",
-      "titulo": "Salamanca encara el final de octubre con sol y máximas de hasta 25 grados",
-      "medio": "Salamanca24Horas",
-      "fecha": "2026-10-26",
-      "fecha_hora": "2026-10-26T06:05:00.000Z"
-    },
-    {
-      "url": "https://www.lagacetadesalamanca.es/sucesos/policia-busca-joven-inundar-bloque-bejar-pleno-20261025070000-nt.html",
-      "titulo": "En busca y captura una joven investigada por inundar un bloque de viviendas en Béjar",
-      "medio": "La Gaceta de Salamanca",
-      "fecha": "2026-10-26",
-      "fecha_hora": "2026-10-26T06:00:04.000Z"
-    },
-    {
-      "url": "https://www.salamanca24horas.com/deportes/perfumerias-avenida/raquel-romo-talento-charro-servicio-baloncesto",
-      "titulo": "Raquel Romo: talento charro al servicio del baloncesto",
-      "medio": "Salamanca24Horas",
-      "fecha": "2026-10-26",
-      "fecha_hora": "2026-10-26T06:00:00.000Z"
-    },
-    {
-      "url": "https://www.lagacetadesalamanca.es/sucesos/adn-huellas-dactilares-suelas-adidas-delatan-multirreincidente-20261025064500-nt.html",
-      "titulo": "Ni ADN ni huellas dactilares: las suelas de unas Adidas delatan a un multirreincidente en Béjar",
-      "medio": "La Gaceta de Salamanca",
-      "fecha": "2026-10-26",
-      "fecha_hora": "2026-10-26T05:45:00.000Z"
-    },
-    {
-      "url": "https://www.lagacetadesalamanca.es/provincia/forzaron-puerta-llevaron-jamones-1000-euros-sientes-20261025063000-nt.html",
-      "titulo": "«Forzaron la puerta y se llevaron jamones y 1.000 euros, te sientes inseguro tras vivir un hecho así»",
-      "medio": "La Gaceta de Salamanca",
-      "fecha": "2026-10-26",
-      "fecha_hora": "2026-10-26T05:30:37.000Z"
-    },
-    {
-      "url": "https://www.lagacetadesalamanca.es/salamanca/mal-estado-via-obliga-limitar-kmh-velocidad-20261025061500-nt.html",
-      "titulo": "El mal estado de la vía obliga a limitar a 60 km/h la velocidad del tren a Madrid en Peñaranda",
-      "medio": "La Gaceta de Salamanca",
-      "fecha": "2026-10-26",
-      "fecha_hora": "2026-10-26T05:15:00.000Z"
-    },
-    {
-      "url": "https://www.lagacetadesalamanca.es/opinion/firmas/roberto-zamarbide-vaso-medio-lleno-20261025060000-nt.html",
-      "titulo": "El vaso medio lleno",
-      "medio": "La Gaceta de Salamanca",
-      "fecha": "2026-10-26",
-      "fecha_hora": "2026-10-26T05:00:09.000Z"
-    },
-    {
-      "url": "https://www.lagacetadesalamanca.es/salamanca/solo-cuatro-salmantinos-emancipa-cumplir-anos-20261025060000-nt.html",
-      "titulo": "Solo uno de cada cuatro salmantinos se emancipa antes de cumplir los 30 años",
-      "medio": "La Gaceta de Salamanca",
-      "fecha": "2026-10-26",
-      "fecha_hora": "2026-10-26T05:00:03.000Z"
-    },
-    {
-      "url": "https://www.lagacetadesalamanca.es/opinion/firmas/manuel-muinos-confusion-20261025055000-nt.html",
-      "titulo": "Confusión",
-      "medio": "La Gaceta de Salamanca",
-      "fecha": "2026-10-26",
-      "fecha_hora": "2026-10-26T04:50:01.000Z"
-    },
-    {
-      "url": "https://www.lagacetadesalamanca.es/salamanca/paso-dia-hoy-octubre-salamanca-20261025050000-nt.html",
-      "titulo": "¿Qué pasó tal día como hoy, 26 de octubre, en Salamanca?",
-      "medio": "La Gaceta de Salamanca",
-      "fecha": "2026-10-26",
-      "fecha_hora": "2026-10-26T04:08:41.000Z"
-    },
-    {
-      "url": "https://www.lagacetadesalamanca.es/salamanca/fuente-gotea-cesar-avenida-padre-ignacio-ellacuria-20261025050000-nt.html",
-      "titulo": "Esta fuente gotea sin cesar en la avenida Padre Ignacio Ellacuría",
-      "medio": "La Gaceta de Salamanca",
-      "fecha": "2026-10-26",
-      "fecha_hora": "2026-10-26T04:00:10.000Z"
-    },
-    {
-      "url": "https://www.lagacetadesalamanca.es/salamanca/veinte-anos-despues-seguimos-ilusion-vez-exigimos-20261023050000-nt.html",
-      "titulo": "«Veinte años después seguimos teniendo la misma ilusión, pero cada vez nos exigimos más»",
-      "medio": "La Gaceta de Salamanca",
-      "fecha": "2026-10-26",
-      "fecha_hora": "2026-10-26T04:00:07.000Z"
     },
     {
       "url": "https://www.salamancahoy.es/deportes/salamanca-cf-uds/salamanca-queda-premio-talavera-20261025190409-nt.html",
