@@ -722,6 +722,30 @@
       ],
       "basado_en": "actualidad.json",
       "fecha_creacion": "2026-11-15"
+    },
+    {
+      "id": "novatadas-salamanca-2026",
+      "pregunta": "Ante la persistencia de las novatadas en la capital, ¿cree que las autoridades y las instituciones educativas deberían intensificar las medidas para erradicarlas?",
+      "opciones": [
+        "Sí, es un problema grave que requiere acciones contundentes.",
+        "No, son tradiciones universitarias que deben gestionarse internamente.",
+        "Deberían centrarse en la concienciación y la educación, no en la prohibición.",
+        "No tengo suficiente información."
+      ],
+      "basado_en": "actualidad.json",
+      "fecha_creacion": "2026-11-16"
+    },
+    {
+      "id": "lucha-cancer-guijuelo-2026",
+      "pregunta": "Guijuelo se ha volcado en la lucha contra el cáncer, organizando diversas iniciativas solidarias. ¿Considera que la implicación municipal y ciudadana en estas causas es fundamental para la investigación y el apoyo a los afectados?",
+      "opciones": [
+        "Sí, es crucial para la salud pública y el bienestar social.",
+        "No, la responsabilidad principal recae en las instituciones sanitarias.",
+        "Es un buen complemento, pero el impacto es limitado.",
+        "No tengo suficiente información."
+      ],
+      "basado_en": "actualidad.json",
+      "fecha_creacion": "2026-11-16"
     }
   ]
 }

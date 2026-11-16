@@ -52,8 +52,9 @@
     {"fecha": "2026-11-10", "total": 56, "salamanca": 17, "provincia": 18, "deportes": 7, "sucesos": 7, "campo": 3, "toros": 0, "encuestas": 1, "castilla-y-leon": 3},
     {"fecha": "2026-11-11", "total": 54, "salamanca": 22, "provincia": 17, "deportes": 7, "sucesos": 5, "campo": 2, "toros": 0, "encuestas": 1, "virales": 0, "internacional": 0},
     {"fecha": "2026-11-12", "total": 57, "salamanca": 20, "provincia": 11, "deportes": 12, "sucesos": 8, "toros": 3, "campo": 2, "encuestas": 1, "virales": 0, "internacional": 0},
-    {"fecha": "2026-11-13", "total": 80, "salamanca": 21, "provincia": 27, "deportes": 24, "sucesos": 3, "toros": 1, "campo": 1, "encuestas": 1, "virales": 1, "internacional": 1},
-    {"fecha": "2026-11-14", "total": 59, "salamanca": 16, "provincia": 19, "deportes": 14, "sucesos": 7, "toros": 1, "campo": 1, "encuestas": 1, "virales": 0, "internacional": 0},
-    {"fecha": "2026-11-15", "total": 9, "salamanca": 9, "provincia": 0, "deportes": 0, "sucesos": 0, "toros": 0, "campo": 0, "encuestas": 0, "virales": 0, "internacional": 0}
+    {"fecha": "2026-11-13", "total": 67, "provincia": 23, "salamanca": 14, "deportes": 23, "sucesos": 2, "encuestas": 1, "campo": 1, "internacional": 1, "toros": 1, "castilla-y-leon": 0, "virales": 1},
+    {"fecha": "2026-11-14", "total": 57, "provincia": 19, "salamanca": 14, "deportes": 14, "sucesos": 7, "encuestas": 1, "campo": 1, "internacional": 0, "toros": 1, "castilla-y-leon": 0, "virales": 0},
+    {"fecha": "2026-11-15", "total": 56, "provincia": 14, "salamanca": 21, "deportes": 13, "sucesos": 4, "encuestas": 1, "campo": 1, "internacional": 1, "toros": 0, "castilla-y-leon": 1, "virales": 0},
+    {"fecha": "2026-11-16", "total": 6, "provincia": 0, "salamanca": 5, "deportes": 1, "sucesos": 0, "encuestas": 0, "campo": 0, "internacional": 0, "toros": 0, "castilla-y-leon": 0, "virales": 0}
   ]
 }
