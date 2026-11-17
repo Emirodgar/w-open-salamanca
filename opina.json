@@ -746,6 +746,30 @@
       ],
       "basado_en": "actualidad.json",
       "fecha_creacion": "2026-11-16"
+    },
+    {
+      "id": "fiabilidad-tren-salamanca-madrid-2026",
+      "pregunta": "Tras el anuncio del fin de los transbordos en autobús en la línea Salamanca-Madrid, ¿cree que esta medida mejorará significativamente la fiabilidad del servicio ferroviario?",
+      "opciones": [
+        "Sí, normalizará el servicio",
+        "No, los problemas de fondo persisten",
+        "Es un paso, pero se necesitan más mejoras",
+        "No tengo suficiente información"
+      ],
+      "basado_en": "actualidad.json",
+      "fecha_creacion": "2026-11-17"
+    },
+    {
+      "id": "seguridad-pacientes-montalvos-2026",
+      "pregunta": "Ante el error en la identificación de pacientes en el hospital de Montalvos, ¿cree que se deberían reforzar los protocolos de seguridad para evitar este tipo de incidencias en la atención sanitaria?",
+      "opciones": [
+        "Sí, es crucial para la seguridad del paciente",
+        "No, son errores puntuales difíciles de evitar",
+        "Debería centrarse en la formación del personal",
+        "No tengo suficiente información"
+      ],
+      "basado_en": "actualidad.json",
+      "fecha_creacion": "2026-11-17"
     }
   ]
 }

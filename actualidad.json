@@ -1,11 +1,11 @@
 {
   "url_base": "https://www.lagacetadesalamanca.es",
-  "generado_en": "2026-11-16T05:46:04+00:00",
+  "generado_en": "2026-11-17T05:46:04+00:00",
   "periodo_cubierto": {
-    "desde": "2026-11-13",
-    "hasta": "2026-11-16"
+    "desde": "2026-11-14",
+    "hasta": "2026-11-17"
   },
-  "total_urls_analizadas": 186,
+  "total_urls_analizadas": 160,
   "secciones_excluidas": [
     "gente-estilo",
     "nacional",
@@ -16,50 +16,54 @@
   "nota_cobertura": "El análisis cubre únicamente las URLs presentes en el sitemap en el momento de la consulta (excluyendo, si se indicó, las secciones filtradas). Si el sitemap es incremental o 'rolling', el periodo real puede ser más corto que el solicitado — revisa 'periodo_cubierto' para confirmarlo.",
   "por_seccion": [
     [
-      "provincia",
-      56
+      "salamanca",
+      47
     ],
     [
-      "salamanca",
-      54
+      "provincia",
+      43
     ],
     [
       "deportes",
-      51
+      38
     ],
     [
       "sucesos",
-      13
+      16
+    ],
+    [
+      "campo",
+      4
+    ],
+    [
+      "internacional",
+      3
+    ],
+    [
+      "toros",
+      3
     ],
     [
       "encuestas",
       3
     ],
     [
-      "campo",
-      3
-    ],
-    [
-      "internacional",
-      2
-    ],
-    [
-      "toros",
-      2
-    ],
-    [
       "castilla-y-leon",
-      1
+      2
     ],
     [
-      "virales",
+      "cine-y-series",
       1
     ]
   ],
   "por_subseccion": [
     [
       "deportes/futbol-local",
-      31
+      17
+    ],
+    [
+      "deportes/carreras-populares",
+      4
     ],
     [
       "deportes/deporte-base",
@@ -68,182 +72,170 @@
     [
       "deportes/baloncesto-local",
       3
-    ],
-    [
-      "deportes/carreras-populares",
-      3
     ]
   ],
   "por_tipo_contenido": [
     [
       "noticia",
-      155
+      131
     ],
     [
       "galería",
-      29
+      28
     ],
     [
       "directo / en vivo",
-      2
+      1
     ]
   ],
   "heatmap_calendario": [
     {
-      "fecha": "2026-11-13",
-      "total": 67,
-      "provincia": 23,
-      "salamanca": 14,
-      "deportes": 23,
-      "sucesos": 2,
-      "encuestas": 1,
-      "campo": 1,
-      "internacional": 1,
-      "toros": 1,
-      "castilla-y-leon": 0,
-      "virales": 1
-    },
-    {
       "fecha": "2026-11-14",
-      "total": 57,
-      "provincia": 19,
-      "salamanca": 14,
+      "total": 45,
+      "salamanca": 7,
+      "provincia": 17,
       "deportes": 14,
-      "sucesos": 7,
-      "encuestas": 1,
-      "campo": 1,
+      "sucesos": 5,
+      "campo": 0,
       "internacional": 0,
       "toros": 1,
+      "encuestas": 1,
       "castilla-y-leon": 0,
-      "virales": 0
+      "cine-y-series": 0
     },
     {
       "fecha": "2026-11-15",
-      "total": 56,
-      "provincia": 14,
-      "salamanca": 21,
+      "total": 49,
+      "salamanca": 16,
+      "provincia": 13,
       "deportes": 13,
-      "sucesos": 4,
-      "encuestas": 1,
+      "sucesos": 3,
       "campo": 1,
       "internacional": 1,
       "toros": 0,
+      "encuestas": 1,
       "castilla-y-leon": 1,
-      "virales": 0
+      "cine-y-series": 0
     },
     {
       "fecha": "2026-11-16",
-      "total": 6,
+      "total": 64,
+      "salamanca": 22,
+      "provincia": 13,
+      "deportes": 11,
+      "sucesos": 8,
+      "campo": 3,
+      "internacional": 2,
+      "toros": 2,
+      "encuestas": 1,
+      "castilla-y-leon": 1,
+      "cine-y-series": 1
+    },
+    {
+      "fecha": "2026-11-17",
+      "total": 2,
+      "salamanca": 2,
       "provincia": 0,
-      "salamanca": 5,
-      "deportes": 1,
+      "deportes": 0,
       "sucesos": 0,
-      "encuestas": 0,
       "campo": 0,
       "internacional": 0,
       "toros": 0,
+      "encuestas": 0,
       "castilla-y-leon": 0,
-      "virales": 0
+      "cine-y-series": 0
     }
   ],
   "conceptos_destacados": [
     {
       "concepto": "Ciudad Rodrigo",
-      "piezas": 12,
+      "piezas": 9,
       "seccion_principal": "provincia",
-      "desde": "2026-11-13",
-      "hasta": "2026-11-15",
+      "desde": "2026-11-14",
+      "hasta": "2026-11-16",
       "ejemplos_redactados": [
-        "Ciudad Rodrigo readjudica obras en dos calles tras un proceso",
-        "La localidad de Ciudad Rodrigo se une para brillar en Navidad",
-        "El obispo de Ciudad Rodrigo participa en un encuentro de obispos superiores"
+        "Cáritas de Ciudad Rodrigo ha manifestado su preocupación por la pobreza en la localidad. El municipio se prepara para la Navidad con iniciativas para «unir y brillar».",
+        "El obispo de Ciudad Rodrigo ha participado en un encuentro de obispos y superiores."
       ]
     },
     {
       "concepto": "Unionistas",
-      "piezas": 7,
+      "piezas": 9,
       "seccion_principal": "deportes",
-      "desde": "2026-11-13",
-      "hasta": "2026-11-15",
+      "desde": "2026-11-14",
+      "hasta": "2026-11-16",
       "ejemplos_redactados": [
-        "La camiseta de Unionistas está presente en el homenaje a la selección española de Jesús",
-        "Unionistas logra en Las Pistas su segundo triunfo consecutivo",
-        "Unionistas se enfrenta a un partido trampa"
-      ]
-    },
-    {
-      "concepto": "Helmántico",
-      "piezas": 7,
-      "seccion_principal": "deportes",
-      "desde": "2026-11-13",
-      "hasta": "2026-11-13",
-      "ejemplos_redactados": [
-        "Se rinde un bonito homenaje en el Helmántico en recuerdo de Jesús Miguel",
-        "Ambientazo en las gradas del Helmántico durante el encuentro",
-        "La Copa del Rey deja corazones divididos en el Helmántico"
-      ]
-    },
-    {
-      "concepto": "Navidad",
-      "piezas": 5,
-      "seccion_principal": "provincia",
-      "desde": "2026-11-13",
-      "hasta": "2026-11-15",
-      "ejemplos_redactados": [
-        "Ciudad Rodrigo se une para brillar en Navidad",
-        "Los grandes reyes de la Navidad llegan a precio de oro en Salamanca",
-        "Santa Marta contará con una villa navideña que incluirá una isla de Navidad"
-      ]
-    },
-    {
-      "concepto": "Homenaje",
-      "piezas": 5,
-      "seccion_principal": "provincia",
-      "desde": "2026-11-13",
-      "hasta": "2026-11-15",
-      "ejemplos_redactados": [
-        "Los capistas bejaranos despiden la fiesta con un homenaje y visita a la Virgen",
-        "La camiseta de Unionistas está presente en el homenaje a la selección española de Jesús",
-        "Se celebra un homenaje sorpresa a tres hermanos que llevan al frente una histórica"
+        "La plantilla de Unionistas, con Nespral y Medina, trabaja en su planteamiento futbolístico. El equipo ha comenzado a ejercitarse con mínimos efectivos para su visita a Barakaldo.",
+        "Los jugadores de Unionistas han cerrado filas ante los próximos encuentros."
       ]
     },
     {
       "concepto": "Guijuelo",
       "piezas": 5,
       "seccion_principal": "provincia",
-      "desde": "2026-11-13",
-      "hasta": "2026-11-14",
+      "desde": "2026-11-14",
+      "hasta": "2026-11-16",
       "ejemplos_redactados": [
-        "Guijuelo se vuelca en la lucha contra el cáncer",
-        "El Guijuelo vence a Diocesanos Ávila con una goleada en el Municipal",
-        "El PSOE reparte publicidad electoral en Guijuelo"
+        "La biblioteca de Guijuelo ha incorporado 101 nuevos títulos a sus fondos. El PP ha celebrado un encuentro con cargos y simpatizantes en la localidad.",
+        "El PSOE ha distribuido publicidad electoral en Guijuelo."
       ]
     },
     {
       "concepto": "Santa Marta",
       "piezas": 4,
       "seccion_principal": "provincia",
-      "desde": "2026-11-13",
-      "hasta": "2026-11-15",
+      "desde": "2026-11-14",
+      "hasta": "2026-11-16",
       "ejemplos_redactados": [
-        "Santa Marta renovará calles en la urbanización Aldebarán con una inversión",
-        "Santa Marta suma y sigue, con Turegano firmando su cuarta victoria",
-        "Santa Marta renueva 178 metros de la red de abastecimiento"
+        "Santa Marta acoge unas jornadas micológicas con conferencia, exposición y degustación. El municipio renovará calles en la urbanización Aldebarán con una nueva inversión.",
+        "Santa Marta ha renovado 178 metros de su red de abastecimiento."
       ]
     },
     {
-      "concepto": "Campaña Electoral",
-      "piezas": 7,
-      "seccion_principal": "provincia",
-      "desde": "2026-11-13",
-      "hasta": "2026-11-14",
+      "concepto": "Castilla y León",
+      "piezas": 4,
+      "seccion_principal": "castilla-y-leon",
+      "desde": "2026-11-15",
+      "hasta": "2026-11-16",
       "ejemplos_redactados": [
-        "Arranca la campaña 'Pescao Vendido'",
-        "El PSOE de Béjar arranca su campaña en la Plaza Mayor",
-        "El PSOE de Ciudad Rodrigo acerca su campaña electoral al mercado"
+        "Una provincia de Castilla y León se encuentra bajo aviso amarillo. La Junta de Castilla y León permitirá a veterinarios privados realizar ciertas pruebas.",
+        "Diana López se ha proclamado campeona de Castilla y León en marcha de invierno."
+      ]
+    },
+    {
+      "concepto": "Trenes Salamanca-Madrid",
+      "piezas": 4,
+      "seccion_principal": "salamanca",
+      "desde": "2026-11-15",
+      "hasta": "2026-11-16",
+      "ejemplos_redactados": [
+        "La ruta Salamanca-Madrid ha experimentado una nueva jornada de retrasos. Se ha puesto fin al transbordo en autobús para los viajeros de tren entre Salamanca y Madrid.",
+        "Se han registrado retrasos de minutos y transbordos en autobús debido a un descarrilamiento de mercancías."
+      ]
+    },
+    {
+      "concepto": "PSOE",
+      "piezas": 4,
+      "seccion_principal": "provincia",
+      "desde": "2026-11-14",
+      "hasta": "2026-11-16",
+      "ejemplos_redactados": [
+        "El PSOE ha presentado millones de euros en enmiendas para mejorar los servicios públicos. El partido ha repartido publicidad electoral en Guijuelo.",
+        "El PSOE de Ciudad Rodrigo ha acercado su campaña electoral al mercado."
+      ]
+    },
+    {
+      "concepto": "Campeonatos de España",
+      "piezas": 4,
+      "seccion_principal": "deportes",
+      "desde": "2026-11-15",
+      "hasta": "2026-11-16",
+      "ejemplos_redactados": [
+        "Las levantadoras salmantinas han logrado un buen balance en el Campeonato de España júnior. Pilar García, de Ciudad Peñaranda, se ha proclamado campeona de España.",
+        "El ADAS ha destacado en el Campeonato de España."
       ]
     }
   ],
-  "resumen_borrador": "Se han publicado 186 noticias entre el 2026-11-13 y el 2026-11-16. La actividad se ha concentrado sobre todo en provincia (56 piezas), salamanca (54 piezas), deportes (51 piezas).\n\nLos conceptos con más piezas relacionadas son: Ciudad · Rodrigo; Unionistas; Helmantico; Navidad. Revisa 'evidencia' de cada concepto para redactar el resumen final.",
-  "resumen": "La actualidad salmantina entre el 13 y el 16 de noviembre ha estado marcada por el inicio de las campañas electorales en diversos municipios de la provincia, con partidos como el PSOE y el PP realizando sus actos de apertura en localidades como Ciudad Rodrigo, Béjar y Guijuelo. En el ámbito deportivo, la expectación se centró en el enfrentamiento del Salamanca UDS contra el Celta de Vigo en la Copa del Rey, que generó un gran ambiente en el estadio Helmántico. También se siguió la trayectoria de Unionistas, que logró un segundo triunfo consecutivo en Las Pistas.\n\nLa provincia ha visto noticias relevantes en Ciudad Rodrigo, con la readjudicación de obras y la preparación para la Navidad, así como en Guijuelo, que se ha volcado en la lucha contra el cáncer, y Santa Marta, con renovaciones de infraestructuras y planes navideños. Otros temas de interés incluyen incidentes en la red ferroviaria con retrasos y descarrilamientos, la persistencia de las novatadas en la capital, y diversos sucesos como colisiones de tráfico y agresiones."
+  "resumen_borrador": "Se han publicado 160 noticias entre el 2026-11-14 y el 2026-11-17. La actividad se ha concentrado sobre todo en salamanca (47 piezas), provincia (43 piezas), deportes (38 piezas).\n\nLos conceptos con más piezas relacionadas son: Ciudad · Rodrigo; Unionistas; Guijuelo; Centro. Revisa 'evidencia' de cada concepto para redactar el resumen final.",
+  "resumen": "El periodo entre el 14 y el 17 de noviembre ha estado marcado por incidencias en el transporte ferroviario y noticias de ámbito provincial y deportivo. La línea de tren Salamanca-Madrid ha sufrido importantes retrasos y transbordos en autobús debido a un descarrilamiento de tren de mercancías y la huelga de Renfe, aunque se ha anunciado el fin de los transbordos en autobús.\n\nEn el ámbito provincial, la actividad política ha sido notable con el PSOE presentando enmiendas y realizando campaña electoral en localidades como Guijuelo y Ciudad Rodrigo. También se han registrado noticias urbanísticas y culturales en municipios como Santa Marta y Cabrerizos. En la capital, un error en la identificación de pacientes en el hospital de Montalvos ha generado preocupación, y se ha debatido sobre la persistencia de las novatadas en el centro de la ciudad.\n\nDeportivamente, Unionistas ha continuado con sus entrenamientos y preparación para los próximos partidos, mientras que deportistas salmantinos han destacado en diversos Campeonatos de España. El fútbol base también ha tenido su protagonismo con la octava jornada de competición."
 }
