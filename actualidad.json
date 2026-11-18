@@ -1,11 +1,11 @@
 {
   "url_base": "https://www.lagacetadesalamanca.es",
-  "generado_en": "2026-11-17T05:46:04+00:00",
+  "generado_en": "2026-11-18T05:45:39+00:00",
   "periodo_cubierto": {
-    "desde": "2026-11-14",
-    "hasta": "2026-11-17"
+    "desde": "2026-11-15",
+    "hasta": "2026-11-18"
   },
-  "total_urls_analizadas": 160,
+  "total_urls_analizadas": 169,
   "secciones_excluidas": [
     "gente-estilo",
     "nacional",
@@ -17,30 +17,26 @@
   "por_seccion": [
     [
       "salamanca",
-      47
+      51
     ],
     [
       "provincia",
-      43
+      47
     ],
     [
       "deportes",
-      38
+      32
     ],
     [
       "sucesos",
-      16
+      18
     ],
     [
       "campo",
-      4
+      9
     ],
     [
-      "internacional",
-      3
-    ],
-    [
-      "toros",
+      "castilla-y-leon",
       3
     ],
     [
@@ -48,7 +44,11 @@
       3
     ],
     [
-      "castilla-y-leon",
+      "internacional",
+      3
+    ],
+    [
+      "toros",
       2
     ],
     [
@@ -59,7 +59,7 @@
   "por_subseccion": [
     [
       "deportes/futbol-local",
-      17
+      11
     ],
     [
       "deportes/carreras-populares",
@@ -71,171 +71,159 @@
     ],
     [
       "deportes/baloncesto-local",
-      3
+      1
     ]
   ],
   "por_tipo_contenido": [
     [
       "noticia",
-      131
+      149
     ],
     [
       "galería",
-      28
-    ],
-    [
-      "directo / en vivo",
-      1
+      20
     ]
   ],
   "heatmap_calendario": [
     {
-      "fecha": "2026-11-14",
-      "total": 45,
-      "salamanca": 7,
-      "provincia": 17,
-      "deportes": 14,
-      "sucesos": 5,
-      "campo": 0,
-      "internacional": 0,
-      "toros": 1,
-      "encuestas": 1,
-      "castilla-y-leon": 0,
-      "cine-y-series": 0
-    },
-    {
       "fecha": "2026-11-15",
-      "total": 49,
-      "salamanca": 16,
-      "provincia": 13,
-      "deportes": 13,
+      "total": 43,
+      "salamanca": 13,
+      "provincia": 11,
+      "deportes": 12,
       "sucesos": 3,
       "campo": 1,
+      "castilla-y-leon": 1,
+      "encuestas": 1,
       "internacional": 1,
       "toros": 0,
-      "encuestas": 1,
-      "castilla-y-leon": 1,
       "cine-y-series": 0
     },
     {
       "fecha": "2026-11-16",
-      "total": 64,
+      "total": 62,
       "salamanca": 22,
       "provincia": 13,
-      "deportes": 11,
-      "sucesos": 8,
+      "deportes": 10,
+      "sucesos": 7,
       "campo": 3,
+      "castilla-y-leon": 1,
+      "encuestas": 1,
       "internacional": 2,
       "toros": 2,
-      "encuestas": 1,
-      "castilla-y-leon": 1,
       "cine-y-series": 1
     },
     {
       "fecha": "2026-11-17",
-      "total": 2,
-      "salamanca": 2,
-      "provincia": 0,
-      "deportes": 0,
-      "sucesos": 0,
-      "campo": 0,
+      "total": 60,
+      "salamanca": 13,
+      "provincia": 23,
+      "deportes": 10,
+      "sucesos": 7,
+      "campo": 5,
+      "castilla-y-leon": 1,
+      "encuestas": 1,
       "internacional": 0,
       "toros": 0,
-      "encuestas": 0,
+      "cine-y-series": 0
+    },
+    {
+      "fecha": "2026-11-18",
+      "total": 4,
+      "salamanca": 3,
+      "provincia": 0,
+      "deportes": 0,
+      "sucesos": 1,
+      "campo": 0,
       "castilla-y-leon": 0,
+      "encuestas": 0,
+      "internacional": 0,
+      "toros": 0,
       "cine-y-series": 0
     }
   ],
   "conceptos_destacados": [
     {
-      "concepto": "Ciudad Rodrigo",
-      "piezas": 9,
-      "seccion_principal": "provincia",
-      "desde": "2026-11-14",
-      "hasta": "2026-11-16",
+      "concepto": "Castilla y León",
+      "piezas": 6,
+      "seccion_principal": "castilla-y-leon",
+      "desde": "2026-11-15",
+      "hasta": "2026-11-17",
       "ejemplos_redactados": [
-        "Cáritas de Ciudad Rodrigo ha manifestado su preocupación por la pobreza en la localidad. El municipio se prepara para la Navidad con iniciativas para «unir y brillar».",
-        "El obispo de Ciudad Rodrigo ha participado en un encuentro de obispos y superiores."
+        "La región de Castilla y León ha sido noticia por declaraciones políticas y avisos meteorológicos. Se ha destacado la presencia de un líder de Vox y alertas por fenómenos atmosféricos."
       ]
     },
     {
       "concepto": "Unionistas",
-      "piezas": 9,
-      "seccion_principal": "deportes",
-      "desde": "2026-11-14",
-      "hasta": "2026-11-16",
-      "ejemplos_redactados": [
-        "La plantilla de Unionistas, con Nespral y Medina, trabaja en su planteamiento futbolístico. El equipo ha comenzado a ejercitarse con mínimos efectivos para su visita a Barakaldo.",
-        "Los jugadores de Unionistas han cerrado filas ante los próximos encuentros."
-      ]
-    },
-    {
-      "concepto": "Guijuelo",
       "piezas": 5,
-      "seccion_principal": "provincia",
-      "desde": "2026-11-14",
-      "hasta": "2026-11-16",
+      "seccion_principal": "deportes",
+      "desde": "2026-11-15",
+      "hasta": "2026-11-17",
       "ejemplos_redactados": [
-        "La biblioteca de Guijuelo ha incorporado 101 nuevos títulos a sus fondos. El PP ha celebrado un encuentro con cargos y simpatizantes en la localidad.",
-        "El PSOE ha distribuido publicidad electoral en Guijuelo."
+        "El equipo Unionistas ha centrado la actualidad deportiva, con noticias sobre el horario de un encuentro y el planteamiento de su plantilla. Los jugadores han cerrado filas ante los próximos desafíos."
       ]
     },
     {
-      "concepto": "Santa Marta",
+      "concepto": "Campeonato de España",
       "piezas": 4,
-      "seccion_principal": "provincia",
-      "desde": "2026-11-14",
-      "hasta": "2026-11-16",
+      "seccion_principal": "deportes",
+      "desde": "2026-11-16",
+      "hasta": "2026-11-17",
       "ejemplos_redactados": [
-        "Santa Marta acoge unas jornadas micológicas con conferencia, exposición y degustación. El municipio renovará calles en la urbanización Aldebarán con una nueva inversión.",
-        "Santa Marta ha renovado 178 metros de su red de abastecimiento."
+        "Varios deportistas salmantinos han destacado en el Campeonato de España, con clasificaciones y medallas de bronce. Se han reportado éxitos en diferentes disciplinas atléticas."
       ]
     },
     {
-      "concepto": "Castilla y León",
+      "concepto": "Ciudad Rodrigo",
       "piezas": 4,
-      "seccion_principal": "castilla-y-leon",
+      "seccion_principal": "provincia",
       "desde": "2026-11-15",
       "hasta": "2026-11-16",
       "ejemplos_redactados": [
-        "Una provincia de Castilla y León se encuentra bajo aviso amarillo. La Junta de Castilla y León permitirá a veterinarios privados realizar ciertas pruebas.",
-        "Diana López se ha proclamado campeona de Castilla y León en marcha de invierno."
+        "Ciudad Rodrigo se prepara para la Navidad y ha abordado temas sociales como la pobreza. También se ha informado sobre la readjudicación de obras en dos de sus calles."
       ]
     },
     {
-      "concepto": "Trenes Salamanca-Madrid",
+      "concepto": "Campo",
+      "piezas": 4,
+      "seccion_principal": "salamanca",
+      "desde": "2026-11-15",
+      "hasta": "2026-11-17",
+      "ejemplos_redactados": [
+        "El sector del campo ha sido relevante en la campaña electoral, con discusiones sobre su influencia en los resultados. Además, se ha reportado la situación de un campo deportivo."
+      ]
+    },
+    {
+      "concepto": "Tren Salamanca-Madrid",
       "piezas": 4,
       "seccion_principal": "salamanca",
       "desde": "2026-11-15",
       "hasta": "2026-11-16",
       "ejemplos_redactados": [
-        "La ruta Salamanca-Madrid ha experimentado una nueva jornada de retrasos. Se ha puesto fin al transbordo en autobús para los viajeros de tren entre Salamanca y Madrid.",
-        "Se han registrado retrasos de minutos y transbordos en autobús debido a un descarrilamiento de mercancías."
+        "La conexión ferroviaria entre Salamanca y Madrid ha experimentado retrasos y transbordos por autobús. Se ha informado sobre la finalización de los transbordos en algunos servicios."
       ]
     },
     {
-      "concepto": "PSOE",
+      "concepto": "Guijuelo",
       "piezas": 4,
       "seccion_principal": "provincia",
-      "desde": "2026-11-14",
-      "hasta": "2026-11-16",
+      "desde": "2026-11-16",
+      "hasta": "2026-11-17",
       "ejemplos_redactados": [
-        "El PSOE ha presentado millones de euros en enmiendas para mejorar los servicios públicos. El partido ha repartido publicidad electoral en Guijuelo.",
-        "El PSOE de Ciudad Rodrigo ha acercado su campaña electoral al mercado."
+        "El municipio de Guijuelo ha aprobado sus presupuestos para 2027, con un incremento en inversiones. También ha organizado actos en conmemoración del 25N y ha sido sede de un encuentro político."
       ]
     },
     {
-      "concepto": "Campeonatos de España",
-      "piezas": 4,
-      "seccion_principal": "deportes",
+      "concepto": "Santa Marta",
+      "piezas": 3,
+      "seccion_principal": "provincia",
       "desde": "2026-11-15",
-      "hasta": "2026-11-16",
+      "hasta": "2026-11-17",
       "ejemplos_redactados": [
-        "Las levantadoras salmantinas han logrado un buen balance en el Campeonato de España júnior. Pilar García, de Ciudad Peñaranda, se ha proclamado campeona de España.",
-        "El ADAS ha destacado en el Campeonato de España."
+        "Santa Marta ha sido escenario de actividades por el 25N y jornadas micológicas. Se ha anunciado la renovación de calles en la urbanización Aldebarán."
       ]
     }
   ],
-  "resumen_borrador": "Se han publicado 160 noticias entre el 2026-11-14 y el 2026-11-17. La actividad se ha concentrado sobre todo en salamanca (47 piezas), provincia (43 piezas), deportes (38 piezas).\n\nLos conceptos con más piezas relacionadas son: Ciudad · Rodrigo; Unionistas; Guijuelo; Centro. Revisa 'evidencia' de cada concepto para redactar el resumen final.",
-  "resumen": "El periodo entre el 14 y el 17 de noviembre ha estado marcado por incidencias en el transporte ferroviario y noticias de ámbito provincial y deportivo. La línea de tren Salamanca-Madrid ha sufrido importantes retrasos y transbordos en autobús debido a un descarrilamiento de tren de mercancías y la huelga de Renfe, aunque se ha anunciado el fin de los transbordos en autobús.\n\nEn el ámbito provincial, la actividad política ha sido notable con el PSOE presentando enmiendas y realizando campaña electoral en localidades como Guijuelo y Ciudad Rodrigo. También se han registrado noticias urbanísticas y culturales en municipios como Santa Marta y Cabrerizos. En la capital, un error en la identificación de pacientes en el hospital de Montalvos ha generado preocupación, y se ha debatido sobre la persistencia de las novatadas en el centro de la ciudad.\n\nDeportivamente, Unionistas ha continuado con sus entrenamientos y preparación para los próximos partidos, mientras que deportistas salmantinos han destacado en diversos Campeonatos de España. El fútbol base también ha tenido su protagonismo con la octava jornada de competición."
+  "resumen_borrador": "Se han publicado 169 noticias entre el 2026-11-15 y el 2026-11-18. La actividad se ha concentrado sobre todo en salamanca (51 piezas), provincia (47 piezas), deportes (32 piezas).\n\nLos conceptos con más piezas relacionadas son: Castilla · Leon; Unionistas; Centro; Campeonato · Espana. Revisa 'evidencia' de cada concepto para redactar el resumen final.",
+  "resumen": "Durante el periodo comprendido entre el 15 y el 18 de noviembre de 2026, la actualidad salmantina ha estado marcada por las incidencias en la conexión ferroviaria con Madrid. Los trenes han sufrido retrasos y transbordos por autobús, agravados por un descarrilamiento y huelgas, aunque se ha anunciado el fin de algunos transbordos. La provincia también ha sido foco de noticias, desde la preparación navideña en Ciudad Rodrigo y la aprobación de presupuestos en Guijuelo, hasta la detección del primer caso de lengua azul y proyectos de renovación de infraestructuras hídricas en varios municipios.\n\nEn el ámbito deportivo, Unionistas ha sido protagonista con noticias sobre sus encuentros y la cohesión de su plantilla. Asimismo, varios atletas salmantinos han logrado éxitos en el Campeonato de España, y se ha destacado la actividad en el fútbol base y la preparación de la San Silvestre. La sección de sucesos ha reportado múltiples incidentes, incluyendo agresiones, robos y accidentes de tráfico.\n\nEn el plano económico, los empresarios han manifestado su preocupación ante una posible subida del salario mínimo. Además, un error en la identificación de pacientes en el Hospital de Montalvos ha generado una investigación, y el Centro del Cáncer ha anunciado un avance en la lucha contra la enfermedad."
 }

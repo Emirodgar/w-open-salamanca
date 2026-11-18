@@ -1,7 +1,7 @@
 {
   "mes": "2026-11",
   "titulo_mes": "Noviembre 2026",
-  "resumen_mes": "Noviembre ha estado marcado por el triste fallecimiento de Jesús Miguel, exjugador de Unionistas, y de Charo Diego, primera mujer presidenta de la Diputación, así como el de Curro Sánchez en un accidente de tráfico. El mes ha visto el cierre del convento de las Clarisas y ha sido testigo de importantes retrasos en la línea ferroviaria Salamanca-Madrid debido a un descarrilamiento y huelgas. La huelga general ha generado tensión, y la ciudad ha recuperado población, si bien un error en la identificación de pacientes en Montalvos ha causado preocupación. Además, el Salamanca UDS se enfrentó al Celta de Vigo en la Copa del Rey, y las campañas electorales arrancaron en la provincia.",
+  "resumen_mes": "Noviembre ha estado marcado por los fallecimientos de Charo Diego, Jesús Miguel y Curro Sánchez. La huelga general generó tensión, mientras la línea ferroviaria Salamanca-Madrid ha sufrido importantes retrasos y transbordos. Un error en la identificación de pacientes en Montalvos ha causado preocupación, y se ha detectado el primer caso de lengua azul. Empresarios también han advertido sobre el impacto de una posible subida del salario mínimo.",
   "hitos": [
     {
       "fecha": "2026-11-01",
@@ -36,35 +36,35 @@
       "destacado": true
     },
     {
-      "fecha": "2026-11-12",
-      "titulo": "Salamanca recupera población tras siete años",
+      "fecha": "2026-11-16",
+      "titulo": "Continuos retrasos y transbordos en la línea ferroviaria Salamanca-Madrid",
       "categoria": "Sociedad",
-      "descripcion": "La ciudad de Salamanca ha sumado habitantes, recuperando así población tras un periodo de siete años de descenso demográfico.",
-      "fuente": "https://www.lagacetadesalamanca.es/salamanca/salamanca-suma-habitantes-recupera-poblacion-siete-anos-20261112100822-nt.html",
+      "descripcion": "La línea de tren entre Salamanca y Madrid ha sufrido constantes retrasos y transbordos por autobús, afectados por un descarrilamiento y la huelga de Renfe.",
+      "fuente": "https://www.lagacetadesalamanca.es/salamanca/nueva-jornada-retrasos-salamanca-madrid-via-sigue-20261116092936-nt.html",
       "destacado": false
     },
     {
-      "fecha": "2026-11-13",
-      "titulo": "Salamanca UDS se enfrenta al Celta de Vigo en la Copa del Rey",
-      "categoria": "Deportes",
-      "descripcion": "El Salamanca UDS se midió al Celta de Vigo en un emocionante partido de Copa del Rey en el Helmántico, generando gran expectación en la ciudad.",
-      "fuente": "https://www.lagacetadesalamanca.es/deportes/futbol-local/salamancauds/salamanca-revive-pesadilla-celta-20261113225143-nt.html",
-      "destacado": false
-    },
-    {
-      "fecha": "2026-11-13",
-      "titulo": "Inicio de campañas electorales en la provincia",
-      "categoria": "Política",
-      "descripcion": "Diversos partidos políticos arrancaron sus campañas electorales en localidades de la provincia como Ciudad Rodrigo, Béjar y Peñaranda.",
-      "fuente": "https://www.lagacetadesalamanca.es/provincia/psoe-ciudad-rodrigo-arranca-campana-electoral-20261113201841-ga.html",
-      "destacado": false
-    },
-    {
-      "fecha": "2026-11-14",
-      "titulo": "El convento de clausura de las Clarisas Corpus Christi dice adiós",
+      "fecha": "2026-11-16",
+      "titulo": "Investigan error en la identificación de pacientes en el Hospital de Montalvos",
       "categoria": "Sociedad",
-      "descripcion": "El convento de clausura de las Clarisas del Corpus Christi en Salamanca ha cerrado sus puertas, marcando el fin de una etapa para la comunidad religiosa.",
-      "fuente": "https://www.lagacetadesalamanca.es/salamanca/convento-clausura-dice-adios-clarisas-corpus-christi-20261114130359-nt.html",
+      "descripcion": "La Junta ha abierto una investigación tras un error en el Hospital de Montalvos que llevó a la identificación errónea de dos pacientes, uno de ellos dado por muerto.",
+      "fuente": "https://www.lagacetadesalamanca.es/salamanca/intercambian-error-dos-pacientes-montalvos-dan-muerto-20261116124208-nt.html",
+      "destacado": false
+    },
+    {
+      "fecha": "2026-11-17",
+      "titulo": "Detectado el primer caso de lengua azul en la provincia de Salamanca",
+      "categoria": "Sociedad",
+      "descripcion": "Se ha confirmado el primer caso de la enfermedad de la lengua azul en la provincia, lo que ha generado preocupación en el sector ganadero.",
+      "fuente": "https://www.lagacetadesalamanca.es/campo/primer-lengua-azul-salamanca-20261117210827-nt.html",
+      "destacado": false
+    },
+    {
+      "fecha": "2026-11-17",
+      "titulo": "Empresarios advierten sobre el impacto de una nueva subida del salario mínimo",
+      "categoria": "Economía",
+      "descripcion": "El sector empresarial ha expresado su preocupación ante una posible nueva subida del salario mínimo, alertando sobre sus consecuencias.",
+      "fuente": "https://www.lagacetadesalamanca.es/salamanca/empresarios-avisan-nueva-subida-salario-minimo-traera-20261117060000-nt.html",
       "destacado": false
     }
   ]

@@ -1,5 +1,5 @@
 {
-  "generado_en": "2026-11-17T05:46:04+00:00",
+  "generado_en": "2026-11-18T05:45:39+00:00",
   "eventos": [
     {
       "titulo": "Exposición 'Iconografía' de grabados de Van Dyck",
@@ -127,6 +127,15 @@
       "fuente": "https://www.lagacetadesalamanca.es/provincia/guijuelo-acoge-hoy-primera-dos-ferias-negocio-20261113182614-nt.html"
     },
     {
+      "titulo": "Celebración de Santa Cecilia con talleres de música en Villamayor",
+      "categoria": "Cultura",
+      "fecha_inicio": "2026-11-20",
+      "fecha_fin": null,
+      "lugar": "pabellón Dori Ruano, Villamayor de Armuña",
+      "descripcion": "Villamayor de Armuña celebrará Santa Cecilia, patrona de la música, con una jornada de talleres gratuitos el 20 de noviembre en el pabellón Dori Ruano. La programación incluye un taller de batucada y pasacalles para 500 personas, un taller de percusión corporal y un taller de cajón flamenco.",
+      "fuente": "https://www.lagacetadesalamanca.es/provincia/localidad-alfoz-capital-celebrara-batucada-500-personas-20261116195530-nt.html"
+    },
+    {
       "titulo": "Concierto de Antonio Orozco en Salamanca",
       "categoria": "Cultura",
       "fecha_inicio": "2026-11-21",
@@ -188,6 +197,15 @@
       "lugar": "Campo de Golf de Zarapicos",
       "descripcion": "El Campo de Golf de Zarapicos acogerá la quinta edición del Golf Solidario Movember Charro, una cita que unirá deporte, tradición y compromiso con la salud masculina. Parte de la recaudación se destinará a apoyar las iniciativas de Movember.",
       "fuente": "https://www.lagacetadesalamanca.es/deportes/golf-solidario-movember-charro-celebra-noviembre-quinta-20261114181115-nt.html"
+    },
+    {
+      "titulo": "Castañada tradicional de Villamayor",
+      "categoria": "Cultura",
+      "fecha_inicio": "2026-11-21",
+      "fecha_fin": null,
+      "lugar": "plaza del Ayuntamiento, Villamayor de Armuña",
+      "descripcion": "La localidad de Villamayor de Armuña celebrará su tradicional castañada en la plaza del Ayuntamiento, con una tarde de encuentro y diversión para compartir en familia y mantener vivas las costumbres populares. La jornada incluirá una exposición itinerante, pasacalles con tamborilero, juegos infantiles, reparto de castañas con música en directo y una disco móvil.",
+      "fuente": "https://www.lagacetadesalamanca.es/provincia/villamayor-celebrara-dia-tradicional-castanada-20261117200006-nt.html"
     },
     {
       "titulo": "Partido de Segunda Federación: Salamanca UDS - Calvo Sotelo Puertollano",
@@ -270,15 +288,6 @@
       "fuente": "https://www.lagacetadesalamanca.es/salamanca/entrega-premio-reina-sofia-vuelve-universidad-coincidira-20261029123623-nt.html"
     },
     {
-      "titulo": "Actividades por el Día Internacional contra la violencia de género en Guijuelo",
-      "categoria": "Sociedad",
-      "fecha_inicio": "2026-11-25",
-      "fecha_fin": "2026-12-02",
-      "lugar": "centro cultural, Guijuelo",
-      "descripcion": "Guijuelo llevará a cabo actividades relacionadas con la conmemoración del Día Internacional contra la violencia de género entre el 25 de noviembre y el 2 de diciembre.",
-      "fuente": "https://www.lagacetadesalamanca.es/provincia/castanada-actos-santa-cecilia-agenda-noviembre-guijuelo-20261111214639-nt.html"
-    },
-    {
       "titulo": "Encendido del alumbrado navideño en Salamanca",
       "categoria": "Urbanismo",
       "fecha_inicio": "2026-11-26",
@@ -338,8 +347,8 @@
       "fecha_inicio": "2026-11-28",
       "fecha_fin": null,
       "lugar": "Palaciosrubios",
-      "descripcion": "Palaciosrubios acogerá el II Toro de San Andrés, un festejo taurino de cajón organizado por la Asociación Cultural Taurina Beleguina, el 28 de noviembre a las 16:00 horas.",
-      "fuente": "https://www.lagacetadesalamanca.es/provincia/palaciosrubios-celebrara-toro-san-andres-proximo-noviembre-20261010074747-nt.html"
+      "descripcion": "Palaciosrubios celebrará el II Toro de San Andrés el 28 de noviembre a las 16:00 horas, con la suelta de un astado de 563 kilos de la ganadería Fernando García, de nombre «Gavioto», y dos vacas de Sánchez Arjona. El evento, organizado por la Asociación Cultural Taurina Beleguina, es una de las actividades principales de las fiestas en honor a San Andrés.",
+      "fuente": "https://www.lagacetadesalamanca.es/provincia/palaciosrubios-soltara-astado-563-kilos-fiestas-honor-20261117080015-nt.html"
     },
     {
       "titulo": "Segunda jornada de la XXXVIII Liga Special Olympics-Plena Inclusión Castilla y León",
@@ -349,6 +358,15 @@
       "lugar": "Carbajosa de la Sagrada",
       "descripcion": "Carbajosa de la Sagrada será la sede de la segunda jornada de la XXXVIII Liga Special Olympics-Plena Inclusión Castilla y León. La competición reunirá a más de 450 deportistas en baloncesto y fútbol sala.",
       "fuente": "https://www.lagacetadesalamanca.es/deportes/deporte-base/carbajosa-acogera-dia-noviembre-jornada-xxxviii-liga-20261113133642-nt.html"
+    },
+    {
+      "titulo": "XI San Silvestre Universitaria de la Universidad Pontificia de Salamanca",
+      "categoria": "Deportes",
+      "fecha_inicio": "2026-11-28",
+      "fecha_fin": null,
+      "lugar": "Salamanca",
+      "descripcion": "La Universidad Pontificia de Salamanca celebra la XI edición de su San Silvestre Universitaria el sábado 28 de noviembre, con modalidades de carrera competitiva, marcha participativa y carrera infantil. Bajo el lema 'Corremos juntos por la educación', la recaudación se destinará a Cáritas Salamanca.",
+      "fuente": "https://www.lagacetadesalamanca.es/deportes/carreras-populares/listo-san-silvestre-universitaria-universidad-pontificia-20261117111249-nt.html"
     },
     {
       "titulo": "Entrega de premios del Concurso Intergeneracional 'Memoria del Corazón'",
@@ -366,6 +384,15 @@
       "lugar": "Peñaranda de Bracamonte",
       "descripcion": "Jornada formativa sobre sexualidad y diversidad, organizada por ACOPEDIS, dirigida a personas con discapacidad intelectual o del desarrollo, profesionales, familias y público interesado.",
       "fuente": "https://www.lagacetadesalamanca.es/provincia/penaranda-acogera-jornadas-sobre-sexualidad-diversidad-20261027105117-nt.html"
+    },
+    {
+      "titulo": "Clase magistral de 'Ground' en Guijuelo",
+      "categoria": "Deportes",
+      "fecha_inicio": "2026-12-02",
+      "fecha_fin": null,
+      "lugar": "centro deportivo municipal, Guijuelo",
+      "descripcion": "Natalia Miguel impartirá una clase magistral de 'Ground', un método de entrenamiento que utiliza el peso corporal, en dos sesiones a las 17:00 y 18:00 horas. Las plazas son limitadas y requieren inscripción previa.",
+      "fuente": "https://www.lagacetadesalamanca.es/provincia/guijuelo-programa-semana-actos-25n-edades-20261117114402-nt.html"
     },
     {
       "titulo": "Sorteo público de plazas para la Cabalgata de Reyes de Salamanca",
@@ -404,6 +431,15 @@
       "fuente": "https://www.lagacetadesalamanca.es/provincia/santa-marta-villa-navidena-incluira-isla-navidad-20261113141356-ga.html"
     },
     {
+      "titulo": "Partido de fútbol: Pontevedra vs Unionistas",
+      "categoria": "Deportes",
+      "fecha_inicio": "2026-12-06",
+      "fecha_fin": null,
+      "lugar": "Pasarón, Pontevedra",
+      "descripcion": "Unionistas se enfrentará al Pontevedra a domicilio el 6 de diciembre a las 20:30 horas. Este desplazamiento, cercano a las festividades del Día de la Constitución y la Inmaculada, se espera que cuente con una importante presencia de aficionados blanquinegros en Pasarón.",
+      "fuente": "https://www.lagacetadesalamanca.es/deportes/futbol-local/unionistas/unionistas-horario-encuentro-puente-constitucion-20261117185717-nt.html"
+    },
+    {
       "titulo": "Espectáculo de magia 'Me parto de magia'",
       "categoria": "Cultura",
       "fecha_inicio": "2026-12-12",
@@ -440,6 +476,14 @@
       "fuente": "https://www.lagacetadesalamanca.es/provincia/concursos-belenes-decoracion-celebrar-navidad-villamayor-20261107202242-nt.html"
     },
     {
+      "titulo": "XI Concurso Provincial de Puzles 'Rompecabezas'",
+      "categoria": "Cultura",
+      "fecha_inicio": "2026-12-23",
+      "fecha_fin": null,
+      "descripcion": "La Diputación de Salamanca organiza la XI edición del Concurso Provincial de Puzles 'Rompecabezas', una iniciativa del programa Jóvenes Despiertos que reunirá a jóvenes de 15 municipios. La competición se desarrollará por equipos y de manera simultánea en todas las localidades participantes, con premios para los dos mejores equipos de cada categoría.",
+      "fuente": "https://www.lagacetadesalamanca.es/salamanca/concurso-provincial-puzles-reunira-jovenes-municipios-20261117190744-nt.html"
+    },
+    {
       "titulo": "Recital de villancicos «El espíritu de la Navidad» en Béjar",
       "categoria": "Cultura",
       "fecha_inicio": "2026-12-26",
@@ -463,8 +507,8 @@
       "fecha_inicio": "2027-01-03",
       "fecha_fin": null,
       "lugar": "Paradinas de San Juan",
-      "descripcion": "Prueba popular que ya tiene fecha confirmada para su 14ª edición.",
-      "fuente": "https://www.lagacetadesalamanca.es/deportes/carreras-populares/paradinas-fecha-carrera-roscon-20260922084240-nt.html"
+      "descripcion": "La decimocuarta edición de la Carrera del Roscón 2027 amplía su capacidad a 600 dorsales y eleva a 140 euros el incentivo por batir los récords, combinando deporte, convivencia y sorpresas. Al término de la prueba, se ofrecerá una gran fideuá para los corredores.",
+      "fuente": "https://www.lagacetadesalamanca.es/provincia/carrera-roscon-2027-abre-inscripciones-premios-plazas-20261117191539-nt.html"
     },
     {
       "titulo": "Cabalgata de Reyes de Ciudad Rodrigo (centenario)",

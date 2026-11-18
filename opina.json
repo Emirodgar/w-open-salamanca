@@ -220,18 +220,6 @@
       "fecha_creacion": "2026-10-17"
     },
     {
-      "id": "caida-sistema-sanitario-2026",
-      "pregunta": "Ante la caída del sistema informático sanitario a nivel regional, que ha paralizado vacunaciones y consultas, ¿cree que la Junta de Castilla y León debería invertir más en la modernización y seguridad de sus infraestructuras tecnológicas sanitarias?",
-      "opciones": [
-        "Sí, es crucial para garantizar la calidad del servicio.",
-        "No, hay otras prioridades sanitarias más urgentes.",
-        "Debería priorizarse la seguridad, pero no necesariamente más inversión general.",
-        "No tengo suficiente información."
-      ],
-      "basado_en": "actualidad.json",
-      "fecha_creacion": "2026-10-18"
-    },
-    {
       "id": "cocaina-rosa-menores-2026",
       "pregunta": "Ante la alerta por el consumo de cocaína rosa en menores en Salamanca, ¿cree que las autoridades deberían intensificar las campañas de prevención y control en el ámbito juvenil?",
       "opciones": [
@@ -664,18 +652,6 @@
       "fecha_creacion": "2026-11-13"
     },
     {
-      "id": "huelga-carnico-guijuelo-impacto-2026",
-      "pregunta": "La huelga en el sector cárnico de Guijuelo finaliza hoy, 13 de noviembre, tras varios días de movilizaciones. ¿Cree que estas acciones lograrán mejoras significativas en las condiciones laborales de los trabajadores?",
-      "opciones": [
-        "Sí, la presión sindical es efectiva para conseguir cambios.",
-        "No, el impacto será limitado y no se verán grandes mejoras.",
-        "Es incierto, dependerá de las negociaciones futuras.",
-        "No tengo suficiente información."
-      ],
-      "basado_en": "eventos.json",
-      "fecha_creacion": "2026-11-13"
-    },
-    {
       "id": "cine-penaranda-2026",
       "pregunta": "Peñaranda de Bracamonte ha impulsado un nuevo convenio para garantizar la pervivencia del cine. ¿Considera que la inversión municipal en la continuidad de servicios culturales como el cine es una prioridad para los pueblos de la provincia?",
       "opciones": [
@@ -770,6 +746,30 @@
       ],
       "basado_en": "actualidad.json",
       "fecha_creacion": "2026-11-17"
+    },
+    {
+      "id": "lengua-azul-provincia-2026",
+      "pregunta": "Ante la detección del primer caso de lengua azul en la provincia, ¿cree que las administraciones deberían implementar medidas urgentes para proteger la ganadería local?",
+      "opciones": [
+        "Sí, es vital para la economía provincial",
+        "No, el impacto aún es incierto",
+        "Solo si se confirma un riesgo mayor",
+        "No tengo suficiente información"
+      ],
+      "basado_en": "actualidad.json",
+      "fecha_creacion": "2026-11-18"
+    },
+    {
+      "id": "subida-salario-minimo-2026",
+      "pregunta": "Ante la preocupación de los empresarios por una posible subida del salario mínimo, ¿cree que esta medida beneficiaría o perjudicaría a la economía y el empleo en Salamanca?",
+      "opciones": [
+        "Beneficiaría, impulsando el consumo y la calidad de vida",
+        "Perjudicaría, aumentando costes y afectando al empleo",
+        "El impacto sería limitado, no es una medida decisiva",
+        "No tengo suficiente información"
+      ],
+      "basado_en": "actualidad.json",
+      "fecha_creacion": "2026-11-18"
     }
   ]
 }
