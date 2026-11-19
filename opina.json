@@ -604,18 +604,6 @@
       "fecha_creacion": "2026-11-11"
     },
     {
-      "id": "curso-primeros-auxilios-carbajosa-2026",
-      "pregunta": "El Ayuntamiento de Carbajosa de la Sagrada, en colaboración con Cruz Roja, organiza un curso de primeros auxilios. ¿Cree que es importante que los municipios ofrezcan formación en habilidades básicas de emergencia a sus vecinos?",
-      "opciones": [
-        "Sí, es fundamental para la seguridad y el bienestar ciudadano.",
-        "No, la responsabilidad recae en la formación individual.",
-        "Es útil, pero no una prioridad municipal.",
-        "No tengo suficiente información."
-      ],
-      "basado_en": "eventos.json",
-      "fecha_creacion": "2026-11-11"
-    },
-    {
       "id": "rebaja-ibi-ciudad-rodrigo-2026",
       "pregunta": "Ciudad Rodrigo ha aprobado una rebaja del tipo impositivo del IBI. ¿Considera que esta medida beneficiará significativamente a los vecinos y a la economía local?",
       "opciones": [
@@ -640,18 +628,6 @@
       "fecha_creacion": "2026-11-12"
     },
     {
-      "id": "copa-rey-impacto-2026",
-      "pregunta": "La ciudad se prepara para recibir al Celta en la Copa del Rey, con gran expectación. ¿Cree que la celebración de partidos de este calibre beneficia la imagen deportiva y económica de Salamanca?",
-      "opciones": [
-        "Sí, impulsa el turismo y la visibilidad de la ciudad.",
-        "No, los beneficios son limitados y los costes elevados.",
-        "Depende de la repercusión mediática y el resultado deportivo.",
-        "No tengo suficiente información."
-      ],
-      "basado_en": "actualidad.json",
-      "fecha_creacion": "2026-11-13"
-    },
-    {
       "id": "cine-penaranda-2026",
       "pregunta": "Peñaranda de Bracamonte ha impulsado un nuevo convenio para garantizar la pervivencia del cine. ¿Considera que la inversión municipal en la continuidad de servicios culturales como el cine es una prioridad para los pueblos de la provincia?",
       "opciones": [
@@ -661,18 +637,6 @@
         "No tengo suficiente información."
       ],
       "basado_en": "eventos.json",
-      "fecha_creacion": "2026-11-14"
-    },
-    {
-      "id": "huelga-general-efectividad-2026",
-      "pregunta": "La huelga general del 11 de noviembre en Salamanca tuvo un seguimiento testimonial y se registraron incidentes. ¿Considera que este tipo de movilizaciones son efectivas para lograr cambios sociales o laborales en la ciudad?",
-      "opciones": [
-        "Sí, son necesarias para visibilizar demandas.",
-        "No, su impacto es limitado y generan inconvenientes.",
-        "Depende del apoyo ciudadano y la organización.",
-        "No tengo suficiente información."
-      ],
-      "basado_en": "actualidad.json",
       "fecha_creacion": "2026-11-14"
     },
     {
@@ -770,6 +734,30 @@
       ],
       "basado_en": "actualidad.json",
       "fecha_creacion": "2026-11-18"
+    },
+    {
+      "id": "feria-negocio-rural-2026",
+      "pregunta": "Carbajosa acogerá la segunda jornada de la Feria del Negocio Rural de la Diputación de Salamanca. ¿Considera que este evento es efectivo para impulsar el emprendimiento y el desarrollo económico en el medio rural?",
+      "opciones": [
+        "Sí, es crucial para dinamizar la economía rural",
+        "No, su impacto es limitado y temporal",
+        "Es un buen complemento, pero se necesitan más políticas de apoyo",
+        "No tengo suficiente información"
+      ],
+      "basado_en": "eventos.json",
+      "fecha_creacion": "2026-11-19"
+    },
+    {
+      "id": "fiesta-grullas-penaranda-2026",
+      "pregunta": "El Campo de Peñaranda organizará por primera vez una fiesta de bienvenida a las grullas en el azud de Riolobos. ¿Cree que esta iniciativa es efectiva para fomentar el turismo de naturaleza en la provincia?",
+      "opciones": [
+        "Sí, atraerá a visitantes interesados en la ornitología",
+        "No, su impacto será limitado",
+        "Es un buen inicio, pero se necesitan más acciones",
+        "No tengo suficiente información"
+      ],
+      "basado_en": "eventos.json",
+      "fecha_creacion": "2026-11-19"
     }
   ]
 }

@@ -1,11 +1,11 @@
 {
   "url_base": "https://www.lagacetadesalamanca.es",
-  "generado_en": "2026-11-18T05:45:39+00:00",
+  "generado_en": "2026-11-19T05:45:41+00:00",
   "periodo_cubierto": {
-    "desde": "2026-11-15",
-    "hasta": "2026-11-18"
+    "desde": "2026-11-16",
+    "hasta": "2026-11-19"
   },
-  "total_urls_analizadas": 169,
+  "total_urls_analizadas": 184,
   "secciones_excluidas": [
     "gente-estilo",
     "nacional",
@@ -16,39 +16,39 @@
   "nota_cobertura": "El análisis cubre únicamente las URLs presentes en el sitemap en el momento de la consulta (excluyendo, si se indicó, las secciones filtradas). Si el sitemap es incremental o 'rolling', el periodo real puede ser más corto que el solicitado — revisa 'periodo_cubierto' para confirmarlo.",
   "por_seccion": [
     [
-      "salamanca",
-      51
+      "provincia",
+      55
     ],
     [
-      "provincia",
-      47
+      "salamanca",
+      52
     ],
     [
       "deportes",
-      32
+      33
     ],
     [
       "sucesos",
-      18
+      21
     ],
     [
       "campo",
-      9
+      11
     ],
     [
-      "castilla-y-leon",
-      3
+      "toros",
+      4
     ],
     [
       "encuestas",
       3
     ],
     [
-      "internacional",
-      3
+      "castilla-y-leon",
+      2
     ],
     [
-      "toros",
+      "internacional",
       2
     ],
     [
@@ -59,15 +59,15 @@
   "por_subseccion": [
     [
       "deportes/futbol-local",
-      11
+      16
+    ],
+    [
+      "deportes/deporte-base",
+      4
     ],
     [
       "deportes/carreras-populares",
       4
-    ],
-    [
-      "deportes/deporte-base",
-      3
     ],
     [
       "deportes/baloncesto-local",
@@ -77,153 +77,165 @@
   "por_tipo_contenido": [
     [
       "noticia",
-      149
+      171
     ],
     [
       "galería",
-      20
+      12
+    ],
+    [
+      "directo / en vivo",
+      1
     ]
   ],
   "heatmap_calendario": [
     {
-      "fecha": "2026-11-15",
-      "total": 43,
-      "salamanca": 13,
-      "provincia": 11,
-      "deportes": 12,
-      "sucesos": 3,
-      "campo": 1,
-      "castilla-y-leon": 1,
-      "encuestas": 1,
-      "internacional": 1,
-      "toros": 0,
-      "cine-y-series": 0
-    },
-    {
       "fecha": "2026-11-16",
-      "total": 62,
-      "salamanca": 22,
-      "provincia": 13,
-      "deportes": 10,
-      "sucesos": 7,
+      "total": 53,
+      "provincia": 11,
+      "salamanca": 17,
+      "deportes": 9,
+      "sucesos": 6,
       "campo": 3,
-      "castilla-y-leon": 1,
-      "encuestas": 1,
-      "internacional": 2,
       "toros": 2,
+      "encuestas": 1,
+      "castilla-y-leon": 1,
+      "internacional": 2,
       "cine-y-series": 1
     },
     {
       "fecha": "2026-11-17",
-      "total": 60,
-      "salamanca": 13,
+      "total": 59,
       "provincia": 23,
-      "deportes": 10,
+      "salamanca": 13,
+      "deportes": 9,
       "sucesos": 7,
       "campo": 5,
-      "castilla-y-leon": 1,
-      "encuestas": 1,
-      "internacional": 0,
       "toros": 0,
+      "encuestas": 1,
+      "castilla-y-leon": 1,
+      "internacional": 0,
       "cine-y-series": 0
     },
     {
       "fecha": "2026-11-18",
-      "total": 4,
-      "salamanca": 3,
+      "total": 67,
+      "provincia": 21,
+      "salamanca": 19,
+      "deportes": 14,
+      "sucesos": 7,
+      "campo": 3,
+      "toros": 2,
+      "encuestas": 1,
+      "castilla-y-leon": 0,
+      "internacional": 0,
+      "cine-y-series": 0
+    },
+    {
+      "fecha": "2026-11-19",
+      "total": 5,
       "provincia": 0,
-      "deportes": 0,
+      "salamanca": 3,
+      "deportes": 1,
       "sucesos": 1,
       "campo": 0,
-      "castilla-y-leon": 0,
-      "encuestas": 0,
-      "internacional": 0,
       "toros": 0,
+      "encuestas": 0,
+      "castilla-y-leon": 0,
+      "internacional": 0,
       "cine-y-series": 0
     }
   ],
   "conceptos_destacados": [
     {
-      "concepto": "Castilla y León",
-      "piezas": 6,
-      "seccion_principal": "castilla-y-leon",
-      "desde": "2026-11-15",
-      "hasta": "2026-11-17",
+      "concepto": "Actividad y eventos en Guijuelo",
+      "piezas": 7,
+      "seccion_principal": "provincia",
+      "desde": "2026-11-16",
+      "hasta": "2026-11-18",
       "ejemplos_redactados": [
-        "La región de Castilla y León ha sido noticia por declaraciones políticas y avisos meteorológicos. Se ha destacado la presencia de un líder de Vox y alertas por fenómenos atmosféricos."
+        "Guijuelo celebra un concierto de Santa Cecilia y programa una semana de actos por el 25N.",
+        "La localidad espera una multitudinaria carrera del turrón en diciembre."
       ]
     },
     {
-      "concepto": "Unionistas",
+      "concepto": "Participación salmantina en el Campeonato de España",
       "piezas": 5,
       "seccion_principal": "deportes",
-      "desde": "2026-11-15",
-      "hasta": "2026-11-17",
+      "desde": "2026-11-16",
+      "hasta": "2026-11-18",
       "ejemplos_redactados": [
-        "El equipo Unionistas ha centrado la actualidad deportiva, con noticias sobre el horario de un encuentro y el planteamiento de su plantilla. Los jugadores han cerrado filas ante los próximos desafíos."
+        "El Doryoku ha destacado en la fase sector oeste del Campeonato de España.",
+        "Alejandro Pérez se clasifica para la fase final y Manuel Delgado obtiene dos medallas de bronce."
       ]
     },
     {
-      "concepto": "Campeonato de España",
+      "concepto": "Gestión del recurso hídrico en la provincia",
+      "piezas": 5,
+      "seccion_principal": "provincia",
+      "desde": "2026-11-16",
+      "hasta": "2026-11-19",
+      "ejemplos_redactados": [
+        "San Julián de la Valmuza recupera el agua potable tras un problema.",
+        "Navasfrías construye una nueva balsa de agua para el ganado."
+      ]
+    },
+    {
+      "concepto": "Novedades informativas en Castilla y León",
       "piezas": 4,
-      "seccion_principal": "deportes",
+      "seccion_principal": "castilla-y-leon",
       "desde": "2026-11-16",
       "hasta": "2026-11-17",
       "ejemplos_redactados": [
-        "Varios deportistas salmantinos han destacado en el Campeonato de España, con clasificaciones y medallas de bronce. Se han reportado éxitos en diferentes disciplinas atléticas."
+        "Dos provincias de Castilla y León se encuentran bajo aviso meteorológico.",
+        "La Junta permitirá a veterinarios privados realizar pruebas en la región."
       ]
     },
     {
-      "concepto": "Ciudad Rodrigo",
-      "piezas": 4,
-      "seccion_principal": "provincia",
-      "desde": "2026-11-15",
-      "hasta": "2026-11-16",
-      "ejemplos_redactados": [
-        "Ciudad Rodrigo se prepara para la Navidad y ha abordado temas sociales como la pobreza. También se ha informado sobre la readjudicación de obras en dos de sus calles."
-      ]
-    },
-    {
-      "concepto": "Campo",
+      "concepto": "Error de identificación en el Hospital de Montalvos",
       "piezas": 4,
       "seccion_principal": "salamanca",
-      "desde": "2026-11-15",
-      "hasta": "2026-11-17",
-      "ejemplos_redactados": [
-        "El sector del campo ha sido relevante en la campaña electoral, con discusiones sobre su influencia en los resultados. Además, se ha reportado la situación de un campo deportivo."
-      ]
-    },
-    {
-      "concepto": "Tren Salamanca-Madrid",
-      "piezas": 4,
-      "seccion_principal": "salamanca",
-      "desde": "2026-11-15",
-      "hasta": "2026-11-16",
-      "ejemplos_redactados": [
-        "La conexión ferroviaria entre Salamanca y Madrid ha experimentado retrasos y transbordos por autobús. Se ha informado sobre la finalización de los transbordos en algunos servicios."
-      ]
-    },
-    {
-      "concepto": "Guijuelo",
-      "piezas": 4,
-      "seccion_principal": "provincia",
       "desde": "2026-11-16",
-      "hasta": "2026-11-17",
+      "hasta": "2026-11-18",
       "ejemplos_redactados": [
-        "El municipio de Guijuelo ha aprobado sus presupuestos para 2027, con un incremento en inversiones. También ha organizado actos en conmemoración del 25N y ha sido sede de un encuentro político."
+        "Un error familiar fue el origen del cambio de pulseras en las urgencias del Hospital de Montalvos.",
+        "Se intercambiaron por error dos pacientes, dando a uno por muerto."
       ]
     },
     {
-      "concepto": "Santa Marta",
-      "piezas": 3,
+      "concepto": "Actos conmemorativos del 25N",
+      "piezas": 4,
       "seccion_principal": "provincia",
-      "desde": "2026-11-15",
-      "hasta": "2026-11-17",
+      "desde": "2026-11-17",
+      "hasta": "2026-11-18",
       "ejemplos_redactados": [
-        "Santa Marta ha sido escenario de actividades por el 25N y jornadas micológicas. Se ha anunciado la renovación de calles en la urbanización Aldebarán."
+        "Doniños de Salamanca se compromete con la igualdad con una programación especial por el 25N.",
+        "Carbajosa de la Sagrada y Santa Marta organizan talleres y actos institucionales."
+      ]
+    },
+    {
+      "concepto": "Nueva sección de violencia sobre la mujer en Salamanca",
+      "piezas": 4,
+      "seccion_principal": "sucesos",
+      "desde": "2026-11-16",
+      "hasta": "2026-11-18",
+      "ejemplos_redactados": [
+        "Salamanca contará con una nueva sección especializada en violencia sobre la mujer.",
+        "Este anuncio busca reforzar la protección y atención a las víctimas."
+      ]
+    },
+    {
+      "concepto": "Conexión ferroviaria Salamanca-Madrid",
+      "piezas": 4,
+      "seccion_principal": "salamanca",
+      "desde": "2026-11-16",
+      "hasta": "2026-11-18",
+      "ejemplos_redactados": [
+        "Se pone fin al transbordo en autobús para los viajeros de trenes Salamanca-Madrid.",
+        "Los primeros Alvia de la mañana entre Salamanca y Madrid se realizan en autobús debido a incidencias."
       ]
     }
   ],
-  "resumen_borrador": "Se han publicado 169 noticias entre el 2026-11-15 y el 2026-11-18. La actividad se ha concentrado sobre todo en salamanca (51 piezas), provincia (47 piezas), deportes (32 piezas).\n\nLos conceptos con más piezas relacionadas son: Castilla · Leon; Unionistas; Centro; Campeonato · Espana. Revisa 'evidencia' de cada concepto para redactar el resumen final.",
-  "resumen": "Durante el periodo comprendido entre el 15 y el 18 de noviembre de 2026, la actualidad salmantina ha estado marcada por las incidencias en la conexión ferroviaria con Madrid. Los trenes han sufrido retrasos y transbordos por autobús, agravados por un descarrilamiento y huelgas, aunque se ha anunciado el fin de algunos transbordos. La provincia también ha sido foco de noticias, desde la preparación navideña en Ciudad Rodrigo y la aprobación de presupuestos en Guijuelo, hasta la detección del primer caso de lengua azul y proyectos de renovación de infraestructuras hídricas en varios municipios.\n\nEn el ámbito deportivo, Unionistas ha sido protagonista con noticias sobre sus encuentros y la cohesión de su plantilla. Asimismo, varios atletas salmantinos han logrado éxitos en el Campeonato de España, y se ha destacado la actividad en el fútbol base y la preparación de la San Silvestre. La sección de sucesos ha reportado múltiples incidentes, incluyendo agresiones, robos y accidentes de tráfico.\n\nEn el plano económico, los empresarios han manifestado su preocupación ante una posible subida del salario mínimo. Además, un error en la identificación de pacientes en el Hospital de Montalvos ha generado una investigación, y el Centro del Cáncer ha anunciado un avance en la lucha contra la enfermedad."
+  "resumen_borrador": "Se han publicado 184 noticias entre el 2026-11-16 y el 2026-11-19. La actividad se ha concentrado sobre todo en provincia (55 piezas), salamanca (52 piezas), deportes (33 piezas).\n\nLos conceptos con más piezas relacionadas son: Guijuelo; Campeonato · Espana; Agua; Castilla · Leon. Revisa 'evidencia' de cada concepto para redactar el resumen final.",
+  "resumen": "La actualidad salmantina entre el 16 y el 19 de noviembre de 2026 ha estado marcada por diversos acontecimientos en la provincia y la capital. En el ámbito social, se ha puesto fin al transbordo en autobús para los viajeros de la línea ferroviaria Salamanca-Madrid, una medida que busca normalizar el servicio. No obstante, un incidente en el Hospital de Montalvos, donde se produjo un error en la identificación de dos pacientes, ha generado preocupación y ha motivado una investigación.\n\nLa lucha contra la violencia de género ha cobrado relevancia con la creación de una nueva sección especializada en Salamanca y la organización de múltiples actos conmemorativos del 25N en municipios como Doniños, Carbajosa de la Sagrada y Santa Marta. En el plano deportivo, la participación salmantina en el Campeonato de España ha dejado resultados destacados, con el Doryoku brillando en la fase sector oeste y Manuel Delgado obteniendo dos medallas de bronce.\n\nFinalmente, la gestión del agua ha sido noticia en la provincia con la recuperación del suministro potable en San Julián de la Valmuza y la construcción de una nueva balsa para ganado en Navasfrías. Guijuelo, por su parte, ha anunciado una variada agenda cultural y deportiva, incluyendo un concierto de Santa Cecilia y la esperada carrera del turrón en diciembre."
 }
