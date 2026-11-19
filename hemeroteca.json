@@ -1,7 +1,7 @@
 {
-  "generado_en": "2026-11-18T21:26:06.282Z",
+  "generado_en": "2026-11-19T01:52:25.911Z",
   "dias_ventana": 20,
-  "total": 3523,
+  "total": 3521,
   "medios": [
     "Tribuna Salamanca",
     "Salamanca24Horas",
@@ -9,6 +9,83 @@
     "Salamancahoy"
   ],
   "noticias": [
+    {
+      "url": "https://www.lagacetadesalamanca.es/deportes/futbol-local/salamancauds/lluvia-apaga-polvora-salamanca-helmantico-20261118223945-nt.html",
+      "titulo": "La lluvia apaga la pólvora del Salamanca UDS en el Helmántico (0-0)",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-11-18",
+      "fecha_hora": "2026-11-18T22:52:08.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/deportes/futbol-local/salamancauds/claves-empate-salamanca-atletico-albacete-20261118234010-nt.html",
+      "titulo": "Las claves del empate del Salamanca UDS contra el Atlético Albacete",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-11-18",
+      "fecha_hora": "2026-11-18T22:40:10.000Z"
+    },
+    {
+      "url": "https://www.salamanca24horas.com/sucesos/identidad-suplantada-realizar-apuestas-online-calvario-vecina-carbajosa-meses",
+      "titulo": "Identidad suplantada para realizar apuestas online: el calvario de una vecina de Carbajosa durante meses",
+      "medio": "Salamanca24Horas",
+      "fecha": "2026-11-18",
+      "fecha_hora": "2026-11-18T22:39:18.000Z"
+    },
+    {
+      "url": "https://www.salamanca24horas.com/provincia/bejar/lluvia-desborda-alcantarillado-candelario-e-inunda-algunas-zonas-municipio",
+      "titulo": "La lluvia desborda el alcantarillado de Candelario e inunda algunas zonas del municipio",
+      "medio": "Salamanca24Horas",
+      "fecha": "2026-11-18",
+      "fecha_hora": "2026-11-18T22:25:02.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/deportes/futbol-local/salamancauds/muniain-sobre-oportunidad-perdida-queria-dormir-lider-20261118230942-nt.html",
+      "titulo": "Muniain, sobre la oportunidad perdida: «Yo también quería dormir líder, pero no puedo reprochar nada a los jugadores»",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-11-18",
+      "fecha_hora": "2026-11-18T22:10:45.000Z"
+    },
+    {
+      "url": "https://www.salamancahoy.es/deportes/salamanca-cf-uds/salamanca-estrella-lluvia-queda-premio-ante-atletico-20261118225829-ga.html",
+      "titulo": "El Salamanca UDS se estrella contra la lluvia y se queda sin premio ante el Atlético Albacete",
+      "medio": "Salamancahoy",
+      "fecha": "2026-11-18",
+      "fecha_hora": "2026-11-18T21:58:30.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/provincia/extrabajador-municipal-jubilado-enciende-pleno-vitigudino-20261118225732-nt.html",
+      "titulo": "El caso de un extrabajador municipal jubilado enciende el pleno de Vitigudino",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-11-18",
+      "fecha_hora": "2026-11-18T21:57:33.000Z"
+    },
+    {
+      "url": "https://www.salamanca24horas.com/deportes/salamanca-cf-uds/muniain-hemos-rondado-gol-muchisimas-veces",
+      "titulo": "Muniain: \"Hemos rondado el gol muchísimas veces\"",
+      "medio": "Salamanca24Horas",
+      "fecha": "2026-11-18",
+      "fecha_hora": "2026-11-18T21:56:56.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/encuestas/cree-apostar-nuevos-planes-movilidad-puede-ayudar-20261118225030-nt.html",
+      "titulo": "¿Cree que apostar por nuevos planes de movilidad puede ayudar a frenar la despoblación?",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-11-18",
+      "fecha_hora": "2026-11-18T21:50:30.000Z"
+    },
+    {
+      "url": "https://www.tribunasalamanca.com/noticias/467171/el-salamanca-uds-pierde-una-oportunidad-de-oro-contra-el-albacete-b",
+      "titulo": "El Salamanca UDS pierde una oportunidad de oro contra el Albacete B",
+      "medio": "Tribuna Salamanca",
+      "fecha": "2026-11-18",
+      "fecha_hora": "2026-11-18T21:44:54.000Z"
+    },
+    {
+      "url": "https://www.salamanca24horas.com/deportes/salamanca-cf-uds/0-0-diluvio-frena-salamanca-cf-uds",
+      "titulo": "(0-0) El diluvio frena al Salamanca CF UDS",
+      "medio": "Salamanca24Horas",
+      "fecha": "2026-11-18",
+      "fecha_hora": "2026-11-18T21:28:29.000Z"
+    },
     {
       "url": "https://www.lagacetadesalamanca.es/provincia/lluvia-desborda-alcantarillas-antigua-n630-bejar-20261118220951-nt.html",
       "titulo": "La lluvia también desborda las alcantarillas de la antigua N-630 en Béjar",
@@ -519,6 +596,13 @@
       "medio": "Salamanca24Horas",
       "fecha": "2026-11-18",
       "fecha_hora": "2026-11-18T12:29:05.000Z"
+    },
+    {
+      "url": "https://www.tribunasalamanca.com/noticias/467093/desconecten-todo",
+      "titulo": "Desconecten todo",
+      "medio": "Tribuna Salamanca",
+      "fecha": "2026-11-18",
+      "fecha_hora": "2026-11-18T12:28:37.000Z"
     },
     {
       "url": "https://www.salamancahoy.es/salamanca/provincia/premio-mejor-empresa-ano-salamanca-negocio-anos-20261118132803-nt.html",
@@ -24566,109 +24650,11 @@
       "fecha_hora": "2026-10-30T04:00:00.000Z"
     },
     {
-      "url": "https://www.lagacetadesalamanca.es/deportes/baloncesto-local/meins-avenida/meins-avenida-estrena-domicilio-brillante-interpretacion-belgica-20261029222513-nt.html",
-      "titulo": "Meins Avenida se estrena a domicilio con una brillante interpretación en Bélgica (55-87)",
-      "medio": "La Gaceta de Salamanca",
-      "fecha": "2026-10-29",
-      "fecha_hora": "2026-10-29T22:27:48.000Z"
-    },
-    {
-      "url": "https://www.lagacetadesalamanca.es/deportes/futbol-local/unionistas/adios-sueno-copero-unionistas-tras-caer-derrotado-20261029223715-nt.html",
-      "titulo": "Batacazo en Ávila: Unionistas se despide de la Copa en la prórroga (1-0)",
-      "medio": "La Gaceta de Salamanca",
-      "fecha": "2026-10-29",
-      "fecha_hora": "2026-10-29T22:27:08.000Z"
-    },
-    {
-      "url": "https://www.salamancahoy.es/deportes/unionistas-cf/javi-medina-tras-eliminacion-unionistas-copa-rey-20261029232219-nt.html",
-      "titulo": "Javi Medina, tras la eliminación de Unionistas de Copa del Rey: «Ha estado muy igualado, podía haber caído de nuestro parte»",
-      "medio": "Salamancahoy",
-      "fecha": "2026-10-29",
-      "fecha_hora": "2026-10-29T22:22:20.000Z"
-    },
-    {
-      "url": "https://www.lagacetadesalamanca.es/deportes/futbol-local/unionistas/javi-medina-pedir-perdon-aficion-eliminacion-era-20261029231659-nt.html",
-      "titulo": "Javi Medina: «Tengo que pedir perdón a la afición por la eliminación, era un partido para el que teníamos muchísima ilusión»",
-      "medio": "La Gaceta de Salamanca",
-      "fecha": "2026-10-29",
-      "fecha_hora": "2026-10-29T22:16:59.000Z"
-    },
-    {
-      "url": "https://www.lagacetadesalamanca.es/deportes/baloncesto-local/meins-avenida/raquel-romo-jugadoras-dan-100-darles-20261029230557-nt.html",
-      "titulo": "Raquel Romo: «Las jugadoras dan el 100 % y eso es para darles un 10»",
-      "medio": "La Gaceta de Salamanca",
-      "fecha": "2026-10-29",
-      "fecha_hora": "2026-10-29T22:05:57.000Z"
-    },
-    {
-      "url": "https://www.tribunasalamanca.com/noticias/464640/javi-medina-tras-el-batacazo-hasta-el-final-lo-hemos-intentado-pero-sabemos-que-nuestra-guerra-es-la-liga",
-      "titulo": "Javi Medina, tras el batacazo: \"Hasta el final lo hemos intentado, pero sabemos que nuestra guerra es la Liga\"",
-      "medio": "Tribuna Salamanca",
-      "fecha": "2026-10-29",
-      "fecha_hora": "2026-10-29T22:04:29.000Z"
-    },
-    {
-      "url": "https://www.tribunasalamanca.com/noticias/464639/raquel-romo-pone-el-foco-en-el-crecimiento-de-avenida-tenemos-que-minimizar-esos-minutos-malos",
-      "titulo": "Raquel Romo pone el foco en el crecimiento de Avenida: \"Tenemos que minimizar esos minutos malos\"",
-      "medio": "Tribuna Salamanca",
-      "fecha": "2026-10-29",
-      "fecha_hora": "2026-10-29T21:49:37.000Z"
-    },
-    {
-      "url": "https://www.lagacetadesalamanca.es/deportes/baloncesto-local/meins-avenida/claves-gran-triunfo-meins-avenida-namur-20261029224704-nt.html",
-      "titulo": "Las claves del gran triunfo de Meins Avenida contra el Namur",
-      "medio": "La Gaceta de Salamanca",
-      "fecha": "2026-10-29",
-      "fecha_hora": "2026-10-29T21:47:04.000Z"
-    },
-    {
       "url": "https://www.salamancahoy.es/deportes/unionistas-cf/real-avila-acaba-sueno-copero-unionistas-prorroga-20261029223801-nt.html",
       "titulo": "El Real Ávila acaba con el sueño copero de Unionistas en la prórroga",
       "medio": "Salamancahoy",
       "fecha": "2026-10-29",
       "fecha_hora": "2026-10-29T21:45:32.000Z"
-    },
-    {
-      "url": "https://www.salamanca24horas.com/deportes/unionistas-cf/aficion-unionistas-explota-grita-medina-vete-ya-tras-eliminacion-copera",
-      "titulo": "La afición de Unionistas explota y grita el \"Medina, vete ya\" tras la eliminación copera",
-      "medio": "Salamanca24Horas",
-      "fecha": "2026-10-29",
-      "fecha_hora": "2026-10-29T21:38:50.000Z"
-    },
-    {
-      "url": "https://www.lagacetadesalamanca.es/deportes/futbol-local/unionistas/avila-unionistas-directo-resultado-goles-online-partido-20261029190000-di.html",
-      "titulo": "Ávila - Unionistas: resultado, resumen y goles del partido de Copa del Rey (1-0)",
-      "medio": "La Gaceta de Salamanca",
-      "fecha": "2026-10-29",
-      "fecha_hora": "2026-10-29T21:38:17.000Z"
-    },
-    {
-      "url": "https://www.tribunasalamanca.com/noticias/464636/el-sueno-de-la-copa-del-rey-se-torna-pesadilla-para-unionistas-en-avila",
-      "titulo": "El sueño de la Copa del Rey se torna pesadilla para Unionistas en Ávila",
-      "medio": "Tribuna Salamanca",
-      "fecha": "2026-10-29",
-      "fecha_hora": "2026-10-29T21:33:39.000Z"
-    },
-    {
-      "url": "https://www.salamanca24horas.com/deportes/unionistas-cf/1-0-batacazo-unionistas-eliminado-primeras-cambio-copa-rey",
-      "titulo": "(1-0) Batacazo de Unionistas: eliminado a las primeras de cambio en Copa del Rey",
-      "medio": "Salamanca24Horas",
-      "fecha": "2026-10-29",
-      "fecha_hora": "2026-10-29T21:32:49.000Z"
-    },
-    {
-      "url": "https://www.lagacetadesalamanca.es/deportes/baloncesto-local/meins-avenida/namur-capitale-meins-avenida-directo-resultado-senal-20261029200000-di.html",
-      "titulo": "Namur Capitale - Meins Avenida, en directo: resultado y señal de TV del partido de hoy de Eurocup (55-87, final)",
-      "medio": "La Gaceta de Salamanca",
-      "fecha": "2026-10-29",
-      "fecha_hora": "2026-10-29T21:30:10.000Z"
-    },
-    {
-      "url": "https://www.salamanca24horas.com/deportes/jorge-garcia-una-pena-dos-minutos-va-partido",
-      "titulo": "Jorge García: “Una pena que en dos minutos se te va el partido”",
-      "medio": "Salamanca24Horas",
-      "fecha": "2026-10-29",
-      "fecha_hora": "2026-10-29T21:27:43.000Z"
     }
   ]
 }
