@@ -758,6 +758,30 @@
       ],
       "basado_en": "eventos.json",
       "fecha_creacion": "2026-11-19"
+    },
+    {
+      "id": "perfumerias-avenida-perspectivas-2026",
+      "pregunta": "Ante el exigente calendario y los problemas de lesiones que afronta Perfumerías Avenida, ¿cómo valora las perspectivas del equipo para la actual temporada?",
+      "opciones": [
+        "Optimistas, superarán los desafíos",
+        "Preocupantes, la temporada será difícil",
+        "Dependerá de la recuperación de las lesiones",
+        "No tengo suficiente información"
+      ],
+      "basado_en": "actualidad.json",
+      "fecha_creacion": "2026-11-20"
+    },
+    {
+      "id": "mantenimiento-teatro-cervantes-bejar-2026",
+      "pregunta": "Tras los daños sufridos por el temporal en el Teatro Cervantes de Béjar y su posterior reparación, ¿cree que las autoridades locales deberían priorizar la inversión en el mantenimiento preventivo de edificios emblemáticos?",
+      "opciones": [
+        "Sí, es fundamental para preservar el patrimonio",
+        "No, hay otras prioridades más urgentes para el municipio",
+        "Debería evaluarse caso por caso según el estado del edificio",
+        "No tengo suficiente información"
+      ],
+      "basado_en": "actualidad.json",
+      "fecha_creacion": "2026-11-20"
     }
   ]
 }
