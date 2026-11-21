@@ -592,18 +592,6 @@
       "fecha_creacion": "2026-11-10"
     },
     {
-      "id": "semana-micologica-carbajosa-2026",
-      "pregunta": "El Ayuntamiento de Carbajosa de la Sagrada organiza una Semana Micológica para acercar el mundo de las setas a los vecinos. ¿Considera que este tipo de iniciativas culturales y de contacto con la naturaleza son beneficiosas para el municipio?",
-      "opciones": [
-        "Sí, fomentan la cultura local y el medio ambiente.",
-        "No, hay otras prioridades más urgentes para los vecinos.",
-        "Son un buen complemento, pero su impacto es limitado.",
-        "No tengo suficiente información."
-      ],
-      "basado_en": "eventos.json",
-      "fecha_creacion": "2026-11-11"
-    },
-    {
       "id": "rebaja-ibi-ciudad-rodrigo-2026",
       "pregunta": "Ciudad Rodrigo ha aprobado una rebaja del tipo impositivo del IBI. ¿Considera que esta medida beneficiará significativamente a los vecinos y a la economía local?",
       "opciones": [
@@ -782,6 +770,30 @@
       ],
       "basado_en": "actualidad.json",
       "fecha_creacion": "2026-11-20"
+    },
+    {
+      "id": "feria-san-andres-ciudad-rodrigo-2026",
+      "pregunta": "La Feria de San Andrés de Ciudad Rodrigo se celebrará del 26 al 30 de noviembre, incluyendo ponencias y exposición ganadera. ¿Cree que este evento es crucial para el sector ganadero y la economía local?",
+      "opciones": [
+        "Sí, es un pilar fundamental para el sector.",
+        "No, su impacto es limitado y temporal.",
+        "Es importante, pero se necesitan más acciones de apoyo.",
+        "No tengo suficiente información."
+      ],
+      "basado_en": "eventos.json",
+      "fecha_creacion": "2026-11-21"
+    },
+    {
+      "id": "desprendimiento-catedral-salamanca-2026",
+      "pregunta": "Ante el reciente desprendimiento en la Catedral de Salamanca, ¿cree que se debería aumentar la inversión en el mantenimiento y conservación del patrimonio histórico de la ciudad?",
+      "opciones": [
+        "Sí, es fundamental para preservar nuestro legado.",
+        "No, hay otras prioridades más urgentes para la ciudad.",
+        "Debería buscarse financiación externa, no solo municipal.",
+        "No tengo suficiente información."
+      ],
+      "basado_en": "actualidad.json",
+      "fecha_creacion": "2026-11-21"
     }
   ]
 }

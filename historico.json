@@ -803,6 +803,24 @@
         "No, su impacto es limitado y generan inconvenientes.": 1
       },
       "total_votos": 1
+    },
+    {
+      "id": "semana-micologica-carbajosa-2026",
+      "pregunta": "El Ayuntamiento de Carbajosa de la Sagrada organiza una Semana Micológica para acercar el mundo de las setas a los vecinos. ¿Considera que este tipo de iniciativas culturales y de contacto con la naturaleza son beneficiosas para el municipio?",
+      "opciones": [
+        "Sí, fomentan la cultura local y el medio ambiente.",
+        "No, hay otras prioridades más urgentes para los vecinos.",
+        "Son un buen complemento, pero su impacto es limitado.",
+        "No tengo suficiente información."
+      ],
+      "basado_en": "eventos.json",
+      "fecha_creacion": "2026-11-11",
+      "fecha_archivado": "2026-11-21",
+      "resultados": {
+        "Sí, fomentan la cultura local y el medio ambiente.": 2,
+        "Son un buen complemento, pero su impacto es limitado.": 1
+      },
+      "total_votos": 3
     }
   ]
 }

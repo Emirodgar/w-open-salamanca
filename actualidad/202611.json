@@ -1,7 +1,7 @@
 {
   "mes": "2026-11",
   "titulo_mes": "Noviembre 2026",
-  "resumen_mes": "Noviembre ha estado marcado por los fallecimientos de Charo Diego, Jesús Miguel y Curro Sánchez. La huelga general generó tensión, mientras la línea ferroviaria Salamanca-Madrid ha experimentado retrasos y transbordos, aunque estos últimos han finalizado. Un error en la identificación de pacientes en Montalvos ha causado preocupación, y se ha detectado el primer caso de lengua azul. Empresarios también han advertido sobre el impacto de una posible subida del salario mínimo, la provincia ha visto la creación de una nueva sección contra la violencia de género y Béjar ha tenido que reparar su Teatro Cervantes por daños.",
+  "resumen_mes": "Noviembre ha estado marcado por los fallecimientos de Charo Diego, Jesús Miguel y Curro Sánchez. La huelga general generó tensión, mientras la línea ferroviaria Salamanca-Madrid ha experimentado nuevos retrasos y un caos por averías. Un error en la identificación de pacientes en Montalvos ha causado preocupación, y se ha detectado el primer caso de lengua azul. La visita de Santiago Abascal a Salamanca generó tensión y protestas.",
   "hitos": [
     {
       "fecha": "2026-11-01",
@@ -33,14 +33,6 @@
       "categoria": "Sociedad",
       "descripcion": "La jornada de huelga general en Salamanca se salda con un seguimiento testimonial y algunos incidentes, incluyendo cargas policiales y manifestaciones.",
       "fuente": "https://www.lagacetadesalamanca.es/salamanca/huelga-general-salamanca-salda-seguimiento-testimonial-incidentes-20261111133650-nt.html",
-      "destacado": true
-    },
-    {
-      "fecha": "2026-11-16",
-      "titulo": "Retrasos y transbordos en la línea ferroviaria Salamanca-Madrid",
-      "categoria": "Sociedad",
-      "descripcion": "La línea de tren entre Salamanca y Madrid ha sufrido constantes retrasos y transbordos por autobús, si bien se ha puesto fin a esta modalidad de transporte para los viajeros.",
-      "fuente": "https://www.lagacetadesalamanca.es/salamanca/nueva-jornada-retrasos-salamanca-madrid-via-sigue-20261116092936-nt.html",
       "destacado": false
     },
     {
@@ -52,20 +44,28 @@
       "destacado": false
     },
     {
-      "fecha": "2026-11-17",
-      "titulo": "Empresarios advierten sobre el impacto de una nueva subida del salario mínimo",
-      "categoria": "Economía",
-      "descripcion": "El sector empresarial ha expresado su preocupación ante una posible nueva subida del salario mínimo, alertando sobre sus consecuencias.",
-      "fuente": "https://www.lagacetadesalamanca.es/salamanca/empresarios-avisan-nueva-subida-salario-minimo-traera-20261117060000-nt.html",
-      "destacado": false
-    },
-    {
       "fecha": "2026-11-18",
-      "titulo": "El juzgado admite a trámite una denuncia por el error en la identificación de pacientes e",
+      "titulo": "El juzgado admite a trámite una denuncia por el error en la identificación de pacientes",
       "categoria": "Sucesos",
       "descripcion": "La Junta ha abierto una investigación tras un error en el Hospital de Montalvos que llevó a la identificación errónea de dos pacientes. El juzgado ha admitido a trámite una denuncia al respecto.",
       "fuente": "https://www.lagacetadesalamanca.es/salamanca/juzgado-admite-tramite-denuncia-intercambio-dos-pacientes-20261118061500-nt.html",
       "destacado": false
+    },
+    {
+      "fecha": "2026-11-18",
+      "titulo": "Caos ferroviario en la línea Salamanca-Madrid por avería de un Alvia",
+      "categoria": "Sociedad",
+      "descripcion": "Un tren Alvia con destino a Madrid ha sufrido una avería, provocando retrasos y la necesidad de transbordo en autobús para los viajeros.",
+      "fuente": "https://www.lagacetadesalamanca.es/salamanca/caos-ferroviario-alvia-sale-retrasos-hora-averia-20261118070000-nt.html",
+      "destacado": false
+    },
+    {
+      "fecha": "2026-11-20",
+      "titulo": "Visita de Santiago Abascal a Salamanca marcada por la tensión",
+      "categoria": "Política",
+      "descripcion": "La concentración de Santiago Abascal en la Plaza Mayor de Salamanca generó momentos de tensión, provocaciones e insultos entre asistentes y manifestantes.",
+      "fuente": "https://www.lagacetadesalamanca.es/salamanca/imagenes-tension-provocaciones-insultos-pelea-protesta-abascal-20261120133908-ga.html",
+      "destacado": true
     }
   ]
 }

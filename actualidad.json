@@ -1,11 +1,11 @@
 {
   "url_base": "https://www.lagacetadesalamanca.es",
-  "generado_en": "2026-11-20T05:45:20+00:00",
+  "generado_en": "2026-11-21T05:45:38+00:00",
   "periodo_cubierto": {
-    "desde": "2026-11-17",
-    "hasta": "2026-11-20"
+    "desde": "2026-11-18",
+    "hasta": "2026-11-21"
   },
-  "total_urls_analizadas": 173,
+  "total_urls_analizadas": 169,
   "secciones_excluidas": [
     "gente-estilo",
     "nacional",
@@ -16,36 +16,40 @@
   "nota_cobertura": "El análisis cubre únicamente las URLs presentes en el sitemap en el momento de la consulta (excluyendo, si se indicó, las secciones filtradas). Si el sitemap es incremental o 'rolling', el periodo real puede ser más corto que el solicitado — revisa 'periodo_cubierto' para confirmarlo.",
   "por_seccion": [
     [
+      "salamanca",
+      62
+    ],
+    [
       "provincia",
       56
     ],
     [
-      "salamanca",
-      52
-    ],
-    [
       "deportes",
-      30
+      26
     ],
     [
       "sucesos",
-      20
+      13
     ],
     [
       "campo",
-      7
+      4
     ],
     [
       "encuestas",
       3
     ],
     [
-      "toros",
-      3
+      "cine-y-series",
+      2
     ],
     [
       "castilla-y-leon",
       2
+    ],
+    [
+      "fundacion-gaceta",
+      1
     ]
   ],
   "por_subseccion": [
@@ -55,7 +59,7 @@
     ],
     [
       "deportes/baloncesto-local",
-      3
+      4
     ],
     [
       "deportes/deporte-base",
@@ -63,13 +67,13 @@
     ],
     [
       "deportes/carreras-populares",
-      3
+      2
     ]
   ],
   "por_tipo_contenido": [
     [
       "noticia",
-      164
+      160
     ],
     [
       "galería",
@@ -82,144 +86,148 @@
   ],
   "heatmap_calendario": [
     {
-      "fecha": "2026-11-17",
-      "total": 48,
-      "provincia": 20,
-      "salamanca": 9,
-      "deportes": 8,
-      "sucesos": 7,
-      "campo": 2,
-      "encuestas": 1,
-      "toros": 0,
-      "castilla-y-leon": 1
-    },
-    {
       "fecha": "2026-11-18",
-      "total": 66,
-      "provincia": 21,
-      "salamanca": 19,
-      "deportes": 14,
-      "sucesos": 7,
-      "campo": 3,
+      "total": 49,
+      "salamanca": 12,
+      "provincia": 18,
+      "deportes": 12,
+      "sucesos": 6,
+      "campo": 1,
       "encuestas": 0,
-      "toros": 2,
-      "castilla-y-leon": 0
+      "cine-y-series": 0,
+      "castilla-y-leon": 0,
+      "fundacion-gaceta": 0
     },
     {
       "fecha": "2026-11-19",
-      "total": 56,
+      "total": 53,
+      "salamanca": 20,
       "provincia": 15,
-      "salamanca": 21,
       "deportes": 8,
       "sucesos": 6,
-      "campo": 2,
+      "campo": 1,
       "encuestas": 2,
-      "toros": 1,
-      "castilla-y-leon": 1
+      "cine-y-series": 0,
+      "castilla-y-leon": 1,
+      "fundacion-gaceta": 0
     },
     {
       "fecha": "2026-11-20",
-      "total": 3,
-      "provincia": 0,
-      "salamanca": 3,
+      "total": 61,
+      "salamanca": 25,
+      "provincia": 22,
+      "deportes": 6,
+      "sucesos": 1,
+      "campo": 2,
+      "encuestas": 1,
+      "cine-y-series": 2,
+      "castilla-y-leon": 1,
+      "fundacion-gaceta": 1
+    },
+    {
+      "fecha": "2026-11-21",
+      "total": 6,
+      "salamanca": 5,
+      "provincia": 1,
       "deportes": 0,
       "sucesos": 0,
       "campo": 0,
       "encuestas": 0,
-      "toros": 0,
-      "castilla-y-leon": 0
+      "cine-y-series": 0,
+      "castilla-y-leon": 0,
+      "fundacion-gaceta": 0
     }
   ],
   "conceptos_destacados": [
     {
-      "concepto": "Guijuelo",
-      "piezas": 6,
+      "concepto": "Ciudad Rodrigo",
+      "piezas": 7,
       "seccion_principal": "provincia",
-      "desde": "2026-11-17",
-      "hasta": "2026-11-19",
+      "desde": "2026-11-18",
+      "hasta": "2026-11-20",
       "ejemplos_redactados": [
-        "Un hombre ha resultado herido tras el robo de un coche en Guijuelo, donde también se ha celebrado un concierto de Santa Cecilia.",
-        "La localidad de Guijuelo se prepara para la multitudinaria Carrera del Turrón en diciembre y aprueba sus presupuestos para 2027."
-      ]
-    },
-    {
-      "concepto": "Campeonato de España",
-      "piezas": 5,
-      "seccion_principal": "deportes",
-      "desde": "2026-11-17",
-      "hasta": "2026-11-19",
-      "ejemplos_redactados": [
-        "Clubes y atletas salmantinos participarán en el Campeonato de España de Campo a Través.",
-        "El Doryoku ha destacado en la fase sector oeste del Campeonato de España, donde Manuel Delgado obtuvo dos medallas de bronce."
-      ]
-    },
-    {
-      "concepto": "25N",
-      "piezas": 5,
-      "seccion_principal": "provincia",
-      "desde": "2026-11-17",
-      "hasta": "2026-11-19",
-      "ejemplos_redactados": [
-        "Diversas localidades como Aldeatejada, Doñinos y Carbajosa han preparado jornadas de sensibilización y actos institucionales para conmemorar el 25N.",
-        "Guijuelo también ha programado una semana de actividades relacionadas con el 25N para todas las edades."
+        "Ciudad Rodrigo se prepara para la Navidad y reconoce a sus mejores empresarios y negocios.",
+        "La Feria de San Andrés de Ciudad Rodrigo desvelará sus primeras novedades."
       ]
     },
     {
       "concepto": "Béjar",
-      "piezas": 5,
+      "piezas": 6,
       "seccion_principal": "provincia",
       "desde": "2026-11-18",
-      "hasta": "2026-11-19",
+      "hasta": "2026-11-20",
       "ejemplos_redactados": [
-        "El Ayuntamiento de Béjar reparará el Teatro Cervantes para evitar daños en los equipos, afectado por importantes goteras debido al temporal.",
-        "El PP de Béjar ha elevado el déficit de La Covatilla y las fuertes precipitaciones han provocado el desborde de alcantarillas en la antigua N-630."
+        "La cubierta de un edificio en el barrio de San Juan de Béjar ha colapsado.",
+        "El Partido Popular de Béjar ha elevado el déficit de La Covatilla en los últimos meses."
       ]
     },
     {
-      "concepto": "Alba de Tormes",
+      "concepto": "Navidad en Salamanca y provincia",
+      "piezas": 6,
+      "seccion_principal": "salamanca",
+      "desde": "2026-11-19",
+      "hasta": "2026-11-21",
+      "ejemplos_redactados": [
+        "Salamanca comienza a ambientarse para la Navidad con la instalación de guirnaldas y estrellas.",
+        "El árbol gigante de Navidad ha comenzado a levantarse en la Plaza Mayor de la capital."
+      ]
+    },
+    {
+      "concepto": "Inteligencia Artificial en el Campo",
+      "piezas": 2,
+      "seccion_principal": "campo",
+      "desde": "2026-11-20",
+      "hasta": "2026-11-20",
+      "ejemplos_redactados": [
+        "Los agricultores se sienten respaldados para introducir la Inteligencia Artificial en el campo.",
+        "La IA gana terreno en el sector agrícola para optimizar la producción."
+      ]
+    },
+    {
+      "concepto": "Meins Avenida",
       "piezas": 4,
-      "seccion_principal": "provincia",
-      "desde": "2026-11-17",
-      "hasta": "2026-11-19",
-      "ejemplos_redactados": [
-        "Alba de Tormes instalará carteles cerámicos en tres edificios y ofrecerá formación online.",
-        "La localidad acogerá una jornada sobre accesibilidad universal y su Plaza Mayor lucirá un gran lazo."
-      ]
-    },
-    {
-      "concepto": "Carbajosa",
-      "piezas": 4,
-      "seccion_principal": "provincia",
-      "desde": "2026-11-17",
-      "hasta": "2026-11-19",
-      "ejemplos_redactados": [
-        "Carbajosa ha acogido la última de las ferias de negocio rural y prepara una nueva bolsa de suelo industrial.",
-        "El municipio ha recibido el Premio María Moliner por sus iniciativas de fomento de la lectura."
-      ]
-    },
-    {
-      "concepto": "Perfumerías Avenida",
-      "piezas": 3,
       "seccion_principal": "deportes",
       "desde": "2026-11-18",
-      "hasta": "2026-11-19",
+      "hasta": "2026-11-20",
       "ejemplos_redactados": [
-        "El equipo Perfumerías Avenida se enfrenta a un exigente final de año con varios partidos en pocos días.",
-        "Mikulasikova, jugadora del Avenida, regresa lesionada a Eslovaquia en un momento de problemas para el club."
+        "Mawuli se erige como líder de Meins Avenida en la cancha.",
+        "El equipo enfrenta problemas con el regreso de Mikulasikova tras una lesión."
       ]
     },
     {
-      "concepto": "Lengua Azul",
-      "piezas": 3,
-      "seccion_principal": "campo",
-      "desde": "2026-11-17",
+      "concepto": "Guijuelo",
+      "piezas": 4,
+      "seccion_principal": "provincia",
+      "desde": "2026-11-18",
       "hasta": "2026-11-19",
       "ejemplos_redactados": [
-        "Se ha detectado el primer caso de lengua azul en Salamanca, generando una situación de “lío” con cinco zonas distintas afectadas.",
-        "La Junta ha llamado a la tranquilidad ante la expansión de la enfermedad en la provincia."
+        "Un hombre ha resultado herido tras ser arrastrado en el robo de un coche en Guijuelo.",
+        "Guijuelo se prepara para un concierto de Santa Cecilia y su multitudinaria Carrera del Turrón."
+      ]
+    },
+    {
+      "concepto": "Carbajosa de la Sagrada",
+      "piezas": 4,
+      "seccion_principal": "provincia",
+      "desde": "2026-11-18",
+      "hasta": "2026-11-20",
+      "ejemplos_redactados": [
+        "Carbajosa premia la decoración navideña del comercio local y concede ayudas escolares.",
+        "El municipio ha acogido la última edición de las ferias de negocio rural."
+      ]
+    },
+    {
+      "concepto": "Celebraciones de Santa Cecilia",
+      "piezas": 3,
+      "seccion_principal": "provincia",
+      "desde": "2026-11-18",
+      "hasta": "2026-11-20",
+      "ejemplos_redactados": [
+        "Villamayor celebra Santa Cecilia con una tarde de percusión.",
+        "El CAEM y Guijuelo también se suman a los conciertos en honor a Santa Cecilia."
       ]
     }
   ],
-  "resumen_borrador": "Se han publicado 173 noticias entre el 2026-11-17 y el 2026-11-20. La actividad se ha concentrado sobre todo en provincia (56 piezas), salamanca (52 piezas), deportes (30 piezas).\n\nLos conceptos con más piezas relacionadas son: Guijuelo; Campeonato · Espana; 25n; Campo. Revisa 'evidencia' de cada concepto para redactar el resumen final.",
-  "resumen": "La provincia de Salamanca ha vivido unos días marcados por la actividad en sus municipios y los preparativos de eventos futuros. Localidades como Guijuelo, Béjar, Alba de Tormes y Carbajosa han sido protagonistas de diversas noticias, desde la aprobación de presupuestos y la organización de eventos hasta la gestión de infraestructuras y la reparación de edificios emblemáticos como el Teatro Cervantes de Béjar, afectado por el temporal. Las actividades en torno al 25N, Día Internacional de la Eliminación de la Violencia contra la Mujer, también han cobrado relevancia con la programación de jornadas de sensibilización en varios puntos del territorio.\n\nEn el ámbito deportivo, el Campeonato de España de Campo a Través ha contado con la participación de clubes y atletas salmantinos, mientras que el equipo de baloncesto Perfumerías Avenida afronta un exigente calendario y problemas con lesiones. La actualidad del campo ha estado marcada por la detección del primer caso de lengua azul en la provincia, lo que ha generado preocupación y un llamamiento a la calma por parte de la Junta. Además, la capital ha visto el inicio del montaje del árbol de Navidad en la Plaza Mayor y ha sido escenario de diversas noticias judiciales, como la petición de cárcel para un preso de Topas y la admisión a trámite de una denuncia por un error en la identificación de pacientes en un hospital.\n\nEl periodo también ha reflejado la preocupación empresarial ante una posible subida del salario mínimo y la creación de una nueva sección contra la violencia sobre la mujer en Salamanca. En el plano de sucesos, se ha registrado un robo con un hombre herido en Guijuelo y colisiones de tráfico, mientras que las fuertes lluvias han provocado el colapso de alcantarillas en varias zonas de la provincia."
+  "resumen_borrador": "Se han publicado 169 noticias entre el 2026-11-18 y el 2026-11-21. La actividad se ha concentrado sobre todo en salamanca (62 piezas), provincia (56 piezas), deportes (26 piezas).\n\nLos conceptos con más piezas relacionadas son: Ciudad · Rodrigo; Bejar; Navidad; Campo. Revisa 'evidencia' de cada concepto para redactar el resumen final.",
+  "resumen": "La recta final de noviembre en Salamanca ha estado marcada por la inminente llegada de la Navidad, con el inicio de los preparativos y la instalación de adornos en la capital y la provincia. Paralelamente, la visita del líder de Vox, Santiago Abascal, a la Plaza Mayor de Salamanca generó imágenes de tensión y protestas.\n\nEn el ámbito provincial, Béjar ha sido noticia por el colapso de la cubierta de un edificio y la situación económica de La Covatilla. Ciudad Rodrigo, por su parte, ha reconocido a empresarios y se prepara para su Feria de San Andrés. Guijuelo ha registrado un incidente de robo de coche con un herido y se suma a las celebraciones de Santa Cecilia, al igual que Villamayor y el CAEM.\n\nOtros temas destacados incluyen la aplicación de la Inteligencia Artificial en el sector agrícola para optimizar la producción, la actividad del equipo de baloncesto Meins Avenida con sus desafíos deportivos, y un nuevo desprendimiento en la Catedral de Salamanca."
 }
