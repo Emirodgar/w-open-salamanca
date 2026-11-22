@@ -794,6 +794,30 @@
       ],
       "basado_en": "actualidad.json",
       "fecha_creacion": "2026-11-21"
+    },
+    {
+      "id": "arbol-navidad-salamanca-2026",
+      "pregunta": "El montaje del árbol gigante en la Plaza Mayor de Salamanca ha marcado el inicio de los preparativos navideños. ¿Considera que el árbol de Navidad es el elemento más importante para crear ambiente festivo en la capital?",
+      "opciones": [
+        "Sí, es el símbolo central de la Navidad",
+        "No, otros elementos como las luces o el mercado son más importantes",
+        "Es un elemento más, pero no el único decisivo",
+        "No tengo suficiente información"
+      ],
+      "basado_en": "actualidad.json",
+      "fecha_creacion": "2026-11-22"
+    },
+    {
+      "id": "preparacion-lluvias-2026",
+      "pregunta": "Las intensas lluvias han dejado más de 20 litros por metro cuadrado en la capital y otros municipios, generando un impacto significativo. ¿Cree que la provincia de Salamanca está suficientemente preparada para afrontar episodios de lluvias torrenciales?",
+      "opciones": [
+        "Sí, la infraestructura es adecuada",
+        "No, se necesitan más inversiones en prevención",
+        "Es difícil estar preparado para fenómenos extremos",
+        "No tengo suficiente información"
+      ],
+      "basado_en": "actualidad.json",
+      "fecha_creacion": "2026-11-22"
     }
   ]
 }

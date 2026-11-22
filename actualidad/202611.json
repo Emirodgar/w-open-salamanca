@@ -1,7 +1,7 @@
 {
   "mes": "2026-11",
   "titulo_mes": "Noviembre 2026",
-  "resumen_mes": "Noviembre ha estado marcado por los fallecimientos de Charo Diego, Jesús Miguel y Curro Sánchez. La huelga general generó tensión, mientras la línea ferroviaria Salamanca-Madrid ha experimentado nuevos retrasos y un caos por averías. Un error en la identificación de pacientes en Montalvos ha causado preocupación, y se ha detectado el primer caso de lengua azul. La visita de Santiago Abascal a Salamanca generó tensión y protestas.",
+  "resumen_mes": "Noviembre ha estado marcado por los fallecimientos de Charo Diego, Jesús Miguel y Curro Sánchez. La huelga general generó tensión, mientras que los problemas en la línea ferroviaria Salamanca-Madrid han persistido. Un error en la identificación de pacientes en Montalvos ha causado preocupación, y se ha detectado el primer caso de lengua azul. La visita de Santiago Abascal a Salamanca generó tensión y protestas, mientras que el final de mes ha visto el inicio de los preparativos navideños, lluvias significativas y un desprendimiento en la Catedral.",
   "hitos": [
     {
       "fecha": "2026-11-01",
@@ -9,30 +9,6 @@
       "categoria": "Política",
       "descripcion": "Charo Diego, quien fue la primera mujer en presidir la Diputación de Salamanca, ha fallecido.",
       "fuente": "https://www.lagacetadesalamanca.es/salamanca/muere-charo-diego-primera-mujer-presidenta-diputacion-20261101195456-nt.html",
-      "destacado": false
-    },
-    {
-      "fecha": "2026-11-03",
-      "titulo": "Fallece Jesús Miguel, exjugador de Unionistas; se celebra homenaje",
-      "categoria": "Deportes",
-      "descripcion": "El mundo del fútbol local lamenta la pérdida de Jesús Miguel, exjugador de Unionistas. Se le ha rendido un emotivo homenaje en el estadio Reina Sofía.",
-      "fuente": "https://www.lagacetadesalamanca.es/deportes/futbol-local/unionistas/fallece-jesus-miguel-exjugador-unionistas-tras-brutal-20261103093621-nt.html",
-      "destacado": false
-    },
-    {
-      "fecha": "2026-11-07",
-      "titulo": "Fallece Curro Sánchez en accidente de tráfico",
-      "categoria": "Sucesos",
-      "descripcion": "Curro Sánchez, figura reconocida, ha fallecido en un accidente de tráfico en la N-620, cerca de Fuente de San Esteban. La noticia ha causado luto en Ciudad Rodrigo.",
-      "fuente": "https://www.lagacetadesalamanca.es/sucesos/fallecido-accidente-fuente-san-esteban-curro-sanchez-20261107110631-nt.html",
-      "destacado": false
-    },
-    {
-      "fecha": "2026-11-11",
-      "titulo": "La huelga general en Salamanca registra seguimiento testimonial e incidentes",
-      "categoria": "Sociedad",
-      "descripcion": "La jornada de huelga general en Salamanca se salda con un seguimiento testimonial y algunos incidentes, incluyendo cargas policiales y manifestaciones.",
-      "fuente": "https://www.lagacetadesalamanca.es/salamanca/huelga-general-salamanca-salda-seguimiento-testimonial-incidentes-20261111133650-nt.html",
       "destacado": false
     },
     {
@@ -52,11 +28,11 @@
       "destacado": false
     },
     {
-      "fecha": "2026-11-18",
-      "titulo": "Caos ferroviario en la línea Salamanca-Madrid por avería de un Alvia",
-      "categoria": "Sociedad",
-      "descripcion": "Un tren Alvia con destino a Madrid ha sufrido una avería, provocando retrasos y la necesidad de transbordo en autobús para los viajeros.",
-      "fuente": "https://www.lagacetadesalamanca.es/salamanca/caos-ferroviario-alvia-sale-retrasos-hora-averia-20261118070000-nt.html",
+      "fecha": "2026-11-19",
+      "titulo": "Comienza el montaje del árbol gigante de Navidad en la Plaza Mayor",
+      "categoria": "Urbanismo",
+      "descripcion": "El árbol gigante de Navidad ha comenzado a levantarse en la Plaza Mayor de Salamanca, marcando el inicio de los preparativos festivos.",
+      "fuente": "https://www.lagacetadesalamanca.es/salamanca/arbol-gigante-navidad-empieza-levantarse-plaza-mayor-20261119095225-nt.html",
       "destacado": false
     },
     {
@@ -66,6 +42,30 @@
       "descripcion": "La concentración de Santiago Abascal en la Plaza Mayor de Salamanca generó momentos de tensión, provocaciones e insultos entre asistentes y manifestantes.",
       "fuente": "https://www.lagacetadesalamanca.es/salamanca/imagenes-tension-provocaciones-insultos-pelea-protesta-abascal-20261120133908-ga.html",
       "destacado": true
+    },
+    {
+      "fecha": "2026-11-20",
+      "titulo": "Nuevo desprendimiento en la Catedral de Salamanca",
+      "categoria": "Urbanismo",
+      "descripcion": "Se ha registrado un nuevo desprendimiento en la cornisa de la Torre Mocha de la Catedral de Salamanca.",
+      "fuente": "https://www.lagacetadesalamanca.es/salamanca/nuevo-desprendimiento-catedral-cornisa-torre-mocha-20261120120918-nt.html",
+      "destacado": false
+    },
+    {
+      "fecha": "2026-11-21",
+      "titulo": "Las lluvias dejan más de 20 litros por metro cuadrado en la capital",
+      "categoria": "Sociedad",
+      "descripcion": "Las intensas lluvias han dejado 22,3 litros por metro cuadrado en la capital y en un municipio de Salamanca, generando un impacto significativo.",
+      "fuente": "https://www.lagacetadesalamanca.es/salamanca/lluvias-dejan-223-litros-capital-municipio-salamanca-20261121215033-nt.html",
+      "destacado": false
+    },
+    {
+      "fecha": "2026-11-21",
+      "titulo": "El USAL Meins Avenida cae en la remontada ante el Kutxabank Araski",
+      "categoria": "Deportes",
+      "descripcion": "El equipo de baloncesto USAL Meins Avenida se quedó a las puertas de la remontada en su encuentro contra el Kutxabank Araski, con un resultado final de 61-66.",
+      "fuente": "https://www.lagacetadesalamanca.es/deportes/baloncesto-local/usal-meins-avenida-queda-puertas-remontada-6166-20261121221935-nt.html",
+      "destacado": false
     }
   ]
 }

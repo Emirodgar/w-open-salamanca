@@ -1,11 +1,11 @@
 {
   "url_base": "https://www.lagacetadesalamanca.es",
-  "generado_en": "2026-11-21T05:45:38+00:00",
+  "generado_en": "2026-11-22T05:45:32+00:00",
   "periodo_cubierto": {
-    "desde": "2026-11-18",
-    "hasta": "2026-11-21"
+    "desde": "2026-11-19",
+    "hasta": "2026-11-22"
   },
-  "total_urls_analizadas": 169,
+  "total_urls_analizadas": 156,
   "secciones_excluidas": [
     "gente-estilo",
     "nacional",
@@ -21,30 +21,30 @@
     ],
     [
       "provincia",
-      56
+      48
     ],
     [
       "deportes",
-      26
+      23
     ],
     [
       "sucesos",
-      13
+      10
     ],
     [
       "campo",
-      4
-    ],
-    [
-      "encuestas",
-      3
-    ],
-    [
-      "cine-y-series",
-      2
+      5
     ],
     [
       "castilla-y-leon",
+      3
+    ],
+    [
+      "encuestas",
+      2
+    ],
+    [
+      "cine-y-series",
       2
     ],
     [
@@ -55,179 +55,179 @@
   "por_subseccion": [
     [
       "deportes/futbol-local",
-      14
+      13
     ],
     [
       "deportes/baloncesto-local",
-      4
+      6
     ],
     [
       "deportes/deporte-base",
-      3
-    ],
-    [
-      "deportes/carreras-populares",
       2
     ]
   ],
   "por_tipo_contenido": [
     [
       "noticia",
-      160
+      141
     ],
     [
       "galería",
-      8
-    ],
-    [
-      "directo / en vivo",
-      1
+      15
     ]
   ],
   "heatmap_calendario": [
     {
-      "fecha": "2026-11-18",
-      "total": 49,
-      "salamanca": 12,
-      "provincia": 18,
-      "deportes": 12,
-      "sucesos": 6,
-      "campo": 1,
-      "encuestas": 0,
-      "cine-y-series": 0,
-      "castilla-y-leon": 0,
-      "fundacion-gaceta": 0
-    },
-    {
       "fecha": "2026-11-19",
-      "total": 53,
-      "salamanca": 20,
-      "provincia": 15,
-      "deportes": 8,
-      "sucesos": 6,
+      "total": 38,
+      "salamanca": 12,
+      "provincia": 11,
+      "deportes": 7,
+      "sucesos": 5,
       "campo": 1,
-      "encuestas": 2,
-      "cine-y-series": 0,
       "castilla-y-leon": 1,
+      "encuestas": 1,
+      "cine-y-series": 0,
       "fundacion-gaceta": 0
     },
     {
       "fecha": "2026-11-20",
-      "total": 61,
-      "salamanca": 25,
+      "total": 59,
+      "salamanca": 23,
       "provincia": 22,
       "deportes": 6,
       "sucesos": 1,
       "campo": 2,
+      "castilla-y-leon": 1,
       "encuestas": 1,
       "cine-y-series": 2,
-      "castilla-y-leon": 1,
       "fundacion-gaceta": 1
     },
     {
       "fecha": "2026-11-21",
+      "total": 53,
+      "salamanca": 21,
+      "provincia": 15,
+      "deportes": 10,
+      "sucesos": 4,
+      "campo": 2,
+      "castilla-y-leon": 1,
+      "encuestas": 0,
+      "cine-y-series": 0,
+      "fundacion-gaceta": 0
+    },
+    {
+      "fecha": "2026-11-22",
       "total": 6,
-      "salamanca": 5,
-      "provincia": 1,
+      "salamanca": 6,
+      "provincia": 0,
       "deportes": 0,
       "sucesos": 0,
       "campo": 0,
+      "castilla-y-leon": 0,
       "encuestas": 0,
       "cine-y-series": 0,
-      "castilla-y-leon": 0,
       "fundacion-gaceta": 0
     }
   ],
   "conceptos_destacados": [
     {
-      "concepto": "Ciudad Rodrigo",
-      "piezas": 7,
-      "seccion_principal": "provincia",
-      "desde": "2026-11-18",
-      "hasta": "2026-11-20",
-      "ejemplos_redactados": [
-        "Ciudad Rodrigo se prepara para la Navidad y reconoce a sus mejores empresarios y negocios.",
-        "La Feria de San Andrés de Ciudad Rodrigo desvelará sus primeras novedades."
-      ]
-    },
-    {
-      "concepto": "Béjar",
-      "piezas": 6,
-      "seccion_principal": "provincia",
-      "desde": "2026-11-18",
-      "hasta": "2026-11-20",
-      "ejemplos_redactados": [
-        "La cubierta de un edificio en el barrio de San Juan de Béjar ha colapsado.",
-        "El Partido Popular de Béjar ha elevado el déficit de La Covatilla en los últimos meses."
-      ]
-    },
-    {
-      "concepto": "Navidad en Salamanca y provincia",
-      "piezas": 6,
+      "concepto": "Navidad",
+      "piezas": 8,
       "seccion_principal": "salamanca",
       "desde": "2026-11-19",
       "hasta": "2026-11-21",
       "ejemplos_redactados": [
-        "Salamanca comienza a ambientarse para la Navidad con la instalación de guirnaldas y estrellas.",
-        "El árbol gigante de Navidad ha comenzado a levantarse en la Plaza Mayor de la capital."
+        "El árbol de Navidad de Salamanca ha sido montado y comienza a atraer miradas en la ciudad.",
+        "Carbajosa de la Sagrada ha sido el primer municipio en encender sus luces navideñas.",
+        "Salamanca se impregna del ambiente navideño con guirnaldas circulares y estrellas en sus jardines."
       ]
     },
     {
-      "concepto": "Inteligencia Artificial en el Campo",
-      "piezas": 2,
-      "seccion_principal": "campo",
-      "desde": "2026-11-20",
-      "hasta": "2026-11-20",
+      "concepto": "Ciudad Rodrigo",
+      "piezas": 7,
+      "seccion_principal": "provincia",
+      "desde": "2026-11-19",
+      "hasta": "2026-11-21",
       "ejemplos_redactados": [
-        "Los agricultores se sienten respaldados para introducir la Inteligencia Artificial en el campo.",
-        "La IA gana terreno en el sector agrícola para optimizar la producción."
+        "Se ha rendido homenaje a los jubilados de Ciudad Rodrigo.",
+        "La localidad de Ciudad Rodrigo comienza a sentir la Navidad con sus primeros preparativos.",
+        "Una experiencia denominada 'La llamada de Samuel' congrega a adolescentes en Ciudad Rodrigo."
+      ]
+    },
+    {
+      "concepto": "Campo",
+      "piezas": 6,
+      "seccion_principal": "deportes",
+      "desde": "2026-11-19",
+      "hasta": "2026-11-21",
+      "ejemplos_redactados": [
+        "La fiesta de bienvenida de las grullas ha arrancado bajo la lluvia en el campo.",
+        "Se debate la necesidad de arropar a los agricultores para introducir la inteligencia artificial en el campo.",
+        "La inteligencia artificial gana terreno en el campo para lograr una mayor producción."
+      ]
+    },
+    {
+      "concepto": "Peñaranda",
+      "piezas": 5,
+      "seccion_principal": "provincia",
+      "desde": "2026-11-19",
+      "hasta": "2026-11-21",
+      "ejemplos_redactados": [
+        "Peñaranda de Bracamonte ha rendido culto a la Virgen de las Lágrimas.",
+        "La localidad acogerá un taller de arteterapia con motivo de una fecha señalada.",
+        "Una muestra en Peñaranda pone rostro al ciclo invisible de la violencia."
+      ]
+    },
+    {
+      "concepto": "Lluvias",
+      "piezas": 8,
+      "seccion_principal": "salamanca",
+      "desde": "2026-11-21",
+      "hasta": "2026-11-22",
+      "ejemplos_redactados": [
+        "Salamanca ha recibido dos horas de lluvia en dos jornadas, sumando importantes litros.",
+        "Las lluvias han dejado 22,3 litros en la capital y en un municipio de Salamanca.",
+        "Una investigación universitaria desvela cómo las lluvias del Atlántico contribuyeron a un evento pasado."
       ]
     },
     {
       "concepto": "Meins Avenida",
       "piezas": 4,
       "seccion_principal": "deportes",
-      "desde": "2026-11-18",
-      "hasta": "2026-11-20",
+      "desde": "2026-11-19",
+      "hasta": "2026-11-21",
       "ejemplos_redactados": [
-        "Mawuli se erige como líder de Meins Avenida en la cancha.",
-        "El equipo enfrenta problemas con el regreso de Mikulasikova tras una lesión."
+        "El USAL Meins Avenida se ha quedado a las puertas de la remontada con un resultado de 61-66.",
+        "Mawuli se erige como líder del Meins Avenida dentro de la pista.",
+        "El Kutxabank Araski se enfrentará al Meins Avenida en un partido clave."
       ]
     },
     {
-      "concepto": "Guijuelo",
+      "concepto": "Carbajosa",
       "piezas": 4,
       "seccion_principal": "provincia",
-      "desde": "2026-11-18",
-      "hasta": "2026-11-19",
+      "desde": "2026-11-19",
+      "hasta": "2026-11-21",
       "ejemplos_redactados": [
-        "Un hombre ha resultado herido tras ser arrastrado en el robo de un coche en Guijuelo.",
-        "Guijuelo se prepara para un concierto de Santa Cecilia y su multitudinaria Carrera del Turrón."
+        "Carbajosa de la Sagrada ha sido el primer municipio en encender las luces de Navidad.",
+        "El Ayuntamiento de Carbajosa ha concedido 40.000 euros en ayudas escolares.",
+        "Carbajosa premia la decoración navideña del comercio local."
       ]
     },
     {
-      "concepto": "Carbajosa de la Sagrada",
-      "piezas": 4,
-      "seccion_principal": "provincia",
-      "desde": "2026-11-18",
-      "hasta": "2026-11-20",
-      "ejemplos_redactados": [
-        "Carbajosa premia la decoración navideña del comercio local y concede ayudas escolares.",
-        "El municipio ha acogido la última edición de las ferias de negocio rural."
-      ]
-    },
-    {
-      "concepto": "Celebraciones de Santa Cecilia",
+      "concepto": "Castilla y León",
       "piezas": 3,
-      "seccion_principal": "provincia",
-      "desde": "2026-11-18",
-      "hasta": "2026-11-20",
+      "seccion_principal": "castilla-y-leon",
+      "desde": "2026-11-19",
+      "hasta": "2026-11-21",
       "ejemplos_redactados": [
-        "Villamayor celebra Santa Cecilia con una tarde de percusión.",
-        "El CAEM y Guijuelo también se suman a los conciertos en honor a Santa Cecilia."
+        "Doble alegría en Castilla y León, con Burgos y Ávila recibiendo noticias positivas.",
+        "Castilla y León cerrará 2026 con superávit, siendo una de las pocas comunidades en registrarlo.",
+        "Una estación salmantina ha marcado la temperatura más baja de Castilla y León."
       ]
     }
   ],
-  "resumen_borrador": "Se han publicado 169 noticias entre el 2026-11-18 y el 2026-11-21. La actividad se ha concentrado sobre todo en salamanca (62 piezas), provincia (56 piezas), deportes (26 piezas).\n\nLos conceptos con más piezas relacionadas son: Ciudad · Rodrigo; Bejar; Navidad; Campo. Revisa 'evidencia' de cada concepto para redactar el resumen final.",
-  "resumen": "La recta final de noviembre en Salamanca ha estado marcada por la inminente llegada de la Navidad, con el inicio de los preparativos y la instalación de adornos en la capital y la provincia. Paralelamente, la visita del líder de Vox, Santiago Abascal, a la Plaza Mayor de Salamanca generó imágenes de tensión y protestas.\n\nEn el ámbito provincial, Béjar ha sido noticia por el colapso de la cubierta de un edificio y la situación económica de La Covatilla. Ciudad Rodrigo, por su parte, ha reconocido a empresarios y se prepara para su Feria de San Andrés. Guijuelo ha registrado un incidente de robo de coche con un herido y se suma a las celebraciones de Santa Cecilia, al igual que Villamayor y el CAEM.\n\nOtros temas destacados incluyen la aplicación de la Inteligencia Artificial en el sector agrícola para optimizar la producción, la actividad del equipo de baloncesto Meins Avenida con sus desafíos deportivos, y un nuevo desprendimiento en la Catedral de Salamanca."
+  "resumen_borrador": "Se han publicado 156 noticias entre el 2026-11-19 y el 2026-11-22. La actividad se ha concentrado sobre todo en salamanca (62 piezas), provincia (48 piezas), deportes (23 piezas).\n\nLos conceptos con más piezas relacionadas son: Navidad; Ciudad · Rodrigo; Campo; Penaranda. Revisa 'evidencia' de cada concepto para redactar el resumen final.",
+  "resumen": "La provincia de Salamanca ha comenzado a prepararse para la temporada navideña, con el montaje del árbol gigante en la Plaza Mayor de la capital y el encendido de las luces en Carbajosa de la Sagrada. Ciudad Rodrigo también ha iniciado sus preparativos festivos, mientras Peñaranda de Bracamonte ha celebrado actos tradicionales y culturales.\n\nEl periodo ha estado marcado por las intensas lluvias, que han dejado más de 20 litros por metro cuadrado en la capital y otros municipios, generando un impacto significativo. En el ámbito deportivo, el USAL Meins Avenida ha protagonizado un encuentro reñido, quedándose a las puertas de una remontada. La actualidad también ha reflejado la preocupación por la introducción de la inteligencia artificial en el campo y la gestión de las ayudas agrícolas.\n\nEn la capital, un nuevo desprendimiento en la Catedral de Salamanca ha generado interés, mientras que la Consejería ha iniciado el pago de 34,6 millones de euros en anticipos. La información regional destaca el superávit de Castilla y León para 2026 y la importancia de la provincia en la región."
 }
