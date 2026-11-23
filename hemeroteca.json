@@ -1,7 +1,7 @@
 {
-  "generado_en": "2026-11-22T20:21:13.398Z",
+  "generado_en": "2026-11-23T00:54:18.561Z",
   "dias_ventana": 20,
-  "total": 3574,
+  "total": 3584,
   "medios": [
     "Tribuna Salamanca",
     "Salamanca24Horas",
@@ -9,6 +9,97 @@
     "Salamancahoy"
   ],
   "noticias": [
+    {
+      "url": "https://www.lagacetadesalamanca.es/deportes/futbol-local/salamancauds/queda-clasificacion-grupo-segunda-federacion-tras-jornada-20261122233757-nt.html",
+      "titulo": "Así queda la clasificación en el Grupo 5 de la Segunda Federación tras la jornada 12",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-11-22",
+      "fecha_hora": "2026-11-22T22:37:58.000Z"
+    },
+    {
+      "url": "https://www.tribunasalamanca.com/noticias/467675/baena-lidera-la-victoria-del-atletico-en-getafe-con-una-primera-parte-decisiva",
+      "titulo": "Baena lidera la victoria del Atlético en Getafe con una primera parte decisiva",
+      "medio": "Tribuna Salamanca",
+      "fecha": "2026-11-22",
+      "fecha_hora": "2026-11-22T22:06:37.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/deportes/baloncesto-local/meins-avenida/queda-clasificacion-liga-femenina-tras-octava-jornada-20261122230030-nt.html",
+      "titulo": "Así queda la clasificación de la Liga Femenina tras la octava jornada",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-11-22",
+      "fecha_hora": "2026-11-22T22:00:30.000Z"
+    },
+    {
+      "url": "https://www.salamanca24horas.com/local/restauracion-apartara-temporalmente-cristo-amor-paz-devotos",
+      "titulo": "Una restauración apartará temporalmente al Cristo del Amor y de la Paz de sus devotos",
+      "medio": "Salamanca24Horas",
+      "fecha": "2026-11-22",
+      "fecha_hora": "2026-11-22T21:58:56.000Z"
+    },
+    {
+      "url": "https://www.salamancahoy.es/salamanca/ciudad/sorpresa-navidad-salamanca-lucen-arbol-iluminacion-plaza-20261122222723-nt.html",
+      "titulo": "Sorpresa 'por Navidad' en Salamanca: así lucen el árbol y la iluminación de la Plaza Mayor",
+      "medio": "Salamancahoy",
+      "fecha": "2026-11-22",
+      "fecha_hora": "2026-11-22T21:50:17.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/salamanca/cristo-amor-paz-procesionara-tarde-jueves-santo-20261122222442-nt.html",
+      "titulo": "El Cristo del Amor y la Paz no procesionará en la tarde del Jueves Santo del próximo año",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-11-22",
+      "fecha_hora": "2026-11-22T21:24:43.000Z"
+    },
+    {
+      "url": "https://www.tribunasalamanca.com/noticias/467672/asi-queda-la-clasificacion-en-la-liga-femenina-con-un-meins-avenida-que-toma-aire",
+      "titulo": "Así queda la clasificación en la Liga Femenina con un Meins Avenida que toma aire",
+      "medio": "Tribuna Salamanca",
+      "fecha": "2026-11-22",
+      "fecha_hora": "2026-11-22T21:20:01.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/encuestas/cree-salamanca-perjudicado-arbitrajes-20261122220852-nt.html",
+      "titulo": "¿Cree que el Salamanca UDS está siendo perjudicado por los arbitrajes?",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-11-22",
+      "fecha_hora": "2026-11-22T21:08:53.000Z"
+    },
+    {
+      "url": "https://www.salamancahoy.es/salamanca/ciudad/rio-amparado-oscuridad-salamanca-sube-medio-metro-20261122214227-nt.html",
+      "titulo": "El río amparado por la oscuridad en Salamanca que sube medio metro con los millones de litros enviados desde un embalse",
+      "medio": "Salamancahoy",
+      "fecha": "2026-11-22",
+      "fecha_hora": "2026-11-22T20:43:51.000Z"
+    },
+    {
+      "url": "https://www.tribunasalamanca.com/noticias/467671/el-cristo-del-amor-y-de-la-paz-no-procesionara-en-la-semana-santa-de-2027-por-su-restauracion",
+      "titulo": "El Cristo del Amor y de la Paz no procesionará en la Semana Santa de 2027 por su restauración",
+      "medio": "Tribuna Salamanca",
+      "fecha": "2026-11-22",
+      "fecha_hora": "2026-11-22T20:43:40.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/deportes/movember-charro-reune-deporte-solidaridad-zarapicos-20261122214102-nt.html",
+      "titulo": "El V Movember Charro reúne deporte y solidaridad en Zarapicos",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-11-22",
+      "fecha_hora": "2026-11-22T20:41:03.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/salamanca/noticias-importantes-salamanca-hoy-domingo-noviembre-20261122212527-nt.html",
+      "titulo": "Las noticias más importantes en Salamanca hoy domingo 22 de noviembre",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-11-22",
+      "fecha_hora": "2026-11-22T20:25:28.000Z"
+    },
+    {
+      "url": "https://www.lagacetadesalamanca.es/deportes/futbol-local/unionistas/claves-derrota-unionistas-ante-barakaldo-20261122210857-nt.html",
+      "titulo": "Las claves de la derrota de Unionistas ante el Barakaldo",
+      "medio": "La Gaceta de Salamanca",
+      "fecha": "2026-11-22",
+      "fecha_hora": "2026-11-22T20:09:17.000Z"
+    },
     {
       "url": "https://www.lagacetadesalamanca.es/deportes/baloncesto-local/meins-avenida/raquel-romo-condicionadas-jugadoras-dado-pista-20261122210126-nt.html",
       "titulo": "Raquel Romo: «Estábamos muy condicionadas y las jugadoras lo han dado todo en la pista»",
@@ -85,6 +176,13 @@
       "medio": "Salamancahoy",
       "fecha": "2026-11-22",
       "fecha_hora": "2026-11-22T19:21:27.000Z"
+    },
+    {
+      "url": "https://www.tribunasalamanca.com/noticias/467655/de-la-dehesa-salmantina-a-la-mesa-del-papa-los-pavos-que-cascajares-llevara-al-vaticano",
+      "titulo": "De la dehesa salmantina a la mesa del Papa, los pavos que Cascajares llevará al Vaticano",
+      "medio": "Tribuna Salamanca",
+      "fecha": "2026-11-22",
+      "fecha_hora": "2026-11-22T19:21:05.000Z"
     },
     {
       "url": "https://www.salamancahoy.es/salamanca/noticias-imprescindibles-salamanca-domingo-noviembre-20261122202021-nt.html",
@@ -2192,6 +2290,13 @@
       "medio": "La Gaceta de Salamanca",
       "fecha": "2026-11-20",
       "fecha_hora": "2026-11-20T17:38:50.000Z"
+    },
+    {
+      "url": "https://www.tribunasalamanca.com/noticias/467460/cemento-armao",
+      "titulo": "Cemento 'armao'",
+      "medio": "Tribuna Salamanca",
+      "fecha": "2026-11-20",
+      "fecha_hora": "2026-11-20T17:34:45.000Z"
     },
     {
       "url": "https://www.tribunasalamanca.com/noticias/467459/la-navidad-llega-a-guijuelo-con-dos-certamenes-para-engalanar-viviendas-y-comercios",
@@ -4607,6 +4712,13 @@
       "medio": "La Gaceta de Salamanca",
       "fecha": "2026-11-18",
       "fecha_hora": "2026-11-18T17:34:53.000Z"
+    },
+    {
+      "url": "https://www.tribunasalamanca.com/noticias/467157/promesas-electorales-cuentas-reales",
+      "titulo": "Promesas electorales, cuentas reales",
+      "medio": "Tribuna Salamanca",
+      "fecha": "2026-11-18",
+      "fecha_hora": "2026-11-18T17:34:40.000Z"
     },
     {
       "url": "https://www.lagacetadesalamanca.es/nacional/psoe-expulsa-melchor-leon-diputado-critico-pedro-20261118182439-nt.html",
@@ -24963,48 +25075,6 @@
       "medio": "La Gaceta de Salamanca",
       "fecha": "2026-11-03",
       "fecha_hora": "2026-11-03T04:00:00.000Z"
-    },
-    {
-      "url": "https://www.lagacetadesalamanca.es/nacional/identificadas-personas-fallecidas-accidente-ferroviario-urda-20261102233238-nt.html",
-      "titulo": "Identificadas todas las personas fallecidas en el accidente ferroviario de Urda",
-      "medio": "La Gaceta de Salamanca",
-      "fecha": "2026-11-02",
-      "fecha_hora": "2026-11-02T22:32:38.000Z"
-    },
-    {
-      "url": "https://www.salamanca24horas.com/nacional/concluye-identificacion-69-victimas-accidente-ferroviario-urda",
-      "titulo": "Concluye la identificación de las 69 víctimas mortales del accidente ferroviario de Urda",
-      "medio": "Salamanca24Horas",
-      "fecha": "2026-11-02",
-      "fecha_hora": "2026-11-02T22:31:33.000Z"
-    },
-    {
-      "url": "https://www.lagacetadesalamanca.es/salamanca/corchado-busca-nuevas-alianzas-universidad-japon-20261102232104-nt.html",
-      "titulo": "Corchado busca nuevas alianzas para la Universidad en Japón",
-      "medio": "La Gaceta de Salamanca",
-      "fecha": "2026-11-02",
-      "fecha_hora": "2026-11-02T22:21:04.000Z"
-    },
-    {
-      "url": "https://www.lagacetadesalamanca.es/encuestas/dificultad-ultimos-meses-encontrar-medicamento-prescrito-farmacia-20261102213755-nt.html",
-      "titulo": "¿Ha tenido alguna dificultad en los últimos meses para encontrar algún medicamento prescrito en su farmacia habitual?",
-      "medio": "La Gaceta de Salamanca",
-      "fecha": "2026-11-02",
-      "fecha_hora": "2026-11-02T20:38:51.000Z"
-    },
-    {
-      "url": "https://www.salamanca24horas.com/castilla-y-leon/carreteras-castilla-leon-cobran-cuatro-vidas-tragico-puente-todos-santos-marcado-accidentes-salamanca-valladolid-palencia",
-      "titulo": "Las carreteras de Castilla y León se cobran cuatro vidas en un trágico puente de Todos los Santos marcado por los accidentes en Salamanca, Valladolid y Palencia",
-      "medio": "Salamanca24Horas",
-      "fecha": "2026-11-02",
-      "fecha_hora": "2026-11-02T20:36:01.000Z"
-    },
-    {
-      "url": "https://www.lagacetadesalamanca.es/salamanca/noticias-importantes-salamanca-hoy-lunes-noviembre-20261102212524-nt.html",
-      "titulo": "Las noticias más importantes en Salamanca hoy lunes 2 de noviembre",
-      "medio": "La Gaceta de Salamanca",
-      "fecha": "2026-11-02",
-      "fecha_hora": "2026-11-02T20:25:59.000Z"
     },
     {
       "url": "https://www.salamancahoy.es/elecciones/generales/pequenos-pueblos-salamanca-electores-extranjero-generales-suben-20261029192412-nt.html",
