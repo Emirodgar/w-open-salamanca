@@ -818,6 +818,30 @@
       ],
       "basado_en": "actualidad.json",
       "fecha_creacion": "2026-11-22"
+    },
+    {
+      "id": "unionistas-derrota-2026",
+      "pregunta": "Tras la reciente derrota de Unionistas de Salamanca ante el Barakaldo, ¿cree que el equipo logrará revertir la situación en los próximos encuentros?",
+      "opciones": [
+        "Sí, el equipo tiene capacidad de reacción.",
+        "No, la dinámica es preocupante.",
+        "Es incierto, dependerá de ajustes tácticos.",
+        "No tengo suficiente información."
+      ],
+      "basado_en": "actualidad.json",
+      "fecha_creacion": "2026-11-23"
+    },
+    {
+      "id": "brexit-comercio-salamanca-2026",
+      "pregunta": "Ante el análisis económico sobre el impacto del Brexit en las relaciones comerciales de Salamanca con el Reino Unido, ¿cree que esta situación ha afectado significativamente a la economía provincial?",
+      "opciones": [
+        "Sí, ha tenido un impacto negativo considerable.",
+        "No, el impacto ha sido limitado o nulo.",
+        "Es difícil de cuantificar, pero hay efectos.",
+        "No tengo suficiente información."
+      ],
+      "basado_en": "actualidad.json",
+      "fecha_creacion": "2026-11-23"
     }
   ]
 }

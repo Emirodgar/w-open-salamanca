@@ -1,11 +1,11 @@
 {
   "url_base": "https://www.lagacetadesalamanca.es",
-  "generado_en": "2026-11-22T05:45:32+00:00",
+  "generado_en": "2026-11-23T05:45:22+00:00",
   "periodo_cubierto": {
-    "desde": "2026-11-19",
-    "hasta": "2026-11-22"
+    "desde": "2026-11-20",
+    "hasta": "2026-11-23"
   },
-  "total_urls_analizadas": 156,
+  "total_urls_analizadas": 164,
   "secciones_excluidas": [
     "gente-estilo",
     "nacional",
@@ -17,35 +17,39 @@
   "por_seccion": [
     [
       "salamanca",
-      62
+      59
     ],
     [
       "provincia",
-      48
+      49
     ],
     [
       "deportes",
-      23
+      37
     ],
     [
       "sucesos",
-      10
+      8
     ],
     [
       "campo",
-      5
-    ],
-    [
-      "castilla-y-leon",
-      3
+      4
     ],
     [
       "encuestas",
       2
     ],
     [
-      "cine-y-series",
+      "castilla-y-leon",
       2
+    ],
+    [
+      "toros",
+      1
+    ],
+    [
+      "cine-y-series",
+      1
     ],
     [
       "fundacion-gaceta",
@@ -55,15 +59,15 @@
   "por_subseccion": [
     [
       "deportes/futbol-local",
-      13
+      24
     ],
     [
       "deportes/baloncesto-local",
-      6
+      9
     ],
     [
-      "deportes/deporte-base",
-      2
+      "deportes/carreras-populares",
+      1
     ]
   ],
   "por_tipo_contenido": [
@@ -73,161 +77,161 @@
     ],
     [
       "galería",
-      15
+      20
+    ],
+    [
+      "directo / en vivo",
+      3
     ]
   ],
   "heatmap_calendario": [
     {
-      "fecha": "2026-11-19",
-      "total": 38,
-      "salamanca": 12,
-      "provincia": 11,
-      "deportes": 7,
-      "sucesos": 5,
-      "campo": 1,
-      "castilla-y-leon": 1,
-      "encuestas": 1,
-      "cine-y-series": 0,
-      "fundacion-gaceta": 0
-    },
-    {
       "fecha": "2026-11-20",
-      "total": 59,
-      "salamanca": 23,
+      "total": 50,
+      "salamanca": 16,
       "provincia": 22,
-      "deportes": 6,
+      "deportes": 5,
       "sucesos": 1,
       "campo": 2,
-      "castilla-y-leon": 1,
       "encuestas": 1,
-      "cine-y-series": 2,
+      "castilla-y-leon": 1,
+      "toros": 0,
+      "cine-y-series": 1,
       "fundacion-gaceta": 1
     },
     {
       "fecha": "2026-11-21",
-      "total": 53,
+      "total": 52,
       "salamanca": 21,
-      "provincia": 15,
+      "provincia": 14,
       "deportes": 10,
       "sucesos": 4,
       "campo": 2,
-      "castilla-y-leon": 1,
       "encuestas": 0,
+      "castilla-y-leon": 1,
+      "toros": 0,
       "cine-y-series": 0,
       "fundacion-gaceta": 0
     },
     {
       "fecha": "2026-11-22",
-      "total": 6,
-      "salamanca": 6,
-      "provincia": 0,
+      "total": 57,
+      "salamanca": 19,
+      "provincia": 11,
+      "deportes": 22,
+      "sucesos": 3,
+      "campo": 0,
+      "encuestas": 1,
+      "castilla-y-leon": 0,
+      "toros": 1,
+      "cine-y-series": 0,
+      "fundacion-gaceta": 0
+    },
+    {
+      "fecha": "2026-11-23",
+      "total": 5,
+      "salamanca": 3,
+      "provincia": 2,
       "deportes": 0,
       "sucesos": 0,
       "campo": 0,
-      "castilla-y-leon": 0,
       "encuestas": 0,
+      "castilla-y-leon": 0,
+      "toros": 0,
       "cine-y-series": 0,
       "fundacion-gaceta": 0
     }
   ],
   "conceptos_destacados": [
     {
-      "concepto": "Navidad",
-      "piezas": 8,
-      "seccion_principal": "salamanca",
-      "desde": "2026-11-19",
-      "hasta": "2026-11-21",
-      "ejemplos_redactados": [
-        "El árbol de Navidad de Salamanca ha sido montado y comienza a atraer miradas en la ciudad.",
-        "Carbajosa de la Sagrada ha sido el primer municipio en encender sus luces navideñas.",
-        "Salamanca se impregna del ambiente navideño con guirnaldas circulares y estrellas en sus jardines."
-      ]
-    },
-    {
       "concepto": "Ciudad Rodrigo",
       "piezas": 7,
       "seccion_principal": "provincia",
-      "desde": "2026-11-19",
-      "hasta": "2026-11-21",
+      "desde": "2026-11-20",
+      "hasta": "2026-11-22",
       "ejemplos_redactados": [
-        "Se ha rendido homenaje a los jubilados de Ciudad Rodrigo.",
-        "La localidad de Ciudad Rodrigo comienza a sentir la Navidad con sus primeros preparativos.",
-        "Una experiencia denominada 'La llamada de Samuel' congrega a adolescentes en Ciudad Rodrigo."
+        "Ciudad Rodrigo ha alcanzado su meta en la lucha contra la violencia machista.",
+        "La localidad ha celebrado un homenaje a sus jubilados y empieza a sentir la Navidad."
       ]
     },
     {
-      "concepto": "Campo",
+      "concepto": "Unionistas de Salamanca",
       "piezas": 6,
       "seccion_principal": "deportes",
-      "desde": "2026-11-19",
-      "hasta": "2026-11-21",
+      "desde": "2026-11-20",
+      "hasta": "2026-11-22",
       "ejemplos_redactados": [
-        "La fiesta de bienvenida de las grullas ha arrancado bajo la lluvia en el campo.",
-        "Se debate la necesidad de arropar a los agricultores para introducir la inteligencia artificial en el campo.",
-        "La inteligencia artificial gana terreno en el campo para lograr una mayor producción."
+        "Unionistas se enfrentó al Barakaldo en un partido con resultado en directo.",
+        "Las claves de la derrota de Unionistas ante el Barakaldo han sido analizadas."
       ]
     },
     {
-      "concepto": "Peñaranda",
-      "piezas": 5,
+      "concepto": "Lluvias en la provincia",
+      "piezas": 6,
       "seccion_principal": "provincia",
-      "desde": "2026-11-19",
-      "hasta": "2026-11-21",
-      "ejemplos_redactados": [
-        "Peñaranda de Bracamonte ha rendido culto a la Virgen de las Lágrimas.",
-        "La localidad acogerá un taller de arteterapia con motivo de una fecha señalada.",
-        "Una muestra en Peñaranda pone rostro al ciclo invisible de la violencia."
-      ]
-    },
-    {
-      "concepto": "Lluvias",
-      "piezas": 8,
-      "seccion_principal": "salamanca",
       "desde": "2026-11-21",
       "hasta": "2026-11-22",
       "ejemplos_redactados": [
-        "Salamanca ha recibido dos horas de lluvia en dos jornadas, sumando importantes litros.",
-        "Las lluvias han dejado 22,3 litros en la capital y en un municipio de Salamanca.",
-        "Una investigación universitaria desvela cómo las lluvias del Atlántico contribuyeron a un evento pasado."
+        "El efecto de la lluvia ha dejado sin luz a 700 clientes en San.",
+        "Linares de Riofrío ha disfrutado de una jornada micológica a pesar de las precipitaciones."
       ]
     },
     {
-      "concepto": "Meins Avenida",
+      "concepto": "Perfumerías Avenida",
+      "piezas": 5,
+      "seccion_principal": "deportes",
+      "desde": "2026-11-21",
+      "hasta": "2026-11-22",
+      "ejemplos_redactados": [
+        "Se han destacado las claves de la victoria de Perfumerías Avenida frente al Araski.",
+        "El equipo de Perfumerías Avenida ha vuelto a la carga en la competición."
+      ]
+    },
+    {
+      "concepto": "Peñaranda de Bracamonte",
+      "piezas": 5,
+      "seccion_principal": "provincia",
+      "desde": "2026-11-20",
+      "hasta": "2026-11-22",
+      "ejemplos_redactados": [
+        "Peñaranda ha acompañado bajo el sol la procesión de la Señora de las Lágrimas.",
+        "La localidad acogerá un taller de arteterapia y una muestra sobre la violencia."
+      ]
+    },
+    {
+      "concepto": "Salamanca UDS",
       "piezas": 4,
       "seccion_principal": "deportes",
-      "desde": "2026-11-19",
-      "hasta": "2026-11-21",
+      "desde": "2026-11-20",
+      "hasta": "2026-11-22",
       "ejemplos_redactados": [
-        "El USAL Meins Avenida se ha quedado a las puertas de la remontada con un resultado de 61-66.",
-        "Mawuli se erige como líder del Meins Avenida dentro de la pista.",
-        "El Kutxabank Araski se enfrentará al Meins Avenida en un partido clave."
+        "Muniain lamenta el empate del Salamanca UDS ante el Calvo Sotelo Puertollano.",
+        "Se han analizado las claves del empate del Salamanca UDS en su encuentro."
       ]
     },
     {
-      "concepto": "Carbajosa",
+      "concepto": "Béjar",
       "piezas": 4,
       "seccion_principal": "provincia",
-      "desde": "2026-11-19",
-      "hasta": "2026-11-21",
+      "desde": "2026-11-20",
+      "hasta": "2026-11-23",
       "ejemplos_redactados": [
-        "Carbajosa de la Sagrada ha sido el primer municipio en encender las luces de Navidad.",
-        "El Ayuntamiento de Carbajosa ha concedido 40.000 euros en ayudas escolares.",
-        "Carbajosa premia la decoración navideña del comercio local."
+        "El Casino Obrero de Béjar ha rendido homenaje a socios veteranos.",
+        "Béjar ha recordado a Aurora Calvo en el aniversario de su fallecimiento."
       ]
     },
     {
-      "concepto": "Castilla y León",
+      "concepto": "Javi Medina",
       "piezas": 3,
-      "seccion_principal": "castilla-y-leon",
-      "desde": "2026-11-19",
-      "hasta": "2026-11-21",
+      "seccion_principal": "deportes",
+      "desde": "2026-11-20",
+      "hasta": "2026-11-22",
       "ejemplos_redactados": [
-        "Doble alegría en Castilla y León, con Burgos y Ávila recibiendo noticias positivas.",
-        "Castilla y León cerrará 2026 con superávit, siendo una de las pocas comunidades en registrarlo.",
-        "Una estación salmantina ha marcado la temperatura más baja de Castilla y León."
+        "Javi Medina ha expresado su deseo de que la afición se sienta orgullosa del equipo.",
+        "La derrota a domicilio ha condenado a Unionistas de Javi Medina."
       ]
     }
   ],
-  "resumen_borrador": "Se han publicado 156 noticias entre el 2026-11-19 y el 2026-11-22. La actividad se ha concentrado sobre todo en salamanca (62 piezas), provincia (48 piezas), deportes (23 piezas).\n\nLos conceptos con más piezas relacionadas son: Navidad; Ciudad · Rodrigo; Campo; Penaranda. Revisa 'evidencia' de cada concepto para redactar el resumen final.",
-  "resumen": "La provincia de Salamanca ha comenzado a prepararse para la temporada navideña, con el montaje del árbol gigante en la Plaza Mayor de la capital y el encendido de las luces en Carbajosa de la Sagrada. Ciudad Rodrigo también ha iniciado sus preparativos festivos, mientras Peñaranda de Bracamonte ha celebrado actos tradicionales y culturales.\n\nEl periodo ha estado marcado por las intensas lluvias, que han dejado más de 20 litros por metro cuadrado en la capital y otros municipios, generando un impacto significativo. En el ámbito deportivo, el USAL Meins Avenida ha protagonizado un encuentro reñido, quedándose a las puertas de una remontada. La actualidad también ha reflejado la preocupación por la introducción de la inteligencia artificial en el campo y la gestión de las ayudas agrícolas.\n\nEn la capital, un nuevo desprendimiento en la Catedral de Salamanca ha generado interés, mientras que la Consejería ha iniciado el pago de 34,6 millones de euros en anticipos. La información regional destaca el superávit de Castilla y León para 2026 y la importancia de la provincia en la región."
+  "resumen_borrador": "Se han publicado 164 noticias entre el 2026-11-20 y el 2026-11-23. La actividad se ha concentrado sobre todo en salamanca (59 piezas), provincia (49 piezas), deportes (37 piezas).\n\nLos conceptos con más piezas relacionadas son: Ciudad · Rodrigo; Unionistas; Lluvia; Meins · Avenida. Revisa 'evidencia' de cada concepto para redactar el resumen final.",
+  "resumen": "El periodo del 20 al 23 de noviembre de 2026 ha estado marcado por una intensa actividad en Salamanca y su provincia, con especial atención a los eventos deportivos y las incidencias meteorológicas. En el ámbito deportivo, Unionistas de Salamanca y Perfumerías Avenida han sido protagonistas, con una derrota para los primeros ante el Barakaldo y una victoria para las segundas frente al Araski. El Salamanca UDS, por su parte, ha registrado un empate con el Calvo Sotelo Puertollano, generando análisis sobre el rendimiento del equipo.\n\nLas lluvias han tenido un impacto significativo, provocando cortes de luz en algunas zonas y condicionando eventos al aire libre, como la jornada micológica en Linares de Riofrío o el Festival Candela. En el plano social, la XII Marcha contra el Cáncer ha congregado a miles de personas en las calles de Salamanca. Además, se han registrado sucesos como agresiones y detenciones por usurpación de identidades, mientras que el impacto del Brexit en las relaciones comerciales de Salamanca con el Reino Unido ha sido objeto de análisis económico.\n\nLa provincia ha visto actividad en localidades como Ciudad Rodrigo, que ha celebrado homenajes y se prepara para la Navidad, y Peñaranda de Bracamonte, con eventos culturales y religiosos. Béjar también ha recordado a figuras locales y ha sido escenario de celebraciones. El inicio de los preparativos navideños en la capital y en diversos municipios ha comenzado a ambientar la ciudad para las próximas festividades."
 }
