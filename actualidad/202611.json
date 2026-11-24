@@ -1,7 +1,7 @@
 {
   "mes": "2026-11",
   "titulo_mes": "Noviembre 2026",
-  "resumen_mes": "Noviembre ha estado marcado por los fallecimientos de Charo Diego, Jesús Miguel y Curro Sánchez. La huelga general generó tensión, mientras que los problemas en la línea ferroviaria Salamanca-Madrid han persistido. Un error en la identificación de pacientes en Montalvos ha causado preocupación, y se ha detectado el primer caso de lengua azul. La visita de Santiago Abascal a Salamanca generó tensión y protestas, mientras que el final de mes ha visto el inicio de los preparativos navideños, lluvias significativas y un desprendimiento en la Catedral, además de una multitudinaria marcha solidaria.",
+  "resumen_mes": "Noviembre ha estado marcado por los fallecimientos de Charo Diego, Jesús Miguel y Curro Sánchez. La huelga general generó tensión, mientras que los problemas en la línea ferroviaria Salamanca-Madrid han persistido. Un error en la identificación de pacientes en Montalvos ha causado preocupación, y se ha detectado el primer caso de lengua azul. La visita de Santiago Abascal a Salamanca generó tensión y protestas, mientras que el final de mes ha visto el inicio de los preparativos navideños, lluvias significativas y un desprendimiento en la Catedral, además de una multitudinaria marcha solidaria. En el ámbito deportivo, Unionistas de Salamanca ha puesto fin a la etapa de Javi Medina, y Meins Avenida ha logrado una victoria importante. También se ha desarticulado un grupo criminal y la Universidad ha presentado su presupuesto para 2027.",
   "hitos": [
     {
       "fecha": "2026-11-01",
@@ -28,28 +28,12 @@
       "destacado": false
     },
     {
-      "fecha": "2026-11-19",
-      "titulo": "Comienza el montaje del árbol gigante de Navidad en la Plaza Mayor",
-      "categoria": "Urbanismo",
-      "descripcion": "El árbol gigante de Navidad ha comenzado a levantarse en la Plaza Mayor de Salamanca, marcando el inicio de los preparativos festivos.",
-      "fuente": "https://www.lagacetadesalamanca.es/salamanca/arbol-gigante-navidad-empieza-levantarse-plaza-mayor-20261119095225-nt.html",
-      "destacado": false
-    },
-    {
       "fecha": "2026-11-20",
       "titulo": "Visita de Santiago Abascal a Salamanca marcada por la tensión",
       "categoria": "Política",
       "descripcion": "La concentración de Santiago Abascal en la Plaza Mayor de Salamanca generó momentos de tensión, provocaciones e insultos entre asistentes y manifestantes.",
       "fuente": "https://www.lagacetadesalamanca.es/salamanca/imagenes-tension-provocaciones-insultos-pelea-protesta-abascal-20261120133908-ga.html",
       "destacado": true
-    },
-    {
-      "fecha": "2026-11-20",
-      "titulo": "Nuevo desprendimiento en la Catedral de Salamanca",
-      "categoria": "Urbanismo",
-      "descripcion": "Se ha registrado un nuevo desprendimiento en la cornisa de la Torre Mocha de la Catedral de Salamanca.",
-      "fuente": "https://www.lagacetadesalamanca.es/salamanca/nuevo-desprendimiento-catedral-cornisa-torre-mocha-20261120120918-nt.html",
-      "destacado": false
     },
     {
       "fecha": "2026-11-21",
@@ -65,6 +49,22 @@
       "categoria": "Sociedad",
       "descripcion": "Alrededor de 15.000 personas llenaron las calles de Salamanca en la XII Marcha contra el Cáncer, mostrando un fuerte apoyo a la causa.",
       "fuente": "https://www.lagacetadesalamanca.es/salamanca/15000-personas-llenan-calles-salamanca-xii-marcha-20261122113241-nt.html",
+      "destacado": false
+    },
+    {
+      "fecha": "2026-11-22",
+      "titulo": "Meins Avenida logra una victoria clave frente al Araski",
+      "categoria": "Deportes",
+      "descripcion": "El equipo de baloncesto Meins Avenida ha conseguido una victoria determinante en su encuentro frente al Araski.",
+      "fuente": "https://www.lagacetadesalamanca.es/deportes/baloncesto-local/meins-avenida/claves-victoria-meins-avenida-frente-araski-20261122202549-nt.html",
+      "destacado": false
+    },
+    {
+      "fecha": "2026-11-23",
+      "titulo": "Fin de la era de Javi Medina en Unionistas",
+      "categoria": "Deportes",
+      "descripcion": "Se ha hecho oficial el cese de Javi Medina como entrenador de Unionistas de Salamanca, marcando el fin de su etapa en el club.",
+      "fuente": "https://www.lagacetadesalamanca.es/deportes/futbol-local/unionistas/oficial-fin-era-javi-medina-unionistas-20261123110513-nt.html",
       "destacado": false
     }
   ]

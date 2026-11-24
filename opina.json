@@ -842,6 +842,30 @@
       ],
       "basado_en": "actualidad.json",
       "fecha_creacion": "2026-11-23"
+    },
+    {
+      "id": "presupuesto-usal-2027",
+      "pregunta": "Ante la presentación del presupuesto de la Universidad de Salamanca para 2027, ¿cree que las prioridades de gasto reflejan adecuadamente las necesidades de la institución y la provincia?",
+      "opciones": [
+        "Sí, es un presupuesto equilibrado y necesario.",
+        "No, debería enfocarse en otras áreas.",
+        "Es un buen punto de partida, pero necesita ajustes.",
+        "No tengo suficiente información."
+      ],
+      "basado_en": "actualidad.json",
+      "fecha_creacion": "2026-11-24"
+    },
+    {
+      "id": "videomapping-navidad-salamanca-2026",
+      "pregunta": "El videomapping en la Plaza Mayor se sumará al alumbrado navideño de Salamanca. ¿Considera que este tipo de espectáculos contribuye a realzar el ambiente festivo y atraer visitantes a la ciudad?",
+      "opciones": [
+        "Sí, es un gran atractivo y dinamiza el centro.",
+        "No, es un gasto innecesario y no aporta valor.",
+        "Es un complemento, pero no esencial para el ambiente navideño.",
+        "No tengo suficiente información."
+      ],
+      "basado_en": "eventos.json",
+      "fecha_creacion": "2026-11-24"
     }
   ]
 }

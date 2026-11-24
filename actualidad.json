@@ -1,11 +1,11 @@
 {
   "url_base": "https://www.lagacetadesalamanca.es",
-  "generado_en": "2026-11-23T05:45:22+00:00",
+  "generado_en": "2026-11-24T05:46:03+00:00",
   "periodo_cubierto": {
-    "desde": "2026-11-20",
-    "hasta": "2026-11-23"
+    "desde": "2026-11-21",
+    "hasta": "2026-11-24"
   },
-  "total_urls_analizadas": 164,
+  "total_urls_analizadas": 163,
   "secciones_excluidas": [
     "gente-estilo",
     "nacional",
@@ -16,24 +16,24 @@
   "nota_cobertura": "El análisis cubre únicamente las URLs presentes en el sitemap en el momento de la consulta (excluyendo, si se indicó, las secciones filtradas). Si el sitemap es incremental o 'rolling', el periodo real puede ser más corto que el solicitado — revisa 'periodo_cubierto' para confirmarlo.",
   "por_seccion": [
     [
-      "salamanca",
-      59
+      "provincia",
+      47
     ],
     [
-      "provincia",
-      49
+      "salamanca",
+      46
     ],
     [
       "deportes",
-      37
+      42
     ],
     [
       "sucesos",
-      8
+      14
     ],
     [
       "campo",
-      4
+      9
     ],
     [
       "encuestas",
@@ -46,34 +46,30 @@
     [
       "toros",
       1
-    ],
-    [
-      "cine-y-series",
-      1
-    ],
-    [
-      "fundacion-gaceta",
-      1
     ]
   ],
   "por_subseccion": [
     [
       "deportes/futbol-local",
-      24
+      23
     ],
     [
       "deportes/baloncesto-local",
       9
     ],
     [
+      "deportes/deporte-base",
+      3
+    ],
+    [
       "deportes/carreras-populares",
-      1
+      2
     ]
   ],
   "por_tipo_contenido": [
     [
       "noticia",
-      141
+      140
     ],
     [
       "galería",
@@ -86,152 +82,144 @@
   ],
   "heatmap_calendario": [
     {
-      "fecha": "2026-11-20",
-      "total": 50,
-      "salamanca": 16,
-      "provincia": 22,
-      "deportes": 5,
-      "sucesos": 1,
-      "campo": 2,
-      "encuestas": 1,
-      "castilla-y-leon": 1,
-      "toros": 0,
-      "cine-y-series": 1,
-      "fundacion-gaceta": 1
-    },
-    {
       "fecha": "2026-11-21",
-      "total": 52,
-      "salamanca": 21,
+      "total": 38,
       "provincia": 14,
-      "deportes": 10,
-      "sucesos": 4,
-      "campo": 2,
+      "salamanca": 10,
+      "deportes": 9,
+      "sucesos": 3,
+      "campo": 1,
       "encuestas": 0,
       "castilla-y-leon": 1,
-      "toros": 0,
-      "cine-y-series": 0,
-      "fundacion-gaceta": 0
+      "toros": 0
     },
     {
       "fecha": "2026-11-22",
-      "total": 57,
-      "salamanca": 19,
+      "total": 55,
       "provincia": 11,
+      "salamanca": 17,
       "deportes": 22,
       "sucesos": 3,
       "campo": 0,
       "encuestas": 1,
       "castilla-y-leon": 0,
-      "toros": 1,
-      "cine-y-series": 0,
-      "fundacion-gaceta": 0
+      "toros": 1
     },
     {
       "fecha": "2026-11-23",
-      "total": 5,
+      "total": 64,
+      "provincia": 22,
+      "salamanca": 16,
+      "deportes": 10,
+      "sucesos": 8,
+      "campo": 6,
+      "encuestas": 1,
+      "castilla-y-leon": 1,
+      "toros": 0
+    },
+    {
+      "fecha": "2026-11-24",
+      "total": 6,
+      "provincia": 0,
       "salamanca": 3,
-      "provincia": 2,
-      "deportes": 0,
+      "deportes": 1,
       "sucesos": 0,
-      "campo": 0,
+      "campo": 2,
       "encuestas": 0,
       "castilla-y-leon": 0,
-      "toros": 0,
-      "cine-y-series": 0,
-      "fundacion-gaceta": 0
+      "toros": 0
     }
   ],
   "conceptos_destacados": [
     {
-      "concepto": "Ciudad Rodrigo",
-      "piezas": 7,
-      "seccion_principal": "provincia",
-      "desde": "2026-11-20",
-      "hasta": "2026-11-22",
-      "ejemplos_redactados": [
-        "Ciudad Rodrigo ha alcanzado su meta en la lucha contra la violencia machista.",
-        "La localidad ha celebrado un homenaje a sus jubilados y empieza a sentir la Navidad."
-      ]
-    },
-    {
-      "concepto": "Unionistas de Salamanca",
+      "concepto": "Unionistas",
       "piezas": 6,
       "seccion_principal": "deportes",
-      "desde": "2026-11-20",
-      "hasta": "2026-11-22",
-      "ejemplos_redactados": [
-        "Unionistas se enfrentó al Barakaldo en un partido con resultado en directo.",
-        "Las claves de la derrota de Unionistas ante el Barakaldo han sido analizadas."
-      ]
-    },
-    {
-      "concepto": "Lluvias en la provincia",
-      "piezas": 6,
-      "seccion_principal": "provincia",
       "desde": "2026-11-21",
-      "hasta": "2026-11-22",
-      "ejemplos_redactados": [
-        "El efecto de la lluvia ha dejado sin luz a 700 clientes en San.",
-        "Linares de Riofrío ha disfrutado de una jornada micológica a pesar de las precipitaciones."
-      ]
-    },
-    {
-      "concepto": "Perfumerías Avenida",
-      "piezas": 5,
-      "seccion_principal": "deportes",
-      "desde": "2026-11-21",
-      "hasta": "2026-11-22",
-      "ejemplos_redactados": [
-        "Se han destacado las claves de la victoria de Perfumerías Avenida frente al Araski.",
-        "El equipo de Perfumerías Avenida ha vuelto a la carga en la competición."
-      ]
-    },
-    {
-      "concepto": "Peñaranda de Bracamonte",
-      "piezas": 5,
-      "seccion_principal": "provincia",
-      "desde": "2026-11-20",
-      "hasta": "2026-11-22",
-      "ejemplos_redactados": [
-        "Peñaranda ha acompañado bajo el sol la procesión de la Señora de las Lágrimas.",
-        "La localidad acogerá un taller de arteterapia y una muestra sobre la violencia."
-      ]
-    },
-    {
-      "concepto": "Salamanca UDS",
-      "piezas": 4,
-      "seccion_principal": "deportes",
-      "desde": "2026-11-20",
-      "hasta": "2026-11-22",
-      "ejemplos_redactados": [
-        "Muniain lamenta el empate del Salamanca UDS ante el Calvo Sotelo Puertollano.",
-        "Se han analizado las claves del empate del Salamanca UDS en su encuentro."
-      ]
-    },
-    {
-      "concepto": "Béjar",
-      "piezas": 4,
-      "seccion_principal": "provincia",
-      "desde": "2026-11-20",
       "hasta": "2026-11-23",
       "ejemplos_redactados": [
-        "El Casino Obrero de Béjar ha rendido homenaje a socios veteranos.",
-        "Béjar ha recordado a Aurora Calvo en el aniversario de su fallecimiento."
+        "El equipo Unionistas ha finalizado la era de Javi Medina, tras una derrota a domicilio que ha sido determinante. El partido contra el Barakaldo se siguió en directo.",
+        "La derrota a domicilio ha condenado a Unionistas, marcando el fin de la era de Javi Medina como entrenador."
+      ]
+    },
+    {
+      "concepto": "Lluvia",
+      "piezas": 6,
+      "seccion_principal": "provincia",
+      "desde": "2026-11-21",
+      "hasta": "2026-11-22",
+      "ejemplos_redactados": [
+        "Las intensas lluvias han afectado al suministro eléctrico de 700 clientes en San y han sido un desafío para eventos como el Festival Candela.",
+        "Aldeanueva se ha llenado de devoción a pesar de las precipitaciones, que también han impactado en la jornada micológica de Linares de Riofrío."
+      ]
+    },
+    {
+      "concepto": "Bejar",
+      "piezas": 6,
+      "seccion_principal": "provincia",
+      "desde": "2026-11-22",
+      "hasta": "2026-11-23",
+      "ejemplos_redactados": [
+        "Béjar ha experimentado cortes de tráfico en su centro debido a obras de renovación de redes y un segundo derrumbe en su casco histórico en apenas una semana.",
+        "El obispo de Plasencia realizó una visita pastoral a Fuentes de Béjar, mientras la localidad recordaba a Aurora Calvo."
+      ]
+    },
+    {
+      "concepto": "Meins Avenida",
+      "piezas": 5,
+      "seccion_principal": "deportes",
+      "desde": "2026-11-21",
+      "hasta": "2026-11-22",
+      "ejemplos_redactados": [
+        "Meins Avenida ha vuelto a la carga con una victoria clave frente al Araski, demostrando su capacidad para jugar con pívots.",
+        "El partido entre Araski y Meins Avenida se siguió en directo, con su resultado y marcador online."
+      ]
+    },
+    {
+      "concepto": "Navidad",
+      "piezas": 5,
+      "seccion_principal": "provincia",
+      "desde": "2026-11-21",
+      "hasta": "2026-11-23",
+      "ejemplos_redactados": [
+        "Ciudad Rodrigo se suma a las luces de Navidad, y en la Plaza Mayor de Salamanca se prepara un videomapping navideño.",
+        "La solidaridad sobre dos ruedas también se ha puesto de manifiesto en estas fechas, y Carbajosa ha sido el primero en encender sus luces."
+      ]
+    },
+    {
+      "concepto": "Ciudad Rodrigo",
+      "piezas": 4,
+      "seccion_principal": "provincia",
+      "desde": "2026-11-21",
+      "hasta": "2026-11-23",
+      "ejemplos_redactados": [
+        "Ciudad Rodrigo ha avanzado en el cambio de iluminación LED y se ha sumado a las luces de Navidad.",
+        "La localidad también ha alcanzado una meta en la lucha contra la violencia machista y ha rendido homenaje a sus jubilados."
       ]
     },
     {
       "concepto": "Javi Medina",
-      "piezas": 3,
+      "piezas": 4,
       "seccion_principal": "deportes",
-      "desde": "2026-11-20",
+      "desde": "2026-11-22",
+      "hasta": "2026-11-23",
+      "ejemplos_redactados": [
+        "Se ha anunciado el fin de la era de Javi Medina en Unionistas, una decisión que llega tras una derrota a domicilio del equipo.",
+        "Javi Medina había expresado que la afición debía sentirse orgullosa del equipo que había competido."
+      ]
+    },
+    {
+      "concepto": "Peñaranda",
+      "piezas": 4,
+      "seccion_principal": "provincia",
+      "desde": "2026-11-21",
       "hasta": "2026-11-22",
       "ejemplos_redactados": [
-        "Javi Medina ha expresado su deseo de que la afición se sienta orgullosa del equipo.",
-        "La derrota a domicilio ha condenado a Unionistas de Javi Medina."
+        "Peñaranda ha acompañado bajo el sol la procesión de la Señora de las Lágrimas y ha rendido culto a la Virgen.",
+        "La localidad también ha acogido una muestra que pone rostro al ciclo invisible de la violencia y acogerá un taller de arteterapia."
       ]
     }
   ],
-  "resumen_borrador": "Se han publicado 164 noticias entre el 2026-11-20 y el 2026-11-23. La actividad se ha concentrado sobre todo en salamanca (59 piezas), provincia (49 piezas), deportes (37 piezas).\n\nLos conceptos con más piezas relacionadas son: Ciudad · Rodrigo; Unionistas; Lluvia; Meins · Avenida. Revisa 'evidencia' de cada concepto para redactar el resumen final.",
-  "resumen": "El periodo del 20 al 23 de noviembre de 2026 ha estado marcado por una intensa actividad en Salamanca y su provincia, con especial atención a los eventos deportivos y las incidencias meteorológicas. En el ámbito deportivo, Unionistas de Salamanca y Perfumerías Avenida han sido protagonistas, con una derrota para los primeros ante el Barakaldo y una victoria para las segundas frente al Araski. El Salamanca UDS, por su parte, ha registrado un empate con el Calvo Sotelo Puertollano, generando análisis sobre el rendimiento del equipo.\n\nLas lluvias han tenido un impacto significativo, provocando cortes de luz en algunas zonas y condicionando eventos al aire libre, como la jornada micológica en Linares de Riofrío o el Festival Candela. En el plano social, la XII Marcha contra el Cáncer ha congregado a miles de personas en las calles de Salamanca. Además, se han registrado sucesos como agresiones y detenciones por usurpación de identidades, mientras que el impacto del Brexit en las relaciones comerciales de Salamanca con el Reino Unido ha sido objeto de análisis económico.\n\nLa provincia ha visto actividad en localidades como Ciudad Rodrigo, que ha celebrado homenajes y se prepara para la Navidad, y Peñaranda de Bracamonte, con eventos culturales y religiosos. Béjar también ha recordado a figuras locales y ha sido escenario de celebraciones. El inicio de los preparativos navideños en la capital y en diversos municipios ha comenzado a ambientar la ciudad para las próximas festividades."
+  "resumen_borrador": "Se han publicado 163 noticias entre el 2026-11-21 y el 2026-11-24. La actividad se ha concentrado sobre todo en provincia (47 piezas), salamanca (46 piezas), deportes (42 piezas).\n\nLos conceptos con más piezas relacionadas son: Unionistas; Lluvia; Bejar; Meins · Avenida. Revisa 'evidencia' de cada concepto para redactar el resumen final.",
+  "resumen": "El periodo comprendido entre el 21 y el 24 de noviembre de 2026 ha estado marcado por una intensa actividad en la provincia de Salamanca, con especial atención a los eventos deportivos y las noticias locales. En el ámbito futbolístico, Unionistas de Salamanca ha cerrado la etapa de Javi Medina tras una derrota decisiva, mientras que el Salamanca CF UDS empató su encuentro. En baloncesto, Meins Avenida ha logrado una victoria importante frente al Araski.\n\nLas condiciones meteorológicas han sido protagonistas, con lluvias significativas que han afectado a diversas localidades y han provocado incidencias como cortes de luz. En Béjar, se han registrado cortes de tráfico por obras y un segundo derrumbe en su casco histórico. Ciudad Rodrigo ha avanzado en su iluminación LED y ha comenzado los preparativos navideños, una tendencia que se extiende por la provincia con la instalación de luces y eventos relacionados con la Navidad. Peñaranda de Bracamonte, por su parte, ha celebrado la procesión de la Señora de las Lágrimas y ha acogido una muestra sobre la violencia.\n\nOtros sucesos relevantes incluyen la desarticulación de un grupo criminal que operaba en Salamanca y otras provincias, así como la presentación del presupuesto de la Universidad para el año 2027. La capital también ha sido escenario de una multitudinaria marcha solidaria contra el cáncer, reafirmando el compromiso social de sus ciudadanos."
 }
