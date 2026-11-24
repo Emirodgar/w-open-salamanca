@@ -166,6 +166,16 @@ layout: default
       <h2>Dónde encaja en el Pleno</h2>
       <p>{{ p.gobierno_municipal.texto }} El Pleno tiene {{ p.gobierno_municipal.pleno.concejales }} concejales (mayoría absoluta: {{ p.gobierno_municipal.pleno.mayoria_absoluta }}).{% if p.gobierno_municipal.tenientes_de_alcalde %} Tenientes de alcalde: {{ p.gobierno_municipal.tenientes_de_alcalde | join: ", " }}.{% endif %} {{ p.gobierno_municipal.nota }} Más detalle: <a href="/elecciones/politicos/">todos los concejales</a>, <a href="/concejales-ayuntamiento-salamanca">concejales por mandato</a> y <a href="/alcaldes-salamanca">alcaldes de Salamanca</a>. Fuente: <a href="{{ p.gobierno_municipal.fuente.u }}" rel="nofollow noopener">{{ p.gobierno_municipal.fuente.t }}</a>.</p>
 
+      {%- assign ix = site.data.concejales_indice -%}
+      {%- assign mi_grupo = p.identidad.partido.siglas -%}
+      <h2>Otros concejales {% if mi_grupo == "PP" %}del PP (equipo de gobierno){% elsif mi_grupo == "PSOE" %}del PSOE (oposición){% else %}elegidos en la candidatura de Vox (oposición){% endif %}</h2>
+      <ul>
+        {%- for c in ix.concejales %}{% if c.grupo == mi_grupo and c.slug != page.slug %}
+        <li><a href="/elecciones/politicos/{{ c.slug }}">{{ c.nombre }}</a>: {{ c.cargo }}</li>
+        {%- endif %}{% endfor %}
+      </ul>
+      <p class="fu">Todos los miembros del Pleno, con su grupo y retribución 2025, en el <a href="/elecciones/politicos/">listado de concejales</a>.</p>
+
       <h2>Qué no está verificado</h2>
       <div class="warn">
         <p>{{ p.aviso }}</p>
