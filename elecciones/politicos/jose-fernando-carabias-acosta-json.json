@@ -1,0 +1,5 @@
+---
+permalink: elecciones/politicos/jose-fernando-carabias-acosta.json
+sitemap: false
+---
+{{ site.data.politicos["jose-fernando-carabias-acosta"] | jsonify }}

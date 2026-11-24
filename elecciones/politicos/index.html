@@ -1,0 +1,86 @@
+---
+layout: default
+title: "Concejales del Ayuntamiento de Salamanca (2023-2027): grupos, cargos y retribuciones 2025"
+description: "Las 27 personas de la Corporación de Salamanca, gobierno del PP y oposición, con su ficha individual, su cargo, su grupo y la retribución bruta 2025 del listado oficial"
+date: 24-11-2026
+modified: 24-11-2026
+parent_url: /elecciones/
+parent_title: Elecciones en Salamanca
+permalink: elecciones/politicos/
+dataset_name: "Concejales del Ayuntamiento de Salamanca 2023-2027: grupos, cargos y retribuciones 2025"
+dataset_temporal: "2023/2026"
+dataset_source: "Ayuntamiento de Salamanca (Corporación municipal y retribuciones 2025)"
+dataset_source_url: "https://www.aytosalamanca.es/corporacion-municipal"
+dataset_files:
+  - elecciones/politicos/concejales-salamanca-2023-2027.json
+---
+{%- assign ix = site.data.concejales_indice -%}
+<style>
+  .lista-pol .ans{background:#eef6ff;border:1px solid #c9dcf3;padding:14px 16px;border-radius:6px;font-size:1.08em;margin:0 0 1.2em}
+  .lista-pol .fu{font-size:.85em;color:#5b6778;margin:.2em 0 0}
+  .lista-pol .tabla{overflow-x:auto}
+  .lista-pol td.num,.lista-pol th.num{text-align:right;white-space:nowrap}
+</style>
+
+<section class="featured dataset lista-pol" id="datos">
+  <div class="container">
+    <div class="section-header">
+      <h1 class="section-title">{{ page.title }}</h1>
+      <p class="section-description">{{ page.description }}</p>
+    </div>
+
+    <div id="section-content">
+      <p class="ans">El Pleno del Ayuntamiento de Salamanca (mandato 2023-2027) tiene 27 concejales: 14 del PP, que gobierna con mayoría absoluta con el alcalde Carlos García Carbayo, 10 del PSOE y 3 elegidos en la candidatura de Vox (cuyo grupo municipal se disolvió el 24-02-2025). Cada nombre enlaza con una ficha con biografía, formación, trayectoria, retribución oficial y transparencia, con fuente en cada dato. Según el listado oficial de 2025, las retribuciones brutas de los 27 miembros sumaron {{ ix.resumen.total_texto }}.</p>
+      <p class="fu">Actualizado el {{ ix.actualizado_texto }}. Parte del <a href="/elecciones/">panel de elecciones</a>. Datos descargables: <a href="/elecciones/politicos/concejales-salamanca-2023-2027.json">concejales-salamanca-2023-2027.json</a> (CC BY 4.0, citar «Open Salamanca»).</p>
+
+      <h2>Los concejales, uno por uno</h2>
+      <div class="tabla"><table border="1" cellpadding="5" cellspacing="0">
+        <thead><tr><th>Concejal</th><th>Grupo</th><th>Cargo</th><th class="num">Retribución bruta 2025</th><th>Dedicación marcada</th></tr></thead>
+        <tbody>
+        {%- for c in ix.concejales %}
+          <tr><td><a href="/elecciones/politicos/{{ c.slug }}"><b>{{ c.nombre }}</b></a></td><td>{{ c.grupo }}{% if c.rol == "gobierno" or c.rol == "alcalde" %} (gobierno){% else %} (oposición){% endif %}</td><td>{{ c.cargo }}</td><td class="num">{{ c.retribucion_2025_texto }}</td><td>{% if c.dedicacion_marcada == true %}sí{% elsif c.dedicacion_marcada == false %}no{% else %}—{% endif %}</td></tr>
+        {%- endfor %}
+        </tbody>
+      </table></div>
+      <p class="fu">Fuentes: <a href="https://www.aytosalamanca.es/corporacion-municipal" rel="nofollow noopener">Corporación municipal</a> y <a href="{{ ix.resumen.fuente.u }}" rel="nofollow noopener">retribuciones percibidas por los miembros de la Corporación en 2025</a> (Ayuntamiento de Salamanca). El asterisco del listado oficial significa «dedicaciones exclusivas / parciales» sin distinguirlas; el listado no desglosa los conceptos retribuidos.</p>
+
+      <h2>Retribuciones 2025 por grupo</h2>
+      <div class="tabla"><table border="1" cellpadding="5" cellspacing="0">
+        <thead><tr><th>Grupo</th><th class="num">Miembros en el listado</th><th class="num">Con dedicación marcada</th><th class="num">Total bruto</th><th class="num">Media por miembro</th></tr></thead>
+        <tbody>
+        {%- for g in ix.resumen.grupos %}
+          <tr><td>{{ g.grupo }}</td><td class="num">{{ g.miembros_listados }}</td><td class="num">{{ g.con_dedicacion_marcada }}</td><td class="num">{{ g.total_texto }}</td><td class="num">{{ g.media_texto }}</td></tr>
+        {%- endfor %}
+          <tr><td><b>Total</b></td><td class="num"><b>{{ ix.resumen.miembros_listados }}</b></td><td class="num"><b>10</b></td><td class="num"><b>{{ ix.resumen.total_texto }}</b></td><td class="num">—</td></tr>
+        </tbody>
+      </table></div>
+      <p class="fu">{{ ix.resumen.nota }} Los grupos agrupan a quienes figuran en el listado de 2025; las medias no comparan puestos equivalentes, porque las delegaciones de gobierno con dedicación solo existen en el equipo de gobierno.</p>
+
+      <h2>Cambios en el Pleno durante el mandato</h2>
+      <ul>
+        <li><b>27-06-2024:</b> renuncia al acta de Laura Magdalena Miguel (Vox); el <b>26-07-2024</b> toma posesión María de los Ángeles Carpio Pérez.</li>
+        <li><b>10-02-2025:</b> Alejandro Pérez de la Sota sustituye a Ignacio Rivas Serrano como portavoz de Vox; el <b>24-02-2025</b> el grupo municipal de Vox se disuelve por resolución del alcalde.</li>
+        <li><b>7-05-2026:</b> María Sánchez Gómez releva a José Luis Mateos Crespo como portavoz del PSOE.</li>
+        <li><b>6-07-2026:</b> renuncia de Pedro Martínez Córdoba (PP); el <b>30-07-2026</b> toma posesión César Gómez-Barthe Celada.</li>
+      </ul>
+      <p class="fu">Más contexto en <a href="/concejales-ayuntamiento-salamanca">concejales por mandato (2015-2026)</a> y <a href="/alcaldes-salamanca">alcaldes de Salamanca</a>.</p>
+
+      <h2>Qué no está verificado</h2>
+      <p>Las fichas no transcriben las cifras de patrimonio de las declaraciones de bienes (se enlazan las publicadas por el Ayuntamiento), no recogen votaciones concretas en el Pleno ni la valoración de cada grupo, y no incluyen a Pedro Martínez Córdoba ni a Laura Magdalena Miguel, que ya no forman parte de la Corporación. Cada ficha detalla además sus propias lagunas.</p>
+    </div>
+  </div>
+</section>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": {{ page.title | jsonify }},
+  "numberOfItems": {{ ix.concejales.size }},
+  "itemListElement": [
+    {%- for c in ix.concejales %}
+    { "@type": "ListItem", "position": {{ forloop.index }}, "url": {{ c.url | jsonify }}, "name": {{ c.nombre | jsonify }} }{% unless forloop.last %},{% endunless %}
+    {%- endfor %}
+  ]
+}
+</script>

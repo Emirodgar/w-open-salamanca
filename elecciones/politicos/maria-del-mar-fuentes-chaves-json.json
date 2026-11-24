@@ -1,0 +1,5 @@
+---
+permalink: elecciones/politicos/maria-del-mar-fuentes-chaves.json
+sitemap: false
+---
+{{ site.data.politicos["maria-del-mar-fuentes-chaves"] | jsonify }}

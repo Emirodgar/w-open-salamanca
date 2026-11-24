@@ -1,0 +1,216 @@
+{
+  "schema_version": "1.0",
+  "tipo": "ficha_politico",
+  "slug": "cesar-gomez-barthe-celada",
+  "url_canonica": "https://opensalamanca.es/elecciones/politicos/cesar-gomez-barthe-celada",
+  "actualizado": "2026-11-24",
+  "actualizado_texto": "24 de noviembre de 2026",
+  "licencia": "CC BY 4.0 (citar «Open Salamanca» y enlazar la ficha)",
+  "aviso": "Ficha elaborada solo con fuentes públicas citadas en cada dato (principalmente la web oficial del Ayuntamiento). Lo no contrastado figura en «no_verificado»; no se omite ni se rellena. No es opinión política ni recomendación de voto.",
+  "identidad": {
+    "nombre_completo": "César Gómez-Barthe Celada",
+    "nombre_habitual": "César Gómez-Barthe",
+    "nombre_pila": "César",
+    "apellidos": "Gómez-Barthe Celada",
+    "tratamiento_oficial": "César Gómez-Barthe Celada",
+    "apodos_o_variantes": [
+      "César Gómez-Barthe",
+      "Gómez-Barthe Celada"
+    ],
+    "nacimiento": {
+      "fecha": "1986-08-03",
+      "fecha_texto": "3 de agosto de 1986",
+      "lugar": "León"
+    },
+    "partido": {
+      "siglas": "PP",
+      "nombre": "Partido Popular"
+    },
+    "afiliacion_confirmada": false,
+    "grupo_texto": "Partido Popular (PP)",
+    "alumni_of": [
+      "Universidad de Salamanca",
+      "Universidad Camilo José Cela"
+    ],
+    "formacion_resumen": "Licenciado en Derecho",
+    "profesion": null
+  },
+  "cargo_actual": {
+    "cargo": "Concejal delegado de Promoción Económica, Comercio, Mercados y Juventud",
+    "organizacion": "Ayuntamiento de Salamanca",
+    "desde": "2026-07-30",
+    "desde_texto": "30 de julio de 2026",
+    "mandato_actual": "2023-2027",
+    "rol_en_pleno": "gobierno",
+    "rol_en_pleno_texto": "Equipo de gobierno: el PP gobierna con mayoría absoluta (14 de 27 concejales) con el alcalde Carlos García Carbayo.",
+    "otros_cargos": [],
+    "cargo_segun_ficha_oficial": null,
+    "contacto_institucional": {
+      "direccion": "Casa Consistorial, Plaza Mayor, 1, 37002 Salamanca",
+      "telefono": null,
+      "email": null
+    }
+  },
+  "resumen": "César Gómez-Barthe Celada es concejal delegado de Promoción Económica, Comercio, Mercados y Juventud, en el Ayuntamiento de Salamanca (equipo de gobierno del PP), mandato 2023-2027. Nacido en León en 1986; licenciado en Derecho y en Ciencias Políticas y de la Administración por la Universidad de Salamanca, con un máster en Democracia y Buen Gobierno y otro en Dirección de Protocolo y Eventos (Universidad Camilo José Cela); abogado colegiado no ejerciente, fue responsable de Proyectos de la Asociación de Jóvenes Empresarios de Salamanca (2015-2019), asesor del Grupo Municipal Popular y secretario general de Nuevas Generaciones del PP de Salamanca (2012-2021).",
+  "trayectoria": [
+    {
+      "fecha": "2026-07-30",
+      "hito": "Toma posesión como concejal y asume Promoción Económica, Comercio, Mercados y Juventud",
+      "detalle": "Entra en la Corporación por la renuncia de Pedro Martínez Córdoba (PP), que dejó el acta el 6-07-2026 para asumir una responsabilidad política en Murcia.",
+      "fuentes": [
+        {
+          "t": "Ayuntamiento de Salamanca: César Gómez Barthe Celada toma posesión como nuevo concejal",
+          "u": "https://www.aytosalamanca.es/w/c%C3%A9sar-g%C3%B3mez-barthe-celada-toma-posesi%C3%B3n-como-nuevo-concejal-del-ayuntamiento-de-salamanca"
+        },
+        {
+          "t": "El Español (30-07-2026): César Gómez Barthe se incorpora como concejal y asume Comercio y Juventud",
+          "u": "https://www.elespanol.com/castilla-y-leon/region/salamanca/20260730/cesar-gomez-barthe-incorpora-concejal-ayuntamiento-salamanca-asume-comercio-juventud/1003744339657_0.html"
+        },
+        {
+          "t": "SALAMANCArtv AL DÍA (30-07-2026): César Gómez-Barthe toma posesión como concejal de Promoción Económica y Juventud",
+          "u": "https://salamancartvaldia.es/noticia/2026-07-30-cesar-gomez-barthe-toma-posesion-como-concejal-de-promocion-economica-y-juventud-394984"
+        }
+      ]
+    },
+    {
+      "fecha": "2012",
+      "hito": "Secretario general de Nuevas Generaciones del PP de Salamanca (2012-2021)",
+      "detalle": "Según la nota oficial de su toma de posesión.",
+      "fuentes": [
+        {
+          "t": "Ayuntamiento de Salamanca: César Gómez Barthe Celada toma posesión como nuevo concejal",
+          "u": "https://www.aytosalamanca.es/w/c%C3%A9sar-g%C3%B3mez-barthe-celada-toma-posesi%C3%B3n-como-nuevo-concejal-del-ayuntamiento-de-salamanca"
+        }
+      ]
+    }
+  ],
+  "ficha_oficial": {
+    "url": "https://www.aytosalamanca.es/w/c%C3%A9sar-g%C3%B3mez-barthe-celada-toma-posesi%C3%B3n-como-nuevo-concejal-del-ayuntamiento-de-salamanca",
+    "texto": "No tiene ficha propia en la Corporación municipal a fecha de consulta; los datos proceden de la nota oficial de su toma de posesión (30-07-2026), también recogida por El Español.",
+    "formacion_oficial": [
+      "Licenciado en Derecho — Universidad de Salamanca",
+      "Licenciado en Ciencias Políticas y de la Administración — Universidad de Salamanca",
+      "Máster en Democracia y Buen Gobierno — Universidad de Salamanca",
+      "Máster en Dirección de Protocolo, Producción, Organización y Diseño de Eventos — Universidad Camilo José Cela"
+    ],
+    "otros_titulos": [],
+    "actividad_profesional": [
+      "Abogado colegiado no ejerciente — Ilustre Colegio de la Abogacía de Salamanca",
+      "Responsable de Proyectos — Asociación de Jóvenes Empresarios de Salamanca — 2015-2019",
+      "Asesor del Grupo Municipal Popular — Ayuntamiento de Salamanca — hasta su toma de posesión"
+    ],
+    "otras_actividades": [
+      "Secretario general de Nuevas Generaciones del Partido Popular de Salamanca — 2012-2021"
+    ]
+  },
+  "retribucion": {
+    "ejercicio": 2025,
+    "importe_bruto_anual_eur": null,
+    "dedicacion_marcada": null,
+    "posicion_en_la_corporacion": null,
+    "texto_resumen": "César Gómez-Barthe tomó posesión el 30-07-2026, por lo que no figura en el listado oficial de retribuciones de 2025 (que incluye a su antecesor, Pedro Martínez Córdoba). No se ha localizado un dato de retribución publicado para el cargo actual.",
+    "nota": "Listado de 2025 consultado el 24-11-2026.",
+    "fuente": {
+      "t": "Ayuntamiento de Salamanca: retribuciones percibidas por los miembros de la Corporación en 2025 (PDF)",
+      "u": "https://www.aytosalamanca.es/documents/d/guest/02-retribuciones-percibidas-miembros-corporacion-2025"
+    }
+  },
+  "transparencia": {
+    "enlaces_declaraciones": [],
+    "nota": "Base legal: art. 75.7 de la Ley de Bases de Régimen Local. Se enlazan las declaraciones que el Ayuntamiento publica; las anuales solo recogen variaciones respecto a la inicial de 2023, cuyas cifras no se transcriben aquí.",
+    "portal": {
+      "t": "Ayuntamiento de Salamanca: Portal de Transparencia",
+      "u": "https://www.aytosalamanca.es/transparencia"
+    }
+  },
+  "gobierno_municipal": {
+    "pleno": {
+      "concejales": 27,
+      "mayoria_absoluta": 14,
+      "reparto_2023_2027": {
+        "PP": 14,
+        "PSOE": 10,
+        "Vox": 3
+      }
+    },
+    "texto": "Equipo de gobierno: el PP gobierna con mayoría absoluta (14 de 27 concejales) con el alcalde Carlos García Carbayo.",
+    "fuente": {
+      "t": "Ayuntamiento de Salamanca: Corporación municipal",
+      "u": "https://www.aytosalamanca.es/corporacion-municipal"
+    },
+    "nota": "La web oficial agrupa la Corporación en alcalde, tenientes de alcalde, concejales delegados y concejales. El reparto de 2023 vino con la constitución del Pleno (17-06-2023) y las concejalías (19-06-2023)."
+  },
+  "no_verificado": [
+    "Cifras de patrimonio, bienes e ingresos de las declaraciones de bienes y actividades: se enlazan las publicadas por el Ayuntamiento, pero no se transcriben.",
+    "Puesto en la lista de 2023, votos personales y posiciones o votaciones concretas en el Pleno: no recopilados.",
+    "Trayectoria política y profesional anterior a la nota oficial de su toma de posesión.",
+    "Controversias: ninguna contrastada en las fuentes consultadas; eso no prueba que no existan. No se ha recopilado la valoración de otros grupos.",
+    "Orden de los tenientes de alcalde y régimen de dedicación tras su incorporación (no consta en las fuentes consultadas).",
+    "Su ficha oficial individual en la Corporación municipal no estaba publicada a fecha de consulta.",
+    "Delegaciones y organigrama detallado más allá del reparto de concejalías de 2023 y los cambios publicados: pueden haber variado."
+  ],
+  "faq": [
+    {
+      "q": "¿Quién es César Gómez-Barthe?",
+      "a": "César Gómez-Barthe Celada es concejal delegado de Promoción Económica, Comercio, Mercados y Juventud, en el Ayuntamiento de Salamanca (equipo de gobierno del PP), mandato 2023-2027. Nacido en León en 1986; licenciado en Derecho y en Ciencias Políticas y de la Administración por la Universidad de Salamanca, con un máster en Democracia y Buen Gobierno y otro en Dirección de Protocolo y Eventos (Universidad Camilo José Cela); abogado colegiado no ejerciente, fue responsable de Proyectos de la Asociación de Jóvenes Empresarios de Salamanca (2015-2019), asesor del Grupo Municipal Popular y secretario general de Nuevas Generaciones del PP de Salamanca (2012-2021)."
+    },
+    {
+      "q": "¿Qué cargo tiene César Gómez-Barthe en el Ayuntamiento de Salamanca?",
+      "a": "Concejal delegado de Promoción Económica, Comercio, Mercados y Juventud. Equipo de gobierno: el PP gobierna con mayoría absoluta (14 de 27 concejales) con el alcalde Carlos García Carbayo."
+    },
+    {
+      "q": "¿A qué partido o grupo pertenece César Gómez-Barthe?",
+      "a": "Fue elegido en la lista del Partido Popular (PP)."
+    },
+    {
+      "q": "¿Cuánto cobra César Gómez-Barthe?",
+      "a": "César Gómez-Barthe tomó posesión el 30-07-2026, por lo que no figura en el listado oficial de retribuciones de 2025 (que incluye a su antecesor, Pedro Martínez Córdoba). No se ha localizado un dato de retribución publicado para el cargo actual."
+    },
+    {
+      "q": "¿Cuál es la formación y la profesión de César Gómez-Barthe?",
+      "a": "Nacido en León en 1986; licenciado en Derecho y en Ciencias Políticas y de la Administración por la Universidad de Salamanca, con un máster en Democracia y Buen Gobierno y otro en Dirección de Protocolo y Eventos (Universidad Camilo José Cela); abogado colegiado no ejerciente, fue responsable de Proyectos de la Asociación de Jóvenes Empresarios de Salamanca (2015-2019), asesor del Grupo Municipal Popular y secretario general de Nuevas Generaciones del PP de Salamanca (2012-2021)."
+    }
+  ],
+  "fuentes": [
+    {
+      "t": "Ayuntamiento de Salamanca: César Gómez Barthe Celada toma posesión como nuevo concejal",
+      "u": "https://www.aytosalamanca.es/w/c%C3%A9sar-g%C3%B3mez-barthe-celada-toma-posesi%C3%B3n-como-nuevo-concejal-del-ayuntamiento-de-salamanca"
+    },
+    {
+      "t": "Ayuntamiento de Salamanca: Corporación municipal",
+      "u": "https://www.aytosalamanca.es/corporacion-municipal"
+    },
+    {
+      "t": "Ayuntamiento de Salamanca: Portal de Transparencia",
+      "u": "https://www.aytosalamanca.es/transparencia"
+    },
+    {
+      "t": "Open Salamanca: concejales del Ayuntamiento de Salamanca por mandato",
+      "u": "https://opensalamanca.es/concejales-ayuntamiento-salamanca"
+    },
+    {
+      "t": "Wikipedia (es): Ayuntamiento de Salamanca",
+      "u": "https://es.wikipedia.org/wiki/Ayuntamiento_de_Salamanca"
+    },
+    {
+      "t": "Ayuntamiento de Salamanca: retribuciones percibidas por los miembros de la Corporación en 2025 (PDF)",
+      "u": "https://www.aytosalamanca.es/documents/d/guest/02-retribuciones-percibidas-miembros-corporacion-2025"
+    },
+    {
+      "t": "El Español (30-07-2026): César Gómez Barthe se incorpora como concejal y asume Comercio y Juventud",
+      "u": "https://www.elespanol.com/castilla-y-leon/region/salamanca/20260730/cesar-gomez-barthe-incorpora-concejal-ayuntamiento-salamanca-asume-comercio-juventud/1003744339657_0.html"
+    },
+    {
+      "t": "SALAMANCArtv AL DÍA (30-07-2026): César Gómez-Barthe toma posesión como concejal de Promoción Económica y Juventud",
+      "u": "https://salamancartvaldia.es/noticia/2026-07-30-cesar-gomez-barthe-toma-posesion-como-concejal-de-promocion-economica-y-juventud-394984"
+    },
+    {
+      "t": "Open Salamanca: ficha de Carlos García Carbayo, alcalde de Salamanca",
+      "u": "https://opensalamanca.es/elecciones/politicos/carlos-garcia-carbayo"
+    }
+  ],
+  "como_citar": "Open Salamanca (2026). César Gómez-Barthe Celada, concejal del Ayuntamiento de Salamanca: ficha y dataset. https://opensalamanca.es/elecciones/politicos/cesar-gomez-barthe-celada (consultado el 24-11-2026). CC BY 4.0.",
+  "enlaces_oficiales_y_externos": {
+    "web_oficial_ayuntamiento": "https://www.aytosalamanca.es/w/c%C3%A9sar-g%C3%B3mez-barthe-celada-toma-posesi%C3%B3n-como-nuevo-concejal-del-ayuntamiento-de-salamanca"
+  }
+}

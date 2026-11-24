@@ -124,6 +124,17 @@ def fu(*claves):
     return [F[c] for c in claves]
 
 
+_ficha = json.loads((ROOT / "scripts/politicos/fuentes/fichas_oficiales.json").read_text(encoding="utf-8"))["fichas"]
+_f = next(v for k, v in _ficha.items() if "carbayo" in k)
+FICHA_OFICIAL = {
+    "url": _f["url"],
+    "texto": "Texto tal como lo publica el Ayuntamiento de Salamanca en la ficha oficial del alcalde (consultada el 24-11-2026).",
+    "formacion_oficial": _f.get("formacion_oficial", []),
+    "otros_titulos": _f.get("otros_titulos", []),
+    "actividad_profesional": _f.get("actividad_profesional", []),
+    "otras_actividades": _f.get("otras_actividades", []),
+}
+
 # ------------------------------------------------------------------ retribucion
 RETRIB = {  # PDF oficial 2025, importes brutos anuales en euros
     "GARCIA CARBAYO, CARLOS MANUEL": 83022.96,
@@ -147,6 +158,12 @@ data = {
     "identidad": {
         "nombre_completo": "Carlos Manuel García Carbayo",
         "nombre_habitual": "Carlos García Carbayo",
+        "nombre_pila": "Carlos Manuel",
+        "apellidos": "García Carbayo",
+        "grupo_texto": "Partido Popular (PP); presidente del PP de Salamanca desde el 11-03-2023",
+        "afiliacion_confirmada": True,
+        "alumni_of": ["Universidad de Salamanca"],
+        "formacion_resumen": "Licenciado en Derecho por la Universidad de Salamanca; gestor administrativo",
         "tratamiento_oficial": "D. Carlos Manuel García Carbayo",
         "apodos_o_variantes": ["Carbayo", "García Carbayo", "Carlos Carbayo"],
         "nacimiento": {"fecha": "1962-11-01", "fecha_texto": "1 de noviembre de 1962", "lugar": "Salamanca"},
@@ -168,6 +185,7 @@ data = {
         "desde": "2018-12-20",
         "desde_texto": "20 de diciembre de 2018 (investido); reelegido el 15-06-2019 y en junio de 2023",
         "mandato_actual": "2023-2027",
+        "rol_en_pleno_texto": "Alcalde: preside el Pleno y el gobierno municipal, con mayoría absoluta del PP (14 de 27 concejales)",
         "otros_cargos": [
             {"cargo": "Presidente del PP de Salamanca", "desde": "2023-03-11", "fuentes": fu("wiki_es", "dcl23")},
         ],
@@ -214,19 +232,25 @@ data = {
             "Fernando Javier Rodríguez Alonso", "María del Carmen Seguín Kattán",
         ],
         "fuente": F["corp"],
+        "texto": "Carbayo es el alcalde y encabeza el equipo de gobierno del PP (14 concejales con él).",
         "nota": "La web oficial agrupa la Corporación en alcalde, tenientes de alcalde, concejales delegados y concejales, sin publicar el área de cada uno. El detalle por mandato está en el dataset de concejales.",
         "enlace_dataset_concejales": "https://opensalamanca.es/concejales-ayuntamiento-salamanca",
     },
     "retribucion": {
         "ejercicio": 2025,
         "importe_bruto_anual_eur": 83022.96,
-        "regimen": "dedicación exclusiva (marcado con asterisco en el listado oficial)",
+        "regimen": "marcado con asterisco en el listado oficial («dedicaciones exclusivas / parciales»; el listado no distingue entre ambas)",
         "posicion_en_la_corporacion": f"1.º de {TOTAL_MIEMBROS_LISTADOS} miembros listados",
+        "texto_resumen": (
+            "Según el listado oficial del Ayuntamiento, Carlos García Carbayo percibió 83.022,96 € brutos en 2025, "
+            "la retribución más alta de los 27 miembros de la Corporación. Figura marcado como dedicación exclusiva o parcial "
+            "(el listado no distingue). Los cuatro tenientes de alcalde con ese mismo marcado percibieron 78.930,20 € "
+            f"({es((1 - 1 / ratio) * 100, 1)} % menos que el alcalde)."
+        ),
         "comparativa": {
-            "tenientes_de_alcalde_con_dedicacion_exclusiva_eur": 78930.20,
+            "tenientes_de_alcalde_marcados_eur": 78930.20,
             "diferencia_con_teniente_de_alcalde_pct": round((ratio - 1) * 100, 1),
-            "concejales_delegados_con_dedicacion_eur": 63982.96,
-        },
+                    },
         "nota": "Importe tal como lo publica el Ayuntamiento en el listado de retribuciones percibidas por los miembros de la Corporación en 2025. No detalla pagas, retenciones ni si incluye dietas por asistencia; el PDF lleva internamente la etiqueta «2020» en el título, pero su contenido declara expresamente el ejercicio 2025.",
         "fuente": F["retrib"],
     },
@@ -283,6 +307,7 @@ data = {
         "Discrepancia de fecha de licenciatura: 1986 (ficha oficial, fecha del título) frente a 1984 (Wikipedia).",
         "Controversias: ninguna contrastada en las fuentes consultadas; eso no prueba que no existan. Tampoco se ha recopilado aún la valoración de la oposición (PSOE y Vox).",
     ],
+    "ficha_oficial": FICHA_OFICIAL,
     "faq": [
         {"q": "¿Quién es Carlos García Carbayo?",
          "a": "Carlos Manuel García Carbayo (Salamanca, 1962) es el alcalde de Salamanca desde el 20 de diciembre de 2018 y presidente del PP de Salamanca desde marzo de 2023. Es licenciado en Derecho y profesor de Secundaria funcionario de la Junta de Castilla y León."},
@@ -291,7 +316,7 @@ data = {
         {"q": "¿Qué mayoría tiene Carbayo en el Ayuntamiento de Salamanca?",
          "a": "Mayoría absoluta desde las municipales del 28 de mayo de 2023: el PP tiene 14 de los 27 concejales, frente a 10 del PSOE y 3 de Vox."},
         {"q": "¿Cuánto cobra el alcalde de Salamanca?",
-         "a": "Según el listado oficial del Ayuntamiento, Carlos García Carbayo percibió 83.022,96 € brutos en 2025 con dedicación exclusiva, la retribución más alta de los 27 miembros de la Corporación (un 5,2 % más que un teniente de alcalde con dedicación exclusiva, 78.930,20 €)."},
+         "a": "Según el listado oficial del Ayuntamiento, Carlos García Carbayo percibió 83.022,96 € brutos en 2025, la retribución más alta de los 27 miembros de la Corporación (un 5,2 % más que los tenientes de alcalde con dedicación marcada, 78.930,20 €). El listado marca «dedicaciones exclusivas / parciales» sin distinguirlas."},
         {"q": "¿Qué resultados electorales ha obtenido Carbayo?",
          "a": f"En 2019 el PP obtuvo {es(pp19['votos'])} votos ({es(pp19['porcentaje_votos_validos'],1)} %) y 11 concejales; en 2023, {es(pp23['votos'])} votos ({es(pp23['porcentaje_votos_validos'],1)} %) y 14 concejales: {es(variacion_pp['votos'])} votos más y {es(variacion_pp['puntos_porcentuales'],1)} puntos más."},
         {"q": "¿Con quién gobernó Carbayo entre 2019 y 2023?",

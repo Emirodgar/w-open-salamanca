@@ -1,0 +1,205 @@
+{
+  "schema_version": "1.0",
+  "tipo": "ficha_politico",
+  "slug": "fidel-frances-sanchez",
+  "url_canonica": "https://opensalamanca.es/elecciones/politicos/fidel-frances-sanchez",
+  "actualizado": "2026-11-24",
+  "actualizado_texto": "24 de noviembre de 2026",
+  "licencia": "CC BY 4.0 (citar «Open Salamanca» y enlazar la ficha)",
+  "aviso": "Ficha elaborada solo con fuentes públicas citadas en cada dato (principalmente la web oficial del Ayuntamiento). Lo no contrastado figura en «no_verificado»; no se omite ni se rellena. No es opinión política ni recomendación de voto.",
+  "identidad": {
+    "nombre_completo": "Fidel Juan Francés Sánchez",
+    "nombre_habitual": "Fidel Francés Sánchez",
+    "nombre_pila": "Fidel Juan",
+    "apellidos": "Francés Sánchez",
+    "tratamiento_oficial": "D. Fidel Francés Sánchez",
+    "apodos_o_variantes": [
+      "Fidel Francés Sánchez",
+      "Francés Sánchez"
+    ],
+    "nacimiento": null,
+    "partido": {
+      "siglas": "PSOE",
+      "nombre": "Partido Socialista Obrero Español"
+    },
+    "afiliacion_confirmada": false,
+    "grupo_texto": "Partido Socialista Obrero Español (PSOE)",
+    "alumni_of": [
+      "Universidad de Salamanca"
+    ],
+    "formacion_resumen": "Diplomatura de Relaciones Laborales",
+    "profesion": null
+  },
+  "cargo_actual": {
+    "cargo": "Concejal del Grupo Municipal Socialista",
+    "organizacion": "Ayuntamiento de Salamanca",
+    "desde": "2023-06-17",
+    "desde_texto": "17 de junio de 2023",
+    "mandato_actual": "2023-2027",
+    "rol_en_pleno": "oposicion",
+    "rol_en_pleno_texto": "Oposición: Grupo Municipal Socialista, con 10 de los 27 concejales.",
+    "otros_cargos": [],
+    "cargo_segun_ficha_oficial": null,
+    "contacto_institucional": {
+      "direccion": "Casa Consistorial, Plaza Mayor, 1, 37002 Salamanca",
+      "telefono": "+34 923279118 / +34 923279191",
+      "email": "c.fidel@aytosalamanca.es"
+    }
+  },
+  "resumen": "Fidel Juan Francés Sánchez es concejal del Grupo Municipal Socialista, en el Ayuntamiento de Salamanca (oposición), mandato 2023-2027. Licenciado en Derecho y diplomado en Relaciones Laborales por la Universidad de Salamanca; profesor de Secundaria (Formación y Orientación Laboral) durante 37 años, con puestos en la administración educativa y cargos en la ejecutiva provincial del PSOE. En 2025 percibió 15.691,20 € brutos según el listado oficial del Ayuntamiento (puesto 20 de 27).",
+  "trayectoria": [
+    {
+      "fecha": "2023-06-17",
+      "hito": "Concejal del PSOE en el mandato 2023-2027",
+      "detalle": "Elegido en la lista del PSOE en las municipales del 28-05-2023 (10 concejales).",
+      "fuentes": [
+        {
+          "t": "Tribuna de Salamanca: estos son los 27 concejales que dirigirán Salamanca (2023)",
+          "u": "https://www.tribunasalamanca.com/noticias/332749/estos-son-los-27-concejales-que-dirigiran-salamanca"
+        },
+        {
+          "t": "Open Salamanca: concejales del Ayuntamiento de Salamanca por mandato",
+          "u": "https://opensalamanca.es/concejales-ayuntamiento-salamanca"
+        }
+      ]
+    }
+  ],
+  "ficha_oficial": {
+    "url": "https://www.aytosalamanca.es/w/d.-fidel-frances-s%C3%A1nchez",
+    "texto": "Texto tal como lo publica el Ayuntamiento de Salamanca en la ficha oficial de la persona (consultada el 24-11-2026), sin reescribir.",
+    "formacion_oficial": [
+      "Diplomatura de Relaciones Laborales — Universidad de Salamanca",
+      "Licenciado en Derecho — Universidad de Salamanca"
+    ],
+    "otros_titulos": [],
+    "actividad_profesional": [
+      "Profesor de Secundaria — Especialidad Formación y Orientación Laboral — Durante 37 años",
+      "Puestos de Asesor Técnico, Director, Subdirector y Jefe de Departamento — Administración Educativa"
+    ],
+    "otras_actividades": [
+      "Secretario de Educación — PSOE — AM Jaime Vera",
+      "Secretario de Área de Defensa del Estado de Bienestar en Ejecutiva Provincial — PSOE",
+      "Miembro del Comité Provincial de Salamanca y Secretario de Formación — AM Jaime Vera — Actualmente"
+    ]
+  },
+  "retribucion": {
+    "ejercicio": 2025,
+    "importe_bruto_anual_eur": 15691.2,
+    "dedicacion_marcada": false,
+    "posicion_en_la_corporacion": "puesto 20 de 27",
+    "texto_resumen": "Según el listado oficial del Ayuntamiento, Fidel Francés Sánchez percibió 15.691,20 € brutos en 2025 (puesto 20 de 27). No figura marcado como dedicación exclusiva ni parcial en el listado oficial. El listado no desglosa los conceptos (retribución fija, asistencias u otros).",
+    "nota": "Importe tal como lo publica el Ayuntamiento en el listado de retribuciones percibidas por los miembros de la Corporación en 2025. El asterisco del listado corresponde a «dedicaciones exclusivas / parciales» sin distinguirlas. El PDF lleva internamente la etiqueta «2020» en el título, pero su contenido declara el ejercicio 2025.",
+    "fuente": {
+      "t": "Ayuntamiento de Salamanca: retribuciones percibidas por los miembros de la Corporación en 2025 (PDF)",
+      "u": "https://www.aytosalamanca.es/documents/d/guest/02-retribuciones-percibidas-miembros-corporacion-2025"
+    }
+  },
+  "transparencia": {
+    "enlaces_declaraciones": [
+      {
+        "titulo": "Declaración de Bienes y Actividades anual 2025.",
+        "url": "https://www.aytosalamanca.es/documents/20119/2878577/frances_sanchez__fidel._declaracion_anual_2025.pdf/09078d53-21dd-a15f-8a11-9d4fb48c3dce?t=1771573968987"
+      },
+      {
+        "titulo": "Declaración de Bienes y Actividades anual 2024.",
+        "url": "https://www.aytosalamanca.es/documents/20119/1375646/Frances_Sanchez__Fidel._Declaracion_anual_2024.pdf/57d9ae50-7428-f0eb-4063-9a2a4c448d8e?t=1738676769093"
+      },
+      {
+        "titulo": "Declaración de Bienes y Actividades. Inicial 2023.",
+        "url": "https://www.aytosalamanca.es/documents/20119/217956/Fidel_DECLARACIONES_DE_CAUSAS_DE_POSIBLE_INCOMPATIBILIDAD_Y_ACTIVIDADES.pdf/49a47f03-24bb-5840-42d2-462778bca4d5?t=1712585019261"
+      }
+    ],
+    "nota": "Base legal: art. 75.7 de la Ley de Bases de Régimen Local. Se enlazan las declaraciones que el Ayuntamiento publica; las anuales solo recogen variaciones respecto a la inicial de 2023, cuyas cifras no se transcriben aquí.",
+    "portal": {
+      "t": "Ayuntamiento de Salamanca: Portal de Transparencia",
+      "u": "https://www.aytosalamanca.es/transparencia"
+    }
+  },
+  "gobierno_municipal": {
+    "pleno": {
+      "concejales": 27,
+      "mayoria_absoluta": 14,
+      "reparto_2023_2027": {
+        "PP": 14,
+        "PSOE": 10,
+        "Vox": 3
+      }
+    },
+    "texto": "Oposición: Grupo Municipal Socialista, con 10 de los 27 concejales.",
+    "fuente": {
+      "t": "Ayuntamiento de Salamanca: Corporación municipal",
+      "u": "https://www.aytosalamanca.es/corporacion-municipal"
+    },
+    "nota": "La web oficial agrupa la Corporación en alcalde, tenientes de alcalde, concejales delegados y concejales. El reparto de 2023 vino con la constitución del Pleno (17-06-2023) y las concejalías (19-06-2023)."
+  },
+  "no_verificado": [
+    "Cifras de patrimonio, bienes e ingresos de las declaraciones de bienes y actividades: se enlazan las publicadas por el Ayuntamiento, pero no se transcriben.",
+    "Puesto en la lista de 2023, votos personales y posiciones o votaciones concretas en el Pleno: no recopilados.",
+    "Fecha de nacimiento y trayectoria política previa al Ayuntamiento: no figuran en la ficha oficial salvo lo reproducido arriba.",
+    "Controversias: ninguna contrastada en las fuentes consultadas; eso no prueba que no existan. No se ha recopilado la valoración de otros grupos."
+  ],
+  "faq": [
+    {
+      "q": "¿Quién es Fidel Francés Sánchez?",
+      "a": "Fidel Juan Francés Sánchez es concejal del Grupo Municipal Socialista, en el Ayuntamiento de Salamanca (oposición), mandato 2023-2027. Licenciado en Derecho y diplomado en Relaciones Laborales por la Universidad de Salamanca; profesor de Secundaria (Formación y Orientación Laboral) durante 37 años, con puestos en la administración educativa y cargos en la ejecutiva provincial del PSOE. En 2025 percibió 15.691,20 € brutos según el listado oficial del Ayuntamiento (puesto 20 de 27)."
+    },
+    {
+      "q": "¿Qué cargo tiene Fidel Francés Sánchez en el Ayuntamiento de Salamanca?",
+      "a": "Concejal del Grupo Municipal Socialista. Oposición: Grupo Municipal Socialista, con 10 de los 27 concejales."
+    },
+    {
+      "q": "¿A qué partido o grupo pertenece Fidel Francés Sánchez?",
+      "a": "Fue elegido en la lista del Partido Socialista Obrero Español (PSOE)."
+    },
+    {
+      "q": "¿Cuánto cobra Fidel Francés Sánchez?",
+      "a": "Según el listado oficial del Ayuntamiento, Fidel Francés Sánchez percibió 15.691,20 € brutos en 2025 (puesto 20 de 27). No figura marcado como dedicación exclusiva ni parcial en el listado oficial. El listado no desglosa los conceptos (retribución fija, asistencias u otros)."
+    },
+    {
+      "q": "¿Cuál es la formación y la profesión de Fidel Francés Sánchez?",
+      "a": "Licenciado en Derecho y diplomado en Relaciones Laborales por la Universidad de Salamanca; profesor de Secundaria (Formación y Orientación Laboral) durante 37 años, con puestos en la administración educativa y cargos en la ejecutiva provincial del PSOE."
+    },
+    {
+      "q": "¿Cómo contactar con Fidel Francés Sánchez?",
+      "a": "Por el correo institucional c.fidel@aytosalamanca.es o por teléfono en el +34 923279118 / +34 923279191, según su ficha oficial en la web del Ayuntamiento de Salamanca."
+    }
+  ],
+  "fuentes": [
+    {
+      "t": "Ayuntamiento de Salamanca: ficha oficial de Fidel Juan Francés Sánchez",
+      "u": "https://www.aytosalamanca.es/w/d.-fidel-frances-s%C3%A1nchez"
+    },
+    {
+      "t": "Ayuntamiento de Salamanca: Corporación municipal",
+      "u": "https://www.aytosalamanca.es/corporacion-municipal"
+    },
+    {
+      "t": "Ayuntamiento de Salamanca: Portal de Transparencia",
+      "u": "https://www.aytosalamanca.es/transparencia"
+    },
+    {
+      "t": "Open Salamanca: concejales del Ayuntamiento de Salamanca por mandato",
+      "u": "https://opensalamanca.es/concejales-ayuntamiento-salamanca"
+    },
+    {
+      "t": "Wikipedia (es): Ayuntamiento de Salamanca",
+      "u": "https://es.wikipedia.org/wiki/Ayuntamiento_de_Salamanca"
+    },
+    {
+      "t": "Ayuntamiento de Salamanca: retribuciones percibidas por los miembros de la Corporación en 2025 (PDF)",
+      "u": "https://www.aytosalamanca.es/documents/d/guest/02-retribuciones-percibidas-miembros-corporacion-2025"
+    },
+    {
+      "t": "Tribuna de Salamanca: estos son los 27 concejales que dirigirán Salamanca (2023)",
+      "u": "https://www.tribunasalamanca.com/noticias/332749/estos-son-los-27-concejales-que-dirigiran-salamanca"
+    },
+    {
+      "t": "Open Salamanca: ficha de Carlos García Carbayo, alcalde de Salamanca",
+      "u": "https://opensalamanca.es/elecciones/politicos/carlos-garcia-carbayo"
+    }
+  ],
+  "como_citar": "Open Salamanca (2026). Fidel Juan Francés Sánchez, concejal del Ayuntamiento de Salamanca: ficha y dataset. https://opensalamanca.es/elecciones/politicos/fidel-frances-sanchez (consultado el 24-11-2026). CC BY 4.0.",
+  "enlaces_oficiales_y_externos": {
+    "web_oficial_ayuntamiento": "https://www.aytosalamanca.es/w/d.-fidel-frances-s%C3%A1nchez"
+  }
+}

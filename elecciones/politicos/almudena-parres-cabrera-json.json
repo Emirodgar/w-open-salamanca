@@ -1,0 +1,5 @@
+---
+permalink: elecciones/politicos/almudena-parres-cabrera.json
+sitemap: false
+---
+{{ site.data.politicos["almudena-parres-cabrera"] | jsonify }}

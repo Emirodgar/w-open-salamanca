@@ -1,0 +1,5 @@
+---
+permalink: elecciones/politicos/miryam-rodriguez-lopez.json
+sitemap: false
+---
+{{ site.data.politicos["miryam-rodriguez-lopez"] | jsonify }}

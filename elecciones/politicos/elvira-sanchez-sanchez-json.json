@@ -1,0 +1,5 @@
+---
+permalink: elecciones/politicos/elvira-sanchez-sanchez.json
+sitemap: false
+---
+{{ site.data.politicos["elvira-sanchez-sanchez"] | jsonify }}

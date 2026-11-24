@@ -1,0 +1,343 @@
+{
+  "actualizado": "2026-11-24",
+  "actualizado_texto": "24 de noviembre de 2026",
+  "resumen": {
+    "grupos": [
+      {
+        "grupo": "PP (equipo de gobierno)",
+        "miembros_listados": 14,
+        "con_dedicacion_marcada": 8,
+        "total_bruto_eur": 699779.07,
+        "total_texto": "699.779,07 €",
+        "media_texto": "49.984,22 €"
+      },
+      {
+        "grupo": "PSOE",
+        "miembros_listados": 10,
+        "con_dedicacion_marcada": 1,
+        "total_bruto_eur": 157674.12,
+        "total_texto": "157.674,12 €",
+        "media_texto": "15.767,41 €"
+      },
+      {
+        "grupo": "Elegidos en la candidatura de Vox",
+        "miembros_listados": 3,
+        "con_dedicacion_marcada": 1,
+        "total_bruto_eur": 104825.86,
+        "total_texto": "104.825,86 €",
+        "media_texto": "34.941,95 €"
+      }
+    ],
+    "total_texto": "962.279,05 €",
+    "ejercicio": 2025,
+    "miembros_listados": 27,
+    "total_bruto_eur": 962279.05,
+    "pp_eur": 699779.07,
+    "psoe_eur": 157674.12,
+    "vox_eur": 104825.86,
+    "nota": "Suma de los importes del listado oficial de retribuciones 2025 (27 miembros). Incluye a Pedro Martínez Córdoba (PP), que renunció el 6-07-2026, y no incluye a su sustituto César Gómez-Barthe, ni a Laura Magdalena Miguel (Vox), que renunció en 2024. Elegidos por Vox: Rivas, Pérez de la Sota y Carpio.",
+    "fuente": {
+      "t": "Ayuntamiento de Salamanca: retribuciones percibidas por los miembros de la Corporación en 2025 (PDF)",
+      "u": "https://www.aytosalamanca.es/documents/d/guest/02-retribuciones-percibidas-miembros-corporacion-2025"
+    }
+  },
+  "concejales": [
+    {
+      "slug": "carlos-garcia-carbayo",
+      "nombre": "Carlos García Carbayo",
+      "rol": "alcalde",
+      "grupo": "PP",
+      "cargo": "Alcalde de Salamanca",
+      "retribucion_2025_eur": 83022.96,
+      "retribucion_2025_texto": "83.022,96 €",
+      "dedicacion_marcada": true,
+      "url": "https://opensalamanca.es/elecciones/politicos/carlos-garcia-carbayo"
+    },
+    {
+      "slug": "almudena-parres-cabrera",
+      "nombre": "Almudena Parres Cabrera",
+      "rol": "gobierno",
+      "grupo": "PP",
+      "cargo": "Primera teniente de alcalde y concejala delegada de Deportes",
+      "retribucion_2025_eur": 78930.2,
+      "retribucion_2025_texto": "78.930,20 €",
+      "dedicacion_marcada": true,
+      "url": "https://opensalamanca.es/elecciones/politicos/almudena-parres-cabrera"
+    },
+    {
+      "slug": "miryam-rodriguez-lopez",
+      "nombre": "Miryam Rodríguez López",
+      "rol": "gobierno",
+      "grupo": "PP",
+      "cargo": "Segunda teniente de alcalde y concejala delegada de Familia e Igualdad de Oportunidades",
+      "retribucion_2025_eur": 24551.35,
+      "retribucion_2025_texto": "24.551,35 €",
+      "dedicacion_marcada": false,
+      "url": "https://opensalamanca.es/elecciones/politicos/miryam-rodriguez-lopez"
+    },
+    {
+      "slug": "jose-fernando-carabias-acosta",
+      "nombre": "Fernando Carabias Acosta",
+      "rol": "gobierno",
+      "grupo": "PP",
+      "cargo": "Tercer teniente de alcalde y concejal delegado de Fomento, Gestión Urbana y Policía Administrativa",
+      "retribucion_2025_eur": 78930.2,
+      "retribucion_2025_texto": "78.930,20 €",
+      "dedicacion_marcada": true,
+      "url": "https://opensalamanca.es/elecciones/politicos/jose-fernando-carabias-acosta"
+    },
+    {
+      "slug": "fernando-javier-rodriguez-alonso",
+      "nombre": "Fernando Rodríguez Alonso",
+      "rol": "gobierno",
+      "grupo": "PP",
+      "cargo": "Cuarto teniente de alcalde y concejal delegado de Hacienda, Régimen Interior y Contratación",
+      "retribucion_2025_eur": 78930.2,
+      "retribucion_2025_texto": "78.930,20 €",
+      "dedicacion_marcada": true,
+      "url": "https://opensalamanca.es/elecciones/politicos/fernando-javier-rodriguez-alonso"
+    },
+    {
+      "slug": "maria-del-carmen-seguin-kattan",
+      "nombre": "Carmen Seguín Kattán",
+      "rol": "gobierno",
+      "grupo": "PP",
+      "cargo": "Quinta teniente de alcalde y concejala delegada de Relaciones Institucionales, Festejos y Tradiciones",
+      "retribucion_2025_eur": 78930.2,
+      "retribucion_2025_texto": "78.930,20 €",
+      "dedicacion_marcada": true,
+      "url": "https://opensalamanca.es/elecciones/politicos/maria-del-carmen-seguin-kattan"
+    },
+    {
+      "slug": "angel-molina-martinez",
+      "nombre": "Ángel Molina Martínez",
+      "rol": "gobierno",
+      "grupo": "PP",
+      "cargo": "Concejal delegado de Protección Ciudadana, Tráfico y Transportes",
+      "retribucion_2025_eur": 23733.7,
+      "retribucion_2025_texto": "23.733,70 €",
+      "dedicacion_marcada": false,
+      "url": "https://opensalamanca.es/elecciones/politicos/angel-molina-martinez"
+    },
+    {
+      "slug": "maria-jose-coca-sanchez",
+      "nombre": "María José Coca Sánchez",
+      "rol": "gobierno",
+      "grupo": "PP",
+      "cargo": "Concejala delegada de Medio Ambiente y Oficina de Bienestar Animal",
+      "retribucion_2025_eur": 23138.7,
+      "retribucion_2025_texto": "23.138,70 €",
+      "dedicacion_marcada": false,
+      "url": "https://opensalamanca.es/elecciones/politicos/maria-jose-coca-sanchez"
+    },
+    {
+      "slug": "maria-de-la-vega-villar",
+      "nombre": "Vega Villar",
+      "rol": "gobierno",
+      "grupo": "PP",
+      "cargo": "Concejala delegada de Salud Pública",
+      "retribucion_2025_eur": 31991.54,
+      "retribucion_2025_texto": "31.991,54 €",
+      "dedicacion_marcada": true,
+      "url": "https://opensalamanca.es/elecciones/politicos/maria-de-la-vega-villar"
+    },
+    {
+      "slug": "angel-fernandez-silva",
+      "nombre": "Ángel Fernández Silva",
+      "rol": "gobierno",
+      "grupo": "PP",
+      "cargo": "Concejal delegado de Cultura y Turismo",
+      "retribucion_2025_eur": 63982.96,
+      "retribucion_2025_texto": "63.982,96 €",
+      "dedicacion_marcada": true,
+      "url": "https://opensalamanca.es/elecciones/politicos/angel-fernandez-silva"
+    },
+    {
+      "slug": "roberto-martin-parra",
+      "nombre": "Roberto Martín Parra",
+      "rol": "gobierno",
+      "grupo": "PP",
+      "cargo": "Concejal delegado de Participación Social y Voluntariado",
+      "retribucion_2025_eur": 63982.96,
+      "retribucion_2025_texto": "63.982,96 €",
+      "dedicacion_marcada": true,
+      "url": "https://opensalamanca.es/elecciones/politicos/roberto-martin-parra"
+    },
+    {
+      "slug": "maria-isabel-macias-tello",
+      "nombre": "Isabel Macías Tello",
+      "rol": "gobierno",
+      "grupo": "PP",
+      "cargo": "Concejala delegada de Mayores",
+      "retribucion_2025_eur": 22841.2,
+      "retribucion_2025_texto": "22.841,20 €",
+      "dedicacion_marcada": false,
+      "url": "https://opensalamanca.es/elecciones/politicos/maria-isabel-macias-tello"
+    },
+    {
+      "slug": "luis-sanchez-arevalo",
+      "nombre": "Luis Sánchez Arévalo",
+      "rol": "gobierno",
+      "grupo": "PP",
+      "cargo": "Concejal delegado de Educación",
+      "retribucion_2025_eur": 22960.2,
+      "retribucion_2025_texto": "22.960,20 €",
+      "dedicacion_marcada": false,
+      "url": "https://opensalamanca.es/elecciones/politicos/luis-sanchez-arevalo"
+    },
+    {
+      "slug": "cesar-gomez-barthe-celada",
+      "nombre": "César Gómez-Barthe",
+      "rol": "gobierno",
+      "grupo": "PP",
+      "cargo": "Concejal delegado de Promoción Económica, Comercio, Mercados y Juventud",
+      "retribucion_2025_eur": null,
+      "retribucion_2025_texto": "no figura en el listado de 2025",
+      "dedicacion_marcada": null,
+      "url": "https://opensalamanca.es/elecciones/politicos/cesar-gomez-barthe-celada"
+    },
+    {
+      "slug": "jose-luis-mateos-crespo",
+      "nombre": "José Luis Mateos Crespo",
+      "rol": "oposicion",
+      "grupo": "PSOE",
+      "cargo": "Concejal del Grupo Municipal Socialista (portavoz hasta el 7 de mayo de 2026)",
+      "retribucion_2025_eur": 29681.64,
+      "retribucion_2025_texto": "29.681,64 €",
+      "dedicacion_marcada": true,
+      "url": "https://opensalamanca.es/elecciones/politicos/jose-luis-mateos-crespo"
+    },
+    {
+      "slug": "maria-sanchez-gomez",
+      "nombre": "María Sánchez Gómez",
+      "rol": "oposicion",
+      "grupo": "PSOE",
+      "cargo": "Portavoz del Grupo Municipal Socialista desde el 7 de mayo de 2026",
+      "retribucion_2025_eur": 13990.62,
+      "retribucion_2025_texto": "13.990,62 €",
+      "dedicacion_marcada": false,
+      "url": "https://opensalamanca.es/elecciones/politicos/maria-sanchez-gomez"
+    },
+    {
+      "slug": "juan-jose-garcia-meilan",
+      "nombre": "Juan José García Meilán",
+      "rol": "oposicion",
+      "grupo": "PSOE",
+      "cargo": "Concejal del Grupo Municipal Socialista",
+      "retribucion_2025_eur": 14050.12,
+      "retribucion_2025_texto": "14.050,12 €",
+      "dedicacion_marcada": false,
+      "url": "https://opensalamanca.es/elecciones/politicos/juan-jose-garcia-meilan"
+    },
+    {
+      "slug": "maria-garcia-gomez",
+      "nombre": "María García Gómez",
+      "rol": "oposicion",
+      "grupo": "PSOE",
+      "cargo": "Concejala del Grupo Municipal Socialista",
+      "retribucion_2025_eur": 16405.2,
+      "retribucion_2025_texto": "16.405,20 €",
+      "dedicacion_marcada": false,
+      "url": "https://opensalamanca.es/elecciones/politicos/maria-garcia-gomez"
+    },
+    {
+      "slug": "jose-maria-collados-grande",
+      "nombre": "José María Collados Grande",
+      "rol": "oposicion",
+      "grupo": "PSOE",
+      "cargo": "Concejal del Grupo Municipal Socialista",
+      "retribucion_2025_eur": 13965.7,
+      "retribucion_2025_texto": "13.965,70 €",
+      "dedicacion_marcada": false,
+      "url": "https://opensalamanca.es/elecciones/politicos/jose-maria-collados-grande"
+    },
+    {
+      "slug": "elvira-sanchez-sanchez",
+      "nombre": "Elvira Sánchez Sánchez",
+      "rol": "oposicion",
+      "grupo": "PSOE",
+      "cargo": "Concejala del Grupo Municipal Socialista",
+      "retribucion_2025_eur": 14501.2,
+      "retribucion_2025_texto": "14.501,20 €",
+      "dedicacion_marcada": false,
+      "url": "https://opensalamanca.es/elecciones/politicos/elvira-sanchez-sanchez"
+    },
+    {
+      "slug": "fidel-frances-sanchez",
+      "nombre": "Fidel Francés Sánchez",
+      "rol": "oposicion",
+      "grupo": "PSOE",
+      "cargo": "Concejal del Grupo Municipal Socialista",
+      "retribucion_2025_eur": 15691.2,
+      "retribucion_2025_texto": "15.691,20 €",
+      "dedicacion_marcada": false,
+      "url": "https://opensalamanca.es/elecciones/politicos/fidel-frances-sanchez"
+    },
+    {
+      "slug": "maria-del-mar-fuentes-chaves",
+      "nombre": "Mar Fuentes Chaves",
+      "rol": "oposicion",
+      "grupo": "PSOE",
+      "cargo": "Concejala del Grupo Municipal Socialista",
+      "retribucion_2025_eur": 13693.12,
+      "retribucion_2025_texto": "13.693,12 €",
+      "dedicacion_marcada": false,
+      "url": "https://opensalamanca.es/elecciones/politicos/maria-del-mar-fuentes-chaves"
+    },
+    {
+      "slug": "alvaro-antolin-montero",
+      "nombre": "Álvaro Antolín Montero",
+      "rol": "oposicion",
+      "grupo": "PSOE",
+      "cargo": "Concejal del Grupo Municipal Socialista",
+      "retribucion_2025_eur": 12562.62,
+      "retribucion_2025_texto": "12.562,62 €",
+      "dedicacion_marcada": false,
+      "url": "https://opensalamanca.es/elecciones/politicos/alvaro-antolin-montero"
+    },
+    {
+      "slug": "maria-jesus-santa-maria-trigo",
+      "nombre": "María Jesús Santa María Trigo",
+      "rol": "oposicion",
+      "grupo": "PSOE",
+      "cargo": "Concejala del Grupo Municipal Socialista",
+      "retribucion_2025_eur": 13132.7,
+      "retribucion_2025_texto": "13.132,70 €",
+      "dedicacion_marcada": false,
+      "url": "https://opensalamanca.es/elecciones/politicos/maria-jesus-santa-maria-trigo"
+    },
+    {
+      "slug": "ignacio-javier-rivas-serrano",
+      "nombre": "Ignacio Rivas Serrano",
+      "rol": "oposicion",
+      "grupo": "Vox",
+      "cargo": "Concejal elegido en la candidatura de Vox; portavoz de Vox hasta el 10 de febrero de 2025",
+      "retribucion_2025_eur": 63982.96,
+      "retribucion_2025_texto": "63.982,96 €",
+      "dedicacion_marcada": true,
+      "url": "https://opensalamanca.es/elecciones/politicos/ignacio-javier-rivas-serrano"
+    },
+    {
+      "slug": "alejandro-miguel-perez-de-la-sota",
+      "nombre": "Alejandro Pérez de la Sota",
+      "rol": "oposicion",
+      "grupo": "Vox",
+      "cargo": "Concejal elegido en la candidatura de Vox; portavoz de Vox desde el 10 de febrero de 2025",
+      "retribucion_2025_eur": 17654.7,
+      "retribucion_2025_texto": "17.654,70 €",
+      "dedicacion_marcada": false,
+      "url": "https://opensalamanca.es/elecciones/politicos/alejandro-miguel-perez-de-la-sota"
+    },
+    {
+      "slug": "maria-de-los-angeles-carpio-perez",
+      "nombre": "María de los Ángeles Carpio Pérez",
+      "rol": "oposicion",
+      "grupo": "Vox",
+      "cargo": "Concejala elegida en la candidatura de Vox; en el pleno desde el 26 de julio de 2024",
+      "retribucion_2025_eur": 23188.2,
+      "retribucion_2025_texto": "23.188,20 €",
+      "dedicacion_marcada": false,
+      "url": "https://opensalamanca.es/elecciones/politicos/maria-de-los-angeles-carpio-perez"
+    }
+  ]
+}

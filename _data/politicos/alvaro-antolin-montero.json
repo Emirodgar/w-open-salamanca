@@ -1,0 +1,222 @@
+{
+  "schema_version": "1.0",
+  "tipo": "ficha_politico",
+  "slug": "alvaro-antolin-montero",
+  "url_canonica": "https://opensalamanca.es/elecciones/politicos/alvaro-antolin-montero",
+  "actualizado": "2026-11-24",
+  "actualizado_texto": "24 de noviembre de 2026",
+  "licencia": "CC BY 4.0 (citar «Open Salamanca» y enlazar la ficha)",
+  "aviso": "Ficha elaborada solo con fuentes públicas citadas en cada dato (principalmente la web oficial del Ayuntamiento). Lo no contrastado figura en «no_verificado»; no se omite ni se rellena. No es opinión política ni recomendación de voto.",
+  "identidad": {
+    "nombre_completo": "Álvaro Antolín Montero",
+    "nombre_habitual": "Álvaro Antolín Montero",
+    "nombre_pila": "Álvaro",
+    "apellidos": "Antolín Montero",
+    "tratamiento_oficial": "D. Álvaro Antolín Montero",
+    "apodos_o_variantes": [
+      "Antolín Montero",
+      "Álvaro Antolín Montero"
+    ],
+    "nacimiento": null,
+    "partido": {
+      "siglas": "PSOE",
+      "nombre": "Partido Socialista Obrero Español"
+    },
+    "afiliacion_confirmada": false,
+    "grupo_texto": "Partido Socialista Obrero Español (PSOE)",
+    "alumni_of": [
+      "Universidad de Salamanca",
+      "Universidad de León"
+    ],
+    "formacion_resumen": "Grado en Ingeniería Electrónica, Industrial y Automática",
+    "profesion": null
+  },
+  "cargo_actual": {
+    "cargo": "Concejal del Grupo Municipal Socialista",
+    "organizacion": "Ayuntamiento de Salamanca",
+    "desde": "2023-06-17",
+    "desde_texto": "17 de junio de 2023",
+    "mandato_actual": "2023-2027",
+    "rol_en_pleno": "oposicion",
+    "rol_en_pleno_texto": "Oposición: Grupo Municipal Socialista, con 10 de los 27 concejales.",
+    "otros_cargos": [],
+    "cargo_segun_ficha_oficial": null,
+    "contacto_institucional": {
+      "direccion": "Casa Consistorial, Plaza Mayor, 1, 37002 Salamanca",
+      "telefono": "+34 923279118 / +34 923279191",
+      "email": "c.alvaro@aytosalamanca.es"
+    }
+  },
+  "resumen": "Álvaro Antolín Montero es concejal del Grupo Municipal Socialista, en el Ayuntamiento de Salamanca (oposición), mandato 2023-2027. Graduado en Ingeniería Electrónica Industrial y Automática (2015) y máster en Ingeniería Industrial por la Universidad de Salamanca; fue ingeniero automatista y su ficha oficial lo sitúa como profesor del área de Economía Financiera y Contabilidad desde 2019. En 2025 percibió 12.562,62 € brutos según el listado oficial del Ayuntamiento (puesto 27 de 27).",
+  "trayectoria": [
+    {
+      "fecha": "2023-06-17",
+      "hito": "Concejal del PSOE en el mandato 2023-2027",
+      "detalle": "Elegido en la lista del PSOE en las municipales del 28-05-2023 (10 concejales).",
+      "fuentes": [
+        {
+          "t": "Tribuna de Salamanca: estos son los 27 concejales que dirigirán Salamanca (2023)",
+          "u": "https://www.tribunasalamanca.com/noticias/332749/estos-son-los-27-concejales-que-dirigiran-salamanca"
+        },
+        {
+          "t": "Open Salamanca: concejales del Ayuntamiento de Salamanca por mandato",
+          "u": "https://opensalamanca.es/concejales-ayuntamiento-salamanca"
+        }
+      ]
+    },
+    {
+      "fecha": "2019-06-15",
+      "hito": "Concejal del Grupo Municipal Socialista (2019-2023)",
+      "detalle": "Concejal durante todo el mandato 2019-2023.",
+      "fuentes": [
+        {
+          "t": "Open Salamanca: concejales del Ayuntamiento de Salamanca por mandato",
+          "u": "https://opensalamanca.es/concejales-ayuntamiento-salamanca"
+        },
+        {
+          "t": "Wikipedia (es): Ayuntamiento de Salamanca",
+          "u": "https://es.wikipedia.org/wiki/Ayuntamiento_de_Salamanca"
+        }
+      ]
+    }
+  ],
+  "ficha_oficial": {
+    "url": "https://www.aytosalamanca.es/w/d.-%C3%A1lvaro-antol%C3%ADn-montero",
+    "texto": "Texto tal como lo publica el Ayuntamiento de Salamanca en la ficha oficial de la persona (consultada el 24-11-2026), sin reescribir.",
+    "formacion_oficial": [
+      "Grado en Ingeniería Electrónica, Industrial y Automática — Universidad de Salamanca — 04/08/2015",
+      "Máster Universitario en Ingeniería Industrial — Universidad de Salamanca — 19/09/2017",
+      "Máster en Dirección y Gestión de Proyectos — Universidad de Salamanca — 12/2019",
+      "Máster Universitario en Industria 4.0 — Universidad de León — 09/2022",
+      "Grado Elemental de Música (Especialidad Piano) — Un C.P.A. Profesional de Música \"Antonio Machado\" — 26/06/2008"
+    ],
+    "otros_titulos": [],
+    "actividad_profesional": [
+      "Mozo de almacén — Empresa Privada — Desde el 27/10/2015 hasta 15/08/2016",
+      "Ingeniero automatista — Empresa Privada — Desde el 02/10/2015 hasta 31/08/2019",
+      "Profesor en el área de Economía Financiera y Contabilidad de la Universidad de Salamanca — ENUSA INDUSTRIAS AVANZADAS — Desde el 10/12/2019 - hasta la actualidad"
+    ],
+    "otras_actividades": []
+  },
+  "retribucion": {
+    "ejercicio": 2025,
+    "importe_bruto_anual_eur": 12562.62,
+    "dedicacion_marcada": false,
+    "posicion_en_la_corporacion": "puesto 27 de 27",
+    "texto_resumen": "Según el listado oficial del Ayuntamiento, Álvaro Antolín Montero percibió 12.562,62 € brutos en 2025 (puesto 27 de 27). No figura marcado como dedicación exclusiva ni parcial en el listado oficial. El listado no desglosa los conceptos (retribución fija, asistencias u otros).",
+    "nota": "Importe tal como lo publica el Ayuntamiento en el listado de retribuciones percibidas por los miembros de la Corporación en 2025. El asterisco del listado corresponde a «dedicaciones exclusivas / parciales» sin distinguirlas. El PDF lleva internamente la etiqueta «2020» en el título, pero su contenido declara el ejercicio 2025.",
+    "fuente": {
+      "t": "Ayuntamiento de Salamanca: retribuciones percibidas por los miembros de la Corporación en 2025 (PDF)",
+      "u": "https://www.aytosalamanca.es/documents/d/guest/02-retribuciones-percibidas-miembros-corporacion-2025"
+    }
+  },
+  "transparencia": {
+    "enlaces_declaraciones": [
+      {
+        "titulo": "Declaración de Bienes y Actividades anual 2025.",
+        "url": "https://www.aytosalamanca.es/documents/20119/2878577/antolin_montero__alvaro._declaracion_anual_2025.pdf/cb372efe-07b9-6aa4-056f-42e68b43f36f?t=1771573973157"
+      },
+      {
+        "titulo": "Declaración de Bienes y Actividades anual 2024.",
+        "url": "https://www.aytosalamanca.es/documents/20119/1375646/Antolin_Montero__Alvaro._Declaracion_anual_2024.pdf/01ee432f-41e4-bf4c-b3f1-d846243a1120?t=1738676768043"
+      },
+      {
+        "titulo": "Declaración de Bienes y Actividades. Final 2019-2023 e Inicial 2023.",
+        "url": "https://www.aytosalamanca.es/documents/20119/217956/Alvaro_Antolxn_DECLARACIONES_DE_CAUSAS_DE_POSIBLE_INCOMPATIBILIDAD_Y_ACTIVIDADES.pdf/1467a0aa-2ee6-0bd8-1e8b-ffe07e7552ab?t=1712582987418"
+      }
+    ],
+    "nota": "Base legal: art. 75.7 de la Ley de Bases de Régimen Local. Se enlazan las declaraciones que el Ayuntamiento publica; las anuales solo recogen variaciones respecto a la inicial de 2023, cuyas cifras no se transcriben aquí.",
+    "portal": {
+      "t": "Ayuntamiento de Salamanca: Portal de Transparencia",
+      "u": "https://www.aytosalamanca.es/transparencia"
+    }
+  },
+  "gobierno_municipal": {
+    "pleno": {
+      "concejales": 27,
+      "mayoria_absoluta": 14,
+      "reparto_2023_2027": {
+        "PP": 14,
+        "PSOE": 10,
+        "Vox": 3
+      }
+    },
+    "texto": "Oposición: Grupo Municipal Socialista, con 10 de los 27 concejales.",
+    "fuente": {
+      "t": "Ayuntamiento de Salamanca: Corporación municipal",
+      "u": "https://www.aytosalamanca.es/corporacion-municipal"
+    },
+    "nota": "La web oficial agrupa la Corporación en alcalde, tenientes de alcalde, concejales delegados y concejales. El reparto de 2023 vino con la constitución del Pleno (17-06-2023) y las concejalías (19-06-2023)."
+  },
+  "no_verificado": [
+    "Cifras de patrimonio, bienes e ingresos de las declaraciones de bienes y actividades: se enlazan las publicadas por el Ayuntamiento, pero no se transcriben.",
+    "Puesto en la lista de 2023, votos personales y posiciones o votaciones concretas en el Pleno: no recopilados.",
+    "Fecha de nacimiento y trayectoria política previa al Ayuntamiento: no figuran en la ficha oficial salvo lo reproducido arriba.",
+    "Controversias: ninguna contrastada en las fuentes consultadas; eso no prueba que no existan. No se ha recopilado la valoración de otros grupos.",
+    "Su ficha oficial atribuye su puesto de profesor del área de Economía Financiera y Contabilidad a «ENUSA Industrias Avanzadas» en el campo de entidad: la entrada parece inconsistente y se reproduce tal como figura."
+  ],
+  "faq": [
+    {
+      "q": "¿Quién es Álvaro Antolín Montero?",
+      "a": "Álvaro Antolín Montero es concejal del Grupo Municipal Socialista, en el Ayuntamiento de Salamanca (oposición), mandato 2023-2027. Graduado en Ingeniería Electrónica Industrial y Automática (2015) y máster en Ingeniería Industrial por la Universidad de Salamanca; fue ingeniero automatista y su ficha oficial lo sitúa como profesor del área de Economía Financiera y Contabilidad desde 2019. En 2025 percibió 12.562,62 € brutos según el listado oficial del Ayuntamiento (puesto 27 de 27)."
+    },
+    {
+      "q": "¿Qué cargo tiene Álvaro Antolín Montero en el Ayuntamiento de Salamanca?",
+      "a": "Concejal del Grupo Municipal Socialista. Oposición: Grupo Municipal Socialista, con 10 de los 27 concejales."
+    },
+    {
+      "q": "¿A qué partido o grupo pertenece Álvaro Antolín Montero?",
+      "a": "Fue elegido en la lista del Partido Socialista Obrero Español (PSOE)."
+    },
+    {
+      "q": "¿Cuánto cobra Álvaro Antolín Montero?",
+      "a": "Según el listado oficial del Ayuntamiento, Álvaro Antolín Montero percibió 12.562,62 € brutos en 2025 (puesto 27 de 27). No figura marcado como dedicación exclusiva ni parcial en el listado oficial. El listado no desglosa los conceptos (retribución fija, asistencias u otros)."
+    },
+    {
+      "q": "¿Cuál es la formación y la profesión de Álvaro Antolín Montero?",
+      "a": "Graduado en Ingeniería Electrónica Industrial y Automática (2015) y máster en Ingeniería Industrial por la Universidad de Salamanca; fue ingeniero automatista y su ficha oficial lo sitúa como profesor del área de Economía Financiera y Contabilidad desde 2019."
+    },
+    {
+      "q": "¿Cómo contactar con Álvaro Antolín Montero?",
+      "a": "Por el correo institucional c.alvaro@aytosalamanca.es o por teléfono en el +34 923279118 / +34 923279191, según su ficha oficial en la web del Ayuntamiento de Salamanca."
+    }
+  ],
+  "fuentes": [
+    {
+      "t": "Ayuntamiento de Salamanca: ficha oficial de Álvaro Antolín Montero",
+      "u": "https://www.aytosalamanca.es/w/d.-%C3%A1lvaro-antol%C3%ADn-montero"
+    },
+    {
+      "t": "Ayuntamiento de Salamanca: Corporación municipal",
+      "u": "https://www.aytosalamanca.es/corporacion-municipal"
+    },
+    {
+      "t": "Ayuntamiento de Salamanca: Portal de Transparencia",
+      "u": "https://www.aytosalamanca.es/transparencia"
+    },
+    {
+      "t": "Open Salamanca: concejales del Ayuntamiento de Salamanca por mandato",
+      "u": "https://opensalamanca.es/concejales-ayuntamiento-salamanca"
+    },
+    {
+      "t": "Wikipedia (es): Ayuntamiento de Salamanca",
+      "u": "https://es.wikipedia.org/wiki/Ayuntamiento_de_Salamanca"
+    },
+    {
+      "t": "Ayuntamiento de Salamanca: retribuciones percibidas por los miembros de la Corporación en 2025 (PDF)",
+      "u": "https://www.aytosalamanca.es/documents/d/guest/02-retribuciones-percibidas-miembros-corporacion-2025"
+    },
+    {
+      "t": "Tribuna de Salamanca: estos son los 27 concejales que dirigirán Salamanca (2023)",
+      "u": "https://www.tribunasalamanca.com/noticias/332749/estos-son-los-27-concejales-que-dirigiran-salamanca"
+    },
+    {
+      "t": "Open Salamanca: ficha de Carlos García Carbayo, alcalde de Salamanca",
+      "u": "https://opensalamanca.es/elecciones/politicos/carlos-garcia-carbayo"
+    }
+  ],
+  "como_citar": "Open Salamanca (2026). Álvaro Antolín Montero, concejal del Ayuntamiento de Salamanca: ficha y dataset. https://opensalamanca.es/elecciones/politicos/alvaro-antolin-montero (consultado el 24-11-2026). CC BY 4.0.",
+  "enlaces_oficiales_y_externos": {
+    "web_oficial_ayuntamiento": "https://www.aytosalamanca.es/w/d.-%C3%A1lvaro-antol%C3%ADn-montero"
+  }
+}

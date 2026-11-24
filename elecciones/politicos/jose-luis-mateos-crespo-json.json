@@ -1,0 +1,5 @@
+---
+permalink: elecciones/politicos/jose-luis-mateos-crespo.json
+sitemap: false
+---
+{{ site.data.politicos["jose-luis-mateos-crespo"] | jsonify }}

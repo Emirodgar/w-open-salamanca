@@ -10,6 +10,14 @@
   "identidad": {
     "nombre_completo": "Carlos Manuel García Carbayo",
     "nombre_habitual": "Carlos García Carbayo",
+    "nombre_pila": "Carlos Manuel",
+    "apellidos": "García Carbayo",
+    "grupo_texto": "Partido Popular (PP); presidente del PP de Salamanca desde el 11-03-2023",
+    "afiliacion_confirmada": true,
+    "alumni_of": [
+      "Universidad de Salamanca"
+    ],
+    "formacion_resumen": "Licenciado en Derecho por la Universidad de Salamanca; gestor administrativo",
     "tratamiento_oficial": "D. Carlos Manuel García Carbayo",
     "apodos_o_variantes": [
       "Carbayo",
@@ -78,6 +86,7 @@
     "desde": "2018-12-20",
     "desde_texto": "20 de diciembre de 2018 (investido); reelegido el 15-06-2019 y en junio de 2023",
     "mandato_actual": "2023-2027",
+    "rol_en_pleno_texto": "Alcalde: preside el Pleno y el gobierno municipal, con mayoría absoluta del PP (14 de 27 concejales)",
     "otros_cargos": [
       {
         "cargo": "Presidente del PP de Salamanca",
@@ -408,18 +417,19 @@
       "t": "Ayuntamiento de Salamanca: Corporación municipal",
       "u": "https://www.aytosalamanca.es/corporacion-municipal"
     },
+    "texto": "Carbayo es el alcalde y encabeza el equipo de gobierno del PP (14 concejales con él).",
     "nota": "La web oficial agrupa la Corporación en alcalde, tenientes de alcalde, concejales delegados y concejales, sin publicar el área de cada uno. El detalle por mandato está en el dataset de concejales.",
     "enlace_dataset_concejales": "https://opensalamanca.es/concejales-ayuntamiento-salamanca"
   },
   "retribucion": {
     "ejercicio": 2025,
     "importe_bruto_anual_eur": 83022.96,
-    "regimen": "dedicación exclusiva (marcado con asterisco en el listado oficial)",
+    "regimen": "marcado con asterisco en el listado oficial («dedicaciones exclusivas / parciales»; el listado no distingue entre ambas)",
     "posicion_en_la_corporacion": "1.º de 27 miembros listados",
+    "texto_resumen": "Según el listado oficial del Ayuntamiento, Carlos García Carbayo percibió 83.022,96 € brutos en 2025, la retribución más alta de los 27 miembros de la Corporación. Figura marcado como dedicación exclusiva o parcial (el listado no distingue). Los cuatro tenientes de alcalde con ese mismo marcado percibieron 78.930,20 € (4,9 % menos que el alcalde).",
     "comparativa": {
-      "tenientes_de_alcalde_con_dedicacion_exclusiva_eur": 78930.2,
-      "diferencia_con_teniente_de_alcalde_pct": 5.2,
-      "concejales_delegados_con_dedicacion_eur": 63982.96
+      "tenientes_de_alcalde_marcados_eur": 78930.2,
+      "diferencia_con_teniente_de_alcalde_pct": 5.2
     },
     "nota": "Importe tal como lo publica el Ayuntamiento en el listado de retribuciones percibidas por los miembros de la Corporación en 2025. No detalla pagas, retenciones ni si incluye dietas por asistencia; el PDF lleva internamente la etiqueta «2020» en el título, pero su contenido declara expresamente el ejercicio 2025.",
     "fuente": {
@@ -621,6 +631,19 @@
     "Discrepancia de fecha de licenciatura: 1986 (ficha oficial, fecha del título) frente a 1984 (Wikipedia).",
     "Controversias: ninguna contrastada en las fuentes consultadas; eso no prueba que no existan. Tampoco se ha recopilado aún la valoración de la oposición (PSOE y Vox)."
   ],
+  "ficha_oficial": {
+    "url": "https://www.aytosalamanca.es/w/d.-carlos-manuel-garc%C3%ADa-carbayo",
+    "texto": "Texto tal como lo publica el Ayuntamiento de Salamanca en la ficha oficial del alcalde (consultada el 24-11-2026).",
+    "formacion_oficial": [
+      "Licenciado en Derecho — Ministerio Educación y Ciencias — 11/09/1986",
+      "Gestor Administrativo — Consejo General Colegios Oficiales de Gestores Administrativos — 22/01/2002"
+    ],
+    "otros_titulos": [],
+    "actividad_profesional": [
+      "Profesor Enseñanza Secundaria (Formación y Orientación Laboral) — Junta de Castilla y León — desde el año 1996"
+    ],
+    "otras_actividades": []
+  },
   "faq": [
     {
       "q": "¿Quién es Carlos García Carbayo?",
@@ -636,7 +659,7 @@
     },
     {
       "q": "¿Cuánto cobra el alcalde de Salamanca?",
-      "a": "Según el listado oficial del Ayuntamiento, Carlos García Carbayo percibió 83.022,96 € brutos en 2025 con dedicación exclusiva, la retribución más alta de los 27 miembros de la Corporación (un 5,2 % más que un teniente de alcalde con dedicación exclusiva, 78.930,20 €)."
+      "a": "Según el listado oficial del Ayuntamiento, Carlos García Carbayo percibió 83.022,96 € brutos en 2025, la retribución más alta de los 27 miembros de la Corporación (un 5,2 % más que los tenientes de alcalde con dedicación marcada, 78.930,20 €). El listado marca «dedicaciones exclusivas / parciales» sin distinguirlas."
     },
     {
       "q": "¿Qué resultados electorales ha obtenido Carbayo?",

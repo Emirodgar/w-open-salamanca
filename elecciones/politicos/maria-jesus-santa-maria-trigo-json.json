@@ -1,0 +1,5 @@
+---
+permalink: elecciones/politicos/maria-jesus-santa-maria-trigo.json
+sitemap: false
+---
+{{ site.data.politicos["maria-jesus-santa-maria-trigo"] | jsonify }}

@@ -1,0 +1,215 @@
+{
+  "schema_version": "1.0",
+  "tipo": "ficha_politico",
+  "slug": "luis-sanchez-arevalo",
+  "url_canonica": "https://opensalamanca.es/elecciones/politicos/luis-sanchez-arevalo",
+  "actualizado": "2026-11-24",
+  "actualizado_texto": "24 de noviembre de 2026",
+  "licencia": "CC BY 4.0 (citar «Open Salamanca» y enlazar la ficha)",
+  "aviso": "Ficha elaborada solo con fuentes públicas citadas en cada dato (principalmente la web oficial del Ayuntamiento). Lo no contrastado figura en «no_verificado»; no se omite ni se rellena. No es opinión política ni recomendación de voto.",
+  "identidad": {
+    "nombre_completo": "Luis Sánchez Arévalo",
+    "nombre_habitual": "Luis Sánchez Arévalo",
+    "nombre_pila": "Luis",
+    "apellidos": "Sánchez Arévalo",
+    "tratamiento_oficial": "D. Luis Sánchez Arévalo",
+    "apodos_o_variantes": [
+      "Luis Sánchez Arévalo",
+      "Sánchez Arévalo"
+    ],
+    "nacimiento": null,
+    "partido": {
+      "siglas": "PP",
+      "nombre": "Partido Popular"
+    },
+    "afiliacion_confirmada": false,
+    "grupo_texto": "Partido Popular (PP)",
+    "alumni_of": [],
+    "formacion_resumen": "Licenciado en Matemáticas",
+    "profesion": null
+  },
+  "cargo_actual": {
+    "cargo": "Concejal delegado de Educación",
+    "organizacion": "Ayuntamiento de Salamanca",
+    "desde": "2023-06-19",
+    "desde_texto": "19 de junio de 2023",
+    "mandato_actual": "2023-2027",
+    "rol_en_pleno": "gobierno",
+    "rol_en_pleno_texto": "Equipo de gobierno: el PP gobierna con mayoría absoluta (14 de 27 concejales) con el alcalde Carlos García Carbayo.",
+    "otros_cargos": [],
+    "cargo_segun_ficha_oficial": "Concejal Delegado de Educación.",
+    "contacto_institucional": {
+      "direccion": "Casa Consistorial, Plaza Mayor, 1, 37002 Salamanca",
+      "telefono": "+34 923279112 / +34 923279186",
+      "email": "c.luis@aytosalamanca.es"
+    }
+  },
+  "resumen": "Luis Sánchez Arévalo es concejal delegado de Educación, en el Ayuntamiento de Salamanca (equipo de gobierno del PP), mandato 2023-2027. Licenciado en Matemáticas y diplomado en Estadística (2007); fue profesor de Secundaria, asesor de formación del CFIE de Salamanca (2012-2018) y asesor técnico docente de la Dirección Provincial de Educación desde 2018, con plaza de docente en el IES Lucía de Medrano. En 2025 percibió 22.960,20 € brutos según el listado oficial del Ayuntamiento (puesto 16 de 27).",
+  "trayectoria": [
+    {
+      "fecha": "2023-06-19",
+      "hito": "Concejal de Educación",
+      "detalle": "Reparto de concejalías del equipo de gobierno del PP tras la investidura de Carbayo.",
+      "fuentes": [
+        {
+          "t": "El Español (19-06-2023): competencias de los concejales del equipo de gobierno",
+          "u": "https://www.elespanol.com/castilla-y-leon/region/salamanca/20230619/competencias-concejales-equipo-gobierno-salamanca/772673033_0.html"
+        },
+        {
+          "t": "La Gaceta de Salamanca (19-06-2023): Carbayo reparte las concejalías",
+          "u": "https://www.lagacetadesalamanca.es/salamanca/carbayo-reparte-concejalias-ayuntamiento-salamanca-20230619163234-nt.html"
+        },
+        {
+          "t": "SALAMANCArtv AL DÍA (19-06-2023): así quedan las concejalías",
+          "u": "https://salamancartvaldia.es/noticia/2023-06-19-asi-quedan-las-concejalias-en-el-ayuntamiento-de-salamanca-324554"
+        }
+      ]
+    }
+  ],
+  "ficha_oficial": {
+    "url": "https://www.aytosalamanca.es/w/d.-luis-s%C3%A1nchez-ar%C3%A9valo",
+    "texto": "Texto tal como lo publica el Ayuntamiento de Salamanca en la ficha oficial de la persona (consultada el 24-11-2026), sin reescribir.",
+    "formacion_oficial": [
+      "Licenciado en Matemáticas — 2007",
+      "Diplomado en Estadística — 2007"
+    ],
+    "otros_titulos": [],
+    "actividad_profesional": [
+      "Profesor de matemáticas en educación secundaria en los IES Antonio Tovar y Núñez de Arce — Valladolid — Hasta 2012.",
+      "Asesor de formación en el CFIE — Salamanca — Desde el Año 2012 Al 2018.",
+      "Asesor técnico docente en el Área de Programas Educativos — Dirección Provincial de Educación de Salamanca — Desde el Año 2018 hasta la Actualidad.",
+      "Tiene plaza de docente en el IES Lucía de Medrano.",
+      "Director de I y II Congreso de ajedrez educativo — Universidad de Salamanca"
+    ],
+    "otras_actividades": []
+  },
+  "retribucion": {
+    "ejercicio": 2025,
+    "importe_bruto_anual_eur": 22960.2,
+    "dedicacion_marcada": false,
+    "posicion_en_la_corporacion": "puesto 16 de 27",
+    "texto_resumen": "Según el listado oficial del Ayuntamiento, Luis Sánchez Arévalo percibió 22.960,20 € brutos en 2025 (puesto 16 de 27). No figura marcado como dedicación exclusiva ni parcial en el listado oficial. El listado no desglosa los conceptos (retribución fija, asistencias u otros).",
+    "nota": "Importe tal como lo publica el Ayuntamiento en el listado de retribuciones percibidas por los miembros de la Corporación en 2025. El asterisco del listado corresponde a «dedicaciones exclusivas / parciales» sin distinguirlas. El PDF lleva internamente la etiqueta «2020» en el título, pero su contenido declara el ejercicio 2025.",
+    "fuente": {
+      "t": "Ayuntamiento de Salamanca: retribuciones percibidas por los miembros de la Corporación en 2025 (PDF)",
+      "u": "https://www.aytosalamanca.es/documents/d/guest/02-retribuciones-percibidas-miembros-corporacion-2025"
+    }
+  },
+  "transparencia": {
+    "enlaces_declaraciones": [
+      {
+        "titulo": "Declaración de Bienes y Actividades anual 2025.",
+        "url": "https://www.aytosalamanca.es/documents/20119/2878577/sanchez_arevalo__luis._declaracion_anual_2025.pdf/70a875a9-35ae-fe49-b3c5-9406ae85d007?t=1771573972021"
+      },
+      {
+        "titulo": "Declaración de Bienes y Actividades anual 2024.",
+        "url": "https://www.aytosalamanca.es/documents/20119/1375646/Sanchez_Arevalo__Luis._Declaracion_anual_2024.pdf/f6cc6c18-e91c-d289-ab18-ddd6e56a2420?t=1738676772120"
+      },
+      {
+        "titulo": "Declaración de Bienes y Actividades. Inicial 2023.",
+        "url": "https://www.aytosalamanca.es/documents/20119/217956/Luis_Sanchez_DECLARACIONES_DE_CAUSAS_DE_POSIBLE_INCOMPATIBILIDAD_Y_ACTIVIDADES.pdf/cd938f6a-844f-db6a-aa06-860e41d7478b?t=1712581822241"
+      }
+    ],
+    "nota": "Base legal: art. 75.7 de la Ley de Bases de Régimen Local. Se enlazan las declaraciones que el Ayuntamiento publica; las anuales solo recogen variaciones respecto a la inicial de 2023, cuyas cifras no se transcriben aquí.",
+    "portal": {
+      "t": "Ayuntamiento de Salamanca: Portal de Transparencia",
+      "u": "https://www.aytosalamanca.es/transparencia"
+    }
+  },
+  "gobierno_municipal": {
+    "pleno": {
+      "concejales": 27,
+      "mayoria_absoluta": 14,
+      "reparto_2023_2027": {
+        "PP": 14,
+        "PSOE": 10,
+        "Vox": 3
+      }
+    },
+    "texto": "Equipo de gobierno: el PP gobierna con mayoría absoluta (14 de 27 concejales) con el alcalde Carlos García Carbayo.",
+    "fuente": {
+      "t": "Ayuntamiento de Salamanca: Corporación municipal",
+      "u": "https://www.aytosalamanca.es/corporacion-municipal"
+    },
+    "nota": "La web oficial agrupa la Corporación en alcalde, tenientes de alcalde, concejales delegados y concejales. El reparto de 2023 vino con la constitución del Pleno (17-06-2023) y las concejalías (19-06-2023)."
+  },
+  "no_verificado": [
+    "Cifras de patrimonio, bienes e ingresos de las declaraciones de bienes y actividades: se enlazan las publicadas por el Ayuntamiento, pero no se transcriben.",
+    "Puesto en la lista de 2023, votos personales y posiciones o votaciones concretas en el Pleno: no recopilados.",
+    "Fecha de nacimiento y trayectoria política previa al Ayuntamiento: no figuran en la ficha oficial salvo lo reproducido arriba.",
+    "Controversias: ninguna contrastada en las fuentes consultadas; eso no prueba que no existan. No se ha recopilado la valoración de otros grupos.",
+    "Delegaciones y organigrama detallado más allá del reparto de concejalías de 2023 y los cambios publicados: pueden haber variado."
+  ],
+  "faq": [
+    {
+      "q": "¿Quién es Luis Sánchez Arévalo?",
+      "a": "Luis Sánchez Arévalo es concejal delegado de Educación, en el Ayuntamiento de Salamanca (equipo de gobierno del PP), mandato 2023-2027. Licenciado en Matemáticas y diplomado en Estadística (2007); fue profesor de Secundaria, asesor de formación del CFIE de Salamanca (2012-2018) y asesor técnico docente de la Dirección Provincial de Educación desde 2018, con plaza de docente en el IES Lucía de Medrano. En 2025 percibió 22.960,20 € brutos según el listado oficial del Ayuntamiento (puesto 16 de 27)."
+    },
+    {
+      "q": "¿Qué cargo tiene Luis Sánchez Arévalo en el Ayuntamiento de Salamanca?",
+      "a": "Concejal delegado de Educación. Equipo de gobierno: el PP gobierna con mayoría absoluta (14 de 27 concejales) con el alcalde Carlos García Carbayo. Cargo según su ficha oficial: «Concejal Delegado de Educación.»."
+    },
+    {
+      "q": "¿A qué partido o grupo pertenece Luis Sánchez Arévalo?",
+      "a": "Fue elegido en la lista del Partido Popular (PP)."
+    },
+    {
+      "q": "¿Cuánto cobra Luis Sánchez Arévalo?",
+      "a": "Según el listado oficial del Ayuntamiento, Luis Sánchez Arévalo percibió 22.960,20 € brutos en 2025 (puesto 16 de 27). No figura marcado como dedicación exclusiva ni parcial en el listado oficial. El listado no desglosa los conceptos (retribución fija, asistencias u otros)."
+    },
+    {
+      "q": "¿Cuál es la formación y la profesión de Luis Sánchez Arévalo?",
+      "a": "Licenciado en Matemáticas y diplomado en Estadística (2007); fue profesor de Secundaria, asesor de formación del CFIE de Salamanca (2012-2018) y asesor técnico docente de la Dirección Provincial de Educación desde 2018, con plaza de docente en el IES Lucía de Medrano."
+    },
+    {
+      "q": "¿Cómo contactar con Luis Sánchez Arévalo?",
+      "a": "Por el correo institucional c.luis@aytosalamanca.es o por teléfono en el +34 923279112 / +34 923279186, según su ficha oficial en la web del Ayuntamiento de Salamanca."
+    }
+  ],
+  "fuentes": [
+    {
+      "t": "Ayuntamiento de Salamanca: ficha oficial de Luis Sánchez Arévalo",
+      "u": "https://www.aytosalamanca.es/w/d.-luis-s%C3%A1nchez-ar%C3%A9valo"
+    },
+    {
+      "t": "Ayuntamiento de Salamanca: Corporación municipal",
+      "u": "https://www.aytosalamanca.es/corporacion-municipal"
+    },
+    {
+      "t": "Ayuntamiento de Salamanca: Portal de Transparencia",
+      "u": "https://www.aytosalamanca.es/transparencia"
+    },
+    {
+      "t": "Open Salamanca: concejales del Ayuntamiento de Salamanca por mandato",
+      "u": "https://opensalamanca.es/concejales-ayuntamiento-salamanca"
+    },
+    {
+      "t": "Wikipedia (es): Ayuntamiento de Salamanca",
+      "u": "https://es.wikipedia.org/wiki/Ayuntamiento_de_Salamanca"
+    },
+    {
+      "t": "Ayuntamiento de Salamanca: retribuciones percibidas por los miembros de la Corporación en 2025 (PDF)",
+      "u": "https://www.aytosalamanca.es/documents/d/guest/02-retribuciones-percibidas-miembros-corporacion-2025"
+    },
+    {
+      "t": "El Español (19-06-2023): competencias de los concejales del equipo de gobierno",
+      "u": "https://www.elespanol.com/castilla-y-leon/region/salamanca/20230619/competencias-concejales-equipo-gobierno-salamanca/772673033_0.html"
+    },
+    {
+      "t": "La Gaceta de Salamanca (19-06-2023): Carbayo reparte las concejalías",
+      "u": "https://www.lagacetadesalamanca.es/salamanca/carbayo-reparte-concejalias-ayuntamiento-salamanca-20230619163234-nt.html"
+    },
+    {
+      "t": "SALAMANCArtv AL DÍA (19-06-2023): así quedan las concejalías",
+      "u": "https://salamancartvaldia.es/noticia/2023-06-19-asi-quedan-las-concejalias-en-el-ayuntamiento-de-salamanca-324554"
+    },
+    {
+      "t": "Open Salamanca: ficha de Carlos García Carbayo, alcalde de Salamanca",
+      "u": "https://opensalamanca.es/elecciones/politicos/carlos-garcia-carbayo"
+    }
+  ],
+  "como_citar": "Open Salamanca (2026). Luis Sánchez Arévalo, concejal del Ayuntamiento de Salamanca: ficha y dataset. https://opensalamanca.es/elecciones/politicos/luis-sanchez-arevalo (consultado el 24-11-2026). CC BY 4.0.",
+  "enlaces_oficiales_y_externos": {
+    "web_oficial_ayuntamiento": "https://www.aytosalamanca.es/w/d.-luis-s%C3%A1nchez-ar%C3%A9valo"
+  }
+}

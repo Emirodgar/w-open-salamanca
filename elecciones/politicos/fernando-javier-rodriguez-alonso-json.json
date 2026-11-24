@@ -1,0 +1,5 @@
+---
+permalink: elecciones/politicos/fernando-javier-rodriguez-alonso.json
+sitemap: false
+---
+{{ site.data.politicos["fernando-javier-rodriguez-alonso"] | jsonify }}

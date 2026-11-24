@@ -1,0 +1,260 @@
+{
+  "schema_version": "1.0",
+  "tipo": "ficha_politico",
+  "slug": "jose-luis-mateos-crespo",
+  "url_canonica": "https://opensalamanca.es/elecciones/politicos/jose-luis-mateos-crespo",
+  "actualizado": "2026-11-24",
+  "actualizado_texto": "24 de noviembre de 2026",
+  "licencia": "CC BY 4.0 (citar «Open Salamanca» y enlazar la ficha)",
+  "aviso": "Ficha elaborada solo con fuentes públicas citadas en cada dato (principalmente la web oficial del Ayuntamiento). Lo no contrastado figura en «no_verificado»; no se omite ni se rellena. No es opinión política ni recomendación de voto.",
+  "identidad": {
+    "nombre_completo": "José Luis Mateos Crespo",
+    "nombre_habitual": "José Luis Mateos Crespo",
+    "nombre_pila": "José Luis",
+    "apellidos": "Mateos Crespo",
+    "tratamiento_oficial": "D. José Luis Mateos Crespo",
+    "apodos_o_variantes": [
+      "José Luis Mateos Crespo",
+      "Mateos Crespo"
+    ],
+    "nacimiento": null,
+    "partido": {
+      "siglas": "PSOE",
+      "nombre": "Partido Socialista Obrero Español"
+    },
+    "afiliacion_confirmada": false,
+    "grupo_texto": "Partido Socialista Obrero Español (PSOE)",
+    "alumni_of": [
+      "Universidad de Salamanca"
+    ],
+    "formacion_resumen": "Doctor en Derecho Constitucional",
+    "profesion": null
+  },
+  "cargo_actual": {
+    "cargo": "Concejal del Grupo Municipal Socialista (portavoz hasta el 7 de mayo de 2026)",
+    "organizacion": "Ayuntamiento de Salamanca",
+    "desde": "2023-06-17",
+    "desde_texto": "17 de junio de 2023",
+    "mandato_actual": "2023-2027",
+    "rol_en_pleno": "oposicion",
+    "rol_en_pleno_texto": "Oposición: Grupo Municipal Socialista, con 10 de los 27 concejales.",
+    "otros_cargos": [],
+    "cargo_segun_ficha_oficial": null,
+    "contacto_institucional": {
+      "direccion": "Casa Consistorial, Plaza Mayor, 1, 37002 Salamanca",
+      "telefono": "+34 923279118 / +34 923279191",
+      "email": "c.joseluis@aytosalamanca.es"
+    }
+  },
+  "resumen": "José Luis Mateos Crespo es concejal del Grupo Municipal Socialista (portavoz hasta el 7 de mayo de 2026), en el Ayuntamiento de Salamanca (oposición), mandato 2023-2027. Doctor en Derecho Constitucional por la Universidad de Salamanca (2022), licenciado en Derecho y en Administración y Dirección de Empresas, y profesor asociado de Derecho Constitucional en la USAL desde 2021. En 2025 percibió 29.681,64 € brutos según el listado oficial del Ayuntamiento (puesto 10 de 27).",
+  "trayectoria": [
+    {
+      "fecha": "2026-05-07",
+      "hito": "Deja la portavocía del grupo socialista",
+      "detalle": "María Sánchez Gómez, hasta entonces viceportavoz, le sustituye como portavoz del PSOE en el Ayuntamiento; Mateos sigue como concejal.",
+      "fuentes": [
+        {
+          "t": "eldiario.es: María Sánchez releva a José Luis Mateos en la portavocía del PSOE (2026)",
+          "u": "https://www.eldiario.es/castilla-y-leon/provincias/salamanca/cambios-psoe-ayuntamiento-salamanca-maria-sanchez-releva-jose-luis-mateos-portavocia_1_13202004.html"
+        },
+        {
+          "t": "Salamancahoy (7-05-2026): el PSOE de Salamanca tiene nueva portavoz, María Sánchez",
+          "u": "https://www.salamancahoy.es/salamanca/ciudad/psoe-salamanca-nueva-portavoz-maria-sanchez-relevara-20260507094220-nt_amp.html"
+        },
+        {
+          "t": "La Gaceta de Salamanca (6-05-2026): el PSOE releva a José Luis Mateos como portavoz municipal",
+          "u": "https://www.lagacetadesalamanca.es/salamanca/psoe-relega-jose-luis-mateos-portavoz-municipal-20260506181944-nt.html"
+        }
+      ]
+    },
+    {
+      "fecha": "2023-06-17",
+      "hito": "Concejal del PSOE y portavoz en el mandato 2023-2027",
+      "detalle": "Elegido en la lista del PSOE en las municipales del 28-05-2023 (10 concejales); portavoz del grupo hasta el 7-05-2026.",
+      "fuentes": [
+        {
+          "t": "Tribuna de Salamanca: estos son los 27 concejales que dirigirán Salamanca (2023)",
+          "u": "https://www.tribunasalamanca.com/noticias/332749/estos-son-los-27-concejales-que-dirigiran-salamanca"
+        },
+        {
+          "t": "Open Salamanca: concejales del Ayuntamiento de Salamanca por mandato",
+          "u": "https://opensalamanca.es/concejales-ayuntamiento-salamanca"
+        }
+      ]
+    },
+    {
+      "fecha": "2019-06-15",
+      "hito": "Portavoz del Grupo Municipal Socialista y candidato a la alcaldía (2019-2023)",
+      "detalle": "Candidato socialista a la alcaldía en 2019 y portavoz durante todo el mandato.",
+      "fuentes": [
+        {
+          "t": "Open Salamanca: concejales del Ayuntamiento de Salamanca por mandato",
+          "u": "https://opensalamanca.es/concejales-ayuntamiento-salamanca"
+        },
+        {
+          "t": "Wikipedia (es): Ayuntamiento de Salamanca",
+          "u": "https://es.wikipedia.org/wiki/Ayuntamiento_de_Salamanca"
+        }
+      ]
+    },
+    {
+      "fecha": "2015-06-13",
+      "hito": "Concejal del PSOE (2015-2019)",
+      "detalle": "Posible portavoz en el pleno desde 2015: dato no confirmado con certeza.",
+      "fuentes": [
+        {
+          "t": "Open Salamanca: concejales del Ayuntamiento de Salamanca por mandato",
+          "u": "https://opensalamanca.es/concejales-ayuntamiento-salamanca"
+        }
+      ]
+    }
+  ],
+  "ficha_oficial": {
+    "url": "https://www.aytosalamanca.es/w/d.-jose-luis-mateos-crespo",
+    "texto": "Texto tal como lo publica el Ayuntamiento de Salamanca en la ficha oficial de la persona (consultada el 24-11-2026), sin reescribir.",
+    "formacion_oficial": [
+      "Doctor en Derecho Constitucional — Universidad de Salamanca — 22/11/2022",
+      "Licenciado en Administración y Dirección de Empresas — Universidad de Salamanca — 26/06/2015",
+      "Máster en Democracia y Buen Gobierno — Universidad de Salamanca — 24/07/2017",
+      "Licenciado en Derecho — Universidad de Salamanca — 17/02/2014"
+    ],
+    "otros_titulos": [],
+    "actividad_profesional": [
+      "Profesor asociado de Derecho Constitucional — Sector Público/USAL — Desde 06/09/2021 a la actualidad",
+      "Investigación en Formación — Sector Público/USAL — Desde 16/02/2016 al 15/02/2020"
+    ],
+    "otras_actividades": []
+  },
+  "retribucion": {
+    "ejercicio": 2025,
+    "importe_bruto_anual_eur": 29681.64,
+    "dedicacion_marcada": true,
+    "posicion_en_la_corporacion": "puesto 10 de 27",
+    "texto_resumen": "Según el listado oficial del Ayuntamiento, José Luis Mateos Crespo percibió 29.681,64 € brutos en 2025 (puesto 10 de 27). Figura marcado como dedicación exclusiva o parcial (el listado oficial no distingue entre ambas). El listado no desglosa los conceptos (retribución fija, asistencias u otros).",
+    "nota": "Importe tal como lo publica el Ayuntamiento en el listado de retribuciones percibidas por los miembros de la Corporación en 2025. El asterisco del listado corresponde a «dedicaciones exclusivas / parciales» sin distinguirlas. El PDF lleva internamente la etiqueta «2020» en el título, pero su contenido declara el ejercicio 2025.",
+    "fuente": {
+      "t": "Ayuntamiento de Salamanca: retribuciones percibidas por los miembros de la Corporación en 2025 (PDF)",
+      "u": "https://www.aytosalamanca.es/documents/d/guest/02-retribuciones-percibidas-miembros-corporacion-2025"
+    }
+  },
+  "transparencia": {
+    "enlaces_declaraciones": [
+      {
+        "titulo": "Declaración de Bienes y Actividades anual 2025.",
+        "url": "https://www.aytosalamanca.es/documents/20119/2878577/mateos_crespo__jose_luis._declaracion_anual_2025.pdf/2a7963aa-556a-90bc-bd7d-8d512129c641?t=1771573970689"
+      },
+      {
+        "titulo": "Declaración de Bienes y Actividades anual 2024.",
+        "url": "https://www.aytosalamanca.es/documents/20119/1375646/Mateos_Crespo__Jose_Luis._Declaracion_anual_2024.pdf/abd39992-c5c0-f68e-1f71-5f9124638448?t=1738676770712"
+      },
+      {
+        "titulo": "Declaración de Bienes y Actividades. Final 2019-2023 e Inicial 2023.",
+        "url": "https://www.aytosalamanca.es/documents/20119/217956/Josx_Luis_Mateos_DECLARACIONES_DE_CAUSAS_DE_POSIBLE_INCOMPATIBILIDAD_Y_ACTIVIDADES.pdf/22c40f5f-734a-bf40-56c3-3a70dd7f4b87?t=1712581751384"
+      }
+    ],
+    "nota": "Base legal: art. 75.7 de la Ley de Bases de Régimen Local. Se enlazan las declaraciones que el Ayuntamiento publica; las anuales solo recogen variaciones respecto a la inicial de 2023, cuyas cifras no se transcriben aquí.",
+    "portal": {
+      "t": "Ayuntamiento de Salamanca: Portal de Transparencia",
+      "u": "https://www.aytosalamanca.es/transparencia"
+    }
+  },
+  "gobierno_municipal": {
+    "pleno": {
+      "concejales": 27,
+      "mayoria_absoluta": 14,
+      "reparto_2023_2027": {
+        "PP": 14,
+        "PSOE": 10,
+        "Vox": 3
+      }
+    },
+    "texto": "Oposición: Grupo Municipal Socialista, con 10 de los 27 concejales.",
+    "fuente": {
+      "t": "Ayuntamiento de Salamanca: Corporación municipal",
+      "u": "https://www.aytosalamanca.es/corporacion-municipal"
+    },
+    "nota": "La web oficial agrupa la Corporación en alcalde, tenientes de alcalde, concejales delegados y concejales. El reparto de 2023 vino con la constitución del Pleno (17-06-2023) y las concejalías (19-06-2023)."
+  },
+  "no_verificado": [
+    "Cifras de patrimonio, bienes e ingresos de las declaraciones de bienes y actividades: se enlazan las publicadas por el Ayuntamiento, pero no se transcriben.",
+    "Puesto en la lista de 2023, votos personales y posiciones o votaciones concretas en el Pleno: no recopilados.",
+    "Fecha de nacimiento y trayectoria política previa al Ayuntamiento: no figuran en la ficha oficial salvo lo reproducido arriba.",
+    "Controversias: ninguna contrastada en las fuentes consultadas; eso no prueba que no existan. No se ha recopilado la valoración de otros grupos."
+  ],
+  "faq": [
+    {
+      "q": "¿Quién es José Luis Mateos Crespo?",
+      "a": "José Luis Mateos Crespo es concejal del Grupo Municipal Socialista (portavoz hasta el 7 de mayo de 2026), en el Ayuntamiento de Salamanca (oposición), mandato 2023-2027. Doctor en Derecho Constitucional por la Universidad de Salamanca (2022), licenciado en Derecho y en Administración y Dirección de Empresas, y profesor asociado de Derecho Constitucional en la USAL desde 2021. En 2025 percibió 29.681,64 € brutos según el listado oficial del Ayuntamiento (puesto 10 de 27)."
+    },
+    {
+      "q": "¿Qué cargo tiene José Luis Mateos Crespo en el Ayuntamiento de Salamanca?",
+      "a": "Concejal del Grupo Municipal Socialista (portavoz hasta el 7 de mayo de 2026). Oposición: Grupo Municipal Socialista, con 10 de los 27 concejales."
+    },
+    {
+      "q": "¿A qué partido o grupo pertenece José Luis Mateos Crespo?",
+      "a": "Fue elegido en la lista del Partido Socialista Obrero Español (PSOE)."
+    },
+    {
+      "q": "¿Cuánto cobra José Luis Mateos Crespo?",
+      "a": "Según el listado oficial del Ayuntamiento, José Luis Mateos Crespo percibió 29.681,64 € brutos en 2025 (puesto 10 de 27). Figura marcado como dedicación exclusiva o parcial (el listado oficial no distingue entre ambas). El listado no desglosa los conceptos (retribución fija, asistencias u otros)."
+    },
+    {
+      "q": "¿Cuál es la formación y la profesión de José Luis Mateos Crespo?",
+      "a": "Doctor en Derecho Constitucional por la Universidad de Salamanca (2022), licenciado en Derecho y en Administración y Dirección de Empresas, y profesor asociado de Derecho Constitucional en la USAL desde 2021."
+    },
+    {
+      "q": "¿Cómo contactar con José Luis Mateos Crespo?",
+      "a": "Por el correo institucional c.joseluis@aytosalamanca.es o por teléfono en el +34 923279118 / +34 923279191, según su ficha oficial en la web del Ayuntamiento de Salamanca."
+    }
+  ],
+  "fuentes": [
+    {
+      "t": "Ayuntamiento de Salamanca: ficha oficial de José Luis Mateos Crespo",
+      "u": "https://www.aytosalamanca.es/w/d.-jose-luis-mateos-crespo"
+    },
+    {
+      "t": "Ayuntamiento de Salamanca: Corporación municipal",
+      "u": "https://www.aytosalamanca.es/corporacion-municipal"
+    },
+    {
+      "t": "Ayuntamiento de Salamanca: Portal de Transparencia",
+      "u": "https://www.aytosalamanca.es/transparencia"
+    },
+    {
+      "t": "Open Salamanca: concejales del Ayuntamiento de Salamanca por mandato",
+      "u": "https://opensalamanca.es/concejales-ayuntamiento-salamanca"
+    },
+    {
+      "t": "Wikipedia (es): Ayuntamiento de Salamanca",
+      "u": "https://es.wikipedia.org/wiki/Ayuntamiento_de_Salamanca"
+    },
+    {
+      "t": "Ayuntamiento de Salamanca: retribuciones percibidas por los miembros de la Corporación en 2025 (PDF)",
+      "u": "https://www.aytosalamanca.es/documents/d/guest/02-retribuciones-percibidas-miembros-corporacion-2025"
+    },
+    {
+      "t": "eldiario.es: María Sánchez releva a José Luis Mateos en la portavocía del PSOE (2026)",
+      "u": "https://www.eldiario.es/castilla-y-leon/provincias/salamanca/cambios-psoe-ayuntamiento-salamanca-maria-sanchez-releva-jose-luis-mateos-portavocia_1_13202004.html"
+    },
+    {
+      "t": "Salamancahoy (7-05-2026): el PSOE de Salamanca tiene nueva portavoz, María Sánchez",
+      "u": "https://www.salamancahoy.es/salamanca/ciudad/psoe-salamanca-nueva-portavoz-maria-sanchez-relevara-20260507094220-nt_amp.html"
+    },
+    {
+      "t": "La Gaceta de Salamanca (6-05-2026): el PSOE releva a José Luis Mateos como portavoz municipal",
+      "u": "https://www.lagacetadesalamanca.es/salamanca/psoe-relega-jose-luis-mateos-portavoz-municipal-20260506181944-nt.html"
+    },
+    {
+      "t": "Tribuna de Salamanca: estos son los 27 concejales que dirigirán Salamanca (2023)",
+      "u": "https://www.tribunasalamanca.com/noticias/332749/estos-son-los-27-concejales-que-dirigiran-salamanca"
+    },
+    {
+      "t": "Open Salamanca: ficha de Carlos García Carbayo, alcalde de Salamanca",
+      "u": "https://opensalamanca.es/elecciones/politicos/carlos-garcia-carbayo"
+    }
+  ],
+  "como_citar": "Open Salamanca (2026). José Luis Mateos Crespo, concejal del Ayuntamiento de Salamanca: ficha y dataset. https://opensalamanca.es/elecciones/politicos/jose-luis-mateos-crespo (consultado el 24-11-2026). CC BY 4.0.",
+  "enlaces_oficiales_y_externos": {
+    "web_oficial_ayuntamiento": "https://www.aytosalamanca.es/w/d.-jose-luis-mateos-crespo"
+  }
+}

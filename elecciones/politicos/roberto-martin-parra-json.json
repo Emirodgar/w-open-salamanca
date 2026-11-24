@@ -1,0 +1,5 @@
+---
+permalink: elecciones/politicos/roberto-martin-parra.json
+sitemap: false
+---
+{{ site.data.politicos["roberto-martin-parra"] | jsonify }}

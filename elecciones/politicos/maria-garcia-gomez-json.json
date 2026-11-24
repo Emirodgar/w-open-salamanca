@@ -1,0 +1,5 @@
+---
+permalink: elecciones/politicos/maria-garcia-gomez.json
+sitemap: false
+---
+{{ site.data.politicos["maria-garcia-gomez"] | jsonify }}

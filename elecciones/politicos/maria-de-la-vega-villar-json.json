@@ -1,0 +1,5 @@
+---
+permalink: elecciones/politicos/maria-de-la-vega-villar.json
+sitemap: false
+---
+{{ site.data.politicos["maria-de-la-vega-villar"] | jsonify }}

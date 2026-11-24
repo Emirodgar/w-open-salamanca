@@ -1,0 +1,5 @@
+---
+permalink: elecciones/politicos/maria-isabel-macias-tello.json
+sitemap: false
+---
+{{ site.data.politicos["maria-isabel-macias-tello"] | jsonify }}

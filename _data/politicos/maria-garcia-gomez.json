@@ -1,0 +1,213 @@
+{
+  "schema_version": "1.0",
+  "tipo": "ficha_politico",
+  "slug": "maria-garcia-gomez",
+  "url_canonica": "https://opensalamanca.es/elecciones/politicos/maria-garcia-gomez",
+  "actualizado": "2026-11-24",
+  "actualizado_texto": "24 de noviembre de 2026",
+  "licencia": "CC BY 4.0 (citar «Open Salamanca» y enlazar la ficha)",
+  "aviso": "Ficha elaborada solo con fuentes públicas citadas en cada dato (principalmente la web oficial del Ayuntamiento). Lo no contrastado figura en «no_verificado»; no se omite ni se rellena. No es opinión política ni recomendación de voto.",
+  "identidad": {
+    "nombre_completo": "María García Gómez",
+    "nombre_habitual": "María García Gómez",
+    "nombre_pila": "María",
+    "apellidos": "García Gómez",
+    "tratamiento_oficial": "Dª. María García Gómez",
+    "apodos_o_variantes": [
+      "García Gómez",
+      "María García Gómez"
+    ],
+    "nacimiento": null,
+    "partido": {
+      "siglas": "PSOE",
+      "nombre": "Partido Socialista Obrero Español"
+    },
+    "afiliacion_confirmada": false,
+    "grupo_texto": "Partido Socialista Obrero Español (PSOE)",
+    "alumni_of": [],
+    "formacion_resumen": "F.P. Técnico Auxiliar",
+    "profesion": null
+  },
+  "cargo_actual": {
+    "cargo": "Concejala del Grupo Municipal Socialista",
+    "organizacion": "Ayuntamiento de Salamanca",
+    "desde": "2023-06-17",
+    "desde_texto": "17 de junio de 2023",
+    "mandato_actual": "2023-2027",
+    "rol_en_pleno": "oposicion",
+    "rol_en_pleno_texto": "Oposición: Grupo Municipal Socialista, con 10 de los 27 concejales.",
+    "otros_cargos": [],
+    "cargo_segun_ficha_oficial": null,
+    "contacto_institucional": {
+      "direccion": "Casa Consistorial, Plaza Mayor, 1, 37002 Salamanca",
+      "telefono": "+34 923279118 / +34 923279191",
+      "email": "c.mariag@aytosalamanca.es"
+    }
+  },
+  "resumen": "María García Gómez es concejala del Grupo Municipal Socialista, en el Ayuntamiento de Salamanca (oposición), mandato 2023-2027. Técnico de Cuidados Auxiliares de Enfermería en Sacyl desde 1977, con formación en gestión pública, salud pública y técnico de Prevención de Riesgos Laborales (nivel intermedio). En 2025 percibió 16.405,20 € brutos según el listado oficial del Ayuntamiento (puesto 19 de 27).",
+  "trayectoria": [
+    {
+      "fecha": "2023-06-17",
+      "hito": "Concejala del PSOE en el mandato 2023-2027",
+      "detalle": "Elegida en la lista del PSOE en las municipales del 28-05-2023 (10 concejales).",
+      "fuentes": [
+        {
+          "t": "Tribuna de Salamanca: estos son los 27 concejales que dirigirán Salamanca (2023)",
+          "u": "https://www.tribunasalamanca.com/noticias/332749/estos-son-los-27-concejales-que-dirigiran-salamanca"
+        },
+        {
+          "t": "Open Salamanca: concejales del Ayuntamiento de Salamanca por mandato",
+          "u": "https://opensalamanca.es/concejales-ayuntamiento-salamanca"
+        }
+      ]
+    },
+    {
+      "fecha": "2019-06-15",
+      "hito": "Concejala del Grupo Municipal Socialista (2019-2023)",
+      "detalle": "Concejala durante todo el mandato 2019-2023.",
+      "fuentes": [
+        {
+          "t": "Open Salamanca: concejales del Ayuntamiento de Salamanca por mandato",
+          "u": "https://opensalamanca.es/concejales-ayuntamiento-salamanca"
+        },
+        {
+          "t": "Wikipedia (es): Ayuntamiento de Salamanca",
+          "u": "https://es.wikipedia.org/wiki/Ayuntamiento_de_Salamanca"
+        }
+      ]
+    }
+  ],
+  "ficha_oficial": {
+    "url": "https://www.aytosalamanca.es/w/d%C2%AA.-mar%C3%ADa-garc%C3%ADa-g%C3%B3mez",
+    "texto": "Texto tal como lo publica el Ayuntamiento de Salamanca en la ficha oficial de la persona (consultada el 24-11-2026), sin reescribir.",
+    "formacion_oficial": [
+      "F.P. Técnico Auxiliar — Ministerio Educación y Ciencia — 23/03/1978",
+      "Técnico de Prevención de Riesgos Laborales - Nivel Intermedio — Universidad Autónoma de Madrid — 21/01/2000"
+    ],
+    "otros_titulos": [],
+    "actividad_profesional": [
+      "Técnico Cuidados Auxiliares de Enfermería — Sacyl — 21/04/1977"
+    ],
+    "otras_actividades": []
+  },
+  "retribucion": {
+    "ejercicio": 2025,
+    "importe_bruto_anual_eur": 16405.2,
+    "dedicacion_marcada": false,
+    "posicion_en_la_corporacion": "puesto 19 de 27",
+    "texto_resumen": "Según el listado oficial del Ayuntamiento, María García Gómez percibió 16.405,20 € brutos en 2025 (puesto 19 de 27). No figura marcado como dedicación exclusiva ni parcial en el listado oficial. El listado no desglosa los conceptos (retribución fija, asistencias u otros).",
+    "nota": "Importe tal como lo publica el Ayuntamiento en el listado de retribuciones percibidas por los miembros de la Corporación en 2025. El asterisco del listado corresponde a «dedicaciones exclusivas / parciales» sin distinguirlas. El PDF lleva internamente la etiqueta «2020» en el título, pero su contenido declara el ejercicio 2025.",
+    "fuente": {
+      "t": "Ayuntamiento de Salamanca: retribuciones percibidas por los miembros de la Corporación en 2025 (PDF)",
+      "u": "https://www.aytosalamanca.es/documents/d/guest/02-retribuciones-percibidas-miembros-corporacion-2025"
+    }
+  },
+  "transparencia": {
+    "enlaces_declaraciones": [
+      {
+        "titulo": "Declaración de Bienes y Actividades anual 2025.",
+        "url": "https://www.aytosalamanca.es/documents/20119/2878577/garcia_gomez__maria._declaracion_anual_2025.pdf/07d3d733-1691-d8a0-85b0-6ca4f5d94516?t=1771573969676"
+      },
+      {
+        "titulo": "Declaración de Bienes y Actividades anual 2024.",
+        "url": "https://www.aytosalamanca.es/documents/20119/1375646/Garcia_Gomez__Maria._Declaracion_anual_2024.pdf/e67c1687-f954-5d06-b434-c69635883c10?t=1738676769745"
+      },
+      {
+        "titulo": "Declaración de Bienes y Actividades. Final 2019-2023 e Inicial 2023.",
+        "url": "https://www.aytosalamanca.es/documents/20119/217956/Marxa_Garcia_DECLARACIONES_DE_CAUSAS_DE_POSIBLE_INCOMPATIBILIDAD_Y_ACTIVIDADES.pdf/a36a621e-9683-ac0c-7071-2192a359515f?t=1712585631452"
+      }
+    ],
+    "nota": "Base legal: art. 75.7 de la Ley de Bases de Régimen Local. Se enlazan las declaraciones que el Ayuntamiento publica; las anuales solo recogen variaciones respecto a la inicial de 2023, cuyas cifras no se transcriben aquí.",
+    "portal": {
+      "t": "Ayuntamiento de Salamanca: Portal de Transparencia",
+      "u": "https://www.aytosalamanca.es/transparencia"
+    }
+  },
+  "gobierno_municipal": {
+    "pleno": {
+      "concejales": 27,
+      "mayoria_absoluta": 14,
+      "reparto_2023_2027": {
+        "PP": 14,
+        "PSOE": 10,
+        "Vox": 3
+      }
+    },
+    "texto": "Oposición: Grupo Municipal Socialista, con 10 de los 27 concejales.",
+    "fuente": {
+      "t": "Ayuntamiento de Salamanca: Corporación municipal",
+      "u": "https://www.aytosalamanca.es/corporacion-municipal"
+    },
+    "nota": "La web oficial agrupa la Corporación en alcalde, tenientes de alcalde, concejales delegados y concejales. El reparto de 2023 vino con la constitución del Pleno (17-06-2023) y las concejalías (19-06-2023)."
+  },
+  "no_verificado": [
+    "Cifras de patrimonio, bienes e ingresos de las declaraciones de bienes y actividades: se enlazan las publicadas por el Ayuntamiento, pero no se transcriben.",
+    "Puesto en la lista de 2023, votos personales y posiciones o votaciones concretas en el Pleno: no recopilados.",
+    "Fecha de nacimiento y trayectoria política previa al Ayuntamiento: no figuran en la ficha oficial salvo lo reproducido arriba.",
+    "Controversias: ninguna contrastada en las fuentes consultadas; eso no prueba que no existan. No se ha recopilado la valoración de otros grupos."
+  ],
+  "faq": [
+    {
+      "q": "¿Quién es María García Gómez?",
+      "a": "María García Gómez es concejala del Grupo Municipal Socialista, en el Ayuntamiento de Salamanca (oposición), mandato 2023-2027. Técnico de Cuidados Auxiliares de Enfermería en Sacyl desde 1977, con formación en gestión pública, salud pública y técnico de Prevención de Riesgos Laborales (nivel intermedio). En 2025 percibió 16.405,20 € brutos según el listado oficial del Ayuntamiento (puesto 19 de 27)."
+    },
+    {
+      "q": "¿Qué cargo tiene María García Gómez en el Ayuntamiento de Salamanca?",
+      "a": "Concejala del Grupo Municipal Socialista. Oposición: Grupo Municipal Socialista, con 10 de los 27 concejales."
+    },
+    {
+      "q": "¿A qué partido o grupo pertenece María García Gómez?",
+      "a": "Fue elegida en la lista del Partido Socialista Obrero Español (PSOE)."
+    },
+    {
+      "q": "¿Cuánto cobra María García Gómez?",
+      "a": "Según el listado oficial del Ayuntamiento, María García Gómez percibió 16.405,20 € brutos en 2025 (puesto 19 de 27). No figura marcado como dedicación exclusiva ni parcial en el listado oficial. El listado no desglosa los conceptos (retribución fija, asistencias u otros)."
+    },
+    {
+      "q": "¿Cuál es la formación y la profesión de María García Gómez?",
+      "a": "Técnico de Cuidados Auxiliares de Enfermería en Sacyl desde 1977, con formación en gestión pública, salud pública y técnico de Prevención de Riesgos Laborales (nivel intermedio)."
+    },
+    {
+      "q": "¿Cómo contactar con María García Gómez?",
+      "a": "Por el correo institucional c.mariag@aytosalamanca.es o por teléfono en el +34 923279118 / +34 923279191, según su ficha oficial en la web del Ayuntamiento de Salamanca."
+    }
+  ],
+  "fuentes": [
+    {
+      "t": "Ayuntamiento de Salamanca: ficha oficial de María García Gómez",
+      "u": "https://www.aytosalamanca.es/w/d%C2%AA.-mar%C3%ADa-garc%C3%ADa-g%C3%B3mez"
+    },
+    {
+      "t": "Ayuntamiento de Salamanca: Corporación municipal",
+      "u": "https://www.aytosalamanca.es/corporacion-municipal"
+    },
+    {
+      "t": "Ayuntamiento de Salamanca: Portal de Transparencia",
+      "u": "https://www.aytosalamanca.es/transparencia"
+    },
+    {
+      "t": "Open Salamanca: concejales del Ayuntamiento de Salamanca por mandato",
+      "u": "https://opensalamanca.es/concejales-ayuntamiento-salamanca"
+    },
+    {
+      "t": "Wikipedia (es): Ayuntamiento de Salamanca",
+      "u": "https://es.wikipedia.org/wiki/Ayuntamiento_de_Salamanca"
+    },
+    {
+      "t": "Ayuntamiento de Salamanca: retribuciones percibidas por los miembros de la Corporación en 2025 (PDF)",
+      "u": "https://www.aytosalamanca.es/documents/d/guest/02-retribuciones-percibidas-miembros-corporacion-2025"
+    },
+    {
+      "t": "Tribuna de Salamanca: estos son los 27 concejales que dirigirán Salamanca (2023)",
+      "u": "https://www.tribunasalamanca.com/noticias/332749/estos-son-los-27-concejales-que-dirigiran-salamanca"
+    },
+    {
+      "t": "Open Salamanca: ficha de Carlos García Carbayo, alcalde de Salamanca",
+      "u": "https://opensalamanca.es/elecciones/politicos/carlos-garcia-carbayo"
+    }
+  ],
+  "como_citar": "Open Salamanca (2026). María García Gómez, concejala del Ayuntamiento de Salamanca: ficha y dataset. https://opensalamanca.es/elecciones/politicos/maria-garcia-gomez (consultado el 24-11-2026). CC BY 4.0.",
+  "enlaces_oficiales_y_externos": {
+    "web_oficial_ayuntamiento": "https://www.aytosalamanca.es/w/d%C2%AA.-mar%C3%ADa-garc%C3%ADa-g%C3%B3mez"
+  }
+}

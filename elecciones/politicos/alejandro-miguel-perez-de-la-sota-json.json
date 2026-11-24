@@ -1,0 +1,5 @@
+---
+permalink: elecciones/politicos/alejandro-miguel-perez-de-la-sota.json
+sitemap: false
+---
+{{ site.data.politicos["alejandro-miguel-perez-de-la-sota"] | jsonify }}

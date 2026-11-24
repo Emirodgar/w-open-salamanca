@@ -1,0 +1,225 @@
+{
+  "schema_version": "1.0",
+  "tipo": "ficha_politico",
+  "slug": "fernando-javier-rodriguez-alonso",
+  "url_canonica": "https://opensalamanca.es/elecciones/politicos/fernando-javier-rodriguez-alonso",
+  "actualizado": "2026-11-24",
+  "actualizado_texto": "24 de noviembre de 2026",
+  "licencia": "CC BY 4.0 (citar «Open Salamanca» y enlazar la ficha)",
+  "aviso": "Ficha elaborada solo con fuentes públicas citadas en cada dato (principalmente la web oficial del Ayuntamiento). Lo no contrastado figura en «no_verificado»; no se omite ni se rellena. No es opinión política ni recomendación de voto.",
+  "identidad": {
+    "nombre_completo": "Fernando Javier Rodríguez Alonso",
+    "nombre_habitual": "Fernando Rodríguez Alonso",
+    "nombre_pila": "Fernando Javier",
+    "apellidos": "Rodríguez Alonso",
+    "tratamiento_oficial": "D. Fernando Javier Rodríguez Alonso",
+    "apodos_o_variantes": [
+      "Fernando Rodríguez Alonso",
+      "Rodríguez Alonso"
+    ],
+    "nacimiento": null,
+    "partido": {
+      "siglas": "PP",
+      "nombre": "Partido Popular"
+    },
+    "afiliacion_confirmada": false,
+    "grupo_texto": "Partido Popular (PP)",
+    "alumni_of": [
+      "Universidad de Salamanca"
+    ],
+    "formacion_resumen": "Licenciado en Derecho",
+    "profesion": null
+  },
+  "cargo_actual": {
+    "cargo": "Cuarto teniente de alcalde y concejal delegado de Hacienda, Régimen Interior y Contratación",
+    "organizacion": "Ayuntamiento de Salamanca",
+    "desde": "2023-06-19",
+    "desde_texto": "19 de junio de 2023",
+    "mandato_actual": "2023-2027",
+    "rol_en_pleno": "gobierno",
+    "rol_en_pleno_texto": "Equipo de gobierno: el PP gobierna con mayoría absoluta (14 de 27 concejales) con el alcalde Carlos García Carbayo.",
+    "otros_cargos": [],
+    "cargo_segun_ficha_oficial": "IV Teniente de Alcalde. Concejal delegado Hacienda, Régimen Interior y Contratación.",
+    "contacto_institucional": {
+      "direccion": "Casa Consistorial, Plaza Mayor, 1, 37002 Salamanca",
+      "telefono": "+34 923279112 / +34 923279186",
+      "email": "c.fernando@aytosalamanca.es"
+    }
+  },
+  "resumen": "Fernando Javier Rodríguez Alonso es cuarto teniente de alcalde y concejal delegado de Hacienda, Régimen Interior y Contratación, en el Ayuntamiento de Salamanca (equipo de gobierno del PP), mandato 2023-2027. Licenciado en Derecho por la Universidad de Salamanca (1991); fue abogado (1992-1995) y profesor asociado en la Universidad de Salamanca (1995-2004). En 2025 percibió 78.930,20 € brutos según el listado oficial del Ayuntamiento (puesto 2 de 27, empatado con 3 más).",
+  "trayectoria": [
+    {
+      "fecha": "2023-06-19",
+      "hito": "Cuarto teniente de alcalde y concejal de Hacienda, Régimen Interior y Contratación",
+      "detalle": "Reparto de concejalías del equipo de gobierno del PP tras la investidura de Carbayo.",
+      "fuentes": [
+        {
+          "t": "El Español (19-06-2023): competencias de los concejales del equipo de gobierno",
+          "u": "https://www.elespanol.com/castilla-y-leon/region/salamanca/20230619/competencias-concejales-equipo-gobierno-salamanca/772673033_0.html"
+        },
+        {
+          "t": "La Gaceta de Salamanca (19-06-2023): Carbayo reparte las concejalías",
+          "u": "https://www.lagacetadesalamanca.es/salamanca/carbayo-reparte-concejalias-ayuntamiento-salamanca-20230619163234-nt.html"
+        },
+        {
+          "t": "SALAMANCArtv AL DÍA (19-06-2023): así quedan las concejalías",
+          "u": "https://salamancartvaldia.es/noticia/2023-06-19-asi-quedan-las-concejalias-en-el-ayuntamiento-de-salamanca-324554"
+        }
+      ]
+    },
+    {
+      "fecha": "2015-06-13",
+      "hito": "Concejal de Hacienda (2015-2019)",
+      "detalle": "El decreto exacto de 2015 no está confirmado en las fuentes consultadas.",
+      "fuentes": [
+        {
+          "t": "Open Salamanca: concejales del Ayuntamiento de Salamanca por mandato",
+          "u": "https://opensalamanca.es/concejales-ayuntamiento-salamanca"
+        }
+      ]
+    }
+  ],
+  "ficha_oficial": {
+    "url": "https://www.aytosalamanca.es/w/d.-fernando-javier-rodriguez-alonso",
+    "texto": "Texto tal como lo publica el Ayuntamiento de Salamanca en la ficha oficial de la persona (consultada el 24-11-2026), sin reescribir.",
+    "formacion_oficial": [
+      "Licenciado en Derecho — Universidad de Salamanca — 1991"
+    ],
+    "otros_titulos": [],
+    "actividad_profesional": [
+      "Abogado — Desde el 1992 Hasta 1995",
+      "Profesor Asociado — Universidad de Salamanca — Desde 1995 Hasta 2004",
+      "Subdirector Residencia Universitaria “Fray Luis de León” — Desde 1993 Hasta 1995"
+    ],
+    "otras_actividades": []
+  },
+  "retribucion": {
+    "ejercicio": 2025,
+    "importe_bruto_anual_eur": 78930.2,
+    "dedicacion_marcada": true,
+    "posicion_en_la_corporacion": "puesto 2 de 27, empatado con 3 más",
+    "texto_resumen": "Según el listado oficial del Ayuntamiento, Fernando Rodríguez Alonso percibió 78.930,20 € brutos en 2025 (puesto 2 de 27, empatado con 3 más). Figura marcado como dedicación exclusiva o parcial (el listado oficial no distingue entre ambas). El listado no desglosa los conceptos (retribución fija, asistencias u otros).",
+    "nota": "Importe tal como lo publica el Ayuntamiento en el listado de retribuciones percibidas por los miembros de la Corporación en 2025. El asterisco del listado corresponde a «dedicaciones exclusivas / parciales» sin distinguirlas. El PDF lleva internamente la etiqueta «2020» en el título, pero su contenido declara el ejercicio 2025.",
+    "fuente": {
+      "t": "Ayuntamiento de Salamanca: retribuciones percibidas por los miembros de la Corporación en 2025 (PDF)",
+      "u": "https://www.aytosalamanca.es/documents/d/guest/02-retribuciones-percibidas-miembros-corporacion-2025"
+    }
+  },
+  "transparencia": {
+    "enlaces_declaraciones": [
+      {
+        "titulo": "Declaración de Bienes y Actividades anual 2025.",
+        "url": "https://www.aytosalamanca.es/documents/20119/2878577/rodriguez_alonso__fernando_javier._declaracion_anual_2025.pdf/4225449b-7770-ab3f-7798-c32c29dbe801?t=1771573971648"
+      },
+      {
+        "titulo": "Declaración de Bienes y Actividades anual 2024.",
+        "url": "https://www.aytosalamanca.es/documents/20119/1375646/Rodriguez_Alonso__Fernando_Javier._Declaracion_anual_2024.pdf/6e03b469-5e99-85c6-47b2-f4a368ba0d71?t=1738676771748"
+      },
+      {
+        "titulo": "Declaración de Bienes y Actividades. Final 2019-2023 e Inicial 2023.",
+        "url": "https://www.aytosalamanca.es/documents/20119/217956/Fernando_Rodrxguez_DECLARACIONES_DE_CAUSAS_DE_POSIBLE_INCOMPATIBILIDAD_Y_ACTIVIDADES.pdf/7bb96e92-06f0-e3c3-c58d-97c09cb5ecd9?t=1712571172700"
+      }
+    ],
+    "nota": "Base legal: art. 75.7 de la Ley de Bases de Régimen Local. Se enlazan las declaraciones que el Ayuntamiento publica; las anuales solo recogen variaciones respecto a la inicial de 2023, cuyas cifras no se transcriben aquí.",
+    "portal": {
+      "t": "Ayuntamiento de Salamanca: Portal de Transparencia",
+      "u": "https://www.aytosalamanca.es/transparencia"
+    }
+  },
+  "gobierno_municipal": {
+    "pleno": {
+      "concejales": 27,
+      "mayoria_absoluta": 14,
+      "reparto_2023_2027": {
+        "PP": 14,
+        "PSOE": 10,
+        "Vox": 3
+      }
+    },
+    "texto": "Equipo de gobierno: el PP gobierna con mayoría absoluta (14 de 27 concejales) con el alcalde Carlos García Carbayo.",
+    "fuente": {
+      "t": "Ayuntamiento de Salamanca: Corporación municipal",
+      "u": "https://www.aytosalamanca.es/corporacion-municipal"
+    },
+    "nota": "La web oficial agrupa la Corporación en alcalde, tenientes de alcalde, concejales delegados y concejales. El reparto de 2023 vino con la constitución del Pleno (17-06-2023) y las concejalías (19-06-2023)."
+  },
+  "no_verificado": [
+    "Cifras de patrimonio, bienes e ingresos de las declaraciones de bienes y actividades: se enlazan las publicadas por el Ayuntamiento, pero no se transcriben.",
+    "Puesto en la lista de 2023, votos personales y posiciones o votaciones concretas en el Pleno: no recopilados.",
+    "Fecha de nacimiento y trayectoria política previa al Ayuntamiento: no figuran en la ficha oficial salvo lo reproducido arriba.",
+    "Controversias: ninguna contrastada en las fuentes consultadas; eso no prueba que no existan. No se ha recopilado la valoración de otros grupos.",
+    "Delegaciones y organigrama detallado más allá del reparto de concejalías de 2023 y los cambios publicados: pueden haber variado."
+  ],
+  "faq": [
+    {
+      "q": "¿Quién es Fernando Rodríguez Alonso?",
+      "a": "Fernando Javier Rodríguez Alonso es cuarto teniente de alcalde y concejal delegado de Hacienda, Régimen Interior y Contratación, en el Ayuntamiento de Salamanca (equipo de gobierno del PP), mandato 2023-2027. Licenciado en Derecho por la Universidad de Salamanca (1991); fue abogado (1992-1995) y profesor asociado en la Universidad de Salamanca (1995-2004). En 2025 percibió 78.930,20 € brutos según el listado oficial del Ayuntamiento (puesto 2 de 27, empatado con 3 más)."
+    },
+    {
+      "q": "¿Qué cargo tiene Fernando Rodríguez Alonso en el Ayuntamiento de Salamanca?",
+      "a": "Cuarto teniente de alcalde y concejal delegado de Hacienda, Régimen Interior y Contratación. Equipo de gobierno: el PP gobierna con mayoría absoluta (14 de 27 concejales) con el alcalde Carlos García Carbayo. Cargo según su ficha oficial: «IV Teniente de Alcalde. Concejal delegado Hacienda, Régimen Interior y Contratación.»."
+    },
+    {
+      "q": "¿A qué partido o grupo pertenece Fernando Rodríguez Alonso?",
+      "a": "Fue elegido en la lista del Partido Popular (PP)."
+    },
+    {
+      "q": "¿Cuánto cobra Fernando Rodríguez Alonso?",
+      "a": "Según el listado oficial del Ayuntamiento, Fernando Rodríguez Alonso percibió 78.930,20 € brutos en 2025 (puesto 2 de 27, empatado con 3 más). Figura marcado como dedicación exclusiva o parcial (el listado oficial no distingue entre ambas). El listado no desglosa los conceptos (retribución fija, asistencias u otros)."
+    },
+    {
+      "q": "¿Cuál es la formación y la profesión de Fernando Rodríguez Alonso?",
+      "a": "Licenciado en Derecho por la Universidad de Salamanca (1991); fue abogado (1992-1995) y profesor asociado en la Universidad de Salamanca (1995-2004)."
+    },
+    {
+      "q": "¿Cómo contactar con Fernando Rodríguez Alonso?",
+      "a": "Por el correo institucional c.fernando@aytosalamanca.es o por teléfono en el +34 923279112 / +34 923279186, según su ficha oficial en la web del Ayuntamiento de Salamanca."
+    }
+  ],
+  "fuentes": [
+    {
+      "t": "Ayuntamiento de Salamanca: ficha oficial de Fernando Javier Rodríguez Alonso",
+      "u": "https://www.aytosalamanca.es/w/d.-fernando-javier-rodriguez-alonso"
+    },
+    {
+      "t": "Ayuntamiento de Salamanca: Corporación municipal",
+      "u": "https://www.aytosalamanca.es/corporacion-municipal"
+    },
+    {
+      "t": "Ayuntamiento de Salamanca: Portal de Transparencia",
+      "u": "https://www.aytosalamanca.es/transparencia"
+    },
+    {
+      "t": "Open Salamanca: concejales del Ayuntamiento de Salamanca por mandato",
+      "u": "https://opensalamanca.es/concejales-ayuntamiento-salamanca"
+    },
+    {
+      "t": "Wikipedia (es): Ayuntamiento de Salamanca",
+      "u": "https://es.wikipedia.org/wiki/Ayuntamiento_de_Salamanca"
+    },
+    {
+      "t": "Ayuntamiento de Salamanca: retribuciones percibidas por los miembros de la Corporación en 2025 (PDF)",
+      "u": "https://www.aytosalamanca.es/documents/d/guest/02-retribuciones-percibidas-miembros-corporacion-2025"
+    },
+    {
+      "t": "El Español (19-06-2023): competencias de los concejales del equipo de gobierno",
+      "u": "https://www.elespanol.com/castilla-y-leon/region/salamanca/20230619/competencias-concejales-equipo-gobierno-salamanca/772673033_0.html"
+    },
+    {
+      "t": "La Gaceta de Salamanca (19-06-2023): Carbayo reparte las concejalías",
+      "u": "https://www.lagacetadesalamanca.es/salamanca/carbayo-reparte-concejalias-ayuntamiento-salamanca-20230619163234-nt.html"
+    },
+    {
+      "t": "SALAMANCArtv AL DÍA (19-06-2023): así quedan las concejalías",
+      "u": "https://salamancartvaldia.es/noticia/2023-06-19-asi-quedan-las-concejalias-en-el-ayuntamiento-de-salamanca-324554"
+    },
+    {
+      "t": "Open Salamanca: ficha de Carlos García Carbayo, alcalde de Salamanca",
+      "u": "https://opensalamanca.es/elecciones/politicos/carlos-garcia-carbayo"
+    }
+  ],
+  "como_citar": "Open Salamanca (2026). Fernando Javier Rodríguez Alonso, concejal del Ayuntamiento de Salamanca: ficha y dataset. https://opensalamanca.es/elecciones/politicos/fernando-javier-rodriguez-alonso (consultado el 24-11-2026). CC BY 4.0.",
+  "enlaces_oficiales_y_externos": {
+    "web_oficial_ayuntamiento": "https://www.aytosalamanca.es/w/d.-fernando-javier-rodriguez-alonso"
+  }
+}

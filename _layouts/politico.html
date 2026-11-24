@@ -3,7 +3,8 @@ layout: default
 ---
 {%- comment -%}
   Ficha de político. Fuente única: _data/politicos/<slug>.json (page.slug).
-  El mismo JSON se publica como descarga en /politicos/<slug>.json.
+  El mismo JSON se publica como descarga en /elecciones/politicos/<slug>.json.
+  Las secciones electoral, presupuesto, proyectos y posiciones son opcionales.
 {%- endcomment -%}
 {%- assign p = site.data.politicos[page.slug] -%}
 {%- assign canon = p.url_canonica -%}
@@ -31,32 +32,61 @@ layout: default
 
     <div id="section-content">
       <p class="ans">{{ p.resumen }}</p>
-      <p class="fu">Ficha actualizada el {{ p.actualizado_texto }}. Todos los datos llevan su fuente. Parte del <a href="/elecciones/">panel de elecciones de Salamanca</a>. Datos descargables: <a href="/elecciones/politicos/{{ page.slug }}.json">{{ page.slug }}.json</a> ({{ p.licencia }}).</p>
+      <p class="fu">Ficha actualizada el {{ p.actualizado_texto }}. Todos los datos llevan su fuente. Parte del <a href="/elecciones/politicos/">listado de concejales del Ayuntamiento de Salamanca</a> y del <a href="/elecciones/">panel de elecciones</a>. Datos descargables: <a href="/elecciones/politicos/{{ page.slug }}.json">{{ page.slug }}.json</a> ({{ p.licencia }}).</p>
 
       <h2>Ficha rápida</h2>
       <dl class="rapida">
         <dt>Nombre completo</dt><dd>{{ p.identidad.nombre_completo }}</dd>
-        <dt>Nacimiento</dt><dd>{{ p.identidad.nacimiento.fecha_texto }}, {{ p.identidad.nacimiento.lugar }}</dd>
-        <dt>Cargo actual</dt><dd>{{ p.cargo_actual.cargo }} ({{ p.cargo_actual.organizacion }}), desde el {{ p.cargo_actual.desde_texto }}</dd>
-        <dt>Partido</dt><dd>{{ p.identidad.partido.nombre }} ({{ p.identidad.partido.siglas }})</dd>
+        {%- if p.identidad.nacimiento %}
+        <dt>Nacimiento</dt><dd>{{ p.identidad.nacimiento.fecha_texto }}{% if p.identidad.nacimiento.lugar %}, {{ p.identidad.nacimiento.lugar }}{% endif %}</dd>
+        {%- endif %}
+        <dt>Cargo</dt><dd>{{ p.cargo_actual.cargo }} ({{ p.cargo_actual.organizacion }}){% if p.cargo_actual.desde_texto %}, desde el {{ p.cargo_actual.desde_texto }}{% endif %}</dd>
+        <dt>Partido o grupo</dt><dd>{{ p.identidad.grupo_texto }}</dd>
+        <dt>Posición en el Pleno</dt><dd>{{ p.cargo_actual.rol_en_pleno_texto }}</dd>
         {%- for o in p.cargo_actual.otros_cargos %}
-        <dt>Otro cargo</dt><dd>{{ o.cargo }}, desde el {{ o.desde }}</dd>
+        <dt>Otro cargo</dt><dd>{{ o.cargo }}{% if o.desde %}, desde el {{ o.desde }}{% endif %}</dd>
         {%- endfor %}
-        <dt>Formación</dt><dd>{% for f in p.identidad.formacion %}{{ f.titulo }}{% if f.centro %} ({{ f.centro }}){% endif %}{% unless forloop.last %}; {% endunless %}{% endfor %}</dd>
+        {%- if p.identidad.formacion_resumen %}
+        <dt>Formación</dt><dd>{{ p.identidad.formacion_resumen }}</dd>
+        {%- endif %}
+        {%- if p.identidad.profesion %}
         <dt>Profesión</dt><dd>{{ p.identidad.profesion }}</dd>
-        <dt>Retribución 2025</dt><dd>{{ p.retribucion.importe_bruto_anual_eur | round: 2 }} € brutos anuales ({{ p.retribucion.posicion_en_la_corporacion }})</dd>
-        <dt>Mandato actual</dt><dd>{{ p.cargo_actual.mandato_actual }}: {{ p.gobierno_municipal.pleno.reparto_2023_2027.PP }} PP, {{ p.gobierno_municipal.pleno.reparto_2023_2027.PSOE }} PSOE, {{ p.gobierno_municipal.pleno.reparto_2023_2027.Vox }} Vox</dd>
-        <dt>Contacto institucional</dt><dd>{{ p.cargo_actual.contacto_institucional.direccion }}; {{ p.cargo_actual.contacto_institucional.telefono }}; <a href="mailto:{{ p.cargo_actual.contacto_institucional.email }}">{{ p.cargo_actual.contacto_institucional.email }}</a></dd>
+        {%- endif %}
+        {%- if p.retribucion.importe_bruto_anual_eur %}
+        <dt>Retribución {{ p.retribucion.ejercicio }}</dt><dd>{{ p.retribucion.importe_bruto_anual_eur | round: 2 }} € brutos ({{ p.retribucion.posicion_en_la_corporacion }})</dd>
+        {%- endif %}
+        <dt>Mandato</dt><dd>{{ p.cargo_actual.mandato_actual }}: Pleno de {{ p.gobierno_municipal.pleno.concejales }} concejales ({{ p.gobierno_municipal.pleno.reparto_2023_2027.PP }} PP, {{ p.gobierno_municipal.pleno.reparto_2023_2027.PSOE }} PSOE, {{ p.gobierno_municipal.pleno.reparto_2023_2027.Vox }} elegidos por Vox)</dd>
+        {%- if p.cargo_actual.contacto_institucional %}
+        <dt>Contacto institucional</dt><dd>{{ p.cargo_actual.contacto_institucional.direccion }}{% if p.cargo_actual.contacto_institucional.telefono %}; {{ p.cargo_actual.contacto_institucional.telefono }}{% endif %}{% if p.cargo_actual.contacto_institucional.email %}; <a href="mailto:{{ p.cargo_actual.contacto_institucional.email }}">{{ p.cargo_actual.contacto_institucional.email }}</a>{% endif %}</dd>
+        {%- endif %}
       </dl>
 
-      <h2>Trayectoria, de lo más reciente a lo más antiguo</h2>
+      <h2>Trayectoria en el Ayuntamiento y la política, de lo más reciente a lo más antiguo</h2>
       <ol class="tray">
         {%- for t in p.trayectoria %}
         <li><span class="f">{{ t.fecha }} · {{ t.hito }}</span>{{ t.detalle }}
-          <p class="fu">Fuentes: {% for s in t.fuentes %}<a href="{{ s.u }}" rel="nofollow noopener">{{ s.t }}</a>{% unless forloop.last %} · {% endunless %}{% endfor %}</p></li>
+          <p class="fu">Fuentes: {% for s in t.fuentes %}<a href="{{ s.u }}"{% unless s.u contains "opensalamanca.es" %} rel="nofollow noopener"{% endunless %}>{{ s.t }}</a>{% unless forloop.last %} · {% endunless %}{% endfor %}</p></li>
         {%- endfor %}
       </ol>
 
+      {%- if p.ficha_oficial %}
+      <h2>Formación y actividad profesional (ficha oficial del Ayuntamiento)</h2>
+      <p class="fu">{{ p.ficha_oficial.texto }} Fuente: <a href="{{ p.ficha_oficial.url }}" rel="nofollow noopener">ficha oficial en aytosalamanca.es</a>.</p>
+      {%- if p.ficha_oficial.formacion_oficial.size > 0 %}
+      <h3>Formación</h3>
+      <ul>{%- for e in p.ficha_oficial.formacion_oficial %}<li>{{ e }}</li>{%- endfor %}{%- for e in p.ficha_oficial.otros_titulos %}<li>{{ e }}</li>{%- endfor %}</ul>
+      {%- endif %}
+      {%- if p.ficha_oficial.actividad_profesional.size > 0 %}
+      <h3>Actividad profesional</h3>
+      <ul>{%- for e in p.ficha_oficial.actividad_profesional %}<li>{{ e }}</li>{%- endfor %}</ul>
+      {%- endif %}
+      {%- if p.ficha_oficial.otras_actividades.size > 0 %}
+      <h3>Otras actividades</h3>
+      <ul>{%- for e in p.ficha_oficial.otras_actividades %}<li>{{ e }}</li>{%- endfor %}</ul>
+      {%- endif %}
+      {%- endif %}
+
+      {%- if p.electoral %}
       <h2>Resultados electorales como cabeza de lista del PP</h2>
       <p>Municipio de Salamanca (capital). Porcentajes calculados por Open Salamanca sobre votos válidos, blancos incluidos.</p>
       {%- for c in p.electoral.convocatorias %}
@@ -72,10 +102,16 @@ layout: default
       </table></div>
       {%- endfor %}
       <p><b>Evolución del PP 2019-2023:</b> {{ p.electoral.variacion_pp_2019_2023.votos }} votos más, {{ p.electoral.variacion_pp_2019_2023.puntos_porcentuales }} puntos porcentuales más y {{ p.electoral.variacion_pp_2019_2023.concejales }} concejales más. Fuente: <a href="https://infoelectoral.interior.gob.es/" rel="nofollow noopener">Ministerio del Interior</a>.</p>
+      {%- endif %}
 
       <h2>Retribución y transparencia</h2>
-      <p>Según el listado oficial de retribuciones del Ayuntamiento, {{ p.identidad.nombre_habitual }} percibió <b>{{ p.retribucion.importe_bruto_anual_eur | round: 2 }} € brutos en {{ p.retribucion.ejercicio }}</b> con {{ p.retribucion.regimen }}: {{ p.retribucion.posicion_en_la_corporacion }}, un {{ p.retribucion.comparativa.diferencia_con_teniente_de_alcalde_pct }} % más que un teniente de alcalde con dedicación exclusiva ({{ p.retribucion.comparativa.tenientes_de_alcalde_con_dedicacion_exclusiva_eur | round: 2 }} €) y por encima de los concejales delegados con dedicación ({{ p.retribucion.comparativa.concejales_delegados_con_dedicacion_eur | round: 2 }} €).</p>
+      {%- if p.retribucion.importe_bruto_anual_eur %}
+      <p>{{ p.retribucion.texto_resumen }}</p>
       <p class="fu">{{ p.retribucion.nota }} Fuente: <a href="{{ p.retribucion.fuente.u }}" rel="nofollow noopener">{{ p.retribucion.fuente.t }}</a>.</p>
+      {%- else %}
+      <p>{{ p.retribucion.texto_resumen }}</p>
+      {%- endif %}
+      {%- if p.transparencia.declaraciones %}
       <div class="tabla"><table border="1" cellpadding="5" cellspacing="0">
         <thead><tr><th>Declaración anual</th><th>Firmada</th><th>Actividades e incompatibilidades</th><th>Inmuebles</th><th>Mobiliario</th><th>Vehículos</th><th>Otros bienes</th><th>Deudas</th></tr></thead>
         <tbody>
@@ -84,8 +120,14 @@ layout: default
         {%- endfor %}
         </tbody>
       </table></div>
-      <p class="fu">{{ p.transparencia.nota }} <a href="{{ p.transparencia.declaracion_inicial_2023.u }}" rel="nofollow noopener">Declaración inicial 2023</a> · <a href="{{ p.transparencia.portal.u }}" rel="nofollow noopener">Portal de Transparencia</a></p>
+      {%- endif %}
+      {%- if p.transparencia.enlaces_declaraciones.size > 0 %}
+      <p>Declaraciones de bienes y actividades publicadas por el Ayuntamiento:</p>
+      <ul>{%- for d in p.transparencia.enlaces_declaraciones %}<li><a href="{{ d.url }}" rel="nofollow noopener">{{ d.titulo }}</a></li>{%- endfor %}</ul>
+      {%- endif %}
+      <p class="fu">{{ p.transparencia.nota }}{% if p.transparencia.declaracion_inicial_2023 %} <a href="{{ p.transparencia.declaracion_inicial_2023.u }}" rel="nofollow noopener">Declaración inicial 2023</a> ·{% endif %} <a href="{{ p.transparencia.portal.u }}" rel="nofollow noopener">Portal de Transparencia</a></p>
 
+      {%- if p.presupuesto_municipal_durante_su_gobierno %}
       <h2>Presupuesto municipal durante su gobierno</h2>
       <p>{{ p.presupuesto_municipal_durante_su_gobierno.nota }}</p>
       <div class="tabla"><table border="1" cellpadding="5" cellspacing="0">
@@ -97,7 +139,9 @@ layout: default
         </tbody>
       </table></div>
       <p class="fu">Fuentes: {% for s in p.presupuesto_municipal_durante_su_gobierno.fuentes %}<a href="{{ s.u }}"{% unless s.u contains "opensalamanca.es" %} rel="nofollow noopener"{% endunless %}>{{ s.t }}</a>{% unless forloop.last %} · {% endunless %}{% endfor %}</p>
+      {%- endif %}
 
+      {%- if p.proyectos_y_compromisos %}
       <h2>Proyectos y compromisos del mandato</h2>
       {%- for q in p.proyectos_y_compromisos %}
       <h3>{{ q.nombre }}</h3>
@@ -109,15 +153,18 @@ layout: default
       </ul>
       <p class="fu">Fuentes: {% for s in q.fuentes %}<a href="{{ s.u }}" rel="nofollow noopener">{{ s.t }}</a>{% unless forloop.last %} · {% endunless %}{% endfor %}</p>
       {%- endfor %}
+      {%- endif %}
 
+      {%- if p.posiciones_publicas %}
       <h2>Posiciones públicas recientes</h2>
       {%- for q in p.posiciones_publicas %}
       <p><b>{{ q.fecha }} · {{ q.contexto }}.</b> {{ q.resumen }}</p>
       <p class="fu">Fuentes: {% for s in q.fuentes %}<a href="{{ s.u }}" rel="nofollow noopener">{{ s.t }}</a>{% endfor %}</p>
       {%- endfor %}
+      {%- endif %}
 
-      <h2>Equipo de gobierno municipal</h2>
-      <p>El Pleno tiene {{ p.gobierno_municipal.pleno.concejales }} concejales (mayoría absoluta: {{ p.gobierno_municipal.pleno.mayoria_absoluta }}). Tenientes de alcalde: {{ p.gobierno_municipal.tenientes_de_alcalde | join: ", " }}. {{ p.gobierno_municipal.nota }} Más detalle: <a href="/concejales-ayuntamiento-salamanca">concejales del Ayuntamiento de Salamanca</a> y <a href="/alcaldes-salamanca">alcaldes de Salamanca</a>. Fuente: <a href="{{ p.gobierno_municipal.fuente.u }}" rel="nofollow noopener">{{ p.gobierno_municipal.fuente.t }}</a>.</p>
+      <h2>Dónde encaja en el Pleno</h2>
+      <p>{{ p.gobierno_municipal.texto }} El Pleno tiene {{ p.gobierno_municipal.pleno.concejales }} concejales (mayoría absoluta: {{ p.gobierno_municipal.pleno.mayoria_absoluta }}).{% if p.gobierno_municipal.tenientes_de_alcalde %} Tenientes de alcalde: {{ p.gobierno_municipal.tenientes_de_alcalde | join: ", " }}.{% endif %} {{ p.gobierno_municipal.nota }} Más detalle: <a href="/elecciones/politicos/">todos los concejales</a>, <a href="/concejales-ayuntamiento-salamanca">concejales por mandato</a> y <a href="/alcaldes-salamanca">alcaldes de Salamanca</a>. Fuente: <a href="{{ p.gobierno_municipal.fuente.u }}" rel="nofollow noopener">{{ p.gobierno_municipal.fuente.t }}</a>.</p>
 
       <h2>Qué no está verificado</h2>
       <div class="warn">
@@ -149,33 +196,36 @@ layout: default
       "@type": "Person",
       "@id": {{ canon | append: "#person" | jsonify }},
       "name": {{ p.identidad.nombre_habitual | jsonify }},
-      "givenName": "Carlos Manuel",
-      "familyName": "García Carbayo",
+      "givenName": {{ p.identidad.nombre_pila | jsonify }},
+      "familyName": {{ p.identidad.apellidos | jsonify }},
       "alternateName": {{ p.identidad.apodos_o_variantes | jsonify }},
+      {%- if p.identidad.nacimiento.fecha %}
       "birthDate": {{ p.identidad.nacimiento.fecha | jsonify }},
+      {%- endif %}
+      {%- if p.identidad.nacimiento.lugar %}
       "birthPlace": { "@type": "Place", "name": {{ p.identidad.nacimiento.lugar | jsonify }} },
-      "nationality": { "@type": "Country", "name": "España" },
+      {%- endif %}
       "jobTitle": {{ p.cargo_actual.cargo | jsonify }},
       "description": {{ p.resumen | jsonify }},
-      "alumniOf": { "@type": "CollegeOrUniversity", "name": "Universidad de Salamanca" },
+      {%- if p.identidad.alumni_of.size > 0 %}
+      "alumniOf": [{% for u in p.identidad.alumni_of %}{ "@type": "CollegeOrUniversity", "name": {{ u | jsonify }} }{% unless forloop.last %}, {% endunless %}{% endfor %}],
+      {%- endif %}
       "worksFor": {
         "@type": "GovernmentOrganization",
         "name": "Ayuntamiento de Salamanca",
         "url": "https://www.aytosalamanca.es/",
         "address": { "@type": "PostalAddress", "streetAddress": "Plaza Mayor, 1", "postalCode": "37002", "addressLocality": "Salamanca", "addressCountry": "ES" }
       },
-      "memberOf": { "@type": "PoliticalParty", "name": "Partido Popular", "alternateName": "PP" },
+      {%- if p.identidad.afiliacion_confirmada %}
+      "memberOf": { "@type": "PoliticalParty", "name": {{ p.identidad.partido.nombre | jsonify }}, "alternateName": {{ p.identidad.partido.siglas | jsonify }} },
+      {%- endif %}
       "hasOccupation": {
         "@type": "Role",
         "roleName": {{ p.cargo_actual.cargo | jsonify }},
         "startDate": {{ p.cargo_actual.desde | jsonify }}
       },
       "url": {{ canon | jsonify }},
-      "sameAs": [
-        {{ p.enlaces_oficiales_y_externos.web_oficial_ayuntamiento | jsonify }},
-        {{ p.enlaces_oficiales_y_externos.wikipedia_es | jsonify }},
-        {{ p.enlaces_oficiales_y_externos.wikipedia_en | jsonify }}
-      ],
+      "sameAs": [{% for e in p.enlaces_oficiales_y_externos %}{{ e[1] | jsonify }}{% unless forloop.last %}, {% endunless %}{% endfor %}],
       "mainEntityOfPage": { "@id": {{ canon | jsonify }} }
     },
     {

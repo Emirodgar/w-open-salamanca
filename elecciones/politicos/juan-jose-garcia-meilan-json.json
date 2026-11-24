@@ -1,0 +1,5 @@
+---
+permalink: elecciones/politicos/juan-jose-garcia-meilan.json
+sitemap: false
+---
+{{ site.data.politicos["juan-jose-garcia-meilan"] | jsonify }}

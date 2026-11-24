@@ -1,0 +1,5 @@
+---
+permalink: elecciones/politicos/cesar-gomez-barthe-celada.json
+sitemap: false
+---
+{{ site.data.politicos["cesar-gomez-barthe-celada"] | jsonify }}

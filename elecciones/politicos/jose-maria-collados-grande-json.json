@@ -1,0 +1,5 @@
+---
+permalink: elecciones/politicos/jose-maria-collados-grande.json
+sitemap: false
+---
+{{ site.data.politicos["jose-maria-collados-grande"] | jsonify }}
