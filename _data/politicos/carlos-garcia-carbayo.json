@@ -1,0 +1,750 @@
+{
+  "schema_version": "1.0",
+  "tipo": "ficha_politico",
+  "slug": "carlos-garcia-carbayo",
+  "url_canonica": "https://opensalamanca.es/elecciones/politicos/carlos-garcia-carbayo",
+  "actualizado": "2026-11-24",
+  "actualizado_texto": "24 de noviembre de 2026",
+  "licencia": "CC BY 4.0 (citar «Open Salamanca» y enlazar la ficha)",
+  "aviso": "Ficha elaborada solo con fuentes públicas citadas en cada dato. Lo no contrastado figura en «no_verificado»; no se omite ni se rellena. No es opinión política ni recomendación de voto.",
+  "identidad": {
+    "nombre_completo": "Carlos Manuel García Carbayo",
+    "nombre_habitual": "Carlos García Carbayo",
+    "tratamiento_oficial": "D. Carlos Manuel García Carbayo",
+    "apodos_o_variantes": [
+      "Carbayo",
+      "García Carbayo",
+      "Carlos Carbayo"
+    ],
+    "nacimiento": {
+      "fecha": "1962-11-01",
+      "fecha_texto": "1 de noviembre de 1962",
+      "lugar": "Salamanca"
+    },
+    "nacionalidad": "española",
+    "partido": {
+      "siglas": "PP",
+      "nombre": "Partido Popular",
+      "afiliado_desde": "2001 (inicio de actividad política como miembro del PP, según Wikipedia)"
+    },
+    "formacion": [
+      {
+        "titulo": "Licenciado en Derecho",
+        "centro": "Universidad de Salamanca",
+        "fecha": "1986-09-11 (fecha del título según la ficha oficial del Ayuntamiento); Wikipedia sitúa la licenciatura en 1984",
+        "fuentes": [
+          {
+            "t": "Ayuntamiento de Salamanca: ficha oficial del alcalde",
+            "u": "https://www.aytosalamanca.es/w/d.-carlos-manuel-garc%C3%ADa-carbayo"
+          },
+          {
+            "t": "Wikipedia (es): Carlos García Carbayo",
+            "u": "https://es.wikipedia.org/wiki/Carlos_Garc%C3%ADa_Carbayo"
+          }
+        ]
+      },
+      {
+        "titulo": "Gestor Administrativo",
+        "centro": null,
+        "fecha": "2002-01-22",
+        "fuentes": [
+          {
+            "t": "Ayuntamiento de Salamanca: ficha oficial del alcalde",
+            "u": "https://www.aytosalamanca.es/w/d.-carlos-manuel-garc%C3%ADa-carbayo"
+          }
+        ]
+      },
+      {
+        "titulo": "Profesor de Enseñanza Secundaria (Formación y Orientación Laboral)",
+        "centro": "Junta de Castilla y León",
+        "fecha": "desde 1996",
+        "fuentes": [
+          {
+            "t": "Ayuntamiento de Salamanca: ficha oficial del alcalde",
+            "u": "https://www.aytosalamanca.es/w/d.-carlos-manuel-garc%C3%ADa-carbayo"
+          },
+          {
+            "t": "Wikipedia (es): Carlos García Carbayo",
+            "u": "https://es.wikipedia.org/wiki/Carlos_Garc%C3%ADa_Carbayo"
+          }
+        ]
+      }
+    ],
+    "profesion": "Funcionario de la Junta de Castilla y León (cuerpo de profesores de Secundaria, FOL); jurista"
+  },
+  "cargo_actual": {
+    "cargo": "Alcalde de Salamanca",
+    "organizacion": "Ayuntamiento de Salamanca",
+    "desde": "2018-12-20",
+    "desde_texto": "20 de diciembre de 2018 (investido); reelegido el 15-06-2019 y en junio de 2023",
+    "mandato_actual": "2023-2027",
+    "otros_cargos": [
+      {
+        "cargo": "Presidente del PP de Salamanca",
+        "desde": "2023-03-11",
+        "fuentes": [
+          {
+            "t": "Wikipedia (es): Carlos García Carbayo",
+            "u": "https://es.wikipedia.org/wiki/Carlos_Garc%C3%ADa_Carbayo"
+          },
+          {
+            "t": "Diario de Castilla y León (3-03-2023): primarias del PP de Salamanca",
+            "u": "https://www.diariodecastillayleon.es/salamanca/230303/17031/garcia-carbayo-presidira-pp-salamanca-arrasar-primarias-72-3-votos.html"
+          }
+        ]
+      }
+    ],
+    "contacto_institucional": {
+      "direccion": "Casa Consistorial, Plaza Mayor, 1, 37002 Salamanca",
+      "telefono": "+34 923 279 105 (alcalde); +34 923 279 100 (centralita)",
+      "email": "c.carlos@aytosalamanca.es",
+      "web_oficial": "https://www.aytosalamanca.es/w/d.-carlos-manuel-garc%C3%ADa-carbayo",
+      "agenda_institucional": "https://www.aytosalamanca.es/agenda-institucional",
+      "fuente": {
+        "t": "Ayuntamiento de Salamanca: ficha oficial del alcalde",
+        "u": "https://www.aytosalamanca.es/w/d.-carlos-manuel-garc%C3%ADa-carbayo"
+      }
+    }
+  },
+  "resumen": "Carlos Manuel García Carbayo (Salamanca, 1 de noviembre de 1962) es alcalde de Salamanca desde el 20 de diciembre de 2018 y presidente del PP de Salamanca desde el 11 de marzo de 2023. Licenciado en Derecho por la Universidad de Salamanca y profesor de Secundaria funcionario de la Junta de Castilla y León, fue concejal desde 2011 y primer teniente de alcalde desde 2015, y sustituyó a Alfonso Fernández Mañueco al frente del Ayuntamiento. Gobernó 2019-2023 con Ciudadanos y en las municipales del 28 de mayo de 2023 logró mayoría absoluta: el PP obtuvo 14 de 27 concejales (43,9 % de los votos válidos). En 2025 percibió 83.022,96 € brutos, la retribución más alta de los 27 miembros de la Corporación.",
+  "trayectoria": [
+    {
+      "fecha": "2023-06-17",
+      "hito": "Reelegido alcalde con mayoría absoluta",
+      "detalle": "Toma el cargo para el mandato 2023-2027 con los 14 concejales del PP, sin necesidad de pactos.",
+      "fuentes": [
+        {
+          "t": "El Español (17-06-2023): Carbayo, tranquilidad para gobernar sin pactos",
+          "u": "https://www.elespanol.com/castilla-y-leon/region/salamanca/20230617/garcia-carbayo-tranquilidad-gobernar-ayuntamiento-salamana-sin/771423032_0.html"
+        },
+        {
+          "t": "Open Salamanca: concejales del Ayuntamiento de Salamanca",
+          "u": "https://opensalamanca.es/concejales-ayuntamiento-salamanca"
+        }
+      ]
+    },
+    {
+      "fecha": "2023-05-28",
+      "hito": "Mayoría absoluta en las municipales",
+      "detalle": "PP: 14 de 27 concejales; PSOE 10; Vox 3; Ciudadanos queda fuera del Pleno.",
+      "fuentes": [
+        {
+          "t": "El Español (28-05-2023): García Carbayo alcanza la mayoría absoluta",
+          "u": "https://www.elespanol.com/castilla-y-leon/region/salamanca/20230528/escrutado-garcia-carbayo-pp-alcanza-mayoria-absoluta/767173493_0.html"
+        },
+        {
+          "t": "Wikipedia (en): Carlos García Carbayo",
+          "u": "https://en.wikipedia.org/wiki/Carlos_Garc%C3%ADa_Carbayo"
+        }
+      ]
+    },
+    {
+      "fecha": "2023-03-11",
+      "hito": "Presidente del PP de Salamanca",
+      "detalle": "Gana las primarias con 1.309 votos frente a 499 (72,3 %) y releva a Francisco Javier Iglesias García.",
+      "fuentes": [
+        {
+          "t": "Diario de Castilla y León (3-03-2023): primarias del PP de Salamanca",
+          "u": "https://www.diariodecastillayleon.es/salamanca/230303/17031/garcia-carbayo-presidira-pp-salamanca-arrasar-primarias-72-3-votos.html"
+        },
+        {
+          "t": "Wikipedia (es): Carlos García Carbayo",
+          "u": "https://es.wikipedia.org/wiki/Carlos_Garc%C3%ADa_Carbayo"
+        }
+      ]
+    },
+    {
+      "fecha": "2019-06-15",
+      "hito": "Reelegido alcalde tras las municipales de 2019",
+      "detalle": "PP 11 concejales sin mayoría; investido con los 11 del PP y los 4 de Ciudadanos, que entran en el gobierno municipal.",
+      "fuentes": [
+        {
+          "t": "El Norte de Castilla (15-06-2019): Carbayo, nuevo alcalde",
+          "u": "https://www.elnortedecastilla.es/salamanca/carbayo-nuevo-alcalde-20190615131706-nt.html"
+        },
+        {
+          "t": "Open Salamanca: concejales del Ayuntamiento de Salamanca",
+          "u": "https://opensalamanca.es/concejales-ayuntamiento-salamanca"
+        }
+      ]
+    },
+    {
+      "fecha": "2018-12-20",
+      "hito": "Investido alcalde de Salamanca",
+      "detalle": "Sustituye a Mañueco, que dimite el 12-12-2018 para ser candidato a la presidencia de la Junta. Había sido su primer teniente de alcalde.",
+      "fuentes": [
+        {
+          "t": "Wikipedia (es): Carlos García Carbayo",
+          "u": "https://es.wikipedia.org/wiki/Carlos_Garc%C3%ADa_Carbayo"
+        },
+        {
+          "t": "ABC (6-12-2018): Carbayo, sustituto de Mañueco, leal y discreto",
+          "u": "https://www.abc.es/espana/castilla-leon/abci-carlos-garcia-carbayo-sustituto-manueco-leal-y-discreto-201812061253_noticia.html"
+        }
+      ]
+    },
+    {
+      "fecha": "2015",
+      "hito": "Primer teniente de alcalde",
+      "detalle": "Mantiene Fomento y Patrimonio (urbanismo y tráfico, según ABC) en el gobierno municipal de Mañueco, en minoría (12 de 27 concejales).",
+      "fuentes": [
+        {
+          "t": "Wikipedia (es): Carlos García Carbayo",
+          "u": "https://es.wikipedia.org/wiki/Carlos_Garc%C3%ADa_Carbayo"
+        },
+        {
+          "t": "ABC (6-12-2018): Carbayo, sustituto de Mañueco, leal y discreto",
+          "u": "https://www.abc.es/espana/castilla-leon/abci-carlos-garcia-carbayo-sustituto-manueco-leal-y-discreto-201812061253_noticia.html"
+        },
+        {
+          "t": "Open Salamanca: concejales del Ayuntamiento de Salamanca",
+          "u": "https://opensalamanca.es/concejales-ayuntamiento-salamanca"
+        }
+      ]
+    },
+    {
+      "fecha": "2011-06-11",
+      "hito": "Concejal del Ayuntamiento de Salamanca",
+      "detalle": "Concejal de Fomento y Patrimonio.",
+      "fuentes": [
+        {
+          "t": "Wikipedia (es): Carlos García Carbayo",
+          "u": "https://es.wikipedia.org/wiki/Carlos_Garc%C3%ADa_Carbayo"
+        }
+      ]
+    },
+    {
+      "fecha": "2007/2011",
+      "hito": "Trabaja con Mañueco en la Consejería de Interior y Justicia",
+      "detalle": "Mañueco fue consejero de Interior y Justicia de la Junta en ese periodo.",
+      "fuentes": [
+        {
+          "t": "Wikipedia (en): Carlos García Carbayo",
+          "u": "https://en.wikipedia.org/wiki/Carlos_Garc%C3%ADa_Carbayo"
+        },
+        {
+          "t": "ABC (6-12-2018): Carbayo, sustituto de Mañueco, leal y discreto",
+          "u": "https://www.abc.es/espana/castilla-leon/abci-carlos-garcia-carbayo-sustituto-manueco-leal-y-discreto-201812061253_noticia.html"
+        }
+      ]
+    },
+    {
+      "fecha": "2002-01-22",
+      "hito": "Título de Gestor Administrativo",
+      "detalle": "Fecha según la ficha oficial.",
+      "fuentes": [
+        {
+          "t": "Ayuntamiento de Salamanca: ficha oficial del alcalde",
+          "u": "https://www.aytosalamanca.es/w/d.-carlos-manuel-garc%C3%ADa-carbayo"
+        }
+      ]
+    },
+    {
+      "fecha": "2001",
+      "hito": "Inicio de su actividad política en el PP",
+      "detalle": "En la Junta de Castilla y León: jefe del Servicio de Estudios y Documentación de las consejerías de Presidencia y Administración Territorial y de Interior y Justicia; vocal de la Comisión de Precios y consejero suplente del Consejo Económico y Social (fechas exactas no publicadas).",
+      "fuentes": [
+        {
+          "t": "Wikipedia (es): Carlos García Carbayo",
+          "u": "https://es.wikipedia.org/wiki/Carlos_Garc%C3%ADa_Carbayo"
+        }
+      ]
+    },
+    {
+      "fecha": "1996",
+      "hito": "Profesor de Formación y Orientación Laboral",
+      "detalle": "Enseñanza Secundaria en institutos de Zamora (La Vaguada) y Segovia (Ángel del Alcázar), como funcionario de la Junta.",
+      "fuentes": [
+        {
+          "t": "Ayuntamiento de Salamanca: ficha oficial del alcalde",
+          "u": "https://www.aytosalamanca.es/w/d.-carlos-manuel-garc%C3%ADa-carbayo"
+        },
+        {
+          "t": "Wikipedia (es): Carlos García Carbayo",
+          "u": "https://es.wikipedia.org/wiki/Carlos_Garc%C3%ADa_Carbayo"
+        }
+      ]
+    },
+    {
+      "fecha": "1986-09-11",
+      "hito": "Licenciado en Derecho por la Universidad de Salamanca",
+      "detalle": "Fecha del título según la ficha oficial; Wikipedia indica 1984.",
+      "fuentes": [
+        {
+          "t": "Ayuntamiento de Salamanca: ficha oficial del alcalde",
+          "u": "https://www.aytosalamanca.es/w/d.-carlos-manuel-garc%C3%ADa-carbayo"
+        },
+        {
+          "t": "Wikipedia (es): Carlos García Carbayo",
+          "u": "https://es.wikipedia.org/wiki/Carlos_Garc%C3%ADa_Carbayo"
+        },
+        {
+          "t": "Wikipedia (en): Carlos García Carbayo",
+          "u": "https://en.wikipedia.org/wiki/Carlos_Garc%C3%ADa_Carbayo"
+        }
+      ]
+    }
+  ],
+  "electoral": {
+    "ambito": "Municipio de Salamanca (capital), Carbayo como cabeza de lista del PP",
+    "convocatorias": [
+      {
+        "convocatoria": "Municipales 2019",
+        "fecha": "2019-05-26",
+        "votos_validos_incluidos_blancos": 74621,
+        "votos_en_blanco": 590,
+        "resultados_principales": [
+          {
+            "siglas": "PP",
+            "votos": 26922,
+            "porcentaje_votos_validos": 36.1,
+            "concejales": 11
+          },
+          {
+            "siglas": "PSOE",
+            "votos": 25365,
+            "porcentaje_votos_validos": 34.0,
+            "concejales": 10
+          },
+          {
+            "siglas": "Cs",
+            "votos": 11553,
+            "porcentaje_votos_validos": 15.5,
+            "concejales": 4
+          },
+          {
+            "siglas": "PODEMOS-IU-EQUO",
+            "votos": 5704,
+            "porcentaje_votos_validos": 7.6,
+            "concejales": 2
+          },
+          {
+            "siglas": "VOX",
+            "votos": 3392,
+            "porcentaje_votos_validos": 4.5,
+            "concejales": 0
+          }
+        ],
+        "total_concejales": 27,
+        "mayoria_absoluta": 14,
+        "fuente": {
+          "t": "Ministerio del Interior: resultados municipales por municipio",
+          "u": "https://infoelectoral.interior.gob.es/"
+        },
+        "nota": "Porcentajes calculados por Open Salamanca como votos de cada candidatura entre votos validos (candidaturas + blancos) del municipio de Salamanca; no incluyen candidaturas con menos de 2.000 votos.",
+        "resultado_para_carbayo": "PP, primera fuerza con 11 de 27 concejales y sin mayoria; reelegido alcalde el 15-06-2019 con los votos del PP (11) y Ciudadanos (4)."
+      },
+      {
+        "convocatoria": "Municipales 2023",
+        "fecha": "2023-05-28",
+        "votos_validos_incluidos_blancos": 68920,
+        "votos_en_blanco": 953,
+        "resultados_principales": [
+          {
+            "siglas": "PP",
+            "votos": 30273,
+            "porcentaje_votos_validos": 43.9,
+            "concejales": 14
+          },
+          {
+            "siglas": "PSOE",
+            "votos": 20771,
+            "porcentaje_votos_validos": 30.1,
+            "concejales": 10
+          },
+          {
+            "siglas": "VOX",
+            "votos": 7587,
+            "porcentaje_votos_validos": 11.0,
+            "concejales": 3
+          },
+          {
+            "siglas": "PODEMOS-IU-AV",
+            "votos": 3332,
+            "porcentaje_votos_validos": 4.8,
+            "concejales": 0
+          },
+          {
+            "siglas": "Cs",
+            "votos": 2464,
+            "porcentaje_votos_validos": 3.6,
+            "concejales": 0
+          }
+        ],
+        "total_concejales": 27,
+        "mayoria_absoluta": 14,
+        "fuente": {
+          "t": "Ministerio del Interior: resultados municipales por municipio",
+          "u": "https://infoelectoral.interior.gob.es/"
+        },
+        "nota": "Porcentajes calculados por Open Salamanca como votos de cada candidatura entre votos validos (candidaturas + blancos) del municipio de Salamanca; no incluyen candidaturas con menos de 2.000 votos.",
+        "resultado_para_carbayo": "PP, primera fuerza con 14 de 27 concejales: mayoria absoluta, sin necesidad de pactos."
+      }
+    ],
+    "variacion_pp_2019_2023": {
+      "votos": 3351,
+      "puntos_porcentuales": 7.8,
+      "concejales": 3
+    }
+  },
+  "gobierno_municipal": {
+    "pleno": {
+      "concejales": 27,
+      "mayoria_absoluta": 14,
+      "reparto_2023_2027": {
+        "PP": 14,
+        "PSOE": 10,
+        "Vox": 3
+      }
+    },
+    "tenientes_de_alcalde": [
+      "María Almudena Parres Cabrera",
+      "Myriam Rodríguez López",
+      "José Fernando Carabias Acosta",
+      "Fernando Javier Rodríguez Alonso",
+      "María del Carmen Seguín Kattán"
+    ],
+    "fuente": {
+      "t": "Ayuntamiento de Salamanca: Corporación municipal",
+      "u": "https://www.aytosalamanca.es/corporacion-municipal"
+    },
+    "nota": "La web oficial agrupa la Corporación en alcalde, tenientes de alcalde, concejales delegados y concejales, sin publicar el área de cada uno. El detalle por mandato está en el dataset de concejales.",
+    "enlace_dataset_concejales": "https://opensalamanca.es/concejales-ayuntamiento-salamanca"
+  },
+  "retribucion": {
+    "ejercicio": 2025,
+    "importe_bruto_anual_eur": 83022.96,
+    "regimen": "dedicación exclusiva (marcado con asterisco en el listado oficial)",
+    "posicion_en_la_corporacion": "1.º de 27 miembros listados",
+    "comparativa": {
+      "tenientes_de_alcalde_con_dedicacion_exclusiva_eur": 78930.2,
+      "diferencia_con_teniente_de_alcalde_pct": 5.2,
+      "concejales_delegados_con_dedicacion_eur": 63982.96
+    },
+    "nota": "Importe tal como lo publica el Ayuntamiento en el listado de retribuciones percibidas por los miembros de la Corporación en 2025. No detalla pagas, retenciones ni si incluye dietas por asistencia; el PDF lleva internamente la etiqueta «2020» en el título, pero su contenido declara expresamente el ejercicio 2025.",
+    "fuente": {
+      "t": "Ayuntamiento de Salamanca: retribuciones percibidas por los miembros de la Corporación en 2025 (PDF)",
+      "u": "https://www.aytosalamanca.es/documents/d/guest/02-retribuciones-percibidas-miembros-corporacion-2025"
+    }
+  },
+  "transparencia": {
+    "declaraciones": [
+      {
+        "ejercicio": 2025,
+        "firmada": "2026-02-19",
+        "incompatibilidades_y_actividades": "sin variación",
+        "patrimonio_inmobiliario": "sin variación",
+        "patrimonio_mobiliario": "sin variación",
+        "vehiculos": "sin variación",
+        "otros_bienes": "sin variación",
+        "deudas": "sin variación",
+        "fuente": {
+          "t": "Ayuntamiento de Salamanca: declaración anual 2025 de bienes y actividades (PDF, firmada 19-02-2026)",
+          "u": "https://www.aytosalamanca.es/documents/20119/2878577/garcia_carbayo__carlos_manuel._declaracion_anual_2025.pdf/914e9f60-c91f-d211-1bf3-922cae7b9a0e"
+        }
+      },
+      {
+        "ejercicio": 2024,
+        "firmada": "2025-01-24",
+        "incompatibilidades_y_actividades": "sin variación",
+        "patrimonio_inmobiliario": "sin variación",
+        "patrimonio_mobiliario": "sin variación",
+        "vehiculos": "sin variación",
+        "otros_bienes": "sin variación",
+        "deudas": "sin variación",
+        "fuente": {
+          "t": "Ayuntamiento de Salamanca: declaración anual 2024 de bienes y actividades (PDF, firmada 24-01-2025)",
+          "u": "https://www.aytosalamanca.es/documents/20119/1375646/Garcia_Carbayo__Carlos_Manuel._Declaracion_anual_2024.pdf/0857f8d6-f24a-1dea-699c-fbd869996bdf"
+        }
+      }
+    ],
+    "nota": "Las declaraciones anuales solo recogen variaciones: «sin variación» significa que se mantiene la declaración inicial de 2023, cuyas cifras no se han transcrito en esta ficha (ver no_verificado). Base legal: art. 75.7 de la Ley de Bases de Régimen Local.",
+    "declaracion_inicial_2023": {
+      "t": "Ayuntamiento de Salamanca: declaración final 2019-2023 e inicial 2023 del alcalde (PDF)",
+      "u": "https://www.aytosalamanca.es/documents/20119/217956/Alcalde_Carbayo_DECLARACIONES_DE_CAUSAS_DE_POSIBLE_INCOMPATIBILIDAD_Y_ACTIVIDADES.pdf/68dbc109-f6da-827b-21d4-45600b76dceb"
+    },
+    "portal": {
+      "t": "Ayuntamiento de Salamanca: Portal de Transparencia",
+      "u": "https://www.aytosalamanca.es/transparencia"
+    }
+  },
+  "presupuesto_municipal_durante_su_gobierno": {
+    "serie": [
+      {
+        "anio": 2018,
+        "obligaciones_reconocidas_eur": 147834483,
+        "poblacion": 143978,
+        "gasto_por_habitante_eur": 1027,
+        "gasto_en_euros_de_2024": 176433644,
+        "inversiones_reales_eur": 15991489
+      },
+      {
+        "anio": 2019,
+        "obligaciones_reconocidas_eur": 158214873,
+        "poblacion": 144228,
+        "gasto_por_habitante_eur": 1097,
+        "gasto_en_euros_de_2024": 187510491,
+        "inversiones_reales_eur": 17404004
+      },
+      {
+        "anio": 2020,
+        "obligaciones_reconocidas_eur": 163514737,
+        "poblacion": 144825,
+        "gasto_por_habitante_eur": 1129,
+        "gasto_en_euros_de_2024": 194419022,
+        "inversiones_reales_eur": 24367803
+      },
+      {
+        "anio": 2021,
+        "obligaciones_reconocidas_eur": 161174437,
+        "poblacion": 143269,
+        "gasto_por_habitante_eur": 1125,
+        "gasto_en_euros_de_2024": 185887314,
+        "inversiones_reales_eur": 13258064
+      },
+      {
+        "anio": 2022,
+        "obligaciones_reconocidas_eur": 188506548,
+        "poblacion": 142412,
+        "gasto_por_habitante_eur": 1324,
+        "gasto_en_euros_de_2024": 200579621,
+        "inversiones_reales_eur": 24941346
+      },
+      {
+        "anio": 2023,
+        "obligaciones_reconocidas_eur": 214141156,
+        "poblacion": 143954,
+        "gasto_por_habitante_eur": 1488,
+        "gasto_en_euros_de_2024": 220083426,
+        "inversiones_reales_eur": 31078359
+      },
+      {
+        "anio": 2024,
+        "obligaciones_reconocidas_eur": 194424717,
+        "poblacion": 144866,
+        "gasto_por_habitante_eur": 1342,
+        "gasto_en_euros_de_2024": 194424717,
+        "inversiones_reales_eur": 25444095
+      }
+    ],
+    "unidad": "euros; obligaciones reconocidas netas (presupuesto consolidado ejecutado)",
+    "nota": "El gasto liquidado del Ayuntamiento pasó de 147,8 M€ en 2018 a 194,4 M€ en 2024 (31,5 % nominal; 10,2 % en euros constantes de 2024). Es el presupuesto consolidado del Ayuntamiento ejecutado, no el inicial. 2018 incluye casi todo el año con Mañueco; Carbayo gobierna desde el 20-12-2018.",
+    "fuentes": [
+      {
+        "t": "Ministerio de Hacienda, CONPREL: liquidaciones de presupuestos de entidades locales",
+        "u": "https://www.hacienda.gob.es/es-ES/CDI/Paginas/EntidadesLocales/Presupuestos.aspx"
+      },
+      {
+        "t": "Open Salamanca: presupuesto municipal",
+        "u": "https://opensalamanca.es/presupuesto-municipal"
+      }
+    ]
+  },
+  "proyectos_y_compromisos": [
+    {
+      "nombre": "CoNEcta Salamanca",
+      "tema": "Regeneración urbana y barrios",
+      "descripcion": "Renaturalización de espacios, eficiencia energética en equipamientos, reducción de la brecha digital y centro «La Estación 3.0» en los barrios Garrido Norte y Sur, Chinchibarra, Estación y Salesas.",
+      "importe": "unos 20 M€ (junto a Raíles Verdes, unos 23 M€ con 60 % de financiación FEDER, según fuentes del Ayuntamiento)",
+      "plazo_anunciado": "inicio previsto en el segundo trimestre de 2026",
+      "estado": "presentado en febrero de 2025; ejecución actual no verificada",
+      "fuentes": [
+        {
+          "t": "The Objective (25-02-2025): Salamanca presenta dos nuevos planes urbanos",
+          "u": "https://theobjective.com/espana/castilla-y-leon/2025-02-25/salamanca-presenta-dos-nuevos-planes-urbanos/"
+        }
+      ]
+    },
+    {
+      "nombre": "Raíles Verdes",
+      "tema": "Movilidad y zonas verdes",
+      "descripcion": "Vía verde en el tramo urbano de la antigua Ruta de la Plata, parque forestal con mirador en el «volcán de Garrido», bosques urbanos y huertos escolares.",
+      "importe": "casi 2,9 M€",
+      "plazo_anunciado": "inicio previsto en el segundo trimestre de 2026",
+      "estado": "presentado en febrero de 2025; ejecución actual no verificada",
+      "fuentes": [
+        {
+          "t": "The Objective (25-02-2025): Salamanca presenta dos nuevos planes urbanos",
+          "u": "https://theobjective.com/espana/castilla-y-leon/2025-02-25/salamanca-presenta-dos-nuevos-planes-urbanos/"
+        }
+      ]
+    },
+    {
+      "nombre": "Renovación de redes de agua",
+      "tema": "Infraestructuras",
+      "descripcion": "3.693 m de tuberías en 25 calles de seis barrios (5 proyectos). En el mandato: más de 12,6 km en 57 calles; el mandato anterior sumó 21,5 km.",
+      "importe": "1.285.989,36 € (5 proyectos de febrero de 2025); más de 3,3 M€ acumulados en el mandato",
+      "plazo_anunciado": "en tramitación en febrero de 2025",
+      "estado": "ejecución posterior no verificada",
+      "fuentes": [
+        {
+          "t": "The Objective (18-02-2025): Salamanca renovará tuberías en veinticinco calles",
+          "u": "https://theobjective.com/espana/castilla-y-leon/2025-02-18/salamanca-renovara-tuberias-en-veinticinco-calles/"
+        }
+      ]
+    },
+    {
+      "nombre": "Programa de gobierno 2023: ciudad verde",
+      "tema": "Programa electoral",
+      "descripcion": "Más zonas verdes y carril bici; vías pecuarias como avenidas y bulevares; Cordel de Miranda de Azán peatonal; senda verde en la antigua vía férrea; plan plurianual de renovación de redes de agua; drenaje urbano sostenible; flota municipal más ecológica; red de calor piloto para el Hospital Universitario y el campus Miguel de Unamuno.",
+      "importe": "sin cifras en la fuente",
+      "plazo_anunciado": "sin plazos concretos en la fuente",
+      "estado": "grado de cumplimiento no evaluado de forma independiente",
+      "fuentes": [
+        {
+          "t": "El Español (21-05-2023): Carbayo se compromete a convertir Salamanca en una ciudad comprometida",
+          "u": "https://elespanol.com/castilla-y-leon/region/salamanca/20230521/carlos-garcia-carbayo-compromete-convertir-salamanca-comprometida/765423540_0.html"
+        }
+      ]
+    }
+  ],
+  "posiciones_publicas": [
+    {
+      "fecha": "2026-06-12",
+      "contexto": "Discurso del día del patrón, San Juan de Sahagún",
+      "resumen": "Sostiene que Salamanca ha dejado atrás la emigración de jóvenes y apoya su economía en tecnología, innovación, investigación, ciencia y logística junto al turismo y el comercio. Afirma que llevan tres años atrayendo más trabajadores de los que se van y que Salamanca es la ciudad española donde más creció la intensidad tecnológica de su mercado laboral en la última década (datos del propio alcalde, no contrastados aquí). Pide al Gobierno central comunicaciones e inversiones «justas», sin privilegios.",
+      "fuentes": [
+        {
+          "t": "El Español (12-06-2026): Carbayo en el día del patrón",
+          "u": "https://www.elespanol.com/castilla-y-leon/region/salamanca/20260612/carbayo-dia-grande-patron-salamanca-cambiado-crecido-jovenes-no-quieren-ir/1003744283994_0.html"
+        }
+      ]
+    }
+  ],
+  "no_verificado": [
+    "Cifras de patrimonio, bienes e ingresos de la declaración inicial de 2023 (las anuales 2024 y 2025 solo indican «sin variación»).",
+    "Estado actual (2026) de CoNEcta Salamanca, Raíles Verdes y las redes de agua.",
+    "Programa electoral completo del PP en 2023 con compromisos medibles: no localizado en fuente oficial.",
+    "Áreas y delegaciones concretas de cada concejal y organigrama del gobierno actual.",
+    "Cargos en la Diputación, la FEMP u otros organismos: no constan en las fuentes consultadas.",
+    "Fecha exacta de la teniencia de alcaldía (2015) y fechas de sus cargos en la Junta.",
+    "Discrepancia de fecha de licenciatura: 1986 (ficha oficial, fecha del título) frente a 1984 (Wikipedia).",
+    "Controversias: ninguna contrastada en las fuentes consultadas; eso no prueba que no existan. Tampoco se ha recopilado aún la valoración de la oposición (PSOE y Vox)."
+  ],
+  "faq": [
+    {
+      "q": "¿Quién es Carlos García Carbayo?",
+      "a": "Carlos Manuel García Carbayo (Salamanca, 1962) es el alcalde de Salamanca desde el 20 de diciembre de 2018 y presidente del PP de Salamanca desde marzo de 2023. Es licenciado en Derecho y profesor de Secundaria funcionario de la Junta de Castilla y León."
+    },
+    {
+      "q": "¿Desde cuándo es alcalde de Salamanca Carbayo?",
+      "a": "Desde el 20 de diciembre de 2018, cuando fue investido tras la dimisión de Alfonso Fernández Mañueco. Fue reelegido en junio de 2019 (con Ciudadanos) y en junio de 2023 (con mayoría absoluta)."
+    },
+    {
+      "q": "¿Qué mayoría tiene Carbayo en el Ayuntamiento de Salamanca?",
+      "a": "Mayoría absoluta desde las municipales del 28 de mayo de 2023: el PP tiene 14 de los 27 concejales, frente a 10 del PSOE y 3 de Vox."
+    },
+    {
+      "q": "¿Cuánto cobra el alcalde de Salamanca?",
+      "a": "Según el listado oficial del Ayuntamiento, Carlos García Carbayo percibió 83.022,96 € brutos en 2025 con dedicación exclusiva, la retribución más alta de los 27 miembros de la Corporación (un 5,2 % más que un teniente de alcalde con dedicación exclusiva, 78.930,20 €)."
+    },
+    {
+      "q": "¿Qué resultados electorales ha obtenido Carbayo?",
+      "a": "En 2019 el PP obtuvo 26.922 votos (36,1 %) y 11 concejales; en 2023, 30.273 votos (43,9 %) y 14 concejales: 3.351 votos más y 7,8 puntos más."
+    },
+    {
+      "q": "¿Con quién gobernó Carbayo entre 2019 y 2023?",
+      "a": "Con Ciudadanos: fue reelegido el 15 de junio de 2019 con los 11 votos del PP y los 4 de Ciudadanos, que entraron en el gobierno municipal. Desde 2023 gobierna en solitario con mayoría absoluta."
+    },
+    {
+      "q": "¿Dónde puedo consultar la declaración de bienes de Carbayo?",
+      "a": "En su ficha oficial del Ayuntamiento de Salamanca y en el Portal de Transparencia. Las declaraciones anuales de 2024 y 2025 indican «sin variación» respecto a la inicial de 2023."
+    },
+    {
+      "q": "¿Cuáles son los grandes proyectos de Carbayo en este mandato?",
+      "a": "Entre los anunciados figuran CoNEcta Salamanca (unos 20 M€ para regenerar cinco barrios) y Raíles Verdes (casi 2,9 M€ de vía verde y parque forestal), con financiación europea FEDER del 60 % y arranque previsto en 2026, y un plan de renovación de las redes de agua. Su ejecución actual no está verificada."
+    }
+  ],
+  "fuentes": [
+    {
+      "t": "Ayuntamiento de Salamanca: ficha oficial del alcalde",
+      "u": "https://www.aytosalamanca.es/w/d.-carlos-manuel-garc%C3%ADa-carbayo"
+    },
+    {
+      "t": "Ayuntamiento de Salamanca: Corporación municipal",
+      "u": "https://www.aytosalamanca.es/corporacion-municipal"
+    },
+    {
+      "t": "Ayuntamiento de Salamanca: retribuciones percibidas por los miembros de la Corporación en 2025 (PDF)",
+      "u": "https://www.aytosalamanca.es/documents/d/guest/02-retribuciones-percibidas-miembros-corporacion-2025"
+    },
+    {
+      "t": "Ayuntamiento de Salamanca: declaración anual 2025 de bienes y actividades (PDF, firmada 19-02-2026)",
+      "u": "https://www.aytosalamanca.es/documents/20119/2878577/garcia_carbayo__carlos_manuel._declaracion_anual_2025.pdf/914e9f60-c91f-d211-1bf3-922cae7b9a0e"
+    },
+    {
+      "t": "Ayuntamiento de Salamanca: declaración anual 2024 de bienes y actividades (PDF, firmada 24-01-2025)",
+      "u": "https://www.aytosalamanca.es/documents/20119/1375646/Garcia_Carbayo__Carlos_Manuel._Declaracion_anual_2024.pdf/0857f8d6-f24a-1dea-699c-fbd869996bdf"
+    },
+    {
+      "t": "Ayuntamiento de Salamanca: declaración final 2019-2023 e inicial 2023 del alcalde (PDF)",
+      "u": "https://www.aytosalamanca.es/documents/20119/217956/Alcalde_Carbayo_DECLARACIONES_DE_CAUSAS_DE_POSIBLE_INCOMPATIBILIDAD_Y_ACTIVIDADES.pdf/68dbc109-f6da-827b-21d4-45600b76dceb"
+    },
+    {
+      "t": "Ayuntamiento de Salamanca: Portal de Transparencia",
+      "u": "https://www.aytosalamanca.es/transparencia"
+    },
+    {
+      "t": "Wikipedia (es): Carlos García Carbayo",
+      "u": "https://es.wikipedia.org/wiki/Carlos_Garc%C3%ADa_Carbayo"
+    },
+    {
+      "t": "Wikipedia (en): Carlos García Carbayo",
+      "u": "https://en.wikipedia.org/wiki/Carlos_Garc%C3%ADa_Carbayo"
+    },
+    {
+      "t": "ABC (6-12-2018): Carbayo, sustituto de Mañueco, leal y discreto",
+      "u": "https://www.abc.es/espana/castilla-leon/abci-carlos-garcia-carbayo-sustituto-manueco-leal-y-discreto-201812061253_noticia.html"
+    },
+    {
+      "t": "El Norte de Castilla (15-06-2019): Carbayo, nuevo alcalde",
+      "u": "https://www.elnortedecastilla.es/salamanca/carbayo-nuevo-alcalde-20190615131706-nt.html"
+    },
+    {
+      "t": "Diario de Castilla y León (3-03-2023): primarias del PP de Salamanca",
+      "u": "https://www.diariodecastillayleon.es/salamanca/230303/17031/garcia-carbayo-presidira-pp-salamanca-arrasar-primarias-72-3-votos.html"
+    },
+    {
+      "t": "El Español (28-05-2023): García Carbayo alcanza la mayoría absoluta",
+      "u": "https://www.elespanol.com/castilla-y-leon/region/salamanca/20230528/escrutado-garcia-carbayo-pp-alcanza-mayoria-absoluta/767173493_0.html"
+    },
+    {
+      "t": "El Español (17-06-2023): Carbayo, tranquilidad para gobernar sin pactos",
+      "u": "https://www.elespanol.com/castilla-y-leon/region/salamanca/20230617/garcia-carbayo-tranquilidad-gobernar-ayuntamiento-salamana-sin/771423032_0.html"
+    },
+    {
+      "t": "El Español (21-05-2023): Carbayo se compromete a convertir Salamanca en una ciudad comprometida",
+      "u": "https://elespanol.com/castilla-y-leon/region/salamanca/20230521/carlos-garcia-carbayo-compromete-convertir-salamanca-comprometida/765423540_0.html"
+    },
+    {
+      "t": "The Objective (25-02-2025): Salamanca presenta dos nuevos planes urbanos",
+      "u": "https://theobjective.com/espana/castilla-y-leon/2025-02-25/salamanca-presenta-dos-nuevos-planes-urbanos/"
+    },
+    {
+      "t": "The Objective (18-02-2025): Salamanca renovará tuberías en veinticinco calles",
+      "u": "https://theobjective.com/espana/castilla-y-leon/2025-02-18/salamanca-renovara-tuberias-en-veinticinco-calles/"
+    },
+    {
+      "t": "El Español (12-06-2026): Carbayo en el día del patrón",
+      "u": "https://www.elespanol.com/castilla-y-leon/region/salamanca/20260612/carbayo-dia-grande-patron-salamanca-cambiado-crecido-jovenes-no-quieren-ir/1003744283994_0.html"
+    },
+    {
+      "t": "Ministerio de Hacienda, CONPREL: liquidaciones de presupuestos de entidades locales",
+      "u": "https://www.hacienda.gob.es/es-ES/CDI/Paginas/EntidadesLocales/Presupuestos.aspx"
+    },
+    {
+      "t": "Open Salamanca: concejales del Ayuntamiento de Salamanca",
+      "u": "https://opensalamanca.es/concejales-ayuntamiento-salamanca"
+    },
+    {
+      "t": "Open Salamanca: presupuesto municipal",
+      "u": "https://opensalamanca.es/presupuesto-municipal"
+    }
+  ],
+  "como_citar": "Open Salamanca (2026). Carlos García Carbayo, alcalde de Salamanca: ficha y dataset. https://opensalamanca.es/elecciones/politicos/carlos-garcia-carbayo (consultado el 24-11-2026). CC BY 4.0.",
+  "enlaces_oficiales_y_externos": {
+    "web_oficial_ayuntamiento": "https://www.aytosalamanca.es/w/d.-carlos-manuel-garc%C3%ADa-carbayo",
+    "wikipedia_es": "https://es.wikipedia.org/wiki/Carlos_Garc%C3%ADa_Carbayo",
+    "wikipedia_en": "https://en.wikipedia.org/wiki/Carlos_Garc%C3%ADa_Carbayo"
+  }
+}
