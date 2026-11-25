@@ -121,6 +121,23 @@ layout: default
         </tbody>
       </table></div>
       {%- endif %}
+      {%- assign ci = p.transparencia.cifras_declaracion_inicial %}
+      {%- if ci %}
+      <h3>Cifras de la declaración de bienes inicial</h3>
+      <p>{{ ci.texto_resumen }}{% if ci.fuente.u %} Fuente: <a href="{{ ci.fuente.u }}" rel="nofollow noopener">{{ ci.fuente.t }}</a>.{% endif %}</p>
+      {%- if ci.estado == "ok" %}
+      <div class="tabla"><table border="1" cellpadding="5" cellspacing="0">
+        <thead><tr><th>Epígrafe</th><th>Declarado</th></tr></thead>
+        <tbody>
+          <tr><td>Inmuebles con valor catastral</td><td>{{ ci.inmuebles.n_con_valor_catastral }}{% if ci.inmuebles.n_con_valor_catastral > 0 %} · suma {{ ci.inmuebles.suma_valores_catastrales_texto }}{% endif %}</td></tr>
+          <tr><td>Vehículos</td><td>{{ ci.vehiculos }}</td></tr>
+          <tr><td>Patrimonio mobiliario</td><td>{% if ci.patrimonio_mobiliario.declara %}{{ ci.patrimonio_mobiliario.categorias | join: "; " }}{% else %}nada que declarar{% endif %}</td></tr>
+          <tr><td>Deudas</td><td>{% if ci.deudas.n > 0 %}{{ ci.deudas.n }} · suma {{ ci.deudas.suma_texto }}{% else %}nada que declarar{% endif %}</td></tr>
+        </tbody>
+      </table></div>
+      <ul class="fu">{%- for l in ci.limitaciones %}<li>{{ l }}</li>{%- endfor %}</ul>
+      {%- endif %}
+      {%- endif %}
       {%- if p.transparencia.enlaces_declaraciones.size > 0 %}
       <p>Declaraciones de bienes y actividades publicadas por el Ayuntamiento:</p>
       <ul>{%- for d in p.transparencia.enlaces_declaraciones %}<li><a href="{{ d.url }}" rel="nofollow noopener">{{ d.titulo }}</a></li>{%- endfor %}</ul>

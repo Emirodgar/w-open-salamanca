@@ -1,0 +1,61 @@
+---
+layout: default
+title: "Declaraciones de bienes de los concejales de Salamanca (2023-2027): inmuebles, vehículos y deudas"
+description: "Cifras de la declaración de bienes inicial de los 27 concejales del Ayuntamiento de Salamanca: inmuebles con valor catastral, vehículos, patrimonio mobiliario y deudas, con el PDF oficial de cada uno"
+date: 25-11-2026
+modified: 25-11-2026
+parent_url: /elecciones/politicos/
+parent_title: Concejales del Ayuntamiento de Salamanca
+permalink: elecciones/politicos/declaraciones-bienes
+dataset_name: "Declaraciones de bienes iniciales de los concejales del Ayuntamiento de Salamanca, mandato 2023-2027"
+dataset_temporal: "2023-06/2023-10"
+dataset_source: "Portal de Transparencia del Ayuntamiento de Salamanca"
+dataset_source_url: "https://www.aytosalamanca.es/transparencia"
+dataset_files:
+  - elecciones/politicos/declaraciones-bienes.json
+---
+{%- assign d = site.data.declaraciones_bienes -%}
+<style>
+  .decl-pol .ans{background:#eef6ff;border:1px solid #c9dcf3;padding:14px 16px;border-radius:6px;font-size:1.08em;margin:0 0 1.2em}
+  .decl-pol .warn{background:#fff8e6;border:1px solid #ecd9a6;padding:10px 14px;border-radius:6px;font-size:.95em}
+  .decl-pol .fu{font-size:.85em;color:#5b6778;margin:.2em 0 0}
+  .decl-pol .tabla{overflow-x:auto}
+  .decl-pol td.num,.decl-pol th.num{text-align:right;white-space:nowrap}
+</style>
+
+<section class="featured dataset decl-pol" id="datos">
+  <div class="container">
+    <div class="section-header">
+      <h1 class="section-title">{{ page.title }}</h1>
+      <p class="section-description">{{ page.description }}</p>
+    </div>
+
+    <div id="section-content">
+      <p class="ans">{{ d.resumen }}</p>
+      <p class="fu">Datos extraídos el {{ d.generado_texto }} de las declaraciones de bienes y actividades que el Ayuntamiento publica en su <a href="{{ d.fuente_url }}" rel="nofollow noopener">Portal de Transparencia</a>. Cada cifra se puede comprobar en el PDF enlazado en su fila. <a href="/elecciones/politicos/declaraciones-bienes.json">Descargar JSON</a> · {{ d.licencia }}.</p>
+
+      <h2>Tabla comparada</h2>
+      <div class="tabla"><table border="1" cellpadding="5" cellspacing="0">
+        <thead><tr><th>Concejal</th><th>Grupo</th><th class="num">Inmuebles</th><th class="num">Suma valor catastral</th><th class="num">Vehículos</th><th>Patrimonio mobiliario</th><th class="num">Deudas</th><th class="num">Suma deudas</th><th>Documento</th></tr></thead>
+        <tbody>
+        {%- for f in d.personas %}
+          {%- if f.estado == "ok" %}
+          <tr><td><a href="{{ f.url }}">{{ f.nombre }}</a></td><td>{{ f.grupo }}</td><td class="num">{{ f.inmuebles_n }}</td><td class="num">{{ f.inmuebles_suma_texto }}</td><td class="num">{{ f.vehiculos }}</td><td>{{ f.mobiliario }}</td><td class="num">{{ f.deudas_n }}</td><td class="num">{{ f.deudas_suma_texto }}</td><td><a href="{{ f.documento.u }}" rel="nofollow noopener">PDF</a></td></tr>
+          {%- else %}
+          <tr><td><a href="{{ f.url }}">{{ f.nombre }}</a></td><td>{{ f.grupo }}</td><td colspan="6">{% if f.estado == "sin_documento" %}Sin declaración inicial enlazada en su ficha oficial{% else %}PDF escaneado sin texto: cifras no transcritas{% endif %}</td><td>{% if f.documento.u %}<a href="{{ f.documento.u }}" rel="nofollow noopener">PDF</a>{% else %}—{% endif %}</td></tr>
+          {%- endif %}
+        {%- endfor %}
+        </tbody>
+      </table></div>
+
+      <h2>Cómo leer estas cifras</h2>
+      <div class="warn"><ul>
+        {%- for l in d.limitaciones %}<li>{{ l }}</li>{%- endfor %}
+        <li>Una persona sin inmuebles ni deudas en esta tabla no prueba que carezca de ellos: solo que no constan en este documento.</li>
+        <li>Las declaraciones anuales de 2024 y 2025 solo recogen variaciones respecto a esta declaración inicial, y no se han transcrito aquí.</li>
+      </ul></div>
+
+      <p class="fu">Cómo citar: Open Salamanca ({{ d.generado | date: "%Y" }}). Declaraciones de bienes iniciales de los concejales del Ayuntamiento de Salamanca, mandato 2023-2027. https://opensalamanca.es/elecciones/politicos/declaraciones-bienes (consultado el {{ d.generado_texto }}). CC BY 4.0.</p>
+    </div>
+  </div>
+</section>

@@ -468,10 +468,46 @@
         }
       }
     ],
-    "nota": "Las declaraciones anuales solo recogen variaciones: «sin variación» significa que se mantiene la declaración inicial de 2023, cuyas cifras no se han transcrito en esta ficha (ver no_verificado). Base legal: art. 75.7 de la Ley de Bases de Régimen Local.",
+    "nota": "Las declaraciones anuales solo recogen variaciones: «sin variación» significa que se mantiene la declaración inicial de 2023, cuyas cifras agregadas figuran en cifras_declaracion_inicial. Base legal: art. 75.7 de la Ley de Bases de Régimen Local.",
     "declaracion_inicial_2023": {
       "t": "Ayuntamiento de Salamanca: declaración final 2019-2023 e inicial 2023 del alcalde (PDF)",
       "u": "https://www.aytosalamanca.es/documents/20119/217956/Alcalde_Carbayo_DECLARACIONES_DE_CAUSAS_DE_POSIBLE_INCOMPATIBILIDAD_Y_ACTIVIDADES.pdf/68dbc109-f6da-827b-21d4-45600b76dceb"
+    },
+    "cifras_declaracion_inicial": {
+      "estado": "ok",
+      "tipo_documento": "Final 2019-2023 e inicial 2023-2027",
+      "fecha_presentacion": "14 de junio de 2023",
+      "inmuebles": {
+        "n_con_valor_catastral": 1,
+        "valores_catastrales_eur": [
+          43871.64
+        ],
+        "suma_valores_catastrales_eur": 43871.64,
+        "suma_valores_catastrales_texto": "43.871,64 €"
+      },
+      "patrimonio_mobiliario": {
+        "declara": false,
+        "categorias": []
+      },
+      "vehiculos": 2,
+      "otros_bienes_de_especial_valor": false,
+      "deudas": {
+        "n": 0,
+        "importes_actuales_eur": [],
+        "suma_eur": 0,
+        "suma_texto": "0 €"
+      },
+      "texto_resumen": "En su declaración de bienes inicial del mandato 2023-2027 (presentada el 14 de junio de 2023), Carlos García Carbayo declara: 1 inmueble con valor catastral declarado (suma de 43.871,64 €, sin ponderar por el % de participación); 2 vehículos; ningún patrimonio mobiliario; ninguna deuda.",
+      "limitaciones": [
+        "Solo se agregan los valores que se pueden leer sin ambigüedad en el PDF: valor catastral de los inmuebles, nº de vehículos y deudas.",
+        "La suma de valores catastrales no pondera por el % de participación ni equivale al valor de mercado.",
+        "El patrimonio mobiliario (acciones, planes de pensiones, seguros) se indica solo por categorías: los PDF mezclan euros y nº de acciones y las columnas salen desalineadas, así que no se suman importes.",
+        "Es la declaración presentada al inicio del mandato; las anuales posteriores solo recogen variaciones."
+      ],
+      "fuente": {
+        "t": "Ayuntamiento de Salamanca: Declaración de Bienes y Actividades. Final 2019-2023 e Inicial 2023 (PDF)",
+        "u": "https://www.aytosalamanca.es/documents/20119/217956/Alcalde_Carbayo_DECLARACIONES_DE_CAUSAS_DE_POSIBLE_INCOMPATIBILIDAD_Y_ACTIVIDADES.pdf/68dbc109-f6da-827b-21d4-45600b76dceb"
+      }
     },
     "portal": {
       "t": "Ayuntamiento de Salamanca: Portal de Transparencia",
@@ -622,7 +658,7 @@
     }
   ],
   "no_verificado": [
-    "Cifras de patrimonio, bienes e ingresos de la declaración inicial de 2023 (las anuales 2024 y 2025 solo indican «sin variación»).",
+    "Ingresos, importes del patrimonio mobiliario y valor de mercado de los bienes: la declaración inicial de 2023 no los da en una forma sumable (las anuales 2024 y 2025 solo indican «sin variación»).",
     "Estado actual (2026) de CoNEcta Salamanca, Raíles Verdes y las redes de agua.",
     "Programa electoral completo del PP en 2023 con compromisos medibles: no localizado en fuente oficial.",
     "Áreas y delegaciones concretas de cada concejal y organigrama del gobierno actual.",
@@ -713,7 +749,7 @@
     },
     {
       "q": "¿Dónde puedo consultar la declaración de bienes de Carbayo?",
-      "a": "En su ficha oficial del Ayuntamiento de Salamanca y en el Portal de Transparencia. Las declaraciones anuales de 2024 y 2025 indican «sin variación» respecto a la inicial de 2023."
+      "a": "En su ficha oficial del Ayuntamiento de Salamanca y en el Portal de Transparencia. Las declaraciones anuales de 2024 y 2025 indican «sin variación» respecto a la inicial de 2023. En su declaración de bienes inicial del mandato 2023-2027 (presentada el 14 de junio de 2023), Carlos García Carbayo declara: 1 inmueble con valor catastral declarado (suma de 43.871,64 €, sin ponderar por el % de participación); 2 vehículos; ningún patrimonio mobiliario; ninguna deuda."
     },
     {
       "q": "¿Cuáles son los grandes proyectos de Carbayo en este mandato?",

@@ -25,6 +25,7 @@ import sys
 from pathlib import Path as _P
 sys.path.insert(0, str(_P(__file__).resolve().parent))
 import fechas as FE  # noqa: E402
+import declaraciones as DC  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[2]
 FECHA_ACT = FE.iso()
@@ -418,12 +419,14 @@ def build(p):
                     "telefono": " / ".join(f"+34 {t}" for t in f["telefonos"]) or None,
                     "email": f["email"]}
         decls = f["declaraciones"]
+        cifras = DC.bloque(f["url"], p["nombre"])
         cargo_of = f.get("cargo_oficial")
     else:
         fo = p["ficha"]
         fo = {**fo, "texto": p["ficha"]["texto"]}
         contacto = {"direccion": "Casa Consistorial, Plaza Mayor, 1, 37002 Salamanca", "telefono": None, "email": None}
         decls = []
+        cifras = None
         cargo_of = None
 
     # trayectoria
@@ -445,12 +448,16 @@ def build(p):
     if vp and vp["votaciones_con_voto_atribuible"]:
         faq.append({"q": f"¿Cómo vota {p['hab']} en el Pleno del Ayuntamiento de Salamanca?",
                     "a": vp["texto_resumen"] + f" Coincidió con el voto del PP en el {es(vp['coincide_con_voto_del_PP']['pct'], 1)} % y con el del PSOE en el {es(vp['coincide_con_voto_del_PSOE']['pct'], 1)} % de las votaciones no unánimes. Fuente: actas de los Plenos Municipales."})
+    if cifras and cifras["estado"] == "ok":
+        faq.append({"q": f"¿Qué patrimonio declara {p['hab']}?",
+                    "a": cifras["texto_resumen"] + " Fuente: declaración de bienes publicada por el Ayuntamiento de Salamanca."})
     if contacto["email"]:
         faq.append({"q": f"¿Cómo contactar con {p['hab']}?",
                     "a": f"Por el correo institucional {contacto['email']}" + (f" o por teléfono en el {contacto['telefono']}" if contacto["telefono"] else "") + ", según su ficha oficial en la web del Ayuntamiento de Salamanca."})
 
     nv = [
-        "Cifras de patrimonio, bienes e ingresos de las declaraciones de bienes y actividades: se enlazan las publicadas por el Ayuntamiento, pero no se transcriben.",
+        ("Importes del patrimonio mobiliario (acciones, planes de pensiones, seguros), ingresos y valor de mercado de los bienes: no se transcriben; las cifras agregadas de la declaración inicial figuran en la sección de transparencia." if cifras and cifras["estado"] == "ok" else
+         "Cifras de patrimonio, bienes e ingresos de las declaraciones de bienes y actividades: se enlazan las publicadas por el Ayuntamiento, pero no se transcriben."),
         "Puesto en la lista de 2023 y votos personales en las urnas: no recopilados. Las votaciones del Pleno se resumen en la sección correspondiente, con sus límites.",
         "Fecha de nacimiento y trayectoria política previa al Ayuntamiento: no figuran en la ficha oficial salvo lo reproducido arriba." if not p.get("nacimiento") else
         "Trayectoria política y profesional anterior a la nota oficial de su toma de posesión.",
@@ -503,7 +510,8 @@ def build(p):
         "retribucion": ret,
         "transparencia": {
             "enlaces_declaraciones": decls,
-            "nota": "Base legal: art. 75.7 de la Ley de Bases de Régimen Local. Se enlazan las declaraciones que el Ayuntamiento publica; las anuales solo recogen variaciones respecto a la inicial de 2023, cuyas cifras no se transcriben aquí.",
+            "cifras_declaracion_inicial": cifras,
+            "nota": "Base legal: art. 75.7 de la Ley de Bases de Régimen Local. Se enlazan las declaraciones que el Ayuntamiento publica; las anuales solo recogen variaciones respecto a la inicial.",
             "portal": S["transp"],
         },
         "gobierno_municipal": {
@@ -624,6 +632,50 @@ def main():
     FE.tocar_modified(ROOT / "elecciones/politicos/index.html")
     print("fichas:", len(PEOPLE) + 1, "| total 2025:", es(tot, 2), "PP", es(tpp, 2), "PSOE", es(tpsoe, 2), "Vox", es(tvox, 2))
 
+    # Dataset comparado de declaraciones de bienes iniciales (2023)
+    filas = []
+    for i in indice:
+        dj = json.loads((datadir / f"{i['slug']}.json").read_text(encoding="utf-8"))
+        c = dj["transparencia"].get("cifras_declaracion_inicial")
+        if not c:
+            filas.append({"slug": i["slug"], "nombre": i["nombre"], "grupo": i["grupo"], "cargo": i["cargo"], "url": i["url"],
+                          "estado": "sin_documento", "documento": None})
+            continue
+        fila = {"slug": i["slug"], "nombre": i["nombre"], "grupo": i["grupo"], "cargo": i["cargo"], "url": i["url"], "estado": c["estado"]}
+        if c["estado"] == "ok":
+            fila.update({
+                "inmuebles_n": c["inmuebles"]["n_con_valor_catastral"],
+                "inmuebles_suma_eur": c["inmuebles"]["suma_valores_catastrales_eur"],
+                "inmuebles_suma_texto": c["inmuebles"]["suma_valores_catastrales_texto"] if c["inmuebles"]["n_con_valor_catastral"] else "—",
+                "vehiculos": c["vehiculos"],
+                "mobiliario": "; ".join(c["patrimonio_mobiliario"]["categorias"]) or "nada",
+                "deudas_n": c["deudas"]["n"], "deudas_suma_eur": c["deudas"]["suma_eur"],
+                "deudas_suma_texto": c["deudas"]["suma_texto"] if c["deudas"]["n"] else "—",
+                "fecha_presentacion": c["fecha_presentacion"], "documento": c["fuente"]})
+        else:
+            fila["documento"] = c["fuente"]
+        filas.append(fila)
+    ok = [f for f in filas if f["estado"] == "ok"]
+    con_inm = [f for f in ok if f["inmuebles_n"]]
+    con_deu = [f for f in ok if f["deudas_n"]]
+    con_mob = [f for f in ok if f["mobiliario"] != "nada"]
+    sin_ning = [f for f in ok if not f["inmuebles_n"] and not f["deudas_n"] and f["mobiliario"] == "nada" and not f["vehiculos"]]
+    mayor_inm = max(ok, key=lambda f: f["inmuebles_suma_eur"])
+    mayor_deu = max(con_deu, key=lambda f: f["deudas_suma_eur"])
+    nesc = sum(1 for f in filas if f["estado"] == "pdf_escaneado_sin_texto")
+    nsin = sum(1 for f in filas if f["estado"] == "sin_documento")
+    resumen_decl = (f"De las {len(filas)} personas de la Corporación, {len(ok)} tienen declaración inicial legible ({nesc} está escaneada sin texto y {nsin} no tiene ninguna enlazada en su ficha oficial). Entre ellas, {len(con_inm)} declaran inmuebles, "
+                    f"{len(con_mob)} patrimonio mobiliario y {len(con_deu)} deudas. La mayor suma de valores catastrales declarados es la de {mayor_inm['nombre']} "
+                    f"({mayor_inm['inmuebles_suma_texto']}, sin ponderar por participación) y la mayor deuda conjunta, la de {mayor_deu['nombre']} ({mayor_deu['deudas_suma_texto']}).")
+    (ROOT / "_data" / "declaraciones_bienes.json").write_text(json.dumps({
+        "titulo": "Declaraciones de bienes iniciales de los concejales del Ayuntamiento de Salamanca (mandato 2023-2027)",
+        "generado": FECHA_ACT, "generado_texto": FECHA_ACT_TXT,
+        "resumen": resumen_decl, "limitaciones": DC.LIMITES,
+        "fuente": "Ayuntamiento de Salamanca, Portal de Transparencia: declaraciones de bienes y actividades de la Corporación",
+        "fuente_url": "https://www.aytosalamanca.es/transparencia", "licencia": "CC BY 4.0 (citar «Open Salamanca» y enlazar la fuente)",
+        "personas": filas}, ensure_ascii=False, indent=1) + chr(10), encoding="utf-8")
+    FE.tocar_modified(ROOT / "elecciones/politicos/declaraciones-bienes.html")
+
     # llms.txt: bloque entre marcadores
     llms = ROOT / "llms.txt"
     txt = llms.read_text(encoding="utf-8")
@@ -632,6 +684,7 @@ def main():
     bloque = ["", "<!-- fichas-politicos:start -->", "## Fichas de concejales del Ayuntamiento de Salamanca (mandato 2023-2027)", "",
               "- [Concejales del Ayuntamiento de Salamanca: listado, grupos y retribuciones 2025](https://opensalamanca.es/elecciones/politicos/): Las 27 personas de la Corporación (gobierno del PP y oposición) con cargo, grupo y retribución bruta 2025 del listado oficial; datos en JSON: https://opensalamanca.es/elecciones/politicos/concejales-salamanca-2023-2027.json"]
     bloque.append("- [Votaciones del Pleno del Ayuntamiento de Salamanca 2023-2027](https://opensalamanca.es/elecciones/politicos/votaciones-pleno): Voto de cada grupo y de cada concejal en las votaciones de fondo, mociones aprobadas y rechazadas por grupo y coincidencias entre grupos, extraído de las actas oficiales; datos en JSON: https://opensalamanca.es/elecciones/politicos/votaciones-pleno.json")
+    bloque.append("- [Declaraciones de bienes de los concejales del Ayuntamiento de Salamanca 2023](https://opensalamanca.es/elecciones/politicos/declaraciones-bienes): Inmuebles con valor catastral, vehículos, patrimonio mobiliario y deudas declarados por cada concejal al inicio del mandato, con el PDF oficial. JSON: https://opensalamanca.es/elecciones/politicos/declaraciones-bienes.json")
     for i in indice:
         nom = i["nombre"]
         bloque.append(f"- [{nom}]({i['url']}): {i['cargo']} ({i['grupo']}); biografía, formación, trayectoria, retribución oficial 2025 y transparencia con fuente en cada dato. JSON: {i['url']}.json")

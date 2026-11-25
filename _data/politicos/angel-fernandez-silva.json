@@ -126,7 +126,41 @@
         "url": "https://www.aytosalamanca.es/documents/20119/217956/Angel_Fdz_DECLARACIONES+DE+CAUSAS+DE+POSIBLE+INCOMPATIBILIDAD+Y+ACTIVIDADES.pdf/1428ebcf-b04e-2c47-97ae-31d5733415a9?t=1738761791706"
       }
     ],
-    "nota": "Base legal: art. 75.7 de la Ley de Bases de Régimen Local. Se enlazan las declaraciones que el Ayuntamiento publica; las anuales solo recogen variaciones respecto a la inicial de 2023, cuyas cifras no se transcriben aquí.",
+    "cifras_declaracion_inicial": {
+      "estado": "ok",
+      "tipo_documento": "Final 2019-2023 e inicial 2023-2027",
+      "fecha_presentacion": "6 de junio de 2023",
+      "inmuebles": {
+        "n_con_valor_catastral": 0,
+        "valores_catastrales_eur": [],
+        "suma_valores_catastrales_eur": 0,
+        "suma_valores_catastrales_texto": "0 €"
+      },
+      "patrimonio_mobiliario": {
+        "declara": false,
+        "categorias": []
+      },
+      "vehiculos": 1,
+      "otros_bienes_de_especial_valor": false,
+      "deudas": {
+        "n": 0,
+        "importes_actuales_eur": [],
+        "suma_eur": 0,
+        "suma_texto": "0 €"
+      },
+      "texto_resumen": "En su declaración de bienes inicial del mandato 2023-2027 (presentada el 6 de junio de 2023), Ángel Fernández Silva declara: ningún inmueble con valor catastral; 1 vehículo; ningún patrimonio mobiliario; ninguna deuda.",
+      "limitaciones": [
+        "Solo se agregan los valores que se pueden leer sin ambigüedad en el PDF: valor catastral de los inmuebles, nº de vehículos y deudas.",
+        "La suma de valores catastrales no pondera por el % de participación ni equivale al valor de mercado.",
+        "El patrimonio mobiliario (acciones, planes de pensiones, seguros) se indica solo por categorías: los PDF mezclan euros y nº de acciones y las columnas salen desalineadas, así que no se suman importes.",
+        "Es la declaración presentada al inicio del mandato; las anuales posteriores solo recogen variaciones."
+      ],
+      "fuente": {
+        "t": "Ayuntamiento de Salamanca: Declaración de Bienes y Actividades. Final 2021-2023 e Inicial 2023 (PDF)",
+        "u": "https://www.aytosalamanca.es/documents/20119/217956/Angel_Fdz_DECLARACIONES+DE+CAUSAS+DE+POSIBLE+INCOMPATIBILIDAD+Y+ACTIVIDADES.pdf/1428ebcf-b04e-2c47-97ae-31d5733415a9"
+      }
+    },
+    "nota": "Base legal: art. 75.7 de la Ley de Bases de Régimen Local. Se enlazan las declaraciones que el Ayuntamiento publica; las anuales solo recogen variaciones respecto a la inicial.",
     "portal": {
       "t": "Ayuntamiento de Salamanca: Portal de Transparencia",
       "u": "https://www.aytosalamanca.es/transparencia"
@@ -188,7 +222,7 @@
     "metodo": "El acta de cada Pleno recoge el voto por grupo («el voto a favor del Grupo Popular [14 concejales]») y, por nombre, el de los concejales no adscritos. El voto de cada persona se atribuye cuando el recuento de su grupo coincide con los presentes de ese grupo en la cabecera del acta; si alguien abandona la sala, no se atribuye."
   },
   "no_verificado": [
-    "Cifras de patrimonio, bienes e ingresos de las declaraciones de bienes y actividades: se enlazan las publicadas por el Ayuntamiento, pero no se transcriben.",
+    "Importes del patrimonio mobiliario (acciones, planes de pensiones, seguros), ingresos y valor de mercado de los bienes: no se transcriben; las cifras agregadas de la declaración inicial figuran en la sección de transparencia.",
     "Puesto en la lista de 2023 y votos personales en las urnas: no recopilados. Las votaciones del Pleno se resumen en la sección correspondiente, con sus límites.",
     "Fecha de nacimiento y trayectoria política previa al Ayuntamiento: no figuran en la ficha oficial salvo lo reproducido arriba.",
     "Controversias: ninguna contrastada en las fuentes consultadas; eso no prueba que no existan. No se ha recopilado la valoración de otros grupos.",
@@ -218,6 +252,10 @@
     {
       "q": "¿Cómo vota Ángel Fernández Silva en el Pleno del Ayuntamiento de Salamanca?",
       "a": "Entre el 27-06-2023 y el 16-10-2026, consta en la cabecera de 54 de las 54 actas de Pleno analizadas (100,0 %). En 569 votaciones de fondo con voto atribuible, votó a favor en 405, en contra en 161 y se abstuvo en 3. Coincidió con el voto del PP en el 100,0 % y con el del PSOE en el 13,3 % de las votaciones no unánimes. Fuente: actas de los Plenos Municipales."
+    },
+    {
+      "q": "¿Qué patrimonio declara Ángel Fernández Silva?",
+      "a": "En su declaración de bienes inicial del mandato 2023-2027 (presentada el 6 de junio de 2023), Ángel Fernández Silva declara: ningún inmueble con valor catastral; 1 vehículo; ningún patrimonio mobiliario; ninguna deuda. Fuente: declaración de bienes publicada por el Ayuntamiento de Salamanca."
     },
     {
       "q": "¿Cómo contactar con Ángel Fernández Silva?",

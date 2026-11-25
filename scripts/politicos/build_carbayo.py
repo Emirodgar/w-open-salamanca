@@ -14,6 +14,7 @@ import sys
 from pathlib import Path as _P
 sys.path.insert(0, str(_P(__file__).resolve().parent))
 import fechas as FE  # noqa: E402
+import declaraciones as DC  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[2]
 OUT = ROOT / "_data" / "politicos" / "carlos-garcia-carbayo.json"
@@ -143,6 +144,7 @@ if _pp.exists():
 
 _ficha = json.loads((ROOT / "scripts/politicos/fuentes/fichas_oficiales.json").read_text(encoding="utf-8"))["fichas"]
 _f = next(v for k, v in _ficha.items() if "carbayo" in k)
+CIFRAS = DC.bloque(_f["url"], "Carlos García Carbayo")
 FICHA_OFICIAL = {
     "url": _f["url"],
     "texto": "Texto tal como lo publica el Ayuntamiento de Salamanca en la ficha oficial del alcalde (consultada el " + FE.dmy() + ").",
@@ -280,8 +282,9 @@ data = {
              "patrimonio_inmobiliario": "sin variación", "patrimonio_mobiliario": "sin variación", "vehiculos": "sin variación",
              "otros_bienes": "sin variación", "deudas": "sin variación", "fuente": F["decl24"]},
         ],
-        "nota": "Las declaraciones anuales solo recogen variaciones: «sin variación» significa que se mantiene la declaración inicial de 2023, cuyas cifras no se han transcrito en esta ficha (ver no_verificado). Base legal: art. 75.7 de la Ley de Bases de Régimen Local.",
+        "nota": "Las declaraciones anuales solo recogen variaciones: «sin variación» significa que se mantiene la declaración inicial de 2023, cuyas cifras agregadas figuran en cifras_declaracion_inicial. Base legal: art. 75.7 de la Ley de Bases de Régimen Local.",
         "declaracion_inicial_2023": F["declini"],
+        "cifras_declaracion_inicial": CIFRAS,
         "portal": F["transp"],
     },
     "presupuesto_municipal_durante_su_gobierno": {
@@ -315,7 +318,7 @@ data = {
          "fuentes": fu("esp26")},
     ],
     "no_verificado": [
-        "Cifras de patrimonio, bienes e ingresos de la declaración inicial de 2023 (las anuales 2024 y 2025 solo indican «sin variación»).",
+        "Ingresos, importes del patrimonio mobiliario y valor de mercado de los bienes: la declaración inicial de 2023 no los da en una forma sumable (las anuales 2024 y 2025 solo indican «sin variación»).",
         "Estado actual (2026) de CoNEcta Salamanca, Raíles Verdes y las redes de agua.",
         "Programa electoral completo del PP en 2023 con compromisos medibles: no localizado en fuente oficial.",
         "Áreas y delegaciones concretas de cada concejal y organigrama del gobierno actual.",
@@ -342,7 +345,7 @@ data = {
         *([{"q": "¿Cómo vota Carbayo en el Pleno del Ayuntamiento de Salamanca?",
             "a": VOTACIONES["texto_resumen"] + " Como miembro del Grupo Popular, su voto es el que el acta recoge para el grupo. Fuente: actas de los Plenos Municipales."}] if VOTACIONES else []),
         {"q": "¿Dónde puedo consultar la declaración de bienes de Carbayo?",
-         "a": "En su ficha oficial del Ayuntamiento de Salamanca y en el Portal de Transparencia. Las declaraciones anuales de 2024 y 2025 indican «sin variación» respecto a la inicial de 2023."},
+         "a": "En su ficha oficial del Ayuntamiento de Salamanca y en el Portal de Transparencia. Las declaraciones anuales de 2024 y 2025 indican «sin variación» respecto a la inicial de 2023. " + CIFRAS["texto_resumen"]},
         {"q": "¿Cuáles son los grandes proyectos de Carbayo en este mandato?",
          "a": "Entre los anunciados figuran CoNEcta Salamanca (unos 20 M€ para regenerar cinco barrios) y Raíles Verdes (casi 2,9 M€ de vía verde y parque forestal), con financiación europea FEDER del 60 % y arranque previsto en 2026, y un plan de renovación de las redes de agua. Su ejecución actual no está verificada."},
     ],

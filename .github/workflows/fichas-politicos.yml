@@ -94,7 +94,7 @@ jobs:
       - name: Commit y push si hay cambios
         if: steps.cambios.outputs.hay == 'true' && (github.event_name == 'schedule' || inputs.publicar)
         run: |
-          git add _data/politicos _data/concejales_indice.json _data/pleno elecciones/politicos llms.txt \
+          git add _data/politicos _data/concejales_indice.json _data/declaraciones_bienes.json _data/pleno elecciones/politicos llms.txt \
                   scripts/politicos/fuentes scripts/politicos/pleno/fuentes
           if git diff --cached --quiet; then
             echo "Sin cambios."

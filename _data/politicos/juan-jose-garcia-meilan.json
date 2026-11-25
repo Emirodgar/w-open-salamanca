@@ -128,7 +128,49 @@
         "url": "https://www.aytosalamanca.es/documents/20119/217956/JuanJose_Garcia_DECLARACIONES_DE_CAUSAS_DE_POSIBLE_INCOMPATIBILIDAD_Y_ACTIVIDADES.pdf/c5283346-d7ab-3ba2-0d31-6d02f8dc1105?t=1712585873337"
       }
     ],
-    "nota": "Base legal: art. 75.7 de la Ley de Bases de Régimen Local. Se enlazan las declaraciones que el Ayuntamiento publica; las anuales solo recogen variaciones respecto a la inicial de 2023, cuyas cifras no se transcriben aquí.",
+    "cifras_declaracion_inicial": {
+      "estado": "ok",
+      "tipo_documento": "Final 2019-2023 e inicial 2023-2027",
+      "fecha_presentacion": "30 de mayo de 2023",
+      "inmuebles": {
+        "n_con_valor_catastral": 2,
+        "valores_catastrales_eur": [
+          40070.0,
+          21100.0
+        ],
+        "suma_valores_catastrales_eur": 61170.0,
+        "suma_valores_catastrales_texto": "61.170 €"
+      },
+      "patrimonio_mobiliario": {
+        "declara": true,
+        "categorias": [
+          "acciones y participaciones",
+          "seguros de vida, planes de pensiones o rentas"
+        ]
+      },
+      "vehiculos": 1,
+      "otros_bienes_de_especial_valor": false,
+      "deudas": {
+        "n": 1,
+        "importes_actuales_eur": [
+          53934.0
+        ],
+        "suma_eur": 53934.0,
+        "suma_texto": "53.934 €"
+      },
+      "texto_resumen": "En su declaración de bienes inicial del mandato 2023-2027 (presentada el 30 de mayo de 2023), Juan José García Meilán declara: 2 inmuebles con valor catastral declarado (suma de 61.170 €, sin ponderar por el % de participación); 1 vehículo; patrimonio mobiliario en acciones y participaciones y en seguros de vida, planes de pensiones o rentas; 1 deuda por un importe actual conjunto de 53.934 €.",
+      "limitaciones": [
+        "Solo se agregan los valores que se pueden leer sin ambigüedad en el PDF: valor catastral de los inmuebles, nº de vehículos y deudas.",
+        "La suma de valores catastrales no pondera por el % de participación ni equivale al valor de mercado.",
+        "El patrimonio mobiliario (acciones, planes de pensiones, seguros) se indica solo por categorías: los PDF mezclan euros y nº de acciones y las columnas salen desalineadas, así que no se suman importes.",
+        "Es la declaración presentada al inicio del mandato; las anuales posteriores solo recogen variaciones."
+      ],
+      "fuente": {
+        "t": "Ayuntamiento de Salamanca: Declaración de Bienes y Actividades. Final 2019-2023 e Inicial 2023 (PDF)",
+        "u": "https://www.aytosalamanca.es/documents/20119/217956/JuanJose_Garcia_DECLARACIONES_DE_CAUSAS_DE_POSIBLE_INCOMPATIBILIDAD_Y_ACTIVIDADES.pdf/c5283346-d7ab-3ba2-0d31-6d02f8dc1105"
+      }
+    },
+    "nota": "Base legal: art. 75.7 de la Ley de Bases de Régimen Local. Se enlazan las declaraciones que el Ayuntamiento publica; las anuales solo recogen variaciones respecto a la inicial.",
     "portal": {
       "t": "Ayuntamiento de Salamanca: Portal de Transparencia",
       "u": "https://www.aytosalamanca.es/transparencia"
@@ -190,7 +232,7 @@
     "metodo": "El acta de cada Pleno recoge el voto por grupo («el voto a favor del Grupo Popular [14 concejales]») y, por nombre, el de los concejales no adscritos. El voto de cada persona se atribuye cuando el recuento de su grupo coincide con los presentes de ese grupo en la cabecera del acta; si alguien abandona la sala, no se atribuye."
   },
   "no_verificado": [
-    "Cifras de patrimonio, bienes e ingresos de las declaraciones de bienes y actividades: se enlazan las publicadas por el Ayuntamiento, pero no se transcriben.",
+    "Importes del patrimonio mobiliario (acciones, planes de pensiones, seguros), ingresos y valor de mercado de los bienes: no se transcriben; las cifras agregadas de la declaración inicial figuran en la sección de transparencia.",
     "Puesto en la lista de 2023 y votos personales en las urnas: no recopilados. Las votaciones del Pleno se resumen en la sección correspondiente, con sus límites.",
     "Fecha de nacimiento y trayectoria política previa al Ayuntamiento: no figuran en la ficha oficial salvo lo reproducido arriba.",
     "Controversias: ninguna contrastada en las fuentes consultadas; eso no prueba que no existan. No se ha recopilado la valoración de otros grupos."
@@ -219,6 +261,10 @@
     {
       "q": "¿Cómo vota Juan José García Meilán en el Pleno del Ayuntamiento de Salamanca?",
       "a": "Entre el 27-06-2023 y el 16-10-2026, consta en la cabecera de 51 de las 54 actas de Pleno analizadas (94,4 %). En 502 votaciones de fondo con voto atribuible, votó a favor en 232, en contra en 92 y se abstuvo en 178. Coincidió con el voto del PP en el 14,5 % y con el del PSOE en el 100,0 % de las votaciones no unánimes. Fuente: actas de los Plenos Municipales."
+    },
+    {
+      "q": "¿Qué patrimonio declara Juan José García Meilán?",
+      "a": "En su declaración de bienes inicial del mandato 2023-2027 (presentada el 30 de mayo de 2023), Juan José García Meilán declara: 2 inmuebles con valor catastral declarado (suma de 61.170 €, sin ponderar por el % de participación); 1 vehículo; patrimonio mobiliario en acciones y participaciones y en seguros de vida, planes de pensiones o rentas; 1 deuda por un importe actual conjunto de 53.934 €. Fuente: declaración de bienes publicada por el Ayuntamiento de Salamanca."
     },
     {
       "q": "¿Cómo contactar con Juan José García Meilán?",

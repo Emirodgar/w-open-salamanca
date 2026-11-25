@@ -1,0 +1,563 @@
+{
+ "titulo": "Declaraciones de bienes iniciales de los concejales del Ayuntamiento de Salamanca (mandato 2023-2027)",
+ "generado": "2026-11-25",
+ "generado_texto": "25 de noviembre de 2026",
+ "resumen": "De las 27 personas de la Corporación, 25 tienen declaración inicial legible (1 está escaneada sin texto y 1 no tiene ninguna enlazada en su ficha oficial). Entre ellas, 21 declaran inmuebles, 16 patrimonio mobiliario y 15 deudas. La mayor suma de valores catastrales declarados es la de Ignacio Rivas Serrano (252.374,61 €, sin ponderar por participación) y la mayor deuda conjunta, la de María José Coca Sánchez (179.094,12 €).",
+ "limitaciones": [
+  "Solo se agregan los valores que se pueden leer sin ambigüedad en el PDF: valor catastral de los inmuebles, nº de vehículos y deudas.",
+  "La suma de valores catastrales no pondera por el % de participación ni equivale al valor de mercado.",
+  "El patrimonio mobiliario (acciones, planes de pensiones, seguros) se indica solo por categorías: los PDF mezclan euros y nº de acciones y las columnas salen desalineadas, así que no se suman importes.",
+  "Es la declaración presentada al inicio del mandato; las anuales posteriores solo recogen variaciones."
+ ],
+ "fuente": "Ayuntamiento de Salamanca, Portal de Transparencia: declaraciones de bienes y actividades de la Corporación",
+ "fuente_url": "https://www.aytosalamanca.es/transparencia",
+ "licencia": "CC BY 4.0 (citar «Open Salamanca» y enlazar la fuente)",
+ "personas": [
+  {
+   "slug": "carlos-garcia-carbayo",
+   "nombre": "Carlos García Carbayo",
+   "grupo": "PP",
+   "cargo": "Alcalde de Salamanca",
+   "url": "https://opensalamanca.es/elecciones/politicos/carlos-garcia-carbayo",
+   "estado": "ok",
+   "inmuebles_n": 1,
+   "inmuebles_suma_eur": 43871.64,
+   "inmuebles_suma_texto": "43.871,64 €",
+   "vehiculos": 2,
+   "mobiliario": "nada",
+   "deudas_n": 0,
+   "deudas_suma_eur": 0,
+   "deudas_suma_texto": "—",
+   "fecha_presentacion": "14 de junio de 2023",
+   "documento": {
+    "t": "Ayuntamiento de Salamanca: Declaración de Bienes y Actividades. Final 2019-2023 e Inicial 2023 (PDF)",
+    "u": "https://www.aytosalamanca.es/documents/20119/217956/Alcalde_Carbayo_DECLARACIONES_DE_CAUSAS_DE_POSIBLE_INCOMPATIBILIDAD_Y_ACTIVIDADES.pdf/68dbc109-f6da-827b-21d4-45600b76dceb"
+   }
+  },
+  {
+   "slug": "almudena-parres-cabrera",
+   "nombre": "Almudena Parres Cabrera",
+   "grupo": "PP",
+   "cargo": "Primera teniente de alcalde y concejala delegada de Deportes",
+   "url": "https://opensalamanca.es/elecciones/politicos/almudena-parres-cabrera",
+   "estado": "ok",
+   "inmuebles_n": 1,
+   "inmuebles_suma_eur": 55838.96,
+   "inmuebles_suma_texto": "55.838,96 €",
+   "vehiculos": 1,
+   "mobiliario": "acciones y participaciones",
+   "deudas_n": 1,
+   "deudas_suma_eur": 171000.0,
+   "deudas_suma_texto": "171.000 €",
+   "fecha_presentacion": "7 de junio de 2023",
+   "documento": {
+    "t": "Ayuntamiento de Salamanca: Declaración de Bienes y Actividades. Final 2019-2023 e Inicial 2023 (PDF)",
+    "u": "https://www.aytosalamanca.es/documents/20119/217956/Almudena_DECLARACIONES_DE_CAUSAS_DE_POSIBLE_INCOMPATIBILIDAD_Y_ACTIVIDADES.pdf/52030b04-81ca-a7df-9127-e485af5e7a35"
+   }
+  },
+  {
+   "slug": "miryam-rodriguez-lopez",
+   "nombre": "Miryam Rodríguez López",
+   "grupo": "PP",
+   "cargo": "Segunda teniente de alcalde y concejala delegada de Familia e Igualdad de Oportunidades",
+   "url": "https://opensalamanca.es/elecciones/politicos/miryam-rodriguez-lopez",
+   "estado": "ok",
+   "inmuebles_n": 4,
+   "inmuebles_suma_eur": 46775.54,
+   "inmuebles_suma_texto": "46.775,54 €",
+   "vehiculos": 0,
+   "mobiliario": "nada",
+   "deudas_n": 0,
+   "deudas_suma_eur": 0,
+   "deudas_suma_texto": "—",
+   "fecha_presentacion": "15 de junio de 2023",
+   "documento": {
+    "t": "Ayuntamiento de Salamanca: Declaración de Bienes y Actividades. Final 2019-2023 e Inicial 2023 (PDF)",
+    "u": "https://www.aytosalamanca.es/documents/20119/217956/Miryam_DECLARACIONES_DE_CAUSAS_DE_POSIBLE_INCOMPATIBILIDAD_Y_ACTIVIDADES.pdf/52e3f210-dd15-0f93-e867-847297c7995e"
+   }
+  },
+  {
+   "slug": "jose-fernando-carabias-acosta",
+   "nombre": "Fernando Carabias Acosta",
+   "grupo": "PP",
+   "cargo": "Tercer teniente de alcalde y concejal delegado de Fomento, Gestión Urbana y Policía Administrativa",
+   "url": "https://opensalamanca.es/elecciones/politicos/jose-fernando-carabias-acosta",
+   "estado": "ok",
+   "inmuebles_n": 8,
+   "inmuebles_suma_eur": 210852.43,
+   "inmuebles_suma_texto": "210.852,43 €",
+   "vehiculos": 3,
+   "mobiliario": "acciones y participaciones; seguros de vida, planes de pensiones o rentas",
+   "deudas_n": 1,
+   "deudas_suma_eur": 98577.0,
+   "deudas_suma_texto": "98.577 €",
+   "fecha_presentacion": "6 de junio de 2023",
+   "documento": {
+    "t": "Ayuntamiento de Salamanca: Declaración de Bienes y Actividades. Final 2019-2023 e Inicial 2023 (PDF)",
+    "u": "https://www.aytosalamanca.es/documents/20119/217956/Carabias_DECLARACIONES_DE_CAUSAS_DE_POSIBLE_INCOMPATIBILIDAD_Y_ACTIVIDADES.pdf/04725b90-a421-b0d0-8dbb-8980c66648ee"
+   }
+  },
+  {
+   "slug": "fernando-javier-rodriguez-alonso",
+   "nombre": "Fernando Rodríguez Alonso",
+   "grupo": "PP",
+   "cargo": "Cuarto teniente de alcalde y concejal delegado de Hacienda, Régimen Interior y Contratación",
+   "url": "https://opensalamanca.es/elecciones/politicos/fernando-javier-rodriguez-alonso",
+   "estado": "ok",
+   "inmuebles_n": 1,
+   "inmuebles_suma_eur": 122265.89,
+   "inmuebles_suma_texto": "122.265,89 €",
+   "vehiculos": 3,
+   "mobiliario": "seguros de vida, planes de pensiones o rentas",
+   "deudas_n": 1,
+   "deudas_suma_eur": 27968.2,
+   "deudas_suma_texto": "27.968,20 €",
+   "fecha_presentacion": "8 de junio de 2023",
+   "documento": {
+    "t": "Ayuntamiento de Salamanca: Declaración de Bienes y Actividades. Final 2019-2023 e Inicial 2023 (PDF)",
+    "u": "https://www.aytosalamanca.es/documents/20119/217956/Fernando_Rodrxguez_DECLARACIONES_DE_CAUSAS_DE_POSIBLE_INCOMPATIBILIDAD_Y_ACTIVIDADES.pdf/7bb96e92-06f0-e3c3-c58d-97c09cb5ecd9"
+   }
+  },
+  {
+   "slug": "maria-del-carmen-seguin-kattan",
+   "nombre": "Carmen Seguín Kattán",
+   "grupo": "PP",
+   "cargo": "Quinta teniente de alcalde y concejala delegada de Relaciones Institucionales, Festejos y Tradiciones",
+   "url": "https://opensalamanca.es/elecciones/politicos/maria-del-carmen-seguin-kattan",
+   "estado": "ok",
+   "inmuebles_n": 2,
+   "inmuebles_suma_eur": 34467.29,
+   "inmuebles_suma_texto": "34.467,29 €",
+   "vehiculos": 0,
+   "mobiliario": "nada",
+   "deudas_n": 0,
+   "deudas_suma_eur": 0,
+   "deudas_suma_texto": "—",
+   "fecha_presentacion": "6 de junio de 2023",
+   "documento": {
+    "t": "Ayuntamiento de Salamanca: Declaración de Bienes y Actividades. Inicial 2023 (PDF)",
+    "u": "https://www.aytosalamanca.es/documents/20119/217956/M.Carmen_Seguxn_DECLARACIONES_DE_CAUSAS_DE_POSIBLE_INCOMPATIBILIDAD_Y_ACTIVIDADES.pdf/edeb24b9-2ba1-6811-c71a-2083848546b7"
+   }
+  },
+  {
+   "slug": "angel-molina-martinez",
+   "nombre": "Ángel Molina Martínez",
+   "grupo": "PP",
+   "cargo": "Concejal delegado de Protección Ciudadana, Tráfico y Transportes",
+   "url": "https://opensalamanca.es/elecciones/politicos/angel-molina-martinez",
+   "estado": "ok",
+   "inmuebles_n": 2,
+   "inmuebles_suma_eur": 116000.0,
+   "inmuebles_suma_texto": "116.000 €",
+   "vehiculos": 2,
+   "mobiliario": "seguros de vida, planes de pensiones o rentas",
+   "deudas_n": 2,
+   "deudas_suma_eur": 137602.0,
+   "deudas_suma_texto": "137.602 €",
+   "fecha_presentacion": "13 de junio de 2023",
+   "documento": {
+    "t": "Ayuntamiento de Salamanca: Declaración de Bienes y Actividades. Inicial 2023 (PDF)",
+    "u": "https://www.aytosalamanca.es/documents/20119/217956/xngel_Molina_DECLARACIONES_DE_CAUSAS_DE_POSIBLE_INCOMPATIBILIDAD_Y_ACTIVIDADES.pdf/3ce73f6c-a084-95e2-769e-e0d240d7fef3"
+   }
+  },
+  {
+   "slug": "maria-jose-coca-sanchez",
+   "nombre": "María José Coca Sánchez",
+   "grupo": "PP",
+   "cargo": "Concejala delegada de Medio Ambiente y Oficina de Bienestar Animal",
+   "url": "https://opensalamanca.es/elecciones/politicos/maria-jose-coca-sanchez",
+   "estado": "ok",
+   "inmuebles_n": 1,
+   "inmuebles_suma_eur": 129343.97,
+   "inmuebles_suma_texto": "129.343,97 €",
+   "vehiculos": 1,
+   "mobiliario": "nada",
+   "deudas_n": 1,
+   "deudas_suma_eur": 179094.12,
+   "deudas_suma_texto": "179.094,12 €",
+   "fecha_presentacion": "13 de junio de 2023",
+   "documento": {
+    "t": "Ayuntamiento de Salamanca: Declaración de Bienes y Actividades. Inicial 2023 (PDF)",
+    "u": "https://www.aytosalamanca.es/documents/20119/217956/Marxa_Josx_Coca_DECLARACIONES_DE_CAUSAS_DE_POSIBLE_INCOMPATIBILIDAD_Y_ACTIVIDADES.pdf/27d21e3d-c6d7-9d52-52f0-ec645953afa1"
+   }
+  },
+  {
+   "slug": "maria-de-la-vega-villar",
+   "nombre": "Vega Villar",
+   "grupo": "PP",
+   "cargo": "Concejala delegada de Salud Pública",
+   "url": "https://opensalamanca.es/elecciones/politicos/maria-de-la-vega-villar",
+   "estado": "ok",
+   "inmuebles_n": 0,
+   "inmuebles_suma_eur": 0,
+   "inmuebles_suma_texto": "—",
+   "vehiculos": 0,
+   "mobiliario": "acciones y participaciones",
+   "deudas_n": 0,
+   "deudas_suma_eur": 0,
+   "deudas_suma_texto": "—",
+   "fecha_presentacion": "6 de junio de 2023",
+   "documento": {
+    "t": "Ayuntamiento de Salamanca: Declaración de Bienes y Actividades. Inicial 2023 (PDF)",
+    "u": "https://www.aytosalamanca.es/documents/20119/217956/Maria_de_la_Vega_Villar_DECLARACIONES_DE_CAUSAS_DE_POSIBLE_INCOMPATIBILIDAD_Y_ACTIVIDADES.pdf/c880326b-ca94-a1ff-fffa-53398292c0fc"
+   }
+  },
+  {
+   "slug": "angel-fernandez-silva",
+   "nombre": "Ángel Fernández Silva",
+   "grupo": "PP",
+   "cargo": "Concejal delegado de Cultura y Turismo",
+   "url": "https://opensalamanca.es/elecciones/politicos/angel-fernandez-silva",
+   "estado": "ok",
+   "inmuebles_n": 0,
+   "inmuebles_suma_eur": 0,
+   "inmuebles_suma_texto": "—",
+   "vehiculos": 1,
+   "mobiliario": "nada",
+   "deudas_n": 0,
+   "deudas_suma_eur": 0,
+   "deudas_suma_texto": "—",
+   "fecha_presentacion": "6 de junio de 2023",
+   "documento": {
+    "t": "Ayuntamiento de Salamanca: Declaración de Bienes y Actividades. Final 2021-2023 e Inicial 2023 (PDF)",
+    "u": "https://www.aytosalamanca.es/documents/20119/217956/Angel_Fdz_DECLARACIONES+DE+CAUSAS+DE+POSIBLE+INCOMPATIBILIDAD+Y+ACTIVIDADES.pdf/1428ebcf-b04e-2c47-97ae-31d5733415a9"
+   }
+  },
+  {
+   "slug": "roberto-martin-parra",
+   "nombre": "Roberto Martín Parra",
+   "grupo": "PP",
+   "cargo": "Concejal delegado de Participación Social y Voluntariado",
+   "url": "https://opensalamanca.es/elecciones/politicos/roberto-martin-parra",
+   "estado": "ok",
+   "inmuebles_n": 1,
+   "inmuebles_suma_eur": 32124.2,
+   "inmuebles_suma_texto": "32.124,20 €",
+   "vehiculos": 1,
+   "mobiliario": "nada",
+   "deudas_n": 1,
+   "deudas_suma_eur": 59901.71,
+   "deudas_suma_texto": "59.901,71 €",
+   "fecha_presentacion": "9 de junio de 2023",
+   "documento": {
+    "t": "Ayuntamiento de Salamanca: Declaración de Bienes y Actividades. Inicial 2023 (PDF)",
+    "u": "https://www.aytosalamanca.es/documents/20119/217956/Roberto_M_Parra_DECLARACIONES_DE_CAUSAS_DE_POSIBLE_INCOMPATIBILIDAD_Y_ACTIVIDADES.pdf/c0913d4d-ba66-2a69-2097-0b92e1cab44e"
+   }
+  },
+  {
+   "slug": "maria-isabel-macias-tello",
+   "nombre": "Isabel Macías Tello",
+   "grupo": "PP",
+   "cargo": "Concejala delegada de Mayores",
+   "url": "https://opensalamanca.es/elecciones/politicos/maria-isabel-macias-tello",
+   "estado": "ok",
+   "inmuebles_n": 1,
+   "inmuebles_suma_eur": 72082.0,
+   "inmuebles_suma_texto": "72.082 €",
+   "vehiculos": 1,
+   "mobiliario": "seguros de vida, planes de pensiones o rentas",
+   "deudas_n": 1,
+   "deudas_suma_eur": 31611.95,
+   "deudas_suma_texto": "31.611,95 €",
+   "fecha_presentacion": "14 de junio de 2023",
+   "documento": {
+    "t": "Ayuntamiento de Salamanca: Declaración de Bienes y Actividades. Final 2019-2023 e Inicial 2023 (PDF)",
+    "u": "https://www.aytosalamanca.es/documents/20119/217956/MIsabel_Macias_DECLARACIONES_DE_CAUSAS_DE_POSIBLE_INCOMPATIBILIDAD_Y_ACTIVIDADES.pdf/70d300ae-8b12-2ab0-5a2e-9375f8c8b196"
+   }
+  },
+  {
+   "slug": "luis-sanchez-arevalo",
+   "nombre": "Luis Sánchez Arévalo",
+   "grupo": "PP",
+   "cargo": "Concejal delegado de Educación",
+   "url": "https://opensalamanca.es/elecciones/politicos/luis-sanchez-arevalo",
+   "estado": "ok",
+   "inmuebles_n": 1,
+   "inmuebles_suma_eur": 32843.7,
+   "inmuebles_suma_texto": "32.843,70 €",
+   "vehiculos": 1,
+   "mobiliario": "nada",
+   "deudas_n": 0,
+   "deudas_suma_eur": 0,
+   "deudas_suma_texto": "—",
+   "fecha_presentacion": "6 de junio de 2023",
+   "documento": {
+    "t": "Ayuntamiento de Salamanca: Declaración de Bienes y Actividades. Inicial 2023 (PDF)",
+    "u": "https://www.aytosalamanca.es/documents/20119/217956/Luis_Sanchez_DECLARACIONES_DE_CAUSAS_DE_POSIBLE_INCOMPATIBILIDAD_Y_ACTIVIDADES.pdf/cd938f6a-844f-db6a-aa06-860e41d7478b"
+   }
+  },
+  {
+   "slug": "cesar-gomez-barthe-celada",
+   "nombre": "César Gómez-Barthe",
+   "grupo": "PP",
+   "cargo": "Concejal delegado de Promoción Económica, Comercio, Mercados y Juventud",
+   "url": "https://opensalamanca.es/elecciones/politicos/cesar-gomez-barthe-celada",
+   "estado": "sin_documento",
+   "documento": null
+  },
+  {
+   "slug": "jose-luis-mateos-crespo",
+   "nombre": "José Luis Mateos Crespo",
+   "grupo": "PSOE",
+   "cargo": "Concejal del Grupo Municipal Socialista (portavoz hasta el 7 de mayo de 2026)",
+   "url": "https://opensalamanca.es/elecciones/politicos/jose-luis-mateos-crespo",
+   "estado": "ok",
+   "inmuebles_n": 6,
+   "inmuebles_suma_eur": 128910.21,
+   "inmuebles_suma_texto": "128.910,21 €",
+   "vehiculos": 1,
+   "mobiliario": "acciones y participaciones; seguros de vida, planes de pensiones o rentas",
+   "deudas_n": 0,
+   "deudas_suma_eur": 0,
+   "deudas_suma_texto": "—",
+   "fecha_presentacion": "15 de junio de 2023",
+   "documento": {
+    "t": "Ayuntamiento de Salamanca: Declaración de Bienes y Actividades. Final 2019-2023 e Inicial 2023 (PDF)",
+    "u": "https://www.aytosalamanca.es/documents/20119/217956/Josx_Luis_Mateos_DECLARACIONES_DE_CAUSAS_DE_POSIBLE_INCOMPATIBILIDAD_Y_ACTIVIDADES.pdf/22c40f5f-734a-bf40-56c3-3a70dd7f4b87"
+   }
+  },
+  {
+   "slug": "maria-sanchez-gomez",
+   "nombre": "María Sánchez Gómez",
+   "grupo": "PSOE",
+   "cargo": "Portavoz del Grupo Municipal Socialista desde el 7 de mayo de 2026",
+   "url": "https://opensalamanca.es/elecciones/politicos/maria-sanchez-gomez",
+   "estado": "ok",
+   "inmuebles_n": 3,
+   "inmuebles_suma_eur": 84548.82,
+   "inmuebles_suma_texto": "84.548,82 €",
+   "vehiculos": 0,
+   "mobiliario": "seguros de vida, planes de pensiones o rentas",
+   "deudas_n": 2,
+   "deudas_suma_eur": 159754.15,
+   "deudas_suma_texto": "159.754,15 €",
+   "fecha_presentacion": "14 de junio de 2023",
+   "documento": {
+    "t": "Ayuntamiento de Salamanca: Declaración de Bienes y Actividades. Final 2019-2023 e Inicial 2023 (PDF)",
+    "u": "https://www.aytosalamanca.es/documents/20119/217956/Marxa_Sxnchez_DECLARACIONES_DE_CAUSAS_DE_POSIBLE_INCOMPATIBILIDAD_Y_ACTIVIDADES.pdf/3185b691-d95e-81a9-8ee7-df94965c95fa"
+   }
+  },
+  {
+   "slug": "juan-jose-garcia-meilan",
+   "nombre": "Juan José García Meilán",
+   "grupo": "PSOE",
+   "cargo": "Concejal del Grupo Municipal Socialista",
+   "url": "https://opensalamanca.es/elecciones/politicos/juan-jose-garcia-meilan",
+   "estado": "ok",
+   "inmuebles_n": 2,
+   "inmuebles_suma_eur": 61170.0,
+   "inmuebles_suma_texto": "61.170 €",
+   "vehiculos": 1,
+   "mobiliario": "acciones y participaciones; seguros de vida, planes de pensiones o rentas",
+   "deudas_n": 1,
+   "deudas_suma_eur": 53934.0,
+   "deudas_suma_texto": "53.934 €",
+   "fecha_presentacion": "30 de mayo de 2023",
+   "documento": {
+    "t": "Ayuntamiento de Salamanca: Declaración de Bienes y Actividades. Final 2019-2023 e Inicial 2023 (PDF)",
+    "u": "https://www.aytosalamanca.es/documents/20119/217956/JuanJose_Garcia_DECLARACIONES_DE_CAUSAS_DE_POSIBLE_INCOMPATIBILIDAD_Y_ACTIVIDADES.pdf/c5283346-d7ab-3ba2-0d31-6d02f8dc1105"
+   }
+  },
+  {
+   "slug": "maria-garcia-gomez",
+   "nombre": "María García Gómez",
+   "grupo": "PSOE",
+   "cargo": "Concejala del Grupo Municipal Socialista",
+   "url": "https://opensalamanca.es/elecciones/politicos/maria-garcia-gomez",
+   "estado": "ok",
+   "inmuebles_n": 2,
+   "inmuebles_suma_eur": 33997.2,
+   "inmuebles_suma_texto": "33.997,20 €",
+   "vehiculos": 1,
+   "mobiliario": "nada",
+   "deudas_n": 0,
+   "deudas_suma_eur": 0,
+   "deudas_suma_texto": "—",
+   "fecha_presentacion": "6 de junio de 2023",
+   "documento": {
+    "t": "Ayuntamiento de Salamanca: Declaración de Bienes y Actividades. Final 2019-2023 e Inicial 2023 (PDF)",
+    "u": "https://www.aytosalamanca.es/documents/20119/217956/Marxa_Garcia_DECLARACIONES_DE_CAUSAS_DE_POSIBLE_INCOMPATIBILIDAD_Y_ACTIVIDADES.pdf/a36a621e-9683-ac0c-7071-2192a359515f"
+   }
+  },
+  {
+   "slug": "jose-maria-collados-grande",
+   "nombre": "José María Collados Grande",
+   "grupo": "PSOE",
+   "cargo": "Concejal del Grupo Municipal Socialista",
+   "url": "https://opensalamanca.es/elecciones/politicos/jose-maria-collados-grande",
+   "estado": "ok",
+   "inmuebles_n": 0,
+   "inmuebles_suma_eur": 0,
+   "inmuebles_suma_texto": "—",
+   "vehiculos": 2,
+   "mobiliario": "acciones y participaciones",
+   "deudas_n": 0,
+   "deudas_suma_eur": 0,
+   "deudas_suma_texto": "—",
+   "fecha_presentacion": "14 de junio de 2023",
+   "documento": {
+    "t": "Ayuntamiento de Salamanca: Declaración de Bienes y Actividades. Final 2019-2023 e Inicial 2023 (PDF)",
+    "u": "https://www.aytosalamanca.es/documents/20119/217956/JoseMaria_Collados_DECLARACIONES_DE_CAUSAS_DE_POSIBLE_INCOMPATIBILIDAD_Y_ACTIVIDADES.pdf/9a82cc91-3ac1-892b-5e13-bbe9cb140b9f"
+   }
+  },
+  {
+   "slug": "elvira-sanchez-sanchez",
+   "nombre": "Elvira Sánchez Sánchez",
+   "grupo": "PSOE",
+   "cargo": "Concejala del Grupo Municipal Socialista",
+   "url": "https://opensalamanca.es/elecciones/politicos/elvira-sanchez-sanchez",
+   "estado": "ok",
+   "inmuebles_n": 4,
+   "inmuebles_suma_eur": 61679.59,
+   "inmuebles_suma_texto": "61.679,59 €",
+   "vehiculos": 1,
+   "mobiliario": "acciones y participaciones; seguros de vida, planes de pensiones o rentas",
+   "deudas_n": 3,
+   "deudas_suma_eur": 21734.94,
+   "deudas_suma_texto": "21.734,94 €",
+   "fecha_presentacion": "5 de junio de 2023",
+   "documento": {
+    "t": "Ayuntamiento de Salamanca: Declaración de Bienes y Actividades. Inicial 2023 (PDF)",
+    "u": "https://www.aytosalamanca.es/documents/20119/217956/Elvira_DECLARACIONES_DE_CAUSAS_DE_POSIBLE_INCOMPATIBILIDAD_Y_ACTIVIDADES.pdf/9d3bdcb3-81a3-0486-12d6-6d64c702366b"
+   }
+  },
+  {
+   "slug": "fidel-frances-sanchez",
+   "nombre": "Fidel Francés Sánchez",
+   "grupo": "PSOE",
+   "cargo": "Concejal del Grupo Municipal Socialista",
+   "url": "https://opensalamanca.es/elecciones/politicos/fidel-frances-sanchez",
+   "estado": "ok",
+   "inmuebles_n": 3,
+   "inmuebles_suma_eur": 69141.03,
+   "inmuebles_suma_texto": "69.141,03 €",
+   "vehiculos": 2,
+   "mobiliario": "acciones y participaciones; seguros de vida, planes de pensiones o rentas",
+   "deudas_n": 2,
+   "deudas_suma_eur": 78658.0,
+   "deudas_suma_texto": "78.658 €",
+   "fecha_presentacion": "7 de junio de 2023",
+   "documento": {
+    "t": "Ayuntamiento de Salamanca: Declaración de Bienes y Actividades. Inicial 2023 (PDF)",
+    "u": "https://www.aytosalamanca.es/documents/20119/217956/Fidel_DECLARACIONES_DE_CAUSAS_DE_POSIBLE_INCOMPATIBILIDAD_Y_ACTIVIDADES.pdf/49a47f03-24bb-5840-42d2-462778bca4d5"
+   }
+  },
+  {
+   "slug": "maria-del-mar-fuentes-chaves",
+   "nombre": "Mar Fuentes Chaves",
+   "grupo": "PSOE",
+   "cargo": "Concejala del Grupo Municipal Socialista",
+   "url": "https://opensalamanca.es/elecciones/politicos/maria-del-mar-fuentes-chaves",
+   "estado": "ok",
+   "inmuebles_n": 0,
+   "inmuebles_suma_eur": 0,
+   "inmuebles_suma_texto": "—",
+   "vehiculos": 1,
+   "mobiliario": "nada",
+   "deudas_n": 0,
+   "deudas_suma_eur": 0,
+   "deudas_suma_texto": "—",
+   "fecha_presentacion": "9 de junio de 2023",
+   "documento": {
+    "t": "Ayuntamiento de Salamanca: Declaración de Bienes y Actividades. Inicial 2023 (PDF)",
+    "u": "https://www.aytosalamanca.es/documents/20119/217956/MariadelMar_DECLARACIONES_DE_CAUSAS_DE_POSIBLE_INCOMPATIBILIDAD_Y_ACTIVIDADES.pdf/35d8cc7b-d5ac-be16-6bb0-82de73bf419c"
+   }
+  },
+  {
+   "slug": "alvaro-antolin-montero",
+   "nombre": "Álvaro Antolín Montero",
+   "grupo": "PSOE",
+   "cargo": "Concejal del Grupo Municipal Socialista",
+   "url": "https://opensalamanca.es/elecciones/politicos/alvaro-antolin-montero",
+   "estado": "ok",
+   "inmuebles_n": 2,
+   "inmuebles_suma_eur": 32552.05,
+   "inmuebles_suma_texto": "32.552,05 €",
+   "vehiculos": 1,
+   "mobiliario": "acciones y participaciones; seguros de vida, planes de pensiones o rentas",
+   "deudas_n": 1,
+   "deudas_suma_eur": 142629.39,
+   "deudas_suma_texto": "142.629,39 €",
+   "fecha_presentacion": "6 de junio de 2023",
+   "documento": {
+    "t": "Ayuntamiento de Salamanca: Declaración de Bienes y Actividades. Final 2019-2023 e Inicial 2023 (PDF)",
+    "u": "https://www.aytosalamanca.es/documents/20119/217956/Alvaro_Antolxn_DECLARACIONES_DE_CAUSAS_DE_POSIBLE_INCOMPATIBILIDAD_Y_ACTIVIDADES.pdf/1467a0aa-2ee6-0bd8-1e8b-ffe07e7552ab"
+   }
+  },
+  {
+   "slug": "maria-jesus-santa-maria-trigo",
+   "nombre": "María Jesús Santa María Trigo",
+   "grupo": "PSOE",
+   "cargo": "Concejala del Grupo Municipal Socialista",
+   "url": "https://opensalamanca.es/elecciones/politicos/maria-jesus-santa-maria-trigo",
+   "estado": "ok",
+   "inmuebles_n": 2,
+   "inmuebles_suma_eur": 51413.49,
+   "inmuebles_suma_texto": "51.413,49 €",
+   "vehiculos": 0,
+   "mobiliario": "acciones y participaciones; seguros de vida, planes de pensiones o rentas",
+   "deudas_n": 1,
+   "deudas_suma_eur": 121132.52,
+   "deudas_suma_texto": "121.132,52 €",
+   "fecha_presentacion": "2 de junio de 2023",
+   "documento": {
+    "t": "Ayuntamiento de Salamanca: Declaración de Bienes y Actividades. Final 2019-2023 e Inicial 2023 (PDF)",
+    "u": "https://www.aytosalamanca.es/documents/20119/217956/MJesus_StaM_DECLARACIONES_DE_CAUSAS_DE_POSIBLE_INCOMPATIBILIDAD_Y_ACTIVIDADES.pdf/85dea505-88e2-2c29-a9cf-06cf41770cd6"
+   }
+  },
+  {
+   "slug": "ignacio-javier-rivas-serrano",
+   "nombre": "Ignacio Rivas Serrano",
+   "grupo": "Vox",
+   "cargo": "Concejal del Grupo Mixto (elegido en la candidatura de Vox); portavoz de Vox hasta el 10 de febrero de 2025",
+   "url": "https://opensalamanca.es/elecciones/politicos/ignacio-javier-rivas-serrano",
+   "estado": "ok",
+   "inmuebles_n": 2,
+   "inmuebles_suma_eur": 252374.61,
+   "inmuebles_suma_texto": "252.374,61 €",
+   "vehiculos": 3,
+   "mobiliario": "acciones y participaciones; seguros de vida, planes de pensiones o rentas",
+   "deudas_n": 3,
+   "deudas_suma_eur": 70179.34,
+   "deudas_suma_texto": "70.179,34 €",
+   "fecha_presentacion": "12 de junio de 2023",
+   "documento": {
+    "t": "Ayuntamiento de Salamanca: Declaración de Bienes y Actividades. Inicial 2023 (PDF)",
+    "u": "https://www.aytosalamanca.es/documents/20119/217956/IgnacioJ_Rivas_DECLARACIONES_DE_CAUSAS_DE_POSIBLE_INCOMPATIBILIDAD_Y_ACTIVIDADES.pdf/f400b95d-3d71-a724-0937-e0f89f25372f"
+   }
+  },
+  {
+   "slug": "alejandro-miguel-perez-de-la-sota",
+   "nombre": "Alejandro Pérez de la Sota",
+   "grupo": "Vox",
+   "cargo": "Concejal no adscrito (elegido en la candidatura de Vox); portavoz de Vox desde el 10 de febrero de 2025 hasta la disolución del grupo",
+   "url": "https://opensalamanca.es/elecciones/politicos/alejandro-miguel-perez-de-la-sota",
+   "estado": "ok",
+   "inmuebles_n": 4,
+   "inmuebles_suma_eur": 213951.86,
+   "inmuebles_suma_texto": "213.951,86 €",
+   "vehiculos": 1,
+   "mobiliario": "acciones y participaciones; seguros de vida, planes de pensiones o rentas",
+   "deudas_n": 2,
+   "deudas_suma_eur": 104611.73,
+   "deudas_suma_texto": "104.611,73 €",
+   "fecha_presentacion": "16 de junio de 2023",
+   "documento": {
+    "t": "Ayuntamiento de Salamanca: Declaración de Bienes y Actividades. Inicial 2023 (PDF)",
+    "u": "https://www.aytosalamanca.es/documents/20119/217956/Alejandro_DECLARACIONES_DE_CAUSAS_DE_POSIBLE_INCOMPATIBILIDAD_Y_ACTIVIDADES.pdf/14cec7f6-3cfc-6185-5128-fd37b8856267"
+   }
+  },
+  {
+   "slug": "maria-de-los-angeles-carpio-perez",
+   "nombre": "María de los Ángeles Carpio Pérez",
+   "grupo": "Vox",
+   "cargo": "Concejala no adscrita (elegida en la candidatura de Vox); en el pleno desde el 26 de julio de 2024",
+   "url": "https://opensalamanca.es/elecciones/politicos/maria-de-los-angeles-carpio-perez",
+   "estado": "pdf_escaneado_sin_texto",
+   "documento": {
+    "t": "Ayuntamiento de Salamanca: Declaración de Bienes y Actividades. Inicial 2023 (PDF)",
+    "u": "https://www.aytosalamanca.es/documents/20119/217956/Declaracion+inicial++maria+angeles+carpio_toma+posesi%C3%B3n+VOX.pdf/c6f95b5d-ac0d-61b1-d4a4-b7542b3b527a"
+   }
+  }
+ ]
+}
