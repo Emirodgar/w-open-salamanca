@@ -1,7 +1,7 @@
 {
   "mes": "2026-11",
   "titulo_mes": "Noviembre 2026",
-  "resumen_mes": "Noviembre ha estado marcado por los fallecimientos de Charo Diego, Jesús Miguel y Curro Sánchez. La huelga general generó tensión, mientras que los problemas en la línea ferroviaria Salamanca-Madrid han persistido. Un error en la identificación de pacientes en Montalvos ha causado preocupación, y se ha detectado el primer caso de lengua azul. La visita de Santiago Abascal a Salamanca generó tensión y protestas, mientras que el final de mes ha visto el inicio de los preparativos navideños, lluvias significativas y un desprendimiento en la Catedral, además de una multitudinaria marcha solidaria. En el ámbito deportivo, Unionistas de Salamanca ha puesto fin a la etapa de Javi Medina, y Meins Avenida ha logrado una victoria importante. También se ha desarticulado un grupo criminal y la Universidad ha presentado su presupuesto para 2027.",
+  "resumen_mes": "Noviembre ha estado marcado por el fallecimiento de Charo Diego y la persistencia de problemas en la línea ferroviaria Salamanca-Madrid. Un error en la identificación de pacientes en Montalvos ha causado preocupación, y se ha detectado el primer caso de lengua azul. La visita de Santiago Abascal a Salamanca generó tensión y protestas. El final de mes ha visto el inicio de los preparativos navideños, una multitudinaria marcha solidaria y la desarticulación de un grupo criminal. En el ámbito deportivo, Unionistas de Salamanca ha puesto fin a la etapa de Javi Medina, y la Universidad ha rendido homenaje a la Reina Sofía.",
   "hitos": [
     {
       "fecha": "2026-11-01",
@@ -36,14 +36,6 @@
       "destacado": true
     },
     {
-      "fecha": "2026-11-21",
-      "titulo": "Las lluvias dejan más de 20 litros por metro cuadrado en la capital",
-      "categoria": "Sociedad",
-      "descripcion": "Las intensas lluvias han dejado 22,3 litros por metro cuadrado en la capital y en un municipio de Salamanca, generando un impacto significativo.",
-      "fuente": "https://www.lagacetadesalamanca.es/salamanca/lluvias-dejan-223-litros-capital-municipio-salamanca-20261121215033-nt.html",
-      "destacado": false
-    },
-    {
       "fecha": "2026-11-22",
       "titulo": "15.000 personas participan en la XII Marcha contra el Cáncer",
       "categoria": "Sociedad",
@@ -52,19 +44,27 @@
       "destacado": false
     },
     {
-      "fecha": "2026-11-22",
-      "titulo": "Meins Avenida logra una victoria clave frente al Araski",
-      "categoria": "Deportes",
-      "descripcion": "El equipo de baloncesto Meins Avenida ha conseguido una victoria determinante en su encuentro frente al Araski.",
-      "fuente": "https://www.lagacetadesalamanca.es/deportes/baloncesto-local/meins-avenida/claves-victoria-meins-avenida-frente-araski-20261122202549-nt.html",
-      "destacado": false
-    },
-    {
       "fecha": "2026-11-23",
       "titulo": "Fin de la era de Javi Medina en Unionistas",
       "categoria": "Deportes",
       "descripcion": "Se ha hecho oficial el cese de Javi Medina como entrenador de Unionistas de Salamanca, marcando el fin de su etapa en el club.",
       "fuente": "https://www.lagacetadesalamanca.es/deportes/futbol-local/unionistas/oficial-fin-era-javi-medina-unionistas-20261123110513-nt.html",
+      "destacado": false
+    },
+    {
+      "fecha": "2026-11-23",
+      "titulo": "Desarticulado un grupo criminal que robaba en Salamanca y cinco provincias",
+      "categoria": "Sucesos",
+      "descripcion": "Un grupo criminal dedicado a robos ha sido desarticulado, con operaciones que abarcaban Salamanca y otras cinco provincias.",
+      "fuente": "https://www.lagacetadesalamanca.es/sucesos/desarticulado-grupo-criminal-robaba-salamanca-cinco-provincias-20261123110053-nt.html",
+      "destacado": false
+    },
+    {
+      "fecha": "2026-11-24",
+      "titulo": "La Universidad de Salamanca rinde homenaje a la Reina Sofía",
+      "categoria": "Cultura",
+      "descripcion": "La institución académica ha honrado a la Reina Sofía, un acto que incluyó la entrega de una medalla conmemorativa.",
+      "fuente": "https://www.lagacetadesalamanca.es/salamanca/universidad-rinde-homenaje-reina-sofia-entrega-medalla-20261124183207-nt.html",
       "destacado": false
     }
   ]

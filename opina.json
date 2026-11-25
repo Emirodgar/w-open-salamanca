@@ -147,18 +147,6 @@
       "fecha_creacion": "2026-10-10"
     },
     {
-      "id": "alumbrado-navidad-2026",
-      "pregunta": "El alumbrado navideño de Salamanca se activará el 26 de noviembre, coincidiendo con el Black Friday. ¿Considera que el encendido de las luces de Navidad en esta fecha es adecuado para fomentar el ambiente festivo y el comercio?",
-      "opciones": [
-        "Sí, ayuda a dinamizar las compras navideñas",
-        "No, es demasiado pronto para el espíritu navideño",
-        "Es indiferente, lo importante es que haya luces",
-        "No tengo suficiente información"
-      ],
-      "basado_en": "eventos.json",
-      "fecha_creacion": "2026-10-11"
-    },
-    {
       "id": "presidencia-diputacion-mingo-2026",
       "pregunta": "David Mingo ha sido elegido presidente de la Diputación de Salamanca. ¿Qué expectativas tiene sobre su gestión al frente de la institución provincial?",
       "opciones": [
@@ -866,6 +854,30 @@
       ],
       "basado_en": "eventos.json",
       "fecha_creacion": "2026-11-24"
+    },
+    {
+      "id": "unionistas-cambio-entrenador-2026",
+      "pregunta": "Tras el fin de la etapa de Javi Medina como entrenador de Unionistas de Salamanca, ¿cree que el cambio en el banquillo beneficiará al equipo en la actual temporada?",
+      "opciones": [
+        "Sí, era necesario un cambio de rumbo",
+        "No, el problema no era el entrenador",
+        "Es incierto, dependerá del nuevo técnico",
+        "No tengo suficiente información"
+      ],
+      "basado_en": "actualidad.json",
+      "fecha_creacion": "2026-11-25"
+    },
+    {
+      "id": "oposiciones-maestros-2027",
+      "pregunta": "Con la apertura del plazo de solicitudes para las oposiciones al cuerpo de Maestros de 2027, ¿cree que la oferta de 758 plazas es suficiente para cubrir las necesidades educativas en Castilla y León?",
+      "opciones": [
+        "Sí, es una oferta adecuada",
+        "No, se necesitan más plazas",
+        "Es un buen inicio, pero insuficiente",
+        "No tengo suficiente información"
+      ],
+      "basado_en": "eventos.json",
+      "fecha_creacion": "2026-11-25"
     }
   ]
 }

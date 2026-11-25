@@ -1,11 +1,11 @@
 {
   "url_base": "https://www.lagacetadesalamanca.es",
-  "generado_en": "2026-11-24T05:46:03+00:00",
+  "generado_en": "2026-11-25T05:45:23+00:00",
   "periodo_cubierto": {
-    "desde": "2026-11-21",
-    "hasta": "2026-11-24"
+    "desde": "2026-11-22",
+    "hasta": "2026-11-25"
   },
-  "total_urls_analizadas": 163,
+  "total_urls_analizadas": 184,
   "secciones_excluidas": [
     "gente-estilo",
     "nacional",
@@ -16,46 +16,46 @@
   "nota_cobertura": "El análisis cubre únicamente las URLs presentes en el sitemap en el momento de la consulta (excluyendo, si se indicó, las secciones filtradas). Si el sitemap es incremental o 'rolling', el periodo real puede ser más corto que el solicitado — revisa 'periodo_cubierto' para confirmarlo.",
   "por_seccion": [
     [
-      "provincia",
-      47
+      "salamanca",
+      61
     ],
     [
-      "salamanca",
-      46
+      "provincia",
+      53
     ],
     [
       "deportes",
-      42
+      38
     ],
     [
       "sucesos",
-      14
+      17
     ],
     [
       "campo",
-      9
+      10
     ],
     [
       "encuestas",
-      2
+      3
+    ],
+    [
+      "promociones",
+      1
     ],
     [
       "castilla-y-leon",
-      2
-    ],
-    [
-      "toros",
       1
     ]
   ],
   "por_subseccion": [
     [
       "deportes/futbol-local",
-      23
+      20
     ],
     [
       "deportes/baloncesto-local",
-      9
+      6
     ],
     [
       "deportes/deporte-base",
@@ -69,11 +69,11 @@
   "por_tipo_contenido": [
     [
       "noticia",
-      140
+      165
     ],
     [
       "galería",
-      20
+      16
     ],
     [
       "directo / en vivo",
@@ -82,144 +82,136 @@
   ],
   "heatmap_calendario": [
     {
-      "fecha": "2026-11-21",
-      "total": 38,
-      "provincia": 14,
-      "salamanca": 10,
-      "deportes": 9,
-      "sucesos": 3,
-      "campo": 1,
-      "encuestas": 0,
-      "castilla-y-leon": 1,
-      "toros": 0
-    },
-    {
       "fecha": "2026-11-22",
-      "total": 55,
-      "provincia": 11,
-      "salamanca": 17,
-      "deportes": 22,
-      "sucesos": 3,
+      "total": 42,
+      "salamanca": 10,
+      "provincia": 10,
+      "deportes": 19,
+      "sucesos": 2,
       "campo": 0,
       "encuestas": 1,
-      "castilla-y-leon": 0,
-      "toros": 1
+      "promociones": 0,
+      "castilla-y-leon": 0
     },
     {
       "fecha": "2026-11-23",
-      "total": 64,
-      "provincia": 22,
-      "salamanca": 16,
+      "total": 62,
+      "salamanca": 15,
+      "provincia": 21,
       "deportes": 10,
       "sucesos": 8,
       "campo": 6,
       "encuestas": 1,
-      "castilla-y-leon": 1,
-      "toros": 0
+      "promociones": 0,
+      "castilla-y-leon": 1
     },
     {
       "fecha": "2026-11-24",
-      "total": 6,
-      "provincia": 0,
+      "total": 76,
+      "salamanca": 33,
+      "provincia": 21,
+      "deportes": 9,
+      "sucesos": 7,
+      "campo": 4,
+      "encuestas": 1,
+      "promociones": 1,
+      "castilla-y-leon": 0
+    },
+    {
+      "fecha": "2026-11-25",
+      "total": 4,
       "salamanca": 3,
-      "deportes": 1,
+      "provincia": 1,
+      "deportes": 0,
       "sucesos": 0,
-      "campo": 2,
+      "campo": 0,
       "encuestas": 0,
-      "castilla-y-leon": 0,
-      "toros": 0
+      "promociones": 0,
+      "castilla-y-leon": 0
     }
   ],
   "conceptos_destacados": [
     {
-      "concepto": "Unionistas",
-      "piezas": 6,
-      "seccion_principal": "deportes",
-      "desde": "2026-11-21",
-      "hasta": "2026-11-23",
+      "concepto": "Navidad en Salamanca y provincia",
+      "piezas": 8,
+      "seccion_principal": "salamanca",
+      "desde": "2026-11-23",
+      "hasta": "2026-11-25",
       "ejemplos_redactados": [
-        "El equipo Unionistas ha finalizado la era de Javi Medina, tras una derrota a domicilio que ha sido determinante. El partido contra el Barakaldo se siguió en directo.",
-        "La derrota a domicilio ha condenado a Unionistas, marcando el fin de la era de Javi Medina como entrenador."
+        "La ciudad de Salamanca y la provincia se preparan para la Navidad, con la instalación de los primeros adornos y la presentación de programas festivos."
       ]
     },
     {
-      "concepto": "Lluvia",
-      "piezas": 6,
-      "seccion_principal": "provincia",
-      "desde": "2026-11-21",
-      "hasta": "2026-11-22",
+      "concepto": "Homenaje a la Reina Sofía",
+      "piezas": 5,
+      "seccion_principal": "salamanca",
+      "desde": "2026-11-24",
+      "hasta": "2026-11-24",
       "ejemplos_redactados": [
-        "Las intensas lluvias han afectado al suministro eléctrico de 700 clientes en San y han sido un desafío para eventos como el Festival Candela.",
-        "Aldeanueva se ha llenado de devoción a pesar de las precipitaciones, que también han impactado en la jornada micológica de Linares de Riofrío."
+        "La Universidad de Salamanca ha rendido homenaje a la Reina Sofía con la entrega de una medalla y la recepción del Premio Reina Sofía de Poesía por Jaime Siles."
       ]
     },
     {
-      "concepto": "Bejar",
-      "piezas": 6,
-      "seccion_principal": "provincia",
-      "desde": "2026-11-22",
-      "hasta": "2026-11-23",
-      "ejemplos_redactados": [
-        "Béjar ha experimentado cortes de tráfico en su centro debido a obras de renovación de redes y un segundo derrumbe en su casco histórico en apenas una semana.",
-        "El obispo de Plasencia realizó una visita pastoral a Fuentes de Béjar, mientras la localidad recordaba a Aurora Calvo."
-      ]
-    },
-    {
-      "concepto": "Meins Avenida",
+      "concepto": "Fin de la era Javi Medina en Unionistas",
       "piezas": 5,
       "seccion_principal": "deportes",
-      "desde": "2026-11-21",
-      "hasta": "2026-11-22",
+      "desde": "2026-11-22",
+      "hasta": "2026-11-24",
       "ejemplos_redactados": [
-        "Meins Avenida ha vuelto a la carga con una victoria clave frente al Araski, demostrando su capacidad para jugar con pívots.",
-        "El partido entre Araski y Meins Avenida se siguió en directo, con su resultado y marcador online."
+        "Unionistas de Salamanca ha oficializado el fin de la etapa de Javi Medina como entrenador, con el cuerpo técnico pendiente de finiquitos."
       ]
     },
     {
-      "concepto": "Navidad",
+      "concepto": "Actualidad de Unionistas de Salamanca",
       "piezas": 5,
-      "seccion_principal": "provincia",
-      "desde": "2026-11-21",
-      "hasta": "2026-11-23",
-      "ejemplos_redactados": [
-        "Ciudad Rodrigo se suma a las luces de Navidad, y en la Plaza Mayor de Salamanca se prepara un videomapping navideño.",
-        "La solidaridad sobre dos ruedas también se ha puesto de manifiesto en estas fechas, y Carbajosa ha sido el primero en encender sus luces."
-      ]
-    },
-    {
-      "concepto": "Ciudad Rodrigo",
-      "piezas": 4,
-      "seccion_principal": "provincia",
-      "desde": "2026-11-21",
-      "hasta": "2026-11-23",
-      "ejemplos_redactados": [
-        "Ciudad Rodrigo ha avanzado en el cambio de iluminación LED y se ha sumado a las luces de Navidad.",
-        "La localidad también ha alcanzado una meta en la lucha contra la violencia machista y ha rendido homenaje a sus jubilados."
-      ]
-    },
-    {
-      "concepto": "Javi Medina",
-      "piezas": 4,
       "seccion_principal": "deportes",
       "desde": "2026-11-22",
-      "hasta": "2026-11-23",
+      "hasta": "2026-11-24",
       "ejemplos_redactados": [
-        "Se ha anunciado el fin de la era de Javi Medina en Unionistas, una decisión que llega tras una derrota a domicilio del equipo.",
-        "Javi Medina había expresado que la afición debía sentirse orgullosa del equipo que había competido."
+        "El club Unionistas de Salamanca busca nuevo entrenador tras la salida de Javi Medina, en un contexto de análisis de la reciente derrota."
       ]
     },
     {
-      "concepto": "Peñaranda",
+      "concepto": "Novedades en Ciudad Rodrigo",
       "piezas": 4,
       "seccion_principal": "provincia",
-      "desde": "2026-11-21",
-      "hasta": "2026-11-22",
+      "desde": "2026-11-22",
+      "hasta": "2026-11-24",
       "ejemplos_redactados": [
-        "Peñaranda ha acompañado bajo el sol la procesión de la Señora de las Lágrimas y ha rendido culto a la Virgen.",
-        "La localidad también ha acogido una muestra que pone rostro al ciclo invisible de la violencia y acogerá un taller de arteterapia."
+        "Ciudad Rodrigo ha presentado su gala del deporte y avanza en la instalación de la iluminación navideña, completando el cambio a LED."
+      ]
+    },
+    {
+      "concepto": "Resultados de la jornada de fútbol base",
+      "piezas": 3,
+      "seccion_principal": "deportes",
+      "desde": "2026-11-23",
+      "hasta": "2026-11-23",
+      "ejemplos_redactados": [
+        "La jornada de fútbol base en Salamanca ha dejado los mejores goles y paradas, con la selección del once ideal de la semana."
+      ]
+    },
+    {
+      "concepto": "Actuaciones de la Guardia Civil",
+      "piezas": 3,
+      "seccion_principal": "provincia",
+      "desde": "2026-11-23",
+      "hasta": "2026-11-24",
+      "ejemplos_redactados": [
+        "La Guardia Civil ha realizado el cierre de un bar en Alameda de Gardón e investiga a una persona por tenencia ilegal en Salamanca."
+      ]
+    },
+    {
+      "concepto": "Eventos y tradiciones en Santa Marta y la provincia",
+      "piezas": 3,
+      "seccion_principal": "campo",
+      "desde": "2026-11-23",
+      "hasta": "2026-11-24",
+      "ejemplos_redactados": [
+        "Santa Marta de Tormes acoge una nueva jornada de liga especial y apuesta por la gastronomía como recurso, mientras se recuerdan refranes populares."
       ]
     }
   ],
-  "resumen_borrador": "Se han publicado 163 noticias entre el 2026-11-21 y el 2026-11-24. La actividad se ha concentrado sobre todo en provincia (47 piezas), salamanca (46 piezas), deportes (42 piezas).\n\nLos conceptos con más piezas relacionadas son: Unionistas; Lluvia; Bejar; Meins · Avenida. Revisa 'evidencia' de cada concepto para redactar el resumen final.",
-  "resumen": "El periodo comprendido entre el 21 y el 24 de noviembre de 2026 ha estado marcado por una intensa actividad en la provincia de Salamanca, con especial atención a los eventos deportivos y las noticias locales. En el ámbito futbolístico, Unionistas de Salamanca ha cerrado la etapa de Javi Medina tras una derrota decisiva, mientras que el Salamanca CF UDS empató su encuentro. En baloncesto, Meins Avenida ha logrado una victoria importante frente al Araski.\n\nLas condiciones meteorológicas han sido protagonistas, con lluvias significativas que han afectado a diversas localidades y han provocado incidencias como cortes de luz. En Béjar, se han registrado cortes de tráfico por obras y un segundo derrumbe en su casco histórico. Ciudad Rodrigo ha avanzado en su iluminación LED y ha comenzado los preparativos navideños, una tendencia que se extiende por la provincia con la instalación de luces y eventos relacionados con la Navidad. Peñaranda de Bracamonte, por su parte, ha celebrado la procesión de la Señora de las Lágrimas y ha acogido una muestra sobre la violencia.\n\nOtros sucesos relevantes incluyen la desarticulación de un grupo criminal que operaba en Salamanca y otras provincias, así como la presentación del presupuesto de la Universidad para el año 2027. La capital también ha sido escenario de una multitudinaria marcha solidaria contra el cáncer, reafirmando el compromiso social de sus ciudadanos."
+  "resumen_borrador": "Se han publicado 184 noticias entre el 2026-11-22 y el 2026-11-25. La actividad se ha concentrado sobre todo en salamanca (61 piezas), provincia (53 piezas), deportes (38 piezas).\n\nLos conceptos con más piezas relacionadas son: Navidad; Reina · Sofia; Javi · Medina; Claves. Revisa 'evidencia' de cada concepto para redactar el resumen final.",
+  "resumen": "Salamanca y su provincia han vivido unos días marcados por la preparación de las festividades navideñas, con la instalación de los primeros adornos y la presentación de programaciones en diversos municipios. Un evento destacado ha sido el homenaje de la Universidad a la Reina Sofía, que incluyó la entrega de una medalla y la concesión del Premio Reina Sofía de Poesía a Jaime Siles.\n\nEn el ámbito deportivo, la actualidad ha estado centrada en Unionistas de Salamanca, con el fin de la etapa de Javi Medina como entrenador y la búsqueda de un sustituto. La jornada de fútbol base también ha generado interés con la publicación de los mejores momentos. En cuanto a sucesos, la Guardia Civil ha llevado a cabo diversas actuaciones, incluyendo el cierre de un establecimiento y la investigación por tenencia ilegal, además de la desarticulación de un grupo criminal que operaba en varias provincias.\n\nOtros temas de relevancia han incluido la aprobación del presupuesto de la Universidad para 2027 y la celebración de la XII Marcha contra el Cáncer, que reunió a 15.000 personas en las calles de la capital."
 }

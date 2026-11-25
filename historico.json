@@ -821,6 +821,25 @@
         "Son un buen complemento, pero su impacto es limitado.": 1
       },
       "total_votos": 3
+    },
+    {
+      "id": "alumbrado-navidad-2026",
+      "pregunta": "El alumbrado navideño de Salamanca se activará el 26 de noviembre, coincidiendo con el Black Friday. ¿Considera que el encendido de las luces de Navidad en esta fecha es adecuado para fomentar el ambiente festivo y el comercio?",
+      "opciones": [
+        "Sí, ayuda a dinamizar las compras navideñas",
+        "No, es demasiado pronto para el espíritu navideño",
+        "Es indiferente, lo importante es que haya luces",
+        "No tengo suficiente información"
+      ],
+      "basado_en": "eventos.json",
+      "fecha_creacion": "2026-10-11",
+      "fecha_archivado": "2026-11-25",
+      "resultados": {
+        "No, es demasiado pronto para el espíritu navideño": 6,
+        "Sí, ayuda a dinamizar las compras navideñas": 2,
+        "Es indiferente, lo importante es que haya luces": 2
+      },
+      "total_votos": 10
     }
   ]
 }
