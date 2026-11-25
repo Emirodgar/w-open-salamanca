@@ -6,7 +6,12 @@ on:
     # retraso y la Corporación cambia pocas veces al año: más frecuencia no
     # aporta nada. Como en los demás workflows, el minuto no va en punto.
     - cron: '30 6 * * 1'
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      publicar:
+        description: 'Hacer commit y push de los cambios (por defecto solo genera y sube la salida como artefacto)'
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -37,7 +42,7 @@ jobs:
       - name: Caché de actas
         uses: actions/cache@v4
         with:
-          path: cache_actas
+          path: ${{ runner.temp }}/cache_actas
           key: actas-${{ github.run_id }}
           restore-keys: actas-
 
@@ -45,11 +50,11 @@ jobs:
         run: python3 scripts/politicos/parse_fichas.py
 
       - name: Descargar y leer actas de los Plenos
-        run: python3 scripts/politicos/pleno/descargar_actas.py cache_actas
+        run: python3 scripts/politicos/pleno/descargar_actas.py "$RUNNER_TEMP/cache_actas"
 
       - name: Extraer y validar votaciones
         run: |
-          python3 scripts/politicos/pleno/parse_actas.py cache_actas
+          python3 scripts/politicos/pleno/parse_actas.py "$RUNNER_TEMP/cache_actas"
           python3 scripts/politicos/pleno/build_pleno.py
 
       - name: Generar fichas
@@ -61,7 +66,7 @@ jobs:
       - name: Descartar cambios que solo son fechas
         id: cambios
         run: |
-          git add -N .
+          git add -N _data elecciones/politicos llms.txt scripts/politicos/fuentes scripts/politicos/pleno/fuentes
           # Líneas cambiadas que NO llevan fecha de generación:
           sustantivos=$(git diff -U0 -- _data elecciones/politicos llms.txt scripts/politicos/fuentes scripts/politicos/pleno/fuentes \
             | grep -E '^[+-][^+-]' \
@@ -75,8 +80,20 @@ jobs:
             echo "hay=true" >> "$GITHUB_OUTPUT"
           fi
 
+      - name: Guardar salida generada (para revisarla)
+        uses: actions/upload-artifact@v4
+        with:
+          name: salida-fichas
+          path: |
+            _data/pleno/votaciones.json
+            _data/pleno/personas.json
+            _data/concejales_indice.json
+            scripts/politicos/pleno/fuentes/votaciones_pleno.json
+            scripts/politicos/fuentes/fichas_oficiales.json
+          retention-days: 14
+
       - name: Commit y push si hay cambios
-        if: steps.cambios.outputs.hay == 'true'
+        if: steps.cambios.outputs.hay == 'true' && (github.event_name == 'schedule' || inputs.publicar)
         run: |
           git add _data/politicos _data/concejales_indice.json _data/pleno elecciones/politicos llms.txt \
                   scripts/politicos/fuentes scripts/politicos/pleno/fuentes
