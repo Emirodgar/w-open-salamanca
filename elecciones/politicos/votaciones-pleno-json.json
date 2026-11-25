@@ -1,0 +1,5 @@
+---
+permalink: elecciones/politicos/votaciones-pleno.json
+sitemap: false
+---
+{{ site.data.pleno.votaciones | jsonify }}

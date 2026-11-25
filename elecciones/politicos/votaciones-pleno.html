@@ -1,0 +1,123 @@
+---
+layout: default
+title: "Votaciones del Pleno del Ayuntamiento de Salamanca (2023-2027): qué vota cada grupo y cada concejal"
+description: "Todas las votaciones de fondo de los plenos del mandato 2023-2027 extraídas de las actas oficiales: voto de cada grupo, de cada concejal, mociones aprobadas y rechazadas y coincidencias entre grupos"
+date: 25-11-2026
+modified: 25-11-2026
+parent_url: /elecciones/politicos/
+parent_title: Concejales del Ayuntamiento de Salamanca
+permalink: elecciones/politicos/votaciones-pleno
+dataset_name: "Votaciones del Pleno del Ayuntamiento de Salamanca, mandato 2023-2027"
+dataset_temporal: "2023-06-27/2026-10-16"
+dataset_source: "Actas de los Plenos Municipales del Ayuntamiento de Salamanca"
+dataset_source_url: "https://www.aytosalamanca.es/w/actas-de-los-plenos-municipales"
+dataset_files:
+  - elecciones/politicos/votaciones-pleno.json
+---
+{%- assign d = site.data.pleno.votaciones -%}
+{%- assign pers = site.data.pleno.personas -%}
+{%- assign ix = site.data.concejales_indice -%}
+{%- assign gpp = d.resumen.grupos[0] -%}
+{%- assign gps = d.resumen.grupos[1] -%}
+{%- assign gvx = d.resumen.grupos[2] -%}
+<style>
+  .vot-pol .ans{background:#eef6ff;border:1px solid #c9dcf3;padding:14px 16px;border-radius:6px;font-size:1.08em;margin:0 0 1.2em}
+  .vot-pol .warn{background:#fff8e6;border:1px solid #ecd9a6;padding:10px 14px;border-radius:6px;font-size:.95em}
+  .vot-pol .fu{font-size:.85em;color:#5b6778;margin:.2em 0 0}
+  .vot-pol .tabla{overflow-x:auto}
+  .vot-pol td.num,.vot-pol th.num{text-align:right;white-space:nowrap}
+  .vot-pol .rech{color:#7f1d1d}.vot-pol .apro{color:#065f46}
+</style>
+
+<section class="featured dataset vot-pol" id="datos">
+  <div class="container">
+    <div class="section-header">
+      <h1 class="section-title">{{ page.title }}</h1>
+      <p class="section-description">{{ page.description }}</p>
+    </div>
+
+    <div id="section-content">
+      <p class="ans">Entre el 27-06-2023 y el 16-10-2026, el Pleno del Ayuntamiento de Salamanca celebró {{ d.meta.sesiones_analizadas }} sesiones con acta analizada y {{ d.meta.votaciones }} votaciones, de las que {{ d.meta.votaciones_de_fondo_no_unanimes }} de fondo no fueron unánimes. El PP, con mayoría absoluta (14 de 27 concejales), votó a favor en el {{ gpp.pct_favor | replace: ".", "," }} % de ellas; el PSOE votó a favor en el {{ gps.pct_favor | replace: ".", "," }} %, en contra en el {{ gps.pct_contra | replace: ".", "," }} % y se abstuvo en el {{ gps.pct_abstencion | replace: ".", "," }} %. De las mociones de fondo del PSOE se aprobaron {{ d.resumen.mociones_psoe.aprobadas }} de {{ d.resumen.mociones_psoe.votadas }}; de las del PP, {{ d.resumen.mociones_pp.aprobadas }} de {{ d.resumen.mociones_pp.votadas }}.</p>
+      <p class="fu">Datos extraídos de las <a href="{{ d.meta.fuente_url }}" rel="nofollow noopener">actas de los Plenos Municipales</a> del Ayuntamiento (generado el 25 de noviembre de 2026). Parte de las <a href="/elecciones/politicos/">fichas de concejales</a>. Datos descargables: <a href="/elecciones/politicos/votaciones-pleno.json">votaciones-pleno.json</a> ({{ d.meta.licencia }}).</p>
+
+      <h2>Qué vota cada grupo</h2>
+      <p>Votaciones de fondo no unánimes (se excluyen las votaciones de urgencia y las unánimes). El acta recoge el voto del grupo en bloque.</p>
+      <div class="tabla"><table border="1" cellpadding="5" cellspacing="0">
+        <thead><tr><th>Grupo</th><th class="num">Votaciones</th><th class="num">A favor</th><th class="num">En contra</th><th class="num">Abstención</th></tr></thead>
+        <tbody>
+        {%- for g in d.resumen.grupos %}
+          <tr><td>{{ g.grupo }}</td><td class="num">{{ g.votaciones_no_unanimes }}</td><td class="num">{{ g.favor }} ({{ g.pct_favor | replace: ".", "," }} %)</td><td class="num">{{ g.contra }} ({{ g.pct_contra | replace: ".", "," }} %)</td><td class="num">{{ g.abstencion }} ({{ g.pct_abstencion | replace: ".", "," }} %)</td></tr>
+        {%- endfor %}
+        </tbody>
+      </table></div>
+
+      <h2>Cuándo coinciden los grupos</h2>
+      <div class="tabla"><table border="1" cellpadding="5" cellspacing="0">
+        <thead><tr><th>Comparación</th><th class="num">Votaciones comparadas</th><th class="num">Mismo voto</th></tr></thead>
+        <tbody>
+          <tr><td>PSOE y PP</td><td class="num">{{ d.resumen.coincidencias.PSOE_con_PP.votaciones }}</td><td class="num">{{ d.resumen.coincidencias.PSOE_con_PP.coinciden }} ({{ d.resumen.coincidencias.PSOE_con_PP.pct | replace: ".", "," }} %)</td></tr>
+          <tr><td>Vox / Grupo Mixto y PP</td><td class="num">{{ d.resumen.coincidencias.Vox_Mixto_con_PP.votaciones }}</td><td class="num">{{ d.resumen.coincidencias.Vox_Mixto_con_PP.coinciden }} ({{ d.resumen.coincidencias.Vox_Mixto_con_PP.pct | replace: ".", "," }} %)</td></tr>
+          <tr><td>Vox / Grupo Mixto y PSOE</td><td class="num">{{ d.resumen.coincidencias.Vox_Mixto_con_PSOE.votaciones }}</td><td class="num">{{ d.resumen.coincidencias.Vox_Mixto_con_PSOE.coinciden }} ({{ d.resumen.coincidencias.Vox_Mixto_con_PSOE.pct | replace: ".", "," }} %)</td></tr>
+        </tbody>
+      </table></div>
+
+      <h2>Mociones aprobadas y rechazadas por grupo proponente</h2>
+      <div class="tabla"><table border="1" cellpadding="5" cellspacing="0">
+        <thead><tr><th>Proponente</th><th class="num">Mociones votadas</th><th class="num">Aprobadas</th><th class="num">Rechazadas</th><th class="num">% aprobadas</th></tr></thead>
+        <tbody>
+        {%- for m in d.resumen.mociones_por_grupo %}
+          <tr><td>{% if m.proponente == "Conjunta" %}Moción conjunta de varios grupos{% elsif m.proponente == "Mixto" %}Grupo Mixto{% elsif m.proponente == "No adscrito" %}Concejales no adscritos{% else %}{{ m.proponente }}{% endif %}</td><td class="num">{{ m.votadas }}</td><td class="num">{{ m.aprobadas }}</td><td class="num">{{ m.rechazadas }}</td><td class="num">{{ m.pct_aprobadas | replace: ".", "," }} %</td></tr>
+        {%- endfor %}
+        </tbody>
+      </table></div>
+      <p class="fu">Una votación de fondo por moción (la última del punto). Antes de febrero de 2025 las mociones de Vox las presenta el Grupo Vox; después, el Grupo Mixto (Vox) y los concejales no adscritos.</p>
+
+      <h2>Asistencia y voto de cada concejal</h2>
+      <div class="tabla"><table border="1" cellpadding="5" cellspacing="0">
+        <thead><tr><th>Concejal</th><th>Grupo</th><th class="num">Asistencia</th><th class="num">A favor</th><th class="num">En contra</th><th class="num">Abstención</th><th class="num">Coincide con el PP</th></tr></thead>
+        <tbody>
+        {%- for c in ix.concejales %}
+          {%- assign v = pers[c.slug] %}
+          {%- if v %}
+          <tr><td><a href="/elecciones/politicos/{{ c.slug }}">{{ c.nombre }}</a></td><td>{{ c.grupo }}</td><td class="num">{{ v.asistencia_pct | replace: ".", "," }} %</td><td class="num">{{ v.pct_favor | replace: ".", "," }} %</td><td class="num">{{ v.pct_contra | replace: ".", "," }} %</td><td class="num">{{ v.pct_abstencion | replace: ".", "," }} %</td><td class="num">{{ v.coincide_con_voto_del_PP.pct | replace: ".", "," }} %</td></tr>
+          {%- endif %}
+        {%- endfor %}
+        </tbody>
+      </table></div>
+      <p class="fu">Porcentajes sobre las votaciones de fondo con voto atribuible a cada persona (ver metodología). Asistencia: aparece en la cabecera del acta y no consta como excusado. Los concejales que entraron a mitad de mandato cuentan desde la primera acta en la que figuran.</p>
+
+      <h2>Todas las mociones votadas</h2>
+      <div class="tabla"><table border="1" cellpadding="5" cellspacing="0">
+        <thead><tr><th>Fecha</th><th>Proponente</th><th>Moción</th><th>Resultado</th><th class="num">Votos (favor / contra / abst.)</th><th>PP</th><th>PSOE</th><th>Vox / Mixto</th></tr></thead>
+        <tbody>
+        {%- for v in d.votaciones %}{% if v.tipo == "moción" and v.ambito == "fondo" and v.proponente %}
+          <tr><td>{{ v.fecha }}</td><td>{{ v.proponente }}</td><td>{% if v.video %}<a href="{{ v.video }}" rel="nofollow noopener">{{ v.titulo }}</a>{% else %}{{ v.titulo }}{% endif %}</td><td class="{% if v.resultado == 'aprobado' %}apro{% else %}rech{% endif %}">{{ v.resultado }}</td><td class="num">{{ v.recuento.favor }} / {{ v.recuento.contra }} / {{ v.recuento.abstencion }}</td><td>{{ v.voto_grupos.PP | replace: "favor", "a favor" | replace: "contra", "en contra" | replace: "abstencion", "abstención" }}</td><td>{{ v.voto_grupos.PSOE | replace: "favor", "a favor" | replace: "contra", "en contra" | replace: "abstencion", "abstención" }}</td><td>{% if v.voto_grupos.Vox %}{{ v.voto_grupos.Vox | replace: "favor", "a favor" | replace: "contra", "en contra" | replace: "abstencion", "abstención" }}{% else %}{{ v.voto_grupos.Mixto | replace: "favor", "a favor" | replace: "contra", "en contra" | replace: "abstencion", "abstención" }}{% endif %}</td></tr>
+        {%- endif %}{% endfor %}
+        </tbody>
+      </table></div>
+      <p class="fu">El enlace de cada moción, cuando existe, lleva al vídeo del punto en la plataforma del Ayuntamiento. El detalle de cada votación (dictámenes, propuestas, actas, votos individuales de los no adscritos) está en el JSON.</p>
+
+      <h2>Sesiones analizadas</h2>
+      <div class="tabla"><table border="1" cellpadding="5" cellspacing="0">
+        <thead><tr><th>Fecha</th><th>Sesión</th><th class="num">Concejales presentes</th><th class="num">Votaciones</th></tr></thead>
+        <tbody>
+        {%- for s in d.sesiones reversed %}
+          <tr><td>{{ s.fecha }}</td><td><a href="{{ s.acta }}" rel="nofollow noopener">{{ s.tipo }} {{ s.numero }}</a></td><td class="num">{{ s.presentes_n }}</td><td class="num">{{ s.votaciones }}</td></tr>
+        {%- endfor %}
+        </tbody>
+      </table></div>
+
+      <h2>Cómo se han extraído los datos</h2>
+      <ul>{%- for m in d.meta.metodo %}<li>{{ m }}</li>{%- endfor %}</ul>
+      <p>De las {{ d.meta.votaciones }} votaciones, {{ d.meta.votaciones_que_cuadran_con_el_recuento_del_acta }} cuadran con el recuento declarado en el acta y con los concejales presentes; el resto se mantienen en el JSON con su nota de calidad (casi todas, por concejales que abandonan la sala a mitad de sesión).</p>
+
+      <h2>Qué no está verificado</h2>
+      <div class="warn"><ul>{%- for m in d.meta.limitaciones %}<li>{{ m }}</li>{%- endfor %}
+        <li>La moción de cada votación se identifica por el encabezado del acta; en {{ d.meta.votaciones_sin_proponente }} votaciones de mociones (por ejemplo, la sesión del 7-11-2024) el acta no permite asignar proponente.</li>
+        <li>El sentido del voto no recoge las intervenciones ni la motivación de cada grupo.</li></ul></div>
+
+      <h2>Cómo citar</h2>
+      <p>Open Salamanca (2026). Votaciones del Pleno del Ayuntamiento de Salamanca, mandato 2023-2027. https://opensalamanca.es/elecciones/politicos/votaciones-pleno (consultado el 25-11-2026). CC BY 4.0. Fuente: actas de los Plenos Municipales del Ayuntamiento de Salamanca.</p>
+    </div>
+  </div>
+</section>

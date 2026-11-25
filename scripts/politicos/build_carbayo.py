@@ -116,6 +116,8 @@ F = {
     "esp26": {"t": "El Español (12-06-2026): Carbayo en el día del patrón", "u": "https://www.elespanol.com/castilla-y-leon/region/salamanca/20260612/carbayo-dia-grande-patron-salamanca-cambiado-crecido-jovenes-no-quieren-ir/1003744283994_0.html"},
     "conprel": {"t": "Ministerio de Hacienda, CONPREL: liquidaciones de presupuestos de entidades locales", "u": "https://www.hacienda.gob.es/es-ES/CDI/Paginas/EntidadesLocales/Presupuestos.aspx"},
     "os_concejales": {"t": "Open Salamanca: concejales del Ayuntamiento de Salamanca", "u": "https://opensalamanca.es/concejales-ayuntamiento-salamanca"},
+    "actas": {"t": "Ayuntamiento de Salamanca: actas de los Plenos Municipales", "u": "https://www.aytosalamanca.es/w/actas-de-los-plenos-municipales"},
+    "votaciones": {"t": "Open Salamanca: votaciones del Pleno del Ayuntamiento de Salamanca, mandato 2023-2027", "u": "https://opensalamanca.es/elecciones/politicos/votaciones-pleno"},
     "os_pres": {"t": "Open Salamanca: presupuesto municipal", "u": "https://opensalamanca.es/presupuesto-municipal"},
 }
 
@@ -123,6 +125,15 @@ F = {
 def fu(*claves):
     return [F[c] for c in claves]
 
+
+_pp = ROOT / "_data" / "pleno" / "personas.json"
+VOTACIONES = None
+if _pp.exists():
+    _v = json.loads(_pp.read_text(encoding="utf-8")).get("carlos-garcia-carbayo")
+    if _v:
+        VOTACIONES = {**_v, "fuente": F["actas"], "dataset": F["votaciones"],
+                      "metodo": "El acta de cada Pleno recoge el voto por grupo y, por nombre, el de los concejales no adscritos. "
+                                "El voto de cada persona se atribuye cuando el recuento de su grupo coincide con los presentes de ese grupo en la cabecera del acta."}
 
 _ficha = json.loads((ROOT / "scripts/politicos/fuentes/fichas_oficiales.json").read_text(encoding="utf-8"))["fichas"]
 _f = next(v for k, v in _ficha.items() if "carbayo" in k)
@@ -308,6 +319,7 @@ data = {
         "Controversias: ninguna contrastada en las fuentes consultadas; eso no prueba que no existan. Tampoco se ha recopilado aún la valoración de la oposición (PSOE y Vox).",
     ],
     "ficha_oficial": FICHA_OFICIAL,
+    "votaciones_pleno": VOTACIONES,
     "faq": [
         {"q": "¿Quién es Carlos García Carbayo?",
          "a": "Carlos Manuel García Carbayo (Salamanca, 1962) es el alcalde de Salamanca desde el 20 de diciembre de 2018 y presidente del PP de Salamanca desde marzo de 2023. Es licenciado en Derecho y profesor de Secundaria funcionario de la Junta de Castilla y León."},
@@ -321,6 +333,8 @@ data = {
          "a": f"En 2019 el PP obtuvo {es(pp19['votos'])} votos ({es(pp19['porcentaje_votos_validos'],1)} %) y 11 concejales; en 2023, {es(pp23['votos'])} votos ({es(pp23['porcentaje_votos_validos'],1)} %) y 14 concejales: {es(variacion_pp['votos'])} votos más y {es(variacion_pp['puntos_porcentuales'],1)} puntos más."},
         {"q": "¿Con quién gobernó Carbayo entre 2019 y 2023?",
          "a": "Con Ciudadanos: fue reelegido el 15 de junio de 2019 con los 11 votos del PP y los 4 de Ciudadanos, que entraron en el gobierno municipal. Desde 2023 gobierna en solitario con mayoría absoluta."},
+        *([{"q": "¿Cómo vota Carbayo en el Pleno del Ayuntamiento de Salamanca?",
+            "a": VOTACIONES["texto_resumen"] + " Como miembro del Grupo Popular, su voto es el que el acta recoge para el grupo. Fuente: actas de los Plenos Municipales."}] if VOTACIONES else []),
         {"q": "¿Dónde puedo consultar la declaración de bienes de Carbayo?",
          "a": "En su ficha oficial del Ayuntamiento de Salamanca y en el Portal de Transparencia. Las declaraciones anuales de 2024 y 2025 indican «sin variación» respecto a la inicial de 2023."},
         {"q": "¿Cuáles son los grandes proyectos de Carbayo en este mandato?",

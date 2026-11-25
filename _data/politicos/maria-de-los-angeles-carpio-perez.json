@@ -23,7 +23,7 @@
       "nombre": "Vox"
     },
     "afiliacion_confirmada": false,
-    "grupo_texto": "Elegido en la candidatura de Vox en 2023; no adscrito o en grupo mixto desde la disolución del grupo municipal (24-02-2025), según fuentes contradictorias",
+    "grupo_texto": "Concejala no adscrita: elegida en la candidatura de Vox en 2023; el grupo municipal de Vox se disolvió el 24-02-2025",
     "alumni_of": [
       "Universidad de Salamanca"
     ],
@@ -31,13 +31,13 @@
     "profesion": null
   },
   "cargo_actual": {
-    "cargo": "Concejala elegida en la candidatura de Vox; en el pleno desde el 26 de julio de 2024",
+    "cargo": "Concejala no adscrita (elegida en la candidatura de Vox); en el pleno desde el 26 de julio de 2024",
     "organizacion": "Ayuntamiento de Salamanca",
     "desde": "2024-07-26",
     "desde_texto": "26 de julio de 2024",
     "mandato_actual": "2023-2027",
     "rol_en_pleno": "oposicion",
-    "rol_en_pleno_texto": "Oposición: concejal elegido en la candidatura de Vox (3 concejales en 2023); el grupo municipal de Vox se disolvió el 24-02-2025.",
+    "rol_en_pleno_texto": "Oposición: concejala no adscrita, elegida en la candidatura de Vox (3 concejales en 2023).",
     "otros_cargos": [],
     "cargo_segun_ficha_oficial": null,
     "contacto_institucional": {
@@ -46,16 +46,20 @@
       "email": "macarpio@aytosalamanca.es"
     }
   },
-  "resumen": "María de los Ángeles Carpio Pérez es concejala elegida en la candidatura de Vox; en el pleno desde el 26 de julio de 2024, en el Ayuntamiento de Salamanca (oposición), mandato 2023-2027. Diplomada en Ciencias Empresariales por la Universidad de Salamanca (1995) y máster European Master in Management (ESCP, 1999); trabajó en ventas de renta variable en Londres (PaineWebber, UBS Warburg, Knight Securities) y fundó en 2009 la Fundación Carpio Pérez, que desarrolla programas en Tanzania. En 2025 percibió 23.188,20 € brutos según el listado oficial del Ayuntamiento (puesto 14 de 27).",
+  "resumen": "María de los Ángeles Carpio Pérez es concejala no adscrita (elegida en la candidatura de Vox); en el pleno desde el 26 de julio de 2024, en el Ayuntamiento de Salamanca (oposición), mandato 2023-2027. Diplomada en Ciencias Empresariales por la Universidad de Salamanca (1995) y máster European Master in Management (ESCP, 1999); trabajó en ventas de renta variable en Londres (PaineWebber, UBS Warburg, Knight Securities) y fundó en 2009 la Fundación Carpio Pérez, que desarrolla programas en Tanzania. En 2025 percibió 23.188,20 € brutos según el listado oficial del Ayuntamiento (puesto 14 de 27).",
   "trayectoria": [
     {
       "fecha": "2025-02-24",
       "hito": "El grupo municipal de Vox se disuelve por resolución del alcalde",
-      "detalle": "Tras la crisis interna, el Ayuntamiento deja a Vox sin grupo municipal; su estatus formal posterior (no adscrito o grupo mixto) aparece de forma contradictoria en las fuentes.",
+      "detalle": "Tras la crisis interna, el Ayuntamiento deja a Vox sin grupo municipal. Desde entonces las actas de Pleno recogen a Ignacio Rivas en el Grupo Mixto (Vox) y a María de los Ángeles Carpio y Alejandro Pérez de la Sota como concejales no adscritos.",
       "fuentes": [
         {
           "t": "Infobae/Europa Press (24-02-2025): Vox se queda sin grupo municipal en el Ayuntamiento de Salamanca",
           "u": "https://www.infobae.com/espana/agencias/2025/02/24/vox-se-queda-sin-grupo-municipal-en-el-ayuntamiento-de-salamanca-por-su-crisis-interna/"
+        },
+        {
+          "t": "Ayuntamiento de Salamanca: actas de los Plenos Municipales",
+          "u": "https://www.aytosalamanca.es/w/actas-de-los-plenos-municipales"
         }
       ]
     },
@@ -143,33 +147,71 @@
         "Vox": 3
       }
     },
-    "texto": "Oposición: concejal elegido en la candidatura de Vox (3 concejales en 2023); el grupo municipal de Vox se disolvió el 24-02-2025.",
+    "texto": "Oposición: concejala no adscrita, elegida en la candidatura de Vox (3 concejales en 2023).",
     "fuente": {
       "t": "Ayuntamiento de Salamanca: Corporación municipal",
       "u": "https://www.aytosalamanca.es/corporacion-municipal"
     },
     "nota": "La web oficial agrupa la Corporación en alcalde, tenientes de alcalde, concejales delegados y concejales. El reparto de 2023 vino con la constitución del Pleno (17-06-2023) y las concejalías (19-06-2023)."
   },
+  "votaciones_pleno": {
+    "periodo_desde": "2024-07-26",
+    "periodo_hasta": "2026-10-16",
+    "sesiones_analizadas": 36,
+    "sesiones_presente": 36,
+    "asistencia_pct": 100.0,
+    "votaciones_de_fondo": 430,
+    "votaciones_con_voto_atribuible": 430,
+    "favor": 238,
+    "contra": 52,
+    "abstencion": 140,
+    "pct_favor": 55.3,
+    "pct_contra": 12.1,
+    "pct_abstencion": 32.6,
+    "votaciones_no_unanimes": 383,
+    "coincide_con_voto_del_PP": {
+      "votaciones": 383,
+      "coinciden": 172,
+      "pct": 44.9
+    },
+    "coincide_con_voto_del_PSOE": {
+      "votaciones": 383,
+      "coinciden": 146,
+      "pct": 38.1
+    },
+    "votos_registrados_por_nombre": 259,
+    "grupo_en_acta": "Vox",
+    "texto_resumen": "Entre el 26-07-2024 y el 16-10-2026, consta en la cabecera de 36 de las 36 actas de Pleno analizadas (100,0 %). En 430 votaciones de fondo con voto atribuible, votó a favor en 238, en contra en 52 y se abstuvo en 140.",
+    "fuente": {
+      "t": "Ayuntamiento de Salamanca: actas de los Plenos Municipales",
+      "u": "https://www.aytosalamanca.es/w/actas-de-los-plenos-municipales"
+    },
+    "dataset": {
+      "t": "Open Salamanca: votaciones del Pleno del Ayuntamiento de Salamanca, mandato 2023-2027",
+      "u": "https://opensalamanca.es/elecciones/politicos/votaciones-pleno"
+    },
+    "metodo": "El acta de cada Pleno recoge el voto por grupo («el voto a favor del Grupo Popular [14 concejales]») y, por nombre, el de los concejales no adscritos. El voto de cada persona se atribuye cuando el recuento de su grupo coincide con los presentes de ese grupo en la cabecera del acta; si alguien abandona la sala, no se atribuye."
+  },
   "no_verificado": [
     "Cifras de patrimonio, bienes e ingresos de las declaraciones de bienes y actividades: se enlazan las publicadas por el Ayuntamiento, pero no se transcriben.",
-    "Puesto en la lista de 2023, votos personales y posiciones o votaciones concretas en el Pleno: no recopilados.",
+    "Puesto en la lista de 2023 y votos personales en las urnas: no recopilados. Las votaciones del Pleno se resumen en la sección correspondiente, con sus límites.",
     "Fecha de nacimiento y trayectoria política previa al Ayuntamiento: no figuran en la ficha oficial salvo lo reproducido arriba.",
     "Controversias: ninguna contrastada en las fuentes consultadas; eso no prueba que no existan. No se ha recopilado la valoración de otros grupos.",
-    "Su afiliación o grupo actual: las fuentes consultadas no son concluyentes (no adscrita o grupo mixto desde febrero de 2025).",
+    "Su situación como afiliada a Vox: las actas la recogen como concejala no adscrita; no se ha comprobado su afiliación.",
     "Su ficha oficial solo enlaza la declaración inicial de 2023 (no las anuales de 2024 y 2025)."
   ],
   "faq": [
     {
       "q": "¿Quién es María de los Ángeles Carpio Pérez?",
-      "a": "María de los Ángeles Carpio Pérez es concejala elegida en la candidatura de Vox; en el pleno desde el 26 de julio de 2024, en el Ayuntamiento de Salamanca (oposición), mandato 2023-2027. Diplomada en Ciencias Empresariales por la Universidad de Salamanca (1995) y máster European Master in Management (ESCP, 1999); trabajó en ventas de renta variable en Londres (PaineWebber, UBS Warburg, Knight Securities) y fundó en 2009 la Fundación Carpio Pérez, que desarrolla programas en Tanzania. En 2025 percibió 23.188,20 € brutos según el listado oficial del Ayuntamiento (puesto 14 de 27)."
+      "a": "María de los Ángeles Carpio Pérez es concejala no adscrita (elegida en la candidatura de Vox); en el pleno desde el 26 de julio de 2024, en el Ayuntamiento de Salamanca (oposición), mandato 2023-2027. Diplomada en Ciencias Empresariales por la Universidad de Salamanca (1995) y máster European Master in Management (ESCP, 1999); trabajó en ventas de renta variable en Londres (PaineWebber, UBS Warburg, Knight Securities) y fundó en 2009 la Fundación Carpio Pérez, que desarrolla programas en Tanzania. En 2025 percibió 23.188,20 € brutos según el listado oficial del Ayuntamiento (puesto 14 de 27)."
     },
     {
       "q": "¿Qué cargo tiene María de los Ángeles Carpio Pérez en el Ayuntamiento de Salamanca?",
-      "a": "Concejala elegida en la candidatura de Vox; en el pleno desde el 26 de julio de 2024. Oposición: concejal elegido en la candidatura de Vox (3 concejales en 2023); el grupo municipal de Vox se disolvió el 24-02-2025."
+      "a": "Concejala no adscrita (elegida en la candidatura de Vox); en el pleno desde el 26 de julio de 2024. Oposición: concejala no adscrita, elegida en la candidatura de Vox (3 concejales en 2023)."
     },
     {
       "q": "¿A qué partido o grupo pertenece María de los Ángeles Carpio Pérez?",
-      "a": "Fue elegida en la candidatura de Vox en las municipales de 2023 (Vox obtuvo 3 concejales). El grupo municipal de Vox se disolvió por resolución del alcalde el 24 de febrero de 2025 tras una crisis interna; las fuentes consultadas no concretan si pasó a no adscrita o a un grupo mixto."
+      "a": "Fue elegida en la candidatura de Vox en las municipales de 2023 (Vox obtuvo 3 concejales). El grupo municipal de Vox se disolvió por resolución del alcalde el 24 de febrero de 2025 tras una crisis interna; desde entonces las actas de Pleno la recogen como concejala no adscrita."
     },
     {
       "q": "¿Cuánto cobra María de los Ángeles Carpio Pérez?",
@@ -178,6 +220,10 @@
     {
       "q": "¿Cuál es la formación y la profesión de María de los Ángeles Carpio Pérez?",
       "a": "Diplomada en Ciencias Empresariales por la Universidad de Salamanca (1995) y máster European Master in Management (ESCP, 1999); trabajó en ventas de renta variable en Londres (PaineWebber, UBS Warburg, Knight Securities) y fundó en 2009 la Fundación Carpio Pérez, que desarrolla programas en Tanzania."
+    },
+    {
+      "q": "¿Cómo vota María de los Ángeles Carpio Pérez en el Pleno del Ayuntamiento de Salamanca?",
+      "a": "Entre el 26-07-2024 y el 16-10-2026, consta en la cabecera de 36 de las 36 actas de Pleno analizadas (100,0 %). En 430 votaciones de fondo con voto atribuible, votó a favor en 238, en contra en 52 y se abstuvo en 140. Coincidió con el voto del PP en el 44,9 % y con el del PSOE en el 38,1 % de las votaciones no unánimes. Fuente: actas de los Plenos Municipales."
     },
     {
       "q": "¿Cómo contactar con María de los Ángeles Carpio Pérez?",
@@ -212,6 +258,10 @@
     {
       "t": "Infobae/Europa Press (24-02-2025): Vox se queda sin grupo municipal en el Ayuntamiento de Salamanca",
       "u": "https://www.infobae.com/espana/agencias/2025/02/24/vox-se-queda-sin-grupo-municipal-en-el-ayuntamiento-de-salamanca-por-su-crisis-interna/"
+    },
+    {
+      "t": "Ayuntamiento de Salamanca: actas de los Plenos Municipales",
+      "u": "https://www.aytosalamanca.es/w/actas-de-los-plenos-municipales"
     },
     {
       "t": "COPE (26-07-2024): María de los Ángeles Carpio Pérez, nueva concejala de Vox",

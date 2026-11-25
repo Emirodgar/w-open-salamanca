@@ -58,6 +58,8 @@ S = {
     "gb_ayto": {"t": "Ayuntamiento de Salamanca: César Gómez Barthe Celada toma posesión como nuevo concejal", "u": "https://www.aytosalamanca.es/w/c%C3%A9sar-g%C3%B3mez-barthe-celada-toma-posesi%C3%B3n-como-nuevo-concejal-del-ayuntamiento-de-salamanca"},
     "gb_es": {"t": "El Español (30-07-2026): César Gómez Barthe se incorpora como concejal y asume Comercio y Juventud", "u": "https://www.elespanol.com/castilla-y-leon/region/salamanca/20260730/cesar-gomez-barthe-incorpora-concejal-ayuntamiento-salamanca-asume-comercio-juventud/1003744339657_0.html"},
     "gb_tv": {"t": "SALAMANCArtv AL DÍA (30-07-2026): César Gómez-Barthe toma posesión como concejal de Promoción Económica y Juventud", "u": "https://salamancartvaldia.es/noticia/2026-07-30-cesar-gomez-barthe-toma-posesion-como-concejal-de-promocion-economica-y-juventud-394984"},
+    "actas": {"t": "Ayuntamiento de Salamanca: actas de los Plenos Municipales", "u": "https://www.aytosalamanca.es/w/actas-de-los-plenos-municipales"},
+    "votaciones": {"t": "Open Salamanca: votaciones del Pleno del Ayuntamiento de Salamanca, mandato 2023-2027", "u": "https://opensalamanca.es/elecciones/politicos/votaciones-pleno"},
     "carbayo": {"t": "Open Salamanca: ficha de Carlos García Carbayo, alcalde de Salamanca", "u": "https://opensalamanca.es/elecciones/politicos/carlos-garcia-carbayo"},
 }
 
@@ -272,31 +274,31 @@ PEOPLE = [
     # ------------------------------------------------------------ ex-Vox
     dict(slug="ignacio-javier-rivas-serrano", match="rivas serrano", ret="RIVAS SERRANO, IGNACIO JAVIER", g="m", grupo="Vox", rol=OPO,
          nombre="Ignacio Javier Rivas Serrano", hab="Ignacio Rivas Serrano", pila="Ignacio Javier", apell="Rivas Serrano",
-         cargo="Concejal elegido en la candidatura de Vox; portavoz de Vox hasta el 10 de febrero de 2025", desde="2023-06-17",
+         cargo="Concejal del Grupo Mixto (elegido en la candidatura de Vox); portavoz de Vox hasta el 10 de febrero de 2025", desde="2023-06-17",
          perfil="Licenciado en Derecho por la Universidad de Salamanca; directivo bancario (Banco Comercial Español, Banco Guipuzcoano, La Caixa y CaixaBank) entre 1989 y 2019, director de zona en Salamanca entre 2015 y 2019.",
          alumni=["Universidad de Salamanca"],
-         tray=[("2025-02-24", "El grupo municipal de Vox se disuelve por resolución del alcalde", "Tras la crisis interna, el Ayuntamiento deja a Vox sin grupo municipal; su estatus formal posterior (no adscrito o grupo mixto) aparece de forma contradictoria en las fuentes.", ["vox_infobae"]),
+         tray=[("2025-02-24", "El grupo municipal de Vox se disuelve por resolución del alcalde", "Tras la crisis interna, el Ayuntamiento deja a Vox sin grupo municipal. Desde entonces las actas de Pleno recogen a Ignacio Rivas en el Grupo Mixto (Vox) y a María de los Ángeles Carpio y Alejandro Pérez de la Sota como concejales no adscritos.", ["vox_infobae", "actas"]),
                ("2025-02-10", "Deja de ser portavoz de Vox", "Alejandro Pérez de la Sota pasa a ser el nuevo portavoz; la prensa lo describe como una crisis interna del partido en Salamanca.", ["vox_eldiario", "vox_infobae"]),
                ("2023-06-17", "Concejal y portavoz de Vox en el mandato 2023-2027", "Elegido en la candidatura de Vox en las municipales del 28-05-2023 (3 concejales).", ["tribuna27", "os_conc"])],
-         extra_nv=["Su afiliación o grupo actual: las fuentes consultadas no son concluyentes (no adscrito o grupo mixto desde febrero de 2025).",
+         extra_nv=["Su afiliación actual a Vox: las actas lo recogen en el Grupo Mixto (Vox), pero no se ha comprobado su situación como afiliado.",
                    "Motivo y alcance de su salida como portavoz: la prensa describe una crisis interna; no se detallan aquí versiones contrapuestas."]),
     dict(slug="alejandro-miguel-perez-de-la-sota", match="perez de la sota", ret="PEREZ DE LA SOTA, ALEJANDRO MIGUEL", g="m", grupo="Vox", rol=OPO,
          nombre="Alejandro Miguel Pérez de la Sota", hab="Alejandro Pérez de la Sota", pila="Alejandro Miguel", apell="Pérez de la Sota",
-         cargo="Concejal elegido en la candidatura de Vox; portavoz de Vox desde el 10 de febrero de 2025", desde="2023-06-17",
+         cargo="Concejal no adscrito (elegido en la candidatura de Vox); portavoz de Vox desde el 10 de febrero de 2025 hasta la disolución del grupo", desde="2023-06-17",
          perfil="Licenciado en Derecho por la Universidad de Salamanca (1997) y abogado ejerciente con despacho propio desde 2005; fue tesorero de la Junta de Gobierno del Colegio de Abogados de Salamanca (2021-2023).",
          alumni=["Universidad de Salamanca"],
-         tray=[("2025-02-24", "El grupo municipal de Vox se disuelve por resolución del alcalde", "Tras la crisis interna, el Ayuntamiento deja a Vox sin grupo municipal; su estatus formal posterior (no adscrito o grupo mixto) aparece de forma contradictoria en las fuentes.", ["vox_infobae"]),
+         tray=[("2025-02-24", "El grupo municipal de Vox se disuelve por resolución del alcalde", "Tras la crisis interna, el Ayuntamiento deja a Vox sin grupo municipal. Desde entonces las actas de Pleno recogen a Ignacio Rivas en el Grupo Mixto (Vox) y a María de los Ángeles Carpio y Alejandro Pérez de la Sota como concejales no adscritos.", ["vox_infobae", "actas"]),
                ("2025-02-10", "Nuevo portavoz de Vox", "Sustituye a Ignacio Rivas Serrano como portavoz; la prensa lo describe como una crisis interna del partido en Salamanca.", ["vox_eldiario", "vox_infobae"]),
                ("2023-06-17", "Concejal de Vox en el mandato 2023-2027", "Elegido en la candidatura de Vox en las municipales del 28-05-2023 (3 concejales).", ["tribuna27", "os_conc"])],
-         extra_nv=["Su afiliación o grupo actual: las fuentes consultadas no son concluyentes (no adscrito o grupo mixto desde febrero de 2025)."]),
+         extra_nv=["Su situación como afiliado a Vox: las actas lo recogen como concejal no adscrito; no se ha comprobado su afiliación."]),
     dict(slug="maria-de-los-angeles-carpio-perez", match="carpio perez", ret="CARPIO PEREZ, MARIA ANGELES", g="f", grupo="Vox", rol=OPO,
          nombre="María de los Ángeles Carpio Pérez", hab="María de los Ángeles Carpio Pérez", pila="María de los Ángeles", apell="Carpio Pérez",
-         cargo="Concejala elegida en la candidatura de Vox; en el pleno desde el 26 de julio de 2024", desde="2024-07-26",
+         cargo="Concejala no adscrita (elegida en la candidatura de Vox); en el pleno desde el 26 de julio de 2024", desde="2024-07-26",
          perfil="Diplomada en Ciencias Empresariales por la Universidad de Salamanca (1995) y máster European Master in Management (ESCP, 1999); trabajó en ventas de renta variable en Londres (PaineWebber, UBS Warburg, Knight Securities) y fundó en 2009 la Fundación Carpio Pérez, que desarrolla programas en Tanzania.",
          alumni=["Universidad de Salamanca"],
-         tray=[("2025-02-24", "El grupo municipal de Vox se disuelve por resolución del alcalde", "Tras la crisis interna, el Ayuntamiento deja a Vox sin grupo municipal; su estatus formal posterior (no adscrito o grupo mixto) aparece de forma contradictoria en las fuentes.", ["vox_infobae"]),
+         tray=[("2025-02-24", "El grupo municipal de Vox se disuelve por resolución del alcalde", "Tras la crisis interna, el Ayuntamiento deja a Vox sin grupo municipal. Desde entonces las actas de Pleno recogen a Ignacio Rivas en el Grupo Mixto (Vox) y a María de los Ángeles Carpio y Alejandro Pérez de la Sota como concejales no adscritos.", ["vox_infobae", "actas"]),
                ("2024-07-26", "Toma posesión como concejala", "Sustituye a Laura Magdalena Miguel (Vox), que renunció al acta el 27-06-2024 por incompatibilidad laboral.", ["cope_carpio", "magdalena"])],
-         extra_nv=["Su afiliación o grupo actual: las fuentes consultadas no son concluyentes (no adscrita o grupo mixto desde febrero de 2025).",
+         extra_nv=["Su situación como afiliada a Vox: las actas la recogen como concejala no adscrita; no se ha comprobado su afiliación.",
                    "Su ficha oficial solo enlaza la declaración inicial de 2023 (no las anuales de 2024 y 2025)."]),
 ]
 
@@ -311,6 +313,16 @@ def buscar_ficha(match):
     return cand[0]
 
 
+GRUPO_TXT_PERSONA = {
+    "ignacio-javier-rivas-serrano": "Grupo Mixto (Vox): elegido en la candidatura de Vox en 2023; el grupo municipal de Vox se disolvió el 24-02-2025",
+    "alejandro-miguel-perez-de-la-sota": "Concejal no adscrito: elegido en la candidatura de Vox en 2023; el grupo municipal de Vox se disolvió el 24-02-2025",
+    "maria-de-los-angeles-carpio-perez": "Concejala no adscrita: elegida en la candidatura de Vox en 2023; el grupo municipal de Vox se disolvió el 24-02-2025",
+}
+ROL_TXT_PERSONA = {
+    "ignacio-javier-rivas-serrano": "Oposición: concejal del Grupo Mixto (1 concejal), elegido en la candidatura de Vox (3 concejales en 2023).",
+    "alejandro-miguel-perez-de-la-sota": "Oposición: concejal no adscrito, elegido en la candidatura de Vox (3 concejales en 2023).",
+    "maria-de-los-angeles-carpio-perez": "Oposición: concejala no adscrita, elegida en la candidatura de Vox (3 concejales en 2023).",
+}
 GRUPO_TXT = {
     "PP": ("Partido Popular (PP)", "Partido Popular"),
     "PSOE": ("Partido Socialista Obrero Español (PSOE)", "Partido Socialista Obrero Español"),
@@ -327,8 +339,26 @@ def art(g, m, f):
     return m if g == "m" else f
 
 
+PLENO_PERSONAS = {}
+_pp = ROOT / "_data" / "pleno" / "personas.json"
+if _pp.exists():
+    PLENO_PERSONAS = json.loads(_pp.read_text(encoding="utf-8"))
+
+
+def votaciones_bloque(slug, hab):
+    """Bloque de votaciones del Pleno de la persona (build_pleno.py); None si no hay datos."""
+    v = PLENO_PERSONAS.get(slug)
+    if not v:
+        return None
+    return {**v, "fuente": S["actas"], "dataset": S["votaciones"],
+            "metodo": "El acta de cada Pleno recoge el voto por grupo («el voto a favor del Grupo Popular [14 concejales]») y, por nombre, el de los concejales no adscritos. "
+                      "El voto de cada persona se atribuye cuando el recuento de su grupo coincide con los presentes de ese grupo en la cabecera del acta; si alguien abandona la sala, no se atribuye."}
+
+
 def build(p):
     g = p["g"]
+    rol_txt = ROL_TXT_PERSONA.get(p["slug"], ROL_TXT[p["grupo"]])
+    grupo_txt = GRUPO_TXT_PERSONA.get(p["slug"], GRUPO_TXT[p["grupo"]][0])
     concejal = art(g, "concejal", "concejala")
     grupo = p["grupo"]
     f = buscar_ficha(p["match"]) if p.get("match") else None
@@ -399,20 +429,24 @@ def build(p):
     faq = [
         {"q": f"¿Quién es {p['hab']}?", "a": resumen},
         {"q": f"¿Qué cargo tiene {p['hab']} en el Ayuntamiento de Salamanca?",
-         "a": f"{p['cargo']}. {ROL_TXT[grupo]}" + (f" Cargo según su ficha oficial: «{cargo_of}»." if cargo_of else "")},
+         "a": f"{p['cargo']}. {rol_txt}" + (f" Cargo según su ficha oficial: «{cargo_of}»." if cargo_of else "")},
         {"q": f"¿A qué partido o grupo pertenece {p['hab']}?",
          "a": (f"Fue elegid{art(g,'o','a')} en la lista del {GRUPO_TXT[grupo][0]}." if grupo != "Vox" else
-               "Fue " + art(g, "elegido", "elegida") + " en la candidatura de Vox en las municipales de 2023 (Vox obtuvo 3 concejales). El grupo municipal de Vox se disolvió por resolución del alcalde el 24 de febrero de 2025 tras una crisis interna; las fuentes consultadas no concretan si pasó a no adscrit" + art(g, "o", "a") + " o a un grupo mixto.")},
+               f"Fue {art(g, 'elegido', 'elegida')} en la candidatura de Vox en las municipales de 2023 (Vox obtuvo 3 concejales). El grupo municipal de Vox se disolvió por resolución del alcalde el 24 de febrero de 2025 tras una crisis interna; desde entonces las actas de Pleno {art(g, 'lo', 'la')} recogen como {grupo_txt.split(':')[0].lower()}.")},
         {"q": f"¿Cuánto cobra {p['hab']}?", "a": ret["texto_resumen"]},
         {"q": f"¿Cuál es la formación y la profesión de {p['hab']}?", "a": p["perfil"]},
     ]
+    vp = PLENO_PERSONAS.get(p["slug"])
+    if vp and vp["votaciones_con_voto_atribuible"]:
+        faq.append({"q": f"¿Cómo vota {p['hab']} en el Pleno del Ayuntamiento de Salamanca?",
+                    "a": vp["texto_resumen"] + f" Coincidió con el voto del PP en el {es(vp['coincide_con_voto_del_PP']['pct'], 1)} % y con el del PSOE en el {es(vp['coincide_con_voto_del_PSOE']['pct'], 1)} % de las votaciones no unánimes. Fuente: actas de los Plenos Municipales."})
     if contacto["email"]:
         faq.append({"q": f"¿Cómo contactar con {p['hab']}?",
                     "a": f"Por el correo institucional {contacto['email']}" + (f" o por teléfono en el {contacto['telefono']}" if contacto["telefono"] else "") + ", según su ficha oficial en la web del Ayuntamiento de Salamanca."})
 
     nv = [
         "Cifras de patrimonio, bienes e ingresos de las declaraciones de bienes y actividades: se enlazan las publicadas por el Ayuntamiento, pero no se transcriben.",
-        "Puesto en la lista de 2023, votos personales y posiciones o votaciones concretas en el Pleno: no recopilados.",
+        "Puesto en la lista de 2023 y votos personales en las urnas: no recopilados. Las votaciones del Pleno se resumen en la sección correspondiente, con sus límites.",
         "Fecha de nacimiento y trayectoria política previa al Ayuntamiento: no figuran en la ficha oficial salvo lo reproducido arriba." if not p.get("nacimiento") else
         "Trayectoria política y profesional anterior a la nota oficial de su toma de posesión.",
         "Controversias: ninguna contrastada en las fuentes consultadas; eso no prueba que no existan. No se ha recopilado la valoración de otros grupos.",
@@ -447,7 +481,7 @@ def build(p):
             "nacimiento": nac,
             "partido": {"siglas": grupo, "nombre": GRUPO_TXT[grupo][1]},
             "afiliacion_confirmada": False,
-            "grupo_texto": GRUPO_TXT[grupo][0],
+            "grupo_texto": grupo_txt,
             "alumni_of": p["alumni"],
             "formacion_resumen": (fo["formacion_oficial"][0].split(" — ")[0] if fo.get("formacion_oficial") else None),
             "profesion": None,
@@ -455,7 +489,7 @@ def build(p):
         "cargo_actual": {
             "cargo": p["cargo"][0].upper() + p["cargo"][1:], "organizacion": "Ayuntamiento de Salamanca",
             "desde": p["desde"], "desde_texto": desde_txt, "mandato_actual": "2023-2027",
-            "rol_en_pleno": p["rol"], "rol_en_pleno_texto": ROL_TXT[grupo], "otros_cargos": [],
+            "rol_en_pleno": p["rol"], "rol_en_pleno_texto": rol_txt, "otros_cargos": [],
             "cargo_segun_ficha_oficial": cargo_of, "contacto_institucional": contacto,
         },
         "resumen": resumen,
@@ -469,9 +503,10 @@ def build(p):
         },
         "gobierno_municipal": {
             "pleno": {"concejales": 27, "mayoria_absoluta": 14, "reparto_2023_2027": {"PP": 14, "PSOE": 10, "Vox": 3}},
-            "texto": ROL_TXT[grupo], "fuente": S["corp"],
+            "texto": rol_txt, "fuente": S["corp"],
             "nota": "La web oficial agrupa la Corporación en alcalde, tenientes de alcalde, concejales delegados y concejales. El reparto de 2023 vino con la constitución del Pleno (17-06-2023) y las concejalías (19-06-2023).",
         },
+        "votaciones_pleno": votaciones_bloque(p["slug"], p["hab"]),
         "no_verificado": nv,
         "faq": faq,
         "fuentes": fuentes,
@@ -583,6 +618,7 @@ def main():
     txt = re.sub(r"\n?<!-- fichas-politicos:start -->.*?<!-- fichas-politicos:end -->\n?", "\n", txt, flags=re.S)
     bloque = ["", "<!-- fichas-politicos:start -->", "## Fichas de concejales del Ayuntamiento de Salamanca (mandato 2023-2027)", "",
               "- [Concejales del Ayuntamiento de Salamanca: listado, grupos y retribuciones 2025](https://opensalamanca.es/elecciones/politicos/): Las 27 personas de la Corporación (gobierno del PP y oposición) con cargo, grupo y retribución bruta 2025 del listado oficial; datos en JSON: https://opensalamanca.es/elecciones/politicos/concejales-salamanca-2023-2027.json"]
+    bloque.append("- [Votaciones del Pleno del Ayuntamiento de Salamanca 2023-2027](https://opensalamanca.es/elecciones/politicos/votaciones-pleno): Voto de cada grupo y de cada concejal en las votaciones de fondo, mociones aprobadas y rechazadas por grupo y coincidencias entre grupos, extraído de las actas oficiales; datos en JSON: https://opensalamanca.es/elecciones/politicos/votaciones-pleno.json")
     for i in indice:
         nom = i["nombre"]
         bloque.append(f"- [{nom}]({i['url']}): {i['cargo']} ({i['grupo']}); biografía, formación, trayectoria, retribución oficial 2025 y transparencia con fuente en cada dato. JSON: {i['url']}.json")

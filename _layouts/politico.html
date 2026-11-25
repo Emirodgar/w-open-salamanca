@@ -127,6 +127,28 @@ layout: default
       {%- endif %}
       <p class="fu">{{ p.transparencia.nota }}{% if p.transparencia.declaracion_inicial_2023 %} <a href="{{ p.transparencia.declaracion_inicial_2023.u }}" rel="nofollow noopener">Declaración inicial 2023</a> ·{% endif %} <a href="{{ p.transparencia.portal.u }}" rel="nofollow noopener">Portal de Transparencia</a></p>
 
+      {%- if p.votaciones_pleno %}
+      {%- assign vp = p.votaciones_pleno %}
+      <h2>Votaciones en el Pleno (mandato 2023-2027)</h2>
+      <p>{{ vp.texto_resumen }}</p>
+      <div class="tabla"><table border="1" cellpadding="5" cellspacing="0">
+        <thead><tr><th>Indicador</th><th>Dato</th></tr></thead>
+        <tbody>
+          <tr><td>Asistencia (consta en la cabecera del acta)</td><td>{{ vp.sesiones_presente }} de {{ vp.sesiones_analizadas }} sesiones ({{ vp.asistencia_pct | replace: ".", "," }} %)</td></tr>
+          <tr><td>Votaciones de fondo con voto atribuible</td><td>{{ vp.votaciones_con_voto_atribuible }} de {{ vp.votaciones_de_fondo }}</td></tr>
+          <tr><td>A favor</td><td>{{ vp.favor }} ({{ vp.pct_favor | replace: ".", "," }} %)</td></tr>
+          <tr><td>En contra</td><td>{{ vp.contra }} ({{ vp.pct_contra | replace: ".", "," }} %)</td></tr>
+          <tr><td>Abstención</td><td>{{ vp.abstencion }} ({{ vp.pct_abstencion | replace: ".", "," }} %)</td></tr>
+          <tr><td>Coincidencia con el voto del PP (votaciones no unánimes)</td><td>{{ vp.coincide_con_voto_del_PP.coinciden }} de {{ vp.coincide_con_voto_del_PP.votaciones }} ({{ vp.coincide_con_voto_del_PP.pct | replace: ".", "," }} %)</td></tr>
+          <tr><td>Coincidencia con el voto del PSOE (votaciones no unánimes)</td><td>{{ vp.coincide_con_voto_del_PSOE.coinciden }} de {{ vp.coincide_con_voto_del_PSOE.votaciones }} ({{ vp.coincide_con_voto_del_PSOE.pct | replace: ".", "," }} %)</td></tr>
+          {%- if vp.votos_registrados_por_nombre > 0 %}
+          <tr><td>Votos que el acta registra por nombre</td><td>{{ vp.votos_registrados_por_nombre }}</td></tr>
+          {%- endif %}
+        </tbody>
+      </table></div>
+      <p class="fu">{{ vp.metodo }} Fuente: <a href="{{ vp.fuente.u }}" rel="nofollow noopener">{{ vp.fuente.t }}</a>. Datos y metodología completos en <a href="/elecciones/politicos/votaciones-pleno">votaciones del Pleno 2023-2027</a>.</p>
+      {%- endif %}
+
       {%- if p.presupuesto_municipal_durante_su_gobierno %}
       <h2>Presupuesto municipal durante su gobierno</h2>
       <p>{{ p.presupuesto_municipal_durante_su_gobierno.nota }}</p>

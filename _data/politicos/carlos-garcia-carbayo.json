@@ -644,6 +644,44 @@
     ],
     "otras_actividades": []
   },
+  "votaciones_pleno": {
+    "periodo_desde": "2023-06-18",
+    "periodo_hasta": "2026-10-16",
+    "sesiones_analizadas": 54,
+    "sesiones_presente": 54,
+    "asistencia_pct": 100.0,
+    "votaciones_de_fondo": 580,
+    "votaciones_con_voto_atribuible": 569,
+    "favor": 405,
+    "contra": 161,
+    "abstencion": 3,
+    "pct_favor": 71.2,
+    "pct_contra": 28.3,
+    "pct_abstencion": 0.5,
+    "votaciones_no_unanimes": 491,
+    "coincide_con_voto_del_PP": {
+      "votaciones": 491,
+      "coinciden": 491,
+      "pct": 100.0
+    },
+    "coincide_con_voto_del_PSOE": {
+      "votaciones": 490,
+      "coinciden": 65,
+      "pct": 13.3
+    },
+    "votos_registrados_por_nombre": 0,
+    "grupo_en_acta": "PP",
+    "texto_resumen": "Entre el 27-06-2023 y el 16-10-2026, consta en la cabecera de 54 de las 54 actas de Pleno analizadas (100,0 %). En 569 votaciones de fondo con voto atribuible, votó a favor en 405, en contra en 161 y se abstuvo en 3.",
+    "fuente": {
+      "t": "Ayuntamiento de Salamanca: actas de los Plenos Municipales",
+      "u": "https://www.aytosalamanca.es/w/actas-de-los-plenos-municipales"
+    },
+    "dataset": {
+      "t": "Open Salamanca: votaciones del Pleno del Ayuntamiento de Salamanca, mandato 2023-2027",
+      "u": "https://opensalamanca.es/elecciones/politicos/votaciones-pleno"
+    },
+    "metodo": "El acta de cada Pleno recoge el voto por grupo y, por nombre, el de los concejales no adscritos. El voto de cada persona se atribuye cuando el recuento de su grupo coincide con los presentes de ese grupo en la cabecera del acta."
+  },
   "faq": [
     {
       "q": "¿Quién es Carlos García Carbayo?",
@@ -668,6 +706,10 @@
     {
       "q": "¿Con quién gobernó Carbayo entre 2019 y 2023?",
       "a": "Con Ciudadanos: fue reelegido el 15 de junio de 2019 con los 11 votos del PP y los 4 de Ciudadanos, que entraron en el gobierno municipal. Desde 2023 gobierna en solitario con mayoría absoluta."
+    },
+    {
+      "q": "¿Cómo vota Carbayo en el Pleno del Ayuntamiento de Salamanca?",
+      "a": "Entre el 27-06-2023 y el 16-10-2026, consta en la cabecera de 54 de las 54 actas de Pleno analizadas (100,0 %). En 569 votaciones de fondo con voto atribuible, votó a favor en 405, en contra en 161 y se abstuvo en 3. Como miembro del Grupo Popular, su voto es el que el acta recoge para el grupo. Fuente: actas de los Plenos Municipales."
     },
     {
       "q": "¿Dónde puedo consultar la declaración de bienes de Carbayo?",
@@ -758,6 +800,14 @@
     {
       "t": "Open Salamanca: concejales del Ayuntamiento de Salamanca",
       "u": "https://opensalamanca.es/concejales-ayuntamiento-salamanca"
+    },
+    {
+      "t": "Ayuntamiento de Salamanca: actas de los Plenos Municipales",
+      "u": "https://www.aytosalamanca.es/w/actas-de-los-plenos-municipales"
+    },
+    {
+      "t": "Open Salamanca: votaciones del Pleno del Ayuntamiento de Salamanca, mandato 2023-2027",
+      "u": "https://opensalamanca.es/elecciones/politicos/votaciones-pleno"
     },
     {
       "t": "Open Salamanca: presupuesto municipal",

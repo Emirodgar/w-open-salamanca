@@ -140,9 +140,47 @@
     },
     "nota": "La web oficial agrupa la Corporación en alcalde, tenientes de alcalde, concejales delegados y concejales. El reparto de 2023 vino con la constitución del Pleno (17-06-2023) y las concejalías (19-06-2023)."
   },
+  "votaciones_pleno": {
+    "periodo_desde": "2026-07-30",
+    "periodo_hasta": "2026-10-16",
+    "sesiones_analizadas": 4,
+    "sesiones_presente": 3,
+    "asistencia_pct": 75.0,
+    "votaciones_de_fondo": 46,
+    "votaciones_con_voto_atribuible": 34,
+    "favor": 29,
+    "contra": 5,
+    "abstencion": 0,
+    "pct_favor": 85.3,
+    "pct_contra": 14.7,
+    "pct_abstencion": 0.0,
+    "votaciones_no_unanimes": 29,
+    "coincide_con_voto_del_PP": {
+      "votaciones": 29,
+      "coinciden": 29,
+      "pct": 100.0
+    },
+    "coincide_con_voto_del_PSOE": {
+      "votaciones": 29,
+      "coinciden": 6,
+      "pct": 20.7
+    },
+    "votos_registrados_por_nombre": 0,
+    "grupo_en_acta": "PP",
+    "texto_resumen": "Entre el 30-07-2026 y el 16-10-2026, consta en la cabecera de 3 de las 4 actas de Pleno analizadas (75,0 %). En 34 votaciones de fondo con voto atribuible, votó a favor en 29, en contra en 5 y se abstuvo en 0.",
+    "fuente": {
+      "t": "Ayuntamiento de Salamanca: actas de los Plenos Municipales",
+      "u": "https://www.aytosalamanca.es/w/actas-de-los-plenos-municipales"
+    },
+    "dataset": {
+      "t": "Open Salamanca: votaciones del Pleno del Ayuntamiento de Salamanca, mandato 2023-2027",
+      "u": "https://opensalamanca.es/elecciones/politicos/votaciones-pleno"
+    },
+    "metodo": "El acta de cada Pleno recoge el voto por grupo («el voto a favor del Grupo Popular [14 concejales]») y, por nombre, el de los concejales no adscritos. El voto de cada persona se atribuye cuando el recuento de su grupo coincide con los presentes de ese grupo en la cabecera del acta; si alguien abandona la sala, no se atribuye."
+  },
   "no_verificado": [
     "Cifras de patrimonio, bienes e ingresos de las declaraciones de bienes y actividades: se enlazan las publicadas por el Ayuntamiento, pero no se transcriben.",
-    "Puesto en la lista de 2023, votos personales y posiciones o votaciones concretas en el Pleno: no recopilados.",
+    "Puesto en la lista de 2023 y votos personales en las urnas: no recopilados. Las votaciones del Pleno se resumen en la sección correspondiente, con sus límites.",
     "Trayectoria política y profesional anterior a la nota oficial de su toma de posesión.",
     "Controversias: ninguna contrastada en las fuentes consultadas; eso no prueba que no existan. No se ha recopilado la valoración de otros grupos.",
     "Orden de los tenientes de alcalde y régimen de dedicación tras su incorporación (no consta en las fuentes consultadas).",
@@ -169,6 +207,10 @@
     {
       "q": "¿Cuál es la formación y la profesión de César Gómez-Barthe?",
       "a": "Nacido en León en 1986; licenciado en Derecho y en Ciencias Políticas y de la Administración por la Universidad de Salamanca, con un máster en Democracia y Buen Gobierno y otro en Dirección de Protocolo y Eventos (Universidad Camilo José Cela); abogado colegiado no ejerciente, fue responsable de Proyectos de la Asociación de Jóvenes Empresarios de Salamanca (2015-2019), asesor del Grupo Municipal Popular y secretario general de Nuevas Generaciones del PP de Salamanca (2012-2021)."
+    },
+    {
+      "q": "¿Cómo vota César Gómez-Barthe en el Pleno del Ayuntamiento de Salamanca?",
+      "a": "Entre el 30-07-2026 y el 16-10-2026, consta en la cabecera de 3 de las 4 actas de Pleno analizadas (75,0 %). En 34 votaciones de fondo con voto atribuible, votó a favor en 29, en contra en 5 y se abstuvo en 0. Coincidió con el voto del PP en el 100,0 % y con el del PSOE en el 20,7 % de las votaciones no unánimes. Fuente: actas de los Plenos Municipales."
     }
   ],
   "fuentes": [

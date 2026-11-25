@@ -151,9 +151,47 @@
     },
     "nota": "La web oficial agrupa la Corporación en alcalde, tenientes de alcalde, concejales delegados y concejales. El reparto de 2023 vino con la constitución del Pleno (17-06-2023) y las concejalías (19-06-2023)."
   },
+  "votaciones_pleno": {
+    "periodo_desde": "2023-06-18",
+    "periodo_hasta": "2026-10-16",
+    "sesiones_analizadas": 54,
+    "sesiones_presente": 51,
+    "asistencia_pct": 94.4,
+    "votaciones_de_fondo": 580,
+    "votaciones_con_voto_atribuible": 502,
+    "favor": 232,
+    "contra": 92,
+    "abstencion": 178,
+    "pct_favor": 46.2,
+    "pct_contra": 18.3,
+    "pct_abstencion": 35.5,
+    "votaciones_no_unanimes": 429,
+    "coincide_con_voto_del_PP": {
+      "votaciones": 429,
+      "coinciden": 62,
+      "pct": 14.5
+    },
+    "coincide_con_voto_del_PSOE": {
+      "votaciones": 429,
+      "coinciden": 429,
+      "pct": 100.0
+    },
+    "votos_registrados_por_nombre": 0,
+    "grupo_en_acta": "PSOE",
+    "texto_resumen": "Entre el 27-06-2023 y el 16-10-2026, consta en la cabecera de 51 de las 54 actas de Pleno analizadas (94,4 %). En 502 votaciones de fondo con voto atribuible, votó a favor en 232, en contra en 92 y se abstuvo en 178.",
+    "fuente": {
+      "t": "Ayuntamiento de Salamanca: actas de los Plenos Municipales",
+      "u": "https://www.aytosalamanca.es/w/actas-de-los-plenos-municipales"
+    },
+    "dataset": {
+      "t": "Open Salamanca: votaciones del Pleno del Ayuntamiento de Salamanca, mandato 2023-2027",
+      "u": "https://opensalamanca.es/elecciones/politicos/votaciones-pleno"
+    },
+    "metodo": "El acta de cada Pleno recoge el voto por grupo («el voto a favor del Grupo Popular [14 concejales]») y, por nombre, el de los concejales no adscritos. El voto de cada persona se atribuye cuando el recuento de su grupo coincide con los presentes de ese grupo en la cabecera del acta; si alguien abandona la sala, no se atribuye."
+  },
   "no_verificado": [
     "Cifras de patrimonio, bienes e ingresos de las declaraciones de bienes y actividades: se enlazan las publicadas por el Ayuntamiento, pero no se transcriben.",
-    "Puesto en la lista de 2023, votos personales y posiciones o votaciones concretas en el Pleno: no recopilados.",
+    "Puesto en la lista de 2023 y votos personales en las urnas: no recopilados. Las votaciones del Pleno se resumen en la sección correspondiente, con sus límites.",
     "Fecha de nacimiento y trayectoria política previa al Ayuntamiento: no figuran en la ficha oficial salvo lo reproducido arriba.",
     "Controversias: ninguna contrastada en las fuentes consultadas; eso no prueba que no existan. No se ha recopilado la valoración de otros grupos."
   ],
@@ -177,6 +215,10 @@
     {
       "q": "¿Cuál es la formación y la profesión de Juan José García Meilán?",
       "a": "Doctor en Psicología (1999) y licenciado en Filosofía y CC. de la Educación (Psicología) por la Universidad de Salamanca, de la que es profesor desde 2004; miembro investigador del Instituto de Neurociencias de Castilla y León."
+    },
+    {
+      "q": "¿Cómo vota Juan José García Meilán en el Pleno del Ayuntamiento de Salamanca?",
+      "a": "Entre el 27-06-2023 y el 16-10-2026, consta en la cabecera de 51 de las 54 actas de Pleno analizadas (94,4 %). En 502 votaciones de fondo con voto atribuible, votó a favor en 232, en contra en 92 y se abstuvo en 178. Coincidió con el voto del PP en el 14,5 % y con el del PSOE en el 100,0 % de las votaciones no unánimes. Fuente: actas de los Plenos Municipales."
     },
     {
       "q": "¿Cómo contactar con Juan José García Meilán?",
