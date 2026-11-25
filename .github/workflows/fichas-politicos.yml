@@ -1,0 +1,112 @@
+name: Actualizar fichas de concejales y votaciones del Pleno
+
+on:
+  schedule:
+    # Una vez por semana (lunes, 6:30 UTC). Las actas se publican con
+    # retraso y la Corporación cambia pocas veces al año: más frecuencia no
+    # aporta nada. Como en los demás workflows, el minuto no va en punto.
+    - cron: '30 6 * * 1'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: fichas-politicos
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Instalar pdftotext
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils
+
+      # Las actas (PDF) se cachean por uuid de documento: solo se descargan las nuevas.
+      - name: Caché de actas
+        uses: actions/cache@v4
+        with:
+          path: cache_actas
+          key: actas-${{ github.run_id }}
+          restore-keys: actas-
+
+      - name: Refrescar fichas oficiales de la Corporación
+        run: python3 scripts/politicos/parse_fichas.py
+
+      - name: Descargar y leer actas de los Plenos
+        run: python3 scripts/politicos/pleno/descargar_actas.py cache_actas
+
+      - name: Extraer y validar votaciones
+        run: |
+          python3 scripts/politicos/pleno/parse_actas.py cache_actas
+          python3 scripts/politicos/pleno/build_pleno.py
+
+      - name: Generar fichas
+        # Falla (y avisa) si la Corporación cambió y falta/sobra alguna ficha en PEOPLE.
+        run: |
+          python3 scripts/politicos/build_carbayo.py
+          python3 scripts/politicos/build_concejales.py
+
+      - name: Descartar cambios que solo son fechas
+        id: cambios
+        run: |
+          git add -N .
+          # Líneas cambiadas que NO llevan fecha de generación:
+          sustantivos=$(git diff -U0 -- _data elecciones/politicos llms.txt scripts/politicos/fuentes scripts/politicos/pleno/fuentes \
+            | grep -E '^[+-][^+-]' \
+            | grep -v -E 'actualizado|consultad|modified:|generado|descargado|como_citar' | wc -l)
+          if [ "$sustantivos" -eq 0 ]; then
+            echo "Solo cambian fechas de generación: se descartan."
+            git checkout -- .
+            echo "hay=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "Cambios sustantivos: $sustantivos líneas."
+            echo "hay=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Commit y push si hay cambios
+        if: steps.cambios.outputs.hay == 'true'
+        run: |
+          git add _data/politicos _data/concejales_indice.json _data/pleno elecciones/politicos llms.txt \
+                  scripts/politicos/fuentes scripts/politicos/pleno/fuentes
+          if git diff --cached --quiet; then
+            echo "Sin cambios."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git commit -m "Actualiza fichas de concejales y votaciones del Pleno"
+          git pull --rebase origin main
+          git push
+
+      - name: Avisar si hay un listado de retribuciones más reciente
+        # Las retribuciones de un ejercicio las publica el Ayuntamiento al año siguiente.
+        # No se actualizan solas (cambian columnas y personas): se abre una issue.
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          actual=$(grep -E '^EJERCICIO_RETRIB' scripts/politicos/build_concejales.py | grep -oE '[0-9]{4}')
+          nuevo=$((actual + 1))
+          url="https://www.aytosalamanca.es/documents/d/guest/02-retribuciones-percibidas-miembros-corporacion-${nuevo}"
+          codigo=$(curl -s -o /dev/null -L -A "Mozilla/5.0" -w '%{http_code}' "$url" || echo 000)
+          echo "Listado de retribuciones ${nuevo}: HTTP ${codigo}"
+          if [ "$codigo" = "200" ]; then
+            titulo="Retribuciones ${nuevo} publicadas: actualizar las fichas de concejales"
+            existe=$(gh issue list --state open --search "\"$titulo\" in:title" --json number --jq 'length')
+            if [ "$existe" = "0" ]; then
+              gh issue create --title "$titulo" --body "El Ayuntamiento ha publicado el listado de retribuciones de ${nuevo}: ${url}
+
+          Actualizar el diccionario RET y EJERCICIO_RETRIB en scripts/politicos/build_concejales.py (y los textos que citan el ejercicio) y regenerar las fichas."
+            fi
+          fi

@@ -38,7 +38,7 @@ dataset_files:
 
     <div id="section-content">
       <p class="ans">Entre el 27-06-2023 y el 16-10-2026, el Pleno del Ayuntamiento de Salamanca celebró {{ d.meta.sesiones_analizadas }} sesiones con acta analizada y {{ d.meta.votaciones }} votaciones, de las que {{ d.meta.votaciones_de_fondo_no_unanimes }} de fondo no fueron unánimes. El PP, con mayoría absoluta (14 de 27 concejales), votó a favor en el {{ gpp.pct_favor | replace: ".", "," }} % de ellas; el PSOE votó a favor en el {{ gps.pct_favor | replace: ".", "," }} %, en contra en el {{ gps.pct_contra | replace: ".", "," }} % y se abstuvo en el {{ gps.pct_abstencion | replace: ".", "," }} %. De las mociones de fondo del PSOE se aprobaron {{ d.resumen.mociones_psoe.aprobadas }} de {{ d.resumen.mociones_psoe.votadas }}; de las del PP, {{ d.resumen.mociones_pp.aprobadas }} de {{ d.resumen.mociones_pp.votadas }}.</p>
-      <p class="fu">Datos extraídos de las <a href="{{ d.meta.fuente_url }}" rel="nofollow noopener">actas de los Plenos Municipales</a> del Ayuntamiento (generado el 25 de noviembre de 2026). Parte de las <a href="/elecciones/politicos/">fichas de concejales</a>. Datos descargables: <a href="/elecciones/politicos/votaciones-pleno.json">votaciones-pleno.json</a> ({{ d.meta.licencia }}).</p>
+      <p class="fu">Datos extraídos de las <a href="{{ d.meta.fuente_url }}" rel="nofollow noopener">actas de los Plenos Municipales</a> del Ayuntamiento (generado el {{ d.meta.generado_texto }}). Parte de las <a href="/elecciones/politicos/">fichas de concejales</a>. Datos descargables: <a href="/elecciones/politicos/votaciones-pleno.json">votaciones-pleno.json</a> ({{ d.meta.licencia }}).</p>
 
       <h2>Qué vota cada grupo</h2>
       <p>Votaciones de fondo no unánimes (se excluyen las votaciones de urgencia y las unánimes). El acta recoge el voto del grupo en bloque.</p>
@@ -117,7 +117,7 @@ dataset_files:
         <li>El sentido del voto no recoge las intervenciones ni la motivación de cada grupo.</li></ul></div>
 
       <h2>Cómo citar</h2>
-      <p>Open Salamanca (2026). Votaciones del Pleno del Ayuntamiento de Salamanca, mandato 2023-2027. https://opensalamanca.es/elecciones/politicos/votaciones-pleno (consultado el 25-11-2026). CC BY 4.0. Fuente: actas de los Plenos Municipales del Ayuntamiento de Salamanca.</p>
+      <p>Open Salamanca ({{ d.meta.generado | slice: 0, 4 }}). Votaciones del Pleno del Ayuntamiento de Salamanca, mandato 2023-2027. https://opensalamanca.es/elecciones/politicos/votaciones-pleno (consultado el {{ d.meta.generado_dmy }}). CC BY 4.0. Fuente: actas de los Plenos Municipales del Ayuntamiento de Salamanca.</p>
     </div>
   </div>
 </section>

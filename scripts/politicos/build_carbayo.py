@@ -10,6 +10,10 @@ Uso (desde la raiz del sitio):  python3 scripts/politicos/build_carbayo.py
 """
 import json
 from pathlib import Path
+import sys
+from pathlib import Path as _P
+sys.path.insert(0, str(_P(__file__).resolve().parent))
+import fechas as FE  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[2]
 OUT = ROOT / "_data" / "politicos" / "carlos-garcia-carbayo.json"
@@ -116,6 +120,8 @@ F = {
     "esp26": {"t": "El Español (12-06-2026): Carbayo en el día del patrón", "u": "https://www.elespanol.com/castilla-y-leon/region/salamanca/20260612/carbayo-dia-grande-patron-salamanca-cambiado-crecido-jovenes-no-quieren-ir/1003744283994_0.html"},
     "conprel": {"t": "Ministerio de Hacienda, CONPREL: liquidaciones de presupuestos de entidades locales", "u": "https://www.hacienda.gob.es/es-ES/CDI/Paginas/EntidadesLocales/Presupuestos.aspx"},
     "os_concejales": {"t": "Open Salamanca: concejales del Ayuntamiento de Salamanca", "u": "https://opensalamanca.es/concejales-ayuntamiento-salamanca"},
+    "atalaya": {"t": "Atalaya (emirodgar.es): ficha de Carlos García Carbayo", "u": "https://emirodgar.es/atalaya/fichas/politico/garcia-carbayo/"},
+    "wikidata": {"t": "Wikidata: Carlos Manuel García Carbayo (Q61855150)", "u": "https://www.wikidata.org/wiki/Q61855150"},
     "actas": {"t": "Ayuntamiento de Salamanca: actas de los Plenos Municipales", "u": "https://www.aytosalamanca.es/w/actas-de-los-plenos-municipales"},
     "votaciones": {"t": "Open Salamanca: votaciones del Pleno del Ayuntamiento de Salamanca, mandato 2023-2027", "u": "https://opensalamanca.es/elecciones/politicos/votaciones-pleno"},
     "os_pres": {"t": "Open Salamanca: presupuesto municipal", "u": "https://opensalamanca.es/presupuesto-municipal"},
@@ -139,7 +145,7 @@ _ficha = json.loads((ROOT / "scripts/politicos/fuentes/fichas_oficiales.json").r
 _f = next(v for k, v in _ficha.items() if "carbayo" in k)
 FICHA_OFICIAL = {
     "url": _f["url"],
-    "texto": "Texto tal como lo publica el Ayuntamiento de Salamanca en la ficha oficial del alcalde (consultada el 24-11-2026).",
+    "texto": "Texto tal como lo publica el Ayuntamiento de Salamanca en la ficha oficial del alcalde (consultada el " + FE.dmy() + ").",
     "formacion_oficial": _f.get("formacion_oficial", []),
     "otros_titulos": _f.get("otros_titulos", []),
     "actividad_profesional": _f.get("actividad_profesional", []),
@@ -162,8 +168,8 @@ data = {
     "tipo": "ficha_politico",
     "slug": "carlos-garcia-carbayo",
     "url_canonica": "https://opensalamanca.es/elecciones/politicos/carlos-garcia-carbayo",
-    "actualizado": "2026-11-24",
-    "actualizado_texto": "24 de noviembre de 2026",
+    "actualizado": FE.iso(),
+    "actualizado_texto": FE.largo(),
     "licencia": "CC BY 4.0 (citar «Open Salamanca» y enlazar la ficha)",
     "aviso": "Ficha elaborada solo con fuentes públicas citadas en cada dato. Lo no contrastado figura en «no_verificado»; no se omite ni se rellena. No es opinión política ni recomendación de voto.",
     "identidad": {
@@ -341,11 +347,13 @@ data = {
          "a": "Entre los anunciados figuran CoNEcta Salamanca (unos 20 M€ para regenerar cinco barrios) y Raíles Verdes (casi 2,9 M€ de vía verde y parque forestal), con financiación europea FEDER del 60 % y arranque previsto en 2026, y un plan de renovación de las redes de agua. Su ejecución actual no está verificada."},
     ],
     "fuentes": list(F.values()),
-    "como_citar": "Open Salamanca (2026). Carlos García Carbayo, alcalde de Salamanca: ficha y dataset. https://opensalamanca.es/elecciones/politicos/carlos-garcia-carbayo (consultado el 24-11-2026). CC BY 4.0.",
+    "como_citar": "Open Salamanca (" + FE.anio() + "). Carlos García Carbayo, alcalde de Salamanca: ficha y dataset. https://opensalamanca.es/elecciones/politicos/carlos-garcia-carbayo (consultado el " + FE.dmy() + "). CC BY 4.0.",
     "enlaces_oficiales_y_externos": {
         "web_oficial_ayuntamiento": F["ficha"]["u"],
         "wikipedia_es": F["wiki_es"]["u"],
         "wikipedia_en": F["wiki_en"]["u"],
+        "wikidata": F["wikidata"]["u"],
+        "atalaya": F["atalaya"]["u"],
     },
 }
 

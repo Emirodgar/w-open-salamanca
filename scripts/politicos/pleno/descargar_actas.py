@@ -63,7 +63,7 @@ def main(cache):
             break
     print("actas del mandato a descargar:", len(seleccion))
     for i, (u, nombre) in enumerate(seleccion):
-        clave = f"{i:03d}"
+        clave = u.split("?")[0].split("/")[-1]  # uuid del documento: estable entre ejecuciones
         pdf = cache / "pdf" / f"{clave}.pdf"
         txt = cache / "txt" / f"{clave}.txt"
         (cache / "txt" / f"{clave}.url").write_text(BASE + u + "\n" + nombre + "\n", encoding="utf-8")

@@ -26,6 +26,8 @@ OUT_DIR = ROOT / "_data" / "pleno"
 
 import sys
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+import fechas as FE  # noqa: E402
 from parse_actas import PERSONAS, GRUPO_DE  # noqa: E402
 
 SLUG = {k: v for k, v in PERSONAS.items() if v}
@@ -199,7 +201,7 @@ def main():
 
     meta = {
         "titulo": "Votaciones del Pleno del Ayuntamiento de Salamanca, mandato 2023-2027",
-        "generado": "2026-11-25",
+        "generado": FE.iso(), "generado_texto": FE.largo(), "generado_dmy": FE.dmy(),
         "fuente": "Actas de los Plenos Municipales (anonimizadas), Ayuntamiento de Salamanca",
         "fuente_url": "https://www.aytosalamanca.es/w/actas-de-los-plenos-municipales",
         "periodo": f"{ses_out[0]['fecha']} a {ses_out[-1]['fecha']}",
@@ -230,6 +232,11 @@ def main():
     publico = [{k: v for k, v in x.items() if k not in ("voto_personas", "acta")} for x in votaciones]
     (OUT_DIR / "votaciones.json").write_text(json.dumps({"meta": meta, "resumen": resumen, "sesiones": ses_out, "votaciones": publico}, ensure_ascii=False, separators=(",", ":")) + "\n", encoding="utf-8")
     (OUT_DIR / "personas.json").write_text(json.dumps(personas, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+    FE.tocar_modified(ROOT / "elecciones/politicos/votaciones-pleno.html")
+    ok = meta["votaciones_que_cuadran_con_el_recuento_del_acta"]
+    if meta["votaciones"] == 0 or ok / meta["votaciones"] < 0.90:
+        print("ERROR: menos del 90 %% de las votaciones cuadran con el recuento del acta (%d de %d): el formato de las actas puede haber cambiado." % (ok, meta["votaciones"]))
+        sys.exit(2)
     print("sesiones", len(ses_out), "votaciones", len(votaciones), "de fondo", len(fondo), "no unánimes", len(no_unan))
     print(json.dumps(resumen, ensure_ascii=False, indent=1)[:2600])
 

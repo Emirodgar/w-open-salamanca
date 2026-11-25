@@ -21,10 +21,14 @@ import json
 import re
 import unicodedata
 from pathlib import Path
+import sys
+from pathlib import Path as _P
+sys.path.insert(0, str(_P(__file__).resolve().parent))
+import fechas as FE  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[2]
-FECHA_ACT = "2026-11-24"
-FECHA_ACT_TXT = "24 de noviembre de 2026"
+FECHA_ACT = FE.iso()
+FECHA_ACT_TXT = FE.largo()
 BASEURL = "https://opensalamanca.es/elecciones/politicos/"
 
 
@@ -81,6 +85,7 @@ RET = {
     "SANTA MARIA TRIGO, MARIA JESUS": (13132.70, False), "SEGUIN KATTAN, MARIA DEL CARMEN": (78930.20, True),
     "VILLAR GUTIERREZ DE CEBALLOS, MARIA DE LA VEGA": (31991.54, True),
 }
+EJERCICIO_RETRIB = 2025  # el workflow avisa cuando el Ayuntamiento publique el listado del ejercicio siguiente
 TOTAL_LISTADO = len(RET)  # 27
 IMPORTES = sorted((v[0] for v in RET.values()), reverse=True)
 
@@ -392,7 +397,7 @@ def build(p):
         ret = {"ejercicio": 2025, "importe_bruto_anual_eur": None, "dedicacion_marcada": None,
                "posicion_en_la_corporacion": None,
                "texto_resumen": f"{p['hab']} tomó posesión el 30-07-2026, por lo que no figura en el listado oficial de retribuciones de 2025 (que incluye a su antecesor, Pedro Martínez Córdoba). No se ha localizado un dato de retribución publicado para el cargo actual.",
-               "nota": "Listado de 2025 consultado el 24-11-2026.", "fuente": S["retrib"]}
+               "nota": "Listado de 2025 consultado el " + FE.dmy() + ".", "fuente": S["retrib"]}
 
     # resumen
     desde_txt = {"2023-06-19": "19 de junio de 2023", "2023-06-17": "17 de junio de 2023", "2024-07-26": "26 de julio de 2024",
@@ -406,7 +411,7 @@ def build(p):
 
     # ficha oficial
     if f:
-        fo = {"url": ficha_url, "texto": "Texto tal como lo publica el Ayuntamiento de Salamanca en la ficha oficial de la persona (consultada el 24-11-2026), sin reescribir.",
+        fo = {"url": ficha_url, "texto": "Texto tal como lo publica el Ayuntamiento de Salamanca en la ficha oficial de la persona (consultada el " + FE.dmy() + "), sin reescribir.",
               "formacion_oficial": f.get("formacion_oficial", []), "otros_titulos": f.get("otros_titulos", []),
               "actividad_profesional": f.get("actividad_profesional", []), "otras_actividades": f.get("otras_actividades", [])}
         contacto = {"direccion": "Casa Consistorial, Plaza Mayor, 1, 37002 Salamanca",
@@ -510,7 +515,7 @@ def build(p):
         "no_verificado": nv,
         "faq": faq,
         "fuentes": fuentes,
-        "como_citar": f"Open Salamanca (2026). {p['nombre']}, {concejal} del Ayuntamiento de Salamanca: ficha y dataset. {BASEURL}{p['slug']} (consultado el 24-11-2026). CC BY 4.0.",
+        "como_citar": f"Open Salamanca ({FE.anio()}). {p['nombre']}, {concejal} del Ayuntamiento de Salamanca: ficha y dataset. {BASEURL}{p['slug']} (consultado el {FE.dmy()}). CC BY 4.0.",
         "enlaces_oficiales_y_externos": {"web_oficial_ayuntamiento": ficha_url},
     }
     data["identidad"]["apodos_o_variantes"] = sorted({p["hab"], p["apell"]})
@@ -531,7 +536,7 @@ slug: {p["slug"]}
 title: "{titulo}"
 description: "{desc}"
 date: 24-11-2026
-modified: 24-11-2026
+modified: {FE.dmy()}
 parent_url: /elecciones/politicos/
 parent_title: Concejales del Ayuntamiento de Salamanca
 permalink: elecciones/politicos/{p["slug"]}
@@ -553,6 +558,13 @@ sitemap: false
 
 
 def main():
+    # Guarda: toda persona de la Corporación debe tener ficha definida en PEOPLE y viceversa.
+    usadas = {id(buscar_ficha(p["match"])) for p in PEOPLE if p.get("match")}
+    sobran = [v["nombre_oficial"] for v in FICHAS.values() if id(v) not in usadas and "garcia carbayo" not in norm(v["nombre_oficial"])]
+    if sobran:
+        print("ATENCIÓN: hay concejales en la web del Ayuntamiento sin ficha definida en PEOPLE:", sobran)
+        print("Añádelos a PEOPLE (o retíralos si ya no están) antes de regenerar.")
+        sys.exit(3)
     outdir = ROOT / "elecciones" / "politicos"
     datadir = ROOT / "_data" / "politicos"
     outdir.mkdir(parents=True, exist_ok=True)
@@ -609,6 +621,7 @@ def main():
     (ROOT / "_data" / "concejales_indice.json").write_text(
         json.dumps({"actualizado": FECHA_ACT, "actualizado_texto": FECHA_ACT_TXT, "resumen": resumen, "concejales": indice}, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8")
+    FE.tocar_modified(ROOT / "elecciones/politicos/index.html")
     print("fichas:", len(PEOPLE) + 1, "| total 2025:", es(tot, 2), "PP", es(tpp, 2), "PSOE", es(tpsoe, 2), "Vox", es(tvox, 2))
 
     # llms.txt: bloque entre marcadores
