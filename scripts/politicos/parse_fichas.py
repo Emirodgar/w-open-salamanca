@@ -33,8 +33,26 @@ SECCIONES = [
 FECHA = re.compile(r"((19|20)\d{2}|actualidad|actualmente|null)", re.I)
 
 
+def _abrir(req, intentos=5):
+    """GET con reintentos: la web del Ayuntamiento devuelve 403 intermitentes a las IP de GitHub."""
+    import time
+    import urllib.error
+    ultimo = None
+    for n in range(intentos):
+        try:
+            return urllib.request.urlopen(req, timeout=90).read()
+        except urllib.error.HTTPError as e:
+            ultimo = e
+            if e.code not in (403, 429, 500, 502, 503, 504):
+                raise
+        except OSError as e:
+            ultimo = e
+        time.sleep(15 * (n + 1))
+    raise ultimo
+
+
 def get(url):
-    return urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=40).read().decode("utf8", "replace")
+    return _abrir(urllib.request.Request(url, headers=UA)).decode("utf8", "replace")
 
 
 def texto_lineas(h):

@@ -47,9 +47,13 @@ jobs:
           restore-keys: actas-
 
       - name: Refrescar fichas oficiales de la Corporación
+        # Si la web del Ayuntamiento bloquea la descarga, se sigue con lo que haya en caché/repositorio.
+        continue-on-error: true
         run: python3 scripts/politicos/parse_fichas.py
 
       - name: Descargar y leer actas de los Plenos
+        # Si la web del Ayuntamiento bloquea la descarga, se sigue con lo que haya en caché/repositorio.
+        continue-on-error: true
         run: python3 scripts/politicos/pleno/descargar_actas.py "$RUNNER_TEMP/cache_actas"
 
       - name: Extraer y validar votaciones

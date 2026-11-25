@@ -26,8 +26,26 @@ UA = {"User-Agent": "Mozilla/5.0 (OpenSalamanca; datos abiertos)"}
 FECHA_MIN = "2023-06-17"
 
 
+def _abrir(req, intentos=5):
+    """GET con reintentos: la web del Ayuntamiento devuelve 403 intermitentes a las IP de GitHub."""
+    import time
+    import urllib.error
+    ultimo = None
+    for n in range(intentos):
+        try:
+            return urllib.request.urlopen(req, timeout=90).read()
+        except urllib.error.HTTPError as e:
+            ultimo = e
+            if e.code not in (403, 429, 500, 502, 503, 504):
+                raise
+        except OSError as e:
+            ultimo = e
+        time.sleep(15 * (n + 1))
+    raise ultimo
+
+
 def get(url, binario=False):
-    d = urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=90).read()
+    d = _abrir(urllib.request.Request(url, headers=UA))
     return d if binario else d.decode("utf8", "replace")
 
 
