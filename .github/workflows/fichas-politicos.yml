@@ -56,33 +56,28 @@ jobs:
         continue-on-error: true
         run: python3 scripts/politicos/pleno/descargar_actas.py "$RUNNER_TEMP/cache_actas"
 
-      - name: Extraer y validar votaciones
-        run: |
-          python3 scripts/politicos/pleno/parse_actas.py "$RUNNER_TEMP/cache_actas"
-          python3 scripts/politicos/pleno/build_pleno.py
-
-      - name: Generar fichas
-        # Falla (y avisa) si la Corporación cambió y falta/sobra alguna ficha en PEOPLE.
-        run: |
-          python3 scripts/politicos/build_carbayo.py
-          python3 scripts/politicos/build_concejales.py
-
-      - name: Descartar cambios que solo son fechas
+      # Se regenera primero con la fecha de la última generación: si no queda ninguna diferencia,
+      # no hay nada que publicar (así las fechas por sí solas nunca provocan un commit y un dato
+      # nuevo nunca queda oculto por una fecha).
+      - name: Regenerar con la fecha anterior y detectar cambios reales
         id: cambios
         run: |
+          prev=$(python3 -c "import json; print(json.load(open('_data/concejales_indice.json'))['actualizado'])")
+          echo "Fecha de la última generación: $prev"
+          FECHA_GENERACION="$prev" bash scripts/politicos/regenerar.sh "$RUNNER_TEMP/cache_actas"
           git add -N _data elecciones/politicos llms.txt scripts/politicos/fuentes scripts/politicos/pleno/fuentes
-          # Líneas cambiadas que NO llevan fecha de generación:
-          sustantivos=$(git diff -U0 -- _data elecciones/politicos llms.txt scripts/politicos/fuentes scripts/politicos/pleno/fuentes \
-            | grep -E '^[+-][^+-]' \
-            | grep -v -E 'actualizado|consultad|modified:|generado|descargado|como_citar' | wc -l)
-          if [ "$sustantivos" -eq 0 ]; then
-            echo "Solo cambian fechas de generación: se descartan."
-            git checkout -- .
+          if git diff --quiet; then
+            echo "Sin cambios reales."
             echo "hay=false" >> "$GITHUB_OUTPUT"
           else
-            echo "Cambios sustantivos: $sustantivos líneas."
+            echo "Hay cambios reales:"
+            git diff --stat | tail -15
             echo "hay=true" >> "$GITHUB_OUTPUT"
           fi
+
+      - name: Regenerar con la fecha de hoy
+        if: steps.cambios.outputs.hay == 'true'
+        run: bash scripts/politicos/regenerar.sh "$RUNNER_TEMP/cache_actas"
 
       - name: Guardar salida generada (para revisarla)
         uses: actions/upload-artifact@v4
@@ -119,14 +114,20 @@ jobs:
         run: |
           actual=$(grep -E '^EJERCICIO_RETRIB' scripts/politicos/build_concejales.py | grep -oE '[0-9]{4}')
           nuevo=$((actual + 1))
-          url="https://www.aytosalamanca.es/documents/d/guest/02-retribuciones-percibidas-miembros-corporacion-${nuevo}"
-          codigo=$(curl -s -o /dev/null -L -A "Mozilla/5.0" -w '%{http_code}' "$url" || echo 000)
+          base="https://www.aytosalamanca.es/documents/d/guest/02-retribuciones-percibidas-miembros-corporacion-"
+          sonda() { curl -s -o /dev/null -L -A "Mozilla/5.0" -w '%{http_code}' "$1" || echo 000; }
+          control=$(sonda "${base}${actual}")
+          if [ "$control" != "200" ]; then
+            echo "Comprobación no concluyente: el listado ya conocido (${actual}) devuelve HTTP ${control} (posible bloqueo)."
+            exit 0
+          fi
+          codigo=$(sonda "${base}${nuevo}")
           echo "Listado de retribuciones ${nuevo}: HTTP ${codigo}"
           if [ "$codigo" = "200" ]; then
             titulo="Retribuciones ${nuevo} publicadas: actualizar las fichas de concejales"
             existe=$(gh issue list --state open --search "\"$titulo\" in:title" --json number --jq 'length')
             if [ "$existe" = "0" ]; then
-              gh issue create --title "$titulo" --body "El Ayuntamiento ha publicado el listado de retribuciones de ${nuevo}: ${url}
+              gh issue create --title "$titulo" --body "El Ayuntamiento ha publicado el listado de retribuciones de ${nuevo}: ${base}${nuevo}
 
           Actualizar el diccionario RET y EJERCICIO_RETRIB en scripts/politicos/build_concejales.py (y los textos que citan el ejercicio) y regenerar las fichas."
             fi

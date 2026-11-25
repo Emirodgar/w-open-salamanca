@@ -137,6 +137,11 @@ def main():
         data["fichas"][slug_oficial] = parse(url)
         print("ok", slug_oficial)
     OUT.parent.mkdir(parents=True, exist_ok=True)
+    if OUT.exists():
+        previo = json.loads(OUT.read_text(encoding="utf-8"))
+        if previo.get("fichas") == data["fichas"]:
+            print("Sin cambios en las fichas oficiales.")
+            return
     OUT.write_text(json.dumps(data, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
 
 

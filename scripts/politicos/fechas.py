@@ -3,13 +3,16 @@
 Todas las fichas llevan la fecha del día en que se regeneran (no una fecha
 fija), de modo que el workflow semanal las mantiene al día.
 """
+import os
 import re
 from datetime import date
 from pathlib import Path
 
 MESES = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto",
          "septiembre", "octubre", "noviembre", "diciembre"]
-HOY = date.today()
+# FECHA_GENERACION (AAAA-MM-DD) fija la fecha: el workflow regenera primero con la fecha de la
+# última generación para detectar si hay cambios reales y solo entonces usa la de hoy.
+HOY = date.fromisoformat(os.environ["FECHA_GENERACION"]) if os.environ.get("FECHA_GENERACION") else date.today()
 
 
 def iso():
