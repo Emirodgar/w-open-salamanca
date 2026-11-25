@@ -186,9 +186,9 @@ def parse_acta(texto, nombre, url):
     heads = []
     ult_top, ult_sub = 0, 0
     for i, ln in enumerate(lineas):
-        m = re.match(r"^[ 	]{0,14}(\d{1,2})\.(\d{1,2})\s+(\S.*)$", ln)  # «9.1 MOCIÓN…» sin guion
+        m = re.match(r"^[ 	]{0,48}(\d{1,2})\.(\d{1,2})\s+(\S.*)$", ln)  # «9.1 MOCIÓN…» sin guion
         if not m:
-            m = re.match(r"^[ 	]{0,14}(\d{1,2})(?:\.(\d{1,2}))?\s*(?:\.\s*-|\.|-)\s*(\S.*)$", ln)
+            m = re.match(r"^[ 	]{0,48}(\d{1,2})(?:\.(\d{1,2}))?\s*(?:\.\s*-|\.|-)\s*(\S.*)$", ln)
         if not m:
             continue
         top, sub, l1 = int(m.group(1)), m.group(2), m.group(3).strip()
@@ -207,13 +207,13 @@ def parse_acta(texto, nombre, url):
             j += 1
         titulo = re.sub(r"\s+", " ", " ".join(tit))
         if sub is None:
-            if top in (ult_top + 1, ult_top + 2) or (ult_top == 0 and top <= 2):
+            if ult_top < top <= ult_top + 3 or (ult_top == 0 and top <= 3):
                 ult_top, ult_sub = top, 0
             else:
                 continue
         else:
             sub = int(sub)
-            if top == ult_top and (sub == ult_sub + 1 or (ult_sub == 0 and sub == 1)):
+            if top == ult_top and ult_sub < sub <= ult_sub + 3:
                 ult_sub = sub
             else:
                 continue
