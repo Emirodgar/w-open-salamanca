@@ -65,6 +65,10 @@ S = {
     "gb_tv": {"t": "SALAMANCArtv AL DÍA (30-07-2026): César Gómez-Barthe toma posesión como concejal de Promoción Económica y Juventud", "u": "https://salamancartvaldia.es/noticia/2026-07-30-cesar-gomez-barthe-toma-posesion-como-concejal-de-promocion-economica-y-juventud-394984"},
     "actas": {"t": "Ayuntamiento de Salamanca: actas de los Plenos Municipales", "u": "https://www.aytosalamanca.es/w/actas-de-los-plenos-municipales"},
     "votaciones": {"t": "Open Salamanca: votaciones del Pleno del Ayuntamiento de Salamanca, mandato 2023-2027", "u": "https://opensalamanca.es/elecciones/politicos/votaciones-pleno"},
+    "ferias24": {"t": "Ayuntamiento de Salamanca (19-09-2024): balance de las Ferias y Fiestas 2024", "u": "https://www.aytosalamanca.es/en/w/el-ayuntamiento-de-salamanca-destaca-la-alta-participaci%C3%B3n-en-todas-las-actividades-programadas-en-las-ferias-y-fiestas-2024"},
+    "ferias25": {"t": "SALAMANCArtv AL DÍA (16-09-2025): balance de las Ferias y Fiestas 2025 presentado por la concejala", "u": "https://salamancartvaldia.es/noticia/2025-09-16-mas-de-220-000-asistentes-a-los-conciertos-y-una-ocupacion-hotelera-del-95-confirman-el-exito-de-las-ferias-376545"},
+    "ferias26": {"t": "Ayuntamiento de Salamanca (16-09-2026): balance de las Ferias y Fiestas 2026", "u": "https://www.aytosalamanca.es/en/w/las-ferias-y-fiestas-de-2026-registran-cifras-r%C3%A9cord-de-participaci%C3%B3n-en-todas-las-actividades-programadas"},
+    "ss24": {"t": "El Español (01-04-2024): balance «agridulce» de la Semana Santa de Salamanca", "u": "https://www.elespanol.com/castilla-y-leon/region/salamanca/20240401/semana-santa-salamana-balace-agridulce/844415690_0.html"},
     "carbayo": {"t": "Open Salamanca: ficha de Carlos García Carbayo, alcalde de Salamanca", "u": "https://opensalamanca.es/elecciones/politicos/carlos-garcia-carbayo"},
 }
 
@@ -140,6 +144,35 @@ PEOPLE = [
          cargo="Quinta teniente de alcalde y concejala delegada de Relaciones Institucionales, Festejos y Tradiciones", desde="2023-06-19",
          perfil="Licenciada en Ciencias de la Comunicación (Periodismo); fue redactora y presentadora de televisión en Mérida, Málaga, Valladolid y Ecuador, jefa de Prensa de la Consejería de Salud de Extremadura y directora de Comunicación del Ayuntamiento de Salamanca.",
          alumni=[],
+         serie=dict(
+             titulo="Ferias y Fiestas de Salamanca: balance de asistencia 2024-2026",
+             texto="La concejala presenta cada septiembre el balance de las Ferias y Fiestas en honor a Santa María de la Vega, la principal actividad de su delegación de Festejos y Tradiciones. Estas son las cifras de los conciertos de la Plaza Mayor que ha dado el propio Ayuntamiento, año a año.",
+             columnas=["Ferias", "Conciertos en la Plaza Mayor", "Asistentes (estimación municipal)", "Media por concierto (cálculo propio)", "Ocupación hotelera según el balance (en 2026, datos de la Asociación de Hostelería)"],
+             filas=[["2024", "13 (4 con aforo completo)", "más de 187.000", "unos 14.400", "no consta en la nota municipal"],
+                    ["2025", "12 actuaciones", "192.000", "16.000", "95 %"],
+                    ["2026", "14", "205.000", "unos 14.600", "95 % en fines de semana y 75 % entre semana"]],
+             nota="Las cifras de asistencia son estimaciones que el Ayuntamiento publica en sus balances; no se explica el método de cómputo y el aforo y el número de conciertos cambian cada año, por lo que la comparación entre ediciones es orientativa. En 2025 la fuente es el medio SALAMANCArtv AL DÍA, que recoge el balance presentado por la concejala (no se ha localizado la nota municipal). En 2026 el Ayuntamiento también cifra 26.300 asistentes al Festival de Artes de Calle (récord), más de 53.000 en las tradiciones, 80.000 en los fuegos artificiales y más de 18.000 en las puertas abiertas.",
+             fuentes=["ferias24", "ferias25", "ferias26"]),
+         posiciones=[
+             ("2026-09-16", "Balance de las Ferias y Fiestas 2026",
+              "Presenta como «cifras récord de participación» los datos de las ferias: 205.000 personas en los 14 conciertos de la Plaza Mayor, más de 53.000 en las tradiciones salmantinas, 80.000 en los fuegos artificiales y más de 120.000 en el mercado histórico (dato de sus organizadores). Agradece la labor de los servicios municipales. Son cifras del propio Ayuntamiento, sin contraste independiente.",
+              ["ferias26"]),
+             ("2025-09-16", "Balance de las Ferias y Fiestas 2025",
+              "Presenta más de 220.000 asistentes a los 24 conciertos organizados por el Ayuntamiento, 192.000 de ellos en la Plaza Mayor, y una ocupación hotelera del 95 %.",
+              ["ferias25"]),
+             ("2024-09-19", "Balance de las Ferias y Fiestas 2024",
+              "Destaca la «afluencia masiva» en todas las propuestas: más de 187.000 personas en los 13 conciertos de la Plaza Mayor, con cuatro llenos (Camela, Abraham Mateo, Omar Montes y Bonnie Tyler).",
+              ["ferias24"]),
+             ("2024-04-01", "Balance de la Semana Santa 2024, en la presentación del Lunes de Aguas",
+              "Califica de «agridulce» la Semana Santa por la lluvia y el frío, aunque la ciudad mantuvo, según ella, el 80 % de ocupación hotelera, y elogia la fortaleza de cofradías, hermandades y hostelería. Las terrazas, según el medio, estuvieron casi vacías gran parte de la semana.",
+              ["ss24"])],
+         faq_extra=[{"q": "¿Qué cifras de asistencia ha dado Carmen Seguín de las Ferias y Fiestas de Salamanca?",
+                     "a": "Según los balances que presenta cada septiembre, los conciertos de la Plaza Mayor reunieron más de 187.000 personas en 2024 (13 conciertos), 192.000 en 2025 (12 actuaciones) y 205.000 en 2026 (14 conciertos). Son estimaciones del propio Ayuntamiento, sin método publicado."},
+                    {"q": "¿De qué es responsable Carmen Seguín en el Ayuntamiento de Salamanca?",
+                     "a": "Es quinta teniente de alcalde y concejala delegada de Relaciones Institucionales, Festejos y Tradiciones, según el reparto de concejalías de junio de 2023. Las notas de prensa municipales la presentan como concejala de Festejos (2024) y de Festejos y Tradiciones (2025 y 2026)."}],
+         extra_nv=["Actividad de su delegación de Relaciones Institucionales: no se han localizado datos publicados comparables a los de las Ferias.",
+                   "Presupuesto de Festejos y coste de las Ferias y Fiestas: no recopilado en esta ficha.",
+                   "Fechas de sus cargos anteriores como directora de Comunicación del Ayuntamiento y jefa de Gabinete de Alcaldía: la ficha oficial no las indica."],
          tray=[("2023-06-19", "Quinta teniente de alcalde y concejala de Relaciones Institucionales, Festejos y Tradiciones", "Reparto de concejalías del equipo de gobierno del PP tras la investidura de Carbayo.", ["reparto_es", "reparto_gaceta", "reparto_tv"])]),
     dict(slug="angel-molina-martinez", match="molina martinez", ret="MOLINA MARTINEZ, ANGEL", g="m", grupo="PP", rol=GOB,
          nombre="Ángel Molina Martínez", hab="Ángel Molina Martínez", pila="Ángel", apell="Molina Martínez",
@@ -455,6 +488,8 @@ def build(p):
         faq.append({"q": f"¿Cómo contactar con {p['hab']}?",
                     "a": f"Por el correo institucional {contacto['email']}" + (f" o por teléfono en el {contacto['telefono']}" if contacto["telefono"] else "") + ", según su ficha oficial en la web del Ayuntamiento de Salamanca."})
 
+    faq += p.get("faq_extra", [])
+
     nv = [
         ("Importes del patrimonio mobiliario (acciones, planes de pensiones, seguros), ingresos y valor de mercado de los bienes: no se transcriben; las cifras agregadas de la declaración inicial figuran en la sección de transparencia." if cifras and cifras["estado"] == "ok" else
          "Cifras de patrimonio, bienes e ingresos de las declaraciones de bienes y actividades: se enlazan las publicadas por el Ayuntamiento, pero no se transcriben."),
@@ -475,6 +510,13 @@ def build(p):
     for s in [x for t in tray for x in t["fuentes"]]:
         if s not in fuentes:
             fuentes.append(s)
+    for k in p.get("posiciones", []):
+        for sf in fu(k[3]):
+            if sf not in fuentes:
+                fuentes.append(sf)
+    for sf in fu(p.get("serie", {}).get("fuentes", [])):
+        if sf not in fuentes:
+            fuentes.append(sf)
     fuentes.append(S["carbayo"])
 
     nac = None
@@ -527,6 +569,12 @@ def build(p):
         "enlaces_oficiales_y_externos": {"web_oficial_ayuntamiento": ficha_url},
     }
     data["identidad"]["apodos_o_variantes"] = sorted({p["hab"], p["apell"]})
+    if p.get("serie"):
+        se = dict(p["serie"])
+        se["fuentes"] = fu(se["fuentes"])
+        data["serie_de_gestion"] = se
+    if p.get("posiciones"):
+        data["posiciones_publicas"] = [{"fecha": a, "contexto": b, "resumen": c, "fuentes": fu(k)} for a, b, c, k in p["posiciones"]]
     return data, imp, marc
 
 

@@ -212,6 +212,9 @@
     "Puesto en la lista de 2023 y votos personales en las urnas: no recopilados. Las votaciones del Pleno se resumen en la sección correspondiente, con sus límites.",
     "Fecha de nacimiento y trayectoria política previa al Ayuntamiento: no figuran en la ficha oficial salvo lo reproducido arriba.",
     "Controversias: ninguna contrastada en las fuentes consultadas; eso no prueba que no existan. No se ha recopilado la valoración de otros grupos.",
+    "Actividad de su delegación de Relaciones Institucionales: no se han localizado datos publicados comparables a los de las Ferias.",
+    "Presupuesto de Festejos y coste de las Ferias y Fiestas: no recopilado en esta ficha.",
+    "Fechas de sus cargos anteriores como directora de Comunicación del Ayuntamiento y jefa de Gabinete de Alcaldía: la ficha oficial no las indica.",
     "Delegaciones y organigrama detallado más allá del reparto de concejalías de 2023 y los cambios publicados: pueden haber variado."
   ],
   "faq": [
@@ -246,6 +249,14 @@
     {
       "q": "¿Cómo contactar con Carmen Seguín Kattán?",
       "a": "Por el correo institucional c.mcarmen@aytosalamanca.es o por teléfono en el +34 923279112 / +34 923279186, según su ficha oficial en la web del Ayuntamiento de Salamanca."
+    },
+    {
+      "q": "¿Qué cifras de asistencia ha dado Carmen Seguín de las Ferias y Fiestas de Salamanca?",
+      "a": "Según los balances que presenta cada septiembre, los conciertos de la Plaza Mayor reunieron más de 187.000 personas en 2024 (13 conciertos), 192.000 en 2025 (12 actuaciones) y 205.000 en 2026 (14 conciertos). Son estimaciones del propio Ayuntamiento, sin método publicado."
+    },
+    {
+      "q": "¿De qué es responsable Carmen Seguín en el Ayuntamiento de Salamanca?",
+      "a": "Es quinta teniente de alcalde y concejala delegada de Relaciones Institucionales, Festejos y Tradiciones, según el reparto de concejalías de junio de 2023. Las notas de prensa municipales la presentan como concejala de Festejos (2024) y de Festejos y Tradiciones (2025 y 2026)."
     }
   ],
   "fuentes": [
@@ -286,6 +297,22 @@
       "u": "https://salamancartvaldia.es/noticia/2023-06-19-asi-quedan-las-concejalias-en-el-ayuntamiento-de-salamanca-324554"
     },
     {
+      "t": "Ayuntamiento de Salamanca (16-09-2026): balance de las Ferias y Fiestas 2026",
+      "u": "https://www.aytosalamanca.es/en/w/las-ferias-y-fiestas-de-2026-registran-cifras-r%C3%A9cord-de-participaci%C3%B3n-en-todas-las-actividades-programadas"
+    },
+    {
+      "t": "SALAMANCArtv AL DÍA (16-09-2025): balance de las Ferias y Fiestas 2025 presentado por la concejala",
+      "u": "https://salamancartvaldia.es/noticia/2025-09-16-mas-de-220-000-asistentes-a-los-conciertos-y-una-ocupacion-hotelera-del-95-confirman-el-exito-de-las-ferias-376545"
+    },
+    {
+      "t": "Ayuntamiento de Salamanca (19-09-2024): balance de las Ferias y Fiestas 2024",
+      "u": "https://www.aytosalamanca.es/en/w/el-ayuntamiento-de-salamanca-destaca-la-alta-participaci%C3%B3n-en-todas-las-actividades-programadas-en-las-ferias-y-fiestas-2024"
+    },
+    {
+      "t": "El Español (01-04-2024): balance «agridulce» de la Semana Santa de Salamanca",
+      "u": "https://www.elespanol.com/castilla-y-leon/region/salamanca/20240401/semana-santa-salamana-balace-agridulce/844415690_0.html"
+    },
+    {
       "t": "Open Salamanca: ficha de Carlos García Carbayo, alcalde de Salamanca",
       "u": "https://opensalamanca.es/elecciones/politicos/carlos-garcia-carbayo"
     }
@@ -293,5 +320,100 @@
   "como_citar": "Open Salamanca (2026). María del Carmen Seguín Kattán, concejala del Ayuntamiento de Salamanca: ficha y dataset. https://opensalamanca.es/elecciones/politicos/maria-del-carmen-seguin-kattan (consultado el 25-11-2026). CC BY 4.0.",
   "enlaces_oficiales_y_externos": {
     "web_oficial_ayuntamiento": "https://www.aytosalamanca.es/w/d%C2%AA.-carmen-seguin-kattan"
-  }
+  },
+  "serie_de_gestion": {
+    "titulo": "Ferias y Fiestas de Salamanca: balance de asistencia 2024-2026",
+    "texto": "La concejala presenta cada septiembre el balance de las Ferias y Fiestas en honor a Santa María de la Vega, la principal actividad de su delegación de Festejos y Tradiciones. Estas son las cifras de los conciertos de la Plaza Mayor que ha dado el propio Ayuntamiento, año a año.",
+    "columnas": [
+      "Ferias",
+      "Conciertos en la Plaza Mayor",
+      "Asistentes (estimación municipal)",
+      "Media por concierto (cálculo propio)",
+      "Ocupación hotelera según el balance (en 2026, datos de la Asociación de Hostelería)"
+    ],
+    "filas": [
+      [
+        "2024",
+        "13 (4 con aforo completo)",
+        "más de 187.000",
+        "unos 14.400",
+        "no consta en la nota municipal"
+      ],
+      [
+        "2025",
+        "12 actuaciones",
+        "192.000",
+        "16.000",
+        "95 %"
+      ],
+      [
+        "2026",
+        "14",
+        "205.000",
+        "unos 14.600",
+        "95 % en fines de semana y 75 % entre semana"
+      ]
+    ],
+    "nota": "Las cifras de asistencia son estimaciones que el Ayuntamiento publica en sus balances; no se explica el método de cómputo y el aforo y el número de conciertos cambian cada año, por lo que la comparación entre ediciones es orientativa. En 2025 la fuente es el medio SALAMANCArtv AL DÍA, que recoge el balance presentado por la concejala (no se ha localizado la nota municipal). En 2026 el Ayuntamiento también cifra 26.300 asistentes al Festival de Artes de Calle (récord), más de 53.000 en las tradiciones, 80.000 en los fuegos artificiales y más de 18.000 en las puertas abiertas.",
+    "fuentes": [
+      {
+        "t": "Ayuntamiento de Salamanca (19-09-2024): balance de las Ferias y Fiestas 2024",
+        "u": "https://www.aytosalamanca.es/en/w/el-ayuntamiento-de-salamanca-destaca-la-alta-participaci%C3%B3n-en-todas-las-actividades-programadas-en-las-ferias-y-fiestas-2024"
+      },
+      {
+        "t": "SALAMANCArtv AL DÍA (16-09-2025): balance de las Ferias y Fiestas 2025 presentado por la concejala",
+        "u": "https://salamancartvaldia.es/noticia/2025-09-16-mas-de-220-000-asistentes-a-los-conciertos-y-una-ocupacion-hotelera-del-95-confirman-el-exito-de-las-ferias-376545"
+      },
+      {
+        "t": "Ayuntamiento de Salamanca (16-09-2026): balance de las Ferias y Fiestas 2026",
+        "u": "https://www.aytosalamanca.es/en/w/las-ferias-y-fiestas-de-2026-registran-cifras-r%C3%A9cord-de-participaci%C3%B3n-en-todas-las-actividades-programadas"
+      }
+    ]
+  },
+  "posiciones_publicas": [
+    {
+      "fecha": "2026-09-16",
+      "contexto": "Balance de las Ferias y Fiestas 2026",
+      "resumen": "Presenta como «cifras récord de participación» los datos de las ferias: 205.000 personas en los 14 conciertos de la Plaza Mayor, más de 53.000 en las tradiciones salmantinas, 80.000 en los fuegos artificiales y más de 120.000 en el mercado histórico (dato de sus organizadores). Agradece la labor de los servicios municipales. Son cifras del propio Ayuntamiento, sin contraste independiente.",
+      "fuentes": [
+        {
+          "t": "Ayuntamiento de Salamanca (16-09-2026): balance de las Ferias y Fiestas 2026",
+          "u": "https://www.aytosalamanca.es/en/w/las-ferias-y-fiestas-de-2026-registran-cifras-r%C3%A9cord-de-participaci%C3%B3n-en-todas-las-actividades-programadas"
+        }
+      ]
+    },
+    {
+      "fecha": "2025-09-16",
+      "contexto": "Balance de las Ferias y Fiestas 2025",
+      "resumen": "Presenta más de 220.000 asistentes a los 24 conciertos organizados por el Ayuntamiento, 192.000 de ellos en la Plaza Mayor, y una ocupación hotelera del 95 %.",
+      "fuentes": [
+        {
+          "t": "SALAMANCArtv AL DÍA (16-09-2025): balance de las Ferias y Fiestas 2025 presentado por la concejala",
+          "u": "https://salamancartvaldia.es/noticia/2025-09-16-mas-de-220-000-asistentes-a-los-conciertos-y-una-ocupacion-hotelera-del-95-confirman-el-exito-de-las-ferias-376545"
+        }
+      ]
+    },
+    {
+      "fecha": "2024-09-19",
+      "contexto": "Balance de las Ferias y Fiestas 2024",
+      "resumen": "Destaca la «afluencia masiva» en todas las propuestas: más de 187.000 personas en los 13 conciertos de la Plaza Mayor, con cuatro llenos (Camela, Abraham Mateo, Omar Montes y Bonnie Tyler).",
+      "fuentes": [
+        {
+          "t": "Ayuntamiento de Salamanca (19-09-2024): balance de las Ferias y Fiestas 2024",
+          "u": "https://www.aytosalamanca.es/en/w/el-ayuntamiento-de-salamanca-destaca-la-alta-participaci%C3%B3n-en-todas-las-actividades-programadas-en-las-ferias-y-fiestas-2024"
+        }
+      ]
+    },
+    {
+      "fecha": "2024-04-01",
+      "contexto": "Balance de la Semana Santa 2024, en la presentación del Lunes de Aguas",
+      "resumen": "Califica de «agridulce» la Semana Santa por la lluvia y el frío, aunque la ciudad mantuvo, según ella, el 80 % de ocupación hotelera, y elogia la fortaleza de cofradías, hermandades y hostelería. Las terrazas, según el medio, estuvieron casi vacías gran parte de la semana.",
+      "fuentes": [
+        {
+          "t": "El Español (01-04-2024): balance «agridulce» de la Semana Santa de Salamanca",
+          "u": "https://www.elespanol.com/castilla-y-leon/region/salamanca/20240401/semana-santa-salamana-balace-agridulce/844415690_0.html"
+        }
+      ]
+    }
+  ]
 }

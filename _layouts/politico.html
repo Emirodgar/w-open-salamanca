@@ -194,6 +194,21 @@ layout: default
       {%- endfor %}
       {%- endif %}
 
+      {%- if p.serie_de_gestion %}
+      {%- assign sg = p.serie_de_gestion %}
+      <h2>{{ sg.titulo }}</h2>
+      <p>{{ sg.texto }}</p>
+      <div class="tabla"><table border="1" cellpadding="5" cellspacing="0">
+        <thead><tr>{%- for c in sg.columnas %}<th>{{ c }}</th>{%- endfor %}</tr></thead>
+        <tbody>
+        {%- for f in sg.filas %}
+          <tr>{%- for c in f %}<td>{{ c }}</td>{%- endfor %}</tr>
+        {%- endfor %}
+        </tbody>
+      </table></div>
+      <p class="fu">{{ sg.nota }} Fuentes: {% for s in sg.fuentes %}<a href="{{ s.u }}" rel="nofollow noopener">{{ s.t }}</a>{% unless forloop.last %} · {% endunless %}{% endfor %}</p>
+      {%- endif %}
+
       {%- if p.posiciones_publicas %}
       <h2>Posiciones públicas recientes</h2>
       {%- for q in p.posiciones_publicas %}
