@@ -878,6 +878,30 @@
       ],
       "basado_en": "eventos.json",
       "fecha_creacion": "2026-11-25"
+    },
+    {
+      "id": "conmemoraciones-25n-salamanca-2026",
+      "pregunta": "Ante la notable repercusión de las conmemoraciones del 25N en Salamanca, ¿cree que estos actos son efectivos para concienciar y combatir la violencia machista en la provincia?",
+      "opciones": [
+        "Sí, son fundamentales para la concienciación",
+        "No, su impacto es limitado",
+        "Son un paso, pero se necesitan más acciones",
+        "No tengo suficiente información"
+      ],
+      "basado_en": "actualidad.json",
+      "fecha_creacion": "2026-11-26"
+    },
+    {
+      "id": "anticipacion-navidad-salamanca-2026",
+      "pregunta": "Ante el inicio temprano de los preparativos navideños en Salamanca y provincia, ¿cree que esta anticipación contribuye positivamente al ambiente festivo y al comercio local?",
+      "opciones": [
+        "Sí, genera más ambiente y estimula las compras",
+        "No, es excesivo y resta encanto a la Navidad",
+        "Es indiferente, cada uno lo vive a su ritmo",
+        "No tengo suficiente información"
+      ],
+      "basado_en": "actualidad.json",
+      "fecha_creacion": "2026-11-26"
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "mes": "2026-11",
   "titulo_mes": "Noviembre 2026",
-  "resumen_mes": "Noviembre ha estado marcado por el fallecimiento de Charo Diego y la persistencia de problemas en la línea ferroviaria Salamanca-Madrid. Un error en la identificación de pacientes en Montalvos ha causado preocupación, y se ha detectado el primer caso de lengua azul. La visita de Santiago Abascal a Salamanca generó tensión y protestas. El final de mes ha visto el inicio de los preparativos navideños, una multitudinaria marcha solidaria y la desarticulación de un grupo criminal. En el ámbito deportivo, Unionistas de Salamanca ha puesto fin a la etapa de Javi Medina, y la Universidad ha rendido homenaje a la Reina Sofía.",
+  "resumen_mes": "Noviembre ha estado marcado por el fallecimiento de Charo Diego y la detección del primer caso de lengua azul. La preocupación por un error en la identificación de pacientes se sumó a la tensión generada por la visita de Santiago Abascal. El final de mes ha estado dominado por las multitudinarias conmemoraciones del 25N contra la violencia machista. En el ámbito deportivo, Unionistas de Salamanca ha puesto fin a la etapa de Javi Medina, mientras que Perfumerías Avenida ha logrado una destacada victoria en Europa. La Universidad también rindió homenaje a la Reina Sofía y se desarticuló un grupo criminal.",
   "hitos": [
     {
       "fecha": "2026-11-01",
@@ -28,22 +28,6 @@
       "destacado": false
     },
     {
-      "fecha": "2026-11-20",
-      "titulo": "Visita de Santiago Abascal a Salamanca marcada por la tensión",
-      "categoria": "Política",
-      "descripcion": "La concentración de Santiago Abascal en la Plaza Mayor de Salamanca generó momentos de tensión, provocaciones e insultos entre asistentes y manifestantes.",
-      "fuente": "https://www.lagacetadesalamanca.es/salamanca/imagenes-tension-provocaciones-insultos-pelea-protesta-abascal-20261120133908-ga.html",
-      "destacado": true
-    },
-    {
-      "fecha": "2026-11-22",
-      "titulo": "15.000 personas participan en la XII Marcha contra el Cáncer",
-      "categoria": "Sociedad",
-      "descripcion": "Alrededor de 15.000 personas llenaron las calles de Salamanca en la XII Marcha contra el Cáncer, mostrando un fuerte apoyo a la causa.",
-      "fuente": "https://www.lagacetadesalamanca.es/salamanca/15000-personas-llenan-calles-salamanca-xii-marcha-20261122113241-nt.html",
-      "destacado": false
-    },
-    {
       "fecha": "2026-11-23",
       "titulo": "Fin de la era de Javi Medina en Unionistas",
       "categoria": "Deportes",
@@ -61,10 +45,26 @@
     },
     {
       "fecha": "2026-11-24",
-      "titulo": "La Universidad de Salamanca rinde homenaje a la Reina Sofía",
+      "titulo": "La Universidad de Salamanca rinde homenaje a la Reina Sofía y entrega el Premio de Poesía",
       "categoria": "Cultura",
-      "descripcion": "La institución académica ha honrado a la Reina Sofía, un acto que incluyó la entrega de una medalla conmemorativa.",
+      "descripcion": "La institución académica ha honrado a la Reina Sofía, un acto que incluyó la entrega de una medalla conmemorativa y el Premio Reina Sofía de Poesía a Jaime Siles.",
       "fuente": "https://www.lagacetadesalamanca.es/salamanca/universidad-rinde-homenaje-reina-sofia-entrega-medalla-20261124183207-nt.html",
+      "destacado": false
+    },
+    {
+      "fecha": "2026-11-25",
+      "titulo": "Conmemoraciones por el Día Internacional contra la Violencia Machista",
+      "categoria": "Sociedad",
+      "descripcion": "La capital y la provincia se han movilizado con diversas manifestaciones y actos reivindicativos en el Día Internacional de la Eliminación de la Violencia contra la Mujer.",
+      "fuente": "https://www.lagacetadesalamanca.es/salamanca/millar-personas-recorren-salamanca-manifestacion-25n-20261125212329-ga.html",
+      "destacado": true
+    },
+    {
+      "fecha": "2026-11-25",
+      "titulo": "Perfumerías Avenida logra una importante victoria en Eurocup",
+      "categoria": "Deportes",
+      "descripcion": "El equipo salmantino ha conseguido una gran victoria en la Eurocup, destacando por su rendimiento con solo siete jugadoras disponibles.",
+      "fuente": "https://www.lagacetadesalamanca.es/deportes/baloncesto-local/meins-avenida/claves-gran-victoria-meins-avenida-eurocup-20261125234154-nt.html",
       "destacado": false
     }
   ]
