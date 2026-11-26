@@ -34,6 +34,9 @@ def norm(s):
     return re.sub(r"[^a-z0-9 ]+", " ", s).strip()
 
 
+OCR_DIR = Path(__file__).resolve().parent / "fuentes" / "ocr"
+
+
 def limpiar(t):
     """Quita pies de página y sellos que cortan las frases (CSV, Plaza Mayor, Tel., ****)."""
     out = []
@@ -287,7 +290,16 @@ def main(cache):
     sesiones = []
     for f in sorted(cache.glob("*.txt")):
         u = (cache / (f.stem + ".url")).read_text(encoding="utf-8").split("\n")
-        s = parse_acta(f.read_text(encoding="utf-8"), u[1], u[0])
+        texto = f.read_text(encoding="utf-8")
+        if len(texto.strip()) < 500:
+            # Acta escaneada sin capa de texto: se usa el texto de OCR versionado (ocr_actas.py), si existe.
+            ocr = OCR_DIR / (f.stem + ".txt")
+            if ocr.exists():
+                texto = ocr.read_text(encoding="utf-8")
+        if re.match(r"\s*JUNTA DE GOBIERNO LOCAL", texto):
+            print(f.stem, "OMITIDO: no es un acta del Pleno (convocatoria de la Junta de Gobierno Local)")
+            continue
+        s = parse_acta(texto, u[1], u[0])
         sesiones.append(s)
         nv = sum(len(i["votaciones"]) for i in s["items"])
         bad = sum(1 for i in s["items"] for v in i["votaciones"] if v["qa"])

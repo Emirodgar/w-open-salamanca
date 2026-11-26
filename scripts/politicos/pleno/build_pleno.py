@@ -35,9 +35,12 @@ CLAVE_DE_SLUG = {v: k for k, v in SLUG.items()}
 # primera sesión en la que cada concejal forma parte del Pleno
 INICIO = {"maria-de-los-angeles-carpio-perez": "2024-07-26", "cesar-gomez-barthe-celada": "2026-07-30"}
 NO_PROCESADAS = [
-    {"fecha": "2023-06-17", "sesion": "Extraordinaria 8/2023 (constitución del Ayuntamiento)", "motivo": "acta escaneada sin texto; no se aplica OCR"},
-    {"fecha": "2024-02-09", "sesion": "Ordinaria 1/2024", "motivo": "acta escaneada sin texto; no se aplica OCR"},
-    {"fecha": "2024-03-22", "sesion": "Ordinaria 7/2024", "motivo": "acta escaneada sin texto; no se aplica OCR"},
+    {"fecha": "2023-06-17", "sesion": "Extraordinaria 8/2023 (constitución del Ayuntamiento)",
+     "motivo": "acta escaneada, leída con OCR; la sesión solo tiene la elección de alcalde (votación secreta: 14 votos Carbayo, 9 Mateos, 3 Rivas), que se recoge en la ficha del alcalde, y no votaciones de fondo"},
+    {"fecha": "2024-02-09", "sesion": "Ordinaria 1/2024",
+     "motivo": "el PDF publicado con ese título es un escaneo del acta del Pleno del 3-02-2023 (mandato anterior): el acta correcta de esta sesión no figura en el listado del Ayuntamiento"},
+    {"fecha": "2024-03-22", "sesion": "Documento «Sesión ordinaria nº 7 de 22-03-24»",
+     "motivo": "no es un acta del Pleno: es la convocatoria de la Junta de Gobierno Local de ese día, publicada por error en el listado de actas"},
 ]
 SENT = {"favor": "a favor", "contra": "en contra", "abstencion": "abstención", "blanco": "en blanco"}
 
@@ -218,7 +221,7 @@ def main():
             "Las votaciones sobre urgencia se cuentan aparte; los puntos sin votación (toma de conocimiento, ruegos y preguntas) no se incluyen.",
         ],
         "limitaciones": [
-            "Tres actas son imágenes escaneadas sin texto y no se han procesado (constitución del Pleno de 17-06-2023, 09-02-2024 y 22-03-2024).",
+            "Tres documentos del listado de actas del Ayuntamiento no aportan votaciones de fondo: la sesión constitutiva del 17-06-2023 (escaneada, leída con OCR; solo contiene la elección de alcalde), un PDF titulado «09-02-2024» que es el acta del Pleno del 3-02-2023 (mandato anterior) y un PDF titulado «22-03-2024» que es la convocatoria de una Junta de Gobierno Local. Por tanto, el acta de la sesión ordinaria 1/2024 no se ha podido analizar.",
             "Las actas de las sesiones de sorteo de mesas electorales no recogen votación.",
             "Cuando un concejal abandona la sala a mitad de sesión, su voto no se atribuye: el acta solo da el recuento del grupo.",
             "El sentido del voto no mide el contenido de cada propuesta: se registra el voto, no su motivación.",

@@ -226,7 +226,7 @@ data = {
         "En 2025 percibió 83.022,96 € brutos, la retribución más alta de los 27 miembros de la Corporación."
     ),
     "trayectoria": [
-        {"fecha": "2023-06-17", "hito": "Reelegido alcalde con mayoría absoluta", "detalle": "Toma el cargo para el mandato 2023-2027 con los 14 concejales del PP, sin necesidad de pactos.", "fuentes": fu("esp17", "os_concejales")},
+        {"fecha": "2023-06-17", "hito": "Reelegido alcalde con mayoría absoluta", "detalle": "Toma el cargo para el mandato 2023-2027 con los 14 concejales del PP, sin necesidad de pactos. Según el acta de la sesión constitutiva, en votación secreta con 26 votos emitidos (una concejala excusó su asistencia) obtuvo 14 votos frente a 9 de José Luis Mateos Crespo (PSOE) y 3 de Ignacio Javier Rivas Serrano (Vox), sin votos en blanco; la mayoría absoluta exigía 14.", "fuentes": fu("esp17", "os_concejales", "actas")},
         {"fecha": "2023-05-28", "hito": "Mayoría absoluta en las municipales", "detalle": "PP: 14 de 27 concejales; PSOE 10; Vox 3; Ciudadanos queda fuera del Pleno.", "fuentes": fu("esp28", "wiki_en")},
         {"fecha": "2023-03-11", "hito": "Presidente del PP de Salamanca", "detalle": "Gana las primarias con 1.309 votos frente a 499 (72,3 %) y releva a Francisco Javier Iglesias García.", "fuentes": fu("dcl23", "wiki_es")},
         {"fecha": "2019-06-15", "hito": "Reelegido alcalde tras las municipales de 2019", "detalle": "PP 11 concejales sin mayoría; investido con los 11 del PP y los 4 de Ciudadanos, que entran en el gobierno municipal.", "fuentes": fu("norte19", "os_concejales")},
