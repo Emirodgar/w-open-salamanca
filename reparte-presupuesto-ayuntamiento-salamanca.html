@@ -94,11 +94,18 @@ permalink: reparte-presupuesto-ayuntamiento-salamanca
 .rp-fila.rp-fija .rp-fila-ctl{font-size:.92em;color:#555}
 .rp-chart{position:relative;margin:1.5rem 0;height:760px}
 .rp-nota{font-size:.9em;color:#555}
-@media (max-width:640px){.rp-fila{grid-template-columns:1fr}.rp-chart{height:900px}}
+@media (max-width:640px){.rp-fila{grid-template-columns:1fr}.rp-chart{height:900px}.rp-estado{padding:.5rem .75rem;margin:.5rem 0}.rp-estado-main strong{font-size:1.05em}.rp-estado-det{display:none}}
 </style>
 
 <script>
 document.addEventListener('DOMContentLoaded', function () {
+  // La cabecera del portal es fija: el panel de cuentas se pega justo debajo de ella
+  function ajustaPanel() {
+    var h = document.querySelector('header.header'), p = document.getElementById('rpEstado');
+    if (h && p) p.style.top = (getComputedStyle(h).position === 'fixed' ? h.offsetHeight : 0) + 'px';
+  }
+  ajustaPanel();
+  window.addEventListener('resize', ajustaPanel);
   var DESC = {
     '16': 'Basuras, limpieza viaria, agua, alumbrado y cementerios',
     '92': 'Personal, servicios jurídicos, informática y gestión interna',

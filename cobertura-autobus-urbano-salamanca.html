@@ -102,7 +102,9 @@ dataset_source_url: https://salamancadetransportes.com/informacion-de-lineas/lin
 .cb-nota{font-size:.9em;color:#555}
 .cb-det{margin:1rem 0}
 .cb-det summary{cursor:pointer;font-weight:600}
-#cbTabla table,#cbTablaTodos table{width:100%;border-collapse:collapse;margin:.5rem 0}
+#cbTabla,#cbTablaTodos{overflow-x:auto}
+.cb-linea input{width:1.15rem;height:1.15rem}
+#cbTabla table,#cbTablaTodos table{width:100%;min-width:480px;border-collapse:collapse;margin:.5rem 0}
 #cbTabla th,#cbTabla td,#cbTablaTodos th,#cbTablaTodos td{padding:.4rem .6rem;border-bottom:1px solid var(--border-color);text-align:right;font-variant-numeric:tabular-nums}
 #cbTabla th:first-child,#cbTabla td:first-child,#cbTablaTodos th:first-child,#cbTablaTodos td:first-child{text-align:left}
 @media (max-width:820px){.cb-layout{grid-template-columns:1fr}.cb-lineas{max-height:300px}.cb-mapa{height:480px}}

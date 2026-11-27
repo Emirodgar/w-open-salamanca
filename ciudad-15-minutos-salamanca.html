@@ -99,7 +99,7 @@ dataset_source_url: /servicios-proximidad-salamanca.json
 .cq-btn-sec{background:#fff;color:#2C5F2D}
 .cq-btn:focus-visible,.cq-controles select:focus-visible,.cq-nuevo select:focus-visible,.cq-radio input:focus-visible{outline:3px solid var(--accent-color);outline-offset:2px}
 .cq-copiado{font-size:.9em;color:#2C5F2D}
-.cq-barras{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:.6rem;margin:.5rem 0 1rem}
+.cq-barras{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:.6rem;margin:.5rem 0 1rem}
 .cq-barra{border:1px solid var(--border-color);border-radius:6px;padding:.5rem .7rem}
 .cq-barra b{display:block;font-size:1.2em}
 .cq-barra small{color:#555}
@@ -228,7 +228,7 @@ document.addEventListener('DOMContentLoaded', function () {
       var pl = nuevos.length > 1;
       txt += Math.abs(d) >= 1
         ? ' Con ' + (pl ? 'tus ' + nuevos.length + ' servicios nuevos' : 'tu servicio nuevo') + ': <b>' + (d >= 0 ? '+' : '−') + fE.format(Math.abs(d)) + ' personas</b> con los cinco servicios cerca.'
-        : ' ' + (pl ? 'Tus servicios nuevos' : 'Tu servicio nuevo') + ' no cambia' + (pl ? 'n' : '') + ' cuántos vecinos tienen los cinco a la vez, pero sí quién tiene ese servicio cerca (mira las tarjetas de abajo).';
+        : ' ' + (pl ? 'Tus servicios nuevos' : 'Tu servicio nuevo') + ' no cambia' + (pl ? 'n' : '') + ' cuántos vecinos tienen los cinco a la vez, pero sí quién tiene ese servicio cerca (mira las tarjetas de arriba).';
     }
     document.getElementById('cqResumen').innerHTML = txt;
 
@@ -266,10 +266,13 @@ document.addEventListener('DOMContentLoaded', function () {
       serv[c.id].forEach(function (s) { L.circleMarker([s[2], s[3]], { radius: 4, weight: 1, color: '#fff', fillColor: c.color, fillOpacity: 1 }).bindTooltip(esc(s[1])).addTo(capaServ); });
     }
     capaNuevos.clearLayers();
-    nuevos.forEach(function (n) {
-      var c = CATS[n.ci];
+    nuevos.forEach(function (n, k) {
+      var c = CATS[n.ci], gana = res.ct[n.ci] - ref.ct[n.ci];
       L.circle([n.lat, n.lng], { radius: R, color: c.color, weight: 1, fillOpacity: 0.08, interactive: false }).addTo(capaNuevos);
-      L.circleMarker([n.lat, n.lng], { radius: 8, weight: 3, color: c.color, fillColor: '#fff', fillOpacity: 1 }).bindTooltip('Nuevo: ' + esc(c.nombre)).addTo(capaNuevos);
+      var mk = L.circleMarker([n.lat, n.lng], { radius: 8, weight: 3, color: c.color, fillColor: '#fff', fillOpacity: 1 }).addTo(capaNuevos);
+      // la última colocación muestra su efecto sobre el propio mapa, útil cuando el resumen queda fuera de pantalla
+      var txt = 'Nuevo: ' + esc(c.nombre) + (k === nuevos.length - 1 ? '<br><b>' + (gana >= 0 ? '+' : '−') + fE.format(Math.abs(gana)) + ' personas</b> con este servicio cerca' : '');
+      mk.bindTooltip(txt, k === nuevos.length - 1 ? { permanent: true, direction: 'top', offset: [0, -8] } : {});
     });
     guarda();
   }
