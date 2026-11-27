@@ -1,0 +1,265 @@
+{
+ "metadata": {
+  "titulo": "Renta neta media por persona en los barrios de Salamanca (INE, ADRH 2024)",
+  "fuente": "INE, Atlas de distribución de renta de los hogares (ADRH), tabla 31178 (Salamanca, secciones censales), indicador «Renta neta media por persona», año 2024",
+  "fuente_url": "https://www.ine.es/jaxiT3/Tabla.htm?t=31178",
+  "cartografia": "INE, secciones censales 2024 (geoserver INE, colección Secciones_2024) y límites de barrios de barrios-poblacion.json (aproximados)",
+  "metodo": "Cada barrio recibe la media de la renta de las secciones censales que lo cubren, ponderada por la superficie de solape (rejilla de ~30 m). No pondera por población: es una aproximación.",
+  "limitaciones": [
+   "Los límites de barrio son aproximados y no coinciden exactamente con las secciones censales.",
+   "Un barrio con una sola sección toma el valor de esa sección, que puede incluir zonas vecinas.",
+   "Marín II, Montalvo, Zaldesa y La Platina no tienen población residente apreciable: su valor es el de la sección que los cubre.",
+   "Cuatro secciones (01012, 05016, 05020, 05021) no tienen dato de 2024 en el INE y se ignoran; tampoco hay dato para las secciones agregadas por distrito (xx000)."
+  ],
+  "generado": "2026-11-27",
+  "secciones_con_dato": 117,
+  "unidad": "€/persona/año"
+ },
+ "barrios": {
+  "Los Alambres": {
+   "renta_neta_media_persona": 13934,
+   "secciones_censales": 4,
+   "habitantes": 880
+  },
+  "Teso de la Feria": {
+   "renta_neta_media_persona": 15243,
+   "secciones_censales": 4,
+   "habitantes": 1537
+  },
+  "La Platina": {
+   "renta_neta_media_persona": 16789,
+   "secciones_censales": 1,
+   "habitantes": 9
+  },
+  "Garrido Norte": {
+   "renta_neta_media_persona": 13647,
+   "secciones_censales": 16,
+   "habitantes": 11271
+  },
+  "Puente Ladrillo": {
+   "renta_neta_media_persona": 13470,
+   "secciones_censales": 5,
+   "habitantes": 5038
+  },
+  "Tenerias": {
+   "renta_neta_media_persona": 20558,
+   "secciones_censales": 2,
+   "habitantes": 599
+  },
+  "La Fontana": {
+   "renta_neta_media_persona": 18856,
+   "secciones_censales": 5,
+   "habitantes": 503
+  },
+  "Hospital": {
+   "renta_neta_media_persona": 16896,
+   "secciones_censales": 4,
+   "habitantes": 466
+  },
+  "San Esteban": {
+   "renta_neta_media_persona": 20581,
+   "secciones_censales": 4,
+   "habitantes": 730
+  },
+  "Salesas": {
+   "renta_neta_media_persona": 16636,
+   "secciones_censales": 8,
+   "habitantes": 5850
+  },
+  "San Vicente": {
+   "renta_neta_media_persona": 19602,
+   "secciones_censales": 2,
+   "habitantes": 961
+  },
+  "Carmen": {
+   "renta_neta_media_persona": 11200,
+   "secciones_censales": 5,
+   "habitantes": 2070
+  },
+  "Pizarrales": {
+   "renta_neta_media_persona": 13778,
+   "secciones_censales": 11,
+   "habitantes": 9657
+  },
+  "Blanco": {
+   "renta_neta_media_persona": 13131,
+   "secciones_censales": 4,
+   "habitantes": 2428
+  },
+  "San Bernardo": {
+   "renta_neta_media_persona": 14711,
+   "secciones_censales": 9,
+   "habitantes": 4427
+  },
+  "Las Claras": {
+   "renta_neta_media_persona": 21144,
+   "secciones_censales": 5,
+   "habitantes": 2925
+  },
+  "Sancti Spíritus": {
+   "renta_neta_media_persona": 24363,
+   "secciones_censales": 1,
+   "habitantes": 1000
+  },
+  "Centro": {
+   "renta_neta_media_persona": 24638,
+   "secciones_censales": 9,
+   "habitantes": 3415
+  },
+  "Santo Tomás": {
+   "renta_neta_media_persona": 19052,
+   "secciones_censales": 2,
+   "habitantes": 1986
+  },
+  "Delicias": {
+   "renta_neta_media_persona": 16611,
+   "secciones_censales": 7,
+   "habitantes": 4794
+  },
+  "Rollo": {
+   "renta_neta_media_persona": 15645,
+   "secciones_censales": 10,
+   "habitantes": 6841
+  },
+  "Oeste": {
+   "renta_neta_media_persona": 19370,
+   "secciones_censales": 13,
+   "habitantes": 8109
+  },
+  "San Juan": {
+   "renta_neta_media_persona": 26530,
+   "secciones_censales": 4,
+   "habitantes": 1973
+  },
+  "Prosperidad": {
+   "renta_neta_media_persona": 16205,
+   "secciones_censales": 6,
+   "habitantes": 5393
+  },
+  "San Isidro": {
+   "renta_neta_media_persona": 14754,
+   "secciones_censales": 6,
+   "habitantes": 2178
+  },
+  "Universidad": {
+   "renta_neta_media_persona": 20542,
+   "secciones_censales": 3,
+   "habitantes": 1325
+  },
+  "Alamedilla": {
+   "renta_neta_media_persona": 21445,
+   "secciones_censales": 7,
+   "habitantes": 2068
+  },
+  "Úrsulas - San Marcos": {
+   "renta_neta_media_persona": 26576,
+   "secciones_censales": 4,
+   "habitantes": 2017
+  },
+  "Arrabal": {
+   "renta_neta_media_persona": 16029,
+   "secciones_censales": 4,
+   "habitantes": 643
+  },
+  "Vidal": {
+   "renta_neta_media_persona": 14874,
+   "secciones_censales": 11,
+   "habitantes": 5053
+  },
+  "Garrido Sur": {
+   "renta_neta_media_persona": 15332,
+   "secciones_censales": 8,
+   "habitantes": 8445
+  },
+  "Capuchinos": {
+   "renta_neta_media_persona": 16220,
+   "secciones_censales": 4,
+   "habitantes": 3358
+  },
+  "Ciudad Jardín": {
+   "renta_neta_media_persona": 17529,
+   "secciones_censales": 1,
+   "habitantes": 977
+  },
+  "Labradores": {
+   "renta_neta_media_persona": 21804,
+   "secciones_censales": 8,
+   "habitantes": 6020
+  },
+  "Chinchibarra": {
+   "renta_neta_media_persona": 16628,
+   "secciones_censales": 9,
+   "habitantes": 4341
+  },
+  "Estación": {
+   "renta_neta_media_persona": 16907,
+   "secciones_censales": 4,
+   "habitantes": 2289
+  },
+  "Chamberí": {
+   "renta_neta_media_persona": 15252,
+   "secciones_censales": 3,
+   "habitantes": 1719
+  },
+  "Zurguén": {
+   "renta_neta_media_persona": 13433,
+   "secciones_censales": 7,
+   "habitantes": 3842
+  },
+  "Vistahermosa": {
+   "renta_neta_media_persona": 15485,
+   "secciones_censales": 3,
+   "habitantes": 2673
+  },
+  "San José": {
+   "renta_neta_media_persona": 11860,
+   "secciones_censales": 4,
+   "habitantes": 2954
+  },
+  "Tormes": {
+   "renta_neta_media_persona": 13484,
+   "secciones_censales": 7,
+   "habitantes": 2117
+  },
+  "La Vega": {
+   "renta_neta_media_persona": 13467,
+   "secciones_censales": 3,
+   "habitantes": 903
+  },
+  "Marín I": {
+   "renta_neta_media_persona": 16789,
+   "secciones_censales": 1,
+   "habitantes": 73
+  },
+  "Buenos Aires": {
+   "renta_neta_media_persona": 9428,
+   "secciones_censales": 1,
+   "habitantes": 823
+  },
+  "Huerta Otea": {
+   "renta_neta_media_persona": 16468,
+   "secciones_censales": 3,
+   "habitantes": 2738
+  },
+  "Tejares": {
+   "renta_neta_media_persona": 13687,
+   "secciones_censales": 6,
+   "habitantes": 4242
+  },
+  "Marín II": {
+   "renta_neta_media_persona": 16789,
+   "secciones_censales": 1,
+   "habitantes": 0
+  },
+  "Montalvo": {
+   "renta_neta_media_persona": 13306,
+   "secciones_censales": 1,
+   "habitantes": 0
+  },
+  "Zaldesa": {
+   "renta_neta_media_persona": 9428,
+   "secciones_censales": 1,
+   "habitantes": 0
+  }
+ }
+}

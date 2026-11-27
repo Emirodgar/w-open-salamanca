@@ -6,8 +6,8 @@ Uso (desde la raíz del repo):
     python3 scripts/matcher/generar_barrios_matcher.py
 
 Combina datos que ya publica el portal: límites (barrios-salamanca.json),
-población y edades (barrios-poblacion.json), renta y precio de vivienda
-(barrios-metricas.json, NO verificados), paradas de bus (paradas-bus.json),
+población y edades (barrios-poblacion.json), renta (INE, ADRH 2024) y precio de
+vivienda (barrios-metricas.json; el precio NO está verificado), paradas de bus (paradas-bus.json),
 centros de salud (centros-salud.json) y sedes universitarias (coordenadas de
 la IDE, las mismas de /centros-universitarios-salamanca).
 """
@@ -95,7 +95,7 @@ def main():
         })
 
     salida = {
-        "nota": "Indicadores por barrio para el buscador /barrio-ideal. Las distancias se miden en línea recta desde el centro aproximado del barrio (media de los vértices de su límite, que es aproximado). La renta y el precio de la vivienda NO ESTÁN VERIFICADOS (ver /renta-barrios y /precio-vivienda). Solo se incluyen barrios con 500 habitantes o más.",
+        "nota": "Indicadores por barrio para el buscador /barrio-ideal. Las distancias se miden en línea recta desde el centro aproximado del barrio (media de los vértices de su límite, que es aproximado). La renta es la renta neta media por persona de 2024 del INE (Atlas de distribución de renta de los hogares), agregada de secciones censales a barrios de forma aproximada (ver /renta-barrios). El precio de la vivienda NO ESTÁ VERIFICADO (ver /precio-vivienda). Solo se incluyen barrios con 500 habitantes o más.",
         "generado": date.today().isoformat(),
         "excluidos": excluidos,
         "barrios": sorted(barrios, key=lambda x: x["nombre"]),

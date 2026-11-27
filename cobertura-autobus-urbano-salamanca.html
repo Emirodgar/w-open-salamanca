@@ -1,0 +1,319 @@
+---
+layout: default
+title: "¿Llega el autobús a tu barrio? Cobertura del bus urbano de Salamanca"
+description: Mapa interactivo que calcula qué parte de los vecinos de cada barrio tiene una parada a pie, y qué pasaría si se quitase o se añadiese una línea de autobús
+date: 27-11-2026
+folder: Movilidad
+permalink: cobertura-autobus-urbano-salamanca
+dataset_files:
+  - lineas-autobus.json
+  - barrios-poblacion.json
+dataset_source: "Salamanca de Transportes (líneas y paradas) y padrón por barrios del Ayuntamiento de Salamanca"
+dataset_source_url: https://salamancadetransportes.com/informacion-de-lineas/lineas/
+---
+
+    <section class="featured dataset" id="datos">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="section-title">{{ page.title }}</h1>
+                <p class="section-description">{{ page.description }}</p>
+            </div>
+
+            <div id="section-content">
+
+<p>Una parada cerca de casa es el primer requisito para usar el autobús. Esta herramienta mide <b>cuántos vecinos de cada barrio tienen una parada a una distancia razonable a pie</b> y te deja quitar o añadir líneas para ver el efecto. Todo se calcula en tu navegador.</p>
+
+<div class="cb-resumen" id="cbResumen" aria-live="polite">Cargando datos…</div>
+
+<div class="cb-controles">
+  <fieldset class="cb-radio">
+    <legend>Distancia máxima a una parada</legend>
+    <label><input type="radio" name="cbR" value="300"> 300 m</label>
+    <label><input type="radio" name="cbR" value="400" checked> 400 m</label>
+    <label><input type="radio" name="cbR" value="500"> 500 m</label>
+  </fieldset>
+  <div class="cb-btns">
+    <button type="button" class="cb-btn" id="cbSoloReg">Solo líneas regulares</button>
+    <button type="button" class="cb-btn cb-btn-sec" id="cbTodas">Activar todas</button>
+    <button type="button" class="cb-btn cb-btn-sec" id="cbReset">Red por defecto</button>
+    <button type="button" class="cb-btn cb-btn-sec" id="cbCopiar">Copiar enlace</button>
+    <span id="cbCopiado" class="cb-copiado" role="status"></span>
+  </div>
+</div>
+
+<div class="cb-layout">
+  <div class="cb-lineas" id="cbLineas" aria-label="Líneas de autobús"></div>
+  <div class="cb-mapa-col">
+    <div id="cbMapa" class="cb-mapa" role="img" aria-label="Mapa de cobertura del autobús por barrio"></div>
+    <div class="cb-leyenda" id="cbLeyenda"></div>
+  </div>
+</div>
+
+<h2>Los barrios con menos cobertura</h2>
+<p class="cb-nota">Solo barrios con 500 o más habitantes. Ordenados del menos al más cubierto con la red que tengas activada.</p>
+<div id="cbTabla"></div>
+<details class="cb-det"><summary>Ver todos los barrios</summary><div id="cbTablaTodos"></div></details>
+
+<h2>Cómo se calcula y qué no dice</h2>
+<ul>
+<li><b>Método.</b> Se coloca una rejilla de puntos cada 60 m dentro de cada barrio y se comprueba cuáles tienen una parada de una línea activa a menos de la distancia elegida. La población del barrio (padrón por barrios) se reparte por igual entre sus puntos.</li>
+<li><b>Distancia en línea recta.</b> A pie el camino real es más largo que el recto, sobre todo con ríos, vías o desniveles. Si dudas, mira el resultado a 300 m.</li>
+<li><b>Población uniforme.</b> Dentro de un barrio no sabemos dónde vive cada persona. En barrios grandes con zonas sin vivienda, el resultado puede quedar por debajo o por encima de lo real.</li>
+<li><b>Mide parada cercana, no calidad del servicio.</b> Que haya una parada no dice cuántas veces pasa el bus, a qué hora ni a dónde lleva. La frecuencia es otro análisis.</li>
+<li><b>Paradas de cada línea.</b> Se usan las paradas del recorrido recogido en <a href="/mapa-lineas-autobus">el mapa de líneas</a>. El sentido contrario puede usar paradas algo distintas.</li>
+<li><b>Es un ejercicio, no una propuesta.</b> Quitar una línea aquí no significa que alguien lo vaya a hacer ni que sea conveniente.</li>
+</ul>
+
+<p class="cb-nota">Fuentes: <a href="https://salamancadetransportes.com/informacion-de-lineas/lineas/" rel="noopener">Salamanca de Transportes</a> (líneas y paradas), padrón por barrios del Ayuntamiento y límites de barrios de <a href="https://www.openstreetmap.org/copyright" rel="noopener">OpenStreetMap</a> (ODbL, no son límites administrativos exactos). Datos: <a href="/lineas-autobus.json">líneas</a> y <a href="/barrios-poblacion.json">barrios</a>. Más información: <a href="/autobus-urbano">autobús urbano</a> y <a href="/mapa-lineas-autobus">mapa de líneas</a>.</p>
+
+            </div>
+
+            {% include categories.html %}
+
+        </div>
+    </section>
+
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script><script>L.Map.addInitHook(function(){var m=this;if(!m.scrollWheelZoom)return;m.scrollWheelZoom.disable();m.on("click",function(){m.scrollWheelZoom.enable()});m.on("mouseout",function(){m.scrollWheelZoom.disable()})});</script>
+
+<style>
+.cb-resumen{padding:.9rem 1rem;border:2px solid #2C5F2D;border-radius:8px;background:#eaf3e8;font-size:1.05em;margin:1rem 0}
+.cb-controles{display:flex;flex-wrap:wrap;gap:1rem 2rem;align-items:center;margin:.5rem 0 1rem}
+.cb-radio{border:1px solid var(--border-color);border-radius:6px;padding:.4rem .9rem;display:flex;gap:1rem;align-items:center}
+.cb-radio legend{font-weight:600;padding:0 .3rem;font-size:.9em}
+.cb-radio label{cursor:pointer}
+.cb-btns{display:flex;gap:.5rem;flex-wrap:wrap;align-items:center}
+.cb-btn{padding:.5rem .8rem;font:inherit;font-weight:600;border:2px solid #2C5F2D;border-radius:6px;background:#2C5F2D;color:#fff;cursor:pointer}
+.cb-btn-sec{background:#fff;color:#2C5F2D}
+.cb-btn:focus-visible,.cb-linea input:focus-visible,.cb-radio input:focus-visible{outline:3px solid var(--accent-color);outline-offset:2px}
+.cb-copiado{font-size:.9em;color:#2C5F2D}
+.cb-layout{display:grid;grid-template-columns:minmax(250px,320px) minmax(0,1fr);gap:1.25rem;align-items:start}
+.cb-lineas{max-height:640px;overflow:auto;border:1px solid var(--border-color);border-radius:6px;padding:.4rem .6rem}
+.cb-grupo{font-weight:700;font-size:.85em;text-transform:uppercase;letter-spacing:.04em;color:#555;margin:.7rem 0 .2rem}
+.cb-linea{display:grid;grid-template-columns:auto 1fr;gap:.1rem .5rem;padding:.35rem 0;border-bottom:1px solid #eee;align-items:start}
+.cb-linea input{margin-top:.25rem}
+.cb-linea label{cursor:pointer;line-height:1.25}
+.cb-chip{display:inline-block;min-width:1.9em;text-align:center;padding:0 .3em;border-radius:4px;color:#fff;font-weight:700;margin-right:.35rem}
+.cb-linea small{grid-column:2;color:#555}
+.cb-linea .cb-solo{color:#b3261e;font-weight:600}
+.cb-mapa{height:640px;border-radius:6px;border:1px solid var(--border-color)}
+.cb-leyenda{display:flex;flex-wrap:wrap;gap:.3rem .9rem;font-size:.85em;margin-top:.5rem;align-items:center}
+.cb-sw{display:inline-block;width:1.1em;height:.9em;border:1px solid #888;vertical-align:middle;margin-right:.25rem}
+.cb-nota{font-size:.9em;color:#555}
+.cb-det{margin:1rem 0}
+.cb-det summary{cursor:pointer;font-weight:600}
+#cbTabla table,#cbTablaTodos table{width:100%;border-collapse:collapse;margin:.5rem 0}
+#cbTabla th,#cbTabla td,#cbTablaTodos th,#cbTablaTodos td{padding:.4rem .6rem;border-bottom:1px solid var(--border-color);text-align:right;font-variant-numeric:tabular-nums}
+#cbTabla th:first-child,#cbTabla td:first-child,#cbTablaTodos th:first-child,#cbTablaTodos td:first-child{text-align:left}
+@media (max-width:820px){.cb-layout{grid-template-columns:1fr}.cb-lineas{max-height:300px}.cb-mapa{height:480px}}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var STEP = 60;                         // metros entre puntos de la rejilla
+  var REG = [], REF = ['26', '28'], NOC = ['91', '92'];
+  var LINEAS, BARRIOS = [], PTS = { lat: [], lng: [], b: [] }, NB = {}, masks, active = {}, R = 400;
+  var mapa, capaBarrios = [], capaParadas, filasPorBarrio;
+  var fE = new Intl.NumberFormat('es-ES', { maximumFractionDigits: 0, useGrouping: 'always' });
+  var f1 = new Intl.NumberFormat('es-ES', { minimumFractionDigits: 1, maximumFractionDigits: 1 });
+  function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
+  var LAT0 = 40.965, KY = 111320, KX = 111320 * Math.cos(LAT0 * Math.PI / 180);
+
+  function pip(lat, lng, ring) {
+    var inside = false;
+    for (var i = 0, j = ring.length - 1; i < ring.length; j = i++) {
+      var yi = ring[i][0], xi = ring[i][1], yj = ring[j][0], xj = ring[j][1];
+      if (((yi > lat) !== (yj > lat)) && (lng < (xj - xi) * (lat - yi) / (yj - yi) + xi)) inside = !inside;
+    }
+    return inside;
+  }
+  function dentro(lat, lng, multi) {
+    for (var p = 0; p < multi.length; p++) {
+      var poly = multi[p];
+      if (pip(lat, lng, poly[0])) {
+        var hueco = false;
+        for (var h = 1; h < poly.length; h++) if (pip(lat, lng, poly[h])) { hueco = true; break; }
+        if (!hueco) return true;
+      }
+    }
+    return false;
+  }
+
+  function generaPuntos() {
+    BARRIOS.forEach(function (b, bi) {
+      var minLat = 90, maxLat = -90, minLng = 180, maxLng = -180, sx = 0, sy = 0, n = 0;
+      b.geo.forEach(function (poly) { poly[0].forEach(function (c) {
+        minLat = Math.min(minLat, c[0]); maxLat = Math.max(maxLat, c[0]); minLng = Math.min(minLng, c[1]); maxLng = Math.max(maxLng, c[1]); sy += c[0]; sx += c[1]; n++;
+      }); });
+      var dLat = STEP / KY, dLng = STEP / KX, cnt = 0;
+      for (var la = minLat + dLat / 2; la < maxLat; la += dLat) for (var lo = minLng + dLng / 2; lo < maxLng; lo += dLng) {
+        if (dentro(la, lo, b.geo)) { PTS.lat.push(la); PTS.lng.push(lo); PTS.b.push(bi); cnt++; }
+      }
+      if (cnt === 0) { PTS.lat.push(sy / n); PTS.lng.push(sx / n); PTS.b.push(bi); cnt = 1; }
+      b.npts = cnt;
+    });
+  }
+
+  function calculaMascaras() {
+    var N = PTS.lat.length, r2 = R * R;
+    masks = new Uint32Array(N);
+    LINEAS.forEach(function (l, li) {
+      var bit = (1 << li) >>> 0;
+      l.paradas.forEach(function (p) {
+        for (var i = 0; i < N; i++) {
+          if (masks[i] & bit) continue;
+          var dy = (PTS.lat[i] - p.lat) * KY, dx = (PTS.lng[i] - p.lng) * KX;
+          if (dx * dx + dy * dy <= r2) masks[i] |= bit;
+        }
+      });
+    });
+  }
+
+  function activoMask() {
+    var m = 0;
+    LINEAS.forEach(function (l, li) { if (active[l.id]) m |= (1 << li); });
+    return m >>> 0;
+  }
+
+  function calcula() {
+    var am = activoMask(), N = PTS.lat.length;
+    var cub = BARRIOS.map(function () { return 0; });
+    var solo = LINEAS.map(function () { return 0; });
+    var tot = 0, cubTot = 0;
+    for (var i = 0; i < N; i++) {
+      var b = BARRIOS[PTS.b[i]], w = b.pob / b.npts, m = (masks[i] & am) >>> 0;
+      if (m) cub[PTS.b[i]] += w;
+      if (m && (m & (m - 1)) === 0) { var li = 31 - Math.clz32(m); solo[li] += w; }
+    }
+    BARRIOS.forEach(function (b, bi) { b.cub = cub[bi]; b.pct = b.pob ? 100 * cub[bi] / b.pob : 0; tot += b.pob; cubTot += cub[bi]; });
+    return { tot: tot, cub: cubTot, solo: solo };
+  }
+
+  function color(p) {
+    var s = ['#f3f7ef', '#d6e6cd', '#a9cf9f', '#6aa86f', '#2C7A3A', '#1b4d27'];
+    return p < 20 ? s[0] : p < 40 ? s[1] : p < 60 ? s[2] : p < 80 ? s[3] : p < 95 ? s[4] : s[5];
+  }
+
+  function pinta() {
+    var c = calcula(), pct = 100 * c.cub / c.tot, nAct = LINEAS.filter(function (l) { return active[l.id]; }).length;
+    var base = window.__baseCub;
+    var txt = '<b>' + f1.format(pct) + ' %</b> de los vecinos (' + fE.format(c.cub) + ' de ' + fE.format(c.tot) + ') tiene una parada a menos de ' + R + ' m con las ' + nAct + ' líneas activas.';
+    if (base != null && Math.abs(c.cub - base) > 50) {
+      var d = c.cub - base;
+      txt += ' Frente a la red por defecto: <b>' + (d > 0 ? '+' : '−') + fE.format(Math.abs(d)) + ' personas</b> con parada cercana.';
+    }
+    document.getElementById('cbResumen').innerHTML = txt;
+
+    capaBarrios.forEach(function (it) { it.layer.setStyle({ fillColor: it.b.pob < 100 ? '#e0e0e0' : color(it.b.pct) }); });
+    capaParadas.clearLayers();
+    LINEAS.forEach(function (l) { if (!active[l.id]) return;
+      l.paradas.forEach(function (p) { L.circleMarker([p.lat, p.lng], { radius: 3, weight: 1, color: '#fff', fillColor: l.color, fillOpacity: 1, interactive: false }).addTo(capaParadas); });
+    });
+
+    LINEAS.forEach(function (l, li) {
+      var el = document.getElementById('cbs' + l.id);
+      if (!el) return;
+      var s = c.solo[li];
+      el.innerHTML = active[l.id] ? (s >= 50 ? 'Si se quita, <span class="cb-solo">' + fE.format(s) + ' personas</span> se quedan sin parada cercana' : 'Nadie depende solo de esta línea') : 'Desactivada';
+    });
+
+    var filas = BARRIOS.filter(function (b) { return b.pob >= 500; }).sort(function (a, b) { return a.pct - b.pct; });
+    function tabla(arr) {
+      var h = '<table><thead><tr><th>Barrio</th><th>Habitantes</th><th>Con parada a ≤ ' + R + ' m</th><th>Sin parada cercana</th></tr></thead><tbody>';
+      arr.forEach(function (b) { h += '<tr><td>' + esc(b.nombre) + '</td><td>' + fE.format(b.pob) + '</td><td>' + f1.format(b.pct) + ' %</td><td>' + fE.format(b.pob - b.cub) + '</td></tr>'; });
+      return h + '</tbody></table>';
+    }
+    document.getElementById('cbTabla').innerHTML = tabla(filas.slice(0, 10));
+    document.getElementById('cbTablaTodos').innerHTML = tabla(BARRIOS.slice().sort(function (a, b) { return a.pct - b.pct; }));
+    guarda();
+  }
+
+  function guarda() {
+    var off = LINEAS.filter(function (l) { return active[l.id] !== defecto(l.id); }).map(function (l) { return l.id; });
+    var parts = [];
+    if (R !== 400) parts.push('r=' + R);
+    if (off.length) parts.push('t=' + off.join('.'));
+    try { history.replaceState(null, '', parts.length ? '#' + parts.join('&') : location.pathname); } catch (e) {}
+  }
+  function defecto(id) { return REG.indexOf(id) >= 0 || REF.indexOf(id) >= 0; }
+
+  function construyeLineas() {
+    var h = '';
+    function grupo(tit, ids) {
+      h += '<div class="cb-grupo">' + tit + '</div>';
+      ids.forEach(function (id) {
+        var l = LINEAS.filter(function (x) { return x.id === id; })[0];
+        if (!l) return;
+        h += '<div class="cb-linea"><input type="checkbox" id="cbc' + id + '" data-id="' + id + '"><label for="cbc' + id + '"><span class="cb-chip" style="background:' + l.color + '">' + esc(id) + '</span>' + esc(l.nombre) + '</label><small id="cbs' + id + '"></small></div>';
+      });
+    }
+    var resto = LINEAS.map(function (l) { return l.id; }).filter(function (id) { return REG.indexOf(id) < 0 && REF.indexOf(id) < 0 && NOC.indexOf(id) < 0; });
+    grupo('Líneas regulares', REG); grupo('Refuerzos', REF); grupo('Nocturnos', NOC); grupo('Especiales (ferias, rastro, etc.)', resto);
+    var cont = document.getElementById('cbLineas');
+    cont.innerHTML = h;
+    cont.addEventListener('change', function (e) {
+      var id = e.target.getAttribute('data-id'); if (!id) return;
+      active[id] = e.target.checked; pinta();
+    });
+  }
+  function sincroniza() { LINEAS.forEach(function (l) { var e = document.getElementById('cbc' + l.id); if (e) e.checked = !!active[l.id]; }); }
+
+  function leyenda() {
+    var cs = [['0-20 %', '#f3f7ef'], ['20-40 %', '#d6e6cd'], ['40-60 %', '#a9cf9f'], ['60-80 %', '#6aa86f'], ['80-95 %', '#2C7A3A'], ['95-100 %', '#1b4d27'], ['< 100 hab.', '#e0e0e0']];
+    document.getElementById('cbLeyenda').innerHTML = '<span>Vecinos con parada cercana:</span>' + cs.map(function (c) { return '<span><span class="cb-sw" style="background:' + c[1] + '"></span>' + c[0] + '</span>'; }).join('');
+  }
+
+  Promise.all([fetch('/lineas-autobus.json').then(function (r) { return r.json(); }), fetch('/barrios-poblacion.json?v=1').then(function (r) { return r.json(); })]).then(function (res) {
+    LINEAS = res[0];
+    var pobPor = {}; res[1].barrios.forEach(function (x) { pobPor[x[0]] = x[1]; });
+    res[1].geo.forEach(function (g) { BARRIOS.push({ nombre: g[0], geo: g[1], pob: pobPor[g[0]] || 0 }); });
+    LINEAS.forEach(function (l) { if (/^\d+$/.test(l.id) && +l.id >= 1 && +l.id <= 15) REG.push(l.id); });
+    REG.sort(function (a, b) { return a - b; });
+    LINEAS.forEach(function (l) { active[l.id] = defecto(l.id); });
+
+    var h = location.hash.replace('#', '');
+    h.split('&').forEach(function (p) {
+      var kv = p.split('=');
+      if (kv[0] === 'r' && ['300', '400', '500'].indexOf(kv[1]) >= 0) R = +kv[1];
+      if (kv[0] === 't' && kv[1]) kv[1].split('.').forEach(function (id) { if (id in active) active[id] = !active[id]; });
+    });
+    var rad = document.querySelector('input[name=cbR][value="' + R + '"]'); if (rad) rad.checked = true;
+
+    mapa = L.map('cbMapa').setView([40.9650, -5.6630], 13);
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/light_all/{z}/{x}/{y}{r}.png?key=cb1_2izw_1_55d93b51ded1dcecfa044181', { attribution: '&copy; OpenStreetMap &copy; CARTO', maxZoom: 19 }).addTo(mapa);
+    capaParadas = L.layerGroup();
+    BARRIOS.forEach(function (b) {
+      var ly = L.polygon(b.geo, { color: '#555', weight: 1, fillOpacity: 0.65, fillColor: '#eee' }).addTo(mapa);
+      ly.bindPopup(function () { return '<b>' + esc(b.nombre) + '</b><br>' + fE.format(b.pob) + ' habitantes<br>' + f1.format(b.pct) + ' % con parada a ≤ ' + R + ' m<br>' + fE.format(b.pob - b.cub) + ' sin parada cercana'; });
+      capaBarrios.push({ b: b, layer: ly });
+    });
+    capaParadas.addTo(mapa);
+    leyenda(); construyeLineas();
+
+    generaPuntos(); calculaMascaras();
+    var defMask = 0; LINEAS.forEach(function (l, li) { if (defecto(l.id)) defMask |= (1 << li); }); defMask = defMask >>> 0;
+    var bc = 0; for (var i = 0; i < PTS.lat.length; i++) if ((masks[i] & defMask) >>> 0) bc += BARRIOS[PTS.b[i]].pob / BARRIOS[PTS.b[i]].npts;
+    window.__baseCub = bc;
+    sincroniza(); pinta();
+
+    document.querySelectorAll('input[name=cbR]').forEach(function (e) {
+      e.addEventListener('change', function () { R = +e.value; calculaMascaras();
+        var m2 = 0; LINEAS.forEach(function (l, li) { if (defecto(l.id)) m2 |= (1 << li); }); m2 = m2 >>> 0;
+        var b2 = 0; for (var i = 0; i < PTS.lat.length; i++) if ((masks[i] & m2) >>> 0) b2 += BARRIOS[PTS.b[i]].pob / BARRIOS[PTS.b[i]].npts;
+        window.__baseCub = b2; pinta(); });
+    });
+    document.getElementById('cbSoloReg').addEventListener('click', function () { LINEAS.forEach(function (l) { active[l.id] = REG.indexOf(l.id) >= 0; }); sincroniza(); pinta(); });
+    document.getElementById('cbTodas').addEventListener('click', function () { LINEAS.forEach(function (l) { active[l.id] = true; }); sincroniza(); pinta(); });
+    document.getElementById('cbReset').addEventListener('click', function () { LINEAS.forEach(function (l) { active[l.id] = defecto(l.id); }); sincroniza(); pinta(); });
+    document.getElementById('cbCopiar').addEventListener('click', function () {
+      var out = document.getElementById('cbCopiado');
+      function ok() { out.textContent = 'Enlace copiado'; setTimeout(function () { out.textContent = ''; }, 2500); }
+      if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(location.href).then(ok, function () { window.prompt('Copia este enlace:', location.href); });
+      else window.prompt('Copia este enlace:', location.href);
+    });
+  }).catch(function (e) {
+    document.getElementById('cbResumen').textContent = 'No se han podido cargar los datos. Inténtalo de nuevo más tarde.';
+    if (window.console) console.error(e);
+  });
+});
+</script>

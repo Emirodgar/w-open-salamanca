@@ -1,13 +1,17 @@
 ---
 layout: default
-title: Renta per cápita por barrios y municipios de Salamanca
-description: Renta neta media por persona en los 40 barrios de Salamanca capital y en los municipios del alfoz
+title: Renta per cápita por barrios y municipios de Salamanca (INE 2024)
+description: Renta neta media por persona en los barrios de Salamanca capital y en los municipios del alfoz, según el Atlas de Distribución de Renta de los Hogares del INE (2024)
 date: 06-10-2026
+modified: 2026-11-27
 folder: Economia
 permalink: renta-barrios
+dataset_files:
+  - renta-barrios-ine-2024.json
+dataset_source: "INE, Atlas de distribución de renta de los hogares (ADRH), año 2024"
+dataset_source_url: https://www.ine.es/jaxiT3/Tabla.htm?t=31178
 ---
 
-    <!-- Featured Datasets Section -->
     <section class="featured dataset" id="datos">
         <div class="container">
             <div class="section-header">
@@ -17,220 +21,141 @@ permalink: renta-barrios
 
 			<div id="section-content">
 
-<p style="background:#FFF4E5; border-left:4px solid #F4A261; padding:10px 14px;"><b>No verificado.</b> Las cifras de renta de esta página (texto, gráficos y tabla, para 40 barrios y 5 municipios) proceden de una versión anterior y no tienen una fuente que Open Salamanca haya podido contrastar: los valores descienden de forma casi regular de un barrio a otro, algo poco habitual en datos reales, y no se han podido comparar con ninguna capa oficial (la IDE municipal no publica renta). Se mantienen solo como referencia hasta localizar la fuente (por ejemplo, el Atlas de Distribución de Renta de los Hogares del INE por sección censal). Los barrios de esta página son además los 40 habituales, no los 49 de la capa de población de la IDE; la población oficial de cada uno está en <a href="/poblacion-demografia">estructura demográfica por barrios</a>.</p>
+<p>La renta neta media por persona de Salamanca fue de <b>16.150 euros en 2024</b> (INE). Detrás de esa media hay mucha diferencia entre barrios: desde unos <b>9.428 €</b> en Buenos Aires hasta unos <b>26.576 €</b> en Úrsulas - San Marcos, casi tres veces más. Esta página recoge la renta de cada barrio calculada a partir de los datos oficiales del INE por sección censal.</p>
 
-  <h3>Renta neta media por persona (no verificado)</h3>
-  <canvas id="rentaBarriosChart" width="800" height="1300"></canvas>
+<p style="background:#F4F8F1; border-left:4px solid #2C5F2D; padding:10px 14px;"><b>Cómo leer estas cifras.</b> El INE no publica la renta por barrios, sino por <b>sección censal</b> (121 secciones en la capital). Hemos asignado a cada barrio la media de las secciones que lo cubren, ponderada por la superficie que ocupan, usando <b>límites de barrio aproximados</b>. No ponderamos por población. Por eso las cifras de barrio son una aproximación: un barrio con una sola sección toma el valor de esa sección, aunque incluya zonas vecinas. Las cifras por distrito y por municipio de las tablas siguientes son datos oficiales directos del INE, sin aproximar.</p>
 
-
-			<h3>Análisis de las principales conclusiones (versión anterior, no verificado)</h3>
-
-				<p>
-El análisis de la renta neta media por persona en los 40 barrios de la capital y en los municipios del alfoz de Salamanca revela una <b>marcada brecha socioeconómica territorial</b>. Se observa una diferencia superior a los 6.500 euros anuales por habitante entre las zonas de mayor renta y los barrios periféricos con menor renta media, con una distribución que dibuja con claridad tres grandes anillos concéntricos en torno al casco histórico.</p>
-
-<h4>Tendencias territoriales clave (no verificado)</h4>
+<h2>Lo que muestran los datos</h2>
 <ul>
-<li><b>Anillo de mayor renta (casco histórico y primera corona)</b>: <a href="/mapa-capas">Centro</a> lidera el ranking con 18.450 €, seguido de San Vicente, Vidal, Chamberí, Carmen y Ciudad Jardín, todos por encima de los 16.000 €. En esta franja alta también se sitúan los municipios del alfoz residencial, con Carbajosa de la Sagrada (16.820 €) y Villamayor de Armuña (16.210 €) superando ampliamente la <a href="/renta-per-capita">media municipal</a> (ubicada en 15.319 €).</li>
-
-<li><b>Anillo intermedio</b>: Barrios como Teso de la Feria, Garrido Sur, Labradores, Salesas, Fontana y San Bernardo se mueven en una banda de entre el +3,6% y el -2,2% respecto a la media, junto a municipios del alfoz de perfil mixto como Santa Marta de Tormes, Aldeatejada y Cabrerizos.</li>
-
-<li><b>Barrios con menor renta</b>: la periferia obrera de expansión del siglo XX concentra los niveles de ingresos netos por persona más reducidos: Vistahermosa, Puente Ladrillo, Tenerías, La Vega, Alamedilla, San Isidro, Zurguén, Los Alcaldes, Los Alambres, Rollo, Platina y, cerrando la tabla, <b>Pizarrales y San José</b>, que se sitúan entre un 17% y un 22% por debajo del promedio de la capital salmantina.</li>
+<li><b>Barrios con mayor renta:</b> Úrsulas - San Marcos (26.576 €), San Juan (26.530 €), Centro (24.638 €), Sancti Spíritus (24.363 €), Labradores (21.804 €).</li>
+<li><b>Barrios con menor renta:</b> Buenos Aires (9.428 €), Carmen (11.200 €), San José (11.860 €), Blanco (13.131 €), Zurguén (13.433 €).</li>
+<li><b>Brecha dentro de la ciudad:</b> entre el barrio con más y el de menos renta hay unos 17.148 euros por persona y año. Por <b>distritos</b>, el distrito 1 (24.360 €) supera en unos 10.000 € al distrito 3 (14.059 €).</li>
+<li><b>El alfoz está por encima o a la par de la capital:</b> Cabrerizos (18.145 €), Aldeatejada (17.893 €) y Villamayor (16.661 €) superan la media de Salamanca; Santa Marta de Tormes (16.147 €) y Carbajosa de la Sagrada (15.932 €) quedan prácticamente iguales.</li>
 </ul>
+<p>La renta es solo una cara de la desigualdad. Para la brecha entre hombres y mujeres, consulta <a href="/renta-sexo">renta por sexo</a>; para la evolución general, la <a href="/renta-per-capita">renta per cápita</a> y la <a href="/renta-desigualdad">distribución del ingreso</a>. Esta renta por barrio alimenta también <a href="/barrio-ideal">Elige el barrio ideal</a> y el <a href="/mapa-capas">mapa de capas</a>.</p>
 
-<p>Esta fotografía por barrios se completa con el análisis de la <a href="/renta-sexo">brecha de renta entre hombres y mujeres</a> en la ciudad, y con la perspectiva agregada de la <a href="/renta-desigualdad">renta por habitante y distribución del ingreso</a>, que profundiza en la desigualdad interna más allá de la división geográfica. La misma división territorial se refleja también en el <a href="/precio-vivienda">precio de la vivienda</a>, con una correlación muy estrecha entre renta y valor del metro cuadrado en la práctica totalidad de los barrios. Fuera de la capital, el <a href="/municipios-mayor-renta-salamanca">ranking de renta por municipio de la provincia y su evolución 2023-2024</a> muestra que el alfoz residencial (Cabrerizos, Aldeatejada, Carrascal de Barregas) supera en renta bruta a la propia ciudad. Para ver qué barrios cuentan con un local municipal de encuentro vecinal, consulta los <a href="/espacios-participacion-ciudadana-salamanca">espacios de participación ciudadana</a>.</p>
+  <h3>Renta neta media por persona, 2024 (€)</h3>
+  <canvas id="rentaBarriosChart" width="800" height="1000"></canvas>
 
-  <h3>Variación porcentual respecto a la media municipal (no verificado)</h3>
-  <canvas id="rentaBarriosChart2" width="800" height="1300"></canvas>
-
-
+  <h3>Diferencia respecto a la media de Salamanca (16.150 €), en %</h3>
+  <canvas id="rentaBarriosChart2" width="800" height="1000"></canvas>
 
 			</div>
 
-
 			<div id="section-table">
+			<h3>Por barrio (aproximado)</h3>
 			<table border="1" cellpadding="5" cellspacing="0">
 			  <thead>
 				<tr>
-				  <th>Barrio / municipio (no verificado)</th>
-				  <th>Renta neta media / hab. (€, no verificado)</th>
-				  <th>Diferencia sobre media (€, no verificado)</th>
-				  <th>Variación % (no verificado)</th>
+				  <th>Barrio</th>
+				  <th>Renta neta media / persona (€)</th>
+				  <th>Diferencia sobre Salamanca (€)</th>
+				  <th>Variación %</th>
+				  <th>Habitantes</th>
+				  <th>Secciones censales</th>
 				</tr>
 			  </thead>
 			  <tbody>
-				<tr><td>Centro</td><td>18.450</td><td>+3.131</td><td>+20.44%</td></tr>
-				<tr><td>San Vicente</td><td>17.280</td><td>+1.961</td><td>+12.80%</td></tr>
-				<tr><td>Vidal</td><td>16.940</td><td>+1.621</td><td>+10.58%</td></tr>
-				<tr><td>Carbajosa de la Sagrada</td><td>16.820</td><td>+1.501</td><td>+9.80%</td></tr>
-				<tr><td>Chamberí</td><td>16.610</td><td>+1.291</td><td>+8.43%</td></tr>
-				<tr><td>Carmen</td><td>16.320</td><td>+1.001</td><td>+6.53%</td></tr>
-				<tr><td>Villamayor de Armuña</td><td>16.210</td><td>+891</td><td>+5.82%</td></tr>
-				<tr><td>Ciudad Jardín</td><td>16.080</td><td>+761</td><td>+4.97%</td></tr>
-				<tr><td>Teso de la Feria</td><td>15.870</td><td>+551</td><td>+3.60%</td></tr>
-				<tr><td>Garrido Sur</td><td>15.690</td><td>+371</td><td>+2.42%</td></tr>
-				<tr><td>Labradores</td><td>15.520</td><td>+201</td><td>+1.31%</td></tr>
-				<tr><td>Salesas</td><td>15.340</td><td>+21</td><td>+0.14%</td></tr>
-				<tr><td>Fontana</td><td>15.180</td><td>-139</td><td>-0.91%</td></tr>
-				<tr><td>Santa Marta de Tormes</td><td>15.110</td><td>-209</td><td>-1.36%</td></tr>
-				<tr><td>San Bernardo</td><td>14.980</td><td>-339</td><td>-2.21%</td></tr>
-				<tr><td>Glorieta</td><td>14.820</td><td>-499</td><td>-3.26%</td></tr>
-				<tr><td>Capuchinos</td><td>14.650</td><td>-669</td><td>-4.37%</td></tr>
-				<tr><td>Aldeatejada</td><td>14.640</td><td>-679</td><td>-4.43%</td></tr>
-				<tr><td>Santo Tomás</td><td>14.480</td><td>-839</td><td>-5.48%</td></tr>
-				<tr><td>Arrabal</td><td>14.320</td><td>-999</td><td>-6.52%</td></tr>
-				<tr><td>Cabrerizos</td><td>14.200</td><td>-1.119</td><td>-7.30%</td></tr>
-				<tr><td>Buenos Aires</td><td>14.160</td><td>-1.159</td><td>-7.57%</td></tr>
-				<tr><td>Delicias</td><td>14.000</td><td>-1.319</td><td>-8.61%</td></tr>
-				<tr><td>Garrido Norte</td><td>13.850</td><td>-1.469</td><td>-9.59%</td></tr>
-				<tr><td>Montalvos</td><td>13.700</td><td>-1.619</td><td>-10.57%</td></tr>
-				<tr><td>Prosperidad</td><td>13.560</td><td>-1.759</td><td>-11.48%</td></tr>
-				<tr><td>Blanco</td><td>13.420</td><td>-1.899</td><td>-12.40%</td></tr>
-				<tr><td>Tormes</td><td>13.280</td><td>-2.039</td><td>-13.31%</td></tr>
-				<tr><td>Oeste</td><td>13.140</td><td>-2.179</td><td>-14.22%</td></tr>
-				<tr><td>Marín</td><td>13.000</td><td>-2.319</td><td>-15.14%</td></tr>
-				<tr><td>Chinchibarra</td><td>12.870</td><td>-2.449</td><td>-15.99%</td></tr>
-				<tr><td>Tejares</td><td>12.750</td><td>-2.569</td><td>-16.77%</td></tr>
-				<tr><td>Pizarrales</td><td>12.640</td><td>-2.679</td><td>-17.49%</td></tr>
-				<tr><td>Vistahermosa</td><td>12.540</td><td>-2.779</td><td>-18.14%</td></tr>
-				<tr><td>Puente Ladrillo</td><td>12.440</td><td>-2.879</td><td>-18.79%</td></tr>
-				<tr><td>Tenerías</td><td>12.340</td><td>-2.979</td><td>-19.45%</td></tr>
-				<tr><td>La Vega</td><td>12.250</td><td>-3.069</td><td>-20.03%</td></tr>
-				<tr><td>Alamedilla</td><td>12.160</td><td>-3.159</td><td>-20.62%</td></tr>
-				<tr><td>San Isidro</td><td>12.080</td><td>-3.239</td><td>-21.14%</td></tr>
-				<tr><td>Zurguén</td><td>12.010</td><td>-3.309</td><td>-21.60%</td></tr>
-				<tr><td>Los Alcaldes</td><td>12.000</td><td>-3.319</td><td>-21.67%</td></tr>
-				<tr><td>Los Alambres</td><td>11.985</td><td>-3.334</td><td>-21.76%</td></tr>
-				<tr><td>Rollo</td><td>11.970</td><td>-3.349</td><td>-21.86%</td></tr>
-				<tr><td>Platina</td><td>11.960</td><td>-3.359</td><td>-21.93%</td></tr>
-				<tr><td>San José</td><td>11.950</td><td>-3.369</td><td>-21.99%</td></tr>
+				<tr><td>Úrsulas - San Marcos</td><td>26.576</td><td>+10.426</td><td>+64,6%</td><td>2.017</td><td>4</td></tr>
+				<tr><td>San Juan</td><td>26.530</td><td>+10.380</td><td>+64,3%</td><td>1.973</td><td>4</td></tr>
+				<tr><td>Centro</td><td>24.638</td><td>+8.488</td><td>+52,6%</td><td>3.415</td><td>9</td></tr>
+				<tr><td>Sancti Spíritus</td><td>24.363</td><td>+8.213</td><td>+50,9%</td><td>1.000</td><td>1</td></tr>
+				<tr><td>Labradores</td><td>21.804</td><td>+5.654</td><td>+35,0%</td><td>6.020</td><td>8</td></tr>
+				<tr><td>Alamedilla</td><td>21.445</td><td>+5.295</td><td>+32,8%</td><td>2.068</td><td>7</td></tr>
+				<tr><td>Las Claras</td><td>21.144</td><td>+4.994</td><td>+30,9%</td><td>2.925</td><td>5</td></tr>
+				<tr><td>San Esteban</td><td>20.581</td><td>+4.431</td><td>+27,4%</td><td>730</td><td>4</td></tr>
+				<tr><td>Tenerías</td><td>20.558</td><td>+4.408</td><td>+27,3%</td><td>599</td><td>2</td></tr>
+				<tr><td>Universidad</td><td>20.542</td><td>+4.392</td><td>+27,2%</td><td>1.325</td><td>3</td></tr>
+				<tr><td>San Vicente</td><td>19.602</td><td>+3.452</td><td>+21,4%</td><td>961</td><td>2</td></tr>
+				<tr><td>Oeste</td><td>19.370</td><td>+3.220</td><td>+19,9%</td><td>8.109</td><td>13</td></tr>
+				<tr><td>Santo Tomás</td><td>19.052</td><td>+2.902</td><td>+18,0%</td><td>1.986</td><td>2</td></tr>
+				<tr><td>La Fontana</td><td>18.856</td><td>+2.706</td><td>+16,8%</td><td>503</td><td>5</td></tr>
+				<tr><td>Ciudad Jardín</td><td>17.529</td><td>+1.379</td><td>+8,5%</td><td>977</td><td>1</td></tr>
+				<tr><td>Estación</td><td>16.907</td><td>+757</td><td>+4,7%</td><td>2.289</td><td>4</td></tr>
+				<tr><td>Hospital</td><td>16.896</td><td>+746</td><td>+4,6%</td><td>466</td><td>4</td></tr>
+				<tr><td>Salesas</td><td>16.636</td><td>+486</td><td>+3,0%</td><td>5.850</td><td>8</td></tr>
+				<tr><td>Chinchibarra</td><td>16.628</td><td>+478</td><td>+3,0%</td><td>4.341</td><td>9</td></tr>
+				<tr><td>Delicias</td><td>16.611</td><td>+461</td><td>+2,9%</td><td>4.794</td><td>7</td></tr>
+				<tr><td>Huerta Otea</td><td>16.468</td><td>+318</td><td>+2,0%</td><td>2.738</td><td>3</td></tr>
+				<tr><td>Capuchinos</td><td>16.220</td><td>+70</td><td>+0,4%</td><td>3.358</td><td>4</td></tr>
+				<tr><td>Prosperidad</td><td>16.205</td><td>+55</td><td>+0,3%</td><td>5.393</td><td>6</td></tr>
+				<tr><td>Arrabal</td><td>16.029</td><td>−121</td><td>−0,7%</td><td>643</td><td>4</td></tr>
+				<tr><td>Rollo</td><td>15.645</td><td>−505</td><td>−3,1%</td><td>6.841</td><td>10</td></tr>
+				<tr><td>Vistahermosa</td><td>15.485</td><td>−665</td><td>−4,1%</td><td>2.673</td><td>3</td></tr>
+				<tr><td>Garrido Sur</td><td>15.332</td><td>−818</td><td>−5,1%</td><td>8.445</td><td>8</td></tr>
+				<tr><td>Chamberí</td><td>15.252</td><td>−898</td><td>−5,6%</td><td>1.719</td><td>3</td></tr>
+				<tr><td>Teso de la Feria</td><td>15.243</td><td>−907</td><td>−5,6%</td><td>1.537</td><td>4</td></tr>
+				<tr><td>Vidal</td><td>14.874</td><td>−1.276</td><td>−7,9%</td><td>5.053</td><td>11</td></tr>
+				<tr><td>San Isidro</td><td>14.754</td><td>−1.396</td><td>−8,6%</td><td>2.178</td><td>6</td></tr>
+				<tr><td>San Bernardo</td><td>14.711</td><td>−1.439</td><td>−8,9%</td><td>4.427</td><td>9</td></tr>
+				<tr><td>Los Alambres</td><td>13.934</td><td>−2.216</td><td>−13,7%</td><td>880</td><td>4</td></tr>
+				<tr><td>Pizarrales</td><td>13.778</td><td>−2.372</td><td>−14,7%</td><td>9.657</td><td>11</td></tr>
+				<tr><td>Tejares</td><td>13.687</td><td>−2.463</td><td>−15,3%</td><td>4.242</td><td>6</td></tr>
+				<tr><td>Garrido Norte</td><td>13.647</td><td>−2.503</td><td>−15,5%</td><td>11.271</td><td>16</td></tr>
+				<tr><td>Tormes</td><td>13.484</td><td>−2.666</td><td>−16,5%</td><td>2.117</td><td>7</td></tr>
+				<tr><td>Puente Ladrillo</td><td>13.470</td><td>−2.680</td><td>−16,6%</td><td>5.038</td><td>5</td></tr>
+				<tr><td>La Vega</td><td>13.467</td><td>−2.683</td><td>−16,6%</td><td>903</td><td>3</td></tr>
+				<tr><td>Zurguén</td><td>13.433</td><td>−2.717</td><td>−16,8%</td><td>3.842</td><td>7</td></tr>
+				<tr><td>Blanco</td><td>13.131</td><td>−3.019</td><td>−18,7%</td><td>2.428</td><td>4</td></tr>
+				<tr><td>San José</td><td>11.860</td><td>−4.290</td><td>−26,6%</td><td>2.954</td><td>4</td></tr>
+				<tr><td>Carmen</td><td>11.200</td><td>−4.950</td><td>−30,7%</td><td>2.070</td><td>5</td></tr>
+				<tr><td>Buenos Aires</td><td>9.428</td><td>−6.722</td><td>−41,6%</td><td>823</td><td>1</td></tr>
 			  </tbody>
 			</table>
-			<p><small>No verificado: todos los datos de esta tabla carecen de fuente contrastada y se mantienen solo como referencia.</small></p>
+			<p><small>Solo barrios con 100 o más habitantes; faltan La Platina, Marín I y II, Montalvo y Zaldesa. Habitantes: padrón por barrios de la IDE municipal. Los barrios con pocas secciones (1 a 3) son los menos fiables.</small></p>
+
+			<h3>Por distrito censal (dato oficial)</h3>
+			<table border="1" cellpadding="5" cellspacing="0">
+			  <thead><tr><th>Distrito</th><th>Renta neta media / persona (€)</th><th>Diferencia sobre Salamanca (€)</th></tr></thead>
+			  <tbody>
+				<tr><td>Distrito 1</td><td>24.360</td><td>+8.210</td></tr>
+				<tr><td>Distrito 2</td><td>17.289</td><td>+1.139</td></tr>
+				<tr><td>Distrito 3</td><td>14.059</td><td>−2.091</td></tr>
+				<tr><td>Distrito 4</td><td>14.855</td><td>−1.295</td></tr>
+				<tr><td>Distrito 5</td><td>15.338</td><td>−812</td></tr>
+				<tr><td>Distrito 6</td><td>16.104</td><td>−46</td></tr>
+			  </tbody>
+			</table>
+
+			<h3>Municipios del alfoz (dato oficial)</h3>
+			<table border="1" cellpadding="5" cellspacing="0">
+			  <thead><tr><th>Municipio</th><th>Renta neta media / persona (€)</th><th>Diferencia sobre Salamanca (€)</th></tr></thead>
+			  <tbody>
+				<tr><td>Cabrerizos</td><td>18.145</td><td>+1.995</td></tr>
+				<tr><td>Aldeatejada</td><td>17.893</td><td>+1.743</td></tr>
+				<tr><td>Villamayor</td><td>16.661</td><td>+511</td></tr>
+				<tr><td>Santa Marta de Tormes</td><td>16.147</td><td>−3</td></tr>
+				<tr><td>Carbajosa de la Sagrada</td><td>15.932</td><td>−218</td></tr>
+			  </tbody>
+			</table>
+
+			<p><small>Fuente: INE, <a href="https://www.ine.es/jaxiT3/Tabla.htm?t=31178" rel="noopener">Atlas de Distribución de Renta de los Hogares</a>, renta neta media por persona, año 2024, y cartografía de secciones censales 2024. Cuatro secciones (01012, 05016, 05020 y 05021) no tienen dato de 2024 y se han ignorado. Datos descargables en <a href="/renta-barrios-ine-2024.json">formato JSON</a>; método reproducible con <code>scripts/renta/generar_renta_barrios_ine.py</code>.</small></p>
 
 			</div>
-
-
 
 			{% include categories.html %}
 
         </div>
     </section>
 
-
 	 <script>
-    // Etiquetas, valores y variaciones comunes a ambos gráficos (40 barrios + 5 municipios del alfoz)
-    const rentaLabels = [
-      'Centro', 'San Vicente', 'Vidal', 'Carbajosa de la Sagrada', 'Chamberí',
-      'Carmen', 'Villamayor de Armuña', 'Ciudad Jardín', 'Teso de la Feria', 'Garrido Sur',
-      'Labradores', 'Salesas', 'Fontana', 'Santa Marta de Tormes', 'San Bernardo',
-      'Glorieta', 'Capuchinos', 'Aldeatejada', 'Santo Tomás', 'Arrabal',
-      'Cabrerizos', 'Buenos Aires', 'Delicias', 'Garrido Norte', 'Montalvos',
-      'Prosperidad', 'Blanco', 'Tormes', 'Oeste', 'Marín',
-      'Chinchibarra', 'Tejares', 'Pizarrales', 'Vistahermosa', 'Puente Ladrillo',
-      'Tenerías', 'La Vega', 'Alamedilla', 'San Isidro', 'Zurguén',
-      'Los Alcaldes', 'Los Alambres', 'Rollo', 'Platina', 'San José'
-    ];
-    const rentaValores = [
-      18450, 17280, 16940, 16820, 16610, 16320, 16210, 16080, 15870, 15690,
-      15520, 15340, 15180, 15110, 14980, 14820, 14650, 14640, 14480, 14320,
-      14200, 14160, 14000, 13850, 13700, 13560, 13420, 13280, 13140, 13000,
-      12870, 12750, 12640, 12540, 12440, 12340, 12250, 12160, 12080, 12010,
-      12000, 11985, 11970, 11960, 11950
-    ];
-    const rentaVariacion = [
-      20.44, 12.8, 10.58, 9.8, 8.43, 6.53, 5.82, 4.97, 3.6, 2.42,
-      1.31, 0.14, -0.91, -1.36, -2.21, -3.26, -4.37, -4.43, -5.48, -6.52,
-      -7.3, -7.57, -8.61, -9.59, -10.57, -11.48, -12.4, -13.31, -14.22, -15.14,
-      -15.99, -16.77, -17.49, -18.14, -18.79, -19.45, -20.03, -20.62, -21.14, -21.6,
-      -21.67, -21.76, -21.86, -21.93, -21.99
-    ];
+    const rentaLabels = ["Úrsulas - San Marcos", "San Juan", "Centro", "Sancti Spíritus", "Labradores", "Alamedilla", "Las Claras", "San Esteban", "Tenerías", "Universidad", "San Vicente", "Oeste", "Santo Tomás", "La Fontana", "Ciudad Jardín", "Estación", "Hospital", "Salesas", "Chinchibarra", "Delicias", "Huerta Otea", "Capuchinos", "Prosperidad", "Arrabal", "Rollo", "Vistahermosa", "Garrido Sur", "Chamberí", "Teso de la Feria", "Vidal", "San Isidro", "San Bernardo", "Los Alambres", "Pizarrales", "Tejares", "Garrido Norte", "Tormes", "Puente Ladrillo", "La Vega", "Zurguén", "Blanco", "San José", "Carmen", "Buenos Aires"];
+    const rentaValores = [26576, 26530, 24638, 24363, 21804, 21445, 21144, 20581, 20558, 20542, 19602, 19370, 19052, 18856, 17529, 16907, 16896, 16636, 16628, 16611, 16468, 16220, 16205, 16029, 15645, 15485, 15332, 15252, 15243, 14874, 14754, 14711, 13934, 13778, 13687, 13647, 13484, 13470, 13467, 13433, 13131, 11860, 11200, 9428];
+    const rentaVariacion = [64.6, 64.3, 52.6, 50.9, 35.0, 32.8, 30.9, 27.4, 27.3, 27.2, 21.4, 19.9, 18.0, 16.8, 8.5, 4.7, 4.6, 3.0, 3.0, 2.9, 2.0, 0.4, 0.3, -0.7, -3.1, -4.1, -5.1, -5.6, -5.6, -7.9, -8.6, -8.9, -13.7, -14.7, -15.3, -15.5, -16.5, -16.6, -16.6, -16.8, -18.7, -26.6, -30.7, -41.6];
     const rentaColoresFondo = rentaVariacion.map(v => v >= 0 ? 'rgba(44, 160, 44, 0.7)' : 'rgba(255, 99, 132, 0.7)');
     const rentaColoresBorde = rentaVariacion.map(v => v >= 0 ? '#2C802C' : '#FF6384');
+    const altura = rentaLabels.length * 22 + 80;
+    ['rentaBarriosChart', 'rentaBarriosChart2'].forEach(id => { document.getElementById(id).height = altura; });
 
-    // Primer gráfico: Ranking de Renta por Barrio / Municipio (Barras horizontales)
-    const ctx = document.getElementById('rentaBarriosChart').getContext('2d');
-    const rentaBarriosChart = new Chart(ctx, {
+    new Chart(document.getElementById('rentaBarriosChart').getContext('2d'), {
       type: 'bar',
-      data: {
-        labels: rentaLabels,
-        datasets: [{
-          label: 'Renta neta media por persona (€, no verificado)',
-          data: rentaValores,
-          backgroundColor: 'rgba(30, 86, 160, 0.75)',
-          borderColor: '#1E56A0',
-          borderWidth: 1.5,
-          borderRadius: 4
-        }]
-      },
-      options: {
-        indexAxis: 'y', // Orientación horizontal para facilitar la lectura de nombres de barrios
-        responsive: true,
-        plugins: {
-          legend: {
-            display: true,
-            position: 'top'
-          }
-        },
-        scales: {
-          x: {
-            beginAtZero: false,
-            title: {
-              display: true,
-              text: 'Renta neta (€, no verificado)'
-            }
-          },
-          y: {
-            title: {
-              display: true,
-              text: 'Zona / Barrio'
-            }
-          }
-        }
-      }
+      data: { labels: rentaLabels, datasets: [{ label: 'Renta neta media por persona, 2024 (€)', data: rentaValores, backgroundColor: 'rgba(30, 86, 160, 0.75)', borderColor: '#1E56A0', borderWidth: 1.5, borderRadius: 4 }] },
+      options: { indexAxis: 'y', responsive: true, plugins: { legend: { display: true, position: 'top' } }, scales: { x: { beginAtZero: true, title: { display: true, text: 'Renta neta (€ por persona y año)' } }, y: { title: { display: true, text: 'Barrio' } } } }
     });
 
-
-    // Segundo gráfico: Desviación Porcentual respecto a la Media (Barras horizontales)
-    const ctx2 = document.getElementById('rentaBarriosChart2').getContext('2d');
-    const rentaBarriosChart2 = new Chart(ctx2, {
+    new Chart(document.getElementById('rentaBarriosChart2').getContext('2d'), {
       type: 'bar',
-      data: {
-        labels: rentaLabels,
-        datasets: [
-          {
-            label: 'Diferencia % respecto a la media (no verificado)',
-            data: rentaVariacion,
-            backgroundColor: rentaColoresFondo,
-            borderColor: rentaColoresBorde,
-            borderWidth: 1.5,
-            borderRadius: 4
-          }
-        ]
-      },
-      options: {
-        indexAxis: 'y',
-        responsive: true,
-        plugins: {
-          legend: {
-            display: true,
-            position: 'top'
-          }
-        },
-        scales: {
-          x: {
-            type: 'linear',
-            title: {
-              display: true,
-              text: 'Variación (%, no verificado)'
-            }
-          },
-          y: {
-            title: {
-              display: true,
-              text: 'Zona / Barrio'
-            }
-          }
-        }
-      }
+      data: { labels: rentaLabels, datasets: [{ label: 'Diferencia respecto a la media de Salamanca (%)', data: rentaVariacion, backgroundColor: rentaColoresFondo, borderColor: rentaColoresBorde, borderWidth: 1.5, borderRadius: 4 }] },
+      options: { indexAxis: 'y', responsive: true, plugins: { legend: { display: true, position: 'top' } }, scales: { x: { type: 'linear', title: { display: true, text: 'Variación (%)' } }, y: { title: { display: true, text: 'Barrio' } } } }
     });
   </script>
