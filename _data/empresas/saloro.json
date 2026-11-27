@@ -1,0 +1,210 @@
+{
+  "slug": "saloro",
+  "url_canonica": "https://opensalamanca.es/empresas/saloro",
+  "nombre_habitual": "Saloro",
+  "razon_social": "Saloro SLU",
+  "actualizado": "2026-11-27",
+  "actualizado_texto": "27 de noviembre de 2026",
+  "estado_ficha": "borrador: datos limitados; producción, ventas y propiedad pendientes de ampliar | cargos contrastados con el BORME 2022-2026",
+  "licencia": "CC BY 4.0",
+  "sameas": [],
+  "resumen": "Saloro SLU es la empresa que explota la mina de wolframio (tungsteno) de Barruecopardo (Salamanca), reabierta en 2019 tras cerrar a comienzos de los años ochenta. Ocupa el puesto 60 por ventas 2024 entre las empresas de la provincia (14.764.º a nivel nacional según InfoNIF).",
+  "rapida": [
+    {
+      "k": "Razón social",
+      "v": "Saloro SLU (NIF B37424009)"
+    },
+    {
+      "k": "Actividad",
+      "v": "Producción y comercialización de wolframio (web oficial); mina a cielo abierto de Barruecopardo"
+    },
+    {
+      "k": "Domicilio",
+      "v": "Carretera DSA-573, km 13,66, 37255 Barruecopardo (Salamanca)"
+    },
+    {
+      "k": "Socio único",
+      "v": "European Tungsten Pty Ltd (cambio inscrito en el BORME de 02/02/2024 vía InfoNIF)"
+    },
+    {
+      "k": "Cierre del ejercicio",
+      "v": "30 de junio (BORME de 17/01/2025)"
+    },
+    {
+      "k": "Auditor",
+      "v": "Deloitte Auditores SL"
+    },
+    {
+      "k": "Posición por ventas 2024",
+      "v": "60.ª entre las sociedades domiciliadas en la provincia de Salamanca; 14.764.ª a nivel nacional (InfoNIF)"
+    }
+  ],
+  "cifras": [
+    {
+      "concepto": "Reservas estimadas de la mina",
+      "valor": "10,9 millones de toneladas de mineral con 0,45 % de wolframio (Wikipedia)",
+      "fuente": {
+        "t": "Wikipedia: Barruecopardo mine",
+        "u": "https://en.wikipedia.org/wiki/Barruecopardo_mine"
+      }
+    },
+    {
+      "concepto": "Posición por ventas 2024 (provincia de Salamanca)",
+      "valor": "60.ª (14.764.ª a nivel nacional)",
+      "fuente": {
+        "t": "InfoNIF: ranking de ventas de empresas de Salamanca 2024",
+        "u": "https://infonif.economia3.com/ranking/ventas-empresas/salamanca"
+      }
+    }
+  ],
+  "nota_cifras": "InfoNIF oculta las ventas y muestra la plantilla parcialmente. Wikipedia no cita producción anual. La cifra de reservas procede de una enciclopedia abierta y no de un informe técnico.",
+  "directivos": [
+    {
+      "nombre": "Serrano Rodriguez Alvaro",
+      "cargo": "Consejero delegado (nombrado el 08/01/2024)",
+      "fuente": {
+        "t": "BORME BORME-A-2024-5-37 (08/01/2024)",
+        "u": "https://www.boe.es/borme/dias/2024/01/08/pdfs/BORME-A-2024-5-37.pdf"
+      },
+      "ficha": "",
+      "verificacion_borme": {
+        "estado": "inscrito",
+        "fecha": "20240108",
+        "boletin": "BORME-A-2024-5-37",
+        "url": "https://www.boe.es/borme/dias/2024/01/08/pdfs/BORME-A-2024-5-37.pdf"
+      }
+    },
+    {
+      "nombre": "Craig Richard Bradshaw",
+      "cargo": "Presidente del consejo de administración (nombrado el 19/10/2026)",
+      "fuente": {
+        "t": "BORME BORME-A-2026-201-37 (19/10/2026)",
+        "u": "https://www.boe.es/borme/dias/2026/10/19/pdfs/BORME-A-2026-201-37.pdf"
+      },
+      "ficha": "",
+      "verificacion_borme": {
+        "estado": "inscrito",
+        "fecha": "20261019",
+        "boletin": "BORME-A-2026-201-37",
+        "url": "https://www.boe.es/borme/dias/2026/10/19/pdfs/BORME-A-2026-201-37.pdf"
+      }
+    },
+    {
+      "nombre": "Jonathan Paul Kort",
+      "cargo": "Consejero (nombrado el 19/10/2026)",
+      "fuente": {
+        "t": "BORME BORME-A-2026-201-37 (19/10/2026)",
+        "u": "https://www.boe.es/borme/dias/2026/10/19/pdfs/BORME-A-2026-201-37.pdf"
+      },
+      "ficha": "",
+      "verificacion_borme": {
+        "estado": "inscrito",
+        "fecha": "20261019",
+        "boletin": "BORME-A-2026-201-37",
+        "url": "https://www.boe.es/borme/dias/2026/10/19/pdfs/BORME-A-2026-201-37.pdf"
+      }
+    }
+  ],
+  "historia": [
+    {
+      "fecha": "Años 1980",
+      "hito": "Cierre de la mina",
+      "detalle": "Wikipedia indica que la mina de Barruecopardo cerró a comienzos de los años ochenta.",
+      "fuente": {
+        "t": "Wikipedia: Barruecopardo mine",
+        "u": "https://en.wikipedia.org/wiki/Barruecopardo_mine"
+      }
+    },
+    {
+      "fecha": "2004",
+      "hito": "Antigüedad de la sociedad",
+      "detalle": "InfoNIF indica una antigüedad con fecha 04/11/2004.",
+      "fuente": {
+        "t": "InfoNIF: ficha de Saloro SL",
+        "u": "https://infonif.economia3.com/ficha-empresa/saloro-sl"
+      }
+    },
+    {
+      "fecha": "2019",
+      "hito": "Reapertura",
+      "detalle": "Wikipedia indica que Saloro reacondicionó el yacimiento y que la producción se reinició a principios de 2019.",
+      "fuente": {
+        "t": "Wikipedia: Barruecopardo mine",
+        "u": "https://en.wikipedia.org/wiki/Barruecopardo_mine"
+      }
+    },
+    {
+      "fecha": "2024",
+      "hito": "Cambio de socio único",
+      "detalle": "El BORME de 02/02/2024 recoge el cambio de identidad del socio único a European Tungsten Pty Ltd.",
+      "fuente": {
+        "t": "InfoNIF: ficha de Saloro SL",
+        "u": "https://infonif.economia3.com/ficha-empresa/saloro-sl"
+      }
+    },
+    {
+      "fecha": "2025",
+      "hito": "Cierre de ejercicio a 30 de junio",
+      "detalle": "El BORME de 17/01/2025 recoge la modificación estatutaria que fija el cierre del ejercicio el 30 de junio.",
+      "fuente": {
+        "t": "InfoNIF: ficha de Saloro SL",
+        "u": "https://infonif.economia3.com/ficha-empresa/saloro-sl"
+      }
+    },
+    {
+      "fecha": "2026",
+      "hito": "Cambios en el consejo y auditor",
+      "detalle": "El BORME de 20/08/2026 recoge el nombramiento de Deloitte Auditores SL y el de 19/10/2026 renovaciones del consejo.",
+      "fuente": {
+        "t": "InfoNIF: ficha de Saloro SL",
+        "u": "https://infonif.economia3.com/ficha-empresa/saloro-sl"
+      }
+    }
+  ],
+  "no_verificado": [
+    "Ventas 2024: ocultas en InfoNIF.",
+    "Producción anual de concentrado y plantilla: no figuran en las fuentes abiertas.",
+    "Adquisición por EQ Resources en 2024 y cuota de producción mundial: aparecen solo en un resumen de búsqueda, sin abrir la fuente.",
+    "Inversión de 100 millones de euros citada en prensa: no verificada.",
+    "Año de fundación según la web: no figura; la fecha de 2004 procede de InfoNIF.",
+    "Cargos vigentes: pendientes de contraste con el BORME."
+  ],
+  "faq": [
+    {
+      "q": "¿Qué es Saloro?",
+      "a": "La empresa que explota la mina de wolframio de Barruecopardo (Salamanca), dedicada a la producción y venta de wolframio."
+    },
+    {
+      "q": "¿Cuándo reabrió la mina?",
+      "a": "Según Wikipedia, la producción se reinició a principios de 2019 tras el cierre de comienzos de los años ochenta."
+    },
+    {
+      "q": "¿Qué puesto ocupa entre las empresas de Salamanca?",
+      "a": "El 60.º por ventas 2024 en el ranking provincial de InfoNIF y el 14.764.º a nivel nacional."
+    },
+    {
+      "q": "¿Quién es su socio único?",
+      "a": "Según el BORME de 02/02/2024 vía InfoNIF, European Tungsten Pty Ltd."
+    }
+  ],
+  "fuentes": [
+    {
+      "t": "InfoNIF: ranking de ventas de empresas de Salamanca 2024",
+      "u": "https://infonif.economia3.com/ranking/ventas-empresas/salamanca"
+    },
+    {
+      "t": "InfoNIF: ficha de Saloro SL",
+      "u": "https://infonif.economia3.com/ficha-empresa/saloro-sl"
+    },
+    {
+      "t": "Saloro: web oficial",
+      "u": "https://www.saloro.com/"
+    },
+    {
+      "t": "Wikipedia: Barruecopardo mine",
+      "u": "https://en.wikipedia.org/wiki/Barruecopardo_mine"
+    }
+  ],
+  "como_citar": "Open Salamanca (2026). Ficha de Saloro SLU. https://opensalamanca.es/empresas/saloro. Licencia CC BY 4.0.",
+  "nota_directivos": "Contrastado con el BORME de Salamanca de 01/01/2022 a 27/11/2026. Cargos de administración inscritos y no cesados en ese periodo; los nombres figuran como en el BORME (apellidos primero y sin tildes). Los secretarios no consejeros, los apoderados y los auditores no se incluyen. Un cargo con mandato vencido puede seguir figurando sin cese inscrito."
+}

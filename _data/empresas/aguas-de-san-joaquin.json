@@ -1,0 +1,99 @@
+{
+  "slug": "aguas-de-san-joaquin",
+  "url_canonica": "https://opensalamanca.es/empresas/aguas-de-san-joaquin",
+  "nombre_habitual": "Aguas de San Joaquín",
+  "razon_social": "Aguas de San Joaquín SL",
+  "actualizado": "2026-11-27",
+  "actualizado_texto": "27 de noviembre de 2026",
+  "estado_ficha": "borrador: datos limitados | cargos contrastados con el BORME 2022-2026",
+  "licencia": "CC BY 4.0",
+  "sameas": [],
+  "resumen": "Aguas de San Joaquín SL es una empresa de bebidas de Valdunciel (Salamanca) que comercializa agua mineral natural envasada con el lema «La naturaleza que se bebe». Ocupa el puesto 55 por ventas 2024 entre las empresas de la provincia (13.636.ª a nivel nacional según InfoNIF).",
+  "rapida": [
+    {
+      "k": "Razón social",
+      "v": "Aguas de San Joaquín SL"
+    },
+    {
+      "k": "Sector",
+      "v": "Agua mineral natural envasada (web oficial); InfoNIF: bebidas y tabaco"
+    },
+    {
+      "k": "Domicilio",
+      "v": "Paraje San Joaquín de Huelmos, 37000 Valdunciel (Salamanca), según InfoNIF"
+    },
+    {
+      "k": "Web oficial",
+      "v": "aguasdesanjoaquin.com"
+    },
+    {
+      "k": "Posición por ventas 2024",
+      "v": "55ª entre las sociedades domiciliadas en la provincia de Salamanca; 13.636.ª a nivel nacional (InfoNIF)"
+    }
+  ],
+  "cifras": [
+    {
+      "concepto": "Posición por ventas 2024 (provincia de Salamanca)",
+      "valor": "55ª (13.636.ª a nivel nacional)",
+      "fuente": {
+        "t": "InfoNIF: ranking de ventas de empresas de Salamanca 2024",
+        "u": "https://infonif.economia3.com/ranking/ventas-empresas/salamanca"
+      }
+    }
+  ],
+  "nota_cifras": "InfoNIF oculta las ventas y la plantilla exactas de esta sociedad (cifras tras cuenta Premium); no se ha localizado en fuentes abiertas ninguna cifra de ventas fiable, por lo que no se recoge ninguna.",
+  "directivos": [],
+  "historia": [
+    {
+      "fecha": "2005",
+      "hito": "Antigüedad registrada",
+      "detalle": "InfoNIF indica una antigüedad de 21 años con fecha 25/05/2005.",
+      "fuente": {
+        "t": "InfoNIF: ficha de Aguas de San Joaquín SL",
+        "u": "https://infonif.economia3.com/ficha-empresa/aguas-de-san-joaquin-sl"
+      }
+    }
+  ],
+  "no_verificado": [
+    "Ventas 2024 y plantilla: ocultas en InfoNIF (la plantilla empieza por «2»); sin cifra contrastada.",
+    "Posición 55 y 13.636.ª nacional: tomadas del ranking InfoNIF según el encargo; la página del ranking no se ha abierto en esta revisión.",
+    "Domicilio: InfoNIF lo abrevia («Pj San Joaquin De Huelm»); no se ha contrastado la dirección completa.",
+    "Formatos de envase, manantial y mercados: la web los menciona en secciones que no se han leído.",
+    "Fundación: la web no indica año; solo la antigüedad registrada en InfoNIF.",
+    "NIF y cargos de administración: pendientes de contraste con el BORME."
+  ],
+  "faq": [
+    {
+      "q": "¿Qué es Aguas de San Joaquín?",
+      "a": "Una empresa de Valdunciel (Salamanca) que comercializa agua mineral natural envasada en varios formatos, según su web."
+    },
+    {
+      "q": "¿Dónde está?",
+      "a": "InfoNIF sitúa su domicilio en el paraje San Joaquín de Huelmos, en Valdunciel (Salamanca)."
+    },
+    {
+      "q": "¿Qué puesto ocupa entre las empresas de Salamanca?",
+      "a": "El 55.º por ventas 2024 en el ranking provincial de InfoNIF y el 13.636.º a nivel nacional."
+    },
+    {
+      "q": "¿Cuánto factura?",
+      "a": "No hay cifra fiable en fuentes abiertas: InfoNIF oculta las ventas."
+    }
+  ],
+  "fuentes": [
+    {
+      "t": "InfoNIF: ranking de ventas de empresas de Salamanca 2024",
+      "u": "https://infonif.economia3.com/ranking/ventas-empresas/salamanca"
+    },
+    {
+      "t": "InfoNIF: ficha de Aguas de San Joaquín SL",
+      "u": "https://infonif.economia3.com/ficha-empresa/aguas-de-san-joaquin-sl"
+    },
+    {
+      "t": "Aguas de San Joaquín: web oficial",
+      "u": "https://www.aguasdesanjoaquin.com/"
+    }
+  ],
+  "como_citar": "Open Salamanca (2026). Ficha de Aguas de San Joaquín SL. https://opensalamanca.es/empresas/aguas-de-san-joaquin. Licencia CC BY 4.0.",
+  "nota_directivos": "Contrastado con el BORME de Salamanca de 01/01/2022 a 27/11/2026. No hay nombramientos de administradores inscritos en ese periodo; los cargos anteriores no se han podido contrastar."
+}

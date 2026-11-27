@@ -1,0 +1,5 @@
+---
+permalink: empresas/minijuegos.json
+sitemap: false
+---
+{{ site.data.empresas["minijuegos"] | jsonify }}

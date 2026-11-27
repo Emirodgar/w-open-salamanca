@@ -1,0 +1,5 @@
+---
+permalink: empresas/ternera-de-salamanca.json
+sitemap: false
+---
+{{ site.data.empresas["ternera-de-salamanca"] | jsonify }}

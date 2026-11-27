@@ -1,0 +1,5 @@
+---
+permalink: empresas/revisan.json
+sitemap: false
+---
+{{ site.data.empresas["revisan"] | jsonify }}

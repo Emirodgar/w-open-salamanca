@@ -1,0 +1,201 @@
+{
+  "slug": "seauto",
+  "url_canonica": "https://opensalamanca.es/empresas/seauto",
+  "nombre_habitual": "Seauto",
+  "razon_social": "Seauto SA",
+  "actualizado": "2026-11-27",
+  "actualizado_texto": "27 de noviembre de 2026",
+  "estado_ficha": "borrador: datos limitados | cargos contrastados con el BORME 2022-2026",
+  "licencia": "CC BY 4.0",
+  "sameas": [],
+  "resumen": "Seauto SA es un concesionario de automoción con sede en Villares de la Reina (Salamanca), constituido en 1982, que según Coches.com comercializa vehículos SEAT y CUPRA. Ocupa el puesto 99 por ventas 2024 entre las empresas de la provincia (24.181.º a nivel nacional según InfoNIF).",
+  "rapida": [
+    {
+      "k": "Razón social",
+      "v": "Seauto SA (NIF A37027521)"
+    },
+    {
+      "k": "Sector",
+      "v": "Automotor (InfoNIF); concesionario SEAT y CUPRA según Coches.com"
+    },
+    {
+      "k": "Domicilio",
+      "v": "Avenida Fuentesauco 86-94, Polígono Industrial, 37184 Villares de la Reina (Salamanca)"
+    },
+    {
+      "k": "Constitución",
+      "v": "24/06/1982 (InfoNIF)"
+    },
+    {
+      "k": "Capital suscrito",
+      "v": "150.250 euros tras la ampliación de 21/09/2005 (InfoNIF)"
+    },
+    {
+      "k": "Auditor",
+      "v": "Grupo L&L SLP"
+    },
+    {
+      "k": "Posición por ventas 2024",
+      "v": "99.ª entre las sociedades domiciliadas en la provincia de Salamanca; 24.181.ª a nivel nacional (InfoNIF)"
+    }
+  ],
+  "cifras": [
+    {
+      "concepto": "Capital suscrito",
+      "valor": "150.250 euros",
+      "fuente": {
+        "t": "InfoNIF: ficha de Seauto SA",
+        "u": "https://infonif.economia3.com/ficha-empresa/seauto-sa"
+      }
+    },
+    {
+      "concepto": "Posición por ventas 2024 (provincia de Salamanca)",
+      "valor": "99.ª (24.181.ª a nivel nacional)",
+      "fuente": {
+        "t": "InfoNIF: ranking de ventas de empresas de Salamanca 2024",
+        "u": "https://infonif.economia3.com/ranking/ventas-empresas/salamanca"
+      }
+    },
+    {
+      "concepto": "Posición en el ranking automotor de Salamanca",
+      "valor": "8.ª del sector automotor en Salamanca; 24.181.ª a nivel nacional",
+      "fuente": {
+        "t": "InfoNIF: ranking de ventas del sector automotor en Salamanca 2024",
+        "u": "https://infonif.economia3.com/ranking/ventas-empresas/salamanca/automotor"
+      }
+    }
+  ],
+  "nota_cifras": "InfoNIF oculta las ventas; no se ha encontrado ninguna cifra de ingresos contrastada en abierto.",
+  "directivos": [
+    {
+      "nombre": "Sanchez Sanchez Maria",
+      "cargo": "Consejero delegado (nombrado el 04/04/2024)",
+      "fuente": {
+        "t": "BORME BORME-A-2024-66-37 (04/04/2024)",
+        "u": "https://www.boe.es/borme/dias/2024/04/04/pdfs/BORME-A-2024-66-37.pdf"
+      },
+      "ficha": "",
+      "verificacion_borme": {
+        "estado": "inscrito",
+        "fecha": "20240404",
+        "boletin": "BORME-A-2024-66-37",
+        "url": "https://www.boe.es/borme/dias/2024/04/04/pdfs/BORME-A-2024-66-37.pdf"
+      }
+    },
+    {
+      "nombre": "Melgar Vicente Laura",
+      "cargo": "Consejero (nombrado el 04/04/2024)",
+      "fuente": {
+        "t": "BORME BORME-A-2024-66-37 (04/04/2024)",
+        "u": "https://www.boe.es/borme/dias/2024/04/04/pdfs/BORME-A-2024-66-37.pdf"
+      },
+      "ficha": "",
+      "verificacion_borme": {
+        "estado": "inscrito",
+        "fecha": "20240404",
+        "boletin": "BORME-A-2024-66-37",
+        "url": "https://www.boe.es/borme/dias/2024/04/04/pdfs/BORME-A-2024-66-37.pdf"
+      }
+    },
+    {
+      "nombre": "Sanchez Sanchez Beatriz",
+      "cargo": "Consejero (nombrado el 04/04/2024)",
+      "fuente": {
+        "t": "BORME BORME-A-2024-66-37 (04/04/2024)",
+        "u": "https://www.boe.es/borme/dias/2024/04/04/pdfs/BORME-A-2024-66-37.pdf"
+      },
+      "ficha": "",
+      "verificacion_borme": {
+        "estado": "inscrito",
+        "fecha": "20240404",
+        "boletin": "BORME-A-2024-66-37",
+        "url": "https://www.boe.es/borme/dias/2024/04/04/pdfs/BORME-A-2024-66-37.pdf"
+      }
+    },
+    {
+      "nombre": "Melgar Vicente Manuel-Jose",
+      "cargo": "Consejero (nombrado el 04/04/2024)",
+      "fuente": {
+        "t": "BORME BORME-A-2024-66-37 (04/04/2024)",
+        "u": "https://www.boe.es/borme/dias/2024/04/04/pdfs/BORME-A-2024-66-37.pdf"
+      },
+      "ficha": "",
+      "verificacion_borme": {
+        "estado": "inscrito",
+        "fecha": "20240404",
+        "boletin": "BORME-A-2024-66-37",
+        "url": "https://www.boe.es/borme/dias/2024/04/04/pdfs/BORME-A-2024-66-37.pdf"
+      }
+    }
+  ],
+  "historia": [
+    {
+      "fecha": "1982",
+      "hito": "Constitución",
+      "detalle": "InfoNIF indica una fecha de constitución de 24/06/1982.",
+      "fuente": {
+        "t": "InfoNIF: ficha de Seauto SA",
+        "u": "https://infonif.economia3.com/ficha-empresa/seauto-sa"
+      }
+    },
+    {
+      "fecha": "2020",
+      "hito": "Cambio de domicilio",
+      "detalle": "El BORME de 31/07/2020 recoge un cambio de domicilio social.",
+      "fuente": {
+        "t": "InfoNIF: ficha de Seauto SA",
+        "u": "https://infonif.economia3.com/ficha-empresa/seauto-sa"
+      }
+    },
+    {
+      "fecha": "2024",
+      "hito": "Cambios en el consejo",
+      "detalle": "El BORME de 04/04/2024 recoge ceses y nombramientos de cargos.",
+      "fuente": {
+        "t": "InfoNIF: ficha de Seauto SA",
+        "u": "https://infonif.economia3.com/ficha-empresa/seauto-sa"
+      }
+    }
+  ],
+  "no_verificado": [
+    "Marcas: SEAT y CUPRA proceden de un único directorio de anuncios (Coches.com); la web oficial no ha sido accesible.",
+    "Punto de venta en Zamora: lo menciona Coches.com y no se ha contrastado.",
+    "Ventas, plantilla (parcialmente enmascarada) y resultados: ocultos en InfoNIF.",
+    "Posición 99 por ventas 2024: el listado provincial consultado no mostraba esa fila; sí aparece como 8.ª del ranking automotor con el nacional 24.181.",
+    "Relación con otros concesionarios de Villares de la Reina: InfoNIF no indica grupo matriz."
+  ],
+  "faq": [
+    {
+      "q": "¿Qué es Seauto?",
+      "a": "Un concesionario de Villares de la Reina (Salamanca), constituido en 1982, que según Coches.com vende SEAT y CUPRA."
+    },
+    {
+      "q": "¿Cuánto factura?",
+      "a": "No hay cifra de ventas verificada en abierto; InfoNIF la oculta."
+    },
+    {
+      "q": "¿Qué puesto ocupa entre las empresas de Salamanca?",
+      "a": "El 99.º por ventas 2024 en el ranking provincial de InfoNIF y el 24.181.º a nivel nacional."
+    }
+  ],
+  "fuentes": [
+    {
+      "t": "InfoNIF: ranking de ventas de empresas de Salamanca 2024",
+      "u": "https://infonif.economia3.com/ranking/ventas-empresas/salamanca"
+    },
+    {
+      "t": "InfoNIF: ranking de ventas del sector automotor en Salamanca 2024",
+      "u": "https://infonif.economia3.com/ranking/ventas-empresas/salamanca/automotor"
+    },
+    {
+      "t": "InfoNIF: ficha de Seauto SA",
+      "u": "https://infonif.economia3.com/ficha-empresa/seauto-sa"
+    },
+    {
+      "t": "Coches.com: Seauto Salamanca",
+      "u": "https://www.coches.com/concesionario-seauto-salamanca/D609/"
+    }
+  ],
+  "como_citar": "Open Salamanca (2026). Ficha de Seauto SA. https://opensalamanca.es/empresas/seauto. Licencia CC BY 4.0.",
+  "nota_directivos": "Contrastado con el BORME de Salamanca de 01/01/2022 a 27/11/2026. Cargos de administración inscritos y no cesados en ese periodo; los nombres figuran como en el BORME (apellidos primero y sin tildes). Los secretarios no consejeros, los apoderados y los auditores no se incluyen. Un cargo con mandato vencido puede seguir figurando sin cese inscrito."
+}

@@ -1,0 +1,5 @@
+---
+permalink: empresas/granja-rodriguez-serrano.json
+sitemap: false
+---
+{{ site.data.empresas["granja-rodriguez-serrano"] | jsonify }}

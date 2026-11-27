@@ -1,0 +1,5 @@
+---
+permalink: empresas/rodrigo-sanchez-blazquez.json
+sitemap: false
+---
+{{ site.data.empresas["rodrigo-sanchez-blazquez"] | jsonify }}

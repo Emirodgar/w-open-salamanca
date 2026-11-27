@@ -1,0 +1,5 @@
+---
+permalink: empresas/agropecuaria-beher.json
+sitemap: false
+---
+{{ site.data.empresas["agropecuaria-beher"] | jsonify }}

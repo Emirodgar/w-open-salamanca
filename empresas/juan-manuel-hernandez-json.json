@@ -1,0 +1,5 @@
+---
+permalink: empresas/juan-manuel-hernandez.json
+sitemap: false
+---
+{{ site.data.empresas["juan-manuel-hernandez"] | jsonify }}

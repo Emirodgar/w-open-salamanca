@@ -1,0 +1,150 @@
+{
+  "slug": "cauchos-bracamonte",
+  "url_canonica": "https://opensalamanca.es/empresas/cauchos-bracamonte",
+  "nombre_habitual": "Cauchos Bracamonte",
+  "razon_social": "Cauchos Bracamonte SA",
+  "actualizado": "2026-11-27",
+  "actualizado_texto": "27 de noviembre de 2026",
+  "estado_ficha": "borrador: datos limitados | cargos contrastados con el BORME 2022-2026",
+  "licencia": "CC BY 4.0",
+  "sameas": [],
+  "resumen": "Cauchos Bracamonte SA es la planta de Peñaranda de Bracamonte (Salamanca) del grupo Elastorsa, fabricante de mezclas de caucho; la web del grupo la presenta como Elastorsa Bracamonte y la data en 1998. InfoNIF la clasifica como industria maderera, pero la actividad real es la transformación de caucho. Ocupa el puesto 67 por ventas 2024 entre las empresas de la provincia (16.832.º a nivel nacional).",
+  "rapida": [
+    {
+      "k": "Razón social",
+      "v": "Cauchos Bracamonte SA (NIF A37054707); InfoNIF lista un cambio de denominación a Elastorsa Bracamonte SA (BORME, 05/08/2026)"
+    },
+    {
+      "k": "Sector",
+      "v": "Mezclas de caucho (web de Elastorsa); InfoNIF la clasifica como industria maderera, dato que no coincide con la actividad real"
+    },
+    {
+      "k": "Domicilio",
+      "v": "Polígono El Inestal, parcelas 19-20, 37300 Peñaranda de Bracamonte (Salamanca)"
+    },
+    {
+      "k": "Grupo",
+      "v": "Grupo Elastorsa, con sede en Arnedo (La Rioja); InfoNIF indica a Cormix Compounds SL como administrador único"
+    },
+    {
+      "k": "Auditor",
+      "v": "PricewaterhouseCoopers Auditores SL (InfoNIF)"
+    },
+    {
+      "k": "Posición por ventas 2024",
+      "v": "67.ª entre las sociedades domiciliadas en la provincia de Salamanca; 16.832.ª a nivel nacional (InfoNIF)"
+    }
+  ],
+  "cifras": [
+    {
+      "concepto": "Grupo Elastorsa: facturación consolidada",
+      "valor": "130 millones de euros (cifra del grupo, no de esta sociedad)",
+      "fuente": {
+        "t": "Elastorsa: web oficial",
+        "u": "https://www.elastorsa.com"
+      }
+    },
+    {
+      "concepto": "Grupo Elastorsa: plantilla media",
+      "valor": "340 empleados y cinco plantas (cifra del grupo)",
+      "fuente": {
+        "t": "Elastorsa: web oficial",
+        "u": "https://www.elastorsa.com"
+      }
+    },
+    {
+      "concepto": "Posición por ventas 2024 (provincia de Salamanca)",
+      "valor": "67.ª (16.832.ª a nivel nacional)",
+      "fuente": {
+        "t": "InfoNIF: ranking de ventas de empresas de Salamanca 2024",
+        "u": "https://infonif.economia3.com/ranking/ventas-empresas/salamanca"
+      }
+    }
+  ],
+  "nota_cifras": "Las cifras de facturación y plantilla corresponden al grupo Elastorsa en su conjunto, no a Cauchos Bracamonte, cuyas ventas InfoNIF oculta. La posición del ranking procede de InfoNIF.",
+  "directivos": [],
+  "historia": [
+    {
+      "fecha": "1998",
+      "hito": "Fundación",
+      "detalle": "La web de Elastorsa indica que Cauchos Bracamonte se fundó en 1998 en Salamanca para atender el aumento de la demanda nacional e internacional.",
+      "fuente": {
+        "t": "Elastorsa: historia",
+        "u": "https://www.elastorsa.com/es/historia"
+      }
+    },
+    {
+      "fecha": "1987",
+      "hito": "Antigüedad registral",
+      "detalle": "InfoNIF indica una antigüedad con fecha 21/10/1987, anterior a la fundación que señala el grupo; no se ha podido conciliar.",
+      "fuente": {
+        "t": "InfoNIF: ficha de Cauchos Bracamonte SA",
+        "u": "https://infonif.economia3.com/ficha-empresa/cauchos-bracamonte-sa"
+      }
+    },
+    {
+      "fecha": "2023",
+      "hito": "Cambio de auditor",
+      "detalle": "El BORME de 24/03/2023 recoge el cese de KPMG Auditores y el nombramiento de PricewaterhouseCoopers.",
+      "fuente": {
+        "t": "InfoNIF: ficha de Cauchos Bracamonte SA",
+        "u": "https://infonif.economia3.com/ficha-empresa/cauchos-bracamonte-sa"
+      }
+    },
+    {
+      "fecha": "2026",
+      "hito": "Cambio de denominación",
+      "detalle": "InfoNIF lista, junto a la reelección del administrador único (BORME, 05/08/2026), un cambio de nombre a Elastorsa Bracamonte SA. La web del grupo anuncia una identidad corporativa común para Cauchos Bracamonte y el resto de sociedades.",
+      "fuente": {
+        "t": "InfoNIF: ficha de Cauchos Bracamonte SA",
+        "u": "https://infonif.economia3.com/ficha-empresa/cauchos-bracamonte-sa"
+      }
+    }
+  ],
+  "no_verificado": [
+    "Ventas, resultado y plantilla de la sociedad: InfoNIF los oculta.",
+    "Fecha de fundación: la web del grupo indica 1998 e InfoNIF una antigüedad de 1987.",
+    "Productos concretos fabricados en la planta de Peñaranda: la web del grupo los describe en conjunto (mezclas de caucho, planchas y TPV) sin detallar los de esta planta.",
+    "Cormix Compounds SL: InfoNIF la cita como administrador único, pero la web de Elastorsa no la menciona y no se ha verificado su relación con el grupo.",
+    "Efectividad del cambio de denominación a Elastorsa Bracamonte SA: solo consta en InfoNIF.",
+    "Cargos: no se incluyen; se rellenarán desde el BORME."
+  ],
+  "faq": [
+    {
+      "q": "¿A qué se dedica Cauchos Bracamonte?",
+      "a": "A la fabricación de mezclas de caucho en Peñaranda de Bracamonte, como planta del grupo Elastorsa, aunque InfoNIF la clasifica como industria maderera."
+    },
+    {
+      "q": "¿Es Cauchos Bracamonte parte de Elastorsa?",
+      "a": "Sí: la web de Elastorsa la incluye como planta «Elastorsa Bracamonte» y anuncia una identidad corporativa común."
+    },
+    {
+      "q": "¿Qué puesto ocupa entre las empresas de Salamanca?",
+      "a": "El 67.º por ventas 2024 en el ranking provincial de InfoNIF y el 16.832.º a nivel nacional."
+    },
+    {
+      "q": "¿Cuánto factura?",
+      "a": "No se ha podido verificar para la sociedad; el grupo Elastorsa declara 130 millones de euros consolidados en su web."
+    }
+  ],
+  "fuentes": [
+    {
+      "t": "InfoNIF: ranking de ventas de empresas de Salamanca 2024",
+      "u": "https://infonif.economia3.com/ranking/ventas-empresas/salamanca"
+    },
+    {
+      "t": "InfoNIF: ficha de Cauchos Bracamonte SA",
+      "u": "https://infonif.economia3.com/ficha-empresa/cauchos-bracamonte-sa"
+    },
+    {
+      "t": "Elastorsa: web oficial",
+      "u": "https://www.elastorsa.com"
+    },
+    {
+      "t": "Elastorsa: historia",
+      "u": "https://www.elastorsa.com/es/historia"
+    }
+  ],
+  "como_citar": "Open Salamanca (2026). Ficha de Cauchos Bracamonte SA. https://opensalamanca.es/empresas/cauchos-bracamonte. Licencia CC BY 4.0.",
+  "nota_directivos": "Contrastado con el BORME de Salamanca de 01/01/2022 a 27/11/2026. No hay nombramientos de administradores inscritos en ese periodo; los cargos anteriores no se han podido contrastar."
+}

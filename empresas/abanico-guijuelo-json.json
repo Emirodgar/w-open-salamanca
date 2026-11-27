@@ -1,0 +1,5 @@
+---
+permalink: empresas/abanico-guijuelo.json
+sitemap: false
+---
+{{ site.data.empresas["abanico-guijuelo"] | jsonify }}

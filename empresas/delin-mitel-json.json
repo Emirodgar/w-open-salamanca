@@ -1,0 +1,5 @@
+---
+permalink: empresas/delin-mitel.json
+sitemap: false
+---
+{{ site.data.empresas["delin-mitel"] | jsonify }}

@@ -1,0 +1,136 @@
+{
+  "slug": "industrias-carnicas-iglesias",
+  "url_canonica": "https://opensalamanca.es/empresas/industrias-carnicas-iglesias",
+  "nombre_habitual": "Cárnicas Iglesias",
+  "razon_social": "Industrias Cárnicas Iglesias SA",
+  "actualizado": "2026-11-27",
+  "actualizado_texto": "27 de noviembre de 2026",
+  "estado_ficha": "borrador: datos limitados | cargos contrastados con el BORME 2022-2026",
+  "licencia": "CC BY 4.0",
+  "sameas": [],
+  "resumen": "Industrias Cárnicas Iglesias SA es una empresa familiar de Santa Marta de Tormes (Salamanca) que elabora jamones, paletas, embuchados y embutidos y se presenta como «Salamanca desde 1928». Ocupa el puesto 54 por ventas 2024 entre las empresas de la provincia (13.622.ª a nivel nacional según InfoNIF).",
+  "rapida": [
+    {
+      "k": "Razón social",
+      "v": "Industrias Cárnicas Iglesias SA"
+    },
+    {
+      "k": "Sector",
+      "v": "Elaboración de jamones, paletas, embuchados y embutidos (web oficial); InfoNIF: productos alimenticios"
+    },
+    {
+      "k": "Domicilio",
+      "v": "Carretera de Madrid 5, 37900 Santa Marta de Tormes (Salamanca)"
+    },
+    {
+      "k": "Web oficial",
+      "v": "carnicasiglesias.com; registro sanitario 10.02659/SA y tel. 923 21 59 08 (web)"
+    },
+    {
+      "k": "Otro centro",
+      "v": "Secadero con bodegas de curación climatizadas en Moríñigo (Salamanca), según la web"
+    },
+    {
+      "k": "Posición por ventas 2024",
+      "v": "54ª entre las sociedades domiciliadas en la provincia de Salamanca; 13.622.ª a nivel nacional (InfoNIF)"
+    }
+  ],
+  "cifras": [
+    {
+      "concepto": "Posición por ventas 2024 (provincia de Salamanca)",
+      "valor": "54ª (13.622.ª a nivel nacional)",
+      "fuente": {
+        "t": "InfoNIF: ranking de ventas de empresas de Salamanca 2024",
+        "u": "https://infonif.economia3.com/ranking/ventas-empresas/salamanca"
+      }
+    }
+  ],
+  "nota_cifras": "InfoNIF oculta las ventas y la plantilla exactas de esta sociedad (cifras tras cuenta Premium); no se ha localizado en fuentes abiertas ninguna cifra de ventas fiable, por lo que no se recoge ninguna.",
+  "directivos": [
+    {
+      "nombre": "Iglesias Vallejo Francisco",
+      "cargo": "Administrador único (reelegido el 22/01/2025)",
+      "fuente": {
+        "t": "BORME BORME-A-2025-14-37 (22/01/2025)",
+        "u": "https://www.boe.es/borme/dias/2025/01/22/pdfs/BORME-A-2025-14-37.pdf"
+      },
+      "ficha": "",
+      "verificacion_borme": {
+        "estado": "inscrito",
+        "fecha": "20250122",
+        "boletin": "BORME-A-2025-14-37",
+        "url": "https://www.boe.es/borme/dias/2025/01/22/pdfs/BORME-A-2025-14-37.pdf"
+      }
+    }
+  ],
+  "historia": [
+    {
+      "fecha": "1987",
+      "hito": "Antigüedad registrada",
+      "detalle": "InfoNIF indica una antigüedad de 39 años con fecha 18/01/1987, que puede corresponder a la sociedad actual.",
+      "fuente": {
+        "t": "InfoNIF: ficha de Industrias Cárnicas Iglesias SA",
+        "u": "https://infonif.economia3.com/ficha-empresa/industrias-carnicas-iglesias-sa"
+      }
+    },
+    {
+      "fecha": "1928",
+      "hito": "Origen de la empresa familiar",
+      "detalle": "La web oficial utiliza el lema «Salamanca desde 1928» y afirma que cuatro generaciones de la familia han dirigido la empresa.",
+      "fuente": {
+        "t": "Cárnicas Iglesias: web oficial",
+        "u": "https://www.carnicasiglesias.com/"
+      }
+    },
+    {
+      "fecha": "2021",
+      "hito": "Certificación IFS y exportación",
+      "detalle": "La web recoge un proyecto de certificación IFS completado en 2021 y exportaciones de chorizo, con Reino Unido, Francia y Grecia como principales mercados según una noticia de ese año.",
+      "fuente": {
+        "t": "Cárnicas Iglesias: web oficial",
+        "u": "https://www.carnicasiglesias.com/"
+      }
+    }
+  ],
+  "no_verificado": [
+    "Ventas 2024 y plantilla: ocultas en InfoNIF (la plantilla empieza por «10»; cuentas de 2025 pendientes de solicitar); sin cifra contrastada.",
+    "Posición 54 y 13.622.ª nacional: tomadas del ranking InfoNIF según el encargo; la página del ranking no se ha abierto en esta revisión.",
+    "Año 1928 frente a 1987: el lema de la web remite a 1928, InfoNIF registra 1987; no se ha aclarado la relación entre ambas fechas.",
+    "Mercados, clientes y certificación IFS: tomados de la web oficial, sin contraste en prensa.",
+    "NIF y cargos de administración: pendientes de contraste con el BORME."
+  ],
+  "faq": [
+    {
+      "q": "¿Qué es Industrias Cárnicas Iglesias?",
+      "a": "Una empresa familiar de Santa Marta de Tormes (Salamanca) que elabora jamones, paletas, embuchados y embutidos, con web propia y tienda online."
+    },
+    {
+      "q": "¿Desde cuándo existe?",
+      "a": "Su web afirma «Salamanca desde 1928»; InfoNIF registra una antigüedad con fecha 18/01/1987."
+    },
+    {
+      "q": "¿Qué puesto ocupa entre las empresas de Salamanca?",
+      "a": "El 54.º por ventas 2024 en el ranking provincial de InfoNIF y el 13.622.º a nivel nacional."
+    },
+    {
+      "q": "¿Cuánto factura?",
+      "a": "No hay cifra fiable en fuentes abiertas: InfoNIF oculta las ventas."
+    }
+  ],
+  "fuentes": [
+    {
+      "t": "InfoNIF: ranking de ventas de empresas de Salamanca 2024",
+      "u": "https://infonif.economia3.com/ranking/ventas-empresas/salamanca"
+    },
+    {
+      "t": "InfoNIF: ficha de Industrias Cárnicas Iglesias SA",
+      "u": "https://infonif.economia3.com/ficha-empresa/industrias-carnicas-iglesias-sa"
+    },
+    {
+      "t": "Cárnicas Iglesias: web oficial",
+      "u": "https://www.carnicasiglesias.com/"
+    }
+  ],
+  "como_citar": "Open Salamanca (2026). Ficha de Industrias Cárnicas Iglesias SA. https://opensalamanca.es/empresas/industrias-carnicas-iglesias. Licencia CC BY 4.0.",
+  "nota_directivos": "Contrastado con el BORME de Salamanca de 01/01/2022 a 27/11/2026. Cargos de administración inscritos y no cesados en ese periodo; los nombres figuran como en el BORME (apellidos primero y sin tildes). Los secretarios no consejeros, los apoderados y los auditores no se incluyen. Un cargo con mandato vencido puede seguir figurando sin cese inscrito."
+}

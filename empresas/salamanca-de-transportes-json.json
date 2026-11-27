@@ -1,0 +1,5 @@
+---
+permalink: empresas/salamanca-de-transportes.json
+sitemap: false
+---
+{{ site.data.empresas["salamanca-de-transportes"] | jsonify }}

@@ -1,0 +1,5 @@
+---
+permalink: empresas/ternepayo.json
+sitemap: false
+---
+{{ site.data.empresas["ternepayo"] | jsonify }}

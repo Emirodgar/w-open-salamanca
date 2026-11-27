@@ -1,0 +1,5 @@
+---
+permalink: empresas/vacuno-de-salamanca.json
+sitemap: false
+---
+{{ site.data.empresas["vacuno-de-salamanca"] | jsonify }}

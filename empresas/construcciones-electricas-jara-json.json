@@ -1,0 +1,5 @@
+---
+permalink: empresas/construcciones-electricas-jara.json
+sitemap: false
+---
+{{ site.data.empresas["construcciones-electricas-jara"] | jsonify }}

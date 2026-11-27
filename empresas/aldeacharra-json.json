@@ -1,0 +1,5 @@
+---
+permalink: empresas/aldeacharra.json
+sitemap: false
+---
+{{ site.data.empresas["aldeacharra"] | jsonify }}

@@ -1,0 +1,114 @@
+{
+  "slug": "gruponani",
+  "url_canonica": "https://opensalamanca.es/empresas/gruponani",
+  "nombre_habitual": "Gruponani",
+  "razon_social": "Gruponani SL",
+  "actualizado": "2026-11-27",
+  "actualizado_texto": "27 de noviembre de 2026",
+  "estado_ficha": "borrador: datos limitados | cargos contrastados con el BORME 2022-2026",
+  "licencia": "CC BY 4.0",
+  "sameas": [],
+  "resumen": "Gruponani SL es una sociedad de Alba de Tormes (Salamanca) del sector de la automoción, constituida en 1992 como Talleres Nani SL, cuya web oficial se presenta como Citroën Salamanca - Grupo Nani. Ocupa el puesto 82 por ventas 2024 entre las empresas de la provincia (21.991.º a nivel nacional); no hay cifra de ventas verificable.",
+  "rapida": [
+    {
+      "k": "Razón social",
+      "v": "Gruponani SL (NIF B37078623)"
+    },
+    {
+      "k": "Sector",
+      "v": "Automoción (InfoNIF); la web oficial se presenta como Citroën Salamanca - Grupo Nani"
+    },
+    {
+      "k": "Domicilio",
+      "v": "Carretera Peñaranda 69, 37800 Alba de Tormes (Salamanca)"
+    },
+    {
+      "k": "Web",
+      "v": "gruponani.com"
+    },
+    {
+      "k": "Denominación anterior",
+      "v": "Talleres Nani SL (cambio de nombre en 2011, según InfoNIF)"
+    },
+    {
+      "k": "Plantilla",
+      "v": "Tramo parcialmente oculto en InfoNIF"
+    },
+    {
+      "k": "Posición por ventas 2024",
+      "v": "82.ª entre las sociedades domiciliadas en la provincia de Salamanca; 21.991.ª a nivel nacional (InfoNIF)"
+    }
+  ],
+  "cifras": [
+    {
+      "concepto": "Posición por ventas 2024 (provincia de Salamanca)",
+      "valor": "82.ª (21.991.ª a nivel nacional)",
+      "fuente": {
+        "t": "InfoNIF: ranking de ventas de empresas de Salamanca 2024",
+        "u": "https://infonif.economia3.com/ranking/ventas-empresas/salamanca"
+      }
+    }
+  ],
+  "nota_cifras": "Sin cifra de ventas verificable: InfoNIF oculta las ventas y ninguna otra fuente abierta consultada las publica.",
+  "directivos": [],
+  "historia": [
+    {
+      "fecha": "1992",
+      "hito": "Constitución como Talleres Nani SL",
+      "detalle": "InfoNIF indica una antigüedad con fecha 02/06/1992 y la denominación anterior Talleres Nani SL.",
+      "fuente": {
+        "t": "InfoNIF: ficha de Gruponani SL",
+        "u": "https://infonif.economia3.com/ficha-empresa/gruponani-sl"
+      }
+    },
+    {
+      "fecha": "2011",
+      "hito": "Cambio de denominación",
+      "detalle": "InfoNIF recoge el cambio de nombre a Gruponani SL.",
+      "fuente": {
+        "t": "InfoNIF: ficha de Gruponani SL",
+        "u": "https://infonif.economia3.com/ficha-empresa/gruponani-sl"
+      }
+    }
+  ],
+  "no_verificado": [
+    "Ventas 2024: ocultas en InfoNIF.",
+    "Actividad detallada (concesionario, taller, marcas, sedes): de la web solo se pudo leer el título \"Citroën Salamanca - Grupo Nani\"; no se ha contrastado el resto.",
+    "Plantilla exacta: InfoNIF la muestra parcialmente oculta.",
+    "Socios y estructura de grupo: no constan en las fuentes consultadas."
+  ],
+  "faq": [
+    {
+      "q": "¿Qué es Gruponani?",
+      "a": "Gruponani SL es una sociedad de Alba de Tormes (Salamanca) del sector de la automoción, constituida en 1992 como Talleres Nani SL, cuya web oficial se presenta como Citroën Salamanca - Grupo Nani."
+    },
+    {
+      "q": "¿Qué puesto ocupa entre las empresas de Salamanca?",
+      "a": "El 82.º por ventas 2024 en el ranking provincial de InfoNIF y el 21.991.º a nivel nacional."
+    },
+    {
+      "q": "¿A qué se dedica?",
+      "a": "InfoNIF la sitúa en automoción y su web se presenta como Citroën Salamanca - Grupo Nani; no se ha verificado el detalle de sus actividades."
+    },
+    {
+      "q": "¿Cuánto factura?",
+      "a": "No hay cifra verificable: InfoNIF oculta las ventas."
+    }
+  ],
+  "fuentes": [
+    {
+      "t": "InfoNIF: ranking de ventas de empresas de Salamanca 2024",
+      "u": "https://infonif.economia3.com/ranking/ventas-empresas/salamanca"
+    },
+    {
+      "t": "InfoNIF: ficha de Gruponani SL",
+      "u": "https://infonif.economia3.com/ficha-empresa/gruponani-sl"
+    },
+    {
+      "t": "Gruponani: web oficial",
+      "u": "https://www.gruponani.com"
+    }
+  ],
+  "como_citar": "Open Salamanca (2026). Ficha de Gruponani SL. https://opensalamanca.es/empresas/gruponani. Licencia CC BY 4.0.",
+  "nota_directivos": "Contrastado con el BORME de Salamanca de 01/01/2022 a 27/11/2026. No hay nombramientos de administradores inscritos en ese periodo; los cargos anteriores no se han podido contrastar."
+}

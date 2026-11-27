@@ -97,7 +97,13 @@
         "t": "InfoNIF: ficha de Matadero de Guijuelo SA (BORME, 16/10/2023)",
         "u": "https://infonif.economia3.com/ficha-empresa/matadero-de-guijuelo-sa"
       },
-      "ficha": ""
+      "ficha": "",
+      "verificacion_borme": {
+        "estado": "inscrito",
+        "fecha": "20231016",
+        "boletin": "BORME-A-2023-197-37",
+        "url": "https://www.boe.es/borme/dias/2023/10/16/pdfs/BORME-A-2023-197-37.pdf"
+      }
     },
     {
       "nombre": "F. Hernández Jiménez e Hijos SL",
@@ -166,7 +172,13 @@
         "t": "InfoNIF: ficha de Matadero de Guijuelo SA (BORME, 16/10/2023)",
         "u": "https://infonif.economia3.com/ficha-empresa/matadero-de-guijuelo-sa"
       },
-      "ficha": ""
+      "ficha": "",
+      "verificacion_borme": {
+        "estado": "inscrito",
+        "fecha": "20231016",
+        "boletin": "BORME-A-2023-197-37",
+        "url": "https://www.boe.es/borme/dias/2023/10/16/pdfs/BORME-A-2023-197-37.pdf"
+      }
     }
   ],
   "historia": [
@@ -249,5 +261,5 @@
     }
   ],
   "como_citar": "Open Salamanca (2026). Ficha de Matadero de Guijuelo SA. https://opensalamanca.es/empresas/matadero-de-guijuelo. Licencia CC BY 4.0.",
-  "nota_directivos": "Contrastado con el BORME de Salamanca de 01/01/2022 a 27/11/2026. Confirmados por una inscripción en ese periodo: Productos Ibéricos Gómez Robles SL, F. Hernández Jiménez e Hijos SL, Embutidos y Jamones Alta Sierra SL, Ángel Martín e Hijos SA, Julio Casquero SL (fecha y boletín indicados en cada cargo). Sin inscripción de nombramiento ni cese en ese periodo: Manuel Guillén SA, Proyecto e Inversiones Hermanos Gómez SL. Sus cargos proceden de inscripciones anteriores y no se han podido contrastar con el boletín original."
+  "nota_directivos": "Contrastado con el BORME de Salamanca de 01/01/2022 a 27/11/2026. Confirmados por una inscripción en ese periodo: Productos Ibéricos Gómez Robles SL, Manuel Guillén SA, F. Hernández Jiménez e Hijos SL, Embutidos y Jamones Alta Sierra SL, Ángel Martín e Hijos SA, Julio Casquero SL, Proyecto e Inversiones Hermanos Gómez SL (fecha y boletín indicados en cada cargo)."
 }

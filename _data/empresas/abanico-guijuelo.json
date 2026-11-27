@@ -1,0 +1,153 @@
+{
+  "slug": "abanico-guijuelo",
+  "url_canonica": "https://opensalamanca.es/empresas/abanico-guijuelo",
+  "nombre_habitual": "Abanico Guijuelo",
+  "razon_social": "Abanico Guijuelo SL",
+  "actualizado": "2026-11-27",
+  "actualizado_texto": "27 de noviembre de 2026",
+  "estado_ficha": "borrador: datos limitados; actividad real, ventas, plantilla y cargos pendientes | cargos contrastados con el BORME 2022-2026",
+  "licencia": "CC BY 4.0",
+  "sameas": [],
+  "resumen": "Abanico Guijuelo SL es una sociedad creada en 2014 con domicilio en Salamanca, inscrita en el comercio al por mayor de carne y productos cárnicos (CNAE 46.32) según el BORME recogido por InfoNIF. Ocupa el puesto 57 por ventas 2024 entre las empresas de la provincia (14.056.º a nivel nacional).",
+  "rapida": [
+    {
+      "k": "Razón social",
+      "v": "Abanico Guijuelo SL (NIF B37536190)"
+    },
+    {
+      "k": "Actividad inscrita",
+      "v": "Comercio al por mayor de carne y productos cárnicos (CNAE 46.32); compraventa de carne, animales y cereales (objeto social en el BORME de 2014 vía InfoNIF)"
+    },
+    {
+      "k": "Domicilio",
+      "v": "Calle San Juan de la Cruz, 2, 37001 Salamanca (cambio inscrito el 03/11/2025)"
+    },
+    {
+      "k": "Registro Mercantil",
+      "v": "Salamanca, hoja SA 15496"
+    },
+    {
+      "k": "Administración",
+      "v": "Administrador único desde el BORME de 17/11/2025 (antes, administradores solidarios)"
+    },
+    {
+      "k": "Auditor",
+      "v": "Quo Auditores SL (nombrado el 18/09/2026)"
+    },
+    {
+      "k": "Posición por ventas 2024",
+      "v": "57.ª entre las sociedades domiciliadas en la provincia de Salamanca; 14.056.ª a nivel nacional (InfoNIF)"
+    }
+  ],
+  "cifras": [
+    {
+      "concepto": "Capital suscrito",
+      "valor": "544.000 euros tras la ampliación inscrita el 09/06/2022",
+      "fuente": {
+        "t": "InfoNIF: ficha de Abanico Guijuelo SL",
+        "u": "https://infonif.economia3.com/ficha-empresa/abanico-guijuelo-sl"
+      }
+    },
+    {
+      "concepto": "Posición por ventas 2024 (provincia de Salamanca)",
+      "valor": "57.ª (14.056.ª a nivel nacional)",
+      "fuente": {
+        "t": "InfoNIF: ranking de ventas de empresas de Salamanca 2024",
+        "u": "https://infonif.economia3.com/ranking/ventas-empresas/salamanca"
+      }
+    }
+  ],
+  "nota_cifras": "InfoNIF oculta ventas, resultados y plantilla. No se ha obtenido una cifra de ventas verificable en una fuente abierta.",
+  "directivos": [
+    {
+      "nombre": "Garcia Gomez Francisco",
+      "cargo": "Administrador único (nombrado el 17/11/2025)",
+      "fuente": {
+        "t": "BORME BORME-A-2025-219-37 (17/11/2025)",
+        "u": "https://www.boe.es/borme/dias/2025/11/17/pdfs/BORME-A-2025-219-37.pdf"
+      },
+      "ficha": "",
+      "verificacion_borme": {
+        "estado": "inscrito",
+        "fecha": "20251117",
+        "boletin": "BORME-A-2025-219-37",
+        "url": "https://www.boe.es/borme/dias/2025/11/17/pdfs/BORME-A-2025-219-37.pdf"
+      }
+    }
+  ],
+  "historia": [
+    {
+      "fecha": "2014",
+      "hito": "Constitución",
+      "detalle": "El BORME de 11/07/2014 recoge la constitución con 4.000 euros de capital y administradores solidarios; el inicio de operaciones figura el 24/06/2014.",
+      "fuente": {
+        "t": "InfoNIF: ficha de Abanico Guijuelo SL",
+        "u": "https://infonif.economia3.com/ficha-empresa/abanico-guijuelo-sl"
+      }
+    },
+    {
+      "fecha": "2019",
+      "hito": "Ampliación del objeto social",
+      "detalle": "El BORME de 06/05/2019 recoge la ampliación del objeto social al comercio de productos alimenticios, bebidas y tabaco y a bienes inmobiliarios.",
+      "fuente": {
+        "t": "InfoNIF: ficha de Abanico Guijuelo SL",
+        "u": "https://infonif.economia3.com/ficha-empresa/abanico-guijuelo-sl"
+      }
+    },
+    {
+      "fecha": "2019-2022",
+      "hito": "Ampliaciones de capital",
+      "detalle": "Ampliaciones de 200.000 euros (2019), 200.000 euros (2020) y 140.000 euros (2022), hasta 544.000 euros.",
+      "fuente": {
+        "t": "InfoNIF: ficha de Abanico Guijuelo SL",
+        "u": "https://infonif.economia3.com/ficha-empresa/abanico-guijuelo-sl"
+      }
+    },
+    {
+      "fecha": "2025",
+      "hito": "Administrador único y nuevo domicilio",
+      "detalle": "El BORME de 17/11/2025 recoge el paso a administrador único y el cambio de domicilio.",
+      "fuente": {
+        "t": "InfoNIF: ficha de Abanico Guijuelo SL",
+        "u": "https://infonif.economia3.com/ficha-empresa/abanico-guijuelo-sl"
+      }
+    }
+  ],
+  "no_verificado": [
+    "Actividad real: solo se conoce el objeto social del BORME; no se ha localizado web oficial ni prensa que describa productos o instalaciones.",
+    "Ventas 2024: ocultas en InfoNIF; un agregador mostrado en un resumen de búsqueda citaba unos 22 millones de euros, no abierto ni contrastado.",
+    "Plantilla: no disponible.",
+    "Relación con Guijuelo: el nombre no prueba actividad en esa localidad; domicilio en Salamanca capital.",
+    "Cargos vigentes: pendientes de contraste con el BORME."
+  ],
+  "faq": [
+    {
+      "q": "¿Qué es Abanico Guijuelo?",
+      "a": "Una sociedad limitada de Salamanca creada en 2014 e inscrita en el comercio al por mayor de carne y productos cárnicos."
+    },
+    {
+      "q": "¿Dónde tiene su sede?",
+      "a": "En la calle San Juan de la Cruz, 2, de Salamanca, desde noviembre de 2025."
+    },
+    {
+      "q": "¿Qué puesto ocupa entre las empresas de Salamanca?",
+      "a": "El 57.º por ventas 2024 en el ranking provincial de InfoNIF y el 14.056.º a nivel nacional."
+    },
+    {
+      "q": "¿Cuánto factura?",
+      "a": "No hay una cifra verificada: InfoNIF oculta las ventas."
+    }
+  ],
+  "fuentes": [
+    {
+      "t": "InfoNIF: ranking de ventas de empresas de Salamanca 2024",
+      "u": "https://infonif.economia3.com/ranking/ventas-empresas/salamanca"
+    },
+    {
+      "t": "InfoNIF: ficha de Abanico Guijuelo SL",
+      "u": "https://infonif.economia3.com/ficha-empresa/abanico-guijuelo-sl"
+    }
+  ],
+  "como_citar": "Open Salamanca (2026). Ficha de Abanico Guijuelo SL. https://opensalamanca.es/empresas/abanico-guijuelo. Licencia CC BY 4.0.",
+  "nota_directivos": "Contrastado con el BORME de Salamanca de 01/01/2022 a 27/11/2026. Cargos de administración inscritos y no cesados en ese periodo; los nombres figuran como en el BORME (apellidos primero y sin tildes). Los secretarios no consejeros, los apoderados y los auditores no se incluyen. Un cargo con mandato vencido puede seguir figurando sin cese inscrito."
+}

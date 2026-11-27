@@ -1,0 +1,144 @@
+{
+  "slug": "salamanca-de-transportes",
+  "url_canonica": "https://opensalamanca.es/empresas/salamanca-de-transportes",
+  "nombre_habitual": "Salamanca de Transportes",
+  "razon_social": "Salamanca de Transportes SA",
+  "actualizado": "2026-11-27",
+  "actualizado_texto": "27 de noviembre de 2026",
+  "estado_ficha": "borrador: datos limitados | cargos contrastados con el BORME 2022-2026",
+  "licencia": "CC BY 4.0",
+  "sameas": [],
+  "resumen": "Salamanca de Transportes SA es la empresa que opera el servicio de autobús urbano de la ciudad de Salamanca, según su web oficial, con 20 líneas y 55 autobuses en servicio. Su domicilio figura en el polígono El Montalvo II y ocupa el puesto 66 por ventas 2024 entre las empresas de la provincia (16.819.º a nivel nacional según InfoNIF).",
+  "rapida": [
+    {
+      "k": "Razón social",
+      "v": "Salamanca de Transportes SA (NIF A37043015)"
+    },
+    {
+      "k": "Sector",
+      "v": "Transporte urbano de viajeros en autobús (web oficial); InfoNIF: transporte terrestre"
+    },
+    {
+      "k": "Domicilio",
+      "v": "Calle Hoyamoros, 55, polígono industrial El Montalvo II, 37008 Salamanca (InfoNIF); la web oficial indica Calle Gran Vía, 4, 37001 Salamanca"
+    },
+    {
+      "k": "Grupo",
+      "v": "La web oficial muestra el logotipo de Grupo Ruiz; InfoNIF indica a Empresa Ruiz SA como administrador único"
+    },
+    {
+      "k": "Auditor",
+      "v": "BDO Auditores SLP (BORME, noviembre de 2026, vía InfoNIF)"
+    },
+    {
+      "k": "Posición por ventas 2024",
+      "v": "66.ª entre las sociedades domiciliadas en la provincia de Salamanca; 16.819.ª a nivel nacional (InfoNIF)"
+    }
+  ],
+  "cifras": [
+    {
+      "concepto": "Líneas urbanas en servicio",
+      "valor": "20 líneas y 349 paradas",
+      "fuente": {
+        "t": "Salamanca de Transportes: web oficial",
+        "u": "https://www.salamancadetransportes.com"
+      }
+    },
+    {
+      "concepto": "Flota",
+      "valor": "55 autobuses en servicio",
+      "fuente": {
+        "t": "Salamanca de Transportes: web oficial",
+        "u": "https://www.salamancadetransportes.com"
+      }
+    },
+    {
+      "concepto": "Posición por ventas 2024 (provincia de Salamanca)",
+      "valor": "66.ª (16.819.ª a nivel nacional)",
+      "fuente": {
+        "t": "InfoNIF: ranking de ventas de empresas de Salamanca 2024",
+        "u": "https://infonif.economia3.com/ranking/ventas-empresas/salamanca"
+      }
+    }
+  ],
+  "nota_cifras": "InfoNIF oculta las ventas, el resultado y la plantilla exactos, por lo que no se recoge ninguna cifra económica. Las cifras de líneas, paradas y flota proceden de la web de la empresa en el momento de la consulta y pueden cambiar. La posición del ranking procede de InfoNIF.",
+  "directivos": [
+    {
+      "nombre": "Empresa Ruiz SA",
+      "cargo": "Administrador único (nombrado el 13/08/2025)",
+      "fuente": {
+        "t": "BORME BORME-A-2025-153-37 (13/08/2025)",
+        "u": "https://www.boe.es/borme/dias/2025/08/13/pdfs/BORME-A-2025-153-37.pdf"
+      },
+      "ficha": "",
+      "verificacion_borme": {
+        "estado": "inscrito",
+        "fecha": "20250813",
+        "boletin": "BORME-A-2025-153-37",
+        "url": "https://www.boe.es/borme/dias/2025/08/13/pdfs/BORME-A-2025-153-37.pdf"
+      }
+    }
+  ],
+  "historia": [
+    {
+      "fecha": "1986",
+      "hito": "Antigüedad registral",
+      "detalle": "InfoNIF indica una antigüedad con fecha 16/07/1986.",
+      "fuente": {
+        "t": "InfoNIF: ficha de Salamanca de Transportes SA",
+        "u": "https://infonif.economia3.com/ficha-empresa/salamanca-de-transportes-sa"
+      }
+    },
+    {
+      "fecha": "2026",
+      "hito": "Cambios en apoderados y auditor",
+      "detalle": "El BORME recoge en 2026 varias revocaciones y nombramientos de apoderados y el nombramiento de BDO Auditores SLP como auditor (22/04/2026 y 20/11/2026).",
+      "fuente": {
+        "t": "InfoNIF: ficha de Salamanca de Transportes SA",
+        "u": "https://infonif.economia3.com/ficha-empresa/salamanca-de-transportes-sa"
+      }
+    }
+  ],
+  "no_verificado": [
+    "Ventas, resultado y plantilla: InfoNIF los oculta y no se ha contrastado ninguna cifra.",
+    "Año de fundación y trayectoria: la web muestra «+39 años de servicio» sin fecha ni historia; la fecha de 1986 es la antigüedad registral de InfoNIF.",
+    "Relación con Grupo Ruiz y Empresa Ruiz SA: la web muestra el logotipo del grupo y InfoNIF cita a Empresa Ruiz SA como administrador único, pero no se ha contrastado el porcentaje de participación.",
+    "Domicilio social: InfoNIF y la web oficial indican direcciones distintas (Hoyamoros 55 y Gran Vía 4).",
+    "Título de concesión del servicio y contrato con el Ayuntamiento: no se ha consultado ninguna fuente administrativa.",
+    "Cargos: no se incluyen; se rellenarán desde el BORME."
+  ],
+  "faq": [
+    {
+      "q": "¿Qué es Salamanca de Transportes?",
+      "a": "Una sociedad anónima que, según su web oficial, presta el servicio de autobús urbano en Salamanca capital, con 20 líneas, 349 paradas y 55 autobuses en servicio."
+    },
+    {
+      "q": "¿Qué puesto ocupa entre las empresas de Salamanca?",
+      "a": "El 66.º por ventas 2024 en el ranking provincial de InfoNIF y el 16.819.º a nivel nacional."
+    },
+    {
+      "q": "¿Pertenece a algún grupo?",
+      "a": "La web muestra el logotipo de Grupo Ruiz e InfoNIF registra a Empresa Ruiz SA como administrador único; no se ha verificado el detalle societario."
+    },
+    {
+      "q": "¿Cuánto factura?",
+      "a": "No se ha podido verificar: InfoNIF oculta las ventas y no se ha localizado otra fuente abierta."
+    }
+  ],
+  "fuentes": [
+    {
+      "t": "InfoNIF: ranking de ventas de empresas de Salamanca 2024",
+      "u": "https://infonif.economia3.com/ranking/ventas-empresas/salamanca"
+    },
+    {
+      "t": "InfoNIF: ficha de Salamanca de Transportes SA",
+      "u": "https://infonif.economia3.com/ficha-empresa/salamanca-de-transportes-sa"
+    },
+    {
+      "t": "Salamanca de Transportes: web oficial",
+      "u": "https://www.salamancadetransportes.com"
+    }
+  ],
+  "como_citar": "Open Salamanca (2026). Ficha de Salamanca de Transportes SA. https://opensalamanca.es/empresas/salamanca-de-transportes. Licencia CC BY 4.0.",
+  "nota_directivos": "Contrastado con el BORME de Salamanca de 01/01/2022 a 27/11/2026. Cargos de administración inscritos y no cesados en ese periodo; los nombres figuran como en el BORME (apellidos primero y sin tildes). Los secretarios no consejeros, los apoderados y los auditores no se incluyen. Un cargo con mandato vencido puede seguir figurando sin cese inscrito."
+}

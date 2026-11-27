@@ -1,0 +1,5 @@
+---
+permalink: empresas/helmantica-de-cerrajeria.json
+sitemap: false
+---
+{{ site.data.empresas["helmantica-de-cerrajeria"] | jsonify }}

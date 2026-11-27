@@ -1,0 +1,5 @@
+---
+permalink: empresas/new-fire-ice.json
+sitemap: false
+---
+{{ site.data.empresas["new-fire-ice"] | jsonify }}

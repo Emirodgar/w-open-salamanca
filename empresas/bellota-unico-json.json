@@ -1,0 +1,5 @@
+---
+permalink: empresas/bellota-unico.json
+sitemap: false
+---
+{{ site.data.empresas["bellota-unico"] | jsonify }}

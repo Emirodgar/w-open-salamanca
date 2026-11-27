@@ -1,0 +1,5 @@
+---
+permalink: empresas/complejo-agroalimentario-bejar.json
+sitemap: false
+---
+{{ site.data.empresas["complejo-agroalimentario-bejar"] | jsonify }}

@@ -1,0 +1,131 @@
+{
+  "slug": "complejo-agroalimentario-bejar",
+  "url_canonica": "https://opensalamanca.es/empresas/complejo-agroalimentario-bejar",
+  "nombre_habitual": "Complejo Agroalimentario Béjar",
+  "razon_social": "Complejo Agroalimentario Béjar SL",
+  "actualizado": "2026-11-27",
+  "actualizado_texto": "27 de noviembre de 2026",
+  "estado_ficha": "borrador: datos limitados | cargos contrastados con el BORME 2022-2026",
+  "licencia": "CC BY 4.0",
+  "sameas": [],
+  "resumen": "Complejo Agroalimentario Béjar SL es una sociedad de Doñinos de Salamanca clasificada por InfoNIF en productos alimenticios, constituida en 2000 y participada por Bielsa Corporate Services SL, la matriz que agrupa también a Grupo Corral Rendering y Castellana de Subproductos Cárnicos. Ocupa el puesto 81 por ventas 2024 entre las empresas de la provincia (21.818.º a nivel nacional); no hay cifra de ventas ni actividad detallada verificables en las fuentes abiertas consultadas.",
+  "rapida": [
+    {
+      "k": "Razón social",
+      "v": "Complejo Agroalimentario Béjar SL (NIF B37361805)"
+    },
+    {
+      "k": "Sector",
+      "v": "Productos alimenticios (InfoNIF)"
+    },
+    {
+      "k": "Domicilio",
+      "v": "Finca La Argentina, s/n, 37120 Doñinos de Salamanca (Salamanca)"
+    },
+    {
+      "k": "Grupo",
+      "v": "Bielsa Corporate Services SL figura como matriz y administrador único (InfoNIF)"
+    },
+    {
+      "k": "Auditor",
+      "v": "Ernst & Young SL (InfoNIF)"
+    },
+    {
+      "k": "Plantilla",
+      "v": "Tramo parcialmente oculto en InfoNIF (decenas de empleados, sin cifra exacta)"
+    },
+    {
+      "k": "Posición por ventas 2024",
+      "v": "81.ª entre las sociedades domiciliadas en la provincia de Salamanca; 21.818.ª a nivel nacional (InfoNIF)"
+    }
+  ],
+  "cifras": [
+    {
+      "concepto": "Posición por ventas 2024 (provincia de Salamanca)",
+      "valor": "81.ª (21.818.ª a nivel nacional)",
+      "fuente": {
+        "t": "InfoNIF: ranking de ventas de empresas de Salamanca 2024",
+        "u": "https://infonif.economia3.com/ranking/ventas-empresas/salamanca"
+      }
+    }
+  ],
+  "nota_cifras": "Sin cifra de ventas verificable: InfoNIF oculta las ventas y ninguna otra fuente abierta consultada las publica.",
+  "directivos": [
+    {
+      "nombre": "Bielsa Corporate Services SL",
+      "cargo": "Administrador único (nombrado el 23/09/2022)",
+      "fuente": {
+        "t": "BORME BORME-A-2022-183-37 (23/09/2022)",
+        "u": "https://www.boe.es/borme/dias/2022/09/23/pdfs/BORME-A-2022-183-37.pdf"
+      },
+      "ficha": "",
+      "verificacion_borme": {
+        "estado": "inscrito",
+        "fecha": "20220923",
+        "boletin": "BORME-A-2022-183-37",
+        "url": "https://www.boe.es/borme/dias/2022/09/23/pdfs/BORME-A-2022-183-37.pdf"
+      }
+    }
+  ],
+  "historia": [
+    {
+      "fecha": "2000",
+      "hito": "Constitución",
+      "detalle": "InfoNIF indica una antigüedad con fecha 22/02/2000.",
+      "fuente": {
+        "t": "InfoNIF: ficha de Complejo Agroalimentario Béjar SL",
+        "u": "https://infonif.economia3.com/ficha-empresa/complejo-agroalimentario-bejar-sl"
+      }
+    },
+    {
+      "fecha": "2026",
+      "hito": "Matriz y administrador único",
+      "detalle": "InfoNIF recoge a Bielsa Corporate Services SL como sociedad matriz y administrador único; la página de la matriz lista esta sociedad entre sus diez participadas.",
+      "fuente": {
+        "t": "InfoNIF: ficha de Bielsa Corporate Services SL",
+        "u": "https://infonif.economia3.com/ficha-empresa/bielsa-corporate-services-sl"
+      }
+    }
+  ],
+  "no_verificado": [
+    "Ventas 2024 y otros ejercicios: ocultas en InfoNIF.",
+    "Actividad concreta: solo consta el sector \"productos alimenticios\" de InfoNIF; no se ha localizado web oficial ni prensa que la describa.",
+    "Plantilla exacta: InfoNIF muestra solo un dato parcialmente oculto.",
+    "Relación con Grupo Corral: InfoNIF muestra a Bielsa Corporate Services SL como matriz y administrador único de Complejo Agroalimentario Béjar SL y de otras nueve sociedades, entre ellas Grupo Corral Rendering SL y Grupo Fernando Corral Salamanca SL; no describe de forma expresa un \"Grupo Corral\" ni las participaciones.",
+    "Vínculo con Béjar: el nombre incluye \"Béjar\", pero el domicilio consta en Doñinos de Salamanca y no se ha verificado ninguna instalación en Béjar."
+  ],
+  "faq": [
+    {
+      "q": "¿Qué es Complejo Agroalimentario Béjar?",
+      "a": "Complejo Agroalimentario Béjar SL es una sociedad de Doñinos de Salamanca clasificada por InfoNIF en productos alimenticios, constituida en 2000 y participada por Bielsa Corporate Services SL, la matriz que agrupa también a Grupo Corral Rendering y Castellana de Subproductos Cárnicos."
+    },
+    {
+      "q": "¿Qué puesto ocupa entre las empresas de Salamanca?",
+      "a": "El 81.º por ventas 2024 en el ranking provincial de InfoNIF y el 21.818.º a nivel nacional."
+    },
+    {
+      "q": "¿Pertenece a Grupo Corral?",
+      "a": "InfoNIF la muestra como participada de Bielsa Corporate Services SL, matriz que también agrupa a Grupo Corral Rendering SL, pero no describe expresamente un \"Grupo Corral\"."
+    },
+    {
+      "q": "¿Cuánto factura?",
+      "a": "No hay cifra verificable: InfoNIF oculta las ventas."
+    }
+  ],
+  "fuentes": [
+    {
+      "t": "InfoNIF: ranking de ventas de empresas de Salamanca 2024",
+      "u": "https://infonif.economia3.com/ranking/ventas-empresas/salamanca"
+    },
+    {
+      "t": "InfoNIF: ficha de Complejo Agroalimentario Béjar SL",
+      "u": "https://infonif.economia3.com/ficha-empresa/complejo-agroalimentario-bejar-sl"
+    },
+    {
+      "t": "InfoNIF: ficha de Bielsa Corporate Services SL",
+      "u": "https://infonif.economia3.com/ficha-empresa/bielsa-corporate-services-sl"
+    }
+  ],
+  "como_citar": "Open Salamanca (2026). Ficha de Complejo Agroalimentario Béjar SL. https://opensalamanca.es/empresas/complejo-agroalimentario-bejar. Licencia CC BY 4.0.",
+  "nota_directivos": "Contrastado con el BORME de Salamanca de 01/01/2022 a 27/11/2026. Cargos de administración inscritos y no cesados en ese periodo; los nombres figuran como en el BORME (apellidos primero y sin tildes). Los secretarios no consejeros, los apoderados y los auditores no se incluyen. Un cargo con mandato vencido puede seguir figurando sin cese inscrito."
+}

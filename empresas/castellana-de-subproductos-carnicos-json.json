@@ -1,0 +1,5 @@
+---
+permalink: empresas/castellana-de-subproductos-carnicos.json
+sitemap: false
+---
+{{ site.data.empresas["castellana-de-subproductos-carnicos"] | jsonify }}

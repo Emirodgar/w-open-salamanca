@@ -1,0 +1,5 @@
+---
+permalink: empresas/campal-oil-gasoleos-y-lubricantes.json
+sitemap: false
+---
+{{ site.data.empresas["campal-oil-gasoleos-y-lubricantes"] | jsonify }}

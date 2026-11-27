@@ -1,0 +1,5 @@
+---
+permalink: empresas/gruponani.json
+sitemap: false
+---
+{{ site.data.empresas["gruponani"] | jsonify }}

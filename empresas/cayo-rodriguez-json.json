@@ -1,0 +1,5 @@
+---
+permalink: empresas/cayo-rodriguez.json
+sitemap: false
+---
+{{ site.data.empresas["cayo-rodriguez"] | jsonify }}

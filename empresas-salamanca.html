@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Mayores empresas de la provincia de Salamanca por ventas 2024
-description: Listado ordenado de las 50 mayores sociedades con domicilio en la provincia de Salamanca según sus ventas de 2024, con municipio, sector y enlace a la ficha de cada empresa cuando existe
+description: Listado ordenado de las 99 mayores sociedades con domicilio en la provincia de Salamanca según sus ventas de 2024, con municipio, sector y enlace a la ficha de cada empresa cuando existe
 date: 27-11-2026
 modified: 27-11-2026
 folder: Economia
@@ -19,7 +19,7 @@ dataset_source_url: "https://infonif.economia3.com/ranking/ventas-empresas/salam
       <p class="section-description">{{ page.description }}</p>
     </div>
     <div id="section-content">
-      <p>Este listado ordena las sociedades con <b>domicilio social en la provincia de Salamanca</b> por sus ventas de 2024, según el ranking de <a href="{{ ix.fuente.u }}" rel="nofollow noopener">InfoNIF</a>. Bernabé Campal SL (Huerta) y Neumáticos Andrés SA (Salamanca) encabezan la lista. Los importes exactos no se publican aquí hasta contrastarlos con las cuentas depositadas en el Registro Mercantil.</p>
+      <p>Este listado ordena las sociedades con <b>domicilio social en la provincia de Salamanca</b> por sus ventas de 2024, según el ranking de <a href="{{ ix.fuente.u }}" rel="nofollow noopener">InfoNIF</a>. Bernabé Campal SL (Huerta) y Neumáticos Andrés SA (Salamanca) encabezan la lista. Se recogen las 99 primeras con domicilio en la provincia: la que ocupa el puesto 100 del ranking de InfoNIF se excluye porque el BORME la sitúa con domicilio en Madrid. Los importes exactos no se publican aquí hasta contrastarlos con las cuentas depositadas en el Registro Mercantil.</p>
       <p>Es una lista de <b>sociedades</b>, no de grupos: empresas con sede fuera de la provincia pero con plantas en ella (por ejemplo, la fábrica de ENUSA en Juzbado) no aparecen. Consulta también el <a href="/ranking-empresas-facturacion">ranking de empresas por facturación</a>, que recoge las 15 mayores con la fuente de cada cifra, y los <a href="/grandes-fortunas-patrimonio-salamanca">grupos empresariales familiares</a> de la provincia.</p>
       <p class="fu" style="font-size:.85em;color:#5b6778">{{ ix.nota }} Consultado el 27 de noviembre de 2026.</p>
     </div>
@@ -27,7 +27,8 @@ dataset_source_url: "https://infonif.economia3.com/ranking/ventas-empresas/salam
       <table border="1" cellpadding="5" cellspacing="0">
         <thead><tr><th>Orden</th><th>Sociedad</th><th>Municipio</th><th>Sector</th><th>Ficha</th></tr></thead>
         <tbody>
-        {%- for e in ix.empresas limit: 50 %}
+        {%- for e in ix.empresas limit: 100 %}
+          {%- if e.excluida %}{% continue %}{% endif -%}
           {%- assign fslug = "" -%}
           {%- if e.ficha %}{% assign fslug = e.ficha %}{% endif %}
           <tr><td>{{ e.orden }}</td><td>{{ e.razon_social }}</td><td>{{ e.municipio_infonif }}</td><td>{{ e.sector_infonif }}</td><td>{% if fslug != "" %}<a href="/empresas/{{ fslug }}">Ver ficha</a>{% else %}en preparación{% endif %}</td></tr>

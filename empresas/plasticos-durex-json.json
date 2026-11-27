@@ -1,0 +1,5 @@
+---
+permalink: empresas/plasticos-durex.json
+sitemap: false
+---
+{{ site.data.empresas["plasticos-durex"] | jsonify }}

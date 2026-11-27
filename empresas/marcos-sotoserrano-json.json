@@ -1,0 +1,5 @@
+---
+permalink: empresas/marcos-sotoserrano.json
+sitemap: false
+---
+{{ site.data.empresas["marcos-sotoserrano"] | jsonify }}

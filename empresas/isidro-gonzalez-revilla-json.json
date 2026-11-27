@@ -1,0 +1,5 @@
+---
+permalink: empresas/isidro-gonzalez-revilla.json
+sitemap: false
+---
+{{ site.data.empresas["isidro-gonzalez-revilla"] | jsonify }}

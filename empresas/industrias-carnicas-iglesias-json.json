@@ -1,0 +1,5 @@
+---
+permalink: empresas/industrias-carnicas-iglesias.json
+sitemap: false
+---
+{{ site.data.empresas["industrias-carnicas-iglesias"] | jsonify }}

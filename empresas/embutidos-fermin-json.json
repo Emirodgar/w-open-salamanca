@@ -1,0 +1,5 @@
+---
+permalink: empresas/embutidos-fermin.json
+sitemap: false
+---
+{{ site.data.empresas["embutidos-fermin"] | jsonify }}
