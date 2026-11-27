@@ -171,18 +171,6 @@
       "fecha_creacion": "2026-10-15"
     },
     {
-      "id": "primark-el-tormes-2026",
-      "pregunta": "Ante el anuncio de la próxima llegada de Primark al Centro Comercial El Tormes, ¿cree que esta apertura beneficiará al comercio local de Salamanca?",
-      "opciones": [
-        "Sí, atraerá más clientes a la zona",
-        "No, perjudicará al pequeño comercio",
-        "Es indiferente, el impacto será limitado",
-        "No tengo suficiente información"
-      ],
-      "basado_en": "actualidad.json",
-      "fecha_creacion": "2026-10-16"
-    },
-    {
       "id": "acoso-escolar-salamanca-2026",
       "pregunta": "Ante el preocupante aumento de casos de acoso escolar en Salamanca, ¿qué medidas considera más urgentes para abordar esta situación en los centros educativos?",
       "opciones": [
@@ -374,18 +362,6 @@
       ],
       "basado_en": "actualidad.json",
       "fecha_creacion": "2026-10-29"
-    },
-    {
-      "id": "movilizacion-agraria-2026",
-      "pregunta": "El sector agrícola salmantino ha participado en una tractorada en Madrid para visibilizar sus demandas. ¿Cree que este tipo de movilizaciones son efectivas para lograr mejoras para el campo?",
-      "opciones": [
-        "Sí, son cruciales para presionar y conseguir cambios.",
-        "No, generan más inconvenientes que soluciones reales.",
-        "Son un paso necesario, pero deben ir acompañadas de negociación.",
-        "No tengo suficiente información."
-      ],
-      "basado_en": "actualidad.json",
-      "fecha_creacion": "2026-10-31"
     },
     {
       "id": "seguridad-ferroviaria-salamanca-2026",
@@ -902,6 +878,30 @@
       ],
       "basado_en": "actualidad.json",
       "fecha_creacion": "2026-11-26"
+    },
+    {
+      "id": "concurso-decoracion-navidena-carbajosa-2026",
+      "pregunta": "El Ayuntamiento de Carbajosa de la Sagrada convoca la octava edición de su Concurso de Decoración Navideña para fomentar el comercio local. ¿Cree que este tipo de iniciativas son efectivas para impulsar la actividad comercial durante las fiestas?",
+      "opciones": [
+        "Sí, atraen clientes y generan ambiente festivo.",
+        "No, su impacto es limitado y no beneficia a todos los comercios.",
+        "Es un buen complemento, pero se necesitan otras medidas de apoyo.",
+        "No tengo suficiente información."
+      ],
+      "basado_en": "eventos.json",
+      "fecha_creacion": "2026-11-27"
+    },
+    {
+      "id": "concurso-decoracion-navidena-ciudad-rodrigo-2026",
+      "pregunta": "El Ayuntamiento de Ciudad Rodrigo convoca la undécima edición de su concurso de decoración navideña para vecinos y comercios. ¿Cree que este tipo de concursos son efectivos para impulsar el ambiente festivo y el comercio local durante la Navidad?",
+      "opciones": [
+        "Sí, fomentan la participación y atraen visitantes.",
+        "No, su impacto es limitado y el esfuerzo no compensa.",
+        "Son un buen complemento, pero no una medida decisiva.",
+        "No tengo suficiente información."
+      ],
+      "basado_en": "eventos.json",
+      "fecha_creacion": "2026-11-27"
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "mes": "2026-11",
   "titulo_mes": "Noviembre 2026",
-  "resumen_mes": "Noviembre ha estado marcado por el fallecimiento de Charo Diego y la detección del primer caso de lengua azul. La preocupación por un error en la identificación de pacientes se sumó a la tensión generada por la visita de Santiago Abascal. El final de mes ha estado dominado por las multitudinarias conmemoraciones del 25N contra la violencia machista. En el ámbito deportivo, Unionistas de Salamanca ha puesto fin a la etapa de Javi Medina, mientras que Perfumerías Avenida ha logrado una destacada victoria en Europa. La Universidad también rindió homenaje a la Reina Sofía y se desarticuló un grupo criminal.",
+  "resumen_mes": "Noviembre ha estado marcado por el fallecimiento de Charo Diego y la detección del primer caso de lengua azul. La preocupación por un error en la identificación de pacientes se sumó a la tensión generada por la visita de Santiago Abascal. El final de mes ha estado dominado por las multitudinarias conmemoraciones del 25N contra la violencia machista. En el ámbito deportivo, Unionistas de Salamanca ha puesto fin a la etapa de Javi Medina, mientras que Perfumerías Avenida ha logrado una destacada victoria en Europa. La Universidad también rindió homenaje a la Reina Sofía y se ha celebrado la apertura de una importante tienda en la capital, así como el tradicional encendido de las luces de Navidad.",
   "hitos": [
     {
       "fecha": "2026-11-01",
@@ -20,27 +20,11 @@
       "destacado": false
     },
     {
-      "fecha": "2026-11-18",
-      "titulo": "El juzgado admite a trámite una denuncia por el error en la identificación de pacientes",
-      "categoria": "Sucesos",
-      "descripcion": "La Junta ha abierto una investigación tras un error en el Hospital de Montalvos que llevó a la identificación errónea de dos pacientes. El juzgado ha admitido a trámite una denuncia al respecto.",
-      "fuente": "https://www.lagacetadesalamanca.es/salamanca/juzgado-admite-tramite-denuncia-intercambio-dos-pacientes-20261118061500-nt.html",
-      "destacado": false
-    },
-    {
       "fecha": "2026-11-23",
       "titulo": "Fin de la era de Javi Medina en Unionistas",
       "categoria": "Deportes",
       "descripcion": "Se ha hecho oficial el cese de Javi Medina como entrenador de Unionistas de Salamanca, marcando el fin de su etapa en el club.",
       "fuente": "https://www.lagacetadesalamanca.es/deportes/futbol-local/unionistas/oficial-fin-era-javi-medina-unionistas-20261123110513-nt.html",
-      "destacado": false
-    },
-    {
-      "fecha": "2026-11-23",
-      "titulo": "Desarticulado un grupo criminal que robaba en Salamanca y cinco provincias",
-      "categoria": "Sucesos",
-      "descripcion": "Un grupo criminal dedicado a robos ha sido desarticulado, con operaciones que abarcaban Salamanca y otras cinco provincias.",
-      "fuente": "https://www.lagacetadesalamanca.es/sucesos/desarticulado-grupo-criminal-robaba-salamanca-cinco-provincias-20261123110053-nt.html",
       "destacado": false
     },
     {
@@ -65,6 +49,22 @@
       "categoria": "Deportes",
       "descripcion": "El equipo salmantino ha conseguido una gran victoria en la Eurocup, destacando por su rendimiento con solo siete jugadoras disponibles.",
       "fuente": "https://www.lagacetadesalamanca.es/deportes/baloncesto-local/meins-avenida/claves-gran-victoria-meins-avenida-eurocup-20261125234154-nt.html",
+      "destacado": false
+    },
+    {
+      "fecha": "2026-11-26",
+      "titulo": "Apertura del primer Primark en Salamanca",
+      "categoria": "Economía",
+      "descripcion": "La ciudad ha celebrado la inauguración del primer establecimiento de la cadena Primark, generando gran expectación entre el público.",
+      "fuente": "https://www.lagacetadesalamanca.es/salamanca/primer-primark-salamanca-abre-puertas-20261126145954-nt.html",
+      "destacado": false
+    },
+    {
+      "fecha": "2026-11-26",
+      "titulo": "Encendido de las luces de Navidad en la Plaza Mayor",
+      "categoria": "Sociedad",
+      "descripcion": "La Plaza Mayor de Salamanca se ha llenado de público para el tradicional encendido de las luces navideñas, marcando el inicio de las fiestas.",
+      "fuente": "https://www.lagacetadesalamanca.es/salamanca/encendido-luces-navidenas-salamanca-imagenes-20261126212445-ga.html",
       "destacado": false
     }
   ]

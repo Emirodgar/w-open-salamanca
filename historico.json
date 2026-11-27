@@ -840,6 +840,44 @@
         "Es indiferente, lo importante es que haya luces": 2
       },
       "total_votos": 10
+    },
+    {
+      "id": "primark-el-tormes-2026",
+      "pregunta": "Ante el anuncio de la próxima llegada de Primark al Centro Comercial El Tormes, ¿cree que esta apertura beneficiará al comercio local de Salamanca?",
+      "opciones": [
+        "Sí, atraerá más clientes a la zona",
+        "No, perjudicará al pequeño comercio",
+        "Es indiferente, el impacto será limitado",
+        "No tengo suficiente información"
+      ],
+      "basado_en": "actualidad.json",
+      "fecha_creacion": "2026-10-16",
+      "fecha_archivado": "2026-11-27",
+      "resultados": {
+        "Sí, atraerá más clientes a la zona": 6,
+        "Es indiferente, el impacto será limitado": 1,
+        "No, perjudicará al pequeño comercio": 2
+      },
+      "total_votos": 9
+    },
+    {
+      "id": "movilizacion-agraria-2026",
+      "pregunta": "El sector agrícola salmantino ha participado en una tractorada en Madrid para visibilizar sus demandas. ¿Cree que este tipo de movilizaciones son efectivas para lograr mejoras para el campo?",
+      "opciones": [
+        "Sí, son cruciales para presionar y conseguir cambios.",
+        "No, generan más inconvenientes que soluciones reales.",
+        "Son un paso necesario, pero deben ir acompañadas de negociación.",
+        "No tengo suficiente información."
+      ],
+      "basado_en": "actualidad.json",
+      "fecha_creacion": "2026-10-31",
+      "fecha_archivado": "2026-11-27",
+      "resultados": {
+        "No, generan más inconvenientes que soluciones reales.": 1,
+        "Sí, son cruciales para presionar y conseguir cambios.": 4,
+        "Son un paso necesario, pero deben ir acompañadas de negociación.": 1
+      },
+      "total_votos": 6
     }
   ]
 }
