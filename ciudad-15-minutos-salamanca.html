@@ -1,0 +1,365 @@
+---
+layout: default
+title: "Ciudad de 15 minutos: ¿qué tienes a tiro de piedra en tu barrio de Salamanca?"
+description: Mapa interactivo que mide qué parte de los vecinos de cada barrio tiene a 10, 15 o 20 minutos a pie un centro de salud, un colegio, un parque, una biblioteca y una parada de bus, y qué cambiaría si se abriese uno nuevo
+date: 28-11-2026
+folder: Urbanismo
+permalink: ciudad-15-minutos-salamanca
+dataset_files:
+  - servicios-proximidad-salamanca.json
+  - barrios-poblacion.json
+dataset_source: "Sacyl, Junta de Castilla y León, IDE del Ayuntamiento de Salamanca y Salamanca de Transportes (ubicación de servicios); padrón por barrios del Ayuntamiento"
+dataset_source_url: /servicios-proximidad-salamanca.json
+---
+
+    <section class="featured dataset" id="datos">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="section-title">{{ page.title }}</h1>
+                <p class="section-description">{{ page.description }}</p>
+            </div>
+
+            <div id="section-content">
+
+<p>La idea de la «ciudad de 15 minutos» es que las necesidades diarias queden a un paseo de casa. Esta herramienta mide <b>cuántos vecinos tienen cada servicio cerca</b>, barrio a barrio, y te deja <b>colocar un servicio nuevo en el mapa</b> para ver cuánta gente ganaría acceso. Todo se calcula en tu navegador.</p>
+
+<div class="cq-resumen" id="cqResumen" aria-live="polite">Cargando datos…</div>
+
+<div class="cq-controles">
+  <fieldset class="cq-radio">
+    <legend>Tiempo a pie</legend>
+    <label><input type="radio" name="cqR" value="700"> 10 min</label>
+    <label><input type="radio" name="cqR" value="1000" checked> 15 min</label>
+    <label><input type="radio" name="cqR" value="1400"> 20 min</label>
+  </fieldset>
+  <div class="cq-campo">
+    <label for="cqMetrica">Colorear el mapa por</label>
+    <select id="cqMetrica"></select>
+  </div>
+</div>
+
+<div class="cq-nuevo">
+  <b>Prueba un servicio nuevo:</b>
+  <label for="cqCat" class="cq-oculto">Tipo de servicio</label>
+  <select id="cqCat"></select>
+  <button type="button" class="cq-btn" id="cqColocar" aria-pressed="false">Colocar en el mapa</button>
+  <button type="button" class="cq-btn cq-btn-sec" id="cqQuitar">Quitar el último</button>
+  <button type="button" class="cq-btn cq-btn-sec" id="cqLimpiar">Quitar todos</button>
+  <button type="button" class="cq-btn cq-btn-sec" id="cqCopiar">Copiar enlace</button>
+  <span id="cqCopiado" class="cq-copiado" role="status"></span>
+</div>
+
+<div id="cqBarras" class="cq-barras"></div>
+
+<div class="cq-mapa-col">
+  <div id="cqMapa" class="cq-mapa" role="img" aria-label="Mapa de proximidad a servicios por barrio"></div>
+  <div class="cq-leyenda" id="cqLeyenda"></div>
+</div>
+
+<h2>Los barrios con menos servicios cerca</h2>
+<p class="cq-nota">Solo barrios con 500 o más habitantes, ordenados del que menos población tiene los cinco servicios a la vez al que más. Cada celda es el porcentaje de vecinos con ese servicio a menos del tiempo elegido.</p>
+<div class="cq-tabla-wrap" id="cqTabla"></div>
+<details class="cq-det"><summary>Ver todos los barrios</summary><div class="cq-tabla-wrap" id="cqTablaTodos"></div></details>
+
+<h2>Cómo se calcula y qué no dice</h2>
+<ul>
+<li><b>Método.</b> Se coloca una rejilla de puntos cada 70 m dentro de cada barrio y se mide la distancia en línea recta al servicio más cercano de cada tipo. La población del barrio (padrón por barrios) se reparte por igual entre sus puntos. Se asume una velocidad de 80 m por minuto: 700 m son unos 10 minutos, 1.000 m unos 15 y 1.400 m unos 20.</li>
+<li><b>Línea recta, no itinerario.</b> A pie el camino real es más largo, sobre todo con el río, las vías o los desniveles. Los resultados son por tanto optimistas.</li>
+<li><b>Solo cinco servicios.</b> Centro de salud público de atención primaria, colegio con infantil o primaria, parque o jardín de la IDE, biblioteca municipal y parada de autobús urbano. No incluye comercio de alimentación, farmacias, ocio ni servicios privados, porque no tenemos esos datos con la calidad suficiente.</li>
+<li><b>Cerca no es suficiente.</b> Tener un servicio a 10 minutos no dice si tiene plazas, horario útil o buena frecuencia. Una biblioteca que cierra a las 20:00 o un centro de salud saturado cuentan igual aquí.</li>
+<li><b>Población uniforme.</b> Dentro de un barrio no sabemos dónde vive cada persona. En barrios con zonas sin vivienda el resultado puede desviarse.</li>
+<li><b>El servicio nuevo es un ejercicio.</b> Colocar un punto en el mapa no dice si hay solar, presupuesto o demanda. Solo muestra cuánta gente quedaría dentro del radio elegido.</li>
+</ul>
+
+<p class="cq-nota">Fuentes: <a href="/centros-salud-salamanca">centros de salud</a> (Sacyl), <a href="/colegios-centros-educativos-salamanca">centros educativos</a> (Junta de Castilla y León), <a href="/zonas-verdes">parques y jardines</a> y <a href="/bibliotecas-municipales-salamanca">bibliotecas</a> (IDE del Ayuntamiento de Salamanca), <a href="/mapa-lineas-autobus">paradas de bus</a> (Salamanca de Transportes), padrón por barrios del Ayuntamiento y límites de barrios de <a href="https://www.openstreetmap.org/copyright" rel="noopener">OpenStreetMap</a> (ODbL, aproximados). Datos: <a href="/servicios-proximidad-salamanca.json">servicios</a> y <a href="/barrios-poblacion.json">barrios</a>. Método reproducible con <code>scripts/proximidad/generar_servicios.py</code>. Hermana de la herramienta de <a href="/cobertura-autobus-urbano-salamanca">cobertura del autobús</a>.</p>
+
+            </div>
+
+            {% include categories.html %}
+
+        </div>
+    </section>
+
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script><script>L.Map.addInitHook(function(){var m=this;if(!m.scrollWheelZoom)return;m.scrollWheelZoom.disable();m.on("click",function(){m.scrollWheelZoom.enable()});m.on("mouseout",function(){m.scrollWheelZoom.disable()})});</script>
+
+<style>
+.cq-resumen{padding:.9rem 1rem;border:2px solid #2C5F2D;border-radius:8px;background:#eaf3e8;font-size:1.05em;margin:1rem 0}
+.cq-controles{display:flex;flex-wrap:wrap;gap:1rem 2rem;align-items:flex-end;margin:.5rem 0 1rem}
+.cq-radio{border:1px solid var(--border-color);border-radius:6px;padding:.4rem .9rem;display:flex;gap:1rem;align-items:center}
+.cq-radio legend{font-weight:600;padding:0 .3rem;font-size:.9em}
+.cq-radio label{cursor:pointer}
+.cq-campo{display:flex;flex-direction:column;gap:.25rem}
+.cq-campo label{font-weight:600;font-size:.9em}
+.cq-controles select,.cq-nuevo select{padding:.5rem .6rem;font:inherit;border:1px solid var(--border-color);border-radius:6px}
+.cq-nuevo{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center;margin:.5rem 0 1rem;padding:.7rem .9rem;border:1px dashed #2C5F2D;border-radius:8px}
+.cq-oculto{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.cq-btn{padding:.5rem .8rem;font:inherit;font-weight:600;border:2px solid #2C5F2D;border-radius:6px;background:#2C5F2D;color:#fff;cursor:pointer}
+.cq-btn[aria-pressed=true]{background:#8a6d00;border-color:#8a6d00}
+.cq-btn-sec{background:#fff;color:#2C5F2D}
+.cq-btn:focus-visible,.cq-controles select:focus-visible,.cq-nuevo select:focus-visible,.cq-radio input:focus-visible{outline:3px solid var(--accent-color);outline-offset:2px}
+.cq-copiado{font-size:.9em;color:#2C5F2D}
+.cq-barras{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:.6rem;margin:.5rem 0 1rem}
+.cq-barra{border:1px solid var(--border-color);border-radius:6px;padding:.5rem .7rem}
+.cq-barra b{display:block;font-size:1.2em}
+.cq-barra small{color:#555}
+.cq-barra .cq-trk{height:6px;background:#e6e6e6;border-radius:3px;margin-top:.3rem}
+.cq-barra .cq-fil{height:6px;background:#2C7A3A;border-radius:3px}
+.cq-mapa{height:640px;border-radius:6px;border:1px solid var(--border-color)}
+.cq-mapa.cq-colocando{cursor:crosshair}
+.cq-leyenda{display:flex;flex-wrap:wrap;gap:.3rem .9rem;font-size:.85em;margin-top:.5rem;align-items:center}
+.cq-sw{display:inline-block;width:1.1em;height:.9em;border:1px solid #888;vertical-align:middle;margin-right:.25rem}
+.cq-nota{font-size:.9em;color:#555}
+.cq-det{margin:1rem 0}
+.cq-det summary{cursor:pointer;font-weight:600}
+.cq-tabla-wrap{overflow-x:auto}
+.cq-tabla-wrap table{width:100%;border-collapse:collapse;margin:.5rem 0;min-width:560px}
+.cq-tabla-wrap th,.cq-tabla-wrap td{padding:.4rem .6rem;border-bottom:1px solid var(--border-color);text-align:right;font-variant-numeric:tabular-nums}
+.cq-tabla-wrap th:first-child,.cq-tabla-wrap td:first-child{text-align:left}
+@media (max-width:640px){.cq-mapa{height:480px}}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var STEP = 70;
+  var CATS = [
+    { id: 'salud', nombre: 'Centro de salud', plural: 'centro de salud', color: '#c0392b' },
+    { id: 'colegio', nombre: 'Colegio (infantil o primaria)', plural: 'colegio', color: '#2471a3' },
+    { id: 'parque', nombre: 'Parque o jardín', plural: 'parque', color: '#1e8449' },
+    { id: 'biblioteca', nombre: 'Biblioteca', plural: 'biblioteca', color: '#8e44ad' },
+    { id: 'bus', nombre: 'Parada de bus', plural: 'parada de bus', color: '#d68910' }
+  ];
+  var NC = CATS.length;
+  var BARRIOS = [], P = { lat: [], lng: [], b: [] }, NEAR, base = {}, serv = {}, nuevos = [], R = 1000, metrica = 'todos', colocando = false;
+  var mapa, capaBarrios = [], capaServ, capaNuevos;
+  var fE = new Intl.NumberFormat('es-ES', { maximumFractionDigits: 0, useGrouping: 'always' });
+  var f1 = new Intl.NumberFormat('es-ES', { minimumFractionDigits: 1, maximumFractionDigits: 1 });
+  var LAT0 = 40.965, KY = 111320, KX = 111320 * Math.cos(LAT0 * Math.PI / 180);
+  function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
+
+  function pip(lat, lng, ring) {
+    var ins = false;
+    for (var i = 0, j = ring.length - 1; i < ring.length; j = i++) {
+      var yi = ring[i][0], xi = ring[i][1], yj = ring[j][0], xj = ring[j][1];
+      if (((yi > lat) !== (yj > lat)) && (lng < (xj - xi) * (lat - yi) / (yj - yi) + xi)) ins = !ins;
+    }
+    return ins;
+  }
+  function dentro(lat, lng, multi) {
+    for (var p = 0; p < multi.length; p++) {
+      var poly = multi[p];
+      if (pip(lat, lng, poly[0])) {
+        var hueco = false;
+        for (var h = 1; h < poly.length; h++) if (pip(lat, lng, poly[h])) { hueco = true; break; }
+        if (!hueco) return true;
+      }
+    }
+    return false;
+  }
+  function generaPuntos() {
+    BARRIOS.forEach(function (b, bi) {
+      var minLat = 90, maxLat = -90, minLng = 180, maxLng = -180, sx = 0, sy = 0, n = 0;
+      b.geo.forEach(function (poly) { poly[0].forEach(function (c) {
+        minLat = Math.min(minLat, c[0]); maxLat = Math.max(maxLat, c[0]); minLng = Math.min(minLng, c[1]); maxLng = Math.max(maxLng, c[1]); sy += c[0]; sx += c[1]; n++;
+      }); });
+      var dLat = STEP / KY, dLng = STEP / KX, cnt = 0;
+      for (var la = minLat + dLat / 2; la < maxLat; la += dLat) for (var lo = minLng + dLng / 2; lo < maxLng; lo += dLng) {
+        if (dentro(la, lo, b.geo)) { P.lat.push(la); P.lng.push(lo); P.b.push(bi); cnt++; }
+      }
+      if (cnt === 0) { P.lat.push(sy / n); P.lng.push(sx / n); P.b.push(bi); cnt = 1; }
+      b.npts = cnt;
+    });
+  }
+
+  function distA(i, lat, lng) {
+    var dy = (P.lat[i] - lat) * KY, dx = (P.lng[i] - lng) * KX;
+    return Math.sqrt(dx * dx + dy * dy);
+  }
+  function calculaBase() {
+    var N = P.lat.length;
+    NEAR = new Float32Array(N * NC);
+    CATS.forEach(function (c, ci) {
+      for (var i = 0; i < N; i++) {
+        var m = 1e9;
+        serv[c.id].forEach(function (s) { var d = distA(i, s[2], s[3]); if (d < m) m = d; });
+        NEAR[i * NC + ci] = m;
+      }
+    });
+  }
+  function dist(i, ci) {
+    var m = NEAR[i * NC + ci];
+    for (var k = 0; k < nuevos.length; k++) if (nuevos[k].ci === ci) { var d = distA(i, nuevos[k].lat, nuevos[k].lng); if (d < m) m = d; }
+    return m;
+  }
+
+  function calcula(conNuevos) {
+    var N = P.lat.length, cub = BARRIOS.map(function () { return { c: [0, 0, 0, 0, 0], t: 0 }; }), tot = 0, c5 = 0, ct = [0, 0, 0, 0, 0];
+    var save = nuevos; if (!conNuevos) nuevos = [];
+    for (var i = 0; i < N; i++) {
+      var bi = P.b[i], b = BARRIOS[bi], w = b.pob / b.npts, todos = true;
+      for (var ci = 0; ci < NC; ci++) {
+        if (dist(i, ci) <= R) { cub[bi].c[ci] += w; ct[ci] += w; } else todos = false;
+      }
+      if (todos) { cub[bi].t += w; c5 += w; }
+    }
+    nuevos = save;
+    BARRIOS.forEach(function (b) { tot += b.pob; });
+    return { cub: cub, ct: ct, c5: c5, tot: tot };
+  }
+
+  function color(p) {
+    var s = ['#f3f7ef', '#d6e6cd', '#a9cf9f', '#6aa86f', '#2C7A3A', '#1b4d27'];
+    return p < 20 ? s[0] : p < 40 ? s[1] : p < 60 ? s[2] : p < 80 ? s[3] : p < 95 ? s[4] : s[5];
+  }
+  function valorBarrio(b, res, bi) {
+    if (!b.pob) return 0;
+    var x = metrica === 'todos' ? res.cub[bi].t : res.cub[bi].c[metrica];
+    return 100 * x / b.pob;
+  }
+  var minutos = function () { return Math.round(R / 70); };
+
+  var baseRes = null;
+  function pinta() {
+    var res = calcula(true), ref = baseRes, mi = metrica === 'todos' ? -1 : metrica;
+    var tm = { 700: 10, 1000: 15, 1400: 20 }[R];
+    var txt = '<b>' + f1.format(100 * res.c5 / res.tot) + ' %</b> de los vecinos (' + fE.format(res.c5) + ' de ' + fE.format(res.tot) + ') tiene <b>los cinco servicios</b> a menos de ' + tm + ' minutos a pie.';
+    if (nuevos.length) {
+      var d = res.c5 - ref.c5;
+      var pl = nuevos.length > 1;
+      txt += Math.abs(d) >= 1
+        ? ' Con ' + (pl ? 'tus ' + nuevos.length + ' servicios nuevos' : 'tu servicio nuevo') + ': <b>' + (d >= 0 ? '+' : '−') + fE.format(Math.abs(d)) + ' personas</b> con los cinco servicios cerca.'
+        : ' ' + (pl ? 'Tus servicios nuevos' : 'Tu servicio nuevo') + ' no cambia' + (pl ? 'n' : '') + ' cuántos vecinos tienen los cinco a la vez, pero sí quién tiene ese servicio cerca (mira las tarjetas de abajo).';
+    }
+    document.getElementById('cqResumen').innerHTML = txt;
+
+    var h = '';
+    CATS.forEach(function (c, ci) {
+      var p = 100 * res.ct[ci] / res.tot, d = res.ct[ci] - ref.ct[ci];
+      h += '<div class="cq-barra"><small>' + esc(c.nombre) + '</small><b>' + f1.format(p) + ' %</b>' +
+        (Math.abs(d) >= 1 ? '<small class="cq-up">' + (d > 0 ? '+' : '−') + fE.format(Math.abs(d)) + ' personas con tu servicio nuevo</small>' : '<small>' + fE.format(res.ct[ci]) + ' personas</small>') +
+        '<div class="cq-trk"><div class="cq-fil" style="width:' + p.toFixed(1) + '%;background:' + c.color + '"></div></div></div>';
+    });
+    document.getElementById('cqBarras').innerHTML = h;
+
+    capaBarrios.forEach(function (it, bi) {
+      var b = it.b, p = valorBarrio(b, res, bi);
+      it.p = p; it.res = res.cub[bi];
+      it.layer.setStyle({ fillColor: b.pob < 100 ? '#e0e0e0' : color(p) });
+    });
+
+    var filas = BARRIOS.map(function (b, bi) { return { b: b, bi: bi }; });
+    function tabla(arr) {
+      var t = '<table><thead><tr><th>Barrio</th><th>Habitantes</th><th>Los 5</th>' + CATS.map(function (c) { return '<th>' + esc(c.plural.charAt(0).toUpperCase() + c.plural.slice(1)) + '</th>'; }).join('') + '</tr></thead><tbody>';
+      arr.forEach(function (f) {
+        var c = res.cub[f.bi];
+        t += '<tr><td>' + esc(f.b.nombre) + '</td><td>' + fE.format(f.b.pob) + '</td><td>' + f1.format(100 * c.t / f.b.pob) + ' %</td>' + c.c.map(function (x) { return '<td>' + f1.format(100 * x / f.b.pob) + ' %</td>'; }).join('') + '</tr>';
+      });
+      return t + '</tbody></table>';
+    }
+    filas.sort(function (a, b) { return res.cub[a.bi].t / (a.b.pob || 1) - res.cub[b.bi].t / (b.b.pob || 1); });
+    document.getElementById('cqTabla').innerHTML = tabla(filas.filter(function (f) { return f.b.pob >= 500; }).slice(0, 10));
+    document.getElementById('cqTablaTodos').innerHTML = tabla(filas.filter(function (f) { return f.b.pob >= 100; }));
+
+    capaServ.clearLayers();
+    if (metrica !== 'todos') {
+      var c = CATS[metrica];
+      serv[c.id].forEach(function (s) { L.circleMarker([s[2], s[3]], { radius: 4, weight: 1, color: '#fff', fillColor: c.color, fillOpacity: 1 }).bindTooltip(esc(s[1])).addTo(capaServ); });
+    }
+    capaNuevos.clearLayers();
+    nuevos.forEach(function (n) {
+      var c = CATS[n.ci];
+      L.circle([n.lat, n.lng], { radius: R, color: c.color, weight: 1, fillOpacity: 0.08, interactive: false }).addTo(capaNuevos);
+      L.circleMarker([n.lat, n.lng], { radius: 8, weight: 3, color: c.color, fillColor: '#fff', fillOpacity: 1 }).bindTooltip('Nuevo: ' + esc(c.nombre)).addTo(capaNuevos);
+    });
+    guarda();
+  }
+
+  function guarda() {
+    var parts = [];
+    if (R !== 1000) parts.push('r=' + R);
+    if (metrica !== 'todos') parts.push('m=' + CATS[metrica].id);
+    if (nuevos.length) parts.push('n=' + nuevos.map(function (n) { return CATS[n.ci].id + '_' + n.lat.toFixed(5) + '_' + n.lng.toFixed(5); }).join('~'));
+    try { history.replaceState(null, '', parts.length ? '#' + parts.join('&') : location.pathname); } catch (e) {}
+  }
+  function lee() {
+    location.hash.replace('#', '').split('&').forEach(function (p) {
+      var kv = p.split('=');
+      if (kv[0] === 'r' && ['700', '1000', '1400'].indexOf(kv[1]) >= 0) R = +kv[1];
+      if (kv[0] === 'm') { var i = CATS.map(function (c) { return c.id; }).indexOf(kv[1]); if (i >= 0) metrica = i; }
+      if (kv[0] === 'n' && kv[1]) kv[1].split('~').forEach(function (s) {
+        var a = s.split('_'), ci = CATS.map(function (c) { return c.id; }).indexOf(a[0]), la = parseFloat(a[1]), lo = parseFloat(a[2]);
+        if (ci >= 0 && isFinite(la) && isFinite(lo)) nuevos.push({ ci: ci, lat: la, lng: lo });
+      });
+    });
+  }
+
+  function leyenda() {
+    var cs = [['0-20 %', '#f3f7ef'], ['20-40 %', '#d6e6cd'], ['40-60 %', '#a9cf9f'], ['60-80 %', '#6aa86f'], ['80-95 %', '#2C7A3A'], ['95-100 %', '#1b4d27'], ['< 100 hab.', '#e0e0e0']];
+    document.getElementById('cqLeyenda').innerHTML = '<span>Vecinos con el servicio cerca:</span>' + cs.map(function (c) { return '<span><span class="cq-sw" style="background:' + c[1] + '"></span>' + c[0] + '</span>'; }).join('');
+  }
+
+  Promise.all([fetch('/servicios-proximidad-salamanca.json').then(function (r) { return r.json(); }), fetch('/barrios-poblacion.json?v=1').then(function (r) { return r.json(); })]).then(function (res) {
+    CATS.forEach(function (c) { serv[c.id] = res[0].servicios.filter(function (s) { return s[0] === c.id; }); });
+    var pobPor = {}; res[1].barrios.forEach(function (x) { pobPor[x[0]] = x[1]; });
+    res[1].geo.forEach(function (g) { BARRIOS.push({ nombre: g[0], geo: g[1], pob: pobPor[g[0]] || 0 }); });
+
+    lee();
+    var selM = document.getElementById('cqMetrica'), selC = document.getElementById('cqCat');
+    selM.innerHTML = '<option value="todos">Los cinco servicios a la vez</option>' + CATS.map(function (c, i) { return '<option value="' + i + '">' + esc(c.nombre) + '</option>'; }).join('');
+    selC.innerHTML = CATS.map(function (c, i) { return '<option value="' + i + '">' + esc(c.nombre) + '</option>'; }).join('');
+    selM.value = metrica;
+    var rad = document.querySelector('input[name=cqR][value="' + R + '"]'); if (rad) rad.checked = true;
+
+    mapa = L.map('cqMapa').setView([40.9650, -5.6630], 13);
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/light_all/{z}/{x}/{y}{r}.png?key=cb1_2izw_1_55d93b51ded1dcecfa044181', { attribution: '&copy; OpenStreetMap &copy; CARTO', maxZoom: 19 }).addTo(mapa);
+    BARRIOS.forEach(function (b, bi) {
+      var ly = L.polygon(b.geo, { color: '#555', weight: 1, fillOpacity: 0.65, fillColor: '#eee' }).addTo(mapa);
+      var it = { b: b, layer: ly, p: 0, res: null };
+      ly.bindPopup(function () {
+        var h = '<b>' + esc(b.nombre) + '</b><br>' + fE.format(b.pob) + ' habitantes';
+        if (it.res && b.pob) {
+          h += '<br>Los 5 servicios: ' + f1.format(100 * it.res.t / b.pob) + ' %';
+          CATS.forEach(function (c, ci) { h += '<br>' + esc(c.nombre) + ': ' + f1.format(100 * it.res.c[ci] / b.pob) + ' %'; });
+        }
+        return h;
+      });
+      ly.on('click', function (e) { if (colocando) { ly.closePopup(); anade(e.latlng); } });
+      capaBarrios.push(it);
+    });
+    mapa.on('click', function (e) { if (colocando) anade(e.latlng); });
+    capaServ = L.layerGroup().addTo(mapa);
+    capaNuevos = L.layerGroup().addTo(mapa);
+    leyenda();
+
+    generaPuntos();
+    calculaBase();
+    var sv = nuevos; nuevos = []; baseRes = calcula(false); nuevos = sv;
+    pinta();
+
+    document.querySelectorAll('input[name=cqR]').forEach(function (e) {
+      e.addEventListener('change', function () { R = +e.value; var sv2 = nuevos; nuevos = []; baseRes = calcula(false); nuevos = sv2; pinta(); });
+    });
+    selM.addEventListener('change', function () { metrica = selM.value === 'todos' ? 'todos' : +selM.value; pinta(); });
+    function anade(ll) { nuevos.push({ ci: +selC.value, lat: ll.lat, lng: ll.lng }); pinta(); }
+    var bc = document.getElementById('cqColocar');
+    bc.addEventListener('click', function () {
+      colocando = !colocando;
+      bc.setAttribute('aria-pressed', colocando ? 'true' : 'false');
+      bc.textContent = colocando ? 'Haz clic en el mapa (pulsa para terminar)' : 'Colocar en el mapa';
+      document.getElementById('cqMapa').classList.toggle('cq-colocando', colocando);
+      if (colocando) mapa.scrollWheelZoom.enable();
+    });
+    document.getElementById('cqQuitar').addEventListener('click', function () { nuevos.pop(); pinta(); });
+    document.getElementById('cqLimpiar').addEventListener('click', function () { nuevos = []; pinta(); });
+    document.getElementById('cqCopiar').addEventListener('click', function () {
+      var out = document.getElementById('cqCopiado');
+      function ok() { out.textContent = 'Enlace copiado'; setTimeout(function () { out.textContent = ''; }, 2500); }
+      if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(location.href).then(ok, function () { window.prompt('Copia este enlace:', location.href); });
+      else window.prompt('Copia este enlace:', location.href);
+    });
+  }).catch(function (e) {
+    document.getElementById('cqResumen').textContent = 'No se han podido cargar los datos. Inténtalo de nuevo más tarde.';
+    if (window.console) console.error(e);
+  });
+});
+</script>
