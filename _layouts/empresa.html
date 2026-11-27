@@ -1,0 +1,113 @@
+---
+layout: default
+---
+{%- comment -%}
+  Ficha de empresa. Fuente única: _data/empresas/<slug>.json (page.slug).
+  Solo datos con fuente; lo no contrastado va en "no_verificado".
+{%- endcomment -%}
+{%- assign e = site.data.empresas[page.slug] -%}
+{%- assign canon = e.url_canonica -%}
+<style>
+  .ficha-emp .ans{background:#eef6ff;border:1px solid #c9dcf3;padding:14px 16px;border-radius:6px;font-size:1.08em;margin:0 0 1.2em}
+  .ficha-emp .warn{background:#fff8e6;border:1px solid #ecd9a6;padding:10px 14px;border-radius:6px;font-size:.95em}
+  .ficha-emp dl.rapida{display:grid;grid-template-columns:minmax(150px,240px) 1fr;gap:6px 16px;margin:1em 0}
+  .ficha-emp dl.rapida dt{font-weight:700}.ficha-emp dl.rapida dd{margin:0}
+  .ficha-emp .fu{font-size:.85em;color:#5b6778;margin:.2em 0 0}
+  .ficha-emp .tabla{overflow-x:auto}
+  .ficha-emp details{border:1px solid #d9dee6;border-radius:6px;padding:8px 12px;margin:8px 0}
+  .ficha-emp summary{font-weight:700;cursor:pointer}
+  @media (max-width:600px){.ficha-emp dl.rapida{grid-template-columns:1fr}}
+</style>
+
+<section class="featured dataset ficha-emp" id="datos">
+  <div class="container">
+    <div class="section-header">
+      <h1 class="section-title">{{ page.title }}</h1>
+      <p class="section-description">{{ page.description }}</p>
+    </div>
+    <div id="section-content">
+      <p class="ans">{{ e.resumen }}</p>
+      <p class="fu">Ficha actualizada el {{ e.actualizado_texto }} ({{ e.estado_ficha }}). Parte de <a href="/empresas-salamanca">las mayores empresas de la provincia de Salamanca</a> y del <a href="/ranking-empresas-facturacion">ranking de empresas por facturación</a>. Datos descargables: <a href="/empresas/{{ page.slug }}.json">{{ page.slug }}.json</a> ({{ e.licencia }}).</p>
+
+      <h2>Ficha rápida</h2>
+      <dl class="rapida">
+        {%- for r in e.rapida %}<dt>{{ r.k }}</dt><dd>{{ r.v }}</dd>{%- endfor %}
+      </dl>
+
+      <h2>Cifras con su fuente</h2>
+      <div class="tabla"><table border="1" cellpadding="5" cellspacing="0">
+        <thead><tr><th>Concepto</th><th>Dato</th><th>Fuente</th></tr></thead>
+        <tbody>
+        {%- for c in e.cifras %}
+          <tr><td>{{ c.concepto }}</td><td>{{ c.valor }}</td><td><a href="{{ c.fuente.u }}" rel="nofollow noopener">{{ c.fuente.t }}</a></td></tr>
+        {%- endfor %}
+        </tbody>
+      </table></div>
+      <p class="fu">{{ e.nota_cifras }}</p>
+
+      <h2>Directivos y órgano de administración</h2>
+      {%- if e.directivos.size > 0 %}
+      <ul>
+        {%- for d in e.directivos %}
+        <li><b>{% if d.ficha and d.ficha != "" %}<a href="{{ d.ficha }}">{{ d.nombre }}</a>{% else %}{{ d.nombre }}{% endif %}</b>: {{ d.cargo }}. <span class="fu">Fuente: <a href="{{ d.fuente.u }}" rel="nofollow noopener">{{ d.fuente.t }}</a></span></li>
+        {%- endfor %}
+      </ul>
+      <p class="fu">Los cargos proceden del BORME recogido por directorios y pueden no estar vigentes; consulta el Registro Mercantil para el dato oficial actual.</p>
+      {%- else %}
+      <p>No hay cargos de administración vigentes con fuente fiable. Los datos del BORME consultados solo muestran apoderados o socio único.</p>
+      {%- endif %}
+
+      <h2>Historia y hitos</h2>
+      <ol>
+        {%- for h in e.historia %}
+        <li><b>{{ h.fecha }} · {{ h.hito }}.</b> {{ h.detalle }} <span class="fu">Fuente: <a href="{{ h.fuente.u }}" rel="nofollow noopener">{{ h.fuente.t }}</a></span></li>
+        {%- endfor %}
+      </ol>
+
+      <h2>Qué no está verificado</h2>
+      <div class="warn">
+        <ul>{%- for n in e.no_verificado %}<li>{{ n }}</li>{%- endfor %}</ul>
+        <p>¿Eres de la empresa y quieres corregir o ampliar algún dato? Escríbenos desde la <a href="/contacto">página de contacto</a> y lo revisamos con tu fuente.</p>
+      </div>
+
+      <h2>Preguntas frecuentes</h2>
+      {%- for f in e.faq %}
+      <details open><summary>{{ f.q }}</summary><p>{{ f.a }}</p></details>
+      {%- endfor %}
+
+      <h2>Fuentes</h2>
+      <ul>{%- for s in e.fuentes %}<li><a href="{{ s.u }}" rel="nofollow noopener">{{ s.t }}</a></li>{%- endfor %}</ul>
+
+      <h2>Cómo citar esta ficha</h2>
+      <p>{{ e.como_citar }}</p>
+    </div>
+    {% include categories.html %}
+  </div>
+</section>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": {{ canon | append: "#org" | jsonify }},
+      "name": {{ e.nombre_habitual | jsonify }},
+      "legalName": {{ e.razon_social | jsonify }},
+      "description": {{ e.resumen | jsonify }},
+      "url": {{ canon | jsonify }},
+      "address": { "@type": "PostalAddress", "addressLocality": "Salamanca", "addressRegion": "Castilla y León", "addressCountry": "ES" },
+      "sameAs": [{% for s in e.sameas %}{{ s | jsonify }}{% unless forloop.last %}, {% endunless %}{% endfor %}],
+      "mainEntityOfPage": { "@id": {{ canon | jsonify }} }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {%- for f in e.faq %}
+        { "@type": "Question", "name": {{ f.q | jsonify }}, "acceptedAnswer": { "@type": "Answer", "text": {{ f.a | jsonify }} } }{% unless forloop.last %},{% endunless %}
+        {%- endfor %}
+      ]
+    }
+  ]
+}
+</script>

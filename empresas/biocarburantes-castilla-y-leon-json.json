@@ -1,0 +1,5 @@
+---
+permalink: empresas/biocarburantes-castilla-y-leon.json
+sitemap: false
+---
+{{ site.data.empresas["biocarburantes-castilla-y-leon"] | jsonify }}

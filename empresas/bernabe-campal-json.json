@@ -1,0 +1,5 @@
+---
+permalink: empresas/bernabe-campal.json
+sitemap: false
+---
+{{ site.data.empresas["bernabe-campal"] | jsonify }}

@@ -1,0 +1,5 @@
+---
+permalink: empresas/grupo-corral-rendering.json
+sitemap: false
+---
+{{ site.data.empresas["grupo-corral-rendering"] | jsonify }}

@@ -1,0 +1,178 @@
+{
+  "slug": "biocarburantes-castilla-y-leon",
+  "url_canonica": "https://opensalamanca.es/empresas/biocarburantes-castilla-y-leon",
+  "nombre_habitual": "Biocarburantes de Castilla y León",
+  "razon_social": "Biocarburantes de Castilla y León SA",
+  "actualizado": "2026-11-27",
+  "actualizado_texto": "27 de noviembre de 2026",
+  "estado_ficha": "piloto: sin cifras de ventas verificadas (InfoNIF las oculta); pendiente de contrastar cuentas depositadas y producción actual",
+  "licencia": "CC BY 4.0",
+  "sameas": [],
+  "resumen": "Biocarburantes de Castilla y León SA es la sociedad titular de la planta de bioetanol de Babilafuente (Salamanca), con una capacidad anunciada de 200 millones de litros al año; pertenece al grupo Vertex Bioenergy. Ocupa el puesto 4 por ventas 2024 entre las sociedades domiciliadas en la provincia según el ranking de InfoNIF (1.036.º a nivel nacional). No hay una cifra de ventas verificada con fuente abierta.",
+  "rapida": [
+    {
+      "k": "Razón social",
+      "v": "Biocarburantes de Castilla y León SA (NIF A91079715)"
+    },
+    {
+      "k": "Sector",
+      "v": "Producción de bioetanol a partir de cereal"
+    },
+    {
+      "k": "Domicilio",
+      "v": "Carretera de Encinas a Cantalapiedra, km 4,9, 37330 Babilafuente (Salamanca)"
+    },
+    {
+      "k": "Grupo",
+      "v": "Vertex Bioenergy SL (sociedad matriz según InfoNIF)"
+    },
+    {
+      "k": "Capacidad de la planta",
+      "v": "200 millones de litros de bioetanol al año, con un consumo de 585.000 toneladas de cereal (dato de 2017)"
+    },
+    {
+      "k": "Consejeros delegados mancomunados",
+      "v": "Ignacio García de Alvear; Salvador Martos Barrionuevo y Antonio José Vallespir de Gregorio (BORME 2023, vía InfoNIF)"
+    },
+    {
+      "k": "Posición por ventas 2024",
+      "v": "4.ª entre las sociedades domiciliadas en la provincia de Salamanca; 1.036.ª a nivel nacional (InfoNIF)"
+    }
+  ],
+  "cifras": [
+    {
+      "concepto": "Capacidad anual de producción de bioetanol",
+      "valor": "200 millones de litros, con 585.000 toneladas de cereal",
+      "fuente": {
+        "t": "AgroNews Castilla y León: la planta de bioetanol de Babilafuente retoma la actividad (junio de 2017)",
+        "u": "https://www.agronewscastillayleon.com/la-planta-de-bioetanol-de-babilafuente-retoma-hoy-la-actividad"
+      }
+    },
+    {
+      "concepto": "Precio de compra de las plantas de Abengoa por Trilantic Europe (2017)",
+      "valor": "140 millones de euros en total",
+      "fuente": {
+        "t": "AgroNews Castilla y León: la planta de bioetanol de Babilafuente retoma la actividad (junio de 2017)",
+        "u": "https://www.agronewscastillayleon.com/la-planta-de-bioetanol-de-babilafuente-retoma-hoy-la-actividad"
+      }
+    }
+  ],
+  "nota_cifras": "No se ha localizado ninguna cifra de ventas 2024 en abierto: InfoNIF oculta los importes. La capacidad de 200 millones de litros es un dato anunciado de 2017 y no equivale a la producción real de cada año. La cifra de 140 millones corresponde al conjunto de plantas vendidas por Abengoa a Trilantic Europe, no solo a la de Babilafuente. InfoNIF muestra una plantilla parcialmente oculta (empieza por 7, con el resto de dígitos oculto).",
+  "directivos": [
+    {
+      "nombre": "Ignacio García de Alvear",
+      "cargo": "Consejero delegado mancomunado",
+      "fuente": {
+        "t": "InfoNIF: ficha de Biocarburantes de Castilla y León SA",
+        "u": "https://infonif.economia3.com/ficha-empresa/biocarburantes-de-castilla-y-leon-sa"
+      },
+      "ficha": ""
+    },
+    {
+      "nombre": "Salvador Martos Barrionuevo",
+      "cargo": "Consejero delegado mancomunado (BORME 2023)",
+      "fuente": {
+        "t": "InfoNIF: ficha de Biocarburantes de Castilla y León SA",
+        "u": "https://infonif.economia3.com/ficha-empresa/biocarburantes-de-castilla-y-leon-sa"
+      },
+      "ficha": ""
+    },
+    {
+      "nombre": "Antonio José Vallespir de Gregorio",
+      "cargo": "Presidente y consejero delegado mancomunado (BORME 2023)",
+      "fuente": {
+        "t": "InfoNIF: ficha de Biocarburantes de Castilla y León SA",
+        "u": "https://infonif.economia3.com/ficha-empresa/biocarburantes-de-castilla-y-leon-sa"
+      },
+      "ficha": ""
+    }
+  ],
+  "historia": [
+    {
+      "fecha": "2000",
+      "hito": "Constitución de la sociedad",
+      "detalle": "InfoNIF indica el 7 de septiembre de 2000 como fecha asociada a la constitución (el campo no está etiquetado).",
+      "fuente": {
+        "t": "InfoNIF: ficha de Biocarburantes de Castilla y León SA",
+        "u": "https://infonif.economia3.com/ficha-empresa/biocarburantes-de-castilla-y-leon-sa"
+      }
+    },
+    {
+      "fecha": "2006",
+      "hito": "Inicio de la producción en Babilafuente",
+      "detalle": "La planta, promovida por Abengoa, empezó a producir bioetanol en 2006 según la bibliografía consultada.",
+      "fuente": {
+        "t": "Ministerio de Agricultura: revista LEAD (2006)",
+        "u": "https://mapa.gob.es/ministerio/pags/Biblioteca/Revistas/pdf%5FLEAD%2FALE%5F2006%5F32%5F10%5F11%2Epdf"
+      }
+    },
+    {
+      "fecha": "Junio de 2017",
+      "hito": "Reanudación de la actividad tras la venta a Trilantic Europe",
+      "detalle": "La planta estuvo parada más de un año por la situación financiera de Abengoa y retomó la producción el 15 de junio de 2017 tras ser adquirida por el fondo Trilantic Europe.",
+      "fuente": {
+        "t": "AgroNews Castilla y León: la planta de bioetanol de Babilafuente retoma la actividad (junio de 2017)",
+        "u": "https://www.agronewscastillayleon.com/la-planta-de-bioetanol-de-babilafuente-retoma-hoy-la-actividad"
+      }
+    },
+    {
+      "fecha": "2023",
+      "hito": "Grupo Vertex Bioenergy",
+      "detalle": "La planta figura como operada por Vertex Bioenergy, que cuenta con otras biorrefinerías en España y Francia.",
+      "fuente": {
+        "t": "AgroNews Castilla y León: Grupo Operativo Maíz Sostenible (abril de 2023)",
+        "u": "https://www.agronewscastillayleon.com/?p=115636"
+      }
+    }
+  ],
+  "no_verificado": [
+    "Ventas 2024 y evolución: InfoNIF las oculta sin suscripción y no se ha localizado otra fuente abierta.",
+    "Producción real reciente de la planta de Babilafuente: una búsqueda apunta a 252.404 m3 en 2024, pero no se ha podido abrir la fuente y no se incluye como cifra.",
+    "Plantilla: InfoNIF la muestra parcialmente oculta.",
+    "Composición completa del consejo: el listado de InfoNIF está incompleto; los nombramientos de 2023 deben contrastarse con el BORME actual.",
+    "Año de inicio de la producción (2006): procede de una referencia bibliográfica no abierta íntegramente en esta revisión.",
+    "Código CNAE y sitio web oficial de la sociedad: no localizados en las fuentes consultadas.",
+    "Cuota sobre el bioetanol producido en España: no verificada."
+  ],
+  "faq": [
+    {
+      "q": "¿Qué es Biocarburantes de Castilla y León?",
+      "a": "Es la sociedad propietaria de la planta de bioetanol de Babilafuente (Salamanca), que produce bioetanol a partir de cereal. Pertenece al grupo Vertex Bioenergy."
+    },
+    {
+      "q": "¿Cuál es la capacidad de la planta de Babilafuente?",
+      "a": "200 millones de litros de bioetanol al año, con un consumo de 585.000 toneladas de cereal, según AgroNews Castilla y León en 2017. Es capacidad anunciada, no producción real."
+    },
+    {
+      "q": "¿Cuánto factura?",
+      "a": "No hay una cifra de ventas verificada en abierto. InfoNIF la sitúa 4.ª por ventas 2024 entre las sociedades domiciliadas en la provincia, pero oculta el importe."
+    },
+    {
+      "q": "¿Quién era el propietario antes de Vertex?",
+      "a": "La planta nació dentro del grupo Abengoa y en 2017 fue adquirida por el fondo Trilantic Europe, tras estar parada más de un año."
+    }
+  ],
+  "fuentes": [
+    {
+      "t": "InfoNIF: ranking de ventas de empresas de Salamanca 2024",
+      "u": "https://infonif.economia3.com/ranking/ventas-empresas/salamanca"
+    },
+    {
+      "t": "InfoNIF: ficha de Biocarburantes de Castilla y León SA",
+      "u": "https://infonif.economia3.com/ficha-empresa/biocarburantes-de-castilla-y-leon-sa"
+    },
+    {
+      "t": "AgroNews Castilla y León: la planta de bioetanol de Babilafuente retoma la actividad (junio de 2017)",
+      "u": "https://www.agronewscastillayleon.com/la-planta-de-bioetanol-de-babilafuente-retoma-hoy-la-actividad"
+    },
+    {
+      "t": "AgroNews Castilla y León: Grupo Operativo Maíz Sostenible (abril de 2023)",
+      "u": "https://www.agronewscastillayleon.com/?p=115636"
+    },
+    {
+      "t": "Ministerio de Agricultura: revista LEAD (2006)",
+      "u": "https://mapa.gob.es/ministerio/pags/Biblioteca/Revistas/pdf%5FLEAD%2FALE%5F2006%5F32%5F10%5F11%2Epdf"
+    }
+  ],
+  "como_citar": "Open Salamanca (2026). Ficha de Biocarburantes de Castilla y León SA. https://opensalamanca.es/empresas/biocarburantes-castilla-y-leon. Licencia CC BY 4.0."
+}

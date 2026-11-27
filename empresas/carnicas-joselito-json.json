@@ -1,0 +1,5 @@
+---
+permalink: empresas/carnicas-joselito.json
+sitemap: false
+---
+{{ site.data.empresas["carnicas-joselito"] | jsonify }}

@@ -1,0 +1,5 @@
+---
+permalink: empresas/panelais-producciones.json
+sitemap: false
+---
+{{ site.data.empresas["panelais-producciones"] | jsonify }}

@@ -1,0 +1,5 @@
+---
+permalink: empresas/cuperal.json
+sitemap: false
+---
+{{ site.data.empresas["cuperal"] | jsonify }}

@@ -1,0 +1,152 @@
+{
+  "slug": "alberto-diaz",
+  "url_canonica": "https://opensalamanca.es/personas/alberto-diaz",
+  "nombre_habitual": "Alberto Díaz",
+  "nombre_completo": "Alberto Díaz San Miguel",
+  "tipo": "institucional",
+  "actualizado": "2026-11-27",
+  "actualizado_texto": "27 de noviembre de 2026",
+  "estado_ficha": "borrador: datos limitados a la trayectoria pública documentada en prensa y en la web de la Cámara",
+  "licencia": "CC BY 4.0",
+  "sameas": [
+    "https://www.camarasalamanca.com"
+  ],
+  "cargo_actual": {
+    "cargo": "Presidente",
+    "organizacion": "Cámara Oficial de Comercio, Industria y Servicios de Salamanca",
+    "organizacion_url": "https://www.camarasalamanca.com",
+    "desde": "2025-09-17"
+  },
+  "resumen": "Alberto Díaz San Miguel es el presidente de la Cámara Oficial de Comercio, Industria y Servicios de Salamanca. Fue designado por el pleno en septiembre de 2025, cuando dimitió Benjamín Crespo, y fue reelegido por unanimidad el 20 de julio de 2026 para un mandato de cuatro años. Según la prensa local, es consejero delegado del Grupo Ferpal, dedicado a la promoción y gestión inmobiliaria.",
+  "rapida": [
+    {
+      "k": "Cargo",
+      "v": "Presidente de la Cámara Oficial de Comercio, Industria y Servicios de Salamanca"
+    },
+    {
+      "k": "En el cargo desde",
+      "v": "17 de septiembre de 2025 (reelegido el 20 de julio de 2026, mandato de cuatro años)"
+    },
+    {
+      "k": "Cargo anterior en la Cámara",
+      "v": "Vicepresidente primero"
+    },
+    {
+      "k": "Actividad empresarial",
+      "v": "Consejero delegado (CEO) del Grupo Ferpal, promoción y gestión inmobiliaria, según SALAMANCArtv AL DÍA"
+    },
+    {
+      "k": "Institución",
+      "v": "Corporación de derecho público fundada el 29 de julio de 1886, con sede en la plaza de los Sexmeros, 2, Salamanca"
+    }
+  ],
+  "trayectoria": [
+    {
+      "fecha": "20 de julio de 2026",
+      "hito": "Reelegido presidente de la Cámara",
+      "detalle": "El pleno constituyente de la Cámara lo reeligió por unanimidad, con candidatura única, para un nuevo mandato de cuatro años. El acto fue presidido por el consejero de Industria, Universidades, Empleo y Comercio de la Junta de Castilla y León, Juan Carlos Suárez-Quiñones. Entre sus prioridades citó las infraestructuras ferroviarias, la capacidad energética y la colaboración entre administraciones y empresas.",
+      "fuente": {
+        "t": "Cámara de Comercio de Salamanca: Alberto Díaz inicia un nuevo mandato",
+        "u": "https://www.camarasalamanca.com/actualidad/alberto-diaz-inicia-un-nuevo-mandato-al-frente-de-la-camara-de-comercio-con-el-compromiso-de-reforzar-la-competitividad-empresarial-de-salamanca"
+      }
+    },
+    {
+      "fecha": "17 de septiembre de 2025",
+      "hito": "Nombrado presidente de la Cámara",
+      "detalle": "Un pleno extraordinario lo designó presidente tras la dimisión de Benjamín Crespo, que dejó el cargo tras casi nueve años. Díaz San Miguel era hasta entonces vicepresidente primero y Crespo había propuesto su nombre.",
+      "fuente": {
+        "t": "SALAMANCArtv AL DÍA: Alberto Díaz San Miguel, nuevo presidente de la Cámara de Comercio",
+        "u": "https://salamancartvaldia.es/noticia/2025-09-17-alberto-diaz-san-miguel-nuevo-presidente-de-la-camara-de-comercio-de-salamanca-376638"
+      }
+    },
+    {
+      "fecha": "Hasta septiembre de 2025",
+      "hito": "Vicepresidente primero de la Cámara",
+      "detalle": "Ocupaba la vicepresidencia primera de la Cámara antes de acceder a la presidencia. La fecha de inicio en ese cargo no consta en las fuentes consultadas.",
+      "fuente": {
+        "t": "SALAMANCArtv AL DÍA: Alberto Díaz San Miguel, nuevo presidente de la Cámara de Comercio",
+        "u": "https://salamancartvaldia.es/noticia/2025-09-17-alberto-diaz-san-miguel-nuevo-presidente-de-la-camara-de-comercio-de-salamanca-376638"
+      }
+    },
+    {
+      "fecha": "Sin fecha",
+      "hito": "CEO del Grupo Ferpal",
+      "detalle": "La prensa local lo identifica como consejero delegado del Grupo Ferpal, empresa de promoción y gestión inmobiliaria en toda España. No constan las fechas de ese cargo.",
+      "fuente": {
+        "t": "SALAMANCArtv AL DÍA: Alberto Díaz San Miguel, nuevo presidente de la Cámara de Comercio",
+        "u": "https://salamancartvaldia.es/noticia/2025-09-17-alberto-diaz-san-miguel-nuevo-presidente-de-la-camara-de-comercio-de-salamanca-376638"
+      }
+    }
+  ],
+  "vinculos": [
+    {
+      "tipo": "organizacion",
+      "nombre": "Cámara Oficial de Comercio, Industria y Servicios de Salamanca",
+      "detalle": "Corporación de derecho público que representa, promueve y defiende los intereses generales del comercio, la industria y los servicios de la provincia; fundada en 1886.",
+      "url_interna": "",
+      "fuente": {
+        "t": "Cámara de Comercio de Salamanca: La Cámara",
+        "u": "https://www.camarasalamanca.com/la-camara"
+      }
+    },
+    {
+      "tipo": "dataset",
+      "nombre": "Ranking de empresas por facturación",
+      "detalle": "Datos de Open Salamanca sobre el tejido empresarial de la provincia, contexto de la actividad que representa la Cámara.",
+      "url_interna": "/ranking-empresas-facturacion"
+    },
+    {
+      "tipo": "dataset",
+      "nombre": "Comercio y actividad empresarial",
+      "detalle": "Datos de Open Salamanca sobre la actividad empresarial en la provincia.",
+      "url_interna": "/comercio-actividad-empresarial"
+    }
+  ],
+  "no_verificado": [
+    "Las fuentes consultadas no detallan la trayectoria profesional de Alberto Díaz San Miguel más allá de su cargo en el Grupo Ferpal y de su paso por la vicepresidencia de la Cámara.",
+    "No se ha comprobado una página institucional con su biografía; el segundo apellido procede de una noticia de SALAMANCArtv AL DÍA (17-09-2025), no de la web de la Cámara.",
+    "No consta la composición del comité ejecutivo ni de las vicepresidencias del mandato iniciado en julio de 2026.",
+    "No se ha verificado la titularidad ni las cuentas del Grupo Ferpal."
+  ],
+  "faq": [
+    {
+      "q": "¿Quién es el presidente de la Cámara de Comercio de Salamanca?",
+      "a": "Alberto Díaz San Miguel, reelegido por unanimidad el 20 de julio de 2026 para un mandato de cuatro años, según la web de la Cámara y La Crónica de Salamanca."
+    },
+    {
+      "q": "¿Desde cuándo preside la Cámara de Comercio de Salamanca?",
+      "a": "Desde el 17 de septiembre de 2025, cuando el pleno lo designó tras la dimisión de Benjamín Crespo. En julio de 2026 inició un nuevo mandato."
+    },
+    {
+      "q": "¿A qué se dedica Alberto Díaz fuera de la Cámara?",
+      "a": "La prensa local lo identifica como consejero delegado del Grupo Ferpal, dedicado a la promoción y gestión inmobiliaria. Esa información no consta en la web de la Cámara."
+    },
+    {
+      "q": "¿Qué es la Cámara de Comercio de Salamanca?",
+      "a": "Una corporación de derecho público fundada el 29 de julio de 1886 que representa y defiende los intereses generales del comercio, la industria y los servicios de la provincia y ofrece formación, asesoramiento e internacionalización a las empresas."
+    }
+  ],
+  "fuentes": [
+    {
+      "t": "Cámara de Comercio de Salamanca: Alberto Díaz inicia un nuevo mandato",
+      "u": "https://www.camarasalamanca.com/actualidad/alberto-diaz-inicia-un-nuevo-mandato-al-frente-de-la-camara-de-comercio-con-el-compromiso-de-reforzar-la-competitividad-empresarial-de-salamanca"
+    },
+    {
+      "t": "Cámara de Comercio de Salamanca: La Cámara",
+      "u": "https://www.camarasalamanca.com/la-camara"
+    },
+    {
+      "t": "SALAMANCArtv AL DÍA: Alberto Díaz San Miguel, nuevo presidente (17-09-2025)",
+      "u": "https://salamancartvaldia.es/noticia/2025-09-17-alberto-diaz-san-miguel-nuevo-presidente-de-la-camara-de-comercio-de-salamanca-376638"
+    },
+    {
+      "t": "La Crónica de Salamanca: Alberto Díaz, reelegido presidente por unanimidad",
+      "u": "https://lacronicadesalamanca.com/700899-alberto-diaz-reelegido-presidente-por-unanimidad-camara-comercio/"
+    },
+    {
+      "t": "La Gaceta de Salamanca: La Cámara abre un nuevo mandato (20-07-2026)",
+      "u": "https://www.lagacetadesalamanca.es/salamanca/camara-abre-nuevo-mandato-vista-puesta-atraer-20260720144007-nt.html"
+    }
+  ],
+  "como_citar": "Open Salamanca: «Alberto Díaz». Ficha de persona, actualizada el 27 de noviembre de 2026. https://opensalamanca.es/personas/alberto-diaz (CC BY 4.0)."
+}

@@ -1,0 +1,5 @@
+---
+permalink: personas/isidoro-alanis.json
+sitemap: false
+---
+{{ site.data.personas["isidoro-alanis"] | jsonify }}

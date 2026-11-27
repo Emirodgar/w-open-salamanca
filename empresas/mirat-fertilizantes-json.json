@@ -1,0 +1,5 @@
+---
+permalink: empresas/mirat-fertilizantes.json
+sitemap: false
+---
+{{ site.data.empresas["mirat-fertilizantes"] | jsonify }}

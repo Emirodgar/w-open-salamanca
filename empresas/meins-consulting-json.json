@@ -1,0 +1,5 @@
+---
+permalink: empresas/meins-consulting.json
+sitemap: false
+---
+{{ site.data.empresas["meins-consulting"] | jsonify }}

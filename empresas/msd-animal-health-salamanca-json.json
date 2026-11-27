@@ -1,0 +1,5 @@
+---
+permalink: empresas/msd-animal-health-salamanca.json
+sitemap: false
+---
+{{ site.data.empresas["msd-animal-health-salamanca"] | jsonify }}

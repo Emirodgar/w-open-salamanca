@@ -1,0 +1,62 @@
+{
+  "slug": "calderon-y-ramos",
+  "url_canonica": "https://opensalamanca.es/empresas/calderon-y-ramos",
+  "nombre_habitual": "Calderón y Ramos (Estrella de Castilla)",
+  "razon_social": "Productos Ibéricos Calderón y Ramos SL",
+  "actualizado": "2026-11-27",
+  "actualizado_texto": "27 de noviembre de 2026",
+  "estado_ficha": "borrador verificado con Alimarket, InfoNIF y web oficial: pendiente de contrastar cuentas depositadas y órgano de administración vigente en el BORME",
+  "licencia": "CC BY 4.0",
+  "sameas": ["https://www.estrelladecastilla.es"],
+  "resumen": "Productos Ibéricos Calderón y Ramos SL, que comercializa con la marca Estrella de Castilla, es una empresa de productos ibéricos frescos y curados con sede en Guijuelo (Salamanca). Según Alimarket superó los 100 millones de euros de ingresos (artículo de marzo de 2025) y ocupa el puesto 10 por ventas 2024 entre las empresas de la provincia en el ranking de InfoNIF (3.104.º a nivel nacional).",
+  "rapida": [
+    {"k": "Nombre comercial", "v": "Calderón y Ramos / Estrella de Castilla"},
+    {"k": "Razón social", "v": "Productos Ibéricos Calderón y Ramos SL (NIF B37477460)"},
+    {"k": "Sector", "v": "Productos ibéricos frescos y curados (jamón, paleta, embutidos)"},
+    {"k": "Domicilio", "v": "Guijuelo (Salamanca): calle Sierra de Francia 60 según InfoNIF; la web oficial indica calle Filiberto Villalobos 180"},
+    {"k": "Presidenta", "v": "Estrella Copete García (según el BORME de agosto de 2020 recogido por InfoNIF)"},
+    {"k": "Posición por ventas 2024", "v": "10.ª entre las sociedades domiciliadas en la provincia de Salamanca; 3.104.ª a nivel nacional (InfoNIF)"},
+    {"k": "Web oficial", "v": "https://www.estrelladecastilla.es"}
+  ],
+  "cifras": [
+    {"concepto": "Ingresos (publicados en marzo de 2025)", "valor": "más de 100 millones de euros", "fuente": {"t": "Alimarket: Calderón y Ramos llega a los 100 M€ de ingresos y se impulsa en curados", "u": "https://www.alimarket.es/alimentacion/noticia/405772/calderon-y-ramos-llega-a-los-100-m--de-ingresos-y-se-impulsa-en-curados"}},
+    {"concepto": "Facturación 2010", "valor": "61 millones de euros", "fuente": {"t": "Alimarket: Calderón y Ramos (Estrella de Castilla) facturó 61 M€ en 2010", "u": "https://www.alimarket.es/alimentacion/noticia/57173/calderon-y-ramos---estrella-de-castilla---facturo-61-m--en-2010"}},
+    {"concepto": "Reducción de capital (2018)", "valor": "32.856.156 euros, con capital resultante de 27.023.844 euros", "fuente": {"t": "InfoNIF: ficha de Productos Ibéricos Calderón y Ramos SL (BORME)", "u": "https://infonif.economia3.com/ficha-empresa/productos-ibericos-calderon-y-ramos-sl"}}
+  ],
+  "nota_cifras": "La cifra de más de 100 millones procede de un resumen de Alimarket que no precisa el ejercicio al que se refiere (probablemente 2024). InfoNIF oculta las ventas sin suscripción, por lo que no se han contrastado con las cuentas depositadas.",
+  "directivos": [
+    {"nombre": "Estrella Copete García", "cargo": "Presidenta del consejo de administración", "fuente": {"t": "InfoNIF: ficha de Productos Ibéricos Calderón y Ramos SL (BORME, 20/08/2020)", "u": "https://infonif.economia3.com/ficha-empresa/productos-ibericos-calderon-y-ramos-sl"}, "ficha": ""},
+    {"nombre": "Luis Ramos Copete", "cargo": "Consejero delegado solidario", "fuente": {"t": "InfoNIF: ficha de Productos Ibéricos Calderón y Ramos SL (BORME, 20/08/2020)", "u": "https://infonif.economia3.com/ficha-empresa/productos-ibericos-calderon-y-ramos-sl"}, "ficha": ""},
+    {"nombre": "Carlos Ramos Copete", "cargo": "Secretario del consejo y consejero delegado solidario", "fuente": {"t": "InfoNIF: ficha de Productos Ibéricos Calderón y Ramos SL (BORME, 20/08/2020)", "u": "https://infonif.economia3.com/ficha-empresa/productos-ibericos-calderon-y-ramos-sl"}, "ficha": ""}
+  ],
+  "historia": [
+    {"fecha": "1982", "hito": "Inicio de la tradición de la marca", "detalle": "La web oficial presenta la empresa con la leyenda «Tradición desde 1982».", "fuente": {"t": "Calderón y Ramos: web oficial", "u": "https://www.estrelladecastilla.es"}},
+    {"fecha": "2009", "hito": "Nuevas instalaciones y fabricación para Mercadona", "detalle": "Alimarket informa de que la empresa fabricará ibéricos para Mercadona en sus nuevas instalaciones.", "fuente": {"t": "Alimarket: Calderón y Ramos fabricará ibéricos para Mercadona en sus nuevas instalaciones", "u": "https://www.alimarket.es/alimentacion/noticia/17249/calderon-y-ramos-fabricara-ibericos-para-mercadona-en-sus-nuevas-instalaciones"}},
+    {"fecha": "2018", "hito": "Reducción de capital", "detalle": "Se reduce el capital en 32.856.156 euros, hasta 27.023.844 euros.", "fuente": {"t": "InfoNIF: ficha de Productos Ibéricos Calderón y Ramos SL (BORME)", "u": "https://infonif.economia3.com/ficha-empresa/productos-ibericos-calderon-y-ramos-sl"}},
+    {"fecha": "2020", "hito": "Renovación del consejo de administración", "detalle": "El BORME de agosto de 2020 recoge ceses y nuevos nombramientos de presidenta, secretario y consejeros delegados solidarios.", "fuente": {"t": "InfoNIF: ficha de Productos Ibéricos Calderón y Ramos SL (BORME)", "u": "https://infonif.economia3.com/ficha-empresa/productos-ibericos-calderon-y-ramos-sl"}},
+    {"fecha": "2026", "hito": "Escisión parcial", "detalle": "InfoNIF recoge el depósito del proyecto de escisión parcial (septiembre de 2026) y la escisión parcial con FRC STAR SL como sociedad beneficiaria (noviembre de 2026).", "fuente": {"t": "InfoNIF: ficha de Productos Ibéricos Calderón y Ramos SL (BORME)", "u": "https://infonif.economia3.com/ficha-empresa/productos-ibericos-calderon-y-ramos-sl"}}
+  ],
+  "no_verificado": [
+    "Fecha de constitución de la sociedad: la web oficial habla de tradición desde 1982, mientras InfoNIF indica una antigüedad de 18 años (referencia 22/07/2008). No se ha podido confirmar cuál corresponde a la sociedad actual.",
+    "Ejercicio exacto de los más de 100 millones de euros de ingresos: el resumen de Alimarket no lo precisa.",
+    "Órgano de administración vigente: los nombres proceden del BORME de agosto de 2020; InfoNIF lista a Estrella Copete García como consejera en la ficha actual y la denominación del vicepresidente aparece mal transcrita, por lo que no se incluye. Debe contrastarse con el BORME más reciente.",
+    "Plantilla: InfoNIF muestra una cifra parcialmente oculta; no es fiable.",
+    "Alcance y efecto de la escisión parcial de 2026 con FRC STAR SL: no se ha encontrado información adicional.",
+    "Dirección exacta: InfoNIF (calle Sierra de Francia 60) y la web oficial (calle Filiberto Villalobos 180) difieren."
+  ],
+  "faq": [
+    {"q": "¿Qué es Calderón y Ramos?", "a": "Una empresa de productos ibéricos frescos y curados con sede en Guijuelo (Salamanca), conocida por la marca Estrella de Castilla."},
+    {"q": "¿Cuánto factura Calderón y Ramos?", "a": "Alimarket publicó en marzo de 2025 que superó los 100 millones de euros de ingresos. En 2010 facturó 61 millones."},
+    {"q": "¿Quién preside la empresa?", "a": "Según el BORME de agosto de 2020 recogido por InfoNIF, Estrella Copete García es presidenta del consejo; Luis y Carlos Ramos Copete son consejeros delegados solidarios."},
+    {"q": "¿Qué puesto ocupa entre las empresas de Salamanca?", "a": "El 10.º por ventas 2024 en el ranking provincial de InfoNIF y el 3.104.º a nivel nacional."}
+  ],
+  "fuentes": [
+    {"t": "InfoNIF: ranking de ventas de empresas de Salamanca 2024", "u": "https://infonif.economia3.com/ranking/ventas-empresas/salamanca"},
+    {"t": "InfoNIF: ficha de Productos Ibéricos Calderón y Ramos SL", "u": "https://infonif.economia3.com/ficha-empresa/productos-ibericos-calderon-y-ramos-sl"},
+    {"t": "Alimarket: Calderón y Ramos llega a los 100 M€ de ingresos", "u": "https://www.alimarket.es/alimentacion/noticia/405772/calderon-y-ramos-llega-a-los-100-m--de-ingresos-y-se-impulsa-en-curados"},
+    {"t": "Alimarket: Calderón y Ramos facturó 61 M€ en 2010", "u": "https://www.alimarket.es/alimentacion/noticia/57173/calderon-y-ramos---estrella-de-castilla---facturo-61-m--en-2010"},
+    {"t": "Alimarket: Calderón y Ramos fabricará ibéricos para Mercadona", "u": "https://www.alimarket.es/alimentacion/noticia/17249/calderon-y-ramos-fabricara-ibericos-para-mercadona-en-sus-nuevas-instalaciones"},
+    {"t": "Calderón y Ramos: web oficial", "u": "https://www.estrelladecastilla.es"}
+  ],
+  "como_citar": "Open Salamanca (2026). Ficha de Calderón y Ramos (Estrella de Castilla). https://opensalamanca.es/empresas/calderon-y-ramos. Licencia CC BY 4.0."
+}

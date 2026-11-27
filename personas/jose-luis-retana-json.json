@@ -1,0 +1,5 @@
+---
+permalink: personas/jose-luis-retana.json
+sitemap: false
+---
+{{ site.data.personas["jose-luis-retana"] | jsonify }}

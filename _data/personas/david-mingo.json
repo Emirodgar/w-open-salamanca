@@ -1,0 +1,113 @@
+{
+  "slug": "david-mingo",
+  "url_canonica": "https://opensalamanca.es/personas/david-mingo",
+  "nombre_habitual": "David Mingo",
+  "nombre_completo": "David Mingo Pérez",
+  "tipo": "institucional",
+  "actualizado": "2026-11-27",
+  "actualizado_texto": "27 de noviembre de 2026",
+  "estado_ficha": "borrador: datos limitados; trayectoria anterior pendiente de fuente oficial",
+  "licencia": "CC BY 4.0",
+  "sameas": [
+    "https://www.lasalina.es/lasalina/ladiputacion/presidente/"
+  ],
+  "cargo_actual": {
+    "cargo": "Presidente",
+    "organizacion": "Diputación Provincial de Salamanca",
+    "organizacion_url": "https://www.lasalina.es/",
+    "desde": "9 de octubre de 2026"
+  },
+  "resumen": "David Mingo Pérez es el presidente de la Diputación Provincial de Salamanca. Su investidura tuvo lugar en el pleno provincial del 9 de octubre de 2026, según la web de la Diputación. Sucede en el cargo a Javier Iglesias, presidente desde 2011.",
+  "rapida": [
+    {
+      "k": "Cargo",
+      "v": "Presidente de la Diputación Provincial de Salamanca"
+    },
+    {
+      "k": "Desde",
+      "v": "9 de octubre de 2026 (investidura en el Pleno Provincial)"
+    },
+    {
+      "k": "Institución",
+      "v": "Diputación Provincial de Salamanca"
+    },
+    {
+      "k": "Predecesor",
+      "v": "Javier Iglesias García, presidente desde 2011"
+    },
+    {
+      "k": "Web oficial",
+      "v": "https://www.lasalina.es/lasalina/ladiputacion/presidente/"
+    }
+  ],
+  "trayectoria": [
+    {
+      "fecha": "9 de octubre de 2026",
+      "hito": "Investidura como presidente de la Diputación",
+      "detalle": "Asume la Presidencia en el Pleno Provincial, según el mensaje del presidente en la web de la Diputación.",
+      "fuente": {
+        "t": "Diputación de Salamanca: página del presidente",
+        "u": "https://www.lasalina.es/lasalina/ladiputacion/presidente/"
+      }
+    },
+    {
+      "fecha": "10 de septiembre de 2026",
+      "hito": "Contexto: designación de su predecesor como senador",
+      "detalle": "Las Cortes de Castilla y León designan senador a Javier Iglesias, presidente de la Diputación desde 2011.",
+      "fuente": {
+        "t": "El Español, 10 de septiembre de 2026: senadores autonómicos de Castilla y León",
+        "u": "https://www.elespanol.com/castilla-y-leon/region/20260910/populares-javier-maroto-iglesias-socialista-clara-martin-designados-senadores-castilla-leon/1003744379539_0.html"
+      }
+    }
+  ],
+  "vinculos": [
+    {
+      "tipo": "Organización",
+      "nombre": "Diputación Provincial de Salamanca",
+      "detalle": "Institución que preside.",
+      "url_interna": "",
+      "fuente": {
+        "t": "Diputación de Salamanca",
+        "u": "https://www.lasalina.es/"
+      }
+    }
+  ],
+  "no_verificado": [
+    "Cargos anteriores: la web de la Diputación no incluye biografía. Wikipedia lo describe como alcalde de Santa Marta de Tormes y primer vicepresidente de la Diputación en el mandato 2023-2027, pero el artículo es inconsistente y no se ha contrastado con fuente oficial.",
+    "Partido político y formación académica: no constan en las fuentes abiertas.",
+    "Votación de la investidura y causa exacta del relevo: no se ha localizado la crónica del pleno."
+  ],
+  "faq": [
+    {
+      "q": "¿Quién es el presidente de la Diputación de Salamanca?",
+      "a": "David Mingo Pérez, que asumió la Presidencia en el pleno provincial del 9 de octubre de 2026, según la web de la Diputación."
+    },
+    {
+      "q": "¿A quién sucede?",
+      "a": "A Javier Iglesias García, presidente de la Diputación desde 2011, designado senador por las Cortes de Castilla y León el 10 de septiembre de 2026."
+    },
+    {
+      "q": "¿Cuál es su trayectoria anterior?",
+      "a": "La web de la Diputación no la detalla. Esta ficha no la incluye hasta contar con una fuente oficial."
+    }
+  ],
+  "fuentes": [
+    {
+      "t": "Diputación de Salamanca: página del presidente",
+      "u": "https://www.lasalina.es/lasalina/ladiputacion/presidente/"
+    },
+    {
+      "t": "Vivir Ediciones: encuentro de Fernández Mañueco con el nuevo presidente de la Diputación",
+      "u": "https://vivirediciones.es/?p=1151391"
+    },
+    {
+      "t": "El Español, 10 de septiembre de 2026: senadores autonómicos de Castilla y León",
+      "u": "https://www.elespanol.com/castilla-y-leon/region/20260910/populares-javier-maroto-iglesias-socialista-clara-martin-designados-senadores-castilla-leon/1003744379539_0.html"
+    },
+    {
+      "t": "Wikipedia: Diputación Provincial de Salamanca",
+      "u": "https://es.wikipedia.org/wiki/Diputaci%C3%B3n_Provincial_de_Salamanca"
+    }
+  ],
+  "como_citar": "Open Salamanca (2026). Ficha de David Mingo, presidente de la Diputación Provincial de Salamanca. https://opensalamanca.es/personas/david-mingo. Licencia CC BY 4.0."
+}

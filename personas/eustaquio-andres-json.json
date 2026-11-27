@@ -1,0 +1,5 @@
+---
+permalink: personas/eustaquio-andres.json
+sitemap: false
+---
+{{ site.data.personas["eustaquio-andres"] | jsonify }}

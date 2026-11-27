@@ -1,0 +1,5 @@
+---
+permalink: empresas/aceinsa-salamanca.json
+sitemap: false
+---
+{{ site.data.empresas["aceinsa-salamanca"] | jsonify }}

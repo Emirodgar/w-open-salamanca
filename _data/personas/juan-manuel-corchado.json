@@ -1,0 +1,151 @@
+{
+  "slug": "juan-manuel-corchado",
+  "url_canonica": "https://opensalamanca.es/personas/juan-manuel-corchado",
+  "nombre_habitual": "Juan Manuel Corchado",
+  "nombre_completo": "Juan Manuel Corchado Rodríguez",
+  "tipo": "institucional",
+  "actualizado": "2026-11-27",
+  "actualizado_texto": "27 de noviembre de 2026",
+  "estado_ficha": "borrador: datos limitados a fuentes abiertas; pendiente de contrastar con la biografía institucional completa",
+  "licencia": "CC BY 4.0",
+  "sameas": [
+    "https://www.usal.es/rector",
+    "https://es.wikipedia.org/wiki/Juan_Manuel_Corchado",
+    "https://www.wikidata.org/wiki/Q58362131"
+  ],
+  "cargo_actual": {
+    "cargo": "Rector",
+    "organizacion": "Universidad de Salamanca",
+    "organizacion_url": "https://www.usal.es/",
+    "desde": "2024"
+  },
+  "resumen": "Juan Manuel Corchado Rodríguez es el rector de la Universidad de Salamanca (USAL), cargo que ocupa desde 2024 según Wikipedia. Es catedrático de la USAL y dirige el grupo de investigación BISITE. La web oficial de la universidad lo identifica como rector a 27 de noviembre de 2026.",
+  "rapida": [
+    {
+      "k": "Cargo",
+      "v": "Rector de la Universidad de Salamanca"
+    },
+    {
+      "k": "Desde",
+      "v": "2024 (año según Wikipedia; fecha exacta pendiente de fuente oficial)"
+    },
+    {
+      "k": "Institución",
+      "v": "Universidad de Salamanca"
+    },
+    {
+      "k": "Puesto académico",
+      "v": "Catedrático de la USAL desde el 18 de noviembre de 2010 (Wikipedia)"
+    },
+    {
+      "k": "Grupo de investigación",
+      "v": "BISITE (Bioinformática, Sistemas Inteligentes y Tecnologías de la Educación)"
+    },
+    {
+      "k": "Web oficial",
+      "v": "https://www.usal.es/rector"
+    }
+  ],
+  "trayectoria": [
+    {
+      "fecha": "15 de abril de 2026",
+      "hito": "Anuncio de nuevos espacios de emprendimiento tecnológico",
+      "detalle": "En el Salamanca Tech Summit 2026 el rector anunció un vivero de empresas y dos bioincubadoras tecnológicas, además de espacios para empresas de inteligencia artificial y computación cuántica y una bioincubadora veterinaria.",
+      "fuente": {
+        "t": "El Español: el rector anuncia el Salamanca Tech Summit y nuevas bioincubadoras",
+        "u": "https://www.elespanol.com/castilla-y-leon/region/salamanca/20260415/rector-usal-anuncia-salamanca-tech-summit-creacion-nuevas-bioincubadoras-tecnologicas/1003744207700_0.html"
+      }
+    },
+    {
+      "fecha": "2024",
+      "hito": "Elección como rector",
+      "detalle": "Es elegido rector de la Universidad de Salamanca tras la dimisión de Ricardo Rivero, según Wikipedia.",
+      "fuente": {
+        "t": "Wikipedia: Juan Manuel Corchado",
+        "u": "https://es.wikipedia.org/wiki/Juan_Manuel_Corchado"
+      }
+    },
+    {
+      "fecha": "18 de noviembre de 2010",
+      "hito": "Cátedra en la Universidad de Salamanca",
+      "detalle": "Obtiene plaza de catedrático en la USAL, según Wikipedia.",
+      "fuente": {
+        "t": "Wikipedia: Juan Manuel Corchado",
+        "u": "https://es.wikipedia.org/wiki/Juan_Manuel_Corchado"
+      }
+    }
+  ],
+  "vinculos": [
+    {
+      "tipo": "Organización",
+      "nombre": "Universidad de Salamanca",
+      "detalle": "Institución que dirige como rector. Datos de estudiantes en la población universitaria.",
+      "url_interna": "/poblacion-universitaria",
+      "fuente": {
+        "t": "Universidad de Salamanca: rector",
+        "u": "https://www.usal.es/rector"
+      }
+    },
+    {
+      "tipo": "Dataset",
+      "nombre": "Comparativa USAL y UPSA",
+      "detalle": "Datos comparados de las dos universidades de la ciudad.",
+      "url_interna": "/comparativa-usal-upsa"
+    },
+    {
+      "tipo": "Dataset",
+      "nombre": "Presupuesto de las universidades",
+      "detalle": "Presupuesto de las universidades de Salamanca.",
+      "url_interna": "/presupuesto-universidades"
+    },
+    {
+      "tipo": "Dataset",
+      "nombre": "Centros universitarios de Salamanca",
+      "detalle": "Centros de las universidades de la ciudad.",
+      "url_interna": "/centros-universitarios-salamanca"
+    }
+  ],
+  "no_verificado": [
+    "Fecha exacta de toma de posesión como rector: Wikipedia solo indica 2024 y cita un reportaje de El País que no se ha abierto.",
+    "Formación académica (licenciatura y doctorados): consta solo en Wikipedia, no en una biografía institucional abierta.",
+    "Cargos anteriores en la USAL (decano de Ciencias, vicerrector de Investigación y Transferencia): sin fechas verificadas.",
+    "Cifras de producción científica y citas: no contrastadas con Scopus u otras bases."
+  ],
+  "faq": [
+    {
+      "q": "¿Quién es el rector de la Universidad de Salamanca?",
+      "a": "Juan Manuel Corchado Rodríguez. La web oficial de la USAL lo identifica como rector y las noticias de 2026 lo recogen en ese cargo."
+    },
+    {
+      "q": "¿Desde cuándo es rector?",
+      "a": "Desde 2024, según Wikipedia, tras la dimisión del rector anterior, Ricardo Rivero. La fecha exacta no se ha contrastado con una fuente oficial."
+    },
+    {
+      "q": "¿A qué se dedica como investigador?",
+      "a": "Es catedrático de la USAL y dirige el grupo BISITE, según Wikipedia."
+    },
+    {
+      "q": "¿Qué ha anunciado en 2026?",
+      "a": "En abril de 2026 anunció un vivero de empresas y dos bioincubadoras tecnológicas durante el Salamanca Tech Summit."
+    }
+  ],
+  "fuentes": [
+    {
+      "t": "Universidad de Salamanca: rector",
+      "u": "https://www.usal.es/rector"
+    },
+    {
+      "t": "Wikipedia: Juan Manuel Corchado",
+      "u": "https://es.wikipedia.org/wiki/Juan_Manuel_Corchado"
+    },
+    {
+      "t": "El Español: el rector anuncia el Salamanca Tech Summit y nuevas bioincubadoras",
+      "u": "https://www.elespanol.com/castilla-y-leon/region/salamanca/20260415/rector-usal-anuncia-salamanca-tech-summit-creacion-nuevas-bioincubadoras-tecnologicas/1003744207700_0.html"
+    },
+    {
+      "t": "Wikidata: Q58362131",
+      "u": "https://www.wikidata.org/wiki/Q58362131"
+    }
+  ],
+  "como_citar": "Open Salamanca (2026). Ficha de Juan Manuel Corchado, rector de la Universidad de Salamanca. https://opensalamanca.es/personas/juan-manuel-corchado. Licencia CC BY 4.0."
+}

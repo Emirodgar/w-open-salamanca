@@ -1,0 +1,5 @@
+---
+permalink: personas/paulino-benito.json
+sitemap: false
+---
+{{ site.data.personas["paulino-benito"] | jsonify }}

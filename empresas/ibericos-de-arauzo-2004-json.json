@@ -1,0 +1,5 @@
+---
+permalink: empresas/ibericos-de-arauzo-2004.json
+sitemap: false
+---
+{{ site.data.empresas["ibericos-de-arauzo-2004"] | jsonify }}

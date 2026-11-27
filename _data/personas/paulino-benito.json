@@ -1,0 +1,142 @@
+{
+  "slug": "paulino-benito",
+  "url_canonica": "https://opensalamanca.es/personas/paulino-benito",
+  "nombre_habitual": "Paulino Benito",
+  "nombre_completo": "Paulino Benito Conde",
+  "tipo": "empresarial",
+  "actualizado": "2026-11-27",
+  "actualizado_texto": "27 de noviembre de 2026",
+  "estado_ficha": "borrador: datos limitados",
+  "licencia": "CC BY 4.0",
+  "sameas": [],
+  "cargo_actual": {
+    "cargo": "Presidente",
+    "organizacion": "CEOE CEPYME Salamanca (confederación empresarial de Salamanca)",
+    "organizacion_url": "",
+    "desde": "2024-11-12"
+  },
+  "resumen": "Paulino Benito Conde preside CEOE CEPYME Salamanca, la confederación empresarial histórica de la provincia, desde que ganó las elecciones del 12 de noviembre de 2024 con 104 votos frente a 90. La prensa local lo describe como empresario del sector del transporte. En mayo de 2026 la patronal anunció la integración en ella de la Confederación de Empresarios de Salamanca (CES).",
+  "rapida": [
+    {
+      "k": "Cargo",
+      "v": "Presidente de CEOE CEPYME Salamanca"
+    },
+    {
+      "k": "En el cargo desde",
+      "v": "12 de noviembre de 2024 (mandato de cuatro años, según PYME.info)"
+    },
+    {
+      "k": "Resultado electoral",
+      "v": "104 votos frente a 90 de Juan Luis Feltrero; 5 en blanco y 1 abstención"
+    },
+    {
+      "k": "Sector profesional",
+      "v": "Empresario del transporte, según La Gaceta de Salamanca; no consta su empresa"
+    },
+    {
+      "k": "Denominación CONFAES",
+      "v": "Ninguna fuente de la ficha usa CONFAES como nombre actual de la entidad; ver «Qué no está verificado»"
+    }
+  ],
+  "trayectoria": [
+    {
+      "fecha": "20 de mayo de 2026",
+      "hito": "Acuerdo de unidad empresarial con CES",
+      "detalle": "La patronal que preside, CEOE CEPYME Salamanca, y la Confederación de Empresarios de Salamanca (CES) acordaron poner fin a la división: CES quedó disuelta e integrada en la confederación histórica, con la incorporación de sus asociaciones y empresas a los órganos de gobierno. El 6 de mayo de 2026 se había celebrado en Salamanca el acto «Por la unidad empresarial».",
+      "fuente": {
+        "t": "Asest: Confederación de Empresarios de Salamanca (CES), 20-05-2026",
+        "u": "https://asest.es/story/confederacion-empresarios-de-salamanca-ces/"
+      }
+    },
+    {
+      "fecha": "12 de noviembre de 2024",
+      "hito": "Elegido presidente de CEOE CEPYME Salamanca",
+      "detalle": "Su candidatura obtuvo 104 votos frente a los 90 de Juan Luis Feltrero (5 votos en blanco y 1 abstención). Los comicios llegaron tras la dimisión, en octubre de 2024, de la ejecutiva anterior, presidida por Diego García. En su primer discurso pidió unidad entre las asociaciones.",
+      "fuente": {
+        "t": "PYME.info: Paulino Benito, elegido presidente de CEOE CEPYME Salamanca",
+        "u": "https://pyme.info/2024/11/12/paulino-benito-elegido-presidente-de-ceoe-cepyme-salamanca/"
+      }
+    },
+    {
+      "fecha": "Sin fecha",
+      "hito": "Empresario del sector del transporte",
+      "detalle": "La Gaceta de Salamanca lo presenta como empresario del transporte al informar de su elección. No consta el nombre de su empresa ni sus cargos anteriores.",
+      "fuente": {
+        "t": "La Gaceta de Salamanca: Paulino Benito, nuevo presidente de CEOE-Cepyme Salamanca",
+        "u": "https://www.lagacetadesalamanca.es/salamanca/paulino-benito-nuevo-presidente-ceoecepyme-salamanca-20241112211138-nt.html"
+      }
+    }
+  ],
+  "vinculos": [
+    {
+      "tipo": "organizacion",
+      "nombre": "CEOE CEPYME Salamanca",
+      "detalle": "Confederación empresarial histórica de la provincia, que preside; en 2026 integró a la Confederación de Empresarios de Salamanca (CES).",
+      "url_interna": "",
+      "fuente": {
+        "t": "Asest: Confederación de Empresarios de Salamanca (CES)",
+        "u": "https://asest.es/story/confederacion-empresarios-de-salamanca-ces/"
+      }
+    },
+    {
+      "tipo": "dataset",
+      "nombre": "Ranking de empresas por facturación",
+      "detalle": "Datos de Open Salamanca sobre las mayores empresas de la provincia, el tejido que representa la patronal.",
+      "url_interna": "/ranking-empresas-facturacion"
+    },
+    {
+      "tipo": "dataset",
+      "nombre": "Empleo, afiliación y paro",
+      "detalle": "Datos de Open Salamanca sobre el mercado laboral provincial.",
+      "url_interna": "/empleo-afiliacion-paro"
+    }
+  ],
+  "no_verificado": [
+    "Ninguna de las fuentes abiertas usa el nombre CONFAES (Confederación de Asociaciones Empresariales de Salamanca) para la entidad que preside. Solo aparece como etiqueta en PYME.info; por eso la ficha usa la denominación CEOE CEPYME Salamanca y no afirma que CONFAES sea su nombre vigente.",
+    "No consta su fecha de reelección ni de fin de mandato; PYME.info indica un mandato de cuatro años desde noviembre de 2024.",
+    "No constan su empresa, su formación ni sus cargos anteriores en la patronal.",
+    "No se ha verificado una página institucional de la patronal con su biografía.",
+    "Asest cita como presidente de CES a José Vicente Martín Galeano, sin fecha de inicio; no se ha confirmado qué funciones tiene tras la integración."
+  ],
+  "faq": [
+    {
+      "q": "¿Quién preside la patronal de Salamanca?",
+      "a": "Paulino Benito Conde preside CEOE CEPYME Salamanca desde las elecciones del 12 de noviembre de 2024, según PYME.info y La Gaceta de Salamanca."
+    },
+    {
+      "q": "¿Es CONFAES la patronal que preside Paulino Benito?",
+      "a": "Las fuentes consultadas no lo confirman: hablan de CEOE CEPYME Salamanca y de la Confederación de Empresarios de Salamanca (CES), y no usan CONFAES como nombre actual. Por eso la ficha no lo afirma."
+    },
+    {
+      "q": "¿Qué pasó con la Confederación de Empresarios de Salamanca (CES)?",
+      "a": "Según Asest (20-05-2026), CES se disolvió y se integró en CEOE CEPYME Salamanca, con la incorporación de sus asociaciones y empresas a los órganos de gobierno."
+    },
+    {
+      "q": "¿A qué se dedica Paulino Benito?",
+      "a": "La Gaceta de Salamanca lo describe como empresario del sector del transporte. No consta el nombre de su empresa."
+    }
+  ],
+  "fuentes": [
+    {
+      "t": "PYME.info: Paulino Benito, elegido presidente de CEOE CEPYME Salamanca (12-11-2024)",
+      "u": "https://pyme.info/2024/11/12/paulino-benito-elegido-presidente-de-ceoe-cepyme-salamanca/"
+    },
+    {
+      "t": "La Gaceta de Salamanca: Paulino Benito, nuevo presidente de CEOE-Cepyme Salamanca",
+      "u": "https://www.lagacetadesalamanca.es/salamanca/paulino-benito-nuevo-presidente-ceoecepyme-salamanca-20241112211138-nt.html"
+    },
+    {
+      "t": "El Español: Paulino Benito se proclama presidente de CEOE Salamanca",
+      "u": "https://www.elespanol.com/castilla-y-leon/region/salamanca/20241112/paulino-benito-proclama-presidente-ceoe-salamanca-mensaje-unidad-ajustada-victoria/900660546_0.html"
+    },
+    {
+      "t": "Asest: Confederación de Empresarios de Salamanca (CES), 20-05-2026",
+      "u": "https://asest.es/story/confederacion-empresarios-de-salamanca-ces/"
+    },
+    {
+      "t": "Unicaja Banco: acto «Por la unidad empresarial» (6-05-2026)",
+      "u": "https://www.unicajabanco.com/en/sala-de-comunicacion/buscador-noticias/2026/05/celebracion-del-acto--por-la-unidad-empresarial--en-el-aula-de-c"
+    }
+  ],
+  "como_citar": "Open Salamanca: «Paulino Benito». Ficha de persona, actualizada el 27 de noviembre de 2026. https://opensalamanca.es/personas/paulino-benito (CC BY 4.0)."
+}

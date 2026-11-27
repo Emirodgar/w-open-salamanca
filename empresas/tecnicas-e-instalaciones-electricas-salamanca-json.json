@@ -1,0 +1,5 @@
+---
+permalink: empresas/tecnicas-e-instalaciones-electricas-salamanca.json
+sitemap: false
+---
+{{ site.data.empresas["tecnicas-e-instalaciones-electricas-salamanca"] | jsonify }}

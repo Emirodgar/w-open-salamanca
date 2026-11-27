@@ -1,0 +1,161 @@
+{
+  "slug": "agro-traccion-vehiculos",
+  "url_canonica": "https://opensalamanca.es/empresas/agro-traccion-vehiculos",
+  "nombre_habitual": "Agro Tracción Vehículos",
+  "razon_social": "Agro Tracción Vehículos SA",
+  "actualizado": "2026-11-27",
+  "actualizado_texto": "27 de noviembre de 2026",
+  "estado_ficha": "borrador: datos limitados (sin cifra de ventas ni actividad contrastada)",
+  "licencia": "CC BY 4.0",
+  "sameas": [],
+  "resumen": "Agro Tracción Vehículos SA es una sociedad del sector de automoción domiciliada en el polígono El Montalvo I de Salamanca. InfoNIF la lista como participada de Asturiana de Automóviles y Repuestos SA, que también es su administradora solidaria. Ocupa el puesto 24 por ventas 2024 entre las empresas de la provincia (7.369.º a nivel nacional); no hay cifra de ventas verificable en abierto.",
+  "rapida": [
+    {
+      "k": "Razón social",
+      "v": "Agro Tracción Vehículos SA (NIF A37003043)"
+    },
+    {
+      "k": "Sector",
+      "v": "Automoción (InfoNIF); el objeto social no consta en las fuentes consultadas"
+    },
+    {
+      "k": "Domicilio",
+      "v": "Polígono Industrial El Montalvo I, parcelas 102-103, 37008 Salamanca"
+    },
+    {
+      "k": "Grupo",
+      "v": "InfoNIF recoge como matriz a Asturiana de Automóviles y Repuestos SA (NIF A33022765)"
+    },
+    {
+      "k": "Administración",
+      "v": "Dos administradores solidarios, reelegidos en mayo de 2023 (BORME)"
+    },
+    {
+      "k": "Posición por ventas 2024",
+      "v": "24.ª entre las sociedades domiciliadas en la provincia de Salamanca; 7.369.ª a nivel nacional (InfoNIF)"
+    }
+  ],
+  "cifras": [
+    {
+      "concepto": "Posición por ventas 2024 (provincia / España)",
+      "valor": "24.ª en la provincia de Salamanca; 7.369.ª a nivel nacional (las ventas aparecen ocultas)",
+      "fuente": {
+        "t": "InfoNIF: ranking de ventas de empresas de Salamanca 2024",
+        "u": "https://infonif.economia3.com/ranking/ventas-empresas/salamanca"
+      }
+    },
+    {
+      "concepto": "Ampliación de capital (2015)",
+      "valor": "114.490,50 euros (acto de 16/12/2015); InfoNIF no muestra el capital total",
+      "fuente": {
+        "t": "InfoNIF: ficha de Agro Tracción Vehículos SA",
+        "u": "https://infonif.economia3.com/ficha-empresa/agro-traccion-vehiculos-sa"
+      }
+    }
+  ],
+  "nota_cifras": "InfoNIF oculta las ventas sin suscripción y no se localizó otra fuente abierta con la cifra, por lo que no se ofrece importe de ventas. InfoNIF no muestra el capital total de la sociedad.",
+  "directivos": [
+    {
+      "nombre": "Asturiana de Automóviles y Repuestos SA",
+      "cargo": "Administrador solidario (persona jurídica)",
+      "fuente": {
+        "t": "InfoNIF: ficha de Agro Tracción Vehículos SA (BORME, 26/05/2023)",
+        "u": "https://infonif.economia3.com/ficha-empresa/agro-traccion-vehiculos-sa"
+      },
+      "ficha": ""
+    },
+    {
+      "nombre": "Fernando Lago García",
+      "cargo": "Administrador solidario",
+      "fuente": {
+        "t": "InfoNIF: ficha de Agro Tracción Vehículos SA (BORME, 26/05/2023)",
+        "u": "https://infonif.economia3.com/ficha-empresa/agro-traccion-vehiculos-sa"
+      },
+      "ficha": ""
+    }
+  ],
+  "historia": [
+    {
+      "fecha": "1960",
+      "hito": "Fecha de antigüedad",
+      "detalle": "InfoNIF indica una antigüedad de 66 años con referencia 28/11/1960, sin presentarla como fecha de constitución expresa.",
+      "fuente": {
+        "t": "InfoNIF: ficha de Agro Tracción Vehículos SA",
+        "u": "https://infonif.economia3.com/ficha-empresa/agro-traccion-vehiculos-sa"
+      }
+    },
+    {
+      "fecha": "2015",
+      "hito": "Ampliación de capital",
+      "detalle": "Aumento de 114.490,50 euros (16/12/2015).",
+      "fuente": {
+        "t": "InfoNIF: ficha de Agro Tracción Vehículos SA",
+        "u": "https://infonif.economia3.com/ficha-empresa/agro-traccion-vehiculos-sa"
+      }
+    },
+    {
+      "fecha": "2018",
+      "hito": "Cambio de web corporativa",
+      "detalle": "El BORME de 08/01/2018 recoge el cambio de página web a grupoadarsa.com, según InfoNIF.",
+      "fuente": {
+        "t": "InfoNIF: ficha de Agro Tracción Vehículos SA",
+        "u": "https://infonif.economia3.com/ficha-empresa/agro-traccion-vehiculos-sa"
+      }
+    },
+    {
+      "fecha": "2023",
+      "hito": "Reelección de administradores",
+      "detalle": "Asturiana de Automóviles y Repuestos SA y Fernando Lago García, reelegidos administradores solidarios (BORME de 26/05/2023).",
+      "fuente": {
+        "t": "InfoNIF: ficha de Agro Tracción Vehículos SA",
+        "u": "https://infonif.economia3.com/ficha-empresa/agro-traccion-vehiculos-sa"
+      }
+    }
+  ],
+  "no_verificado": [
+    "Actividad concreta (marcas, venta de vehículos o maquinaria): InfoNIF solo indica sector automoción; no se verificó en web oficial.",
+    "Relación con Grupo Adarsa: InfoNIF cita la web grupoadarsa.com y lista la sociedad como participada de Asturiana de Automóviles y Repuestos SA, pero la web de Adarsa no menciona a Agro Tracción Vehículos y no se verificó el porcentaje.",
+    "Ventas: ocultas en InfoNIF; sin otra fuente abierta localizada.",
+    "Plantilla: InfoNIF muestra una cifra parcialmente oculta; no es fiable.",
+    "Fecha de constitución: InfoNIF solo da una antigüedad con referencia 28/11/1960.",
+    "Apoderados: constan varios en el BORME, pero no se incluyen por no ser cargos de administración.",
+    "Ficha de El Economista: no pudo consultarse."
+  ],
+  "faq": [
+    {
+      "q": "¿Qué es Agro Tracción Vehículos?",
+      "a": "Una sociedad anónima del sector de automoción con domicilio en el polígono El Montalvo I de Salamanca, listada por InfoNIF como participada de Asturiana de Automóviles y Repuestos SA."
+    },
+    {
+      "q": "¿Quién administra la empresa?",
+      "a": "Según el BORME recogido por InfoNIF, Asturiana de Automóviles y Repuestos SA y Fernando Lago García como administradores solidarios, reelegidos en mayo de 2023."
+    },
+    {
+      "q": "¿Qué puesto ocupa entre las empresas de Salamanca?",
+      "a": "El 24.º por ventas 2024 en el ranking provincial de InfoNIF y el 7.369.º a nivel nacional."
+    },
+    {
+      "q": "¿Cuánto factura?",
+      "a": "No hay cifra verificable en abierto: InfoNIF oculta las ventas."
+    }
+  ],
+  "fuentes": [
+    {
+      "t": "InfoNIF: ranking de ventas de empresas de Salamanca 2024",
+      "u": "https://infonif.economia3.com/ranking/ventas-empresas/salamanca"
+    },
+    {
+      "t": "InfoNIF: ficha de Agro Tracción Vehículos SA",
+      "u": "https://infonif.economia3.com/ficha-empresa/agro-traccion-vehiculos-sa"
+    },
+    {
+      "t": "InfoNIF: ficha de Asturiana de Automóviles y Repuestos SA",
+      "u": "https://infonif.economia3.com/ficha-empresa/asturiana-de-automoviles-y-repuestos-sa"
+    },
+    {
+      "t": "Grupo Adarsa: web oficial",
+      "u": "https://www.grupoadarsa.com"
+    }
+  ],
+  "como_citar": "Open Salamanca (2026). Ficha de Agro Tracción Vehículos SA. https://opensalamanca.es/empresas/agro-traccion-vehiculos. Licencia CC BY 4.0."
+}

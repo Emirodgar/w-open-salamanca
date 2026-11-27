@@ -1,0 +1,5 @@
+---
+permalink: empresas/jamones-aljomar.json
+sitemap: false
+---
+{{ site.data.empresas["jamones-aljomar"] | jsonify }}

@@ -1,0 +1,5 @@
+---
+permalink: empresas/eurodivisas.json
+sitemap: false
+---
+{{ site.data.empresas["eurodivisas"] | jsonify }}

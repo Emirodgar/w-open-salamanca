@@ -1,0 +1,5 @@
+---
+permalink: empresas/etsa-global-logistics.json
+sitemap: false
+---
+{{ site.data.empresas["etsa-global-logistics"] | jsonify }}

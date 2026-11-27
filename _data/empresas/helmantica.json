@@ -1,0 +1,160 @@
+{
+  "slug": "helmantica",
+  "url_canonica": "https://opensalamanca.es/empresas/helmantica",
+  "nombre_habitual": "Helmántica",
+  "razon_social": "Helmántica SA",
+  "estado_ficha": "borrador: verificado con directorios y BORME vía InfoNIF e Iberinform; ventas sin cifra fiable",
+  "actualizado": "2026-11-27",
+  "actualizado_texto": "27 de noviembre de 2026",
+  "licencia": "CC BY 4.0",
+  "sameas": [],
+  "resumen": "Helmántica SA es una empresa de automoción con sede en Villares de la Reina (Salamanca) que, según El Economista, comercializa vehículos como concesionario oficial de Audi y Volkswagen y ofrece servicio posventa. Ocupa el puesto 48 por ventas 2024 entre las empresas de la provincia según el ranking de InfoNIF (12.388.º a nivel nacional).",
+  "rapida": [
+    {
+      "k": "Razón social",
+      "v": "Helmántica SA (NIF A37037629)"
+    },
+    {
+      "k": "Sector",
+      "v": "Automoción: concesionario oficial Audi y Volkswagen y servicio posventa (objeto social según El Economista; CNAE 4781 allí, CNAE 9531 en Iberinform)"
+    },
+    {
+      "k": "Domicilio",
+      "v": "Avenida de Toro, carretera de Fuentesaúco s/n, 37184 Villares de la Reina (Salamanca)"
+    },
+    {
+      "k": "Administración",
+      "v": "Administradores solidarios Sergio Pérez Pérez y María del Pilar Pérez Pérez (BORME, reelección de 14/03/2025)"
+    },
+    {
+      "k": "Plantilla",
+      "v": "Entre 51 y 100 personas (tramo de Iberinform)"
+    },
+    {
+      "k": "Posición por ventas 2024",
+      "v": "48.ª entre las sociedades domiciliadas en la provincia de Salamanca; 12.388.ª a nivel nacional (InfoNIF)"
+    }
+  ],
+  "cifras": [
+    {
+      "concepto": "Posición por ventas 2024 entre las empresas de la provincia",
+      "valor": "48.ª en la provincia de Salamanca; 12.388.ª a nivel nacional (InfoNIF)",
+      "fuente": {
+        "t": "InfoNIF: ranking de ventas de empresas de Salamanca 2024",
+        "u": "https://infonif.economia3.com/ranking/ventas-empresas/salamanca"
+      }
+    },
+    {
+      "concepto": "Tramo de facturación",
+      "valor": "entre 15 y 30 millones de euros (tramo orientativo, sin cifra exacta)",
+      "fuente": {
+        "t": "Iberinform: ficha de Helmantica SA",
+        "u": "https://www.iberinform.es/empresa/410716/helmantica"
+      }
+    },
+    {
+      "concepto": "Variación de ventas en 2024",
+      "valor": "-2,71 % (sin importe absoluto publicado)",
+      "fuente": {
+        "t": "El Economista: ranking de empresas, Helmantica Sa",
+        "u": "https://ranking-empresas.eleconomista.es/HELMANTICA.html"
+      }
+    }
+  ],
+  "nota_cifras": "Iberinform da un tramo de facturación de 15 a 30 millones de euros en su ficha general, pero en su sección de preguntas frecuentes indica 300.000 a 1.000.000 euros, que coincide con el tramo de capital social; la fuente es inconsistente y el tramo es solo orientativo. InfoNIF oculta las ventas y El Economista no muestra el importe. En el ranking de El Economista Helmántica figura 46.ª en la provincia y 11.982.ª a nivel nacional, frente al 48 y 12.388 de InfoNIF: rankings distintos, no comparables.",
+  "directivos": [
+    {
+      "nombre": "Sergio Pérez Pérez",
+      "cargo": "Administrador solidario (reelegido el 14/03/2025)",
+      "fuente": {
+        "t": "InfoNIF: ficha de Helmántica SA (BORME, 14/03/2025)",
+        "u": "https://infonif.economia3.com/ficha-empresa/helmantica-sa"
+      },
+      "ficha": ""
+    },
+    {
+      "nombre": "María del Pilar Pérez Pérez",
+      "cargo": "Administradora solidaria (reelegida el 14/03/2025)",
+      "fuente": {
+        "t": "InfoNIF: ficha de Helmántica SA (BORME, 14/03/2025)",
+        "u": "https://infonif.economia3.com/ficha-empresa/helmantica-sa"
+      },
+      "ficha": ""
+    }
+  ],
+  "historia": [
+    {
+      "fecha": "1985",
+      "hito": "Antigüedad registral",
+      "detalle": "InfoNIF muestra una antigüedad de 41 años con referencia 19/12/1985; Iberinform indica constitución el 01/01/1985. Las dos fuentes no coinciden en el día.",
+      "fuente": {
+        "t": "InfoNIF: ficha de Helmántica SA",
+        "u": "https://infonif.economia3.com/ficha-empresa/helmantica-sa"
+      }
+    },
+    {
+      "fecha": "2013",
+      "hito": "Cambio del órgano de administración",
+      "detalle": "Según el BORME recogido por InfoNIF, en 2013 se modifican los estatutos para pasar de consejo de administración a administradores solidarios.",
+      "fuente": {
+        "t": "InfoNIF: ficha de Helmántica SA",
+        "u": "https://infonif.economia3.com/ficha-empresa/helmantica-sa"
+      }
+    },
+    {
+      "fecha": "2025",
+      "hito": "Reelección de administradores",
+      "detalle": "El BORME de 14/03/2025 recoge la reelección de los dos administradores solidarios.",
+      "fuente": {
+        "t": "InfoNIF: ficha de Helmántica SA",
+        "u": "https://infonif.economia3.com/ficha-empresa/helmantica-sa"
+      }
+    }
+  ],
+  "no_verificado": [
+    "Fecha de constitución: 19/12/1985 (InfoNIF) frente a 01/01/1985 (Iberinform); ninguna se confirma con el Registro Mercantil.",
+    "Ventas 2024: InfoNIF las oculta y El Economista e Iberinform no ofrecen importe fiable.",
+    "CNAE: El Economista indica 4781 e Iberinform 9531; no se ha verificado cuál figura en el Registro.",
+    "Pertenencia a un grupo: ninguna fuente consultada indica matriz o grupo.",
+    "Marcas oficiales vigentes: el carácter de concesionario oficial de Audi y Volkswagen procede del objeto social recogido por El Economista, no de la web de las marcas.",
+    "Plantilla exacta: solo hay un tramo de Iberinform.",
+    "Nombre de la administradora: InfoNIF muestra en su campo directivo a María del Pilar Pérez Fernández, mientras que el BORME de 2025 recoge a María del Pilar Pérez Pérez; se usa la segunda versión, respaldada también por Iberinform."
+  ],
+  "faq": [
+    {
+      "q": "¿Qué es Helmántica?",
+      "a": "Una empresa de automoción de Villares de la Reina (Salamanca), concesionario oficial de Audi y Volkswagen con servicio posventa según el objeto social recogido por El Economista."
+    },
+    {
+      "q": "¿Cuánto factura?",
+      "a": "No hay cifra exacta verificada. Iberinform da un tramo orientativo de 15 a 30 millones de euros, con una inconsistencia interna en su ficha."
+    },
+    {
+      "q": "¿Quién la administra?",
+      "a": "Sergio Pérez Pérez y María del Pilar Pérez Pérez como administradores solidarios, reelegidos según el BORME de 14 de marzo de 2025."
+    },
+    {
+      "q": "¿Qué puesto ocupa entre las empresas de Salamanca?",
+      "a": "El 48.º por ventas 2024 en el ranking provincial de InfoNIF y el 12.388.º a nivel nacional."
+    }
+  ],
+  "fuentes": [
+    {
+      "t": "InfoNIF: ranking de ventas de empresas de Salamanca 2024",
+      "u": "https://infonif.economia3.com/ranking/ventas-empresas/salamanca"
+    },
+    {
+      "t": "InfoNIF: ficha de Helmántica SA",
+      "u": "https://infonif.economia3.com/ficha-empresa/helmantica-sa"
+    },
+    {
+      "t": "El Economista: ranking de empresas, Helmantica Sa",
+      "u": "https://ranking-empresas.eleconomista.es/HELMANTICA.html"
+    },
+    {
+      "t": "Iberinform: ficha de Helmantica SA",
+      "u": "https://www.iberinform.es/empresa/410716/helmantica"
+    }
+  ],
+  "como_citar": "Open Salamanca (2026). Ficha de Helmántica SA. https://opensalamanca.es/empresas/helmantica. Licencia CC BY 4.0."
+}

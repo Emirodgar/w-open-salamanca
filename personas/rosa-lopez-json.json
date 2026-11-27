@@ -1,0 +1,5 @@
+---
+permalink: personas/rosa-lopez.json
+sitemap: false
+---
+{{ site.data.personas["rosa-lopez"] | jsonify }}

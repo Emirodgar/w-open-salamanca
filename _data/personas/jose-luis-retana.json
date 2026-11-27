@@ -1,0 +1,166 @@
+{
+  "slug": "jose-luis-retana",
+  "url_canonica": "https://opensalamanca.es/personas/jose-luis-retana",
+  "nombre_habitual": "José Luis Retana",
+  "nombre_completo": "José Luis Retana Gozalo",
+  "tipo": "institucional",
+  "actualizado": "2026-11-27",
+  "actualizado_texto": "27 de noviembre de 2026",
+  "estado_ficha": "borrador: basado en la biografía de la diócesis; sin novedades posteriores a 2022 verificadas",
+  "licencia": "CC BY 4.0",
+  "sameas": [
+    "https://www.diocesisdesalamanca.com/obispo-diocesano/",
+    "https://es.wikipedia.org/wiki/Jos%C3%A9_Luis_Retana_Gozalo",
+    "https://www.wikidata.org/wiki/Q28919768"
+  ],
+  "cargo_actual": {
+    "cargo": "Obispo de Salamanca",
+    "organizacion": "Diócesis de Salamanca",
+    "organizacion_url": "https://www.diocesisdesalamanca.com/",
+    "desde": "8 de enero de 2022"
+  },
+  "resumen": "José Luis Retana Gozalo es el obispo de Salamanca. Fue nombrado el 15 de noviembre de 2021 y tomó posesión de la sede el 8 de enero de 2022; la diócesis lo presenta como obispo diocesano. Es también obispo de Ciudad Rodrigo, con ambas diócesis unidas en la persona del obispo.",
+  "rapida": [
+    {
+      "k": "Cargo",
+      "v": "Obispo de Salamanca (y de Ciudad Rodrigo, in persona episcopi)"
+    },
+    {
+      "k": "Nombramiento",
+      "v": "15 de noviembre de 2021; toma de posesión el 8 de enero de 2022"
+    },
+    {
+      "k": "Nacimiento",
+      "v": "12 de marzo de 1953, Pedro Bernardo (Ávila), según la biografía de la diócesis"
+    },
+    {
+      "k": "Ordenación sacerdotal",
+      "v": "29 de septiembre de 1979"
+    },
+    {
+      "k": "Cargo anterior",
+      "v": "Obispo de Plasencia desde 2017"
+    },
+    {
+      "k": "Web oficial",
+      "v": "https://www.diocesisdesalamanca.com/obispo-diocesano/"
+    }
+  ],
+  "trayectoria": [
+    {
+      "fecha": "8 de enero de 2022",
+      "hito": "Toma de posesión como obispo de Salamanca y Ciudad Rodrigo",
+      "detalle": "Toma posesión de la sede y comienza su ministerio en Salamanca al día siguiente.",
+      "fuente": {
+        "t": "Diócesis de Salamanca: biografía del obispo",
+        "u": "https://www.diocesisdesalamanca.com/obispo-diocesano/"
+      }
+    },
+    {
+      "fecha": "15 de noviembre de 2021",
+      "hito": "Nombramiento para Ciudad Rodrigo y Salamanca",
+      "detalle": "Anunciado su nombramiento como obispo de Ciudad Rodrigo y Salamanca.",
+      "fuente": {
+        "t": "Diócesis de Salamanca: biografía del obispo",
+        "u": "https://www.diocesisdesalamanca.com/obispo-diocesano/"
+      }
+    },
+    {
+      "fecha": "Marzo de 2020",
+      "hito": "Comisión Episcopal para la Educación y Cultura",
+      "detalle": "Miembro de la Comisión Episcopal para la Educación y Cultura de la Conferencia Episcopal desde esa fecha.",
+      "fuente": {
+        "t": "Diócesis de Salamanca: biografía del obispo",
+        "u": "https://www.diocesisdesalamanca.com/obispo-diocesano/"
+      }
+    },
+    {
+      "fecha": "9 de marzo de 2017",
+      "hito": "Obispo de Plasencia",
+      "detalle": "Nombrado por el papa Francisco; ordenado obispo el 24 de junio de 2017 en la catedral de Plasencia.",
+      "fuente": {
+        "t": "Diócesis de Salamanca: biografía del obispo",
+        "u": "https://www.diocesisdesalamanca.com/obispo-diocesano/"
+      }
+    },
+    {
+      "fecha": "1993-2012",
+      "hito": "Rector del Seminario diocesano de Ávila en Salamanca",
+      "detalle": "Rector en dos etapas, 1993-1999 y 2003-2012.",
+      "fuente": {
+        "t": "Diócesis de Salamanca: biografía del obispo",
+        "u": "https://www.diocesisdesalamanca.com/obispo-diocesano/"
+      }
+    },
+    {
+      "fecha": "29 de septiembre de 1979",
+      "hito": "Ordenación sacerdotal",
+      "detalle": "Ordenado sacerdote en Pedro Bernardo (Ávila). Defendió su tesis de licenciatura en Teología en la Universidad Pontificia de Salamanca en 1979.",
+      "fuente": {
+        "t": "Diócesis de Salamanca: biografía del obispo",
+        "u": "https://www.diocesisdesalamanca.com/obispo-diocesano/"
+      }
+    }
+  ],
+  "vinculos": [
+    {
+      "tipo": "Organización",
+      "nombre": "Diócesis de Salamanca",
+      "detalle": "Diócesis que dirige como obispo.",
+      "url_interna": "",
+      "fuente": {
+        "t": "Diócesis de Salamanca",
+        "u": "https://www.diocesisdesalamanca.com/"
+      }
+    },
+    {
+      "tipo": "Dataset",
+      "nombre": "Centros universitarios de Salamanca",
+      "detalle": "Incluye la Universidad Pontificia de Salamanca, donde cursó Teología.",
+      "url_interna": "/centros-universitarios-salamanca"
+    }
+  ],
+  "no_verificado": [
+    "Hitos posteriores a 2022: no se han verificado con fuente reciente.",
+    "Apellido: la diócesis escribe Gozalo; otras publicaciones lo escriben Gonzalo.",
+    "Fechas de Plasencia: Wikipedia recoge 2017-2021 en el cuadro y 2017-2022 en el texto.",
+    "Cualquier cambio de cargo en 2026: la web de la diócesis lo muestra como obispo diocesano a 27 de noviembre de 2026, sin otra confirmación."
+  ],
+  "faq": [
+    {
+      "q": "¿Quién es el obispo de Salamanca?",
+      "a": "José Luis Retana Gozalo, nombrado el 15 de noviembre de 2021, con toma de posesión el 8 de enero de 2022, según la diócesis."
+    },
+    {
+      "q": "¿También es obispo de Ciudad Rodrigo?",
+      "a": "Sí, ambas diócesis comparten obispo bajo la fórmula in persona episcopi, sin fundirse."
+    },
+    {
+      "q": "¿Dónde fue obispo antes?",
+      "a": "En Plasencia, desde 2017, según la biografía de la diócesis."
+    },
+    {
+      "q": "¿Cuál es su formación?",
+      "a": "Estudió Teología en la Universidad Pontificia de Salamanca y cursó estudios de licenciatura en Friburgo (Suiza), según la diócesis."
+    }
+  ],
+  "fuentes": [
+    {
+      "t": "Diócesis de Salamanca: biografía del obispo",
+      "u": "https://www.diocesisdesalamanca.com/obispo-diocesano/"
+    },
+    {
+      "t": "Diócesis de Salamanca",
+      "u": "https://www.diocesisdesalamanca.com/"
+    },
+    {
+      "t": "Wikipedia: José Luis Retana Gozalo",
+      "u": "https://es.wikipedia.org/wiki/Jos%C3%A9_Luis_Retana_Gozalo"
+    },
+    {
+      "t": "Wikidata: Q28919768",
+      "u": "https://www.wikidata.org/wiki/Q28919768"
+    }
+  ],
+  "como_citar": "Open Salamanca (2026). Ficha de José Luis Retana, obispo de Salamanca. https://opensalamanca.es/personas/jose-luis-retana. Licencia CC BY 4.0."
+}

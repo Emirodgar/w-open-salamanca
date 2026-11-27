@@ -1,0 +1,40 @@
+---
+layout: default
+title: Mayores empresas de la provincia de Salamanca por ventas 2024
+description: Listado ordenado de las 50 mayores sociedades con domicilio en la provincia de Salamanca según sus ventas de 2024, con municipio, sector y enlace a la ficha de cada empresa cuando existe
+date: 27-11-2026
+modified: 27-11-2026
+folder: Economia
+permalink: empresas-salamanca
+dataset_name: "Mayores empresas de la provincia de Salamanca por ventas 2024"
+dataset_temporal: "2024"
+dataset_source: "InfoNIF (Economía3), ranking de ventas de empresas de Salamanca"
+dataset_source_url: "https://infonif.economia3.com/ranking/ventas-empresas/salamanca"
+---
+{%- assign ix = site.data.empresas_indice -%}
+<section class="featured dataset" id="datos">
+  <div class="container">
+    <div class="section-header">
+      <h1 class="section-title">{{ page.title }}</h1>
+      <p class="section-description">{{ page.description }}</p>
+    </div>
+    <div id="section-content">
+      <p>Este listado ordena las sociedades con <b>domicilio social en la provincia de Salamanca</b> por sus ventas de 2024, según el ranking de <a href="{{ ix.fuente.u }}" rel="nofollow noopener">InfoNIF</a>. Bernabé Campal SL (Huerta) y Neumáticos Andrés SA (Salamanca) encabezan la lista. Los importes exactos no se publican aquí hasta contrastarlos con las cuentas depositadas en el Registro Mercantil.</p>
+      <p>Es una lista de <b>sociedades</b>, no de grupos: empresas con sede fuera de la provincia pero con plantas en ella (por ejemplo, la fábrica de ENUSA en Juzbado) no aparecen. Consulta también el <a href="/ranking-empresas-facturacion">ranking de empresas por facturación</a>, que agrupa algunos grupos empresariales, y las <a href="/grandes-fortunas-patrimonio-salamanca">grandes fortunas y patrimonios</a> de la provincia.</p>
+      <p class="fu" style="font-size:.85em;color:#5b6778">{{ ix.nota }} Consultado el 27 de noviembre de 2026.</p>
+    </div>
+    <div id="section-table">
+      <table border="1" cellpadding="5" cellspacing="0">
+        <thead><tr><th>Orden</th><th>Sociedad</th><th>Municipio</th><th>Sector</th><th>Ficha</th></tr></thead>
+        <tbody>
+        {%- for e in ix.empresas limit: 50 %}
+          {%- assign fslug = "" -%}
+          {%- if e.ficha %}{% assign fslug = e.ficha %}{% endif %}
+          <tr><td>{{ e.orden }}</td><td>{{ e.razon_social }}</td><td>{{ e.municipio_infonif }}</td><td>{{ e.sector_infonif }}</td><td>{% if fslug != "" %}<a href="/empresas/{{ fslug }}">Ver ficha</a>{% else %}en preparación{% endif %}</td></tr>
+        {%- endfor %}
+        </tbody>
+      </table>
+    </div>
+    {% include categories.html %}
+  </div>
+</section>

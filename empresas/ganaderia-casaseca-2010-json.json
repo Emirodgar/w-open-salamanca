@@ -1,0 +1,5 @@
+---
+permalink: empresas/ganaderia-casaseca-2010.json
+sitemap: false
+---
+{{ site.data.empresas["ganaderia-casaseca-2010"] | jsonify }}

@@ -1,0 +1,102 @@
+---
+layout: default
+---
+{%- comment -%}
+  Ficha de persona (cargo público o responsable empresarial). Fuente única: _data/personas/<slug>.json (page.slug).
+  Solo trayectoria pública y profesional con fuente. Sin domicilio, familia, patrimonio ni datos privados.
+{%- endcomment -%}
+{%- assign p = site.data.personas[page.slug] -%}
+{%- assign canon = p.url_canonica -%}
+<style>
+  .ficha-per .ans{background:#eef6ff;border:1px solid #c9dcf3;padding:14px 16px;border-radius:6px;font-size:1.08em;margin:0 0 1.2em}
+  .ficha-per .warn{background:#fff8e6;border:1px solid #ecd9a6;padding:10px 14px;border-radius:6px;font-size:.95em}
+  .ficha-per dl.rapida{display:grid;grid-template-columns:minmax(150px,240px) 1fr;gap:6px 16px;margin:1em 0}
+  .ficha-per dl.rapida dt{font-weight:700}.ficha-per dl.rapida dd{margin:0}
+  .ficha-per .fu{font-size:.85em;color:#5b6778;margin:.2em 0 0}
+  .ficha-per ol.tray{list-style:none;padding:0;margin:1em 0}
+  .ficha-per ol.tray li{border-bottom:1px solid #e3e8ef;padding:2px 0 10px;margin:0 0 6px}
+  .ficha-per ol.tray .f{font-weight:700;display:block}
+  .ficha-per details{border:1px solid #d9dee6;border-radius:6px;padding:8px 12px;margin:8px 0}
+  .ficha-per summary{font-weight:700;cursor:pointer}
+  @media (max-width:600px){.ficha-per dl.rapida{grid-template-columns:1fr}}
+</style>
+
+<section class="featured dataset ficha-per" id="datos">
+  <div class="container">
+    <div class="section-header">
+      <h1 class="section-title">{{ page.title }}</h1>
+      <p class="section-description">{{ page.description }}</p>
+    </div>
+    <div id="section-content">
+      <p class="ans">{{ p.resumen }}</p>
+      <p class="fu">Ficha actualizada el {{ p.actualizado_texto }} ({{ p.estado_ficha }}). Recoge solo la trayectoria pública y profesional, con la fuente de cada dato. Parte de <a href="/personas-salamanca">personas relevantes de Salamanca</a>. Datos descargables: <a href="/personas/{{ page.slug }}.json">{{ page.slug }}.json</a> ({{ p.licencia }}).</p>
+
+      <h2>Ficha rápida</h2>
+      <dl class="rapida">
+        {%- for r in p.rapida %}<dt>{{ r.k }}</dt><dd>{{ r.v }}</dd>{%- endfor %}
+      </dl>
+
+      <h2>Trayectoria, de lo más reciente a lo más antiguo</h2>
+      <ol class="tray">
+        {%- for t in p.trayectoria %}
+        <li><span class="f">{{ t.fecha }} · {{ t.hito }}</span>{{ t.detalle }}
+          <p class="fu">Fuente: <a href="{{ t.fuente.u }}" rel="nofollow noopener">{{ t.fuente.t }}</a></p></li>
+        {%- endfor %}
+      </ol>
+
+      {%- if p.vinculos.size > 0 %}
+      <h2>Organizaciones y datos relacionados</h2>
+      <ul>
+        {%- for v in p.vinculos %}
+        <li>{% if v.url_interna and v.url_interna != "" %}<a href="{{ v.url_interna }}">{{ v.nombre }}</a>{% else %}{{ v.nombre }}{% endif %}: {{ v.detalle }}{% if v.fuente %} <span class="fu">Fuente: <a href="{{ v.fuente.u }}" rel="nofollow noopener">{{ v.fuente.t }}</a></span>{% endif %}</li>
+        {%- endfor %}
+      </ul>
+      {%- endif %}
+
+      <h2>Qué no está verificado</h2>
+      <div class="warn">
+        <ul>{%- for n in p.no_verificado %}<li>{{ n }}</li>{%- endfor %}</ul>
+        <p>Esta ficha no incluye domicilio, familia, patrimonio ni otros datos privados. Si eres la persona citada o su representante y quieres corregir o ampliar algo, escríbenos desde la <a href="/contacto">página de contacto</a> y lo revisamos con tu fuente.</p>
+      </div>
+
+      <h2>Preguntas frecuentes</h2>
+      {%- for f in p.faq %}
+      <details open><summary>{{ f.q }}</summary><p>{{ f.a }}</p></details>
+      {%- endfor %}
+
+      <h2>Fuentes</h2>
+      <ul>{%- for s in p.fuentes %}<li><a href="{{ s.u }}" rel="nofollow noopener">{{ s.t }}</a></li>{%- endfor %}</ul>
+
+      <h2>Cómo citar esta ficha</h2>
+      <p>{{ p.como_citar }}</p>
+    </div>
+    {% include categories.html %}
+  </div>
+</section>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": {{ canon | append: "#person" | jsonify }},
+      "name": {{ p.nombre_habitual | jsonify }},
+      "jobTitle": {{ p.cargo_actual.cargo | jsonify }},
+      "description": {{ p.resumen | jsonify }},
+      "worksFor": { "@type": "Organization", "name": {{ p.cargo_actual.organizacion | jsonify }}{% if p.cargo_actual.organizacion_url and p.cargo_actual.organizacion_url != "" %}, "url": {{ p.cargo_actual.organizacion_url | jsonify }}{% endif %} },
+      "url": {{ canon | jsonify }},
+      "sameAs": [{% for s in p.sameas %}{{ s | jsonify }}{% unless forloop.last %}, {% endunless %}{% endfor %}],
+      "mainEntityOfPage": { "@id": {{ canon | jsonify }} }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {%- for f in p.faq %}
+        { "@type": "Question", "name": {{ f.q | jsonify }}, "acceptedAnswer": { "@type": "Answer", "text": {{ f.a | jsonify }} } }{% unless forloop.last %},{% endunless %}
+        {%- endfor %}
+      ]
+    }
+  ]
+}
+</script>

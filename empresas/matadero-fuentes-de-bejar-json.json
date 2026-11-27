@@ -1,0 +1,5 @@
+---
+permalink: empresas/matadero-fuentes-de-bejar.json
+sitemap: false
+---
+{{ site.data.empresas["matadero-fuentes-de-bejar"] | jsonify }}

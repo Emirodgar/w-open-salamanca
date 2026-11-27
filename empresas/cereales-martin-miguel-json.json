@@ -1,0 +1,5 @@
+---
+permalink: empresas/cereales-martin-miguel.json
+sitemap: false
+---
+{{ site.data.empresas["cereales-martin-miguel"] | jsonify }}

@@ -1,0 +1,5 @@
+---
+permalink: empresas/jamones-y-embutidos-jaem.json
+sitemap: false
+---
+{{ site.data.empresas["jamones-y-embutidos-jaem"] | jsonify }}

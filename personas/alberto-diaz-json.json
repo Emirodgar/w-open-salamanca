@@ -1,0 +1,5 @@
+---
+permalink: personas/alberto-diaz.json
+sitemap: false
+---
+{{ site.data.personas["alberto-diaz"] | jsonify }}

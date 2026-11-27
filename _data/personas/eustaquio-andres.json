@@ -1,0 +1,112 @@
+{
+  "slug": "eustaquio-andres",
+  "url_canonica": "https://opensalamanca.es/personas/eustaquio-andres",
+  "nombre_habitual": "Eustaquio Andrés",
+  "nombre_completo": "Eustaquio Andrés",
+  "tipo": "empresarial",
+  "actualizado": "2026-11-27",
+  "actualizado_texto": "27 de noviembre de 2026",
+  "estado_ficha": "borrador: datos limitados",
+  "licencia": "CC BY 4.0",
+  "sameas": [
+    "https://grupoandres.com/en/about-grupo-andres"
+  ],
+  "cargo_actual": {
+    "cargo": "Presidente",
+    "organizacion": "Grupo Andrés (Neumáticos Andrés)",
+    "organizacion_url": "https://www.grupoandres.com/",
+    "desde": ""
+  },
+  "resumen": "Eustaquio Andrés es el presidente de Grupo Andrés (Neumáticos Andrés), distribuidor de neumáticos con sede en Salamanca. Según la web del grupo, empezó a vender neumáticos en un taller a los 14 años, y la compañía se fundó en Salamanca en 1980.",
+  "rapida": [
+    {
+      "k": "Cargo",
+      "v": "Presidente de Grupo Andrés (según el organigrama de la web del grupo)"
+    },
+    {
+      "k": "Empresa",
+      "v": "Grupo Andrés / Neumáticos Andrés, distribución de neumáticos"
+    },
+    {
+      "k": "Sede",
+      "v": "Salamanca"
+    },
+    {
+      "k": "Fundación de la compañía",
+      "v": "1980, en Salamanca"
+    },
+    {
+      "k": "Web oficial",
+      "v": "https://www.grupoandres.com/"
+    }
+  ],
+  "trayectoria": [
+    {
+      "fecha": "1980",
+      "hito": "Fundación de la compañía en Salamanca",
+      "detalle": "La web del grupo sitúa la fundación en 1980 y atribuye a su dirección el crecimiento hasta ser distribuidor independiente y exclusivo de neumáticos de referencia en la península ibérica.",
+      "fuente": {
+        "t": "Grupo Andrés: sobre nosotros",
+        "u": "https://grupoandres.com/en/about-grupo-andres"
+      }
+    },
+    {
+      "fecha": "Sin fecha en la fuente",
+      "hito": "Inicios profesionales",
+      "detalle": "Empezó a vender neumáticos en un taller a los 14 años, según la web del grupo.",
+      "fuente": {
+        "t": "Grupo Andrés: sobre nosotros",
+        "u": "https://grupoandres.com/en/about-grupo-andres"
+      }
+    }
+  ],
+  "vinculos": [
+    {
+      "tipo": "Empresa",
+      "nombre": "Grupo Andrés (Neumáticos Andrés)",
+      "detalle": "Ficha de la empresa que preside.",
+      "url_interna": "/empresas/neumaticos-andres"
+    },
+    {
+      "tipo": "Dataset",
+      "nombre": "Ranking de empresas por facturación",
+      "detalle": "Posición de la empresa en el ranking provincial.",
+      "url_interna": "/ranking-empresas-facturacion"
+    }
+  ],
+  "no_verificado": [
+    "Cargos actuales en cada sociedad del grupo y composición del órgano de administración: pendiente del Registro Mercantil y el BORME.",
+    "Entrevistas de 2017 y 2018 en PDF (grupoandres.com): no se pudo extraer su texto, así que no se usan.",
+    "Fecha del traspaso de funciones ejecutivas dentro del grupo: no verificada.",
+    "Año de la cifra de 120 millones de euros de la página corporativa: no consta; la ficha de la empresa recoge cifras de 2024."
+  ],
+  "faq": [
+    {
+      "q": "¿Quién es Eustaquio Andrés?",
+      "a": "El presidente de Grupo Andrés (Neumáticos Andrés), distribuidor de neumáticos con sede en Salamanca, según la web del grupo."
+    },
+    {
+      "q": "¿Cuándo se fundó la empresa?",
+      "a": "En 1980, en Salamanca, según la web del grupo."
+    },
+    {
+      "q": "¿Cuánto factura el grupo?",
+      "a": "Las cifras de 2024 están en la ficha de la empresa: el grupo declara más de 385 millones de euros y otro ranking recoge 368,4 millones."
+    }
+  ],
+  "fuentes": [
+    {
+      "t": "Grupo Andrés: sobre nosotros",
+      "u": "https://grupoandres.com/en/about-grupo-andres"
+    },
+    {
+      "t": "Grupo Andrés",
+      "u": "https://www.grupoandres.com/"
+    },
+    {
+      "t": "Ficha de Grupo Andrés en Open Salamanca",
+      "u": "https://opensalamanca.es/empresas/neumaticos-andres"
+    }
+  ],
+  "como_citar": "Open Salamanca (2026). Ficha de Eustaquio Andrés, presidente de Grupo Andrés. https://opensalamanca.es/personas/eustaquio-andres. Licencia CC BY 4.0."
+}

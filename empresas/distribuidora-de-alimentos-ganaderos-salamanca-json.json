@@ -1,0 +1,5 @@
+---
+permalink: empresas/distribuidora-de-alimentos-ganaderos-salamanca.json
+sitemap: false
+---
+{{ site.data.empresas["distribuidora-de-alimentos-ganaderos-salamanca"] | jsonify }}

@@ -1,0 +1,5 @@
+---
+permalink: empresas/auto-salamanca.json
+sitemap: false
+---
+{{ site.data.empresas["auto-salamanca"] | jsonify }}

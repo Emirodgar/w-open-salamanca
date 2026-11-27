@@ -1,0 +1,760 @@
+{
+ "fuente": {
+  "t": "InfoNIF (Economía3): ranking de ventas de empresas de Salamanca, 2024",
+  "u": "https://infonif.economia3.com/ranking/ventas-empresas/salamanca"
+ },
+ "consultado": "2026-11-27",
+ "nota": "Orden por ventas 2024 de sociedades con domicilio en la provincia de Salamanca. InfoNIF oculta los importes a usuarios no premium; el orden es el de su ranking nacional de ventas. Municipios completados por Open Salamanca cuando InfoNIF los muestra truncados. Los importes no se publican hasta contrastarlos con cuentas depositadas.",
+ "empresas": [
+  {
+   "orden": 1,
+   "razon_social": "Bernabé Campal SL",
+   "municipio_infonif": "Huerta",
+   "sector_infonif": "Agricultura, ganadería y pesca",
+   "ranking_nacional_ventas_2024": 659,
+   "ficha": "bernabe-campal"
+  },
+  {
+   "orden": 2,
+   "razon_social": "Neumáticos Andrés SA",
+   "municipio_infonif": "Salamanca",
+   "sector_infonif": "Automoción",
+   "ranking_nacional_ventas_2024": 806,
+   "ficha": "neumaticos-andres"
+  },
+  {
+   "orden": 3,
+   "razon_social": "Merck Sharp & Dohme Animal Health SL",
+   "municipio_infonif": "Carbajosa de la Sagrada",
+   "sector_infonif": "Productos farmacéuticos",
+   "ranking_nacional_ventas_2024": 812,
+   "ficha": "msd-animal-health-salamanca"
+  },
+  {
+   "orden": 4,
+   "razon_social": "Biocarburantes de Castilla y León SA",
+   "municipio_infonif": "Babilafuente",
+   "sector_infonif": "Productos químicos y plásticos",
+   "ranking_nacional_ventas_2024": 1036,
+   "ficha": "biocarburantes-castilla-y-leon"
+  },
+  {
+   "orden": 5,
+   "razon_social": "Hermanos Recio SL",
+   "municipio_infonif": "Carbajosa de la Sagrada",
+   "sector_infonif": "Comercio minorista (no alimentación)",
+   "ranking_nacional_ventas_2024": 2045,
+   "ficha": "hermanos-recio"
+  },
+  {
+   "orden": 6,
+   "razon_social": "Grupo Corral Rendering SL",
+   "municipio_infonif": "Doñinos de Salamanca",
+   "sector_infonif": "Alimentación",
+   "ranking_nacional_ventas_2024": 2665,
+   "ficha": "grupo-corral-rendering"
+  },
+  {
+   "orden": 7,
+   "razon_social": "Panelais Producciones SA",
+   "municipio_infonif": "Huerta",
+   "sector_infonif": "Metales y minerales",
+   "ranking_nacional_ventas_2024": 2828,
+   "ficha": "panelais-producciones"
+  },
+  {
+   "orden": 8,
+   "razon_social": "Agrifeed SL",
+   "municipio_infonif": "Salamanca",
+   "sector_infonif": "Productos químicos y plásticos",
+   "ranking_nacional_ventas_2024": 2905,
+   "ficha": "agrifeed"
+  },
+  {
+   "orden": 9,
+   "razon_social": "Matadero Frigorífico de Fuentes El Navazo SL",
+   "municipio_infonif": "Fuentes de Béjar",
+   "sector_infonif": "Alimentación",
+   "ranking_nacional_ventas_2024": 2968,
+   "ficha": "matadero-fuentes-de-bejar"
+  },
+  {
+   "orden": 10,
+   "razon_social": "Productos Ibéricos Calderón y Ramos SL",
+   "municipio_infonif": "Guijuelo",
+   "sector_infonif": "Alimentación",
+   "ranking_nacional_ventas_2024": 3104,
+   "ficha": "calderon-y-ramos"
+  },
+  {
+   "orden": 11,
+   "razon_social": "Canpipork SL",
+   "municipio_infonif": "Guijuelo",
+   "sector_infonif": "Alimentación",
+   "ranking_nacional_ventas_2024": 3779,
+   "ficha": "canpipork"
+  },
+  {
+   "orden": 12,
+   "razon_social": "Cereales Martín Miguel SL",
+   "municipio_infonif": "Cordovilla",
+   "sector_infonif": "Agricultura, ganadería y pesca",
+   "ranking_nacional_ventas_2024": 4282,
+   "ficha": "cereales-martin-miguel"
+  },
+  {
+   "orden": 13,
+   "razon_social": "Matadero de Guijuelo SA",
+   "municipio_infonif": "Guijuelo",
+   "sector_infonif": "Alimentación",
+   "ranking_nacional_ventas_2024": 4407,
+   "ficha": "matadero-de-guijuelo"
+  },
+  {
+   "orden": 14,
+   "razon_social": "Mirat Fertilizantes SL",
+   "municipio_infonif": "Salamanca",
+   "sector_infonif": "Productos químicos y plásticos",
+   "ranking_nacional_ventas_2024": 4452,
+   "ficha": "mirat-fertilizantes"
+  },
+  {
+   "orden": 15,
+   "razon_social": "Eurodivisas SA",
+   "municipio_infonif": "Fuentes de Oñoro",
+   "sector_infonif": "Intermediación financiera",
+   "ranking_nacional_ventas_2024": 5323,
+   "ficha": "eurodivisas"
+  },
+  {
+   "orden": 16,
+   "razon_social": "Dehesa de Guijuelo SL",
+   "municipio_infonif": "Montejo de Salvatierra",
+   "sector_infonif": "Alimentación",
+   "ranking_nacional_ventas_2024": 5838,
+   "ficha": "dehesa-de-guijuelo"
+  },
+  {
+   "orden": 17,
+   "razon_social": "Servcor Logistics SL",
+   "municipio_infonif": "Doñinos de Salamanca",
+   "sector_infonif": "Alimentación",
+   "ranking_nacional_ventas_2024": 6045,
+   "ficha": "servcor-logistics"
+  },
+  {
+   "orden": 18,
+   "razon_social": "Meins Consulting SL",
+   "municipio_infonif": "Villares de la Reina",
+   "sector_infonif": "Construcción",
+   "ranking_nacional_ventas_2024": 6430,
+   "ficha": "meins-consulting"
+  },
+  {
+   "orden": 19,
+   "razon_social": "Mozárbez SA",
+   "municipio_infonif": "Mozárbez",
+   "sector_infonif": "Agricultura, ganadería y pesca",
+   "ranking_nacional_ventas_2024": 6490,
+   "ficha": "mozarbez"
+  },
+  {
+   "orden": 20,
+   "razon_social": "Carbadis SL",
+   "municipio_infonif": "Carbajosa de la Sagrada",
+   "sector_infonif": "Comercio minorista de alimentación",
+   "ranking_nacional_ventas_2024": 6614,
+   "ficha": "carbadis"
+  },
+  {
+   "orden": 21,
+   "razon_social": "Embutidos Fili SL",
+   "municipio_infonif": "Ledrada",
+   "sector_infonif": "Alimentación",
+   "ranking_nacional_ventas_2024": 7138,
+   "ficha": "embutidos-fili"
+  },
+  {
+   "orden": 22,
+   "razon_social": "Técnicas e Instalaciones Eléctricas Salamanca SL",
+   "municipio_infonif": "Carbajosa de la Sagrada",
+   "sector_infonif": "Productos eléctricos y electrónicos",
+   "ranking_nacional_ventas_2024": 7163,
+   "ficha": "tecnicas-e-instalaciones-electricas-salamanca"
+  },
+  {
+   "orden": 23,
+   "razon_social": "Jamones y Embutidos Jaem SA",
+   "municipio_infonif": "Villar de Gallimazo",
+   "sector_infonif": "Alimentación",
+   "ranking_nacional_ventas_2024": 7247,
+   "ficha": "jamones-y-embutidos-jaem"
+  },
+  {
+   "orden": 24,
+   "razon_social": "Agro Tracción Vehículos SA",
+   "municipio_infonif": "Salamanca",
+   "sector_infonif": "Automoción",
+   "ranking_nacional_ventas_2024": 7369,
+   "ficha": "agro-traccion-vehiculos"
+  },
+  {
+   "orden": 25,
+   "razon_social": "Nutcor Nutrients SL",
+   "municipio_infonif": "Doñinos de Salamanca",
+   "sector_infonif": "Alimentación",
+   "ranking_nacional_ventas_2024": 7398,
+   "ficha": "nutcor-nutrients"
+  },
+  {
+   "orden": 26,
+   "razon_social": "Gestión Agro-Ganadera SL",
+   "municipio_infonif": "Salamanca",
+   "sector_infonif": "Alimentación",
+   "ranking_nacional_ventas_2024": 7518,
+   "ficha": "gestion-agro-ganadera"
+  },
+  {
+   "orden": 27,
+   "razon_social": "Aceinsa Salamanca SA",
+   "municipio_infonif": "Villares de la Reina",
+   "sector_infonif": "Construcción",
+   "ranking_nacional_ventas_2024": 7563,
+   "ficha": "aceinsa-salamanca"
+  },
+  {
+   "orden": 28,
+   "razon_social": "Cárnicas Joselito SA",
+   "municipio_infonif": "Guijuelo",
+   "sector_infonif": "Alimentación",
+   "ranking_nacional_ventas_2024": 7650,
+   "ficha": "carnicas-joselito"
+  },
+  {
+   "orden": 29,
+   "razon_social": "Auto Salamanca SA",
+   "municipio_infonif": "Villares de la Reina",
+   "sector_infonif": "Automoción",
+   "ranking_nacional_ventas_2024": 7784,
+   "ficha": "auto-salamanca"
+  },
+  {
+   "orden": 30,
+   "razon_social": "Dulca SL",
+   "municipio_infonif": "Peñaranda de Bracamonte",
+   "sector_infonif": "Alimentación",
+   "ranking_nacional_ventas_2024": 7892,
+   "ficha": "dulca"
+  },
+  {
+   "orden": 31,
+   "razon_social": "Ganadería Casaseca 2010 SL",
+   "municipio_infonif": "Castellanos de Moriscos",
+   "sector_infonif": "Agricultura, ganadería y pesca",
+   "ranking_nacional_ventas_2024": 7916,
+   "ficha": "ganaderia-casaseca-2010"
+  },
+  {
+   "orden": 32,
+   "razon_social": "Eurodivisas Corporación SL",
+   "municipio_infonif": "Salamanca",
+   "sector_infonif": "Intermediación financiera",
+   "ranking_nacional_ventas_2024": 8152,
+   "ficha": "eurodivisas-corporacion"
+  },
+  {
+   "orden": 33,
+   "razon_social": "Vigilantes Asociados al Servicio de Banca y Empresas VASBE SL",
+   "municipio_infonif": "Salamanca",
+   "sector_infonif": "Consultoría empresarial y otros",
+   "ranking_nacional_ventas_2024": 8799,
+   "ficha": "vigilantes-asociados-al-servicio-de-banca-y-empresas-vasbe"
+  },
+  {
+   "orden": 34,
+   "razon_social": "Ibéricos de Arauzo 2004 SL",
+   "municipio_infonif": "Carbajosa de la Sagrada",
+   "sector_infonif": "Agricultura, ganadería y pesca",
+   "ranking_nacional_ventas_2024": 8822,
+   "ficha": "ibericos-de-arauzo-2004"
+  },
+  {
+   "orden": 35,
+   "razon_social": "Bernardo Hernández SL",
+   "municipio_infonif": "Guijuelo",
+   "sector_infonif": "Alimentación",
+   "ranking_nacional_ventas_2024": 9348,
+   "ficha": "bernardo-hernandez"
+  },
+  {
+   "orden": 36,
+   "razon_social": "Jamones Aljomar SA",
+   "municipio_infonif": "Guijuelo",
+   "sector_infonif": "Alimentación",
+   "ranking_nacional_ventas_2024": 9493,
+   "ficha": "jamones-aljomar"
+  },
+  {
+   "orden": 37,
+   "razon_social": "Distribuidora de Alimentos Ganaderos Salamanca SL",
+   "municipio_infonif": "Pelabravo",
+   "sector_infonif": "Alimentación",
+   "ranking_nacional_ventas_2024": 9777,
+   "ficha": "distribuidora-de-alimentos-ganaderos-salamanca"
+  },
+  {
+   "orden": 38,
+   "razon_social": "Transformadores Gedelsa SA",
+   "municipio_infonif": "Salamanca",
+   "sector_infonif": "Productos eléctricos y electrónicos",
+   "ranking_nacional_ventas_2024": 10272,
+   "ficha": "transformadores-gedelsa"
+  },
+  {
+   "orden": 39,
+   "razon_social": "Maes Honey Int SL",
+   "municipio_infonif": "Aldeatejada",
+   "sector_infonif": "Alimentación",
+   "ranking_nacional_ventas_2024": 10750,
+   "ficha": "maes-honey-int"
+  },
+  {
+   "orden": 40,
+   "razon_social": "Julián Martín SL",
+   "municipio_infonif": "Guijuelo",
+   "sector_infonif": "Alimentación",
+   "ranking_nacional_ventas_2024": 10766,
+   "ficha": "julian-martin"
+  },
+  {
+   "orden": 41,
+   "razon_social": "Crespo Villoria SL",
+   "municipio_infonif": "Machacón",
+   "sector_infonif": "Alimentación",
+   "ranking_nacional_ventas_2024": 10791,
+   "ficha": "crespo-villoria"
+  },
+  {
+   "orden": 42,
+   "razon_social": "Cuperal SL",
+   "municipio_infonif": "Vitigudino",
+   "sector_infonif": "Alimentación",
+   "ranking_nacional_ventas_2024": 11092,
+   "ficha": "cuperal"
+  },
+  {
+   "orden": 43,
+   "razon_social": "ETSA Global Logistics, S.A., S.M.E.",
+   "municipio_infonif": "Salamanca",
+   "sector_infonif": "Transporte terrestre",
+   "ranking_nacional_ventas_2024": 11724,
+   "ficha": "etsa-global-logistics"
+  },
+  {
+   "orden": 44,
+   "razon_social": "Limpiezas Castilla de Salamanca SL",
+   "municipio_infonif": "Salamanca",
+   "sector_infonif": "Equipos y servicios comerciales",
+   "ranking_nacional_ventas_2024": 11794,
+   "ficha": "limpiezas-castilla-de-salamanca"
+  },
+  {
+   "orden": 45,
+   "razon_social": "César Nieto Group SL",
+   "municipio_infonif": "Guijuelo",
+   "sector_infonif": "Alimentación",
+   "ranking_nacional_ventas_2024": 11872,
+   "ficha": "cesar-nieto-group"
+  },
+  {
+   "orden": 46,
+   "razon_social": "Mirat Combustibles SL (sociedad limitada unipersonal)",
+   "municipio_infonif": "Salamanca",
+   "sector_infonif": "Comercio minorista (no alimentación)",
+   "ranking_nacional_ventas_2024": 11986,
+   "ficha": "mirat-combustibles"
+  },
+  {
+   "orden": 47,
+   "razon_social": "Hijos de Atilano González SL (antes Atilano González García SL)",
+   "municipio_infonif": "Ledrada",
+   "sector_infonif": "Alimentación",
+   "ranking_nacional_ventas_2024": 12207,
+   "ficha": "hijos-de-atilano-gonzalez"
+  },
+  {
+   "orden": 48,
+   "razon_social": "Helmántica SA",
+   "municipio_infonif": "Villares de la Reina",
+   "sector_infonif": "Automoción",
+   "ranking_nacional_ventas_2024": 12388,
+   "ficha": "helmantica"
+  },
+  {
+   "orden": 49,
+   "razon_social": "Agrícola Antón SL",
+   "municipio_infonif": "Tarazona de Guareña",
+   "sector_infonif": "Agricultura, ganadería y pesca",
+   "ranking_nacional_ventas_2024": 12448,
+   "ficha": "agricola-anton"
+  },
+  {
+   "orden": 50,
+   "razon_social": "Aceitunas Miroliva SL",
+   "municipio_infonif": "Ciudad Rodrigo",
+   "sector_infonif": "Alimentación",
+   "ranking_nacional_ventas_2024": 12825,
+   "ficha": "aceitunas-miroliva"
+  },
+  {
+   "orden": 51,
+   "razon_social": "Isidro Gonzalez Revilla SL",
+   "municipio_infonif": "Guijuelo",
+   "sector_infonif": "Alimentación",
+   "ranking_nacional_ventas_2024": 13032
+  },
+  {
+   "orden": 52,
+   "razon_social": "Cipriano Hernandez SA",
+   "municipio_infonif": "Carbajosa de la Sagrada",
+   "sector_infonif": "Alimentación",
+   "ranking_nacional_ventas_2024": 13273
+  },
+  {
+   "orden": 53,
+   "razon_social": "Construcciones Electricas Jara SA",
+   "municipio_infonif": "Salamanca",
+   "sector_infonif": "Productos eléctricos y electrónicos",
+   "ranking_nacional_ventas_2024": 13619
+  },
+  {
+   "orden": 54,
+   "razon_social": "Industrias Carnicas Iglesias SA",
+   "municipio_infonif": "Santa Marta de Tormes",
+   "sector_infonif": "Alimentación",
+   "ranking_nacional_ventas_2024": 13622
+  },
+  {
+   "orden": 55,
+   "razon_social": "Aguas de San Joaquin SL",
+   "municipio_infonif": "Valdunciel",
+   "sector_infonif": "Bebidas y Tabaco",
+   "ranking_nacional_ventas_2024": 13636
+  },
+  {
+   "orden": 56,
+   "razon_social": "Cayo Rodriguez SL",
+   "municipio_infonif": "Ledrada",
+   "sector_infonif": "Alimentación",
+   "ranking_nacional_ventas_2024": 13979
+  },
+  {
+   "orden": 57,
+   "razon_social": "Abanico Guijuelo SL",
+   "municipio_infonif": "Salamanca",
+   "sector_infonif": "Alimentación",
+   "ranking_nacional_ventas_2024": 14056
+  },
+  {
+   "orden": 58,
+   "razon_social": "Plasticos Durex SA",
+   "municipio_infonif": "Salamanca",
+   "sector_infonif": "Productos químicos y plásticos",
+   "ranking_nacional_ventas_2024": 14575
+  },
+  {
+   "orden": 59,
+   "razon_social": "Ternepayo SL",
+   "municipio_infonif": "El Payo",
+   "sector_infonif": "Agricultura, ganadería y pesca",
+   "ranking_nacional_ventas_2024": 14747
+  },
+  {
+   "orden": 60,
+   "razon_social": "Saloro SL",
+   "municipio_infonif": "Barruecopardo",
+   "sector_infonif": "Metales y minerales",
+   "ranking_nacional_ventas_2024": 14764
+  },
+  {
+   "orden": 61,
+   "razon_social": "Hermanos Julian M SL",
+   "municipio_infonif": "Villares de la Reina",
+   "sector_infonif": "Productos eléctricos y electrónicos",
+   "ranking_nacional_ventas_2024": 14789
+  },
+  {
+   "orden": 62,
+   "razon_social": "Vilor Carreteras y Firmes SL",
+   "municipio_infonif": "Villares de la Reina",
+   "sector_infonif": "Construcción",
+   "ranking_nacional_ventas_2024": 14966
+  },
+  {
+   "orden": 63,
+   "razon_social": "Granja Rodriguez Serrano SL",
+   "municipio_infonif": "Alba de Tormes",
+   "sector_infonif": "Agricultura, ganadería y pesca",
+   "ranking_nacional_ventas_2024": 15197
+  },
+  {
+   "orden": 64,
+   "razon_social": "Aurelio Castro y Gonzalez SA",
+   "municipio_infonif": "Guijuelo",
+   "sector_infonif": "Alimentación",
+   "ranking_nacional_ventas_2024": 15917
+  },
+  {
+   "orden": 65,
+   "razon_social": "Ternera de Salamanca SL",
+   "municipio_infonif": "Salamanca",
+   "sector_infonif": "Alimentación",
+   "ranking_nacional_ventas_2024": 16256
+  },
+  {
+   "orden": 66,
+   "razon_social": "Salamanca de Transportes SA",
+   "municipio_infonif": "Salamanca",
+   "sector_infonif": "Transporte terrestre",
+   "ranking_nacional_ventas_2024": 16819
+  },
+  {
+   "orden": 67,
+   "razon_social": "Cauchos Bracamonte SA",
+   "municipio_infonif": "Peñaranda de Bracamonte",
+   "sector_infonif": "Industria maderera",
+   "ranking_nacional_ventas_2024": 16832
+  },
+  {
+   "orden": 68,
+   "razon_social": "Lisardo Castro Martin SL",
+   "municipio_infonif": "Guijuelo",
+   "sector_infonif": "Alimentación",
+   "ranking_nacional_ventas_2024": 17343
+  },
+  {
+   "orden": 69,
+   "razon_social": "Juan Manuel Hernandez SA",
+   "municipio_infonif": "Guijuelo",
+   "sector_infonif": "Alimentación",
+   "ranking_nacional_ventas_2024": 18424
+  },
+  {
+   "orden": 70,
+   "razon_social": "Montcasyer SL",
+   "municipio_infonif": "Carbajosa de la Sagrada",
+   "sector_infonif": "Equipos industriales",
+   "ranking_nacional_ventas_2024": 18456
+  },
+  {
+   "orden": 71,
+   "razon_social": "Es-5 Perez Santiago SL",
+   "municipio_infonif": "Santa Marta de Tormes",
+   "sector_infonif": "Petróleo y gas",
+   "ranking_nacional_ventas_2024": 18472
+  },
+  {
+   "orden": 72,
+   "razon_social": "Salamanca Expres SL",
+   "municipio_infonif": "Villares de la Reina",
+   "sector_infonif": "Transporte terrestre",
+   "ranking_nacional_ventas_2024": 19075
+  },
+  {
+   "orden": 73,
+   "razon_social": "Hispano Carnicas Salmantinas SL",
+   "municipio_infonif": "Guijuelo",
+   "sector_infonif": "Alimentación",
+   "ranking_nacional_ventas_2024": 19440
+  },
+  {
+   "orden": 74,
+   "razon_social": "Embutidos Fermin SL",
+   "municipio_infonif": "La Alberca",
+   "sector_infonif": "Alimentación",
+   "ranking_nacional_ventas_2024": 20265
+  },
+  {
+   "orden": 75,
+   "razon_social": "Agropecuaria Beher SL",
+   "municipio_infonif": "Guijuelo",
+   "sector_infonif": "Agricultura, ganadería y pesca",
+   "ranking_nacional_ventas_2024": 20932
+  },
+  {
+   "orden": 76,
+   "razon_social": "Helmantica de Cerrajeria SL",
+   "municipio_infonif": "Castellanos de Moriscos",
+   "sector_infonif": "Equipamiento industrial en metal",
+   "ranking_nacional_ventas_2024": 20985
+  },
+  {
+   "orden": 77,
+   "razon_social": "Renaccia SL",
+   "municipio_infonif": "Salamanca",
+   "sector_infonif": "Comercio minorista (no alimentación)",
+   "ranking_nacional_ventas_2024": 21060
+  },
+  {
+   "orden": 78,
+   "razon_social": "Oyrsa Soluciones SL",
+   "municipio_infonif": "Salamanca",
+   "sector_infonif": "Construcción",
+   "ranking_nacional_ventas_2024": 21068
+  },
+  {
+   "orden": 79,
+   "razon_social": "Marcos Sotoserrano SL",
+   "municipio_infonif": "Sotoserrano",
+   "sector_infonif": "Alimentación",
+   "ranking_nacional_ventas_2024": 21088
+  },
+  {
+   "orden": 80,
+   "razon_social": "Revisan SL",
+   "municipio_infonif": "Guijuelo",
+   "sector_infonif": "Alimentación",
+   "ranking_nacional_ventas_2024": 21403
+  },
+  {
+   "orden": 81,
+   "razon_social": "Complejo Agroalimentario Bejar SL",
+   "municipio_infonif": "Doñinos de Salamanca",
+   "sector_infonif": "Alimentación",
+   "ranking_nacional_ventas_2024": 21818
+  },
+  {
+   "orden": 82,
+   "razon_social": "Gruponani SL",
+   "municipio_infonif": "Alba de Tormes",
+   "sector_infonif": "Automoción",
+   "ranking_nacional_ventas_2024": 21991
+  },
+  {
+   "orden": 83,
+   "razon_social": "New Fire Ice SL",
+   "municipio_infonif": "Castellanos de Moriscos",
+   "sector_infonif": "Equipos industriales",
+   "ranking_nacional_ventas_2024": 22053
+  },
+  {
+   "orden": 84,
+   "razon_social": "Rodrigo Sanchez Blazquez SL",
+   "municipio_infonif": "Salamanca",
+   "sector_infonif": "Agricultura, ganadería y pesca",
+   "ranking_nacional_ventas_2024": 22102
+  },
+  {
+   "orden": 85,
+   "razon_social": "Castellana de Subproductos Carnicos SL",
+   "municipio_infonif": "Doñinos de Salamanca",
+   "sector_infonif": "Alimentación",
+   "ranking_nacional_ventas_2024": 22144
+  },
+  {
+   "orden": 86,
+   "razon_social": "Campal-Oil Gasoleos y Lubricantes SL",
+   "municipio_infonif": "Huerta",
+   "sector_infonif": "Petróleo y gas",
+   "ranking_nacional_ventas_2024": 22171
+  },
+  {
+   "orden": 87,
+   "razon_social": "Minijuegos SA",
+   "municipio_infonif": "Salamanca",
+   "sector_infonif": "Productos y actividades relacionados con ocio y cultura",
+   "ranking_nacional_ventas_2024": 22359
+  },
+  {
+   "orden": 88,
+   "razon_social": "Delin Mitel SL",
+   "municipio_infonif": "Salamanca",
+   "sector_infonif": "Automoción",
+   "ranking_nacional_ventas_2024": 22486
+  },
+  {
+   "orden": 89,
+   "razon_social": "Petroleos Bejar Oil SL",
+   "municipio_infonif": "Castellanos de Moriscos",
+   "sector_infonif": "Petróleo y gas",
+   "ranking_nacional_ventas_2024": 22516
+  },
+  {
+   "orden": 90,
+   "razon_social": "Airworks Helicopters SL",
+   "municipio_infonif": "Salamanca",
+   "sector_infonif": "Transporte aéreo y actividades relacionadas",
+   "ranking_nacional_ventas_2024": 22574
+  },
+  {
+   "orden": 91,
+   "razon_social": "Bellota Unico SL",
+   "municipio_infonif": "Martinamor",
+   "sector_infonif": "Alimentación",
+   "ranking_nacional_ventas_2024": 22680
+  },
+  {
+   "orden": 92,
+   "razon_social": "Vera Vieja SA",
+   "municipio_infonif": "Guijuelo",
+   "sector_infonif": "Agricultura, ganadería y pesca",
+   "ranking_nacional_ventas_2024": 22801
+  },
+  {
+   "orden": 93,
+   "razon_social": "Construcciones Martobar SL",
+   "municipio_infonif": "Salamanca",
+   "sector_infonif": "Construcción",
+   "ranking_nacional_ventas_2024": 22809
+  },
+  {
+   "orden": 94,
+   "razon_social": "Vacuno de Salamanca SL",
+   "municipio_infonif": "Salamanca",
+   "sector_infonif": "Agricultura, ganadería y pesca",
+   "ranking_nacional_ventas_2024": 22953
+  },
+  {
+   "orden": 95,
+   "razon_social": "Aldeacharra SL",
+   "municipio_infonif": "Salamanca",
+   "sector_infonif": "Alimentación",
+   "ranking_nacional_ventas_2024": 23185
+  },
+  {
+   "orden": 96,
+   "razon_social": "Innovaporc SL",
+   "municipio_infonif": "Castellanos de Moriscos",
+   "sector_infonif": "Agricultura, ganadería y pesca",
+   "ranking_nacional_ventas_2024": 23521
+  },
+  {
+   "orden": 97,
+   "razon_social": "Anferpa Cars SL",
+   "municipio_infonif": "Villares de la Reina",
+   "sector_infonif": "Automoción",
+   "ranking_nacional_ventas_2024": 23806
+  },
+  {
+   "orden": 98,
+   "razon_social": "Embutidos Eusebio SL",
+   "municipio_infonif": "La Alberca",
+   "sector_infonif": "Alimentación",
+   "ranking_nacional_ventas_2024": 23880
+  },
+  {
+   "orden": 99,
+   "razon_social": "Seauto SA",
+   "municipio_infonif": "Villares de la Reina",
+   "sector_infonif": "Automoción",
+   "ranking_nacional_ventas_2024": 24181
+  },
+  {
+   "orden": 100,
+   "razon_social": "Dehesa los Linarillos SL",
+   "municipio_infonif": "La Tala",
+   "sector_infonif": "Alimentación",
+   "ranking_nacional_ventas_2024": 24458
+  }
+ ]
+}

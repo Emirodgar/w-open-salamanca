@@ -1,0 +1,157 @@
+{
+  "slug": "auto-salamanca",
+  "url_canonica": "https://opensalamanca.es/empresas/auto-salamanca",
+  "nombre_habitual": "Auto Salamanca",
+  "razon_social": "Auto Salamanca SA",
+  "actualizado": "2026-11-27",
+  "actualizado_texto": "27 de noviembre de 2026",
+  "estado_ficha": "borrador: datos limitados (objeto social propio y ventas sin verificar)",
+  "licencia": "CC BY 4.0",
+  "sameas": [],
+  "resumen": "Auto Salamanca SA es una sociedad anónima con domicilio en la carretera de Valladolid, en Villares de la Reina (Salamanca), clasificada por InfoNIF en el sector de automoción y matriz de filiales del negocio de concesionarios. Ocupa el puesto 29 por ventas 2024 entre las empresas de la provincia y el 7.784.º a nivel nacional según InfoNIF.",
+  "rapida": [
+    {
+      "k": "Razón social",
+      "v": "Auto Salamanca SA (NIF A37003050)"
+    },
+    {
+      "k": "Sector",
+      "v": "Automoción (clasificación de InfoNIF); su objeto social propio no se ha verificado"
+    },
+    {
+      "k": "Domicilio",
+      "v": "Carretera de Valladolid, km 2, 37184 Villares de la Reina (Salamanca)"
+    },
+    {
+      "k": "Grupo",
+      "v": "InfoNIF recoge como participadas a Anferpa Cars SL y Matmor Autos SL (esta última absorbida, BORME de 13/01/2026); el concesionario Renault y Dacia de la misma dirección figura como Auto Salamanca Cars SL"
+    },
+    {
+      "k": "Administración",
+      "v": "Consejo de administración, con Matealsa SL como presidente y consejero delegado (BORME, abril de 2025)"
+    },
+    {
+      "k": "Auditor",
+      "v": "Audicyl Auditores SL"
+    },
+    {
+      "k": "Posición por ventas 2024",
+      "v": "29.ª entre las sociedades domiciliadas en la provincia de Salamanca; 7.784.ª a nivel nacional (InfoNIF)"
+    }
+  ],
+  "cifras": [
+    {
+      "concepto": "Posición por ventas 2024 (provincia de Salamanca)",
+      "valor": "29.ª (7.784.ª a nivel nacional)",
+      "fuente": {
+        "t": "InfoNIF: ranking de ventas de empresas de Salamanca 2024",
+        "u": "https://infonif.economia3.com/ranking/ventas-empresas/salamanca"
+      }
+    }
+  ],
+  "nota_cifras": "No se ha obtenido cifra de ventas ni de capital: InfoNIF oculta las ventas y no recoge actos de capital, y la página de El Economista no estuvo accesible. La posición procede del ranking de InfoNIF. Una búsqueda indicó una escisión parcial de Auto Salamanca SA hacia Auto Salamanca Cars SLU (BORME-C de 22/01/2025), pero el PDF no pudo leerse y no se usa como dato.",
+  "directivos": [
+    {
+      "nombre": "Matealsa SL",
+      "cargo": "Presidente, consejero y consejero delegado (sociedad consejera)",
+      "fuente": {
+        "t": "InfoNIF: ficha de Auto Salamanca SA (BORME, 03/04/2025)",
+        "u": "https://infonif.economia3.com/ficha-empresa/auto-salamanca-sa"
+      },
+      "ficha": ""
+    },
+    {
+      "nombre": "María Inés Moriñigo Mateos",
+      "cargo": "Consejera y secretaria",
+      "fuente": {
+        "t": "InfoNIF: ficha de Auto Salamanca SA (BORME, 03/04/2025)",
+        "u": "https://infonif.economia3.com/ficha-empresa/auto-salamanca-sa"
+      },
+      "ficha": ""
+    },
+    {
+      "nombre": "Desarrollos Comerciales e Industriales SA",
+      "cargo": "Consejero (sociedad consejera)",
+      "fuente": {
+        "t": "InfoNIF: ficha de Auto Salamanca SA (BORME, 07/08/2025)",
+        "u": "https://infonif.economia3.com/ficha-empresa/auto-salamanca-sa"
+      },
+      "ficha": ""
+    }
+  ],
+  "historia": [
+    {
+      "fecha": "1961",
+      "hito": "Referencia de antigüedad",
+      "detalle": "InfoNIF muestra una antigüedad de 65 años con referencia 30/01/1961, sin presentarla como constitución expresa.",
+      "fuente": {
+        "t": "InfoNIF: ficha de Auto Salamanca SA",
+        "u": "https://infonif.economia3.com/ficha-empresa/auto-salamanca-sa"
+      }
+    },
+    {
+      "fecha": "2025",
+      "hito": "Cambios en el consejo",
+      "detalle": "El BORME de 03/04/2025 recoge nombramientos y ceses en el consejo y una modificación estatutaria sobre la retribución de los administradores; el de 07/08/2025 recoge nuevos cambios.",
+      "fuente": {
+        "t": "InfoNIF: ficha de Auto Salamanca SA",
+        "u": "https://infonif.economia3.com/ficha-empresa/auto-salamanca-sa"
+      }
+    },
+    {
+      "fecha": "2026",
+      "hito": "Absorción de Matmor Autos SL",
+      "detalle": "El BORME de 13/01/2026 publica la disolución, fusión y extinción de Matmor Autos SL, filial cuya matriz en InfoNIF es Auto Salamanca SA (el objeto de Matmor es la compraventa de automóviles y repuestos y su reparación).",
+      "fuente": {
+        "t": "InfoNIF: ficha de Matmor Autos SL",
+        "u": "https://infonif.economia3.com/ficha-empresa/matmor-autos-sl"
+      }
+    }
+  ],
+  "no_verificado": [
+    "Objeto social propio de Auto Salamanca SA: InfoNIF solo indica el sector Automoción; la actividad de compraventa de vehículos citada procede del objeto de su filial Matmor Autos SL.",
+    "Ventas y resultado: ocultos en InfoNIF y no contrastados con cuentas depositadas.",
+    "Escisión de 2025 a favor de Auto Salamanca Cars SLU: indicada por un resultado de búsqueda sobre un anuncio del BORME cuyo PDF no pudo leerse; no verificada.",
+    "Relación con otros concesionarios o grupos familiares del apellido Mateos: no confirmada por fuente directa.",
+    "Capital social y plantilla: no constan en las fuentes consultadas.",
+    "Fecha de constitución: solo consta la antigüedad de referencia (30/01/1961).",
+    "Sitio web oficial de la sociedad: no localizado; el concesionario Renault y Dacia consta como Auto Salamanca Cars SL."
+  ],
+  "faq": [
+    {
+      "q": "¿Qué es Auto Salamanca SA?",
+      "a": "Una sociedad anónima de Villares de la Reina (Salamanca), clasificada como empresa de automoción por InfoNIF, con filiales del negocio de concesionarios."
+    },
+    {
+      "q": "¿Qué puesto ocupa entre las empresas de Salamanca?",
+      "a": "El 29.º por ventas 2024 en el ranking provincial de InfoNIF y el 7.784.º a nivel nacional."
+    },
+    {
+      "q": "¿Quién la administra?",
+      "a": "Un consejo de administración presidido por Matealsa SL, con María Inés Moriñigo Mateos como consejera y secretaria, según el BORME de abril de 2025 vía InfoNIF."
+    },
+    {
+      "q": "¿Qué relación tiene con el concesionario Renault y Dacia?",
+      "a": "El concesionario Renault y Dacia de la carretera de Valladolid, km 2,500, figura como Auto Salamanca Cars SL; la vinculación societaria exacta con Auto Salamanca SA no está verificada."
+    }
+  ],
+  "fuentes": [
+    {
+      "t": "InfoNIF: ranking de ventas de empresas de Salamanca 2024",
+      "u": "https://infonif.economia3.com/ranking/ventas-empresas/salamanca"
+    },
+    {
+      "t": "InfoNIF: ficha de Auto Salamanca SA",
+      "u": "https://infonif.economia3.com/ficha-empresa/auto-salamanca-sa"
+    },
+    {
+      "t": "InfoNIF: ficha de Matmor Autos SL",
+      "u": "https://infonif.economia3.com/ficha-empresa/matmor-autos-sl"
+    },
+    {
+      "t": "Renault: concesionario Auto Salamanca Cars",
+      "u": "https://concesionario.renault.es/auto-salamanca-cars.html"
+    }
+  ],
+  "como_citar": "Open Salamanca (2026). Ficha de Auto Salamanca SA. https://opensalamanca.es/empresas/auto-salamanca. Licencia CC BY 4.0."
+}

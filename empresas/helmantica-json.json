@@ -1,0 +1,5 @@
+---
+permalink: empresas/helmantica.json
+sitemap: false
+---
+{{ site.data.empresas["helmantica"] | jsonify }}

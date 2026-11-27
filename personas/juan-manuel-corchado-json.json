@@ -1,0 +1,5 @@
+---
+permalink: personas/juan-manuel-corchado.json
+sitemap: false
+---
+{{ site.data.personas["juan-manuel-corchado"] | jsonify }}

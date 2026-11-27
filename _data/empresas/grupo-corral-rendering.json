@@ -1,0 +1,154 @@
+{
+  "slug": "grupo-corral-rendering",
+  "url_canonica": "https://opensalamanca.es/empresas/grupo-corral-rendering",
+  "nombre_habitual": "Grupo Corral Rendering (Bioscor)",
+  "razon_social": "Grupo Corral Rendering SL",
+  "actualizado": "2026-11-27",
+  "actualizado_texto": "27 de noviembre de 2026",
+  "estado_ficha": "borrador: pendiente de contrastar cuentas depositadas y perímetro del grupo en el Registro Mercantil",
+  "licencia": "CC BY 4.0",
+  "sameas": [
+    "https://bioscor.es"
+  ],
+  "resumen": "Grupo Corral Rendering SL (antes Corongrasa SL, web Bioscor) es una empresa de Doñinos de Salamanca dedicada a recoger y transformar subproductos animales en grasas, proteínas y harinas para alimentación animal, biocombustibles y otros usos industriales. Ocupa el puesto 2.665 por ventas 2024 a nivel nacional en el ranking de InfoNIF, el 6.º entre las sociedades de la provincia. No se ha encontrado una cifra fiable de su facturación en euros.",
+  "rapida": [
+    {
+      "k": "Nombre comercial",
+      "v": "Bioscor (Grupo Corral)"
+    },
+    {
+      "k": "Razón social",
+      "v": "Grupo Corral Rendering SL (NIF B37300209; denominación anterior: Corongrasa SL)"
+    },
+    {
+      "k": "Sector",
+      "v": "Aprovechamiento de subproductos animales (rendering)"
+    },
+    {
+      "k": "Domicilio",
+      "v": "Finca La Argentina s/n, 37120 Doñinos de Salamanca (según InfoNIF)"
+    },
+    {
+      "k": "Administrador único",
+      "v": "Bielsa Corporate Services SL (persona jurídica, también sociedad matriz según InfoNIF)"
+    },
+    {
+      "k": "Posición por ventas 2024",
+      "v": "6.ª entre las sociedades domiciliadas en la provincia de Salamanca; 2.665.ª a nivel nacional (InfoNIF)"
+    },
+    {
+      "k": "Web oficial",
+      "v": "https://bioscor.es"
+    }
+  ],
+  "cifras": [
+    {
+      "concepto": "Evolución de ventas 2023",
+      "valor": "-8,59 %",
+      "fuente": {
+        "t": "elEconomista: ranking de empresas, Corongrasa / Grupo Corral Rendering",
+        "u": "https://ranking-empresas.eleconomista.es/CORONGRASA.html"
+      }
+    },
+    {
+      "concepto": "Evolución de ventas 2024",
+      "valor": "+22,96 % con resultado 2024 negativo",
+      "fuente": {
+        "t": "elEconomista: ranking de empresas, Corongrasa / Grupo Corral Rendering",
+        "u": "https://ranking-empresas.eleconomista.es/CORONGRASA.html"
+      }
+    },
+    {
+      "concepto": "Capacidad de procesado (declarada por la empresa)",
+      "valor": "más de 250.000 toneladas al año, 10 líneas de producción en España y presencia en 19 países",
+      "fuente": {
+        "t": "Bioscor: web oficial",
+        "u": "https://bioscor.es"
+      }
+    }
+  ],
+  "nota_cifras": "Ni InfoNIF ni elEconomista muestran el importe de ventas en euros, solo variaciones porcentuales, por lo que no se publica una cifra de facturación. Las capacidades y el número de líneas son declaraciones de la propia empresa y se refieren a Bioscor, que puede incluir otras sociedades del grupo.",
+  "directivos": [
+    {
+      "nombre": "Bielsa Corporate Services SL",
+      "cargo": "Administrador único (persona jurídica)",
+      "fuente": {
+        "t": "InfoNIF: ficha de Grupo Corral Rendering SL",
+        "u": "https://infonif.economia3.com/ficha-empresa/grupo-corral-rendering-sl"
+      },
+      "ficha": ""
+    }
+  ],
+  "historia": [
+    {
+      "fecha": "1986",
+      "hito": "Fundación de Grupo Fernando Corral Salamanca (grupo con el que se relaciona)",
+      "detalle": "Grupo Fernando Corral Salamanca, el grupo con el que se relaciona la empresa, se funda en Salamanca en 1986 y opera tres plantas que convierten subproductos cárnicos de origen animal en materia prima para biocombustibles e ingredientes para alimentación.",
+      "fuente": {
+        "t": "Capital Riesgo: Magnum Capital se incorpora al capital de Grupo Fernando Corral Salamanca",
+        "u": "https://capital-riesgo.es/es/articles/magnum-capital-se-incorpora-al-capital-de-grupo-fernando-corral-salamanca/"
+      }
+    },
+    {
+      "fecha": "Julio de 2022",
+      "hito": "Entrada de Magnum Capital",
+      "detalle": "La gestora Magnum Capital entra en el capital de Grupo Fernando Corral Salamanca junto a la familia fundadora, con planes de crecimiento y digitalización.",
+      "fuente": {
+        "t": "Capital Riesgo",
+        "u": "https://capital-riesgo.es/es/articles/magnum-capital-se-incorpora-al-capital-de-grupo-fernando-corral-salamanca/"
+      }
+    }
+  ],
+  "no_verificado": [
+    "Ventas en euros de 2023 y 2024: InfoNIF las oculta y elEconomista solo da variaciones porcentuales.",
+    "Relación exacta con Grupo Fernando Corral Salamanca SL: InfoNIF las lista en el mismo grupo bajo la matriz Bielsa Corporate Services SL, pero no describe la participación de cada una.",
+    "Fecha del cambio de denominación de Corongrasa SL a Grupo Corral Rendering SL (un resultado de búsqueda apunta a 2023 en el BORME, sin confirmar).",
+    "Domicilio actual: un acto del BORME de marzo de 2026 podría recoger un traslado a la avenida Juan Carlos I de Doñinos; no confirmado.",
+    "Personas físicas que controlan Bielsa Corporate Services SL y plantilla: no consta en las fuentes consultadas. Los apoderados del BORME no se incluyen porque no son órgano de administración."
+  ],
+  "faq": [
+    {
+      "q": "¿A qué se dedica Grupo Corral Rendering?",
+      "a": "A recoger y transformar subproductos de origen animal en grasas, proteínas y harinas para alimentación animal, biocombustibles y otros usos industriales, según su web Bioscor."
+    },
+    {
+      "q": "¿Dónde está?",
+      "a": "En Finca La Argentina, Doñinos de Salamanca, según InfoNIF. Bioscor menciona también instalaciones en Béjar y Guijuelo."
+    },
+    {
+      "q": "¿Cuánto factura?",
+      "a": "No hay una cifra fiable publicada. elEconomista indica que sus ventas cayeron un 8,59 % en 2023 y subieron un 22,96 % en 2024, con resultado negativo ese último año."
+    },
+    {
+      "q": "¿Quién la administra?",
+      "a": "Según el BORME recogido por InfoNIF, su administrador único es la sociedad Bielsa Corporate Services SL."
+    }
+  ],
+  "fuentes": [
+    {
+      "t": "InfoNIF: ranking de ventas de empresas de Salamanca 2024",
+      "u": "https://infonif.economia3.com/ranking/ventas-empresas/salamanca"
+    },
+    {
+      "t": "InfoNIF: ficha de Grupo Corral Rendering SL",
+      "u": "https://infonif.economia3.com/ficha-empresa/grupo-corral-rendering-sl"
+    },
+    {
+      "t": "InfoNIF: ficha de Grupo Fernando Corral Salamanca SL",
+      "u": "https://infonif.economia3.com/ficha-empresa/grupo-fernando-corral-salamanca-sl"
+    },
+    {
+      "t": "elEconomista: ranking de empresas, Corongrasa / Grupo Corral Rendering",
+      "u": "https://ranking-empresas.eleconomista.es/CORONGRASA.html"
+    },
+    {
+      "t": "Bioscor: web oficial",
+      "u": "https://bioscor.es"
+    },
+    {
+      "t": "Capital Riesgo: Magnum Capital se incorpora a Grupo Fernando Corral Salamanca (2022)",
+      "u": "https://capital-riesgo.es/es/articles/magnum-capital-se-incorpora-al-capital-de-grupo-fernando-corral-salamanca/"
+    }
+  ],
+  "como_citar": "Open Salamanca (2026). Ficha de Grupo Corral Rendering (Bioscor). https://opensalamanca.es/empresas/grupo-corral-rendering. Licencia CC BY 4.0."
+}
