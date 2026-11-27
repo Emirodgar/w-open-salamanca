@@ -1,200 +1,105 @@
 ---
 layout: default
 title: Evolución de la renta per cápita en Salamanca
-description: "Renta neta media por persona en Salamanca entre 2015 y 2025: evolución anual y comparación con otras ciudades"
+description: "Renta neta media por persona y por hogar en Salamanca entre 2015 y 2024 según el INE, con la variación anual y la comparación con la inflación"
 date: 06-10-2026
+modified: 2026-11-28
 folder: Economia
 permalink: renta-per-capita
+dataset_files:
+  - renta-salamanca-ine.json
+dataset_source: "INE, Atlas de distribución de renta de los hogares (ADRH)"
+dataset_source_url: https://www.ine.es/dyngs/INEbase/operacion.htm?c=Estadistica_C&cid=1254736177088&menu=ultiDatos&idp=1254735976608
 ---
 
-    <!-- Featured Datasets Section -->
     <section class="featured dataset" id="datos">
         <div class="container">
             <div class="section-header">
                 <h1 class="section-title">{{ page.title }}</h1>
                 <p class="section-description">{{ page.description }}</p>
             </div>
-			
+
 			<div id="section-content">
-						
-  <p style="background:#FFF4E5; border-left:4px solid #F4A261; padding:10px 14px;"><b>No verificado.</b> Las cifras de renta anual de esta página (texto, gráficos y tabla, de 2015 a 2025) proceden de una versión anterior y no tienen una fuente que Open Salamanca haya podido contrastar. El dato de 2025 se presenta como "máximo histórico estimado" cuando las fuentes estadísticas oficiales de renta de los hogares (como el Atlas de Distribución de Renta de los Hogares del INE) aún no publican ese ejercicio. Se mantienen solo como referencia.</p>
+
+<p>La renta neta media por persona en Salamanca pasó de <b>11.735 euros en 2015 a 16.150 euros en 2024</b>, un <b>37,6 %</b> más en euros corrientes. La renta neta media por hogar subió de 26.948 a 35.126 euros (+30,3 %). Todas las cifras son datos oficiales del <a href="https://www.ine.es/dyngs/INEbase/operacion.htm?c=Estadistica_C&cid=1254736177088&menu=ultiDatos&idp=1254735976608" rel="noopener">Atlas de Distribución de Renta de los Hogares del INE</a> para el municipio de Salamanca. El último año disponible es 2024.</p>
 
   <canvas id="rentaChart" width="800" height="400"></canvas>
 
- 
-			<h2>Análisis de las principales conclusiones (no verificado)</h2>
-			
-				<p>
-La evolución económica de los residentes en Salamanca ciudad en los últimos años muestra un <b>crecimiento sostenido de los ingresos netos tras una breve estancación durante el periodo de pandemia</b>. A pesar del impacto económico global experimentado entre 2020 y 2021, la renta per cápita de los salmantinos ha mantenido una trayectoria de convergencia y aceleración posterior, alcanzando en 2025 un máximo histórico estimado de 16.540 euros netos anuales por persona.</p>
-
-<h3>Tendencias económicas clave (no verificado)</h3>
+			<h2>Qué muestran los datos</h2>
 <ul>
-<li><b>Impacto de la pandemia y moderación (2019-2021)</b>: Tras años de progresivo ascenso, la renta media por habitante sufrió una leve ralentización en 2020 (+0,31%) y un ajuste moderado en 2021 (-0,73%), motivado por las restricciones de actividad, el peso del sector servicios y el perfil universitario/estudiantil de la capital.</li>
-
-<li><b>Aceleración e impulso post-pandemia (2022-2025)</b>: A partir de 2022 la renta neta por persona experimentó un fuerte dinamismo económico, registrando tasas de variación anual superiores al 5% y 6%. Destaca el ejercicio 2023, donde la renta superó por primera vez los 15.300 euros (+6,12%), consolidando en 2025 un crecimiento del 3,83% interanual.</li>
+<li><b>Crecimiento continuo, sin caída en la pandemia.</b> La renta por persona creció todos los años de la serie. El ritmo más lento fue el de 2020 (+0,6 %), y se recuperó en 2021 (+4,3 %).</li>
+<li><b>Las mayores subidas son las más recientes:</b> +4,7 % en 2022, +6,3 % en 2023 y +5,4 % en 2024.</li>
+<li><b>Con inflación el panorama cambia.</b> Entre 2015 y 2024 los precios subieron un 23,5 % (IPC general medio anual), así que el aumento real de la renta por persona fue de en torno al 11,5 %. En 2022 la renta subió un 4,7 %, por debajo de la inflación (8,4 %): en términos reales, perdió un 3,4 % de poder adquisitivo.</li>
 </ul>
+<p>Esta media esconde diferencias grandes: según el INE, entre los barrios con más y menos renta de Salamanca hay unos 17.000 euros anuales por persona (<a href="/renta-barrios">renta por barrios y municipios</a>), y la <a href="/renta-sexo">renta por sexo</a> y la <a href="/renta-desigualdad">distribución del ingreso</a> completan el cuadro. Para la renta bruta declarada por municipios, consulta el <a href="/municipios-mayor-renta-salamanca">ranking de renta de los municipios de Salamanca</a>.</p>
 
-<p>Esta evolución agregada convive con diferencias notables según el territorio y el género: el desglose por <a href="/renta-barrios">barrios y municipios del alfoz</a> muestra, según el INE, una diferencia de unos 17.000 euros anuales por persona entre el barrio con más y el de menos renta, mientras que la comparativa de <a href="/renta-sexo">renta por sexo</a> muestra que la brecha salarial de género aún se sitúa cerca del 16%. Ambas perspectivas se enmarcan en el análisis más amplio de la <a href="/renta-desigualdad">renta y la desigualdad</a> en la provincia. Para el detalle por municipios, con la renta bruta declarada ante la Agencia Tributaria y su variación entre 2023 y 2024, puede consultarse el <a href="/municipios-mayor-renta-salamanca">ranking de renta de los municipios de Salamanca</a>.</p>
-
-  <h2>Evolución de la renta neta media por persona y variación anual (2015-2025) (no verificado)</h2>
+  <h2>Renta neta media por persona y por hogar, 2015-2024</h2>
   <canvas id="rentaChart2" width="800" height="400"></canvas>
 
-
-
 			</div>
-			
-			
+
 			<div id="section-table">
 			<table border="1" cellpadding="5" cellspacing="0">
 			  <thead>
 				<tr>
 				  <th>Año</th>
-				  <th>Renta Neta Media / Hab. (€) (no verificado)</th>
-				  <th>Variación Anual (€) (no verificado)</th>
-				  <th>Variación % (no verificado)</th>
+				  <th>Renta neta media por persona (€)</th>
+				  <th>Variación anual (€)</th>
+				  <th>Variación anual (%)</th>
+				  <th>Renta neta media por hogar (€)</th>
+				  <th>Variación del IPC (%)</th>
 				</tr>
 			  </thead>
 			  <tbody>
-				<tr><td>2015</td><td>12.180</td><td>-</td><td>-</td></tr>
-				<tr><td>2016</td><td>12.450</td><td>+270</td><td>+2.22%</td></tr>
-				<tr><td>2017</td><td>12.890</td><td>+440</td><td>+3.53%</td></tr>
-				<tr><td>2018</td><td>13.310</td><td>+420</td><td>+3.26%</td></tr>
-				<tr><td>2019</td><td>13.820</td><td>+510</td><td>+3.83%</td></tr>
-				<tr><td>2020</td><td>13.863</td><td>+43</td><td>+0.31%</td></tr>
-				<tr><td>2021</td><td>13.757</td><td>-106</td><td>-0.73%</td></tr>
-				<tr><td>2022</td><td>14.450</td><td>+693</td><td>+5.04%</td></tr>
-				<tr><td>2023</td><td>15.319</td><td>+869</td><td>+6.12%</td></tr>
-				<tr><td>2024</td><td>15.930</td><td>+611</td><td>+3.99%</td></tr>
-				<tr><td>2025</td><td>16.540</td><td>+610</td><td>+3.83%</td></tr>
+				<tr><td>2015</td><td>11.735</td><td>-</td><td>-</td><td>26.948</td><td>-</td></tr>
+				<tr><td>2016</td><td>11.921</td><td>+186</td><td>+1,6 %</td><td>27.355</td><td>−0,2 %</td></tr>
+				<tr><td>2017</td><td>12.225</td><td>+304</td><td>+2,6 %</td><td>27.811</td><td>+2,0 %</td></tr>
+				<tr><td>2018</td><td>12.595</td><td>+370</td><td>+3,0 %</td><td>28.466</td><td>+1,7 %</td></tr>
+				<tr><td>2019</td><td>13.112</td><td>+517</td><td>+4,1 %</td><td>29.806</td><td>+0,7 %</td></tr>
+				<tr><td>2020</td><td>13.185</td><td>+73</td><td>+0,6 %</td><td>29.675</td><td>−0,3 %</td></tr>
+				<tr><td>2021</td><td>13.756</td><td>+571</td><td>+4,3 %</td><td>30.602</td><td>+3,1 %</td></tr>
+				<tr><td>2022</td><td>14.405</td><td>+649</td><td>+4,7 %</td><td>31.674</td><td>+8,4 %</td></tr>
+				<tr><td>2023</td><td>15.319</td><td>+914</td><td>+6,3 %</td><td>33.391</td><td>+3,5 %</td></tr>
+				<tr><td>2024</td><td>16.150</td><td>+831</td><td>+5,4 %</td><td>35.126</td><td>+2,8 %</td></tr>
 			  </tbody>
 			</table>
-			<p><small>No verificado: todos los datos de esta tabla carecen de fuente contrastada y se mantienen solo como referencia.</small></p>
+			<p><small>Fuente: INE, Atlas de Distribución de Renta de los Hogares (municipio de Salamanca), en euros corrientes. IPC: INE, índice general nacional, media anual (el mismo que usa <a href="/presupuestos-salamanca">la serie de presupuestos</a>); no es un índice de precios de Salamanca. Datos descargables en <a href="/renta-salamanca-ine.json">formato JSON</a>; método reproducible con <code>scripts/renta/generar_renta_salamanca_ine.py</code>.</small></p>
 
 			</div>
-			
-			
-			
+
 			{% include categories.html %}
-            
+
         </div>
     </section>
 
-
 	 <script>
-    const ctx = document.getElementById('rentaChart').getContext('2d');
-    const rentaChart = new Chart(ctx, {
+    const etiquetas = ["2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024"];
+    const renta = [11735.0, 11921.0, 12225.0, 12595.0, 13112.0, 13185.0, 13756.0, 14405.0, 15319.0, 16150.0];
+    const rentaHogar = [26948.0, 27355.0, 27811.0, 28466.0, 29806.0, 29675.0, 30602.0, 31674.0, 33391.0, 35126.0];
+    const variacion = [null, 1.6, 2.6, 3.0, 4.1, 0.6, 4.3, 4.7, 6.3, 5.4];
+
+    new Chart(document.getElementById('rentaChart').getContext('2d'), {
       type: 'line',
-      data: {
-        labels: [
-          '2015', '2016', '2017', '2018', '2019', 
-          '2020', '2021', '2022', '2023', '2024', '2025'
-        ],
-        datasets: [{
-          label: 'Renta Neta Media por Persona (€) (no verificado)',
-          data: [
-            12180, 12450, 12890, 13310, 13820,
-            13863, 13757, 14450, 15319, 15930, 16540
-          ],
-          borderColor: '#1E56A0',
-          backgroundColor: 'rgba(30, 86, 160, 0.2)',
-          borderWidth: 2,
-          tension: 0.2,
-          fill: true,
-          pointRadius: 4
-        }]
-      },
-      options: {
-        responsive: true,
-        scales: {
-          y: {
-            beginAtZero: false,
-            title: {
-              display: true,
-              text: 'Euros (€) (no verificado)'
-            }
-          },
-          x: {
-            title: {
-              display: true,
-              text: 'Año'
-            }
-          }
-        }
-      }
+      data: { labels: etiquetas, datasets: [{ label: 'Renta neta media por persona (€)', data: renta, borderColor: '#1E56A0', backgroundColor: 'rgba(30, 86, 160, 0.2)', borderWidth: 2, tension: 0.2, fill: true, pointRadius: 4 }] },
+      options: { responsive: true, scales: { y: { beginAtZero: false, title: { display: true, text: 'Euros (€)' } }, x: { title: { display: true, text: 'Año' } } } }
     });
-	
-	
-	const ctx2 = document.getElementById('rentaChart2').getContext('2d');
-    const rentaChart2 = new Chart(ctx2, {
-      type: 'line',
+
+    new Chart(document.getElementById('rentaChart2').getContext('2d'), {
+      type: 'bar',
       data: {
-        labels: [
-          '2015', '2016', '2017', '2018', '2019', 
-          '2020', '2021', '2022', '2023', '2024', '2025'
-        ],
+        labels: etiquetas,
         datasets: [
-          {
-            label: 'Renta Neta Media por Persona (€) (no verificado)',
-            data: [
-              12180, 12450, 12890, 13310, 13820,
-              13863, 13757, 14450, 15319, 15930, 16540
-            ],
-            borderColor: '#1E56A0',
-            backgroundColor: 'rgba(30, 86, 160, 0.2)',
-            borderWidth: 2,
-            tension: 0.2,
-            fill: true,
-            yAxisID: 'y1',
-            pointRadius: 4
-          },
-          {
-            label: 'Variación % Anual (no verificado)',
-            data: [
-              null, 2.22, 3.53, 3.26, 3.83,
-              0.31, -0.73, 5.04, 6.12, 3.99, 3.83
-            ],
-            borderColor: 'rgba(255, 99, 132, 1)',
-            backgroundColor: 'rgba(255, 99, 132, 0.2)',
-            borderWidth: 2,
-            tension: 0.2,
-            fill: false,
-            yAxisID: 'y2',
-            pointRadius: 4
-          }
+          { type: 'bar', label: 'Renta neta media por hogar (€)', data: rentaHogar, backgroundColor: 'rgba(44, 95, 45, 0.6)', yAxisID: 'y1' },
+          { type: 'line', label: 'Variación anual de la renta por persona (%)', data: variacion, borderColor: 'rgba(255, 99, 132, 1)', backgroundColor: 'rgba(255, 99, 132, 0.2)', borderWidth: 2, tension: 0.2, yAxisID: 'y2', pointRadius: 4 }
         ]
       },
       options: {
         responsive: true,
-        interaction: {
-          mode: 'index',
-          intersect: false
-        },
+        interaction: { mode: 'index', intersect: false },
         scales: {
-          y1: {
-            type: 'linear',
-            position: 'left',
-            title: {
-              display: true,
-              text: 'Euros (€) (no verificado)'
-            }
-          },
-          y2: {
-            type: 'linear',
-            position: 'right',
-            title: {
-              display: true,
-              text: 'Variación % (no verificado)'
-            },
-            grid: {
-              drawOnChartArea: false
-            }
-          },
-          x: {
-            title: {
-              display: true,
-              text: 'Año'
-            }
-          }
+          y1: { type: 'linear', position: 'left', beginAtZero: false, title: { display: true, text: 'Renta por hogar (€)' } },
+          y2: { type: 'linear', position: 'right', title: { display: true, text: 'Variación anual por persona (%)' }, grid: { drawOnChartArea: false } },
+          x: { title: { display: true, text: 'Año' } }
         }
       }
     });

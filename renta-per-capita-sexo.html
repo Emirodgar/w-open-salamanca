@@ -1,137 +1,133 @@
 ---
 layout: default
-title: Renta per cápita por sexo en Salamanca
-description: Comparativa de renta neta media entre hombres y mujeres en Salamanca (2015-2025)
+title: Renta por sexo en Salamanca: ingresos bajos y altos de hombres y mujeres
+description: Qué dice el INE sobre las diferencias de ingresos entre hombres y mujeres en Salamanca, de 2015 a 2024, medidas por el porcentaje de cada sexo con ingresos bajos o altos
 date: 06-10-2026
+modified: 2026-11-28
 folder: Economia
 permalink: renta-sexo
+dataset_files:
+  - renta-salamanca-ine.json
+dataset_source: "INE, Atlas de distribución de renta de los hogares (ADRH)"
+dataset_source_url: https://www.ine.es/dyngs/INEbase/operacion.htm?c=Estadistica_C&cid=1254736177088&menu=ultiDatos&idp=1254735976608
 ---
 
-    <!-- Featured Datasets Section -->
     <section class="featured dataset" id="datos">
         <div class="container">
             <div class="section-header">
                 <h1 class="section-title">{{ page.title }}</h1>
                 <p class="section-description">{{ page.description }}</p>
             </div>
-			
+
 			<div id="section-content">
-						
-  <p style="background:#FFF4E5; border-left:4px solid #F4A261; padding:10px 14px;"><b>No verificado.</b> Las cifras de renta por sexo y la brecha de género de esta página (texto, gráficos y tabla, de 2015 a 2025) proceden de una versión anterior y no tienen una fuente que Open Salamanca haya podido contrastar; la serie llega hasta 2025, un ejercicio que las estadísticas oficiales de renta de los hogares aún no publican. Se mantienen solo como referencia.</p>
 
-  <canvas id="rentaSexoChart" width="800" height="400"></canvas>
+<p style="background:#F4F8F1; border-left:4px solid #2C5F2D; padding:10px 14px;"><b>Qué se mide y qué no.</b> El Atlas de Distribución de Renta de los Hogares del INE <b>no publica la renta media de hombres y mujeres</b> de cada municipio, ni una brecha salarial. Lo que sí publica es qué porcentaje de los hombres y de las mujeres vive con unos ingresos por unidad de consumo por debajo o por encima de ciertos umbrales. Esa renta se calcula por hogar y se atribuye a cada uno de sus miembros, de modo que refleja la situación económica del hogar en que vive cada persona, no su sueldo individual. Es una medida válida de desigualdad entre sexos, pero no es lo mismo que la brecha salarial.</p>
 
- 
-			<h2>Análisis de las principales conclusiones (no verificado)</h2>
-			
-				<p>
-El análisis de la renta neta media desglosada por sexo en Salamanca evidencia la persistencia de una <b>brecha de ingresos entre hombres y mujeres</b> a lo largo de la última década, aunque con una tendencia gradual hacia su reducción en los últimos años.</p>
+<p>En 2024, el <b>22,7 %</b> de las mujeres de Salamanca tenía ingresos por unidad de consumo por debajo del 60 % de la mediana (el umbral habitual de riesgo de pobreza relativa), frente al <b>20,7 %</b> de los hombres: <b>2,0 puntos porcentuales</b> de diferencia. En el extremo alto, el 20,3 % de los hombres supera el 160 % de la mediana, frente al 18,8 % de las mujeres.</p>
 
-<h3>Tendencias clave por género (no verificado)</h3>
+  <canvas id="bajosChart" width="800" height="400"></canvas>
+
+			<h2>Qué muestran los datos</h2>
 <ul>
-<li><b>Evolución sostenida pero desigual</b>: Ambas curvas muestran una tendencia ascendente desde 2015. Sin embargo, la renta media de los hombres ha sido sistemáticamente superior, superando la barrera de los 17.000€ en 2024, mientras que la de las mujeres alcanzó los 15.000€ ese mismo año.</li>
-<li><b>Reducción de la brecha salarial (2020-2025)</b>: Tras estabilizarse en torno al 18-19% durante el lustro anterior, la diferencia de ingresos ha comenzado a estrecharse progresivamente, situándose por debajo del 16% en 2025.</li>
+<li><b>Las mujeres tienen más presencia en los ingresos bajos y menos en los altos,</b> todos los años de la serie. En 2024 hay más mujeres que hombres por debajo del 40 %, del 50 % y del 60 % de la mediana, y menos por encima del 140 %, el 160 % y el 200 %.</li>
+<li><b>La diferencia en ingresos bajos no se ha cerrado.</b> Con el umbral del 60 %, la distancia entre mujeres y hombres era de 0,7 puntos en 2015 y 1,7 en 2020, alcanzó un máximo de 2,6 en 2022 y es de 2,0 en 2024.</li>
+<li><b>Los ingresos bajos han bajado para ambos sexos.</b> Con los umbrales fijos, la proporción de población por debajo de 10.000 euros por unidad de consumo cayó de en torno al 30 % en 2015 al 15,5 % en 2024.</li>
 </ul>
+<p>Para entender estas cifras en contexto, consulta la <a href="/renta-per-capita">evolución de la renta per cápita</a>, la <a href="/renta-barrios">renta por barrios</a> y la <a href="/renta-desigualdad">distribución del ingreso en la ciudad</a>.</p>
 
-<p>Esta brecha de género se entiende mejor en el contexto de la <a href="/renta-per-capita">evolución general de la renta per cápita</a> en Salamanca y de las diferencias que existen entre <a href="/renta-barrios">barrios y municipios</a> del área metropolitana. Territorio y género conforman juntos el mapa completo de la <a href="/renta-desigualdad">desigualdad de ingresos</a> en la ciudad.</p>
+  <h2>Porcentaje con ingresos por encima del 160 % de la mediana, por sexo</h2>
+  <canvas id="altosChart" width="800" height="400"></canvas>
 
-  <h2>Evolución de la brecha salarial de género (%) (no verificado)</h2>
-  <canvas id="brechaChart" width="800" height="400"></canvas>
+  <h2>Diferencia entre mujeres y hombres con ingresos bajos (puntos porcentuales)</h2>
+  <canvas id="difChart" width="800" height="400"></canvas>
 
 			</div>
-			
+
 			<div id="section-table">
+			<h3>Evolución 2015-2024</h3>
 			<table border="1" cellpadding="5" cellspacing="0">
 			  <thead>
 				<tr>
 				  <th>Año</th>
-				  <th>Renta Hombres (€) (no verificado)</th>
-				  <th>Renta Mujeres (€) (no verificado)</th>
-				  <th>Diferencia (€) (no verificado)</th>
-				  <th>Brecha (%) (no verificado)</th>
+				  <th>Hombres por debajo del 60 % de la mediana</th>
+				  <th>Mujeres por debajo del 60 % de la mediana</th>
+				  <th>Diferencia (mujeres − hombres)</th>
+				  <th>Hombres por encima del 160 %</th>
+				  <th>Mujeres por encima del 160 %</th>
+				  <th>Diferencia (mujeres − hombres)</th>
 				</tr>
 			  </thead>
 			  <tbody>
-				<tr><td>2015</td><td>13.480</td><td>10.920</td><td>2.560</td><td>18.99%</td></tr>
-				<tr><td>2016</td><td>13.750</td><td>11.190</td><td>2.560</td><td>18.61%</td></tr>
-				<tr><td>2017</td><td>14.220</td><td>11.600</td><td>2.620</td><td>18.42%</td></tr>
-				<tr><td>2018</td><td>14.650</td><td>12.020</td><td>2.630</td><td>17.95%</td></tr>
-				<tr><td>2019</td><td>15.200</td><td>12.500</td><td>2.700</td><td>17.76%</td></tr>
-				<tr><td>2020</td><td>15.230</td><td>12.550</td><td>2.680</td><td>17.60%</td></tr>
-				<tr><td>2021</td><td>15.100</td><td>12.480</td><td>2.620</td><td>17.35%</td></tr>
-				<tr><td>2022</td><td>15.850</td><td>13.120</td><td>2.730</td><td>17.22%</td></tr>
-				<tr><td>2023</td><td>16.780</td><td>13.920</td><td>2.860</td><td>17.04%</td></tr>
-				<tr><td>2024</td><td>17.420</td><td>14.500</td><td>2.920</td><td>16.76%</td></tr>
-				<tr><td>2025</td><td>18.050</td><td>15.180</td><td>2.870</td><td>15.90%</td></tr>
+				<tr><td>2015</td><td>20,8 %</td><td>21,5 %</td><td>+0,7 pp</td><td>25,8 %</td><td>24,0 %</td><td>−1,8 pp</td></tr>
+				<tr><td>2016</td><td>19,9 %</td><td>21,0 %</td><td>+1,1 pp</td><td>26,7 %</td><td>24,7 %</td><td>−2,0 pp</td></tr>
+				<tr><td>2017</td><td>19,7 %</td><td>21,2 %</td><td>+1,5 pp</td><td>24,8 %</td><td>22,9 %</td><td>−1,9 pp</td></tr>
+				<tr><td>2018</td><td>19,6 %</td><td>21,0 %</td><td>+1,4 pp</td><td>23,8 %</td><td>21,9 %</td><td>−1,9 pp</td></tr>
+				<tr><td>2019</td><td>19,6 %</td><td>21,3 %</td><td>+1,7 pp</td><td>23,1 %</td><td>21,4 %</td><td>−1,7 pp</td></tr>
+				<tr><td>2020</td><td>20,1 %</td><td>21,8 %</td><td>+1,7 pp</td><td>23,5 %</td><td>21,9 %</td><td>−1,6 pp</td></tr>
+				<tr><td>2021</td><td>19,2 %</td><td>21,6 %</td><td>+2,4 pp</td><td>23,1 %</td><td>21,2 %</td><td>−1,9 pp</td></tr>
+				<tr><td>2022</td><td>20,6 %</td><td>23,2 %</td><td>+2,6 pp</td><td>21,1 %</td><td>19,4 %</td><td>−1,7 pp</td></tr>
+				<tr><td>2023</td><td>21,4 %</td><td>23,6 %</td><td>+2,2 pp</td><td>19,5 %</td><td>18,1 %</td><td>−1,4 pp</td></tr>
+				<tr><td>2024</td><td>20,7 %</td><td>22,7 %</td><td>+2,0 pp</td><td>20,3 %</td><td>18,8 %</td><td>−1,5 pp</td></tr>
 			  </tbody>
 			</table>
-			<p><small>No verificado: todos los datos de esta tabla carecen de fuente contrastada y se mantienen solo como referencia.</small></p>
+
+			<h3>Todos los umbrales, 2024</h3>
+			<table border="1" cellpadding="5" cellspacing="0">
+			  <thead><tr><th>Umbral (ingresos por unidad de consumo)</th><th>Total</th><th>Hombres</th><th>Mujeres</th><th>Diferencia (mujeres − hombres)</th></tr></thead>
+			  <tbody>
+				<tr><td>Por debajo del 40 % de la mediana</td><td>10,1 %</td><td>9,5 %</td><td>10,5 %</td><td>+1,0 pp</td></tr>
+				<tr><td>Por debajo del 50 % de la mediana</td><td>15,5 %</td><td>14,8 %</td><td>16,0 %</td><td>+1,2 pp</td></tr>
+				<tr><td>Por debajo del 60 % de la mediana</td><td>21,8 %</td><td>20,7 %</td><td>22,7 %</td><td>+2,0 pp</td></tr>
+				<tr><td>Por encima del 140 % de la mediana</td><td>26,4 %</td><td>27,4 %</td><td>25,5 %</td><td>−1,9 pp</td></tr>
+				<tr><td>Por encima del 160 % de la mediana</td><td>19,4 %</td><td>20,3 %</td><td>18,8 %</td><td>−1,5 pp</td></tr>
+				<tr><td>Por encima del 200 % de la mediana</td><td>10,2 %</td><td>10,8 %</td><td>9,7 %</td><td>−1,1 pp</td></tr>
+				<tr><td>Menos de 5.000 € por unidad de consumo</td><td>4,5 %</td><td>4,0 %</td><td>4,8 %</td><td>+0,8 pp</td></tr>
+				<tr><td>Menos de 7.500 € por unidad de consumo</td><td>8,9 %</td><td>8,5 %</td><td>9,3 %</td><td>+0,8 pp</td></tr>
+				<tr><td>Menos de 10.000 € por unidad de consumo</td><td>15,5 %</td><td>14,9 %</td><td>16,0 %</td><td>+1,1 pp</td></tr>
+			  </tbody>
+			</table>
+
+			<p><small>Fuente: INE, Atlas de Distribución de Renta de los Hogares (municipio de Salamanca), porcentaje de población por sexo según umbrales relativos (porcentaje de la mediana de ingresos por unidad de consumo) y fijos. «pp» son puntos porcentuales. Datos descargables en <a href="/renta-salamanca-ine.json">formato JSON</a>; método reproducible con <code>scripts/renta/generar_renta_salamanca_ine.py</code>.</small></p>
+
+			<p><small>Esta página antes mostraba una renta media de hombres y mujeres y una brecha salarial de 2015 a 2025 sin fuente contrastada. Se han retirado porque el INE no publica esas cifras para el municipio y la serie llegaba a un año aún no publicado.</small></p>
 
 			</div>
-			
+
 			{% include categories.html %}
-            
+
         </div>
     </section>
 
 	<script>
-    // Gráfico 1: Comparativa de Renta Hombres vs Mujeres
-    const ctxSexo = document.getElementById('rentaSexoChart').getContext('2d');
-    const rentaSexoChart = new Chart(ctxSexo, {
+    const etiquetas = ["2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024"];
+
+    new Chart(document.getElementById('bajosChart').getContext('2d'), {
       type: 'line',
       data: {
-        labels: ['2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024', '2025'],
+        labels: etiquetas,
         datasets: [
-          {
-            label: 'Hombres (€) (no verificado)',
-            data: [13480, 13750, 14220, 14650, 15200, 15230, 15100, 15850, 16780, 17420, 18050],
-            borderColor: '#1E56A0',
-            backgroundColor: 'rgba(30, 86, 160, 0.1)',
-            borderWidth: 2,
-            tension: 0.2,
-            fill: true
-          },
-          {
-            label: 'Mujeres (€) (no verificado)',
-            data: [10920, 11190, 11600, 12020, 12500, 12550, 12480, 13120, 13920, 14500, 15180],
-            borderColor: '#E63946',
-            backgroundColor: 'rgba(230, 57, 70, 0.1)',
-            borderWidth: 2,
-            tension: 0.2,
-            fill: true
-          }
+          { label: 'Hombres por debajo del 60 % de la mediana (%)', data: [20.8, 19.9, 19.7, 19.6, 19.6, 20.1, 19.2, 20.6, 21.4, 20.7], borderColor: '#1E56A0', backgroundColor: 'rgba(30, 86, 160, 0.1)', borderWidth: 2, tension: 0.2 },
+          { label: 'Mujeres por debajo del 60 % de la mediana (%)', data: [21.5, 21.0, 21.2, 21.0, 21.3, 21.8, 21.6, 23.2, 23.6, 22.7], borderColor: '#E63946', backgroundColor: 'rgba(230, 57, 70, 0.1)', borderWidth: 2, tension: 0.2 }
         ]
       },
-      options: {
-        responsive: true,
-        scales: {
-          y: { title: { display: true, text: 'Renta Neta Media (€) (no verificado)' } },
-          x: { title: { display: true, text: 'Año' } }
-        }
-      }
+      options: { responsive: true, scales: { y: { beginAtZero: false, title: { display: true, text: '% de la población de cada sexo' } }, x: { title: { display: true, text: 'Año' } } } }
     });
 
-    // Gráfico 2: Evolución de la brecha porcentual
-    const ctxBrecha = document.getElementById('brechaChart').getContext('2d');
-    const brechaChart = new Chart(ctxBrecha, {
-      type: 'bar',
+    new Chart(document.getElementById('altosChart').getContext('2d'), {
+      type: 'line',
       data: {
-        labels: ['2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024', '2025'],
-        datasets: [{
-          label: 'Brecha de Género (%) (no verificado)',
-          data: [18.99, 18.61, 18.42, 17.95, 17.76, 17.60, 17.35, 17.22, 17.04, 16.76, 15.90],
-          backgroundColor: 'rgba(244, 162, 97, 0.75)',
-          borderColor: '#F4A261',
-          borderWidth: 1.5,
-          borderRadius: 4
-        }]
+        labels: etiquetas,
+        datasets: [
+          { label: 'Hombres por encima del 160 % de la mediana (%)', data: [25.8, 26.7, 24.8, 23.8, 23.1, 23.5, 23.1, 21.1, 19.5, 20.3], borderColor: '#1E56A0', borderWidth: 2, tension: 0.2 },
+          { label: 'Mujeres por encima del 160 % de la mediana (%)', data: [24.0, 24.7, 22.9, 21.9, 21.4, 21.9, 21.2, 19.4, 18.1, 18.8], borderColor: '#E63946', borderWidth: 2, tension: 0.2 }
+        ]
       },
-      options: {
-        responsive: true,
-        scales: {
-          y: { title: { display: true, text: 'Diferencia (%) (no verificado)' }, beginAtZero: false },
-          x: { title: { display: true, text: 'Año' } }
-        }
-      }
+      options: { responsive: true, scales: { y: { beginAtZero: false, title: { display: true, text: '% de la población de cada sexo' } }, x: { title: { display: true, text: 'Año' } } } }
+    });
+
+    new Chart(document.getElementById('difChart').getContext('2d'), {
+      type: 'bar',
+      data: { labels: etiquetas, datasets: [{ label: 'Mujeres − hombres, por debajo del 60 % de la mediana (puntos porcentuales)', data: [0.7, 1.1, 1.5, 1.4, 1.7, 1.7, 2.4, 2.6, 2.2, 2.0], backgroundColor: 'rgba(244, 162, 97, 0.75)', borderColor: '#F4A261', borderWidth: 1.5, borderRadius: 4 }] },
+      options: { responsive: true, scales: { y: { beginAtZero: true, title: { display: true, text: 'Puntos porcentuales' } }, x: { title: { display: true, text: 'Año' } } } }
     });
   </script>
