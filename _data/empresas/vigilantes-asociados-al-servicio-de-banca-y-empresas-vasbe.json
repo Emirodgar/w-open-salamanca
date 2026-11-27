@@ -70,7 +70,13 @@
         "t": "InfoNIF: ficha de VASBE (BORME, 14/11/2024 y 13/08/2025)",
         "u": "https://infonif.economia3.com/ficha-empresa/vigilantes-asociados-al-servicio-de-banca-y-empresas-vasbe-sl"
       },
-      "ficha": ""
+      "ficha": "",
+      "verificacion_borme": {
+        "estado": "inscrito",
+        "fecha": "20241114",
+        "boletin": "BORME-A-2024-220-37",
+        "url": "https://www.boe.es/borme/dias/2024/11/14/pdfs/BORME-A-2024-220-37.pdf"
+      }
     },
     {
       "nombre": "Andrés Camiñas Hernández",
@@ -79,7 +85,13 @@
         "t": "InfoNIF: ficha de VASBE (BORME, 14/11/2024 y 13/08/2025)",
         "u": "https://infonif.economia3.com/ficha-empresa/vigilantes-asociados-al-servicio-de-banca-y-empresas-vasbe-sl"
       },
-      "ficha": ""
+      "ficha": "",
+      "verificacion_borme": {
+        "estado": "inscrito",
+        "fecha": "20241114",
+        "boletin": "BORME-A-2024-220-37",
+        "url": "https://www.boe.es/borme/dias/2024/11/14/pdfs/BORME-A-2024-220-37.pdf"
+      }
     },
     {
       "nombre": "José María Sánchón Sánchez",
@@ -88,7 +100,13 @@
         "t": "InfoNIF: ficha de VASBE (BORME, 14/11/2024 y 13/08/2025)",
         "u": "https://infonif.economia3.com/ficha-empresa/vigilantes-asociados-al-servicio-de-banca-y-empresas-vasbe-sl"
       },
-      "ficha": ""
+      "ficha": "",
+      "verificacion_borme": {
+        "estado": "inscrito",
+        "fecha": "20250813",
+        "boletin": "BORME-A-2025-153-37",
+        "url": "https://www.boe.es/borme/dias/2025/08/13/pdfs/BORME-A-2025-153-37.pdf"
+      }
     }
   ],
   "historia": [
@@ -161,5 +179,6 @@
       "u": "https://ranking-empresas.eleconomista.es/VIGILANTES-ASOCIADOS-SERVICIO-BANCA-EMPRESAS-VASBE.html"
     }
   ],
-  "como_citar": "Open Salamanca (2026). Ficha de Vigilantes Asociados al Servicio de Banca y Empresas VASBE SL. https://opensalamanca.es/empresas/vigilantes-asociados-al-servicio-de-banca-y-empresas-vasbe. Licencia CC BY 4.0."
+  "como_citar": "Open Salamanca (2026). Ficha de Vigilantes Asociados al Servicio de Banca y Empresas VASBE SL. https://opensalamanca.es/empresas/vigilantes-asociados-al-servicio-de-banca-y-empresas-vasbe. Licencia CC BY 4.0.",
+  "nota_directivos": "Contrastado con el BORME de Salamanca de 01/01/2022 a 27/11/2026. Confirmados por una inscripción en ese periodo: Jesús Herrera Borrego, Andrés Camiñas Hernández, José María Sánchón Sánchez (fecha y boletín indicados en cada cargo)."
 }

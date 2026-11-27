@@ -66,7 +66,13 @@
         "t": "InfoNIF: ficha de Aceitunas Miroliva SL (BORME, 07/05/2026)",
         "u": "https://infonif.economia3.com/ficha-empresa/aceitunas-miroliva-sl"
       },
-      "ficha": ""
+      "ficha": "",
+      "verificacion_borme": {
+        "estado": "inscrito",
+        "fecha": "20260507",
+        "boletin": "BORME-A-2026-86-37",
+        "url": "https://www.boe.es/borme/dias/2026/05/07/pdfs/BORME-A-2026-86-37.pdf"
+      }
     }
   ],
   "historia": [
@@ -146,5 +152,6 @@
       "u": "https://ranking-empresas.eleconomista.es/ACEITUNAS-MIROLIVA.html"
     }
   ],
-  "como_citar": "Open Salamanca (2026). Ficha de Aceitunas Miroliva SL. https://opensalamanca.es/empresas/aceitunas-miroliva. Licencia CC BY 4.0."
+  "como_citar": "Open Salamanca (2026). Ficha de Aceitunas Miroliva SL. https://opensalamanca.es/empresas/aceitunas-miroliva. Licencia CC BY 4.0.",
+  "nota_directivos": "Contrastado con el BORME de Salamanca de 01/01/2022 a 27/11/2026. Confirmados por una inscripción en ese periodo: María Dolores Gutiérrez Acuña (fecha y boletín indicados en cada cargo)."
 }

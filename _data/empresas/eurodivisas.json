@@ -65,12 +65,18 @@
   "directivos": [
     {
       "nombre": "Isidoro José Alanís Marcos",
-      "cargo": "Administrador único",
+      "cargo": "Administrador único (nombrado el 26/07/2024; hasta entonces la administración era un consejo)",
       "fuente": {
-        "t": "InfoNIF: ficha de Eurodivisas SA (cargo sin fecha de BORME visible)",
-        "u": "https://infonif.economia3.com/ficha-empresa/eurodivisas-sa"
+        "t": "BORME BORME-A-2024-143-37 (26/07/2024)",
+        "u": "https://www.boe.es/borme/dias/2024/07/26/pdfs/BORME-A-2024-143-37.pdf"
       },
-      "ficha": "/personas/isidoro-alanis"
+      "ficha": "/personas/isidoro-alanis",
+      "verificacion_borme": {
+        "estado": "inscrito",
+        "fecha": "20240726",
+        "boletin": "BORME-A-2024-143-37",
+        "url": "https://www.boe.es/borme/dias/2024/07/26/pdfs/BORME-A-2024-143-37.pdf"
+      }
     }
   ],
   "historia": [
@@ -151,5 +157,6 @@
       "u": "https://boe.es/borme/dias/2024/07/09/pdfs/BORME-C-2024-4226.pdf"
     }
   ],
-  "como_citar": "Open Salamanca (2026). Ficha de Eurodivisas SA. https://opensalamanca.es/empresas/eurodivisas. Licencia CC BY 4.0."
+  "como_citar": "Open Salamanca (2026). Ficha de Eurodivisas SA. https://opensalamanca.es/empresas/eurodivisas. Licencia CC BY 4.0.",
+  "nota_directivos": "Contrastado con el BORME de Salamanca de 01/01/2022 a 27/11/2026. Confirmados por una inscripción en ese periodo: Isidoro José Alanís Marcos (fecha y boletín indicados en cada cargo)."
 }

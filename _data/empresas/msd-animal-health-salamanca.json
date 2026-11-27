@@ -27,8 +27,8 @@
       "v": "Fabricación de vacunas para aves, rumiantes, peces y cerdos, con tecnología SPHEREON para vacunas avícolas"
     },
     {
-      "k": "Consejeros (BORME 2026)",
-      "v": "Gustavo Enrique González Díaz, Dionna Kathleen Livin y Edival José Dos Santos Júnior (según InfoNIF; el listado puede estar incompleto)"
+      "k": "Consejo de administración (BORME)",
+      "v": "Presidenta: María Jesús Pérez Fernández (BORME 16/08/2024); consejeros: Dionna Kathleen Livin (BORME 22/04/2026) y Gustavo Enrique González Díaz (BORME 07/05/2026)"
     },
     {
       "k": "Posición por ventas 2024",
@@ -64,31 +64,49 @@
   "nota_cifras": "No se ha localizado ninguna cifra de ventas 2024 en abierto: InfoNIF oculta los importes. Las cifras de inversión y plantilla proceden de notas de prensa de fecha anterior (2016 o poco después) y no reflejan necesariamente la situación actual. InfoNIF muestra una plantilla parcialmente oculta (empieza por 55, con el resto de dígitos oculto).",
   "directivos": [
     {
+      "nombre": "María Jesús Pérez Fernández",
+      "cargo": "Presidenta del consejo de administración (nombrada consejera y presidenta en agosto de 2024)",
+      "fuente": {
+        "t": "BORME BORME-A-2024-157-37 (16/08/2024)",
+        "u": "https://www.boe.es/borme/dias/2024/08/16/pdfs/BORME-A-2024-157-37.pdf"
+      },
+      "ficha": "",
+      "verificacion_borme": {
+        "estado": "inscrito",
+        "fecha": "20240816",
+        "boletin": "BORME-A-2024-157-37",
+        "url": "https://www.boe.es/borme/dias/2024/08/16/pdfs/BORME-A-2024-157-37.pdf"
+      }
+    },
+    {
       "nombre": "Gustavo Enrique González Díaz",
       "cargo": "Consejero (nombrado en mayo de 2026)",
       "fuente": {
         "t": "InfoNIF: ficha de Merck Sharp & Dohme Animal Health SL",
         "u": "https://infonif.economia3.com/ficha-empresa/merck-sharp-dohme-animal-health-sl"
       },
-      "ficha": ""
+      "ficha": "",
+      "verificacion_borme": {
+        "estado": "inscrito",
+        "fecha": "20260507",
+        "boletin": "BORME-A-2026-86-37",
+        "url": "https://www.boe.es/borme/dias/2026/05/07/pdfs/BORME-A-2026-86-37.pdf"
+      }
     },
     {
       "nombre": "Dionna Kathleen Livin",
       "cargo": "Consejera (nombrada en abril de 2026)",
       "fuente": {
-        "t": "InfoNIF: ficha de Merck Sharp & Dohme Animal Health SL",
-        "u": "https://infonif.economia3.com/ficha-empresa/merck-sharp-dohme-animal-health-sl"
+        "t": "BORME BORME-A-2026-76-37 (22/04/2026)",
+        "u": "https://www.boe.es/borme/dias/2026/04/22/pdfs/BORME-A-2026-76-37.pdf"
       },
-      "ficha": ""
-    },
-    {
-      "nombre": "Edival José Dos Santos Júnior",
-      "cargo": "Consejero",
-      "fuente": {
-        "t": "InfoNIF: ficha de Merck Sharp & Dohme Animal Health SL",
-        "u": "https://infonif.economia3.com/ficha-empresa/merck-sharp-dohme-animal-health-sl"
-      },
-      "ficha": ""
+      "ficha": "",
+      "verificacion_borme": {
+        "estado": "inscrito",
+        "fecha": "20260422",
+        "boletin": "BORME-A-2026-76-37",
+        "url": "https://www.boe.es/borme/dias/2026/04/22/pdfs/BORME-A-2026-76-37.pdf"
+      }
     }
   ],
   "historia": [
@@ -123,10 +141,10 @@
   "no_verificado": [
     "Ventas 2024 y evolución: InfoNIF las oculta sin suscripción y no se ha localizado otra fuente abierta.",
     "Plantilla actual: las cifras disponibles (254 empleados) proceden de una nota de prensa de fecha no confirmada.",
-    "Composición completa del consejo, presidencia y consejero delegado: InfoNIF muestra el listado incompleto; pendiente de consultar el BORME.",
     "Código CNAE: no figura en las fuentes consultadas.",
     "Inversión total de la nueva planta SPHEREON: la compañía no concretó el importe en 2016.",
-    "Sitio web oficial de la planta: no localizado."
+    "Sitio web oficial de la planta: no localizado.",
+    "Composición completa del consejo: el BORME de 2022 a 2026 recoge los cambios citados; Edival José Dos Santos Júnior, que figuraba en un directorio, no consta en ninguna inscripción de ese periodo y se ha retirado. Consejero delegado: no consta."
   ],
   "faq": [
     {
@@ -168,5 +186,6 @@
       "u": "https://www.redaccionmedica.com/secciones/industria/espana-sera-centro-productor-mundial-de-vacunas-para-aves-de-msd-5138"
     }
   ],
-  "como_citar": "Open Salamanca (2026). Ficha de Merck Sharp & Dohme Animal Health SL (MSD Animal Health Salamanca). https://opensalamanca.es/empresas/msd-animal-health-salamanca. Licencia CC BY 4.0."
+  "como_citar": "Open Salamanca (2026). Ficha de Merck Sharp & Dohme Animal Health SL (MSD Animal Health Salamanca). https://opensalamanca.es/empresas/msd-animal-health-salamanca. Licencia CC BY 4.0.",
+  "nota_directivos": "Contrastado con el BORME de Salamanca de 01/01/2022 a 27/11/2026. Confirmados por una inscripción en ese periodo: María Jesús Pérez Fernández (16/08/2024), Dionna Kathleen Livin (22/04/2026) y Gustavo Enrique González Díaz (07/05/2026). El BORME escribe el segundo nombre de la señora Livin con una errata (Katheleen)."
 }

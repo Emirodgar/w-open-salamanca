@@ -66,7 +66,13 @@
         "t": "InfoNIF: ficha de Técnicas e Instalaciones Eléctricas Salamanca SL (BORME, 29/12/2025)",
         "u": "https://infonif.economia3.com/ficha-empresa/tecnicas-e-instalaciones-electricas-salamanca-sl"
       },
-      "ficha": ""
+      "ficha": "",
+      "verificacion_borme": {
+        "estado": "inscrito",
+        "fecha": "20251229",
+        "boletin": "BORME-A-2025-247-37",
+        "url": "https://www.boe.es/borme/dias/2025/12/29/pdfs/BORME-A-2025-247-37.pdf"
+      }
     }
   ],
   "historia": [
@@ -152,5 +158,6 @@
       "u": "https://unglobalcompact.org/what-is-gc/participants/19197-Tecnicas-e-Instalaciones-Electricas-Salamanca-S-L-.expelled"
     }
   ],
-  "como_citar": "Open Salamanca (2026). Ficha de Técnicas e Instalaciones Eléctricas Salamanca SL. https://opensalamanca.es/empresas/tecnicas-e-instalaciones-electricas-salamanca. Licencia CC BY 4.0."
+  "como_citar": "Open Salamanca (2026). Ficha de Técnicas e Instalaciones Eléctricas Salamanca SL. https://opensalamanca.es/empresas/tecnicas-e-instalaciones-electricas-salamanca. Licencia CC BY 4.0.",
+  "nota_directivos": "Contrastado con el BORME de Salamanca de 01/01/2022 a 27/11/2026. Confirmados por una inscripción en ese periodo: FAPV Inversiones SL (fecha y boletín indicados en cada cargo)."
 }

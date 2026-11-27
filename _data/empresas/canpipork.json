@@ -78,7 +78,13 @@
         "t": "InfoNIF: ficha de Canpipork SL (BORME, 17/02/2023)",
         "u": "https://infonif.economia3.com/ficha-empresa/canpipork-sl"
       },
-      "ficha": ""
+      "ficha": "",
+      "verificacion_borme": {
+        "estado": "inscrito",
+        "fecha": "20230217",
+        "boletin": "BORME-A-2023-34-37",
+        "url": "https://www.boe.es/borme/dias/2023/02/17/pdfs/BORME-A-2023-34-37.pdf"
+      }
     }
   ],
   "historia": [
@@ -164,5 +170,6 @@
       "u": "https://www.ibericoscanpipork.es"
     }
   ],
-  "como_citar": "Open Salamanca (2026). Ficha de Canpipork SL. https://opensalamanca.es/empresas/canpipork. Licencia CC BY 4.0."
+  "como_citar": "Open Salamanca (2026). Ficha de Canpipork SL. https://opensalamanca.es/empresas/canpipork. Licencia CC BY 4.0.",
+  "nota_directivos": "Contrastado con el BORME de Salamanca de 01/01/2022 a 27/11/2026. Confirmados por una inscripción en ese periodo: Jesús María González García (fecha y boletín indicados en cada cargo)."
 }

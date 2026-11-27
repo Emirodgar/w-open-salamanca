@@ -70,7 +70,13 @@
         "t": "InfoNIF: ficha de Transformadores Gedelsa SA (BORME, 16/10/2025)",
         "u": "https://infonif.economia3.com/ficha-empresa/transformadores-gedelsa-sa"
       },
-      "ficha": ""
+      "ficha": "",
+      "verificacion_borme": {
+        "estado": "inscrito",
+        "fecha": "20251016",
+        "boletin": "BORME-A-2025-198-37",
+        "url": "https://www.boe.es/borme/dias/2025/10/16/pdfs/BORME-A-2025-198-37.pdf"
+      }
     },
     {
       "nombre": "María del Mar Olmedo Sánchez",
@@ -79,7 +85,13 @@
         "t": "InfoNIF: ficha de Transformadores Gedelsa SA (BORME, 16/10/2025)",
         "u": "https://infonif.economia3.com/ficha-empresa/transformadores-gedelsa-sa"
       },
-      "ficha": ""
+      "ficha": "",
+      "verificacion_borme": {
+        "estado": "inscrito",
+        "fecha": "20251016",
+        "boletin": "BORME-A-2025-198-37",
+        "url": "https://www.boe.es/borme/dias/2025/10/16/pdfs/BORME-A-2025-198-37.pdf"
+      }
     }
   ],
   "historia": [
@@ -163,5 +175,6 @@
       "u": "https://unglobalcompact.org/what-is-gc/participants/19083"
     }
   ],
-  "como_citar": "Open Salamanca (2026). Ficha de Transformadores Gedelsa SA. https://opensalamanca.es/empresas/transformadores-gedelsa. Licencia CC BY 4.0."
+  "como_citar": "Open Salamanca (2026). Ficha de Transformadores Gedelsa SA. https://opensalamanca.es/empresas/transformadores-gedelsa. Licencia CC BY 4.0.",
+  "nota_directivos": "Contrastado con el BORME de Salamanca de 01/01/2022 a 27/11/2026. Confirmados por una inscripción en ese periodo: Eduardo Olmedo Sánchez, María del Mar Olmedo Sánchez (fecha y boletín indicados en cada cargo)."
 }

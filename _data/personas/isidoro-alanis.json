@@ -10,16 +10,16 @@
   "licencia": "CC BY 4.0",
   "sameas": [],
   "cargo_actual": {
-    "cargo": "Presidente y CEO",
-    "organizacion": "Global Exchange (Grupo Global Exchange / Eurodivisas)",
+    "cargo": "Administrador único de Eurodivisas SA",
+    "organizacion": "Eurodivisas SA (Grupo Global Exchange)",
     "organizacion_url": "",
-    "desde": ""
+    "desde": "2024-07-26"
   },
-  "resumen": "Isidoro José Alanís Marcos es presidente y consejero delegado (CEO) del Grupo Global Exchange, multinacional del cambio de moneda con sede en Salamanca, según un comunicado de la compañía recogido por Merca2 en 2023. Figura además como administrador único de Global Exchange Servicios de Cambio de Moneda, S.A. en InfoNIF. La compañía, que empezó como Eurodivisas, surgió en 1996 en la frontera de Fuentes de Oñoro, según Confidencial Digital.",
+  "resumen": "Isidoro José Alanís Marcos figura en el BORME como administrador único de Eurodivisas SA desde el 26 de julio de 2024. En 2023 un comunicado de la compañía recogido por Merca2 lo identificaba como presidente y consejero delegado (CEO) del Grupo Global Exchange, multinacional del cambio de moneda con sede en Salamanca. El mismo 26 de julio de 2024 cesó como presidente, consejero y consejero delegado de Eurodivisas Corporación SL, la sociedad de cartera del grupo.",
   "rapida": [
     {
       "k": "Cargo",
-      "v": "Presidente y CEO del Grupo Global Exchange (Merca2, mayo de 2023)"
+      "v": "Administrador único de Eurodivisas SA (BORME 26/07/2024); presidente y CEO del Grupo Global Exchange según un comunicado de 2023 (Merca2), no confirmado desde el cese de 2024 en la sociedad de cartera"
     },
     {
       "k": "Cargo societario",
@@ -39,6 +39,15 @@
     }
   ],
   "trayectoria": [
+    {
+      "fecha": "26 de julio de 2024",
+      "hito": "Administrador único de Eurodivisas SA; cese en Eurodivisas Corporación SL",
+      "detalle": "El BORME recoge su nombramiento como administrador único de Eurodivisas SA, que pasa de consejo de administración a administrador único, y su cese como presidente, consejero y consejero delegado de Eurodivisas Corporación SL, cuyo nuevo consejo lo forman tres sociedades.",
+      "fuente": {
+        "t": "BORME BORME-A-2024-143-37 (26/07/2024)",
+        "u": "https://www.boe.es/borme/dias/2024/07/26/pdfs/BORME-A-2024-143-37.pdf"
+      }
+    },
     {
       "fecha": "Según InfoNIF (consultado en 2026)",
       "hito": "Administrador único de Global Exchange Servicios de Cambio de Moneda, S.A.",
@@ -95,6 +104,7 @@
     }
   ],
   "no_verificado": [
+    "Si sigue siendo presidente o CEO del Grupo Global Exchange tras el cese de 26/07/2024 en Eurodivisas Corporación SL: no consta en fuentes posteriores a ese acto.",
     "Ninguna fuente consultada lo califica expresamente de fundador: Confidencial Digital dice que lanzó el negocio en 1996, pero se leyó a través de un agregador (Ground News) y no del medio original.",
     "No se pudo abrir la web corporativa de Global Exchange, de modo que su cargo no está corroborado en una página oficial de la compañía.",
     "No consta desde cuándo preside el grupo ni desde cuándo es administrador único.",

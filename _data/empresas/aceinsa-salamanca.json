@@ -66,7 +66,13 @@
         "t": "InfoNIF: ficha de Aceinsa Salamanca SA (BORME, 21/10/2022, reelección)",
         "u": "https://infonif.economia3.com/ficha-empresa/aceinsa-salamanca-sa"
       },
-      "ficha": ""
+      "ficha": "",
+      "verificacion_borme": {
+        "estado": "inscrito",
+        "fecha": "20221021",
+        "boletin": "BORME-A-2022-202-37",
+        "url": "https://www.boe.es/borme/dias/2022/10/21/pdfs/BORME-A-2022-202-37.pdf"
+      }
     }
   ],
   "historia": [
@@ -138,5 +144,6 @@
       "u": "https://www.aceinsa.es/"
     }
   ],
-  "como_citar": "Open Salamanca (2026). Ficha de Aceinsa Salamanca SA. https://opensalamanca.es/empresas/aceinsa-salamanca. Licencia CC BY 4.0."
+  "como_citar": "Open Salamanca (2026). Ficha de Aceinsa Salamanca SA. https://opensalamanca.es/empresas/aceinsa-salamanca. Licencia CC BY 4.0.",
+  "nota_directivos": "Contrastado con el BORME de Salamanca de 01/01/2022 a 27/11/2026. Confirmados por una inscripción en ese periodo: Juan Agustín Sánchez Bernal (fecha y boletín indicados en cada cargo)."
 }

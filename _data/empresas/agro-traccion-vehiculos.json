@@ -62,7 +62,13 @@
         "t": "InfoNIF: ficha de Agro Tracción Vehículos SA (BORME, 26/05/2023)",
         "u": "https://infonif.economia3.com/ficha-empresa/agro-traccion-vehiculos-sa"
       },
-      "ficha": ""
+      "ficha": "",
+      "verificacion_borme": {
+        "estado": "inscrito",
+        "fecha": "20230526",
+        "boletin": "BORME-A-2023-98-37",
+        "url": "https://www.boe.es/borme/dias/2023/05/26/pdfs/BORME-A-2023-98-37.pdf"
+      }
     },
     {
       "nombre": "Fernando Lago García",
@@ -71,7 +77,13 @@
         "t": "InfoNIF: ficha de Agro Tracción Vehículos SA (BORME, 26/05/2023)",
         "u": "https://infonif.economia3.com/ficha-empresa/agro-traccion-vehiculos-sa"
       },
-      "ficha": ""
+      "ficha": "",
+      "verificacion_borme": {
+        "estado": "inscrito",
+        "fecha": "20230526",
+        "boletin": "BORME-A-2023-98-37",
+        "url": "https://www.boe.es/borme/dias/2023/05/26/pdfs/BORME-A-2023-98-37.pdf"
+      }
     }
   ],
   "historia": [
@@ -157,5 +169,6 @@
       "u": "https://www.grupoadarsa.com"
     }
   ],
-  "como_citar": "Open Salamanca (2026). Ficha de Agro Tracción Vehículos SA. https://opensalamanca.es/empresas/agro-traccion-vehiculos. Licencia CC BY 4.0."
+  "como_citar": "Open Salamanca (2026). Ficha de Agro Tracción Vehículos SA. https://opensalamanca.es/empresas/agro-traccion-vehiculos. Licencia CC BY 4.0.",
+  "nota_directivos": "Contrastado con el BORME de Salamanca de 01/01/2022 a 27/11/2026. Confirmados por una inscripción en ese periodo: Asturiana de Automóviles y Repuestos SA, Fernando Lago García (fecha y boletín indicados en cada cargo)."
 }

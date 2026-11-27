@@ -70,7 +70,13 @@
         "t": "InfoNIF: ficha de Bernardo Hernández SL (BORME, 4/11/2024)",
         "u": "https://infonif.economia3.com/ficha-empresa/bernardo-hernandez-sl"
       },
-      "ficha": ""
+      "ficha": "",
+      "verificacion_borme": {
+        "estado": "inscrito",
+        "fecha": "20241104",
+        "boletin": "BORME-A-2024-212-37",
+        "url": "https://www.boe.es/borme/dias/2024/11/04/pdfs/BORME-A-2024-212-37.pdf"
+      }
     },
     {
       "nombre": "Bernardo Hernández Hernández",
@@ -79,7 +85,13 @@
         "t": "InfoNIF: ficha de Bernardo Hernández SL (BORME, 4/11/2024)",
         "u": "https://infonif.economia3.com/ficha-empresa/bernardo-hernandez-sl"
       },
-      "ficha": ""
+      "ficha": "",
+      "verificacion_borme": {
+        "estado": "inscrito",
+        "fecha": "20241104",
+        "boletin": "BORME-A-2024-212-37",
+        "url": "https://www.boe.es/borme/dias/2024/11/04/pdfs/BORME-A-2024-212-37.pdf"
+      }
     },
     {
       "nombre": "Miguel Ángel Soriano Sáez",
@@ -88,7 +100,13 @@
         "t": "InfoNIF: ficha de Bernardo Hernández SL (BORME, 4/11/2024)",
         "u": "https://infonif.economia3.com/ficha-empresa/bernardo-hernandez-sl"
       },
-      "ficha": ""
+      "ficha": "",
+      "verificacion_borme": {
+        "estado": "inscrito",
+        "fecha": "20241104",
+        "boletin": "BORME-A-2024-212-37",
+        "url": "https://www.boe.es/borme/dias/2024/11/04/pdfs/BORME-A-2024-212-37.pdf"
+      }
     }
   ],
   "historia": [
@@ -124,7 +142,7 @@
     "Fecha de constitución de la sociedad: InfoNIF muestra una antigüedad de 47 años con referencia 06/12/1979; Wikipedia habla de 1930 como origen del negocio.",
     "Ventas absolutas: ocultas en InfoNIF y sin importe en El Economista.",
     "Cifras de ingresos y empleados de Wikipedia: sin año ni fuente.",
-    "Dirección ejecutiva: Wikipedia cita a Bernardo Hernández Tinoco como presidente y consejero delegado, pero el BORME de 2024 recoge otra presidencia; no se ha reconciliado.",
+    "Dirección ejecutiva: Wikipedia cita a Bernardo Hernández Tinoco como presidente y consejero delegado; el BORME de 04/11/2024 recoge a Manuela Tinoco Trejo como presidenta y a Bernardo Hernández García como presidente honorífico. La ficha sigue el BORME.",
     "Domicilio: la calle Oriente aparece con número 11 (InfoNIF) y 18 (El Economista).",
     "Sitio web oficial de la marca: no abierto en esta revisión.",
     "Secretarios no consejeros y apoderados del BORME: omitidos por criterio editorial."
@@ -165,5 +183,6 @@
       "u": "https://en.wikipedia.org/wiki/Beher_(company)"
     }
   ],
-  "como_citar": "Open Salamanca (2026). Ficha de Bernardo Hernández SL. https://opensalamanca.es/empresas/bernardo-hernandez. Licencia CC BY 4.0."
+  "como_citar": "Open Salamanca (2026). Ficha de Bernardo Hernández SL. https://opensalamanca.es/empresas/bernardo-hernandez. Licencia CC BY 4.0.",
+  "nota_directivos": "Contrastado con el BORME de Salamanca de 01/01/2022 a 27/11/2026. Confirmados por una inscripción en ese periodo: Manuela Tinoco Trejo, Bernardo Hernández Hernández, Miguel Ángel Soriano Sáez (fecha y boletín indicados en cada cargo)."
 }

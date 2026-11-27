@@ -86,7 +86,13 @@
         "t": "InfoNIF: ficha de Ganadería Casaseca 2010 SL (BORME, 3/10/2024)",
         "u": "https://infonif.economia3.com/ficha-empresa/ganaderia-casaseca-2010-sl"
       },
-      "ficha": ""
+      "ficha": "",
+      "verificacion_borme": {
+        "estado": "inscrito",
+        "fecha": "20241003",
+        "boletin": "BORME-A-2024-191-37",
+        "url": "https://www.boe.es/borme/dias/2024/10/03/pdfs/BORME-A-2024-191-37.pdf"
+      }
     },
     {
       "nombre": "Albert Morera Serentilla",
@@ -104,7 +110,13 @@
         "t": "InfoNIF: ficha de Ganadería Casaseca 2010 SL (BORME, 3/10/2024)",
         "u": "https://infonif.economia3.com/ficha-empresa/ganaderia-casaseca-2010-sl"
       },
-      "ficha": ""
+      "ficha": "",
+      "verificacion_borme": {
+        "estado": "inscrito",
+        "fecha": "20241003",
+        "boletin": "BORME-A-2024-191-37",
+        "url": "https://www.boe.es/borme/dias/2024/10/03/pdfs/BORME-A-2024-191-37.pdf"
+      }
     }
   ],
   "historia": [
@@ -180,5 +192,6 @@
       "u": "https://www.alimarket.es/alimentacion/noticia/392940/vall-companys-integra-a-ganaderia-casaseca-en-su-proyecto-de-cerdo-iberico"
     }
   ],
-  "como_citar": "Open Salamanca (2026). Ficha de Ganadería Casaseca 2010 SL. https://opensalamanca.es/empresas/ganaderia-casaseca-2010. Licencia CC BY 4.0."
+  "como_citar": "Open Salamanca (2026). Ficha de Ganadería Casaseca 2010 SL. https://opensalamanca.es/empresas/ganaderia-casaseca-2010. Licencia CC BY 4.0.",
+  "nota_directivos": "Contrastado con el BORME de Salamanca de 01/01/2022 a 27/11/2026. Confirmados por una inscripción en ese periodo: Alfredo Castells Gil, Josep Pedrós Riasol (fecha y boletín indicados en cada cargo). Sin inscripción de nombramiento ni cese en ese periodo: Albert Morera Serentilla. Sus cargos proceden de inscripciones anteriores y no se han podido contrastar con el boletín original."
 }

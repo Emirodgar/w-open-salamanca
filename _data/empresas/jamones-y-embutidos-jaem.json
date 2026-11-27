@@ -70,7 +70,13 @@
         "t": "InfoNIF: ficha de Jamones y Embutidos Jaem SA (BORME, 20/01/2023)",
         "u": "https://infonif.economia3.com/ficha-empresa/jamones-y-embutidos-jaem-sa"
       },
-      "ficha": ""
+      "ficha": "",
+      "verificacion_borme": {
+        "estado": "inscrito",
+        "fecha": "20230120",
+        "boletin": "BORME-A-2023-14-37",
+        "url": "https://www.boe.es/borme/dias/2023/01/20/pdfs/BORME-A-2023-14-37.pdf"
+      }
     }
   ],
   "historia": [
@@ -165,5 +171,6 @@
       "u": "https://www.alimarket.es/alimentacion/noticia/426671/jaemsa-inicia-las-obras-de-una-planta-de-curacion-y-desarrolla-un-proyecto-ganadero"
     }
   ],
-  "como_citar": "Open Salamanca (2026). Ficha de Jamones y Embutidos Jaem SA. https://opensalamanca.es/empresas/jamones-y-embutidos-jaem. Licencia CC BY 4.0."
+  "como_citar": "Open Salamanca (2026). Ficha de Jamones y Embutidos Jaem SA. https://opensalamanca.es/empresas/jamones-y-embutidos-jaem. Licencia CC BY 4.0.",
+  "nota_directivos": "Contrastado con el BORME de Salamanca de 01/01/2022 a 27/11/2026. Confirmados por una inscripción en ese periodo: Grasiber SL (fecha y boletín indicados en cada cargo)."
 }

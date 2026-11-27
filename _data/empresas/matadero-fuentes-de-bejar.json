@@ -70,7 +70,13 @@
         "t": "InfoNIF: ficha de Matadero Frigorífico de Fuentes El Navazo SL (BORME, 24/02/2023)",
         "u": "https://infonif.economia3.com/ficha-empresa/matadero-frigorifico-de-fuentes-el-navazo-sl"
       },
-      "ficha": ""
+      "ficha": "",
+      "verificacion_borme": {
+        "estado": "inscrito",
+        "fecha": "20230224",
+        "boletin": "BORME-A-2023-39-37",
+        "url": "https://www.boe.es/borme/dias/2023/02/24/pdfs/BORME-A-2023-39-37.pdf"
+      }
     },
     {
       "nombre": "Alfonso Sánchez Bernal",
@@ -79,7 +85,13 @@
         "t": "InfoNIF: ficha de Matadero Frigorífico de Fuentes El Navazo SL (BORME, 24/02/2023)",
         "u": "https://infonif.economia3.com/ficha-empresa/matadero-frigorifico-de-fuentes-el-navazo-sl"
       },
-      "ficha": ""
+      "ficha": "",
+      "verificacion_borme": {
+        "estado": "inscrito",
+        "fecha": "20230224",
+        "boletin": "BORME-A-2023-39-37",
+        "url": "https://www.boe.es/borme/dias/2023/02/24/pdfs/BORME-A-2023-39-37.pdf"
+      }
     }
   ],
   "historia": [
@@ -159,5 +171,6 @@
       "u": "https://www.alimarket.es/alimentacion/noticia_amp/259975/jamones-aljomar-potencia-su-negocio-y-marcas"
     }
   ],
-  "como_citar": "Open Salamanca (2026). Ficha de Matadero Frigorífico de Fuentes El Navazo SL. https://opensalamanca.es/empresas/matadero-fuentes-de-bejar. Licencia CC BY 4.0."
+  "como_citar": "Open Salamanca (2026). Ficha de Matadero Frigorífico de Fuentes El Navazo SL. https://opensalamanca.es/empresas/matadero-fuentes-de-bejar. Licencia CC BY 4.0.",
+  "nota_directivos": "Contrastado con el BORME de Salamanca de 01/01/2022 a 27/11/2026. Confirmados por una inscripción en ese periodo: Fernando Corral Ronco, Alfonso Sánchez Bernal (fecha y boletín indicados en cada cargo)."
 }

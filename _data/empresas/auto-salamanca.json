@@ -58,7 +58,13 @@
         "t": "InfoNIF: ficha de Auto Salamanca SA (BORME, 03/04/2025)",
         "u": "https://infonif.economia3.com/ficha-empresa/auto-salamanca-sa"
       },
-      "ficha": ""
+      "ficha": "",
+      "verificacion_borme": {
+        "estado": "inscrito",
+        "fecha": "20250403",
+        "boletin": "BORME-A-2025-65-37",
+        "url": "https://www.boe.es/borme/dias/2025/04/03/pdfs/BORME-A-2025-65-37.pdf"
+      }
     },
     {
       "nombre": "María Inés Moriñigo Mateos",
@@ -67,7 +73,13 @@
         "t": "InfoNIF: ficha de Auto Salamanca SA (BORME, 03/04/2025)",
         "u": "https://infonif.economia3.com/ficha-empresa/auto-salamanca-sa"
       },
-      "ficha": ""
+      "ficha": "",
+      "verificacion_borme": {
+        "estado": "inscrito",
+        "fecha": "20250403",
+        "boletin": "BORME-A-2025-65-37",
+        "url": "https://www.boe.es/borme/dias/2025/04/03/pdfs/BORME-A-2025-65-37.pdf"
+      }
     },
     {
       "nombre": "Desarrollos Comerciales e Industriales SA",
@@ -76,7 +88,13 @@
         "t": "InfoNIF: ficha de Auto Salamanca SA (BORME, 07/08/2025)",
         "u": "https://infonif.economia3.com/ficha-empresa/auto-salamanca-sa"
       },
-      "ficha": ""
+      "ficha": "",
+      "verificacion_borme": {
+        "estado": "inscrito",
+        "fecha": "20250807",
+        "boletin": "BORME-A-2025-149-37",
+        "url": "https://www.boe.es/borme/dias/2025/08/07/pdfs/BORME-A-2025-149-37.pdf"
+      }
     }
   ],
   "historia": [
@@ -153,5 +171,6 @@
       "u": "https://concesionario.renault.es/auto-salamanca-cars.html"
     }
   ],
-  "como_citar": "Open Salamanca (2026). Ficha de Auto Salamanca SA. https://opensalamanca.es/empresas/auto-salamanca. Licencia CC BY 4.0."
+  "como_citar": "Open Salamanca (2026). Ficha de Auto Salamanca SA. https://opensalamanca.es/empresas/auto-salamanca. Licencia CC BY 4.0.",
+  "nota_directivos": "Contrastado con el BORME de Salamanca de 01/01/2022 a 27/11/2026. Confirmados por una inscripción en ese periodo: Matealsa SL, María Inés Moriñigo Mateos, Desarrollos Comerciales e Industriales SA (fecha y boletín indicados en cada cargo)."
 }

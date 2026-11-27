@@ -72,16 +72,61 @@
   "nota_cifras": "No hay importe de ventas fiable de la sociedad: InfoNIF lo oculta y El Economista muestra \"ND\" y solo una variación de -0,61 % en 2024. Las cifras de 2021 y 2022 son de Global Exchange, el grupo operativo citado por El Español, y no pueden atribuirse a Eurodivisas Corporación SL, que es un holding.",
   "directivos": [
     {
-      "nombre": "Alfafamily Corp SL",
-      "cargo": "Consejero (persona jurídica; sin fecha en la ficha)",
+      "nombre": "Sully 8 SL",
+      "cargo": "Consejero y presidente del consejo (persona jurídica; nombrado el 26/07/2024)",
       "fuente": {
-        "t": "InfoNIF: ficha de Eurodivisas Corporación SL",
-        "u": "https://infonif.economia3.com/ficha-empresa/eurodivisas-corporacion-sl"
+        "t": "BORME BORME-A-2024-143-37 (26/07/2024)",
+        "u": "https://www.boe.es/borme/dias/2024/07/26/pdfs/BORME-A-2024-143-37.pdf"
       },
-      "ficha": ""
+      "ficha": "",
+      "verificacion_borme": {
+        "estado": "inscrito",
+        "fecha": "20240726",
+        "boletin": "BORME-A-2024-143-37",
+        "url": "https://www.boe.es/borme/dias/2024/07/26/pdfs/BORME-A-2024-143-37.pdf"
+      }
+    },
+    {
+      "nombre": "Morasuletin Global Investments SL",
+      "cargo": "Consejero y vicepresidente (persona jurídica; nombrado el 26/07/2024)",
+      "fuente": {
+        "t": "BORME BORME-A-2024-143-37 (26/07/2024)",
+        "u": "https://www.boe.es/borme/dias/2024/07/26/pdfs/BORME-A-2024-143-37.pdf"
+      },
+      "ficha": "",
+      "verificacion_borme": {
+        "estado": "inscrito",
+        "fecha": "20240726",
+        "boletin": "BORME-A-2024-143-37",
+        "url": "https://www.boe.es/borme/dias/2024/07/26/pdfs/BORME-A-2024-143-37.pdf"
+      }
+    },
+    {
+      "nombre": "Alfafamily Corp SL",
+      "cargo": "Consejero y secretario (persona jurídica; nombrado el 26/07/2024)",
+      "fuente": {
+        "t": "BORME BORME-A-2024-143-37 (26/07/2024)",
+        "u": "https://www.boe.es/borme/dias/2024/07/26/pdfs/BORME-A-2024-143-37.pdf"
+      },
+      "ficha": "",
+      "verificacion_borme": {
+        "estado": "inscrito",
+        "fecha": "20240726",
+        "boletin": "BORME-A-2024-143-37",
+        "url": "https://www.boe.es/borme/dias/2024/07/26/pdfs/BORME-A-2024-143-37.pdf"
+      }
     }
   ],
   "historia": [
+    {
+      "fecha": "26/07/2024",
+      "hito": "Renovación del consejo de administración",
+      "detalle": "El BORME recoge el cese de los cargos del consejo anterior (Isidoro José Alanís Marcos como presidente y consejero delegado, y otros tres miembros de la familia Alanís Marcos como consejeros con cargo) y el nombramiento como consejeros de tres sociedades: Sully 8 SL (presidente), Morasuletin Global Investments SL (vicepresidente) y Alfafamily Corp SL (secretario).",
+      "fuente": {
+        "t": "BORME BORME-A-2024-143-37 (26/07/2024)",
+        "u": "https://www.boe.es/borme/dias/2024/07/26/pdfs/BORME-A-2024-143-37.pdf"
+      }
+    },
     {
       "fecha": "2023",
       "hito": "Ampliación de capital",
@@ -107,9 +152,9 @@
     "Ventas: no hay importe publicado en las fuentes abiertas consultadas.",
     "Cambio de socio único de Global Exchange Servicios de Cambio de Moneda SA a Eurodivisas Corporación SL: lo apunta un resumen de búsqueda sobre un anuncio de 2025, pero no se abrió la fuente.",
     "Eurodivisas SAU con domicilio en Fuentes de Oñoro: solo en un resumen de búsqueda; no verificado.",
-    "Otros consejeros: la tabla de cargos de InfoNIF está oculta sin suscripción; los apoderados del BORME se omiten por criterio editorial.",
     "Plantilla: InfoNIF muestra 17 parcialmente oculto; no es fiable.",
-    "Sitio web oficial de la sociedad: no localizado."
+    "Sitio web oficial de la sociedad: no localizado.",
+    "Personas físicas que están detrás de las sociedades consejeras y posibles consejeros adicionales del acto de 26/07/2024 (el texto del BORME está truncado): no consta."
   ],
   "faq": [
     {
@@ -151,5 +196,6 @@
       "u": "https://infonif.economia3.com/ficha-empresa/global-exchange-servicios-de-cambio-de-moneda-sa"
     }
   ],
-  "como_citar": "Open Salamanca (2026). Ficha de Eurodivisas Corporación SL. https://opensalamanca.es/empresas/eurodivisas-corporacion. Licencia CC BY 4.0."
+  "como_citar": "Open Salamanca (2026). Ficha de Eurodivisas Corporación SL. https://opensalamanca.es/empresas/eurodivisas-corporacion. Licencia CC BY 4.0.",
+  "nota_directivos": "Contrastado con el BORME de Salamanca de 01/01/2022 a 27/11/2026. Confirmados por una inscripción en ese periodo: Sully 8 SL, Morasuletin Global Investments SL, Alfafamily Corp SL (fecha y boletín indicados en cada cargo)."
 }

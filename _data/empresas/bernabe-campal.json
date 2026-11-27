@@ -98,7 +98,13 @@
         "t": "InfoNIF: ficha de Bernabé Campal SL",
         "u": "https://infonif.economia3.com/ficha-empresa/bernabe-campal-sl"
       },
-      "ficha": ""
+      "ficha": "",
+      "verificacion_borme": {
+        "estado": "inscrito",
+        "fecha": "20241011",
+        "boletin": "BORME-A-2024-197-37",
+        "url": "https://www.boe.es/borme/dias/2024/10/11/pdfs/BORME-A-2024-197-37.pdf"
+      }
     }
   ],
   "historia": [
@@ -191,5 +197,6 @@
       "u": "https://www.iberinform.es/empresa/77783/bernabe-campal"
     }
   ],
-  "como_citar": "Open Salamanca (2026). Ficha de Bernabé Campal SL. https://opensalamanca.es/empresas/bernabe-campal. Licencia CC BY 4.0."
+  "como_citar": "Open Salamanca (2026). Ficha de Bernabé Campal SL. https://opensalamanca.es/empresas/bernabe-campal. Licencia CC BY 4.0.",
+  "nota_directivos": "Contrastado con el BORME de Salamanca de 01/01/2022 a 27/11/2026. Confirmados por una inscripción en ese periodo: Clemencia Arias García (fecha y boletín indicados en cada cargo)."
 }

@@ -49,12 +49,17 @@ layout: default
       {%- if e.directivos.size > 0 %}
       <ul>
         {%- for d in e.directivos %}
-        <li><b>{% if d.ficha and d.ficha != "" %}<a href="{{ d.ficha }}">{{ d.nombre }}</a>{% else %}{{ d.nombre }}{% endif %}</b>: {{ d.cargo }}. <span class="fu">Fuente: <a href="{{ d.fuente.u }}" rel="nofollow noopener">{{ d.fuente.t }}</a></span></li>
+        <li><b>{% if d.ficha and d.ficha != "" %}<a href="{{ d.ficha }}">{{ d.nombre }}</a>{% else %}{{ d.nombre }}{% endif %}</b>: {{ d.cargo }}. {% if d.verificacion_borme.estado == "inscrito" %}<span class="fu">Inscrito en el <a href="{{ d.verificacion_borme.url }}" rel="nofollow noopener">BORME de {{ d.verificacion_borme.fecha | slice: 6, 2 }}/{{ d.verificacion_borme.fecha | slice: 4, 2 }}/{{ d.verificacion_borme.fecha | slice: 0, 4 }} ({{ d.verificacion_borme.boletin }})</a>.</span>{% else %}<span class="fu">Fuente: <a href="{{ d.fuente.u }}" rel="nofollow noopener">{{ d.fuente.t }}</a></span>{% endif %}</li>
         {%- endfor %}
       </ul>
+      {%- if e.nota_directivos %}
+      <p class="fu">{{ e.nota_directivos }} Para el dato oficial actual, consulta el Registro Mercantil.</p>
+      {%- else %}
       <p class="fu">Los cargos proceden del BORME recogido por directorios y pueden no estar vigentes; consulta el Registro Mercantil para el dato oficial actual.</p>
+      {%- endif %}
       {%- else %}
       <p>No hay cargos de administración vigentes con fuente fiable. Los datos del BORME consultados solo muestran apoderados o socio único.</p>
+      {%- if e.nota_directivos %}<p class="fu">{{ e.nota_directivos }}</p>{%- endif %}
       {%- endif %}
 
       <h2>Historia y hitos</h2>

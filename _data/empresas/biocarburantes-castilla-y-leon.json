@@ -66,7 +66,13 @@
         "t": "InfoNIF: ficha de Biocarburantes de Castilla y León SA",
         "u": "https://infonif.economia3.com/ficha-empresa/biocarburantes-de-castilla-y-leon-sa"
       },
-      "ficha": ""
+      "ficha": "",
+      "verificacion_borme": {
+        "estado": "inscrito",
+        "fecha": "20231020",
+        "boletin": "BORME-A-2023-201-37",
+        "url": "https://www.boe.es/borme/dias/2023/10/20/pdfs/BORME-A-2023-201-37.pdf"
+      }
     },
     {
       "nombre": "Salvador Martos Barrionuevo",
@@ -75,7 +81,13 @@
         "t": "InfoNIF: ficha de Biocarburantes de Castilla y León SA",
         "u": "https://infonif.economia3.com/ficha-empresa/biocarburantes-de-castilla-y-leon-sa"
       },
-      "ficha": ""
+      "ficha": "",
+      "verificacion_borme": {
+        "estado": "inscrito",
+        "fecha": "20231020",
+        "boletin": "BORME-A-2023-201-37",
+        "url": "https://www.boe.es/borme/dias/2023/10/20/pdfs/BORME-A-2023-201-37.pdf"
+      }
     },
     {
       "nombre": "Antonio José Vallespir de Gregorio",
@@ -84,7 +96,13 @@
         "t": "InfoNIF: ficha de Biocarburantes de Castilla y León SA",
         "u": "https://infonif.economia3.com/ficha-empresa/biocarburantes-de-castilla-y-leon-sa"
       },
-      "ficha": ""
+      "ficha": "",
+      "verificacion_borme": {
+        "estado": "inscrito",
+        "fecha": "20231020",
+        "boletin": "BORME-A-2023-201-37",
+        "url": "https://www.boe.es/borme/dias/2023/10/20/pdfs/BORME-A-2023-201-37.pdf"
+      }
     }
   ],
   "historia": [
@@ -174,5 +192,6 @@
       "u": "https://mapa.gob.es/ministerio/pags/Biblioteca/Revistas/pdf%5FLEAD%2FALE%5F2006%5F32%5F10%5F11%2Epdf"
     }
   ],
-  "como_citar": "Open Salamanca (2026). Ficha de Biocarburantes de Castilla y León SA. https://opensalamanca.es/empresas/biocarburantes-castilla-y-leon. Licencia CC BY 4.0."
+  "como_citar": "Open Salamanca (2026). Ficha de Biocarburantes de Castilla y León SA. https://opensalamanca.es/empresas/biocarburantes-castilla-y-leon. Licencia CC BY 4.0.",
+  "nota_directivos": "Contrastado con el BORME de Salamanca de 01/01/2022 a 27/11/2026. Confirmados por una inscripción en ese periodo: Ignacio García de Alvear, Salvador Martos Barrionuevo, Antonio José Vallespir de Gregorio (fecha y boletín indicados en cada cargo)."
 }

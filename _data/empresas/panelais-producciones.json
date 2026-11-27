@@ -7,37 +7,186 @@
   "actualizado_texto": "27 de noviembre de 2026",
   "estado_ficha": "borrador: pendiente de contrastar cuentas depositadas y órgano de administración vigente en el BORME",
   "licencia": "CC BY 4.0",
-  "sameas": ["https://www.panelais.com"],
+  "sameas": [
+    "https://www.panelais.com"
+  ],
   "resumen": "Panelais Producciones SA es un fabricante de paneles sándwich y paneles aislantes con plantas en Huerta (Salamanca), que también ofrece construcción modular. Según el ranking de elEconomista vendió 110,7 millones de euros en 2024, y ocupa el puesto 2.828 por ventas a nivel nacional en el ranking de InfoNIF, el 7.º de la provincia. La empresa declara exportar a más de 45 países.",
   "rapida": [
-    {"k": "Nombre comercial", "v": "Panelais"},
-    {"k": "Razón social", "v": "Panelais Producciones SA (NIF A37422722; antes Panelais Producciones SL)"},
-    {"k": "Sector", "v": "Fabricación de paneles sándwich y construcción modular (CNAE 2599 según elEconomista)"},
-    {"k": "Domicilio", "v": "Carretera de Cordovilla, km 1, 37338 Huerta (Salamanca)"},
-    {"k": "Constitución", "v": "28 de septiembre de 2004 (según InfoNIF)"},
-    {"k": "Presidente", "v": "Giovanni Paparo Saraco (presidente desde 2019; consejero delegado en el acto de 2026, según el BORME recogido por InfoNIF)"},
-    {"k": "Posición por ventas 2024", "v": "7.ª entre las sociedades domiciliadas en la provincia de Salamanca; 2.828.ª a nivel nacional (InfoNIF)"},
-    {"k": "Web oficial", "v": "https://www.panelais.com"}
+    {
+      "k": "Nombre comercial",
+      "v": "Panelais"
+    },
+    {
+      "k": "Razón social",
+      "v": "Panelais Producciones SA (NIF A37422722; antes Panelais Producciones SL)"
+    },
+    {
+      "k": "Sector",
+      "v": "Fabricación de paneles sándwich y construcción modular (CNAE 2599 según elEconomista)"
+    },
+    {
+      "k": "Domicilio",
+      "v": "Carretera de Cordovilla, km 1, 37338 Huerta (Salamanca)"
+    },
+    {
+      "k": "Constitución",
+      "v": "28 de septiembre de 2004 (según InfoNIF)"
+    },
+    {
+      "k": "Presidente",
+      "v": "Giovanni Paparo Saraco (presidente desde 2019; consejero delegado en el acto de 2026, según el BORME recogido por InfoNIF)"
+    },
+    {
+      "k": "Posición por ventas 2024",
+      "v": "7.ª entre las sociedades domiciliadas en la provincia de Salamanca; 2.828.ª a nivel nacional (InfoNIF)"
+    },
+    {
+      "k": "Web oficial",
+      "v": "https://www.panelais.com"
+    }
   ],
   "cifras": [
-    {"concepto": "Ventas 2024", "valor": "110.698.070 euros", "fuente": {"t": "elEconomista: ranking de empresas, Panelais Producciones SA", "u": "https://ranking-empresas.eleconomista.es/PANELAIS-PRODUCCIONES.html"}},
-    {"concepto": "Resultado 2024", "valor": "1.932.952,79 euros", "fuente": {"t": "elEconomista: ranking de empresas, Panelais Producciones SA", "u": "https://ranking-empresas.eleconomista.es/PANELAIS-PRODUCCIONES.html"}},
-    {"concepto": "Capacidad de producción (declarada)", "valor": "más de 6.000.000 m² de paneles sándwich al año, tres líneas continuas y más de 100.000 m² de superficie en Huerta", "fuente": {"t": "Panelais: web oficial", "u": "https://www.panelais.com"}},
-    {"concepto": "Exportación (declarada)", "valor": "a más de 45 países", "fuente": {"t": "Panelais: web oficial", "u": "https://www.panelais.com"}},
-    {"concepto": "Capital suscrito", "valor": "1.785.000 euros (tras el aumento de 2013)", "fuente": {"t": "InfoNIF: ficha de Panelais Producciones SA", "u": "https://infonif.economia3.com/ficha-empresa/panelais-producciones-sa"}}
+    {
+      "concepto": "Ventas 2024",
+      "valor": "110.698.070 euros",
+      "fuente": {
+        "t": "elEconomista: ranking de empresas, Panelais Producciones SA",
+        "u": "https://ranking-empresas.eleconomista.es/PANELAIS-PRODUCCIONES.html"
+      }
+    },
+    {
+      "concepto": "Resultado 2024",
+      "valor": "1.932.952,79 euros",
+      "fuente": {
+        "t": "elEconomista: ranking de empresas, Panelais Producciones SA",
+        "u": "https://ranking-empresas.eleconomista.es/PANELAIS-PRODUCCIONES.html"
+      }
+    },
+    {
+      "concepto": "Capacidad de producción (declarada)",
+      "valor": "más de 6.000.000 m² de paneles sándwich al año, tres líneas continuas y más de 100.000 m² de superficie en Huerta",
+      "fuente": {
+        "t": "Panelais: web oficial",
+        "u": "https://www.panelais.com"
+      }
+    },
+    {
+      "concepto": "Exportación (declarada)",
+      "valor": "a más de 45 países",
+      "fuente": {
+        "t": "Panelais: web oficial",
+        "u": "https://www.panelais.com"
+      }
+    },
+    {
+      "concepto": "Capital suscrito",
+      "valor": "1.785.000 euros (tras el aumento de 2013)",
+      "fuente": {
+        "t": "InfoNIF: ficha de Panelais Producciones SA",
+        "u": "https://infonif.economia3.com/ficha-empresa/panelais-producciones-sa"
+      }
+    }
   ],
   "nota_cifras": "Otros directorios dan cifras incompatibles con la de elEconomista (Empresia indica unos 2,5 millones de euros de ventas y Bitscale unos 3 millones de dólares), que no son coherentes con una empresa con más de 100.000 m² de planta y no se han utilizado. Las ventas 2024 de elEconomista no se han contrastado con las cuentas depositadas en el Registro Mercantil. Las capacidades y destinos de exportación son declaraciones de la propia empresa.",
   "directivos": [
-    {"nombre": "Giovanni Paparo Saraco", "cargo": "Presidente del consejo de administración (desde 2019, reelegido en 2023); consejero delegado según el acto de 2026", "fuente": {"t": "InfoNIF: ficha de Panelais Producciones SA (BORME)", "u": "https://infonif.economia3.com/ficha-empresa/panelais-producciones-sa"}, "ficha": ""},
-    {"nombre": "Josefina López Pinedo", "cargo": "Consejera, secretaria y consejera delegada (reelegida en 2020, 2023 y 2025)", "fuente": {"t": "InfoNIF: ficha de Panelais Producciones SA (BORME)", "u": "https://infonif.economia3.com/ficha-empresa/panelais-producciones-sa"}, "ficha": ""},
-    {"nombre": "Stefano Bettio", "cargo": "Consejero (desde 2019, reelegido en 2023)", "fuente": {"t": "InfoNIF: ficha de Panelais Producciones SA (BORME)", "u": "https://infonif.economia3.com/ficha-empresa/panelais-producciones-sa"}, "ficha": ""},
-    {"nombre": "Fabrizio Bettio", "cargo": "Consejero (presidente hasta 2019)", "fuente": {"t": "InfoNIF: ficha de Panelais Producciones SA (BORME)", "u": "https://infonif.economia3.com/ficha-empresa/panelais-producciones-sa"}, "ficha": ""}
+    {
+      "nombre": "Giovanni Paparo Saraco",
+      "cargo": "Presidente del consejo de administración (desde 2019, reelegido en 2023); consejero delegado según el acto de 2026",
+      "fuente": {
+        "t": "InfoNIF: ficha de Panelais Producciones SA (BORME)",
+        "u": "https://infonif.economia3.com/ficha-empresa/panelais-producciones-sa"
+      },
+      "ficha": "",
+      "verificacion_borme": {
+        "estado": "inscrito",
+        "fecha": "20260407",
+        "boletin": "BORME-A-2026-65-37",
+        "url": "https://www.boe.es/borme/dias/2026/04/07/pdfs/BORME-A-2026-65-37.pdf"
+      }
+    },
+    {
+      "nombre": "Josefina López Pinedo",
+      "cargo": "Consejera, secretaria y consejera delegada (reelegida en 2020, 2023 y 2025)",
+      "fuente": {
+        "t": "InfoNIF: ficha de Panelais Producciones SA (BORME)",
+        "u": "https://infonif.economia3.com/ficha-empresa/panelais-producciones-sa"
+      },
+      "ficha": "",
+      "verificacion_borme": {
+        "estado": "inscrito",
+        "fecha": "20260407",
+        "boletin": "BORME-A-2026-65-37",
+        "url": "https://www.boe.es/borme/dias/2026/04/07/pdfs/BORME-A-2026-65-37.pdf"
+      }
+    },
+    {
+      "nombre": "Stefano Bettio",
+      "cargo": "Consejero (desde 2019, reelegido en 2023)",
+      "fuente": {
+        "t": "InfoNIF: ficha de Panelais Producciones SA (BORME)",
+        "u": "https://infonif.economia3.com/ficha-empresa/panelais-producciones-sa"
+      },
+      "ficha": "",
+      "verificacion_borme": {
+        "estado": "inscrito",
+        "fecha": "20230105",
+        "boletin": "BORME-A-2023-4-37",
+        "url": "https://www.boe.es/borme/dias/2023/01/05/pdfs/BORME-A-2023-4-37.pdf"
+      }
+    },
+    {
+      "nombre": "Fabrizio Bettio",
+      "cargo": "Consejero (presidente hasta 2019)",
+      "fuente": {
+        "t": "InfoNIF: ficha de Panelais Producciones SA (BORME)",
+        "u": "https://infonif.economia3.com/ficha-empresa/panelais-producciones-sa"
+      },
+      "ficha": "",
+      "verificacion_borme": {
+        "estado": "inscrito",
+        "fecha": "20230105",
+        "boletin": "BORME-A-2023-4-37",
+        "url": "https://www.boe.es/borme/dias/2023/01/05/pdfs/BORME-A-2023-4-37.pdf"
+      }
+    }
   ],
   "historia": [
-    {"fecha": "2004", "hito": "Constitución", "detalle": "La sociedad se constituye el 28 de septiembre de 2004 como Panelais Producciones SL y después se transforma en sociedad anónima.", "fuente": {"t": "InfoNIF: ficha de Panelais Producciones SA", "u": "https://infonif.economia3.com/ficha-empresa/panelais-producciones-sa"}},
-    {"fecha": "2013", "hito": "Ampliación de capital", "detalle": "Se inscribe un aumento de capital de 1.788.000 euros.", "fuente": {"t": "InfoNIF: ficha de Panelais Producciones SA", "u": "https://infonif.economia3.com/ficha-empresa/panelais-producciones-sa"}},
-    {"fecha": "2019", "hito": "Cambio en la presidencia", "detalle": "Giovanni Paparo Saraco pasa a presidir el consejo, cargo que antes ocupaba Fabrizio Bettio.", "fuente": {"t": "InfoNIF: ficha de Panelais Producciones SA", "u": "https://infonif.economia3.com/ficha-empresa/panelais-producciones-sa"}},
-    {"fecha": "Junio de 2026", "hito": "Nueva línea de paneles de lana de roca", "detalle": "Según la propia empresa, entra en funcionamiento una nueva línea continua para paneles sándwich de lana de roca.", "fuente": {"t": "Panelais: web oficial", "u": "https://www.panelais.com"}}
+    {
+      "fecha": "2004",
+      "hito": "Constitución",
+      "detalle": "La sociedad se constituye el 28 de septiembre de 2004 como Panelais Producciones SL y después se transforma en sociedad anónima.",
+      "fuente": {
+        "t": "InfoNIF: ficha de Panelais Producciones SA",
+        "u": "https://infonif.economia3.com/ficha-empresa/panelais-producciones-sa"
+      }
+    },
+    {
+      "fecha": "2013",
+      "hito": "Ampliación de capital",
+      "detalle": "Se inscribe un aumento de capital de 1.788.000 euros.",
+      "fuente": {
+        "t": "InfoNIF: ficha de Panelais Producciones SA",
+        "u": "https://infonif.economia3.com/ficha-empresa/panelais-producciones-sa"
+      }
+    },
+    {
+      "fecha": "2019",
+      "hito": "Cambio en la presidencia",
+      "detalle": "Giovanni Paparo Saraco pasa a presidir el consejo, cargo que antes ocupaba Fabrizio Bettio.",
+      "fuente": {
+        "t": "InfoNIF: ficha de Panelais Producciones SA",
+        "u": "https://infonif.economia3.com/ficha-empresa/panelais-producciones-sa"
+      }
+    },
+    {
+      "fecha": "Junio de 2026",
+      "hito": "Nueva línea de paneles de lana de roca",
+      "detalle": "Según la propia empresa, entra en funcionamiento una nueva línea continua para paneles sándwich de lana de roca.",
+      "fuente": {
+        "t": "Panelais: web oficial",
+        "u": "https://www.panelais.com"
+      }
+    }
   ],
   "no_verificado": [
     "Plantilla: las fuentes dan cifras incompatibles (InfoNIF la oculta, Empresia 291, BounceWatch unos 63, Bitscale 9); no se publica ninguna.",
@@ -47,17 +196,45 @@
     "Fecha y detalles de la nueva línea de lana de roca (junio de 2026): solo constan en la web de la empresa, sin inversión ni empleo asociados."
   ],
   "faq": [
-    {"q": "¿Qué fabrica Panelais?", "a": "Paneles sándwich de cubierta, fachada y partición, otros paneles aislantes y soluciones de construcción modular, en sus plantas de Huerta (Salamanca)."},
-    {"q": "¿Cuánto factura Panelais?", "a": "Según elEconomista, 110,7 millones de euros en 2024, con un resultado de unos 1,9 millones. Otros directorios dan cifras muy inferiores que no son coherentes y se han descartado."},
-    {"q": "¿Quién preside Panelais?", "a": "Giovanni Paparo Saraco, presidente desde 2019 según el BORME recogido por InfoNIF."},
-    {"q": "¿Exporta?", "a": "La empresa declara exportar a más de 45 países."}
+    {
+      "q": "¿Qué fabrica Panelais?",
+      "a": "Paneles sándwich de cubierta, fachada y partición, otros paneles aislantes y soluciones de construcción modular, en sus plantas de Huerta (Salamanca)."
+    },
+    {
+      "q": "¿Cuánto factura Panelais?",
+      "a": "Según elEconomista, 110,7 millones de euros en 2024, con un resultado de unos 1,9 millones. Otros directorios dan cifras muy inferiores que no son coherentes y se han descartado."
+    },
+    {
+      "q": "¿Quién preside Panelais?",
+      "a": "Giovanni Paparo Saraco, presidente desde 2019 según el BORME recogido por InfoNIF."
+    },
+    {
+      "q": "¿Exporta?",
+      "a": "La empresa declara exportar a más de 45 países."
+    }
   ],
   "fuentes": [
-    {"t": "InfoNIF: ranking de ventas de empresas de Salamanca 2024", "u": "https://infonif.economia3.com/ranking/ventas-empresas/salamanca"},
-    {"t": "InfoNIF: ficha de Panelais Producciones SA", "u": "https://infonif.economia3.com/ficha-empresa/panelais-producciones-sa"},
-    {"t": "elEconomista: ranking de empresas, Panelais Producciones SA", "u": "https://ranking-empresas.eleconomista.es/PANELAIS-PRODUCCIONES.html"},
-    {"t": "Panelais: web oficial", "u": "https://www.panelais.com"},
-    {"t": "Empresia: Panelais Producciones", "u": "https://www.empresia.es/empresa/panelais-producciones/"}
+    {
+      "t": "InfoNIF: ranking de ventas de empresas de Salamanca 2024",
+      "u": "https://infonif.economia3.com/ranking/ventas-empresas/salamanca"
+    },
+    {
+      "t": "InfoNIF: ficha de Panelais Producciones SA",
+      "u": "https://infonif.economia3.com/ficha-empresa/panelais-producciones-sa"
+    },
+    {
+      "t": "elEconomista: ranking de empresas, Panelais Producciones SA",
+      "u": "https://ranking-empresas.eleconomista.es/PANELAIS-PRODUCCIONES.html"
+    },
+    {
+      "t": "Panelais: web oficial",
+      "u": "https://www.panelais.com"
+    },
+    {
+      "t": "Empresia: Panelais Producciones",
+      "u": "https://www.empresia.es/empresa/panelais-producciones/"
+    }
   ],
-  "como_citar": "Open Salamanca (2026). Ficha de Panelais Producciones SA. https://opensalamanca.es/empresas/panelais-producciones. Licencia CC BY 4.0."
+  "como_citar": "Open Salamanca (2026). Ficha de Panelais Producciones SA. https://opensalamanca.es/empresas/panelais-producciones. Licencia CC BY 4.0.",
+  "nota_directivos": "Contrastado con el BORME de Salamanca de 01/01/2022 a 27/11/2026. Confirmados por una inscripción en ese periodo: Giovanni Paparo Saraco, Josefina López Pinedo, Stefano Bettio, Fabrizio Bettio (fecha y boletín indicados en cada cargo)."
 }

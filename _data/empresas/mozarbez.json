@@ -45,7 +45,13 @@
         "t": "Iberinform: ficha de Mozarbez SA",
         "u": "https://www.iberinform.es/empresa/776027/mozarbez"
       },
-      "ficha": ""
+      "ficha": "",
+      "verificacion_borme": {
+        "estado": "inscrito",
+        "fecha": "20230526",
+        "boletin": "BORME-A-2023-98-37",
+        "url": "https://www.boe.es/borme/dias/2023/05/26/pdfs/BORME-A-2023-98-37.pdf"
+      }
     },
     {
       "nombre": "Benedicto-Javier Sánchez González",
@@ -54,7 +60,13 @@
         "t": "Iberinform: ficha de Mozarbez SA",
         "u": "https://www.iberinform.es/empresa/776027/mozarbez"
       },
-      "ficha": ""
+      "ficha": "",
+      "verificacion_borme": {
+        "estado": "inscrito",
+        "fecha": "20230526",
+        "boletin": "BORME-A-2023-98-37",
+        "url": "https://www.boe.es/borme/dias/2023/05/26/pdfs/BORME-A-2023-98-37.pdf"
+      }
     },
     {
       "nombre": "Lisardo Emilio Sánchez González",
@@ -63,7 +75,13 @@
         "t": "Iberinform: ficha de Mozarbez SA",
         "u": "https://www.iberinform.es/empresa/776027/mozarbez"
       },
-      "ficha": ""
+      "ficha": "",
+      "verificacion_borme": {
+        "estado": "inscrito",
+        "fecha": "20230526",
+        "boletin": "BORME-A-2023-98-37",
+        "url": "https://www.boe.es/borme/dias/2023/05/26/pdfs/BORME-A-2023-98-37.pdf"
+      }
     }
   ],
   "historia": [
@@ -144,5 +162,6 @@
       "u": "https://www.iberinform.es/empresa/776027/mozarbez"
     }
   ],
-  "como_citar": "Open Salamanca (2026). Ficha de Mozárbez SA. https://opensalamanca.es/empresas/mozarbez. Licencia CC BY 4.0."
+  "como_citar": "Open Salamanca (2026). Ficha de Mozárbez SA. https://opensalamanca.es/empresas/mozarbez. Licencia CC BY 4.0.",
+  "nota_directivos": "Contrastado con el BORME de Salamanca de 01/01/2022 a 27/11/2026. Confirmados por una inscripción en ese periodo: José Sánchez González, Benedicto-Javier Sánchez González, Lisardo Emilio Sánchez González (fecha y boletín indicados en cada cargo)."
 }

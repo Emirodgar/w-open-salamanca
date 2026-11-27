@@ -70,7 +70,13 @@
         "t": "InfoNIF: ficha de Jamones Aljomar SA (BORME, 5/08/2026)",
         "u": "https://infonif.economia3.com/ficha-empresa/jamones-aljomar-sa"
       },
-      "ficha": ""
+      "ficha": "",
+      "verificacion_borme": {
+        "estado": "inscrito",
+        "fecha": "20260805",
+        "boletin": "BORME-A-2026-149-37",
+        "url": "https://www.boe.es/borme/dias/2026/08/05/pdfs/BORME-A-2026-149-37.pdf"
+      }
     },
     {
       "nombre": "María del Carmen Sánchez Álvarez",
@@ -79,7 +85,13 @@
         "t": "InfoNIF: ficha de Jamones Aljomar SA (BORME, 5/08/2026)",
         "u": "https://infonif.economia3.com/ficha-empresa/jamones-aljomar-sa"
       },
-      "ficha": ""
+      "ficha": "",
+      "verificacion_borme": {
+        "estado": "inscrito",
+        "fecha": "20260805",
+        "boletin": "BORME-A-2026-149-37",
+        "url": "https://www.boe.es/borme/dias/2026/08/05/pdfs/BORME-A-2026-149-37.pdf"
+      }
     },
     {
       "nombre": "María del Carmen Sánchez Sánchez",
@@ -88,7 +100,13 @@
         "t": "InfoNIF: ficha de Jamones Aljomar SA (BORME, 5/08/2026)",
         "u": "https://infonif.economia3.com/ficha-empresa/jamones-aljomar-sa"
       },
-      "ficha": ""
+      "ficha": "",
+      "verificacion_borme": {
+        "estado": "inscrito",
+        "fecha": "20260805",
+        "boletin": "BORME-A-2026-149-37",
+        "url": "https://www.boe.es/borme/dias/2026/08/05/pdfs/BORME-A-2026-149-37.pdf"
+      }
     },
     {
       "nombre": "José Luis Sánchez Sánchez",
@@ -97,7 +115,13 @@
         "t": "InfoNIF: ficha de Jamones Aljomar SA (BORME, 5/08/2026)",
         "u": "https://infonif.economia3.com/ficha-empresa/jamones-aljomar-sa"
       },
-      "ficha": ""
+      "ficha": "",
+      "verificacion_borme": {
+        "estado": "inscrito",
+        "fecha": "20260805",
+        "boletin": "BORME-A-2026-149-37",
+        "url": "https://www.boe.es/borme/dias/2026/08/05/pdfs/BORME-A-2026-149-37.pdf"
+      }
     }
   ],
   "historia": [
@@ -185,5 +209,6 @@
       "u": "https://opensalamanca.es/empresas/matadero-fuentes-de-bejar"
     }
   ],
-  "como_citar": "Open Salamanca (2026). Ficha de Jamones Aljomar SA. https://opensalamanca.es/empresas/jamones-aljomar. Licencia CC BY 4.0."
+  "como_citar": "Open Salamanca (2026). Ficha de Jamones Aljomar SA. https://opensalamanca.es/empresas/jamones-aljomar. Licencia CC BY 4.0.",
+  "nota_directivos": "Contrastado con el BORME de Salamanca de 01/01/2022 a 27/11/2026. Confirmados por una inscripción en ese periodo: Alfonso Sánchez Bernal, María del Carmen Sánchez Álvarez, María del Carmen Sánchez Sánchez, José Luis Sánchez Sánchez (fecha y boletín indicados en cada cargo)."
 }

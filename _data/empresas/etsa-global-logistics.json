@@ -45,7 +45,13 @@
         "t": "InfoNIF: ficha de ETSA Global Logistics SA SME",
         "u": "https://infonif.economia3.com/ficha-empresa/etsa-global-logistics-sa-sme"
       },
-      "ficha": ""
+      "ficha": "",
+      "verificacion_borme": {
+        "estado": "inscrito",
+        "fecha": "20220602",
+        "boletin": "BORME-A-2022-104-37",
+        "url": "https://www.boe.es/borme/dias/2022/06/02/pdfs/BORME-A-2022-104-37.pdf"
+      }
     },
     {
       "nombre": "Consuelo Molina García",
@@ -54,7 +60,13 @@
         "t": "InfoNIF: ficha de ETSA Global Logistics SA SME",
         "u": "https://infonif.economia3.com/ficha-empresa/etsa-global-logistics-sa-sme"
       },
-      "ficha": ""
+      "ficha": "",
+      "verificacion_borme": {
+        "estado": "inscrito",
+        "fecha": "20250704",
+        "boletin": "BORME-A-2025-126-37",
+        "url": "https://www.boe.es/borme/dias/2025/07/04/pdfs/BORME-A-2025-126-37.pdf"
+      }
     },
     {
       "nombre": "Carmen Paredes Haya",
@@ -63,7 +75,13 @@
         "t": "InfoNIF: ficha de ETSA Global Logistics SA SME",
         "u": "https://infonif.economia3.com/ficha-empresa/etsa-global-logistics-sa-sme"
       },
-      "ficha": ""
+      "ficha": "",
+      "verificacion_borme": {
+        "estado": "inscrito",
+        "fecha": "20250704",
+        "boletin": "BORME-A-2025-126-37",
+        "url": "https://www.boe.es/borme/dias/2025/07/04/pdfs/BORME-A-2025-126-37.pdf"
+      }
     }
   ],
   "historia": [
@@ -130,5 +148,6 @@
       "u": "https://infonif.economia3.com/ficha-empresa/etsa-global-logistics-sa-sme"
     }
   ],
-  "como_citar": "Open Salamanca (2026). Ficha de ETSA Global Logistics, S.A., S.M.E.. https://opensalamanca.es/empresas/etsa-global-logistics. Licencia CC BY 4.0."
+  "como_citar": "Open Salamanca (2026). Ficha de ETSA Global Logistics, S.A., S.M.E.. https://opensalamanca.es/empresas/etsa-global-logistics. Licencia CC BY 4.0.",
+  "nota_directivos": "Contrastado con el BORME de Salamanca de 01/01/2022 a 27/11/2026. Confirmados por una inscripción en ese periodo: Mariano Moreno Pavón, Consuelo Molina García, Carmen Paredes Haya (fecha y boletín indicados en cada cargo)."
 }

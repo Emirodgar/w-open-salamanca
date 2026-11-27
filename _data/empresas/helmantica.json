@@ -70,7 +70,13 @@
         "t": "InfoNIF: ficha de Helmántica SA (BORME, 14/03/2025)",
         "u": "https://infonif.economia3.com/ficha-empresa/helmantica-sa"
       },
-      "ficha": ""
+      "ficha": "",
+      "verificacion_borme": {
+        "estado": "inscrito",
+        "fecha": "20250314",
+        "boletin": "BORME-A-2025-51-37",
+        "url": "https://www.boe.es/borme/dias/2025/03/14/pdfs/BORME-A-2025-51-37.pdf"
+      }
     },
     {
       "nombre": "María del Pilar Pérez Pérez",
@@ -79,7 +85,13 @@
         "t": "InfoNIF: ficha de Helmántica SA (BORME, 14/03/2025)",
         "u": "https://infonif.economia3.com/ficha-empresa/helmantica-sa"
       },
-      "ficha": ""
+      "ficha": "",
+      "verificacion_borme": {
+        "estado": "inscrito",
+        "fecha": "20250314",
+        "boletin": "BORME-A-2025-51-37",
+        "url": "https://www.boe.es/borme/dias/2025/03/14/pdfs/BORME-A-2025-51-37.pdf"
+      }
     }
   ],
   "historia": [
@@ -156,5 +168,6 @@
       "u": "https://www.iberinform.es/empresa/410716/helmantica"
     }
   ],
-  "como_citar": "Open Salamanca (2026). Ficha de Helmántica SA. https://opensalamanca.es/empresas/helmantica. Licencia CC BY 4.0."
+  "como_citar": "Open Salamanca (2026). Ficha de Helmántica SA. https://opensalamanca.es/empresas/helmantica. Licencia CC BY 4.0.",
+  "nota_directivos": "Contrastado con el BORME de Salamanca de 01/01/2022 a 27/11/2026. Confirmados por una inscripción en ese periodo: Sergio Pérez Pérez, María del Pilar Pérez Pérez (fecha y boletín indicados en cada cargo)."
 }

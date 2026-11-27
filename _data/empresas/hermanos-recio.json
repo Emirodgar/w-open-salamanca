@@ -10,29 +10,125 @@
   "sameas": [],
   "resumen": "Hermanos Recio SL es la sociedad principal de Grupo Recio, la cadena de perfumerías Perfumerías Avenida, con sede en Carbajosa de la Sagrada (Salamanca). Es la 5.ª empresa de la provincia por ventas 2024 según el ranking de InfoNIF (puesto 2.045 a nivel nacional) y, según el ranking de elEconomista, vendió 151,4 millones de euros en 2024. En 2026 presentó un ERE que afecta a unos 105 trabajadores de tienda y firmó una refinanciación de su deuda.",
   "rapida": [
-    {"k": "Nombre comercial", "v": "Grupo Recio / Perfumerías Avenida"},
-    {"k": "Razón social", "v": "Hermanos Recio SL (NIF B47054937)"},
-    {"k": "Sector", "v": "Comercio minorista de perfumería y cosmética (CNAE 4775 según elEconomista)"},
-    {"k": "Domicilio", "v": "Calle Doctor Fleming, nave 23, polígono El Montalvo I, 37188 Carbajosa de la Sagrada (Salamanca)"},
-    {"k": "Socio único", "v": "Flemmich Gestión SL (declaración de unipersonalidad en el BORME de enero de 2020, según InfoNIF)"},
-    {"k": "Posición por ventas 2024", "v": "5.ª entre las sociedades domiciliadas en la provincia de Salamanca; 2.045.ª a nivel nacional (InfoNIF)"},
-    {"k": "Implantación", "v": "Tiendas en 26 provincias españolas (El Debate, julio de 2026)"}
+    {
+      "k": "Nombre comercial",
+      "v": "Grupo Recio / Perfumerías Avenida"
+    },
+    {
+      "k": "Razón social",
+      "v": "Hermanos Recio SL (NIF B47054937)"
+    },
+    {
+      "k": "Sector",
+      "v": "Comercio minorista de perfumería y cosmética (CNAE 4775 según elEconomista)"
+    },
+    {
+      "k": "Domicilio",
+      "v": "Calle Doctor Fleming, nave 23, polígono El Montalvo I, 37188 Carbajosa de la Sagrada (Salamanca)"
+    },
+    {
+      "k": "Socio único",
+      "v": "Flemmich Gestión SL (declaración de unipersonalidad en el BORME de enero de 2020, según InfoNIF)"
+    },
+    {
+      "k": "Posición por ventas 2024",
+      "v": "5.ª entre las sociedades domiciliadas en la provincia de Salamanca; 2.045.ª a nivel nacional (InfoNIF)"
+    },
+    {
+      "k": "Implantación",
+      "v": "Tiendas en 26 provincias españolas (El Debate, julio de 2026)"
+    }
   ],
   "cifras": [
-    {"concepto": "Ventas 2024", "valor": "151.377.270 euros (-2,2 % sobre 2023)", "fuente": {"t": "elEconomista: ranking de empresas, Hermanos Recio SL", "u": "https://ranking-empresas.eleconomista.es/HERMANOS-RECIO.html"}},
-    {"concepto": "Resultado 2024", "valor": "300.960,18 euros", "fuente": {"t": "elEconomista: ranking de empresas, Hermanos Recio SL", "u": "https://ranking-empresas.eleconomista.es/HERMANOS-RECIO.html"}},
-    {"concepto": "Plantilla (2026)", "valor": "más de 600 personas; el ERE habla de casi 700 empleados de tienda", "fuente": {"t": "El Debate, 30 de julio de 2026", "u": "https://www.eldebate.com/espana/castilla-y-leon/20260730/grupo-recio-dueno-perfumerias-avenida-logra-refinanciar-deuda-ere-presentado-junio_445157.html"}},
-    {"concepto": "ERE de junio de 2026", "valor": "hasta el 15 % de la plantilla de tiendas, unos 105 trabajadores", "fuente": {"t": "El Debate, 30 de julio de 2026", "u": "https://www.eldebate.com/espana/castilla-y-leon/20260730/grupo-recio-dueno-perfumerias-avenida-logra-refinanciar-deuda-ere-presentado-junio_445157.html"}},
-    {"concepto": "Capital suscrito (tras la ampliación de 2020)", "valor": "1.427.733,30 euros", "fuente": {"t": "InfoNIF: ficha de Hermanos Recio SL", "u": "https://infonif.economia3.com/ficha-empresa/hermanos-recio-sl"}}
+    {
+      "concepto": "Ventas 2024",
+      "valor": "151.377.270 euros (-2,2 % sobre 2023)",
+      "fuente": {
+        "t": "elEconomista: ranking de empresas, Hermanos Recio SL",
+        "u": "https://ranking-empresas.eleconomista.es/HERMANOS-RECIO.html"
+      }
+    },
+    {
+      "concepto": "Resultado 2024",
+      "valor": "300.960,18 euros",
+      "fuente": {
+        "t": "elEconomista: ranking de empresas, Hermanos Recio SL",
+        "u": "https://ranking-empresas.eleconomista.es/HERMANOS-RECIO.html"
+      }
+    },
+    {
+      "concepto": "Plantilla (2026)",
+      "valor": "más de 600 personas; el ERE habla de casi 700 empleados de tienda",
+      "fuente": {
+        "t": "El Debate, 30 de julio de 2026",
+        "u": "https://www.eldebate.com/espana/castilla-y-leon/20260730/grupo-recio-dueno-perfumerias-avenida-logra-refinanciar-deuda-ere-presentado-junio_445157.html"
+      }
+    },
+    {
+      "concepto": "ERE de junio de 2026",
+      "valor": "hasta el 15 % de la plantilla de tiendas, unos 105 trabajadores",
+      "fuente": {
+        "t": "El Debate, 30 de julio de 2026",
+        "u": "https://www.eldebate.com/espana/castilla-y-leon/20260730/grupo-recio-dueno-perfumerias-avenida-logra-refinanciar-deuda-ere-presentado-junio_445157.html"
+      }
+    },
+    {
+      "concepto": "Capital suscrito (tras la ampliación de 2020)",
+      "valor": "1.427.733,30 euros",
+      "fuente": {
+        "t": "InfoNIF: ficha de Hermanos Recio SL",
+        "u": "https://infonif.economia3.com/ficha-empresa/hermanos-recio-sl"
+      }
+    }
   ],
   "nota_cifras": "InfoNIF oculta las ventas sin suscripción, por lo que el importe de 2024 procede de elEconomista y no se ha contrastado con las cuentas depositadas en el Registro Mercantil. Alimarket publicó en 2006 que el grupo facturó 175 millones de euros el año anterior (perímetro y año distintos), por lo que no es comparable con la cifra de 2024.",
   "directivos": [],
   "historia": [
-    {"fecha": "1981 / 1986", "hito": "Origen del grupo", "detalle": "El Debate sitúa la fundación del grupo en Salamanca en 1981; la ficha de InfoNIF recoge una antigüedad de la sociedad desde el 10 de febrero de 1986. Las fuentes no coinciden y no se ha confirmado cuál corresponde a cada sociedad.", "fuente": {"t": "El Debate", "u": "https://www.eldebate.com/espana/castilla-y-leon/20260730/grupo-recio-dueno-perfumerias-avenida-logra-refinanciar-deuda-ere-presentado-junio_445157.html"}},
-    {"fecha": "2020", "hito": "Fusión de filiales en Hermanos Recio SL", "detalle": "Grupo Recio absorbe la mayoría de sus sociedades (entre ellas Banda Azul, Dynameron, DYP Bejarana, DYP Zamorana, Garbiseis, Grupo Pedro Llobell y Perfumistas de Galicia) en Hermanos Recio SL, que pasa a presentar los resultados consolidados. Ese año el BORME recoge además la declaración de unipersonalidad.", "fuente": {"t": "Alimarket: Perfumerías Avenida da el salto al canal digital", "u": "https://www.alimarket.es/nonfood/noticia_amp/328482/-perfumerias-avenida--da-el-salto-al-canal-digital-a-traves-de-su-propio-ecommerce"}},
-    {"fecha": "2021", "hito": "Comercio electrónico propio", "detalle": "Perfumerías Avenida lanza su propio ecommerce.", "fuente": {"t": "Alimarket", "u": "https://www.alimarket.es/nonfood/noticia_amp/328482/-perfumerias-avenida--da-el-salto-al-canal-digital-a-traves-de-su-propio-ecommerce"}},
-    {"fecha": "Junio de 2026", "hito": "ERE", "detalle": "El grupo anuncia un expediente de regulación de empleo que afectaría a hasta el 15 % de los empleados de tienda, unos 105 trabajadores.", "fuente": {"t": "El Debate", "u": "https://www.eldebate.com/espana/castilla-y-leon/20260730/grupo-recio-dueno-perfumerias-avenida-logra-refinanciar-deuda-ere-presentado-junio_445157.html"}},
-    {"fecha": "30 de julio de 2026", "hito": "Refinanciación de la deuda", "detalle": "Grupo Recio firma un acuerdo de refinanciación de su deuda con sus entidades financieras.", "fuente": {"t": "El Debate", "u": "https://www.eldebate.com/espana/castilla-y-leon/20260730/grupo-recio-dueno-perfumerias-avenida-logra-refinanciar-deuda-ere-presentado-junio_445157.html"}}
+    {
+      "fecha": "1981 / 1986",
+      "hito": "Origen del grupo",
+      "detalle": "El Debate sitúa la fundación del grupo en Salamanca en 1981; la ficha de InfoNIF recoge una antigüedad de la sociedad desde el 10 de febrero de 1986. Las fuentes no coinciden y no se ha confirmado cuál corresponde a cada sociedad.",
+      "fuente": {
+        "t": "El Debate",
+        "u": "https://www.eldebate.com/espana/castilla-y-leon/20260730/grupo-recio-dueno-perfumerias-avenida-logra-refinanciar-deuda-ere-presentado-junio_445157.html"
+      }
+    },
+    {
+      "fecha": "2020",
+      "hito": "Fusión de filiales en Hermanos Recio SL",
+      "detalle": "Grupo Recio absorbe la mayoría de sus sociedades (entre ellas Banda Azul, Dynameron, DYP Bejarana, DYP Zamorana, Garbiseis, Grupo Pedro Llobell y Perfumistas de Galicia) en Hermanos Recio SL, que pasa a presentar los resultados consolidados. Ese año el BORME recoge además la declaración de unipersonalidad.",
+      "fuente": {
+        "t": "Alimarket: Perfumerías Avenida da el salto al canal digital",
+        "u": "https://www.alimarket.es/nonfood/noticia_amp/328482/-perfumerias-avenida--da-el-salto-al-canal-digital-a-traves-de-su-propio-ecommerce"
+      }
+    },
+    {
+      "fecha": "2021",
+      "hito": "Comercio electrónico propio",
+      "detalle": "Perfumerías Avenida lanza su propio ecommerce.",
+      "fuente": {
+        "t": "Alimarket",
+        "u": "https://www.alimarket.es/nonfood/noticia_amp/328482/-perfumerias-avenida--da-el-salto-al-canal-digital-a-traves-de-su-propio-ecommerce"
+      }
+    },
+    {
+      "fecha": "Junio de 2026",
+      "hito": "ERE",
+      "detalle": "El grupo anuncia un expediente de regulación de empleo que afectaría a hasta el 15 % de los empleados de tienda, unos 105 trabajadores.",
+      "fuente": {
+        "t": "El Debate",
+        "u": "https://www.eldebate.com/espana/castilla-y-leon/20260730/grupo-recio-dueno-perfumerias-avenida-logra-refinanciar-deuda-ere-presentado-junio_445157.html"
+      }
+    },
+    {
+      "fecha": "30 de julio de 2026",
+      "hito": "Refinanciación de la deuda",
+      "detalle": "Grupo Recio firma un acuerdo de refinanciación de su deuda con sus entidades financieras.",
+      "fuente": {
+        "t": "El Debate",
+        "u": "https://www.eldebate.com/espana/castilla-y-leon/20260730/grupo-recio-dueno-perfumerias-avenida-logra-refinanciar-deuda-ere-presentado-junio_445157.html"
+      }
+    }
   ],
   "no_verificado": [
     "Administradores: la ficha de InfoNIF no muestra cargo de administración vigente (solo socio único y apoderados), por lo que no se publica ningún directivo. Pendiente de consultar el BORME y el Registro Mercantil.",
@@ -42,19 +138,53 @@
     "Ventas 2024 contrastadas con cuentas depositadas: pendiente."
   ],
   "faq": [
-    {"q": "¿Qué es Hermanos Recio SL?", "a": "Es la sociedad principal de Grupo Recio, propietario de la cadena Perfumerías Avenida, con sede en Carbajosa de la Sagrada (Salamanca)."},
-    {"q": "¿Cuánto facturó en 2024?", "a": "Según elEconomista, 151,4 millones de euros, un 2,2 % menos que en 2023, con un resultado de unos 301.000 euros."},
-    {"q": "¿Cuántas personas trabajan en Grupo Recio?", "a": "El Debate habla de más de 600 personas en plantilla en 2026. En junio de ese año anunció un ERE para hasta unos 105 trabajadores de tienda."},
-    {"q": "¿Qué posición ocupa entre las empresas de Salamanca?", "a": "Es la quinta de la provincia por ventas 2024 según el ranking de InfoNIF, y la 2.045 a nivel nacional."}
+    {
+      "q": "¿Qué es Hermanos Recio SL?",
+      "a": "Es la sociedad principal de Grupo Recio, propietario de la cadena Perfumerías Avenida, con sede en Carbajosa de la Sagrada (Salamanca)."
+    },
+    {
+      "q": "¿Cuánto facturó en 2024?",
+      "a": "Según elEconomista, 151,4 millones de euros, un 2,2 % menos que en 2023, con un resultado de unos 301.000 euros."
+    },
+    {
+      "q": "¿Cuántas personas trabajan en Grupo Recio?",
+      "a": "El Debate habla de más de 600 personas en plantilla en 2026. En junio de ese año anunció un ERE para hasta unos 105 trabajadores de tienda."
+    },
+    {
+      "q": "¿Qué posición ocupa entre las empresas de Salamanca?",
+      "a": "Es la quinta de la provincia por ventas 2024 según el ranking de InfoNIF, y la 2.045 a nivel nacional."
+    }
   ],
   "fuentes": [
-    {"t": "InfoNIF: ranking de ventas de empresas de Salamanca 2024", "u": "https://infonif.economia3.com/ranking/ventas-empresas/salamanca"},
-    {"t": "InfoNIF: ficha de Hermanos Recio SL", "u": "https://infonif.economia3.com/ficha-empresa/hermanos-recio-sl"},
-    {"t": "elEconomista: ranking de empresas, Hermanos Recio SL", "u": "https://ranking-empresas.eleconomista.es/HERMANOS-RECIO.html"},
-    {"t": "El Debate: refinanciación y ERE de Grupo Recio (30-07-2026)", "u": "https://www.eldebate.com/espana/castilla-y-leon/20260730/grupo-recio-dueno-perfumerias-avenida-logra-refinanciar-deuda-ere-presentado-junio_445157.html"},
-    {"t": "Alimarket: Perfumerías Avenida da el salto al canal digital (2021)", "u": "https://www.alimarket.es/nonfood/noticia_amp/328482/-perfumerias-avenida--da-el-salto-al-canal-digital-a-traves-de-su-propio-ecommerce"},
-    {"t": "Alimarket: Avenida absorbe otra cadena de Grupo Recio (2020)", "u": "https://www.alimarket.es/nonfood/noticia_amp/320840/-avenida--absorbe-integramente-otra-cadena-de-perfumeria-de-grupo-recio"},
-    {"t": "Alimarket: El grupo Recio facturó 175 M€ el pasado año (2006)", "u": "https://www.alimarket.es/nonfood/noticia/m2236032/el-grupo-recio-facturo-175-m--el-pasado-ano--un-6--mas"}
+    {
+      "t": "InfoNIF: ranking de ventas de empresas de Salamanca 2024",
+      "u": "https://infonif.economia3.com/ranking/ventas-empresas/salamanca"
+    },
+    {
+      "t": "InfoNIF: ficha de Hermanos Recio SL",
+      "u": "https://infonif.economia3.com/ficha-empresa/hermanos-recio-sl"
+    },
+    {
+      "t": "elEconomista: ranking de empresas, Hermanos Recio SL",
+      "u": "https://ranking-empresas.eleconomista.es/HERMANOS-RECIO.html"
+    },
+    {
+      "t": "El Debate: refinanciación y ERE de Grupo Recio (30-07-2026)",
+      "u": "https://www.eldebate.com/espana/castilla-y-leon/20260730/grupo-recio-dueno-perfumerias-avenida-logra-refinanciar-deuda-ere-presentado-junio_445157.html"
+    },
+    {
+      "t": "Alimarket: Perfumerías Avenida da el salto al canal digital (2021)",
+      "u": "https://www.alimarket.es/nonfood/noticia_amp/328482/-perfumerias-avenida--da-el-salto-al-canal-digital-a-traves-de-su-propio-ecommerce"
+    },
+    {
+      "t": "Alimarket: Avenida absorbe otra cadena de Grupo Recio (2020)",
+      "u": "https://www.alimarket.es/nonfood/noticia_amp/320840/-avenida--absorbe-integramente-otra-cadena-de-perfumeria-de-grupo-recio"
+    },
+    {
+      "t": "Alimarket: El grupo Recio facturó 175 M€ el pasado año (2006)",
+      "u": "https://www.alimarket.es/nonfood/noticia/m2236032/el-grupo-recio-facturo-175-m--el-pasado-ano--un-6--mas"
+    }
   ],
-  "como_citar": "Open Salamanca (2026). Ficha de Grupo Recio (Hermanos Recio SL). https://opensalamanca.es/empresas/hermanos-recio. Licencia CC BY 4.0."
+  "como_citar": "Open Salamanca (2026). Ficha de Grupo Recio (Hermanos Recio SL). https://opensalamanca.es/empresas/hermanos-recio. Licencia CC BY 4.0.",
+  "nota_directivos": "Contrastado con el BORME de Salamanca de 01/01/2022 a 27/11/2026: no hay nombramientos ni ceses de administradores inscritos en ese periodo."
 }

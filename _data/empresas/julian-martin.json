@@ -65,12 +65,18 @@
   "directivos": [
     {
       "nombre": "JMSA Guijuelo Corporate Gestión Patrimonial 2000",
-      "cargo": "Administrador único (persona jurídica; nombrado el 7/11/2025, reelegido el 5/03/2026)",
+      "cargo": "Administrador único (persona jurídica; nombrado el 07/11/2025 y reelegido el 05/03/2026)",
       "fuente": {
-        "t": "InfoNIF: ficha de Julián Martín SL (BORME)",
-        "u": "https://infonif.economia3.com/ficha-empresa/julian-martin-sl"
+        "t": "BORME BORME-A-2026-44-37 (05/03/2026)",
+        "u": "https://www.boe.es/borme/dias/2026/03/05/pdfs/BORME-A-2026-44-37.pdf"
       },
-      "ficha": ""
+      "ficha": "",
+      "verificacion_borme": {
+        "estado": "inscrito",
+        "fecha": "20260305",
+        "boletin": "BORME-A-2026-44-37",
+        "url": "https://www.boe.es/borme/dias/2026/03/05/pdfs/BORME-A-2026-44-37.pdf"
+      }
     },
     {
       "nombre": "Fernando García",
@@ -83,6 +89,15 @@
     }
   ],
   "historia": [
+    {
+      "fecha": "07/11/2025",
+      "hito": "Cese del consejo y nombramiento de administrador único",
+      "detalle": "El BORME recoge el cese del consejo de administración anterior (presidente y consejero delegado, consejeros y secretario no consejero) y el nombramiento de una persona jurídica como administrador único.",
+      "fuente": {
+        "t": "BORME BORME-A-2025-214-37 (07/11/2025)",
+        "u": "https://www.boe.es/borme/dias/2025/11/07/pdfs/BORME-A-2025-214-37.pdf"
+      }
+    },
     {
       "fecha": "1933",
       "hito": "Origen de la empresa",
@@ -178,5 +193,6 @@
       "u": "https://www.alimarket.es/alimentacion/informe_amp/431503/informe-2026-sobre-el-sector-de-cerdo-iberico"
     }
   ],
-  "como_citar": "Open Salamanca (2026). Ficha de Julián Martín SL. https://opensalamanca.es/empresas/julian-martin. Licencia CC BY 4.0."
+  "como_citar": "Open Salamanca (2026). Ficha de Julián Martín SL. https://opensalamanca.es/empresas/julian-martin. Licencia CC BY 4.0.",
+  "nota_directivos": "Contrastado con el BORME de Salamanca de 01/01/2022 a 27/11/2026. La administración única está inscrita el 07/11/2025 y reelegida el 05/03/2026. En la inscripción del 07/11/2025 cesan el presidente y consejero delegado, los consejeros y el secretario del consejo anterior. No se ha confirmado que ese cese afecte a la persona citada por la prensa como director general, cuyo cargo es otro."
 }
