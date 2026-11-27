@@ -1,0 +1,166 @@
+{
+ "metadata": {
+  "titulo": "Viajeros del autobús urbano de Salamanca",
+  "fuentes": [
+   "https://www.aytosalamanca.es/en/w/el-autob%C3%BAs-urbano-cerr%C3%B3-2025-batiendo-r%C3%A9cord-hist%C3%B3rico-de-viajeros-al-alcanzar-casi-16-millones-de-usuarios",
+   "https://www.aytosalamanca.es/en/w/el-autob%C3%BAs-urbano-de-salamanca-celebra-100-a%C3%B1os-de-servicio-batiendo-r%C3%A9cord-hist%C3%B3rico-de-viajeros",
+   "https://www.salamancahoy.es/salamanca/ciudad/urbano-recupera-millones-20230116125601-nt.html"
+  ],
+  "nota": "Total anual de viajeros por año (2020 sin dato) y viajeros por línea en 2025, según el Ayuntamiento de Salamanca. La suma de las líneas coincide con el total de 2025.",
+  "generado": "2026-11-28"
+ },
+ "anual": [
+  {
+   "anio": "2019",
+   "viajeros": 13635139,
+   "fuente": "Concejalía de Policía y Tráfico, según Salamancahoy (16-01-2023)",
+   "url": "https://www.salamancahoy.es/salamanca/ciudad/urbano-recupera-millones-20230116125601-nt.html"
+  },
+  {
+   "anio": "2020",
+   "viajeros": null,
+   "fuente": "Sin dato publicado en las fuentes consultadas",
+   "url": null
+  },
+  {
+   "anio": "2021",
+   "viajeros": 8500000,
+   "fuente": "Cifra redondeada («8,5 millones»): Concejalía de Policía y Tráfico, según Salamancahoy (16-01-2023)",
+   "url": "https://www.salamancahoy.es/salamanca/ciudad/urbano-recupera-millones-20230116125601-nt.html"
+  },
+  {
+   "anio": "2022",
+   "viajeros": 10560068,
+   "fuente": "Concejalía de Policía y Tráfico, según Salamancahoy (16-01-2023)",
+   "url": "https://www.salamancahoy.es/salamanca/ciudad/urbano-recupera-millones-20230116125601-nt.html"
+  },
+  {
+   "anio": "2023",
+   "viajeros": 12996520,
+   "fuente": "Ayuntamiento de Salamanca (23-12-2024)",
+   "url": "https://www.aytosalamanca.es/en/w/el-autob%C3%BAs-urbano-de-salamanca-celebra-100-a%C3%B1os-de-servicio-batiendo-r%C3%A9cord-hist%C3%B3rico-de-viajeros"
+  },
+  {
+   "anio": "2024",
+   "viajeros": 14790744,
+   "fuente": "Ayuntamiento de Salamanca (10-01-2026)",
+   "url": "https://www.aytosalamanca.es/en/w/el-autob%C3%BAs-urbano-cerr%C3%B3-2025-batiendo-r%C3%A9cord-hist%C3%B3rico-de-viajeros-al-alcanzar-casi-16-millones-de-usuarios"
+  },
+  {
+   "anio": "2025",
+   "viajeros": 15996449,
+   "fuente": "Ayuntamiento de Salamanca (10-01-2026)",
+   "url": "https://www.aytosalamanca.es/en/w/el-autob%C3%BAs-urbano-cerr%C3%B3-2025-batiendo-r%C3%A9cord-hist%C3%B3rico-de-viajeros-al-alcanzar-casi-16-millones-de-usuarios"
+  }
+ ],
+ "lineas_2025": [
+  {
+   "linea": "4",
+   "nombre": "Cementerio – Puente Ladrillo",
+   "viajeros": 2045849,
+   "variacion_pct": 8.3
+  },
+  {
+   "linea": "3",
+   "nombre": "Garrido – San José (por centro)",
+   "viajeros": 1942834,
+   "variacion_pct": 6.9
+  },
+  {
+   "linea": "9",
+   "nombre": "Capuchinos – Zurguén",
+   "viajeros": 1498311,
+   "variacion_pct": 4.4
+  },
+  {
+   "linea": "2",
+   "nombre": "Pizarrales – San Julián",
+   "viajeros": 1251825,
+   "variacion_pct": 8.4
+  },
+  {
+   "linea": "11",
+   "nombre": "Cipreses – Buenos Aires (por hospitales)",
+   "viajeros": 1136225,
+   "variacion_pct": 2.8
+  },
+  {
+   "linea": "7",
+   "nombre": "Campus Unamuno – Prosperidad",
+   "viajeros": 1083046,
+   "variacion_pct": 13.0
+  },
+  {
+   "linea": "1",
+   "nombre": "Chinchibarra – Buenos Aires (por centro)",
+   "viajeros": 1082849,
+   "variacion_pct": 11.7
+  },
+  {
+   "linea": "5",
+   "nombre": "Ciudad Jardín – Los Alcaldes",
+   "viajeros": 1005112,
+   "variacion_pct": 9.6
+  },
+  {
+   "linea": "6",
+   "nombre": "Garrido – San José (por hospitales)",
+   "viajeros": 950805,
+   "variacion_pct": 5.5
+  },
+  {
+   "linea": "12",
+   "nombre": "Barrio Blanco – Montalvo II",
+   "viajeros": 882409,
+   "variacion_pct": 11.9
+  },
+  {
+   "linea": "10",
+   "nombre": "Puente Ladrillo – Vistahermosa",
+   "viajeros": 862304,
+   "variacion_pct": 2.6
+  },
+  {
+   "linea": "13",
+   "nombre": "Huerta Otea – San José",
+   "viajeros": 846312,
+   "variacion_pct": 5.0
+  },
+  {
+   "linea": "8",
+   "nombre": "La Aldehuela – Vistahermosa",
+   "viajeros": 649769,
+   "variacion_pct": 14.0
+  },
+  {
+   "linea": "14",
+   "nombre": "Zurguén – Huerta Otea",
+   "viajeros": 318604,
+   "variacion_pct": 20.2
+  },
+  {
+   "linea": "15",
+   "nombre": "Capuchinos – Hospital Universitario",
+   "viajeros": 252707,
+   "variacion_pct": 28.3
+  },
+  {
+   "linea": "Servicios especiales",
+   "nombre": "Rastro, Ferias y Todos los Santos",
+   "viajeros": 93733,
+   "variacion_pct": 5.3
+  },
+  {
+   "linea": "Ruta Norte",
+   "nombre": "Servicio nocturno",
+   "viajeros": 48151,
+   "variacion_pct": 5.8
+  },
+  {
+   "linea": "Ruta Sur",
+   "nombre": "Servicio nocturno",
+   "viajeros": 45604,
+   "variacion_pct": 9.0
+  }
+ ]
+}

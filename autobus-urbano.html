@@ -1,130 +1,113 @@
 ---
 layout: default
-title: "Autobús urbano de Salamanca: líneas más utilizadas"
-description: Evolución de viajeros, ranking de líneas e información del transporte público en Salamanca
+title: "Autobús urbano de Salamanca: viajeros y líneas más utilizadas"
+description: Viajeros del autobús urbano de Salamanca de 2019 a 2025 y viajeros de cada línea en 2025, con datos del Ayuntamiento de Salamanca
 date: 15-10-2026
-modified: 2026-10-31
+modified: 2026-11-28
 folder: Movilidad
 permalink: autobus-urbano
+dataset_files:
+  - autobus-urbano-viajeros.json
+dataset_source: "Ayuntamiento de Salamanca (balances anuales del servicio de autobús urbano)"
+dataset_source_url: https://www.aytosalamanca.es/en/w/el-autob%C3%BAs-urbano-cerr%C3%B3-2025-batiendo-r%C3%A9cord-hist%C3%B3rico-de-viajeros-al-alcanzar-casi-16-millones-de-usuarios
 ---
 
-    <!-- Featured Datasets Section -->
     <section class="featured dataset" id="datos">
         <div class="container">
             <div class="section-header">
                 <h1 class="section-title">{{ page.title }}</h1>
                 <p class="section-description">{{ page.description }}</p>
             </div>
-			
+
 			<div id="section-content">
-						
-  <p style="background:#FFF4E5; border-left:4px solid #F4A261; padding:10px 14px;"><b>No verificado.</b> Las cifras de viajeros, los porcentajes de demanda y validaciones, las frecuencias y el ranking de líneas de esta página (texto, gráficos y tabla) proceden de una versión anterior y no tienen una fuente que Open Salamanca haya podido contrastar. Además, no coinciden con los de <a href="/transporte-urbano-bus">uso del transporte público y líneas de autobús</a> (por ejemplo, allí la línea 1 tiene 2,15 millones de viajeros y aquí los tiene la línea 7) ni con los recorridos de <a href="/mapa-lineas-autobus">Salamanca de Transportes</a>. Se mantienen solo como referencia hasta localizar datos oficiales.</p>
+
+<p>El autobús urbano de Salamanca cerró 2025 con <b>15.996.449 viajeros</b>, un récord histórico: un 8,2 % más que en 2024 (14.790.744) y un 17,3 % más que en 2019 (13.635.139), el último año completo antes de la pandemia. Las cifras de esta página proceden de los balances que publica el Ayuntamiento de Salamanca y de la prensa local que cita a la concejalía responsable.</p>
+
+  <h2>Viajeros por año, 2019-2025</h2>
+  <canvas id="busHistoricoChart" width="800" height="400"></canvas>
+  <p>En 2021, con la pandemia aún presente, el servicio transportó unos 8,5 millones de viajeros, frente a los 13,6 millones de 2019. Desde entonces han crecido cada año: 10,56 millones en 2022, 13,00 en 2023, 14,79 en 2024 y 16,00 en 2025. No hay dato de 2020 en las fuentes consultadas.</p>
+  <p><b>Una discrepancia que conviene saber:</b> una nota del Ayuntamiento de diciembre de 2024 dice que el récord anterior era el de 2009, con 13.741.698 viajeros, mientras que en enero de 2023 la prensa local, citando a la concejalía, llamaba «récord absoluto» a los 13.635.139 de 2019, una cifra menor. No hemos podido conciliar ambas.</p>
+
+  <h2>Viajeros por línea en 2025</h2>
+  <canvas id="busLineasChart" width="800" height="400"></canvas>
+  <p>La línea 4 (Cementerio – Puente Ladrillo) fue la más utilizada, con más de 2 millones de viajeros, seguida de la 3 y la 9. La que más creció fue la línea 15 (Capuchinos – Hospital Universitario), un 28,3 %. La suma de todas las líneas de la tabla coincide con el total anual de 2025. Fuente: <a href="https://www.aytosalamanca.es/en/w/el-autob%C3%BAs-urbano-cerr%C3%B3-2025-batiendo-r%C3%A9cord-hist%C3%B3rico-de-viajeros-al-alcanzar-casi-16-millones-de-usuarios" target="_blank" rel="noopener">Ayuntamiento de Salamanca</a> (10-01-2026).</p>
 
   <h2>Récord: 64.490 viajeros en un día (8 de octubre de 2026)</h2>
-  <p>Según el Ayuntamiento, el autobús urbano batió el 8 de octubre de 2026 su récord histórico con <b>64.490 viajeros en un solo día</b>, 459 más que el anterior máximo (64.031, el 30 de abril de 2026). De enero a septiembre de 2026 acumuló <b>12.299.228 viajeros</b>, con septiembre como mejor mes (1.551.045). Las líneas más usadas fueron la 4 (Cementerio-Puente Ladrillo, 1.597.296), la 3 (Garrido-San José, 1.476.293), la 9 (Capuchinos-Zurguén, 1.148.270) y la 2 (Pizarrales-San Julián, 1.002.208). Estas cifras no coinciden con el ranking no verificado de más abajo. Más detalle en <a href="/transporte-urbano-bus">uso del transporte público y líneas de autobús</a>. Fuente: <a href="https://www.tribunasalamanca.com/noticias/462703/nuevo-record-de-viajeros-del-bus-urbano-de-salamanca-64-490-usuarios-en-un-solo-dia" target="_blank" rel="noopener">Tribuna de Salamanca</a> (15-10-2026).</p>
+  <p>Según el Ayuntamiento, el autobús urbano batió el 8 de octubre de 2026 su récord histórico con <b>64.490 viajeros en un solo día</b>, 459 más que el anterior máximo (64.031, el 30 de abril de 2026). De enero a septiembre de 2026 acumuló <b>12.299.228 viajeros</b>, con septiembre como mejor mes (1.551.045). Las líneas más usadas fueron la 4 (Cementerio-Puente Ladrillo, 1.597.296), la 3 (Garrido-San José, 1.476.293), la 9 (Capuchinos-Zurguén, 1.148.270) y la 2 (Pizarrales-San Julián, 1.002.208). Más detalle en <a href="/transporte-urbano-bus">uso del transporte público y líneas de autobús</a>. Fuente: <a href="https://www.tribunasalamanca.com/noticias/462703/nuevo-record-de-viajeros-del-bus-urbano-de-salamanca-64-490-usuarios-en-un-solo-dia" target="_blank" rel="noopener">Tribuna de Salamanca</a> (15-10-2026).</p>
 
   <h2>La línea 15 al Hospital Universitario ya circula también fines de semana y festivos</h2>
   <p>La línea 15 (Capuchinos-Hospital Universitario) presta servicio todos los días de la semana desde el sábado 31 de octubre de 2026. Con frecuencia de paso de <b>30 minutos</b>, empieza a las <b>8.15 horas los sábados</b> y a las <b>10.00 horas los domingos y festivos</b>. El primer fin de semana incluye el sábado 31, el domingo 1 de noviembre y el lunes 2, festivo. La ampliación, aprobada en el Pleno municipal, entra en funcionamiento tras completarse la modificación del contrato con la empresa concesionaria. Puedes ver su trazado y paradas en el <a href="/mapa-lineas-autobus">mapa de líneas</a>. Fuente: <a href="https://www.tribunasalamanca.com/noticias/464741/la-linea-15-de-salamanca-llegara-al-hospital-universitario-tambien-los-fines-de-semana-y-festivos" target="_blank" rel="noopener">Tribuna de Salamanca</a> (30-10-2026).</p>
 
-  <h2>Evolución de viajeros 2015-2025 (no verificado)</h2>
-  <canvas id="busHistoricoChart" width="800" height="400"></canvas>
-
- 
-			<h2>Análisis de la demanda en la red de autobuses urbanos</h2>
-			
-				<p>
-El uso del autobús urbano en Salamanca muestra una <b>sólida recuperación de viajeros</b> tras el desplome registrado en 2020. La implantación de bonificaciones en las tarifas, la mejora de frecuencias y la reordenación de líneas han impulsado la demanda por encima de los 13 millones de usuarios anuales (no verificado), aproximándose a los máximos históricos de la década.</p>
-
-<h3>Claves del servicio urbano</h3>
-<ul>
-<li><b>Eje vertebrador del campus y hospitales (no verificado)</b>: Las líneas que conectan barrios populosos como Garrido o Tejares con el Complejo Hospitalario Universitario y el Campus Unamuno aglutinan más del 40% del pasaje total.</li>
-<li><b>Recuperación del viajero frecuente (no verificado)</b>: Las tarjetas bonificadas (bonobús ordinario y bonos jóvenes/universitarios) representan más del 85% de los validaciones totales, consolidando el autobús como opción prioritaria frente al vehículo privado.</li>
-</ul>
-
-  <h2>Ranking de viajeros por línea (millones de usuarios/año, no verificado)</h2>
-  <canvas id="busLineasChart" width="800" height="400"></canvas>
-
-  <p>Para un desglose adicional de la evolución histórica y el detalle de cada trayecto, consulta también <a href="/transporte-urbano-bus">uso del transporte público y líneas de autobús</a>, con datos sobre la electrificación de la flota. Además, puedes explorar el trazado de cada línea en el <a href="/mapa-lineas-autobus">mapa interactivo</a>.</p>
+  <p>Puedes consultar el trazado de cada línea en el <a href="/mapa-lineas-autobus">mapa interactivo</a>, medir cuántos vecinos tienen una parada cerca con la <a href="/cobertura-autobus-urbano-salamanca">cobertura del autobús por barrio</a> y ver las <a href="/transporte-urbano-bus">paradas, tarifas y uso del transporte público</a>.</p>
 
 			</div>
-			
+
 			<div id="section-table">
+			<h3>Viajeros anuales</h3>
 			<table border="1" cellpadding="5" cellspacing="0">
-			  <thead>
-				<tr>
-				  <th>Línea</th>
-				  <th>Recorrido principal (no verificado)</th>
-				  <th>Viajeros anuales (no verificado)</th>
-				  <th>Frecuencia laborables (no verificado)</th>
-				  <th>Puntos de interés (no verificado)</th>
-				</tr>
-			  </thead>
+			  <thead><tr><th>Año</th><th>Viajeros</th><th>Fuente</th></tr></thead>
 			  <tbody>
-				<tr><td>Línea 7</td><td>Prosperidad &ndash; Tejares</td><td>2.150.000</td><td>10 min</td><td>Hospitales, Centro, Tejares</td></tr>
-				<tr><td>Línea 1</td><td>Los Cipreses &ndash; Buenos Aires</td><td>1.920.000</td><td>12 min</td><td>Plaza de España, Gran Vía, San José</td></tr>
-				<tr><td>Línea 3</td><td>Garrido &ndash; San José</td><td>1.810.000</td><td>10 min</td><td>Estación de RENFE, Canalejas, Centro</td></tr>
-				<tr><td>Línea 10</td><td>Los Almendros &ndash; Puente Ladrillo</td><td>1.450.000</td><td>15 min</td><td>Campus Unamuno, Avda. Portugal</td></tr>
-				<tr><td>Línea 4</td><td>Filiberto Villalobos &ndash; El Zurguén</td><td>1.280.000</td><td>12 min</td><td>Campus Unamuno, Estación Autobuses</td></tr>
-				<tr><td>Línea 12</td><td>Barrio San José &ndash; Pol. Montalvo</td><td>980.000</td><td>15 min</td><td>Zona Industrial, San José</td></tr>
+				<tr><td>2019</td><td>13.635.139</td><td><a href="https://www.salamancahoy.es/salamanca/ciudad/urbano-recupera-millones-20230116125601-nt.html" target="_blank" rel="noopener">Concejalía de Policía y Tráfico, según Salamancahoy (16-01-2023)</a></td></tr>
+				<tr><td>2020</td><td>Sin dato</td><td>Sin dato publicado en las fuentes consultadas</td></tr>
+				<tr><td>2021</td><td>unos 8,5 millones</td><td><a href="https://www.salamancahoy.es/salamanca/ciudad/urbano-recupera-millones-20230116125601-nt.html" target="_blank" rel="noopener">Cifra redondeada («8,5 millones»): Concejalía de Policía y Tráfico, según Salamancahoy (16-01-2023)</a></td></tr>
+				<tr><td>2022</td><td>10.560.068</td><td><a href="https://www.salamancahoy.es/salamanca/ciudad/urbano-recupera-millones-20230116125601-nt.html" target="_blank" rel="noopener">Concejalía de Policía y Tráfico, según Salamancahoy (16-01-2023)</a></td></tr>
+				<tr><td>2023</td><td>12.996.520</td><td><a href="https://www.aytosalamanca.es/en/w/el-autob%C3%BAs-urbano-de-salamanca-celebra-100-a%C3%B1os-de-servicio-batiendo-r%C3%A9cord-hist%C3%B3rico-de-viajeros" target="_blank" rel="noopener">Ayuntamiento de Salamanca (23-12-2024)</a></td></tr>
+				<tr><td>2024</td><td>14.790.744</td><td><a href="https://www.aytosalamanca.es/en/w/el-autob%C3%BAs-urbano-cerr%C3%B3-2025-batiendo-r%C3%A9cord-hist%C3%B3rico-de-viajeros-al-alcanzar-casi-16-millones-de-usuarios" target="_blank" rel="noopener">Ayuntamiento de Salamanca (10-01-2026)</a></td></tr>
+				<tr><td>2025</td><td>15.996.449</td><td><a href="https://www.aytosalamanca.es/en/w/el-autob%C3%BAs-urbano-cerr%C3%B3-2025-batiendo-r%C3%A9cord-hist%C3%B3rico-de-viajeros-al-alcanzar-casi-16-millones-de-usuarios" target="_blank" rel="noopener">Ayuntamiento de Salamanca (10-01-2026)</a></td></tr>
 			  </tbody>
 			</table>
-			<p><small>No verificado: todos los datos de esta tabla carecen de fuente contrastada y se mantienen solo como referencia.</small></p>
+
+			<h3>Viajeros por línea en 2025</h3>
+			<table border="1" cellpadding="5" cellspacing="0">
+			  <thead><tr><th>Línea</th><th>Recorrido</th><th>Viajeros 2025</th><th>Variación sobre 2024</th></tr></thead>
+			  <tbody>
+				<tr><td>4</td><td>Cementerio – Puente Ladrillo</td><td>2.045.849</td><td>+8,3 %</td></tr>
+				<tr><td>3</td><td>Garrido – San José (por centro)</td><td>1.942.834</td><td>+6,9 %</td></tr>
+				<tr><td>9</td><td>Capuchinos – Zurguén</td><td>1.498.311</td><td>+4,4 %</td></tr>
+				<tr><td>2</td><td>Pizarrales – San Julián</td><td>1.251.825</td><td>+8,4 %</td></tr>
+				<tr><td>11</td><td>Cipreses – Buenos Aires (por hospitales)</td><td>1.136.225</td><td>+2,8 %</td></tr>
+				<tr><td>7</td><td>Campus Unamuno – Prosperidad</td><td>1.083.046</td><td>+13,0 %</td></tr>
+				<tr><td>1</td><td>Chinchibarra – Buenos Aires (por centro)</td><td>1.082.849</td><td>+11,7 %</td></tr>
+				<tr><td>5</td><td>Ciudad Jardín – Los Alcaldes</td><td>1.005.112</td><td>+9,6 %</td></tr>
+				<tr><td>6</td><td>Garrido – San José (por hospitales)</td><td>950.805</td><td>+5,5 %</td></tr>
+				<tr><td>12</td><td>Barrio Blanco – Montalvo II</td><td>882.409</td><td>+11,9 %</td></tr>
+				<tr><td>10</td><td>Puente Ladrillo – Vistahermosa</td><td>862.304</td><td>+2,6 %</td></tr>
+				<tr><td>13</td><td>Huerta Otea – San José</td><td>846.312</td><td>+5,0 %</td></tr>
+				<tr><td>8</td><td>La Aldehuela – Vistahermosa</td><td>649.769</td><td>+14,0 %</td></tr>
+				<tr><td>14</td><td>Zurguén – Huerta Otea</td><td>318.604</td><td>+20,2 %</td></tr>
+				<tr><td>15</td><td>Capuchinos – Hospital Universitario</td><td>252.707</td><td>+28,3 %</td></tr>
+				<tr><td>Servicios especiales</td><td>Rastro, Ferias y Todos los Santos</td><td>93.733</td><td>+5,3 %</td></tr>
+				<tr><td>Ruta Norte</td><td>Servicio nocturno</td><td>48.151</td><td>+5,8 %</td></tr>
+				<tr><td>Ruta Sur</td><td>Servicio nocturno</td><td>45.604</td><td>+9,0 %</td></tr>
+			  </tbody>
+			</table>
+			<p><small>Fuente: Ayuntamiento de Salamanca, balance de 2025 (10-01-2026). Los nombres de los recorridos son los de la nota municipal y pueden diferir de los del <a href="/mapa-lineas-autobus">mapa de líneas</a>. Datos descargables en <a href="/autobus-urbano-viajeros.json">formato JSON</a>.</small></p>
+
+			<p><small>Esta página antes incluía una serie de viajeros de 2015 a 2025, un ranking de líneas con la 7 como más usada, frecuencias y porcentajes de bonobús sin fuente contrastada. Se han retirado porque no coincidían con los datos municipales.</small></p>
 
 			</div>
-			
+
 			{% include categories.html %}
-            
+
         </div>
     </section>
 
 	<script>
-    // Gráfico 1: Evolución histórica de viajeros (2015-2025)
-    const ctxBusHist = document.getElementById('busHistoricoChart').getContext('2d');
-    const busHistoricoChart = new Chart(ctxBusHist, {
+    new Chart(document.getElementById('busHistoricoChart').getContext('2d'), {
       type: 'line',
       data: {
-        labels: ['2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024', '2025'],
-        datasets: [{
-          label: 'Total viajeros anuales (millones, no verificado)',
-          data: [12.4, 12.6, 12.8, 13.1, 13.4, 6.8, 8.5, 10.9, 12.3, 13.0, 13.6],
-          borderColor: '#1E56A0',
-          backgroundColor: 'rgba(30, 86, 160, 0.15)',
-          borderWidth: 2,
-          tension: 0.2,
-          fill: true
-        }]
+        labels: ["2019", "2020", "2021", "2022", "2023", "2024", "2025"],
+        datasets: [{ label: 'Viajeros anuales (millones)', data: [13.64, null, 8.5, 10.56, 13.0, 14.79, 16.0], borderColor: '#1E56A0', backgroundColor: 'rgba(30, 86, 160, 0.15)', borderWidth: 2, tension: 0.2, fill: true, spanGaps: true }]
       },
-      options: {
-        responsive: true,
-        scales: {
-          y: { title: { display: true, text: 'Millones de usuarios (no verificado)' }, beginAtZero: false },
-          x: { title: { display: true, text: 'Año' } }
-        }
-      }
+      options: { responsive: true, scales: { y: { title: { display: true, text: 'Millones de viajeros' }, beginAtZero: false }, x: { title: { display: true, text: 'Año (2020 sin dato)' } } } }
     });
 
-    // Gráfico 2: Pasajeros por Línea
-    const ctxBusLineas = document.getElementById('busLineasChart').getContext('2d');
-    const busLineasChart = new Chart(ctxBusLineas, {
+    new Chart(document.getElementById('busLineasChart').getContext('2d'), {
       type: 'bar',
       data: {
-        labels: ['Línea 7', 'Línea 1', 'Línea 3', 'Línea 10', 'Línea 4', 'Línea 12'],
-        datasets: [{
-          label: 'Viajeros (millones/año, no verificado)',
-          data: [2.15, 1.92, 1.81, 1.45, 1.28, 0.98],
-          backgroundColor: 'rgba(44, 95, 45, 0.75)',
-          borderColor: '#2C5F2D',
-          borderWidth: 1.5,
-          borderRadius: 4
-        }]
+        labels: ["Línea 4", "Línea 3", "Línea 9", "Línea 2", "Línea 11", "Línea 7", "Línea 1", "Línea 5", "Línea 6", "Línea 12", "Línea 10", "Línea 13"],
+        datasets: [{ label: 'Viajeros 2025 (millones)', data: [2.05, 1.94, 1.5, 1.25, 1.14, 1.08, 1.08, 1.01, 0.95, 0.88, 0.86, 0.85], backgroundColor: 'rgba(44, 95, 45, 0.75)', borderColor: '#2C5F2D', borderWidth: 1.5, borderRadius: 4 }]
       },
-      options: {
-        responsive: true,
-        plugins: { legend: { display: false } },
-        scales: {
-          y: { title: { display: true, text: 'Millones de pasajeros (no verificado)' }, beginAtZero: true },
-          x: { title: { display: true, text: 'Línea de Autobús' } }
-        }
-      }
+      options: { responsive: true, plugins: { legend: { display: false } }, scales: { y: { title: { display: true, text: 'Millones de viajeros' }, beginAtZero: true }, x: { title: { display: true, text: 'Líneas con más viajeros' } } } }
     });
   </script>
