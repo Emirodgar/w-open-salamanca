@@ -1,0 +1,272 @@
+---
+layout: default
+title: "Reparte tú el presupuesto del Ayuntamiento de Salamanca"
+description: Mueve el dinero entre políticas de gasto (limpieza, policía, cultura, servicios sociales, bus...) y sube o baja los impuestos para ver si te salen las cuentas, con los datos reales de 2024
+date: 27-11-2026
+folder: Hacienda Local
+permalink: reparte-presupuesto-ayuntamiento-salamanca
+---
+
+    <section class="featured dataset" id="datos">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="section-title">{{ page.title }}</h1>
+                <p class="section-description">{{ page.description }}</p>
+            </div>
+
+            <div id="section-content">
+
+<p>Gobernar un ayuntamiento es repartir un dinero que no da para todo. Aquí tienes el gasto real de <span class="rp-anio">2024</span> del Ayuntamiento de Salamanca (liquidación enviada al Ministerio de Hacienda) y una palanca para cada política. Súbele a una lo que quieras, pero el dinero tiene que salir de algún sitio: de otra política o de los impuestos. <b>Todo se calcula en tu navegador.</b></p>
+
+<div class="rp-estado" id="rpEstado" aria-live="polite">
+  <div class="rp-estado-main">
+    <span class="rp-estado-etq">Cuentas</span>
+    <strong id="rpBalance">—</strong>
+  </div>
+  <div class="rp-estado-det" id="rpDetalle"></div>
+</div>
+
+<div class="rp-botones">
+  <button type="button" id="rpEquilibrar" class="rp-btn">Equilibrar proporcionalmente</button>
+  <button type="button" id="rpReset" class="rp-btn rp-btn-sec">Volver al presupuesto real</button>
+  <button type="button" id="rpCopiar" class="rp-btn rp-btn-sec">Copiar enlace a mi reparto</button>
+  <span id="rpCopiado" class="rp-copiado" role="status"></span>
+</div>
+
+<h2>1. ¿Cuánto recaudas?</h2>
+<div class="rp-fila rp-fila-tax">
+  <div class="rp-fila-txt">
+    <label for="rpTax">Impuestos, tasas y precios públicos propios</label>
+    <small>IBI, vehículos, plusvalía, ICIO, tasas de basura, ORA, etc. Hoy suman <b id="rpTaxBase"></b>. Los principales impuestos llevan 13 años congelados, y las subidas tienen límites legales.</small>
+  </div>
+  <div class="rp-fila-ctl">
+    <input id="rpTax" type="range" min="-20" max="30" step="1" value="0" aria-describedby="rpTaxVal">
+    <output id="rpTaxVal" for="rpTax"></output>
+  </div>
+</div>
+
+<h2>2. ¿En qué lo gastas?</h2>
+<p class="rp-nota">Cada barra va del 50 % al 200 % del gasto real. Las políticas bloqueadas (deuda, pensiones de antiguos empleados y poco más) son compromisos que no se pueden recortar a voluntad.</p>
+<div id="rpFilas"></div>
+
+<div class="rp-chart" id="rpChartBox"><canvas id="chRp" aria-label="Gasto real frente al reparto que has hecho, por política"></canvas></div>
+
+<h2>Qué debes tener en cuenta</h2>
+<ul>
+<li><b>Es una cuenta mecánica.</b> Si subes los impuestos un 10 %, el simulador suma el 10 % de lo que se recauda hoy. No modela cómo reaccionan las personas ni las empresas (consumo, mudanzas, alquileres), porque esa parte depende de hipótesis que nadie conoce con certeza.</li>
+<li><b>Los impuestos no pagan todo.</b> Buena parte del gasto en servicios sociales, cultura, transporte o inversiones se financia con transferencias del Estado, la Junta o fondos europeos. Esas ayudas suelen ir ligadas a un fin concreto: no siempre puedes moverlas a otra política.</li>
+<li><b>Mucho gasto es rígido a corto plazo.</b> Personal, contratos de limpieza o de transporte y préstamos ya firmados no se recortan de un año para otro. Por eso el juego limita cada política al 50 %-200 %.</li>
+<li><b>Datos del Ayuntamiento y sus organismos dependientes</b> (presupuesto consolidado). Las empresas municipales con contabilidad propia quedan fuera.</li>
+<li><b>No es una propuesta política.</b> No decimos qué reparto es mejor; solo hacemos visibles los límites del presupuesto.</li>
+</ul>
+
+<p class="rp-nota">Fuente: Ministerio de Hacienda, <a href="https://serviciostelematicosext.hacienda.gob.es/SGFAL/CONPREL" rel="noopener">CONPREL, Consulta de presupuestos y liquidaciones de las entidades locales</a>. Más contexto: <a href="/presupuestos-salamanca">evolución del gasto 2005-2024</a>, <a href="/impuestos-municipales-salamanca">impuestos municipales</a> y la <a href="/tus-impuestos-ayuntamiento-salamanca">calculadora de tus impuestos</a>. Datos descargables en <a href="/presupuestos-salamanca.json">formato JSON</a>.</p>
+
+            </div>
+
+            {% include categories.html %}
+
+        </div>
+    </section>
+
+<style>
+.rp-estado{position:sticky;top:0;z-index:5;margin:1rem 0;padding:.8rem 1rem;border:2px solid var(--border-color);border-radius:8px;background:#f4f8f1}
+.rp-estado.rp-ok{border-color:#2C5F2D;background:#eaf3e8}
+.rp-estado.rp-falta{border-color:#b3261e;background:#fbeceb}
+.rp-estado.rp-sobra{border-color:#8a6d00;background:#fdf6df}
+.rp-estado-main{display:flex;gap:.75rem;align-items:baseline;flex-wrap:wrap}
+.rp-estado-etq{font-size:.85em;text-transform:uppercase;letter-spacing:.04em;color:#555}
+.rp-estado-main strong{font-size:1.25em}
+.rp-estado-det{font-size:.92em;color:#333;margin-top:.25rem}
+.rp-botones{display:flex;gap:.6rem;flex-wrap:wrap;align-items:center;margin:.5rem 0 1rem}
+.rp-btn{padding:.55rem .9rem;font:inherit;font-weight:600;border:2px solid #2C5F2D;border-radius:6px;background:#2C5F2D;color:#fff;cursor:pointer}
+.rp-btn-sec{background:#fff;color:#2C5F2D}
+.rp-btn:focus-visible,.rp-fila input:focus-visible{outline:3px solid var(--accent-color);outline-offset:2px}
+.rp-copiado{font-size:.9em;color:#2C5F2D}
+.rp-fila{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:.5rem 1.25rem;align-items:center;padding:.7rem 0;border-bottom:1px solid var(--border-color)}
+.rp-fila-txt label{font-weight:600;display:block}
+.rp-fila-txt small{display:block;color:#555;line-height:1.35}
+.rp-fila-ctl input[type=range]{width:100%}
+.rp-fila-ctl output,.rp-fila-ctl .rp-val{display:block;font-variant-numeric:tabular-nums;font-size:.92em;margin-top:.15rem}
+.rp-up{color:#2C5F2D;font-weight:600}
+.rp-down{color:#b3261e;font-weight:600}
+.rp-fila.rp-fija{opacity:.75}
+.rp-fila.rp-fija .rp-fila-ctl{font-size:.92em;color:#555}
+.rp-chart{position:relative;margin:1.5rem 0;height:760px}
+.rp-nota{font-size:.9em;color:#555}
+@media (max-width:640px){.rp-fila{grid-template-columns:1fr}.rp-chart{height:900px}}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var DESC = {
+    '16': 'Basuras, limpieza viaria, agua, alumbrado y cementerios',
+    '92': 'Personal, servicios jurídicos, informática y gestión interna',
+    '13': 'Policía local, tráfico, movilidad y protección civil',
+    '23': 'Ayudas y servicios sociales, mayores, infancia y familia',
+    '43': 'Turismo, comercio y desarrollo empresarial',
+    '33': 'Bibliotecas, museos, teatros, fiestas y programación cultural',
+    '44': 'Autobús urbano',
+    '15': 'Vivienda, urbanismo y pavimentación de calles',
+    '34': 'Instalaciones y actividades deportivas',
+    '17': 'Parques, jardines y medio ambiente',
+    '93': 'Gestión tributaria y recaudación',
+    '32': 'Colegios y actividades educativas municipales',
+    '91': 'Alcaldía, Pleno y concejales',
+    '24': 'Formación y promoción del empleo',
+    '31': 'Salud pública y centros sanitarios',
+    '45': 'Infraestructuras'
+  };
+  var FIJAS = ['01', '21', '22', '49'];
+  var MIN = 50, MAX = 200;
+  var D, A, Y, base = {}, pct = {}, tax = 0, chart, editables = [], fijas = [], fijoTotal = 0, propios = 0;
+  var fEur = new Intl.NumberFormat('es-ES', { maximumFractionDigits: 0, useGrouping: 'always' });
+  var fM = new Intl.NumberFormat('es-ES', { minimumFractionDigits: 1, maximumFractionDigits: 1 });
+  var fSign = function (v) { return (v > 0 ? '+' : v < 0 ? '−' : '') + fEur.format(Math.abs(v)); };
+  function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
+  function corto(k) { return D.politicas[k].replace(/ \(.*\)/, ''); }
+  function m(v) { return fM.format(v / 1e6) + ' M€'; }
+
+  function gasto(k) { return base[k] * pct[k] / 100; }
+  function totales() {
+    var ed = 0;
+    editables.forEach(function (k) { ed += gasto(k); });
+    var gastado = fijoTotal + ed;
+    var disponible = A.total_gastos + propios * tax / 100;
+    return { gastado: gastado, disponible: disponible, balance: disponible - gastado };
+  }
+
+  function pinta() {
+    var t = totales(), b = t.balance, box = document.getElementById('rpEstado'), txt;
+    box.className = 'rp-estado ' + (Math.abs(b) < 100000 ? 'rp-ok' : b < 0 ? 'rp-falta' : 'rp-sobra');
+    if (Math.abs(b) < 100000) txt = '✔ Equilibrado: gastas lo que ingresas';
+    else if (b < 0) txt = '✖ Te faltan ' + m(-b) + ': gastas más de lo que ingresas';
+    else txt = '● Te sobran ' + m(b) + ': tienes dinero sin asignar';
+    document.getElementById('rpBalance').textContent = txt;
+
+    var dTax = propios * tax / 100, mov = 0;
+    editables.forEach(function (k) { mov += Math.abs(gasto(k) - base[k]); });
+    var det = 'Ingresas ' + m(t.disponible) + ' y gastas ' + m(t.gastado) + '. ';
+    if (tax !== 0) det += 'Con ' + (tax > 0 ? 'una subida' : 'una bajada') + ' del ' + Math.abs(tax) + ' % de impuestos y tasas, cada vecino pagaría de media ' + fEur.format(Math.abs(dTax / A.poblacion)) + ' € al año ' + (tax > 0 ? 'más' : 'menos') + '. ';
+    det += 'Has movido ' + m(mov / 2) + ' entre políticas.';
+    document.getElementById('rpDetalle').textContent = det;
+
+    document.getElementById('rpTaxVal').textContent = (tax > 0 ? '+' : tax < 0 ? '−' : '') + Math.abs(tax) + ' %  (' + fSign(dTax) + ' € al año)';
+    editables.forEach(function (k) {
+      var d = gasto(k) - base[k], el = document.getElementById('rpv' + k);
+      el.innerHTML = fEur.format(gasto(k)) + ' € <span class="' + (d > 0.5 ? 'rp-up' : d < -0.5 ? 'rp-down' : '') + '">(' + (pct[k] - 100 > 0 ? '+' : pct[k] - 100 < 0 ? '−' : '') + Math.abs(pct[k] - 100) + ' %, ' + fSign(d) + ' €)</span>';
+    });
+    if (chart) {
+      chart.data.datasets[1].data = chartKeys.map(function (k) { return (FIJAS.indexOf(k) >= 0 ? base[k] : gasto(k)) / 1e6; });
+      chart.update('none');
+    }
+    guarda();
+  }
+
+  var chartKeys = [];
+  function dibujaChart() {
+    chartKeys = Object.keys(A.politicas).filter(function (k) { return A.politicas[k][0] > 0; })
+      .sort(function (p, q) { return base[q] - base[p]; });
+    document.getElementById('rpChartBox').style.height = (chartKeys.length * 34 + 90) + 'px';
+    chart = new Chart(document.getElementById('chRp'), {
+      type: 'bar',
+      data: {
+        labels: chartKeys.map(corto),
+        datasets: [
+          { label: 'Gasto real ' + Y, data: chartKeys.map(function (k) { return base[k] / 1e6; }), backgroundColor: '#b9c9b4' },
+          { label: 'Tu reparto', data: chartKeys.map(function (k) { return base[k] / 1e6; }), backgroundColor: '#2C5F2D' }
+        ]
+      },
+      options: {
+        indexAxis: 'y', responsive: true, maintainAspectRatio: false,
+        plugins: { tooltip: { callbacks: { label: function (c) { return c.dataset.label + ': ' + fM.format(c.parsed.x) + ' M€'; } } } },
+        scales: { x: { beginAtZero: true, title: { display: true, text: 'Millones de euros' } } }
+      }
+    });
+  }
+
+  function equilibra() {
+    var t = totales(), ed = 0;
+    editables.forEach(function (k) { ed += gasto(k); });
+    var objetivo = t.disponible - fijoTotal;
+    if (ed <= 0 || objetivo <= 0) return;
+    var f = objetivo / ed;
+    editables.forEach(function (k) {
+      var v = Math.round(pct[k] * f);
+      pct[k] = Math.max(MIN, Math.min(MAX, v));
+      document.getElementById('rps' + k).value = pct[k];
+    });
+    pinta();
+  }
+
+  function guarda() {
+    var parts = [];
+    editables.forEach(function (k) { if (pct[k] !== 100) parts.push(k + ':' + pct[k]); });
+    if (tax !== 0) parts.push('imp:' + tax);
+    try { history.replaceState(null, '', parts.length ? '#' + parts.join(',') : location.pathname); } catch (e) {}
+  }
+  function lee() {
+    var h = location.hash.replace('#', '');
+    if (!h) return;
+    h.split(',').forEach(function (p) {
+      var kv = p.split(':'), v = parseInt(kv[1], 10);
+      if (!isFinite(v)) return;
+      if (kv[0] === 'imp') tax = Math.max(-20, Math.min(30, v));
+      else if (editables.indexOf(kv[0]) >= 0) pct[kv[0]] = Math.max(MIN, Math.min(MAX, v));
+    });
+  }
+
+  function construye() {
+    var cont = document.getElementById('rpFilas'), h = '';
+    var orden = Object.keys(A.politicas).filter(function (k) { return A.politicas[k][0] > 0; })
+      .sort(function (p, q) { return A.politicas[q][0] - A.politicas[p][0]; });
+    orden.forEach(function (k) {
+      base[k] = A.politicas[k][0]; pct[k] = 100;
+      if (FIJAS.indexOf(k) >= 0) { fijas.push(k); fijoTotal += base[k]; } else editables.push(k);
+    });
+    orden.forEach(function (k) {
+      if (FIJAS.indexOf(k) >= 0) {
+        h += '<div class="rp-fila rp-fija"><div class="rp-fila-txt"><span style="font-weight:600">' + esc(corto(k)) + ' 🔒</span><small>Compromiso fijo</small></div><div class="rp-fila-ctl">' + fEur.format(base[k]) + ' € (no editable)</div></div>';
+      } else {
+        h += '<div class="rp-fila"><div class="rp-fila-txt"><label for="rps' + k + '">' + esc(corto(k)) + '</label><small>' + esc(DESC[k] || '') + '. Hoy: <b>' + fEur.format(base[k]) + ' €</b></small></div>' +
+          '<div class="rp-fila-ctl"><input id="rps' + k + '" type="range" min="' + MIN + '" max="' + MAX + '" step="1" value="100" aria-describedby="rpv' + k + '"><output id="rpv' + k + '" class="rp-val"></output></div></div>';
+      }
+    });
+    cont.innerHTML = h;
+    lee();
+    editables.forEach(function (k) {
+      var s = document.getElementById('rps' + k);
+      s.value = pct[k];
+      s.addEventListener('input', function () { pct[k] = parseInt(s.value, 10); pinta(); });
+    });
+    var st = document.getElementById('rpTax');
+    st.value = tax;
+    st.addEventListener('input', function () { tax = parseInt(st.value, 10); pinta(); });
+  }
+
+  fetch('/presupuestos-salamanca.json').then(function (r) { return r.json(); }).then(function (d) {
+    D = d;
+    Y = Object.keys(d.anios).filter(function (y) { return d.anios[y].politicas; }).sort().pop();
+    A = d.anios[Y];
+    document.querySelectorAll('.rp-anio').forEach(function (e) { e.textContent = Y; });
+    propios = A.ingresos.impuestos_directos + A.ingresos.impuestos_indirectos + A.ingresos.tasas_otros;
+    document.getElementById('rpTaxBase').textContent = fEur.format(propios) + ' €';
+    construye();
+    dibujaChart();
+    pinta();
+    document.getElementById('rpEquilibrar').addEventListener('click', equilibra);
+    document.getElementById('rpReset').addEventListener('click', function () {
+      editables.forEach(function (k) { pct[k] = 100; document.getElementById('rps' + k).value = 100; });
+      tax = 0; document.getElementById('rpTax').value = 0; pinta();
+    });
+    document.getElementById('rpCopiar').addEventListener('click', function () {
+      var out = document.getElementById('rpCopiado');
+      function ok() { out.textContent = 'Enlace copiado'; setTimeout(function () { out.textContent = ''; }, 2500); }
+      if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(location.href).then(ok, function () { window.prompt('Copia este enlace:', location.href); });
+      else window.prompt('Copia este enlace:', location.href);
+    });
+  }).catch(function () {
+    document.getElementById('rpBalance').textContent = 'No se han podido cargar los datos. Inténtalo de nuevo más tarde.';
+  });
+});
+</script>
