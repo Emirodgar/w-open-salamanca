@@ -5,10 +5,10 @@
   "razon_social": "Crespo Villoria SL",
   "actualizado": "2026-11-27",
   "actualizado_texto": "27 de noviembre de 2026",
-  "estado_ficha": "borrador: datos limitados; sin ventas verificadas y con concurso de acreedores publicado en el BORME | concurso sin contrastar con fuente oficial: no publicar antes",
+  "estado_ficha": "borrador: datos limitados; sin ventas verificadas y con concurso de acreedores publicado en el BORME | concurso contrastado con el BORME original",
   "licencia": "CC BY 4.0",
   "sameas": [],
-  "resumen": "Crespo Villoria SL es una sociedad con domicilio en Machacón (Salamanca), con actividad de comercio al por mayor de cereales, abonos y herbicidas, transporte de mercancías por carretera y explotación agraria según su objeto social inscrito, y clasificada por InfoNIF en el sector de productos alimenticios. Ocupa el puesto 41 por ventas 2024 entre las empresas de la provincia (10.791.º a nivel nacional) según InfoNIF.",
+  "resumen": "Crespo Villoria SL es una sociedad con domicilio en Machacón (Salamanca), con actividad de comercio al por mayor de cereales, abonos y herbicidas, transporte de mercancías por carretera y explotación agraria según su objeto social inscrito, y clasificada por InfoNIF en el sector de productos alimenticios. Ocupa el puesto 41 por ventas 2024 entre las empresas de la provincia (10.791.º a nivel nacional) según InfoNIF. El BORME del 13 de agosto de 2026 publica su declaración de concurso voluntario (procedimiento 502/2026).",
   "rapida": [
     {
       "k": "Razón social",
@@ -119,20 +119,20 @@
     {
       "fecha": "2026",
       "hito": "Concurso de acreedores",
-      "detalle": "El BORME de 13/08/2026 publica el auto de 25/06/2026 que declara el concurso voluntario (procedimiento 502/2026) y la intervención o suspensión de las facultades del deudor. Dato recogido por directorios, no contrastado todavía con el texto original del BORME ni con el Registro Público Concursal.",
+      "detalle": "El BORME de 13/08/2026 (inscripción 378019 - CRESPO VILLORIA SL) publica la declaración de concurso voluntario en el procedimiento 502/2026 del Tribunal de Instancia de Salamanca, Sección de Instrucción, plaza nº 4. El auto de declaración de concurso voluntario es de 25/06/2026 y el nombramiento de administración concursal, de 29/06/2026. El mismo procedimiento afecta también a Abonos y Cereales Crespo Villoria SL y a otras sociedades vinculadas y se publica con la intervención o suspensión de las facultades de administración y disposición.",
       "fuente": {
-        "t": "InfoNIF: ficha de Crespo Villoria SL",
-        "u": "https://infonif.economia3.com/ficha-empresa/crespo-villoria-sl"
+        "t": "BORME núm. 155, 13/08/2026, sección Salamanca (BORME-A-2026-155-37)",
+        "u": "https://www.boe.es/borme/dias/2026/08/13/pdfs/BORME-A-2026-155-37.pdf"
       }
     }
   ],
   "no_verificado": [
     "Ventas 2024 y plantilla: no se han localizado cifras fiables (InfoNIF las oculta).",
     "Composición actual del consejo: InfoNIF muestra un solo consejero en su cuadro y la tabla de cargos está parcialmente oculta; los nombres proceden de actos del BORME de 2021 y pueden haber cambiado.",
-    "Número de procedimiento concursal: InfoNIF recoge el mismo número (502/2026) para esta sociedad y para Cuperal SL; conviene contrastarlo en el Registro Público Concursal.",
     "Relación con Cuperal SL: comparten apellidos de consejeros en el BORME, pero no se ha verificado ninguna participación societaria.",
     "Sitio web oficial: no localizado.",
-    "Fecha exacta de inicio de operaciones: InfoNIF cita el 09/04/2013, sin confirmar con otra fuente."
+    "Fecha exacta de inicio de operaciones: InfoNIF cita el 09/04/2013, sin confirmar con otra fuente.",
+    "Situación actual del procedimiento (fase, convenio o liquidación) posterior al BORME de 13/08/2026: no consta en las fuentes consultadas; consulta el Registro Público Concursal."
   ],
   "faq": [
     {
@@ -141,7 +141,7 @@
     },
     {
       "q": "¿Está en concurso de acreedores?",
-      "a": "Según el BORME del 13 de agosto de 2026 recogido por InfoNIF, sí: concurso voluntario declarado por auto de 25 de junio de 2026. Dato recogido por directorios, no contrastado todavía con el texto original del BORME ni con el Registro Público Concursal."
+      "a": "Sí. El BORME del 13 de agosto de 2026 publica la declaración de concurso voluntario (procedimiento 502/2026, Tribunal de Instancia de Salamanca). El auto de declaración de concurso voluntario es de 25/06/2026 y el nombramiento de administración concursal, de 29/06/2026."
     },
     {
       "q": "¿Quién forma su consejo de administración?",
@@ -153,6 +153,10 @@
     }
   ],
   "fuentes": [
+    {
+      "t": "BORME núm. 155, 13/08/2026, sección Salamanca (BORME-A-2026-155-37)",
+      "u": "https://www.boe.es/borme/dias/2026/08/13/pdfs/BORME-A-2026-155-37.pdf"
+    },
     {
       "t": "InfoNIF: ranking de ventas de empresas de Salamanca 2024",
       "u": "https://infonif.economia3.com/ranking/ventas-empresas/salamanca"
