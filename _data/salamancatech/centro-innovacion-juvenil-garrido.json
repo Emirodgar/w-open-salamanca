@@ -1,0 +1,182 @@
+{
+  "titulo": "Centro de Innovación Juvenil de Garrido (Salamanca): Casa de la Juventud, 2,3 millones y fondos FEDER",
+  "descripcion": "Ficha del sexto centro de Salamanca Tech: reforma de la Casa de la Juventud de Garrido, 2,3 millones de euros, 1.267 m², cofinanciación FEDER del 60 % del PAI CoNEcta Salamanca y calendario de obras",
+  "schema_type": "Organization",
+  "nombre_habitual": "Centro de Innovación Juvenil de Garrido",
+  "resumen": "El Centro de Innovación Juvenil de Garrido es la transformación de la Casa de la Juventud de Garrido en el sexto centro de Salamanca Tech. Tendrá un presupuesto de unos 2,3 millones de euros, hasta 1.267 m² construidos, una «Factoría de Ideas» (coworking juvenil), un espacio de metaverso y una sala multimedia. Forma parte del PAI «CoNEcta Salamanca» (más de 15,2 millones, 60 % FEDER). Las obras se licitaron el 5 de junio de 2026 con un año de ejecución previsto.",
+  "rapida": [
+    {
+      "k": "Estado",
+      "v": "Obras licitadas el 05/06/2026 (no abierto)"
+    },
+    {
+      "k": "Edificio",
+      "v": "Casa de la Juventud de Garrido (Salamanca)"
+    },
+    {
+      "k": "Presupuesto",
+      "v": "Casi 2,3 M€"
+    },
+    {
+      "k": "Superficie",
+      "v": "Ampliación hasta 1.267 m² construidos"
+    },
+    {
+      "k": "Contenido",
+      "v": "«Factoría de Ideas» (coworking juvenil), metaverso (realidad virtual, aumentada y extendida), sala multimedia; en el exterior, calistenia, parkour y pump track"
+    },
+    {
+      "k": "Financiación",
+      "v": "FEDER (60 %) a través de la estrategia CoNEcta Salamanca (barrios Garrido Norte y Sur, Chinchibarra, Estación y Salesas)"
+    },
+    {
+      "k": "Plazo",
+      "v": "Inicio de obras previsto en el último trimestre de 2026, con un año de ejecución"
+    }
+  ],
+  "cifras": [
+    {
+      "concepto": "Presupuesto base de licitación",
+      "valor": "casi 2,3 M€",
+      "fuente": {
+        "t": "El Español: Licitadas las obras para transformar la Casa de la Juventud en el sexto centro tecnológico (05/06/2026)",
+        "u": "https://www.elespanol.com/castilla-y-leon/region/salamanca/20260605/licitadas-obras-transformar-casa-juventud-sexto-centro-tecnologico-salamanca/1003744275743_0.html"
+      }
+    },
+    {
+      "concepto": "PAI CoNEcta Salamanca (total)",
+      "valor": "más de 15,2 M€, 60 % FEDER",
+      "fuente": {
+        "t": "El Español: Licitadas las obras para transformar la Casa de la Juventud en el sexto centro tecnológico (05/06/2026)",
+        "u": "https://www.elespanol.com/castilla-y-leon/region/salamanca/20260605/licitadas-obras-transformar-casa-juventud-sexto-centro-tecnologico-salamanca/1003744275743_0.html"
+      }
+    },
+    {
+      "concepto": "Superficie construida",
+      "valor": "1.267 m²",
+      "fuente": {
+        "t": "El Español: La Casa de la Juventud de Garrido, sexto «pulmón» de Salamanca Tech (07/04/2026)",
+        "u": "https://www.elespanol.com/castilla-y-leon/region/salamanca/20260407/casa-juventud-garrido-sexto-pulmon-salamanca-tech-millones-euros-inversion/1003744197304_0.html"
+      }
+    },
+    {
+      "concepto": "Importe FEDER estimado (cálculo de Open Salamanca)",
+      "valor": "≈1,38 M€ (60 % de 2,3 M€); no figura en el texto de la fuente",
+      "fuente": {
+        "t": "El Español: La Casa de la Juventud de Garrido, sexto «pulmón» de Salamanca Tech (07/04/2026)",
+        "u": "https://www.elespanol.com/castilla-y-leon/region/salamanca/20260407/casa-juventud-garrido-sexto-pulmon-salamanca-tech-millones-euros-inversion/1003744197304_0.html"
+      }
+    }
+  ],
+  "nota_cifras": "El reportaje de Salamanca24horas dice que la finalización sería a finales de 2027 y también «tres años y medio» de plazo (con erratas); se prefiere el plazo de un año de El Español.",
+  "secciones": [
+    {
+      "h": "Quién lo presentó",
+      "p": [
+        "Acto del 7 de abril de 2026 con el alcalde Carlos García Carbayo, el concejal de Hacienda Fernando Rodríguez y el concejal de Promoción Económica y Juventud Pedro Martínez."
+      ]
+    }
+  ],
+  "historia": [
+    {
+      "fecha": "07/04/2026",
+      "hito": "Presentación del proyecto",
+      "detalle": "Sexto nodo de Salamanca Tech.",
+      "fuente": {
+        "t": "El Español: La Casa de la Juventud de Garrido, sexto «pulmón» de Salamanca Tech (07/04/2026)",
+        "u": "https://www.elespanol.com/castilla-y-leon/region/salamanca/20260407/casa-juventud-garrido-sexto-pulmon-salamanca-tech-millones-euros-inversion/1003744197304_0.html"
+      }
+    },
+    {
+      "fecha": "05/06/2026",
+      "hito": "Licitación de las obras",
+      "detalle": "Presupuesto de casi 2,3 M€ y plazo de un año.",
+      "fuente": {
+        "t": "El Español: Licitadas las obras para transformar la Casa de la Juventud en el sexto centro tecnológico (05/06/2026)",
+        "u": "https://www.elespanol.com/castilla-y-leon/region/salamanca/20260605/licitadas-obras-transformar-casa-juventud-sexto-centro-tecnologico-salamanca/1003744275743_0.html"
+      }
+    }
+  ],
+  "no_verificado": [
+    "Empresa adjudicataria y fecha real de inicio de obras: no localizadas.",
+    "Fecha de apertura: depende de la adjudicación; la previsión de finales de 2027 es inferida de un reportaje con errores de plazo."
+  ],
+  "faq": [
+    {
+      "q": "¿Qué es el Centro de Innovación Juvenil de Garrido?",
+      "a": "La reforma de la Casa de la Juventud de Garrido para convertirla en el sexto centro de Salamanca Tech, con coworking juvenil, metaverso y sala multimedia."
+    },
+    {
+      "q": "¿Cuánto cuesta y quién lo paga?",
+      "a": "Casi 2,3 millones de euros, con un 60 % de fondos FEDER a través del PAI CoNEcta Salamanca."
+    },
+    {
+      "q": "¿Cuándo abre?",
+      "a": "No hay fecha oficial. Las obras se licitaron en junio de 2026 con un año de ejecución, con inicio previsto en el último trimestre de 2026."
+    }
+  ],
+  "fuentes": [
+    {
+      "t": "El Español: La Casa de la Juventud de Garrido, sexto «pulmón» de Salamanca Tech (07/04/2026)",
+      "u": "https://www.elespanol.com/castilla-y-leon/region/salamanca/20260407/casa-juventud-garrido-sexto-pulmon-salamanca-tech-millones-euros-inversion/1003744197304_0.html"
+    },
+    {
+      "t": "El Español: Licitadas las obras para transformar la Casa de la Juventud en el sexto centro tecnológico (05/06/2026)",
+      "u": "https://www.elespanol.com/castilla-y-leon/region/salamanca/20260605/licitadas-obras-transformar-casa-juventud-sexto-centro-tecnologico-salamanca/1003744275743_0.html"
+    },
+    {
+      "t": "Salamanca24horas: El «Hexágono Tecnológico de Salamanca» (26/08/2026)",
+      "u": "https://www.salamanca24horas.com/local/hexagono-tecnologico-salamanca-centros-transformaran-ciudad-capital-talento-innovacion"
+    },
+    {
+      "t": "Salamanca Tech: ¿Qué es Salamanca Tech? (web oficial, sin fecha)",
+      "u": "https://salamancatech.es/que-es-salamanca-tech/"
+    }
+  ],
+  "slug": "centro-innovacion-juvenil-garrido",
+  "url_canonica": "https://opensalamanca.es/salamanca-tech/centro-innovacion-juvenil-garrido",
+  "actualizado": "2026-11-27",
+  "actualizado_texto": "27 de noviembre de 2026",
+  "estado_ficha": "datos con fuente verificados a 27/11/2026; lo no contrastado figura en «Qué no está verificado»",
+  "licencia": "CC BY 4.0",
+  "aviso": "Esta ficha recopila datos publicados por el Ayuntamiento de Salamanca, la Junta de Castilla y León y medios; no es una web oficial. Cuando dos fuentes se contradicen, se indica.",
+  "como_citar": "Open Salamanca (27 de noviembre de 2026). Centro de Innovación Juvenil de Garrido (Salamanca): Casa de la Juventud, 2,3 millones y fondos FEDER. https://opensalamanca.es/salamanca-tech/centro-innovacion-juvenil-garrido. Licencia CC BY 4.0. Cita también la fuente primaria de cada dato.",
+  "relacionadas": [
+    {
+      "t": "Salamanca Tech",
+      "u": "/salamanca-tech"
+    },
+    {
+      "t": "Centro Tormes+",
+      "u": "/salamanca-tech/centro-tormes-plus"
+    },
+    {
+      "t": "Espacio de Innovación Tecnológica Tormes+",
+      "u": "/salamanca-tech/espacio-innovacion-tecnologica-tormes"
+    },
+    {
+      "t": "Distrito Tecnológico de Salamanca",
+      "u": "/salamanca-tech/distrito-tecnologico-salamanca"
+    },
+    {
+      "t": "Abioinnova",
+      "u": "/salamanca-tech/abioinnova"
+    },
+    {
+      "t": "Centro de Internet de las Cosas e Inteligencia Artificial",
+      "u": "/salamanca-tech/centro-internet-cosas-inteligencia-artificial"
+    },
+    {
+      "t": "Centro Salamanca Ciudad del Talento",
+      "u": "/salamanca-tech/centro-ciudad-del-talento"
+    },
+    {
+      "t": "Financiación de Salamanca Tech",
+      "u": "/salamanca-tech/financiacion-salamanca-tech"
+    },
+    {
+      "t": "Cronología de Salamanca Tech",
+      "u": "/salamanca-tech/cronologia-salamanca-tech"
+    }
+  ]
+}

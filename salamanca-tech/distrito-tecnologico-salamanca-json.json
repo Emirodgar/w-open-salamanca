@@ -1,0 +1,5 @@
+---
+permalink: salamanca-tech/distrito-tecnologico-salamanca.json
+sitemap: false
+---
+{{ site.data.salamancatech["distrito-tecnologico-salamanca"] | jsonify }}

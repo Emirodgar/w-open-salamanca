@@ -1,0 +1,5 @@
+---
+permalink: salamanca-tech/centro-internet-cosas-inteligencia-artificial.json
+sitemap: false
+---
+{{ site.data.salamancatech["centro-internet-cosas-inteligencia-artificial"] | jsonify }}

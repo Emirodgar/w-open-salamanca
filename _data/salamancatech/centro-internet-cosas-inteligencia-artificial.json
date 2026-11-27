@@ -1,0 +1,160 @@
+{
+  "titulo": "Centro de Internet de las Cosas e Inteligencia Artificial de Salamanca (AIR Institute)",
+  "descripcion": "Ficha del Centro de IoT e IA de Salamanca Tech, inaugurado el 29/09/2023 y gestionado por AIR Institute: investigadores, iniciativas acogidas y convenio municipal",
+  "schema_type": "Organization",
+  "nombre_habitual": "Centro de Internet de las Cosas e Inteligencia Artificial",
+  "resumen": "El Centro de Internet de las Cosas e Inteligencia Artificial es un centro tecnológico de la red Salamanca Tech, inaugurado el 29 de septiembre de 2023 por el Ayuntamiento, la Junta de Castilla y León y la Universidad de Salamanca y gestionado por AIR Institute, entidad sin ánimo de lucro de investigación en informática e IA presidida por Juan Manuel Corchado. Al abrir trabajaban 60 investigadores y ha acogido 20 iniciativas; en marzo de 2024 el alcalde hablaba de casi 100 trabajadores.",
+  "rapida": [
+    {
+      "k": "Inauguración",
+      "v": "29 de septiembre de 2023 (Ayuntamiento, Junta de Castilla y León y Universidad de Salamanca)"
+    },
+    {
+      "k": "Gestor",
+      "v": "AIR Institute (web air-institute.com)"
+    },
+    {
+      "k": "Actividad",
+      "v": "Investigación en IA e IoT y formación a empresas en TIC (con el Ayuntamiento)"
+    },
+    {
+      "k": "Convenio",
+      "v": "Ayuntamiento–AIR Institute (firmado en febrero de 2024): 150.000 € municipales, vigencia inicial hasta 31/12/2024"
+    }
+  ],
+  "cifras": [
+    {
+      "concepto": "Investigadores al abrir",
+      "valor": "60",
+      "fuente": {
+        "t": "Salamanca24horas: El «Hexágono Tecnológico de Salamanca» (26/08/2026)",
+        "u": "https://www.salamanca24horas.com/local/hexagono-tecnologico-salamanca-centros-transformaran-ciudad-capital-talento-innovacion"
+      }
+    },
+    {
+      "concepto": "Iniciativas acogidas",
+      "valor": "20",
+      "fuente": {
+        "t": "Salamanca24horas: El «Hexágono Tecnológico de Salamanca» (26/08/2026)",
+        "u": "https://www.salamanca24horas.com/local/hexagono-tecnologico-salamanca-centros-transformaran-ciudad-capital-talento-innovacion"
+      }
+    },
+    {
+      "concepto": "Aportación municipal al convenio de 2024",
+      "valor": "150.000 €",
+      "fuente": {
+        "t": "El Español (Invertia): De mercado mayorista a distrito tecnológico (12/02/2024)",
+        "u": "https://www.elespanol.com/invertia/disruptores/autonomias/castilla-leon/20240212/mercado-mayorista-distrito-tecnologico-jugada-urbanistica-refuerza-marca-salamanca-tech/831417113_0.html"
+      }
+    }
+  ],
+  "nota_cifras": "No se ha localizado la inversión de construcción del centro ni su ubicación exacta en una fuente verificable.",
+  "secciones": [
+    {
+      "h": "Contexto",
+      "p": [
+        "Forma parte de la constelación PIENSA (Tecnología y Ciencia). AIR Institute tiene sus instalaciones principales de investigación en Béjar y presencia en el Parque Científico de la USAL, según fuentes europeas consultadas."
+      ]
+    }
+  ],
+  "historia": [
+    {
+      "fecha": "29/09/2023",
+      "hito": "Inauguración",
+      "detalle": "Con Ayuntamiento, Junta y USAL.",
+      "fuente": {
+        "t": "Salamanca24horas: El «Hexágono Tecnológico de Salamanca» (26/08/2026)",
+        "u": "https://www.salamanca24horas.com/local/hexagono-tecnologico-salamanca-centros-transformaran-ciudad-capital-talento-innovacion"
+      }
+    },
+    {
+      "fecha": "02/2024",
+      "hito": "Convenio Ayuntamiento–AIR Institute",
+      "detalle": "150.000 € y estrategia Salamanca Tech.",
+      "fuente": {
+        "t": "El Español (Invertia): De mercado mayorista a distrito tecnológico (12/02/2024)",
+        "u": "https://www.elespanol.com/invertia/disruptores/autonomias/castilla-leon/20240212/mercado-mayorista-distrito-tecnologico-jugada-urbanistica-refuerza-marca-salamanca-tech/831417113_0.html"
+      }
+    }
+  ],
+  "no_verificado": [
+    "Ubicación exacta: la nota municipal de 2023 cita «Puente Ladrillo» pero no se ha contrastado en fuente verificable.",
+    "Inversión de construcción: no localizada.",
+    "Renovación del convenio tras 31/12/2024: sin información.",
+    "El número de trabajadores (casi 100 en 2024, según declaraciones del alcalde) y de investigadores (60 al abrir) corresponde a momentos distintos."
+  ],
+  "faq": [
+    {
+      "q": "¿Qué es el Centro de IoT e IA de Salamanca?",
+      "a": "Un centro tecnológico municipal de Salamanca Tech, inaugurado el 29 de septiembre de 2023 y gestionado por AIR Institute, dedicado a investigación en IA e Internet de las Cosas y a formación de empresas en TIC."
+    },
+    {
+      "q": "¿Quién lo gestiona?",
+      "a": "AIR Institute, entidad sin ánimo de lucro de investigación en informática e IA, presidida por Juan Manuel Corchado (catedrático de IA de la USAL)."
+    }
+  ],
+  "fuentes": [
+    {
+      "t": "Salamanca24horas: El «Hexágono Tecnológico de Salamanca» (26/08/2026)",
+      "u": "https://www.salamanca24horas.com/local/hexagono-tecnologico-salamanca-centros-transformaran-ciudad-capital-talento-innovacion"
+    },
+    {
+      "t": "Ayuntamiento de Salamanca: Salamanca Tech (área del inversor, sin fecha)",
+      "u": "https://www.aytosalamanca.es/en/area-del-inversor"
+    },
+    {
+      "t": "Salamanca Tech: ¿Qué es Salamanca Tech? (web oficial, sin fecha)",
+      "u": "https://salamancatech.es/que-es-salamanca-tech/"
+    },
+    {
+      "t": "El Español (Invertia): De mercado mayorista a distrito tecnológico (12/02/2024)",
+      "u": "https://www.elespanol.com/invertia/disruptores/autonomias/castilla-leon/20240212/mercado-mayorista-distrito-tecnologico-jugada-urbanistica-refuerza-marca-salamanca-tech/831417113_0.html"
+    }
+  ],
+  "slug": "centro-internet-cosas-inteligencia-artificial",
+  "url_canonica": "https://opensalamanca.es/salamanca-tech/centro-internet-cosas-inteligencia-artificial",
+  "actualizado": "2026-11-27",
+  "actualizado_texto": "27 de noviembre de 2026",
+  "estado_ficha": "datos con fuente verificados a 27/11/2026; lo no contrastado figura en «Qué no está verificado»",
+  "licencia": "CC BY 4.0",
+  "aviso": "Esta ficha recopila datos publicados por el Ayuntamiento de Salamanca, la Junta de Castilla y León y medios; no es una web oficial. Cuando dos fuentes se contradicen, se indica.",
+  "como_citar": "Open Salamanca (27 de noviembre de 2026). Centro de Internet de las Cosas e Inteligencia Artificial de Salamanca (AIR Institute). https://opensalamanca.es/salamanca-tech/centro-internet-cosas-inteligencia-artificial. Licencia CC BY 4.0. Cita también la fuente primaria de cada dato.",
+  "relacionadas": [
+    {
+      "t": "Salamanca Tech",
+      "u": "/salamanca-tech"
+    },
+    {
+      "t": "Centro Tormes+",
+      "u": "/salamanca-tech/centro-tormes-plus"
+    },
+    {
+      "t": "Espacio de Innovación Tecnológica Tormes+",
+      "u": "/salamanca-tech/espacio-innovacion-tecnologica-tormes"
+    },
+    {
+      "t": "Distrito Tecnológico de Salamanca",
+      "u": "/salamanca-tech/distrito-tecnologico-salamanca"
+    },
+    {
+      "t": "Abioinnova",
+      "u": "/salamanca-tech/abioinnova"
+    },
+    {
+      "t": "Centro de Innovación Juvenil de Garrido",
+      "u": "/salamanca-tech/centro-innovacion-juvenil-garrido"
+    },
+    {
+      "t": "Centro Salamanca Ciudad del Talento",
+      "u": "/salamanca-tech/centro-ciudad-del-talento"
+    },
+    {
+      "t": "Financiación de Salamanca Tech",
+      "u": "/salamanca-tech/financiacion-salamanca-tech"
+    },
+    {
+      "t": "Cronología de Salamanca Tech",
+      "u": "/salamanca-tech/cronologia-salamanca-tech"
+    }
+  ]
+}

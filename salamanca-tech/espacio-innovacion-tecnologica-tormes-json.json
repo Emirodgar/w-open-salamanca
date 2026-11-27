@@ -1,0 +1,5 @@
+---
+permalink: salamanca-tech/espacio-innovacion-tecnologica-tormes.json
+sitemap: false
+---
+{{ site.data.salamancatech["espacio-innovacion-tecnologica-tormes"] | jsonify }}

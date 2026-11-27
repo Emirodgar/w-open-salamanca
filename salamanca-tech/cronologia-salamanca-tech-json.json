@@ -1,0 +1,5 @@
+---
+permalink: salamanca-tech/cronologia-salamanca-tech.json
+sitemap: false
+---
+{{ site.data.salamancatech["cronologia-salamanca-tech"] | jsonify }}

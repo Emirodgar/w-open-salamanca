@@ -1,0 +1,230 @@
+{
+  "titulo": "Financiación de Salamanca Tech: cuánto cuestan el Centro Tormes+, el distrito tecnológico y la red de centros",
+  "descripcion": "Tabla de importes de Salamanca Tech con fuente y fecha: Tormes+ 1,49 M€, Espacio de Innovación 955.158,86 €, Garrido 2,3 M€, Ciudad del Talento 5,44 M€, distrito 25,7 M€ de la Junta, convenios INCYDE y AIR Institute",
+  "schema_type": "Dataset",
+  "nombre_habitual": "Financiación de Salamanca Tech",
+  "resumen": "Importes publicados de Salamanca Tech, con fuente y fecha: Centro Tormes+ 1.487.618 €; Espacio de Innovación Tecnológica 955.158,86 € (Junta); Centro de Innovación Juvenil de Garrido casi 2,3 M€ (60 % FEDER); Ciudad del Talento 5.438.871 € (4,4 M€ FEDER); Distrito Tecnológico 25,7 M€ previstos por la Junta y más de 11 M€ del Ayuntamiento; convenio con AIR Institute 150.000 €; bolsa de becas INCYDE de 500.000 €. No deben sumarse: son conceptos, financiadores y fechas distintos.",
+  "rapida": [
+    {
+      "k": "Alcance",
+      "v": "Importes con fuente de centros y programas de Salamanca Tech (2022–2026)"
+    },
+    {
+      "k": "Advertencia",
+      "v": "Los importes son de licitación, adjudicación o previsión según el caso; no son gasto ejecutado"
+    }
+  ],
+  "cifras": [
+    {
+      "concepto": "Centro Tormes+: inversión global (2022)",
+      "valor": "1.487.618 € · Ayuntamiento",
+      "fuente": {
+        "t": "Salamanca24horas: El «Hexágono Tecnológico de Salamanca» (26/08/2026)",
+        "u": "https://www.salamanca24horas.com/local/hexagono-tecnologico-salamanca-centros-transformaran-ciudad-capital-talento-innovacion"
+      }
+    },
+    {
+      "concepto": "Espacio de Innovación Tecnológica Tormes: adjudicación",
+      "valor": "955.158,86 € · financia la Junta de Castilla y León",
+      "fuente": {
+        "t": "Ayuntamiento de Salamanca: inicia la construcción del Espacio de Innovación Tecnológica Tormes (fecha de la página: 22/09/2023)",
+        "u": "https://www.aytosalamanca.es/en/w/el-ayuntamiento-de-salamanca-inicia-la-construcci%C3%B3n-del-espacio-de-innovaci%C3%B3n-tecnol%C3%B3gica-tormes-para-potenciar-el-apoyo-a-aut%C3%B3nomos-en-sectores-emergentes-y-la-creaci%C3%B3n-de-oportunidades-de-empleo"
+      }
+    },
+    {
+      "concepto": "Convenio Ayuntamiento–AIR Institute (2024)",
+      "valor": "150.000 € municipales",
+      "fuente": {
+        "t": "El Español (Invertia): De mercado mayorista a distrito tecnológico (12/02/2024)",
+        "u": "https://www.elespanol.com/invertia/disruptores/autonomias/castilla-leon/20240212/mercado-mayorista-distrito-tecnologico-jugada-urbanistica-refuerza-marca-salamanca-tech/831417113_0.html"
+      }
+    },
+    {
+      "concepto": "Casa de la Juventud de Garrido: presupuesto",
+      "valor": "casi 2,3 M€ · 60 % FEDER",
+      "fuente": {
+        "t": "El Español: Licitadas las obras para transformar la Casa de la Juventud en el sexto centro tecnológico (05/06/2026)",
+        "u": "https://www.elespanol.com/castilla-y-leon/region/salamanca/20260605/licitadas-obras-transformar-casa-juventud-sexto-centro-tecnologico-salamanca/1003744275743_0.html"
+      }
+    },
+    {
+      "concepto": "PAI CoNEcta Salamanca (marco de Garrido)",
+      "valor": "más de 15,2 M€ · 60 % FEDER",
+      "fuente": {
+        "t": "El Español: Licitadas las obras para transformar la Casa de la Juventud en el sexto centro tecnológico (05/06/2026)",
+        "u": "https://www.elespanol.com/castilla-y-leon/region/salamanca/20260605/licitadas-obras-transformar-casa-juventud-sexto-centro-tecnologico-salamanca/1003744275743_0.html"
+      }
+    },
+    {
+      "concepto": "Ciudad del Talento: proyecto TRUST",
+      "valor": "5.438.871 € (4,4 M€ FEDER)",
+      "fuente": {
+        "t": "Salamanca24horas: El «Hexágono Tecnológico de Salamanca» (26/08/2026)",
+        "u": "https://www.salamanca24horas.com/local/hexagono-tecnologico-salamanca-centros-transformaran-ciudad-capital-talento-innovacion"
+      }
+    },
+    {
+      "concepto": "Ciudad del Talento: licitación de obras",
+      "valor": "3.390.325,06 €",
+      "fuente": {
+        "t": "Salamanca24horas: El «Hexágono Tecnológico de Salamanca» (26/08/2026)",
+        "u": "https://www.salamanca24horas.com/local/hexagono-tecnologico-salamanca-centros-transformaran-ciudad-capital-talento-innovacion"
+      }
+    },
+    {
+      "concepto": "Distrito Tecnológico: inversión prevista de la Junta",
+      "valor": "25,7 M€",
+      "fuente": {
+        "t": "El Debate: El nuevo distrito empresarial tecnológico de Salamanca está licitado por casi 800.000 euros (12/05/2026)",
+        "u": "https://www.eldebate.com/espana/castilla-y-leon/20260512/nuevo-distrito-empresarial-tecnologico-salamanca-esta-licitado-casi-800000-euros_416850_amp.html"
+      }
+    },
+    {
+      "concepto": "Distrito Tecnológico: aportación del Ayuntamiento",
+      "valor": "algo más de 11 M€",
+      "fuente": {
+        "t": "El Debate: El nuevo distrito empresarial tecnológico de Salamanca está licitado por casi 800.000 euros (12/05/2026)",
+        "u": "https://www.eldebate.com/espana/castilla-y-leon/20260512/nuevo-distrito-empresarial-tecnologico-salamanca-esta-licitado-casi-800000-euros_416850_amp.html"
+      }
+    },
+    {
+      "concepto": "Distrito Tecnológico: licitación de proyectos y dirección de obra",
+      "valor": "781.419 € · Somacyl",
+      "fuente": {
+        "t": "El Debate: El nuevo distrito empresarial tecnológico de Salamanca está licitado por casi 800.000 euros (12/05/2026)",
+        "u": "https://www.eldebate.com/espana/castilla-y-leon/20260512/nuevo-distrito-empresarial-tecnologico-salamanca-esta-licitado-casi-800000-euros_416850_amp.html"
+      }
+    },
+    {
+      "concepto": "Compra de la parcela de Mercasalamanca (diciembre de 2023)",
+      "valor": "≈11 M€ (estimación periodística, no oficial)",
+      "fuente": {
+        "t": "El Español (Invertia): De mercado mayorista a distrito tecnológico (12/02/2024)",
+        "u": "https://www.elespanol.com/invertia/disruptores/autonomias/castilla-leon/20240212/mercado-mayorista-distrito-tecnologico-jugada-urbanistica-refuerza-marca-salamanca-tech/831417113_0.html"
+      }
+    },
+    {
+      "concepto": "Becas INCYDE–Salamanca Tech (abril de 2026)",
+      "valor": "bolsa de 500.000 € (el titular habla de 250.000 €); líneas «Emprende tu futuro» y «Emplea tu futuro»: 50 plazas, 1.050 €/mes durante 6 meses según otro medio",
+      "fuente": {
+        "t": "El Español: Salamanca e INCYDE, alianza para retener talento joven e impulsar el emprendimiento (27/04/2026)",
+        "u": "https://www.elespanol.com/castilla-y-leon/region/salamanca/20260427/salamanca-incyde-alianza-euros-retener-talento-joven-impulsar-emprendimiento/1003744222453_0.html"
+      }
+    },
+    {
+      "concepto": "Abioinnova (referencia 2021, no verificada)",
+      "valor": "1.250.000 € con FEDER del 50 % según una referencia BOE sin leer íntegramente",
+      "fuente": {
+        "t": "BOE-B-2021-34463",
+        "u": "https://www.boe.es/boe/dias/2021/07/30/pdfs/BOE-B-2021-34463.pdf"
+      }
+    }
+  ],
+  "nota_cifras": "Importe del Distrito: los 25,7 M€ de la Junta engloban la licitación de 781.419 € (≈3 %). No se suman los importes para evitar dobles cuentas: la compra de la parcela, p. ej., podría coincidir con la aportación municipal de más de 11 M€ del distrito, pero la fuente no lo dice.",
+  "secciones": [
+    {
+      "h": "Cómo leer estos datos",
+      "items": [
+        "Licitación = importe máximo de salida; adjudicación = importe contratado; previsión = compromiso anunciado.",
+        "FEDER: fondos europeos que cofinancian proyectos municipales (Garrido, Ciudad del Talento).",
+        "Horizon Europe financia STEAMbrace (programa educativo); no hay importe publicado en la fuente leída."
+      ]
+    }
+  ],
+  "historia": [],
+  "no_verificado": [
+    "No hay un presupuesto consolidado oficial de Salamanca Tech en las fuentes consultadas.",
+    "El importe exacto de la bolsa INCYDE: 250.000 € (titular) frente a 500.000 € (cuerpo).",
+    "Gasto ejecutado real de cada centro."
+  ],
+  "faq": [
+    {
+      "q": "¿Cuánto cuesta el Centro Tormes+?",
+      "a": "1.487.618 € de inversión global según el reportaje de Salamanca24horas sobre su presentación en 2022; el Espacio de Innovación Tecnológica anexo se adjudicó por 955.158,86 €."
+    },
+    {
+      "q": "¿Cuánto invierte la Junta en el distrito tecnológico?",
+      "a": "25,7 millones de euros previstos, que incluyen la licitación de proyectos de 781.419 €. El Ayuntamiento aporta algo más de 11 millones."
+    },
+    {
+      "q": "¿Qué parte es fondos europeos?",
+      "a": "FEDER financia el 60 % de la Casa de la Juventud de Garrido (dentro de CoNEcta Salamanca) y 4,4 M€ de los 5,44 M€ de Ciudad del Talento. STEAMbrace recibe fondos de Horizon Europe."
+    }
+  ],
+  "fuentes": [
+    {
+      "t": "Salamanca24horas: El «Hexágono Tecnológico de Salamanca» (26/08/2026)",
+      "u": "https://www.salamanca24horas.com/local/hexagono-tecnologico-salamanca-centros-transformaran-ciudad-capital-talento-innovacion"
+    },
+    {
+      "t": "Ayuntamiento de Salamanca: inicia la construcción del Espacio de Innovación Tecnológica Tormes (fecha de la página: 22/09/2023)",
+      "u": "https://www.aytosalamanca.es/en/w/el-ayuntamiento-de-salamanca-inicia-la-construcci%C3%B3n-del-espacio-de-innovaci%C3%B3n-tecnol%C3%B3gica-tormes-para-potenciar-el-apoyo-a-aut%C3%B3nomos-en-sectores-emergentes-y-la-creaci%C3%B3n-de-oportunidades-de-empleo"
+    },
+    {
+      "t": "El Español (Invertia): De mercado mayorista a distrito tecnológico (12/02/2024)",
+      "u": "https://www.elespanol.com/invertia/disruptores/autonomias/castilla-leon/20240212/mercado-mayorista-distrito-tecnologico-jugada-urbanistica-refuerza-marca-salamanca-tech/831417113_0.html"
+    },
+    {
+      "t": "El Español: Licitadas las obras para transformar la Casa de la Juventud en el sexto centro tecnológico (05/06/2026)",
+      "u": "https://www.elespanol.com/castilla-y-leon/region/salamanca/20260605/licitadas-obras-transformar-casa-juventud-sexto-centro-tecnologico-salamanca/1003744275743_0.html"
+    },
+    {
+      "t": "El Español: La Casa de la Juventud de Garrido, sexto «pulmón» de Salamanca Tech (07/04/2026)",
+      "u": "https://www.elespanol.com/castilla-y-leon/region/salamanca/20260407/casa-juventud-garrido-sexto-pulmon-salamanca-tech-millones-euros-inversion/1003744197304_0.html"
+    },
+    {
+      "t": "El Debate: El nuevo distrito empresarial tecnológico de Salamanca está licitado por casi 800.000 euros (12/05/2026)",
+      "u": "https://www.eldebate.com/espana/castilla-y-leon/20260512/nuevo-distrito-empresarial-tecnologico-salamanca-esta-licitado-casi-800000-euros_416850_amp.html"
+    },
+    {
+      "t": "El Español: Salamanca e INCYDE, alianza para retener talento joven e impulsar el emprendimiento (27/04/2026)",
+      "u": "https://www.elespanol.com/castilla-y-leon/region/salamanca/20260427/salamanca-incyde-alianza-euros-retener-talento-joven-impulsar-emprendimiento/1003744222453_0.html"
+    }
+  ],
+  "slug": "financiacion-salamanca-tech",
+  "url_canonica": "https://opensalamanca.es/salamanca-tech/financiacion-salamanca-tech",
+  "actualizado": "2026-11-27",
+  "actualizado_texto": "27 de noviembre de 2026",
+  "estado_ficha": "datos con fuente verificados a 27/11/2026; lo no contrastado figura en «Qué no está verificado»",
+  "licencia": "CC BY 4.0",
+  "aviso": "Esta ficha recopila datos publicados por el Ayuntamiento de Salamanca, la Junta de Castilla y León y medios; no es una web oficial. Cuando dos fuentes se contradicen, se indica.",
+  "como_citar": "Open Salamanca (27 de noviembre de 2026). Financiación de Salamanca Tech: cuánto cuestan el Centro Tormes+, el distrito tecnológico y la red de centros. https://opensalamanca.es/salamanca-tech/financiacion-salamanca-tech. Licencia CC BY 4.0. Cita también la fuente primaria de cada dato.",
+  "relacionadas": [
+    {
+      "t": "Salamanca Tech",
+      "u": "/salamanca-tech"
+    },
+    {
+      "t": "Centro Tormes+",
+      "u": "/salamanca-tech/centro-tormes-plus"
+    },
+    {
+      "t": "Espacio de Innovación Tecnológica Tormes+",
+      "u": "/salamanca-tech/espacio-innovacion-tecnologica-tormes"
+    },
+    {
+      "t": "Distrito Tecnológico de Salamanca",
+      "u": "/salamanca-tech/distrito-tecnologico-salamanca"
+    },
+    {
+      "t": "Abioinnova",
+      "u": "/salamanca-tech/abioinnova"
+    },
+    {
+      "t": "Centro de Internet de las Cosas e Inteligencia Artificial",
+      "u": "/salamanca-tech/centro-internet-cosas-inteligencia-artificial"
+    },
+    {
+      "t": "Centro de Innovación Juvenil de Garrido",
+      "u": "/salamanca-tech/centro-innovacion-juvenil-garrido"
+    },
+    {
+      "t": "Centro Salamanca Ciudad del Talento",
+      "u": "/salamanca-tech/centro-ciudad-del-talento"
+    },
+    {
+      "t": "Cronología de Salamanca Tech",
+      "u": "/salamanca-tech/cronologia-salamanca-tech"
+    }
+  ]
+}

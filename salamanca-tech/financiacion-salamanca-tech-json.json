@@ -1,0 +1,5 @@
+---
+permalink: salamanca-tech/financiacion-salamanca-tech.json
+sitemap: false
+---
+{{ site.data.salamancatech["financiacion-salamanca-tech"] | jsonify }}

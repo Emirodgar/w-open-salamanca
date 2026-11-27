@@ -1,0 +1,334 @@
+{
+  "titulo": "Cronología de Salamanca Tech y el Centro Tormes+ (2022–2030)",
+  "descripcion": "Línea temporal fechada de Salamanca Tech: Tormes+ (2022), Centro de IoT e IA (2023), Espacio de Innovación (2025), Garrido, Ciudad del Talento, licitación del distrito tecnológico (2026) y previsiones hasta 2030",
+  "schema_type": "Dataset",
+  "nombre_habitual": "Cronología de Salamanca Tech",
+  "resumen": "Línea temporal de Salamanca Tech con 22 hitos fechados entre marzo de 2022 y 2030: presentación del Centro Tormes+ (09/03/2022), inauguración del Centro de IoT e IA (29/09/2023), compra de Mercasalamanca (diciembre de 2023), apertura del Espacio de Innovación Tecnológica (25/04/2025), licitación de los proyectos del Distrito Tecnológico (12/05/2026) y las previsiones de Garrido y Ciudad del Talento.",
+  "rapida": [
+    {
+      "k": "Cobertura",
+      "v": "Marzo de 2022 – 2030 (incluye previsiones, marcadas como tales)"
+    },
+    {
+      "k": "Última actualización de datos",
+      "v": "27/11/2026"
+    }
+  ],
+  "cifras": [],
+  "secciones": [],
+  "historia": [
+    {
+      "fecha": "09/03/2022",
+      "hito": "Presentación del Centro Tormes+ (CEFE)",
+      "detalle": "1.487.618 € de inversión, antigua Casa del Campo.",
+      "fuente": {
+        "t": "Salamanca24horas: El «Hexágono Tecnológico de Salamanca» (26/08/2026)",
+        "u": "https://www.salamanca24horas.com/local/hexagono-tecnologico-salamanca-centros-transformaran-ciudad-capital-talento-innovacion"
+      }
+    },
+    {
+      "fecha": "primavera 2023",
+      "hito": "Arranque de la estrategia Salamanca Tech con seis verticales",
+      "detalle": "Según El Español (dato no confirmado por fuente oficial).",
+      "fuente": {
+        "t": "El Español (Invertia): la lejanía del proyecto estrella no impide el desarrollo de la estrategia Salamanca Tech (21/12/2024)",
+        "u": "https://elespanol.com/invertia/disruptores/autonomias/castilla-leon/20241221/lejania-proyecto-estrella-no-impide-desarrollo-estrategia-avanza-marca-salamanca-tech/909159233_0.html"
+      }
+    },
+    {
+      "fecha": "22/09/2023",
+      "hito": "Inicio de obras del Espacio de Innovación Tecnológica Tormes",
+      "detalle": "Fecha visible de la nota municipal; adjudicación de 955.158,86 €.",
+      "fuente": {
+        "t": "Ayuntamiento de Salamanca: inicia la construcción del Espacio de Innovación Tecnológica Tormes (fecha de la página: 22/09/2023)",
+        "u": "https://www.aytosalamanca.es/en/w/el-ayuntamiento-de-salamanca-inicia-la-construcci%C3%B3n-del-espacio-de-innovaci%C3%B3n-tecnol%C3%B3gica-tormes-para-potenciar-el-apoyo-a-aut%C3%B3nomos-en-sectores-emergentes-y-la-creaci%C3%B3n-de-oportunidades-de-empleo"
+      }
+    },
+    {
+      "fecha": "29/09/2023",
+      "hito": "Inauguración del Centro de IoT e IA",
+      "detalle": "Gestionado por AIR Institute.",
+      "fuente": {
+        "t": "Salamanca24horas: El «Hexágono Tecnológico de Salamanca» (26/08/2026)",
+        "u": "https://www.salamanca24horas.com/local/hexagono-tecnologico-salamanca-centros-transformaran-ciudad-capital-talento-innovacion"
+      }
+    },
+    {
+      "fecha": "12/2023",
+      "hito": "Compra de la parcela de Mercasalamanca por el Ayuntamiento",
+      "detalle": "Importe estimado de 11 M€ (prensa).",
+      "fuente": {
+        "t": "El Español (Invertia): De mercado mayorista a distrito tecnológico (12/02/2024)",
+        "u": "https://www.elespanol.com/invertia/disruptores/autonomias/castilla-leon/20240212/mercado-mayorista-distrito-tecnologico-jugada-urbanistica-refuerza-marca-salamanca-tech/831417113_0.html"
+      }
+    },
+    {
+      "fecha": "02/2024",
+      "hito": "Convenio Ayuntamiento–AIR Institute",
+      "detalle": "150.000 €; vigencia inicial hasta 31/12/2024.",
+      "fuente": {
+        "t": "El Español (Invertia): De mercado mayorista a distrito tecnológico (12/02/2024)",
+        "u": "https://www.elespanol.com/invertia/disruptores/autonomias/castilla-leon/20240212/mercado-mayorista-distrito-tecnologico-jugada-urbanistica-refuerza-marca-salamanca-tech/831417113_0.html"
+      }
+    },
+    {
+      "fecha": "21/12/2024",
+      "hito": "Distrito Tecnológico aún en fase administrativa",
+      "detalle": "Despegue no previsto antes de 2027.",
+      "fuente": {
+        "t": "El Español (Invertia): la lejanía del proyecto estrella no impide el desarrollo de la estrategia Salamanca Tech (21/12/2024)",
+        "u": "https://elespanol.com/invertia/disruptores/autonomias/castilla-leon/20241221/lejania-proyecto-estrella-no-impide-desarrollo-estrategia-avanza-marca-salamanca-tech/909159233_0.html"
+      }
+    },
+    {
+      "fecha": "25/04/2025",
+      "hito": "Inauguración del Espacio de Innovación Tecnológica Tormes+",
+      "detalle": "Siete cursos gratuitos entre el 13/05 y el 03/06/2025.",
+      "fuente": {
+        "t": "SALAMANCArtv AL DÍA: Inaugurado el Espacio de Innovación Tecnológica Tormes+ (25/04/2025)",
+        "u": "https://salamancartvaldia.es/noticia/2025-04-25-inaugurado-el-espacio-de-innovacion-tecnologica-tormes-que-facilita-formacion-gratuita-367803"
+      }
+    },
+    {
+      "fecha": "01/2026",
+      "hito": "Adjudicación del Centro Ciudad del Talento",
+      "detalle": "Licitación de 3.390.325,06 €.",
+      "fuente": {
+        "t": "Salamanca24horas: El «Hexágono Tecnológico de Salamanca» (26/08/2026)",
+        "u": "https://www.salamanca24horas.com/local/hexagono-tecnologico-salamanca-centros-transformaran-ciudad-capital-talento-innovacion"
+      }
+    },
+    {
+      "fecha": "03/2026",
+      "hito": "Cumbre Salamanca Tech",
+      "detalle": "Cerca de 100 empresas y entidades; inauguran el alcalde y el rector.",
+      "fuente": {
+        "t": "El Español (Invertia): Salamanca cita a las empresas en la cumbre de la red de innovación tech (24/03/2026)",
+        "u": "https://www.elespanol.com/invertia/disruptores/autonomias/castilla-leon/20260324/salamanca-cita-empresas-cumbre-red-innovacion-tech/1003744181626_0.html"
+      }
+    },
+    {
+      "fecha": "07/04/2026",
+      "hito": "Presentación del Centro de Innovación Juvenil de Garrido",
+      "detalle": "2,3 M€; 60 % FEDER.",
+      "fuente": {
+        "t": "El Español: La Casa de la Juventud de Garrido, sexto «pulmón» de Salamanca Tech (07/04/2026)",
+        "u": "https://www.elespanol.com/castilla-y-leon/region/salamanca/20260407/casa-juventud-garrido-sexto-pulmon-salamanca-tech-millones-euros-inversion/1003744197304_0.html"
+      }
+    },
+    {
+      "fecha": "15/04/2026",
+      "hito": "Salamanca Tech Summit 2026",
+      "detalle": "Mañueco reitera el compromiso con el distrito; el rector anuncia nuevas bioincubadoras.",
+      "fuente": {
+        "t": "El Español: Mañueco promete crear 2.000 empleos tecnológicos al año (15/04/2026)",
+        "u": "https://www.elespanol.com/castilla-y-leon/region/salamanca/20260415/manueco-promete-crear-empleos-tecnologicos-ano-aumentar-inversiones-innovacion/1003744207502_0.html"
+      }
+    },
+    {
+      "fecha": "27/04/2026",
+      "hito": "Segundo convenio con la Fundación INCYDE",
+      "detalle": "Bolsa de becas de 500.000 €.",
+      "fuente": {
+        "t": "El Español: Salamanca e INCYDE, alianza para retener talento joven e impulsar el emprendimiento (27/04/2026)",
+        "u": "https://www.elespanol.com/castilla-y-leon/region/salamanca/20260427/salamanca-incyde-alianza-euros-retener-talento-joven-impulsar-emprendimiento/1003744222453_0.html"
+      }
+    },
+    {
+      "fecha": "12/05/2026",
+      "hito": "Licitación de proyectos del Distrito Tecnológico",
+      "detalle": "781.419 € (Somacyl, Junta).",
+      "fuente": {
+        "t": "El Debate: El nuevo distrito empresarial tecnológico de Salamanca está licitado por casi 800.000 euros (12/05/2026)",
+        "u": "https://www.eldebate.com/espana/castilla-y-leon/20260512/nuevo-distrito-empresarial-tecnologico-salamanca-esta-licitado-casi-800000-euros_416850_amp.html"
+      }
+    },
+    {
+      "fecha": "05/06/2026",
+      "hito": "Licitación de las obras de Garrido",
+      "detalle": "Casi 2,3 M€; un año de ejecución.",
+      "fuente": {
+        "t": "El Español: Licitadas las obras para transformar la Casa de la Juventud en el sexto centro tecnológico (05/06/2026)",
+        "u": "https://www.elespanol.com/castilla-y-leon/region/salamanca/20260605/licitadas-obras-transformar-casa-juventud-sexto-centro-tecnologico-salamanca/1003744275743_0.html"
+      }
+    },
+    {
+      "fecha": "26/08/2026",
+      "hito": "Reportaje «Hexágono Tecnológico de Salamanca»",
+      "detalle": "Seis centros entre 2022 y 2030.",
+      "fuente": {
+        "t": "Salamanca24horas: El «Hexágono Tecnológico de Salamanca» (26/08/2026)",
+        "u": "https://www.salamanca24horas.com/local/hexagono-tecnologico-salamanca-centros-transformaran-ciudad-capital-talento-innovacion"
+      }
+    },
+    {
+      "fecha": "28/08/2026",
+      "hito": "Tormes+ se incorpora a STEAMbrace (Horizon Europe)",
+      "detalle": "Campamentos Salamanca Tech.",
+      "fuente": {
+        "t": "SALAMANCArtv AL DÍA: El Centro Tormes+ se incorpora al proyecto europeo STEAMbrace (28/08/2026)",
+        "u": "https://salamancartvaldia.es/noticia/2026-08-28-el-centro-tormes-se-incorpora-al-proyecto-europeo-steambrace-para-impulsar-la-educacion-tecnologica-396538"
+      }
+    },
+    {
+      "fecha": "17/09/2026",
+      "hito": "Convocatoria abierta y permanente de Abioinnova",
+      "detalle": "Proyectos biosanitarios.",
+      "fuente": {
+        "t": "Sacyl investigación: Abioinnova publica convocatoria abierta permanente (17/09/2026)",
+        "u": "https://www.saludcastillayleon.es/investigacion/es/noticias/abioinnova-publica-convocatoria-abierta-permanente-incorpor"
+      }
+    },
+    {
+      "fecha": "Navidad 2026 (previsto)",
+      "hito": "Primer campamento STEAMbrace",
+      "detalle": "Grupo de 10 a 12 años.",
+      "fuente": {
+        "t": "SALAMANCArtv AL DÍA: El Centro Tormes+ se incorpora al proyecto europeo STEAMbrace (28/08/2026)",
+        "u": "https://salamancartvaldia.es/noticia/2026-08-28-el-centro-tormes-se-incorpora-al-proyecto-europeo-steambrace-para-impulsar-la-educacion-tecnologica-396538"
+      }
+    },
+    {
+      "fecha": "Último trimestre de 2026 (previsto)",
+      "hito": "Inicio de obras de Garrido",
+      "detalle": "Previsión municipal.",
+      "fuente": {
+        "t": "El Español: La Casa de la Juventud de Garrido, sexto «pulmón» de Salamanca Tech (07/04/2026)",
+        "u": "https://www.elespanol.com/castilla-y-leon/region/salamanca/20260407/casa-juventud-garrido-sexto-pulmon-salamanca-tech-millones-euros-inversion/1003744197304_0.html"
+      }
+    },
+    {
+      "fecha": "2027 (no confirmado)",
+      "hito": "Primeros edificios del Distrito Tecnológico (previsión de 2024)",
+      "detalle": "Calendario que no se había cumplido en mayo de 2026.",
+      "fuente": {
+        "t": "El Español (Invertia): la lejanía del proyecto estrella no impide el desarrollo de la estrategia Salamanca Tech (21/12/2024)",
+        "u": "https://elespanol.com/invertia/disruptores/autonomias/castilla-leon/20241221/lejania-proyecto-estrella-no-impide-desarrollo-estrategia-avanza-marca-salamanca-tech/909159233_0.html"
+      }
+    },
+    {
+      "fecha": "2030 (previsto)",
+      "hito": "Funcionamiento de Ciudad del Talento",
+      "detalle": "Plazo de obra de tres años y medio.",
+      "fuente": {
+        "t": "Salamanca24horas: El «Hexágono Tecnológico de Salamanca» (26/08/2026)",
+        "u": "https://www.salamanca24horas.com/local/hexagono-tecnologico-salamanca-centros-transformaran-ciudad-capital-talento-innovacion"
+      }
+    }
+  ],
+  "no_verificado": [
+    "Fechas aproximadas (mes o estación) proceden de la fecha de publicación del medio.",
+    "Las previsiones futuras no son compromisos oficiales fechados.",
+    "No se ha localizado la fecha del protocolo Junta–Ayuntamiento–USAL del distrito."
+  ],
+  "faq": [
+    {
+      "q": "¿Cuándo se inauguró el Centro Tormes+?",
+      "a": "Se presentó el 9 de marzo de 2022; el Espacio de Innovación Tecnológica Tormes+ (anexo) se inauguró el 25 de abril de 2025."
+    },
+    {
+      "q": "¿Cuándo estará listo el distrito tecnológico?",
+      "a": "No hay fecha oficial. En mayo de 2026 solo estaba licitada la redacción de proyectos y la parcela seguía en trámite urbanístico."
+    }
+  ],
+  "fuentes": [
+    {
+      "t": "Salamanca24horas: El «Hexágono Tecnológico de Salamanca» (26/08/2026)",
+      "u": "https://www.salamanca24horas.com/local/hexagono-tecnologico-salamanca-centros-transformaran-ciudad-capital-talento-innovacion"
+    },
+    {
+      "t": "El Español (Invertia): la lejanía del proyecto estrella no impide el desarrollo de la estrategia Salamanca Tech (21/12/2024)",
+      "u": "https://elespanol.com/invertia/disruptores/autonomias/castilla-leon/20241221/lejania-proyecto-estrella-no-impide-desarrollo-estrategia-avanza-marca-salamanca-tech/909159233_0.html"
+    },
+    {
+      "t": "El Español (Invertia): De mercado mayorista a distrito tecnológico (12/02/2024)",
+      "u": "https://www.elespanol.com/invertia/disruptores/autonomias/castilla-leon/20240212/mercado-mayorista-distrito-tecnologico-jugada-urbanistica-refuerza-marca-salamanca-tech/831417113_0.html"
+    },
+    {
+      "t": "El Español: La Casa de la Juventud de Garrido, sexto «pulmón» de Salamanca Tech (07/04/2026)",
+      "u": "https://www.elespanol.com/castilla-y-leon/region/salamanca/20260407/casa-juventud-garrido-sexto-pulmon-salamanca-tech-millones-euros-inversion/1003744197304_0.html"
+    },
+    {
+      "t": "El Español: Licitadas las obras para transformar la Casa de la Juventud en el sexto centro tecnológico (05/06/2026)",
+      "u": "https://www.elespanol.com/castilla-y-leon/region/salamanca/20260605/licitadas-obras-transformar-casa-juventud-sexto-centro-tecnologico-salamanca/1003744275743_0.html"
+    },
+    {
+      "t": "El Español: Mañueco promete crear 2.000 empleos tecnológicos al año (15/04/2026)",
+      "u": "https://www.elespanol.com/castilla-y-leon/region/salamanca/20260415/manueco-promete-crear-empleos-tecnologicos-ano-aumentar-inversiones-innovacion/1003744207502_0.html"
+    },
+    {
+      "t": "El Español (Invertia): Salamanca cita a las empresas en la cumbre de la red de innovación tech (24/03/2026)",
+      "u": "https://www.elespanol.com/invertia/disruptores/autonomias/castilla-leon/20260324/salamanca-cita-empresas-cumbre-red-innovacion-tech/1003744181626_0.html"
+    },
+    {
+      "t": "El Debate: El nuevo distrito empresarial tecnológico de Salamanca está licitado por casi 800.000 euros (12/05/2026)",
+      "u": "https://www.eldebate.com/espana/castilla-y-leon/20260512/nuevo-distrito-empresarial-tecnologico-salamanca-esta-licitado-casi-800000-euros_416850_amp.html"
+    },
+    {
+      "t": "Ayuntamiento de Salamanca: inicia la construcción del Espacio de Innovación Tecnológica Tormes (fecha de la página: 22/09/2023)",
+      "u": "https://www.aytosalamanca.es/en/w/el-ayuntamiento-de-salamanca-inicia-la-construcci%C3%B3n-del-espacio-de-innovaci%C3%B3n-tecnol%C3%B3gica-tormes-para-potenciar-el-apoyo-a-aut%C3%B3nomos-en-sectores-emergentes-y-la-creaci%C3%B3n-de-oportunidades-de-empleo"
+    },
+    {
+      "t": "SALAMANCArtv AL DÍA: Inaugurado el Espacio de Innovación Tecnológica Tormes+ (25/04/2025)",
+      "u": "https://salamancartvaldia.es/noticia/2025-04-25-inaugurado-el-espacio-de-innovacion-tecnologica-tormes-que-facilita-formacion-gratuita-367803"
+    },
+    {
+      "t": "El Español: Salamanca e INCYDE, alianza para retener talento joven e impulsar el emprendimiento (27/04/2026)",
+      "u": "https://www.elespanol.com/castilla-y-leon/region/salamanca/20260427/salamanca-incyde-alianza-euros-retener-talento-joven-impulsar-emprendimiento/1003744222453_0.html"
+    },
+    {
+      "t": "SALAMANCArtv AL DÍA: El Centro Tormes+ se incorpora al proyecto europeo STEAMbrace (28/08/2026)",
+      "u": "https://salamancartvaldia.es/noticia/2026-08-28-el-centro-tormes-se-incorpora-al-proyecto-europeo-steambrace-para-impulsar-la-educacion-tecnologica-396538"
+    },
+    {
+      "t": "Sacyl investigación: Abioinnova publica convocatoria abierta permanente (17/09/2026)",
+      "u": "https://www.saludcastillayleon.es/investigacion/es/noticias/abioinnova-publica-convocatoria-abierta-permanente-incorpor"
+    }
+  ],
+  "slug": "cronologia-salamanca-tech",
+  "url_canonica": "https://opensalamanca.es/salamanca-tech/cronologia-salamanca-tech",
+  "actualizado": "2026-11-27",
+  "actualizado_texto": "27 de noviembre de 2026",
+  "estado_ficha": "datos con fuente verificados a 27/11/2026; lo no contrastado figura en «Qué no está verificado»",
+  "licencia": "CC BY 4.0",
+  "aviso": "Esta ficha recopila datos publicados por el Ayuntamiento de Salamanca, la Junta de Castilla y León y medios; no es una web oficial. Cuando dos fuentes se contradicen, se indica.",
+  "como_citar": "Open Salamanca (27 de noviembre de 2026). Cronología de Salamanca Tech y el Centro Tormes+ (2022–2030). https://opensalamanca.es/salamanca-tech/cronologia-salamanca-tech. Licencia CC BY 4.0. Cita también la fuente primaria de cada dato.",
+  "relacionadas": [
+    {
+      "t": "Salamanca Tech",
+      "u": "/salamanca-tech"
+    },
+    {
+      "t": "Centro Tormes+",
+      "u": "/salamanca-tech/centro-tormes-plus"
+    },
+    {
+      "t": "Espacio de Innovación Tecnológica Tormes+",
+      "u": "/salamanca-tech/espacio-innovacion-tecnologica-tormes"
+    },
+    {
+      "t": "Distrito Tecnológico de Salamanca",
+      "u": "/salamanca-tech/distrito-tecnologico-salamanca"
+    },
+    {
+      "t": "Abioinnova",
+      "u": "/salamanca-tech/abioinnova"
+    },
+    {
+      "t": "Centro de Internet de las Cosas e Inteligencia Artificial",
+      "u": "/salamanca-tech/centro-internet-cosas-inteligencia-artificial"
+    },
+    {
+      "t": "Centro de Innovación Juvenil de Garrido",
+      "u": "/salamanca-tech/centro-innovacion-juvenil-garrido"
+    },
+    {
+      "t": "Centro Salamanca Ciudad del Talento",
+      "u": "/salamanca-tech/centro-ciudad-del-talento"
+    },
+    {
+      "t": "Financiación de Salamanca Tech",
+      "u": "/salamanca-tech/financiacion-salamanca-tech"
+    }
+  ]
+}

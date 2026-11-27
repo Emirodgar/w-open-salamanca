@@ -1,0 +1,5 @@
+---
+permalink: salamanca-tech/centro-ciudad-del-talento.json
+sitemap: false
+---
+{{ site.data.salamancatech["centro-ciudad-del-talento"] | jsonify }}

@@ -1,0 +1,5 @@
+---
+permalink: salamanca-tech/abioinnova.json
+sitemap: false
+---
+{{ site.data.salamancatech["abioinnova"] | jsonify }}

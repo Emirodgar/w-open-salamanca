@@ -1,0 +1,5 @@
+---
+permalink: salamanca-tech/centro-innovacion-juvenil-garrido.json
+sitemap: false
+---
+{{ site.data.salamancatech["centro-innovacion-juvenil-garrido"] | jsonify }}

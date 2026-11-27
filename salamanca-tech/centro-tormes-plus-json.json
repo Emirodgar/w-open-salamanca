@@ -1,0 +1,5 @@
+---
+permalink: salamanca-tech/centro-tormes-plus.json
+sitemap: false
+---
+{{ site.data.salamancatech["centro-tormes-plus"] | jsonify }}

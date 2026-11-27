@@ -1,0 +1,118 @@
+---
+layout: default
+---
+{%- comment -%}
+  Ficha de Salamanca Tech / Centro Tormes+ / Distrito Tecnologico.
+  Fuente unica: _data/salamancatech/<slug>.json (page.slug). Generado por scripts/salamancatech/build_salamancatech.py.
+  Solo datos con fuente; lo no contrastado va en "no_verificado".
+{%- endcomment -%}
+{%- assign e = site.data.salamancatech[page.slug] -%}
+{%- assign canon = e.url_canonica -%}
+<style>
+  .ficha-st .ans{background:#eef6ff;border:1px solid #c9dcf3;padding:14px 16px;border-radius:6px;font-size:1.08em;margin:0 0 1.2em}
+  .ficha-st .warn{background:#fff8e6;border:1px solid #ecd9a6;padding:10px 14px;border-radius:6px;font-size:.95em}
+  .ficha-st dl.rapida{display:grid;grid-template-columns:minmax(150px,240px) 1fr;gap:6px 16px;margin:1em 0}
+  .ficha-st dl.rapida dt{font-weight:700}.ficha-st dl.rapida dd{margin:0}
+  .ficha-st .fu{font-size:.85em;color:#5b6778;margin:.2em 0 0}
+  .ficha-st .tabla{overflow-x:auto}
+  .ficha-st details{border:1px solid #d9dee6;border-radius:6px;padding:8px 12px;margin:8px 0}
+  .ficha-st summary{font-weight:700;cursor:pointer}
+  @media (max-width:600px){.ficha-st dl.rapida{grid-template-columns:1fr}}
+</style>
+
+<section class="featured dataset ficha-st" id="datos">
+  <div class="container">
+    <div class="section-header">
+      <h1 class="section-title">{{ page.title }}</h1>
+      <p class="section-description">{{ page.description }}</p>
+    </div>
+    <div id="section-content">
+      <p class="ans">{{ e.resumen }}</p>
+      <p class="fu">Ficha actualizada el {{ e.actualizado_texto }} ({{ e.estado_ficha }}). {{ e.aviso }} Datos descargables: <a href="/salamanca-tech/{{ page.slug }}.json">{{ page.slug }}.json</a> ({{ e.licencia }}).</p>
+
+      <h2>Ficha rápida</h2>
+      <dl class="rapida">
+        {%- for r in e.rapida %}<dt>{{ r.k }}</dt><dd>{{ r.v }}</dd>{%- endfor %}
+      </dl>
+
+      {%- if e.cifras.size > 0 %}
+      <h2>Cifras con su fuente</h2>
+      <div class="tabla"><table border="1" cellpadding="5" cellspacing="0">
+        <thead><tr><th>Concepto</th><th>Dato</th><th>Fuente</th></tr></thead>
+        <tbody>
+        {%- for c in e.cifras %}
+          <tr><td>{{ c.concepto }}</td><td>{{ c.valor }}</td><td><a href="{{ c.fuente.u }}" rel="nofollow noopener">{{ c.fuente.t }}</a></td></tr>
+        {%- endfor %}
+        </tbody>
+      </table></div>
+      <p class="fu">{{ e.nota_cifras }}</p>
+      {%- endif %}
+
+      {%- for s in e.secciones %}
+      <h2>{{ s.h }}</h2>
+      {%- for p in s.p %}<p>{{ p }}</p>{%- endfor %}
+      {%- if s.items %}<ul>{%- for i in s.items %}<li>{{ i }}</li>{%- endfor %}</ul>{%- endif %}
+      {%- endfor %}
+
+      {%- if e.historia.size > 0 %}
+      <h2>Cronología y hitos</h2>
+      <ol>
+        {%- for h in e.historia %}
+        <li><b>{{ h.fecha }} · {{ h.hito }}.</b> {{ h.detalle }} <span class="fu">Fuente: <a href="{{ h.fuente.u }}" rel="nofollow noopener">{{ h.fuente.t }}</a></span></li>
+        {%- endfor %}
+      </ol>
+      {%- endif %}
+
+      <h2>Qué no está verificado</h2>
+      <div class="warn">
+        <ul>{%- for n in e.no_verificado %}<li>{{ n }}</li>{%- endfor %}</ul>
+        <p>¿Tienes un dato oficial que corrija o amplíe esta ficha? Escríbenos desde la <a href="/contacto">página de contacto</a> y lo revisamos con tu fuente.</p>
+      </div>
+
+      <h2>Preguntas frecuentes</h2>
+      {%- for f in e.faq %}
+      <details open><summary>{{ f.q }}</summary><p>{{ f.a }}</p></details>
+      {%- endfor %}
+
+      <h2>Fichas relacionadas</h2>
+      <ul>{%- for r in e.relacionadas %}<li><a href="{{ r.u }}">{{ r.t }}</a></li>{%- endfor %}</ul>
+
+      <h2>Fuentes</h2>
+      <ul>{%- for s in e.fuentes %}<li><a href="{{ s.u }}" rel="nofollow noopener">{{ s.t }}</a></li>{%- endfor %}</ul>
+
+      <h2>Cómo citar esta ficha</h2>
+      <p>{{ e.como_citar }}</p>
+    </div>
+    {% include categories.html %}
+  </div>
+</section>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": {{ e.schema_type | jsonify }},
+      "@id": {{ canon | append: "#entidad" | jsonify }},
+      "name": {{ e.nombre_habitual | jsonify }},
+      "description": {{ e.resumen | jsonify }},
+      "url": {{ canon | jsonify }},
+      {%- if e.schema_type == "Dataset" %}
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "dateModified": {{ e.actualizado | jsonify }},
+      "creator": { "@type": "Organization", "name": "Open Salamanca", "url": "https://opensalamanca.es" },
+      {%- endif %}
+      "mainEntityOfPage": { "@id": {{ canon | jsonify }} },
+      "areaServed": { "@type": "City", "name": "Salamanca" }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {%- for f in e.faq %}
+        { "@type": "Question", "name": {{ f.q | jsonify }}, "acceptedAnswer": { "@type": "Answer", "text": {{ f.a | jsonify }} } }{% unless forloop.last %},{% endunless %}
+        {%- endfor %}
+      ]
+    }
+  ]
+}
+</script>

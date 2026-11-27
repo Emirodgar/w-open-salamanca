@@ -1,0 +1,285 @@
+{
+  "titulo": "Distrito Tecnológico de Salamanca (antiguo Mercasalamanca): edificios, inversión, estado y calendario",
+  "descripcion": "Ficha del Distrito Tecnológico de Salamanca: parcela M4 del sector Sendero de las Cregas, edificio de la Junta (8.800 m²) y de la USAL (5.800 m²), 25,7 millones de la Junta, licitación de proyectos de 781.419 € y contradicciones entre fuentes",
+  "schema_type": "Place",
+  "nombre_habitual": "Distrito Tecnológico de Salamanca",
+  "resumen": "El Distrito Tecnológico de Salamanca es un proyecto de la Junta de Castilla y León, el Ayuntamiento y la Universidad de Salamanca en los terrenos del antiguo Mercasalamanca (sector SUNC 52 «Sendero de las Cregas», parcela M4, calle Julita Ramos). Prevé dos edificios: uno tecnológico-empresarial de la Junta (unos 8.800 m² construidos) y otro polivalente de la USAL (unos 5.800 m²). La Junta cifra su inversión en 25,7 millones de euros y el Ayuntamiento aporta algo más de 11 millones. En mayo de 2026 solo se había licitado la redacción de proyectos (781.419 euros, vía Somacyl) y la parcela seguía en trámite urbanístico: no hay obras ni fechas oficiales de apertura. No es el Centro Tormes+.",
+  "rapida": [
+    {
+      "k": "Qué es",
+      "v": "Proyecto futuro de distrito tecnológico-empresarial con formación universitaria, investigación y empresas"
+    },
+    {
+      "k": "Impulsores",
+      "v": "Junta de Castilla y León, Ayuntamiento de Salamanca y Universidad de Salamanca (protocolo de colaboración; la prensa menciona también a la Diputación, ver contradicciones)"
+    },
+    {
+      "k": "Ubicación",
+      "v": "Terrenos del antiguo Mercasalamanca; ámbito SUNC 52 «Sendero de las Cregas»; parcela M4; calle Julita Ramos (Salamanca)"
+    },
+    {
+      "k": "Fase 1",
+      "v": "Edificio Tecnológico-Empresarial de la Junta: unos 8.800 m² construidos (emprendimiento, transferencia tecnológica, formación e investigación, estudio y biblioteca, escuela de negocio, salas, despachos, restauración)"
+    },
+    {
+      "k": "Fase 2",
+      "v": "Edificio Polivalente de la USAL: unos 5.800 m² construidos (docencia, aulas, laboratorios, administración)"
+    },
+    {
+      "k": "Inversión prevista",
+      "v": "Junta: 25,7 M€ (incluye la licitación de proyectos); Ayuntamiento: algo más de 11 M€"
+    },
+    {
+      "k": "Último hito",
+      "v": "12/05/2026: licitación de redacción de anteproyecto, proyecto básico y de ejecución y asistencia a la dirección de obra (781.419 €), por la Consejería de Medio Ambiente, Vivienda y Ordenación del Territorio a través de Somacyl"
+    },
+    {
+      "k": "Estado urbanístico",
+      "v": "En proceso urbanístico para su uso como equipamiento público (mayo de 2026)"
+    },
+    {
+      "k": "Estado de obra",
+      "v": "Sin obras ni fecha oficial de inicio o apertura en las fuentes consultadas"
+    }
+  ],
+  "cifras": [
+    {
+      "concepto": "Inversión prevista de la Junta",
+      "valor": "25,7 millones de euros (partida que engloba los 781.419 € de la licitación; la fuente no aclara qué cubre el resto)",
+      "fuente": {
+        "t": "El Debate: El nuevo distrito empresarial tecnológico de Salamanca está licitado por casi 800.000 euros (12/05/2026)",
+        "u": "https://www.eldebate.com/espana/castilla-y-leon/20260512/nuevo-distrito-empresarial-tecnologico-salamanca-esta-licitado-casi-800000-euros_416850_amp.html"
+      }
+    },
+    {
+      "concepto": "Aportación del Ayuntamiento",
+      "valor": "algo más de 11 millones de euros",
+      "fuente": {
+        "t": "El Debate: El nuevo distrito empresarial tecnológico de Salamanca está licitado por casi 800.000 euros (12/05/2026)",
+        "u": "https://www.eldebate.com/espana/castilla-y-leon/20260512/nuevo-distrito-empresarial-tecnologico-salamanca-esta-licitado-casi-800000-euros_416850_amp.html"
+      }
+    },
+    {
+      "concepto": "Licitación de proyectos y dirección de obra",
+      "valor": "781.419 € (el cuerpo del texto dice «superior a 780.000 euros»)",
+      "fuente": {
+        "t": "El Debate: El nuevo distrito empresarial tecnológico de Salamanca está licitado por casi 800.000 euros (12/05/2026)",
+        "u": "https://www.eldebate.com/espana/castilla-y-leon/20260512/nuevo-distrito-empresarial-tecnologico-salamanca-esta-licitado-casi-800000-euros_416850_amp.html"
+      }
+    },
+    {
+      "concepto": "Edificio de la Junta (fase 1)",
+      "valor": "unos 8.800 m² construidos",
+      "fuente": {
+        "t": "El Debate: El nuevo distrito empresarial tecnológico de Salamanca está licitado por casi 800.000 euros (12/05/2026)",
+        "u": "https://www.eldebate.com/espana/castilla-y-leon/20260512/nuevo-distrito-empresarial-tecnologico-salamanca-esta-licitado-casi-800000-euros_416850_amp.html"
+      }
+    },
+    {
+      "concepto": "Edificio de la USAL (fase 2)",
+      "valor": "unos 5.800 m² construidos",
+      "fuente": {
+        "t": "El Debate: El nuevo distrito empresarial tecnológico de Salamanca está licitado por casi 800.000 euros (12/05/2026)",
+        "u": "https://www.eldebate.com/espana/castilla-y-leon/20260512/nuevo-distrito-empresarial-tecnologico-salamanca-esta-licitado-casi-800000-euros_416850_amp.html"
+      }
+    },
+    {
+      "concepto": "Superficie construida conjunta (cálculo de Open Salamanca)",
+      "valor": "unos 14.600 m² (8.800 + 5.800)",
+      "fuente": {
+        "t": "El Debate: El nuevo distrito empresarial tecnológico de Salamanca está licitado por casi 800.000 euros (12/05/2026)",
+        "u": "https://www.eldebate.com/espana/castilla-y-leon/20260512/nuevo-distrito-empresarial-tecnologico-salamanca-esta-licitado-casi-800000-euros_416850_amp.html"
+      }
+    },
+    {
+      "concepto": "Peso de la licitación sobre la inversión de la Junta (cálculo de Open Salamanca)",
+      "valor": "≈3 % (781.419 / 25.700.000)",
+      "fuente": {
+        "t": "El Debate: El nuevo distrito empresarial tecnológico de Salamanca está licitado por casi 800.000 euros (12/05/2026)",
+        "u": "https://www.eldebate.com/espana/castilla-y-leon/20260512/nuevo-distrito-empresarial-tecnologico-salamanca-esta-licitado-casi-800000-euros_416850_amp.html"
+      }
+    },
+    {
+      "concepto": "Explanada comprada por el Ayuntamiento",
+      "valor": "más de 6.000 m² (dentro del sector SUNC-52); compra formalizada en diciembre de 2023, estimada por el medio en 11 millones de euros (no es un importe oficial)",
+      "fuente": {
+        "t": "El Español (Invertia): De mercado mayorista a distrito tecnológico (12/02/2024)",
+        "u": "https://www.elespanol.com/invertia/disruptores/autonomias/castilla-leon/20240212/mercado-mayorista-distrito-tecnologico-jugada-urbanistica-refuerza-marca-salamanca-tech/831417113_0.html"
+      }
+    }
+  ],
+  "nota_cifras": "Los 25,7 M€ y los «más de 11 M€» son cifras de prensa de una sola fuente (El Debate, 12/05/2026); no se ha localizado la nota oficial de la Junta. Las superficies proceden de un bloque relacionado del propio artículo.",
+  "secciones": [
+    {
+      "h": "Zonas comunes previstas",
+      "p": [
+        "Recepción, aparcamientos, salón de actos, restauración, servicios para empresas e instalaciones, en plantas baja, semisótano o sótano; aparcamiento de bicicletas y posibles ampliaciones futuras. Se describe una edificación «permeable e integrada con el entorno» con zonas verdes próximas."
+      ]
+    },
+    {
+      "h": "Por qué se llama «antiguo Mercasalamanca»",
+      "p": [
+        "La explanada formaba parte de la parcela del mercado mayorista (Mercasalamanca), que el Ayuntamiento compró en diciembre de 2023. El sector SUNC-52 «Sendero de las Cregas» estaba clasificado como residencial en el PGOU, de modo que hace falta un cambio a usos terciarios y de equipamiento. El concejal de Hacienda, Fernando Rodríguez, calificó el proceso de «farragoso»."
+      ]
+    },
+    {
+      "h": "Contradicciones entre fuentes",
+      "items": [
+        "Protocolo: El Debate habla de un «segundo protocolo» con Ayuntamiento, Diputación y USAL, pero cita Junta, Ayuntamiento y Universidad en la entradilla; El Español (2024) cita Junta, Diputación, Ayuntamiento y Universidad; El Español (2026) habla de «tres instituciones» y de un protocolo iniciado «hace cuatro años».",
+        "Usos: El Español (2024) decía que el distrito incluiría viviendas; en 2026 se describe como equipamiento público sin viviendas.",
+        "Calendario: en diciembre de 2024 se esperaba la urbanización en 2026 y los primeros edificios en 2027; en mayo de 2026 solo se había licitado la redacción de proyectos. Ese calendario no se cumplió o no es fiable.",
+        "Nombres de edificios: algunas fuentes hablan de «I-Futuro» (Junta) y «USAL I-Quantum»; las páginas leídas usan «Tecnológico-Empresarial» y «Polivalente»."
+      ]
+    }
+  ],
+  "historia": [
+    {
+      "fecha": "12/2023",
+      "hito": "El Ayuntamiento formaliza la compra de la parcela de Mercasalamanca",
+      "detalle": "Importe estimado por el medio en 11 millones; no oficial.",
+      "fuente": {
+        "t": "El Español (Invertia): De mercado mayorista a distrito tecnológico (12/02/2024)",
+        "u": "https://www.elespanol.com/invertia/disruptores/autonomias/castilla-leon/20240212/mercado-mayorista-distrito-tecnologico-jugada-urbanistica-refuerza-marca-salamanca-tech/831417113_0.html"
+      }
+    },
+    {
+      "fecha": "02/2024",
+      "hito": "Convenio Ayuntamiento–AIR Institute que incluye el Distrito Tecnológico",
+      "detalle": "Aportación municipal de 150.000 € y vigencia inicial hasta 31/12/2024; firman Carlos García Carbayo y Juan Manuel Corchado.",
+      "fuente": {
+        "t": "El Español (Invertia): De mercado mayorista a distrito tecnológico (12/02/2024)",
+        "u": "https://www.elespanol.com/invertia/disruptores/autonomias/castilla-leon/20240212/mercado-mayorista-distrito-tecnologico-jugada-urbanistica-refuerza-marca-salamanca-tech/831417113_0.html"
+      }
+    },
+    {
+      "fecha": "21/12/2024",
+      "hito": "El distrito sigue en fase administrativa",
+      "detalle": "Despegue no previsto «al menos hasta 2027» según El Español.",
+      "fuente": {
+        "t": "El Español (Invertia): la lejanía del proyecto estrella no impide el desarrollo de la estrategia Salamanca Tech (21/12/2024)",
+        "u": "https://elespanol.com/invertia/disruptores/autonomias/castilla-leon/20241221/lejania-proyecto-estrella-no-impide-desarrollo-estrategia-avanza-marca-salamanca-tech/909159233_0.html"
+      }
+    },
+    {
+      "fecha": "15/04/2026",
+      "hito": "Compromiso conjunto Junta–Ayuntamiento–USAL reiterado",
+      "detalle": "En el Salamanca Tech Summit, el presidente de la Junta en funciones lo describe como un «amplio espacio urbano con instalaciones punteras».",
+      "fuente": {
+        "t": "El Español: Mañueco promete crear 2.000 empleos tecnológicos al año (15/04/2026)",
+        "u": "https://www.elespanol.com/castilla-y-leon/region/salamanca/20260415/manueco-promete-crear-empleos-tecnologicos-ano-aumentar-inversiones-innovacion/1003744207502_0.html"
+      }
+    },
+    {
+      "fecha": "12/05/2026",
+      "hito": "Licitación de proyectos y asistencia a dirección de obra",
+      "detalle": "781.419 € por Somacyl en la Plataforma de Contratación del Estado.",
+      "fuente": {
+        "t": "El Debate: El nuevo distrito empresarial tecnológico de Salamanca está licitado por casi 800.000 euros (12/05/2026)",
+        "u": "https://www.eldebate.com/espana/castilla-y-leon/20260512/nuevo-distrito-empresarial-tecnologico-salamanca-esta-licitado-casi-800000-euros_416850_amp.html"
+      }
+    }
+  ],
+  "no_verificado": [
+    "Fecha de firma, texto y partes exactas del protocolo (en prensa: noviembre o diciembre de 2025 según algunas búsquedas): no se ha localizado un documento oficial.",
+    "Superficie de la parcela M4 y edificabilidad: no figuran.",
+    "Presupuesto de ejecución de las obras de los edificios: no figura; solo la licitación de proyectos, la inversión prevista de la Junta y la aportación municipal.",
+    "Qué cubren exactamente los 25,7 M€ y los más de 11 M€ (compra del suelo, urbanización, edificios).",
+    "Fecha de inicio de obras, de urbanización o de apertura: ninguna fuente de 2026 la da.",
+    "Existencia de viviendas, bioincubadora o centro tecnológico propio dentro del distrito: solo aparecen en la descripción de 2024.",
+    "La web oficial de Salamanca Tech lo describe como «en desarrollo», sin cifras, plazos ni presupuesto."
+  ],
+  "faq": [
+    {
+      "q": "¿Qué es el Distrito Tecnológico de Salamanca?",
+      "a": "Un proyecto de la Junta, el Ayuntamiento y la USAL para crear un espacio con formación universitaria, investigación y empresas en los terrenos del antiguo Mercasalamanca. Constará de un edificio tecnológico-empresarial de la Junta (unos 8.800 m²) y otro polivalente de la USAL (unos 5.800 m²)."
+    },
+    {
+      "q": "¿Dónde está el Distrito Tecnológico?",
+      "a": "En la parcela M4 del sector SUNC 52 «Sendero de las Cregas», en la calle Julita Ramos, sobre los terrenos del antiguo mercado mayorista Mercasalamanca."
+    },
+    {
+      "q": "¿Cuánto cuesta el Distrito Tecnológico?",
+      "a": "La Junta prevé invertir 25,7 millones de euros y el Ayuntamiento aporta algo más de 11 millones. En mayo de 2026 solo estaba licitada la redacción de proyectos y la dirección de obra por 781.419 €. No hay un presupuesto de obra publicado."
+    },
+    {
+      "q": "¿Cuándo se abrirá el Distrito Tecnológico?",
+      "a": "No hay fecha oficial. En diciembre de 2024 se hablaba de un despegue no antes de 2027, y en mayo de 2026 la parcela seguía en trámite urbanístico y sin obras."
+    },
+    {
+      "q": "¿Qué relación tiene con Salamanca Tech y Tormes+?",
+      "a": "Forma parte de la estrategia Salamanca Tech como proyecto en desarrollo, pero es independiente del Centro Tormes+, que es un centro municipal ya abierto desde 2022 en la avenida de La Salle."
+    },
+    {
+      "q": "¿Quién construye el distrito?",
+      "a": "La licitación de proyectos corresponde a la Consejería de Medio Ambiente, Vivienda y Ordenación del Territorio de la Junta a través de Somacyl. El edificio de la fase 2 corresponde a la Universidad de Salamanca."
+    }
+  ],
+  "fuentes": [
+    {
+      "t": "El Debate: El nuevo distrito empresarial tecnológico de Salamanca está licitado por casi 800.000 euros (12/05/2026)",
+      "u": "https://www.eldebate.com/espana/castilla-y-leon/20260512/nuevo-distrito-empresarial-tecnologico-salamanca-esta-licitado-casi-800000-euros_416850_amp.html"
+    },
+    {
+      "t": "El Español (Invertia): De mercado mayorista a distrito tecnológico (12/02/2024)",
+      "u": "https://www.elespanol.com/invertia/disruptores/autonomias/castilla-leon/20240212/mercado-mayorista-distrito-tecnologico-jugada-urbanistica-refuerza-marca-salamanca-tech/831417113_0.html"
+    },
+    {
+      "t": "El Español (Invertia): la lejanía del proyecto estrella no impide el desarrollo de la estrategia Salamanca Tech (21/12/2024)",
+      "u": "https://elespanol.com/invertia/disruptores/autonomias/castilla-leon/20241221/lejania-proyecto-estrella-no-impide-desarrollo-estrategia-avanza-marca-salamanca-tech/909159233_0.html"
+    },
+    {
+      "t": "El Español: Mañueco promete crear 2.000 empleos tecnológicos al año (15/04/2026)",
+      "u": "https://www.elespanol.com/castilla-y-leon/region/salamanca/20260415/manueco-promete-crear-empleos-tecnologicos-ano-aumentar-inversiones-innovacion/1003744207502_0.html"
+    },
+    {
+      "t": "Salamanca Tech: ¿Qué es Salamanca Tech? (web oficial, sin fecha)",
+      "u": "https://salamancatech.es/que-es-salamanca-tech/"
+    }
+  ],
+  "slug": "distrito-tecnologico-salamanca",
+  "url_canonica": "https://opensalamanca.es/salamanca-tech/distrito-tecnologico-salamanca",
+  "actualizado": "2026-11-27",
+  "actualizado_texto": "27 de noviembre de 2026",
+  "estado_ficha": "datos con fuente verificados a 27/11/2026; lo no contrastado figura en «Qué no está verificado»",
+  "licencia": "CC BY 4.0",
+  "aviso": "Esta ficha recopila datos publicados por el Ayuntamiento de Salamanca, la Junta de Castilla y León y medios; no es una web oficial. Cuando dos fuentes se contradicen, se indica.",
+  "como_citar": "Open Salamanca (27 de noviembre de 2026). Distrito Tecnológico de Salamanca (antiguo Mercasalamanca): edificios, inversión, estado y calendario. https://opensalamanca.es/salamanca-tech/distrito-tecnologico-salamanca. Licencia CC BY 4.0. Cita también la fuente primaria de cada dato.",
+  "relacionadas": [
+    {
+      "t": "Salamanca Tech",
+      "u": "/salamanca-tech"
+    },
+    {
+      "t": "Centro Tormes+",
+      "u": "/salamanca-tech/centro-tormes-plus"
+    },
+    {
+      "t": "Espacio de Innovación Tecnológica Tormes+",
+      "u": "/salamanca-tech/espacio-innovacion-tecnologica-tormes"
+    },
+    {
+      "t": "Abioinnova",
+      "u": "/salamanca-tech/abioinnova"
+    },
+    {
+      "t": "Centro de Internet de las Cosas e Inteligencia Artificial",
+      "u": "/salamanca-tech/centro-internet-cosas-inteligencia-artificial"
+    },
+    {
+      "t": "Centro de Innovación Juvenil de Garrido",
+      "u": "/salamanca-tech/centro-innovacion-juvenil-garrido"
+    },
+    {
+      "t": "Centro Salamanca Ciudad del Talento",
+      "u": "/salamanca-tech/centro-ciudad-del-talento"
+    },
+    {
+      "t": "Financiación de Salamanca Tech",
+      "u": "/salamanca-tech/financiacion-salamanca-tech"
+    },
+    {
+      "t": "Cronología de Salamanca Tech",
+      "u": "/salamanca-tech/cronologia-salamanca-tech"
+    }
+  ]
+}
