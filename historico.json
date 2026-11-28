@@ -878,6 +878,63 @@
         "Son un paso necesario, pero deben ir acompañadas de negociación.": 1
       },
       "total_votos": 6
+    },
+    {
+      "id": "inundaciones-colegio-ciudad-rodrigo-2026",
+      "pregunta": "Ante las recientes inundaciones en un colegio de Ciudad Rodrigo, ¿cree que las autoridades locales deberían implementar medidas preventivas más robustas para proteger las infraestructuras educativas?",
+      "opciones": [
+        "Sí, es fundamental garantizar la seguridad de los centros escolares.",
+        "No, son eventos puntuales y difíciles de prevenir.",
+        "Depende de la causa de las inundaciones y la viabilidad de las medidas.",
+        "No tengo suficiente información."
+      ],
+      "basado_en": "actualidad.json",
+      "fecha_creacion": "2026-10-07",
+      "fecha_archivado": "2026-11-28",
+      "resultados": {
+        "No, son eventos puntuales y difíciles de prevenir.": 6,
+        "Depende de la causa de las inundaciones y la viabilidad de las medidas.": 4
+      },
+      "total_votos": 10
+    },
+    {
+      "id": "rodaje-netflix-salamanca-2026",
+      "pregunta": "La provincia de Salamanca ha acogido el rodaje de una serie alemana de Netflix en localidades como Candelario y La Alberca. ¿Cree que este tipo de producciones audiovisuales benefician al turismo y la economía local?",
+      "opciones": [
+        "Sí, atraen visitantes y visibilidad",
+        "No, el impacto es limitado y temporal",
+        "Depende de la promoción posterior",
+        "No tengo suficiente información"
+      ],
+      "basado_en": "actualidad.json",
+      "fecha_creacion": "2026-10-29",
+      "fecha_archivado": "2026-11-28",
+      "resultados": {
+        "No, el impacto es limitado y temporal": 2,
+        "Sí, atraen visitantes y visibilidad": 2,
+        "Depende de la promoción posterior": 1,
+        "No tengo suficiente información": 1
+      },
+      "total_votos": 6
+    },
+    {
+      "id": "legado-charo-diego-2026",
+      "pregunta": "El fallecimiento de Charo Diego, primera mujer en presidir la Diputación de Salamanca, ha generado un sentido adiós. ¿Cree que su legado tendrá un impacto duradero en la política provincial?",
+      "opciones": [
+        "Sí, su figura es un referente",
+        "No, su impacto será limitado",
+        "Es pronto para valorarlo",
+        "No tengo suficiente información"
+      ],
+      "basado_en": "actualidad.json",
+      "fecha_creacion": "2026-11-03",
+      "fecha_archivado": "2026-11-28",
+      "resultados": {
+        "No, su impacto será limitado": 2,
+        "Es pronto para valorarlo": 1,
+        "Sí, su figura es un referente": 3
+      },
+      "total_votos": 6
     }
   ]
 }

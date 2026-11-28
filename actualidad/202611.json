@@ -1,7 +1,7 @@
 {
   "mes": "2026-11",
   "titulo_mes": "Noviembre 2026",
-  "resumen_mes": "Noviembre ha estado marcado por el fallecimiento de Charo Diego y la detección del primer caso de lengua azul. La preocupación por un error en la identificación de pacientes se sumó a la tensión generada por la visita de Santiago Abascal. El final de mes ha estado dominado por las multitudinarias conmemoraciones del 25N contra la violencia machista. En el ámbito deportivo, Unionistas de Salamanca ha puesto fin a la etapa de Javi Medina, mientras que Perfumerías Avenida ha logrado una destacada victoria en Europa. La Universidad también rindió homenaje a la Reina Sofía y se ha celebrado la apertura de una importante tienda en la capital, así como el tradicional encendido de las luces de Navidad.",
+  "resumen_mes": "Noviembre ha estado marcado por el fallecimiento de Charo Diego y la detección del primer caso de lengua azul. El final de mes ha estado dominado por las multitudinarias conmemoraciones del 25N contra la violencia machista. En el ámbito deportivo, Unionistas de Salamanca ha dado la bienvenida a Óscar Gilsanz como nuevo entrenador, mientras que Perfumerías Avenida ha logrado una destacada victoria en Europa. La Universidad también rindió homenaje a la Reina Sofía y se ha celebrado la apertura de una importante tienda en la capital, así como el tradicional encendido de las luces de Navidad.",
   "hitos": [
     {
       "fecha": "2026-11-01",
@@ -17,14 +17,6 @@
       "categoria": "Sociedad",
       "descripcion": "Se ha confirmado el primer caso de la enfermedad de la lengua azul en la provincia, lo que ha generado preocupación en el sector ganadero.",
       "fuente": "https://www.lagacetadesalamanca.es/campo/primer-lengua-azul-salamanca-20261117210827-nt.html",
-      "destacado": false
-    },
-    {
-      "fecha": "2026-11-23",
-      "titulo": "Fin de la era de Javi Medina en Unionistas",
-      "categoria": "Deportes",
-      "descripcion": "Se ha hecho oficial el cese de Javi Medina como entrenador de Unionistas de Salamanca, marcando el fin de su etapa en el club.",
-      "fuente": "https://www.lagacetadesalamanca.es/deportes/futbol-local/unionistas/oficial-fin-era-javi-medina-unionistas-20261123110513-nt.html",
       "destacado": false
     },
     {
@@ -49,6 +41,14 @@
       "categoria": "Deportes",
       "descripcion": "El equipo salmantino ha conseguido una gran victoria en la Eurocup, destacando por su rendimiento con solo siete jugadoras disponibles.",
       "fuente": "https://www.lagacetadesalamanca.es/deportes/baloncesto-local/meins-avenida/claves-gran-victoria-meins-avenida-eurocup-20261125234154-nt.html",
+      "destacado": false
+    },
+    {
+      "fecha": "2026-11-25",
+      "titulo": "Óscar Gilsanz, nuevo entrenador de Unionistas",
+      "categoria": "Deportes",
+      "descripcion": "Óscar Gilsanz ha sido presentado como el nuevo entrenador de Unionistas de Salamanca, asumiendo el cargo con ilusión para sacar al equipo de su situación.",
+      "fuente": "https://www.lagacetadesalamanca.es/deportes/futbol-local/unionistas/acuerdo-cerrado-oscar-gilsanz-nuevo-entrenador-unionistas-20261125113436-nt.html",
       "destacado": false
     },
     {

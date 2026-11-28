@@ -1,11 +1,11 @@
 {
   "url_base": "https://www.lagacetadesalamanca.es",
-  "generado_en": "2026-11-27T05:46:01+00:00",
+  "generado_en": "2026-11-28T05:46:03+00:00",
   "periodo_cubierto": {
-    "desde": "2026-11-24",
-    "hasta": "2026-11-27"
+    "desde": "2026-11-25",
+    "hasta": "2026-11-28"
   },
-  "total_urls_analizadas": 198,
+  "total_urls_analizadas": 201,
   "secciones_excluidas": [
     "gente-estilo",
     "nacional",
@@ -17,49 +17,45 @@
   "por_seccion": [
     [
       "salamanca",
-      73
+      72
     ],
     [
       "provincia",
-      66
+      64
     ],
     [
       "deportes",
-      26
+      30
     ],
     [
       "sucesos",
-      19
+      18
     ],
     [
       "campo",
-      6
+      7
+    ],
+    [
+      "toros",
+      4
     ],
     [
       "encuestas",
       3
     ],
     [
-      "toros",
-      3
-    ],
-    [
       "castilla-y-leon",
-      1
-    ],
-    [
-      "promociones",
-      1
+      3
     ]
   ],
   "por_subseccion": [
     [
       "deportes/futbol-local",
-      13
+      16
     ],
     [
       "deportes/baloncesto-local",
-      7
+      9
     ],
     [
       "deportes/deporte-base",
@@ -69,7 +65,7 @@
   "por_tipo_contenido": [
     [
       "noticia",
-      179
+      182
     ],
     [
       "galería",
@@ -82,112 +78,113 @@
   ],
   "heatmap_calendario": [
     {
-      "fecha": "2026-11-24",
-      "total": 53,
-      "salamanca": 20,
-      "provincia": 19,
-      "deportes": 5,
-      "sucesos": 6,
-      "campo": 1,
-      "encuestas": 1,
-      "toros": 0,
-      "castilla-y-leon": 0,
-      "promociones": 1
-    },
-    {
       "fecha": "2026-11-25",
-      "total": 79,
-      "salamanca": 24,
-      "provincia": 29,
-      "deportes": 13,
+      "total": 66,
+      "salamanca": 16,
+      "provincia": 27,
+      "deportes": 12,
       "sucesos": 7,
-      "campo": 3,
+      "campo": 2,
+      "toros": 0,
       "encuestas": 1,
-      "toros": 1,
-      "castilla-y-leon": 1,
-      "promociones": 0
+      "castilla-y-leon": 1
     },
     {
       "fecha": "2026-11-26",
-      "total": 60,
-      "salamanca": 23,
+      "total": 59,
+      "salamanca": 22,
       "provincia": 18,
       "deportes": 8,
       "sucesos": 6,
       "campo": 2,
-      "encuestas": 1,
       "toros": 2,
-      "castilla-y-leon": 0,
-      "promociones": 0
+      "encuestas": 1,
+      "castilla-y-leon": 0
     },
     {
       "fecha": "2026-11-27",
-      "total": 6,
-      "salamanca": 6,
-      "provincia": 0,
+      "total": 69,
+      "salamanca": 30,
+      "provincia": 18,
+      "deportes": 10,
+      "sucesos": 5,
+      "campo": 2,
+      "toros": 2,
+      "encuestas": 1,
+      "castilla-y-leon": 1
+    },
+    {
+      "fecha": "2026-11-28",
+      "total": 7,
+      "salamanca": 4,
+      "provincia": 1,
       "deportes": 0,
       "sucesos": 0,
-      "campo": 0,
-      "encuestas": 0,
+      "campo": 1,
       "toros": 0,
-      "castilla-y-leon": 0,
-      "promociones": 0
+      "encuestas": 0,
+      "castilla-y-leon": 1
     }
   ],
   "conceptos_destacados": [
     {
+      "concepto": "Unionistas",
+      "piezas": 9,
+      "seccion_principal": "deportes",
+      "desde": "2026-11-25",
+      "hasta": "2026-11-27",
+      "ejemplos_redactados": [
+        "Antonio Paz ha hablado sobre los intensos últimos días del club. Gilsanz ha dirigido el primer entrenamiento del equipo."
+      ]
+    },
+    {
+      "concepto": "Béjar",
+      "piezas": 9,
+      "seccion_principal": "provincia",
+      "desde": "2026-11-25",
+      "hasta": "2026-11-27",
+      "ejemplos_redactados": [
+        "La localidad ha acogido un recital solidario en apoyo a niños con síndrome nefrótico. También ha comenzado la instalación de las luces de Navidad."
+      ]
+    },
+    {
       "concepto": "Ciudad Rodrigo",
       "piezas": 8,
       "seccion_principal": "provincia",
-      "desde": "2026-11-24",
-      "hasta": "2026-11-26",
-      "ejemplos_redactados": [
-        "El Partido Popular ha mostrado su apoyo al sector primario de Ciudad Rodrigo.",
-        "El obispo ha presidido una eucaristía en el seminario de Ciudad Rodrigo y se han entregado los premios del XXIII concurso de fotografía."
-      ]
-    },
-    {
-      "concepto": "Unionistas de Salamanca",
-      "piezas": 8,
-      "seccion_principal": "deportes",
       "desde": "2026-11-25",
-      "hasta": "2026-11-26",
+      "hasta": "2026-11-27",
       "ejemplos_redactados": [
-        "Gilsanz ha dirigido el primer entrenamiento de Unionistas, con el objetivo de salvar al equipo.",
-        "El club ha dado a conocer el horario para recibir a la Ponferradina en el Reina Sofía."
+        "El PSOE de Ciudad Rodrigo se prepara para el 29N y reta al PP. El obispo preside una eucaristía en el seminario de la localidad."
       ]
     },
     {
-      "concepto": "Santa Marta de Tormes",
-      "piezas": 6,
+      "concepto": "Santa Marta",
+      "piezas": 7,
       "seccion_principal": "provincia",
-      "desde": "2026-11-24",
-      "hasta": "2026-11-26",
+      "desde": "2026-11-25",
+      "hasta": "2026-11-27",
       "ejemplos_redactados": [
-        "Se ha denunciado la falta de inversiones del gobierno en Santa Marta, que también asfaltará varias calles.",
-        "El municipio ha reunido a escolares en una marcha por la igualdad con motivo del 25N."
+        "Santa Marta de Tormes avanza en la cesión de parcelas para construir. El municipio inicia las obras del futuro centro de empresa."
       ]
     },
     {
-      "concepto": "Violencia Machista y 25N",
+      "concepto": "Violencia Machista",
       "piezas": 5,
       "seccion_principal": "provincia",
       "desde": "2026-11-25",
       "hasta": "2026-11-25",
       "ejemplos_redactados": [
-        "El Hospital ha alzado la voz contra la violencia machista con un minuto de ruido.",
-        "Se han celebrado jornadas para reivindicar la igualdad y luchar contra la violencia machista en Doniños y Alba de Tormes ha recordado a las víctimas."
+        "Peñaranda de Bracamonte reafirma su compromiso contra la violencia machista. El Hospital alza la voz con un minuto de ruido."
       ]
     },
     {
-      "concepto": "Homenaje a la Reina Sofía",
-      "piezas": 5,
-      "seccion_principal": "salamanca",
-      "desde": "2026-11-24",
-      "hasta": "2026-11-25",
+      "concepto": "Alba de Tormes",
+      "piezas": 4,
+      "seccion_principal": "provincia",
+      "desde": "2026-11-25",
+      "hasta": "2026-11-27",
       "ejemplos_redactados": [
-        "La Universidad de Salamanca ha rendido homenaje a la Reina Sofía con la entrega de una medalla.",
-        "Jaime Siles ha recibido el Premio Reina Sofía de Poesía en el Paraninfo."
+        "El mundo del toro agradece a Santa Teresa en Alba de Tormes. La localidad inaugura una nueva edición del taller de memoria."
       ]
     },
     {
@@ -195,35 +192,22 @@
       "piezas": 4,
       "seccion_principal": "deportes",
       "desde": "2026-11-25",
-      "hasta": "2026-11-25",
+      "hasta": "2026-11-27",
       "ejemplos_redactados": [
-        "El equipo de Perfumerías Avenida ha logrado una gran victoria en la Eurocup, alcanzando el éxtasis con solo siete jugadoras.",
-        "El club busca el liderato en la competición europea."
+        "El equipo ha movido ficha ante problemas de pintura. Perfumerías Avenida alcanzó el éxtasis con solo siete jugadoras."
       ]
     },
     {
-      "concepto": "Accidentes y Heridos",
+      "concepto": "Castilla y León",
       "piezas": 4,
-      "seccion_principal": "sucesos",
-      "desde": "2026-11-25",
-      "hasta": "2026-11-26",
+      "seccion_principal": "castilla-y-leon",
+      "desde": "2026-11-26",
+      "hasta": "2026-11-28",
       "ejemplos_redactados": [
-        "Un trabajador ha resultado herido tras caer de un tejado en Sobradillo.",
-        "También se han registrado heridos en colisiones de un patinete con un turismo y de varios vehículos con un camión."
-      ]
-    },
-    {
-      "concepto": "Navidad en Salamanca",
-      "piezas": 10,
-      "seccion_principal": "salamanca",
-      "desde": "2026-11-24",
-      "hasta": "2026-11-26",
-      "ejemplos_redactados": [
-        "El encendido de las luces navideñas en la Plaza Mayor ha marcado el inicio de la Navidad en Salamanca, con una gran afluencia de público.",
-        "La ciudad se prepara con adornos y una guía completa de novedades para las próximas fiestas."
+        "La región se presenta como el corazón de la despensa de Tierra de Sabor. Se invita a descubrir el patrimonio natural de Castilla y León."
       ]
     }
   ],
-  "resumen_borrador": "Se han publicado 198 noticias entre el 2026-11-24 y el 2026-11-27. La actividad se ha concentrado sobre todo en salamanca (73 piezas), provincia (66 piezas), deportes (26 piezas).\n\nLos conceptos con más piezas relacionadas son: Ciudad · Rodrigo; Unionistas; Santa · Marta; Violencia · Machista. Revisa 'evidencia' de cada concepto para redactar el resumen final.",
-  "resumen": "La actividad en Salamanca y provincia durante los últimos días de noviembre ha estado marcada por el inicio de la campaña navideña y la conmemoración del Día Internacional contra la Violencia Machista.\n\nEl encendido de las luces de Navidad en la Plaza Mayor ha congregado a numerosos ciudadanos, dando el pistoletazo de salida a las celebraciones. En el ámbito social, el 25N ha motivado diversas manifestaciones y actos reivindicativos en la capital y en municipios como Santa Marta de Tormes, Alba de Tormes o Carbajosa de la Sagrada, alzando la voz contra la violencia machista. Además, la Universidad de Salamanca ha rendido homenaje a la Reina Sofía y se ha inaugurado la primera tienda de Primark en la ciudad.\n\nEn el plano deportivo, Unionistas de Salamanca ha iniciado una nueva etapa con la llegada de Óscar Gilsanz como entrenador, mientras que Perfumerías Avenida ha logrado una destacada victoria en la Eurocup. La provincia ha registrado noticias locales relevantes en Ciudad Rodrigo y Santa Marta, y se han reportado varios sucesos con personas heridas en diferentes incidentes."
+  "resumen_borrador": "Se han publicado 201 noticias entre el 2026-11-25 y el 2026-11-28. La actividad se ha concentrado sobre todo en salamanca (72 piezas), provincia (64 piezas), deportes (30 piezas).\n\nLos conceptos con más piezas relacionadas son: Unionistas; Bejar; Ciudad · Rodrigo; Santa · Marta. Revisa 'evidencia' de cada concepto para redactar el resumen final.",
+  "resumen": "Los últimos días de noviembre en Salamanca han estado marcados por la continuidad de la campaña electoral, con el PP y el PSOE apelando al voto ante la proximidad del 29N. En el ámbito social, la provincia ha intensificado las conmemoraciones del Día Internacional contra la Violencia Machista, con manifestaciones y actos reivindicativos en diversos municipios.\n\nEn el plano deportivo, Unionistas de Salamanca ha vivido jornadas intensas con la llegada de Óscar Gilsanz como nuevo entrenador. Por su parte, Perfumerías Avenida ha destacado con una victoria en Eurocup, a pesar de los desafíos logísticos. La economía local ha sentido el impacto del Black Friday, mientras que la ciudad ha celebrado la apertura de nuevas superficies comerciales y el tradicional encendido de las luces de Navidad en la Plaza Mayor.\n\nLa provincia ha sido escenario de diversas noticias, desde iniciativas solidarias en Béjar hasta avances en proyectos urbanísticos en Santa Marta de Tormes y Alba de Tormes. También se han registrado varios sucesos, incluyendo accidentes de tráfico y detenciones por diversos delitos."
 }

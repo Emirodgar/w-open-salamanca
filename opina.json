@@ -87,18 +87,6 @@
       "fecha_creacion": "2026-10-05"
     },
     {
-      "id": "inundaciones-colegio-ciudad-rodrigo-2026",
-      "pregunta": "Ante las recientes inundaciones en un colegio de Ciudad Rodrigo, ¿cree que las autoridades locales deberían implementar medidas preventivas más robustas para proteger las infraestructuras educativas?",
-      "opciones": [
-        "Sí, es fundamental garantizar la seguridad de los centros escolares.",
-        "No, son eventos puntuales y difíciles de prevenir.",
-        "Depende de la causa de las inundaciones y la viabilidad de las medidas.",
-        "No tengo suficiente información."
-      ],
-      "basado_en": "actualidad.json",
-      "fecha_creacion": "2026-10-07"
-    },
-    {
       "id": "centro-empresa-santa-marta-2026",
       "pregunta": "Santa Marta de Tormes planea crear un centro de empresa para atraer talento. ¿Considera que la atracción de talento y el fomento empresarial deben ser una prioridad clave para el desarrollo del municipio?",
       "opciones": [
@@ -352,18 +340,6 @@
       "fecha_creacion": "2026-10-28"
     },
     {
-      "id": "rodaje-netflix-salamanca-2026",
-      "pregunta": "La provincia de Salamanca ha acogido el rodaje de una serie alemana de Netflix en localidades como Candelario y La Alberca. ¿Cree que este tipo de producciones audiovisuales benefician al turismo y la economía local?",
-      "opciones": [
-        "Sí, atraen visitantes y visibilidad",
-        "No, el impacto es limitado y temporal",
-        "Depende de la promoción posterior",
-        "No tengo suficiente información"
-      ],
-      "basado_en": "actualidad.json",
-      "fecha_creacion": "2026-10-29"
-    },
-    {
       "id": "seguridad-ferroviaria-salamanca-2026",
       "pregunta": "Tras el grave accidente ferroviario de Urda, que ha afectado a salmantinos, y la atención centrada en la seguridad de las infraestructuras, ¿cree que se debería invertir más en la mejora y mantenimiento de la red ferroviaria en la provincia de Salamanca?",
       "opciones": [
@@ -386,18 +362,6 @@
       ],
       "basado_en": "actualidad.json",
       "fecha_creacion": "2026-11-01"
-    },
-    {
-      "id": "legado-charo-diego-2026",
-      "pregunta": "El fallecimiento de Charo Diego, primera mujer en presidir la Diputación de Salamanca, ha generado un sentido adiós. ¿Cree que su legado tendrá un impacto duradero en la política provincial?",
-      "opciones": [
-        "Sí, su figura es un referente",
-        "No, su impacto será limitado",
-        "Es pronto para valorarlo",
-        "No tengo suficiente información"
-      ],
-      "basado_en": "actualidad.json",
-      "fecha_creacion": "2026-11-03"
     },
     {
       "id": "gestion-jabalies-2026",
@@ -902,6 +866,30 @@
       ],
       "basado_en": "eventos.json",
       "fecha_creacion": "2026-11-27"
+    },
+    {
+      "id": "impacto-black-friday-2026",
+      "pregunta": "Ante el reciente impacto del Black Friday en la economía local de Salamanca, ¿cree que esta campaña de descuentos beneficia significativamente al comercio de la provincia?",
+      "opciones": [
+        "Sí, impulsa las ventas y atrae clientes",
+        "No, perjudica al pequeño comercio y las ventas a largo plazo",
+        "El impacto es limitado, solo beneficia a grandes superficies",
+        "No tengo suficiente información"
+      ],
+      "basado_en": "actualidad.json",
+      "fecha_creacion": "2026-11-28"
+    },
+    {
+      "id": "luces-navidad-alberca-2026",
+      "pregunta": "La Alberca celebra hoy el tradicional encendido de su alumbrado navideño con una gala especial. ¿Considera que este tipo de eventos contribuye a la promoción turística y al ambiente festivo en los municipios de la Sierra de Francia?",
+      "opciones": [
+        "Sí, atrae visitantes y realza el encanto del pueblo",
+        "No, su impacto es local y no genera un gran atractivo turístico",
+        "Es un buen complemento, pero se necesitan más iniciativas",
+        "No tengo suficiente información"
+      ],
+      "basado_en": "eventos.json",
+      "fecha_creacion": "2026-11-28"
     }
   ]
 }
